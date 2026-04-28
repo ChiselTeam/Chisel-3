@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.9]
+
+### Hotfix
+- Forgot to add crafting recipes for some blocks.
+
 ## [3.0.8]
 
 ### Added
