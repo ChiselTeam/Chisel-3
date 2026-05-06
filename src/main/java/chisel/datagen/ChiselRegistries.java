@@ -1,6 +1,8 @@
 package chisel.datagen;
 
 import chisel.Chisel;
+import chisel.datagen.registry.ChiselBallOMossRegistry;
+import chisel.datagen.registry.ChiselSmashingRockRegistry;
 import chisel.registry.ChiselBiomeModifiers;
 import chisel.registry.ChiselConfiguredFeatures;
 import chisel.registry.ChiselPlacedFeatures;

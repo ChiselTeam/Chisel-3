@@ -1,4 +1,4 @@
-package chisel.datagen;
+package chisel.datagen.providers;
 
 import chisel.Chisel;
 import chisel.registry.ChiselSounds;

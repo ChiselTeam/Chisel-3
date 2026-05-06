@@ -44,6 +44,15 @@ public class ChiselRecipes extends RecipeProvider {
         stoneAround("has_blue_dye", Tags.Items.DYES_BLUE, ChiselBlocks.TEMPLE.getFamily().getVariants().getFirst().getBlock(), 8);
         stoneAround("has_sign", ItemTags.SIGNS, ChiselBlocks.WARNING.getFamily().getVariants().getFirst().getBlock(), 4);
 
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselBlocks.MOSSY_TEMPLE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+                .pattern("SSS")
+                .pattern("SDS")
+                .pattern("SSS")
+                .define('S', Tags.Items.COBBLESTONES_MOSSY)
+                .define('D', Tags.Items.DYES_BLUE)
+                .unlockedBy("has_blue_dye", has(Tags.Items.DYES_BLUE))
+                .save(output);
+
         shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselBlocks.FACTORY.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
                 .pattern("SIS")
                 .pattern("I I")

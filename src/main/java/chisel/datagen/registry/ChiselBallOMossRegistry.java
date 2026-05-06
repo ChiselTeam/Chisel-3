@@ -1,4 +1,4 @@
-package chisel.datagen;
+package chisel.datagen.registry;
 
 import chisel.Chisel;
 import chisel.core.projectile.BallOMossData;

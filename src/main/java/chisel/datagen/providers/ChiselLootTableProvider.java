@@ -1,5 +1,6 @@
-package chisel.datagen;
+package chisel.datagen.providers;
 
+import chisel.datagen.ChiselBlockLootTables;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
