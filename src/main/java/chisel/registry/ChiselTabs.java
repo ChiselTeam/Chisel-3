@@ -77,7 +77,6 @@ public class ChiselTabs {
                     ChiselBlocks.MILITARY.getFamily(),
                     ChiselBlocks.TECHNICAL.getFamily(),
                     ChiselBlocks.TYRIAN.getFamily(),
-                    ChiselBlocks.ALUMINUM.getFamily(),
                     ChiselBlocks.WARNING.getFamily())
                     .forEach(family -> family.getVariants().forEach(variant ->  {
                         if(variant.shouldGenerateModel() && variant.isInTab)
@@ -125,6 +124,7 @@ public class ChiselTabs {
             .title(Component.translatable("itemGroup.tabModdedChiselBlocks"))
             .icon(() -> new ItemStack(ChiselBlocks.BRONZE.getVariant("bronze_caution").get()))
             .displayItems((_, output) -> List.of(
+                    ChiselBlocks.ALUMINUM.getFamily(),
                     ChiselBlocks.BRONZE.getFamily(),
                     ChiselBlocks.LEAD.getFamily(),
                     ChiselBlocks.SILVER.getFamily(),
