@@ -3,8 +3,10 @@ package chisel.item;
 import chisel.entity.BallOMoss;
 import chisel.entity.CloudInABottle;
 import chisel.entity.SmashingRock;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Position;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -16,8 +18,12 @@ import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ProjectileItem;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.Level;
 import org.jspecify.annotations.NonNull;
+
+import java.util.function.Consumer;
 
 public class CloudInABottleItem extends Item implements ProjectileItem {
     public CloudInABottleItem(Properties properties) {
@@ -40,5 +46,10 @@ public class CloudInABottleItem extends Item implements ProjectileItem {
     @Override
     public @NonNull Projectile asProjectile(@NonNull Level level, @NonNull Position position, @NonNull ItemStack itemStack, @NonNull Direction direction) {
         return new CloudInABottle(level, position.x(), position.y(), position.z(), itemStack);
+    }
+
+    @Override
+    public void appendHoverText(@NonNull ItemStack stack, @NonNull TooltipContext context, @NonNull TooltipDisplay display, @NonNull Consumer<Component> builder, @NonNull TooltipFlag flag) {
+        builder.accept(Component.translatable("item.chisel.cloud_in_a_bottle.desc").withStyle(ChatFormatting.GRAY));
     }
 }

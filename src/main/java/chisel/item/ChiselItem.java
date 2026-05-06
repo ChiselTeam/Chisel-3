@@ -3,6 +3,7 @@ package chisel.item;
 import chisel.inventory.menu.ChiselMenu;
 import chisel.registry.ChiselItemAbilities;
 import io.netty.buffer.Unpooled;
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
@@ -11,9 +12,14 @@ import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemInstance;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.common.ItemAbility;
 import org.jspecify.annotations.NonNull;
+
+import java.util.function.Consumer;
 
 public class ChiselItem extends Item {
 
@@ -36,5 +42,12 @@ public class ChiselItem extends Item {
             ));
         }
         return InteractionResult.SUCCESS;
+    }
+
+    @Override
+    public void appendHoverText(@NonNull ItemStack stack, @NonNull TooltipContext context, @NonNull TooltipDisplay display, @NonNull Consumer<Component> builder, @NonNull TooltipFlag flag) {
+        builder.accept(Component.translatable("item.chisel.chisel.desc1").withStyle(ChatFormatting.GRAY));
+        builder.accept(Component.translatable("item.chisel.chisel.desc2").withStyle(ChatFormatting.GRAY));
+        builder.accept(Component.translatable("item.chisel.chisel.desc3").withStyle(ChatFormatting.GRAY));
     }
 }
