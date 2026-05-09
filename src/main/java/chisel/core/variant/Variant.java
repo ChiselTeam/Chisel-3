@@ -33,6 +33,8 @@ public class Variant extends VariantModels {
                     MULTI_LAYER_CONNECTED_GLOW,
                     VariantModelType.MULTIBLOCK_2X2,
                     VariantModelType.V4,
+                    VariantModelType.V9,
+                    VariantModelType.V16,
                     VariantModelType.MULTIBLOCK_3X3,
                     VariantModelType.MULTIBLOCK_4X4,
                     VariantModelType.AR,
@@ -136,6 +138,8 @@ public class Variant extends VariantModels {
             case WALL_TORCH -> WALL_TORCH.generate(this, blockModels);
             case ROAD_LINES -> ROAD_LINES.generate(this, blockModels);
             case V4 -> V4.generate(this, blockModels);
+            case V9 -> V9.generate(this, blockModels);
+            case V16 -> V16.generate(this, blockModels);
             case MULTIBLOCK_2X2 -> MULTIBLOCK_2X2.generate(this, blockModels);
             case MULTIBLOCK_3X3 -> MULTIBLOCK_3X3.generate(this, blockModels);
             case MULTIBLOCK_4X4 -> MULTIBLOCK_4X4.generate(this, blockModels);

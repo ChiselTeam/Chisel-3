@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/end_stone/end_stone_weaver",
+    "overlay_connected": "chisel:block/end_stone/end_stone_weaver-ctm",
+    "overlay_texture": "chisel:block/end_stone/end_stone_weaver",
+    "particle": "chisel:block/end_stone/end_stone_weaver"
+  }
+}

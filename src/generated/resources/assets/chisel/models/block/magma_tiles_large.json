@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/magma/magma_tiles_large",
+    "overlay_connected": "chisel:block/magma/magma_tiles_large-ctm",
+    "overlay_texture": "chisel:block/magma/magma_tiles_large",
+    "particle": "chisel:block/magma/magma_tiles_large"
+  }
+}

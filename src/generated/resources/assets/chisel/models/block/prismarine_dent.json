@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/prismarine/prismarine_dent",
+    "overlay_connected": "chisel:block/prismarine/prismarine_dent-ctm",
+    "overlay_texture": "chisel:block/prismarine/prismarine_dent",
+    "particle": "chisel:block/prismarine/prismarine_dent"
+  }
+}

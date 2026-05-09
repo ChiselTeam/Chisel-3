@@ -61,7 +61,7 @@ public class SandstoneFamily extends ChiselFamily {
         lang.addBlock(getVariant("sandstone_horizontal_tiles"), "Sandstone", "Horizontal Tiles");
         lang.addBlock(getVariant("sandstone_mosaic"), "Sandstone", "Sandstone Mosaic");
         for (int i = 0; i <= 15; i++) {
-            lang.addBlock(getVariant("sandstone_scribbles_" + i), "Sandstone", "Sandstone Scribbles");
+            lang.addBlock(getVariant("sandstone_scribbles_%d".formatted(i)), "Sandstone", "Sandstone Scribbles");
         }
         lang.addBlock(getVariant("sandstone_small"), "Sandstone", "Small Sandstone Pillar");
         lang.addBlock(getVariant("sandstone_smooth"), "Sandstone", "Smooth");

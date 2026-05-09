@@ -1,0 +1,20 @@
+{
+  "family_name": "wool_light_blue",
+  "tag": "c:chisel/wool_light_blue",
+  "variants": [
+    {
+      "block": "minecraft:light_blue_wool",
+      "name": "block.minecraft.light_blue_wool"
+    },
+    {
+      "block": "chisel:wool_light_blue_legacy",
+      "model_type": "connected",
+      "name": "wool_light_blue_legacy"
+    },
+    {
+      "block": "chisel:wool_light_blue_llama",
+      "model_type": "connected",
+      "name": "wool_light_blue_llama"
+    }
+  ]
+}

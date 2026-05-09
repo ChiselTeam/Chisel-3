@@ -1,0 +1,156 @@
+{
+  "family_name": "tallow",
+  "tag": "c:chisel/tallow",
+  "variants": [
+    {
+      "block": "minecraft:white_wool",
+      "name": "block.minecraft.white_wool"
+    },
+    {
+      "block": "chisel:tallow_array",
+      "model_type": "multiblock_2x2",
+      "name": "tallow_array"
+    },
+    {
+      "block": "chisel:tallow_braid",
+      "name": "tallow_braid"
+    },
+    {
+      "block": "chisel:tallow_chaotic_bricks",
+      "model_type": "multiblock_3x3",
+      "name": "tallow_chaotic_bricks"
+    },
+    {
+      "block": "chisel:tallow_chaotic_medium",
+      "name": "tallow_chaotic_medium"
+    },
+    {
+      "block": "chisel:tallow_chaotic_small",
+      "name": "tallow_chaotic_small"
+    },
+    {
+      "block": "chisel:tallow_circular",
+      "model_type": "connected",
+      "name": "tallow_circular"
+    },
+    {
+      "block": "chisel:tallow_cracked",
+      "name": "tallow_cracked"
+    },
+    {
+      "block": "chisel:tallow_cracked_bricks",
+      "name": "tallow_cracked_bricks"
+    },
+    {
+      "block": "chisel:tallow_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "tallow_cuts"
+    },
+    {
+      "block": "chisel:tallow_dent",
+      "model_type": "connected",
+      "name": "tallow_dent"
+    },
+    {
+      "block": "chisel:tallow_encased_bricks",
+      "model_type": "connected",
+      "name": "tallow_encased_bricks"
+    },
+    {
+      "block": "chisel:tallow_french_1",
+      "name": "tallow_french_1"
+    },
+    {
+      "block": "chisel:tallow_french_2",
+      "name": "tallow_french_2"
+    },
+    {
+      "block": "chisel:tallow_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "tallow_jellybean"
+    },
+    {
+      "block": "chisel:tallow_layers",
+      "name": "tallow_layers"
+    },
+    {
+      "block": "chisel:tallow_mosaic",
+      "model_type": "connected",
+      "name": "tallow_mosaic"
+    },
+    {
+      "block": "chisel:tallow_ornate",
+      "name": "tallow_ornate"
+    },
+    {
+      "block": "chisel:tallow_panel",
+      "name": "tallow_panel"
+    },
+    {
+      "block": "chisel:tallow_pillar",
+      "model_type": "top_bottom_side",
+      "name": "tallow_pillar"
+    },
+    {
+      "block": "chisel:tallow_prism",
+      "name": "tallow_prism"
+    },
+    {
+      "block": "chisel:tallow_raw",
+      "name": "tallow_raw"
+    },
+    {
+      "block": "chisel:tallow_road",
+      "name": "tallow_road"
+    },
+    {
+      "block": "chisel:tallow_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "tallow_slanted"
+    },
+    {
+      "block": "chisel:tallow_small_bricks",
+      "name": "tallow_small_bricks"
+    },
+    {
+      "block": "chisel:tallow_soft_bricks",
+      "name": "tallow_soft_bricks"
+    },
+    {
+      "block": "chisel:tallow_solid_bricks",
+      "name": "tallow_solid_bricks"
+    },
+    {
+      "block": "chisel:tallow_tiles_large",
+      "model_type": "connected",
+      "name": "tallow_tiles_large"
+    },
+    {
+      "block": "chisel:tallow_tiles_medium",
+      "name": "tallow_tiles_medium"
+    },
+    {
+      "block": "chisel:tallow_tiles_small",
+      "name": "tallow_tiles_small"
+    },
+    {
+      "block": "chisel:tallow_triple_bricks",
+      "name": "tallow_triple_bricks"
+    },
+    {
+      "block": "chisel:tallow_twisted",
+      "model_type": "top_bottom_side",
+      "name": "tallow_twisted"
+    },
+    {
+      "block": "chisel:tallow_weaver",
+      "model_type": "connected",
+      "name": "tallow_weaver"
+    },
+    {
+      "block": "chisel:tallow_zag",
+      "model_type": "ar",
+      "name": "tallow_zag"
+    }
+  ]
+}

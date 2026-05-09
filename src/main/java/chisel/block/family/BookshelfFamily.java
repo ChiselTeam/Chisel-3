@@ -42,7 +42,7 @@ public class BookshelfFamily extends ChiselFamily {
                     case "rainbow" -> desc = "Bookshelf with Rainbow Books";
                     case "tomes" -> desc = "Bookshelf with Red Tomes";
                 }
-                lang.addBlock(getVariant("bookshelf_" + woods[c] + "_" + types[d]), woodNames[c] + " Bookshelf", desc);
+                lang.addBlock(getVariant("bookshelf_%s_%s".formatted(woods[c], types[d])), "%s Bookshelf".formatted(woodNames[c]), desc);
             }
         }
     }

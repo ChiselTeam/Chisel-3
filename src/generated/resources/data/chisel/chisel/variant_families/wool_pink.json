@@ -1,0 +1,20 @@
+{
+  "family_name": "wool_pink",
+  "tag": "c:chisel/wool_pink",
+  "variants": [
+    {
+      "block": "minecraft:pink_wool",
+      "name": "block.minecraft.pink_wool"
+    },
+    {
+      "block": "chisel:wool_pink_legacy",
+      "model_type": "connected",
+      "name": "wool_pink_legacy"
+    },
+    {
+      "block": "chisel:wool_pink_llama",
+      "model_type": "connected",
+      "name": "wool_pink_llama"
+    }
+  ]
+}

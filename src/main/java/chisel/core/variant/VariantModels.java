@@ -42,6 +42,8 @@ public class VariantModels {
     public final TorchModel WALL_TORCH = new TorchModel(true);
     public final RoadLineModel ROAD_LINES = new RoadLineModel();
     public final V4Model V4 = new V4Model();
+    public final V9Model V9 = new V9Model();
+    public final V16Model V16 = new V16Model();
     public final ARModel AR = new ARModel();
 
     public final Multiblock2x2Model MULTIBLOCK_2X2 = new Multiblock2x2Model();

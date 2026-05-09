@@ -1,0 +1,20 @@
+{
+  "family_name": "wool_green",
+  "tag": "c:chisel/wool_green",
+  "variants": [
+    {
+      "block": "minecraft:green_wool",
+      "name": "block.minecraft.green_wool"
+    },
+    {
+      "block": "chisel:wool_green_legacy",
+      "model_type": "connected",
+      "name": "wool_green_legacy"
+    },
+    {
+      "block": "chisel:wool_green_llama",
+      "model_type": "connected",
+      "name": "wool_green_llama"
+    }
+  ]
+}

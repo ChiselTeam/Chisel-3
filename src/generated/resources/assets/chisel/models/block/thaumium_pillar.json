@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "chisel:block/thaumium/thaumium_pillar-bottom",
+    "side": "chisel:block/thaumium/thaumium_pillar-side",
+    "top": "chisel:block/thaumium/thaumium_pillar-top"
+  }
+}

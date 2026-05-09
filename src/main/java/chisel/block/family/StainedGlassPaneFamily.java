@@ -22,7 +22,7 @@ public class StainedGlassPaneFamily extends ChiselFamily {
     public StainedGlassPaneFamily(BlockBehaviour.Properties props, DyeColor color, Block vanilla) {
         this.color = color;
 
-        family = builder("stained_glass_pane_" + color)
+        family = builder("stained_glass_pane_%s".formatted(color))
                 .addVariant(vanilla)
                 .addVariant("stained_glass_pane_%s_borderless".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_borderless".formatted(color))))), () -> props, VariantModelType.GLASS_PANE)
                 .addVariant("stained_glass_pane_%s_bubble".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_bubble".formatted(color))))), () -> props, VariantModelType.GLASS_PANE)

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/coal/coal_weaver",
+    "overlay_connected": "chisel:block/coal/coal_weaver-ctm",
+    "overlay_texture": "chisel:block/coal/coal_weaver",
+    "particle": "chisel:block/coal/coal_weaver"
+  }
+}

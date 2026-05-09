@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar-bottom",
+    "side": "chisel:block/end_stone/end_stone_pillar-side",
+    "top": "chisel:block/end_stone/end_stone_pillar-top"
+  }
+}

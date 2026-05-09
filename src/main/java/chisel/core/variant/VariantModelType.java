@@ -34,6 +34,8 @@ public enum VariantModelType implements StringRepresentable {
     WALL_TORCH("wall_torch"),
     ROAD_LINES("road_lines"),
     V4("v4"),
+    V9("v9"),
+    V16("v16"),
     AR("ar"),
     MULTI_LAYER_LAVA_AR("multi_layer_lava_ar"),
     MULTI_LAYER_WATER_AR("multi_layer_water_ar"),

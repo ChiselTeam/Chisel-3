@@ -37,6 +37,8 @@ public class MultiblockCTMBlockStateModel extends AbstractConnectedTextureBlockS
         CTMLogic3x3[] logic3x3 = new CTMLogic3x3[6];
         CTMLogic4x4[] logic4x4 = new CTMLogic4x4[6];
         CTMLogicV4[] logicV4 = new CTMLogicV4[6];
+        CTMLogicV9[] logicV9 = new CTMLogicV9[6];
+        CTMLogicV16[] logicV16 = new CTMLogicV16[6];
 
         for (Direction face : Direction.values()) {
             int i = face.get3DDataValue();
@@ -44,9 +46,11 @@ public class MultiblockCTMBlockStateModel extends AbstractConnectedTextureBlockS
             logic3x3[i] = CTMLogic3x3.get(pos, face);
             logic4x4[i] = CTMLogic4x4.get(pos, face);
             logicV4[i] = CTMLogicV4.get(random);
+            logicV9[i] = CTMLogicV9.get(random);
+            logicV16[i] = CTMLogicV16.get(random);
         }
 
-        return new CTMData(variant, null, logic2x2, logic3x3, logic4x4, null, null, logicV4);
+        return new CTMData(variant, null, logic2x2, logic3x3, logic4x4, null, null, logicV4, logicV9, logicV16);
     }
 
     @Override
@@ -98,6 +102,22 @@ public class MultiblockCTMBlockStateModel extends AbstractConnectedTextureBlockS
                         BakedQuad[] quads = multiblock2x2Quads.get(side);
                         if (quads != null && logic != null) {
                             // V4 uses 2x2 logic under the hood
+                            BakedQuad quad = quads[logic.ordinal()];
+                            if (quad != null) faceQuads.add(quad);
+                        }
+                    }
+                    case V9 -> {
+                        CTMLogicV9 logic = data.getV9(side);
+                        BakedQuad[] quads = multiblock3x3Quads.get(side);
+                        if (quads != null && logic != null) {
+                            BakedQuad quad = quads[logic.ordinal()];
+                            if (quad != null) faceQuads.add(quad);
+                        }
+                    }
+                    case V16 -> {
+                        CTMLogicV16 logic = data.getV16(side);
+                        BakedQuad[] quads = multiblock4x4Quads.get(side);
+                        if (quads != null && logic != null) {
                             BakedQuad quad = quads[logic.ordinal()];
                             if (quad != null) faceQuads.add(quad);
                         }

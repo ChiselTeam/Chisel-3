@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/charcoal/charcoal_dent",
+    "overlay_connected": "chisel:block/charcoal/charcoal_dent-ctm",
+    "overlay_texture": "chisel:block/charcoal/charcoal_dent",
+    "particle": "chisel:block/charcoal/charcoal_dent"
+  }
+}

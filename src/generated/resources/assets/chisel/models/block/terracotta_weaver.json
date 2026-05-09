@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/terracotta/terracotta_weaver",
+    "overlay_connected": "chisel:block/terracotta/terracotta_weaver-ctm",
+    "overlay_texture": "chisel:block/terracotta/terracotta_weaver",
+    "particle": "chisel:block/terracotta/terracotta_weaver"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/tallow/tallow_dent",
+    "overlay_connected": "chisel:block/tallow/tallow_dent-ctm",
+    "overlay_texture": "chisel:block/tallow/tallow_dent",
+    "particle": "chisel:block/tallow/tallow_dent"
+  }
+}

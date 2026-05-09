@@ -1,0 +1,20 @@
+{
+  "family_name": "wool_gray",
+  "tag": "c:chisel/wool_gray",
+  "variants": [
+    {
+      "block": "minecraft:gray_wool",
+      "name": "block.minecraft.gray_wool"
+    },
+    {
+      "block": "chisel:wool_gray_legacy",
+      "model_type": "connected",
+      "name": "wool_gray_legacy"
+    },
+    {
+      "block": "chisel:wool_gray_llama",
+      "model_type": "connected",
+      "name": "wool_gray_llama"
+    }
+  ]
+}

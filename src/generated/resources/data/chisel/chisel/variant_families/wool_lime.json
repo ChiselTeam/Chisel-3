@@ -1,0 +1,20 @@
+{
+  "family_name": "wool_lime",
+  "tag": "c:chisel/wool_lime",
+  "variants": [
+    {
+      "block": "minecraft:lime_wool",
+      "name": "block.minecraft.lime_wool"
+    },
+    {
+      "block": "chisel:wool_lime_legacy",
+      "model_type": "connected",
+      "name": "wool_lime_legacy"
+    },
+    {
+      "block": "chisel:wool_lime_llama",
+      "model_type": "connected",
+      "name": "wool_lime_llama"
+    }
+  ]
+}
