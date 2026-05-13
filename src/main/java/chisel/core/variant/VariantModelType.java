@@ -36,6 +36,9 @@ public enum VariantModelType implements StringRepresentable {
     V4("v4"),
     V9("v9"),
     V16("v16"),
+    R4("r4"),
+    R9("r9"),
+    R16("r16"),
     AR("ar"),
     MULTI_LAYER_LAVA_AR("multi_layer_lava_ar"),
     MULTI_LAYER_WATER_AR("multi_layer_water_ar"),
@@ -44,7 +47,8 @@ public enum VariantModelType implements StringRepresentable {
     MULTIBLOCK_4X4("multiblock_4x4"),
     MULTI_LAYER_WATER_2X2("multi_layer_water_2x2"),
     MULTI_LAYER_WATER_3X3("multi_layer_water_3x3"),
-    MULTI_LAYER_WATER_4X4("multi_layer_water_4x4");
+    MULTI_LAYER_WATER_4X4("multi_layer_water_4x4"),
+    REDSTONE_LAMP("redstone_lamp");
 
     public static final Codec<VariantModelType> CODEC = StringRepresentable.fromEnum(VariantModelType::values);
     private final String name;

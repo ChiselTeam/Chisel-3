@@ -43,8 +43,6 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.SPRUCE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.BOOKSHELF.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.CRIMSON.getFamily());
-        addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.CLOUD.getFamily());
-        addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.CARPET.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.PUMPKIN.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.JACK_O_LANTERN.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.PAPERWALL.getFamily());

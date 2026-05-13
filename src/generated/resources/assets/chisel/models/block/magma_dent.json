@@ -1,7 +1,10 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "chisel:block/cube_multi_pass",
   "textures": {
     "all": "chisel:block/magma/magma_dent",
+    "base_texture": "chisel:block/magma/magma_dent-bg",
+    "layer0": "chisel:block/magma/magma_dent-bg",
+    "layer1": "chisel:block/magma/magma_dent",
     "overlay_connected": "chisel:block/magma/magma_dent-ctm",
     "overlay_texture": "chisel:block/magma/magma_dent",
     "particle": "chisel:block/magma/magma_dent"

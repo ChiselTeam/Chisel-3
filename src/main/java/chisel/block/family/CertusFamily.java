@@ -71,9 +71,9 @@ public class CertusFamily extends ChiselFamily {
         lang.addBlock(getVariant("certus_raw"), "Certus Quartz", "Raw");
         lang.addBlock(getVariant("certus_road"), "Certus Quartz", "Road");
         lang.addBlock(getVariant("certus_slanted"), "Certus Quartz", "Slanted");
-        lang.addBlock(getVariant("certus_small"), "Certus Quartz", "Small Tiles");
-        lang.addBlock(getVariant("certus_soft"), "Certus Quartz", "Yellow Bricks");
-        lang.addBlock(getVariant("certus_solid"), "Certus Quartz", "Solid");
+        lang.addBlock(getVariant("certus_small"), "Certus Quartz", "Small Bricks");
+        lang.addBlock(getVariant("certus_soft"), "Certus Quartz", "Soft Bricks");
+        lang.addBlock(getVariant("certus_solid"), "Certus Quartz", "Solid Bricks");
         lang.addBlock(getVariant("certus_tiles_large"), "Certus Quartz", "Large Tiles");
         lang.addBlock(getVariant("certus_tiles_medium"), "Certus Quartz", "Medium Tiles");
         lang.addBlock(getVariant("certus_tiles_small"), "Certus Quartz", "Small Tiles");

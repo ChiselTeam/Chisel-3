@@ -23,29 +23,6 @@ public class Variant extends VariantModels {
             VariantModelType.CODEC.optionalFieldOf("model_type", VariantModelType.CUBE_ALL).forGetter(Variant::getModelType)
     ).apply(instance, (name, block, modelType) -> new Variant(name, () -> block, null, modelType, false)));
 
-    private static final Set<VariantModelType> MODEL_TYPES = Collections.unmodifiableSet(EnumSet.of(
-                    CONNECTED,
-                    CONNECTED_TBS,
-            VariantModelType.CTMV,
-            VariantModelType.CTMH,
-                    MULTI_LAYER_CONNECTED,
-                    MULTI_LAYER_CONNECTED_TINTED,
-                    MULTI_LAYER_CONNECTED_GLOW,
-                    VariantModelType.MULTIBLOCK_2X2,
-                    VariantModelType.V4,
-                    VariantModelType.V9,
-                    VariantModelType.V16,
-                    VariantModelType.MULTIBLOCK_3X3,
-                    VariantModelType.MULTIBLOCK_4X4,
-                    VariantModelType.AR,
-                    VariantModelType.MULTI_LAYER_LAVA_AR,
-                    VariantModelType.MULTI_LAYER_WATER_AR,
-                    MULTI_LAYER_WATER_2X2,
-                    MULTI_LAYER_WATER_3X3,
-                    MULTI_LAYER_WATER_4X4
-            )
-    );
-
     private final String name;
     private final Supplier<Block> block;
     private final VariantModelType modelType;
@@ -87,10 +64,6 @@ public class Variant extends VariantModels {
 
     public Block getBlock() {
         return block.get();
-    }
-
-    public boolean isCTM() {
-        return MODEL_TYPES.contains(modelType);
     }
 
     public VariantModelType getModelType() {
@@ -140,6 +113,9 @@ public class Variant extends VariantModels {
             case V4 -> V4.generate(this, blockModels);
             case V9 -> V9.generate(this, blockModels);
             case V16 -> V16.generate(this, blockModels);
+            case R4 -> R4.generate(this, blockModels);
+            case R9 -> R9.generate(this, blockModels);
+            case R16 -> R16.generate(this, blockModels);
             case MULTIBLOCK_2X2 -> MULTIBLOCK_2X2.generate(this, blockModels);
             case MULTIBLOCK_3X3 -> MULTIBLOCK_3X3.generate(this, blockModels);
             case MULTIBLOCK_4X4 -> MULTIBLOCK_4X4.generate(this, blockModels);
@@ -152,6 +128,7 @@ public class Variant extends VariantModels {
             case AR -> AR.generate(this, blockModels);
             case MULTI_LAYER_LAVA_AR -> LAVASTONE_AR.generate(this, blockModels);
             case MULTI_LAYER_WATER_AR -> WATERSTONE_AR.generate(this, blockModels);
+            case REDSTONE_LAMP -> REDSTONE_LAMP.generate(this, blockModels);
         }
     }
 

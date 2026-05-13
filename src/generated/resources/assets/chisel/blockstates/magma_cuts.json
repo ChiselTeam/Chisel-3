@@ -1,5 +1,7 @@
 {
   "neoforge:definition_type": "chisel:ctm_definition_loader",
+  "base_emissivity": 15,
+  "base_tint_index": 0,
   "connected_faces": [
     "down",
     "up",
@@ -24,7 +26,7 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:magma_cuts",
-    "model_type": "multiblock_4x4",
+    "model_type": "lava_4x4",
     "name": "magma_cuts"
   }
 }

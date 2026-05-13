@@ -8,148 +8,167 @@
     },
     {
       "block": "chisel:magma_array",
-      "model_type": "multiblock_2x2",
+      "model_type": "lava_2x2",
       "name": "magma_array"
     },
     {
       "block": "chisel:magma_braid",
+      "model_type": "multi_layer_lava",
       "name": "magma_braid"
     },
     {
       "block": "chisel:magma_chaotic_bricks",
-      "model_type": "multiblock_3x3",
+      "model_type": "lava_3x3",
       "name": "magma_chaotic_bricks"
     },
     {
       "block": "chisel:magma_chaotic_medium",
+      "model_type": "multi_layer_lava",
       "name": "magma_chaotic_medium"
     },
     {
       "block": "chisel:magma_chaotic_small",
+      "model_type": "multi_layer_lava",
       "name": "magma_chaotic_small"
     },
     {
       "block": "chisel:magma_circular",
-      "model_type": "connected",
+      "model_type": "multi_layer_connected_glow",
       "name": "magma_circular"
     },
     {
       "block": "chisel:magma_cracked",
+      "model_type": "multi_layer_lava",
       "name": "magma_cracked"
     },
     {
       "block": "chisel:magma_cracked_bricks",
+      "model_type": "multi_layer_lava",
       "name": "magma_cracked_bricks"
     },
     {
       "block": "chisel:magma_cuts",
-      "model_type": "multiblock_4x4",
+      "model_type": "lava_4x4",
       "name": "magma_cuts"
     },
     {
       "block": "chisel:magma_dent",
-      "model_type": "connected",
+      "model_type": "multi_layer_connected_glow",
       "name": "magma_dent"
     },
     {
       "block": "chisel:magma_encased_bricks",
-      "model_type": "connected",
+      "model_type": "multi_layer_connected_glow",
       "name": "magma_encased_bricks"
     },
     {
       "block": "chisel:magma_french_1",
+      "model_type": "multi_layer_lava",
       "name": "magma_french_1"
     },
     {
       "block": "chisel:magma_french_2",
+      "model_type": "multi_layer_lava",
       "name": "magma_french_2"
     },
     {
       "block": "chisel:magma_jellybean",
-      "model_type": "multiblock_2x2",
+      "model_type": "lava_2x2",
       "name": "magma_jellybean"
     },
     {
       "block": "chisel:magma_layers",
+      "model_type": "multi_layer_lava",
       "name": "magma_layers"
     },
     {
       "block": "chisel:magma_mosaic",
-      "model_type": "connected",
+      "model_type": "multi_layer_connected_glow",
       "name": "magma_mosaic"
     },
     {
       "block": "chisel:magma_ornate",
+      "model_type": "multi_layer_lava",
       "name": "magma_ornate"
     },
     {
       "block": "chisel:magma_panel",
+      "model_type": "multi_layer_lava",
       "name": "magma_panel"
     },
     {
       "block": "chisel:magma_pillar",
-      "model_type": "top_bottom_side",
+      "model_type": "multi_layer_lava_top_bottom_side",
       "name": "magma_pillar"
     },
     {
       "block": "chisel:magma_prism",
+      "model_type": "multi_layer_lava",
       "name": "magma_prism"
     },
     {
       "block": "chisel:magma_raw",
+      "model_type": "multi_layer_lava",
       "name": "magma_raw"
     },
     {
       "block": "chisel:magma_road",
+      "model_type": "multi_layer_lava",
       "name": "magma_road"
     },
     {
       "block": "chisel:magma_slanted",
-      "model_type": "multiblock_2x2",
+      "model_type": "lava_2x2",
       "name": "magma_slanted"
     },
     {
       "block": "chisel:magma_small_bricks",
+      "model_type": "multi_layer_lava",
       "name": "magma_small_bricks"
     },
     {
       "block": "chisel:magma_soft_bricks",
+      "model_type": "multi_layer_lava",
       "name": "magma_soft_bricks"
     },
     {
       "block": "chisel:magma_solid_bricks",
+      "model_type": "multi_layer_lava",
       "name": "magma_solid_bricks"
     },
     {
       "block": "chisel:magma_tiles_large",
-      "model_type": "connected",
+      "model_type": "multi_layer_connected_glow",
       "name": "magma_tiles_large"
     },
     {
       "block": "chisel:magma_tiles_medium",
+      "model_type": "multi_layer_lava",
       "name": "magma_tiles_medium"
     },
     {
       "block": "chisel:magma_tiles_small",
+      "model_type": "multi_layer_lava",
       "name": "magma_tiles_small"
     },
     {
       "block": "chisel:magma_triple_bricks",
+      "model_type": "multi_layer_lava",
       "name": "magma_triple_bricks"
     },
     {
       "block": "chisel:magma_twisted",
-      "model_type": "top_bottom_side",
+      "model_type": "multi_layer_lava_top_bottom_side",
       "name": "magma_twisted"
     },
     {
       "block": "chisel:magma_weaver",
-      "model_type": "connected",
+      "model_type": "multi_layer_connected_glow",
       "name": "magma_weaver"
     },
     {
       "block": "chisel:magma_zag",
-      "model_type": "ar",
+      "model_type": "multi_layer_lava_ar",
       "name": "magma_zag"
     }
   ]

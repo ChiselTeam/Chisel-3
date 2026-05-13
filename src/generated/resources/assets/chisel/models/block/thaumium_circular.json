@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "chisel:block/thaumium/thaumium_circular",
-    "overlay_connected": "chisel:block/thaumium/thaumium_circular-ctm",
-    "overlay_texture": "chisel:block/thaumium/thaumium_circular",
-    "particle": "chisel:block/thaumium/thaumium_circular"
-  }
-}

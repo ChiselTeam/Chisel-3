@@ -102,7 +102,6 @@ public class ChiselTabs {
                         ChiselBlocks.ANTIBLOCK.getFamily(),
                         ChiselBlocks.GLASS.getFamily(),
                         ChiselBlocks.TORCH.getFamily(),
-                        ChiselBlocks.CARPET.getFamily(),
                         ChiselBlocks.CLOUD.getFamily(),
                         ChiselBlocks.DIAMOND.getFamily(),
                         ChiselBlocks.DIRT.getFamily(),
@@ -162,6 +161,7 @@ public class ChiselTabs {
                 output.accept(ChiselItems.CHISEL_IRON.get());
                 output.accept(ChiselItems.CHISEL_DIAMOND.get());
                 output.accept(ChiselItems.CHISEL_OBSIDIAN.get());
+                output.accept(ChiselItems.OFFSET_TOOL.get());
                 output.accept(ChiselBlocks.AUTO_CHISEL.get().asItem());
                 output.accept(ChiselItems.UPGRADE_STACK.get());
                 output.accept(ChiselItems.UPGRADE_SPEED.get());

@@ -8,6 +8,7 @@
     },
     {
       "block": "chisel:redstone_lamp_square",
+      "model_type": "redstone_lamp",
       "name": "redstone_lamp_square"
     }
   ]

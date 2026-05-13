@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "chisel:block/tallow/tallow_block-bottom",
+    "side": "chisel:block/tallow/tallow_block-side",
+    "top": "chisel:block/tallow/tallow_block-top"
+  }
+}

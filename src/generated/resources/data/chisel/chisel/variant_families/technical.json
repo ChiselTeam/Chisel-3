@@ -12,6 +12,36 @@
       "name": "technical_cables"
     },
     {
+      "block": "chisel:technical_engineering",
+      "model_type": "connected",
+      "name": "technical_engineering"
+    },
+    {
+      "block": "chisel:technical_engineering_1",
+      "model_type": "connected",
+      "name": "technical_engineering_1"
+    },
+    {
+      "block": "chisel:technical_engineering_2",
+      "model_type": "connected",
+      "name": "technical_engineering_2"
+    },
+    {
+      "block": "chisel:technical_engineering_3",
+      "model_type": "connected",
+      "name": "technical_engineering_3"
+    },
+    {
+      "block": "chisel:technical_engineering_prototype",
+      "model_type": "connected",
+      "name": "technical_engineering_prototype"
+    },
+    {
+      "block": "chisel:technical_exhaust",
+      "model_type": "connected",
+      "name": "technical_exhaust"
+    },
+    {
       "block": "chisel:technical_fan_fast",
       "model_type": "top_bottom_side",
       "name": "technical_fan_fast"
@@ -30,6 +60,11 @@
       "block": "chisel:technical_fan_malfunction_slow",
       "model_type": "top_bottom_side",
       "name": "technical_fan_malfunction_slow"
+    },
+    {
+      "block": "chisel:technical_fan_massive",
+      "model_type": "v9",
+      "name": "technical_fan_massive"
     },
     {
       "block": "chisel:technical_fan_still",
@@ -56,22 +91,71 @@
       "name": "technical_grate_rusty"
     },
     {
+      "block": "chisel:technical_hex_plating",
+      "model_type": "v9",
+      "name": "technical_hex_plating"
+    },
+    {
       "block": "chisel:technical_insulation",
       "model_type": "connected",
       "name": "technical_insulation"
+    },
+    {
+      "block": "chisel:technical_makeshift_panels",
+      "model_type": "v9",
+      "name": "technical_makeshift_panels"
+    },
+    {
+      "block": "chisel:technical_megacell",
+      "model_type": "top_bottom_side",
+      "name": "technical_megacell"
     },
     {
       "block": "chisel:technical_old",
       "name": "technical_old"
     },
     {
+      "block": "chisel:technical_oldtimeyserveranim",
+      "name": "technical_oldtimeyserveranim"
+    },
+    {
       "block": "chisel:technical_panel_caution",
       "name": "technical_panel_caution"
+    },
+    {
+      "block": "chisel:technical_piping",
+      "model_type": "r9",
+      "name": "technical_piping"
+    },
+    {
+      "block": "chisel:technical_rusty",
+      "model_type": "r9",
+      "name": "technical_rusty"
     },
     {
       "block": "chisel:technical_scaffold",
       "model_type": "connected",
       "name": "technical_scaffold"
+    },
+    {
+      "block": "chisel:technical_scaffold_large",
+      "model_type": "connected",
+      "name": "technical_scaffold_large"
+    },
+    {
+      "block": "chisel:technical_scaffold_large_1",
+      "model_type": "connected",
+      "name": "technical_scaffold_large_1"
+    },
+    {
+      "block": "chisel:technical_scaffold_large_2",
+      "model_type": "connected",
+      "name": "technical_scaffold_large_2"
+    },
+    {
+      "block": "chisel:technical_scaffold_large_3",
+      "model_type": "connected",
+      "name": "technical_scaffold_large_3"
     },
     {
       "block": "chisel:technical_scaffold_transparent",
@@ -82,6 +166,11 @@
       "block": "chisel:technical_spinning_stuff",
       "model_type": "connected",
       "name": "technical_spinning_stuff"
+    },
+    {
+      "block": "chisel:technical_sturdy",
+      "model_type": "connected",
+      "name": "technical_sturdy"
     },
     {
       "block": "chisel:technical_under_large",
@@ -107,6 +196,16 @@
       "block": "chisel:technical_wall_pads",
       "model_type": "connected",
       "name": "technical_wall_pads"
+    },
+    {
+      "block": "chisel:technical_weathered_green_panels",
+      "model_type": "r4",
+      "name": "technical_weathered_green_panels"
+    },
+    {
+      "block": "chisel:technical_weathered_orange_panels",
+      "model_type": "r4",
+      "name": "technical_weathered_orange_panels"
     },
     {
       "block": "chisel:technical_wires",

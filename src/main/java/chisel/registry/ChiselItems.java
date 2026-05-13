@@ -1,10 +1,7 @@
 package chisel.registry;
 
 import chisel.Chisel;
-import chisel.item.BallOMossItem;
-import chisel.item.ChiselItem;
-import chisel.item.CloudInABottleItem;
-import chisel.item.SmashingRockItem;
+import chisel.item.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
@@ -21,6 +18,8 @@ public class ChiselItems {
     public static DeferredItem<Item> CHISEL_IRON = registerChisel("chisel_iron", new Item.Properties().stacksTo(1).durability(512));
     public static DeferredItem<Item> CHISEL_DIAMOND = registerChisel("chisel_diamond", new Item.Properties().stacksTo(1).durability(5096));
     public static DeferredItem<Item> CHISEL_OBSIDIAN = registerChisel("chisel_obsidian", new Item.Properties().stacksTo(1).durability(10048));
+
+    public static DeferredItem<Item> OFFSET_TOOL = register("offset_tool", OffsetToolItem::new, Item.Properties::new);
 
     public static DeferredItem<Item> UPGRADE_STACK = register("upgrade_stack");
     public static DeferredItem<Item> UPGRADE_SPEED = register("upgrade_speed");

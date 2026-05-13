@@ -66,7 +66,7 @@ public class UnbakedConnectedTextureBlockStateModel extends AbstractUnbakedConne
         AbstractUnbakedConnectedTextureBlockStateModel specialized = switch (variant.getModelType()) {
             case AR, MULTI_LAYER_LAVA_AR, MULTI_LAYER_WATER_AR ->
                     new ARUnbakedModel(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity);
-            case MULTIBLOCK_2X2, MULTIBLOCK_3X3, MULTIBLOCK_4X4, V4, MULTI_LAYER_WATER_2X2, MULTI_LAYER_WATER_3X3, MULTI_LAYER_WATER_4X4 ->
+            case MULTIBLOCK_2X2, MULTIBLOCK_3X3, MULTIBLOCK_4X4, V4, V9, V16, R4, R9, R16, MULTI_LAYER_WATER_2X2, MULTI_LAYER_WATER_3X3, MULTI_LAYER_WATER_4X4 ->
                     new MultiblockUnbakedCTMModel(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity);
             case CTMH, CTMV, BOOKSHELF ->
                     new DirectionalUnbakedCTMModel(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity);

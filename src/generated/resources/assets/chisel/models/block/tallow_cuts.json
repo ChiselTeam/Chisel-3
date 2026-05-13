@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "chisel:block/tallow/tallow_cuts",
-    "overlay_4x4": "chisel:block/tallow/tallow_cuts-4x4",
-    "particle": "chisel:block/tallow/tallow_cuts"
-  }
-}

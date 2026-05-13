@@ -22,6 +22,9 @@ public class ChiselLang extends LangHelper {
         add("item.chisel.chisel.desc2", "Left click to chisel blocks in the world");
         add("item.chisel.chisel.desc3", "Target a block by leaving it in the Chisel Slot");
 
+        add("item.chisel.offset_tool.desc", "Right click highlighted direction to shift texture");
+        add("item.chisel.offset_tool.desc2", "Will only highlight on textures that can be offset");
+
         add("item.chisel.ball_o_moss.desc", "Right click to throw. Will change a variety of blocks into their mossy counterpart");
         add("item.chisel.cloud_in_a_bottle.desc", "Right click to throw. This will spawn clouds on impact.");
         add("item.chisel.smashing_rock.desc", "Right click to throw. Crushes blocks on impact.");
@@ -47,6 +50,7 @@ public class ChiselLang extends LangHelper {
         addItem(ChiselItems.CHISEL_DIAMOND, "Diamond Chisel");
         addItem(ChiselItems.CHISEL_IRON, "Chisel");
         addItem(ChiselItems.CHISEL_OBSIDIAN, "Obsidian Chisel");
+        addItem(ChiselItems.OFFSET_TOOL, "Ender Offset Wand");
         addItem(ChiselItems.CLOUD_IN_A_BOTTLE, "Cloud in a Bottle");
         addItem(ChiselItems.SMASHING_ROCK, "Smashing Rock");
         addItem(ChiselItems.UPGRADE_AUTOMATION, "Automation Upgrade");
