@@ -10,9 +10,9 @@ public class LaboratoryFamily extends ChiselFamily {
         family = builder("laboratory")
                 .addVariant("laboratory_checkerboard", props)
                 .addVariant("laboratory_clearscreen", props, VariantModelType.CONNECTED)
-                .addVariant("laboratory_console_information", props, VariantModelType.TBS)
-                .addVariant("laboratory_console_left", props, VariantModelType.TBS)
-                .addVariant("laboratory_console_right", props, VariantModelType.TBS)
+                .addVariant("laboratory_console_information", props, VariantModelType.CTMH)
+                .addVariant("laboratory_console_left", props, VariantModelType.CTMH)
+                .addVariant("laboratory_console_right", props, VariantModelType.CTMH)
                 .addVariant("laboratory_floor", props)
                 .addVariant("laboratory_panel_clear", props)
                 .addVariant("laboratory_panel_dotted", props)
@@ -53,4 +53,3 @@ public class LaboratoryFamily extends ChiselFamily {
         lang.addBlock(getVariant("laboratory_wall_vent"), "Laboratory Block", "Enamelled Wall Vents");
     }
 }
-

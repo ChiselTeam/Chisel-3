@@ -1,8 +1,7 @@
 package chisel.entity;
 
-import chisel.Chisel;
 import chisel.core.projectile.BallOMossData;
-import chisel.datagen.ChiselBallOMossRegistry;
+import chisel.datagen.registry.ChiselBallOMossRegistry;
 import chisel.registry.ChiselEntities;
 import chisel.registry.ChiselItems;
 import chisel.registry.ChiselSounds;

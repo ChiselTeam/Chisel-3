@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/redstone_lamp/redstone_lamp_square"
+  }
+}

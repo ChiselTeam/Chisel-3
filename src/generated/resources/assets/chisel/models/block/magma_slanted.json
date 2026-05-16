@@ -1,0 +1,10 @@
+{
+  "parent": "chisel:block/cube_multi_pass",
+  "textures": {
+    "all": "chisel:block/magma/magma_slanted",
+    "layer0": "minecraft:block/lava_still",
+    "layer1": "chisel:block/magma/magma_slanted",
+    "overlay_2x2": "chisel:block/magma/magma_slanted-2x2",
+    "particle": "chisel:block/magma/magma_slanted"
+  }
+}

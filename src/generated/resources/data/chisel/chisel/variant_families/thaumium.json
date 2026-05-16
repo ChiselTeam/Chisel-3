@@ -1,0 +1,55 @@
+{
+  "family_name": "thaumium",
+  "tag": "c:chisel/thaumium",
+  "variants": [
+    {
+      "block": "chisel:thaumium_bevel",
+      "name": "thaumium_bevel"
+    },
+    {
+      "block": "chisel:thaumium_block",
+      "name": "thaumium_block"
+    },
+    {
+      "block": "chisel:thaumium_bricks",
+      "model_type": "connected",
+      "name": "thaumium_bricks"
+    },
+    {
+      "block": "chisel:thaumium_chunks",
+      "name": "thaumium_chunks"
+    },
+    {
+      "block": "chisel:thaumium_lattice",
+      "name": "thaumium_lattice"
+    },
+    {
+      "block": "chisel:thaumium_ornate",
+      "name": "thaumium_ornate"
+    },
+    {
+      "block": "chisel:thaumium_planks",
+      "model_type": "connected",
+      "name": "thaumium_planks"
+    },
+    {
+      "block": "chisel:thaumium_runes_purple",
+      "model_type": "v9",
+      "name": "thaumium_runes_purple"
+    },
+    {
+      "block": "chisel:thaumium_runes",
+      "model_type": "v9",
+      "name": "thaumium_runes"
+    },
+    {
+      "block": "chisel:thaumium_small",
+      "name": "thaumium_small"
+    },
+    {
+      "block": "chisel:thaumium_totem",
+      "model_type": "r4",
+      "name": "thaumium_totem"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/technical/technical_fan_massive",
+    "overlay_3x3": "chisel:block/technical/technical_fan_massive-v9",
+    "particle": "chisel:block/technical/technical_fan_massive"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "family_name": "wool_purple",
+  "tag": "c:chisel/wool_purple",
+  "variants": [
+    {
+      "block": "minecraft:purple_wool",
+      "name": "block.minecraft.purple_wool"
+    },
+    {
+      "block": "chisel:wool_purple_legacy",
+      "model_type": "connected",
+      "name": "wool_purple_legacy"
+    },
+    {
+      "block": "chisel:wool_purple_llama",
+      "model_type": "connected",
+      "name": "wool_purple_llama"
+    }
+  ]
+}

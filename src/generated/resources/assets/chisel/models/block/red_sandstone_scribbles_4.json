@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_scribbles_4-bottom",
+    "side": "chisel:block/red_sandstone/red_sandstone_scribbles_4-side",
+    "top": "chisel:block/red_sandstone/red_sandstone_scribbles_4-top"
+  }
+}

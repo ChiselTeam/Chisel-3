@@ -13,17 +13,17 @@
     },
     {
       "block": "chisel:laboratory_console_information",
-      "model_type": "top_bottom_side",
+      "model_type": "ctmh",
       "name": "laboratory_console_information"
     },
     {
       "block": "chisel:laboratory_console_left",
-      "model_type": "top_bottom_side",
+      "model_type": "ctmh",
       "name": "laboratory_console_left"
     },
     {
       "block": "chisel:laboratory_console_right",
-      "model_type": "top_bottom_side",
+      "model_type": "ctmh",
       "name": "laboratory_console_right"
     },
     {

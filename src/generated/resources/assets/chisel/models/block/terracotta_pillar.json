@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "bottom": "chisel:block/terracotta/terracotta_pillar-bottom",
+    "side": "chisel:block/terracotta/terracotta_pillar-side",
+    "top": "chisel:block/terracotta/terracotta_pillar-top"
+  }
+}

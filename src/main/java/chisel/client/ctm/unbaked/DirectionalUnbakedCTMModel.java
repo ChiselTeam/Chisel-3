@@ -10,6 +10,8 @@ import chisel.core.variant.Variant;
 import chisel.core.variant.VariantModelType;
 import com.mojang.datafixers.util.Pair;
 import com.mojang.math.Quadrant;
+import com.mojang.math.Transformation;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.client.renderer.block.dispatch.BlockStateModel;
 import net.minecraft.client.renderer.block.dispatch.ModelState;
 import net.minecraft.client.renderer.block.dispatch.Variant.SimpleModelState;
@@ -25,6 +27,7 @@ import net.minecraft.core.Vec3i;
 import net.minecraft.resources.Identifier;
 import net.neoforged.neoforge.client.model.NeoForgeModelProperties;
 import net.neoforged.neoforge.client.model.UnbakedElementsHelper;
+import net.neoforged.neoforge.client.model.block.CustomUnbakedBlockStateModel;
 import org.joml.Vector3f;
 import org.jspecify.annotations.NonNull;
 
@@ -37,7 +40,7 @@ public class DirectionalUnbakedCTMModel extends AbstractUnbakedConnectedTextureB
     }
 
     @Override
-    public com.mojang.serialization.MapCodec<? extends net.neoforged.neoforge.client.model.block.CustomUnbakedBlockStateModel> codec() {
+    public @NonNull MapCodec<? extends CustomUnbakedBlockStateModel> codec() {
         return UnbakedConnectedTextureBlockStateModel.CODEC;
     }
 
@@ -45,7 +48,7 @@ public class DirectionalUnbakedCTMModel extends AbstractUnbakedConnectedTextureB
     public @NonNull BlockStateModel bake(@NonNull ModelBaker baker) {
         ResolvedModel model = baker.getModel(modelLocation);
         ModelState state = SimpleModelState.DEFAULT.asModelState();
-        com.mojang.math.Transformation rootTransform = model.getTopAdditionalProperties().getOrDefault(NeoForgeModelProperties.TRANSFORM, com.mojang.math.Transformation.IDENTITY);
+        Transformation rootTransform = model.getTopAdditionalProperties().getOrDefault(NeoForgeModelProperties.TRANSFORM, Transformation.IDENTITY);
         if (!rootTransform.isIdentity()) {
             state = UnbakedElementsHelper.composeRootTransformIntoModelState(state, rootTransform);
         }
@@ -59,6 +62,8 @@ public class DirectionalUnbakedCTMModel extends AbstractUnbakedConnectedTextureB
         Material overlaySideMaterial = textureSlots.getMaterial("overlay_side");
         Material overlayHorizontalMaterial = textureSlots.getMaterial("overlay_horizontal");
         Material overlayVerticalMaterial = textureSlots.getMaterial("overlay_vertical");
+        Material topMaterial = textureSlots.getMaterial("top");
+        Material bottomMaterial = textureSlots.getMaterial("bottom");
 
         Material layer0Material = textureSlots.getMaterial("layer0");
         Material layer1Material = textureSlots.getMaterial("layer1");
@@ -72,6 +77,8 @@ public class DirectionalUnbakedCTMModel extends AbstractUnbakedConnectedTextureB
         Material.Baked bakedOverlaySide = overlaySideMaterial != null ? baker.materials().get(overlaySideMaterial, model) : bakedOverlay;
         Material.Baked bakedOverlayHorizontal = overlayHorizontalMaterial != null ? baker.materials().get(overlayHorizontalMaterial, model) : null;
         Material.Baked bakedOverlayVertical = overlayVerticalMaterial != null ? baker.materials().get(overlayVerticalMaterial, model) : null;
+        Material.Baked bakedTop = topMaterial != null ? baker.materials().get(topMaterial, model) : null;
+        Material.Baked bakedBottom = bottomMaterial != null ? baker.materials().get(bottomMaterial, model) : null;
 
         Map<Direction, BakedQuad[]> baseQuads = new EnumMap<>(Direction.class);
         Map<Direction, BakedQuad[]> horizontalQuads = new EnumMap<>(Direction.class);
@@ -85,6 +92,12 @@ public class DirectionalUnbakedCTMModel extends AbstractUnbakedConnectedTextureB
         for (Direction face : Direction.values()) {
             Direction cull = getCullface(face, from, to);
             Direction[] planeDirections = CTMLogic.AXIS_PLANE_DIRECTIONS[face.getAxis().ordinal()];
+
+            Material.Baked baseForFace = bakedBase;
+            if (variant.getModelType() == VariantModelType.CTMH) {
+                if (face == Direction.UP && bakedTop != null) baseForFace = bakedTop;
+                else if (face == Direction.DOWN && bakedBottom != null) baseForFace = bakedBottom;
+            }
 
             List<BakedQuad> baseQuadList = new ArrayList<>();
             for (int c = 0; c < 4; c++) {
@@ -100,12 +113,12 @@ public class DirectionalUnbakedCTMModel extends AbstractUnbakedConnectedTextureB
                         to.z() < center ? to.z() : Math.max(center, (float) corner.getZ() - (16 - to.z()))
                 );
 
-                if (bakedBase != null) {
+                if (baseForFace != null) {
                     CuboidFace.UVs qUvs = getRelativeUVs(face, qFrom, qTo);
                     CuboidFace baseFace = new CuboidFace(cull, baseTintIndex, "", CTMLogic.NONE.remapUVs(qUvs), Quadrant.R0);
                     Vector3f offsetFrom = new Vector3f(qFrom);
                     Vector3f offsetTo = new Vector3f(qTo);
-                    baseQuadList.add(FaceBakery.bakeQuad(baker, offsetFrom, offsetTo, baseFace, bakedBase, face, state, null, true, baseEmissivity));
+                    baseQuadList.add(FaceBakery.bakeQuad(baker, offsetFrom, offsetTo, baseFace, baseForFace, face, state, null, true, baseEmissivity));
                 }
             }
             if (!baseQuadList.isEmpty()) {
@@ -114,7 +127,13 @@ public class DirectionalUnbakedCTMModel extends AbstractUnbakedConnectedTextureB
 
             CuboidFace.UVs faceUvs = getRelativeUVs(face, from, to);
 
-            if ((variant.getModelType() == VariantModelType.CTMH || variant.getModelType() == VariantModelType.BOOKSHELF) && bakedOverlayHorizontal != null) {
+            boolean isCtmhFace = (variant.getModelType() == VariantModelType.CTMH || variant.getModelType() == VariantModelType.BOOKSHELF) && bakedOverlayHorizontal != null;
+            // For CTMH, skip the horizontal overlay on UP/DOWN; their top/bottom textures are rendered as the base instead.
+            if (variant.getModelType() == VariantModelType.CTMH && (face == Direction.UP || face == Direction.DOWN)) {
+                isCtmhFace = false;
+            }
+            if (isCtmhFace) {
+                Material.Baked bakedOverlayH = bakedOverlayHorizontal;
                 BakedQuad[] quads = new BakedQuad[CTMLogicHorizontal.values().length];
                 Vector3f qFrom = from;
                 Vector3f qTo = to;
@@ -126,7 +145,7 @@ public class DirectionalUnbakedCTMModel extends AbstractUnbakedConnectedTextureB
                 for (CTMLogicHorizontal logic : CTMLogicHorizontal.values()) {
                     CuboidFace connFace = new CuboidFace(cull, tintIndex, "", logic.remapUVs(faceUvs), Quadrant.R0);
                     if (connFace.cullForDirection() == null) unculledFaces.add(face);
-                    quads[logic.ordinal()] = FaceBakery.bakeQuad(baker, qFrom, qTo, connFace, bakedOverlayHorizontal, face, state, null, true, emissivity);
+                    quads[logic.ordinal()] = FaceBakery.bakeQuad(baker, qFrom, qTo, connFace, bakedOverlayH, face, state, null, true, emissivity);
                 }
                 horizontalQuads.put(face, quads);
             }

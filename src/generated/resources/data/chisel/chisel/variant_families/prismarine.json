@@ -1,0 +1,152 @@
+{
+  "family_name": "prismarine",
+  "tag": "c:chisel/prismarine",
+  "variants": [
+    {
+      "block": "minecraft:prismarine",
+      "name": "block.minecraft.prismarine"
+    },
+    {
+      "block": "chisel:prismarine_array",
+      "model_type": "multiblock_2x2",
+      "name": "prismarine_array"
+    },
+    {
+      "block": "chisel:prismarine_braid",
+      "name": "prismarine_braid"
+    },
+    {
+      "block": "chisel:prismarine_chaotic_bricks",
+      "model_type": "multiblock_3x3",
+      "name": "prismarine_chaotic_bricks"
+    },
+    {
+      "block": "chisel:prismarine_chaotic_medium",
+      "name": "prismarine_chaotic_medium"
+    },
+    {
+      "block": "chisel:prismarine_chaotic_small",
+      "name": "prismarine_chaotic_small"
+    },
+    {
+      "block": "chisel:prismarine_circular",
+      "model_type": "connected",
+      "name": "prismarine_circular"
+    },
+    {
+      "block": "chisel:prismarine_cracked",
+      "name": "prismarine_cracked"
+    },
+    {
+      "block": "chisel:prismarine_cracked_bricks",
+      "name": "prismarine_cracked_bricks"
+    },
+    {
+      "block": "chisel:prismarine_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "prismarine_cuts"
+    },
+    {
+      "block": "chisel:prismarine_dent",
+      "model_type": "connected",
+      "name": "prismarine_dent"
+    },
+    {
+      "block": "chisel:prismarine_encased_bricks",
+      "model_type": "connected",
+      "name": "prismarine_encased_bricks"
+    },
+    {
+      "block": "chisel:prismarine_french_1",
+      "name": "prismarine_french_1"
+    },
+    {
+      "block": "chisel:prismarine_french_2",
+      "name": "prismarine_french_2"
+    },
+    {
+      "block": "chisel:prismarine_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "prismarine_jellybean"
+    },
+    {
+      "block": "chisel:prismarine_layers",
+      "name": "prismarine_layers"
+    },
+    {
+      "block": "chisel:prismarine_mosaic",
+      "model_type": "connected",
+      "name": "prismarine_mosaic"
+    },
+    {
+      "block": "chisel:prismarine_ornate",
+      "name": "prismarine_ornate"
+    },
+    {
+      "block": "chisel:prismarine_panel",
+      "name": "prismarine_panel"
+    },
+    {
+      "block": "chisel:prismarine_pillar",
+      "model_type": "top_bottom_side",
+      "name": "prismarine_pillar"
+    },
+    {
+      "block": "chisel:prismarine_prism",
+      "name": "prismarine_prism"
+    },
+    {
+      "block": "chisel:prismarine_road",
+      "name": "prismarine_road"
+    },
+    {
+      "block": "chisel:prismarine_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "prismarine_slanted"
+    },
+    {
+      "block": "chisel:prismarine_small_bricks",
+      "name": "prismarine_small_bricks"
+    },
+    {
+      "block": "chisel:prismarine_soft_bricks",
+      "name": "prismarine_soft_bricks"
+    },
+    {
+      "block": "chisel:prismarine_solid_bricks",
+      "name": "prismarine_solid_bricks"
+    },
+    {
+      "block": "chisel:prismarine_tiles_large",
+      "model_type": "connected",
+      "name": "prismarine_tiles_large"
+    },
+    {
+      "block": "chisel:prismarine_tiles_medium",
+      "name": "prismarine_tiles_medium"
+    },
+    {
+      "block": "chisel:prismarine_tiles_small",
+      "name": "prismarine_tiles_small"
+    },
+    {
+      "block": "chisel:prismarine_triple_bricks",
+      "name": "prismarine_triple_bricks"
+    },
+    {
+      "block": "chisel:prismarine_twisted",
+      "model_type": "top_bottom_side",
+      "name": "prismarine_twisted"
+    },
+    {
+      "block": "chisel:prismarine_weaver",
+      "model_type": "connected",
+      "name": "prismarine_weaver"
+    },
+    {
+      "block": "chisel:prismarine_zag",
+      "model_type": "ar",
+      "name": "prismarine_zag"
+    }
+  ]
+}

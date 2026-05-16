@@ -38,6 +38,7 @@ public class ChiselModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ChiselItems.CHISEL_IRON.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ChiselItems.CHISEL_DIAMOND.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ChiselItems.CHISEL_OBSIDIAN.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ChiselItems.OFFSET_TOOL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ChiselItems.UPGRADE_STACK.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ChiselItems.UPGRADE_SPEED.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ChiselItems.UPGRADE_REVERSION.get(), ModelTemplates.FLAT_ITEM);

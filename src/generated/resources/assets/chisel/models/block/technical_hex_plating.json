@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/technical/technical_hex_plating",
+    "overlay_3x3": "chisel:block/technical/technical_hex_plating-v9",
+    "particle": "chisel:block/technical/technical_hex_plating"
+  }
+}

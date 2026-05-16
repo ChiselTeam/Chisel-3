@@ -7,6 +7,8 @@ import chisel.client.ctm.logic.CTMLogic;
 import chisel.core.variant.Variant;
 import com.mojang.datafixers.util.Pair;
 import com.mojang.math.Quadrant;
+import com.mojang.math.Transformation;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.client.renderer.block.dispatch.BlockStateModel;
 import net.minecraft.client.renderer.block.dispatch.ModelState;
 import net.minecraft.client.renderer.block.dispatch.Variant.SimpleModelState;
@@ -22,6 +24,7 @@ import net.minecraft.core.Vec3i;
 import net.minecraft.resources.Identifier;
 import net.neoforged.neoforge.client.model.NeoForgeModelProperties;
 import net.neoforged.neoforge.client.model.UnbakedElementsHelper;
+import net.neoforged.neoforge.client.model.block.CustomUnbakedBlockStateModel;
 import org.joml.Vector3f;
 import org.jspecify.annotations.NonNull;
 
@@ -34,7 +37,7 @@ public class StandardUnbakedCTMModel extends AbstractUnbakedConnectedTextureBloc
     }
 
     @Override
-    public com.mojang.serialization.MapCodec<? extends net.neoforged.neoforge.client.model.block.CustomUnbakedBlockStateModel> codec() {
+    public @NonNull MapCodec<? extends CustomUnbakedBlockStateModel> codec() {
         return UnbakedConnectedTextureBlockStateModel.CODEC;
     }
 
@@ -42,7 +45,7 @@ public class StandardUnbakedCTMModel extends AbstractUnbakedConnectedTextureBloc
     public @NonNull BlockStateModel bake(@NonNull ModelBaker baker) {
         ResolvedModel model = baker.getModel(modelLocation);
         ModelState state = SimpleModelState.DEFAULT.asModelState();
-        com.mojang.math.Transformation rootTransform = model.getTopAdditionalProperties().getOrDefault(NeoForgeModelProperties.TRANSFORM, com.mojang.math.Transformation.IDENTITY);
+        Transformation rootTransform = model.getTopAdditionalProperties().getOrDefault(NeoForgeModelProperties.TRANSFORM, Transformation.IDENTITY);
         if (!rootTransform.isIdentity()) {
             state = UnbakedElementsHelper.composeRootTransformIntoModelState(state, rootTransform);
         }

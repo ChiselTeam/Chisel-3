@@ -1,7 +1,7 @@
 package chisel.entity;
 
 import chisel.core.projectile.SmashingRockData;
-import chisel.datagen.ChiselSmashingRockRegistry;
+import chisel.datagen.registry.ChiselSmashingRockRegistry;
 import chisel.registry.ChiselEntities;
 import chisel.registry.ChiselItems;
 import chisel.registry.ChiselSounds;

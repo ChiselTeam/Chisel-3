@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/wool_red/wool_red_llama",
+    "overlay_connected": "chisel:block/wool_red/wool_red_llama-ctm",
+    "overlay_texture": "chisel:block/wool_red/wool_red_llama",
+    "particle": "chisel:block/wool_red/wool_red_llama"
+  }
+}

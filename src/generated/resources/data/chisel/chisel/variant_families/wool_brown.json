@@ -1,0 +1,20 @@
+{
+  "family_name": "wool_brown",
+  "tag": "c:chisel/wool_brown",
+  "variants": [
+    {
+      "block": "minecraft:brown_wool",
+      "name": "block.minecraft.brown_wool"
+    },
+    {
+      "block": "chisel:wool_brown_legacy",
+      "model_type": "connected",
+      "name": "wool_brown_legacy"
+    },
+    {
+      "block": "chisel:wool_brown_llama",
+      "model_type": "connected",
+      "name": "wool_brown_llama"
+    }
+  ]
+}

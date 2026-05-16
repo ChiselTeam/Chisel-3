@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/purpur/purpur_dent",
+    "overlay_connected": "chisel:block/purpur/purpur_dent-ctm",
+    "overlay_texture": "chisel:block/purpur/purpur_dent",
+    "particle": "chisel:block/purpur/purpur_dent"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "chisel:block/cube_multi_pass_top_bottom_side",
+  "textures": {
+    "bottom": "chisel:block/magma/magma_twisted-bottom",
+    "layer0": "minecraft:block/lava_still",
+    "layer1": "chisel:block/magma/magma_twisted-side",
+    "particle": "chisel:block/magma/magma_twisted-side",
+    "side": "chisel:block/magma/magma_twisted-side",
+    "top": "chisel:block/magma/magma_twisted-top"
+  }
+}

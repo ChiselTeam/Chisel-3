@@ -5,7 +5,6 @@
     "bottom": "chisel:block/dirt/dirt_horizontal-bottom",
     "overlay_horizontal": "chisel:block/dirt/dirt_horizontal-ctmh",
     "particle": "chisel:block/dirt/dirt_horizontal",
-    "side": "chisel:block/dirt/dirt_horizontal-side",
     "top": "chisel:block/dirt/dirt_horizontal-top"
   }
 }

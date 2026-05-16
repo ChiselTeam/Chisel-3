@@ -1,0 +1,20 @@
+{
+  "family_name": "wool_orange",
+  "tag": "c:chisel/wool_orange",
+  "variants": [
+    {
+      "block": "minecraft:orange_wool",
+      "name": "block.minecraft.orange_wool"
+    },
+    {
+      "block": "chisel:wool_orange_legacy",
+      "model_type": "connected",
+      "name": "wool_orange_legacy"
+    },
+    {
+      "block": "chisel:wool_orange_llama",
+      "model_type": "connected",
+      "name": "wool_orange_llama"
+    }
+  ]
+}

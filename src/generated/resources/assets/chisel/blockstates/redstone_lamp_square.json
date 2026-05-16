@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "chisel:block/redstone_lamp_square"
+    },
+    "lit=true": {
+      "model": "chisel:block/redstone_lamp_square_on"
+    }
+  }
+}

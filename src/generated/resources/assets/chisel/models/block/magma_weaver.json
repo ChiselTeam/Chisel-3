@@ -1,0 +1,12 @@
+{
+  "parent": "chisel:block/cube_multi_pass",
+  "textures": {
+    "all": "chisel:block/magma/magma_weaver",
+    "base_texture": "chisel:block/magma/magma_weaver-bg",
+    "layer0": "chisel:block/magma/magma_weaver-bg",
+    "layer1": "chisel:block/magma/magma_weaver",
+    "overlay_connected": "chisel:block/magma/magma_weaver-ctm",
+    "overlay_texture": "chisel:block/magma/magma_weaver",
+    "particle": "chisel:block/magma/magma_weaver"
+  }
+}

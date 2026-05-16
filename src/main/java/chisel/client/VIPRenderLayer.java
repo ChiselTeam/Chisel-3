@@ -27,13 +27,13 @@ public class VIPRenderLayer extends RenderLayer<AvatarRenderState, PlayerModel> 
         if(item == null) return;
 
         pose.pushPose();
-        if(state.isCrouching) pose.rotateAround(Axis.XP.rotation(28.64789F), 1.0F, 0.0F, 0.0F);
-        pose.rotateAround(Axis.XP.rotationDegrees(180), 1, 0, 0);
-        pose.rotateAround(Axis.YP.rotationDegrees(90), 0, 1, 0);
-        pose.translate(-0.25F, -0.85F, state.chestEquipment != ItemStack.EMPTY ? 0.28F : 0.2F);
+        getParentModel().body.translateAndRotate(pose);
+        pose.mulPose(Axis.XP.rotationDegrees(180.0F));
+        pose.mulPose(Axis.YP.rotationDegrees(90.0F));
+        boolean armor = state.chestEquipment != ItemStack.EMPTY;
+        pose.translate(-0.125F, -0.85F, armor ? 0.2F : 0.28F);
         pose.scale(0.5F, 0.5F, 0.5F);
 
-        getParentModel().body.translateAndRotate(pose);
         item.submit(pose, submit, lightCoords, OverlayTexture.NO_OVERLAY, 0);
         pose.popPose();
     }

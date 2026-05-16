@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.10]
+
+### Added
+- **Compatibility**: Built in compatibility with FTB Materials and AllTheOres!
+- **16 new block families**: Ancient Stone, Arcane, Certus, Charcoal, Coal, Coal Coke, Diabase, End Stone, Magma, Prismarine, Purpur, Red Sandstone, Redstone Lamp, Tallow, Terracotta, and Thaumium — each with their own full set of chiseled variants.
+- **Offset Tool**: a new item that lets you shift the connecting texture pattern of vertical-variant blocks on a per-chunk basis.
+  - Right-click a supported block to cycle its texture offset for that chunk — the change is instant and persists across saves.
+  - While holding the tool, an in-world overlay draws an "X" and a translucent arrow on the face you're aiming at, showing exactly which direction the offset will move.
+- **New connecting-texture styles**:
+  - **R4 / R9 / R16** — each block randomly picks one of 4, 9, or 16 sub-textures and uses it on all six faces, giving natural variation without manual placement.
+  - **V9 / V16** — larger vertical pattern atlases (3×3 and 4×4), joining the existing V4 for taller, more detailed vertical motifs.
+
+### Changed
+- **Technical** textures cleaned up: every file in the new technical texture folder now follows the project's `technical_*` naming, and the `scaffoldlarge` set was renamed to `scaffold_large` for consistency.
+- Lots of polish across existing families (Bookshelf, Glass, Laboratory, Redstone, Sandstone, Stained Glass, Stained Glass Pane, Technical, Wool) — new variants, better connecting-texture coverage, and tag-based inclusion fixes.
+
+### Removed
+- The standalone **Carpet** family has been retired; carpet variants are now handled through the wool/vanilla path.
+
+### Fixed
+- Various rendering fixes across the connecting-texture system, surfaced while building out the new R/V variants and the Offset Tool overlay.
+
 ## [3.0.9]
 
 ### Hotfix

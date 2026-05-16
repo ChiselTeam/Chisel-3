@@ -1,0 +1,20 @@
+{
+  "family_name": "wool_white",
+  "tag": "c:chisel/wool_white",
+  "variants": [
+    {
+      "block": "minecraft:white_wool",
+      "name": "block.minecraft.white_wool"
+    },
+    {
+      "block": "chisel:wool_white_legacy",
+      "model_type": "connected",
+      "name": "wool_white_legacy"
+    },
+    {
+      "block": "chisel:wool_white_llama",
+      "model_type": "connected",
+      "name": "wool_white_llama"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/thaumium/thaumium_planks",
+    "overlay_connected": "chisel:block/thaumium/thaumium_planks-ctm",
+    "overlay_texture": "chisel:block/thaumium/thaumium_planks",
+    "particle": "chisel:block/thaumium/thaumium_planks"
+  }
+}

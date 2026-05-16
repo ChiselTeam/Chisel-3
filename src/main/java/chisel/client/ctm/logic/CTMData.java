@@ -16,24 +16,37 @@ public final class CTMData {
     private final CTMLogicHorizontal[] logicHorizontal;
     private final CTMLogicVertical[] logicVertical;
     private final CTMLogicV4[] logicV4;
+    private final CTMLogicV9[] logicV9;
+    private final CTMLogicV16[] logicV16;
+    private final CTMLogicR4[] logicR4;
+    private final CTMLogicR9[] logicR9;
+    private final CTMLogicR16[] logicR16;
 
     public CTMData(Variant variant, CTMLogic[][] logic) {
-        this(variant, logic, null, null, null, null, null, null);
+        this(variant, logic, null, null, null, null, null, null, null, null, null, null, null);
     }
 
     public CTMData(Variant variant, CTMLogic[][] logic, CTMLogic2x2[] logic2x2, CTMLogic3x3[] logic3x3, CTMLogic4x4[] logic4x4) {
-        this(variant, logic, logic2x2, logic3x3, logic4x4, null, null, null);
+        this(variant, logic, logic2x2, logic3x3, logic4x4, null, null, null, null, null, null, null, null);
     }
 
     public CTMData(Variant variant, CTMLogic[][] logic, CTMLogic2x2[] logic2x2, CTMLogic3x3[] logic3x3, CTMLogic4x4[] logic4x4, CTMLogicHorizontal[] logicHorizontal) {
-        this(variant, logic, logic2x2, logic3x3, logic4x4, logicHorizontal, null, null);
+        this(variant, logic, logic2x2, logic3x3, logic4x4, logicHorizontal, null, null, null, null, null, null, null);
     }
 
     public CTMData(Variant variant, CTMLogic[][] logic, CTMLogic2x2[] logic2x2, CTMLogic3x3[] logic3x3, CTMLogic4x4[] logic4x4, CTMLogicHorizontal[] logicHorizontal, CTMLogicVertical[] logicVertical) {
-        this(variant, logic, logic2x2, logic3x3, logic4x4, logicHorizontal, logicVertical, null);
+        this(variant, logic, logic2x2, logic3x3, logic4x4, logicHorizontal, logicVertical, null, null, null, null, null, null);
     }
 
     public CTMData(Variant variant, CTMLogic[][] logic, CTMLogic2x2[] logic2x2, CTMLogic3x3[] logic3x3, CTMLogic4x4[] logic4x4, CTMLogicHorizontal[] logicHorizontal, CTMLogicVertical[] logicVertical, CTMLogicV4[] logicV4) {
+        this(variant, logic, logic2x2, logic3x3, logic4x4, logicHorizontal, logicVertical, logicV4, null, null, null, null, null);
+    }
+
+    public CTMData(Variant variant, CTMLogic[][] logic, CTMLogic2x2[] logic2x2, CTMLogic3x3[] logic3x3, CTMLogic4x4[] logic4x4, CTMLogicHorizontal[] logicHorizontal, CTMLogicVertical[] logicVertical, CTMLogicV4[] logicV4, CTMLogicV9[] logicV9, CTMLogicV16[] logicV16) {
+        this(variant, logic, logic2x2, logic3x3, logic4x4, logicHorizontal, logicVertical, logicV4, logicV9, logicV16, null, null, null);
+    }
+
+    public CTMData(Variant variant, CTMLogic[][] logic, CTMLogic2x2[] logic2x2, CTMLogic3x3[] logic3x3, CTMLogic4x4[] logic4x4, CTMLogicHorizontal[] logicHorizontal, CTMLogicVertical[] logicVertical, CTMLogicV4[] logicV4, CTMLogicV9[] logicV9, CTMLogicV16[] logicV16, CTMLogicR4[] logicR4, CTMLogicR9[] logicR9, CTMLogicR16[] logicR16) {
         this.variant = variant;
         this.logic = new CTMLogic[6][4];
         if (logic != null) {
@@ -47,6 +60,11 @@ public final class CTMData {
         this.logicHorizontal = logicHorizontal;
         this.logicVertical = logicVertical;
         this.logicV4 = logicV4;
+        this.logicV9 = logicV9;
+        this.logicV16 = logicV16;
+        this.logicR4 = logicR4;
+        this.logicR9 = logicR9;
+        this.logicR16 = logicR16;
     }
 
     public CTMLogic get(Direction face, int corner) {
@@ -77,6 +95,26 @@ public final class CTMData {
         return logicV4 != null ? logicV4[face.get3DDataValue()] : null;
     }
 
+    public CTMLogicV9 getV9(Direction face) {
+        return logicV9 != null ? logicV9[face.get3DDataValue()] : null;
+    }
+
+    public CTMLogicV16 getV16(Direction face) {
+        return logicV16 != null ? logicV16[face.get3DDataValue()] : null;
+    }
+
+    public CTMLogicR4 getR4(Direction face) {
+        return logicR4 != null ? logicR4[face.get3DDataValue()] : null;
+    }
+
+    public CTMLogicR9 getR9(Direction face) {
+        return logicR9 != null ? logicR9[face.get3DDataValue()] : null;
+    }
+
+    public CTMLogicR16 getR16(Direction face) {
+        return logicR16 != null ? logicR16[face.get3DDataValue()] : null;
+    }
+
     public CTMLogic[][] raw() {
         CTMLogic[][] copy = new CTMLogic[6][4];
         for (int i = 0; i < 6; i++) {
@@ -96,7 +134,12 @@ public final class CTMData {
                 Arrays.equals(logic4x4, that.logic4x4) &&
                 Arrays.equals(logicHorizontal, that.logicHorizontal) &&
                 Arrays.equals(logicVertical, that.logicVertical) &&
-                Arrays.equals(logicV4, that.logicV4);
+                Arrays.equals(logicV4, that.logicV4) &&
+                Arrays.equals(logicV9, that.logicV9) &&
+                Arrays.equals(logicV16, that.logicV16) &&
+                Arrays.equals(logicR4, that.logicR4) &&
+                Arrays.equals(logicR9, that.logicR9) &&
+                Arrays.equals(logicR16, that.logicR16);
     }
 
     @Override
@@ -109,6 +152,11 @@ public final class CTMData {
         result = 31 * result + Arrays.hashCode(logicHorizontal);
         result = 31 * result + Arrays.hashCode(logicVertical);
         result = 31 * result + Arrays.hashCode(logicV4);
+        result = 31 * result + Arrays.hashCode(logicV9);
+        result = 31 * result + Arrays.hashCode(logicV16);
+        result = 31 * result + Arrays.hashCode(logicR4);
+        result = 31 * result + Arrays.hashCode(logicR9);
+        result = 31 * result + Arrays.hashCode(logicR16);
         return result;
     }
 }

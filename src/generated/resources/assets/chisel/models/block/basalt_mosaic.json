@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/basalt/basalt_mosaic",
+    "overlay_connected": "chisel:block/basalt/basalt_mosaic-ctm",
+    "overlay_texture": "chisel:block/basalt/basalt_mosaic",
+    "particle": "chisel:block/basalt/basalt_mosaic"
+  }
+}

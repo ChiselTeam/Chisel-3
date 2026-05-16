@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/basalt_tiles_small"
+    }
+  }
+}

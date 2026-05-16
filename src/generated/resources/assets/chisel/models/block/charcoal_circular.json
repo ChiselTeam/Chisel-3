@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/charcoal/charcoal_circular",
+    "overlay_connected": "chisel:block/charcoal/charcoal_circular-ctm",
+    "overlay_texture": "chisel:block/charcoal/charcoal_circular",
+    "particle": "chisel:block/charcoal/charcoal_circular"
+  }
+}

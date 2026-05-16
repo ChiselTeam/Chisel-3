@@ -1,0 +1,20 @@
+{
+  "family_name": "wool_magenta",
+  "tag": "c:chisel/wool_magenta",
+  "variants": [
+    {
+      "block": "minecraft:magenta_wool",
+      "name": "block.minecraft.magenta_wool"
+    },
+    {
+      "block": "chisel:wool_magenta_legacy",
+      "model_type": "connected",
+      "name": "wool_magenta_legacy"
+    },
+    {
+      "block": "chisel:wool_magenta_llama",
+      "model_type": "connected",
+      "name": "wool_magenta_llama"
+    }
+  ]
+}

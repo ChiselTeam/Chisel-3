@@ -35,10 +35,12 @@
     },
     {
       "block": "chisel:glass_edge",
+      "model_type": "connected",
       "name": "glass_edge"
     },
     {
       "block": "chisel:glass_edge_steel",
+      "model_type": "connected",
       "name": "glass_edge_steel"
     },
     {

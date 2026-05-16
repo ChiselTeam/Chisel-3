@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/thaumium/thaumium_runes_purple",
+    "overlay_3x3": "chisel:block/thaumium/thaumium_runes_purple-v9",
+    "particle": "chisel:block/thaumium/thaumium_runes_purple"
+  }
+}

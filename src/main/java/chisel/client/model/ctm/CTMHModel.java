@@ -13,6 +13,9 @@ import net.minecraft.core.Direction;
 import net.minecraft.resources.Identifier;
 import org.joml.Vector3f;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+
 public class CTMHModel extends VariantModel {
     @Override
     public TextureMapping getTextureMapping() {
@@ -21,17 +24,12 @@ public class CTMHModel extends VariantModel {
                 .put(TextureSlot.ALL, variant.getMaterial())
                 .put(TextureSlot.TOP, variant.getMaterial("top"))
                 .put(TextureSlot.BOTTOM, variant.getMaterial("bottom"))
-                .put(TextureSlot.SIDE, variant.getMaterial("side"))
                 .put(ChiselTextureSlots.CTM_OVERLAY, variant.getMaterial())
                 .put(ChiselTextureSlots.CTM_OVERLAY_TOP, variant.getMaterial("top"))
                 .put(ChiselTextureSlots.CTM_OVERLAY_BOTTOM, variant.getMaterial("bottom"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_SIDE, variant.getMaterial("side"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_SIDE_CONNECTED, variant.getMaterial("side-ctm"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_BOTTOM_CONNECTED, variant.getMaterial("bottom-ctm"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_TOP_CONNECTED, variant.getMaterial("top-ctm"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_CONNECTED, variant.getMaterial("side-ctm"))
                 .put(ChiselTextureSlots.CTM_OVERLAY_HORIZONTAL, variant.getMaterial("ctmh"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_VERTICAL, variant.getMaterial("side-ctm"));
+                .put(ChiselTextureSlots.CTM_OVERLAY_HORIZONTAL_TOP, variant.getMaterial("top"))
+                .put(ChiselTextureSlots.CTM_OVERLAY_HORIZONTAL_BOTTOM, variant.getMaterial("bottom"));
     }
 
     @Override

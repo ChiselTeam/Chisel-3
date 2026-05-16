@@ -1,0 +1,20 @@
+{
+  "family_name": "wool_cyan",
+  "tag": "c:chisel/wool_cyan",
+  "variants": [
+    {
+      "block": "minecraft:cyan_wool",
+      "name": "block.minecraft.cyan_wool"
+    },
+    {
+      "block": "chisel:wool_cyan_legacy",
+      "model_type": "connected",
+      "name": "wool_cyan_legacy"
+    },
+    {
+      "block": "chisel:wool_cyan_llama",
+      "model_type": "connected",
+      "name": "wool_cyan_llama"
+    }
+  ]
+}

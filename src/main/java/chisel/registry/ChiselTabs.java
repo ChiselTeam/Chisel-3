@@ -19,26 +19,36 @@ public class ChiselTabs {
             .title(Component.translatable("itemGroup.tabStoneChiselBlocks"))
             .icon(() -> new ItemStack(ChiselBlocks.MARBLE.getVariant("marble_raw").get()))
             .displayItems((_, output) -> List.of(
+                    ChiselBlocks.ANCIENT_STONE.getFamily(),
                     ChiselBlocks.ANDESITE.getFamily(),
                     ChiselBlocks.BRICKS.getFamily(),
+                    ChiselBlocks.CHARCOAL.getFamily(),
+                    ChiselBlocks.COAL.getFamily(),
                     ChiselBlocks.COBBLESTONE.getFamily(),
                     ChiselBlocks.STONE_BRICKS.getFamily(),
                     ChiselBlocks.CONCRETE.getFamily(),
+                    ChiselBlocks.BASALT.getFamily(),
                     ChiselBlocks.DIORITE.getFamily(),
+                    ChiselBlocks.END_STONE.getFamily(),
                     ChiselBlocks.GRANITE.getFamily(),
                     ChiselBlocks.GRIMSTONE.getFamily(),
                     ChiselBlocks.HOLYSTONE.getFamily(),
                     ChiselBlocks.LAVASTONE.getFamily(),
                     ChiselBlocks.LIMESTONE.getFamily(),
+                    ChiselBlocks.MAGMA.getFamily(),
                     ChiselBlocks.MARBLE.getFamily(),
                     ChiselBlocks.MOSSY_COBBLESTONE.getFamily(),
                     ChiselBlocks.MOSSY_TEMPLE.getFamily(),
                     ChiselBlocks.NETHERBRICK.getFamily(),
                     ChiselBlocks.NETHERRACK.getFamily(),
                     ChiselBlocks.OBSIDIAN.getFamily(),
+                    ChiselBlocks.PRISMARINE.getFamily(),
+                    ChiselBlocks.PURPUR.getFamily(),
+                    ChiselBlocks.RED_SANDSTONE.getFamily(),
                     ChiselBlocks.SANDSTONE.getFamily(),
                     ChiselBlocks.SHINGLE.getFamily(),
                     ChiselBlocks.TEMPLE.getFamily(),
+                    ChiselBlocks.TERRACOTTA.getFamily(),
                     ChiselBlocks.VOIDSTONE.getFamily(),
                     ChiselBlocks.WATERSTONE.getFamily()).forEach(family -> family.getVariants().forEach(variant -> {
                         if(variant.shouldGenerateModel() && variant.isInTab)
@@ -77,7 +87,6 @@ public class ChiselTabs {
                     ChiselBlocks.MILITARY.getFamily(),
                     ChiselBlocks.TECHNICAL.getFamily(),
                     ChiselBlocks.TYRIAN.getFamily(),
-                    ChiselBlocks.ALUMINUM.getFamily(),
                     ChiselBlocks.WARNING.getFamily())
                     .forEach(family -> family.getVariants().forEach(variant ->  {
                         if(variant.shouldGenerateModel() && variant.isInTab)
@@ -93,7 +102,6 @@ public class ChiselTabs {
                         ChiselBlocks.ANTIBLOCK.getFamily(),
                         ChiselBlocks.GLASS.getFamily(),
                         ChiselBlocks.TORCH.getFamily(),
-                        ChiselBlocks.CARPET.getFamily(),
                         ChiselBlocks.CLOUD.getFamily(),
                         ChiselBlocks.DIAMOND.getFamily(),
                         ChiselBlocks.DIRT.getFamily(),
@@ -109,6 +117,7 @@ public class ChiselTabs {
                         ChiselBlocks.PAPERWALL.getFamily(),
                         ChiselBlocks.PUMPKIN.getFamily(),
                         ChiselBlocks.REDSTONE.getFamily(),
+                        ChiselBlocks.REDSTONE_LAMP.getFamily(),
                         ChiselBlocks.ROAD_LINE.getFamily(),
                         ChiselBlocks.VALENTINES.getFamily(),
                         ChiselBlocks.WOOLEN_CLAY.getFamily()).forEach(family -> family.getVariants().forEach(variant ->  {
@@ -116,6 +125,10 @@ public class ChiselTabs {
                                 output.accept(variant.getBlock());
                 }));
 
+                ChiselBlocks.WOOLS.forEach(family -> family.getFamily().getVariants().forEach(variant -> {
+                    if (variant.shouldGenerateModel() && variant.isInTab)
+                        output.accept(variant.getBlock());
+                }));
                 ChiselBlocks.STAINED_GLASS.forEach(block -> block.getFamily().getVariants().forEach(variant -> output.accept(variant.getBlock())));
                 ChiselBlocks.STAINED_GLASS_PANE.forEach(block -> block.getFamily().getVariants().forEach(variant -> output.accept(variant.getBlock())));
             })
@@ -125,10 +138,21 @@ public class ChiselTabs {
             .title(Component.translatable("itemGroup.tabModdedChiselBlocks"))
             .icon(() -> new ItemStack(ChiselBlocks.BRONZE.getVariant("bronze_caution").get()))
             .displayItems((_, output) -> List.of(
+                    ChiselBlocks.ALUMINUM.getFamily(),
+                    ChiselBlocks.ARCANE.getFamily(),
                     ChiselBlocks.BRONZE.getFamily(),
+                    ChiselBlocks.CERTUS.getFamily(),
+                    ChiselBlocks.COAL_COKE.getFamily(),
+                    ChiselBlocks.COBALT.getFamily(),
+                    ChiselBlocks.ELECTRUM.getFamily(),
+                    ChiselBlocks.INVAR.getFamily(),
                     ChiselBlocks.LEAD.getFamily(),
+                    ChiselBlocks.NICKEL.getFamily(),
+                    ChiselBlocks.PLATINUM.getFamily(),
                     ChiselBlocks.SILVER.getFamily(),
                     ChiselBlocks.STEEL.getFamily(),
+                    ChiselBlocks.TALLOW.getFamily(),
+                    ChiselBlocks.THAUMIUM.getFamily(),
                     ChiselBlocks.TIN.getFamily(),
                     ChiselBlocks.URANIUM.getFamily()).forEach(family -> family.getVariants().forEach(variant -> {
                         if(variant.shouldGenerateModel() && variant.isInTab)
@@ -143,6 +167,7 @@ public class ChiselTabs {
                 output.accept(ChiselItems.CHISEL_IRON.get());
                 output.accept(ChiselItems.CHISEL_DIAMOND.get());
                 output.accept(ChiselItems.CHISEL_OBSIDIAN.get());
+                output.accept(ChiselItems.OFFSET_TOOL.get());
                 output.accept(ChiselBlocks.AUTO_CHISEL.get().asItem());
                 output.accept(ChiselItems.UPGRADE_STACK.get());
                 output.accept(ChiselItems.UPGRADE_SPEED.get());
