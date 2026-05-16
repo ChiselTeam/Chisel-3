@@ -3,8 +3,8 @@
   "tag": "c:chisel/coal",
   "variants": [
     {
-      "block": "minecraft:stone",
-      "name": "block.minecraft.stone"
+      "block": "minecraft:coal_block",
+      "name": "block.minecraft.coal_block"
     },
     {
       "block": "chisel:coal_array",

@@ -3,10 +3,6 @@
   "tag": "c:chisel/thaumium",
   "variants": [
     {
-      "block": "minecraft:iron_block",
-      "name": "block.minecraft.iron_block"
-    },
-    {
       "block": "chisel:thaumium_bevel",
       "name": "thaumium_bevel"
     },

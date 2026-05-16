@@ -3,10 +3,6 @@
   "tag": "c:chisel/ancient_stone",
   "variants": [
     {
-      "block": "minecraft:bricks",
-      "name": "block.minecraft.bricks"
-    },
-    {
       "block": "chisel:ancient_stone_array",
       "model_type": "multiblock_2x2",
       "name": "ancient_stone_array"

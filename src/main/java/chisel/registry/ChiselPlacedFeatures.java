@@ -19,6 +19,8 @@ public class ChiselPlacedFeatures {
     public static final ResourceKey<PlacedFeature> MARBLE_LOWER = create("marble_lower");
     public static final ResourceKey<PlacedFeature> LIMESTONE_UPPER = create("limestone_upper");
     public static final ResourceKey<PlacedFeature> LIMESTONE_LOWER = create("limestone_lower");
+    public static final ResourceKey<PlacedFeature> BASALT_UPPER = create("basalt_upper");
+    public static final ResourceKey<PlacedFeature> BASALT_LOWER = create("basalt_lower");
 
     private static ResourceKey<PlacedFeature> create(String name) {
         return ResourceKey.create(Registries.PLACED_FEATURE, Chisel.prefix(name));
@@ -28,11 +30,14 @@ public class ChiselPlacedFeatures {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
         Holder<ConfiguredFeature<?, ?>> marble = configuredFeatures.getOrThrow(ChiselConfiguredFeatures.MARBLE);
         Holder<ConfiguredFeature<?, ?>> limestone = configuredFeatures.getOrThrow(ChiselConfiguredFeatures.LIMESTONE);
+        Holder<ConfiguredFeature<?, ?>> basalt = configuredFeatures.getOrThrow(ChiselConfiguredFeatures.BASALT);
 
         PlacementUtils.register(context, MARBLE_UPPER, marble, rareOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.absolute(64), VerticalAnchor.absolute(128))));
         PlacementUtils.register(context, MARBLE_LOWER, marble, commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(60))));
         PlacementUtils.register(context, LIMESTONE_UPPER, limestone, rareOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.absolute(64), VerticalAnchor.absolute(128))));
         PlacementUtils.register(context, LIMESTONE_LOWER, limestone, commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(60))));
+        PlacementUtils.register(context, BASALT_UPPER, basalt, rareOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.absolute(64), VerticalAnchor.absolute(128))));
+        PlacementUtils.register(context, BASALT_LOWER, basalt, commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(60))));
     }
 
     private static List<PlacementModifier> orePlacement(PlacementModifier frequencyModifier, PlacementModifier heightRange) {

@@ -3,8 +3,8 @@
   "tag": "c:chisel/end_stone",
   "variants": [
     {
-      "block": "minecraft:stone",
-      "name": "block.minecraft.stone"
+      "block": "minecraft:end_stone",
+      "name": "block.minecraft.end_stone"
     },
     {
       "block": "chisel:end_stone_array",

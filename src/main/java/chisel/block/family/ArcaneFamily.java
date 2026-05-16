@@ -3,13 +3,11 @@ package chisel.block.family;
 import chisel.block.util.ChiselFamily;
 import chisel.core.variant.VariantModelType;
 import chisel.util.LangHelper;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class ArcaneFamily extends ChiselFamily {
     public ArcaneFamily(BlockBehaviour.Properties props) {
         family = builder("arcane")
-                .addVariant(Blocks.BRICKS)
                 .addVariant("arcane_border", props, VariantModelType.CONNECTED)
                 .addVariant("arcane_crack", props, VariantModelType.V9)
                 .addVariant("arcane_matrix", props, VariantModelType.V9)

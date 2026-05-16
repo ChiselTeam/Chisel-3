@@ -3,13 +3,11 @@ package chisel.block.family;
 import chisel.block.util.ChiselFamily;
 import chisel.core.variant.VariantModelType;
 import chisel.util.LangHelper;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class MagmaFamily extends ChiselFamily {
     public MagmaFamily(BlockBehaviour.Properties props) {
         family = builder("magma")
-                .addVariant(Blocks.STONE)
                 .addVariant("magma_array", props, VariantModelType.LAVA_2x2)
                 .addVariant("magma_braid", props, VariantModelType.MULTI_LAYER_LAVA)
                 .addVariant("magma_chaotic_bricks", props, VariantModelType.LAVA_3x3)

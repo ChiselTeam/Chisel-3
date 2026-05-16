@@ -3,10 +3,6 @@
   "tag": "c:chisel/arcane",
   "variants": [
     {
-      "block": "minecraft:bricks",
-      "name": "block.minecraft.bricks"
-    },
-    {
       "block": "chisel:arcane_border",
       "model_type": "connected",
       "name": "arcane_border"

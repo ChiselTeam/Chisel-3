@@ -2,9 +2,9 @@ package chisel.registry;
 
 import chisel.Chisel;
 import chisel.block.AutoChiselBlock;
+import chisel.block.ConnectedTextureBlock;
 import chisel.block.family.*;
 import chisel.block.util.ChiselFamily;
-import chisel.block.ConnectedTextureBlock;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -43,7 +43,7 @@ public class ChiselBlocks {
     public static final CopperFamily COPPER = new CopperFamily(Properties.ofFullCopy(Blocks.COPPER_BLOCK));
     public static final CrimsonFamily CRIMSON = new CrimsonFamily(Properties.ofFullCopy(Blocks.CRIMSON_PLANKS));
     public static final DarkOakFamily DARK_OAK = new DarkOakFamily(Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS));
-    public static final DiabaseFamily DIABASE = new DiabaseFamily(Properties.ofFullCopy(Blocks.STONE));
+    public static final BasaltFamily BASALT = new BasaltFamily(Properties.ofFullCopy(Blocks.STONE));
     public static final DiamondFamily DIAMOND = new DiamondFamily(Properties.ofFullCopy(Blocks.DIAMOND_BLOCK));
     public static final DioriteFamily DIORITE = new DioriteFamily(Properties.ofFullCopy(Blocks.DIORITE));
     public static final DirtFamily DIRT = new DirtFamily(Properties.ofFullCopy(Blocks.DIRT));
@@ -196,7 +196,7 @@ public class ChiselBlocks {
     public static List<ChiselFamily> getBlocks() {
         List<ChiselFamily> blocks = new ArrayList<>(List.of(
                 ACACIA, ALUMINUM, ANCIENT_STONE, ANDESITE, ANTIBLOCK, ARCANE, BIRCH, BOOKSHELF, BRICKS, BRONZE,
-                CERTUS, CHARCOAL, CLOUD, COAL, COAL_COKE, COBALT, COBBLESTONE, CONCRETE, COPPER, CRIMSON, DARK_OAK, DIABASE,
+                CERTUS, CHARCOAL, CLOUD, COAL, COAL_COKE, COBALT, COBBLESTONE, CONCRETE, COPPER, CRIMSON, DARK_OAK, BASALT,
                 DIAMOND, DIORITE, DIRT, ELECTRUM, EMERALD, END_STONE, ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLASS, GLASS_PANE,
                 GLOWSTONE, GOLD, GRANITE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, INVAR, IRON, IRON_BARS, JACK_O_LANTERN,
                 JUNGLE, LABORATORY, LAPIS, LAVASTONE, LEAD, LEAF, LIMESTONE, MAGMA, MARBLE, MILITARY, MOSSY_COBBLESTONE,

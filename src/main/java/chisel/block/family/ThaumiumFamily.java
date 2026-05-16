@@ -3,13 +3,11 @@ package chisel.block.family;
 import chisel.block.util.ChiselFamily;
 import chisel.core.variant.VariantModelType;
 import chisel.util.LangHelper;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class ThaumiumFamily extends ChiselFamily {
     public ThaumiumFamily(BlockBehaviour.Properties props) {
         family = builder("thaumium")
-                .addVariant(Blocks.IRON_BLOCK)
                 .addVariant("thaumium_bevel", props)
                 .addVariant("thaumium_block", props)
                 .addVariant("thaumium_bricks", props, VariantModelType.CONNECTED)

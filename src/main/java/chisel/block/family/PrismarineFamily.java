@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class PrismarineFamily extends ChiselFamily {
     public PrismarineFamily(BlockBehaviour.Properties props) {
         family = builder("prismarine")
-                .addVariant(Blocks.STONE)
+                .addVariant(Blocks.PRISMARINE)
                 .addVariant("prismarine_array", props, VariantModelType.MULTIBLOCK_2X2)
                 .addVariant("prismarine_braid", props)
                 .addVariant("prismarine_chaotic_bricks", props, VariantModelType.MULTIBLOCK_3X3)

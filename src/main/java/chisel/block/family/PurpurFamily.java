@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class PurpurFamily extends ChiselFamily {
     public PurpurFamily(BlockBehaviour.Properties props) {
         family = builder("purpur")
-                .addVariant(Blocks.STONE)
+                .addVariant(Blocks.PURPUR_BLOCK)
                 .addVariant("purpur_array", props, VariantModelType.MULTIBLOCK_2X2)
                 .addVariant("purpur_braid", props)
                 .addVariant("purpur_chaotic_bricks", props, VariantModelType.MULTIBLOCK_3X3)

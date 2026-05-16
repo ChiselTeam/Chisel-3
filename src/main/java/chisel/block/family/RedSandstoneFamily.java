@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class RedSandstoneFamily extends ChiselFamily {
     public RedSandstoneFamily(BlockBehaviour.Properties props) {
         family = builder("red_sandstone")
-                .addVariant(Blocks.STONE)
+                .addVariant(Blocks.RED_SANDSTONE)
                 .addVariant("red_sandstone_array", props, VariantModelType.MULTIBLOCK_2X2)
                 .addVariant("red_sandstone_braid", props)
                 .addVariant("red_sandstone_chaotic_bricks", props, VariantModelType.MULTIBLOCK_3X3)
@@ -31,6 +31,22 @@ public class RedSandstoneFamily extends ChiselFamily {
                 .addVariant("red_sandstone_pillar", props, VariantModelType.TBS)
                 .addVariant("red_sandstone_prism", props)
                 .addVariant("red_sandstone_road", props)
+                .addVariant("red_sandstone_scribbles_0", props, VariantModelType.TBS)
+                .addVariant("red_sandstone_scribbles_1", props, VariantModelType.TBS)
+                .addVariant("red_sandstone_scribbles_2", props, VariantModelType.TBS)
+                .addVariant("red_sandstone_scribbles_3", props, VariantModelType.TBS)
+                .addVariant("red_sandstone_scribbles_4", props, VariantModelType.TBS)
+                .addVariant("red_sandstone_scribbles_5", props, VariantModelType.TBS)
+                .addVariant("red_sandstone_scribbles_6", props, VariantModelType.TBS)
+                .addVariant("red_sandstone_scribbles_7", props, VariantModelType.TBS)
+                .addVariant("red_sandstone_scribbles_8", props, VariantModelType.TBS)
+                .addVariant("red_sandstone_scribbles_9", props, VariantModelType.TBS)
+                .addVariant("red_sandstone_scribbles_10", props, VariantModelType.TBS)
+                .addVariant("red_sandstone_scribbles_11", props, VariantModelType.TBS)
+                .addVariant("red_sandstone_scribbles_12", props, VariantModelType.TBS)
+                .addVariant("red_sandstone_scribbles_13", props, VariantModelType.TBS)
+                .addVariant("red_sandstone_scribbles_14", props, VariantModelType.TBS)
+                .addVariant("red_sandstone_scribbles_15", props, VariantModelType.TBS)
                 .addVariant("red_sandstone_slanted", props, VariantModelType.MULTIBLOCK_2X2)
                 .addVariant("red_sandstone_small_bricks", props)
                 .addVariant("red_sandstone_soft_bricks", props)
@@ -68,6 +84,22 @@ public class RedSandstoneFamily extends ChiselFamily {
         lang.addBlock(getVariant("red_sandstone_pillar"), "Red Sandstone", "Pillar");
         lang.addBlock(getVariant("red_sandstone_prism"), "Red Sandstone", "Prismatic Red Sandstone");
         lang.addBlock(getVariant("red_sandstone_road"), "Red Sandstone", "Road");
+        lang.addBlock(getVariant("red_sandstone_scribbles_0"), "Red Sandstone", "Scribbles");
+        lang.addBlock(getVariant("red_sandstone_scribbles_1"), "Red Sandstone", "Scribbles");
+        lang.addBlock(getVariant("red_sandstone_scribbles_2"), "Red Sandstone", "Scribbles");
+        lang.addBlock(getVariant("red_sandstone_scribbles_3"), "Red Sandstone", "Scribbles");
+        lang.addBlock(getVariant("red_sandstone_scribbles_4"), "Red Sandstone", "Scribbles");
+        lang.addBlock(getVariant("red_sandstone_scribbles_5"), "Red Sandstone", "Scribbles");
+        lang.addBlock(getVariant("red_sandstone_scribbles_6"), "Red Sandstone", "Scribbles");
+        lang.addBlock(getVariant("red_sandstone_scribbles_7"), "Red Sandstone", "Scribbles");
+        lang.addBlock(getVariant("red_sandstone_scribbles_8"), "Red Sandstone", "Scribbles");
+        lang.addBlock(getVariant("red_sandstone_scribbles_9"), "Red Sandstone", "Scribbles");
+        lang.addBlock(getVariant("red_sandstone_scribbles_10"), "Red Sandstone", "Scribbles");
+        lang.addBlock(getVariant("red_sandstone_scribbles_11"), "Red Sandstone", "Scribbles");
+        lang.addBlock(getVariant("red_sandstone_scribbles_12"), "Red Sandstone", "Scribbles");
+        lang.addBlock(getVariant("red_sandstone_scribbles_13"), "Red Sandstone", "Scribbles");
+        lang.addBlock(getVariant("red_sandstone_scribbles_14"), "Red Sandstone", "Scribbles");
+        lang.addBlock(getVariant("red_sandstone_scribbles_15"), "Red Sandstone", "Scribbles");
         lang.addBlock(getVariant("red_sandstone_slanted"), "Red Sandstone", "Slanted");
         lang.addBlock(getVariant("red_sandstone_small_bricks"), "Red Sandstone", "Small Bricks");
         lang.addBlock(getVariant("red_sandstone_soft_bricks"), "Red Sandstone", "Soft Bricks");

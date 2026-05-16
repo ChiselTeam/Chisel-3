@@ -3,10 +3,6 @@
   "tag": "c:chisel/coal_coke",
   "variants": [
     {
-      "block": "minecraft:stone",
-      "name": "block.minecraft.stone"
-    },
-    {
       "block": "chisel:coal_coke_array",
       "model_type": "multiblock_2x2",
       "name": "coal_coke_array"

@@ -3,13 +3,11 @@ package chisel.block.family;
 import chisel.block.util.ChiselFamily;
 import chisel.core.variant.VariantModelType;
 import chisel.util.LangHelper;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class CertusFamily extends ChiselFamily {
     public CertusFamily(BlockBehaviour.Properties props) {
         family = builder("certus")
-                .addVariant(Blocks.BRICKS)
                 .addVariant("certus_array", props, VariantModelType.MULTIBLOCK_2X2)
                 .addVariant("certus_braid", props)
                 .addVariant("certus_chaotic", props, VariantModelType.MULTIBLOCK_3X3)

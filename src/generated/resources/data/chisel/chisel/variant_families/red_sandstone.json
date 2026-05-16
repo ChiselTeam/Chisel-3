@@ -3,8 +3,8 @@
   "tag": "c:chisel/red_sandstone",
   "variants": [
     {
-      "block": "minecraft:stone",
-      "name": "block.minecraft.stone"
+      "block": "minecraft:red_sandstone",
+      "name": "block.minecraft.red_sandstone"
     },
     {
       "block": "chisel:red_sandstone_array",
@@ -98,6 +98,86 @@
     {
       "block": "chisel:red_sandstone_road",
       "name": "red_sandstone_road"
+    },
+    {
+      "block": "chisel:red_sandstone_scribbles_0",
+      "model_type": "top_bottom_side",
+      "name": "red_sandstone_scribbles_0"
+    },
+    {
+      "block": "chisel:red_sandstone_scribbles_1",
+      "model_type": "top_bottom_side",
+      "name": "red_sandstone_scribbles_1"
+    },
+    {
+      "block": "chisel:red_sandstone_scribbles_2",
+      "model_type": "top_bottom_side",
+      "name": "red_sandstone_scribbles_2"
+    },
+    {
+      "block": "chisel:red_sandstone_scribbles_3",
+      "model_type": "top_bottom_side",
+      "name": "red_sandstone_scribbles_3"
+    },
+    {
+      "block": "chisel:red_sandstone_scribbles_4",
+      "model_type": "top_bottom_side",
+      "name": "red_sandstone_scribbles_4"
+    },
+    {
+      "block": "chisel:red_sandstone_scribbles_5",
+      "model_type": "top_bottom_side",
+      "name": "red_sandstone_scribbles_5"
+    },
+    {
+      "block": "chisel:red_sandstone_scribbles_6",
+      "model_type": "top_bottom_side",
+      "name": "red_sandstone_scribbles_6"
+    },
+    {
+      "block": "chisel:red_sandstone_scribbles_7",
+      "model_type": "top_bottom_side",
+      "name": "red_sandstone_scribbles_7"
+    },
+    {
+      "block": "chisel:red_sandstone_scribbles_8",
+      "model_type": "top_bottom_side",
+      "name": "red_sandstone_scribbles_8"
+    },
+    {
+      "block": "chisel:red_sandstone_scribbles_9",
+      "model_type": "top_bottom_side",
+      "name": "red_sandstone_scribbles_9"
+    },
+    {
+      "block": "chisel:red_sandstone_scribbles_10",
+      "model_type": "top_bottom_side",
+      "name": "red_sandstone_scribbles_10"
+    },
+    {
+      "block": "chisel:red_sandstone_scribbles_11",
+      "model_type": "top_bottom_side",
+      "name": "red_sandstone_scribbles_11"
+    },
+    {
+      "block": "chisel:red_sandstone_scribbles_12",
+      "model_type": "top_bottom_side",
+      "name": "red_sandstone_scribbles_12"
+    },
+    {
+      "block": "chisel:red_sandstone_scribbles_13",
+      "model_type": "top_bottom_side",
+      "name": "red_sandstone_scribbles_13"
+    },
+    {
+      "block": "chisel:red_sandstone_scribbles_14",
+      "model_type": "top_bottom_side",
+      "name": "red_sandstone_scribbles_14"
+    },
+    {
+      "block": "chisel:red_sandstone_scribbles_15",
+      "model_type": "top_bottom_side",
+      "name": "red_sandstone_scribbles_15"
     },
     {
       "block": "chisel:red_sandstone_slanted",

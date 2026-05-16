@@ -3,8 +3,8 @@
   "tag": "c:chisel/purpur",
   "variants": [
     {
-      "block": "minecraft:stone",
-      "name": "block.minecraft.stone"
+      "block": "minecraft:purpur_block",
+      "name": "block.minecraft.purpur_block"
     },
     {
       "block": "chisel:purpur_array",

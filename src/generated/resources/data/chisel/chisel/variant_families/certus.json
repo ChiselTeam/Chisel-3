@@ -3,10 +3,6 @@
   "tag": "c:chisel/certus",
   "variants": [
     {
-      "block": "minecraft:bricks",
-      "name": "block.minecraft.bricks"
-    },
-    {
       "block": "chisel:certus_array",
       "model_type": "multiblock_2x2",
       "name": "certus_array"

@@ -3,10 +3,6 @@
   "tag": "c:chisel/magma",
   "variants": [
     {
-      "block": "minecraft:stone",
-      "name": "block.minecraft.stone"
-    },
-    {
       "block": "chisel:magma_array",
       "model_type": "lava_2x2",
       "name": "magma_array"

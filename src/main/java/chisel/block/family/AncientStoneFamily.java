@@ -3,13 +3,11 @@ package chisel.block.family;
 import chisel.block.util.ChiselFamily;
 import chisel.core.variant.VariantModelType;
 import chisel.util.LangHelper;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class AncientStoneFamily extends ChiselFamily {
     public AncientStoneFamily(BlockBehaviour.Properties props) {
         family = builder("ancient_stone")
-                .addVariant(Blocks.BRICKS)
                 .addVariant("ancient_stone_array", props, VariantModelType.MULTIBLOCK_2X2)
                 .addVariant("ancient_stone_braid", props)
                 .addVariant("ancient_stone_chaotic", props, VariantModelType.MULTIBLOCK_3X3)

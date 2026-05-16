@@ -3,8 +3,8 @@
   "tag": "c:chisel/prismarine",
   "variants": [
     {
-      "block": "minecraft:stone",
-      "name": "block.minecraft.stone"
+      "block": "minecraft:prismarine",
+      "name": "block.minecraft.prismarine"
     },
     {
       "block": "chisel:prismarine_array",

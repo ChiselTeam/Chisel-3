@@ -3,13 +3,11 @@ package chisel.block.family;
 import chisel.block.util.ChiselFamily;
 import chisel.core.variant.VariantModelType;
 import chisel.util.LangHelper;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class CoalCokeFamily extends ChiselFamily {
     public CoalCokeFamily(BlockBehaviour.Properties props) {
         family = builder("coal_coke")
-                .addVariant(Blocks.STONE)
                 .addVariant("coal_coke_array", props, VariantModelType.MULTIBLOCK_2X2)
                 .addVariant("coal_coke_braid", props)
                 .addVariant("coal_coke_chaotic_bricks", props, VariantModelType.MULTIBLOCK_3X3)

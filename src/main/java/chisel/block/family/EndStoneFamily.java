@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class EndStoneFamily extends ChiselFamily {
     public EndStoneFamily(BlockBehaviour.Properties props) {
         family = builder("end_stone")
-                .addVariant(Blocks.STONE)
+                .addVariant(Blocks.END_STONE)
                 .addVariant("end_stone_array", props, VariantModelType.MULTIBLOCK_2X2)
                 .addVariant("end_stone_braid", props)
                 .addVariant("end_stone_chaotic_bricks", props, VariantModelType.MULTIBLOCK_3X3)

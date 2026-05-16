@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [3.0.10]
 
 ### Added
+- **Compatibility**: Built in compatibility with FTB Materials and AllTheOres!
 - **16 new block families**: Ancient Stone, Arcane, Certus, Charcoal, Coal, Coal Coke, Diabase, End Stone, Magma, Prismarine, Purpur, Red Sandstone, Redstone Lamp, Tallow, Terracotta, and Thaumium — each with their own full set of chiseled variants.
 - **Offset Tool**: a new item that lets you shift the connecting texture pattern of vertical-variant blocks on a per-chunk basis.
   - Right-click a supported block to cycle its texture offset for that chunk — the change is instant and persists across saves.

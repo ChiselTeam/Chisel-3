@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class CoalFamily extends ChiselFamily {
     public CoalFamily(BlockBehaviour.Properties props) {
         family = builder("coal")
-                .addVariant(Blocks.STONE)
+                .addVariant(Blocks.COAL_BLOCK)
                 .addVariant("coal_array", props, VariantModelType.MULTIBLOCK_2X2)
                 .addVariant("coal_braid", props)
                 .addVariant("coal_chaotic_bricks", props, VariantModelType.MULTIBLOCK_3X3)

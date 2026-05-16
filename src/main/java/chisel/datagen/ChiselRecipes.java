@@ -128,6 +128,15 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
                 .save(output);
 
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselBlocks.MAGMA.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+                .pattern("SSS")
+                .pattern("SRS")
+                .pattern("SSS")
+                .define('S', Blocks.NETHER_BRICKS)
+                .define('R', Items.LAVA_BUCKET)
+                .unlockedBy("has_lava_bucket", has(Items.LAVA_BUCKET))
+                .save(output);
+
         // MARK: Items
         shaped(RecipeCategory.MISC, ChiselItems.CLOUD_IN_A_BOTTLE)
                 .pattern("G G")
@@ -162,6 +171,7 @@ public class ChiselRecipes extends RecipeProvider {
         chiselRecipe("has_iron", Tags.Items.INGOTS_IRON, ChiselItems.CHISEL_IRON);
         chiselRecipe("has_diamond", Tags.Items.GEMS_DIAMOND, ChiselItems.CHISEL_DIAMOND);
         chiselRecipe("has_obsidian", Tags.Items.OBSIDIANS, ChiselItems.CHISEL_OBSIDIAN);
+        chiselRecipe("has_ender_pearl", Tags.Items.ENDER_PEARLS, ChiselItems.OFFSET_TOOL);
 
         shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselItems.SMASHING_ROCK.get(), 16))
                 .requires(Items.STONE_PICKAXE)
