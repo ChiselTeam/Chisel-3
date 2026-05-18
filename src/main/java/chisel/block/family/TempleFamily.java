@@ -1,25 +1,25 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class TempleFamily extends ChiselFamily {
     public TempleFamily(BlockBehaviour.Properties props) {
         family = builder("temple")
-                .addVariant("temple_cobble", props, VariantModelType.CONNECTED)
+                .addVariant("temple_cobble", props, CONNECTED)
                 .addVariant("temple_bricks", props)
                 .addVariant("temple_bricks_disarray", props)
                 .addVariant("temple_bricks_large", props)
                 .addVariant("temple_bricks_worn", props)
-                .addVariant("temple_column", props, VariantModelType.TBS)
+                .addVariant("temple_column", props, TBS)
                 .addVariant("temple_ornate", props)
                 .addVariant("temple_plate", props)
                 .addVariant("temple_plate_cracked", props)
-                .addVariant("temple_stand", props, VariantModelType.TBS)
-                .addVariant("temple_stand_creeper", props, VariantModelType.TBS)
-                .addVariant("temple_stand_mosaic", props, VariantModelType.TBS)
+                .addVariant("temple_stand", props, TBS)
+                .addVariant("temple_stand_creeper", props, TBS)
+                .addVariant("temple_stand_mosaic", props, TBS)
                 .addVariant("temple_tiles", props)
                 .addVariant("temple_tiles_light", props)
                 .addVariant("temple_tiles_small", props)

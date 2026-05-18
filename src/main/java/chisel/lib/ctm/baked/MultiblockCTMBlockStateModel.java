@@ -1,7 +1,8 @@
 package chisel.lib.ctm.baked;
 
 import chisel.core.variant.Variant;
-import chisel.core.variant.VariantModelType;
+import chisel.core.variant.VariantModelHandler;
+import chisel.registry.ChiselModelHandlers;
 import chisel.events.client.OffsetToolClientHandler;
 import chisel.lib.ctm.util.CTMPartBuilder;
 import chisel.lib.ctm.ConnectedTextureBlockModelPart;
@@ -91,83 +92,71 @@ public class MultiblockCTMBlockStateModel extends AbstractConnectedTextureBlockS
     }
 
     private boolean isRandomVariant() {
-        return switch (variant.getModelType()) {
-            case R4, R9, R16 -> true;
-            default -> false;
-        };
+        VariantModelHandler type = variant.getModelType();
+        return type == ChiselModelHandlers.R4 || type == ChiselModelHandlers.R9 || type == ChiselModelHandlers.R16;
     }
 
     private void appendMultiblockQuad(MultiblockCTMKey key, Direction side, List<BakedQuad> faceQuads) {
         selector.append(key, side, faceQuads);
     }
 
-    private MultiblockQuadSelector createSelector(VariantModelType type) {
-        return switch (type) {
-            case MULTIBLOCK_2X2, MULTI_LAYER_WATER_2X2 ->
-                    (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
-                            multiblock2x2Quads.get(side),
-                            key.mb2x2(side).ordinal(),
-                            faceQuads
-                    );
-
-            case MULTIBLOCK_3X3, MULTI_LAYER_WATER_3X3 ->
-                    (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
-                            multiblock3x3Quads.get(side),
-                            key.mb3x3(side).ordinal(),
-                            faceQuads
-                    );
-
-            case MULTIBLOCK_4X4, MULTI_LAYER_WATER_4X4 ->
-                    (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
-                            multiblock4x4Quads.get(side),
-                            key.mb4x4(side).ordinal(),
-                            faceQuads
-                    );
-
-            case V4 ->
-                    (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
-                            multiblock2x2Quads.get(side),
-                            key.v4(side).ordinal(),
-                            faceQuads
-                    );
-
-            case V9 ->
-                    (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
-                            multiblock3x3Quads.get(side),
-                            key.v9(side).ordinal(),
-                            faceQuads
-                    );
-
-            case V16 ->
-                    (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
-                            multiblock4x4Quads.get(side),
-                            key.v16(side).ordinal(),
-                            faceQuads
-                    );
-
-            case R4 ->
-                    (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
-                            multiblock2x2Quads.get(side),
-                            key.r4(side).ordinal(),
-                            faceQuads
-                    );
-
-            case R9 ->
-                    (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
-                            multiblock3x3Quads.get(side),
-                            key.r9(side).ordinal(),
-                            faceQuads
-                    );
-
-            case R16 ->
-                    (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
-                            multiblock4x4Quads.get(side),
-                            key.r16(side).ordinal(),
-                            faceQuads
-                    );
-
-            default -> (_, _, _) -> {};
-        };
+    private MultiblockQuadSelector createSelector(VariantModelHandler type) {
+        if (type == ChiselModelHandlers.MULTIBLOCK_2X2 || type == ChiselModelHandlers.MULTI_LAYER_WATER_2X2) {
+            return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
+                    multiblock2x2Quads.get(side),
+                    key.mb2x2(side).ordinal(),
+                    faceQuads
+            );
+        } else if (type == ChiselModelHandlers.MULTIBLOCK_3X3 || type == ChiselModelHandlers.MULTI_LAYER_WATER_3X3) {
+            return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
+                    multiblock3x3Quads.get(side),
+                    key.mb3x3(side).ordinal(),
+                    faceQuads
+            );
+        } else if (type == ChiselModelHandlers.MULTIBLOCK_4X4 || type == ChiselModelHandlers.MULTI_LAYER_WATER_4X4) {
+            return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
+                    multiblock4x4Quads.get(side),
+                    key.mb4x4(side).ordinal(),
+                    faceQuads
+            );
+        } else if (type == ChiselModelHandlers.V4) {
+            return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
+                    multiblock2x2Quads.get(side),
+                    key.v4(side).ordinal(),
+                    faceQuads
+            );
+        } else if (type == ChiselModelHandlers.V9) {
+            return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
+                    multiblock3x3Quads.get(side),
+                    key.v9(side).ordinal(),
+                    faceQuads
+            );
+        } else if (type == ChiselModelHandlers.V16) {
+            return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
+                    multiblock4x4Quads.get(side),
+                    key.v16(side).ordinal(),
+                    faceQuads
+            );
+        } else if (type == ChiselModelHandlers.R4) {
+            return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
+                    multiblock2x2Quads.get(side),
+                    key.r4(side).ordinal(),
+                    faceQuads
+            );
+        } else if (type == ChiselModelHandlers.R9) {
+            return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
+                    multiblock3x3Quads.get(side),
+                    key.r9(side).ordinal(),
+                    faceQuads
+            );
+        } else if (type == ChiselModelHandlers.R16) {
+            return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
+                    multiblock4x4Quads.get(side),
+                    key.r16(side).ordinal(),
+                    faceQuads
+            );
+        }
+        return (_, _, _) -> {};
     }
 
     private static int randomIndex(BlockPos pos, int salt, int bound) {

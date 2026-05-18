@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -12,8 +12,8 @@ public class WoolFamily extends ChiselFamily {
         String name = color.toLowerCase();
         family = builder("wool_%s".formatted(name))
                 .addVariant(vanilla)
-                .addVariant("wool_%s_legacy".formatted(name), props, VariantModelType.CONNECTED)
-                .addVariant("wool_%s_llama".formatted(name), props, VariantModelType.CONNECTED)
+                .addVariant("wool_%s_legacy".formatted(name), props, CONNECTED)
+                .addVariant("wool_%s_llama".formatted(name), props, CONNECTED)
                 .family();
     }
 

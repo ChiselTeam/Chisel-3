@@ -1,21 +1,21 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class EnergizedVoidstoneFamily extends ChiselFamily {
     public EnergizedVoidstoneFamily(BlockBehaviour.Properties props) {
         family = builder("energized_voidstone")
-                .addVariant("energized_voidstone_bevel", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("energized_voidstone_eye", props, VariantModelType.MULTI_LAYER)
-                .addVariant("energized_voidstone_metal", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("energized_voidstone_raw", props, VariantModelType.MULTI_LAYER)
-                .addVariant("energized_voidstone_runic", props, VariantModelType.MULTI_LAYER)
-                .addVariant("energized_voidstone_skull", props, VariantModelType.MULTI_LAYER)
-                .addVariant("energized_voidstone_smooth", props, VariantModelType.MULTI_LAYER)
-                .addVariant("energized_voidstone_tiles", props, VariantModelType.MULTI_LAYER)
+                .addVariant("energized_voidstone_bevel", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("energized_voidstone_eye", props, MULTI_LAYER)
+                .addVariant("energized_voidstone_metal", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("energized_voidstone_raw", props, MULTI_LAYER)
+                .addVariant("energized_voidstone_runic", props, MULTI_LAYER)
+                .addVariant("energized_voidstone_skull", props, MULTI_LAYER)
+                .addVariant("energized_voidstone_smooth", props, MULTI_LAYER)
+                .addVariant("energized_voidstone_tiles", props, MULTI_LAYER)
                 .family();
     }
 

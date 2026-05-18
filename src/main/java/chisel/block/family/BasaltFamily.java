@@ -1,46 +1,46 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class BasaltFamily extends ChiselFamily {
     public BasaltFamily(BlockBehaviour.Properties props) {
         family = builder("basalt")
-                .addVariant("basalt_array", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("basalt_array", props, MULTIBLOCK_2X2)
                 .addVariant("basalt_braid", props)
-                .addVariant("basalt_chaotic_bricks", props, VariantModelType.MULTIBLOCK_3X3)
+                .addVariant("basalt_chaotic_bricks", props, MULTIBLOCK_3X3)
                 .addVariant("basalt_chaotic_medium", props)
                 .addVariant("basalt_chaotic_small", props)
-                .addVariant("basalt_circular", props, VariantModelType.CONNECTED)
+                .addVariant("basalt_circular", props, CONNECTED)
                 .addVariant("basalt_cracked", props)
                 .addVariant("basalt_cracked_bricks", props)
-                .addVariant("basalt_cuts", props, VariantModelType.MULTIBLOCK_4X4)
-                .addVariant("basalt_dent", props, VariantModelType.CONNECTED)
-                .addVariant("basalt_encased_bricks", props, VariantModelType.CONNECTED)
+                .addVariant("basalt_cuts", props, MULTIBLOCK_4X4)
+                .addVariant("basalt_dent", props, CONNECTED)
+                .addVariant("basalt_encased_bricks", props, CONNECTED)
                 .addVariant("basalt_french_1", props)
                 .addVariant("basalt_french_2", props)
-                .addVariant("basalt_jellybean", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("basalt_jellybean", props, MULTIBLOCK_2X2)
                 .addVariant("basalt_layers", props)
-                .addVariant("basalt_mosaic", props, VariantModelType.CONNECTED)
+                .addVariant("basalt_mosaic", props, CONNECTED)
                 .addVariant("basalt_ornate", props)
                 .addVariant("basalt_panel", props)
-                .addVariant("basalt_pillar", props, VariantModelType.TBS)
+                .addVariant("basalt_pillar", props, TBS)
                 .addVariant("basalt_prism", props)
                 .addVariant("basalt_raw", props)
                 .addVariant("basalt_road", props)
-                .addVariant("basalt_slanted", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("basalt_slanted", props, MULTIBLOCK_2X2)
                 .addVariant("basalt_small_bricks", props)
                 .addVariant("basalt_soft_bricks", props)
                 .addVariant("basalt_solid_bricks", props)
-                .addVariant("basalt_tiles_large", props, VariantModelType.CONNECTED)
+                .addVariant("basalt_tiles_large", props, CONNECTED)
                 .addVariant("basalt_tiles_medium", props)
                 .addVariant("basalt_tiles_small", props)
                 .addVariant("basalt_triple_bricks", props)
-                .addVariant("basalt_twisted", props, VariantModelType.TBS)
-                .addVariant("basalt_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("basalt_zag", props, VariantModelType.AR)
+                .addVariant("basalt_twisted", props, TBS)
+                .addVariant("basalt_weaver", props, CONNECTED)
+                .addVariant("basalt_zag", props, AR)
                 .family();
     }
 

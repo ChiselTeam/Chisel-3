@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
@@ -9,12 +9,12 @@ public class SilverFamily extends ChiselFamily {
     public SilverFamily(BlockBehaviour.Properties props) {
         family = builder("silver")
                 .addVariant("silver_125", props)
-                .addVariant("silver_bad_greggy", props, VariantModelType.CONNECTED)
+                .addVariant("silver_bad_greggy", props, CONNECTED)
                 .addVariant("silver_bolted", props)
-                .addVariant("silver_caution", props, VariantModelType.CONNECTED)
-                .addVariant("silver_crate", props, VariantModelType.CONNECTED)
-                .addVariant("silver_scaffold", props, VariantModelType.CONNECTED)
-                .addVariant("silver_thermal", props, VariantModelType.TBS)
+                .addVariant("silver_caution", props, CONNECTED)
+                .addVariant("silver_crate", props, CONNECTED)
+                .addVariant("silver_scaffold", props, CONNECTED)
+                .addVariant("silver_thermal", props, TBS)
                 .family();
     }
 

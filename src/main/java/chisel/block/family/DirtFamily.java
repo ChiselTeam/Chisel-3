@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -10,21 +10,21 @@ public class DirtFamily extends ChiselFamily {
     public DirtFamily(BlockBehaviour.Properties props) {
         family = builder("dirt")
                 .addVariant(Blocks.DIRT)
-                .addVariant("dirt_bricks", props, VariantModelType.CTMV)
+                .addVariant("dirt_bricks", props, CTMV)
                 .addVariant("dirt_bricks_arranged", props)
                 .addVariant("dirt_bricks_disarray", props)
                 .addVariant("dirt_bricks_large", props)
                 .addVariant("dirt_chunky", props)
                 .addVariant("dirt_cobble", props)
                 .addVariant("dirt_happy", props)
-                .addVariant("dirt_horizontal", props, VariantModelType.CTMH)
+                .addVariant("dirt_horizontal", props, CTMH)
                 .addVariant("dirt_layers", props)
                 .addVariant("dirt_netherbricks", props)
                 .addVariant("dirt_plate", props)
-                .addVariant("dirt_reinforced", props, VariantModelType.CONNECTED)
-                .addVariant("dirt_reinforced_cobble", props, VariantModelType.CONNECTED)
-                .addVariant("dirt_vert", props, VariantModelType.CTMV)
-                .addVariant("dirt_vertical", props, VariantModelType.CTMV)
+                .addVariant("dirt_reinforced", props, CONNECTED)
+                .addVariant("dirt_reinforced_cobble", props, CONNECTED)
+                .addVariant("dirt_vert", props, CTMV)
+                .addVariant("dirt_vertical", props, CTMV)
                 .family();
     }
 

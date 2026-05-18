@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -10,38 +10,38 @@ public class TerracottaFamily extends ChiselFamily {
     public TerracottaFamily(BlockBehaviour.Properties props) {
         family = builder("terracotta")
                 .addVariant(Blocks.TERRACOTTA)
-                .addVariant("terracotta_array", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("terracotta_array", props, MULTIBLOCK_2X2)
                 .addVariant("terracotta_braid", props)
-                .addVariant("terracotta_chaotic_bricks", props, VariantModelType.MULTIBLOCK_3X3)
+                .addVariant("terracotta_chaotic_bricks", props, MULTIBLOCK_3X3)
                 .addVariant("terracotta_chaotic_medium", props)
                 .addVariant("terracotta_chaotic_small", props)
-                .addVariant("terracotta_circular", props, VariantModelType.CONNECTED)
+                .addVariant("terracotta_circular", props, CONNECTED)
                 .addVariant("terracotta_cracked", props)
                 .addVariant("terracotta_cracked_bricks", props)
-                .addVariant("terracotta_cuts", props, VariantModelType.MULTIBLOCK_4X4)
-                .addVariant("terracotta_dent", props, VariantModelType.CONNECTED)
-                .addVariant("terracotta_encased_bricks", props, VariantModelType.CONNECTED)
+                .addVariant("terracotta_cuts", props, MULTIBLOCK_4X4)
+                .addVariant("terracotta_dent", props, CONNECTED)
+                .addVariant("terracotta_encased_bricks", props, CONNECTED)
                 .addVariant("terracotta_french_1", props)
                 .addVariant("terracotta_french_2", props)
-                .addVariant("terracotta_jellybean", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("terracotta_jellybean", props, MULTIBLOCK_2X2)
                 .addVariant("terracotta_layers", props)
-                .addVariant("terracotta_mosaic", props, VariantModelType.CONNECTED)
+                .addVariant("terracotta_mosaic", props, CONNECTED)
                 .addVariant("terracotta_ornate", props)
                 .addVariant("terracotta_panel", props)
-                .addVariant("terracotta_pillar", props, VariantModelType.TBS)
+                .addVariant("terracotta_pillar", props, TBS)
                 .addVariant("terracotta_prism", props)
                 .addVariant("terracotta_road", props)
-                .addVariant("terracotta_slanted", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("terracotta_slanted", props, MULTIBLOCK_2X2)
                 .addVariant("terracotta_small_bricks", props)
                 .addVariant("terracotta_soft_bricks", props)
                 .addVariant("terracotta_solid_bricks", props)
-                .addVariant("terracotta_tiles_large", props, VariantModelType.CONNECTED)
+                .addVariant("terracotta_tiles_large", props, CONNECTED)
                 .addVariant("terracotta_tiles_medium", props)
                 .addVariant("terracotta_tiles_small", props)
                 .addVariant("terracotta_triple_bricks", props)
-                .addVariant("terracotta_twisted", props, VariantModelType.TBS)
-                .addVariant("terracotta_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("terracotta_zag", props, VariantModelType.AR)
+                .addVariant("terracotta_twisted", props, TBS)
+                .addVariant("terracotta_weaver", props, CONNECTED)
+                .addVariant("terracotta_zag", props, AR)
                 .family();
     }
 

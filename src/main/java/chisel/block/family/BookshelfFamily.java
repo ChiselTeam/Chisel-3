@@ -3,7 +3,7 @@ package chisel.block.family;
 import chisel.block.CTMHBlock;
 import chisel.block.util.ChiselFamily;
 import chisel.core.variant.VariantFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -20,7 +20,7 @@ public class BookshelfFamily extends ChiselFamily {
         b.addVariant(Blocks.BOOKSHELF);
         for (String wood : woods) {
             for (String type : types) {
-                b.addVariant("bookshelf_%s_%s".formatted(wood, type), CTMHBlock::new, () -> props, VariantModelType.BOOKSHELF);
+                b.addVariant("bookshelf_%s_%s".formatted(wood, type), CTMHBlock::new, () -> props, BOOKSHELF);
             }
         }
 

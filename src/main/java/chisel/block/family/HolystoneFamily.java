@@ -2,7 +2,7 @@ package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
 import chisel.block.SparklyConnectedTextureBlock;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.registry.ChiselParticles;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -14,13 +14,13 @@ public class HolystoneFamily extends ChiselFamily {
                     .addVariant("holystone_blocks_rough", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.HOLYSTONE), () -> props)
                     .addVariant("holystone_bricks", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.HOLYSTONE), () -> props)
                     .addVariant("holystone_bricks_large", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.HOLYSTONE), () -> props)
-                    .addVariant("holystone_chiseled", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.HOLYSTONE), () -> props, VariantModelType.TBS)
+                    .addVariant("holystone_chiseled", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.HOLYSTONE), () -> props, TBS)
                     .addVariant("holystone_construction", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.HOLYSTONE), () -> props)
                     .addVariant("holystone_love", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.HOLYSTONE), () -> props)
                     .addVariant("holystone_plate", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.HOLYSTONE), () -> props)
                     .addVariant("holystone_plate_smooth", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.HOLYSTONE), () -> props)
-                    .addVariant("holystone_platform", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.HOLYSTONE), () -> props, VariantModelType.TBS)
-                    .addVariant("holystone_platform_tiles", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.HOLYSTONE), () -> props, VariantModelType.TBS)
+                    .addVariant("holystone_platform", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.HOLYSTONE), () -> props, TBS)
+                    .addVariant("holystone_platform_tiles", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.HOLYSTONE), () -> props, TBS)
                     .addVariant("holystone_raw", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.HOLYSTONE), () -> props)
                     .addVariant("holystone_smooth", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.HOLYSTONE), () -> props)
                     .addVariant("holystone_tiles", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.HOLYSTONE), () -> props)

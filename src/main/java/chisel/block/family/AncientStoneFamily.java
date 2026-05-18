@@ -1,46 +1,46 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class AncientStoneFamily extends ChiselFamily {
     public AncientStoneFamily(BlockBehaviour.Properties props) {
         family = builder("ancient_stone")
-                .addVariant("ancient_stone_array", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("ancient_stone_array", props, MULTIBLOCK_2X2)
                 .addVariant("ancient_stone_braid", props)
-                .addVariant("ancient_stone_chaotic", props, VariantModelType.MULTIBLOCK_3X3)
+                .addVariant("ancient_stone_chaotic", props, MULTIBLOCK_3X3)
                 .addVariant("ancient_stone_chaotic_medium", props)
                 .addVariant("ancient_stone_chaotic_small", props)
-                .addVariant("ancient_stone_circular", props, VariantModelType.CONNECTED)
+                .addVariant("ancient_stone_circular", props, CONNECTED)
                 .addVariant("ancient_stone_cracked", props)
                 .addVariant("ancient_stone_cracked_bricks", props)
-                .addVariant("ancient_stone_cuts", props, VariantModelType.MULTIBLOCK_4X4)
-                .addVariant("ancient_stone_dent", props, VariantModelType.CONNECTED)
-                .addVariant("ancient_stone_encased", props, VariantModelType.CONNECTED)
+                .addVariant("ancient_stone_cuts", props, MULTIBLOCK_4X4)
+                .addVariant("ancient_stone_dent", props, CONNECTED)
+                .addVariant("ancient_stone_encased", props, CONNECTED)
                 .addVariant("ancient_stone_french", props)
                 .addVariant("ancient_stone_french_2", props)
-                .addVariant("ancient_stone_jellybean", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("ancient_stone_jellybean", props, MULTIBLOCK_2X2)
                 .addVariant("ancient_stone_layers", props)
-                .addVariant("ancient_stone_mosaic", props, VariantModelType.CONNECTED)
+                .addVariant("ancient_stone_mosaic", props, CONNECTED)
                 .addVariant("ancient_stone_ornate", props)
                 .addVariant("ancient_stone_panel", props)
-                .addVariant("ancient_stone_pillar", props, VariantModelType.TBS)
+                .addVariant("ancient_stone_pillar", props, TBS)
                 .addVariant("ancient_stone_prism", props)
                 .addVariant("ancient_stone_raw", props)
                 .addVariant("ancient_stone_road", props)
-                .addVariant("ancient_stone_slanted", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("ancient_stone_slanted", props, MULTIBLOCK_2X2)
                 .addVariant("ancient_stone_small", props)
                 .addVariant("ancient_stone_soft", props)
                 .addVariant("ancient_stone_solid", props)
-                .addVariant("ancient_stone_tiles_large", props, VariantModelType.CONNECTED)
+                .addVariant("ancient_stone_tiles_large", props, CONNECTED)
                 .addVariant("ancient_stone_tiles_medium", props)
                 .addVariant("ancient_stone_tiles_small", props)
                 .addVariant("ancient_stone_triple", props)
-                .addVariant("ancient_stone_twisted", props, VariantModelType.TBS)
-                .addVariant("ancient_stone_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("ancient_stone_zag", props, VariantModelType.AR)
+                .addVariant("ancient_stone_twisted", props, TBS)
+                .addVariant("ancient_stone_weaver", props, CONNECTED)
+                .addVariant("ancient_stone_zag", props, AR)
                 .family();
     }
 

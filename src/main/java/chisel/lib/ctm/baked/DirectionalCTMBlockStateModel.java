@@ -1,6 +1,8 @@
 package chisel.lib.ctm.baked;
 
 import chisel.core.variant.Variant;
+import chisel.core.variant.VariantModelHandler;
+import chisel.registry.ChiselModelHandlers;
 import chisel.lib.ctm.util.CTMPartBuilder;
 import chisel.lib.ctm.ConnectedTextureBlockModelPart;
 import chisel.lib.ctm.geometry.DirectionalCTMKey;
@@ -76,25 +78,23 @@ public class DirectionalCTMBlockStateModel extends AbstractConnectedTextureBlock
     }
 
     private boolean shouldRenderDirectionalOverlay(Direction side) {
-        return switch (variant.getModelType()) {
-            case BOOKSHELF -> side.getAxis().isHorizontal() && horizontalQuads.containsKey(side);
-            case CTMH, CTMV -> connectedFaces.contains(side) || renderOverlayOnAllFaces;
-            default -> false;
-        };
+        VariantModelHandler handler = variant.getModelHandler();
+        if (handler.isBookshelfLike()) {
+            return side.getAxis().isHorizontal() && horizontalQuads.containsKey(side);
+        } else if (handler.usesDirectionalCTM()) {
+            return connectedFaces.contains(side) || renderOverlayOnAllFaces;
+        }
+        return false;
     }
 
     private void appendDirectionalQuad(DirectionalCTMKey key, Direction side, List<BakedQuad> faceQuads) {
-        switch (variant.getModelType()) {
-            case CTMH, BOOKSHELF -> {
-                CTMLogicHorizontal logic = key.horizontal(side);
-                CTMPartBuilder.appendIndexedQuad(horizontalQuads.get(side), logic.ordinal(), faceQuads);
-            }
-            case CTMV -> {
-                CTMLogicVertical logic = key.vertical(side);
-                CTMPartBuilder.appendIndexedQuad(verticalQuads.get(side), logic.ordinal(), faceQuads);
-            }
-            default -> {
-            }
+        VariantModelHandler handler = variant.getModelHandler();
+        if (handler.isBookshelfLike() || handler.isCTMH()) {
+            CTMLogicHorizontal logic = key.horizontal(side);
+            CTMPartBuilder.appendIndexedQuad(horizontalQuads.get(side), logic.ordinal(), faceQuads);
+        } else if (handler.isCTMV()) {
+            CTMLogicVertical logic = key.vertical(side);
+            CTMPartBuilder.appendIndexedQuad(verticalQuads.get(side), logic.ordinal(), faceQuads);
         }
     }
 }

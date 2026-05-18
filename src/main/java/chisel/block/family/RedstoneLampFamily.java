@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.RedstoneLampBlock;
@@ -11,7 +11,7 @@ public class RedstoneLampFamily extends ChiselFamily {
     public RedstoneLampFamily(BlockBehaviour.Properties props) {
         family = builder("redstone_lamp")
                 .addVariant(Blocks.REDSTONE_LAMP)
-                .addVariant("redstone_lamp_square", RedstoneLampBlock::new, () -> props, VariantModelType.REDSTONE_LAMP)
+                .addVariant("redstone_lamp_square", RedstoneLampBlock::new, () -> props, REDSTONE_LAMP)
                 .family();
     }
 

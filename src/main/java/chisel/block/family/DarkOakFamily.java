@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -10,21 +10,21 @@ public class DarkOakFamily extends ChiselFamily {
     public DarkOakFamily(BlockBehaviour.Properties props) {
         family = builder("dark_oak_planks")
                 .addVariant(Blocks.DARK_OAK_PLANKS)
-                .addVariant("dark_oak_planks_braced", props, VariantModelType.CONNECTED_TBS)
-                .addVariant("dark_oak_planks_braid", props, VariantModelType.CONNECTED)
-                .addVariant("dark_oak_planks_crude_horizontal", props, VariantModelType.MULTIBLOCK_3X3)
+                .addVariant("dark_oak_planks_braced", props, CONNECTED_TBS)
+                .addVariant("dark_oak_planks_braid", props, CONNECTED)
+                .addVariant("dark_oak_planks_crude_horizontal", props, MULTIBLOCK_3X3)
                 .addVariant("dark_oak_planks_crude_paneling", props)
-                .addVariant("dark_oak_planks_crude_vertical", props, VariantModelType.MULTIBLOCK_3X3)
-                .addVariant("dark_oak_planks_encased", props, VariantModelType.CONNECTED)
-                .addVariant("dark_oak_planks_encased_large", props, VariantModelType.CONNECTED)
-                .addVariant("dark_oak_planks_encased_smooth", props, VariantModelType.CONNECTED)
+                .addVariant("dark_oak_planks_crude_vertical", props, MULTIBLOCK_3X3)
+                .addVariant("dark_oak_planks_encased", props, CONNECTED)
+                .addVariant("dark_oak_planks_encased_large", props, CONNECTED)
+                .addVariant("dark_oak_planks_encased_smooth", props, CONNECTED)
                 .addVariant("dark_oak_planks_large", props)
-                .addVariant("dark_oak_planks_log_bordered", props, VariantModelType.CONNECTED)
-                .addVariant("dark_oak_planks_log_cabin_ns", props, VariantModelType.CONNECTED)
-                .addVariant("dark_oak_planks_log_cabin_ew", props, VariantModelType.CONNECTED)
-                .addVariant("dark_oak_planks_paneling", props, VariantModelType.CONNECTED)
-                .addVariant("dark_oak_planks_shipping", props, VariantModelType.CONNECTED)
-                .addVariant("dark_oak_planks_smooth", props, VariantModelType.CONNECTED)
+                .addVariant("dark_oak_planks_log_bordered", props, CONNECTED)
+                .addVariant("dark_oak_planks_log_cabin_ns", props, CONNECTED)
+                .addVariant("dark_oak_planks_log_cabin_ew", props, CONNECTED)
+                .addVariant("dark_oak_planks_paneling", props, CONNECTED)
+                .addVariant("dark_oak_planks_shipping", props, CONNECTED)
+                .addVariant("dark_oak_planks_smooth", props, CONNECTED)
                 .addVariant("dark_oak_planks_stacked", props)
                 .addVariant("dark_oak_planks_vertical", props)
                 .family();

@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -10,21 +10,21 @@ public class BirchFamily extends ChiselFamily {
     public BirchFamily(BlockBehaviour.Properties props) {
         family = builder("birch_planks")
                 .addVariant(Blocks.BIRCH_PLANKS)
-                .addVariant("birch_planks_braced", props, VariantModelType.CONNECTED_TBS)
-                .addVariant("birch_planks_braid", props, VariantModelType.CONNECTED)
-                .addVariant("birch_planks_crude_horizontal", props, VariantModelType.MULTIBLOCK_3X3)
+                .addVariant("birch_planks_braced", props, CONNECTED_TBS)
+                .addVariant("birch_planks_braid", props, CONNECTED)
+                .addVariant("birch_planks_crude_horizontal", props, MULTIBLOCK_3X3)
                 .addVariant("birch_planks_crude_paneling", props)
-                .addVariant("birch_planks_crude_vertical", props, VariantModelType.MULTIBLOCK_3X3)
-                .addVariant("birch_planks_encased", props, VariantModelType.CONNECTED)
-                .addVariant("birch_planks_encased_large", props, VariantModelType.CONNECTED)
-                .addVariant("birch_planks_encased_smooth", props, VariantModelType.CONNECTED)
+                .addVariant("birch_planks_crude_vertical", props, MULTIBLOCK_3X3)
+                .addVariant("birch_planks_encased", props, CONNECTED)
+                .addVariant("birch_planks_encased_large", props, CONNECTED)
+                .addVariant("birch_planks_encased_smooth", props, CONNECTED)
                 .addVariant("birch_planks_large", props)
-                .addVariant("birch_planks_log_bordered", props, VariantModelType.CONNECTED)
-                .addVariant("birch_planks_log_cabin_ew", props, VariantModelType.CONNECTED)
-                .addVariant("birch_planks_log_cabin_ns", props, VariantModelType.CONNECTED)
-                .addVariant("birch_planks_paneling", props, VariantModelType.CONNECTED)
-                .addVariant("birch_planks_shipping", props, VariantModelType.CONNECTED)
-                .addVariant("birch_planks_smooth", props, VariantModelType.CONNECTED)
+                .addVariant("birch_planks_log_bordered", props, CONNECTED)
+                .addVariant("birch_planks_log_cabin_ew", props, CONNECTED)
+                .addVariant("birch_planks_log_cabin_ns", props, CONNECTED)
+                .addVariant("birch_planks_paneling", props, CONNECTED)
+                .addVariant("birch_planks_shipping", props, CONNECTED)
+                .addVariant("birch_planks_smooth", props, CONNECTED)
                 .addVariant("birch_planks_stacked", props)
                 .addVariant("birch_planks_vertical", props)
                 .family();

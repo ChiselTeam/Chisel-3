@@ -1,8 +1,9 @@
 package chisel.client;
 
 import chisel.core.variant.VariantFamily;
-import chisel.core.variant.VariantModelType;
+import chisel.core.variant.VariantModelHandler;
 import chisel.registry.ChiselItems;
+import chisel.registry.ChiselModelHandlers;
 import chisel.util.VariantFinder;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
@@ -165,9 +166,7 @@ public class ChiselOffsetToolOutlineRenderer implements CustomBlockOutlineRender
 
             family.getVariants().forEach(variant -> {
                 if(state.is(variant.getBlock())) {
-                    if(variant.getModelType() == VariantModelType.V4) checkVariant.set(true);
-                    if(variant.getModelType() == VariantModelType.V9) checkVariant.set(true);
-                    if(variant.getModelType() == VariantModelType.V16) checkVariant.set(true);
+                    if(variant.getModelHandler().multiblockSize() > 0 && !variant.getModelHandler().usesRandomTexture()) checkVariant.set(true);
                 }
             });
 

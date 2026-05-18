@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -10,31 +10,31 @@ public class IronFamily extends ChiselFamily {
     public IronFamily(BlockBehaviour.Properties props) {
         family = builder("iron")
                 .addVariant(Blocks.IRON_BLOCK)
-                .addVariant("iron_bad_greggy", props, VariantModelType.CONNECTED)
+                .addVariant("iron_bad_greggy", props, CONNECTED)
                 .addVariant("iron_bolted", props)
-                .addVariant("iron_caution", props, VariantModelType.CONNECTED)
-                .addVariant("iron_crate", props, VariantModelType.CONNECTED)
+                .addVariant("iron_caution", props, CONNECTED)
+                .addVariant("iron_crate", props, CONNECTED)
                 .addVariant("iron_machine", props)
-                .addVariant("iron_scaffold", props, VariantModelType.CONNECTED)
-                .addVariant("iron_thermal", props, VariantModelType.TBS)
+                .addVariant("iron_scaffold", props, CONNECTED)
+                .addVariant("iron_thermal", props, TBS)
                 .addVariant("iron_125", props)
-                .addVariant("iron_bordered", props, VariantModelType.CONNECTED)
-                .addVariant("iron_brick", props, VariantModelType.TBS)
-                .addVariant("iron_coin_heads", props, VariantModelType.TBS)
-                .addVariant("iron_coin_tails", props, VariantModelType.TBS)
-                .addVariant("iron_crate_dark", props, VariantModelType.TBS)
-                .addVariant("iron_crate_light", props, VariantModelType.TBS)
-                .addVariant("iron_gears", props, VariantModelType.TBS)
-                .addVariant("iron_ingots_large", props, VariantModelType.TBS)
-                .addVariant("iron_ingots_small", props, VariantModelType.TBS)
-                .addVariant("iron_moon", props, VariantModelType.TBS)
+                .addVariant("iron_bordered", props, CONNECTED)
+                .addVariant("iron_brick", props, TBS)
+                .addVariant("iron_coin_heads", props, TBS)
+                .addVariant("iron_coin_tails", props, TBS)
+                .addVariant("iron_crate_dark", props, TBS)
+                .addVariant("iron_crate_light", props, TBS)
+                .addVariant("iron_gears", props, TBS)
+                .addVariant("iron_ingots_large", props, TBS)
+                .addVariant("iron_ingots_small", props, TBS)
+                .addVariant("iron_moon", props, TBS)
                 .addVariant("iron_moon_obsidian", props)
                 .addVariant("iron_moon_obsidian_purple", props)
-                .addVariant("iron_plates", props, VariantModelType.TBS)
-                .addVariant("iron_rivets", props, VariantModelType.TBS)
-                .addVariant("iron_shipping", props, VariantModelType.CONNECTED)
-                .addVariant("iron_simple", props, VariantModelType.TBS)
-                .addVariant("iron_vents", props, VariantModelType.TBS)
+                .addVariant("iron_plates", props, TBS)
+                .addVariant("iron_rivets", props, TBS)
+                .addVariant("iron_shipping", props, CONNECTED)
+                .addVariant("iron_simple", props, TBS)
+                .addVariant("iron_vents", props, TBS)
                 .family();
     }
 

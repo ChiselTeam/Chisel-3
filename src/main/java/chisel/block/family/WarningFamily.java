@@ -1,29 +1,29 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class WarningFamily extends ChiselFamily {
     public WarningFamily(BlockBehaviour.Properties props) {
         family = builder("warning")
-                .addVariant("warning_biohazard", props, VariantModelType.MULTI_LAYER)
-                .addVariant("warning_chem", props, VariantModelType.MULTI_LAYER)
-                .addVariant("warning_construction", props, VariantModelType.MULTI_LAYER)
-                .addVariant("warning_cryogenic", props, VariantModelType.MULTI_LAYER)
-                .addVariant("warning_death", props, VariantModelType.MULTI_LAYER)
-                .addVariant("warning_explosion", props, VariantModelType.MULTI_LAYER)
-                .addVariant("warning_falling", props, VariantModelType.MULTI_LAYER)
-                .addVariant("warning_falling_objects", props, VariantModelType.MULTI_LAYER)
-                .addVariant("warning_fire", props, VariantModelType.MULTI_LAYER)
-                .addVariant("warning_generic", props, VariantModelType.MULTI_LAYER)
-                .addVariant("warning_illuminati", props, VariantModelType.MULTI_LAYER)
-                .addVariant("warning_loud", props, VariantModelType.MULTI_LAYER)
-                .addVariant("warning_no_entry", props, VariantModelType.MULTI_LAYER)
-                .addVariant("warning_oxygen", props, VariantModelType.MULTI_LAYER)
-                .addVariant("warning_radiation", props, VariantModelType.MULTI_LAYER)
-                .addVariant("warning_voltage", props, VariantModelType.MULTI_LAYER)
+                .addVariant("warning_biohazard", props, MULTI_LAYER)
+                .addVariant("warning_chem", props, MULTI_LAYER)
+                .addVariant("warning_construction", props, MULTI_LAYER)
+                .addVariant("warning_cryogenic", props, MULTI_LAYER)
+                .addVariant("warning_death", props, MULTI_LAYER)
+                .addVariant("warning_explosion", props, MULTI_LAYER)
+                .addVariant("warning_falling", props, MULTI_LAYER)
+                .addVariant("warning_falling_objects", props, MULTI_LAYER)
+                .addVariant("warning_fire", props, MULTI_LAYER)
+                .addVariant("warning_generic", props, MULTI_LAYER)
+                .addVariant("warning_illuminati", props, MULTI_LAYER)
+                .addVariant("warning_loud", props, MULTI_LAYER)
+                .addVariant("warning_no_entry", props, MULTI_LAYER)
+                .addVariant("warning_oxygen", props, MULTI_LAYER)
+                .addVariant("warning_radiation", props, MULTI_LAYER)
+                .addVariant("warning_voltage", props, MULTI_LAYER)
                 .family();
     }
 

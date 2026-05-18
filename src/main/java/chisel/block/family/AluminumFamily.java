@@ -1,20 +1,20 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class AluminumFamily extends ChiselFamily {
     public AluminumFamily(BlockBehaviour.Properties props) {
         family = builder("aluminum")
-                .addVariant("aluminum_bad_greggy", props, VariantModelType.CONNECTED)
+                .addVariant("aluminum_bad_greggy", props, CONNECTED)
                 .addVariant("aluminum_bolted", props)
-                .addVariant("aluminum_caution", props, VariantModelType.CONNECTED)
-                .addVariant("aluminum_crate", props, VariantModelType.CONNECTED)
+                .addVariant("aluminum_caution", props, CONNECTED)
+                .addVariant("aluminum_crate", props, CONNECTED)
                 .addVariant("aluminum_machine", props)
-                .addVariant("aluminum_scaffold", props, VariantModelType.CONNECTED)
-                .addVariant("aluminum_thermal", props, VariantModelType.TBS)
+                .addVariant("aluminum_scaffold", props, CONNECTED)
+                .addVariant("aluminum_thermal", props, TBS)
                 .family();
     }
 

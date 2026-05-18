@@ -1,46 +1,46 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class CertusFamily extends ChiselFamily {
     public CertusFamily(BlockBehaviour.Properties props) {
         family = builder("certus")
-                .addVariant("certus_array", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("certus_array", props, MULTIBLOCK_2X2)
                 .addVariant("certus_braid", props)
-                .addVariant("certus_chaotic", props, VariantModelType.MULTIBLOCK_3X3)
+                .addVariant("certus_chaotic", props, MULTIBLOCK_3X3)
                 .addVariant("certus_chaotic_medium", props)
                 .addVariant("certus_chaotic_small", props)
-                .addVariant("certus_circular", props, VariantModelType.CONNECTED)
+                .addVariant("certus_circular", props, CONNECTED)
                 .addVariant("certus_cracked", props)
                 .addVariant("certus_cracked_bricks", props)
-                .addVariant("certus_cuts", props, VariantModelType.MULTIBLOCK_4X4)
-                .addVariant("certus_dent", props, VariantModelType.CONNECTED)
-                .addVariant("certus_encased", props, VariantModelType.CONNECTED)
+                .addVariant("certus_cuts", props, MULTIBLOCK_4X4)
+                .addVariant("certus_dent", props, CONNECTED)
+                .addVariant("certus_encased", props, CONNECTED)
                 .addVariant("certus_french", props)
                 .addVariant("certus_french_2", props)
-                .addVariant("certus_jellybean", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("certus_jellybean", props, MULTIBLOCK_2X2)
                 .addVariant("certus_layers", props)
-                .addVariant("certus_mosaic", props, VariantModelType.CONNECTED)
+                .addVariant("certus_mosaic", props, CONNECTED)
                 .addVariant("certus_ornate", props)
                 .addVariant("certus_panel", props)
-                .addVariant("certus_pillar", props, VariantModelType.TBS)
+                .addVariant("certus_pillar", props, TBS)
                 .addVariant("certus_prism", props)
                 .addVariant("certus_raw", props)
                 .addVariant("certus_road", props)
-                .addVariant("certus_slanted", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("certus_slanted", props, MULTIBLOCK_2X2)
                 .addVariant("certus_small", props)
                 .addVariant("certus_soft", props)
                 .addVariant("certus_solid", props)
-                .addVariant("certus_tiles_large", props, VariantModelType.CONNECTED)
+                .addVariant("certus_tiles_large", props, CONNECTED)
                 .addVariant("certus_tiles_medium", props)
                 .addVariant("certus_tiles_small", props)
                 .addVariant("certus_triple", props)
-                .addVariant("certus_twisted", props, VariantModelType.TBS)
-                .addVariant("certus_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("certus_zag", props, VariantModelType.AR)
+                .addVariant("certus_twisted", props, TBS)
+                .addVariant("certus_weaver", props, CONNECTED)
+                .addVariant("certus_zag", props, AR)
                 .family();
     }
 

@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -10,42 +10,42 @@ public class CobblestoneFamily extends ChiselFamily {
     public CobblestoneFamily(BlockBehaviour.Properties props) {
         family = builder("cobblestone")
                 .addVariant(Blocks.COBBLESTONE)
-                .addVariant("cobblestone_array", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("cobblestone_array", props, MULTIBLOCK_2X2)
                 .addVariant("cobblestone_braid", props)
-                .addVariant("cobblestone_chaotic", props, VariantModelType.MULTIBLOCK_3X3)
+                .addVariant("cobblestone_chaotic", props, MULTIBLOCK_3X3)
                 .addVariant("cobblestone_chaotic_medium", props)
                 .addVariant("cobblestone_chaotic_small", props)
-                .addVariant("cobblestone_circular", props, VariantModelType.CONNECTED)
+                .addVariant("cobblestone_circular", props, CONNECTED)
                 .addVariant("cobblestone_cracked", props)
                 .addVariant("cobblestone_cracked_bricks", props)
-                .addVariant("cobblestone_cuts", props, VariantModelType.MULTIBLOCK_4X4)
-                .addVariant("cobblestone_dent", props, VariantModelType.CONNECTED)
-                .addVariant("cobblestone_emboss", props, VariantModelType.CONNECTED)
-                .addVariant("cobblestone_encased", props, VariantModelType.CONNECTED)
+                .addVariant("cobblestone_cuts", props, MULTIBLOCK_4X4)
+                .addVariant("cobblestone_dent", props, CONNECTED)
+                .addVariant("cobblestone_emboss", props, CONNECTED)
+                .addVariant("cobblestone_encased", props, CONNECTED)
                 .addVariant("cobblestone_french", props)
                 .addVariant("cobblestone_french_2", props)
-                .addVariant("cobblestone_indent", props, VariantModelType.CONNECTED)
-                .addVariant("cobblestone_jellybean", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("cobblestone_indent", props, CONNECTED)
+                .addVariant("cobblestone_jellybean", props, MULTIBLOCK_2X2)
                 .addVariant("cobblestone_layers", props)
                 .addVariant("cobblestone_marker", props)
-                .addVariant("cobblestone_mosaic", props, VariantModelType.CONNECTED)
+                .addVariant("cobblestone_mosaic", props, CONNECTED)
                 .addVariant("cobblestone_ornate", props)
                 .addVariant("cobblestone_panel", props)
-                .addVariant("cobblestone_pillar", props, VariantModelType.TBS)
+                .addVariant("cobblestone_pillar", props, TBS)
                 .addVariant("cobblestone_prism", props)
                 .addVariant("cobblestone_raw", props)
                 .addVariant("cobblestone_road", props)
-                .addVariant("cobblestone_slanted", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("cobblestone_slanted", props, MULTIBLOCK_2X2)
                 .addVariant("cobblestone_small", props)
                 .addVariant("cobblestone_soft", props)
                 .addVariant("cobblestone_solid", props)
-                .addVariant("cobblestone_tiles_large", props, VariantModelType.CONNECTED)
+                .addVariant("cobblestone_tiles_large", props, CONNECTED)
                 .addVariant("cobblestone_tiles_medium", props)
                 .addVariant("cobblestone_tiles_small", props)
                 .addVariant("cobblestone_triple", props)
-                .addVariant("cobblestone_twisted", props, VariantModelType.TBS)
-                .addVariant("cobblestone_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("cobblestone_zag", props, VariantModelType.AR)
+                .addVariant("cobblestone_twisted", props, TBS)
+                .addVariant("cobblestone_weaver", props, CONNECTED)
+                .addVariant("cobblestone_zag", props, AR)
                 .family();
     }
 

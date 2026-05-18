@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -10,39 +10,39 @@ public class EndStoneFamily extends ChiselFamily {
     public EndStoneFamily(BlockBehaviour.Properties props) {
         family = builder("end_stone")
                 .addVariant(Blocks.END_STONE)
-                .addVariant("end_stone_array", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("end_stone_array", props, MULTIBLOCK_2X2)
                 .addVariant("end_stone_braid", props)
-                .addVariant("end_stone_chaotic_bricks", props, VariantModelType.MULTIBLOCK_3X3)
+                .addVariant("end_stone_chaotic_bricks", props, MULTIBLOCK_3X3)
                 .addVariant("end_stone_chaotic_medium", props)
                 .addVariant("end_stone_chaotic_small", props)
-                .addVariant("end_stone_circular", props, VariantModelType.CONNECTED)
+                .addVariant("end_stone_circular", props, CONNECTED)
                 .addVariant("end_stone_cracked", props)
                 .addVariant("end_stone_cracked_bricks", props)
-                .addVariant("end_stone_cuts", props, VariantModelType.MULTIBLOCK_4X4)
-                .addVariant("end_stone_dent", props, VariantModelType.CONNECTED)
-                .addVariant("end_stone_encased_bricks", props, VariantModelType.CONNECTED)
+                .addVariant("end_stone_cuts", props, MULTIBLOCK_4X4)
+                .addVariant("end_stone_dent", props, CONNECTED)
+                .addVariant("end_stone_encased_bricks", props, CONNECTED)
                 .addVariant("end_stone_french_1", props)
                 .addVariant("end_stone_french_2", props)
-                .addVariant("end_stone_jellybean", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("end_stone_jellybean", props, MULTIBLOCK_2X2)
                 .addVariant("end_stone_layers", props)
-                .addVariant("end_stone_mosaic", props, VariantModelType.CONNECTED)
+                .addVariant("end_stone_mosaic", props, CONNECTED)
                 .addVariant("end_stone_ornate", props)
                 .addVariant("end_stone_panel", props)
-                .addVariant("end_stone_pillar", props, VariantModelType.TBS)
+                .addVariant("end_stone_pillar", props, TBS)
                 .addVariant("end_stone_prism", props)
                 .addVariant("end_stone_raw", props)
                 .addVariant("end_stone_road", props)
-                .addVariant("end_stone_slanted", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("end_stone_slanted", props, MULTIBLOCK_2X2)
                 .addVariant("end_stone_small_bricks", props)
                 .addVariant("end_stone_soft_bricks", props)
                 .addVariant("end_stone_solid_bricks", props)
-                .addVariant("end_stone_tiles_large", props, VariantModelType.CONNECTED)
+                .addVariant("end_stone_tiles_large", props, CONNECTED)
                 .addVariant("end_stone_tiles_medium", props)
                 .addVariant("end_stone_tiles_small", props)
                 .addVariant("end_stone_triple_bricks", props)
-                .addVariant("end_stone_twisted", props, VariantModelType.TBS)
-                .addVariant("end_stone_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("end_stone_zag", props, VariantModelType.AR)
+                .addVariant("end_stone_twisted", props, TBS)
+                .addVariant("end_stone_weaver", props, CONNECTED)
+                .addVariant("end_stone_zag", props, AR)
                 .family();
     }
 

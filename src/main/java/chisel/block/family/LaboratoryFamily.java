@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
@@ -9,24 +9,24 @@ public class LaboratoryFamily extends ChiselFamily {
     public LaboratoryFamily(BlockBehaviour.Properties props) {
         family = builder("laboratory")
                 .addVariant("laboratory_checkerboard", props)
-                .addVariant("laboratory_clearscreen", props, VariantModelType.CONNECTED)
-                .addVariant("laboratory_console_information", props, VariantModelType.CTMH)
-                .addVariant("laboratory_console_left", props, VariantModelType.CTMH)
-                .addVariant("laboratory_console_right", props, VariantModelType.CTMH)
+                .addVariant("laboratory_clearscreen", props, CONNECTED)
+                .addVariant("laboratory_console_information", props, CTMH)
+                .addVariant("laboratory_console_left", props, CTMH)
+                .addVariant("laboratory_console_right", props, CTMH)
                 .addVariant("laboratory_floor", props)
                 .addVariant("laboratory_panel_clear", props)
                 .addVariant("laboratory_panel_dotted", props)
-                .addVariant("laboratory_panel_fuzzy", props, VariantModelType.CONNECTED)
+                .addVariant("laboratory_panel_fuzzy", props, CONNECTED)
                 .addVariant("laboratory_panel_wall", props)
                 .addVariant("laboratory_tiles_enamelled_large", props)
                 .addVariant("laboratory_tiles_enamelled_small", props)
                 .addVariant("laboratory_tiles_large", props)
                 .addVariant("laboratory_tiles_small", props)
-                .addVariant("laboratory_tiles_steel_large", props, VariantModelType.TBS)
-                .addVariant("laboratory_tiles_steel_small", props, VariantModelType.TBS)
+                .addVariant("laboratory_tiles_steel_large", props, TBS)
+                .addVariant("laboratory_tiles_steel_small", props, TBS)
                 .addVariant("laboratory_wall", props)
-                .addVariant("laboratory_wall_rounded", props, VariantModelType.CONNECTED)
-                .addVariant("laboratory_wall_vent", props, VariantModelType.TBS)
+                .addVariant("laboratory_wall_rounded", props, CONNECTED)
+                .addVariant("laboratory_wall_vent", props, TBS)
                 .family();
     }
 

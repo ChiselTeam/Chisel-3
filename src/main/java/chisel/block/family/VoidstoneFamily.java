@@ -1,16 +1,16 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class VoidstoneFamily extends ChiselFamily {
     public VoidstoneFamily(BlockBehaviour.Properties props) {
         family = builder("voidstone")
-                .addVariant("voidstone_bevel", props, VariantModelType.CONNECTED)
+                .addVariant("voidstone_bevel", props, CONNECTED)
                 .addVariant("voidstone_eye", props)
-                .addVariant("voidstone_metal", props, VariantModelType.CONNECTED)
+                .addVariant("voidstone_metal", props, CONNECTED)
                 .addVariant("voidstone_raw", props)
                 .addVariant("voidstone_runic", props)
                 .addVariant("voidstone_skull", props)

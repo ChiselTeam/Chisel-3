@@ -1,20 +1,20 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class LeadFamily extends ChiselFamily {
     public LeadFamily(BlockBehaviour.Properties props) {
         family = builder("lead")
-                .addVariant("lead_bad_greggy", props, VariantModelType.CONNECTED)
+                .addVariant("lead_bad_greggy", props, CONNECTED)
                 .addVariant("lead_bolted", props)
-                .addVariant("lead_caution", props, VariantModelType.CONNECTED)
-                .addVariant("lead_crate", props, VariantModelType.CONNECTED)
+                .addVariant("lead_caution", props, CONNECTED)
+                .addVariant("lead_crate", props, CONNECTED)
                 .addVariant("lead_machine", props)
-                .addVariant("lead_scaffold", props, VariantModelType.CONNECTED)
-                .addVariant("lead_thermal", props, VariantModelType.TBS)
+                .addVariant("lead_scaffold", props, CONNECTED)
+                .addVariant("lead_thermal", props, TBS)
                 .family();
     }
 

@@ -2,7 +2,7 @@ package chisel.block.family;
 
 import chisel.Chisel;
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -24,11 +24,11 @@ public class StainedGlassPaneFamily extends ChiselFamily {
 
         family = builder("stained_glass_pane_%s".formatted(color))
                 .addVariant(vanilla)
-                .addVariant("stained_glass_pane_%s_borderless".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_borderless".formatted(color))))), () -> props, VariantModelType.GLASS_PANE)
-                .addVariant("stained_glass_pane_%s_bubble".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_bubble".formatted(color))))), () -> props, VariantModelType.GLASS_PANE)
-                .addVariant("stained_glass_pane_%s_panel".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_panel".formatted(color))))), () -> props, VariantModelType.GLASS_PANE)
-                .addVariant("stained_glass_pane_%s_quad".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_quad".formatted(color))))), () -> props, VariantModelType.GLASS_PANE)
-                .addVariant("stained_glass_pane_%s_fancy".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_fancy".formatted(color))))), () -> props, VariantModelType.GLASS_PANE)
+                .addVariant("stained_glass_pane_%s_borderless".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_borderless".formatted(color))))), () -> props, GLASS_PANE)
+                .addVariant("stained_glass_pane_%s_bubble".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_bubble".formatted(color))))), () -> props, GLASS_PANE)
+                .addVariant("stained_glass_pane_%s_panel".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_panel".formatted(color))))), () -> props, GLASS_PANE)
+                .addVariant("stained_glass_pane_%s_quad".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_quad".formatted(color))))), () -> props, GLASS_PANE)
+                .addVariant("stained_glass_pane_%s_fancy".formatted(color), (p) -> new net.minecraft.world.level.block.StainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_fancy".formatted(color))))), () -> props, GLASS_PANE)
                 .family();
     }
 

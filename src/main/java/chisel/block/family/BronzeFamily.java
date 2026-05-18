@@ -1,20 +1,20 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class BronzeFamily extends ChiselFamily {
     public BronzeFamily(BlockBehaviour.Properties props) {
         family = builder("bronze")
-                .addVariant("bronze_bad_greggy", props, VariantModelType.CONNECTED)
+                .addVariant("bronze_bad_greggy", props, CONNECTED)
                 .addVariant("bronze_bolted", props)
-                .addVariant("bronze_caution", props, VariantModelType.CONNECTED)
-                .addVariant("bronze_crate", props, VariantModelType.CONNECTED)
+                .addVariant("bronze_caution", props, CONNECTED)
+                .addVariant("bronze_crate", props, CONNECTED)
                 .addVariant("bronze_machine", props)
-                .addVariant("bronze_scaffold", props, VariantModelType.CONNECTED)
-                .addVariant("bronze_thermal", props, VariantModelType.TBS)
+                .addVariant("bronze_scaffold", props, CONNECTED)
+                .addVariant("bronze_thermal", props, TBS)
                 .family();
     }
 

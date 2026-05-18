@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.PoweredBlock;
@@ -14,14 +14,14 @@ public class RedstoneFamily extends ChiselFamily {
                 .addVariant("redstone_bricks", PoweredBlock::new, () -> props)
                 .addVariant("redstone_bricks_chaotic", PoweredBlock::new, () -> props)
                 .addVariant("redstone_bricks_small", PoweredBlock::new, () -> props)
-                .addVariant("redstone_chiseled", PoweredBlock::new, () -> props, VariantModelType.TBS)
+                .addVariant("redstone_chiseled", PoweredBlock::new, () -> props, TBS)
                 .addVariant("redstone_chunk", PoweredBlock::new, () -> props)
                 .addVariant("redstone_circuit", PoweredBlock::new, () -> props)
                 .addVariant("redstone_circuit_supaplex", PoweredBlock::new, () -> props)
                 .addVariant("redstone_ere", PoweredBlock::new, () -> props)
                 .addVariant("redstone_greek", PoweredBlock::new, () -> props)
-                .addVariant("redstone_large", PoweredBlock::new, () -> props, VariantModelType.CONNECTED)
-                .addVariant("redstone_pillar", PoweredBlock::new, () -> props, VariantModelType.TBS)
+                .addVariant("redstone_large", PoweredBlock::new, () -> props, CONNECTED)
+                .addVariant("redstone_pillar", PoweredBlock::new, () -> props, TBS)
                 .addVariant("redstone_skulls", PoweredBlock::new, () -> props)
                 .addVariant("redstone_small", PoweredBlock::new, () -> props)
                 .addVariant("redstone_smooth", PoweredBlock::new, () -> props)

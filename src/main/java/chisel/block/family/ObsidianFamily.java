@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -11,11 +11,11 @@ public class ObsidianFamily extends ChiselFamily {
         family = builder("obsidian")
                 .addVariant(Blocks.OBSIDIAN)
                 .addVariant("obsidian_blocks", props)
-                .addVariant("obsidian_chiseled", props, VariantModelType.TBS)
-                .addVariant("obsidian_crate", props, VariantModelType.TBS)
+                .addVariant("obsidian_chiseled", props, TBS)
+                .addVariant("obsidian_crate", props, TBS)
                 .addVariant("obsidian_crate_unboxed", props)
                 .addVariant("obsidian_crystal", props)
-                .addVariant("obsidian_greek", props, VariantModelType.TBS)
+                .addVariant("obsidian_greek", props, TBS)
                 .addVariant("obsidian_organic_chunks", props)
                 .addVariant("obsidian_organic_growth", props)
                 .addVariant("obsidian_panel", props)
@@ -23,8 +23,8 @@ public class ObsidianFamily extends ChiselFamily {
                 .addVariant("obsidian_panel_map", props)
                 .addVariant("obsidian_panel_region", props)
                 .addVariant("obsidian_panel_shiny", props)
-                .addVariant("obsidian_pillar", props, VariantModelType.TBS)
-                .addVariant("obsidian_pillar_quartz", props, VariantModelType.TBS)
+                .addVariant("obsidian_pillar", props, TBS)
+                .addVariant("obsidian_pillar_quartz", props, TBS)
                 .addVariant("obsidian_tiles", props)
                 .family();
     }

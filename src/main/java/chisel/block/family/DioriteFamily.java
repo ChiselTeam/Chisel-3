@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -10,39 +10,39 @@ public class DioriteFamily extends ChiselFamily {
     public DioriteFamily(BlockBehaviour.Properties props) {
         family = builder("diorite")
                 .addVariant(Blocks.DIORITE)
-                .addVariant("diorite_array", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("diorite_array", props, MULTIBLOCK_2X2)
                 .addVariant("diorite_braid", props)
-                .addVariant("diorite_chaotic", props, VariantModelType.MULTIBLOCK_3X3)
+                .addVariant("diorite_chaotic", props, MULTIBLOCK_3X3)
                 .addVariant("diorite_chaotic_medium", props)
                 .addVariant("diorite_chaotic_small", props)
-                .addVariant("diorite_circular", props, VariantModelType.CONNECTED)
+                .addVariant("diorite_circular", props, CONNECTED)
                 .addVariant("diorite_cracked", props)
                 .addVariant("diorite_cracked_bricks", props)
-                .addVariant("diorite_cuts", props, VariantModelType.MULTIBLOCK_4X4)
-                .addVariant("diorite_dent", props, VariantModelType.CONNECTED)
-                .addVariant("diorite_encased", props, VariantModelType.CONNECTED)
+                .addVariant("diorite_cuts", props, MULTIBLOCK_4X4)
+                .addVariant("diorite_dent", props, CONNECTED)
+                .addVariant("diorite_encased", props, CONNECTED)
                 .addVariant("diorite_french", props)
                 .addVariant("diorite_french_2", props)
-                .addVariant("diorite_jellybean", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("diorite_jellybean", props, MULTIBLOCK_2X2)
                 .addVariant("diorite_layers", props)
-                .addVariant("diorite_mosaic", props, VariantModelType.CONNECTED)
+                .addVariant("diorite_mosaic", props, CONNECTED)
                 .addVariant("diorite_ornate", props)
                 .addVariant("diorite_panel", props)
-                .addVariant("diorite_pillar", props, VariantModelType.TBS)
+                .addVariant("diorite_pillar", props, TBS)
                 .addVariant("diorite_prism", props)
                 .addVariant("diorite_raw", props)
                 .addVariant("diorite_road", props)
-                .addVariant("diorite_slanted", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("diorite_slanted", props, MULTIBLOCK_2X2)
                 .addVariant("diorite_small", props)
                 .addVariant("diorite_soft", props)
                 .addVariant("diorite_solid", props)
-                .addVariant("diorite_tiles_large", props, VariantModelType.CONNECTED)
+                .addVariant("diorite_tiles_large", props, CONNECTED)
                 .addVariant("diorite_tiles_medium", props)
                 .addVariant("diorite_tiles_small", props)
                 .addVariant("diorite_triple", props)
-                .addVariant("diorite_twisted", props, VariantModelType.TBS)
-                .addVariant("diorite_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("diorite_zag", props, VariantModelType.AR)
+                .addVariant("diorite_twisted", props, TBS)
+                .addVariant("diorite_weaver", props, CONNECTED)
+                .addVariant("diorite_zag", props, AR)
                 .family();
     }
 

@@ -1,22 +1,22 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class MilitaryFamily extends ChiselFamily {
     public MilitaryFamily(BlockBehaviour.Properties props) {
         family = builder("military")
-                .addVariant("military_imperial_camo", props, VariantModelType.V4)
-                .addVariant("military_imperial_camo_secluded", props, VariantModelType.V4)
-                .addVariant("military_imperial_caution_orange", props, VariantModelType.CONNECTED)
-                .addVariant("military_imperial_caution_white", props, VariantModelType.CONNECTED)
+                .addVariant("military_imperial_camo", props, V4)
+                .addVariant("military_imperial_camo_secluded", props, V4)
+                .addVariant("military_imperial_caution_orange", props, CONNECTED)
+                .addVariant("military_imperial_caution_white", props, CONNECTED)
                 .addVariant("military_imperial_plate", props)
-                .addVariant("military_rebel_camo", props, VariantModelType.V4)
-                .addVariant("military_rebel_camo_secluded", props, VariantModelType.V4)
-                .addVariant("military_rebel_caution_red", props, VariantModelType.CONNECTED)
-                .addVariant("military_rebel_caution_white", props, VariantModelType.CONNECTED)
+                .addVariant("military_rebel_camo", props, V4)
+                .addVariant("military_rebel_camo_secluded", props, V4)
+                .addVariant("military_rebel_caution_red", props, CONNECTED)
+                .addVariant("military_rebel_caution_white", props, CONNECTED)
                 .addVariant("military_rebel_plate", props)
                 .family();
     }

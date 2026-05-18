@@ -2,7 +2,7 @@ package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
 import chisel.block.SparklyConnectedTextureBlock;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.registry.ChiselParticles;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -14,15 +14,15 @@ public class GrimstoneFamily extends ChiselFamily {
                 .addVariant("grimstone_blocks_rough", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props)
                 .addVariant("grimstone_bricks", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props)
                 .addVariant("grimstone_bricks_large", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props)
-                .addVariant("grimstone_chiseled", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props, VariantModelType.TBS)
+                .addVariant("grimstone_chiseled", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props, TBS)
                 .addVariant("grimstone_chunks", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props)
                 .addVariant("grimstone_construction", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props)
                 .addVariant("grimstone_flaky", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props)
                 .addVariant("grimstone_hate", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props)
                 .addVariant("grimstone_plate", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props)
                 .addVariant("grimstone_plate_smooth", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props)
-                .addVariant("grimstone_platform", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props, VariantModelType.TBS)
-                .addVariant("grimstone_platform_tiles", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props, VariantModelType.TBS)
+                .addVariant("grimstone_platform", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props, TBS)
+                .addVariant("grimstone_platform_tiles", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props, TBS)
                 .addVariant("grimstone_raw", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props)
                 .addVariant("grimstone_smooth", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props)
                 .addVariant("grimstone_tiles", (p) -> new SparklyConnectedTextureBlock(p, ChiselParticles.GRIMSTONE), () -> props)

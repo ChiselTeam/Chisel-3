@@ -2,7 +2,7 @@ package chisel.block.family;
 
 import chisel.Chisel;
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -14,13 +14,13 @@ public class GlassPaneFamily extends ChiselFamily {
     public GlassPaneFamily(BlockBehaviour.Properties props) {
         family = builder("glass_pane")
                 .addVariant(Blocks.GLASS_PANE)
-                .addVariant("glass_pane_borderless", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_borderless")))), () -> props, VariantModelType.GLASS_PANE)
-                .addVariant("glass_pane_bubble", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_bubble")))), () -> props, VariantModelType.GLASS_PANE)
-                .addVariant("glass_pane_chinese", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_chinese")))), () -> props, VariantModelType.GLASS_PANE)
-                .addVariant("glass_pane_chinese_gold", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_chinese_gold")))), () -> props, VariantModelType.GLASS_PANE)
-                .addVariant("glass_pane_japanese", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_japanese")))), () -> props, VariantModelType.GLASS_PANE)
-                .addVariant("glass_pane_japanese2", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_japanese2")))), () -> props, VariantModelType.GLASS_PANE)
-                .addVariant("glass_pane_streak", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_streak")))), () -> props, VariantModelType.GLASS_PANE)
+                .addVariant("glass_pane_borderless", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_borderless")))), () -> props, GLASS_PANE)
+                .addVariant("glass_pane_bubble", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_bubble")))), () -> props, GLASS_PANE)
+                .addVariant("glass_pane_chinese", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_chinese")))), () -> props, GLASS_PANE)
+                .addVariant("glass_pane_chinese_gold", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_chinese_gold")))), () -> props, GLASS_PANE)
+                .addVariant("glass_pane_japanese", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_japanese")))), () -> props, GLASS_PANE)
+                .addVariant("glass_pane_japanese2", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_japanese2")))), () -> props, GLASS_PANE)
+                .addVariant("glass_pane_streak", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_streak")))), () -> props, GLASS_PANE)
                 .family();
     }
 

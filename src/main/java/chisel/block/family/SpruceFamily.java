@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -11,20 +11,20 @@ public class SpruceFamily extends ChiselFamily {
         family = builder("spruce_planks")
                 .addVariant(Blocks.SPRUCE_PLANKS)
                 .addVariant("spruce_planks_braced", props)
-                .addVariant("spruce_planks_braid", props, VariantModelType.CONNECTED)
-                .addVariant("spruce_planks_crude_horizontal", props, VariantModelType.MULTIBLOCK_3X3)
+                .addVariant("spruce_planks_braid", props, CONNECTED)
+                .addVariant("spruce_planks_crude_horizontal", props, MULTIBLOCK_3X3)
                 .addVariant("spruce_planks_crude_paneling", props)
-                .addVariant("spruce_planks_crude_vertical", props, VariantModelType.MULTIBLOCK_3X3)
-                .addVariant("spruce_planks_encased", props, VariantModelType.CONNECTED)
-                .addVariant("spruce_planks_encased_large", props, VariantModelType.CONNECTED)
-                .addVariant("spruce_planks_encased_smooth", props, VariantModelType.CONNECTED)
+                .addVariant("spruce_planks_crude_vertical", props, MULTIBLOCK_3X3)
+                .addVariant("spruce_planks_encased", props, CONNECTED)
+                .addVariant("spruce_planks_encased_large", props, CONNECTED)
+                .addVariant("spruce_planks_encased_smooth", props, CONNECTED)
                 .addVariant("spruce_planks_large", props)
-                .addVariant("spruce_planks_log_bordered", props, VariantModelType.CONNECTED)
-                .addVariant("spruce_planks_log_cabin_ew", props, VariantModelType.CONNECTED)
-                .addVariant("spruce_planks_log_cabin_ns", props, VariantModelType.CONNECTED)
-                .addVariant("spruce_planks_paneling", props, VariantModelType.CONNECTED)
-                .addVariant("spruce_planks_shipping", props, VariantModelType.CONNECTED)
-                .addVariant("spruce_planks_smooth", props, VariantModelType.CONNECTED)
+                .addVariant("spruce_planks_log_bordered", props, CONNECTED)
+                .addVariant("spruce_planks_log_cabin_ew", props, CONNECTED)
+                .addVariant("spruce_planks_log_cabin_ns", props, CONNECTED)
+                .addVariant("spruce_planks_paneling", props, CONNECTED)
+                .addVariant("spruce_planks_shipping", props, CONNECTED)
+                .addVariant("spruce_planks_smooth", props, CONNECTED)
                 .addVariant("spruce_planks_stacked", props)
                 .addVariant("spruce_planks_vertical", props)
                 .family();

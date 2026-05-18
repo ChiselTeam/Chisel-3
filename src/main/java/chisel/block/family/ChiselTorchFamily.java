@@ -3,7 +3,7 @@ package chisel.block.family;
 import chisel.block.util.ChiselFamily;
 import chisel.block.NoParticleTorchBlock;
 import chisel.block.NoParticleWallTorchBlock;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.registry.ChiselBlocks;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Block;
@@ -15,26 +15,26 @@ public class ChiselTorchFamily extends ChiselFamily {
 
     public ChiselTorchFamily(BlockBehaviour.Properties props) {
         family = builder("torch")
-                .addTorchVariant("torch_1", NoParticleTorchBlock::new, () -> props, VariantModelType.TORCH)
-                .addTorchVariant("torch_2", NoParticleTorchBlock::new, () -> props, VariantModelType.TORCH)
-                .addTorchVariant("torch_3", NoParticleTorchBlock::new, () -> props, VariantModelType.TORCH)
-                .addTorchVariant("torch_4", NoParticleTorchBlock::new, () -> props, VariantModelType.TORCH)
-                .addTorchVariant("torch_5", NoParticleTorchBlock::new, () -> props, VariantModelType.TORCH)
-                .addTorchVariant("torch_6", NoParticleTorchBlock::new, () -> props, VariantModelType.TORCH)
-                .addTorchVariant("torch_7", NoParticleTorchBlock::new, () -> props, VariantModelType.TORCH)
-                .addTorchVariant("torch_8", NoParticleTorchBlock::new, () -> props, VariantModelType.TORCH)
-                .addTorchVariant("torch_9", NoParticleTorchBlock::new, () -> props, VariantModelType.TORCH)
-                .addTorchVariant("torch_10", NoParticleTorchBlock::new, () -> props, VariantModelType.TORCH)
-                .addTorchVariant("wall_torch_1", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_1").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), VariantModelType.WALL_TORCH)
-                .addTorchVariant("wall_torch_2", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_2").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), VariantModelType.WALL_TORCH)
-                .addTorchVariant("wall_torch_3", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_3").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), VariantModelType.WALL_TORCH)
-                .addTorchVariant("wall_torch_4", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_4").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), VariantModelType.WALL_TORCH)
-                .addTorchVariant("wall_torch_5", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_5").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), VariantModelType.WALL_TORCH)
-                .addTorchVariant("wall_torch_6", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_6").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), VariantModelType.WALL_TORCH)
-                .addTorchVariant("wall_torch_7", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_7").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), VariantModelType.WALL_TORCH)
-                .addTorchVariant("wall_torch_8", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_8").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), VariantModelType.WALL_TORCH)
-                .addTorchVariant("wall_torch_9", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_9").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), VariantModelType.WALL_TORCH)
-                .addTorchVariant("wall_torch_10", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_10").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), VariantModelType.WALL_TORCH)
+                .addTorchVariant("torch_1", NoParticleTorchBlock::new, () -> props, TORCH)
+                .addTorchVariant("torch_2", NoParticleTorchBlock::new, () -> props, TORCH)
+                .addTorchVariant("torch_3", NoParticleTorchBlock::new, () -> props, TORCH)
+                .addTorchVariant("torch_4", NoParticleTorchBlock::new, () -> props, TORCH)
+                .addTorchVariant("torch_5", NoParticleTorchBlock::new, () -> props, TORCH)
+                .addTorchVariant("torch_6", NoParticleTorchBlock::new, () -> props, TORCH)
+                .addTorchVariant("torch_7", NoParticleTorchBlock::new, () -> props, TORCH)
+                .addTorchVariant("torch_8", NoParticleTorchBlock::new, () -> props, TORCH)
+                .addTorchVariant("torch_9", NoParticleTorchBlock::new, () -> props, TORCH)
+                .addTorchVariant("torch_10", NoParticleTorchBlock::new, () -> props, TORCH)
+                .addTorchVariant("wall_torch_1", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_1").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), WALL_TORCH)
+                .addTorchVariant("wall_torch_2", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_2").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), WALL_TORCH)
+                .addTorchVariant("wall_torch_3", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_3").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), WALL_TORCH)
+                .addTorchVariant("wall_torch_4", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_4").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), WALL_TORCH)
+                .addTorchVariant("wall_torch_5", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_5").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), WALL_TORCH)
+                .addTorchVariant("wall_torch_6", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_6").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), WALL_TORCH)
+                .addTorchVariant("wall_torch_7", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_7").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), WALL_TORCH)
+                .addTorchVariant("wall_torch_8", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_8").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), WALL_TORCH)
+                .addTorchVariant("wall_torch_9", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_9").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), WALL_TORCH)
+                .addTorchVariant("wall_torch_10", NoParticleWallTorchBlock::new, () -> wallVariant(ChiselBlocks.TORCH.getVariant("torch_10").get()).noCollision().instabreak().lightLevel((_) -> 14).sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY), WALL_TORCH)
                 .family();
     }
 

@@ -1,24 +1,24 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class ArcaneFamily extends ChiselFamily {
     public ArcaneFamily(BlockBehaviour.Properties props) {
         family = builder("arcane")
-                .addVariant("arcane_border", props, VariantModelType.CONNECTED)
-                .addVariant("arcane_crack", props, VariantModelType.V9)
-                .addVariant("arcane_matrix", props, VariantModelType.V9)
-                .addVariant("arcane_tile", props, VariantModelType.CONNECTED)
-                .addVariant("arcane_big_brick", props, VariantModelType.CONNECTED)
-                .addVariant("arcane_border_brain", props, VariantModelType.CONNECTED)
-                .addVariant("arcane_conduit", props, VariantModelType.CONNECTED)
+                .addVariant("arcane_border", props, CONNECTED)
+                .addVariant("arcane_crack", props, V9)
+                .addVariant("arcane_matrix", props, V9)
+                .addVariant("arcane_tile", props, CONNECTED)
+                .addVariant("arcane_big_brick", props, CONNECTED)
+                .addVariant("arcane_border_brain", props, CONNECTED)
+                .addVariant("arcane_conduit", props, CONNECTED)
                 .addVariant("arcane_moon_engrave", props)
                 .addVariant("arcane_moon_glow", props)
-                .addVariant("arcane_runes", props, VariantModelType.V16)
-                .addVariant("arcane_runes_glow", props, VariantModelType.V16)
+                .addVariant("arcane_runes", props, V16)
+                .addVariant("arcane_runes_glow", props, V16)
                 .family();
     }
 

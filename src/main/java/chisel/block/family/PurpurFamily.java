@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -10,38 +10,38 @@ public class PurpurFamily extends ChiselFamily {
     public PurpurFamily(BlockBehaviour.Properties props) {
         family = builder("purpur")
                 .addVariant(Blocks.PURPUR_BLOCK)
-                .addVariant("purpur_array", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("purpur_array", props, MULTIBLOCK_2X2)
                 .addVariant("purpur_braid", props)
-                .addVariant("purpur_chaotic_bricks", props, VariantModelType.MULTIBLOCK_3X3)
+                .addVariant("purpur_chaotic_bricks", props, MULTIBLOCK_3X3)
                 .addVariant("purpur_chaotic_medium", props)
                 .addVariant("purpur_chaotic_small", props)
-                .addVariant("purpur_circular", props, VariantModelType.CONNECTED)
+                .addVariant("purpur_circular", props, CONNECTED)
                 .addVariant("purpur_cracked", props)
                 .addVariant("purpur_cracked_bricks", props)
-                .addVariant("purpur_cuts", props, VariantModelType.MULTIBLOCK_4X4)
-                .addVariant("purpur_dent", props, VariantModelType.CONNECTED)
-                .addVariant("purpur_encased_bricks", props, VariantModelType.CONNECTED)
+                .addVariant("purpur_cuts", props, MULTIBLOCK_4X4)
+                .addVariant("purpur_dent", props, CONNECTED)
+                .addVariant("purpur_encased_bricks", props, CONNECTED)
                 .addVariant("purpur_french_1", props)
                 .addVariant("purpur_french_2", props)
-                .addVariant("purpur_jellybean", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("purpur_jellybean", props, MULTIBLOCK_2X2)
                 .addVariant("purpur_layers", props)
-                .addVariant("purpur_mosaic", props, VariantModelType.CONNECTED)
+                .addVariant("purpur_mosaic", props, CONNECTED)
                 .addVariant("purpur_ornate", props)
                 .addVariant("purpur_panel", props)
-                .addVariant("purpur_pillar", props, VariantModelType.TBS)
+                .addVariant("purpur_pillar", props, TBS)
                 .addVariant("purpur_prism", props)
                 .addVariant("purpur_road", props)
-                .addVariant("purpur_slanted", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("purpur_slanted", props, MULTIBLOCK_2X2)
                 .addVariant("purpur_small_bricks", props)
                 .addVariant("purpur_soft_bricks", props)
                 .addVariant("purpur_solid_bricks", props)
-                .addVariant("purpur_tiles_large", props, VariantModelType.CONNECTED)
+                .addVariant("purpur_tiles_large", props, CONNECTED)
                 .addVariant("purpur_tiles_medium", props)
                 .addVariant("purpur_tiles_small", props)
                 .addVariant("purpur_triple_bricks", props)
-                .addVariant("purpur_twisted", props, VariantModelType.TBS)
-                .addVariant("purpur_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("purpur_zag", props, VariantModelType.AR)
+                .addVariant("purpur_twisted", props, TBS)
+                .addVariant("purpur_weaver", props, CONNECTED)
+                .addVariant("purpur_zag", props, AR)
                 .family();
     }
 

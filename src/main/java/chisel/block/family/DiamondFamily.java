@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -13,12 +13,12 @@ public class DiamondFamily extends ChiselFamily {
                 .addVariant("diamond_bismuth", props)
                 .addVariant("diamond_cells", props)
                 .addVariant("diamond_crushed", props)
-                .addVariant("diamond_embossed", props, VariantModelType.TBS)
+                .addVariant("diamond_embossed", props, TBS)
                 .addVariant("diamond_obsidian", props)
                 .addVariant("diamond_obsidian_purple", props)
                 .addVariant("diamond_ornate", props)
-                .addVariant("diamond_panel", props, VariantModelType.TBS)
-                .addVariant("diamond_simple", props, VariantModelType.TBS)
+                .addVariant("diamond_panel", props, TBS)
+                .addVariant("diamond_simple", props, TBS)
                 .addVariant("diamond_small_blocks", props)
                 .addVariant("diamond_small_blocks_ornate", props)
                 .addVariant("diamond_zelda", props)

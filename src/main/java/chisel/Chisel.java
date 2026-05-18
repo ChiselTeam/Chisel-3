@@ -1,5 +1,6 @@
 package chisel;
 
+import chisel.registry.ChiselModelHandlers;
 import chisel.registry.*;
 import net.minecraft.resources.Identifier;
 import net.neoforged.bus.api.IEventBus;
@@ -11,6 +12,7 @@ public class Chisel {
     public static final String MODID = "chisel";
 
     public Chisel(IEventBus bus) {
+        ChiselModelHandlers.registerAll();
         ChiselSounds.SOUNDS.register(bus);
         ChiselBlocks.registerBlocks(bus);
         ChiselBlockEntities.BLOCK_ENTITIES.register(bus);

@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
@@ -22,7 +22,7 @@ public class TyrianFamily extends ChiselFamily {
                 .addVariant("tyrian_purple_faded", props)
                 .addVariant("tyrian_rusted", props)
                 .addVariant("tyrian_seams", props)
-                .addVariant("tyrian_shiny", props, VariantModelType.CONNECTED)
+                .addVariant("tyrian_shiny", props, CONNECTED)
                 .addVariant("tyrian_shiny_raw", props)
                 .addVariant("tyrian_tiles", props)
                 .family();

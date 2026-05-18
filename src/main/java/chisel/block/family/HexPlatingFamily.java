@@ -1,29 +1,29 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class HexPlatingFamily extends ChiselFamily {
     public HexPlatingFamily(BlockBehaviour.Properties props) {
         family = builder("hex_plating")
-                .addVariant("hex_plating_0", props, VariantModelType.MULTI_LAYER)
-                .addVariant("hex_plating_1", props, VariantModelType.MULTI_LAYER)
-                .addVariant("hex_plating_2", props, VariantModelType.MULTI_LAYER)
-                .addVariant("hex_plating_3", props, VariantModelType.MULTI_LAYER)
-                .addVariant("hex_plating_4", props, VariantModelType.MULTI_LAYER)
-                .addVariant("hex_plating_5", props, VariantModelType.MULTI_LAYER)
-                .addVariant("hex_plating_6", props, VariantModelType.MULTI_LAYER)
-                .addVariant("hex_plating_7", props, VariantModelType.MULTI_LAYER)
-                .addVariant("hex_plating_8", props, VariantModelType.MULTI_LAYER)
-                .addVariant("hex_plating_9", props, VariantModelType.MULTI_LAYER)
-                .addVariant("hex_plating_10", props, VariantModelType.MULTI_LAYER)
-                .addVariant("hex_plating_11", props, VariantModelType.MULTI_LAYER)
-                .addVariant("hex_plating_12", props, VariantModelType.MULTI_LAYER)
-                .addVariant("hex_plating_13", props, VariantModelType.MULTI_LAYER)
-                .addVariant("hex_plating_14", props, VariantModelType.MULTI_LAYER)
-                .addVariant("hex_plating_15", props, VariantModelType.MULTI_LAYER)
+                .addVariant("hex_plating_0", props, MULTI_LAYER)
+                .addVariant("hex_plating_1", props, MULTI_LAYER)
+                .addVariant("hex_plating_2", props, MULTI_LAYER)
+                .addVariant("hex_plating_3", props, MULTI_LAYER)
+                .addVariant("hex_plating_4", props, MULTI_LAYER)
+                .addVariant("hex_plating_5", props, MULTI_LAYER)
+                .addVariant("hex_plating_6", props, MULTI_LAYER)
+                .addVariant("hex_plating_7", props, MULTI_LAYER)
+                .addVariant("hex_plating_8", props, MULTI_LAYER)
+                .addVariant("hex_plating_9", props, MULTI_LAYER)
+                .addVariant("hex_plating_10", props, MULTI_LAYER)
+                .addVariant("hex_plating_11", props, MULTI_LAYER)
+                .addVariant("hex_plating_12", props, MULTI_LAYER)
+                .addVariant("hex_plating_13", props, MULTI_LAYER)
+                .addVariant("hex_plating_14", props, MULTI_LAYER)
+                .addVariant("hex_plating_15", props, MULTI_LAYER)
                 .family();
     }
 

@@ -1,20 +1,20 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class NickelFamily extends ChiselFamily {
     public NickelFamily(BlockBehaviour.Properties props) {
         family = builder("nickel")
-                .addVariant("nickel_bad_greggy", props, VariantModelType.CONNECTED)
+                .addVariant("nickel_bad_greggy", props, CONNECTED)
                 .addVariant("nickel_bolted", props)
-                .addVariant("nickel_caution", props, VariantModelType.CONNECTED)
+                .addVariant("nickel_caution", props, CONNECTED)
                 .addVariant("nickel_crate", props)
                 .addVariant("nickel_machine", props)
-                .addVariant("nickel_scaffold", props, VariantModelType.CONNECTED)
-                .addVariant("nickel_thermal", props, VariantModelType.TBS)
+                .addVariant("nickel_scaffold", props, CONNECTED)
+                .addVariant("nickel_thermal", props, TBS)
                 .family();
     }
 

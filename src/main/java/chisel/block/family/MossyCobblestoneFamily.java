@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -10,42 +10,42 @@ public class MossyCobblestoneFamily extends ChiselFamily {
     public MossyCobblestoneFamily(BlockBehaviour.Properties props) {
         family = builder("mossy_cobblestone")
                 .addVariant(Blocks.MOSSY_COBBLESTONE)
-                .addVariant("mossy_cobblestone_array", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("mossy_cobblestone_array", props, MULTIBLOCK_2X2)
                 .addVariant("mossy_cobblestone_braid", props)
-                .addVariant("mossy_cobblestone_chaotic", props, VariantModelType.MULTIBLOCK_3X3)
+                .addVariant("mossy_cobblestone_chaotic", props, MULTIBLOCK_3X3)
                 .addVariant("mossy_cobblestone_chaotic_medium", props)
                 .addVariant("mossy_cobblestone_chaotic_small", props)
-                .addVariant("mossy_cobblestone_circular", props, VariantModelType.CONNECTED)
+                .addVariant("mossy_cobblestone_circular", props, CONNECTED)
                 .addVariant("mossy_cobblestone_cracked", props)
                 .addVariant("mossy_cobblestone_cracked_bricks", props)
-                .addVariant("mossy_cobblestone_cuts", props, VariantModelType.MULTIBLOCK_4X4)
-                .addVariant("mossy_cobblestone_dent", props, VariantModelType.CONNECTED)
-                .addVariant("mossy_cobblestone_emboss", props, VariantModelType.CONNECTED)
-                .addVariant("mossy_cobblestone_encased", props, VariantModelType.CONNECTED)
+                .addVariant("mossy_cobblestone_cuts", props, MULTIBLOCK_4X4)
+                .addVariant("mossy_cobblestone_dent", props, CONNECTED)
+                .addVariant("mossy_cobblestone_emboss", props, CONNECTED)
+                .addVariant("mossy_cobblestone_encased", props, CONNECTED)
                 .addVariant("mossy_cobblestone_french", props)
                 .addVariant("mossy_cobblestone_french_2", props)
-                .addVariant("mossy_cobblestone_indent", props, VariantModelType.CONNECTED)
-                .addVariant("mossy_cobblestone_jellybean", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("mossy_cobblestone_indent", props, CONNECTED)
+                .addVariant("mossy_cobblestone_jellybean", props, MULTIBLOCK_2X2)
                 .addVariant("mossy_cobblestone_layers", props)
                 .addVariant("mossy_cobblestone_marker", props)
-                .addVariant("mossy_cobblestone_mosaic", props, VariantModelType.CONNECTED)
+                .addVariant("mossy_cobblestone_mosaic", props, CONNECTED)
                 .addVariant("mossy_cobblestone_ornate", props)
                 .addVariant("mossy_cobblestone_panel", props)
-                .addVariant("mossy_cobblestone_pillar", props, VariantModelType.TBS)
+                .addVariant("mossy_cobblestone_pillar", props, TBS)
                 .addVariant("mossy_cobblestone_prism", props)
                 .addVariant("mossy_cobblestone_raw", props)
                 .addVariant("mossy_cobblestone_road", props)
-                .addVariant("mossy_cobblestone_slanted", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("mossy_cobblestone_slanted", props, MULTIBLOCK_2X2)
                 .addVariant("mossy_cobblestone_small", props)
                 .addVariant("mossy_cobblestone_soft", props)
                 .addVariant("mossy_cobblestone_solid", props)
-                .addVariant("mossy_cobblestone_tiles_large", props, VariantModelType.CONNECTED)
+                .addVariant("mossy_cobblestone_tiles_large", props, CONNECTED)
                 .addVariant("mossy_cobblestone_tiles_medium", props)
                 .addVariant("mossy_cobblestone_tiles_small", props)
                 .addVariant("mossy_cobblestone_triple", props)
-                .addVariant("mossy_cobblestone_twisted", props, VariantModelType.TBS)
-                .addVariant("mossy_cobblestone_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("mossy_cobblestone_zag", props, VariantModelType.AR)
+                .addVariant("mossy_cobblestone_twisted", props, TBS)
+                .addVariant("mossy_cobblestone_weaver", props, CONNECTED)
+                .addVariant("mossy_cobblestone_zag", props, AR)
                 .family();
     }
 

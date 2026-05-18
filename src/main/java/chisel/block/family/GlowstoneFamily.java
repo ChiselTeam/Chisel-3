@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -10,7 +10,7 @@ public class GlowstoneFamily extends ChiselFamily {
     public GlowstoneFamily(BlockBehaviour.Properties props) {
         family = builder("glowstone")
                 .addVariant(Blocks.GLOWSTONE)
-                .addVariant("glowstone_array", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("glowstone_array", props, MULTIBLOCK_2X2)
                 .addVariant("glowstone_bismuth", props)
                 .addVariant("glowstone_braid", props)
                 .addVariant("glowstone_chaotic_medium", props)
@@ -18,28 +18,28 @@ public class GlowstoneFamily extends ChiselFamily {
                 .addVariant("glowstone_circular", props)
                 .addVariant("glowstone_cracked", props)
                 .addVariant("glowstone_cracked_bricks", props)
-                .addVariant("glowstone_dent", props, VariantModelType.CONNECTED)
-                .addVariant("glowstone_encased_bricks", props, VariantModelType.CONNECTED)
+                .addVariant("glowstone_dent", props, CONNECTED)
+                .addVariant("glowstone_encased_bricks", props, CONNECTED)
                 .addVariant("glowstone_french_1", props)
                 .addVariant("glowstone_french_2", props)
-                .addVariant("glowstone_jellybean", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("glowstone_jellybean", props, MULTIBLOCK_2X2)
                 .addVariant("glowstone_layers", props)
-                .addVariant("glowstone_mosaic", props, VariantModelType.CONNECTED)
+                .addVariant("glowstone_mosaic", props, CONNECTED)
                 .addVariant("glowstone_neon", props)
                 .addVariant("glowstone_neon_panel", props)
                 .addVariant("glowstone_ornate", props)
                 .addVariant("glowstone_panel", props)
-                .addVariant("glowstone_pillar", props, VariantModelType.TBS)
+                .addVariant("glowstone_pillar", props, TBS)
                 .addVariant("glowstone_prism", props)
                 .addVariant("glowstone_road", props)
-                .addVariant("glowstone_slanted", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("glowstone_slanted", props, MULTIBLOCK_2X2)
                 .addVariant("glowstone_small_bricks", props)
-                .addVariant("glowstone_tiles_large", props, VariantModelType.CONNECTED)
+                .addVariant("glowstone_tiles_large", props, CONNECTED)
                 .addVariant("glowstone_tiles_large_bismuth", props)
                 .addVariant("glowstone_tiles_medium", props)
                 .addVariant("glowstone_tiles_medium_bismuth", props)
                 .addVariant("glowstone_triple_bricks", props)
-                .addVariant("glowstone_twisted", props, VariantModelType.TBS)
+                .addVariant("glowstone_twisted", props, TBS)
                 .family();
     }
 

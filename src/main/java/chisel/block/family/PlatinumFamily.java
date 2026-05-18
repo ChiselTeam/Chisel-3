@@ -1,20 +1,20 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class PlatinumFamily extends ChiselFamily {
     public PlatinumFamily(BlockBehaviour.Properties props) {
         family = builder("platinum")
-                .addVariant("platinum_bad_greggy", props, VariantModelType.CONNECTED)
+                .addVariant("platinum_bad_greggy", props, CONNECTED)
                 .addVariant("platinum_bolted", props)
-                .addVariant("platinum_caution", props, VariantModelType.CONNECTED)
-                .addVariant("platinum_crate", props, VariantModelType.CONNECTED)
+                .addVariant("platinum_caution", props, CONNECTED)
+                .addVariant("platinum_crate", props, CONNECTED)
                 .addVariant("platinum_machine", props)
-                .addVariant("platinum_scaffold", props, VariantModelType.CONNECTED)
-                .addVariant("platinum_thermal", props, VariantModelType.TBS)
+                .addVariant("platinum_scaffold", props, CONNECTED)
+                .addVariant("platinum_thermal", props, TBS)
                 .family();
     }
 

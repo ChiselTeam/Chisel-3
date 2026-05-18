@@ -1,18 +1,18 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class FuturaFamily extends ChiselFamily {
     public FuturaFamily(BlockBehaviour.Properties props) {
         family = builder("futura")
-                .addVariant("futura_controller", props, VariantModelType.MULTI_LAYER)
-                .addVariant("futura_controller_purple", props, VariantModelType.MULTI_LAYER)
-                .addVariant("futura_rainbow", props, VariantModelType.MULTI_LAYER)
-                .addVariant("futura_screen_cyan", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("futura_screen_gray", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("futura_controller", props, MULTI_LAYER)
+                .addVariant("futura_controller_purple", props, MULTI_LAYER)
+                .addVariant("futura_rainbow", props, MULTI_LAYER)
+                .addVariant("futura_screen_cyan", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("futura_screen_gray", props, MULTI_LAYER_CONNECTED_GLOW)
                 .family();
     }
 

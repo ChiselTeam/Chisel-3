@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class TallowFamily extends ChiselFamily {
     public TallowFamily(BlockBehaviour.Properties props) {
         family = builder("tallow")
-                .addVariant("tallow_block", props, VariantModelType.TBS)
+                .addVariant("tallow_block", props, TBS)
                 .addVariant("tallow_faces", props)
                 .addVariant("tallow_smooth", props)
                 .family();

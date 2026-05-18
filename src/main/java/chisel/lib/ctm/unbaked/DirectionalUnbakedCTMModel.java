@@ -1,7 +1,8 @@
 package chisel.lib.ctm.unbaked;
 
 import chisel.core.variant.Variant;
-import chisel.core.variant.VariantModelType;
+import chisel.core.variant.VariantModelHandler;
+import chisel.registry.ChiselModelHandlers;
 import chisel.lib.ctm.baked.DirectionalCTMBlockStateModel;
 import chisel.lib.ctm.logic.CTMLogic;
 import chisel.lib.ctm.logic.CTMLogicHorizontal;
@@ -92,7 +93,7 @@ public class DirectionalUnbakedCTMModel extends AbstractUnbakedConnectedTextureB
             Direction[] planeDirections = CTMLogic.AXIS_PLANE_DIRECTIONS[face.getAxis().ordinal()];
 
             Material.Baked baseForFace = bakedBase;
-            if (variant.getModelType() == VariantModelType.CTMH) {
+            if (variant.getModelHandler().isCTMH()) {
                 if (face == Direction.UP && bakedTop != null) baseForFace = bakedTop;
                 else if (face == Direction.DOWN && bakedBottom != null) baseForFace = bakedBottom;
             }
@@ -125,13 +126,13 @@ public class DirectionalUnbakedCTMModel extends AbstractUnbakedConnectedTextureB
 
             CuboidFace.UVs faceUvs = getRelativeUVs(face, from, to);
 
-            boolean isHorizontalDirectionalFace = (variant.getModelType() == VariantModelType.CTMH || variant.getModelType() == VariantModelType.BOOKSHELF) && face.getAxis().isHorizontal() && bakedOverlayHorizontal != null;
+            boolean isHorizontalDirectionalFace = (variant.getModelHandler().isBookshelfLike() || variant.getModelHandler().isCTMH()) && face.getAxis().isHorizontal() && bakedOverlayHorizontal != null;
 
             if (isHorizontalDirectionalFace) {
                 BakedQuad[] quads = new BakedQuad[CTMLogicHorizontal.values().length];
                 Vector3f qFrom = from;
                 Vector3f qTo = to;
-                if (variant.getModelType() == VariantModelType.BOOKSHELF && bakedBase != null) {
+                if (variant.getModelHandler().isBookshelfLike() && bakedBase != null) {
                     float offset = 0.05f;
                     qFrom = new Vector3f(from).add(face == Direction.WEST ? -offset : 0, face == Direction.DOWN ? -offset : 0, face == Direction.NORTH ? -offset : 0);
                     qTo = new Vector3f(to).add(face == Direction.EAST ? offset : 0, face == Direction.UP ? offset : 0, face == Direction.SOUTH ? offset : 0);
@@ -144,7 +145,7 @@ public class DirectionalUnbakedCTMModel extends AbstractUnbakedConnectedTextureB
                 horizontalQuads.put(face, quads);
             }
 
-            if (variant.getModelType() == VariantModelType.CTMV) {
+            if (variant.getModelHandler().isCTMV()) {
                 Material.Baked bakedOverlayV = switch (face) {
                     case UP -> bakedOverlayTop;
                     case DOWN -> bakedOverlayBottom;

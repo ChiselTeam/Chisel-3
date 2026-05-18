@@ -1,34 +1,34 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class FactoryFamily extends ChiselFamily {
     public FactoryFamily(BlockBehaviour.Properties props) {
         family = builder("factory")
-                .addVariant("factory_circuit", props, VariantModelType.CONNECTED)
-                .addVariant("factory_column", props, VariantModelType.CTMV)
-                .addVariant("factory_dots", props, VariantModelType.CONNECTED)
-                .addVariant("factory_frame_blue", props, VariantModelType.CONNECTED)
-                .addVariant("factory_gold_plate", props, VariantModelType.CONNECTED)
-                .addVariant("factory_gold_plating", props, VariantModelType.CONNECTED)
-                .addVariant("factory_grinder", props, VariantModelType.CONNECTED)
-                .addVariant("factory_hazard", props, VariantModelType.CONNECTED)
-                .addVariant("factory_hazard_orange", props, VariantModelType.CONNECTED)
-                .addVariant("factory_ice", props, VariantModelType.CONNECTED)
-                .addVariant("factory_metal_box", props, VariantModelType.TBS)
-                .addVariant("factory_platex", props, VariantModelType.CONNECTED)
+                .addVariant("factory_circuit", props, CONNECTED)
+                .addVariant("factory_column", props, CTMV)
+                .addVariant("factory_dots", props, CONNECTED)
+                .addVariant("factory_frame_blue", props, CONNECTED)
+                .addVariant("factory_gold_plate", props, CONNECTED)
+                .addVariant("factory_gold_plating", props, CONNECTED)
+                .addVariant("factory_grinder", props, CONNECTED)
+                .addVariant("factory_hazard", props, CONNECTED)
+                .addVariant("factory_hazard_orange", props, CONNECTED)
+                .addVariant("factory_ice", props, CONNECTED)
+                .addVariant("factory_metal_box", props, TBS)
+                .addVariant("factory_platex", props, CONNECTED)
                 .addVariant("factory_plating", props)
-                .addVariant("factory_rust", props, VariantModelType.CONNECTED)
-                .addVariant("factory_rust2", props, VariantModelType.CONNECTED)
-                .addVariant("factory_rust_plates", props, VariantModelType.CONNECTED)
-                .addVariant("factory_tile_mosaic", props, VariantModelType.CONNECTED)
-                .addVariant("factory_vent", props, VariantModelType.CTMV)
-                .addVariant("factory_wireframe", props, VariantModelType.CONNECTED)
-                .addVariant("factory_wireframe_blue", props, VariantModelType.CONNECTED)
-                .addVariant("factory_wireframe_white", props, VariantModelType.CONNECTED)
+                .addVariant("factory_rust", props, CONNECTED)
+                .addVariant("factory_rust2", props, CONNECTED)
+                .addVariant("factory_rust_plates", props, CONNECTED)
+                .addVariant("factory_tile_mosaic", props, CONNECTED)
+                .addVariant("factory_vent", props, CTMV)
+                .addVariant("factory_wireframe", props, CONNECTED)
+                .addVariant("factory_wireframe_blue", props, CONNECTED)
+                .addVariant("factory_wireframe_white", props, CONNECTED)
                 .family();
     }
 

@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -9,39 +9,39 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class CharcoalFamily extends ChiselFamily {
     public CharcoalFamily(BlockBehaviour.Properties props) {
         family = builder("charcoal")
-                .addVariant("charcoal_array", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("charcoal_array", props, MULTIBLOCK_2X2)
                 .addVariant("charcoal_braid", props)
-                .addVariant("charcoal_chaotic_bricks", props, VariantModelType.MULTIBLOCK_3X3)
+                .addVariant("charcoal_chaotic_bricks", props, MULTIBLOCK_3X3)
                 .addVariant("charcoal_chaotic_medium", props)
                 .addVariant("charcoal_chaotic_small", props)
-                .addVariant("charcoal_circular", props, VariantModelType.CONNECTED)
+                .addVariant("charcoal_circular", props, CONNECTED)
                 .addVariant("charcoal_cracked", props)
                 .addVariant("charcoal_cracked_bricks", props)
-                .addVariant("charcoal_cuts", props, VariantModelType.MULTIBLOCK_4X4)
-                .addVariant("charcoal_dent", props, VariantModelType.CONNECTED)
-                .addVariant("charcoal_encased_bricks", props, VariantModelType.CONNECTED)
+                .addVariant("charcoal_cuts", props, MULTIBLOCK_4X4)
+                .addVariant("charcoal_dent", props, CONNECTED)
+                .addVariant("charcoal_encased_bricks", props, CONNECTED)
                 .addVariant("charcoal_french_1", props)
                 .addVariant("charcoal_french_2", props)
-                .addVariant("charcoal_jellybean", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("charcoal_jellybean", props, MULTIBLOCK_2X2)
                 .addVariant("charcoal_layers", props)
-                .addVariant("charcoal_mosaic", props, VariantModelType.CONNECTED)
+                .addVariant("charcoal_mosaic", props, CONNECTED)
                 .addVariant("charcoal_ornate", props)
                 .addVariant("charcoal_panel", props)
-                .addVariant("charcoal_pillar", props, VariantModelType.TBS)
+                .addVariant("charcoal_pillar", props, TBS)
                 .addVariant("charcoal_prism", props)
                 .addVariant("charcoal_raw", props)
                 .addVariant("charcoal_road", props)
-                .addVariant("charcoal_slanted", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("charcoal_slanted", props, MULTIBLOCK_2X2)
                 .addVariant("charcoal_small_bricks", props)
                 .addVariant("charcoal_soft_bricks", props)
                 .addVariant("charcoal_solid_bricks", props)
-                .addVariant("charcoal_tiles_large", props, VariantModelType.CONNECTED)
+                .addVariant("charcoal_tiles_large", props, CONNECTED)
                 .addVariant("charcoal_tiles_medium", props)
                 .addVariant("charcoal_tiles_small", props)
                 .addVariant("charcoal_triple_bricks", props)
-                .addVariant("charcoal_twisted", props, VariantModelType.TBS)
-                .addVariant("charcoal_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("charcoal_zag", props, VariantModelType.AR)
+                .addVariant("charcoal_twisted", props, TBS)
+                .addVariant("charcoal_weaver", props, CONNECTED)
+                .addVariant("charcoal_zag", props, AR)
                 .family();
     }
 

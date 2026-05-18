@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
@@ -9,13 +9,13 @@ public class SteelFamily extends ChiselFamily {
     public SteelFamily(BlockBehaviour.Properties props) {
         family = builder("steel")
                 .addVariant("steel_125", props)
-                .addVariant("steel_bad_greggy", props, VariantModelType.CONNECTED)
+                .addVariant("steel_bad_greggy", props, CONNECTED)
                 .addVariant("steel_bolted", props)
-                .addVariant("steel_caution", props, VariantModelType.CONNECTED)
-                .addVariant("steel_crate", props, VariantModelType.CONNECTED)
-                .addVariant("steel_egregious", props, VariantModelType.CONNECTED)
-                .addVariant("steel_scaffold", props, VariantModelType.CONNECTED)
-                .addVariant("steel_thermal", props, VariantModelType.TBS)
+                .addVariant("steel_caution", props, CONNECTED)
+                .addVariant("steel_crate", props, CONNECTED)
+                .addVariant("steel_egregious", props, CONNECTED)
+                .addVariant("steel_scaffold", props, CONNECTED)
+                .addVariant("steel_thermal", props, TBS)
                 .family();
     }
 

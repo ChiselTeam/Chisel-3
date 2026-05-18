@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
@@ -10,15 +10,15 @@ public class ThaumiumFamily extends ChiselFamily {
         family = builder("thaumium")
                 .addVariant("thaumium_bevel", props)
                 .addVariant("thaumium_block", props)
-                .addVariant("thaumium_bricks", props, VariantModelType.CONNECTED)
+                .addVariant("thaumium_bricks", props, CONNECTED)
                 .addVariant("thaumium_chunks", props)
                 .addVariant("thaumium_lattice", props)
                 .addVariant("thaumium_ornate", props)
-                .addVariant("thaumium_planks", props, VariantModelType.CONNECTED)
-                .addVariant("thaumium_runes_purple", props, VariantModelType.V9)
-                .addVariant("thaumium_runes", props, VariantModelType.V9)
+                .addVariant("thaumium_planks", props, CONNECTED)
+                .addVariant("thaumium_runes_purple", props, V9)
+                .addVariant("thaumium_runes", props, V9)
                 .addVariant("thaumium_small", props)
-                .addVariant("thaumium_totem", props, VariantModelType.R4)
+                .addVariant("thaumium_totem", props, R4)
                 .family();
     }
 

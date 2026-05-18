@@ -1,7 +1,8 @@
 package chisel.datagen;
 
-import chisel.core.variant.VariantModelType;
+import chisel.core.variant.VariantModelHandler;
 import chisel.registry.ChiselBlocks;
+import chisel.registry.ChiselModelHandlers;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
@@ -20,7 +21,7 @@ public class ChiselBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         ChiselVariants.getVariantFamilies().forEach(f -> f.getVariants().forEach(v -> {
             if(v.shouldGenerateModel()) {
-                if (v.getModelType() == VariantModelType.WALL_TORCH) {
+                if (v.getModelHandler().isWallTorch()) {
                     String torchName = v.getName().replace("wall_torch", "torch");
                     f.getVariants().stream()
                             .filter(t -> t.getName().equals(torchName))

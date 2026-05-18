@@ -1,29 +1,29 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class AntiblockFamily extends ChiselFamily {
     public AntiblockFamily(BlockBehaviour.Properties props) {
         family = builder("antiblock")
-                .addVariant("antiblock_black", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("antiblock_blue", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("antiblock_brown", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("antiblock_cyan", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("antiblock_gray", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("antiblock_green", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("antiblock_light_blue", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("antiblock_light_gray", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("antiblock_lime", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("antiblock_magenta", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("antiblock_orange", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("antiblock_pink", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("antiblock_purple", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("antiblock_red", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("antiblock_white", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
-                .addVariant("antiblock_yellow", props, VariantModelType.MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_black", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_blue", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_brown", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_cyan", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_gray", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_green", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_light_blue", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_light_gray", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_lime", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_magenta", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_orange", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_pink", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_purple", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_red", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_white", props, MULTI_LAYER_CONNECTED_GLOW)
+                .addVariant("antiblock_yellow", props, MULTI_LAYER_CONNECTED_GLOW)
                 .family();
     }
 

@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -29,9 +29,9 @@ public class StoneBricksFamily extends ChiselFamily {
                 .addVariant("stone_bricks_masonry_plain", props)
                 .addVariant("stone_bricks_ornate", props)
                 .addVariant("stone_bricks_ornate_large", props)
-                .addVariant("stone_bricks_panel_hard", props, VariantModelType.CONNECTED)
+                .addVariant("stone_bricks_panel_hard", props, CONNECTED)
                 .addVariant("stone_bricks_panel_ornate", props)
-                .addVariant("stone_bricks_panel_sunken", props, VariantModelType.CONNECTED)
+                .addVariant("stone_bricks_panel_sunken", props, CONNECTED)
                 .addVariant("stone_bricks_poison", props)
                 .addVariant("stone_bricks_rough", props)
                 .addVariant("stone_bricks_small", props)

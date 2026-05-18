@@ -1,19 +1,19 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class ShingleFamily extends ChiselFamily {
     public ShingleFamily(BlockBehaviour.Properties props) {
         family = builder("shingles")
-                .addVariant("shingles_1", props, VariantModelType.V4)
-                .addVariant("shingles_2", props, VariantModelType.V4)
-                .addVariant("shingles_3", props, VariantModelType.V4)
-                .addVariant("shingles_4", props, VariantModelType.V4)
-                .addVariant("shingles_5", props, VariantModelType.V4)
-                .addVariant("shingles_6", props, VariantModelType.V4)
+                .addVariant("shingles_1", props, V4)
+                .addVariant("shingles_2", props, V4)
+                .addVariant("shingles_3", props, V4)
+                .addVariant("shingles_4", props, V4)
+                .addVariant("shingles_5", props, V4)
+                .addVariant("shingles_6", props, V4)
                 .family();
     }
 

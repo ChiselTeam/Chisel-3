@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -10,39 +10,39 @@ public class BricksFamily extends ChiselFamily {
     public BricksFamily(BlockBehaviour.Properties props) {
         family = builder("bricks")
                 .addVariant(Blocks.BRICKS)
-                .addVariant("bricks_array", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("bricks_array", props, MULTIBLOCK_2X2)
                 .addVariant("bricks_braid", props)
-                .addVariant("bricks_chaotic", props, VariantModelType.MULTIBLOCK_3X3)
+                .addVariant("bricks_chaotic", props, MULTIBLOCK_3X3)
                 .addVariant("bricks_chaotic_medium", props)
                 .addVariant("bricks_chaotic_small", props)
-                .addVariant("bricks_circular", props, VariantModelType.CONNECTED)
+                .addVariant("bricks_circular", props, CONNECTED)
                 .addVariant("bricks_cracked", props)
                 .addVariant("bricks_cracked_bricks", props)
-                .addVariant("bricks_cuts", props, VariantModelType.MULTIBLOCK_4X4)
-                .addVariant("bricks_dent", props, VariantModelType.CONNECTED)
-                .addVariant("bricks_encased", props, VariantModelType.CONNECTED)
+                .addVariant("bricks_cuts", props, MULTIBLOCK_4X4)
+                .addVariant("bricks_dent", props, CONNECTED)
+                .addVariant("bricks_encased", props, CONNECTED)
                 .addVariant("bricks_french", props)
                 .addVariant("bricks_french_2", props)
-                .addVariant("bricks_jellybean", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("bricks_jellybean", props, MULTIBLOCK_2X2)
                 .addVariant("bricks_layers", props)
-                .addVariant("bricks_mosaic", props, VariantModelType.CONNECTED)
+                .addVariant("bricks_mosaic", props, CONNECTED)
                 .addVariant("bricks_ornate", props)
                 .addVariant("bricks_panel", props)
-                .addVariant("bricks_pillar", props, VariantModelType.TBS)
+                .addVariant("bricks_pillar", props, TBS)
                 .addVariant("bricks_prism", props)
                 .addVariant("bricks_raw", props)
                 .addVariant("bricks_road", props)
-                .addVariant("bricks_slanted", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("bricks_slanted", props, MULTIBLOCK_2X2)
                 .addVariant("bricks_small", props)
                 .addVariant("bricks_soft", props)
                 .addVariant("bricks_solid", props)
-                .addVariant("bricks_tiles_large", props, VariantModelType.CONNECTED)
+                .addVariant("bricks_tiles_large", props, CONNECTED)
                 .addVariant("bricks_tiles_medium", props)
                 .addVariant("bricks_tiles_small", props)
                 .addVariant("bricks_triple", props)
-                .addVariant("bricks_twisted", props, VariantModelType.TBS)
-                .addVariant("bricks_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("bricks_zag", props, VariantModelType.AR)
+                .addVariant("bricks_twisted", props, TBS)
+                .addVariant("bricks_weaver", props, CONNECTED)
+                .addVariant("bricks_zag", props, AR)
                 .family();
     }
 

@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
@@ -10,7 +10,7 @@ public class ConcreteFamily extends ChiselFamily {
         family = builder("concrete")
                 .addVariant("concrete_raw", props)
                 .addVariant("concrete_asphalt", props)
-                .addVariant("concrete_block", props, VariantModelType.CONNECTED)
+                .addVariant("concrete_block", props, CONNECTED)
                 .addVariant("concrete_block_weathered", props)
                 .addVariant("concrete_blocks", props)
                 .addVariant("concrete_blocks_weathered", props)

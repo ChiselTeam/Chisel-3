@@ -1,20 +1,20 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class ElectrumFamily extends ChiselFamily {
     public ElectrumFamily(BlockBehaviour.Properties props) {
         family = builder("electrum")
-                .addVariant("electrum_bad_greggy", props, VariantModelType.CONNECTED)
+                .addVariant("electrum_bad_greggy", props, CONNECTED)
                 .addVariant("electrum_bolted", props)
-                .addVariant("electrum_caution", props, VariantModelType.CONNECTED)
-                .addVariant("electrum_crate", props, VariantModelType.CONNECTED)
+                .addVariant("electrum_caution", props, CONNECTED)
+                .addVariant("electrum_crate", props, CONNECTED)
                 .addVariant("electrum_machine", props)
-                .addVariant("electrum_scaffold", props, VariantModelType.CONNECTED)
-                .addVariant("electrum_thermal", props, VariantModelType.TBS)
+                .addVariant("electrum_scaffold", props, CONNECTED)
+                .addVariant("electrum_thermal", props, TBS)
                 .family();
     }
 

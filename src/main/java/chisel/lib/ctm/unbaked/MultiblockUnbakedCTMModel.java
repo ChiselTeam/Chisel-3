@@ -1,7 +1,8 @@
 package chisel.lib.ctm.unbaked;
 
 import chisel.core.variant.Variant;
-import chisel.core.variant.VariantModelType;
+import chisel.core.variant.VariantModelHandler;
+import chisel.registry.ChiselModelHandlers;
 import chisel.lib.ctm.baked.MultiblockCTMBlockStateModel;
 import chisel.lib.ctm.logic.CTMLogic;
 import chisel.lib.ctm.logic.CTMLogicV16;
@@ -72,15 +73,15 @@ public class MultiblockUnbakedCTMModel extends AbstractUnbakedConnectedTextureBl
         Material.Baked bakedBase = (baseMaterial != null ? baker.materials().get(baseMaterial, model) : (layer0Material != null ? baker.materials().get(layer0Material, model) : null));
         Material.Baked bakedOverlay = overlayMaterial != null ? baker.materials().get(overlayMaterial, model) : null;
         Material.Baked bakedParticle = particleMaterial != null ? baker.materials().get(particleMaterial, model) : (bakedBase != null ? bakedBase : bakedOverlay);
-        Material.Baked bakedOverlay2x2 = overlay2x2Material != null ? baker.materials().get(overlay2x2Material, model) : (layer1Material != null && variant.getModelType() == VariantModelType.MULTI_LAYER_WATER_2X2 ? baker.materials().get(layer1Material, model) : null);
-        Material.Baked bakedOverlay3x3 = overlay3x3Material != null ? baker.materials().get(overlay3x3Material, model) : (layer1Material != null && variant.getModelType() == VariantModelType.MULTI_LAYER_WATER_3X3 ? baker.materials().get(layer1Material, model) : null);
-        Material.Baked bakedOverlay4x4 = overlay4x4Material != null ? baker.materials().get(overlay4x4Material, model) : (layer1Material != null && variant.getModelType() == VariantModelType.MULTI_LAYER_WATER_4X4 ? baker.materials().get(layer1Material, model) : null);
-        Material.Baked bakedOverlayV4 = overlayV4Material != null ? baker.materials().get(overlayV4Material, model) : (bakedOverlay2x2 != null ? bakedOverlay2x2 : (layer1Material != null && variant.getModelType() == VariantModelType.V4 ? baker.materials().get(layer1Material, model) : null));
-        Material.Baked bakedOverlayV9 = overlayV9Material != null ? baker.materials().get(overlayV9Material, model) : (bakedOverlay3x3 != null ? bakedOverlay3x3 : (layer1Material != null && variant.getModelType() == VariantModelType.V9 ? baker.materials().get(layer1Material, model) : null));
-        Material.Baked bakedOverlayV16 = overlayV16Material != null ? baker.materials().get(overlayV16Material, model) : (bakedOverlay4x4 != null ? bakedOverlay4x4 : (layer1Material != null && variant.getModelType() == VariantModelType.V16 ? baker.materials().get(layer1Material, model) : null));
-        Material.Baked bakedOverlayR4 = overlayR4Material != null ? baker.materials().get(overlayR4Material, model) : (bakedOverlay2x2 != null ? bakedOverlay2x2 : (layer1Material != null && variant.getModelType() == VariantModelType.R4 ? baker.materials().get(layer1Material, model) : null));
-        Material.Baked bakedOverlayR9 = overlayR9Material != null ? baker.materials().get(overlayR9Material, model) : (bakedOverlay3x3 != null ? bakedOverlay3x3 : (layer1Material != null && variant.getModelType() == VariantModelType.R9 ? baker.materials().get(layer1Material, model) : null));
-        Material.Baked bakedOverlayR16 = overlayR16Material != null ? baker.materials().get(overlayR16Material, model) : (bakedOverlay4x4 != null ? bakedOverlay4x4 : (layer1Material != null && variant.getModelType() == VariantModelType.R16 ? baker.materials().get(layer1Material, model) : null));
+        Material.Baked bakedOverlay2x2 = overlay2x2Material != null ? baker.materials().get(overlay2x2Material, model) : (layer1Material != null && variant.getModelHandler().multiblockSize() == 2 && !variant.getModelHandler().usesRandomTexture() ? baker.materials().get(layer1Material, model) : null);
+        Material.Baked bakedOverlay3x3 = overlay3x3Material != null ? baker.materials().get(overlay3x3Material, model) : (layer1Material != null && variant.getModelHandler().multiblockSize() == 3 && !variant.getModelHandler().usesRandomTexture() ? baker.materials().get(layer1Material, model) : null);
+        Material.Baked bakedOverlay4x4 = overlay4x4Material != null ? baker.materials().get(overlay4x4Material, model) : (layer1Material != null && variant.getModelHandler().multiblockSize() == 4 && !variant.getModelHandler().usesRandomTexture() ? baker.materials().get(layer1Material, model) : null);
+        Material.Baked bakedOverlayV4 = overlayV4Material != null ? baker.materials().get(overlayV4Material, model) : (bakedOverlay2x2 != null ? bakedOverlay2x2 : (layer1Material != null && variant.getModelHandler().isV4() ? baker.materials().get(layer1Material, model) : null));
+        Material.Baked bakedOverlayV9 = overlayV9Material != null ? baker.materials().get(overlayV9Material, model) : (bakedOverlay3x3 != null ? bakedOverlay3x3 : (layer1Material != null && variant.getModelHandler().isV9() ? baker.materials().get(layer1Material, model) : null));
+        Material.Baked bakedOverlayV16 = overlayV16Material != null ? baker.materials().get(overlayV16Material, model) : (bakedOverlay4x4 != null ? bakedOverlay4x4 : (layer1Material != null && variant.getModelHandler().isV16() ? baker.materials().get(layer1Material, model) : null));
+        Material.Baked bakedOverlayR4 = overlayR4Material != null ? baker.materials().get(overlayR4Material, model) : (bakedOverlay2x2 != null ? bakedOverlay2x2 : (layer1Material != null && variant.getModelHandler().isR4() ? baker.materials().get(layer1Material, model) : null));
+        Material.Baked bakedOverlayR9 = overlayR9Material != null ? baker.materials().get(overlayR9Material, model) : (bakedOverlay3x3 != null ? bakedOverlay3x3 : (layer1Material != null && variant.getModelHandler().isR9() ? baker.materials().get(layer1Material, model) : null));
+        Material.Baked bakedOverlayR16 = overlayR16Material != null ? baker.materials().get(overlayR16Material, model) : (bakedOverlay4x4 != null ? bakedOverlay4x4 : (layer1Material != null && variant.getModelHandler().isR16() ? baker.materials().get(layer1Material, model) : null));
 
         Map<Direction, BakedQuad[]> baseQuads = new EnumMap<>(Direction.class);
         Map<Direction, BakedQuad[]> multiblock2x2Quads = new EnumMap<>(Direction.class);
@@ -122,10 +123,11 @@ public class MultiblockUnbakedCTMModel extends AbstractUnbakedConnectedTextureBl
 
             CuboidFace.UVs faceUvs = getRelativeUVs(face, from, to);
 
-            if ((variant.getModelType() == VariantModelType.MULTIBLOCK_2X2 || variant.getModelType() == VariantModelType.V4 || variant.getModelType() == VariantModelType.R4 || variant.getModelType() == VariantModelType.MULTI_LAYER_WATER_2X2) && (bakedOverlayV4 != null || bakedOverlayR4 != null || bakedOverlay2x2 != null)) {
+            VariantModelHandler handler = variant.getModelHandler();
+            if (handler.multiblockSize() == 2 && (bakedOverlayV4 != null || bakedOverlayR4 != null || bakedOverlay2x2 != null)) {
                 Material.Baked mat = bakedOverlayV4 != null ? bakedOverlayV4 : (bakedOverlayR4 != null ? bakedOverlayR4 : bakedOverlay2x2);
                 BakedQuad[] quads = new BakedQuad[CTMLogicV4.values().length];
-                Vector3f[] offsets = getOffsets(face, variant.getModelType(), from, to);
+                Vector3f[] offsets = getOffsets(face, handler, from, to);
                 for (CTMLogicV4 logic : CTMLogicV4.values()) {
                     CuboidFace connFace = new CuboidFace(cull, tintIndex, "", logic.remapUVs(faceUvs), Quadrant.R0);
                     if (connFace.cullForDirection() == null) unculledFaces.add(face);
@@ -134,10 +136,10 @@ public class MultiblockUnbakedCTMModel extends AbstractUnbakedConnectedTextureBl
                 multiblock2x2Quads.put(face, quads);
             }
 
-            if ((variant.getModelType() == VariantModelType.MULTIBLOCK_3X3 || variant.getModelType() == VariantModelType.V9 || variant.getModelType() == VariantModelType.R9 || variant.getModelType() == VariantModelType.MULTI_LAYER_WATER_3X3) && (bakedOverlayV9 != null || bakedOverlayR9 != null || bakedOverlay3x3 != null)) {
+            if (handler.multiblockSize() == 3 && (bakedOverlayV9 != null || bakedOverlayR9 != null || bakedOverlay3x3 != null)) {
                 Material.Baked mat = bakedOverlayV9 != null ? bakedOverlayV9 : (bakedOverlayR9 != null ? bakedOverlayR9 : bakedOverlay3x3);
                 BakedQuad[] quads = new BakedQuad[CTMLogicV9.values().length];
-                Vector3f[] offsets = getOffsets(face, variant.getModelType(), from, to);
+                Vector3f[] offsets = getOffsets(face, handler, from, to);
                 for (CTMLogicV9 logic : CTMLogicV9.values()) {
                     CuboidFace connFace = new CuboidFace(cull, tintIndex, "", logic.remapUVs(faceUvs), Quadrant.R0);
                     if (connFace.cullForDirection() == null) unculledFaces.add(face);
@@ -146,10 +148,10 @@ public class MultiblockUnbakedCTMModel extends AbstractUnbakedConnectedTextureBl
                 multiblock3x3Quads.put(face, quads);
             }
 
-            if ((variant.getModelType() == VariantModelType.MULTIBLOCK_4X4 || variant.getModelType() == VariantModelType.V16 || variant.getModelType() == VariantModelType.R16 || variant.getModelType() == VariantModelType.MULTI_LAYER_WATER_4X4) && (bakedOverlayV16 != null || bakedOverlayR16 != null || bakedOverlay4x4 != null)) {
+            if (handler.multiblockSize() == 4 && (bakedOverlayV16 != null || bakedOverlayR16 != null || bakedOverlay4x4 != null)) {
                 Material.Baked mat = bakedOverlayV16 != null ? bakedOverlayV16 : (bakedOverlayR16 != null ? bakedOverlayR16 : bakedOverlay4x4);
                 BakedQuad[] quads = new BakedQuad[CTMLogicV16.values().length];
-                Vector3f[] offsets = getOffsets(face, variant.getModelType(), from, to);
+                Vector3f[] offsets = getOffsets(face, handler, from, to);
 
                 for (CTMLogicV16 logic : CTMLogicV16.values()) {
                     CuboidFace connFace = new CuboidFace(cull, tintIndex, "", logic.remapUVs(faceUvs), Quadrant.R0);
@@ -163,13 +165,13 @@ public class MultiblockUnbakedCTMModel extends AbstractUnbakedConnectedTextureBl
         return new MultiblockCTMBlockStateModel(connectedFaces, unculledFaces, renderOverlayOnAllFaces, baseQuads, multiblock2x2Quads, multiblock3x3Quads, multiblock4x4Quads, bakedParticle != null ? bakedParticle.sprite() : null, variant);
     }
 
-    private Vector3f[] getOffsets(Direction face, VariantModelType type, Vector3f from, Vector3f to) {
+    private Vector3f[] getOffsets(Direction face, VariantModelHandler type, Vector3f from, Vector3f to) {
         float offset = 0.01f;
         Vector3f[] offsets = new Vector3f[] {
                 new Vector3f(from), new Vector3f(to)
         };
 
-        if(type == VariantModelType.MULTI_LAYER_WATER_2X2 || type == VariantModelType.MULTI_LAYER_WATER_3X3 || type == VariantModelType.MULTI_LAYER_WATER_4X4) {
+        if(type.isWaterstone()) {
             switch (face) {
                 case DOWN -> {
                     offsets[0].y -= offset;

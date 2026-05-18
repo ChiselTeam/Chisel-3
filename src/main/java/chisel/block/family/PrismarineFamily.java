@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -10,38 +10,38 @@ public class PrismarineFamily extends ChiselFamily {
     public PrismarineFamily(BlockBehaviour.Properties props) {
         family = builder("prismarine")
                 .addVariant(Blocks.PRISMARINE)
-                .addVariant("prismarine_array", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("prismarine_array", props, MULTIBLOCK_2X2)
                 .addVariant("prismarine_braid", props)
-                .addVariant("prismarine_chaotic_bricks", props, VariantModelType.MULTIBLOCK_3X3)
+                .addVariant("prismarine_chaotic_bricks", props, MULTIBLOCK_3X3)
                 .addVariant("prismarine_chaotic_medium", props)
                 .addVariant("prismarine_chaotic_small", props)
-                .addVariant("prismarine_circular", props, VariantModelType.CONNECTED)
+                .addVariant("prismarine_circular", props, CONNECTED)
                 .addVariant("prismarine_cracked", props)
                 .addVariant("prismarine_cracked_bricks", props)
-                .addVariant("prismarine_cuts", props, VariantModelType.MULTIBLOCK_4X4)
-                .addVariant("prismarine_dent", props, VariantModelType.CONNECTED)
-                .addVariant("prismarine_encased_bricks", props, VariantModelType.CONNECTED)
+                .addVariant("prismarine_cuts", props, MULTIBLOCK_4X4)
+                .addVariant("prismarine_dent", props, CONNECTED)
+                .addVariant("prismarine_encased_bricks", props, CONNECTED)
                 .addVariant("prismarine_french_1", props)
                 .addVariant("prismarine_french_2", props)
-                .addVariant("prismarine_jellybean", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("prismarine_jellybean", props, MULTIBLOCK_2X2)
                 .addVariant("prismarine_layers", props)
-                .addVariant("prismarine_mosaic", props, VariantModelType.CONNECTED)
+                .addVariant("prismarine_mosaic", props, CONNECTED)
                 .addVariant("prismarine_ornate", props)
                 .addVariant("prismarine_panel", props)
-                .addVariant("prismarine_pillar", props, VariantModelType.TBS)
+                .addVariant("prismarine_pillar", props, TBS)
                 .addVariant("prismarine_prism", props)
                 .addVariant("prismarine_road", props)
-                .addVariant("prismarine_slanted", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("prismarine_slanted", props, MULTIBLOCK_2X2)
                 .addVariant("prismarine_small_bricks", props)
                 .addVariant("prismarine_soft_bricks", props)
                 .addVariant("prismarine_solid_bricks", props)
-                .addVariant("prismarine_tiles_large", props, VariantModelType.CONNECTED)
+                .addVariant("prismarine_tiles_large", props, CONNECTED)
                 .addVariant("prismarine_tiles_medium", props)
                 .addVariant("prismarine_tiles_small", props)
                 .addVariant("prismarine_triple_bricks", props)
-                .addVariant("prismarine_twisted", props, VariantModelType.TBS)
-                .addVariant("prismarine_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("prismarine_zag", props, VariantModelType.AR)
+                .addVariant("prismarine_twisted", props, TBS)
+                .addVariant("prismarine_weaver", props, CONNECTED)
+                .addVariant("prismarine_zag", props, AR)
                 .family();
     }
 

@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
@@ -9,13 +9,13 @@ public class UraniumFamily extends ChiselFamily {
     public UraniumFamily(BlockBehaviour.Properties props) {
         family = builder("uranium")
                 .addVariant("uranium_125", props)
-                .addVariant("uranium_bad_greggy", props, VariantModelType.CONNECTED)
+                .addVariant("uranium_bad_greggy", props, CONNECTED)
                 .addVariant("uranium_bolted", props)
-                .addVariant("uranium_caution", props, VariantModelType.CONNECTED)
-                .addVariant("uranium_crate", props, VariantModelType.CONNECTED)
+                .addVariant("uranium_caution", props, CONNECTED)
+                .addVariant("uranium_crate", props, CONNECTED)
                 .addVariant("uranium_machine", props)
-                .addVariant("uranium_scaffold", props, VariantModelType.CONNECTED)
-                .addVariant("uranium_thermal", props, VariantModelType.TBS)
+                .addVariant("uranium_scaffold", props, CONNECTED)
+                .addVariant("uranium_thermal", props, TBS)
                 .family();
     }
 

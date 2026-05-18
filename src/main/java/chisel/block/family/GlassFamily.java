@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -10,26 +10,26 @@ public class GlassFamily extends ChiselFamily {
     public GlassFamily(BlockBehaviour.Properties props) {
         family = builder("glass")
                 .addVariant(Blocks.GLASS)
-                .addVariant("glass_borderless", props, VariantModelType.CONNECTED)
-                .addVariant("glass_bubble", props, VariantModelType.CONNECTED)
+                .addVariant("glass_borderless", props, CONNECTED)
+                .addVariant("glass_bubble", props, CONNECTED)
                 .addVariant("glass_chinese", props)
                 .addVariant("glass_chinese_2", props)
-                .addVariant("glass_chrono", props, VariantModelType.CONNECTED)
+                .addVariant("glass_chrono", props, CONNECTED)
                 .addVariant("glass_dungeon", props)
-                .addVariant("glass_edge", props, VariantModelType.CONNECTED)
-                .addVariant("glass_edge_steel", props, VariantModelType.CONNECTED)
+                .addVariant("glass_edge", props, CONNECTED)
+                .addVariant("glass_edge_steel", props, CONNECTED)
                 .addVariant("glass_fence", props)
                 .addVariant("glass_grid_thick", props)
                 .addVariant("glass_grid_thin", props)
                 .addVariant("glass_japanese", props)
                 .addVariant("glass_japanese_2", props)
-                .addVariant("glass_light", props, VariantModelType.CONNECTED)
-                .addVariant("glass_ornate", props, VariantModelType.CONNECTED)
+                .addVariant("glass_light", props, CONNECTED)
+                .addVariant("glass_ornate", props, CONNECTED)
                 .addVariant("glass_ornate_old", props)
                 .addVariant("glass_screen", props)
-                .addVariant("glass_shale", props, VariantModelType.CONNECTED)
-                .addVariant("glass_steel", props, VariantModelType.CONNECTED)
-                .addVariant("glass_stone", props, VariantModelType.CONNECTED)
+                .addVariant("glass_shale", props, CONNECTED)
+                .addVariant("glass_steel", props, CONNECTED)
+                .addVariant("glass_stone", props, CONNECTED)
                 .addVariant("glass_streak", props)
                 .family();
     }

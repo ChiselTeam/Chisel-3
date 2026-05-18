@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -10,39 +10,39 @@ public class CoalFamily extends ChiselFamily {
     public CoalFamily(BlockBehaviour.Properties props) {
         family = builder("coal")
                 .addVariant(Blocks.COAL_BLOCK)
-                .addVariant("coal_array", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("coal_array", props, MULTIBLOCK_2X2)
                 .addVariant("coal_braid", props)
-                .addVariant("coal_chaotic_bricks", props, VariantModelType.MULTIBLOCK_3X3)
+                .addVariant("coal_chaotic_bricks", props, MULTIBLOCK_3X3)
                 .addVariant("coal_chaotic_medium", props)
                 .addVariant("coal_chaotic_small", props)
-                .addVariant("coal_circular", props, VariantModelType.CONNECTED)
+                .addVariant("coal_circular", props, CONNECTED)
                 .addVariant("coal_cracked", props)
                 .addVariant("coal_cracked_bricks", props)
-                .addVariant("coal_cuts", props, VariantModelType.MULTIBLOCK_4X4)
-                .addVariant("coal_dent", props, VariantModelType.CONNECTED)
-                .addVariant("coal_encased_bricks", props, VariantModelType.CONNECTED)
+                .addVariant("coal_cuts", props, MULTIBLOCK_4X4)
+                .addVariant("coal_dent", props, CONNECTED)
+                .addVariant("coal_encased_bricks", props, CONNECTED)
                 .addVariant("coal_french_1", props)
                 .addVariant("coal_french_2", props)
-                .addVariant("coal_jellybean", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("coal_jellybean", props, MULTIBLOCK_2X2)
                 .addVariant("coal_layers", props)
-                .addVariant("coal_mosaic", props, VariantModelType.CONNECTED)
+                .addVariant("coal_mosaic", props, CONNECTED)
                 .addVariant("coal_ornate", props)
                 .addVariant("coal_panel", props)
-                .addVariant("coal_pillar", props, VariantModelType.TBS)
+                .addVariant("coal_pillar", props, TBS)
                 .addVariant("coal_prism", props)
                 .addVariant("coal_raw", props)
                 .addVariant("coal_road", props)
-                .addVariant("coal_slanted", props, VariantModelType.MULTIBLOCK_2X2)
+                .addVariant("coal_slanted", props, MULTIBLOCK_2X2)
                 .addVariant("coal_small_bricks", props)
                 .addVariant("coal_soft_bricks", props)
                 .addVariant("coal_solid_bricks", props)
-                .addVariant("coal_tiles_large", props, VariantModelType.CONNECTED)
+                .addVariant("coal_tiles_large", props, CONNECTED)
                 .addVariant("coal_tiles_medium", props)
                 .addVariant("coal_tiles_small", props)
                 .addVariant("coal_triple_bricks", props)
-                .addVariant("coal_twisted", props, VariantModelType.TBS)
-                .addVariant("coal_weaver", props, VariantModelType.CONNECTED)
-                .addVariant("coal_zag", props, VariantModelType.AR)
+                .addVariant("coal_twisted", props, TBS)
+                .addVariant("coal_weaver", props, CONNECTED)
+                .addVariant("coal_zag", props, AR)
                 .family();
     }
 

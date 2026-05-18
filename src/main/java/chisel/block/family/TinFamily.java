@@ -1,7 +1,7 @@
 package chisel.block.family;
 
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantModelType;
+import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
@@ -9,13 +9,13 @@ public class TinFamily extends ChiselFamily {
     public TinFamily(BlockBehaviour.Properties props) {
         family = builder("tin")
                 .addVariant("tin_125", props)
-                .addVariant("tin_bad_greggy", props, VariantModelType.CONNECTED)
+                .addVariant("tin_bad_greggy", props, CONNECTED)
                 .addVariant("tin_bolted", props)
-                .addVariant("tin_caution", props, VariantModelType.CONNECTED)
+                .addVariant("tin_caution", props, CONNECTED)
                 .addVariant("tin_crate", props)
-                .addVariant("tin_egregious", props, VariantModelType.CONNECTED)
-                .addVariant("tin_scaffold", props, VariantModelType.CONNECTED)
-                .addVariant("tin_thermal", props, VariantModelType.TBS)
+                .addVariant("tin_egregious", props, CONNECTED)
+                .addVariant("tin_scaffold", props, CONNECTED)
+                .addVariant("tin_thermal", props, TBS)
                 .family();
     }
 
