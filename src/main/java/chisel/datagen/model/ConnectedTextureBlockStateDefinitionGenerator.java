@@ -1,6 +1,6 @@
 package chisel.datagen.model;
 
-import chisel.client.ctm.ConnectedTextureBlockStateModelBuilder;
+import chisel.lib.ctm.util.ConnectedTextureBlockStateModelBuilder;
 import net.minecraft.client.data.models.blockstates.BlockModelDefinitionGenerator;
 import net.minecraft.client.renderer.block.dispatch.BlockStateModelDispatcher;
 import net.minecraft.world.level.block.Block;

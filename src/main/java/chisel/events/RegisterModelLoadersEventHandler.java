@@ -1,7 +1,7 @@
 package chisel.events;
 
 import chisel.Chisel;
-import chisel.client.ctm.UnbakedConnectedTextureBlockStateModel;
+import chisel.lib.ctm.unbaked.UnbakedConnectedTextureBlockStateModel;
 import chisel.datagen.model.ConnectedTextureBlockModelDefinition;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;

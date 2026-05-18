@@ -2,7 +2,7 @@ package chisel.client.model.ctm;
 
 import chisel.client.ChiselModelTemplates;
 import chisel.client.ChiselTextureSlots;
-import chisel.client.ctm.ConnectedTextureBlockStateModelBuilder;
+import chisel.lib.ctm.util.ConnectedTextureBlockStateModelBuilder;
 import chisel.core.variant.Variant;
 import chisel.core.variant.VariantModel;
 import chisel.datagen.model.ConnectedTextureBlockStateDefinitionGenerator;
@@ -12,9 +12,6 @@ import net.minecraft.client.data.models.model.TextureSlot;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.Identifier;
 import org.joml.Vector3f;
-
-import java.nio.file.Files;
-import java.nio.file.Path;
 
 public class CTMHModel extends VariantModel {
     @Override

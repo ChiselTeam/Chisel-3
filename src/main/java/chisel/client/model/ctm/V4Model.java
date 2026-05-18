@@ -2,7 +2,7 @@ package chisel.client.model.ctm;
 
 import chisel.client.ChiselModelTemplates;
 import chisel.client.ChiselTextureSlots;
-import chisel.client.ctm.ConnectedTextureBlockStateModelBuilder;
+import chisel.lib.ctm.util.ConnectedTextureBlockStateModelBuilder;
 import chisel.core.variant.Variant;
 import chisel.core.variant.VariantModel;
 import chisel.datagen.model.ConnectedTextureBlockStateDefinitionGenerator;

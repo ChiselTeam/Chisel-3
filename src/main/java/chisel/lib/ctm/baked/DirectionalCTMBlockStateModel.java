@@ -1,0 +1,100 @@
+package chisel.lib.ctm.baked;
+
+import chisel.core.variant.Variant;
+import chisel.lib.ctm.util.CTMPartBuilder;
+import chisel.lib.ctm.ConnectedTextureBlockModelPart;
+import chisel.lib.ctm.geometry.DirectionalCTMKey;
+import chisel.lib.ctm.logic.CTMLogicHorizontal;
+import chisel.lib.ctm.logic.CTMLogicVertical;
+import net.minecraft.client.renderer.block.BlockAndTintGetter;
+import net.minecraft.client.renderer.texture.TextureAtlasSprite;
+import net.minecraft.client.resources.model.geometry.BakedQuad;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.util.RandomSource;
+
+import java.util.*;
+
+
+public class DirectionalCTMBlockStateModel extends AbstractConnectedTextureBlockStateModel<DirectionalCTMKey> {
+
+    protected final Map<Direction, BakedQuad[]> horizontalQuads;
+    protected final Map<Direction, BakedQuad[]> verticalQuads;
+
+    public DirectionalCTMBlockStateModel(Set<Direction> connectedFaces,
+                                         Set<Direction> unculledFaces,
+                                         boolean renderOverlayOnAllFaces,
+                                         Map<Direction, BakedQuad[]> baseQuads,
+                                         Map<Direction, BakedQuad[]> horizontalQuads,
+                                         Map<Direction, BakedQuad[]> verticalQuads,
+                                         TextureAtlasSprite particle,
+                                         Variant variant) {
+        super(connectedFaces, unculledFaces, renderOverlayOnAllFaces, baseQuads, particle, variant);
+        this.horizontalQuads = horizontalQuads;
+        this.verticalQuads = verticalQuads;
+    }
+
+    @Override
+    protected DirectionalCTMKey computeCTMKey(BlockAndTintGetter level, BlockPos pos, RandomSource random) {
+        int horizontal = 0;
+        int vertical = 0;
+
+        for (Direction face : Direction.values()) {
+            Direction.Axis axis = face.getAxis();
+
+            CTMLogicHorizontal horizontalLogic;
+            CTMLogicVertical verticalLogic;
+
+            if (axis == Direction.Axis.Y) {
+                horizontalLogic = CTMLogicHorizontal.get(shouldConnectSide(level, pos, Direction.WEST), shouldConnectSide(level, pos, Direction.EAST));
+                verticalLogic = CTMLogicVertical.get(shouldConnectSide(level, pos, Direction.NORTH), shouldConnectSide(level, pos, Direction.SOUTH));
+            } else {
+                Direction horizontalDir = face.getClockWise();
+                horizontalLogic = CTMLogicHorizontal.get(shouldConnectSide(level, pos, horizontalDir.getOpposite()), shouldConnectSide(level, pos, horizontalDir));
+                verticalLogic = CTMLogicVertical.get(shouldConnectSide(level, pos, Direction.UP), shouldConnectSide(level, pos, Direction.DOWN));
+            }
+
+            horizontal |= DirectionalCTMKey.packHorizontal(face, horizontalLogic);
+            vertical |= DirectionalCTMKey.packVertical(face, verticalLogic);
+        }
+
+        return new DirectionalCTMKey(horizontal, vertical);
+    }
+
+    @Override
+    protected ConnectedTextureBlockModelPart createPart(DirectionalCTMKey key) {
+        return CTMPartBuilder.create(
+                baseQuads,
+                unculledFaces,
+                particleMaterial,
+                (side, faceQuads) -> {
+                    if (shouldRenderDirectionalOverlay(side)) {
+                        appendDirectionalQuad(key, side, faceQuads);
+                    }
+                }
+        );
+    }
+
+    private boolean shouldRenderDirectionalOverlay(Direction side) {
+        return switch (variant.getModelType()) {
+            case BOOKSHELF -> side.getAxis().isHorizontal() && horizontalQuads.containsKey(side);
+            case CTMH, CTMV -> connectedFaces.contains(side) || renderOverlayOnAllFaces;
+            default -> false;
+        };
+    }
+
+    private void appendDirectionalQuad(DirectionalCTMKey key, Direction side, List<BakedQuad> faceQuads) {
+        switch (variant.getModelType()) {
+            case CTMH, BOOKSHELF -> {
+                CTMLogicHorizontal logic = key.horizontal(side);
+                CTMPartBuilder.appendIndexedQuad(horizontalQuads.get(side), logic.ordinal(), faceQuads);
+            }
+            case CTMV -> {
+                CTMLogicVertical logic = key.vertical(side);
+                CTMPartBuilder.appendIndexedQuad(verticalQuads.get(side), logic.ordinal(), faceQuads);
+            }
+            default -> {
+            }
+        }
+    }
+}
