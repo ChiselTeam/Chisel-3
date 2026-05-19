@@ -1,6 +1,6 @@
 package chisel.util;
 
-import chisel.lib.variant.VariantFamily;
+import chisel.core.variant.VariantFamily;
 import chisel.datagen.ChiselVariants;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistryAccess;

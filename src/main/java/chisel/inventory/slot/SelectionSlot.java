@@ -33,6 +33,7 @@ public class SelectionSlot extends Slot {
     @Override
     protected void onQuickCraft(@NonNull ItemStack picked, int count) {
         container.chisel.hurtAndBreak(picked.count(), container.inventory.player, container.hand);
+        container.inventory.player.awardStat(chisel.registry.ChiselStats.BLOCKS_CHISELED.get());
         clearContent();
     }
 
@@ -40,6 +41,7 @@ public class SelectionSlot extends Slot {
     public void onTake(@NonNull Player player, @NonNull ItemStack carried) {
         super.onTake(player, carried);
         container.chisel.hurtAndBreak(carried.count(), container.inventory.player, container.hand);
+        player.awardStat(chisel.registry.ChiselStats.BLOCKS_CHISELED.get());
         clearContent();
     }
 

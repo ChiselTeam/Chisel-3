@@ -13,6 +13,8 @@ public class Chisel {
 
     public Chisel(IEventBus bus) {
         ChiselModelHandlers.registerAll();
+        ChiselModes.register(bus);
+        ChiselDataComponents.DATA_COMPONENTS.register(bus);
         ChiselSounds.SOUNDS.register(bus);
         ChiselBlocks.registerBlocks(bus);
         ChiselBlockEntities.BLOCK_ENTITIES.register(bus);

@@ -1,6 +1,6 @@
 package chisel.inventory.slot;
 
-import chisel.lib.variant.VariantFamily;
+import chisel.core.variant.VariantFamily;
 import chisel.inventory.container.ChiselContainer;
 import chisel.util.VariantFinder;
 import net.minecraft.world.entity.player.Player;

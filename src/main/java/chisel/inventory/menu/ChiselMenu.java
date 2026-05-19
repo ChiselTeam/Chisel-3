@@ -1,10 +1,13 @@
 package chisel.inventory.menu;
 
+import chisel.core.mode.ChiselMode;
 import chisel.inventory.container.ChiselContainer;
 import chisel.inventory.ChiselSelectionInventory;
 import chisel.inventory.slot.InputSlot;
 import chisel.inventory.slot.SelectionSlot;
+import chisel.registry.ChiselDataComponents;
 import chisel.registry.ChiselMenus;
+import chisel.registry.ChiselModes;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtOps;
@@ -132,6 +135,7 @@ public class ChiselMenu extends AbstractContainerMenu {
                 }
                 // Trigger side effects manually since moveItemStackTo doesn't call onTake
                 container.chisel.hurtAndBreak(stack.getCount(), player, container.hand);
+                player.awardStat(chisel.registry.ChiselStats.BLOCKS_CHISELED.get());
                 variants.clearContent();
                 inputSlot.set(ItemStack.EMPTY);
             } else if (slotIndex < 46) { // If it's the InputSlot (45)
@@ -157,6 +161,14 @@ public class ChiselMenu extends AbstractContainerMenu {
     public void setSearchState(String filter, float scrollOffset) {
         variants.setFilter(filter);
         variants.setScrollOffset(scrollOffset);
+    }
+
+    public void setMode(ChiselMode mode) {
+        container.chisel.set(ChiselDataComponents.CHISEL_MODE, mode);
+    }
+
+    public ChiselMode getMode() {
+        return container.chisel.getOrDefault(ChiselDataComponents.CHISEL_MODE, ChiselModes.SINGLE.value());
     }
 
     @Override

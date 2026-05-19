@@ -1,6 +1,6 @@
 package chisel.block.item;
 
-import chisel.lib.variant.Variant;
+import chisel.core.variant.Variant;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;

@@ -1,6 +1,6 @@
 package chisel.inventory;
 
-import chisel.lib.variant.VariantFamily;
+import chisel.core.variant.VariantFamily;
 import chisel.inventory.container.ChiselContainer;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;

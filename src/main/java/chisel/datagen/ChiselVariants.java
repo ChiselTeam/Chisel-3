@@ -2,7 +2,7 @@ package chisel.datagen;
 
 import chisel.Chisel;
 import chisel.block.util.ChiselFamily;
-import chisel.lib.variant.VariantFamily;
+import chisel.core.variant.VariantFamily;
 import chisel.registry.ChiselBlocks;
 import com.google.common.collect.Maps;
 import net.minecraft.core.Registry;

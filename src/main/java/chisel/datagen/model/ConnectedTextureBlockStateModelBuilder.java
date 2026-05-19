@@ -1,9 +1,9 @@
 package chisel.datagen.model;
 
-import chisel.lib.variant.Variant;
-import chisel.lib.ctm.CTMKind;
-import chisel.lib.ctm.CTMVariant;
-import chisel.lib.ctm.unbaked.UnbakedConnectedTextureBlockStateModel;
+import chisel.core.variant.Variant;
+import chisel.core.ctm.CTMKind;
+import chisel.core.ctm.CTMVariant;
+import chisel.core.ctm.unbaked.UnbakedConnectedTextureBlockStateModel;
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.client.renderer.block.dispatch.VariantMutator;
 import net.minecraft.core.Direction;

@@ -1,6 +1,6 @@
 package chisel.client;
 
-import chisel.lib.variant.VariantFamily;
+import chisel.core.variant.VariantFamily;
 import chisel.registry.ChiselItems;
 import chisel.util.VariantFinder;
 import com.google.common.collect.Lists;

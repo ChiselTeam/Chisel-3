@@ -1,9 +1,9 @@
 package chisel.registry;
 
-import chisel.lib.variant.VariantModelHandler;
-import chisel.lib.variant.VariantModelHandlers;
-import chisel.lib.variant.VariantModels;
-import chisel.lib.variant.handler.*;
+import chisel.core.variant.VariantModelHandler;
+import chisel.core.variant.VariantModelHandlers;
+import chisel.core.variant.VariantModels;
+import chisel.core.variant.handler.*;
 
 public class ChiselModelHandlers {
     private static final VariantModels MODELS = new VariantModels();

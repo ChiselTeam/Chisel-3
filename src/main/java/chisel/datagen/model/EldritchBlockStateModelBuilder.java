@@ -1,17 +1,15 @@
 package chisel.datagen.model;
 
-import chisel.lib.ctm.unbaked.UnbakedEldritchBlockStateModel;
+import chisel.core.ctm.unbaked.UnbakedEldritchBlockStateModel;
 import net.minecraft.client.renderer.block.dispatch.BlockStateModel;
 import net.minecraft.client.renderer.block.dispatch.VariantMutator;
 import net.neoforged.neoforge.client.model.generators.blockstate.CustomBlockStateModelBuilder;
 import net.neoforged.neoforge.client.model.generators.blockstate.UnbakedMutator;
 import org.jspecify.annotations.NonNull;
 
-/**
- * Datagen-side builder for {@link UnbakedEldritchBlockStateModel}. Wraps any
- * inner {@link BlockStateModel.Unbaked} model with the eldritch UV-perturbation
- * effect.
- */
+/// Datagen-side builder for [UnbakedEldritchBlockStateModel]. Wraps any
+/// inner [BlockStateModel.Unbaked] model with the eldritch UV-perturbation
+/// effect.
 public class EldritchBlockStateModelBuilder extends CustomBlockStateModelBuilder {
 
     private BlockStateModel.Unbaked inner;

@@ -1,7 +1,7 @@
 package chisel.client.model.special;
 
-import chisel.lib.variant.Variant;
-import chisel.lib.variant.VariantModel;
+import chisel.core.variant.Variant;
+import chisel.core.variant.VariantModel;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.blockstates.MultiPartGenerator;

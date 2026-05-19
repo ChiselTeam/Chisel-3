@@ -1,9 +1,13 @@
 package chisel.inventory.screen;
 
 import chisel.Chisel;
+import chisel.core.mode.ChiselMode;
 import chisel.inventory.menu.ChiselMenu;
+import chisel.network.ChiselModePacket;
 import chisel.network.ChiselSearchPacket;
+import chisel.registry.ChiselModes;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.input.KeyEvent;
@@ -19,6 +23,8 @@ import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
@@ -27,6 +33,7 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
     private static final Identifier SCROLLER_SPRITE = Identifier.withDefaultNamespace("container/creative_inventory/scroller");
     private static final Identifier SCROLLER_DISABLED_SPRITE = Identifier.withDefaultNamespace("container/creative_inventory/scroller_disabled");
     private EditBox searchBox;
+    private Button modeButton;
     private float scrollOffs = 0.0f;
     private boolean isScrolling;
 
@@ -44,6 +51,29 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
         searchBox.setResponder(this::onSearchTextChange);
         searchBox.setBordered(false);
         addRenderableWidget(searchBox);
+
+        modeButton = Button.builder(getMenu().getMode().getDescription(), b -> cycleMode())
+                .bounds(leftPos + 8, topPos + 78, 48, 20)
+                .build();
+        addRenderableWidget(modeButton);
+    }
+
+    private void cycleMode() {
+        ChiselMode currentMode = getMenu().getMode();
+        List<ChiselMode> modes = new ArrayList<>();
+        modes.add(ChiselModes.SINGLE.value());
+        modes.add(ChiselModes.PANEL.value());
+        modes.add(ChiselModes.COLUMN.value());
+        modes.add(ChiselModes.ROW.value());
+        modes.add(ChiselModes.SHAPELESS.value());
+        modes.add(ChiselModes.SHAPELESS_FLAT.value());
+
+        int index = modes.indexOf(currentMode);
+        ChiselMode nextMode = modes.get((index + 1) % modes.size());
+
+        getMenu().setMode(nextMode);
+        modeButton.setMessage(nextMode.getDescription());
+        Objects.requireNonNull(getMinecraft().getConnection()).send(new ChiselModePacket(nextMode));
     }
 
     @Override

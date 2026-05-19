@@ -13,7 +13,6 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ChiselEntities {
-
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(Registries.ENTITY_TYPE, Chisel.MODID);
 
     public static final ResourceKey<EntityType<?>> BALL_O_MOSS_KEY = createKey("ball_o_moss");

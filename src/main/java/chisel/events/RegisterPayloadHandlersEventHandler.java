@@ -1,6 +1,7 @@
 package chisel.events;
 
 import chisel.Chisel;
+import chisel.network.ChiselModePacket;
 import chisel.network.ChiselSearchPacket;
 import chisel.network.OffsetSyncPacket;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -15,6 +16,7 @@ public class RegisterPayloadHandlersEventHandler {
     public static void registerPayloads(final RegisterPayloadHandlersEvent event) {
         final PayloadRegistrar registrar = event.registrar(Chisel.MODID).versioned("1");
         registrar.playToServer(ChiselSearchPacket.TYPE, ChiselSearchPacket.STREAM_CODEC, ChiselSearchPacket::handle);
+        registrar.playToServer(ChiselModePacket.TYPE, ChiselModePacket.STREAM_CODEC, ChiselModePacket::handle);
         registrar.playToClient(OffsetSyncPacket.TYPE, OffsetSyncPacket.STREAM_CODEC, OffsetSyncPacket::handle);
     }
 }

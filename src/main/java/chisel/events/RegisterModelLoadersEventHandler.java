@@ -2,9 +2,9 @@ package chisel.events;
 
 import chisel.Chisel;
 import chisel.events.client.OffsetToolClientHandler;
-import chisel.lib.ctm.MultiblockOffsetProvider;
-import chisel.lib.ctm.unbaked.UnbakedEldritchBlockStateModel;
-import chisel.lib.ctm.unbaked.UnbakedConnectedTextureBlockStateModel;
+import chisel.core.ctm.MultiblockOffsetProvider;
+import chisel.core.ctm.unbaked.UnbakedEldritchBlockStateModel;
+import chisel.core.ctm.unbaked.UnbakedConnectedTextureBlockStateModel;
 import chisel.datagen.model.ConnectedTextureBlockModelDefinition;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.ChunkPos;

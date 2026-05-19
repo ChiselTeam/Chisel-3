@@ -1,7 +1,7 @@
 package chisel.datagen;
 
 import chisel.Chisel;
-import chisel.lib.variant.VariantFamily;
+import chisel.core.variant.VariantFamily;
 import chisel.registry.ChiselBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;

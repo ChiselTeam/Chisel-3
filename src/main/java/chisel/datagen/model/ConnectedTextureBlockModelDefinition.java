@@ -1,7 +1,7 @@
 package chisel.datagen.model;
 
 import chisel.Chisel;
-import chisel.lib.ctm.unbaked.UnbakedConnectedTextureBlockStateModel;
+import chisel.core.ctm.unbaked.UnbakedConnectedTextureBlockStateModel;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.client.renderer.block.dispatch.BlockStateModel;
 import net.minecraft.resources.Identifier;

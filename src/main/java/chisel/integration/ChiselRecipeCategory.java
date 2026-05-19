@@ -1,8 +1,8 @@
 package chisel.integration;
 
 import chisel.Chisel;
-import chisel.lib.variant.Variant;
-import chisel.lib.variant.VariantFamily;
+import chisel.core.variant.Variant;
+import chisel.core.variant.VariantFamily;
 import chisel.registry.ChiselItems;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.ingredient.IRecipeSlotDrawable;

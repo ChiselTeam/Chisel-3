@@ -1,8 +1,8 @@
 package chisel.block.util;
 
 import chisel.Chisel;
-import chisel.lib.variant.Variant;
-import chisel.lib.variant.VariantFamily;
+import chisel.core.variant.Variant;
+import chisel.core.variant.VariantFamily;
 import chisel.datagen.ChiselVariants;
 import chisel.util.LangHelper;
 import net.minecraft.resources.ResourceKey;
