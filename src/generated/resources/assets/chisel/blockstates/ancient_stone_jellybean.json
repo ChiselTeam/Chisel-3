@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:ancient_stone_jellybean",
-    "model_type": "multiblock_2x2",
-    "name": "ancient_stone_jellybean"
+    "kind": "multiblock_2x2"
   }
 }

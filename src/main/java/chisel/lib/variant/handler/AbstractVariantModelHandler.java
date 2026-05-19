@@ -1,8 +1,8 @@
-package chisel.core.variant.handler;
+package chisel.lib.variant.handler;
 
-import chisel.core.variant.Variant;
-import chisel.core.variant.VariantModel;
-import chisel.core.variant.VariantModelHandler;
+import chisel.lib.variant.Variant;
+import chisel.lib.variant.VariantModel;
+import chisel.lib.variant.VariantModelHandler;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import org.jspecify.annotations.NonNull;
 

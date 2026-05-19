@@ -25,7 +25,7 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:waterstone_slanted",
-    "model_type": "multi_layer_water_2x2",
-    "name": "waterstone_slanted"
+    "kind": "multiblock_2x2",
+    "water_offset": true
   }
 }

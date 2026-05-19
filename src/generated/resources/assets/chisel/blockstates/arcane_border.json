@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:arcane_border",
-    "model_type": "connected",
-    "name": "arcane_border"
+    "kind": "standard"
   }
 }

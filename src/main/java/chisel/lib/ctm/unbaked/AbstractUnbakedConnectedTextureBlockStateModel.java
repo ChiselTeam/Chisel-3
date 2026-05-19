@@ -1,6 +1,6 @@
 package chisel.lib.ctm.unbaked;
 
-import chisel.core.variant.Variant;
+import chisel.lib.ctm.CTMVariant;
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.client.renderer.block.dispatch.BlockStateModel;
 import net.minecraft.client.resources.model.ModelBaker;
@@ -20,13 +20,14 @@ public abstract class AbstractUnbakedConnectedTextureBlockStateModel implements 
     protected final Pair<Vector3f, Vector3f> element;
     protected final Set<Direction> connectedFaces;
     protected final boolean renderOverlayOnAllFaces;
-    protected final Variant variant;
+    protected final CTMVariant variant;
     protected final int baseTintIndex;
     protected final int baseEmissivity;
     protected final int tintIndex;
     protected final int emissivity;
+    protected final boolean eldritch;
 
-    protected AbstractUnbakedConnectedTextureBlockStateModel(Identifier modelLocation, Pair<Vector3f, Vector3f> element, Set<Direction> connectedFaces, boolean renderOverlayOnAllFaces, Variant variant, int baseTintIndex, int baseEmissivity, int tintIndex, int emissivity) {
+    protected AbstractUnbakedConnectedTextureBlockStateModel(Identifier modelLocation, Pair<Vector3f, Vector3f> element, Set<Direction> connectedFaces, boolean renderOverlayOnAllFaces, CTMVariant variant, int baseTintIndex, int baseEmissivity, int tintIndex, int emissivity, boolean eldritch) {
         this.modelLocation = modelLocation;
         this.element = element;
         this.connectedFaces = connectedFaces;
@@ -36,6 +37,11 @@ public abstract class AbstractUnbakedConnectedTextureBlockStateModel implements 
         this.baseEmissivity = baseEmissivity;
         this.tintIndex = tintIndex;
         this.emissivity = emissivity;
+        this.eldritch = eldritch;
+    }
+
+    protected AbstractUnbakedConnectedTextureBlockStateModel(Identifier modelLocation, Pair<Vector3f, Vector3f> element, Set<Direction> connectedFaces, boolean renderOverlayOnAllFaces, CTMVariant variant, int baseTintIndex, int baseEmissivity, int tintIndex, int emissivity) {
+        this(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity, false);
     }
 
     @Override

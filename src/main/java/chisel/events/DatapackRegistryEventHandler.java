@@ -1,9 +1,9 @@
 package chisel.events;
 
 import chisel.Chisel;
-import chisel.core.projectile.BallOMossData;
-import chisel.core.projectile.SmashingRockData;
-import chisel.core.variant.VariantFamily;
+import chisel.projectile.BallOMossData;
+import chisel.projectile.SmashingRockData;
+import chisel.lib.variant.VariantFamily;
 import chisel.datagen.registry.ChiselBallOMossRegistry;
 import chisel.datagen.registry.ChiselSmashingRockRegistry;
 import chisel.datagen.ChiselVariants;

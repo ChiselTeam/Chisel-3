@@ -1,6 +1,6 @@
 package chisel.lib.ctm.baked;
 
-import chisel.core.variant.Variant;
+import chisel.lib.ctm.CTMVariant;
 import chisel.lib.ctm.util.CTMPartBuilder;
 import chisel.lib.ctm.ConnectedTextureBlockModelPart;
 import chisel.lib.ctm.geometry.StandardCTMKey;
@@ -22,7 +22,7 @@ public class StandardCTMBlockStateModel extends AbstractConnectedTextureBlockSta
     protected final Map<Direction, BakedQuad[][]> connectedQuads;
     protected final StandardCTMOverlayTable overlayTable;
 
-    public StandardCTMBlockStateModel(Set<Direction> connectedFaces, Set<Direction> unculledFaces, boolean renderOverlayOnAllFaces, Map<Direction, BakedQuad[]> baseQuads, Map<Direction, BakedQuad[][]> connectedQuads, TextureAtlasSprite particle, Variant variant) {
+    public StandardCTMBlockStateModel(Set<Direction> connectedFaces, Set<Direction> unculledFaces, boolean renderOverlayOnAllFaces, Map<Direction, BakedQuad[]> baseQuads, Map<Direction, BakedQuad[][]> connectedQuads, TextureAtlasSprite particle, CTMVariant variant) {
         super(connectedFaces, unculledFaces, renderOverlayOnAllFaces, baseQuads, particle, variant);
         this.connectedQuads = connectedQuads;
         this.overlayTable = new StandardCTMOverlayTable(connectedQuads);

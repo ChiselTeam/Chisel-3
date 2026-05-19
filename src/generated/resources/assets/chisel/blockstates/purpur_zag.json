@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:purpur_zag",
-    "model_type": "ar",
-    "name": "purpur_zag"
+    "kind": "ar"
   }
 }

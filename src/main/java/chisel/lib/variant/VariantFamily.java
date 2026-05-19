@@ -1,4 +1,4 @@
-package chisel.core.variant;
+package chisel.lib.variant;
 
 import static chisel.registry.ChiselModelHandlers.*;
 import chisel.block.item.ChiselBlockItem;
@@ -152,6 +152,22 @@ public class VariantFamily {
         public Builder addVariant(String name, BlockBehaviour.Properties props, VariantModelHandler modelType) {
             DeferredBlock<Block> block = ChiselBlocks.register(name, props);
             registerAndAdd(new Variant(name, block, family, modelType));
+            return this;
+        }
+
+        /**
+         * Adds a variant whose generated model carries the eldritch UV-perturbation effect
+         * on top of the given model handler.
+         */
+        public Builder addEldritchVariant(String name, BlockBehaviour.Properties props) {
+            return addEldritchVariant(name, props, chisel.registry.ChiselModelHandlers.CUBE_ALL);
+        }
+
+        public Builder addEldritchVariant(String name, BlockBehaviour.Properties props, VariantModelHandler modelType) {
+            DeferredBlock<Block> block = ChiselBlocks.register(name, props);
+            Variant v = new Variant(name, block, family, modelType);
+            v.withEldritch();
+            registerAndAdd(v);
             return this;
         }
 

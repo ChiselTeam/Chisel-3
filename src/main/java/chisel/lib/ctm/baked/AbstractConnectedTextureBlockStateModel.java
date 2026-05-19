@@ -1,7 +1,7 @@
 package chisel.lib.ctm.baked;
 
-import chisel.core.variant.Variant;
 import chisel.lib.ctm.ConnectedTextureBlockModelPart;
+import chisel.lib.ctm.CTMVariant;
 import net.minecraft.client.renderer.block.BlockAndTintGetter;
 import net.minecraft.client.renderer.block.dispatch.BlockStateModelPart;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
@@ -26,12 +26,12 @@ public abstract class AbstractConnectedTextureBlockStateModel<K> implements Dyna
     protected final boolean renderOverlayOnAllFaces;
     protected final Map<Direction, BakedQuad[]> baseQuads;
     protected final TextureAtlasSprite particle;
-    protected final Variant variant;
+    protected final CTMVariant variant;
     protected final Material.Baked particleMaterial;
 
     private final Map<K, ConnectedTextureBlockModelPart> parts = new ConcurrentHashMap<>();
 
-    protected AbstractConnectedTextureBlockStateModel(Set<Direction> connectedFaces, Set<Direction> unculledFaces, boolean renderOverlayOnAllFaces, Map<Direction, BakedQuad[]> baseQuads, TextureAtlasSprite particle, Variant variant) {
+    protected AbstractConnectedTextureBlockStateModel(Set<Direction> connectedFaces, Set<Direction> unculledFaces, boolean renderOverlayOnAllFaces, Map<Direction, BakedQuad[]> baseQuads, TextureAtlasSprite particle, CTMVariant variant) {
         this.connectedFaces = connectedFaces;
         this.unculledFaces = unculledFaces;
         this.renderOverlayOnAllFaces = renderOverlayOnAllFaces;
@@ -57,11 +57,11 @@ public abstract class AbstractConnectedTextureBlockStateModel<K> implements Dyna
     protected abstract ConnectedTextureBlockModelPart createPart(K key);
 
     protected boolean shouldConnectSide(BlockAndTintGetter level, BlockPos pos, Direction side) {
-        return level.getBlockState(pos.relative(side)).is(variant.getBlock());
+        return level.getBlockState(pos.relative(side)).is(variant.targetBlock());
     }
 
     protected boolean isCornerBlockPresent(BlockAndTintGetter level, BlockPos pos, Direction side1, Direction side2) {
-        return level.getBlockState(pos.relative(side1).relative(side2)).is(variant.getBlock());
+        return level.getBlockState(pos.relative(side1).relative(side2)).is(variant.targetBlock());
     }
 
     @Override

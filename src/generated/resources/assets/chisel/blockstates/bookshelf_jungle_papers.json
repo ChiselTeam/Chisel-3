@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_jungle_papers",
   "variant": {
     "block": "chisel:bookshelf_jungle_papers",
-    "model_type": "bookshelf",
-    "name": "bookshelf_jungle_papers"
+    "kind": "bookshelf"
   }
 }

@@ -22,7 +22,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:dirt_horizontal",
-    "model_type": "ctmh",
-    "name": "dirt_horizontal"
+    "kind": "ctmh"
   }
 }

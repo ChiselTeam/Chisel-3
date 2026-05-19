@@ -1,6 +1,6 @@
 package chisel.lib.ctm.baked;
 
-import chisel.core.variant.Variant;
+import chisel.lib.ctm.CTMVariant;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.client.resources.model.geometry.BakedQuad;
 import net.minecraft.core.Direction;
@@ -18,7 +18,7 @@ public class TBSCTMBlockStateModel extends StandardCTMBlockStateModel {
             Map<Direction, BakedQuad[]> baseQuads,
             Map<Direction, BakedQuad[][]> connectedQuads,
             TextureAtlasSprite particle,
-            Variant variant
+            CTMVariant variant
     ) {
         super(
                 connectedFaces,

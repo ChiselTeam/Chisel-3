@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:coal_zag",
-    "model_type": "ar",
-    "name": "coal_zag"
+    "kind": "ar"
   }
 }

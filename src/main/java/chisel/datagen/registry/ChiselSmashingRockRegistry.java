@@ -1,7 +1,7 @@
 package chisel.datagen.registry;
 
 import chisel.Chisel;
-import chisel.core.projectile.SmashingRockData;
+import chisel.projectile.SmashingRockData;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.worldgen.BootstrapContext;

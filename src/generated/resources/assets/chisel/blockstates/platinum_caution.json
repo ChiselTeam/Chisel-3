@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:platinum_caution",
-    "model_type": "connected",
-    "name": "platinum_caution"
+    "kind": "standard"
   }
 }

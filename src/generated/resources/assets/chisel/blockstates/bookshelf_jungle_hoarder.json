@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_jungle_hoarder",
   "variant": {
     "block": "chisel:bookshelf_jungle_hoarder",
-    "model_type": "bookshelf",
-    "name": "bookshelf_jungle_hoarder"
+    "kind": "bookshelf"
   }
 }

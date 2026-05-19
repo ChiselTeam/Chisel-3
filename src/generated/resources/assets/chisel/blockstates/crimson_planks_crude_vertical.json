@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:crimson_planks_crude_vertical",
-    "model_type": "multiblock_3x3",
-    "name": "crimson_planks_crude_vertical"
+    "kind": "multiblock_3x3"
   }
 }

@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_bamboo_abandoned",
   "variant": {
     "block": "chisel:bookshelf_bamboo_abandoned",
-    "model_type": "bookshelf",
-    "name": "bookshelf_bamboo_abandoned"
+    "kind": "bookshelf"
   }
 }

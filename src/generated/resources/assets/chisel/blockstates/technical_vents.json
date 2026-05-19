@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:technical_vents",
-    "model_type": "connected",
-    "name": "technical_vents"
+    "kind": "standard"
   }
 }

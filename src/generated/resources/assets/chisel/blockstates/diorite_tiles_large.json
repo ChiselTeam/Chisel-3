@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:diorite_tiles_large",
-    "model_type": "connected",
-    "name": "diorite_tiles_large"
+    "kind": "standard"
   }
 }

@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:factory_ice",
-    "model_type": "connected",
-    "name": "factory_ice"
+    "kind": "standard"
   }
 }

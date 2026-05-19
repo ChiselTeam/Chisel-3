@@ -25,7 +25,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:lavastone_weaver",
-    "model_type": "multi_layer_connected_glow",
-    "name": "lavastone_weaver"
+    "kind": "standard"
   }
 }

@@ -1,4 +1,4 @@
-package chisel.core.variant;
+package chisel.lib.variant;
 
 import chisel.client.model.CubeAllModel;
 import chisel.client.model.MultiLayerModel;

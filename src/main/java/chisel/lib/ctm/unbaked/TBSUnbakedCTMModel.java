@@ -1,6 +1,6 @@
 package chisel.lib.ctm.unbaked;
 
-import chisel.core.variant.Variant;
+import chisel.lib.ctm.CTMVariant;
 import chisel.lib.ctm.baked.TBSCTMBlockStateModel;
 import chisel.lib.ctm.logic.CTMLogic;
 import com.mojang.datafixers.util.Pair;
@@ -30,7 +30,7 @@ import java.util.*;
 
 public class TBSUnbakedCTMModel extends AbstractUnbakedConnectedTextureBlockStateModel {
 
-    public TBSUnbakedCTMModel(Identifier modelLocation, Pair<Vector3f, Vector3f> element, Set<Direction> connectedFaces, boolean renderOverlayOnAllFaces, Variant variant, int baseTintIndex, int baseEmissivity, int tintIndex, int emissivity) {
+    public TBSUnbakedCTMModel(Identifier modelLocation, Pair<Vector3f, Vector3f> element, Set<Direction> connectedFaces, boolean renderOverlayOnAllFaces, CTMVariant variant, int baseTintIndex, int baseEmissivity, int tintIndex, int emissivity) {
         super(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity);
     }
 

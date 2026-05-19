@@ -1,6 +1,6 @@
 package chisel.lib.ctm.baked;
 
-import chisel.core.variant.Variant;
+import chisel.lib.ctm.CTMVariant;
 import chisel.lib.ctm.util.CTMPartBuilder;
 import chisel.lib.ctm.ConnectedTextureBlockModelPart;
 import chisel.lib.ctm.geometry.ARCTMKey;
@@ -20,7 +20,7 @@ public class ARCTMBlockStateModel extends AbstractConnectedTextureBlockStateMode
 
     protected final Map<Direction, BakedQuad[][]> connectedQuads;
 
-    public ARCTMBlockStateModel(Set<Direction> connectedFaces, Set<Direction> unculledFaces, boolean renderOverlayOnAllFaces, Map<Direction, BakedQuad[]> baseQuads, Map<Direction, BakedQuad[][]> connectedQuads, TextureAtlasSprite particle, Variant variant) {
+    public ARCTMBlockStateModel(Set<Direction> connectedFaces, Set<Direction> unculledFaces, boolean renderOverlayOnAllFaces, Map<Direction, BakedQuad[]> baseQuads, Map<Direction, BakedQuad[][]> connectedQuads, TextureAtlasSprite particle, CTMVariant variant) {
         super(connectedFaces, unculledFaces, renderOverlayOnAllFaces, baseQuads, particle, variant);
         this.connectedQuads = connectedQuads;
     }

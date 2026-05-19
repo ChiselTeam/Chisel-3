@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_birch_necromancer",
   "variant": {
     "block": "chisel:bookshelf_birch_necromancer",
-    "model_type": "bookshelf",
-    "name": "bookshelf_birch_necromancer"
+    "kind": "bookshelf"
   }
 }

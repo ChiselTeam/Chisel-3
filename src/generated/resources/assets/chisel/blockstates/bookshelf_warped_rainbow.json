@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_warped_rainbow",
   "variant": {
     "block": "chisel:bookshelf_warped_rainbow",
-    "model_type": "bookshelf",
-    "name": "bookshelf_warped_rainbow"
+    "kind": "bookshelf"
   }
 }

@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:nickel_scaffold",
-    "model_type": "connected",
-    "name": "nickel_scaffold"
+    "kind": "standard"
   }
 }

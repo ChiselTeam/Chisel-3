@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:bricks_array",
-    "model_type": "multiblock_2x2",
-    "name": "bricks_array"
+    "kind": "multiblock_2x2"
   }
 }

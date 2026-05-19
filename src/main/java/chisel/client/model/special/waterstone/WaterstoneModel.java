@@ -2,8 +2,8 @@ package chisel.client.model.special.waterstone;
 
 import chisel.Chisel;
 import chisel.client.ChiselModelTemplates;
-import chisel.core.variant.Variant;
-import chisel.core.variant.VariantModel;
+import chisel.lib.variant.Variant;
+import chisel.lib.variant.VariantModel;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.model.TextureMapping;

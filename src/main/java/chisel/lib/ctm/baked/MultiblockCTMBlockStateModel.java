@@ -1,9 +1,8 @@
 package chisel.lib.ctm.baked;
 
-import chisel.core.variant.Variant;
-import chisel.core.variant.VariantModelHandler;
-import chisel.registry.ChiselModelHandlers;
-import chisel.events.client.OffsetToolClientHandler;
+import chisel.lib.ctm.CTMKind;
+import chisel.lib.ctm.CTMVariant;
+import chisel.lib.ctm.MultiblockOffsetProvider;
 import chisel.lib.ctm.util.CTMPartBuilder;
 import chisel.lib.ctm.ConnectedTextureBlockModelPart;
 import chisel.lib.ctm.geometry.MultiblockCTMKey;
@@ -15,7 +14,6 @@ import net.minecraft.client.resources.model.geometry.BakedQuad;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.level.ChunkPos;
 
 import java.util.*;
 
@@ -34,17 +32,17 @@ public class MultiblockCTMBlockStateModel extends AbstractConnectedTextureBlockS
                                         Map<Direction, BakedQuad[]> multiblock3x3Quads,
                                         Map<Direction, BakedQuad[]> multiblock4x4Quads,
                                         TextureAtlasSprite particle,
-                                        Variant variant) {
+                                        CTMVariant variant) {
         super(connectedFaces, unculledFaces, renderOverlayOnAllFaces, baseQuads, particle, variant);
         this.multiblock2x2Quads = multiblock2x2Quads;
         this.multiblock3x3Quads = multiblock3x3Quads;
         this.multiblock4x4Quads = multiblock4x4Quads;
-        this.selector = createSelector(variant.getModelType());
+        this.selector = createSelector(variant.kind());
     }
 
     @Override
     protected MultiblockCTMKey computeCTMKey(BlockAndTintGetter level, BlockPos pos, RandomSource random) {
-        BlockPos offsetPos = pos.offset(OffsetToolClientHandler.getOffset(new ChunkPos(pos.getX() >> 4, pos.getZ() >> 4)));
+        BlockPos offsetPos = MultiblockOffsetProvider.get().offsetFor(pos);
 
         CTMLogicR4 sharedR4 = CTMLogicR4.values()[randomIndex(pos, 4, 4)];
         CTMLogicR9 sharedR9 = CTMLogicR9.values()[randomIndex(pos, 9, 9)];
@@ -92,69 +90,83 @@ public class MultiblockCTMBlockStateModel extends AbstractConnectedTextureBlockS
     }
 
     private boolean isRandomVariant() {
-        VariantModelHandler type = variant.getModelType();
-        return type == ChiselModelHandlers.R4 || type == ChiselModelHandlers.R9 || type == ChiselModelHandlers.R16;
+        return variant.kind().usesRandomTexture();
     }
 
     private void appendMultiblockQuad(MultiblockCTMKey key, Direction side, List<BakedQuad> faceQuads) {
         selector.append(key, side, faceQuads);
     }
 
-    private MultiblockQuadSelector createSelector(VariantModelHandler type) {
-        if (type == ChiselModelHandlers.MULTIBLOCK_2X2 || type == ChiselModelHandlers.MULTI_LAYER_WATER_2X2) {
-            return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
-                    multiblock2x2Quads.get(side),
-                    key.mb2x2(side).ordinal(),
-                    faceQuads
-            );
-        } else if (type == ChiselModelHandlers.MULTIBLOCK_3X3 || type == ChiselModelHandlers.MULTI_LAYER_WATER_3X3) {
-            return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
-                    multiblock3x3Quads.get(side),
-                    key.mb3x3(side).ordinal(),
-                    faceQuads
-            );
-        } else if (type == ChiselModelHandlers.MULTIBLOCK_4X4 || type == ChiselModelHandlers.MULTI_LAYER_WATER_4X4) {
-            return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
-                    multiblock4x4Quads.get(side),
-                    key.mb4x4(side).ordinal(),
-                    faceQuads
-            );
-        } else if (type == ChiselModelHandlers.V4) {
+    private MultiblockQuadSelector createSelector(CTMKind kind) {
+        // V*: deterministic multiblock tiling that follows the offset provider.
+        if (kind.isV4()) {
             return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
                     multiblock2x2Quads.get(side),
                     key.v4(side).ordinal(),
                     faceQuads
             );
-        } else if (type == ChiselModelHandlers.V9) {
+        }
+        if (kind.isV9()) {
             return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
                     multiblock3x3Quads.get(side),
                     key.v9(side).ordinal(),
                     faceQuads
             );
-        } else if (type == ChiselModelHandlers.V16) {
+        }
+        if (kind.isV16()) {
             return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
                     multiblock4x4Quads.get(side),
                     key.v16(side).ordinal(),
                     faceQuads
             );
-        } else if (type == ChiselModelHandlers.R4) {
+        }
+        // R*: random per-position tiling.
+        if (kind.isR4()) {
             return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
                     multiblock2x2Quads.get(side),
                     key.r4(side).ordinal(),
                     faceQuads
             );
-        } else if (type == ChiselModelHandlers.R9) {
+        }
+        if (kind.isR9()) {
             return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
                     multiblock3x3Quads.get(side),
                     key.r9(side).ordinal(),
                     faceQuads
             );
-        } else if (type == ChiselModelHandlers.R16) {
+        }
+        if (kind.isR16()) {
             return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
                     multiblock4x4Quads.get(side),
                     key.r16(side).ordinal(),
                     faceQuads
             );
+        }
+        // Fixed multiblock (MULTIBLOCK_NxN and MULTI_LAYER_WATER_NxN).
+        if (kind.usesMultiblockCTM()) {
+            switch (kind.multiblockSize()) {
+                case 2 -> {
+                    return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
+                            multiblock2x2Quads.get(side),
+                            key.mb2x2(side).ordinal(),
+                            faceQuads
+                    );
+                }
+                case 3 -> {
+                    return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
+                            multiblock3x3Quads.get(side),
+                            key.mb3x3(side).ordinal(),
+                            faceQuads
+                    );
+                }
+                case 4 -> {
+                    return (key, side, faceQuads) -> CTMPartBuilder.appendIndexedQuad(
+                            multiblock4x4Quads.get(side),
+                            key.mb4x4(side).ordinal(),
+                            faceQuads
+                    );
+                }
+            }
         }
         return (_, _, _) -> {};
     }

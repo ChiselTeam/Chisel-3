@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:aluminum_caution",
-    "model_type": "connected",
-    "name": "aluminum_caution"
+    "kind": "standard"
   }
 }

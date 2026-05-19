@@ -1,7 +1,7 @@
 package chisel.datagen.registry;
 
 import chisel.Chisel;
-import chisel.core.projectile.BallOMossData;
+import chisel.projectile.BallOMossData;
 import chisel.registry.ChiselBlocks;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;

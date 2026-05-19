@@ -1,9 +1,8 @@
 package chisel.lib.ctm.unbaked;
 
-import chisel.Chisel;
-import chisel.core.variant.Variant;
-import chisel.core.variant.VariantModelHandler;
-import chisel.registry.ChiselModelHandlers;
+import chisel.lib.ctm.CTMKind;
+import chisel.lib.ctm.CTMVariant;
+import chisel.lib.ctm.baked.EldritchBlockStateModel;
 import com.mojang.datafixers.util.Pair;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
@@ -22,10 +21,12 @@ import java.util.Set;
 
 public class UnbakedConnectedTextureBlockStateModel extends AbstractUnbakedConnectedTextureBlockStateModel {
 
-    public static final Identifier ID = Chisel.prefix("connected_texture_model");
+    public UnbakedConnectedTextureBlockStateModel(Identifier modelLocation, Pair<Vector3f, Vector3f> element, Set<Direction> connectedFaces, boolean renderOverlayOnAllFaces, CTMVariant variant, int baseTintIndex, int baseEmissivity, int tintIndex, int emissivity, boolean eldritch) {
+        super(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity, eldritch);
+    }
 
-    public UnbakedConnectedTextureBlockStateModel(Identifier modelLocation, Pair<Vector3f, Vector3f> element, Set<Direction> connectedFaces, boolean renderOverlayOnAllFaces, Variant variant, int baseTintIndex, int baseEmissivity, int tintIndex, int emissivity) {
-        super(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity);
+    public UnbakedConnectedTextureBlockStateModel(Identifier modelLocation, Pair<Vector3f, Vector3f> element, Set<Direction> connectedFaces, boolean renderOverlayOnAllFaces, CTMVariant variant, int baseTintIndex, int baseEmissivity, int tintIndex, int emissivity) {
+        this(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity, false);
     }
 
     private static final Codec<Vector3f> VECTOR3F_CODEC = Codec.FLOAT.listOf().comapFlatMap(
@@ -44,13 +45,14 @@ public class UnbakedConnectedTextureBlockStateModel extends AbstractUnbakedConne
                     ELEMENT_CODEC.fieldOf("element").forGetter(m -> m.element),
                     Direction.CODEC.listOf().fieldOf("connected_faces").forGetter(m -> m.connectedFaces.stream().toList().stream().sorted().toList()),
                     Codec.BOOL.optionalFieldOf("render_overlay_on_all_faces", false).forGetter(m -> m.renderOverlayOnAllFaces),
-                    Variant.CODEC.fieldOf("variant").forGetter(m -> m.variant),
+                    CTMVariant.CODEC.fieldOf("variant").forGetter(m -> m.variant),
                     Codec.INT.optionalFieldOf("base_tint_index", -1).forGetter(m -> m.baseTintIndex),
                     Codec.INT.optionalFieldOf("base_emissivity", 0).forGetter(m -> m.baseEmissivity),
                     Codec.INT.optionalFieldOf("tint_index", -1).forGetter(m -> m.tintIndex),
-                    Codec.INT.optionalFieldOf("emissivity", 0).forGetter(m -> m.emissivity)
-            ).apply(instance, (Identifier modelLocation, Pair<Vector3f, Vector3f> element, List<Direction> connectedFaces, Boolean renderOverlayOnAllFaces, Variant variant, Integer baseTintIndex, Integer baseEmissivity, Integer tintIndex, Integer emissivity) ->
-                    new UnbakedConnectedTextureBlockStateModel(modelLocation, element, Set.copyOf(connectedFaces), renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity))
+                    Codec.INT.optionalFieldOf("emissivity", 0).forGetter(m -> m.emissivity),
+                    Codec.BOOL.optionalFieldOf("eldritch", false).forGetter(m -> m.eldritch)
+            ).apply(instance, (Identifier modelLocation, Pair<Vector3f, Vector3f> element, List<Direction> connectedFaces, Boolean renderOverlayOnAllFaces, CTMVariant variant, Integer baseTintIndex, Integer baseEmissivity, Integer tintIndex, Integer emissivity, Boolean eldritch) ->
+                    new UnbakedConnectedTextureBlockStateModel(modelLocation, element, Set.copyOf(connectedFaces), renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity, eldritch))
     );
 
     @Override
@@ -60,6 +62,19 @@ public class UnbakedConnectedTextureBlockStateModel extends AbstractUnbakedConne
 
     @Override
     public @NonNull BlockStateModel bake(@NonNull ModelBaker baker) {
-        return variant.getModelHandler().createUnbakedModel(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity).bake(baker);
+        BlockStateModel baked = forKind(variant.kind()).bake(baker);
+        return eldritch ? new EldritchBlockStateModel(baked) : baked;
+    }
+
+    private AbstractUnbakedConnectedTextureBlockStateModel forKind(CTMKind kind) {
+        return switch (kind) {
+            case STANDARD -> new StandardUnbakedCTMModel(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity);
+            case TBS -> new TBSUnbakedCTMModel(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity);
+            case AR -> new ARUnbakedModel(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity);
+            case BOOKSHELF, CTMH, CTMV -> new DirectionalUnbakedCTMModel(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity);
+            case MULTIBLOCK_2X2, MULTIBLOCK_3X3, MULTIBLOCK_4X4,
+                 V4, V9, V16,
+                 R4, R9, R16 -> new MultiblockUnbakedCTMModel(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity);
+        };
     }
 }

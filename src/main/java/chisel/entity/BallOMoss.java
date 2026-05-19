@@ -1,6 +1,6 @@
 package chisel.entity;
 
-import chisel.core.projectile.BallOMossData;
+import chisel.projectile.BallOMossData;
 import chisel.datagen.registry.ChiselBallOMossRegistry;
 import chisel.registry.ChiselEntities;
 import chisel.registry.ChiselItems;

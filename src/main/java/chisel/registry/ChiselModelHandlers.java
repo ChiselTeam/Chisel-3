@@ -1,9 +1,9 @@
 package chisel.registry;
 
-import chisel.core.variant.VariantModelHandler;
-import chisel.core.variant.VariantModelHandlers;
-import chisel.core.variant.VariantModels;
-import chisel.core.variant.handler.*;
+import chisel.lib.variant.VariantModelHandler;
+import chisel.lib.variant.VariantModelHandlers;
+import chisel.lib.variant.VariantModels;
+import chisel.lib.variant.handler.*;
 
 public class ChiselModelHandlers {
     private static final VariantModels MODELS = new VariantModels();
@@ -21,9 +21,9 @@ public class ChiselModelHandlers {
     public static final VariantModelHandler MULTI_LAYER_TBS_TINTED = new CubeAllVariantModelHandler("multi_layer_tbs_tinted", MODELS.MULTI_LAYER_TBS_TINTED);
     public static final VariantModelHandler MULTI_LAYER_LAVA = new CubeAllVariantModelHandler("multi_layer_lava", MODELS.LAVASTONE);
     public static final VariantModelHandler MULTI_LAYER_LAVA_TOP_BOTTOM_SIDE = new CubeAllVariantModelHandler("multi_layer_lava_top_bottom_side", MODELS.LAVASTONE_TOP_BOTTOM_SIDE);
-    public static final VariantModelHandler LAVA_2x2 = new MultiblockCTMVariantModelHandler("lava_2x2", MODELS.LAVASTONE_2X2, false, 2, false);
-    public static final VariantModelHandler LAVA_3x3 = new MultiblockCTMVariantModelHandler("lava_3x3", MODELS.LAVASTONE_3X3, false, 3, false);
-    public static final VariantModelHandler LAVA_4x4 = new MultiblockCTMVariantModelHandler("lava_4x4", MODELS.LAVASTONE_4X4, false, 4, false);
+    public static final VariantModelHandler LAVA_2x2 = new MultiblockCTMVariantModelHandler("lava_2x2", MODELS.LAVASTONE_2X2, false, 2, true);
+    public static final VariantModelHandler LAVA_3x3 = new MultiblockCTMVariantModelHandler("lava_3x3", MODELS.LAVASTONE_3X3, false, 3, true);
+    public static final VariantModelHandler LAVA_4x4 = new MultiblockCTMVariantModelHandler("lava_4x4", MODELS.LAVASTONE_4X4, false, 4, true);
     public static final VariantModelHandler MULTI_LAYER_WATER = new CubeAllVariantModelHandler("multi_layer_water", MODELS.WATERSTONE);
     public static final VariantModelHandler MULTI_LAYER_CONNECTED = new CTMVariantModelHandler("multi_layer_connected", MODELS.MULTI_LAYER_CTM);
     public static final VariantModelHandler MULTI_LAYER_CONNECTED_TINTED = new CTMVariantModelHandler("multi_layer_connected_tinted", MODELS.MULTI_LAYER_CTM_TINTED);

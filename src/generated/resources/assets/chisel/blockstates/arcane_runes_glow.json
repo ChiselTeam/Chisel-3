@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:arcane_runes_glow",
-    "model_type": "v16",
-    "name": "arcane_runes_glow"
+    "kind": "v16"
   }
 }

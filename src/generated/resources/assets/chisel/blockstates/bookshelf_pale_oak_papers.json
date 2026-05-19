@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_pale_oak_papers",
   "variant": {
     "block": "chisel:bookshelf_pale_oak_papers",
-    "model_type": "bookshelf",
-    "name": "bookshelf_pale_oak_papers"
+    "kind": "bookshelf"
   }
 }

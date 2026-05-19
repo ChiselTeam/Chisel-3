@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:red_sandstone_jellybean",
-    "model_type": "multiblock_2x2",
-    "name": "red_sandstone_jellybean"
+    "kind": "multiblock_2x2"
   }
 }

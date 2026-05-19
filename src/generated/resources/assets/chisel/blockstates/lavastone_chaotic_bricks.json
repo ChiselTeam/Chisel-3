@@ -26,7 +26,7 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:lavastone_chaotic_bricks",
-    "model_type": "lava_3x3",
-    "name": "lavastone_chaotic_bricks"
+    "kind": "multiblock_3x3",
+    "water_offset": true
   }
 }

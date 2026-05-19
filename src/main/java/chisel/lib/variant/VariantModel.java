@@ -1,4 +1,4 @@
-package chisel.core.variant;
+package chisel.lib.variant;
 
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.model.TextureMapping;

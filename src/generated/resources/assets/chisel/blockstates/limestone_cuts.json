@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:limestone_cuts",
-    "model_type": "multiblock_4x4",
-    "name": "limestone_cuts"
+    "kind": "multiblock_4x4"
   }
 }

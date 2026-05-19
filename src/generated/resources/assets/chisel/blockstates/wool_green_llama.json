@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:wool_green_llama",
-    "model_type": "connected",
-    "name": "wool_green_llama"
+    "kind": "standard"
   }
 }

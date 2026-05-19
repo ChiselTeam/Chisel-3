@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:mossy_cobblestone_weaver",
-    "model_type": "connected",
-    "name": "mossy_cobblestone_weaver"
+    "kind": "standard"
   }
 }

@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:dirt_reinforced_cobble",
-    "model_type": "connected",
-    "name": "dirt_reinforced_cobble"
+    "kind": "standard"
   }
 }

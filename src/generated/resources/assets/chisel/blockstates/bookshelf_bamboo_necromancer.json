@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_bamboo_necromancer",
   "variant": {
     "block": "chisel:bookshelf_bamboo_necromancer",
-    "model_type": "bookshelf",
-    "name": "bookshelf_bamboo_necromancer"
+    "kind": "bookshelf"
   }
 }

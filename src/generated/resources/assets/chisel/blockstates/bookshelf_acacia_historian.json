@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_acacia_historian",
   "variant": {
     "block": "chisel:bookshelf_acacia_historian",
-    "model_type": "bookshelf",
-    "name": "bookshelf_acacia_historian"
+    "kind": "bookshelf"
   }
 }

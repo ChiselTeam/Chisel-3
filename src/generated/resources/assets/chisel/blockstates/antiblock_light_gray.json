@@ -25,7 +25,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:antiblock_light_gray",
-    "model_type": "multi_layer_connected_glow",
-    "name": "antiblock_light_gray"
+    "kind": "standard"
   }
 }

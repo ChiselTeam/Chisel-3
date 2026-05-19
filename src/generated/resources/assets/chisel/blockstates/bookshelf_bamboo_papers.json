@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_bamboo_papers",
   "variant": {
     "block": "chisel:bookshelf_bamboo_papers",
-    "model_type": "bookshelf",
-    "name": "bookshelf_bamboo_papers"
+    "kind": "bookshelf"
   }
 }

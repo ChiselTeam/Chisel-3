@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:iron_scaffold",
-    "model_type": "connected",
-    "name": "iron_scaffold"
+    "kind": "standard"
   }
 }

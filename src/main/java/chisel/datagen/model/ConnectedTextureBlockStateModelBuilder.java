@@ -1,6 +1,8 @@
-package chisel.lib.ctm.util;
+package chisel.datagen.model;
 
-import chisel.core.variant.Variant;
+import chisel.lib.variant.Variant;
+import chisel.lib.ctm.CTMKind;
+import chisel.lib.ctm.CTMVariant;
 import chisel.lib.ctm.unbaked.UnbakedConnectedTextureBlockStateModel;
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.client.renderer.block.dispatch.VariantMutator;
@@ -14,6 +16,11 @@ import org.jspecify.annotations.NonNull;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Datagen-side builder for {@link UnbakedConnectedTextureBlockStateModel}s. Lives on the
+ * Chisel side (not in {@code chisel.lib.ctm}) because it bridges Chisel's {@link Variant}
+ * concept to the library's {@link CTMVariant} record.
+ */
 public class ConnectedTextureBlockStateModelBuilder extends CustomBlockStateModelBuilder {
 
     private Identifier modelLocation;
@@ -25,6 +32,7 @@ public class ConnectedTextureBlockStateModelBuilder extends CustomBlockStateMode
     private int baseEmissivity = 0;
     private int tintIndex = -1;
     private int emissivity = 0;
+    private boolean eldritch = false;
 
     @Override
     public @NonNull ConnectedTextureBlockStateModelBuilder with(@NonNull VariantMutator variantMutator) {
@@ -44,6 +52,7 @@ public class ConnectedTextureBlockStateModelBuilder extends CustomBlockStateMode
         result.baseEmissivity = this.baseEmissivity;
         result.tintIndex = this.tintIndex;
         result.emissivity = this.emissivity;
+        result.eldritch = this.eldritch;
 
         return result;
     }
@@ -93,8 +102,22 @@ public class ConnectedTextureBlockStateModelBuilder extends CustomBlockStateMode
         return this;
     }
 
+    public ConnectedTextureBlockStateModelBuilder eldritch(boolean eldritch) {
+        this.eldritch = eldritch;
+        return this;
+    }
+
     @Override
     public @NonNull UnbakedConnectedTextureBlockStateModel toUnbaked() {
-        return new UnbakedConnectedTextureBlockStateModel(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, variant, baseTintIndex, baseEmissivity, tintIndex, emissivity);
+        return new UnbakedConnectedTextureBlockStateModel(modelLocation, element, connectedFaces, renderOverlayOnAllFaces, toCTMVariant(variant), baseTintIndex, baseEmissivity, tintIndex, emissivity, eldritch);
+    }
+
+    private static CTMVariant toCTMVariant(Variant variant) {
+        CTMKind kind = variant.getModelHandler().ctmKind();
+        if (kind == null) {
+            throw new IllegalStateException("Variant " + variant.getName() + " uses model handler "
+                    + variant.getModelHandler().getSerializedName() + " which is not a connected-texture handler");
+        }
+        return CTMVariant.of(variant.getBlock(), kind, variant.getModelHandler().ctmWaterOffset());
     }
 }

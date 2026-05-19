@@ -1,8 +1,8 @@
 package chisel.events;
 
 import chisel.Chisel;
-import chisel.core.variant.Variant;
-import chisel.core.variant.VariantFamily;
+import chisel.lib.variant.Variant;
+import chisel.lib.variant.VariantFamily;
 import chisel.datagen.ChiselBlockTags;
 import chisel.registry.ChiselItemAbilities;
 import chisel.registry.ChiselSounds;
@@ -14,7 +14,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.NbtOps;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.core.HolderLookup;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;

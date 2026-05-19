@@ -1,9 +1,7 @@
 package chisel.client;
 
-import chisel.core.variant.VariantFamily;
-import chisel.core.variant.VariantModelHandler;
+import chisel.lib.variant.VariantFamily;
 import chisel.registry.ChiselItems;
-import chisel.registry.ChiselModelHandlers;
 import chisel.util.VariantFinder;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;

@@ -2,9 +2,9 @@ package chisel.client.model.ctm;
 
 import chisel.client.ChiselModelTemplates;
 import chisel.client.ChiselTextureSlots;
-import chisel.lib.ctm.util.ConnectedTextureBlockStateModelBuilder;
-import chisel.core.variant.Variant;
-import chisel.core.variant.VariantModel;
+import chisel.datagen.model.ConnectedTextureBlockStateModelBuilder;
+import chisel.lib.variant.Variant;
+import chisel.lib.variant.VariantModel;
 import chisel.datagen.model.ConnectedTextureBlockStateDefinitionGenerator;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.model.TextureMapping;

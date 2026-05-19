@@ -2,7 +2,7 @@ package chisel.block.family;
 
 import chisel.block.CTMHBlock;
 import chisel.block.util.ChiselFamily;
-import chisel.core.variant.VariantFamily;
+import chisel.lib.variant.VariantFamily;
 import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Blocks;

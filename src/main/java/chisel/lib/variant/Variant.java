@@ -1,4 +1,4 @@
-package chisel.core.variant;
+package chisel.lib.variant;
 
 import chisel.Chisel;
 import com.mojang.serialization.Codec;
@@ -25,6 +25,7 @@ public class Variant {
     private final VariantModelHandler modelType;
     private final boolean shouldGenerateModel;
     public boolean isInTab = true;
+    private boolean eldritch = false;
     private VariantFamily family;
 
     public Variant(String name, Supplier<Block> block, VariantFamily family, VariantModelHandler modelType, boolean shouldGenerateModel) {
@@ -89,5 +90,14 @@ public class Variant {
 
     public String getTranslationKey() {
         return "%s.desc".formatted(block.get().getDescriptionId());
+    }
+
+    public boolean isEldritch() {
+        return eldritch;
+    }
+
+    public Variant withEldritch() {
+        this.eldritch = true;
+        return this;
     }
 }

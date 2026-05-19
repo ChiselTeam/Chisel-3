@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:military_rebel_caution_white",
-    "model_type": "connected",
-    "name": "military_rebel_caution_white"
+    "kind": "standard"
   }
 }

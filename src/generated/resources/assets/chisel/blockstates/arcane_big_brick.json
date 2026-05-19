@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:arcane_big_brick",
-    "model_type": "connected",
-    "name": "arcane_big_brick"
+    "kind": "standard"
   }
 }

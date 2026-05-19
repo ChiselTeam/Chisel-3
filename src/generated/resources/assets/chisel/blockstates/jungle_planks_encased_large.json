@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:jungle_planks_encased_large",
-    "model_type": "connected",
-    "name": "jungle_planks_encased_large"
+    "kind": "standard"
   }
 }

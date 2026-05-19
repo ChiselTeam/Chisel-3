@@ -20,7 +20,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:dirt_bricks",
-    "model_type": "ctmv",
-    "name": "dirt_bricks"
+    "kind": "ctmv"
   }
 }

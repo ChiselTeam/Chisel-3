@@ -1,4 +1,4 @@
-package chisel.core.variant;
+package chisel.lib.variant;
 
 import chisel.registry.ChiselModelHandlers;
 import com.mojang.serialization.Codec;

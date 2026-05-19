@@ -1,7 +1,7 @@
 package chisel.block.entity;
 
-import chisel.core.variant.Variant;
-import chisel.core.variant.VariantFamily;
+import chisel.lib.variant.Variant;
+import chisel.lib.variant.VariantFamily;
 import chisel.registry.ChiselBlockEntities;
 import chisel.registry.ChiselItemAbilities;
 import chisel.registry.ChiselItems;

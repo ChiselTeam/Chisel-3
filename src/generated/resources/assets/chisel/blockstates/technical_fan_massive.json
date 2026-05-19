@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:technical_fan_massive",
-    "model_type": "v9",
-    "name": "technical_fan_massive"
+    "kind": "v9"
   }
 }

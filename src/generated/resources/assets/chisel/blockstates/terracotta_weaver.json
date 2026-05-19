@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:terracotta_weaver",
-    "model_type": "connected",
-    "name": "terracotta_weaver"
+    "kind": "standard"
   }
 }
