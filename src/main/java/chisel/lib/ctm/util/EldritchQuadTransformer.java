@@ -12,38 +12,30 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-/**
- * Subdivides each {@link BakedQuad} into a 2x2 grid (4 sub-quads) and perturbs the
- * <em>interior</em> UV coordinates using a Gaussian random offset. The PRNG is seeded
- * deterministically from the world block position and quad facing, so the visual
- * effect is stable for a given block at a given location.
- *
- * <p>This is a port of the legacy chisel {@code TextureEldritch} effect from the
- * pre-flattening rendering pipeline, adapted to the current
- * {@code BakedQuad}/{@code Vector3fc}/packed-UV record-based API.
- *
- * <p>Only UVs strictly inside the original quad's bounding rectangle are nudged; UVs
- * that lie on a min/max edge are left alone, which keeps the seams between adjacent
- * blocks visually continuous.
- */
+/// Subdivides each [BakedQuad] into a 2x2 grid (4 sub-quads) and perturbs the
+/// _interior_ UV coordinates using a Gaussian random offset. The PRNG is seeded
+/// deterministically from the world block position and quad facing, so the visual
+/// effect is stable for a given block at a given location.
+///
+/// Only UVs strictly inside the original quad's bounding rectangle are nudged; UVs
+/// that lie on a min/max edge are left alone, which keeps the seams between adjacent
+/// blocks visually continuous.
 public final class EldritchQuadTransformer {
 
-    /** Standard deviation of the Gaussian UV offset, expressed as a fraction of the sprite's UV range. */
-    private static final float OFFSET_STDDEV = 0.08f;
+    /// Standard deviation of the Gaussian UV offset, expressed as a fraction of the sprite's UV range.
+    private static final float OFFSET_STDDEV = 0.04f;
 
-    /** Floating-point tolerance used to detect "interior" UVs (in normalized sprite-UV space, ~1/16 of a 16-pixel sprite). */
+    /// Floating-point tolerance used to detect "interior" UVs (in normalized sprite-UV space, \~1/16 of a 16-pixel sprite).
     private static final float EDGE_EPSILON = 1.0e-4f;
 
     private EldritchQuadTransformer() {}
 
-    /**
-     * Transforms a list of quads, returning a new list whose contents are 4x subdivided
-     * versions of the input with their interior UVs perturbed.
-     *
-     * @param quads  the input quads (not modified)
-     * @param pos    world position used for deterministic seeding (may be {@link BlockPos#ZERO} in item contexts)
-     * @return a new list containing up to {@code 4 * quads.size()} new quads
-     */
+    /// Transforms a list of quads, returning a new list whose contents are 4x subdivided
+    /// versions of the input with their interior UVs perturbed.
+    ///
+    /// @param quads  the input quads (not modified)
+    /// @param pos    world position used for deterministic seeding (may be [BlockPos#ZERO] in item contexts)
+    /// @return a new list containing up to `4 * quads.size()` new quads
     public static List<BakedQuad> transform(List<BakedQuad> quads, BlockPos pos) {
         if (quads.isEmpty()) {
             return quads;
@@ -131,7 +123,7 @@ public final class EldritchQuadTransformer {
     }
 
     private static float clamp(float x, float lo, float hi) {
-        return x < lo ? lo : (x > hi ? hi : x);
+        return x < lo ? lo : (Math.min(x, hi));
     }
 
     private static Vector3f midpoint(Vector3fc a, Vector3fc b) {
