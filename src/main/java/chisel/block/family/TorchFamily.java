@@ -7,14 +7,16 @@ import static chisel.registry.ChiselModelHandlers.*;
 import chisel.registry.ChiselBlocks;
 import chisel.util.LangHelper;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.PushReaction;
 
-public class ChiselTorchFamily extends ChiselFamily {
+public class TorchFamily extends ChiselFamily {
 
-    public ChiselTorchFamily(BlockBehaviour.Properties props) {
+    public TorchFamily(BlockBehaviour.Properties props) {
         family = builder("torch")
+                .addVariant(Blocks.TORCH)
                 .addTorchVariant("torch_1", NoParticleTorchBlock::new, () -> props, TORCH)
                 .addTorchVariant("torch_2", NoParticleTorchBlock::new, () -> props, TORCH)
                 .addTorchVariant("torch_3", NoParticleTorchBlock::new, () -> props, TORCH)

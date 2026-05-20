@@ -1,6 +1,12 @@
-﻿{
+{
   "values": [
-    "ftbmaterials:platinum_block",
-    "alltheores:platinum_block"
+    {
+      "id": "ftbmaterials:platinum_block",
+      "required": false
+    },
+    {
+      "id": "alltheores:platinum_block",
+      "required": false
+    }
   ]
 }

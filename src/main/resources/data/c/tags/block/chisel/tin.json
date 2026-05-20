@@ -1,6 +1,12 @@
 {
   "values": [
-    "ftbmaterials:tin_block",
-    "alltheores:tin_block"
+    {
+      "id": "ftbmaterials:tin_block",
+      "required": false
+    },
+    {
+      "id": "alltheores:tin_block",
+      "required": false
+    }
   ]
 }

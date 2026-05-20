@@ -3,6 +3,10 @@
   "tag": "c:chisel/torch",
   "variants": [
     {
+      "block": "minecraft:torch",
+      "name": "block.minecraft.torch"
+    },
+    {
       "block": "chisel:torch_1",
       "model_type": "torch",
       "name": "torch_1"

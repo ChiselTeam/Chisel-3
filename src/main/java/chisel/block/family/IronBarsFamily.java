@@ -10,8 +10,8 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.IronBarsBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
-public class ChiselIronBarsFamily extends ChiselFamily {
-    public ChiselIronBarsFamily(BlockBehaviour.Properties props) {
+public class IronBarsFamily extends ChiselFamily {
+    public IronBarsFamily(BlockBehaviour.Properties props) {
         family = builder("iron_bars")
                 .addVariant(Blocks.IRON_BARS)
                 .addVariant("iron_bars_barbed_wire", (p) -> new IronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_barbed_wire")))), () -> props, IRON_BARS)

@@ -1,6 +1,12 @@
 {
   "values": [
-    "ftbmaterials:bronze_block",
-    "alltheores:bronze_block"
+    {
+      "id": "ftbmaterials:bronze_block",
+      "required": false
+    },
+    {
+      "id": "alltheores:bronze_block",
+      "required": false
+    }
   ]
 }

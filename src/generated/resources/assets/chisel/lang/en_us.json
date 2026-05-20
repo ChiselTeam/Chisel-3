@@ -3991,5 +3991,6 @@
   "itemGroup.tabModdedChiselBlocks": "Modded Chisel Blocks",
   "itemGroup.tabOtherChiselBlocks": "Other Chisel Blocks",
   "itemGroup.tabStoneChiselBlocks": "Stone Chisel Blocks",
-  "itemGroup.tabWoodChiselBlocks": "Wood Chisel Blocks"
+  "itemGroup.tabWoodChiselBlocks": "Wood Chisel Blocks",
+  "stat.chisel.blocks_chiseled": "Blocks Chiseled"
 }

@@ -3,11 +3,13 @@ package chisel.block;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.ScheduledTickAccess;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
+import org.jspecify.annotations.Nullable;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -24,6 +26,28 @@ public class NoParticleWallTorchBlock extends NoParticleTorchBlock{
 
     public NoParticleWallTorchBlock(Properties properties) {
         super(properties);
+        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+    }
+
+    @Nullable
+    @Override
+    public BlockState getStateForPlacement(BlockPlaceContext context) {
+        BlockState blockstate = this.defaultBlockState();
+        LevelReader levelreader = context.getLevel();
+        BlockPos blockpos = context.getClickedPos();
+        Direction[] adirection = context.getNearestLookingDirections();
+
+        for (Direction direction : adirection) {
+            if (direction.getAxis().isHorizontal()) {
+                Direction direction1 = direction.getOpposite();
+                blockstate = blockstate.setValue(FACING, direction1);
+                if (blockstate.canSurvive(levelreader, blockpos)) {
+                    return blockstate;
+                }
+            }
+        }
+
+        return null;
     }
 
     @Override
@@ -37,13 +61,10 @@ public class NoParticleWallTorchBlock extends NoParticleTorchBlock{
 
     @Override
     protected boolean canSurvive(BlockState state, @NonNull LevelReader level, @NonNull BlockPos pos) {
-        return canSurvive(level, pos, state.getValue(FACING));
-    }
-
-    public static boolean canSurvive(LevelReader level, BlockPos pos, Direction facing) {
-        BlockPos relativePos = pos.relative(facing.getOpposite());
-        BlockState relativeState = level.getBlockState(relativePos);
-        return relativeState.isFaceSturdy(level, relativePos, facing);
+        Direction direction = state.getValue(FACING);
+        BlockPos blockpos = pos.relative(direction.getOpposite());
+        BlockState blockstate = level.getBlockState(blockpos);
+        return blockstate.isFaceSturdy(level, blockpos, direction);
     }
 
     @Override

@@ -1,5 +1,8 @@
 {
   "values": [
-    "ftbmaterials:aluminum_block"
+    {
+      "id": "ftbmaterials:aluminum_block",
+      "required": false
+    }
   ]
 }

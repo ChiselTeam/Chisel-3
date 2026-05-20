@@ -180,10 +180,11 @@ public class VariantFamily {
         public Builder addTorchVariant(String name, Function<BlockBehaviour.Properties, ? extends Block> func, Supplier<BlockBehaviour.Properties> properties, VariantModelHandler modelType) {
             DeferredBlock<Block> block = ChiselBlocks.register(name, func, properties);
             Variant v = new Variant(name, block, family, modelType);
-            v.isInTab = false;
 
             if (modelType == TORCH) {
                 ChiselItems.ITEMS.registerItem(v.getName(), p -> new TorchBlockItem(v, block.get(), ChiselBlocks.TORCH.getVariant("wall_torch_%s".formatted(name.substring(6))).get(), p), () -> new Item.Properties().useBlockDescriptionPrefix());
+            } else {
+                v.isInTab = false;
             }
 
             family.getVariants().add(v);

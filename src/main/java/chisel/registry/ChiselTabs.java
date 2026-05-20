@@ -123,8 +123,17 @@ public class ChiselTabs {
                         ChiselBlocks.WOOLEN_CLAY.getFamily()).forEach(family -> family.getVariants().forEach(variant ->  {
                             if(variant.shouldGenerateModel() && variant.isInTab)
                                 output.accept(variant.getBlock());
-                }));
-
+                        }));
+                ChiselBlocks.TORCH.getVariant("torch_1").get();
+                ChiselBlocks.TORCH.getVariant("torch_2").get();
+                ChiselBlocks.TORCH.getVariant("torch_3").get();
+                ChiselBlocks.TORCH.getVariant("torch_4").get();
+                ChiselBlocks.TORCH.getVariant("torch_5").get();
+                ChiselBlocks.TORCH.getVariant("torch_6").get();
+                ChiselBlocks.TORCH.getVariant("torch_7").get();
+                ChiselBlocks.TORCH.getVariant("torch_8").get();
+                ChiselBlocks.TORCH.getVariant("torch_9").get();
+                ChiselBlocks.TORCH.getVariant("torch_10").get();
                 ChiselBlocks.WOOLS.forEach(family -> family.getFamily().getVariants().forEach(variant -> {
                     if (variant.shouldGenerateModel() && variant.isInTab)
                         output.accept(variant.getBlock());

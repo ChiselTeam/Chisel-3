@@ -64,7 +64,7 @@ public class ChiselBlocks {
     public static final IceFamily ICE = new IceFamily(Properties.ofFullCopy(Blocks.ICE));
     public static final InvarFamily INVAR = new InvarFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final IronFamily IRON = new IronFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final ChiselIronBarsFamily IRON_BARS = new ChiselIronBarsFamily(Properties.ofFullCopy(Blocks.IRON_BARS));
+    public static final IronBarsFamily IRON_BARS = new IronBarsFamily(Properties.ofFullCopy(Blocks.IRON_BARS));
     public static final JackOLanternFamily JACK_O_LANTERN = new JackOLanternFamily(Properties.ofFullCopy(Blocks.JACK_O_LANTERN));
     public static final JungleFamily JUNGLE = new JungleFamily(Properties.ofFullCopy(Blocks.JUNGLE_PLANKS));
     public static final LaboratoryFamily LABORATORY = new LaboratoryFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
@@ -104,7 +104,7 @@ public class ChiselBlocks {
     public static final TerracottaFamily TERRACOTTA = new TerracottaFamily(Properties.ofFullCopy(Blocks.TERRACOTTA));
     public static final ThaumiumFamily THAUMIUM = new ThaumiumFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final TinFamily TIN = new TinFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
-    public static final ChiselTorchFamily TORCH = new ChiselTorchFamily(Properties.ofFullCopy(Blocks.TORCH));
+    public static final TorchFamily TORCH = new TorchFamily(Properties.ofFullCopy(Blocks.TORCH));
     public static final TyrianFamily TYRIAN = new TyrianFamily(Properties.ofFullCopy(Blocks.STONE));
     public static final UraniumFamily URANIUM = new UraniumFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final ValentinesFamily VALENTINES = new ValentinesFamily(Properties.ofFullCopy(Blocks.STONE));

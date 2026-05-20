@@ -1,5 +1,8 @@
 {
   "values": [
-    "ftbmaterials:coal_coke_block"
+    {
+      "id": "ftbmaterials:coal_coke_block",
+      "required": false
+    }
   ]
 }

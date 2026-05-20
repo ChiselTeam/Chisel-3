@@ -1,6 +1,12 @@
-﻿{
+{
   "values": [
-    "ftbmaterials:electrum_block",
-    "alltheores:electrum_block"
+    {
+      "id": "ftbmaterials:electrum_block",
+      "required": false
+    },
+    {
+      "id": "alltheores:electrum_block",
+      "required": false
+    }
   ]
 }
