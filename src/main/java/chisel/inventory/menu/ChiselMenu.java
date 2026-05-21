@@ -1,5 +1,6 @@
 package chisel.inventory.menu;
 
+import chisel.client.gui.modes.PreviewMode;
 import chisel.core.mode.ChiselMode;
 import chisel.inventory.container.ChiselContainer;
 import chisel.inventory.ChiselSelectionInventory;
@@ -102,7 +103,7 @@ public class ChiselMenu extends AbstractContainerMenu {
             addSlot(new SelectionSlot(container, variants, c, left + ((c % 9) * 18), top + ((c / 9) * 18)));
         }
 
-        addSlot(inputSlot = new InputSlot(container, ChiselSelectionInventory.VISIBLE_SIZE, 24, top + 16));
+        addSlot(inputSlot = new InputSlot(container, ChiselSelectionInventory.VISIBLE_SIZE, 24, top + 52));
         container.inputSlot = inputSlot;
     }
 
@@ -156,6 +157,27 @@ public class ChiselMenu extends AbstractContainerMenu {
         }
 
         return stack;
+    }
+
+    public void confirmChisel(Player player, int selectionIndex) {
+        if (selectionIndex < 0 || selectionIndex >= ChiselSelectionInventory.VISIBLE_SIZE) return;
+        ItemStack selected = variants.getItem(selectionIndex);
+        if (selected.isEmpty()) return;
+        ItemStack input = inputSlot.getItem();
+        if (input.isEmpty()) return;
+
+        int count = input.getCount();
+        container.chisel.hurtAndBreak(count, player, container.hand);
+        player.awardStat(chisel.registry.ChiselStats.BLOCKS_CHISELED.get());
+
+        ItemStack result = selected.copy();
+        result.setCount(count);
+        if (!player.getInventory().add(result)) {
+            player.drop(result, false);
+        }
+
+        variants.clearContent();
+        inputSlot.set(ItemStack.EMPTY);
     }
 
     public void setSearchState(String filter, float scrollOffset) {

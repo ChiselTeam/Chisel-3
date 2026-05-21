@@ -38,25 +38,16 @@ public abstract class LangHelper extends LanguageProvider {
         add("%s.desc".formatted(key.get().getDescriptionId()), desc);
     }
 
-    protected void addAdvancement(String category, String unlocalized, String title, String description) {
-        addAdvTitle("%s/%s".formatted(category, unlocalized), title);
-        addAdvDesc("%s/%s".formatted(category, unlocalized), description);
-    }
-
-    protected void addAdvTitle(String advancementTitle, String name) {
-        add("advancement.%s.%s.title".formatted(Chisel.MODID, advancementTitle), name);
-    }
-
-    protected void addAdvDesc(String advancementTitle, String name) {
-        add("advancement.%s.%s.desc".formatted(Chisel.MODID, advancementTitle), name);
-    }
-
-    protected void addConfig(String configName, String name) {
-        add("config.%s.%s".formatted(Chisel.MODID, configName), name);
-    }
-
     protected void addContainer(String containerName, String name) {
-        add("chisel.container.%s".formatted(containerName), name);
+        add("container.%s".formatted(containerName), name);
+    }
+
+    protected void addPreviewMode(String mode, String name) {
+        add("chisel.preview.%s".formatted(mode), name);
+    }
+
+    protected void addChiselMode(String mode, String name) {
+        add("chisel.mode.%s".formatted(mode), name);
     }
 
     @Override

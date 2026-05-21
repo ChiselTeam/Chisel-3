@@ -1,20 +1,20 @@
 package chisel.network;
 
 import chisel.Chisel;
-import chisel.core.mode.ChiselMode;
 import chisel.inventory.menu.ChiselMenu;
 import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import org.jspecify.annotations.NonNull;
 
-public record ChiselModePacket(ChiselMode mode) implements CustomPacketPayload {
+public record ChiselConfirmPacket(int selectionIndex) implements CustomPacketPayload {
 
-    public static final Type<ChiselModePacket> TYPE = new Type<>(Chisel.prefix("mode"));
+    public static final Type<ChiselConfirmPacket> TYPE = new Type<>(Chisel.prefix("confirm"));
 
-    public static final StreamCodec<FriendlyByteBuf, ChiselModePacket> STREAM_CODEC = ChiselMode.STREAM_CODEC.map(
-            ChiselModePacket::new, ChiselModePacket::mode
+    public static final StreamCodec<FriendlyByteBuf, ChiselConfirmPacket> STREAM_CODEC = ByteBufCodecs.VAR_INT.map(
+            ChiselConfirmPacket::new, ChiselConfirmPacket::selectionIndex
     ).cast();
 
     @Override
@@ -22,10 +22,10 @@ public record ChiselModePacket(ChiselMode mode) implements CustomPacketPayload {
         return TYPE;
     }
 
-    public static void handle(final ChiselModePacket payload, final IPayloadContext context) {
+    public static void handle(final ChiselConfirmPacket payload, final IPayloadContext context) {
         context.enqueueWork(() -> {
             if (context.player().containerMenu instanceof ChiselMenu menu) {
-                menu.setMode(payload.mode());
+                menu.confirmChisel(context.player(), payload.selectionIndex());
             }
         });
     }

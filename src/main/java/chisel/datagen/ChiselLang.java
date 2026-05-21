@@ -32,15 +32,24 @@ public class ChiselLang extends LangHelper {
         add("block.chisel.auto_chisel", "Auto Chisel");
         add("item.chisel.auto_chisel", "Auto Chisel");
 
-        add("container.chisel", "Chisel");
-        add("container.auto_chisel", "Auto Chisel");
+        addContainer("chisel", "Chisel");
+        addContainer("auto_chisel", "Auto Chisel");
 
-        add("chisel.mode.single", "Single");
-        add("chisel.mode.panel", "Panel");
-        add("chisel.mode.column", "Column");
-        add("chisel.mode.row", "Row");
-        add("chisel.mode.shapeless", "Shapeless");
-        add("chisel.mode.shapeless_flat", "Shapeless Flat");
+        add("chisel.gui.confirm", "Chisel");
+
+        addPreviewMode("donut", "Donut");
+        addPreviewMode("panel", "Panel");
+        addPreviewMode("plus", "Plus");
+        addPreviewMode("single", "Single");
+        addPreviewMode("column", "Column");
+        addPreviewMode("row", "Row");
+
+        addChiselMode("single", "Single");
+        addChiselMode("panel", "Panel");
+        addChiselMode("column", "Column");
+        addChiselMode("row", "Row");
+        addChiselMode("shapeless", "Shapeless");
+        addChiselMode("shapeless_flat", "Shapeless Flat");
 
         add("stat.chisel.blocks_chiseled", "Blocks Chiseled");
     }

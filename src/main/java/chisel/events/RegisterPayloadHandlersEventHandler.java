@@ -1,6 +1,7 @@
 package chisel.events;
 
 import chisel.Chisel;
+import chisel.network.ChiselConfirmPacket;
 import chisel.network.ChiselModePacket;
 import chisel.network.ChiselSearchPacket;
 import chisel.network.OffsetSyncPacket;
@@ -17,6 +18,7 @@ public class RegisterPayloadHandlersEventHandler {
         final PayloadRegistrar registrar = event.registrar(Chisel.MODID).versioned("1");
         registrar.playToServer(ChiselSearchPacket.TYPE, ChiselSearchPacket.STREAM_CODEC, ChiselSearchPacket::handle);
         registrar.playToServer(ChiselModePacket.TYPE, ChiselModePacket.STREAM_CODEC, ChiselModePacket::handle);
+        registrar.playToServer(ChiselConfirmPacket.TYPE, ChiselConfirmPacket.STREAM_CODEC, ChiselConfirmPacket::handle);
         registrar.playToClient(OffsetSyncPacket.TYPE, OffsetSyncPacket.STREAM_CODEC, OffsetSyncPacket::handle);
     }
 }
