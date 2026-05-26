@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.11]
+
+### Added
+- **Chisel Modes**: Reintroduced selectable Chisel modes for more flexible chiseling behavior.
+- **Stat Tracking**: Track how many blocks you've chiseled — just for fun!
+- **Eldritch Rendering**: New eldritch rendering pass for Temple Blocks.
+- **Optional Tags**: Support for optional tags to improve cross-mod compatibility.
+
+### Changed
+- **CTM System Refactor**: Moved the connected-textures system from `client.ctm` to `lib.ctm`, with geometry and utility layers extracted into their own packages for cleaner separation.
+- **Variant Model Handling**: Refactored `VariantModelType` into individual `VariantModelHandler` classes, simplifying the variant model hierarchy and registration.
+- **Mod Compatibility**: Adjusted compatibility with other mods and polished the Chisel UI.
+
+### Fixed
+- **FramedBlocks**: Fixed an issue with FramedBlocks gates.
+- **Torches**: Fixed torch placement and torch icons in creative tabs.
+- **Chisel UI**: Various UI fixes and polish.
+
 ## [3.0.10]
 
 ### Added
