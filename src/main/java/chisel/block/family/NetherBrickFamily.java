@@ -9,6 +9,9 @@ public class NetherBrickFamily extends ChiselFamily {
     public NetherBrickFamily(BlockBehaviour.Properties props) {
         family = builder("nether_brick")
                 .addVariant(Blocks.NETHER_BRICKS)
+                .addVariant(Blocks.CRACKED_NETHER_BRICKS)
+                .addVariant(Blocks.CHISELED_NETHER_BRICKS)
+                .addVariant(Blocks.RED_NETHER_BRICKS)
                 .addVariant("nether_brick_blue", props)
                 .addVariant("nether_brick_blue_lava", props)
                 .addVariant("nether_brick_brown", props)

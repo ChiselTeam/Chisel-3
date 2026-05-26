@@ -13,6 +13,7 @@ import net.minecraft.client.resources.model.geometry.BakedQuad;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.*;
 
@@ -36,7 +37,7 @@ public class DirectionalCTMBlockStateModel extends AbstractConnectedTextureBlock
     }
 
     @Override
-    protected DirectionalCTMKey computeCTMKey(BlockAndTintGetter level, BlockPos pos, RandomSource random) {
+    protected DirectionalCTMKey computeCTMKey(BlockAndTintGetter level, BlockPos pos, BlockState state, RandomSource random) {
         int horizontal = 0;
         int vertical = 0;
 
@@ -47,12 +48,12 @@ public class DirectionalCTMBlockStateModel extends AbstractConnectedTextureBlock
             CTMLogicVertical verticalLogic;
 
             if (axis == Direction.Axis.Y) {
-                horizontalLogic = CTMLogicHorizontal.get(shouldConnectSide(level, pos, Direction.WEST), shouldConnectSide(level, pos, Direction.EAST));
-                verticalLogic = CTMLogicVertical.get(shouldConnectSide(level, pos, Direction.NORTH), shouldConnectSide(level, pos, Direction.SOUTH));
+                horizontalLogic = CTMLogicHorizontal.get(shouldConnectSide(level, pos, state, face, Direction.WEST), shouldConnectSide(level, pos, state, face, Direction.EAST));
+                verticalLogic = CTMLogicVertical.get(shouldConnectSide(level, pos, state, face, Direction.NORTH), shouldConnectSide(level, pos, state, face, Direction.SOUTH));
             } else {
                 Direction horizontalDir = face.getClockWise();
-                horizontalLogic = CTMLogicHorizontal.get(shouldConnectSide(level, pos, horizontalDir.getOpposite()), shouldConnectSide(level, pos, horizontalDir));
-                verticalLogic = CTMLogicVertical.get(shouldConnectSide(level, pos, Direction.UP), shouldConnectSide(level, pos, Direction.DOWN));
+                horizontalLogic = CTMLogicHorizontal.get(shouldConnectSide(level, pos, state, face, horizontalDir.getOpposite()), shouldConnectSide(level, pos, state, face, horizontalDir));
+                verticalLogic = CTMLogicVertical.get(shouldConnectSide(level, pos, state, face, Direction.UP), shouldConnectSide(level, pos, state, face, Direction.DOWN));
             }
 
             horizontal |= DirectionalCTMKey.packHorizontal(face, horizontalLogic);

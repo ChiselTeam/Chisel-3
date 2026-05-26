@@ -7,6 +7,10 @@
       "name": "block.minecraft.stone_bricks"
     },
     {
+      "block": "minecraft:chiseled_stone_bricks",
+      "name": "block.minecraft.chiseled_stone_bricks"
+    },
+    {
       "block": "chisel:stone_bricks_chaotic_small",
       "name": "stone_bricks_chaotic_small"
     },

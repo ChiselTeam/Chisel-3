@@ -10,6 +10,8 @@ public class PrismarineFamily extends ChiselFamily {
     public PrismarineFamily(BlockBehaviour.Properties props) {
         family = builder("prismarine")
                 .addVariant(Blocks.PRISMARINE)
+                .addVariant(Blocks.PRISMARINE_BRICKS)
+                .addVariant(Blocks.DARK_PRISMARINE)
                 .addVariant("prismarine_array", props, MULTIBLOCK_2X2)
                 .addVariant("prismarine_braid", props)
                 .addVariant("prismarine_chaotic_bricks", props, MULTIBLOCK_3X3)

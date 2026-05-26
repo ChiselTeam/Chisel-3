@@ -10,6 +10,7 @@ public class EndStoneFamily extends ChiselFamily {
     public EndStoneFamily(BlockBehaviour.Properties props) {
         family = builder("end_stone")
                 .addVariant(Blocks.END_STONE)
+                .addVariant(Blocks.END_STONE_BRICKS)
                 .addVariant("end_stone_array", props, MULTIBLOCK_2X2)
                 .addVariant("end_stone_braid", props)
                 .addVariant("end_stone_chaotic_bricks", props, MULTIBLOCK_3X3)

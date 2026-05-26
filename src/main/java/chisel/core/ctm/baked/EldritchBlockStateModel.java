@@ -21,14 +21,12 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * A {@link DynamicBlockStateModel} decorator that wraps another {@link BlockStateModel}
- * and applies the {@link EldritchQuadTransformer} to every quad it produces.
- *
- * <p>Because the eldritch effect depends on the world block position, each unique
- * {@link BlockPos} produces a distinct set of transformed parts. We keep a bounded
- * LRU cache of recently-seen positions so that repeated chunk re-renders are cheap.
- */
+/// A [DynamicBlockStateModel] decorator that wraps another [BlockStateModel]
+/// and applies the [EldritchQuadTransformer] to every quad it produces.
+///
+/// Because the eldritch effect depends on the world block position, each unique
+/// [BlockPos] produces a distinct set of transformed parts. We keep a bounded
+/// LRU cache of recently seen positions so that repeated chunk re-renders are inexpensive.
 public class EldritchBlockStateModel implements DynamicBlockStateModel {
 
     /** Hard upper bound on the position cache; oldest entries are evicted on overflow. */
@@ -54,7 +52,7 @@ public class EldritchBlockStateModel implements DynamicBlockStateModel {
     public @NonNull Object createGeometryKey(@NonNull BlockAndTintGetter level, @NonNull BlockPos pos, @NonNull BlockState state, @NonNull RandomSource random) {
         // The geometry varies per-position (UVs depend on the position seed), so use the
         // packed long position as the key. We also fold in the delegate's geometry key
-        // (if any) so that stacking with e.g. a CTM model still differentiates connectivity.
+        // (if any) so that stacking with e.g., a CTM model still differentiates connectivity.
         Object delegateKey = computeDelegateGeometryKey(level, pos, state, random);
         return new EldritchGeometryKey(pos.asLong(), delegateKey);
     }
@@ -94,7 +92,6 @@ public class EldritchBlockStateModel implements DynamicBlockStateModel {
 
     @Override
     public void collectParts(@NonNull RandomSource random, @NonNull List<BlockStateModelPart> parts) {
-        // Fallback (item / no-position contexts): transform around BlockPos.ZERO.
         List<BlockStateModelPart> delegateParts = new ArrayList<>();
         delegate.collectParts(random, delegateParts);
         for (BlockStateModelPart part : delegateParts) {
@@ -116,14 +113,14 @@ public class EldritchBlockStateModel implements DynamicBlockStateModel {
         Map<Direction, List<BakedQuad>> newSided = new EnumMap<>(Direction.class);
         for (Direction face : Direction.values()) {
             List<BakedQuad> faceQuads = part.getQuads(face);
-            if (faceQuads != null && !faceQuads.isEmpty()) {
+            if (!faceQuads.isEmpty()) {
                 newSided.put(face, List.copyOf(EldritchQuadTransformer.transform(faceQuads, pos)));
             } else {
                 newSided.put(face, List.of());
             }
         }
         List<BakedQuad> unculled = part.getQuads(null);
-        List<BakedQuad> newUnculled = (unculled == null || unculled.isEmpty())
+        List<BakedQuad> newUnculled = unculled.isEmpty()
                 ? List.of()
                 : List.copyOf(EldritchQuadTransformer.transform(unculled, pos));
         return new TransformedPart(newSided, newUnculled, part);

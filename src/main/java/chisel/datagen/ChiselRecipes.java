@@ -119,6 +119,15 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
                 .save(output);
 
+        shaped(RecipeCategory.MISC, ChiselBlocks.SHINGLE.getFamily().getVariants().getFirst().getBlock().asItem())
+                .pattern(" B")
+                .pattern("BC")
+                .define('B', Tags.Items.BRICKS)
+                .define('C', Items.CLAY_BALL)
+                .unlockedBy("has_bricks", has(Tags.Items.BRICKS))
+                .save(output);
+
+
         shaped(RecipeCategory.MISC, ChiselBlocks.AUTO_CHISEL)
                 .pattern("SSS")
                 .pattern(" I ")
@@ -126,15 +135,6 @@ public class ChiselRecipes extends RecipeProvider {
                 .define('S', Blocks.STONE_SLAB)
                 .define('I', Tags.Items.INGOTS_IRON)
                 .unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
-                .save(output);
-
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselBlocks.MAGMA.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
-                .pattern("SSS")
-                .pattern("SRS")
-                .pattern("SSS")
-                .define('S', Blocks.NETHER_BRICKS)
-                .define('R', Items.LAVA_BUCKET)
-                .unlockedBy("has_lava_bucket", has(Items.LAVA_BUCKET))
                 .save(output);
 
         // MARK: Items

@@ -7,6 +7,18 @@
       "name": "block.minecraft.sandstone"
     },
     {
+      "block": "minecraft:chiseled_sandstone",
+      "name": "block.minecraft.chiseled_sandstone"
+    },
+    {
+      "block": "minecraft:smooth_sandstone",
+      "name": "block.minecraft.smooth_sandstone"
+    },
+    {
+      "block": "minecraft:cut_sandstone",
+      "name": "block.minecraft.cut_sandstone"
+    },
+    {
       "block": "chisel:sandstone_base",
       "model_type": "top_bottom_side",
       "name": "sandstone_base"

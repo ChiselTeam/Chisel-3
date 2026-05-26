@@ -6,6 +6,7 @@ import chisel.registry.ChiselBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
@@ -13,10 +14,19 @@ import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import org.jspecify.annotations.NonNull;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ChiselBlockTags extends BlockTagsProvider {
     public static final TagKey<Block> WOOD = TagKey.create(Registries.BLOCK, Chisel.prefix("wood"));
+    public static final TagKey<Block> FRAMEDBLOCKS_FRAMEABLE = TagKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath("framedblocks", "frameable"));
+
+    private final List<VariantFamily> NOT_FRAMEABLE = List.of(
+            ChiselBlocks.TORCH.getFamily(),
+            ChiselBlocks.ROAD_LINE.getFamily(),
+            ChiselBlocks.IRON_BARS.getFamily(),
+            ChiselBlocks.GLASS_PANE.getFamily()
+    );
 
     public ChiselBlockTags(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
         super(output, lookupProvider, Chisel.MODID);
@@ -189,6 +199,12 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.STEEL.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.TIN.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselBlocks.URANIUM.getFamily());
+
+        ChiselBlocks.getBlocks().forEach(family -> {
+            if(!NOT_FRAMEABLE.contains(family.getFamily())) {
+                addToTag(FRAMEDBLOCKS_FRAMEABLE, family.getFamily());
+            }
+        });
     }
 
     private TagKey<Block> getTagForColor(String color) {

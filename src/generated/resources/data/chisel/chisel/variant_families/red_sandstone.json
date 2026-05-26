@@ -7,6 +7,18 @@
       "name": "block.minecraft.red_sandstone"
     },
     {
+      "block": "minecraft:chiseled_red_sandstone",
+      "name": "block.minecraft.chiseled_red_sandstone"
+    },
+    {
+      "block": "minecraft:smooth_red_sandstone",
+      "name": "block.minecraft.smooth_red_sandstone"
+    },
+    {
+      "block": "minecraft:cut_red_sandstone",
+      "name": "block.minecraft.cut_red_sandstone"
+    },
+    {
       "block": "chisel:red_sandstone_array",
       "model_type": "multiblock_2x2",
       "name": "red_sandstone_array"

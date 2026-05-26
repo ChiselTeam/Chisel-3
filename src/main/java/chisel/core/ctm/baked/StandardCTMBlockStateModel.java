@@ -12,6 +12,7 @@ import net.minecraft.client.resources.model.geometry.BakedQuad;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.List;
 import java.util.Map;
@@ -29,14 +30,14 @@ public class StandardCTMBlockStateModel extends AbstractConnectedTextureBlockSta
     }
 
     @Override
-    protected StandardCTMKey computeCTMKey(BlockAndTintGetter level, BlockPos pos, RandomSource random) {
+    protected StandardCTMKey computeCTMKey(BlockAndTintGetter level, BlockPos pos, BlockState state, RandomSource random) {
         return new StandardCTMKey(
-                computeFace(level, pos, Direction.DOWN),
-                computeFace(level, pos, Direction.UP),
-                computeFace(level, pos, Direction.NORTH),
-                computeFace(level, pos, Direction.SOUTH),
-                computeFace(level, pos, Direction.EAST),
-                computeFace(level, pos, Direction.WEST)
+                computeFace(level, pos, state, Direction.DOWN),
+                computeFace(level, pos, state, Direction.UP),
+                computeFace(level, pos, state, Direction.NORTH),
+                computeFace(level, pos, state, Direction.SOUTH),
+                computeFace(level, pos, state, Direction.EAST),
+                computeFace(level, pos, state, Direction.WEST)
         );
     }
 
@@ -54,7 +55,7 @@ public class StandardCTMBlockStateModel extends AbstractConnectedTextureBlockSta
         );
     }
 
-    private int computeFace(BlockAndTintGetter level, BlockPos pos, Direction face) {
+    private int computeFace(BlockAndTintGetter level, BlockPos pos, BlockState state, Direction face) {
         Direction[] planeDirections = CTMLogic.AXIS_PLANE_DIRECTIONS[face.getAxis().ordinal()];
         int packed = 0;
 
@@ -62,9 +63,9 @@ public class StandardCTMBlockStateModel extends AbstractConnectedTextureBlockSta
             Direction s1 = planeDirections[c];
             Direction s2 = planeDirections[(c + 1) % 4];
 
-            boolean horizontal = shouldConnectSide(level, pos, s1);
-            boolean vertical = shouldConnectSide(level, pos, s2);
-            boolean corner = horizontal && vertical && isCornerBlockPresent(level, pos, s1, s2);
+            boolean horizontal = shouldConnectSide(level, pos, state, face, s1);
+            boolean vertical = shouldConnectSide(level, pos, state, face, s2);
+            boolean corner = horizontal && vertical && isCornerBlockPresent(level, pos, state, face, s1, s2);
 
             CTMLogic logic = (c % 2 == 0) ? CTMLogic.of(horizontal, vertical, corner) : CTMLogic.of(vertical, horizontal, corner);
             packed |= logic.ordinal() << (c * 3);

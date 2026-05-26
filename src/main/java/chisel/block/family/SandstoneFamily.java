@@ -10,6 +10,9 @@ public class SandstoneFamily extends ChiselFamily {
     public SandstoneFamily(BlockBehaviour.Properties props) {
         family = builder("sandstone")
                 .addVariant(Blocks.SANDSTONE)
+                .addVariant(Blocks.CHISELED_SANDSTONE)
+                .addVariant(Blocks.SMOOTH_SANDSTONE)
+                .addVariant(Blocks.CUT_SANDSTONE)
                 .addVariant("sandstone_base", props, TBS)
                 .addVariant("sandstone_block", props)
                 .addVariant("sandstone_blocks", props)

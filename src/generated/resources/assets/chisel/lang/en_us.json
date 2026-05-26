@@ -3959,6 +3959,8 @@
   "block.chisel.woolen_clay_9": "Woolen Clay",
   "block.chisel.woolen_clay_9.desc": "Cyan Woolen Clay",
   "chisel.gui.confirm": "Chisel",
+  "chisel.gui.mode": "Mode",
+  "chisel.gui.search": "Search:",
   "chisel.mode.column": "Column",
   "chisel.mode.panel": "Panel",
   "chisel.mode.row": "Row",

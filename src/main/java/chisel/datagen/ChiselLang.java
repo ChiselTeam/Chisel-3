@@ -36,6 +36,8 @@ public class ChiselLang extends LangHelper {
         addContainer("auto_chisel", "Auto Chisel");
 
         add("chisel.gui.confirm", "Chisel");
+        add("chisel.gui.search", "Search:");
+        add("chisel.gui.mode", "Mode");
 
         addPreviewMode("donut", "Donut");
         addPreviewMode("panel", "Panel");

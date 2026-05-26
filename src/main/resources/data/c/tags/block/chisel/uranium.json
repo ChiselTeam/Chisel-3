@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "ftbmaterials:uranium_block",
-      "required": false
-    },
-    {
-      "id": "alltheores:uranium_block",
-      "required": false
-    }
+    {"id": "ftbmaterials:uranium_block", "required": false},
+    {"id": "alltheores:uranium_block", "required": false}
   ]
 }

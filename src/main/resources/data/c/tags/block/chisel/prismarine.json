@@ -1,4 +1,8 @@
 ﻿{
   "values": [
+    {"id": "mcwpaths:dark_prismarine_running_bond", "required": false},
+    {"id": "mcwpaths:dark_prismarine_windmill_weave", "required": false},
+    {"id": "mcwpaths:dark_prismarine_flagstone", "required": false},
+    {"id": "mcwpaths:dark_prismarine_crystal_floor", "required": false}
   ]
 }

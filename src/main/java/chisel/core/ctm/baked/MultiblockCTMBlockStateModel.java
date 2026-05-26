@@ -14,6 +14,7 @@ import net.minecraft.client.resources.model.geometry.BakedQuad;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.*;
 
@@ -41,7 +42,7 @@ public class MultiblockCTMBlockStateModel extends AbstractConnectedTextureBlockS
     }
 
     @Override
-    protected MultiblockCTMKey computeCTMKey(BlockAndTintGetter level, BlockPos pos, RandomSource random) {
+    protected MultiblockCTMKey computeCTMKey(BlockAndTintGetter level, BlockPos pos, BlockState state, RandomSource random) {
         BlockPos offsetPos = MultiblockOffsetProvider.get().offsetFor(pos);
 
         CTMLogicR4 sharedR4 = CTMLogicR4.values()[randomIndex(pos, 4, 4)];

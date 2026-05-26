@@ -7,6 +7,10 @@
       "name": "block.minecraft.end_stone"
     },
     {
+      "block": "minecraft:end_stone_bricks",
+      "name": "block.minecraft.end_stone_bricks"
+    },
+    {
       "block": "chisel:end_stone_array",
       "model_type": "multiblock_2x2",
       "name": "end_stone_array"

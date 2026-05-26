@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "ftbmaterials:charcoal_block",
-      "required": false
-    },
-    {
-      "id": "justdirethings:charcoal",
-      "required": false
-    }
+    {"id": "ftbmaterials:charcoal_block", "required": false},
+    {"id": "justdirethings:charcoal", "required": false}
   ]
 }

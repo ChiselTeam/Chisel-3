@@ -3,6 +3,18 @@
   "tag": "c:chisel/basalt",
   "variants": [
     {
+      "block": "minecraft:basalt",
+      "name": "block.minecraft.basalt"
+    },
+    {
+      "block": "minecraft:smooth_basalt",
+      "name": "block.minecraft.smooth_basalt"
+    },
+    {
+      "block": "minecraft:polished_basalt",
+      "name": "block.minecraft.polished_basalt"
+    },
+    {
       "block": "chisel:basalt_array",
       "model_type": "multiblock_2x2",
       "name": "basalt_array"

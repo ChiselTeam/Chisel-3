@@ -3,11 +3,15 @@ package chisel.block.family;
 import chisel.block.util.ChiselFamily;
 import static chisel.registry.ChiselModelHandlers.*;
 import chisel.util.LangHelper;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class BasaltFamily extends ChiselFamily {
     public BasaltFamily(BlockBehaviour.Properties props) {
         family = builder("basalt")
+                .addVariant(Blocks.BASALT)
+                .addVariant(Blocks.SMOOTH_BASALT)
+                .addVariant(Blocks.POLISHED_BASALT)
                 .addVariant("basalt_array", props, MULTIBLOCK_2X2)
                 .addVariant("basalt_braid", props)
                 .addVariant("basalt_chaotic_bricks", props, MULTIBLOCK_3X3)

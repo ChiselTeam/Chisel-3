@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "ftbmaterials:silver_block",
-      "required": false
-    },
-    {
-      "id": "alltheores:silver_block",
-      "required": false
-    }
+    {"id": "ftbmaterials:silver_block", "required": false},
+    {"id": "alltheores:silver_block", "required": false}
   ]
 }

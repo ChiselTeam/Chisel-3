@@ -5,18 +5,6 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
 
-/**
- * Information a CTM library model needs about the variant it's rendering, abstracted away
- * from any consumer-specific (e.g. Chisel mod) variant/family/material concept.
- *
- * <p>This intentionally exposes the minimum:</p>
- * <ul>
- *     <li>{@link #targetBlock()} — for neighbor-block matching when computing connections.</li>
- *     <li>{@link #kind()} — selects the CTM shape (which baked/unbaked model variant to use).</li>
- *     <li>{@link #waterOffset()} — orthogonal flag that nudges multiblock overlays outward
- *         (used by the waterstone-style overlays).</li>
- * </ul>
- */
 public interface CTMVariant {
 
     Codec<CTMVariant> CODEC = RecordCodecBuilder.create(instance -> instance.group(

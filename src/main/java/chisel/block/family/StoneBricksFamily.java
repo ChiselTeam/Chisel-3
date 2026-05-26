@@ -10,6 +10,7 @@ public class StoneBricksFamily extends ChiselFamily {
     public StoneBricksFamily(BlockBehaviour.Properties props) {
         family = builder("stone_bricks")
                 .addVariant(Blocks.STONE_BRICKS)
+                .addVariant(Blocks.CHISELED_STONE_BRICKS)
                 .addVariant("stone_bricks_chaotic_small", props)
                 .addVariant("stone_bricks_disordered", props)
                 .addVariant("stone_bricks_disordered_panel", props)

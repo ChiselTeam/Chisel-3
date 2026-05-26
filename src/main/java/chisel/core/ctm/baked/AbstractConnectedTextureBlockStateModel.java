@@ -10,6 +10,7 @@ import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.client.model.DynamicBlockStateModel;
 import org.jspecify.annotations.NonNull;
@@ -43,25 +44,40 @@ public abstract class AbstractConnectedTextureBlockStateModel<K> implements Dyna
 
     @Override
     public @NonNull Object createGeometryKey(@NonNull BlockAndTintGetter level, @NonNull BlockPos pos, @NonNull BlockState state, @NonNull RandomSource random) {
-        return computeCTMKey(level, pos, random);
+        return new GeometryKey(this, computeCTMKey(level, pos, state, random));
     }
 
     @Override
     public void collectParts(@NonNull BlockAndTintGetter level, @NonNull BlockPos pos, @NonNull BlockState state, @NonNull RandomSource random, @NonNull List<BlockStateModelPart> parts) {
-        K key = computeCTMKey(level, pos, random);
+        K key = computeCTMKey(level, pos, state, random);
         parts.add(this.parts.computeIfAbsent(key, this::createPart));
     }
 
-    protected abstract K computeCTMKey(BlockAndTintGetter level, BlockPos pos, RandomSource random);
+    protected abstract K computeCTMKey(BlockAndTintGetter level, BlockPos pos, BlockState state, RandomSource random);
 
     protected abstract ConnectedTextureBlockModelPart createPart(K key);
 
-    protected boolean shouldConnectSide(BlockAndTintGetter level, BlockPos pos, Direction side) {
-        return level.getBlockState(pos.relative(side)).is(variant.targetBlock());
+    protected boolean shouldConnectSide(BlockAndTintGetter level, BlockPos pos, BlockState state, Direction face, Direction side) {
+        BlockPos neighborPos = pos.relative(side);
+        BlockState neighborState = level.getBlockState(neighborPos);
+        BlockState appearance = neighborState.getAppearance(level, neighborPos, face.getOpposite(), state, pos);
+        if (appearance.is(Blocks.AIR)) {
+            return false;
+        }
+        return appearance.is(variant.targetBlock());
     }
 
-    protected boolean isCornerBlockPresent(BlockAndTintGetter level, BlockPos pos, Direction side1, Direction side2) {
-        return level.getBlockState(pos.relative(side1).relative(side2)).is(variant.targetBlock());
+    protected boolean isCornerBlockPresent(BlockAndTintGetter level, BlockPos pos, BlockState state, Direction face, Direction side1, Direction side2) {
+        BlockPos neighborPos = pos.relative(side1).relative(side2);
+        BlockState neighborState = level.getBlockState(neighborPos);
+        BlockState appearance = neighborState.getAppearance(level, neighborPos, face.getOpposite(), state, pos);
+        if (appearance.is(Blocks.AIR)) {
+            return false;
+        }
+        return appearance.is(variant.targetBlock());
+    }
+
+    public record GeometryKey(AbstractConnectedTextureBlockStateModel<?> model, Object key) {
     }
 
     @Override

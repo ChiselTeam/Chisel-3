@@ -10,6 +10,7 @@ public class AndesiteFamily extends ChiselFamily {
     public AndesiteFamily(BlockBehaviour.Properties props) {
         family = builder("andesite")
                 .addVariant(Blocks.ANDESITE)
+                .addVariant(Blocks.POLISHED_ANDESITE)
                 .addVariant("andesite_array", props, MULTIBLOCK_2X2)
                 .addVariant("andesite_braid", props)
                 .addVariant("andesite_chaotic_bricks", props, MULTIBLOCK_3X3)

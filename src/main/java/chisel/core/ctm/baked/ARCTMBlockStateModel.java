@@ -11,6 +11,7 @@ import net.minecraft.client.resources.model.geometry.BakedQuad;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.List;
 import java.util.Map;
@@ -26,7 +27,7 @@ public class ARCTMBlockStateModel extends AbstractConnectedTextureBlockStateMode
     }
 
     @Override
-    protected ARCTMKey computeCTMKey(BlockAndTintGetter level, BlockPos pos, RandomSource random) {
+    protected ARCTMKey computeCTMKey(BlockAndTintGetter level, BlockPos pos, BlockState state, RandomSource random) {
         return ARCTMKey.of(CTMLogicAR.get(pos));
     }
 

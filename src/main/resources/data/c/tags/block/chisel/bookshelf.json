@@ -1,4 +1,12 @@
 ﻿{
   "values": [
+    {"id": "allthemodium:ancient_bookshelf", "required": false},
+    {"id": "allthemodium:soul_bookshelf", "required": false},
+    {"id": "allthemodium:demonic_bookshelf", "required": false},
+    {"id": "aether_ii:skyroot_bookshelf", "required": false},
+    {"id": "aether_ii:greatroot_bookshelf", "required": false},
+    {"id": "aether_ii:wisproot_bookshelf", "required": false},
+    {"id": "aether_ii:amberroot_bookshelf", "required": false},
+    {"id": "aether_ii:holystone_bookshelf", "required": false}
   ]
 }

@@ -25,9 +25,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
-import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import org.jspecify.annotations.NonNull;
-import org.jspecify.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,8 +51,6 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
 
     public ChiselScreen(ChiselMenu menu, Inventory inventory, Component title) {
         super(menu, inventory, title, 252, 222);
-        inventoryLabelY = imageHeight - 91;
-        titleLabelY = topPos + 10;
     }
 
     @Override
@@ -67,17 +63,17 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
         addRenderableWidget(searchBox);
 
         modeButton = Button.builder(getMenu().getMode().getDescription(), _ -> cycleMode())
-                .bounds(leftPos + 8, topPos + 116, 48, 20)
+                .bounds(leftPos + 8, topPos + 156, 48, 20)
                 .build();
         addRenderableWidget(modeButton);
 
         previewModeButton = Button.builder(PREVIEW_MODES.get(previewModeIndex).getDescription(), _ -> cyclePreviewMode())
-                .bounds(leftPos + 8, topPos + 96, 48, 20)
+                .bounds(leftPos + 7, topPos + 3, 48, 20)
                 .build();
         addRenderableWidget(previewModeButton);
 
-        Button confirmButton = Button.builder(Component.translatable("chisel.gui.confirm"), b -> confirmChisel())
-                .bounds(leftPos + 61, topPos + 3, 48, 20)
+        Button confirmButton = Button.builder(Component.translatable("chisel.gui.confirm"), _ -> confirmChisel())
+                .bounds(leftPos + 8, topPos + 96, 48, 20)
                 .build();
         addRenderableWidget(confirmButton);
     }
@@ -256,6 +252,12 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
                 graphics.fill(sx, sy, sx + 16, sy + 16, 0x80FF842B);
             }
         }
+
     }
 
+    @Override
+    public void extractLabels(@NonNull GuiGraphicsExtractor graphics, int xm, int ym) {
+        graphics.text(font, Component.translatable("chisel.gui.search"), 90, 10, -12566464, false);
+        graphics.text(font, Component.translatable("chisel.gui.mode"), 21, 145, -12566464, false);
+    }
 }

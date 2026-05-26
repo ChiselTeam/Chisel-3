@@ -7,6 +7,14 @@
       "name": "block.minecraft.prismarine"
     },
     {
+      "block": "minecraft:prismarine_bricks",
+      "name": "block.minecraft.prismarine_bricks"
+    },
+    {
+      "block": "minecraft:dark_prismarine",
+      "name": "block.minecraft.dark_prismarine"
+    },
+    {
       "block": "chisel:prismarine_array",
       "model_type": "multiblock_2x2",
       "name": "prismarine_array"

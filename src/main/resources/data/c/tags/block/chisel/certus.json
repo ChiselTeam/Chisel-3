@@ -1,8 +1,10 @@
 {
   "values": [
-    {
-      "id": "ftbmaterials:aluminum_block",
-      "required": false
-    }
+    {"id": "ae2:quartz_block", "required": false},
+    {"id": "ae2:cut_quartz_block", "required": false},
+    {"id": "ae2:smooth_quartz_block", "required": false},
+    {"id": "ae2:quartz_bricks", "required": false},
+    {"id": "ae2:quartz_pillar", "required": false},
+    {"id": "ae2:chiseled_quartz_block", "required": false}
   ]
 }

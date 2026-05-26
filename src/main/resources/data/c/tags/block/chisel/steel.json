@@ -1,12 +1,6 @@
 {
   "values": [
-    {
-      "id": "ftbmaterials:steel_block",
-      "required": false
-    },
-    {
-      "id": "alltheores:steel_block",
-      "required": false
-    }
+    {"id": "ftbmaterials:steel_block", "required": false},
+    {"id": "alltheores:steel_block", "required": false}
   ]
 }
