@@ -27,7 +27,7 @@ public class TopBottomSideModel extends VariantModel {
     @Override
     public void generate(Variant variant, BlockModelGenerators blockModels) {
         super.generate(variant, blockModels);
-        Identifier modelLocation = ModelTemplates.CUBE_BOTTOM_TOP_INNER_FACES.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
+        Identifier modelLocation = ModelTemplates.CUBE_BOTTOM_TOP.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
         if (variant.isEldritch()) {
             MultiVariant inner = plainVariant(modelLocation);
             EldritchBlockStateModelBuilder builder = new EldritchBlockStateModelBuilder().inner(inner.toUnbaked());

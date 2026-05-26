@@ -46,6 +46,7 @@ public class AddLayersEventHandler {
         Map<UUID, ItemLike> VIPS = new HashMap<>();
         VIPS.put(UUID.fromString("a7529984-8cb2-4fb9-b799-97980f770101"), ChiselItems.CHISEL_OBSIDIAN);
         VIPS.put(UUID.fromString("d1af5f04-c4cc-486f-b187-fcb0a745bda6"), ChiselItems.CHISEL_IRON);
+        VIPS.put(UUID.fromString("ba6efe89-0b84-4c5d-9f0e-b42edef10d6a"), ChiselItems.CHISEL_IRON);
 
         event.registerAvatarEntityModifier(new AvatarRenderStateModifier() {
             @Override
