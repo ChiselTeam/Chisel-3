@@ -35,6 +35,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NonNull Provider provider) {
         addToWood(ChiselBlocks.ACACIA.getFamily());
+        addToWood(ChiselBlocks.BAMBOO.getFamily());
         addToWood(ChiselBlocks.BIRCH.getFamily());
         addToWood(ChiselBlocks.DARK_OAK.getFamily());
         addToWood(ChiselBlocks.JUNGLE.getFamily());
@@ -45,6 +46,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
 
         // AXE
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.ACACIA.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.BAMBOO.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.BIRCH.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.DARK_OAK.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselBlocks.JUNGLE.getFamily());
