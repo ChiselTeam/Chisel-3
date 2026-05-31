@@ -59,22 +59,27 @@ public abstract class AbstractConnectedTextureBlockStateModel<K> implements Dyna
 
     protected boolean shouldConnectSide(BlockAndTintGetter level, BlockPos pos, BlockState state, Direction face, Direction side) {
         BlockPos neighborPos = pos.relative(side);
-        BlockState neighborState = level.getBlockState(neighborPos);
-        BlockState appearance = neighborState.getAppearance(level, neighborPos, face.getOpposite(), state, pos);
-        if (appearance.is(Blocks.AIR)) {
-            return false;
-        }
-        return appearance.is(variant.targetBlock());
+        return matches(level, pos, state, face, neighborPos);
     }
 
     protected boolean isCornerBlockPresent(BlockAndTintGetter level, BlockPos pos, BlockState state, Direction face, Direction side1, Direction side2) {
         BlockPos neighborPos = pos.relative(side1).relative(side2);
+        return matches(level, pos, state, face, neighborPos);
+    }
+
+    private boolean matches(BlockAndTintGetter level, BlockPos pos, BlockState state, Direction face, BlockPos neighborPos) {
         BlockState neighborState = level.getBlockState(neighborPos);
-        BlockState appearance = neighborState.getAppearance(level, neighborPos, face.getOpposite(), state, pos);
-        if (appearance.is(Blocks.AIR)) {
+
+        BlockState localAppearance = state.getAppearance(level, pos, face, neighborState, neighborPos);
+        if (localAppearance.is(Blocks.AIR) || !localAppearance.is(variant.targetBlock())) {
             return false;
         }
-        return appearance.is(variant.targetBlock());
+
+        BlockState neighborAppearance = neighborState.getAppearance(level, neighborPos, face, state, pos);
+        if (neighborAppearance.is(Blocks.AIR)) {
+            return false;
+        }
+        return neighborAppearance.is(variant.targetBlock());
     }
 
     public record GeometryKey(AbstractConnectedTextureBlockStateModel<?> model, Object key) {
