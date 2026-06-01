@@ -19,15 +19,15 @@ public class BambooFamily extends ChiselFamily {
                 //.addVariant("bamboo_planks_encased", props, CONNECTED)
                 //.addVariant("bamboo_planks_encased_large", props, CONNECTED)
                 //.addVariant("bamboo_planks_encased_smooth", props, CONNECTED)
-                //.addVariant("bamboo_planks_large", props)
+                .addVariant("bamboo_planks_large", props)
                 .addVariant("bamboo_planks_log_bordered", props, CONNECTED)
                 //.addVariant("bamboo_planks_log_cabin_ew", props, CONNECTED)
                 //.addVariant("bamboo_planks_log_cabin_ns", props, CONNECTED)
                 //.addVariant("bamboo_planks_paneling", props, CONNECTED)
-                //.addVariant("bamboo_planks_shipping", props, CONNECTED)
-                //.addVariant("bamboo_planks_smooth", props, CONNECTED)
+                .addVariant("bamboo_planks_shipping", props, CONNECTED)
+                .addVariant("bamboo_planks_smooth", props, CONNECTED)
                 //.addVariant("bamboo_planks_stacked", props)
-                //.addVariant("bamboo_planks_vertical", props)
+                .addVariant("bamboo_planks_vertical", props)
                 .family();
     }
 
@@ -41,15 +41,15 @@ public class BambooFamily extends ChiselFamily {
         //lang.addBlock(getVariant("bamboo_planks_encased"), "Bamboo Planks", "Encased Bamboo Panel");
         //lang.addBlock(getVariant("bamboo_planks_encased_large"), "Bamboo Planks", "Large Long Bamboo Planks");
         //lang.addBlock(getVariant("bamboo_planks_encased_smooth"), "Bamboo Planks", "Smooth Bamboo Planks");
-        //lang.addBlock(getVariant("bamboo_planks_large"), "Bamboo Planks", "Large Long Bamboo Planks");
+        lang.addBlock(getVariant("bamboo_planks_large"), "Bamboo Planks", "Large Long Bamboo Planks");
         lang.addBlock(getVariant("bamboo_planks_log_bordered"), "Bamboo Planks", "Log Bordered Bamboo Panel");
         //lang.addBlock(getVariant("bamboo_planks_log_cabin_ns"), "Bamboo Planks", "Bamboo Log Cabin (North-South)");
         //lang.addBlock(getVariant("bamboo_planks_log_cabin_ew"), "Bamboo Planks", "Bamboo Log Cabin (East-West)");
         //lang.addBlock(getVariant("bamboo_planks_paneling"), "Bamboo Planks", "Bamboo Panel");
-        //lang.addBlock(getVariant("bamboo_planks_shipping"), "Bamboo Planks", "Bamboo Crate");
-        //lang.addBlock(getVariant("bamboo_planks_smooth"), "Bamboo Planks", "Smooth Bamboo Planks");
+        lang.addBlock(getVariant("bamboo_planks_shipping"), "Bamboo Planks", "Bamboo Crate");
+        lang.addBlock(getVariant("bamboo_planks_smooth"), "Bamboo Planks", "Smooth Bamboo Planks");
         //lang.addBlock(getVariant("bamboo_planks_stacked"), "Bamboo Planks", "Stacked Bamboo Tiles");
-        //lang.addBlock(getVariant("bamboo_planks_vertical"), "Bamboo Planks", "Vertical Bamboo Planks");
+        lang.addBlock(getVariant("bamboo_planks_vertical"), "Bamboo Planks", "Vertical Bamboo Planks");
     }
 }
 
