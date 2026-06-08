@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_oak_tomes",
   "variant": {
     "block": "chisel:bookshelf_oak_tomes",
-    "model_type": "bookshelf",
-    "name": "bookshelf_oak_tomes"
+    "kind": "bookshelf"
   }
 }

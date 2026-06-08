@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:purpur_array",
-    "model_type": "multiblock_2x2",
-    "name": "purpur_array"
+    "kind": "multiblock_2x2"
   }
 }

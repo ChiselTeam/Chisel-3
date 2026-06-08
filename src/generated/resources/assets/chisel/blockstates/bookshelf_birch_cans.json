@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_birch_cans",
   "variant": {
     "block": "chisel:bookshelf_birch_cans",
-    "model_type": "bookshelf",
-    "name": "bookshelf_birch_cans"
+    "kind": "bookshelf"
   }
 }

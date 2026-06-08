@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:tyrian_shiny",
-    "model_type": "connected",
-    "name": "tyrian_shiny"
+    "kind": "standard"
   }
 }

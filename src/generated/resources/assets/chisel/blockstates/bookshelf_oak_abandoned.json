@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_oak_abandoned",
   "variant": {
     "block": "chisel:bookshelf_oak_abandoned",
-    "model_type": "bookshelf",
-    "name": "bookshelf_oak_abandoned"
+    "kind": "bookshelf"
   }
 }

@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_acacia_brim",
   "variant": {
     "block": "chisel:bookshelf_acacia_brim",
-    "model_type": "bookshelf",
-    "name": "bookshelf_acacia_brim"
+    "kind": "bookshelf"
   }
 }

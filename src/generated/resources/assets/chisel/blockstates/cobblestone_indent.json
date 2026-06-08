@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:cobblestone_indent",
-    "model_type": "connected",
-    "name": "cobblestone_indent"
+    "kind": "standard"
   }
 }

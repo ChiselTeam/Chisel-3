@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:dirt_reinforced",
-    "model_type": "connected",
-    "name": "dirt_reinforced"
+    "kind": "standard"
   }
 }

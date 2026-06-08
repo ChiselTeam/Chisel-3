@@ -8,6 +8,7 @@
     "west",
     "east"
   ],
+  "eldritch": true,
   "element": {
     "max": [
       16.0,
@@ -24,7 +25,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:temple_cobble",
-    "model_type": "connected",
-    "name": "temple_cobble"
+    "kind": "standard"
   }
 }

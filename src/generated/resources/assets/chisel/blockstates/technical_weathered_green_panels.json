@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:technical_weathered_green_panels",
-    "model_type": "r4",
-    "name": "technical_weathered_green_panels"
+    "kind": "r4"
   }
 }

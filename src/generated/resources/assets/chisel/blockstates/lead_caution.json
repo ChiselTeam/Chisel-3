@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:lead_caution",
-    "model_type": "connected",
-    "name": "lead_caution"
+    "kind": "standard"
   }
 }

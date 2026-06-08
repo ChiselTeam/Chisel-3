@@ -1,6 +1,6 @@
-﻿{
+{
   "values": [
-    "ftbmaterials:nickel_block",
-    "alltheores:nickel_block"
+    {"id": "ftbmaterials:nickel_block", "required": false},
+    {"id": "alltheores:nickel_block", "required": false}
   ]
 }

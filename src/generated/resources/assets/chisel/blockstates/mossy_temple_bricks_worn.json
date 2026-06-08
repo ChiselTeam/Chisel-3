@@ -1,7 +1,10 @@
 {
   "variants": {
     "": {
-      "model": "chisel:block/mossy_temple_bricks_worn"
+      "type": "ctm:eldritch_model",
+      "model": {
+        "model": "chisel:block/mossy_temple_bricks_worn"
+      }
     }
   }
 }

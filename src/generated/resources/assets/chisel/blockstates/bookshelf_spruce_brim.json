@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_spruce_brim",
   "variant": {
     "block": "chisel:bookshelf_spruce_brim",
-    "model_type": "bookshelf",
-    "name": "bookshelf_spruce_brim"
+    "kind": "bookshelf"
   }
 }

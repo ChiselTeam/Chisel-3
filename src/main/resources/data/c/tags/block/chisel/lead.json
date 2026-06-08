@@ -1,6 +1,6 @@
 {
   "values": [
-    "ftbmaterials:lead_block",
-    "alltheores:lead_block"
+    {"id": "ftbmaterials:lead_block", "required": false},
+    {"id": "alltheores:lead_block", "required": false}
   ]
 }

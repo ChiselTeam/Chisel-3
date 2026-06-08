@@ -1,6 +1,6 @@
 {
   "values": [
-    "ftbmaterials:invar_block",
-    "alltheores:invar_block"
+    {"id": "ftbmaterials:invar_block", "required": false},
+    {"id": "alltheores:invar_block", "required": false}
   ]
 }

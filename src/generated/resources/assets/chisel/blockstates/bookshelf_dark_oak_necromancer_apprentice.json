@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_dark_oak_necromancer_apprentice",
   "variant": {
     "block": "chisel:bookshelf_dark_oak_necromancer_apprentice",
-    "model_type": "bookshelf",
-    "name": "bookshelf_dark_oak_necromancer_apprentice"
+    "kind": "bookshelf"
   }
 }

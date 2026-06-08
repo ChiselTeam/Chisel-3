@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_pale_oak_brim",
   "variant": {
     "block": "chisel:bookshelf_pale_oak_brim",
-    "model_type": "bookshelf",
-    "name": "bookshelf_pale_oak_brim"
+    "kind": "bookshelf"
   }
 }

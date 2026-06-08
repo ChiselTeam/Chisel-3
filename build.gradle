@@ -14,7 +14,6 @@ if (file('.env').exists()) {
     file('.env').withInputStream { env.load(it) }
 }
 
-
 tasks.named('wrapper', Wrapper).configure {
     distributionType = Wrapper.DistributionType.BIN
 }
@@ -43,6 +42,18 @@ repositories {
         name = "Jared's maven"
         url = "https://maven.blamejared.com/"
     }
+
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+        }
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
 }
 
 base {
@@ -53,11 +64,6 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(25)
 
 neoForge {
     version = project.neo_version
-
-    parchment {
-        mappingsVersion = project.parchment_mappings_version
-        minecraftVersion = project.parchment_minecraft_version
-    }
 
     runs {
         client {
@@ -115,6 +121,8 @@ configurations {
 }
 
 dependencies {
+    compileOnly("maven.modrinth:ctmlib:${ctm_version}")
+
     // compile against the JEI API but do not include it at runtime
     compileOnly("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
     compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
@@ -152,6 +160,7 @@ tasks.register('publishCurseForge', TaskPublishCurseForge) {
     mainFile.changelog = file('CHANGELOG.md')
     mainFile.addModLoader("neoforge")
     mainFile.releaseType = release_type
+    mainFile.addRequirement("ctm-lib")
 }
 
 modrinth {
@@ -163,6 +172,9 @@ modrinth {
     uploadFile = jar
     gameVersions = ["26.1.2"]
     loaders = ["neoforge"]
+    dependencies {
+        required.project "ctmlib"
+    }
 }
 
 publishing {

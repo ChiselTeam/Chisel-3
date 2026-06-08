@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:andesite_mosaic",
-    "model_type": "connected",
-    "name": "andesite_mosaic"
+    "kind": "standard"
   }
 }

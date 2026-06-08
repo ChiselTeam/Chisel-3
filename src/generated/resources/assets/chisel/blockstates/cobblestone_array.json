@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:cobblestone_array",
-    "model_type": "multiblock_2x2",
-    "name": "cobblestone_array"
+    "kind": "multiblock_2x2"
   }
 }

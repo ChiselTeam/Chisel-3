@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:thaumium_runes",
-    "model_type": "v9",
-    "name": "thaumium_runes"
+    "kind": "v9"
   }
 }

@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:copper_crate",
-    "model_type": "connected",
-    "name": "copper_crate"
+    "kind": "standard"
   }
 }

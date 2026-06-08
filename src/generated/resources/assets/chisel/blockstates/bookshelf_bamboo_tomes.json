@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_bamboo_tomes",
   "variant": {
     "block": "chisel:bookshelf_bamboo_tomes",
-    "model_type": "bookshelf",
-    "name": "bookshelf_bamboo_tomes"
+    "kind": "bookshelf"
   }
 }

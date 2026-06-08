@@ -23,7 +23,7 @@
   },
   "fallback": {
     "sounds": [
-      "chisel:chisel/fallback"
+      "chisel:io/github/chiselteam/chisel/fallback"
     ]
   },
   "squash": {

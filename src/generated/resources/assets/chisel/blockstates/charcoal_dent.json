@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:charcoal_dent",
-    "model_type": "connected",
-    "name": "charcoal_dent"
+    "kind": "standard"
   }
 }

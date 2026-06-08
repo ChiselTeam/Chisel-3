@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:stone_bricks_panel_sunken",
-    "model_type": "connected",
-    "name": "stone_bricks_panel_sunken"
+    "kind": "standard"
   }
 }

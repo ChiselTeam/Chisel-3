@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_jungle_cans",
   "variant": {
     "block": "chisel:bookshelf_jungle_cans",
-    "model_type": "bookshelf",
-    "name": "bookshelf_jungle_cans"
+    "kind": "bookshelf"
   }
 }

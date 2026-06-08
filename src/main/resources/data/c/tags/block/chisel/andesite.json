@@ -1,4 +1,8 @@
 ﻿{
   "values": [
+    {"id": "mcwpaths:andesite_running_bond", "required": false},
+    {"id": "mcwpaths:andesite_windmill_weave", "required": false},
+    {"id": "mcwpaths:andesite_flagstone", "required": false},
+    {"id": "mcwpaths:andesite_crystal_floor", "required": false}
   ]
 }

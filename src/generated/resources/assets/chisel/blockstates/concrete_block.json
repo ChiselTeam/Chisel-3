@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:concrete_block",
-    "model_type": "connected",
-    "name": "concrete_block"
+    "kind": "standard"
   }
 }

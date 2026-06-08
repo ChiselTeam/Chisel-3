@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:ice_circular",
-    "model_type": "connected",
-    "name": "ice_circular"
+    "kind": "standard"
   }
 }

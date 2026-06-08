@@ -1,4 +1,8 @@
 ﻿{
   "values": [
+    {"id": "mcwpaths:diorite_running_bond", "required": false},
+    {"id": "mcwpaths:diorite_windmill_weave", "required": false},
+    {"id": "mcwpaths:diorite_flagstone", "required": false},
+    {"id": "mcwpaths:diorite_crystal_floor", "required": false}
   ]
 }

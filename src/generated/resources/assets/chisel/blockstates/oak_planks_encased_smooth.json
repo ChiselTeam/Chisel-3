@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:oak_planks_encased_smooth",
-    "model_type": "connected",
-    "name": "oak_planks_encased_smooth"
+    "kind": "standard"
   }
 }

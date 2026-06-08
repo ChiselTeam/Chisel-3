@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:invar_scaffold",
-    "model_type": "connected",
-    "name": "invar_scaffold"
+    "kind": "standard"
   }
 }

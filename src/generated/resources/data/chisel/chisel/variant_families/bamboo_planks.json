@@ -1,0 +1,43 @@
+{
+  "family_name": "bamboo_planks",
+  "tag": "c:chisel/bamboo_planks",
+  "variants": [
+    {
+      "block": "minecraft:bamboo_planks",
+      "name": "block.minecraft.bamboo_planks"
+    },
+    {
+      "block": "chisel:bamboo_planks_braced",
+      "model_type": "connected_tbs",
+      "name": "bamboo_planks_braced"
+    },
+    {
+      "block": "chisel:bamboo_planks_braid",
+      "model_type": "connected",
+      "name": "bamboo_planks_braid"
+    },
+    {
+      "block": "chisel:bamboo_planks_large",
+      "name": "bamboo_planks_large"
+    },
+    {
+      "block": "chisel:bamboo_planks_log_bordered",
+      "model_type": "connected",
+      "name": "bamboo_planks_log_bordered"
+    },
+    {
+      "block": "chisel:bamboo_planks_shipping",
+      "model_type": "connected",
+      "name": "bamboo_planks_shipping"
+    },
+    {
+      "block": "chisel:bamboo_planks_smooth",
+      "model_type": "connected",
+      "name": "bamboo_planks_smooth"
+    },
+    {
+      "block": "chisel:bamboo_planks_vertical",
+      "name": "bamboo_planks_vertical"
+    }
+  ]
+}

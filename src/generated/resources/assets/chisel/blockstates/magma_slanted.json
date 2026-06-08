@@ -26,7 +26,7 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:magma_slanted",
-    "model_type": "lava_2x2",
-    "name": "magma_slanted"
+    "kind": "multiblock_2x2",
+    "water_offset": true
   }
 }

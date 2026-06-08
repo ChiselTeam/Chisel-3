@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:ice_chaotic_bricks",
-    "model_type": "multiblock_3x3",
-    "name": "ice_chaotic_bricks"
+    "kind": "multiblock_3x3"
   }
 }

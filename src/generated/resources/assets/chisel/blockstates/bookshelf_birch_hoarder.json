@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_birch_hoarder",
   "variant": {
     "block": "chisel:bookshelf_birch_hoarder",
-    "model_type": "bookshelf",
-    "name": "bookshelf_birch_hoarder"
+    "kind": "bookshelf"
   }
 }

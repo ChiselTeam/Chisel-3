@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:crimson_planks_log_cabin_ns",
-    "model_type": "connected",
-    "name": "crimson_planks_log_cabin_ns"
+    "kind": "standard"
   }
 }

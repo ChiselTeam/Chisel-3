@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "parent": "minecraft:block/cube_bottom_top",
   "textures": {
     "bottom": "chisel:block/technical/technical_fan_still-bottom",
     "side": "chisel:block/technical/technical_fan_still-side",

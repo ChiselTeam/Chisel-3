@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_mangrove_historian",
   "variant": {
     "block": "chisel:bookshelf_mangrove_historian",
-    "model_type": "bookshelf",
-    "name": "bookshelf_mangrove_historian"
+    "kind": "bookshelf"
   }
 }

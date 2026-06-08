@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:silver_scaffold",
-    "model_type": "connected",
-    "name": "silver_scaffold"
+    "kind": "standard"
   }
 }

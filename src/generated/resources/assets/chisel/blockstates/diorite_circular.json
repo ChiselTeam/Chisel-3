@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:diorite_circular",
-    "model_type": "connected",
-    "name": "diorite_circular"
+    "kind": "standard"
   }
 }

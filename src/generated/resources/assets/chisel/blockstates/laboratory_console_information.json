@@ -22,7 +22,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:laboratory_console_information",
-    "model_type": "ctmh",
-    "name": "laboratory_console_information"
+    "kind": "ctmh"
   }
 }

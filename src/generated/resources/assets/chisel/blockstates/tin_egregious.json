@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:tin_egregious",
-    "model_type": "connected",
-    "name": "tin_egregious"
+    "kind": "standard"
   }
 }

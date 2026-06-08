@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_warped_tomes",
   "variant": {
     "block": "chisel:bookshelf_warped_tomes",
-    "model_type": "bookshelf",
-    "name": "bookshelf_warped_tomes"
+    "kind": "bookshelf"
   }
 }

@@ -21,7 +21,6 @@
   "model_location": "chisel:block/bookshelf_jungle_necromancer",
   "variant": {
     "block": "chisel:bookshelf_jungle_necromancer",
-    "model_type": "bookshelf",
-    "name": "bookshelf_jungle_necromancer"
+    "kind": "bookshelf"
   }
 }

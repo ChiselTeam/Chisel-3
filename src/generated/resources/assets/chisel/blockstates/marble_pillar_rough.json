@@ -20,7 +20,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:marble_pillar_rough",
-    "model_type": "ctmv",
-    "name": "marble_pillar_rough"
+    "kind": "ctmv"
   }
 }

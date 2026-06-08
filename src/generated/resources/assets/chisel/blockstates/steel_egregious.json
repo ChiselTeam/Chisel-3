@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:steel_egregious",
-    "model_type": "connected",
-    "name": "steel_egregious"
+    "kind": "standard"
   }
 }

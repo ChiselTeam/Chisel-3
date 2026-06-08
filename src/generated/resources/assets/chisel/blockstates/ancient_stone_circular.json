@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:ancient_stone_circular",
-    "model_type": "connected",
-    "name": "ancient_stone_circular"
+    "kind": "standard"
   }
 }

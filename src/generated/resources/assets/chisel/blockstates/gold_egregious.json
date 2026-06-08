@@ -24,7 +24,6 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:gold_egregious",
-    "model_type": "connected",
-    "name": "gold_egregious"
+    "kind": "standard"
   }
 }
