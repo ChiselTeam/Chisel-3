@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.12]
+
+### Added
+- **Bamboo**: Added the Bamboo block family with a set of variants.
+- **Neovitae**: Added the Neovitae block family with a full set of variants (Arranged, Bricks, Carved, Classic, etc.).
+
+### Changed
+- **CTM is now a Library**: CTM is now it's own library mod
+
 ## [3.0.11]
 
 ### Added

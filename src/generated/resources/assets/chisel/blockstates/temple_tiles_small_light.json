@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "type": "chisel:eldritch_model",
+      "type": "ctm:eldritch_model",
       "model": {
         "model": "chisel:block/temple_tiles_small_light"
       }

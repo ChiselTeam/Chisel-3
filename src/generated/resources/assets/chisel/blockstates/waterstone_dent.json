@@ -25,6 +25,7 @@
   "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:waterstone_dent",
-    "kind": "standard"
+    "kind": "standard",
+    "water_offset": true
   }
 }
