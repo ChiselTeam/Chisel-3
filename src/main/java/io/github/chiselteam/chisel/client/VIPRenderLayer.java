@@ -30,7 +30,7 @@ public class VIPRenderLayer extends RenderLayer<AvatarRenderState, PlayerModel> 
         getParentModel().body.translateAndRotate(pose);
         pose.mulPose(Axis.XP.rotationDegrees(180.0F));
         pose.mulPose(Axis.YP.rotationDegrees(90.0F));
-        boolean armor = state.chestEquipment != ItemStack.EMPTY;
+        boolean armor = state.legsEquipment != ItemStack.EMPTY;
         pose.translate(-0.125F, -0.85F, armor ? 0.2F : 0.28F);
         pose.scale(0.5F, 0.5F, 0.5F);
 
