@@ -17,6 +17,26 @@
       "name": "bamboo_planks_braid"
     },
     {
+      "block": "chisel:bamboo_planks_encased",
+      "model_type": "connected",
+      "name": "bamboo_planks_encased"
+    },
+    {
+      "block": "chisel:bamboo_planks_encased_2",
+      "model_type": "connected",
+      "name": "bamboo_planks_encased_2"
+    },
+    {
+      "block": "chisel:bamboo_planks_encased_large",
+      "model_type": "connected",
+      "name": "bamboo_planks_encased_large"
+    },
+    {
+      "block": "chisel:bamboo_planks_encased_smooth",
+      "model_type": "connected",
+      "name": "bamboo_planks_encased_smooth"
+    },
+    {
       "block": "chisel:bamboo_planks_large",
       "name": "bamboo_planks_large"
     },
