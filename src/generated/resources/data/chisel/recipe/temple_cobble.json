@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "R": "#c:dyes/blue",
     "S": "#c:stones"

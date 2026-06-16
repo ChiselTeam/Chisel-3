@@ -3,7 +3,7 @@ package io.github.chiselteam.chisel.client.gui;
 import net.minecraft.client.gui.navigation.ScreenRectangle;
 import net.minecraft.client.renderer.state.gui.pip.PictureInPictureRenderState;
 import net.minecraft.world.level.block.state.BlockState;
-import org.joml.Matrix3x2f;
+import org.joml.Matrix3x2fc;
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
@@ -14,7 +14,7 @@ public record PreviewPIPState(BlockState blockState, int[][] positions, float ro
     }
 
     @Override
-    public @NonNull Matrix3x2f pose() {
+    public @NonNull Matrix3x2fc pose() {
         return PictureInPictureRenderState.IDENTITY_POSE;
     }
 

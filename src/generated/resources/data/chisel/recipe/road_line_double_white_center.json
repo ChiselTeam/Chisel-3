@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "R": "#c:dusts/redstone",
     "W": "#c:dyes/white"

@@ -1,3 +1,4 @@
+/*
 package io.github.chiselteam.chisel.integration;
 
 import io.github.chiselteam.chisel.Chisel;
@@ -41,3 +42,4 @@ public class JEICompatibility implements IModPlugin {
         registration.addCraftingStation(ChiselRecipeCategory.TYPE, new ItemStack(ChiselItems.CHISEL_OBSIDIAN.get()));
     }
 }
+*/

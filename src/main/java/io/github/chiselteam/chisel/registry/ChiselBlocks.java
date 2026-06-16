@@ -26,7 +26,7 @@ public class ChiselBlocks {
     public static final AluminumFamily ALUMINUM = new AluminumFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final AncientStoneFamily ANCIENT_STONE = new AncientStoneFamily(Properties.ofFullCopy(Blocks.STONE));
     public static final AndesiteFamily ANDESITE = new AndesiteFamily(Properties.ofFullCopy(Blocks.ANDESITE));
-    public static final AntiblockFamily ANTIBLOCK = new AntiblockFamily(Properties.ofFullCopy(Blocks.BLACK_CONCRETE));
+    public static final AntiblockFamily ANTIBLOCK = new AntiblockFamily(Properties.ofFullCopy(Blocks.CONCRETE.black()));
     public static final ArcaneFamily ARCANE = new ArcaneFamily(Properties.ofFullCopy(Blocks.STONE));
     public static final BambooFamily BAMBOO = new BambooFamily(Properties.ofFullCopy(Blocks.BAMBOO_PLANKS));
     public static final BirchFamily BIRCH = new BirchFamily(Properties.ofFullCopy(Blocks.BIRCH_PLANKS));
@@ -35,13 +35,13 @@ public class ChiselBlocks {
     public static final BronzeFamily BRONZE = new BronzeFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final CertusFamily CERTUS = new CertusFamily(Properties.ofFullCopy(Blocks.STONE));
     public static final CharcoalFamily CHARCOAL = new CharcoalFamily(Properties.ofFullCopy(Blocks.STONE));
-    public static final CloudFamily CLOUD = new CloudFamily(Properties.ofFullCopy(Blocks.WHITE_WOOL).noOcclusion());
+    public static final CloudFamily CLOUD = new CloudFamily(Properties.ofFullCopy(Blocks.WOOL.white()).noOcclusion());
     public static final CoalFamily COAL = new CoalFamily(Properties.ofFullCopy(Blocks.STONE));
     public static final CoalCokeFamily COAL_COKE = new CoalCokeFamily(Properties.ofFullCopy(Blocks.STONE));
     public static final CobaltFamily COBALT = new CobaltFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final CobblestoneFamily COBBLESTONE = new CobblestoneFamily(Properties.ofFullCopy(Blocks.COBBLESTONE));
-    public static final ConcreteFamily CONCRETE = new ConcreteFamily(Properties.ofFullCopy(Blocks.WHITE_CONCRETE));
-    public static final CopperFamily COPPER = new CopperFamily(Properties.ofFullCopy(Blocks.COPPER_BLOCK));
+    public static final ConcreteFamily CONCRETE = new ConcreteFamily(Properties.ofFullCopy(Blocks.CONCRETE.white()));
+    public static final CopperFamily COPPER = new CopperFamily(Properties.ofFullCopy(Blocks.COPPER_BLOCK.weathering().unaffected()));
     public static final CrimsonFamily CRIMSON = new CrimsonFamily(Properties.ofFullCopy(Blocks.CRIMSON_PLANKS));
     public static final DarkOakFamily DARK_OAK = new DarkOakFamily(Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS));
     public static final BasaltFamily BASALT = new BasaltFamily(Properties.ofFullCopy(Blocks.STONE));
@@ -85,7 +85,7 @@ public class ChiselBlocks {
     public static final NickelFamily NICKEL = new NickelFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final OakFamily OAK = new OakFamily(Properties.ofFullCopy(Blocks.OAK_PLANKS));
     public static final ObsidianFamily OBSIDIAN = new ObsidianFamily(Properties.ofFullCopy(Blocks.OBSIDIAN));
-    public static final PaperwallFamily PAPERWALL = new PaperwallFamily(Properties.ofFullCopy(Blocks.WHITE_WOOL));
+    public static final PaperwallFamily PAPERWALL = new PaperwallFamily(Properties.ofFullCopy(Blocks.WOOL.white()));
     public static final PlatinumFamily PLATINUM = new PlatinumFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final PrismarineFamily PRISMARINE = new PrismarineFamily(Properties.ofFullCopy(Blocks.STONE));
     public static final PumpkinFamily PUMPKIN = new PumpkinFamily(Properties.ofFullCopy(Blocks.PUMPKIN));
@@ -100,7 +100,7 @@ public class ChiselBlocks {
     public static final SpruceFamily SPRUCE = new SpruceFamily(Properties.ofFullCopy(Blocks.SPRUCE_PLANKS));
     public static final SteelFamily STEEL = new SteelFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final StoneBricksFamily STONE_BRICKS = new StoneBricksFamily(Properties.ofFullCopy(Blocks.STONE_BRICKS));
-    public static final TallowFamily TALLOW = new TallowFamily(Properties.ofFullCopy(Blocks.WHITE_WOOL));
+    public static final TallowFamily TALLOW = new TallowFamily(Properties.ofFullCopy(Blocks.WOOL.white()));
     public static final TechnicalFamily TECHNICAL = new TechnicalFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final TempleFamily TEMPLE = new TempleFamily(Properties.ofFullCopy(Blocks.STONE));
     public static final TerracottaFamily TERRACOTTA = new TerracottaFamily(Properties.ofFullCopy(Blocks.TERRACOTTA));
@@ -121,9 +121,9 @@ public class ChiselBlocks {
 
     static {
         for (DyeColor color : DyeColor.values()) {
-            WOOLS.add(new WoolFamily(Properties.ofFullCopy(getVanillaWool(color)), color.getName(), getVanillaWool(color)));
-            STAINED_GLASS.add(new StainedGlassFamily(Properties.ofFullCopy(Blocks.GLASS), color.getName(), getVanillaStainedGlass(color)));
-            STAINED_GLASS_PANE.add(new StainedGlassPaneFamily(Properties.ofFullCopy(Blocks.GLASS_PANE), color, getVanillaStainedGlassPane(color)));
+            WOOLS.add(new WoolFamily(Properties.ofFullCopy(Blocks.WOOL.pick(color)), color.getName(), Blocks.WOOL.pick(color)));
+            STAINED_GLASS.add(new StainedGlassFamily(Properties.ofFullCopy(Blocks.GLASS), color.getName(), Blocks.STAINED_GLASS.pick(color)));
+            STAINED_GLASS_PANE.add(new StainedGlassPaneFamily(Properties.ofFullCopy(Blocks.GLASS_PANE), color, Blocks.STAINED_GLASS_PANE.pick(color)));
         }
     }
 
@@ -131,69 +131,6 @@ public class ChiselBlocks {
             .sound(SoundType.METAL)
             .strength(2.5F)
             .requiresCorrectToolForDrops());
-
-    private static Block getVanillaWool(DyeColor color) {
-        return switch (color) {
-            case WHITE -> Blocks.WHITE_WOOL;
-            case ORANGE -> Blocks.ORANGE_WOOL;
-            case MAGENTA -> Blocks.MAGENTA_WOOL;
-            case LIGHT_BLUE -> Blocks.LIGHT_BLUE_WOOL;
-            case YELLOW -> Blocks.YELLOW_WOOL;
-            case LIME -> Blocks.LIME_WOOL;
-            case PINK -> Blocks.PINK_WOOL;
-            case GRAY -> Blocks.GRAY_WOOL;
-            case LIGHT_GRAY -> Blocks.LIGHT_GRAY_WOOL;
-            case CYAN -> Blocks.CYAN_WOOL;
-            case PURPLE -> Blocks.PURPLE_WOOL;
-            case BLUE -> Blocks.BLUE_WOOL;
-            case BROWN -> Blocks.BROWN_WOOL;
-            case GREEN -> Blocks.GREEN_WOOL;
-            case RED -> Blocks.RED_WOOL;
-            case BLACK -> Blocks.BLACK_WOOL;
-        };
-    }
-
-    private static Block getVanillaStainedGlass(DyeColor color) {
-        return switch (color) {
-            case WHITE -> Blocks.WHITE_STAINED_GLASS;
-            case ORANGE -> Blocks.ORANGE_STAINED_GLASS;
-            case MAGENTA -> Blocks.MAGENTA_STAINED_GLASS;
-            case LIGHT_BLUE -> Blocks.LIGHT_BLUE_STAINED_GLASS;
-            case YELLOW -> Blocks.YELLOW_STAINED_GLASS;
-            case LIME -> Blocks.LIME_STAINED_GLASS;
-            case PINK -> Blocks.PINK_STAINED_GLASS;
-            case GRAY -> Blocks.GRAY_STAINED_GLASS;
-            case LIGHT_GRAY -> Blocks.LIGHT_GRAY_STAINED_GLASS;
-            case CYAN -> Blocks.CYAN_STAINED_GLASS;
-            case PURPLE -> Blocks.PURPLE_STAINED_GLASS;
-            case BLUE -> Blocks.BLUE_STAINED_GLASS;
-            case BROWN -> Blocks.BROWN_STAINED_GLASS;
-            case GREEN -> Blocks.GREEN_STAINED_GLASS;
-            case RED -> Blocks.RED_STAINED_GLASS;
-            case BLACK -> Blocks.BLACK_STAINED_GLASS;
-        };
-    }
-
-    private static Block getVanillaStainedGlassPane(DyeColor color) {
-        return switch (color) {
-            case WHITE -> Blocks.WHITE_STAINED_GLASS_PANE;
-            case ORANGE -> Blocks.ORANGE_STAINED_GLASS_PANE;
-            case MAGENTA -> Blocks.MAGENTA_STAINED_GLASS_PANE;
-            case LIGHT_BLUE -> Blocks.LIGHT_BLUE_STAINED_GLASS_PANE;
-            case YELLOW -> Blocks.YELLOW_STAINED_GLASS_PANE;
-            case LIME -> Blocks.LIME_STAINED_GLASS_PANE;
-            case PINK -> Blocks.PINK_STAINED_GLASS_PANE;
-            case GRAY -> Blocks.GRAY_STAINED_GLASS_PANE;
-            case LIGHT_GRAY -> Blocks.LIGHT_GRAY_STAINED_GLASS_PANE;
-            case CYAN -> Blocks.CYAN_STAINED_GLASS_PANE;
-            case PURPLE -> Blocks.PURPLE_STAINED_GLASS_PANE;
-            case BLUE -> Blocks.BLUE_STAINED_GLASS_PANE;
-            case BROWN -> Blocks.BROWN_STAINED_GLASS_PANE;
-            case GREEN -> Blocks.GREEN_STAINED_GLASS_PANE;
-            case RED -> Blocks.RED_STAINED_GLASS_PANE;
-            case BLACK -> Blocks.BLACK_STAINED_GLASS_PANE;
-        };
-    }
 
     public static List<ChiselFamily> getBlocks() {
         List<ChiselFamily> blocks = new ArrayList<>(List.of(

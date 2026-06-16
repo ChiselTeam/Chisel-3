@@ -1,3 +1,4 @@
+/*
 package io.github.chiselteam.chisel.integration;
 
 import io.github.chiselteam.chisel.Chisel;
@@ -55,3 +56,4 @@ public class ChiselRecipeCategory extends AbstractRecipeCategory<ChiselRecipe> {
         variants.forEach(variant -> builder.addOutputSlot().add(variant.getBlock()));
     }
 }
+*/

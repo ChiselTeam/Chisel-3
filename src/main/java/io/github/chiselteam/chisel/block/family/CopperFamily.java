@@ -9,7 +9,10 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 public class CopperFamily extends ChiselFamily {
     public CopperFamily(BlockBehaviour.Properties props) {
         family = builder("copper")
-                .addVariant(Blocks.COPPER_BLOCK)
+                .addVariant(Blocks.COPPER_BLOCK.weathering().unaffected())
+                .addVariant(Blocks.COPPER_BLOCK.weathering().exposed())
+                .addVariant(Blocks.COPPER_BLOCK.weathering().weathered())
+                .addVariant(Blocks.COPPER_BLOCK.weathering().oxidized())
                 .addVariant("copper_bad_greggy", props, CONNECTED)
                 .addVariant("copper_bolted", props)
                 .addVariant("copper_caution", props, CONNECTED)

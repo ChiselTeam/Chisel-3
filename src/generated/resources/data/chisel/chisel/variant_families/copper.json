@@ -7,6 +7,18 @@
       "name": "block.minecraft.copper_block"
     },
     {
+      "block": "minecraft:exposed_copper",
+      "name": "block.minecraft.exposed_copper"
+    },
+    {
+      "block": "minecraft:weathered_copper",
+      "name": "block.minecraft.weathered_copper"
+    },
+    {
+      "block": "minecraft:oxidized_copper",
+      "name": "block.minecraft.oxidized_copper"
+    },
+    {
       "block": "chisel:copper_bad_greggy",
       "model_type": "connected",
       "name": "copper_bad_greggy"

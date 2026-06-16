@@ -106,8 +106,6 @@ neoForge {
     }
 }
 
-// Ensure the IDE uses the same output directories as Gradle
-// This can help with FML complaining about directories not being valid mod files
 idea {
     module {
         inheritOutputDirs = true
@@ -124,10 +122,10 @@ dependencies {
     compileOnly("maven.modrinth:ctmlib:${ctm_version}")
 
     // compile against the JEI API but do not include it at runtime
-    compileOnly("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
-    compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
+    //compileOnly("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
+    //compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
     // at runtime, use the full JEI jar for NeoForge
-    runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
+    //runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
@@ -157,7 +155,6 @@ tasks.register('publishCurseForge', TaskPublishCurseForge) {
     def projectId = '225236'
     def mainFile = upload(projectId, jar)
 
-    mainFile.changelog = file('CHANGELOG.md')
     mainFile.addModLoader("neoforge")
     mainFile.releaseType = release_type
     mainFile.addRequirement("ctm-lib")
@@ -170,7 +167,7 @@ modrinth {
     versionNumber = mod_version
     versionType = release_type
     uploadFile = jar
-    gameVersions = ["26.1.2"]
+    gameVersions = ["${minecraft_version}"] as Iterable<? extends String>
     loaders = ["neoforge"]
     dependencies {
         required.project "ctmlib"

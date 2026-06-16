@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "R": "#c:buckets/lava",
     "S": "#c:stones"
