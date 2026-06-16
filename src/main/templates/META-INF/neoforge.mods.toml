@@ -15,6 +15,6 @@ logoFile="src/main/resources/assets/chisel/textures/item/chisel_obsidian.png"
 [[dependencies.chisel]]
 modId="ctm"
 type="required"
-versionRange="[1.0.0,)"
+versionRange="[26.2.0.1,)"
 ordering="AFTER"
 side="BOTH"
