@@ -4,6 +4,7 @@ import io.github.chiselteam.chisel.registry.*;
 import net.minecraft.resources.Identifier;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 
 @Mod(Chisel.MODID)
 public class Chisel {
@@ -23,6 +24,12 @@ public class Chisel {
         ChiselEntities.ENTITY_TYPES.register(bus);
         ChiselParticles.PARTICLES.register(bus);
         ChiselStats.STATS.register(bus);
+
+        bus.addListener(this::commonSetup);
+    }
+
+    private void commonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(ChiselFluidInteractions::init);
     }
 
     public static Identifier prefix(String resource) {
