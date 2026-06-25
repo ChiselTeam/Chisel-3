@@ -21,8 +21,10 @@ public class ColumnChiselMode extends ChiselMode {
         List<BlockPos> affected = new ArrayList<>();
         Direction up = (side == Direction.UP || side == Direction.DOWN) ? Direction.NORTH : Direction.UP;
         affected.add(pos);
-        affected.add(pos.relative(up));
-        affected.add(pos.relative(up.getOpposite()));
+        if(isSameBlock(level, state, level.getBlockState(pos.relative(up))))
+            affected.add(pos.relative(up));
+        if(isSameBlock(level, state, level.getBlockState(pos.relative(up.getOpposite()))))
+            affected.add(pos.relative(up.getOpposite()));
         return affected;
     }
 }
