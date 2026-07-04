@@ -10,6 +10,8 @@ import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TextureMapping;
+import net.minecraft.client.data.models.model.TextureSlot;
 import net.minecraft.client.renderer.block.dispatch.Variant;
 import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
@@ -35,7 +37,25 @@ public class ChiselModelProvider extends ModelProvider {
         blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(ChiselBlocks.AUTO_CHISEL.get(), BlockModelGenerators.variant(new Variant(Chisel.prefix("block/auto_chisel")))));
         blockModels.registerSimpleItemModel(ChiselBlocks.AUTO_CHISEL.get(), Chisel.prefix("block/auto_chisel"));
 
-        blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(ChiselBlocks.BUILDERS_GUIDE.get(), BlockModelGenerators.variant(new Variant(Chisel.prefix("block/builders_guide")))));
+        blockModels.blockStateOutput.accept(
+                MultiVariantGenerator.dispatch(
+                        ChiselBlocks.BUILDERS_GUIDE.get(),
+                        BlockModelGenerators.plainVariant(
+                                ModelTemplates.CUBE.create(
+                                        ChiselBlocks.BUILDERS_GUIDE.get(),
+                                        new TextureMapping()
+                                                .put(TextureSlot.PARTICLE, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get()))
+                                                .put(TextureSlot.NORTH, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get(), "_plus"))
+                                                .put(TextureSlot.WEST, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get(), "_minus"))
+                                                .put(TextureSlot.SOUTH, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get(), "_minus"))
+                                                .put(TextureSlot.EAST, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get(), "_plus"))
+                                                .put(TextureSlot.UP, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get(), "_plus"))
+                                                .put(TextureSlot.DOWN, TextureMapping.getBlockTexture(ChiselBlocks.BUILDERS_GUIDE.get(), "_minus")),
+                                        blockModels.modelOutput
+                                )
+                        )
+                )
+        );
         blockModels.registerSimpleItemModel(ChiselBlocks.BUILDERS_GUIDE.get(), Chisel.prefix("block/builders_guide"));
 
         itemModels.generateFlatItem(ChiselItems.CHISEL_IRON.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
