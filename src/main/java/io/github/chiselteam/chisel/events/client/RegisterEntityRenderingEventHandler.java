@@ -2,6 +2,7 @@ package io.github.chiselteam.chisel.events.client;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.client.entity.AutoChiselBlockEntityRenderer;
+import io.github.chiselteam.chisel.client.entity.BuildersGuideBlockEntityRenderer;
 import io.github.chiselteam.chisel.registry.ChiselBlockEntities;
 import io.github.chiselteam.chisel.registry.ChiselEntities;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
@@ -20,5 +21,6 @@ public class RegisterEntityRenderingEventHandler {
         event.registerEntityRenderer(ChiselEntities.CLOUD_IN_A_BOTTLE.get(), context -> new ThrownItemRenderer<>(context, 1.0F, true));
 
         event.registerBlockEntityRenderer(ChiselBlockEntities.AUTO_CHISEL.get(), AutoChiselBlockEntityRenderer::new);
+        event.registerBlockEntityRenderer(ChiselBlockEntities.BUILDERS_GUIDE.get(), BuildersGuideBlockEntityRenderer::new);
     }
 }

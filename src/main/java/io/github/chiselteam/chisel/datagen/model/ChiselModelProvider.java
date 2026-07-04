@@ -35,6 +35,9 @@ public class ChiselModelProvider extends ModelProvider {
         blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(ChiselBlocks.AUTO_CHISEL.get(), BlockModelGenerators.variant(new Variant(Chisel.prefix("block/auto_chisel")))));
         blockModels.registerSimpleItemModel(ChiselBlocks.AUTO_CHISEL.get(), Chisel.prefix("block/auto_chisel"));
 
+        blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(ChiselBlocks.BUILDERS_GUIDE.get(), BlockModelGenerators.variant(new Variant(Chisel.prefix("block/builders_guide")))));
+        blockModels.registerSimpleItemModel(ChiselBlocks.BUILDERS_GUIDE.get(), Chisel.prefix("block/builders_guide"));
+
         itemModels.generateFlatItem(ChiselItems.CHISEL_IRON.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ChiselItems.CHISEL_DIAMOND.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ChiselItems.CHISEL_OBSIDIAN.get(), ModelTemplates.FLAT_HANDHELD_ITEM);

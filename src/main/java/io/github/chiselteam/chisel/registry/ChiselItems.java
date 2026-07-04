@@ -26,6 +26,7 @@ public class ChiselItems {
     public static DeferredItem<Item> UPGRADE_REVERSION = register("upgrade_reversion");
     public static DeferredItem<Item> UPGRADE_AUTOMATION = register("upgrade_automation");
     public static DeferredItem<Item> AUTO_CHISEL = ITEMS.registerItem("auto_chisel", p -> new BlockItem(ChiselBlocks.AUTO_CHISEL.get(), p), Item.Properties::new);
+    public static DeferredItem<Item> BUILDERS_GUIDE = ITEMS.registerItem("builders_guide", p -> new BlockItem(ChiselBlocks.BUILDERS_GUIDE.get(), p), Item.Properties::new);
 
     public static DeferredItem<Item> BALL_O_MOSS = register("ballomoss", BallOMossItem::new, Item.Properties::new);
     public static DeferredItem<Item> CLOUD_IN_A_BOTTLE = register("cloudinabottle", CloudInABottleItem::new, Item.Properties::new);

@@ -2,6 +2,7 @@ package io.github.chiselteam.chisel.registry;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.block.AutoChiselBlock;
+import io.github.chiselteam.chisel.block.BuildersGuideBlock;
 import io.github.chiselteam.chisel.block.ConnectedTextureBlock;
 import io.github.chiselteam.chisel.block.family.*;
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
@@ -128,6 +129,11 @@ public class ChiselBlocks {
     }
 
     public static final DeferredBlock<Block> AUTO_CHISEL = BLOCKS.registerBlock("auto_chisel", AutoChiselBlock::new, () -> Properties.of()
+            .sound(SoundType.METAL)
+            .strength(2.5F)
+            .requiresCorrectToolForDrops());
+
+    public static final DeferredBlock<Block> BUILDERS_GUIDE = BLOCKS.registerBlock("builders_guide", BuildersGuideBlock::new, () -> Properties.of()
             .sound(SoundType.METAL)
             .strength(2.5F)
             .requiresCorrectToolForDrops());
