@@ -81,6 +81,10 @@ public class ChiselMode {
         chisel.hurtAndBreak(1, player, hand);
     }
 
+    protected boolean isSameBlock(Level level, BlockState base, BlockState test) {
+        return VariantFinder.getFamilyForBlock(base.getBlock(), level.registryAccess()).isBlockInFamily(test.getBlock());
+    }
+
     @Override
     public @NonNull String toString() {
         return registryName.toString();
