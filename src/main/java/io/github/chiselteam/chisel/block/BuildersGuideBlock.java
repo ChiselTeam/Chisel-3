@@ -43,6 +43,7 @@ public class BuildersGuideBlock extends BaseEntityBlock {
     protected @NonNull InteractionResult useItemOn(@NonNull ItemStack stack, @NonNull BlockState state, @NonNull Level level, @NonNull BlockPos pos, @NonNull Player player, @NonNull InteractionHand hand, @NonNull BlockHitResult hitResult) {
         BuildersGuideBlockEntity guide = (BuildersGuideBlockEntity) level.getBlockEntity(pos);
         if(guide == null) return super.useItemOn(stack, state, level, pos, player, hand, hitResult);
+        if(guide.getGhostBlocks().isEmpty()) return super.useItemOn(stack, state, level, pos, player, hand, hitResult);
 
         if(stack.getItem() instanceof DyeItem) {
             DyeColor dye = stack.get(DataComponents.DYE);
