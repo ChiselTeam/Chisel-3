@@ -27,8 +27,14 @@ public class RowChiselMode extends ChiselMode {
             right = side.getClockWise();
         }
         affected.add(pos);
-        affected.add(pos.relative(right));
-        affected.add(pos.relative(right.getOpposite()));
+        BlockPos rightPos = pos.relative(right);
+        if (isSameBlock(level, state, level.getBlockState(rightPos))) {
+            affected.add(rightPos);
+        }
+        BlockPos leftPos = pos.relative(right.getOpposite());
+        if (isSameBlock(level, state, level.getBlockState(leftPos))) {
+            affected.add(leftPos);
+        }
         return affected;
     }
 }

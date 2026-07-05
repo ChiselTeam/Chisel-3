@@ -27,7 +27,7 @@ public class ShapelessMode extends ChiselMode {
 
         while (!toProcess.isEmpty()) {
             BlockPos current = toProcess.poll();
-            if (level.getBlockState(current).is(state.getBlock())) {
+            if (isSameBlock(level, state, level.getBlockState(current))) {
                 affected.add(current);
 
                 for (Direction dir : Direction.values()) {

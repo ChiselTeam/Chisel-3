@@ -35,6 +35,7 @@ public class ChiselBlockLootTables extends BlockLootSubProvider {
         }));
 
         dropSelf(ChiselBlocks.AUTO_CHISEL.get());
+        dropSelf(ChiselBlocks.BUILDERS_GUIDE.get());
     }
 
     @Override

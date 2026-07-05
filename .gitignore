@@ -44,3 +44,4 @@ libs
 *.psd
 /src/generated/resources/.cache/
 .env
+.junie/

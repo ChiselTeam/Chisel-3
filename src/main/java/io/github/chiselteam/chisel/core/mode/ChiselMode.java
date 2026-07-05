@@ -7,6 +7,7 @@ import io.github.chiselteam.chisel.core.variant.VariantFamily;
 import io.github.chiselteam.chisel.datagen.ChiselBlockTags;
 import io.github.chiselteam.chisel.registry.ChiselSounds;
 import io.github.chiselteam.chisel.util.VariantFinder;
+import io.netty.buffer.ByteBuf;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -26,8 +27,15 @@ import java.util.Objects;
 
 public class ChiselMode {
 
-    public static final Codec<ChiselMode> CODEC = Identifier.CODEC.xmap(id -> ChiselModes.REGISTRY.getOptional(id).orElseGet(() -> new ChiselMode(id)), ChiselMode::registryName);
-    public static final StreamCodec<io.netty.buffer.ByteBuf, ChiselMode> STREAM_CODEC = Identifier.STREAM_CODEC.map(id -> ChiselModes.REGISTRY.getOptional(id).orElseGet(() -> new ChiselMode(id)), ChiselMode::registryName);
+    public static final Codec<ChiselMode> CODEC = Identifier.CODEC.xmap(
+            id -> ChiselModes.REGISTRY.getOptional(id).orElseGet(() -> new ChiselMode(id))
+            , ChiselMode::registryName
+    );
+
+    public static final StreamCodec<ByteBuf, ChiselMode> STREAM_CODEC = Identifier.STREAM_CODEC.map(
+            id -> ChiselModes.REGISTRY.getOptional(id).orElseGet(() -> new ChiselMode(id))
+            , ChiselMode::registryName
+    );
 
     private final Identifier registryName;
 
@@ -53,7 +61,7 @@ public class ChiselMode {
             if (state.is(variants.get(c).getBlock())) {
                 BlockState nextState;
                 if (c == variants.size() - 1) {
-                    nextState = variants.get(0).getBlock().defaultBlockState();
+                    nextState = variants.getFirst().getBlock().defaultBlockState();
                 } else {
                     nextState = variants.get(c + 1).getBlock().defaultBlockState();
                 }
@@ -71,6 +79,10 @@ public class ChiselMode {
         level.playSound(null, pos, state.is(ChiselBlockTags.WOOD) ? ChiselSounds.WOOD.value() : ChiselSounds.FALLBACK.value(), SoundSource.BLOCKS);
         player.awardStat(ChiselStats.BLOCKS_CHISELED.get());
         chisel.hurtAndBreak(1, player, hand);
+    }
+
+    protected boolean isSameBlock(Level level, BlockState base, BlockState test) {
+        return VariantFinder.getFamilyForBlock(base.getBlock(), level.registryAccess()).isBlockInFamily(test.getBlock());
     }
 
     @Override

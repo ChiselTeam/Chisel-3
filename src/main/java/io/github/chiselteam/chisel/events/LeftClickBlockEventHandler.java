@@ -56,6 +56,10 @@ public class LeftClickBlockEventHandler {
             VariantFamily family = VariantFinder.getFamilyForBlock(state.getBlock(), level.registryAccess());
 
             if(family != null) {
+                if (family.getFamilyName().equals("torch")) {
+                    return;
+                }
+
                 long time = level.getGameTime();
                 if (LAST_CHISEL_TIME.getUnchecked(player) > time - 4) {
                     event.setCanceled(true);

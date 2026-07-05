@@ -19,7 +19,7 @@ import org.jspecify.annotations.NonNull;
 
 import java.util.Map;
 
-public class NoParticleWallTorchBlock extends NoParticleTorchBlock{
+public class NoParticleWallTorchBlock extends NoParticleTorchBlock {
 
     public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
     private static final Map<Direction, VoxelShape> SHAPES = Shapes.rotateHorizontal(Block.boxZ(5.0F, 3.0F, 13.0F, 11.0F, 16.0F));
@@ -60,7 +60,7 @@ public class NoParticleWallTorchBlock extends NoParticleTorchBlock{
     }
 
     @Override
-    protected boolean canSurvive(BlockState state, @NonNull LevelReader level, @NonNull BlockPos pos) {
+    protected boolean canSurvive(@NonNull BlockState state, @NonNull LevelReader level, @NonNull BlockPos pos) {
         Direction direction = state.getValue(FACING);
         BlockPos blockpos = pos.relative(direction.getOpposite());
         BlockState blockstate = level.getBlockState(blockpos);

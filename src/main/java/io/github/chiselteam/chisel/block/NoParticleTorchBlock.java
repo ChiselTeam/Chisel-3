@@ -22,15 +22,4 @@ public class NoParticleTorchBlock extends BaseTorchBlock {
     protected @NonNull MapCodec<? extends BaseTorchBlock> codec() {
         return CODEC;
     }
-
-    @Override
-    protected boolean canSurvive(@NonNull BlockState state, @NonNull LevelReader level, @NonNull BlockPos pos) {
-        return canSupportCenter(level, pos.below(), Direction.UP);
-    }
-
-    @Nullable
-    @Override
-    public BlockState getStateForPlacement(BlockPlaceContext context) {
-        return this.defaultBlockState().canSurvive(context.getLevel(), context.getClickedPos()) ? this.defaultBlockState() : null;
-    }
 }

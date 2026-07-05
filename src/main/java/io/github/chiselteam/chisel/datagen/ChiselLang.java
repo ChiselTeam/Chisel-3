@@ -32,6 +32,11 @@ public class ChiselLang extends LangHelper {
         add("block.chisel.auto_chisel", "Auto Chisel");
         add("item.chisel.auto_chisel", "Auto Chisel");
 
+        add("block.chisel.builders_guide", "Builders Guide");
+        add("item.chisel.builders_guide", "Builders Guide");
+        add("chisel.builders_guide.mode_changed", "Changed Mode to");
+        add("chisel.builders_guide.size_changed", "Changed Size to");
+
         addContainer("chisel", "Chisel");
         addContainer("auto_chisel", "Auto Chisel");
 
@@ -52,6 +57,25 @@ public class ChiselLang extends LangHelper {
         addChiselMode("row", "Row");
         addChiselMode("shapeless", "Shapeless");
         addChiselMode("shapeless_flat", "Shapeless Flat");
+
+        // Builders Guide - Building Modes
+        addBuildingMode("cuboid", "Cuboid (Edges)");
+        addBuildingMode("full_cuboid", "Cuboid (Faces)");
+        addBuildingMode("sphere", "Sphere");
+        addBuildingMode("dome", "Dome");
+        addBuildingMode("cylinder", "Cylinder");
+        addBuildingMode("triangle", "Triangle");
+        addBuildingMode("pentagon", "Pentagon");
+        addBuildingMode("hexagon", "Hexagon");
+        addBuildingMode("octagon", "Octagon");
+        addBuildingMode("axes", "Axes");
+        addBuildingMode("planes", "Planes");
+
+        add("tooltip.chisel.builders_guide.mode_desc", "Shift + Right click to change Mode");
+        add("tooltip.chisel.builders_guide.length_desc", "Right click on North / South side to change Length");
+        add("tooltip.chisel.builders_guide.width_desc", "Right click on East / West side to change Width");
+        add("tooltip.chisel.builders_guide.height_desc", "Right click on Top / Bottom side to change Height");
+        add("tooltip.chisel.builders_guide.place_desc", "Right click with Block to Place in shape");
 
         add("stat.chisel.blocks_chiseled", "Blocks Chiseled");
     }
@@ -77,5 +101,9 @@ public class ChiselLang extends LangHelper {
         addItem(ChiselItems.UPGRADE_REVERSION, "Reversion Upgrade");
         addItem(ChiselItems.UPGRADE_SPEED, "Speed Upgrade");
         addItem(ChiselItems.UPGRADE_STACK, "Stack Upgrade");
+    }
+
+    private void addBuildingMode(String id, String name) {
+        add("chisel.building_mode.chisel:" + id, name);
     }
 }

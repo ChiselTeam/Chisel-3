@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## [26.1.2.13]
+
+### Added
+- **Bamboo**: Added more Bamboo variants (credit: Cebularz).
+- **Worldgen**: Marble and Limestone now have their own cobble-gen type generation.
+- **Builder's Guide**: Cubes, Cylinders, Domes, and more are now super easy to build!
+
+### Changed
+- Updated project to Minecraft `26.1.2` and NeoForge `26.1.2.76`.
+- Bumped dependency versions:
+  - JEI `29.5.0.26`
+  - CTM `26.1.2.2`
+- Updated **CTMLib** version.
+- Community: Added Cebularz and Buddy610 to VIPs.
+
+### Fixed
+- Resolved issue `#29`.
+- Added compat for Mystical Agriculture in `#27`
+- Implemented a temporary workaround for `#28`.
+
 ## [3.0.12]
 
 ### Added

@@ -127,13 +127,21 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_bricks", has(Tags.Items.BRICKS))
                 .save(output);
 
-
         shaped(RecipeCategory.MISC, ChiselBlocks.AUTO_CHISEL)
                 .pattern("SSS")
                 .pattern(" I ")
                 .pattern("SSS")
                 .define('S', Blocks.STONE_SLAB)
                 .define('I', Tags.Items.INGOTS_IRON)
+                .unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+                .save(output);
+
+        shaped(RecipeCategory.MISC, ChiselBlocks.BUILDERS_GUIDE)
+                .pattern("III")
+                .pattern("ITI")
+                .pattern("III")
+                .define('I', Tags.Items.INGOTS_IRON)
+                .define('T', Items.TORCH)
                 .unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
                 .save(output);
 

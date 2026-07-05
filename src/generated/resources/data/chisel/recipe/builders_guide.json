@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": "#c:ingots/iron",
+    "T": "minecraft:torch"
+  },
+  "pattern": [
+    "III",
+    "ITI",
+    "III"
+  ],
+  "result": {
+    "id": "chisel:builders_guide"
+  }
+}

@@ -3,10 +3,12 @@ package io.github.chiselteam.chisel.core.mode.impl;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.core.mode.ChiselMode;
 
+import io.github.chiselteam.chisel.util.VariantFinder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.ArrayList;
@@ -25,7 +27,9 @@ public class PanelChiselMode extends ChiselMode {
 
         for (int x = -1; x <= 1; x++) {
             for (int y = -1; y <= 1; y++) {
-                affected.add(pos.relative(up, x).relative(right, y));
+                BlockPos test = pos.relative(up, x).relative(right, y);
+                if(isSameBlock(level, state, level.getBlockState(test)))
+                    affected.add(test);
             }
         }
         return affected;
