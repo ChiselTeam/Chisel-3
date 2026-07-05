@@ -61,7 +61,7 @@ public class BuildersGuideBlock extends BaseEntityBlock {
             return InteractionResult.CONSUME;
         }
 
-        return InteractionResult.PASS;
+        return InteractionResult.TRY_WITH_EMPTY_HAND;
     }
 
     @Override
