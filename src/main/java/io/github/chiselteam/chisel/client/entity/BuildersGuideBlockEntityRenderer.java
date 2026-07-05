@@ -19,9 +19,6 @@ import java.util.*;
 
 public class BuildersGuideBlockEntityRenderer implements BlockEntityRenderer<BuildersGuideBlockEntity, BuildersGuideBlockEntityRenderState> {
 
-    /** ARGB colour used for the ghost cubes: white with ~40% opacity. */
-    private static final int GHOST_COLOR = 0x66FFFFFF;
-
     /** Duration in milliseconds of the pop-in / pop-out animation. */
     private static final long ANIM_DURATION_MS = 200L;
 
@@ -39,6 +36,7 @@ public class BuildersGuideBlockEntityRenderer implements BlockEntityRenderer<Bui
         BlockEntityRenderer.super.extractRenderState(guide, state, partialTicks, camera, breakProgress);
         state.origin = guide.getBlockPos();
         state.ghostBlocks = guide.getGhostBlocks();
+        state.color = guide.getColor();
     }
 
     @Override
@@ -68,9 +66,7 @@ public class BuildersGuideBlockEntityRenderer implements BlockEntityRenderer<Bui
                 // Each ghost cube is 1/16 of a block smaller than a full cube (1/32 shaved off
                 // each side), scaled by the current pop animation factor.
                 float half = (0.5F - 1.0F / 32.0F) * scale;
-                drawCube(p, buffer,
-                        cxF - half, cyF - half, czF - half,
-                        cxF + half, cyF + half, czF + half);
+                drawCube(p, buffer, cxF - half, cyF - half, czF - half, cxF + half, cyF + half, czF + half, state.color.getTextureDiffuseColor());
             }
         });
     }
@@ -78,41 +74,39 @@ public class BuildersGuideBlockEntityRenderer implements BlockEntityRenderer<Bui
     /**
      * Emits the six faces of an axis-aligned cube as {@code QUADS} into the supplied vertex
      * consumer. Uses the {@code POSITION_COLOR} vertex format expected by
-     * {@link RenderTypes#debugFilledBox()} and the fixed {@link #GHOST_COLOR}.
+     * {@link RenderTypes#debugFilledBox()}.
      */
-    private static void drawCube(PoseStack.Pose pose, VertexConsumer buffer,
-                                 float minX, float minY, float minZ,
-                                 float maxX, float maxY, float maxZ) {
+    private static void drawCube(PoseStack.Pose pose, VertexConsumer buffer, float minX, float minY, float minZ, float maxX, float maxY, float maxZ, int color) {
         // -Y (bottom)
-        buffer.addVertex(pose, minX, minY, minZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, minX, minY, maxZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, maxX, minY, maxZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, maxX, minY, minZ).setColor(GHOST_COLOR);
+        buffer.addVertex(pose, minX, minY, minZ).setColor(color);
+        buffer.addVertex(pose, minX, minY, maxZ).setColor(color);
+        buffer.addVertex(pose, maxX, minY, maxZ).setColor(color);
+        buffer.addVertex(pose, maxX, minY, minZ).setColor(color);
         // +Y (top)
-        buffer.addVertex(pose, minX, maxY, minZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, maxX, maxY, minZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, maxX, maxY, maxZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, minX, maxY, maxZ).setColor(GHOST_COLOR);
+        buffer.addVertex(pose, minX, maxY, minZ).setColor(color);
+        buffer.addVertex(pose, maxX, maxY, minZ).setColor(color);
+        buffer.addVertex(pose, maxX, maxY, maxZ).setColor(color);
+        buffer.addVertex(pose, minX, maxY, maxZ).setColor(color);
         // -Z (north)
-        buffer.addVertex(pose, minX, minY, minZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, maxX, minY, minZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, maxX, maxY, minZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, minX, maxY, minZ).setColor(GHOST_COLOR);
+        buffer.addVertex(pose, minX, minY, minZ).setColor(color);
+        buffer.addVertex(pose, maxX, minY, minZ).setColor(color);
+        buffer.addVertex(pose, maxX, maxY, minZ).setColor(color);
+        buffer.addVertex(pose, minX, maxY, minZ).setColor(color);
         // +Z (south)
-        buffer.addVertex(pose, minX, minY, maxZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, minX, maxY, maxZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, maxX, maxY, maxZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, maxX, minY, maxZ).setColor(GHOST_COLOR);
+        buffer.addVertex(pose, minX, minY, maxZ).setColor(color);
+        buffer.addVertex(pose, minX, maxY, maxZ).setColor(color);
+        buffer.addVertex(pose, maxX, maxY, maxZ).setColor(color);
+        buffer.addVertex(pose, maxX, minY, maxZ).setColor(color);
         // -X (west)
-        buffer.addVertex(pose, minX, minY, minZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, minX, maxY, minZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, minX, maxY, maxZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, minX, minY, maxZ).setColor(GHOST_COLOR);
+        buffer.addVertex(pose, minX, minY, minZ).setColor(color);
+        buffer.addVertex(pose, minX, maxY, minZ).setColor(color);
+        buffer.addVertex(pose, minX, maxY, maxZ).setColor(color);
+        buffer.addVertex(pose, minX, minY, maxZ).setColor(color);
         // +X (east)
-        buffer.addVertex(pose, maxX, minY, minZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, maxX, minY, maxZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, maxX, maxY, maxZ).setColor(GHOST_COLOR);
-        buffer.addVertex(pose, maxX, maxY, minZ).setColor(GHOST_COLOR);
+        buffer.addVertex(pose, maxX, minY, minZ).setColor(color);
+        buffer.addVertex(pose, maxX, minY, maxZ).setColor(color);
+        buffer.addVertex(pose, maxX, maxY, maxZ).setColor(color);
+        buffer.addVertex(pose, maxX, maxY, minZ).setColor(color);
     }
 
     /**

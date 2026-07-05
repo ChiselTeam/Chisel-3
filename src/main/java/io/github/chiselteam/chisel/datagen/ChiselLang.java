@@ -71,6 +71,12 @@ public class ChiselLang extends LangHelper {
         addBuildingMode("axes", "Axes");
         addBuildingMode("planes", "Planes");
 
+        add("tooltip.chisel.builders_guide.mode_desc", "Shift + Right click to change Mode");
+        add("tooltip.chisel.builders_guide.length_desc", "Right click on North / South side to change Length");
+        add("tooltip.chisel.builders_guide.width_desc", "Right click on East / West side to change Width");
+        add("tooltip.chisel.builders_guide.height_desc", "Right click on Top / Bottom side to change Height");
+        add("tooltip.chisel.builders_guide.place_desc", "Right click with Block to Place in shape");
+
         add("stat.chisel.blocks_chiseled", "Blocks Chiseled");
     }
 

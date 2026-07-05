@@ -5,13 +5,14 @@ import io.github.chiselteam.chisel.registry.ChiselBlockEntities;
 import io.github.chiselteam.chisel.registry.ChiselBuildingModes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.Identifier;
+import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.storage.ValueOutput;
 import org.jspecify.annotations.NonNull;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -19,10 +20,11 @@ public class BuildersGuideBlockEntity extends BlockEntity {
 
     private static final int MIN_DIM = 1;
     private static final int MAX_DIM = 64;
-
     private int length = 8;
     private int width  = 8;
     private int height = 8;
+
+    private DyeColor color = DyeColor.WHITE;
 
     @NonNull
     private ChiselBuildingMode buildingMode = defaultMode();
@@ -71,6 +73,9 @@ public class BuildersGuideBlockEntity extends BlockEntity {
     public void setWidth (int value) { this.width  = clamp(value); markDirty(); }
     public void setHeight(int value) { this.height = clamp(value); markDirty(); }
 
+    public DyeColor getColor() { return color; }
+    public void setColor(DyeColor value) { this.color = value; markDirty(); }
+
     public @NonNull ChiselBuildingMode getBuildingMode() {
         return buildingMode;
     }
@@ -92,6 +97,13 @@ public class BuildersGuideBlockEntity extends BlockEntity {
         return buildingMode.getGhostBlocks(getBlockPos(), length, width, height);
     }
 
+    public void placeBlock(Block block) {
+        if (level != null) {
+            buildingMode.getGhostBlocks(getBlockPos(), length, width, height);
+            buildingMode.placeBlock(level, block);
+        }
+    }
+
     private static int clamp(int value) {
         return Math.clamp(value, MIN_DIM, MAX_DIM);
     }
@@ -106,11 +118,6 @@ public class BuildersGuideBlockEntity extends BlockEntity {
     private static @NonNull ChiselBuildingMode defaultMode() {
         return ChiselBuildingModes.REGISTRY.stream()
                 .findFirst()
-                .orElseGet(() -> new ChiselBuildingMode(Identifier.fromNamespaceAndPath("chisel", "empty")) {
-                    @Override
-                    protected List<BlockPos> generate(BlockPos origin, int length, int width, int height) {
-                        return Collections.singletonList(origin);
-                    }
-                });
+                .orElseGet(() -> new ChiselBuildingMode(Identifier.fromNamespaceAndPath("chisel", "empty")));
     }
 }

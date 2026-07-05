@@ -4062,5 +4062,10 @@
   "itemGroup.tabOtherChiselBlocks": "sʞɔoꞁᗺ ꞁǝsᴉɥƆ ɹǝɥʇO",
   "itemGroup.tabStoneChiselBlocks": "sʞɔoꞁᗺ ꞁǝsᴉɥƆ ǝuoʇS",
   "itemGroup.tabWoodChiselBlocks": "sʞɔoꞁᗺ ꞁǝsᴉɥƆ pooM",
-  "stat.chisel.blocks_chiseled": "pǝꞁǝsᴉɥƆ sʞɔoꞁᗺ"
+  "stat.chisel.blocks_chiseled": "pǝꞁǝsᴉɥƆ sʞɔoꞁᗺ",
+  "tooltip.chisel.builders_guide.height_desc": "ʇɥᵷᴉǝH ǝᵷuɐɥɔ oʇ ǝpᴉs ɯoʇʇoᗺ / do⟘ uo ʞɔᴉꞁɔ ʇɥᵷᴉᴚ",
+  "tooltip.chisel.builders_guide.length_desc": "ɥʇᵷuǝꞀ ǝᵷuɐɥɔ oʇ ǝpᴉs ɥʇnoS / ɥʇɹoN uo ʞɔᴉꞁɔ ʇɥᵷᴉᴚ",
+  "tooltip.chisel.builders_guide.mode_desc": "ǝpoW ǝᵷuɐɥɔ oʇ ʞɔᴉꞁɔ ʇɥᵷᴉᴚ + ʇɟᴉɥS",
+  "tooltip.chisel.builders_guide.place_desc": "ǝdɐɥs uᴉ ǝɔɐꞁԀ oʇ ʞɔoꞁᗺ ɥʇᴉʍ ʞɔᴉꞁɔ ʇɥᵷᴉᴚ",
+  "tooltip.chisel.builders_guide.width_desc": "ɥʇpᴉM ǝᵷuɐɥɔ oʇ ǝpᴉs ʇsǝM / ʇsɐƎ uo ʞɔᴉꞁɔ ʇɥᵷᴉᴚ"
 }

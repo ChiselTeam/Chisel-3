@@ -1,6 +1,7 @@
 package io.github.chiselteam.chisel.registry;
 
 import io.github.chiselteam.chisel.Chisel;
+import io.github.chiselteam.chisel.block.item.BuildersGuideBlockItem;
 import io.github.chiselteam.chisel.item.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -26,7 +27,7 @@ public class ChiselItems {
     public static DeferredItem<Item> UPGRADE_REVERSION = register("upgrade_reversion");
     public static DeferredItem<Item> UPGRADE_AUTOMATION = register("upgrade_automation");
     public static DeferredItem<Item> AUTO_CHISEL = ITEMS.registerItem("auto_chisel", p -> new BlockItem(ChiselBlocks.AUTO_CHISEL.get(), p), Item.Properties::new);
-    public static DeferredItem<Item> BUILDERS_GUIDE = ITEMS.registerItem("builders_guide", p -> new BlockItem(ChiselBlocks.BUILDERS_GUIDE.get(), p), Item.Properties::new);
+    public static DeferredItem<Item> BUILDERS_GUIDE = ITEMS.registerItem("builders_guide", p -> new BuildersGuideBlockItem(ChiselBlocks.BUILDERS_GUIDE.get(), p), Item.Properties::new);
 
     public static DeferredItem<Item> BALL_O_MOSS = register("ballomoss", BallOMossItem::new, Item.Properties::new);
     public static DeferredItem<Item> CLOUD_IN_A_BOTTLE = register("cloudinabottle", CloudInABottleItem::new, Item.Properties::new);

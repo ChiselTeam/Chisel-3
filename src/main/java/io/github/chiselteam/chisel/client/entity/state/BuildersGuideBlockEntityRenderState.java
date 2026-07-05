@@ -2,6 +2,7 @@ package io.github.chiselteam.chisel.client.entity.state;
 
 import net.minecraft.client.renderer.blockentity.state.BlockEntityRenderState;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.item.DyeColor;
 
 import java.util.Collections;
 import java.util.List;
@@ -16,4 +17,7 @@ public class BuildersGuideBlockEntityRenderState extends BlockEntityRenderState 
 
     /** World-space position of the {@code BuildersGuide} block itself. */
     public BlockPos origin = BlockPos.ZERO;
+
+    /** Ghost block color. */
+    public DyeColor color = DyeColor.WHITE;
 }
