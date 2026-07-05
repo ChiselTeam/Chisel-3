@@ -1,7 +1,6 @@
 package io.github.chiselteam.chisel.events;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.block.NoParticleWallTorchBlock;
 import io.github.chiselteam.chisel.core.mode.ChiselMode;
 import io.github.chiselteam.chisel.core.variant.VariantFamily;
 import io.github.chiselteam.chisel.datagen.ChiselBlockTags;

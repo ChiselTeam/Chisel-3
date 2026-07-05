@@ -44,12 +44,20 @@ public class AddLayersEventHandler {
     @SubscribeEvent
     public static void registerRenderStateModifiers(RegisterRenderStateModifiersEvent event) {
         Map<UUID, ItemLike> VIPS = new HashMap<>();
-        VIPS.put(UUID.fromString("a7529984-8cb2-4fb9-b799-97980f770101"), ChiselItems.CHISEL_OBSIDIAN);
+        // Devs
+        VIPS.put(UUID.fromString("a7529984-8cb2-4fb9-b799-97980f770101"), ChiselItems.CHISEL_OBSIDIAN); // Cricket
 
-        VIPS.put(UUID.fromString("e350ef68-2feb-4127-b0ce-611e5304685a"), ChiselItems.CHISEL_DIAMOND);
+        // Artists
+        VIPS.put(UUID.fromString("e350ef68-2feb-4127-b0ce-611e5304685a"), ChiselItems.CHISEL_DIAMOND); // Cebularz
+        VIPS.put(UUID.fromString("5399b615-3440-4c66-939d-ab1375952ac3"), ChiselItems.CHISEL_DIAMOND); // Drullkus
 
-        VIPS.put(UUID.fromString("d1af5f04-c4cc-486f-b187-fcb0a745bda6"), ChiselItems.CHISEL_IRON);
-        VIPS.put(UUID.fromString("ba6efe89-0b84-4c5d-9f0e-b42edef10d6a"), ChiselItems.CHISEL_IRON);
+        // Gallery
+        VIPS.put(UUID.fromString("ba1dd62a-00ac-4c18-bb91-1e02ed4b65d8"), ChiselItems.CHISEL_DIAMOND); // Buddy610
+
+        // Community
+        VIPS.put(UUID.fromString("d1af5f04-c4cc-486f-b187-fcb0a745bda6"), ChiselItems.CHISEL_IRON); // BeanxxBot
+        VIPS.put(UUID.fromString("ba6efe89-0b84-4c5d-9f0e-b42edef10d6a"), ChiselItems.CHISEL_IRON); // NightRhyme45747
+
 
         event.registerAvatarEntityModifier(new AvatarRenderStateModifier() {
             @Override
