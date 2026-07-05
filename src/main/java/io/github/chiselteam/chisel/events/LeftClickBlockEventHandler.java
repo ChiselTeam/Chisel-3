@@ -1,6 +1,7 @@
 package io.github.chiselteam.chisel.events;
 
 import io.github.chiselteam.chisel.Chisel;
+import io.github.chiselteam.chisel.block.NoParticleWallTorchBlock;
 import io.github.chiselteam.chisel.core.mode.ChiselMode;
 import io.github.chiselteam.chisel.core.variant.VariantFamily;
 import io.github.chiselteam.chisel.datagen.ChiselBlockTags;
@@ -56,6 +57,10 @@ public class LeftClickBlockEventHandler {
             VariantFamily family = VariantFinder.getFamilyForBlock(state.getBlock(), level.registryAccess());
 
             if(family != null) {
+                if (family.getFamilyName().equals("torch")) {
+                    return;
+                }
+
                 long time = level.getGameTime();
                 if (LAST_CHISEL_TIME.getUnchecked(player) > time - 4) {
                     event.setCanceled(true);
