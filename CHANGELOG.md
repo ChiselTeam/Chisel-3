@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [26.1.2.14]
+
+### Fixed
+- **Fluid Interaction**: Removed logging.
+
 ## [26.1.2.13]
 
 ### Added
@@ -29,7 +34,7 @@ All notable changes to this project will be documented in this file.
 - **Neovitae**: Added the Neovitae block family with a full set of variants (Arranged, Bricks, Carved, Classic, etc.).
 
 ### Changed
-- **CTM is now a Library**: CTM is now it's own library mod
+- **CTM is now a Library**: CTM is now its own library mod
 
 ## [3.0.11]
 
@@ -69,7 +74,7 @@ All notable changes to this project will be documented in this file.
 - The standalone **Carpet** family has been retired; carpet variants are now handled through the wool/vanilla path.
 
 ### Fixed
-- Various rendering fixes across the connecting-texture system, surfaced while building out the new R/V variants and the Offset Tool overlay.
+- Various rendering fixes across the connecting-texture system surfaced while building out the new R/V variants and the Offset Tool overlay.
 
 ## [3.0.9]
 

@@ -1,6 +1,5 @@
 package io.github.chiselteam.chisel.registry;
 
-import io.github.chiselteam.chisel.Chisel;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.LevelEvent;
@@ -10,7 +9,6 @@ import net.neoforged.neoforge.fluids.FluidInteractionRegistry;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.Supplier;
-import java.util.logging.Logger;
 
 public class ChiselFluidInteractions {
 
@@ -26,10 +24,7 @@ public class ChiselFluidInteractions {
                         (level, _, pos, _) -> {
                             var check = LiquidBlock.POSSIBLE_FLOW_DIRECTIONS.stream().iterator();
                             AtomicBoolean waterCheck = new AtomicBoolean(false);
-                            check.forEachRemaining(direction -> {
-                                Logger.getLogger(Chisel.MODID).info(String.valueOf(level.getFluidState(pos.relative(direction))));
-                                waterCheck.set(waterCheck.get() || level.getFluidState(pos.relative(direction)).is(FluidTags.WATER));
-                            });
+                            check.forEachRemaining(direction -> waterCheck.set(waterCheck.get() || level.getFluidState(pos.relative(direction)).is(FluidTags.WATER)));
                             return waterCheck.get() && level.getBlockState(pos.below()).is(block.get());
                         },
                         (level, _, relativePos, _) -> {
