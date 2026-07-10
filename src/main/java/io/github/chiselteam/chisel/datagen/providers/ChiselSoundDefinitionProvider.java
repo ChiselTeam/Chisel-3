@@ -20,7 +20,7 @@ public class ChiselSoundDefinitionProvider extends SoundDefinitionsProvider {
     @Override
     public void registerSounds() {
         add(ChiselSounds.FALLBACK, SoundDefinition.definition()
-                .with(sound(Chisel.prefix("io/github/chiselteam/chisel/fallback")))
+                .with(sound(Chisel.prefix("chisel/fallback")))
         );
 
         add(ChiselSounds.WOOD, SoundDefinition.definition()

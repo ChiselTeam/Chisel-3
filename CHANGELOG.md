@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [26.1.2.15]
+
+### Fixed
+- **Sound**: Fixed fallback sound.
+- 
 ## [26.1.2.14]
 
 ### Fixed
