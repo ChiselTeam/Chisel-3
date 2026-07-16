@@ -57,6 +57,7 @@ public class AddLayersEventHandler {
         // Community
         VIPS.put(UUID.fromString("d1af5f04-c4cc-486f-b187-fcb0a745bda6"), ChiselItems.CHISEL_IRON); // BeanxxBot
         VIPS.put(UUID.fromString("ba6efe89-0b84-4c5d-9f0e-b42edef10d6a"), ChiselItems.CHISEL_IRON); // NightRhyme45747
+        VIPS.put(UUID.fromString("8131ab4b-4b9e-4f50-9fee-7c2e47f2e29c"), ChiselItems.CHISEL_IRON); // Splurkz
 
 
         event.registerAvatarEntityModifier(new AvatarRenderStateModifier() {
