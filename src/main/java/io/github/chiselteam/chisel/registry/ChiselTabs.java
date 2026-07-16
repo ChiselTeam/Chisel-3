@@ -29,6 +29,7 @@ public class ChiselTabs {
                     ChiselBlocks.CONCRETE.getFamily(),
                     ChiselBlocks.BASALT.getFamily(),
                     ChiselBlocks.DIORITE.getFamily(),
+                    ChiselBlocks.DEEPSLATE.getFamily(),
                     ChiselBlocks.END_STONE.getFamily(),
                     ChiselBlocks.GRANITE.getFamily(),
                     ChiselBlocks.GRIMSTONE.getFamily(),

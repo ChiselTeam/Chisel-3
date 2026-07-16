@@ -89,6 +89,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselBlocks.COPPER.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselBlocks.DIAMOND.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselBlocks.DIORITE.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselBlocks.DEEPSLATE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselBlocks.ELECTRUM.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselBlocks.EMERALD.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselBlocks.END_STONE.getFamily());

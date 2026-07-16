@@ -50,6 +50,7 @@ public class ChiselBlocks {
     public static final BasaltFamily BASALT = new BasaltFamily(Properties.ofFullCopy(Blocks.STONE));
     public static final DiamondFamily DIAMOND = new DiamondFamily(Properties.ofFullCopy(Blocks.DIAMOND_BLOCK));
     public static final DioriteFamily DIORITE = new DioriteFamily(Properties.ofFullCopy(Blocks.DIORITE));
+    public static final DeepslateFamily DEEPSLATE = new DeepslateFamily(Properties.ofFullCopy(Blocks.DEEPSLATE));
     public static final DirtFamily DIRT = new DirtFamily(Properties.ofFullCopy(Blocks.DIRT));
     public static final ElectrumFamily ELECTRUM = new ElectrumFamily(Properties.ofFullCopy(Blocks.IRON_BLOCK));
     public static final EmeraldFamily EMERALD = new EmeraldFamily(Properties.ofFullCopy(Blocks.EMERALD_BLOCK));
@@ -209,7 +210,7 @@ public class ChiselBlocks {
         List<ChiselFamily> blocks = new ArrayList<>(List.of(
                 ACACIA, ALUMINUM, ANCIENT_STONE, ANDESITE, ANTIBLOCK, ARCANE, BAMBOO, BIRCH, BOOKSHELF, BRICKS, BRONZE,
                 CERTUS, CHARCOAL, CLOUD, COAL, COAL_COKE, COBALT, COBBLESTONE, CONCRETE, COPPER, CRIMSON, WARPED, DARK_OAK, CHERRY, BASALT,
-                DIAMOND, DIORITE, DIRT, ELECTRUM, EMERALD, END_STONE, ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLASS, GLASS_PANE,
+                DIAMOND, DIORITE, DEEPSLATE, DIRT, ELECTRUM, EMERALD, END_STONE, ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLASS, GLASS_PANE,
                 GLOWSTONE, GOLD, GRANITE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, INVAR, IRON, IRON_BARS, JACK_O_LANTERN,
                 JUNGLE, MANGROVE, LABORATORY, LAPIS, LAVASTONE, LEAD, LEAF, LIMESTONE, MAGMA, MARBLE, MILITARY, MOSSY_COBBLESTONE,
                 MOSSY_TEMPLE, NEOVITAE, NETHERBRICK, NETHERRACK, NICKEL, OAK, PALE_OAK, OBSIDIAN, PAPERWALL, PLATINUM, PRISMARINE, PUMPKIN,
