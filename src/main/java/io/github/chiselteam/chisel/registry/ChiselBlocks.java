@@ -5,6 +5,14 @@ import io.github.chiselteam.chisel.block.AutoChiselBlock;
 import io.github.chiselteam.chisel.block.BuildersGuideBlock;
 import io.github.chiselteam.chisel.block.ConnectedTextureBlock;
 import io.github.chiselteam.chisel.block.family.*;
+import io.github.chiselteam.chisel.block.family.compat.*;
+import io.github.chiselteam.chisel.block.family.materials.*;
+import io.github.chiselteam.chisel.block.family.materials.copper.CopperFamily;
+import io.github.chiselteam.chisel.block.family.materials.copper.ExposedCopperFamily;
+import io.github.chiselteam.chisel.block.family.materials.copper.OxidizedCopperFamily;
+import io.github.chiselteam.chisel.block.family.materials.copper.WeatheredCopperFamily;
+import io.github.chiselteam.chisel.block.family.stone.*;
+import io.github.chiselteam.chisel.block.family.wood.*;
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
@@ -43,6 +51,9 @@ public class ChiselBlocks {
     public static final CobblestoneFamily COBBLESTONE = new CobblestoneFamily(Properties.ofFullCopy(Blocks.COBBLESTONE));
     public static final ConcreteFamily CONCRETE = new ConcreteFamily(Properties.ofFullCopy(Blocks.WHITE_CONCRETE));
     public static final CopperFamily COPPER = new CopperFamily(Properties.ofFullCopy(Blocks.COPPER_BLOCK));
+    public static final ExposedCopperFamily EXPOSED_COPPER = new ExposedCopperFamily(Properties.ofFullCopy(Blocks.EXPOSED_COPPER));
+    public static final WeatheredCopperFamily WEATHERED_COPPER = new WeatheredCopperFamily(Properties.ofFullCopy(Blocks.WEATHERED_COPPER));
+    public static final OxidizedCopperFamily OXIDIZED_COPPER = new OxidizedCopperFamily(Properties.ofFullCopy(Blocks.OXIDIZED_COPPER));
     public static final CrimsonFamily CRIMSON = new CrimsonFamily(Properties.ofFullCopy(Blocks.CRIMSON_PLANKS));
     public static final WarpedFamily WARPED = new WarpedFamily(Properties.ofFullCopy(Blocks.WARPED_PLANKS));
     public static final DarkOakFamily DARK_OAK = new DarkOakFamily(Properties.ofFullCopy(Blocks.DARK_OAK_PLANKS));
@@ -209,10 +220,10 @@ public class ChiselBlocks {
     public static List<ChiselFamily> getBlocks() {
         List<ChiselFamily> blocks = new ArrayList<>(List.of(
                 ACACIA, ALUMINUM, ANCIENT_STONE, ANDESITE, ANTIBLOCK, ARCANE, BAMBOO, BIRCH, BOOKSHELF, BRICKS, BRONZE,
-                CERTUS, CHARCOAL, CLOUD, COAL, COAL_COKE, COBALT, COBBLESTONE, CONCRETE, COPPER, CRIMSON, WARPED, DARK_OAK, CHERRY, BASALT,
-                DIAMOND, DIORITE, DEEPSLATE, DIRT, ELECTRUM, EMERALD, END_STONE, ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLASS, GLASS_PANE,
-                GLOWSTONE, GOLD, GRANITE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, INVAR, IRON, IRON_BARS, JACK_O_LANTERN,
-                JUNGLE, MANGROVE, LABORATORY, LAPIS, LAVASTONE, LEAD, LEAF, LIMESTONE, MAGMA, MARBLE, MILITARY, MOSSY_COBBLESTONE,
+                CERTUS, CHARCOAL, CLOUD, COAL, COAL_COKE, COBALT, COBBLESTONE, CONCRETE, COPPER, EXPOSED_COPPER, WEATHERED_COPPER, OXIDIZED_COPPER,
+                CRIMSON, WARPED, DARK_OAK, CHERRY, BASALT, DIAMOND, DIORITE, DEEPSLATE, DIRT, ELECTRUM, EMERALD, END_STONE, ENERGIZED_VOIDSTONE,
+                FACTORY, FUTURA, GLASS, GLASS_PANE, GLOWSTONE, GOLD, GRANITE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, INVAR, IRON, IRON_BARS,
+                JACK_O_LANTERN, JUNGLE, MANGROVE, LABORATORY, LAPIS, LAVASTONE, LEAD, LEAF, LIMESTONE, MAGMA, MARBLE, MILITARY, MOSSY_COBBLESTONE,
                 MOSSY_TEMPLE, NEOVITAE, NETHERBRICK, NETHERRACK, NICKEL, OAK, PALE_OAK, OBSIDIAN, PAPERWALL, PLATINUM, PRISMARINE, PUMPKIN,
                 PURPUR, RED_SANDSTONE, REDSTONE, REDSTONE_LAMP, ROAD_LINE, SANDSTONE, SHINGLE, SILVER, SPRUCE, STEEL,
                 STONE_BRICKS, TALLOW, TECHNICAL, TEMPLE, TERRACOTTA, THAUMIUM, TIN, TORCH, TYRIAN, URANIUM, VALENTINES,

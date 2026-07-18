@@ -1,0 +1,8 @@
+{
+  "blocks": [
+    "chisel:copper_crate",
+    "chisel:exposed_copper_crate",
+    "chisel:weathered_copper_crate",
+    "chisel:oxidized_copper_crate"
+  ]
+}

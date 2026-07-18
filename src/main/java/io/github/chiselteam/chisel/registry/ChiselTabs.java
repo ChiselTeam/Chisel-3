@@ -84,6 +84,9 @@ public class ChiselTabs {
             .displayItems((_, output) -> List.of(
                     ChiselBlocks.FACTORY.getFamily(),
                     ChiselBlocks.COPPER.getFamily(),
+                            ChiselBlocks.EXPOSED_COPPER.getFamily(),
+                            ChiselBlocks.WEATHERED_COPPER.getFamily(),
+                            ChiselBlocks.OXIDIZED_COPPER.getFamily(),
                     ChiselBlocks.FUTURA.getFamily(),
                     ChiselBlocks.GOLD.getFamily(),
                     ChiselBlocks.HEX_PLATING.getFamily(),
