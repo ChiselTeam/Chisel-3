@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.Property;
 import org.jspecify.annotations.NonNull;
 
-public class WeatheringBlock extends Block {
+public class WeatheringBlock extends ConnectedTextureBlock {
 
     public WeatheringBlock(Properties properties) {
         super(properties);

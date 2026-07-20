@@ -35,7 +35,7 @@ public class RoadlineBlock extends HorizontalDirectionalBlock {
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.@NonNull Builder<Block, BlockState> builder) {
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
         builder.add(FACING);
     }

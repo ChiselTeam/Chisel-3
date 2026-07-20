@@ -4275,6 +4275,7 @@
   "chisel.preview.plus": "Plus",
   "chisel.preview.row": "Row",
   "chisel.preview.single": "Single",
+  "config.jade.plugin_chisel.jade_plugin": "Chisel Descriptions",
   "container.auto_chisel": "Auto Chisel",
   "container.chisel": "Chisel",
   "item.chisel.auto_chisel": "Auto Chisel",

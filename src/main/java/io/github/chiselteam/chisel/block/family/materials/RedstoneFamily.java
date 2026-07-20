@@ -1,9 +1,8 @@
 package io.github.chiselteam.chisel.block.family.materials;
 
+import io.github.chiselteam.chisel.block.ChiselPoweredBlock;
 import io.github.chiselteam.chisel.block.util.ChiselFamily;
 import io.github.chiselteam.chisel.util.LangHelper;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.PoweredBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.CONNECTED;
@@ -12,25 +11,24 @@ import static io.github.chiselteam.chisel.registry.ChiselModelHandlers.TBS;
 public class RedstoneFamily extends ChiselFamily {
     public RedstoneFamily(BlockBehaviour.Properties props) {
         family = builder("redstone")
-                .addVariant(Blocks.REDSTONE_BLOCK)
-                .addVariant("redstone_bricks", PoweredBlock::new, () -> props)
-                .addVariant("redstone_bricks_chaotic", PoweredBlock::new, () -> props)
-                .addVariant("redstone_bricks_small", PoweredBlock::new, () -> props)
-                .addVariant("redstone_chiseled", PoweredBlock::new, () -> props, TBS)
-                .addVariant("redstone_chunk", PoweredBlock::new, () -> props)
-                .addVariant("redstone_circuit", PoweredBlock::new, () -> props)
-                .addVariant("redstone_circuit_supaplex", PoweredBlock::new, () -> props)
-                .addVariant("redstone_ere", PoweredBlock::new, () -> props)
-                .addVariant("redstone_greek", PoweredBlock::new, () -> props)
-                .addVariant("redstone_large", PoweredBlock::new, () -> props, CONNECTED)
-                .addVariant("redstone_pillar", PoweredBlock::new, () -> props, TBS)
-                .addVariant("redstone_skulls", PoweredBlock::new, () -> props)
-                .addVariant("redstone_small", PoweredBlock::new, () -> props)
-                .addVariant("redstone_smooth", PoweredBlock::new, () -> props)
-                .addVariant("redstone_solid", PoweredBlock::new, () -> props)
-                .addVariant("redstone_tiles", PoweredBlock::new, () -> props)
-                .addVariant("redstone_tiles_ornate", PoweredBlock::new, () -> props)
-                .addVariant("redstone_zelda", PoweredBlock::new, () -> props)
+                .addVariant("redstone_bricks", ChiselPoweredBlock::new, () -> props)
+                .addVariant("redstone_bricks_chaotic", ChiselPoweredBlock::new, () -> props)
+                .addVariant("redstone_bricks_small", ChiselPoweredBlock::new, () -> props)
+                .addVariant("redstone_chiseled", ChiselPoweredBlock::new, () -> props, TBS)
+                .addVariant("redstone_chunk", ChiselPoweredBlock::new, () -> props)
+                .addVariant("redstone_circuit", ChiselPoweredBlock::new, () -> props)
+                .addVariant("redstone_circuit_supaplex", ChiselPoweredBlock::new, () -> props)
+                .addVariant("redstone_ere", ChiselPoweredBlock::new, () -> props)
+                .addVariant("redstone_greek", ChiselPoweredBlock::new, () -> props)
+                .addVariant("redstone_large", ChiselPoweredBlock::new, () -> props, CONNECTED)
+                .addVariant("redstone_pillar", ChiselPoweredBlock::new, () -> props, TBS)
+                .addVariant("redstone_skulls", ChiselPoweredBlock::new, () -> props)
+                .addVariant("redstone_small", ChiselPoweredBlock::new, () -> props)
+                .addVariant("redstone_smooth", ChiselPoweredBlock::new, () -> props)
+                .addVariant("redstone_solid", ChiselPoweredBlock::new, () -> props)
+                .addVariant("redstone_tiles", ChiselPoweredBlock::new, () -> props)
+                .addVariant("redstone_tiles_ornate", ChiselPoweredBlock::new, () -> props)
+                .addVariant("redstone_zelda", ChiselPoweredBlock::new, () -> props)
                 .family();
     }
 

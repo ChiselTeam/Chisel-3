@@ -1,4 +1,4 @@
-package io.github.chiselteam.chisel.integration;
+package io.github.chiselteam.chisel.integration.jei;
 
 import io.github.chiselteam.chisel.core.variant.VariantFamily;
 import net.minecraft.core.HolderLookup;

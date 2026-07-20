@@ -1,4 +1,4 @@
-package io.github.chiselteam.chisel.integration;
+package io.github.chiselteam.chisel.integration.jei;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.datagen.ChiselVariants;

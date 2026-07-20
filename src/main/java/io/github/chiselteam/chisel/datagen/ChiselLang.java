@@ -78,6 +78,8 @@ public class ChiselLang extends LangHelper {
         add("tooltip.chisel.builders_guide.place_desc", "Right click with Block to Place in shape");
 
         add("stat.chisel.blocks_chiseled", "Blocks Chiseled");
+
+        add("config.jade.plugin_chisel.jade_plugin", "Chisel Descriptions");
     }
 
     private void addTabs() {
