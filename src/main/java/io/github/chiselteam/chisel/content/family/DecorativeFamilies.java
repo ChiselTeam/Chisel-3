@@ -12,7 +12,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import java.util.List;
 
 public class DecorativeFamilies {
-    public static final ChiselFamily C_CONCRETE, CHARCOAL, CLOUD, COAL, COAL_COKE, DIRT, ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLOWSTONE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, LABORATORY, LAVASTONE, LEAF, MAGMA, MILITARY, MOSSY_BLACKSTONE, MOSSY_TEMPLE, PAPERWALL, REDSTONE, RESIN, SEA_LANTERN, SHINGLE, TECHNICAL, TEMPLE, TERRACOTTA, TYRIAN, VALENTINES, VOIDSTONE, WARNING, WATERSTONE, WOOLEN_CLAY;
+    public static final ChiselFamily LIMINAL, LAMP, KITCHEN, NEXUS, C_CONCRETE, CHARCOAL, CLOUD, COAL, COAL_COKE, DIRT, ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLOWSTONE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, LABORATORY, LAVASTONE, LEAF, MAGMA, MILITARY, MOSSY_BLACKSTONE, MOSSY_TEMPLE, PAPERWALL, REDSTONE, RESIN, SEA_LANTERN, SHINGLE, TECHNICAL, TEMPLE, TERRACOTTA, TYRIAN, VALENTINES, VOIDSTONE, WARNING, WATERSTONE, WOOLEN_CLAY;
     private static final List<ChiselFamily> FAMILIES;
 
     static {
@@ -481,72 +481,7 @@ public class DecorativeFamilies {
         MOSSY_BLACKSTONE = ChiselFamily.build("mossy_blackstone", builder -> builder
                 .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACKSTONE))
                 .addVariant("mossy_blackstone").translation("mossy_blackstone", "Mossy Blackstone", "Mossy Blackstone")
-                // .addVariant("mossy_blackstone_array", ChiselModelHandlers.MULTIBLOCK_2X2)
-                // .addVariant("mossy_blackstone_braid")
-                // .addVariant("mossy_blackstone_bricks_indent")
-                // .addVariant("mossy_blackstone_bricks_inlayed")
-                // .addVariant("mossy_blackstone_bricks_large", ChiselModelHandlers.MULTIBLOCK_2X2)
-                // .addVariant("mossy_blackstone_bricks_vertical")
-                // .addVariant("mossy_blackstone_chaotic", ChiselModelHandlers.MULTIBLOCK_3X3)
-                // .addVariant("mossy_blackstone_chaotic_medium")
-                // .addVariant("mossy_blackstone_chaotic_small")
-                // .addVariant("mossy_blackstone_checker")
-                // .addVariant("mossy_blackstone_checker_small")
-                // .addVariant("mossy_blackstone_circular", ChiselModelHandlers.CONNECTED)
-                // .addVariant("mossy_blackstone_cobble")
-                // .addVariant("mossy_blackstone_bricks_cracked")
-                // .addVariant("mossy_blackstone_cuts", ChiselModelHandlers.MULTIBLOCK_4X4)
-                // .addVariant("mossy_blackstone_dent", ChiselModelHandlers.CONNECTED)
-                // .addVariant("mossy_blackstone_bricks_encased", ChiselModelHandlers.CONNECTED)
-                // .addVariant("mossy_blackstone_french_1")
-                // .addVariant("mossy_blackstone_french_2")
-                // .addVariant("mossy_blackstone_indent", ChiselModelHandlers.CONNECTED)
-                // .addVariant("mossy_blackstone_jellybean", ChiselModelHandlers.MULTIBLOCK_2X2)
-                // .addVariant("mossy_blackstone_layers")
-                // .addVariant("mossy_blackstone_line_horizontal")
-                // .addVariant("mossy_blackstone_line_vertical")
-                // .addVariant("mossy_blackstone_meander_horizontal", ChiselModelHandlers.CTMH)
-                // .addVariant("mossy_blackstone_meander_vertical", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_mosaic", ChiselModelHandlers.CONNECTED)
-                // .addVariant("mossy_blackstone_ornate_small")
-                // .addVariant("mossy_blackstone_panel")
-                // .addVariant("mossy_blackstone_pillar", ChiselModelHandlers.TBS)
-                // .addVariant("mossy_blackstone_pillar_basic", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_pillar_basic_dent", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_pillar_basic_plain", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_pillar_basic_round", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_pillar_basic_spiral", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_pillar_classic", ChiselModelHandlers.TBS)
-                // .addVariant("mossy_blackstone_pillar_classic_large", ChiselModelHandlers.TBS)
-                // .addVariant("mossy_blackstone_pillar_ionic", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_pillar_ionic_dent", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_pillar_ionic_plain", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_pillar_ionic_round", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_pillar_ionic_spiral", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_pillar_large_basic_triple", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_pillar_large_ionic_triple", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_pillar_meander", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_pillar_meander_dent", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_pillar_meander_plain", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_pillar_meander_round", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_pillar_meander_spiral", ChiselModelHandlers.CTMV)
-                // .addVariant("mossy_blackstone_plate", ChiselModelHandlers.CONNECTED)
-                // .addVariant("mossy_blackstone_polished")
-                // .addVariant("mossy_blackstone_prism")
-                // .addVariant("mossy_blackstone_raw")
-                // .addVariant("mossy_blackstone_road")
-                // .addVariant("mossy_blackstone_slanted", ChiselModelHandlers.MULTIBLOCK_2X2)
-                // .addVariant("mossy_blackstone_bricks_small")
-                // .addVariant("mossy_blackstone_bricks_soft")
-                // .addVariant("mossy_blackstone_bricks_solid")
-                // .addVariant("mossy_blackstone_border_square", ChiselModelHandlers.CONNECTED)
-                // .addVariant("mossy_blackstone_tiles_large", ChiselModelHandlers.CONNECTED)
-                // .addVariant("mossy_blackstone_tiles")
-                // .addVariant("mossy_blackstone_tiles_small")
-                // .addVariant("mossy_blackstone_bricks_triple")
-                // .addVariant("mossy_blackstone_twisted", ChiselModelHandlers.TBS)
-                // .addVariant("mossy_blackstone_weaver", ChiselModelHandlers.CONNECTED)
-                // .addVariant("mossy_blackstone_zag", ChiselModelHandlers.MULTIBLOCK_2X2)
+                
                 .build());
 
         MOSSY_TEMPLE = ChiselFamily.build("mossy_temple", builder -> builder
@@ -938,12 +873,62 @@ public class DecorativeFamilies {
                 .addVariant("woolen_clay_15").translation("woolen_clay_15", "Woolen Clay", "Black Woolen Clay")
                 .build());
 
+        NEXUS = ChiselFamily.build("nexus", builder -> builder
+                .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(3.0F, 5.0F).lightLevel((_) -> 10))
+                .addVariant("nexus_core").translation("nexus_core", "Nexus Block", "Nexus Core")
+                .addVariant("nexus_grate_pillar", ChiselModelHandlers.TBS).translation("nexus_grate_pillar", "Nexus Block", "Nexus Grate Pillar")
+                .addVariant("nexus_junction").translation("nexus_junction", "Nexus Block", "Nexus Junction")
+                .addVariant("nexus_link").translation("nexus_link", "Nexus Block", "Nexus Link")
+                .addVariant("nexus_path", ChiselModelHandlers.CONNECTED).translation("nexus_path", "Nexus Block", "Nexus Path")
+                .addVariant("nexus_plate").translation("nexus_plate", "Nexus Block", "Nexus Plate")
+                .addVariant("nexus_plating_pillar", ChiselModelHandlers.TBS).translation("nexus_plating_pillar", "Nexus Block", "Nexus Plating Pillar")
+                .addVariant("nexus_weave_pillar", ChiselModelHandlers.TBS).translation("nexus_weave_pillar", "Nexus Block", "Nexus Weave Pillar")
+                .addVariant("nexus_railing_pillar", ChiselModelHandlers.CTMV).translation("nexus_railing_pillar", "Nexus Block", "Nexus Railing Pillar")
+                .build());
+
+        KITCHEN = ChiselFamily.build("kitchen", builder -> builder
+                .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE))
+                .addVariant("kitchen_checker").translation("kitchen_checker", "Kitchen Block", "Checker Kitchen")
+                .addVariant("kitchen_checker_small").translation("kitchen_checker_small", "Kitchen Block", "Checker Small Kitchen")
+                .addVariant("kitchen_checker_large", ChiselModelHandlers.V4).translation("kitchen_checker_large", "Kitchen Block", "Checker Large Kitchen")
+                .addVariant("kitchen_diamond").translation("kitchen_diamond", "Kitchen Block", "Diamond Kitchen")
+                .addVariant("kitchen_diamond_2").translation("kitchen_diamond_2", "Kitchen Block", "Diamond Kitchen")
+                .addVariant("kitchen_encaustic").translation("kitchen_encaustic", "Kitchen Block", "Encaustic Kitchen")
+                .addVariant("kitchen_frame").translation("kitchen_frame", "Kitchen Block", "Frame Kitchen")
+                .addVariant("kitchen_frame_connected", ChiselModelHandlers.CONNECTED).translation("kitchen_frame_connected", "Kitchen Block", "Frame Kitchen Connected")
+                .addVariant("kitchen_grid_encased_connected", ChiselModelHandlers.CONNECTED).translation("kitchen_grid_encased_connected", "Kitchen Block", "Encased Grid Kitchen Connected")
+                .addVariant("kitchen_stripes", ChiselModelHandlers.CONNECTED).translation("kitchen_stripes", "Kitchen Block", "Stripes Kitchen")
+                .addVariant("kitchen_stripes_encased_connected", ChiselModelHandlers.CONNECTED).translation("kitchen_stripes_encased_connected", "Kitchen Block", "Encased Stripes Kitchen Connected")
+                .addVariant("kitchen_stripes_small").translation("kitchen_stripes_small", "Kitchen Block", "Small Stripes Kitchen")
+                .addVariant("kitchen_stripes_small_encased_connected", ChiselModelHandlers.CONNECTED).translation("kitchen_stripes_small_encased_connected", "Kitchen Block", "Encased Small Stripes Kitchen Connected")
+                .build());
+
+        LAMP = ChiselFamily.build("lamp", builder -> builder
+                .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.SEA_LANTERN))
+                .addVariant("lamp").translation("lamp", "Lamp", "Lamp")
+                .build());
+
+        LIMINAL = ChiselFamily.build("liminal", builder -> builder
+                .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE))
+                .addVariant("liminal_wall_1").translation("liminal_wall_1", "Liminal Block", "Liminal Wall 1")
+                .addVariant("liminal_wall_2").translation("liminal_wall_2", "Liminal Block", "Liminal Wall 2")
+                .addVariant("liminal_wall_3").translation("liminal_wall_3", "Liminal Block", "Liminal Wall 3")
+                .addVariant("liminal_carpet_1").translation("liminal_carpet_1", "Liminal Block", "Liminal Carpet 1")
+                .addVariant("liminal_carpet_2", ChiselModelHandlers.MULTI_LAYER_CONNECTED).translation("liminal_carpet_2", "Liminal Block", "Liminal Carpet 2")
+                .addVariant("liminal_carpet_3").translation("liminal_carpet_3", "Liminal Block", "Liminal Carpet 3")
+                .addVariant("liminal_carpet_4", ChiselModelHandlers.V16).translation("liminal_carpet_4", "Liminal Block", "Liminal Carpet 4")
+                .addVariant("liminal_carpet_5", ChiselModelHandlers.V16).translation("liminal_carpet_5", "Liminal Block", "Liminal Carpet 5")
+                .addVariant("liminal_ceiling_1").translation("liminal_ceiling_1", "Liminal Block", "Liminal Ceiling 1")
+                .addVariant("liminal_ceiling_2").translation("liminal_ceiling_2", "Liminal Block", "Liminal Ceiling 2")
+                .addVariant("liminal_tiles_1").translation("liminal_tiles_1", "Liminal Block", "Liminal Tiles 1")
+                .build());
+
         FAMILIES = List.of(
                 C_CONCRETE, CHARCOAL, CLOUD, COAL, COAL_COKE, DIRT, ENERGIZED_VOIDSTONE, FACTORY,
                 FUTURA, GLOWSTONE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, LABORATORY, LAVASTONE,
                 LEAF, MAGMA, MILITARY, MOSSY_BLACKSTONE, MOSSY_TEMPLE, PAPERWALL, REDSTONE, RESIN,
                 SEA_LANTERN, SHINGLE, TECHNICAL, TEMPLE, TERRACOTTA, TYRIAN, VALENTINES, VOIDSTONE,
-                WARNING, WATERSTONE, WOOLEN_CLAY
+                WARNING, WATERSTONE, WOOLEN_CLAY, NEXUS, KITCHEN, LAMP, LIMINAL
         );
     }
 

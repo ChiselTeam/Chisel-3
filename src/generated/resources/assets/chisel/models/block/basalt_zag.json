@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/basalt/basalt_zag",
-    "overlay_2x2": "chisel:block/basalt/basalt_zag-ctm",
+    "overlay_2x2": "chisel:block/basalt/basalt_zag-v4",
     "particle": "chisel:block/basalt/basalt_zag"
   }
 }

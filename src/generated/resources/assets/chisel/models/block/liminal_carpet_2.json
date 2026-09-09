@@ -1,0 +1,12 @@
+{
+  "parent": "chisel:block/cube_multi_pass_no_glow",
+  "textures": {
+    "all": "chisel:block/liminal/liminal_carpet_2",
+    "base_texture": "chisel:block/liminal/liminal_carpet_2-bg",
+    "layer0": "chisel:block/liminal/liminal_carpet_2-bg",
+    "layer1": "chisel:block/liminal/liminal_carpet_2",
+    "overlay_connected": "chisel:block/liminal/liminal_carpet_2-ctm",
+    "overlay_texture": "chisel:block/liminal/liminal_carpet_2",
+    "particle": "chisel:block/liminal/liminal_carpet_2"
+  }
+}

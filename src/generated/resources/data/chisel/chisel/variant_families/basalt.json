@@ -20,8 +20,60 @@
       "name": "basalt_array"
     },
     {
+      "block": "chisel:basalt_border_square",
+      "model_type": "connected",
+      "name": "basalt_border_square"
+    },
+    {
       "block": "chisel:basalt_braid",
       "name": "basalt_braid"
+    },
+    {
+      "block": "chisel:basalt_braid_encased",
+      "model_type": "connected",
+      "name": "basalt_braid_encased"
+    },
+    {
+      "block": "chisel:basalt_cracked_bricks",
+      "name": "basalt_cracked_bricks"
+    },
+    {
+      "block": "chisel:basalt_encased_bricks",
+      "model_type": "connected",
+      "name": "basalt_encased_bricks"
+    },
+    {
+      "block": "chisel:basalt_bricks_indent",
+      "name": "basalt_bricks_indent"
+    },
+    {
+      "block": "chisel:basalt_bricks_inlayed",
+      "name": "basalt_bricks_inlayed"
+    },
+    {
+      "block": "chisel:basalt_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "basalt_bricks_large"
+    },
+    {
+      "block": "chisel:basalt_small_bricks",
+      "name": "basalt_small_bricks"
+    },
+    {
+      "block": "chisel:basalt_soft_bricks",
+      "name": "basalt_soft_bricks"
+    },
+    {
+      "block": "chisel:basalt_solid_bricks",
+      "name": "basalt_solid_bricks"
+    },
+    {
+      "block": "chisel:basalt_triple_bricks",
+      "name": "basalt_triple_bricks"
+    },
+    {
+      "block": "chisel:basalt_bricks_vertical",
+      "name": "basalt_bricks_vertical"
     },
     {
       "block": "chisel:basalt_chaotic_bricks",
@@ -37,6 +89,14 @@
       "name": "basalt_chaotic_small"
     },
     {
+      "block": "chisel:basalt_checker",
+      "name": "basalt_checker"
+    },
+    {
+      "block": "chisel:basalt_checker_small",
+      "name": "basalt_checker_small"
+    },
+    {
       "block": "chisel:basalt_circular",
       "model_type": "connected",
       "name": "basalt_circular"
@@ -44,10 +104,6 @@
     {
       "block": "chisel:basalt_cracked",
       "name": "basalt_cracked"
-    },
-    {
-      "block": "chisel:basalt_cracked_bricks",
-      "name": "basalt_cracked_bricks"
     },
     {
       "block": "chisel:basalt_cuts",
@@ -60,17 +116,17 @@
       "name": "basalt_dent"
     },
     {
-      "block": "chisel:basalt_encased_bricks",
-      "model_type": "connected",
-      "name": "basalt_encased_bricks"
-    },
-    {
       "block": "chisel:basalt_french_1",
       "name": "basalt_french_1"
     },
     {
       "block": "chisel:basalt_french_2",
       "name": "basalt_french_2"
+    },
+    {
+      "block": "chisel:basalt_indent",
+      "model_type": "connected",
+      "name": "basalt_indent"
     },
     {
       "block": "chisel:basalt_jellybean",
@@ -80,6 +136,29 @@
     {
       "block": "chisel:basalt_layers",
       "name": "basalt_layers"
+    },
+    {
+      "block": "chisel:basalt_layers_connected",
+      "model_type": "connected",
+      "name": "basalt_layers_connected"
+    },
+    {
+      "block": "chisel:basalt_line_horizontal",
+      "name": "basalt_line_horizontal"
+    },
+    {
+      "block": "chisel:basalt_line_vertical",
+      "name": "basalt_line_vertical"
+    },
+    {
+      "block": "chisel:basalt_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "basalt_meander_horizontal"
+    },
+    {
+      "block": "chisel:basalt_meander_vertical",
+      "model_type": "ctmv",
+      "name": "basalt_meander_vertical"
     },
     {
       "block": "chisel:basalt_mosaic",
@@ -100,6 +179,119 @@
       "name": "basalt_pillar"
     },
     {
+      "block": "chisel:basalt_pillar_basic",
+      "model_type": "ctmv",
+      "name": "basalt_pillar_basic"
+    },
+    {
+      "block": "chisel:basalt_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "basalt_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:basalt_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "basalt_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:basalt_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "basalt_pillar_basic_round"
+    },
+    {
+      "block": "chisel:basalt_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "basalt_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:basalt_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "basalt_pillar_classic"
+    },
+    {
+      "block": "chisel:basalt_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "basalt_pillar_classic_large"
+    },
+    {
+      "block": "chisel:basalt_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "basalt_pillar_ionic"
+    },
+    {
+      "block": "chisel:basalt_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "basalt_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:basalt_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "basalt_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:basalt_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "basalt_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:basalt_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "basalt_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:basalt_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "basalt_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:basalt_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "basalt_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:basalt_pillar_meander",
+      "model_type": "ctmv",
+      "name": "basalt_pillar_meander"
+    },
+    {
+      "block": "chisel:basalt_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "basalt_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:basalt_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "basalt_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:basalt_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "basalt_pillar_meander_round"
+    },
+    {
+      "block": "chisel:basalt_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "basalt_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:basalt_plate",
+      "name": "basalt_plate"
+    },
+    {
+      "block": "chisel:basalt_plate_connected",
+      "model_type": "connected",
+      "name": "basalt_plate_connected"
+    },
+    {
+      "block": "chisel:basalt_polished",
+      "name": "basalt_polished"
+    },
+    {
+      "block": "chisel:basalt_polished_encased",
+      "model_type": "connected",
+      "name": "basalt_polished_encased"
+    },
+    {
       "block": "chisel:basalt_prism",
       "name": "basalt_prism"
     },
@@ -117,16 +309,8 @@
       "name": "basalt_slanted"
     },
     {
-      "block": "chisel:basalt_small_bricks",
-      "name": "basalt_small_bricks"
-    },
-    {
-      "block": "chisel:basalt_soft_bricks",
-      "name": "basalt_soft_bricks"
-    },
-    {
-      "block": "chisel:basalt_solid_bricks",
-      "name": "basalt_solid_bricks"
+      "block": "chisel:basalt_tiles_medium",
+      "name": "basalt_tiles_medium"
     },
     {
       "block": "chisel:basalt_tiles_large",
@@ -134,16 +318,8 @@
       "name": "basalt_tiles_large"
     },
     {
-      "block": "chisel:basalt_tiles_medium",
-      "name": "basalt_tiles_medium"
-    },
-    {
       "block": "chisel:basalt_tiles_small",
       "name": "basalt_tiles_small"
-    },
-    {
-      "block": "chisel:basalt_triple_bricks",
-      "name": "basalt_triple_bricks"
     },
     {
       "block": "chisel:basalt_twisted",
@@ -157,8 +333,215 @@
     },
     {
       "block": "chisel:basalt_zag",
-      "model_type": "ar",
+      "model_type": "v4",
       "name": "basalt_zag"
+    },
+    {
+      "block": "chisel:basalt_crate",
+      "model_type": "connected",
+      "name": "basalt_crate"
+    },
+    {
+      "block": "chisel:basalt_herringbone",
+      "name": "basalt_herringbone"
+    },
+    {
+      "block": "chisel:basalt_herringbone_encased",
+      "model_type": "connected",
+      "name": "basalt_herringbone_encased"
+    },
+    {
+      "block": "chisel:basalt_medallion",
+      "name": "basalt_medallion"
+    },
+    {
+      "block": "chisel:basalt_medallion_encased",
+      "model_type": "connected",
+      "name": "basalt_medallion_encased"
+    },
+    {
+      "block": "chisel:basalt_dots",
+      "name": "basalt_dots"
+    },
+    {
+      "block": "chisel:basalt_dots_encased",
+      "model_type": "connected",
+      "name": "basalt_dots_encased"
+    },
+    {
+      "block": "chisel:basalt_heart",
+      "name": "basalt_heart"
+    },
+    {
+      "block": "chisel:basalt_star",
+      "name": "basalt_star"
+    },
+    {
+      "block": "chisel:basalt_plating",
+      "name": "basalt_plating"
+    },
+    {
+      "block": "chisel:basalt_lodestone",
+      "name": "basalt_lodestone"
+    },
+    {
+      "block": "chisel:basalt_lodestone_connected",
+      "model_type": "connected",
+      "name": "basalt_lodestone_connected"
+    },
+    {
+      "block": "chisel:basalt_plank",
+      "name": "basalt_plank"
+    },
+    {
+      "block": "chisel:basalt_plank_connected",
+      "model_type": "connected",
+      "name": "basalt_plank_connected"
+    },
+    {
+      "block": "chisel:basalt_frame",
+      "name": "basalt_frame"
+    },
+    {
+      "block": "chisel:basalt_panel_1",
+      "name": "basalt_panel_1"
+    },
+    {
+      "block": "chisel:basalt_panel_2",
+      "name": "basalt_panel_2"
+    },
+    {
+      "block": "chisel:basalt_panel_3",
+      "name": "basalt_panel_3"
+    },
+    {
+      "block": "chisel:basalt_skull_creeper",
+      "name": "basalt_skull_creeper"
+    },
+    {
+      "block": "chisel:basalt_skull_skeleton",
+      "name": "basalt_skull_skeleton"
+    },
+    {
+      "block": "chisel:basalt_stripes",
+      "name": "basalt_stripes"
+    },
+    {
+      "block": "chisel:basalt_stripes_encased",
+      "model_type": "connected",
+      "name": "basalt_stripes_encased"
+    },
+    {
+      "block": "chisel:basalt_chisel_1",
+      "name": "basalt_chisel_1"
+    },
+    {
+      "block": "chisel:basalt_chisel_2",
+      "name": "basalt_chisel_2"
+    },
+    {
+      "block": "chisel:basalt_chisel_3",
+      "name": "basalt_chisel_3"
+    },
+    {
+      "block": "chisel:basalt_chisel_4",
+      "name": "basalt_chisel_4"
+    },
+    {
+      "block": "chisel:basalt_chisel_5",
+      "name": "basalt_chisel_5"
+    },
+    {
+      "block": "chisel:basalt_chisel_6",
+      "name": "basalt_chisel_6"
+    },
+    {
+      "block": "chisel:basalt_facet",
+      "name": "basalt_facet"
+    },
+    {
+      "block": "chisel:basalt_facet_small",
+      "name": "basalt_facet_small"
+    },
+    {
+      "block": "chisel:basalt_facet_small_encased",
+      "model_type": "connected",
+      "name": "basalt_facet_small_encased"
+    },
+    {
+      "block": "chisel:basalt_shiny",
+      "name": "basalt_shiny"
+    },
+    {
+      "block": "chisel:basalt_shiny_connected",
+      "model_type": "connected",
+      "name": "basalt_shiny_connected"
+    },
+    {
+      "block": "chisel:basalt_gem",
+      "name": "basalt_gem"
+    },
+    {
+      "block": "chisel:basalt_gem_1",
+      "name": "basalt_gem_1"
+    },
+    {
+      "block": "chisel:basalt_gem_1_connected",
+      "model_type": "connected",
+      "name": "basalt_gem_1_connected"
+    },
+    {
+      "block": "chisel:basalt_gem_2",
+      "name": "basalt_gem_2"
+    },
+    {
+      "block": "chisel:basalt_gem_2_connected",
+      "model_type": "connected",
+      "name": "basalt_gem_2_connected"
+    },
+    {
+      "block": "chisel:basalt_gem_3",
+      "name": "basalt_gem_3"
+    },
+    {
+      "block": "chisel:basalt_gem_3_connected",
+      "model_type": "connected",
+      "name": "basalt_gem_3_connected"
+    },
+    {
+      "block": "chisel:basalt_bricks_square",
+      "name": "basalt_bricks_square"
+    },
+    {
+      "block": "chisel:basalt_slab",
+      "name": "basalt_slab"
+    },
+    {
+      "block": "chisel:basalt_scaffold",
+      "name": "basalt_scaffold"
+    },
+    {
+      "block": "chisel:basalt_scaffold_encased",
+      "model_type": "connected",
+      "name": "basalt_scaffold_encased"
+    },
+    {
+      "block": "chisel:basalt_tiles_inlayed",
+      "name": "basalt_tiles_inlayed"
+    },
+    {
+      "block": "chisel:basalt_waves",
+      "model_type": "multiblock_2x2",
+      "name": "basalt_waves"
+    },
+    {
+      "block": "chisel:basalt_parquet",
+      "name": "basalt_parquet"
+    },
+    {
+      "block": "chisel:basalt_parquet_encased",
+      "model_type": "connected",
+      "name": "basalt_parquet_encased"
     }
   ]
 }

@@ -121,6 +121,10 @@ public class ChiselFamilies {
     public static final ChiselFamily DRIPSTONE = StoneFamilies.DRIPSTONE;
     public static final ChiselFamily MUD = StoneFamilies.MUD;
     public static final ChiselFamily RESIN = DecorativeFamilies.RESIN;
+    public static final ChiselFamily NEXUS = DecorativeFamilies.NEXUS;
+    public static final ChiselFamily KITCHEN = DecorativeFamilies.KITCHEN;
+    public static final ChiselFamily LAMP = DecorativeFamilies.LAMP;
+    public static final ChiselFamily LIMINAL = DecorativeFamilies.LIMINAL;
     // public static final ChiselFamily MA_SOULSTONE = MysticalAgricultureFamilies.MA_SOULSTONE;
 
     public static final List<ChiselFamily> WOOLS = ColorCollectionFamilies.WOOLS;

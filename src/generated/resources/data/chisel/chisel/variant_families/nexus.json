@@ -1,0 +1,47 @@
+{
+  "family_name": "nexus",
+  "tag": "c:chisel/nexus",
+  "variants": [
+    {
+      "block": "chisel:nexus_core",
+      "name": "nexus_core"
+    },
+    {
+      "block": "chisel:nexus_grate_pillar",
+      "model_type": "top_bottom_side",
+      "name": "nexus_grate_pillar"
+    },
+    {
+      "block": "chisel:nexus_junction",
+      "name": "nexus_junction"
+    },
+    {
+      "block": "chisel:nexus_link",
+      "name": "nexus_link"
+    },
+    {
+      "block": "chisel:nexus_path",
+      "model_type": "connected",
+      "name": "nexus_path"
+    },
+    {
+      "block": "chisel:nexus_plate",
+      "name": "nexus_plate"
+    },
+    {
+      "block": "chisel:nexus_plating_pillar",
+      "model_type": "top_bottom_side",
+      "name": "nexus_plating_pillar"
+    },
+    {
+      "block": "chisel:nexus_weave_pillar",
+      "model_type": "top_bottom_side",
+      "name": "nexus_weave_pillar"
+    },
+    {
+      "block": "chisel:nexus_railing_pillar",
+      "model_type": "ctmv",
+      "name": "nexus_railing_pillar"
+    }
+  ]
+}

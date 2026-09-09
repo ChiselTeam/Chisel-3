@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/kitchen/kitchen_stripes",
+    "overlay_connected": "chisel:block/kitchen/kitchen_stripes-ctm",
+    "overlay_texture": "chisel:block/kitchen/kitchen_stripes",
+    "particle": "chisel:block/kitchen/kitchen_stripes"
+  }
+}

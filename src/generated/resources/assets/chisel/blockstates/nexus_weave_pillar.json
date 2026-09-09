@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "chisel:block/nexus_weave_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "chisel:block/nexus_weave_pillar"
+    },
+    "axis=z": {
+      "model": "chisel:block/nexus_weave_pillar",
+      "x": 90
+    }
+  }
+}

@@ -146,7 +146,11 @@ public class ChiselTabs {
                         ChiselFamilies.ROAD_LINE.getFamily(),
                         ChiselFamilies.VALENTINES.getFamily(),
                         ChiselFamilies.NETHERITE.getFamily(),
-                        ChiselFamilies.WOOLEN_CLAY.getFamily()
+                        ChiselFamilies.WOOLEN_CLAY.getFamily(),
+                        ChiselFamilies.NEXUS.getFamily(),
+                        ChiselFamilies.KITCHEN.getFamily(),
+                        ChiselFamilies.LAMP.getFamily(),
+                        ChiselFamilies.LIMINAL.getFamily()
                 
                 ).forEach(family -> family.getVariants().forEach(variant ->  {
                     if (variant.shouldGenerateModel() && variant.isInTab())
