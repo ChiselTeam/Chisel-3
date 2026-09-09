@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/andesite/andesite_gem_2_connected",
+    "overlay_connected": "chisel:block/andesite/andesite_gem_2_connected-ctm",
+    "overlay_texture": "chisel:block/andesite/andesite_gem_2_connected",
+    "particle": "chisel:block/andesite/andesite_gem_2_connected"
+  }
+}
