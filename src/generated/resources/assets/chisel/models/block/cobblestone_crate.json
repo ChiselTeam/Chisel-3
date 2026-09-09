@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/cobblestone/cobblestone_crate",
+    "overlay_connected": "chisel:block/cobblestone/cobblestone_crate-ctm",
+    "overlay_texture": "chisel:block/cobblestone/cobblestone_crate",
+    "particle": "chisel:block/cobblestone/cobblestone_crate"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/cobblestone/cobblestone_pillar_ionic_spiral-side",
+    "bottom": "chisel:block/cobblestone/cobblestone_pillar_ionic_spiral-bottom",
+    "overlay_bottom": "chisel:block/cobblestone/cobblestone_pillar_ionic_spiral-bottom",
+    "overlay_side_connected": "chisel:block/cobblestone/cobblestone_pillar_ionic_spiral-side-ctm",
+    "overlay_texture": "chisel:block/cobblestone/cobblestone_pillar_ionic_spiral-side",
+    "overlay_top": "chisel:block/cobblestone/cobblestone_pillar_ionic_spiral-top",
+    "overlay_vertical": "chisel:block/cobblestone/cobblestone_pillar_ionic_spiral-side-ctm",
+    "particle": "chisel:block/cobblestone/cobblestone_pillar_ionic_spiral-side",
+    "side": "chisel:block/cobblestone/cobblestone_pillar_ionic_spiral-side",
+    "top": "chisel:block/cobblestone/cobblestone_pillar_ionic_spiral-top"
+  }
+}
