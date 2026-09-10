@@ -162,7 +162,8 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.MUD.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.NEXUS.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.KITCHEN.getFamily());
-        
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.STONE.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.SMOOTH_STONE.getFamily());
 
         // MARK: HARVEST TIERS
         addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.ALUMINUM.getFamily());

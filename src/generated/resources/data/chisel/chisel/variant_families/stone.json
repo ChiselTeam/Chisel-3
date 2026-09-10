@@ -1,0 +1,543 @@
+{
+  "family_name": "stone",
+  "tag": "c:chisel/stone",
+  "variants": [
+    {
+      "block": "minecraft:stone",
+      "name": "block.minecraft.stone"
+    },
+    {
+      "block": "chisel:stone_array",
+      "model_type": "multiblock_2x2",
+      "name": "stone_array"
+    },
+    {
+      "block": "chisel:stone_border_square",
+      "model_type": "connected",
+      "name": "stone_border_square"
+    },
+    {
+      "block": "chisel:stone_braid",
+      "name": "stone_braid"
+    },
+    {
+      "block": "chisel:stone_braid_encased",
+      "model_type": "connected",
+      "name": "stone_braid_encased"
+    },
+    {
+      "block": "chisel:stone_bricks_cracked",
+      "name": "stone_bricks_cracked"
+    },
+    {
+      "block": "chisel:stone_bricks_encased",
+      "model_type": "connected",
+      "name": "stone_bricks_encased"
+    },
+    {
+      "block": "chisel:stone_bricks_indent",
+      "name": "stone_bricks_indent"
+    },
+    {
+      "block": "chisel:stone_bricks_inlayed",
+      "name": "stone_bricks_inlayed"
+    },
+    {
+      "block": "chisel:stone_large_bricks",
+      "model_type": "multiblock_2x2",
+      "name": "stone_large_bricks"
+    },
+    {
+      "block": "chisel:stone_small_bricks",
+      "name": "stone_small_bricks"
+    },
+    {
+      "block": "chisel:stone_bricks_soft",
+      "name": "stone_bricks_soft"
+    },
+    {
+      "block": "chisel:stone_bricks_solid",
+      "name": "stone_bricks_solid"
+    },
+    {
+      "block": "chisel:stone_bricks_triple",
+      "name": "stone_bricks_triple"
+    },
+    {
+      "block": "chisel:stone_bricks_vertical",
+      "name": "stone_bricks_vertical"
+    },
+    {
+      "block": "chisel:stone_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "stone_chaotic"
+    },
+    {
+      "block": "chisel:stone_chaotic_medium",
+      "name": "stone_chaotic_medium"
+    },
+    {
+      "block": "chisel:stone_chaotic_small",
+      "name": "stone_chaotic_small"
+    },
+    {
+      "block": "chisel:stone_checker",
+      "name": "stone_checker"
+    },
+    {
+      "block": "chisel:stone_checker_small",
+      "name": "stone_checker_small"
+    },
+    {
+      "block": "chisel:stone_circular",
+      "model_type": "connected",
+      "name": "stone_circular"
+    },
+    {
+      "block": "chisel:stone_cracked",
+      "name": "stone_cracked"
+    },
+    {
+      "block": "chisel:stone_cobble",
+      "name": "stone_cobble"
+    },
+    {
+      "block": "chisel:stone_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "stone_cuts"
+    },
+    {
+      "block": "chisel:stone_dent",
+      "model_type": "connected",
+      "name": "stone_dent"
+    },
+    {
+      "block": "chisel:stone_french_1",
+      "name": "stone_french_1"
+    },
+    {
+      "block": "chisel:stone_french_2",
+      "name": "stone_french_2"
+    },
+    {
+      "block": "chisel:stone_indent",
+      "model_type": "connected",
+      "name": "stone_indent"
+    },
+    {
+      "block": "chisel:stone_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "stone_jellybean"
+    },
+    {
+      "block": "chisel:stone_layers",
+      "name": "stone_layers"
+    },
+    {
+      "block": "chisel:stone_layers_connected",
+      "model_type": "connected",
+      "name": "stone_layers_connected"
+    },
+    {
+      "block": "chisel:stone_line_horizontal",
+      "name": "stone_line_horizontal"
+    },
+    {
+      "block": "chisel:stone_line_vertical",
+      "name": "stone_line_vertical"
+    },
+    {
+      "block": "chisel:stone_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "stone_meander_horizontal"
+    },
+    {
+      "block": "chisel:stone_meander_vertical",
+      "model_type": "ctmv",
+      "name": "stone_meander_vertical"
+    },
+    {
+      "block": "chisel:stone_mosaic",
+      "model_type": "connected",
+      "name": "stone_mosaic"
+    },
+    {
+      "block": "chisel:stone_ornate_small",
+      "name": "stone_ornate_small"
+    },
+    {
+      "block": "chisel:stone_panel",
+      "name": "stone_panel"
+    },
+    {
+      "block": "chisel:stone_pillar",
+      "model_type": "top_bottom_side",
+      "name": "stone_pillar"
+    },
+    {
+      "block": "chisel:stone_pillar_basic",
+      "model_type": "ctmv",
+      "name": "stone_pillar_basic"
+    },
+    {
+      "block": "chisel:stone_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "stone_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:stone_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "stone_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:stone_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "stone_pillar_basic_round"
+    },
+    {
+      "block": "chisel:stone_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "stone_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:stone_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "stone_pillar_classic"
+    },
+    {
+      "block": "chisel:stone_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "stone_pillar_classic_large"
+    },
+    {
+      "block": "chisel:stone_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "stone_pillar_ionic"
+    },
+    {
+      "block": "chisel:stone_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "stone_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:stone_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "stone_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:stone_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "stone_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:stone_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "stone_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:stone_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "stone_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:stone_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "stone_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:stone_pillar_meander",
+      "model_type": "ctmv",
+      "name": "stone_pillar_meander"
+    },
+    {
+      "block": "chisel:stone_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "stone_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:stone_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "stone_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:stone_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "stone_pillar_meander_round"
+    },
+    {
+      "block": "chisel:stone_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "stone_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:stone_plate",
+      "name": "stone_plate"
+    },
+    {
+      "block": "chisel:stone_plate_connected",
+      "model_type": "connected",
+      "name": "stone_plate_connected"
+    },
+    {
+      "block": "chisel:stone_polished",
+      "name": "stone_polished"
+    },
+    {
+      "block": "chisel:stone_polished_encased",
+      "model_type": "connected",
+      "name": "stone_polished_encased"
+    },
+    {
+      "block": "chisel:stone_prism",
+      "name": "stone_prism"
+    },
+    {
+      "block": "chisel:stone_raw",
+      "name": "stone_raw"
+    },
+    {
+      "block": "chisel:stone_road",
+      "name": "stone_road"
+    },
+    {
+      "block": "chisel:stone_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "stone_slanted"
+    },
+    {
+      "block": "chisel:stone_tiles",
+      "name": "stone_tiles"
+    },
+    {
+      "block": "chisel:stone_tiles_large",
+      "model_type": "connected",
+      "name": "stone_tiles_large"
+    },
+    {
+      "block": "chisel:stone_tiles_small",
+      "name": "stone_tiles_small"
+    },
+    {
+      "block": "chisel:stone_twisted",
+      "model_type": "top_bottom_side",
+      "name": "stone_twisted"
+    },
+    {
+      "block": "chisel:stone_weaver",
+      "model_type": "connected",
+      "name": "stone_weaver"
+    },
+    {
+      "block": "chisel:stone_zag",
+      "model_type": "v4",
+      "name": "stone_zag"
+    },
+    {
+      "block": "chisel:stone_crate",
+      "model_type": "connected",
+      "name": "stone_crate"
+    },
+    {
+      "block": "chisel:stone_herringbone",
+      "name": "stone_herringbone"
+    },
+    {
+      "block": "chisel:stone_herringbone_encased",
+      "model_type": "connected",
+      "name": "stone_herringbone_encased"
+    },
+    {
+      "block": "chisel:stone_medallion",
+      "name": "stone_medallion"
+    },
+    {
+      "block": "chisel:stone_medallion_encased",
+      "model_type": "connected",
+      "name": "stone_medallion_encased"
+    },
+    {
+      "block": "chisel:stone_dots",
+      "name": "stone_dots"
+    },
+    {
+      "block": "chisel:stone_dots_encased",
+      "model_type": "connected",
+      "name": "stone_dots_encased"
+    },
+    {
+      "block": "chisel:stone_heart",
+      "name": "stone_heart"
+    },
+    {
+      "block": "chisel:stone_star",
+      "name": "stone_star"
+    },
+    {
+      "block": "chisel:stone_plating",
+      "name": "stone_plating"
+    },
+    {
+      "block": "chisel:stone_lodestone",
+      "name": "stone_lodestone"
+    },
+    {
+      "block": "chisel:stone_lodestone_connected",
+      "model_type": "connected",
+      "name": "stone_lodestone_connected"
+    },
+    {
+      "block": "chisel:stone_plank",
+      "name": "stone_plank"
+    },
+    {
+      "block": "chisel:stone_plank_connected",
+      "model_type": "connected",
+      "name": "stone_plank_connected"
+    },
+    {
+      "block": "chisel:stone_frame",
+      "name": "stone_frame"
+    },
+    {
+      "block": "chisel:stone_panel_1",
+      "name": "stone_panel_1"
+    },
+    {
+      "block": "chisel:stone_panel_2",
+      "name": "stone_panel_2"
+    },
+    {
+      "block": "chisel:stone_panel_3",
+      "name": "stone_panel_3"
+    },
+    {
+      "block": "chisel:stone_skull_creeper",
+      "name": "stone_skull_creeper"
+    },
+    {
+      "block": "chisel:stone_skull_skeleton",
+      "name": "stone_skull_skeleton"
+    },
+    {
+      "block": "chisel:stone_stripes",
+      "name": "stone_stripes"
+    },
+    {
+      "block": "chisel:stone_stripes_encased",
+      "model_type": "connected",
+      "name": "stone_stripes_encased"
+    },
+    {
+      "block": "chisel:stone_chisel_1",
+      "name": "stone_chisel_1"
+    },
+    {
+      "block": "chisel:stone_chisel_2",
+      "name": "stone_chisel_2"
+    },
+    {
+      "block": "chisel:stone_chisel_3",
+      "name": "stone_chisel_3"
+    },
+    {
+      "block": "chisel:stone_chisel_4",
+      "name": "stone_chisel_4"
+    },
+    {
+      "block": "chisel:stone_chisel_5",
+      "name": "stone_chisel_5"
+    },
+    {
+      "block": "chisel:stone_chisel_6",
+      "name": "stone_chisel_6"
+    },
+    {
+      "block": "chisel:stone_facet",
+      "name": "stone_facet"
+    },
+    {
+      "block": "chisel:stone_facet_small",
+      "name": "stone_facet_small"
+    },
+    {
+      "block": "chisel:stone_facet_small_encased",
+      "model_type": "connected",
+      "name": "stone_facet_small_encased"
+    },
+    {
+      "block": "chisel:stone_shiny",
+      "name": "stone_shiny"
+    },
+    {
+      "block": "chisel:stone_shiny_connected",
+      "model_type": "connected",
+      "name": "stone_shiny_connected"
+    },
+    {
+      "block": "chisel:stone_gem",
+      "name": "stone_gem"
+    },
+    {
+      "block": "chisel:stone_gem_1",
+      "name": "stone_gem_1"
+    },
+    {
+      "block": "chisel:stone_gem_1_connected",
+      "model_type": "connected",
+      "name": "stone_gem_1_connected"
+    },
+    {
+      "block": "chisel:stone_gem_2",
+      "name": "stone_gem_2"
+    },
+    {
+      "block": "chisel:stone_gem_2_connected",
+      "model_type": "connected",
+      "name": "stone_gem_2_connected"
+    },
+    {
+      "block": "chisel:stone_gem_3",
+      "name": "stone_gem_3"
+    },
+    {
+      "block": "chisel:stone_gem_3_connected",
+      "model_type": "connected",
+      "name": "stone_gem_3_connected"
+    },
+    {
+      "block": "chisel:stone_bricks_square",
+      "name": "stone_bricks_square"
+    },
+    {
+      "block": "chisel:stone_slab",
+      "name": "stone_slab"
+    },
+    {
+      "block": "chisel:stone_scaffold",
+      "name": "stone_scaffold"
+    },
+    {
+      "block": "chisel:stone_scaffold_encased",
+      "model_type": "connected",
+      "name": "stone_scaffold_encased"
+    },
+    {
+      "block": "chisel:stone_tiles_inlayed",
+      "name": "stone_tiles_inlayed"
+    },
+    {
+      "block": "chisel:stone_waves",
+      "model_type": "multiblock_2x2",
+      "name": "stone_waves"
+    },
+    {
+      "block": "chisel:stone_parquet",
+      "name": "stone_parquet"
+    },
+    {
+      "block": "chisel:stone_parquet_encased",
+      "model_type": "connected",
+      "name": "stone_parquet_encased"
+    }
+  ]
+}

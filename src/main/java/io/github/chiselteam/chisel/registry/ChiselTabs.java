@@ -62,7 +62,9 @@ public class ChiselTabs {
                     ChiselFamilies.DRIPSTONE.getFamily(),
                     ChiselFamilies.MUD.getFamily(),
                     ChiselFamilies.RESIN.getFamily(),
-                    ChiselFamilies.WATERSTONE.getFamily()
+                    ChiselFamilies.WATERSTONE.getFamily(),
+                    ChiselFamilies.STONE.getFamily(),
+                    ChiselFamilies.SMOOTH_STONE.getFamily()
                 
                 ).forEach(family -> family.getVariants().forEach(variant -> {
                 if (variant.shouldGenerateModel() && variant.isInTab())

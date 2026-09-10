@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/smooth_stone/smooth_stone_dent",
+    "overlay_connected": "chisel:block/smooth_stone/smooth_stone_dent-ctm",
+    "overlay_texture": "chisel:block/smooth_stone/smooth_stone_dent",
+    "particle": "chisel:block/smooth_stone/smooth_stone_dent"
+  }
+}
