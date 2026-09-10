@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/limestone/limestone_meander_horizontal",
+    "bottom": "chisel:block/limestone/limestone_meander_horizontal-bottom",
+    "overlay_horizontal": "chisel:block/limestone/limestone_meander_horizontal-ctmh",
+    "particle": "chisel:block/limestone/limestone_meander_horizontal",
+    "top": "chisel:block/limestone/limestone_meander_horizontal-top"
+  }
+}

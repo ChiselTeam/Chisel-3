@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/limestone/limestone_border_square",
+    "overlay_connected": "chisel:block/limestone/limestone_border_square-ctm",
+    "overlay_texture": "chisel:block/limestone/limestone_border_square",
+    "particle": "chisel:block/limestone/limestone_border_square"
+  }
+}

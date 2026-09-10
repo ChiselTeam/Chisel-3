@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/limestone/limestone_zag",
-    "overlay_2x2": "chisel:block/limestone/limestone_zag-ctm",
+    "overlay_2x2": "chisel:block/limestone/limestone_zag-v4",
     "particle": "chisel:block/limestone/limestone_zag"
   }
 }
