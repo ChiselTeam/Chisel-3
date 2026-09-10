@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/diorite/diorite_zag",
-    "overlay_2x2": "chisel:block/diorite/diorite_zag-ctm",
+    "overlay_2x2": "chisel:block/diorite/diorite_zag-v4",
     "particle": "chisel:block/diorite/diorite_zag"
   }
 }
