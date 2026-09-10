@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/end_stone/end_stone_pillar_ionic_spiral-side",
+    "bottom": "chisel:block/end_stone/end_stone_pillar_ionic_spiral-bottom",
+    "overlay_bottom": "chisel:block/end_stone/end_stone_pillar_ionic_spiral-bottom",
+    "overlay_side_connected": "chisel:block/end_stone/end_stone_pillar_ionic_spiral-side-ctm",
+    "overlay_texture": "chisel:block/end_stone/end_stone_pillar_ionic_spiral-side",
+    "overlay_top": "chisel:block/end_stone/end_stone_pillar_ionic_spiral-top",
+    "overlay_vertical": "chisel:block/end_stone/end_stone_pillar_ionic_spiral-side-ctm",
+    "particle": "chisel:block/end_stone/end_stone_pillar_ionic_spiral-side",
+    "side": "chisel:block/end_stone/end_stone_pillar_ionic_spiral-side",
+    "top": "chisel:block/end_stone/end_stone_pillar_ionic_spiral-top"
+  }
+}

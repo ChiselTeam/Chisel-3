@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/end_stone/end_stone_meander_horizontal",
+    "bottom": "chisel:block/end_stone/end_stone_meander_horizontal-bottom",
+    "overlay_horizontal": "chisel:block/end_stone/end_stone_meander_horizontal-ctmh",
+    "particle": "chisel:block/end_stone/end_stone_meander_horizontal",
+    "top": "chisel:block/end_stone/end_stone_meander_horizontal-top"
+  }
+}

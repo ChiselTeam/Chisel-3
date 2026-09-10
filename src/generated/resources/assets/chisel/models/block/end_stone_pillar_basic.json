@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/end_stone/end_stone_pillar_basic-side",
+    "bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "overlay_bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "overlay_side_connected": "chisel:block/end_stone/end_stone_pillar_basic-side-ctm",
+    "overlay_texture": "chisel:block/end_stone/end_stone_pillar_basic-side",
+    "overlay_top": "chisel:block/end_stone/end_stone_pillar_basic-top",
+    "overlay_vertical": "chisel:block/end_stone/end_stone_pillar_basic-side-ctm",
+    "particle": "chisel:block/end_stone/end_stone_pillar_basic-side",
+    "side": "chisel:block/end_stone/end_stone_pillar_basic-side",
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-top"
+  }
+}
