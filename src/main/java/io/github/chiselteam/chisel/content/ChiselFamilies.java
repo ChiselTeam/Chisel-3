@@ -43,6 +43,7 @@ public class ChiselFamilies {
     public static final ChiselFamily BASALT = StoneFamilies.BASALT;
     public static final ChiselFamily DIAMOND = MetalFamilies.DIAMOND;
     public static final ChiselFamily DIORITE = StoneFamilies.DIORITE;
+    public static final ChiselFamily COBBLED_DEEPSLATE = StoneFamilies.COBBLED_DEEPSLATE;
     public static final ChiselFamily DEEPSLATE = StoneFamilies.DEEPSLATE;
     public static final ChiselFamily DIRT = DecorativeFamilies.DIRT;
     public static final ChiselFamily ELECTRUM = MetalFamilies.ELECTRUM;

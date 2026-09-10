@@ -32,6 +32,7 @@ public class ChiselTabs {
                     ChiselFamilies.C_CONCRETE.getFamily(),
                     ChiselFamilies.BASALT.getFamily(),
                     ChiselFamilies.DIORITE.getFamily(),
+                    ChiselFamilies.COBBLED_DEEPSLATE.getFamily(),
                     ChiselFamilies.DEEPSLATE.getFamily(),
                     ChiselFamilies.END_STONE.getFamily(),
                     ChiselFamilies.GRANITE.getFamily(),

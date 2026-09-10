@@ -360,6 +360,17 @@
     "chisel:paperwall_six",
     "chisel:paperwall_strike_horizontal",
     "chisel:paperwall_strike_middle",
-    "chisel:paperwall_strike_vertical"
+    "chisel:paperwall_strike_vertical",
+    "chisel:liminal_wall_1",
+    "chisel:liminal_wall_2",
+    "chisel:liminal_wall_3",
+    "chisel:liminal_carpet_1",
+    "chisel:liminal_carpet_2",
+    "chisel:liminal_carpet_3",
+    "chisel:liminal_carpet_4",
+    "chisel:liminal_carpet_5",
+    "chisel:liminal_ceiling_1",
+    "chisel:liminal_ceiling_2",
+    "chisel:liminal_tiles_1"
   ]
 }

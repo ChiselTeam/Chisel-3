@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/deepslate/deepslate_zag",
-    "overlay_2x2": "chisel:block/deepslate/deepslate_zag-ctm",
+    "overlay_2x2": "chisel:block/deepslate/deepslate_zag-v4",
     "particle": "chisel:block/deepslate/deepslate_zag"
   }
 }
