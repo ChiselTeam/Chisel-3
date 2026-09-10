@@ -5,8 +5,11 @@
     "base_texture": "chisel:block/lavastone/lavastone_circular-bg",
     "layer0": "chisel:block/lavastone/lavastone_circular-bg",
     "layer1": "chisel:block/lavastone/lavastone_circular",
-    "overlay_connected": "chisel:block/lavastone/lavastone_circular-ctm",
-    "overlay_texture": "chisel:block/lavastone/lavastone_circular",
-    "particle": "chisel:block/lavastone/lavastone_circular"
+    "particle": "chisel:block/lavastone/lavastone_circular",
+    "standard_corner": "chisel:block/lavastone/lavastone_circular-ctm_corner",
+    "standard_cornerless": "chisel:block/lavastone/lavastone_circular-ctm_cornerless",
+    "standard_horizontal": "chisel:block/lavastone/lavastone_circular-ctm_horizontal",
+    "standard_none": "chisel:block/lavastone/lavastone_circular",
+    "standard_vertical": "chisel:block/lavastone/lavastone_circular-ctm_vertical"
   }
 }

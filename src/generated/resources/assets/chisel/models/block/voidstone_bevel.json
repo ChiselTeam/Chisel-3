@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/voidstone/voidstone_bevel",
-    "overlay_connected": "chisel:block/voidstone/voidstone_bevel-ctm",
-    "overlay_texture": "chisel:block/voidstone/voidstone_bevel",
-    "particle": "chisel:block/voidstone/voidstone_bevel"
+    "particle": "chisel:block/voidstone/voidstone_bevel",
+    "standard_corner": "chisel:block/voidstone/voidstone_bevel-ctm_corner",
+    "standard_cornerless": "chisel:block/voidstone/voidstone_bevel-ctm_cornerless",
+    "standard_horizontal": "chisel:block/voidstone/voidstone_bevel-ctm_horizontal",
+    "standard_none": "chisel:block/voidstone/voidstone_bevel",
+    "standard_vertical": "chisel:block/voidstone/voidstone_bevel-ctm_vertical"
   }
 }

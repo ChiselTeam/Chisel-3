@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/factory/factory_circuit",
-    "overlay_connected": "chisel:block/factory/factory_circuit-ctm",
-    "overlay_texture": "chisel:block/factory/factory_circuit",
-    "particle": "chisel:block/factory/factory_circuit"
+    "particle": "chisel:block/factory/factory_circuit",
+    "standard_corner": "chisel:block/factory/factory_circuit-ctm_corner",
+    "standard_cornerless": "chisel:block/factory/factory_circuit-ctm_cornerless",
+    "standard_horizontal": "chisel:block/factory/factory_circuit-ctm_horizontal",
+    "standard_none": "chisel:block/factory/factory_circuit",
+    "standard_vertical": "chisel:block/factory/factory_circuit-ctm_vertical"
   }
 }

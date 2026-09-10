@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/tin/tin_caution",
-    "overlay_connected": "chisel:block/tin/tin_caution-ctm",
-    "overlay_texture": "chisel:block/tin/tin_caution",
-    "particle": "chisel:block/tin/tin_caution"
+    "particle": "chisel:block/tin/tin_caution",
+    "standard_corner": "chisel:block/tin/tin_caution-ctm_corner",
+    "standard_cornerless": "chisel:block/tin/tin_caution-ctm_cornerless",
+    "standard_horizontal": "chisel:block/tin/tin_caution-ctm_horizontal",
+    "standard_none": "chisel:block/tin/tin_caution",
+    "standard_vertical": "chisel:block/tin/tin_caution-ctm_vertical"
   }
 }

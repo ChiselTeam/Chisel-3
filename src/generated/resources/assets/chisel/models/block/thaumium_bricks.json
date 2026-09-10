@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/thaumium/thaumium_bricks",
-    "overlay_connected": "chisel:block/thaumium/thaumium_bricks-ctm",
-    "overlay_texture": "chisel:block/thaumium/thaumium_bricks",
-    "particle": "chisel:block/thaumium/thaumium_bricks"
+    "particle": "chisel:block/thaumium/thaumium_bricks",
+    "standard_corner": "chisel:block/thaumium/thaumium_bricks-ctm_corner",
+    "standard_cornerless": "chisel:block/thaumium/thaumium_bricks-ctm_cornerless",
+    "standard_horizontal": "chisel:block/thaumium/thaumium_bricks-ctm_horizontal",
+    "standard_none": "chisel:block/thaumium/thaumium_bricks",
+    "standard_vertical": "chisel:block/thaumium/thaumium_bricks-ctm_vertical"
   }
 }

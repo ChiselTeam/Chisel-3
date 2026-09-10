@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/prismarine/prismarine_circular",
-    "overlay_connected": "chisel:block/prismarine/prismarine_circular-ctm",
-    "overlay_texture": "chisel:block/prismarine/prismarine_circular",
-    "particle": "chisel:block/prismarine/prismarine_circular"
+    "particle": "chisel:block/prismarine/prismarine_circular",
+    "standard_corner": "chisel:block/prismarine/prismarine_circular-ctm_corner",
+    "standard_cornerless": "chisel:block/prismarine/prismarine_circular-ctm_cornerless",
+    "standard_horizontal": "chisel:block/prismarine/prismarine_circular-ctm_horizontal",
+    "standard_none": "chisel:block/prismarine/prismarine_circular",
+    "standard_vertical": "chisel:block/prismarine/prismarine_circular-ctm_vertical"
   }
 }

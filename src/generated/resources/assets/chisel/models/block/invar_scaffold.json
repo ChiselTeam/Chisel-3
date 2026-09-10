@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/invar/invar_scaffold",
-    "overlay_connected": "chisel:block/invar/invar_scaffold-ctm",
-    "overlay_texture": "chisel:block/invar/invar_scaffold",
-    "particle": "chisel:block/invar/invar_scaffold"
+    "particle": "chisel:block/invar/invar_scaffold",
+    "standard_corner": "chisel:block/invar/invar_scaffold-ctm_corner",
+    "standard_cornerless": "chisel:block/invar/invar_scaffold-ctm_cornerless",
+    "standard_horizontal": "chisel:block/invar/invar_scaffold-ctm_horizontal",
+    "standard_none": "chisel:block/invar/invar_scaffold",
+    "standard_vertical": "chisel:block/invar/invar_scaffold-ctm_vertical"
   }
 }

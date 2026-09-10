@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/gilded_blackstone/gilded_blackstone_crate",
-    "overlay_connected": "chisel:block/gilded_blackstone/gilded_blackstone_crate-ctm",
-    "overlay_texture": "chisel:block/gilded_blackstone/gilded_blackstone_crate",
-    "particle": "chisel:block/gilded_blackstone/gilded_blackstone_crate"
+    "particle": "chisel:block/gilded_blackstone/gilded_blackstone_crate",
+    "standard_corner": "chisel:block/gilded_blackstone/gilded_blackstone_crate-ctm_corner",
+    "standard_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_crate-ctm_cornerless",
+    "standard_horizontal": "chisel:block/gilded_blackstone/gilded_blackstone_crate-ctm_horizontal",
+    "standard_none": "chisel:block/gilded_blackstone/gilded_blackstone_crate",
+    "standard_vertical": "chisel:block/gilded_blackstone/gilded_blackstone_crate-ctm_vertical"
   }
 }

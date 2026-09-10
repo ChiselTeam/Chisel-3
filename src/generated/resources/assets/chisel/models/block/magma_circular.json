@@ -5,8 +5,11 @@
     "base_texture": "chisel:block/magma/magma_circular-bg",
     "layer0": "chisel:block/magma/magma_circular-bg",
     "layer1": "chisel:block/magma/magma_circular",
-    "overlay_connected": "chisel:block/magma/magma_circular-ctm",
-    "overlay_texture": "chisel:block/magma/magma_circular",
-    "particle": "chisel:block/magma/magma_circular"
+    "particle": "chisel:block/magma/magma_circular",
+    "standard_corner": "chisel:block/magma/magma_circular-ctm_corner",
+    "standard_cornerless": "chisel:block/magma/magma_circular-ctm_cornerless",
+    "standard_horizontal": "chisel:block/magma/magma_circular-ctm_horizontal",
+    "standard_none": "chisel:block/magma/magma_circular",
+    "standard_vertical": "chisel:block/magma/magma_circular-ctm_vertical"
   }
 }

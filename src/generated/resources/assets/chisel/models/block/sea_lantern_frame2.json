@@ -5,8 +5,11 @@
     "base_texture": "chisel:block/sea_lantern/sea_lantern_frame2-bg",
     "layer0": "chisel:block/sea_lantern/sea_lantern_frame2-bg",
     "layer1": "chisel:block/sea_lantern/sea_lantern_frame2",
-    "overlay_connected": "chisel:block/sea_lantern/sea_lantern_frame2-ctm",
-    "overlay_texture": "chisel:block/sea_lantern/sea_lantern_frame2",
-    "particle": "chisel:block/sea_lantern/sea_lantern_frame2"
+    "particle": "chisel:block/sea_lantern/sea_lantern_frame2",
+    "standard_corner": "chisel:block/sea_lantern/sea_lantern_frame2-ctm_corner",
+    "standard_cornerless": "chisel:block/sea_lantern/sea_lantern_frame2-ctm_cornerless",
+    "standard_horizontal": "chisel:block/sea_lantern/sea_lantern_frame2-ctm_horizontal",
+    "standard_none": "chisel:block/sea_lantern/sea_lantern_frame2",
+    "standard_vertical": "chisel:block/sea_lantern/sea_lantern_frame2-ctm_vertical"
   }
 }

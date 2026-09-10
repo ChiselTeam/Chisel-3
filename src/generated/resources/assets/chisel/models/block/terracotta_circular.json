@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/terracotta/terracotta_circular",
-    "overlay_connected": "chisel:block/terracotta/terracotta_circular-ctm",
-    "overlay_texture": "chisel:block/terracotta/terracotta_circular",
-    "particle": "chisel:block/terracotta/terracotta_circular"
+    "particle": "chisel:block/terracotta/terracotta_circular",
+    "standard_corner": "chisel:block/terracotta/terracotta_circular-ctm_corner",
+    "standard_cornerless": "chisel:block/terracotta/terracotta_circular-ctm_cornerless",
+    "standard_horizontal": "chisel:block/terracotta/terracotta_circular-ctm_horizontal",
+    "standard_none": "chisel:block/terracotta/terracotta_circular",
+    "standard_vertical": "chisel:block/terracotta/terracotta_circular-ctm_vertical"
   }
 }

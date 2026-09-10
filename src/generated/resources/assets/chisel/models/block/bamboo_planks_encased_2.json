@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/bamboo_planks/bamboo_planks_encased_2",
-    "overlay_connected": "chisel:block/bamboo_planks/bamboo_planks_encased_2-ctm",
-    "overlay_texture": "chisel:block/bamboo_planks/bamboo_planks_encased_2",
-    "particle": "chisel:block/bamboo_planks/bamboo_planks_encased_2"
+    "particle": "chisel:block/bamboo_planks/bamboo_planks_encased_2",
+    "standard_corner": "chisel:block/bamboo_planks/bamboo_planks_encased_2-ctm_corner",
+    "standard_cornerless": "chisel:block/bamboo_planks/bamboo_planks_encased_2-ctm_cornerless",
+    "standard_horizontal": "chisel:block/bamboo_planks/bamboo_planks_encased_2-ctm_horizontal",
+    "standard_none": "chisel:block/bamboo_planks/bamboo_planks_encased_2",
+    "standard_vertical": "chisel:block/bamboo_planks/bamboo_planks_encased_2-ctm_vertical"
   }
 }

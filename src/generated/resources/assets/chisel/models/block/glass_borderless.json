@@ -1,7 +1,10 @@
 {
   "textures": {
-    "overlay_connected": "chisel:block/glass/glass_borderless-ctm",
-    "overlay_texture": "chisel:block/glass/glass_borderless",
-    "particle": "chisel:block/glass/glass_borderless"
+    "particle": "chisel:block/glass/glass_borderless",
+    "standard_corner": "chisel:block/glass/glass_borderless-ctm_corner",
+    "standard_cornerless": "chisel:block/glass/glass_borderless-ctm_cornerless",
+    "standard_horizontal": "chisel:block/glass/glass_borderless-ctm_horizontal",
+    "standard_none": "chisel:block/glass/glass_borderless",
+    "standard_vertical": "chisel:block/glass/glass_borderless-ctm_vertical"
   }
 }

@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/acacia_planks/acacia_planks_encased_smooth",
-    "overlay_connected": "chisel:block/acacia_planks/acacia_planks_encased_smooth-ctm",
-    "overlay_texture": "chisel:block/acacia_planks/acacia_planks_encased_smooth",
-    "particle": "chisel:block/acacia_planks/acacia_planks_encased_smooth"
+    "particle": "chisel:block/acacia_planks/acacia_planks_encased_smooth",
+    "standard_corner": "chisel:block/acacia_planks/acacia_planks_encased_smooth-ctm_corner",
+    "standard_cornerless": "chisel:block/acacia_planks/acacia_planks_encased_smooth-ctm_cornerless",
+    "standard_horizontal": "chisel:block/acacia_planks/acacia_planks_encased_smooth-ctm_horizontal",
+    "standard_none": "chisel:block/acacia_planks/acacia_planks_encased_smooth",
+    "standard_vertical": "chisel:block/acacia_planks/acacia_planks_encased_smooth-ctm_vertical"
   }
 }

@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/granite/granite_weaver",
-    "overlay_connected": "chisel:block/granite/granite_weaver-ctm",
-    "overlay_texture": "chisel:block/granite/granite_weaver",
-    "particle": "chisel:block/granite/granite_weaver"
+    "particle": "chisel:block/granite/granite_weaver",
+    "standard_corner": "chisel:block/granite/granite_weaver-ctm_corner",
+    "standard_cornerless": "chisel:block/granite/granite_weaver-ctm_cornerless",
+    "standard_horizontal": "chisel:block/granite/granite_weaver-ctm_horizontal",
+    "standard_none": "chisel:block/granite/granite_weaver",
+    "standard_vertical": "chisel:block/granite/granite_weaver-ctm_vertical"
   }
 }

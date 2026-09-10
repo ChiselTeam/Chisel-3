@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/fa_arcane_darkstone/arcane_conduit",
-    "overlay_connected": "chisel:block/fa_arcane_darkstone/arcane_conduit-ctm",
-    "overlay_texture": "chisel:block/fa_arcane_darkstone/arcane_conduit",
-    "particle": "chisel:block/fa_arcane_darkstone/arcane_conduit"
+    "particle": "chisel:block/fa_arcane_darkstone/arcane_conduit",
+    "standard_corner": "chisel:block/fa_arcane_darkstone/arcane_conduit-ctm_corner",
+    "standard_cornerless": "chisel:block/fa_arcane_darkstone/arcane_conduit-ctm_cornerless",
+    "standard_horizontal": "chisel:block/fa_arcane_darkstone/arcane_conduit-ctm_horizontal",
+    "standard_none": "chisel:block/fa_arcane_darkstone/arcane_conduit",
+    "standard_vertical": "chisel:block/fa_arcane_darkstone/arcane_conduit-ctm_vertical"
   }
 }

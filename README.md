@@ -41,6 +41,16 @@ To add a block to a family:
 
 See the [CONTRIBUTING](CONTRIBUTING.md) file for more details.
 
+Standard CTM textures
+---------------------
+
+Run `./gradlew runData` with Java 25 and the updated CTM dependency (use `use_local_ctm=true` for the sibling `../CTM` checkout).
+Standard CTM models use the original texture for `standard_none` and four generated sprites for the connected states.
+Edit the source `-ctm.png` atlases in `src/main/resources/assets/chisel/textures`, then rerun datagen; the separate
+`-ctm_cornerless`, `-ctm_horizontal`, `-ctm_vertical`, and `-ctm_corner` sprites are written under `src/generated/resources`.
+The atlas quadrants are top-left, top-right, bottom-left, and bottom-right respectively. Animation frame order,
+timing, and interpolation are preserved. TBS and directional CTM retain their existing texture layouts.
+
 Addon API
 ---------
 

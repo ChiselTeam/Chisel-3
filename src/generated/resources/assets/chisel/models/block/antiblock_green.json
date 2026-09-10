@@ -5,8 +5,11 @@
     "base_texture": "chisel:block/antiblock/antiblock_green-bg",
     "layer0": "chisel:block/antiblock/antiblock_green-bg",
     "layer1": "chisel:block/antiblock/antiblock_green",
-    "overlay_connected": "chisel:block/antiblock/antiblock_green-ctm",
-    "overlay_texture": "chisel:block/antiblock/antiblock_green",
-    "particle": "chisel:block/antiblock/antiblock_green"
+    "particle": "chisel:block/antiblock/antiblock_green",
+    "standard_corner": "chisel:block/antiblock/antiblock_green-ctm_corner",
+    "standard_cornerless": "chisel:block/antiblock/antiblock_green-ctm_cornerless",
+    "standard_horizontal": "chisel:block/antiblock/antiblock_green-ctm_horizontal",
+    "standard_none": "chisel:block/antiblock/antiblock_green",
+    "standard_vertical": "chisel:block/antiblock/antiblock_green-ctm_vertical"
   }
 }

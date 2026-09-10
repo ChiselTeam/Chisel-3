@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/bricks/bricks_dent",
-    "overlay_connected": "chisel:block/bricks/bricks_dent-ctm",
-    "overlay_texture": "chisel:block/bricks/bricks_dent",
-    "particle": "chisel:block/bricks/bricks_dent"
+    "particle": "chisel:block/bricks/bricks_dent",
+    "standard_corner": "chisel:block/bricks/bricks_dent-ctm_corner",
+    "standard_cornerless": "chisel:block/bricks/bricks_dent-ctm_cornerless",
+    "standard_horizontal": "chisel:block/bricks/bricks_dent-ctm_horizontal",
+    "standard_none": "chisel:block/bricks/bricks_dent",
+    "standard_vertical": "chisel:block/bricks/bricks_dent-ctm_vertical"
   }
 }

@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/granite/granite_circular",
-    "overlay_connected": "chisel:block/granite/granite_circular-ctm",
-    "overlay_texture": "chisel:block/granite/granite_circular",
-    "particle": "chisel:block/granite/granite_circular"
+    "particle": "chisel:block/granite/granite_circular",
+    "standard_corner": "chisel:block/granite/granite_circular-ctm_corner",
+    "standard_cornerless": "chisel:block/granite/granite_circular-ctm_cornerless",
+    "standard_horizontal": "chisel:block/granite/granite_circular-ctm_horizontal",
+    "standard_none": "chisel:block/granite/granite_circular",
+    "standard_vertical": "chisel:block/granite/granite_circular-ctm_vertical"
   }
 }

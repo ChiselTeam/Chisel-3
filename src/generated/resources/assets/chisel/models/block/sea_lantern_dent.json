@@ -5,8 +5,11 @@
     "base_texture": "chisel:block/sea_lantern/sea_lantern_dent-bg",
     "layer0": "chisel:block/sea_lantern/sea_lantern_dent-bg",
     "layer1": "chisel:block/sea_lantern/sea_lantern_dent",
-    "overlay_connected": "chisel:block/sea_lantern/sea_lantern_dent-ctm",
-    "overlay_texture": "chisel:block/sea_lantern/sea_lantern_dent",
-    "particle": "chisel:block/sea_lantern/sea_lantern_dent"
+    "particle": "chisel:block/sea_lantern/sea_lantern_dent",
+    "standard_corner": "chisel:block/sea_lantern/sea_lantern_dent-ctm_corner",
+    "standard_cornerless": "chisel:block/sea_lantern/sea_lantern_dent-ctm_cornerless",
+    "standard_horizontal": "chisel:block/sea_lantern/sea_lantern_dent-ctm_horizontal",
+    "standard_none": "chisel:block/sea_lantern/sea_lantern_dent",
+    "standard_vertical": "chisel:block/sea_lantern/sea_lantern_dent-ctm_vertical"
   }
 }

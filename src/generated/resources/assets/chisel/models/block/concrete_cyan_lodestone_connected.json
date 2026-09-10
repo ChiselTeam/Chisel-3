@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/concrete_cyan/concrete_cyan_lodestone_connected",
-    "overlay_connected": "chisel:block/concrete_cyan/concrete_cyan_lodestone_connected-ctm",
-    "overlay_texture": "chisel:block/concrete_cyan/concrete_cyan_lodestone_connected",
-    "particle": "chisel:block/concrete_cyan/concrete_cyan_lodestone_connected"
+    "particle": "chisel:block/concrete_cyan/concrete_cyan_lodestone_connected",
+    "standard_corner": "chisel:block/concrete_cyan/concrete_cyan_lodestone_connected-ctm_corner",
+    "standard_cornerless": "chisel:block/concrete_cyan/concrete_cyan_lodestone_connected-ctm_cornerless",
+    "standard_horizontal": "chisel:block/concrete_cyan/concrete_cyan_lodestone_connected-ctm_horizontal",
+    "standard_none": "chisel:block/concrete_cyan/concrete_cyan_lodestone_connected",
+    "standard_vertical": "chisel:block/concrete_cyan/concrete_cyan_lodestone_connected-ctm_vertical"
   }
 }

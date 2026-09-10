@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/mossy_cobblestone/mossy_cobblestone_emboss",
-    "overlay_connected": "chisel:block/mossy_cobblestone/mossy_cobblestone_emboss-ctm",
-    "overlay_texture": "chisel:block/mossy_cobblestone/mossy_cobblestone_emboss",
-    "particle": "chisel:block/mossy_cobblestone/mossy_cobblestone_emboss"
+    "particle": "chisel:block/mossy_cobblestone/mossy_cobblestone_emboss",
+    "standard_corner": "chisel:block/mossy_cobblestone/mossy_cobblestone_emboss-ctm_corner",
+    "standard_cornerless": "chisel:block/mossy_cobblestone/mossy_cobblestone_emboss-ctm_cornerless",
+    "standard_horizontal": "chisel:block/mossy_cobblestone/mossy_cobblestone_emboss-ctm_horizontal",
+    "standard_none": "chisel:block/mossy_cobblestone/mossy_cobblestone_emboss",
+    "standard_vertical": "chisel:block/mossy_cobblestone/mossy_cobblestone_emboss-ctm_vertical"
   }
 }

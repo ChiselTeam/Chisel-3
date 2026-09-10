@@ -5,8 +5,11 @@
     "base_texture": "chisel:block/futura/futura_screen_gray-bg",
     "layer0": "chisel:block/futura/futura_screen_gray-bg",
     "layer1": "chisel:block/futura/futura_screen_gray",
-    "overlay_connected": "chisel:block/futura/futura_screen_gray-ctm",
-    "overlay_texture": "chisel:block/futura/futura_screen_gray",
-    "particle": "chisel:block/futura/futura_screen_gray"
+    "particle": "chisel:block/futura/futura_screen_gray",
+    "standard_corner": "chisel:block/futura/futura_screen_gray-ctm_corner",
+    "standard_cornerless": "chisel:block/futura/futura_screen_gray-ctm_cornerless",
+    "standard_horizontal": "chisel:block/futura/futura_screen_gray-ctm_horizontal",
+    "standard_none": "chisel:block/futura/futura_screen_gray",
+    "standard_vertical": "chisel:block/futura/futura_screen_gray-ctm_vertical"
   }
 }

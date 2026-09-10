@@ -33,14 +33,12 @@ public class MultiLayerCTMModelGenerator extends VariantModelGenerator {
 
     @Override
     public TextureMapping getTextureMapping() {
-        return (new TextureMapping())
+        return VariantTextures.standard(variant)
                 .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
                 .put(TextureSlot.ALL, VariantTextures.get(variant))
                 .put(TextureSlot.LAYER1, VariantTextures.get(variant))
                 .put(TextureSlot.LAYER0, VariantTextures.get(variant, "bg"))
-                .put(ChiselTextureSlots.CTM_BASE, VariantTextures.get(variant, "bg"))
-                .put(ChiselTextureSlots.CTM_OVERLAY, VariantTextures.get(variant))
-                .put(ChiselTextureSlots.CTM_OVERLAY_CONNECTED, VariantTextures.get(variant, "ctm"));
+                .put(ChiselTextureSlots.CTM_BASE, VariantTextures.get(variant, "bg"));
     }
 
     @Override
@@ -64,8 +62,12 @@ public class MultiLayerCTMModelGenerator extends VariantModelGenerator {
 
         if (layered) {
             CTMModelBuilder background = builder.toCTMBuilder()
-                    .texture("overlay_texture", VariantTextures.get(variant, "bg").sprite())
-                    .texture("overlay_connected", VariantTextures.get(variant, "bg-ctm").sprite());
+                    .standardTextures(
+                            VariantTextures.get(variant, "bg").sprite(),
+                            VariantTextures.get(variant, "bg-ctm_cornerless").sprite(),
+                            VariantTextures.get(variant, "bg-ctm_vertical").sprite(),
+                            VariantTextures.get(variant, "bg-ctm_horizontal").sprite(),
+                            VariantTextures.get(variant, "bg-ctm_corner").sprite());
             blockModels.blockStateOutput.accept(CTMBlockStateGenerator.of(
                     variant.getBlock(), CTMModelBuilder.layered(builder.toCTMBuilder(), background)
             ));

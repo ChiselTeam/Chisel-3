@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/birch_planks/birch_planks_encased_large",
-    "overlay_connected": "chisel:block/birch_planks/birch_planks_encased_large-ctm",
-    "overlay_texture": "chisel:block/birch_planks/birch_planks_encased_large",
-    "particle": "chisel:block/birch_planks/birch_planks_encased_large"
+    "particle": "chisel:block/birch_planks/birch_planks_encased_large",
+    "standard_corner": "chisel:block/birch_planks/birch_planks_encased_large-ctm_corner",
+    "standard_cornerless": "chisel:block/birch_planks/birch_planks_encased_large-ctm_cornerless",
+    "standard_horizontal": "chisel:block/birch_planks/birch_planks_encased_large-ctm_horizontal",
+    "standard_none": "chisel:block/birch_planks/birch_planks_encased_large",
+    "standard_vertical": "chisel:block/birch_planks/birch_planks_encased_large-ctm_vertical"
   }
 }

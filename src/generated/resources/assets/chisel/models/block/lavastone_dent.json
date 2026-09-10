@@ -5,8 +5,11 @@
     "base_texture": "chisel:block/lavastone/lavastone_dent-bg",
     "layer0": "chisel:block/lavastone/lavastone_dent-bg",
     "layer1": "chisel:block/lavastone/lavastone_dent",
-    "overlay_connected": "chisel:block/lavastone/lavastone_dent-ctm",
-    "overlay_texture": "chisel:block/lavastone/lavastone_dent",
-    "particle": "chisel:block/lavastone/lavastone_dent"
+    "particle": "chisel:block/lavastone/lavastone_dent",
+    "standard_corner": "chisel:block/lavastone/lavastone_dent-ctm_corner",
+    "standard_cornerless": "chisel:block/lavastone/lavastone_dent-ctm_cornerless",
+    "standard_horizontal": "chisel:block/lavastone/lavastone_dent-ctm_horizontal",
+    "standard_none": "chisel:block/lavastone/lavastone_dent",
+    "standard_vertical": "chisel:block/lavastone/lavastone_dent-ctm_vertical"
   }
 }

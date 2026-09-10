@@ -21,9 +21,8 @@ public class IceModelGenerator extends VariantModelGenerator {
         CTMKind kind = variant.getModelHandler().ctmKind();
         TextureMapping mapping = new TextureMapping().put(TextureSlot.PARTICLE, VariantTextures.get(variant));
         return switch (kind) {
-            case STANDARD -> mapping
-                    .put(ChiselTextureSlots.CTM_OVERLAY, VariantTextures.get(variant))
-                    .put(ChiselTextureSlots.CTM_OVERLAY_CONNECTED, VariantTextures.get(variant, "ctm"));
+            case STANDARD -> VariantTextures.standard(variant)
+                    .put(TextureSlot.PARTICLE, VariantTextures.get(variant));
             case MULTIBLOCK_2X2 -> mapping.put(ChiselTextureSlots.CTM_OVERLAY_2X2, VariantTextures.get(variant, "2x2"));
             case MULTIBLOCK_3X3 -> mapping.put(ChiselTextureSlots.CTM_OVERLAY_3X3, VariantTextures.get(variant, "3x3"));
             case MULTIBLOCK_4X4 -> mapping.put(ChiselTextureSlots.CTM_OVERLAY_4X4, VariantTextures.get(variant, "4x4"));

@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/diorite/diorite_tiles_large",
-    "overlay_connected": "chisel:block/diorite/diorite_tiles_large-ctm",
-    "overlay_texture": "chisel:block/diorite/diorite_tiles_large",
-    "particle": "chisel:block/diorite/diorite_tiles_large"
+    "particle": "chisel:block/diorite/diorite_tiles_large",
+    "standard_corner": "chisel:block/diorite/diorite_tiles_large-ctm_corner",
+    "standard_cornerless": "chisel:block/diorite/diorite_tiles_large-ctm_cornerless",
+    "standard_horizontal": "chisel:block/diorite/diorite_tiles_large-ctm_horizontal",
+    "standard_none": "chisel:block/diorite/diorite_tiles_large",
+    "standard_vertical": "chisel:block/diorite/diorite_tiles_large-ctm_vertical"
   }
 }

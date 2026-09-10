@@ -22,14 +22,12 @@ public class AntiblockModelGenerator extends VariantModelGenerator {
 
     @Override
     public TextureMapping getTextureMapping() {
-        return (new TextureMapping())
+        return VariantTextures.standard(variant)
                 .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
                 .put(TextureSlot.ALL, VariantTextures.get(variant))
                 .put(TextureSlot.LAYER1, VariantTextures.get(variant))
                 .put(TextureSlot.LAYER0, VariantTextures.get(variant, "bg"))
-                .put(ChiselTextureSlots.CTM_BASE, VariantTextures.get(variant, "bg"))
-                .put(ChiselTextureSlots.CTM_OVERLAY, VariantTextures.get(variant))
-                .put(ChiselTextureSlots.CTM_OVERLAY_CONNECTED, VariantTextures.get(variant, "ctm"));
+                .put(ChiselTextureSlots.CTM_BASE, VariantTextures.get(variant, "bg"));
     }
 
     @Override

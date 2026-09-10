@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/laboratory/laboratory_clearscreen",
-    "overlay_connected": "chisel:block/laboratory/laboratory_clearscreen-ctm",
-    "overlay_texture": "chisel:block/laboratory/laboratory_clearscreen",
-    "particle": "chisel:block/laboratory/laboratory_clearscreen"
+    "particle": "chisel:block/laboratory/laboratory_clearscreen",
+    "standard_corner": "chisel:block/laboratory/laboratory_clearscreen-ctm_corner",
+    "standard_cornerless": "chisel:block/laboratory/laboratory_clearscreen-ctm_cornerless",
+    "standard_horizontal": "chisel:block/laboratory/laboratory_clearscreen-ctm_horizontal",
+    "standard_none": "chisel:block/laboratory/laboratory_clearscreen",
+    "standard_vertical": "chisel:block/laboratory/laboratory_clearscreen-ctm_vertical"
   }
 }

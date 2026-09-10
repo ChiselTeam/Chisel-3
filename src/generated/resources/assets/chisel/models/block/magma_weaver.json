@@ -5,8 +5,11 @@
     "base_texture": "chisel:block/magma/magma_weaver-bg",
     "layer0": "chisel:block/magma/magma_weaver-bg",
     "layer1": "chisel:block/magma/magma_weaver",
-    "overlay_connected": "chisel:block/magma/magma_weaver-ctm",
-    "overlay_texture": "chisel:block/magma/magma_weaver",
-    "particle": "chisel:block/magma/magma_weaver"
+    "particle": "chisel:block/magma/magma_weaver",
+    "standard_corner": "chisel:block/magma/magma_weaver-ctm_corner",
+    "standard_cornerless": "chisel:block/magma/magma_weaver-ctm_cornerless",
+    "standard_horizontal": "chisel:block/magma/magma_weaver-ctm_horizontal",
+    "standard_none": "chisel:block/magma/magma_weaver",
+    "standard_vertical": "chisel:block/magma/magma_weaver-ctm_vertical"
   }
 }

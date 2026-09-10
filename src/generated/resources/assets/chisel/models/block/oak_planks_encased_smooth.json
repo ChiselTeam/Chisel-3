@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/oak_planks/oak_planks_encased_smooth",
-    "overlay_connected": "chisel:block/oak_planks/oak_planks_encased_smooth-ctm",
-    "overlay_texture": "chisel:block/oak_planks/oak_planks_encased_smooth",
-    "particle": "chisel:block/oak_planks/oak_planks_encased_smooth"
+    "particle": "chisel:block/oak_planks/oak_planks_encased_smooth",
+    "standard_corner": "chisel:block/oak_planks/oak_planks_encased_smooth-ctm_corner",
+    "standard_cornerless": "chisel:block/oak_planks/oak_planks_encased_smooth-ctm_cornerless",
+    "standard_horizontal": "chisel:block/oak_planks/oak_planks_encased_smooth-ctm_horizontal",
+    "standard_none": "chisel:block/oak_planks/oak_planks_encased_smooth",
+    "standard_vertical": "chisel:block/oak_planks/oak_planks_encased_smooth-ctm_vertical"
   }
 }

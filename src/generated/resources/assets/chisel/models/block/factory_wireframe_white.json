@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/factory/factory_wireframe_white",
-    "overlay_connected": "chisel:block/factory/factory_wireframe_white-ctm",
-    "overlay_texture": "chisel:block/factory/factory_wireframe_white",
-    "particle": "chisel:block/factory/factory_wireframe_white"
+    "particle": "chisel:block/factory/factory_wireframe_white",
+    "standard_corner": "chisel:block/factory/factory_wireframe_white-ctm_corner",
+    "standard_cornerless": "chisel:block/factory/factory_wireframe_white-ctm_cornerless",
+    "standard_horizontal": "chisel:block/factory/factory_wireframe_white-ctm_horizontal",
+    "standard_none": "chisel:block/factory/factory_wireframe_white",
+    "standard_vertical": "chisel:block/factory/factory_wireframe_white-ctm_vertical"
   }
 }

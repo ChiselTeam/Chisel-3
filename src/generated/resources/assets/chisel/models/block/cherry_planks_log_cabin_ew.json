@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/cherry_planks/cherry_planks_log_cabin_ew",
-    "overlay_connected": "chisel:block/cherry_planks/cherry_planks_log_cabin_ew-ctm",
-    "overlay_texture": "chisel:block/cherry_planks/cherry_planks_log_cabin_ew",
-    "particle": "chisel:block/cherry_planks/cherry_planks_log_cabin_ew"
+    "particle": "chisel:block/cherry_planks/cherry_planks_log_cabin_ew",
+    "standard_corner": "chisel:block/cherry_planks/cherry_planks_log_cabin_ew-ctm_corner",
+    "standard_cornerless": "chisel:block/cherry_planks/cherry_planks_log_cabin_ew-ctm_cornerless",
+    "standard_horizontal": "chisel:block/cherry_planks/cherry_planks_log_cabin_ew-ctm_horizontal",
+    "standard_none": "chisel:block/cherry_planks/cherry_planks_log_cabin_ew",
+    "standard_vertical": "chisel:block/cherry_planks/cherry_planks_log_cabin_ew-ctm_vertical"
   }
 }

@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/silver/silver_caution",
-    "overlay_connected": "chisel:block/silver/silver_caution-ctm",
-    "overlay_texture": "chisel:block/silver/silver_caution",
-    "particle": "chisel:block/silver/silver_caution"
+    "particle": "chisel:block/silver/silver_caution",
+    "standard_corner": "chisel:block/silver/silver_caution-ctm_corner",
+    "standard_cornerless": "chisel:block/silver/silver_caution-ctm_cornerless",
+    "standard_horizontal": "chisel:block/silver/silver_caution-ctm_horizontal",
+    "standard_none": "chisel:block/silver/silver_caution",
+    "standard_vertical": "chisel:block/silver/silver_caution-ctm_vertical"
   }
 }

@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/blackstone/blackstone_parquet_encased",
-    "overlay_connected": "chisel:block/blackstone/blackstone_parquet_encased-ctm",
-    "overlay_texture": "chisel:block/blackstone/blackstone_parquet_encased",
-    "particle": "chisel:block/blackstone/blackstone_parquet_encased"
+    "particle": "chisel:block/blackstone/blackstone_parquet_encased",
+    "standard_corner": "chisel:block/blackstone/blackstone_parquet_encased-ctm_corner",
+    "standard_cornerless": "chisel:block/blackstone/blackstone_parquet_encased-ctm_cornerless",
+    "standard_horizontal": "chisel:block/blackstone/blackstone_parquet_encased-ctm_horizontal",
+    "standard_none": "chisel:block/blackstone/blackstone_parquet_encased",
+    "standard_vertical": "chisel:block/blackstone/blackstone_parquet_encased-ctm_vertical"
   }
 }

@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/factory/factory_gold_plate",
-    "overlay_connected": "chisel:block/factory/factory_gold_plate-ctm",
-    "overlay_texture": "chisel:block/factory/factory_gold_plate",
-    "particle": "chisel:block/factory/factory_gold_plate"
+    "particle": "chisel:block/factory/factory_gold_plate",
+    "standard_corner": "chisel:block/factory/factory_gold_plate-ctm_corner",
+    "standard_cornerless": "chisel:block/factory/factory_gold_plate-ctm_cornerless",
+    "standard_horizontal": "chisel:block/factory/factory_gold_plate-ctm_horizontal",
+    "standard_none": "chisel:block/factory/factory_gold_plate",
+    "standard_vertical": "chisel:block/factory/factory_gold_plate-ctm_vertical"
   }
 }

@@ -5,8 +5,11 @@
     "base_texture": "chisel:block/energized_voidstone/energized_voidstone_bevel-bg",
     "layer0": "chisel:block/energized_voidstone/energized_voidstone_bevel-bg",
     "layer1": "chisel:block/energized_voidstone/energized_voidstone_bevel",
-    "overlay_connected": "chisel:block/energized_voidstone/energized_voidstone_bevel-ctm",
-    "overlay_texture": "chisel:block/energized_voidstone/energized_voidstone_bevel",
-    "particle": "chisel:block/energized_voidstone/energized_voidstone_bevel"
+    "particle": "chisel:block/energized_voidstone/energized_voidstone_bevel",
+    "standard_corner": "chisel:block/energized_voidstone/energized_voidstone_bevel-ctm_corner",
+    "standard_cornerless": "chisel:block/energized_voidstone/energized_voidstone_bevel-ctm_cornerless",
+    "standard_horizontal": "chisel:block/energized_voidstone/energized_voidstone_bevel-ctm_horizontal",
+    "standard_none": "chisel:block/energized_voidstone/energized_voidstone_bevel",
+    "standard_vertical": "chisel:block/energized_voidstone/energized_voidstone_bevel-ctm_vertical"
   }
 }

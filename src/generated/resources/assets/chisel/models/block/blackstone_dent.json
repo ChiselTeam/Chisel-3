@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/blackstone/blackstone_dent",
-    "overlay_connected": "chisel:block/blackstone/blackstone_dent-ctm",
-    "overlay_texture": "chisel:block/blackstone/blackstone_dent",
-    "particle": "chisel:block/blackstone/blackstone_dent"
+    "particle": "chisel:block/blackstone/blackstone_dent",
+    "standard_corner": "chisel:block/blackstone/blackstone_dent-ctm_corner",
+    "standard_cornerless": "chisel:block/blackstone/blackstone_dent-ctm_cornerless",
+    "standard_horizontal": "chisel:block/blackstone/blackstone_dent-ctm_horizontal",
+    "standard_none": "chisel:block/blackstone/blackstone_dent",
+    "standard_vertical": "chisel:block/blackstone/blackstone_dent-ctm_vertical"
   }
 }
