@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/granite/granite_meander_horizontal",
+    "bottom": "chisel:block/granite/granite_meander_horizontal-bottom",
+    "overlay_horizontal": "chisel:block/granite/granite_meander_horizontal-ctmh",
+    "particle": "chisel:block/granite/granite_meander_horizontal",
+    "top": "chisel:block/granite/granite_meander_horizontal-top"
+  }
+}

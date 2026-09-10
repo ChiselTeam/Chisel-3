@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/granite/granite_zag",
-    "overlay_2x2": "chisel:block/granite/granite_zag-ctm",
+    "overlay_2x2": "chisel:block/granite/granite_zag-v4",
     "particle": "chisel:block/granite/granite_zag"
   }
 }
