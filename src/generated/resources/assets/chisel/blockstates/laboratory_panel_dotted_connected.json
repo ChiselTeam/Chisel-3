@@ -3,10 +3,10 @@
   "connected_faces": [
     "all"
   ],
-  "model_location": "chisel:block/laboratory_tiles_enamelled_large",
+  "model_location": "chisel:block/laboratory_panel_dotted_connected",
   "render_overlay_on_all_faces": true,
   "variant": {
-    "block": "chisel:laboratory_tiles_enamelled_large",
+    "block": "chisel:laboratory_panel_dotted_connected",
     "kind": "standard"
   }
 }

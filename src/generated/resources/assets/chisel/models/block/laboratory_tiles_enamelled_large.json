@@ -1,6 +1,9 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/laboratory/laboratory_tiles_enamelled_large"
+    "all": "chisel:block/laboratory/laboratory_tiles_enamelled_large",
+    "overlay_connected": "chisel:block/laboratory/laboratory_tiles_enamelled_large-ctm",
+    "overlay_texture": "chisel:block/laboratory/laboratory_tiles_enamelled_large",
+    "particle": "chisel:block/laboratory/laboratory_tiles_enamelled_large"
   }
 }

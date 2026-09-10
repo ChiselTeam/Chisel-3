@@ -6,10 +6,10 @@
     "west",
     "east"
   ],
-  "model_location": "chisel:block/laboratory_wall_vent",
+  "model_location": "chisel:block/laboratory_console_left_animated",
   "render_overlay_on_all_faces": true,
   "variant": {
-    "block": "chisel:laboratory_wall_vent",
+    "block": "chisel:laboratory_console_left_animated",
     "kind": "ctmh"
   }
 }

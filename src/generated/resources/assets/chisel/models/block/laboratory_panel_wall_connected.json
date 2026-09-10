@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/laboratory/laboratory_panel_wall_connected",
+    "overlay_connected": "chisel:block/laboratory/laboratory_panel_wall_connected-ctm",
+    "overlay_texture": "chisel:block/laboratory/laboratory_panel_wall_connected",
+    "particle": "chisel:block/laboratory/laboratory_panel_wall_connected"
+  }
+}

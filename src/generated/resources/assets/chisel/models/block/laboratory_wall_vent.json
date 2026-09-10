@@ -1,8 +1,10 @@
 {
-  "parent": "minecraft:block/cube_bottom_top",
+  "parent": "minecraft:block/cube_all",
   "textures": {
+    "all": "chisel:block/laboratory/laboratory_wall_vent",
     "bottom": "chisel:block/laboratory/laboratory_wall_vent-bottom",
-    "side": "chisel:block/laboratory/laboratory_wall_vent-side",
+    "overlay_horizontal": "chisel:block/laboratory/laboratory_wall_vent-ctmh",
+    "particle": "chisel:block/laboratory/laboratory_wall_vent",
     "top": "chisel:block/laboratory/laboratory_wall_vent-top"
   }
 }
