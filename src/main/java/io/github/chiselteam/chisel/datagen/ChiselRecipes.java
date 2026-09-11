@@ -62,6 +62,35 @@ public class ChiselRecipes extends RecipeProvider {
                 .save(output);
 // idk how to do 2 recipes
 
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.LIMINAL.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
+                .pattern(" O ")
+                .pattern("ODO")
+                .pattern(" O ")
+                .define('O', Items.OAK_PLANKS)
+                .define('D', Items.OAK_DOOR)
+                .unlockedBy("has_oak_planks", has(Items.OAK_PLANKS))
+                .save(output);
+
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.KITCHEN.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
+                .pattern("WB")
+                .pattern("BW")
+                .define('W', Items.WHITE_CONCRETE)
+                .define('B', Items.BLACK_CONCRETE)
+                .unlockedBy("has_white_concrete", has(Items.WHITE_CONCRETE))
+                .save(output);
+
+/*         shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.LIGHT_WHITE.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
+                .requires(Items.SEA_LANTERN)
+                .requires(Items.WHITE_DYE)
+                .unlockedBy("has_white_dye", has(Items.WHITE_DYE))
+                .save(output); */
+
+        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.NEXUS.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
+                .requires(Items.SEA_LANTERN)
+                .requires(Items.WHITE_CONCRETE)
+                .unlockedBy("has_white_concrete", has(Items.WHITE_CONCRETE))
+                .save(output);
+
         shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.FACTORY.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
                 .pattern("SIS")
                 .pattern("I I")

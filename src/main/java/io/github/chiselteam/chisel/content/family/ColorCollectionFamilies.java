@@ -19,6 +19,7 @@ public class ColorCollectionFamilies {
     public static final List<ChiselFamily> CONCRETE = new ArrayList<>();
     public static final List<ChiselFamily> STAINED_GLASS = new ArrayList<>();
     public static final List<ChiselFamily> STAINED_GLASS_PANE = new ArrayList<>();
+    public static final List<ChiselFamily> LIGHT = new ArrayList<>();
 
     private static final List<ChiselFamily> FAMILIES = new ArrayList<>();
 
@@ -27,6 +28,7 @@ public class ColorCollectionFamilies {
             String colorName = org.apache.commons.lang3.StringUtils.capitalize(color.getName().replace("_", " "));
             String legacyColorName = org.apache.commons.lang3.StringUtils.capitalize(color.getName());
             String woolName = "wool_%s".formatted(color.getName());
+            String lightName = "light_%s".formatted(color.getName());
             String concreteName = "concrete_%s".formatted(color.getName());
             String baseName = "%s Concrete".formatted(legacyColorName);
 
@@ -35,6 +37,15 @@ public class ColorCollectionFamilies {
                     .addVariant(getVanillaWool(color))
                     .addVariant("%s_legacy".formatted(woolName), ChiselModelHandlers.CONNECTED).translation("%s_legacy".formatted(woolName), "%s Wool".formatted(legacyColorName), "Legacy")
                     .addVariant("%s_llama".formatted(woolName), ChiselModelHandlers.CONNECTED).translation("%s_llama".formatted(woolName), "%s Wool".formatted(legacyColorName), "Llama")
+            )));
+            LIGHT.add(add(ChiselFamily.build(lightName, builder -> builder
+                    .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.SEA_LANTERN))
+                    .addVariant("%s_framed".formatted(lightName)).translation("%s_framed".formatted(lightName), "%s Light".formatted(colorName), "Framed")
+                    .addVariant("%s_framed_connected".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_framed_connected".formatted(lightName), "%s Light".formatted(colorName), "Framed Connected")
+                    .addVariant("%s_frame_1".formatted(lightName)).translation("%s_frame_1".formatted(lightName), "%s Light".formatted(colorName), "Frame 1")
+                    .addVariant("%s_frame_2".formatted(lightName)).translation("%s_frame_2".formatted(lightName), "%s Light".formatted(colorName), "Frame 2")
+                    .addVariant("%s_panel".formatted(lightName)).translation("%s_panel".formatted(lightName), "%s Light".formatted(colorName), "Panel")
+                    .addVariant("%s_panel_connected".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_panel_connected".formatted(lightName), "%s Light".formatted(colorName), "Panel Connected")
             )));
             CONCRETE.add(add(ChiselFamily.build(concreteName, builder -> builder
                     .properties(BlockBehaviour.Properties.ofFullCopy(getVanillaConcrete(color)))

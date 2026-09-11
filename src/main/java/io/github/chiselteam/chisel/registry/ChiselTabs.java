@@ -152,7 +152,6 @@ public class ChiselTabs {
                         ChiselFamilies.WOOLEN_CLAY.getFamily(),
                         ChiselFamilies.NEXUS.getFamily(),
                         ChiselFamilies.KITCHEN.getFamily(),
-                        ChiselFamilies.LAMP.getFamily(),
                         ChiselFamilies.LIMINAL.getFamily()
                 
                 ).forEach(family -> family.getVariants().forEach(variant ->  {
@@ -171,6 +170,11 @@ public class ChiselTabs {
                 ChiselFamilies.TORCH.getVariant("torch_10").get();
 
                 ChiselFamilies.WOOLS.forEach(family -> family.getFamily().getVariants().forEach(variant -> {
+                    if (variant.shouldGenerateModel() && variant.isInTab())
+                        output.accept(variant.getBlock());
+                }));
+
+                ChiselFamilies.LIGHT.forEach(family -> family.getFamily().getVariants().forEach(variant -> {
                     if (variant.shouldGenerateModel() && variant.isInTab())
                         output.accept(variant.getBlock());
                 }));

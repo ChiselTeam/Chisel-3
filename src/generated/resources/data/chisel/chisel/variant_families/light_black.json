@@ -1,0 +1,32 @@
+{
+  "family_name": "light_black",
+  "tag": "c:chisel/light_black",
+  "variants": [
+    {
+      "block": "chisel:light_black_framed",
+      "name": "light_black_framed"
+    },
+    {
+      "block": "chisel:light_black_framed_connected",
+      "model_type": "connected",
+      "name": "light_black_framed_connected"
+    },
+    {
+      "block": "chisel:light_black_frame_1",
+      "name": "light_black_frame_1"
+    },
+    {
+      "block": "chisel:light_black_frame_2",
+      "name": "light_black_frame_2"
+    },
+    {
+      "block": "chisel:light_black_panel",
+      "name": "light_black_panel"
+    },
+    {
+      "block": "chisel:light_black_panel_connected",
+      "model_type": "connected",
+      "name": "light_black_panel_connected"
+    }
+  ]
+}

@@ -12,7 +12,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import java.util.List;
 
 public class DecorativeFamilies {
-    public static final ChiselFamily LIMINAL, LAMP, KITCHEN, NEXUS, C_CONCRETE, CHARCOAL, CLOUD, COAL, COAL_COKE, DIRT, ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLOWSTONE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, LABORATORY, LAVASTONE, LEAF, MAGMA, MILITARY, MOSSY_BLACKSTONE, MOSSY_TEMPLE, PAPERWALL, REDSTONE, RESIN, SEA_LANTERN, SHINGLE, TECHNICAL, TEMPLE, TERRACOTTA, TYRIAN, VALENTINES, VOIDSTONE, WARNING, WATERSTONE, WOOLEN_CLAY;
+    public static final ChiselFamily LIMINAL,/*  LIGHT, */ KITCHEN, NEXUS, C_CONCRETE, CHARCOAL, CLOUD, COAL, COAL_COKE, DIRT, ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLOWSTONE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, LABORATORY, LAVASTONE, LEAF, MAGMA, MILITARY, MOSSY_BLACKSTONE, MOSSY_TEMPLE, PAPERWALL, REDSTONE, RESIN, SEA_LANTERN, SHINGLE, TECHNICAL, TEMPLE, TERRACOTTA, TYRIAN, VALENTINES, VOIDSTONE, WARNING, WATERSTONE, WOOLEN_CLAY;
     private static final List<ChiselFamily> FAMILIES;
 
     static {
@@ -909,11 +909,12 @@ public class DecorativeFamilies {
                 .addVariant("kitchen_stripes_small_encased_connected", ChiselModelHandlers.CONNECTED).translation("kitchen_stripes_small_encased_connected", "Kitchen Block", "Encased Small Stripes Kitchen Connected")
                 .build());
 
-        LAMP = ChiselFamily.build("lamp", builder -> builder
+/*         LIGHT = ChiselFamily.build("light", builder -> builder
                 .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.SEA_LANTERN))
-                .addVariant("lamp").translation("lamp", "Lamp", "Lamp")
+                .addVariant("white_light_framed").translation("white_light_framed", "White Light", "Framed")
+                .addVariant("white_light_framed_connected", ChiselModelHandlers.CONNECTED).translation("white_light_framed_connected", "White Light", "Framed Connected")
                 .build());
-
+ */
         LIMINAL = ChiselFamily.build("liminal", builder -> builder
                 .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE))
                 .addVariant("liminal_wall_1").translation("liminal_wall_1", "Liminal Block", "Liminal Wall 1")
@@ -934,7 +935,7 @@ public class DecorativeFamilies {
                 FUTURA, GLOWSTONE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, LABORATORY, LAVASTONE,
                 LEAF, MAGMA, MILITARY, MOSSY_BLACKSTONE, MOSSY_TEMPLE, PAPERWALL, REDSTONE, RESIN,
                 SEA_LANTERN, SHINGLE, TECHNICAL, TEMPLE, TERRACOTTA, TYRIAN, VALENTINES, VOIDSTONE,
-                WARNING, WATERSTONE, WOOLEN_CLAY, NEXUS, KITCHEN, LAMP, LIMINAL
+                WARNING, WATERSTONE, WOOLEN_CLAY, NEXUS, KITCHEN,/*  LIGHT, */ LIMINAL
         );
     }
 

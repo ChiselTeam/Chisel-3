@@ -1,0 +1,32 @@
+{
+  "family_name": "light_light_gray",
+  "tag": "c:chisel/light_light_gray",
+  "variants": [
+    {
+      "block": "chisel:light_light_gray_framed",
+      "name": "light_light_gray_framed"
+    },
+    {
+      "block": "chisel:light_light_gray_framed_connected",
+      "model_type": "connected",
+      "name": "light_light_gray_framed_connected"
+    },
+    {
+      "block": "chisel:light_light_gray_frame_1",
+      "name": "light_light_gray_frame_1"
+    },
+    {
+      "block": "chisel:light_light_gray_frame_2",
+      "name": "light_light_gray_frame_2"
+    },
+    {
+      "block": "chisel:light_light_gray_panel",
+      "name": "light_light_gray_panel"
+    },
+    {
+      "block": "chisel:light_light_gray_panel_connected",
+      "model_type": "connected",
+      "name": "light_light_gray_panel_connected"
+    }
+  ]
+}

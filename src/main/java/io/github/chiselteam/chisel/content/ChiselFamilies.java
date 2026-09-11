@@ -124,7 +124,6 @@ public class ChiselFamilies {
     public static final ChiselFamily RESIN = DecorativeFamilies.RESIN;
     public static final ChiselFamily NEXUS = DecorativeFamilies.NEXUS;
     public static final ChiselFamily KITCHEN = DecorativeFamilies.KITCHEN;
-    public static final ChiselFamily LAMP = DecorativeFamilies.LAMP;
     public static final ChiselFamily LIMINAL = DecorativeFamilies.LIMINAL;
     public static final ChiselFamily STONE = StoneFamilies.STONE;
     public static final ChiselFamily SMOOTH_STONE = StoneFamilies.SMOOTH_STONE;
@@ -134,7 +133,7 @@ public class ChiselFamilies {
     public static final List<ChiselFamily> CONCRETE = ColorCollectionFamilies.CONCRETE;
     public static final List<ChiselFamily> STAINED_GLASS = ColorCollectionFamilies.STAINED_GLASS;
     public static final List<ChiselFamily> STAINED_GLASS_PANE = ColorCollectionFamilies.STAINED_GLASS_PANE;
-
+    public static final List<ChiselFamily> LIGHT = ColorCollectionFamilies.LIGHT;
     private ChiselFamilies() {
     }
 

@@ -1,0 +1,32 @@
+{
+  "family_name": "light_magenta",
+  "tag": "c:chisel/light_magenta",
+  "variants": [
+    {
+      "block": "chisel:light_magenta_framed",
+      "name": "light_magenta_framed"
+    },
+    {
+      "block": "chisel:light_magenta_framed_connected",
+      "model_type": "connected",
+      "name": "light_magenta_framed_connected"
+    },
+    {
+      "block": "chisel:light_magenta_frame_1",
+      "name": "light_magenta_frame_1"
+    },
+    {
+      "block": "chisel:light_magenta_frame_2",
+      "name": "light_magenta_frame_2"
+    },
+    {
+      "block": "chisel:light_magenta_panel",
+      "name": "light_magenta_panel"
+    },
+    {
+      "block": "chisel:light_magenta_panel_connected",
+      "model_type": "connected",
+      "name": "light_magenta_panel_connected"
+    }
+  ]
+}
