@@ -6,9 +6,9 @@
     "O": "minecraft:oak_planks"
   },
   "pattern": [
-    "OOO",
+    " O ",
     "ODO",
-    "OOO"
+    " O "
   ],
   "result": {
     "count": 32,
