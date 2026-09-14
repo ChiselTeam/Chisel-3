@@ -1,0 +1,22 @@
+{
+  "glowstone_array": {
+    "2x2_top_left": "chisel:block/glowstone/glowstone_array"
+  },
+  "glowstone_jellybean": {
+    "2x2_top_left": "chisel:block/glowstone/glowstone_jellybean"
+  },
+  "glowstone_pillar": {
+    "bottom": "chisel:block/glowstone/glowstone_pillar-top"
+  },
+  "glowstone_slanted": {
+    "2x2_bottom_left": "chisel:block/glowstone/glowstone_slanted",
+    "2x2_bottom_right": "chisel:block/glowstone/glowstone_slanted-2x2_top_right",
+    "2x2_top_left": "chisel:block/glowstone/glowstone_slanted"
+  },
+  "glowstone_tiles_large": {
+    "ctm_cornerless": "chisel:block/glowstone/glowstone_mosaic-ctm_cornerless"
+  },
+  "glowstone_twisted": {
+    "bottom": "chisel:block/glowstone/glowstone_twisted-top"
+  }
+}

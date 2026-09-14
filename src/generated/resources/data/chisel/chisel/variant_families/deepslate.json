@@ -118,7 +118,11 @@
     {
       "block": "chisel:deepslate_slanted",
       "model_type": "multiblock_2x2",
-      "name": "deepslate_slanted"
+      "name": "deepslate_slanted",
+      "textures": {
+        "2x2_bottom_left": "chisel:block/deepslate/deepslate_slanted-2x2_top_left",
+        "2x2_bottom_right": "chisel:block/deepslate/deepslate_slanted-2x2_top_right"
+      }
     },
     {
       "block": "chisel:deepslate_small_bricks",
@@ -152,12 +156,18 @@
     {
       "block": "chisel:deepslate_twisted",
       "model_type": "top_bottom_side",
-      "name": "deepslate_twisted"
+      "name": "deepslate_twisted",
+      "textures": {
+        "bottom": "chisel:block/deepslate/deepslate_twisted-top"
+      }
     },
     {
       "block": "chisel:deepslate_weaver",
       "model_type": "connected",
-      "name": "deepslate_weaver"
+      "name": "deepslate_weaver",
+      "textures": {
+        "ctm_cornerless": "chisel:block/deepslate/deepslate_weaver-ctm_corner"
+      }
     },
     {
       "block": "chisel:deepslate_zag",

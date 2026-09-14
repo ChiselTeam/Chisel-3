@@ -2,8 +2,8 @@
   "parent": "chisel:block/cube_multi_pass_no_glow",
   "textures": {
     "all": "chisel:block/sea_lantern/sea_lantern_frame2",
-    "base_texture": "chisel:block/sea_lantern/sea_lantern_frame2-bg",
-    "layer0": "chisel:block/sea_lantern/sea_lantern_frame2-bg",
+    "base_texture": "chisel:block/sea_lantern/sea_lantern_raw",
+    "layer0": "chisel:block/sea_lantern/sea_lantern_raw",
     "layer1": "chisel:block/sea_lantern/sea_lantern_frame2",
     "particle": "chisel:block/sea_lantern/sea_lantern_frame2",
     "standard_corner": "chisel:block/sea_lantern/sea_lantern_frame2-ctm_corner",

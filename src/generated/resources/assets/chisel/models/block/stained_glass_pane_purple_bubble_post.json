@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/template_glass_pane_post",
   "textures": {
-    "edge": "chisel:block/stained_glass_pane_purple/stained_glass_pane_purple_bubble-top",
-    "pane": "chisel:block/stained_glass_pane_purple/stained_glass_pane_purple_bubble"
+    "edge": "chisel:block/stained_glass_pane_purple/stained_glass_pane_purple_quad-top",
+    "pane": "chisel:block/stained_glass_purple/stained_glass_purple_bubble"
   }
 }

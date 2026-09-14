@@ -1,18 +1,18 @@
 {
   "parent": "chisel:block/cube_multi_pass_tinted",
   "textures": {
-    "all": "chisel:block/waterstone/waterstone_chaotic_bricks",
+    "all": "chisel:block/lavastone/lavastone_chaotic_bricks",
     "layer0": "chisel:block/waterstone/water_still",
-    "layer1": "chisel:block/waterstone/waterstone_chaotic_bricks",
-    "multiblock_3x3_bottom_center": "chisel:block/waterstone/waterstone_chaotic_bricks-3x3_bottom_center",
-    "multiblock_3x3_bottom_left": "chisel:block/waterstone/waterstone_chaotic_bricks-3x3_bottom_left",
-    "multiblock_3x3_bottom_right": "chisel:block/waterstone/waterstone_chaotic_bricks-3x3_bottom_right",
-    "multiblock_3x3_center": "chisel:block/waterstone/waterstone_chaotic_bricks-3x3_center",
-    "multiblock_3x3_center_left": "chisel:block/waterstone/waterstone_chaotic_bricks-3x3_center_left",
-    "multiblock_3x3_center_right": "chisel:block/waterstone/waterstone_chaotic_bricks-3x3_center_right",
-    "multiblock_3x3_top_center": "chisel:block/waterstone/waterstone_chaotic_bricks-3x3_top_center",
-    "multiblock_3x3_top_left": "chisel:block/waterstone/waterstone_chaotic_bricks-3x3_top_left",
-    "multiblock_3x3_top_right": "chisel:block/waterstone/waterstone_chaotic_bricks-3x3_top_right",
-    "particle": "chisel:block/waterstone/waterstone_chaotic_bricks"
+    "layer1": "chisel:block/lavastone/lavastone_chaotic_bricks",
+    "multiblock_3x3_bottom_center": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_bottom_center",
+    "multiblock_3x3_bottom_left": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_bottom_left",
+    "multiblock_3x3_bottom_right": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_bottom_right",
+    "multiblock_3x3_center": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_center",
+    "multiblock_3x3_center_left": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_center_left",
+    "multiblock_3x3_center_right": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_center_right",
+    "multiblock_3x3_top_center": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_top_center",
+    "multiblock_3x3_top_left": "chisel:block/lavastone/lavastone_chaotic_bricks",
+    "multiblock_3x3_top_right": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_top_right",
+    "particle": "chisel:block/lavastone/lavastone_chaotic_bricks"
   }
 }

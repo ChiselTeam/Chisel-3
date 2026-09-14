@@ -1,0 +1,226 @@
+{
+  "dripstone_border_square": {
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_dent-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/dripstone/dripstone_border_square-ctm_vertical"
+  },
+  "dripstone_bricks_large": {
+    "2x2_bottom_left": "chisel:block/dripstone/dripstone_bricks_large-2x2_top_right",
+    "2x2_top_left": "chisel:block/dripstone/dripstone_bricks_large"
+  },
+  "dripstone_chaotic": {
+    "3x3_top_left": "chisel:block/dripstone/dripstone_chaotic"
+  },
+  "dripstone_circular": {
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_dent-ctm_cornerless"
+  },
+  "dripstone_cuts": {
+    "4x4_row_0_column_0": "chisel:block/dripstone/dripstone_cuts"
+  },
+  "dripstone_dots_encased": {
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_dots"
+  },
+  "dripstone_facet_small_encased": {
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_facet_small"
+  },
+  "dripstone_gem_1_connected": {
+    "": "chisel:block/dripstone/dripstone_gem_1",
+    "ctm_corner": "chisel:block/dripstone/dripstone_gem_1_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_dent-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/dripstone/dripstone_gem_1_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/dripstone/dripstone_gem_1_connected-ctm_vertical"
+  },
+  "dripstone_gem_2_connected": {
+    "": "chisel:block/dripstone/dripstone_gem_2",
+    "ctm_corner": "chisel:block/dripstone/dripstone_gem_2_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_dent-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/dripstone/dripstone_gem_2_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/dripstone/dripstone_gem_2_connected-ctm_vertical"
+  },
+  "dripstone_gem_3_connected": {
+    "": "chisel:block/dripstone/dripstone_gem_3",
+    "ctm_corner": "chisel:block/dripstone/dripstone_gem_3_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_gem_3_connected-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/dripstone/dripstone_gem_3_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/dripstone/dripstone_gem_3_connected-ctm_vertical"
+  },
+  "dripstone_herringbone_encased": {
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_herringbone"
+  },
+  "dripstone_indent": {
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_dent-ctm_cornerless"
+  },
+  "dripstone_jellybean": {
+    "2x2_top_left": "chisel:block/dripstone/dripstone_jellybean"
+  },
+  "dripstone_lodestone_connected": {
+    "": "chisel:block/dripstone/dripstone_lodestone",
+    "ctm_corner": "chisel:block/dripstone/dripstone_lodestone_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_lodestone",
+    "ctm_horizontal": "chisel:block/dripstone/dripstone_lodestone_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/dripstone/dripstone_lodestone_connected-ctm_vertical"
+  },
+  "dripstone_meander_horizontal": {
+    "bottom": "chisel:block/dripstone/dripstone_meander_horizontal-top"
+  },
+  "dripstone_meander_vertical": {
+    "bottom": "chisel:block/dripstone/dripstone_meander_vertical-top"
+  },
+  "dripstone_medallion_encased": {
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_medallion"
+  },
+  "dripstone_mosaic": {
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_dent-ctm_cornerless"
+  },
+  "dripstone_parquet_encased": {
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_parquet"
+  },
+  "dripstone_pillar": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar-top"
+  },
+  "dripstone_pillar_basic": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "vertical_none": "chisel:block/dripstone/dripstone_pillar_basic-side"
+  },
+  "dripstone_pillar_basic_dent": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "top": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "vertical_none": "chisel:block/dripstone/dripstone_pillar_basic_dent-side"
+  },
+  "dripstone_pillar_basic_plain": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "top": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "vertical_none": "chisel:block/dripstone/dripstone_pillar_basic_plain-side"
+  },
+  "dripstone_pillar_basic_round": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "top": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "vertical_none": "chisel:block/dripstone/dripstone_pillar_basic_round-side"
+  },
+  "dripstone_pillar_basic_spiral": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "top": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "vertical_none": "chisel:block/dripstone/dripstone_pillar_basic_spiral-side"
+  },
+  "dripstone_pillar_classic": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_classic-top"
+  },
+  "dripstone_pillar_classic_large": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_classic_large-top"
+  },
+  "dripstone_pillar_ionic": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "top": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "vertical_none": "chisel:block/dripstone/dripstone_pillar_ionic-side"
+  },
+  "dripstone_pillar_ionic_dent": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "side": "chisel:block/dripstone/dripstone_pillar_ionic-side",
+    "top": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "vertical_both": "chisel:block/dripstone/dripstone_pillar_basic_dent-vertical_both",
+    "vertical_none": "chisel:block/dripstone/dripstone_pillar_ionic-side"
+  },
+  "dripstone_pillar_ionic_plain": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "side": "chisel:block/dripstone/dripstone_pillar_ionic-side",
+    "top": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "vertical_both": "chisel:block/dripstone/dripstone_pillar_basic_plain-vertical_both",
+    "vertical_none": "chisel:block/dripstone/dripstone_pillar_ionic-side"
+  },
+  "dripstone_pillar_ionic_round": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "side": "chisel:block/dripstone/dripstone_pillar_ionic-side",
+    "top": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "vertical_both": "chisel:block/dripstone/dripstone_pillar_basic_round-vertical_both",
+    "vertical_none": "chisel:block/dripstone/dripstone_pillar_ionic-side"
+  },
+  "dripstone_pillar_ionic_spiral": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "side": "chisel:block/dripstone/dripstone_pillar_ionic-side",
+    "top": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "vertical_both": "chisel:block/dripstone/dripstone_pillar_basic_spiral-vertical_both",
+    "vertical_none": "chisel:block/dripstone/dripstone_pillar_ionic-side"
+  },
+  "dripstone_pillar_large_basic_triple": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "top": "chisel:block/dripstone/dripstone_pillar_basic-top"
+  },
+  "dripstone_pillar_large_ionic_triple": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "top": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "vertical_both": "chisel:block/dripstone/dripstone_pillar_large_basic_triple-vertical_both",
+    "vertical_none": "chisel:block/dripstone/dripstone_pillar_large_ionic_triple-side"
+  },
+  "dripstone_pillar_meander": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "top": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "vertical_both": "chisel:block/dripstone/dripstone_pillar_ionic-vertical_both",
+    "vertical_none": "chisel:block/dripstone/dripstone_pillar_meander-side"
+  },
+  "dripstone_pillar_meander_dent": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "side": "chisel:block/dripstone/dripstone_pillar_meander-side",
+    "top": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "vertical_both": "chisel:block/dripstone/dripstone_pillar_basic_dent-vertical_both",
+    "vertical_none": "chisel:block/dripstone/dripstone_pillar_meander-side"
+  },
+  "dripstone_pillar_meander_plain": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "side": "chisel:block/dripstone/dripstone_pillar_meander-side",
+    "top": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "vertical_both": "chisel:block/dripstone/dripstone_pillar_basic_plain-vertical_both",
+    "vertical_none": "chisel:block/dripstone/dripstone_pillar_meander-side"
+  },
+  "dripstone_pillar_meander_round": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "side": "chisel:block/dripstone/dripstone_pillar_meander-side",
+    "top": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "vertical_both": "chisel:block/dripstone/dripstone_pillar_basic_round-vertical_both",
+    "vertical_none": "chisel:block/dripstone/dripstone_pillar_meander-side"
+  },
+  "dripstone_pillar_meander_spiral": {
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "side": "chisel:block/dripstone/dripstone_pillar_meander-side",
+    "top": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "vertical_both": "chisel:block/dripstone/dripstone_pillar_basic_spiral-vertical_both",
+    "vertical_none": "chisel:block/dripstone/dripstone_pillar_meander-side"
+  },
+  "dripstone_plank_connected": {
+    "": "chisel:block/dripstone/dripstone_plank",
+    "ctm_corner": "chisel:block/dripstone/dripstone_plank_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_plank_connected-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/dripstone/dripstone_plank_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/dripstone/dripstone_plank_connected-ctm_vertical"
+  },
+  "dripstone_plate_connected": {
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_dent-ctm_cornerless"
+  },
+  "dripstone_scaffold_encased": {
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_scaffold"
+  },
+  "dripstone_shiny_connected": {
+    "": "chisel:block/dripstone/dripstone_shiny",
+    "ctm_corner": "chisel:block/dripstone/dripstone_shiny_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_shiny_connected-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/dripstone/dripstone_shiny_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/dripstone/dripstone_shiny_connected-ctm_vertical"
+  },
+  "dripstone_stripes_encased": {
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_stripes"
+  },
+  "dripstone_tiles_large": {
+    "": "chisel:block/dripstone/dripstone_polished",
+    "ctm_corner": "chisel:block/dripstone/dripstone_tiles_large-ctm_corner",
+    "ctm_cornerless": "chisel:block/dripstone/dripstone_dent-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/dripstone/dripstone_tiles_large-ctm_horizontal",
+    "ctm_vertical": "chisel:block/dripstone/dripstone_tiles_large-ctm_vertical"
+  },
+  "dripstone_twisted": {
+    "bottom": "chisel:block/dripstone/dripstone_twisted-top"
+  },
+  "dripstone_waves": {
+    "2x2_top_left": "chisel:block/dripstone/dripstone_waves"
+  },
+  "dripstone_zag": {
+    "2x2_bottom_left": "chisel:block/dripstone/dripstone_zag-2x2_top_right"
+  }
+}

@@ -9,7 +9,10 @@
     {
       "block": "chisel:diorite_array",
       "model_type": "multiblock_2x2",
-      "name": "diorite_array"
+      "name": "diorite_array",
+      "textures": {
+        "2x2_top_left": "chisel:block/diorite/diorite_array"
+      }
     },
     {
       "block": "chisel:diorite_braid",
@@ -18,7 +21,10 @@
     {
       "block": "chisel:diorite_chaotic",
       "model_type": "multiblock_3x3",
-      "name": "diorite_chaotic"
+      "name": "diorite_chaotic",
+      "textures": {
+        "3x3_top_left": "chisel:block/diorite/diorite_chaotic"
+      }
     },
     {
       "block": "chisel:diorite_chaotic_medium",
@@ -44,7 +50,10 @@
     {
       "block": "chisel:diorite_cuts",
       "model_type": "multiblock_4x4",
-      "name": "diorite_cuts"
+      "name": "diorite_cuts",
+      "textures": {
+        "4x4_row_0_column_0": "chisel:block/diorite/diorite_cuts"
+      }
     },
     {
       "block": "chisel:diorite_dent",
@@ -67,7 +76,10 @@
     {
       "block": "chisel:diorite_jellybean",
       "model_type": "multiblock_2x2",
-      "name": "diorite_jellybean"
+      "name": "diorite_jellybean",
+      "textures": {
+        "2x2_top_left": "chisel:block/diorite/diorite_jellybean"
+      }
     },
     {
       "block": "chisel:diorite_layers",
@@ -89,7 +101,10 @@
     {
       "block": "chisel:diorite_pillar",
       "model_type": "top_bottom_side",
-      "name": "diorite_pillar"
+      "name": "diorite_pillar",
+      "textures": {
+        "bottom": "chisel:block/diorite/diorite_pillar-top"
+      }
     },
     {
       "block": "chisel:diorite_prism",
@@ -106,7 +121,10 @@
     {
       "block": "chisel:diorite_slanted",
       "model_type": "multiblock_2x2",
-      "name": "diorite_slanted"
+      "name": "diorite_slanted",
+      "textures": {
+        "2x2_top_left": "chisel:block/diorite/diorite_slanted"
+      }
     },
     {
       "block": "chisel:diorite_small",
@@ -140,7 +158,10 @@
     {
       "block": "chisel:diorite_twisted",
       "model_type": "top_bottom_side",
-      "name": "diorite_twisted"
+      "name": "diorite_twisted",
+      "textures": {
+        "bottom": "chisel:block/diorite/diorite_twisted-top"
+      }
     },
     {
       "block": "chisel:diorite_weaver",
@@ -150,7 +171,10 @@
     {
       "block": "chisel:diorite_zag",
       "model_type": "ar",
-      "name": "diorite_zag"
+      "name": "diorite_zag",
+      "textures": {
+        "ar_variant_1": "chisel:block/diorite/diorite_zag"
+      }
     }
   ]
 }

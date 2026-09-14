@@ -1,15 +1,15 @@
 {
   "parent": "chisel:block/cube_multi_pass_tinted",
   "textures": {
-    "all": "chisel:block/waterstone/waterstone_tiles_large",
-    "base_texture": "chisel:block/waterstone/waterstone_tiles_large-bg",
-    "layer0": "chisel:block/waterstone/waterstone_tiles_large-bg",
-    "layer1": "chisel:block/waterstone/waterstone_tiles_large",
-    "particle": "chisel:block/waterstone/waterstone_tiles_large",
-    "standard_corner": "chisel:block/waterstone/waterstone_tiles_large-ctm_corner",
-    "standard_cornerless": "chisel:block/waterstone/waterstone_tiles_large-ctm_cornerless",
-    "standard_horizontal": "chisel:block/waterstone/waterstone_tiles_large-ctm_horizontal",
-    "standard_none": "chisel:block/waterstone/waterstone_tiles_large",
-    "standard_vertical": "chisel:block/waterstone/waterstone_tiles_large-ctm_vertical"
+    "all": "chisel:block/lavastone/lavastone_tiles_large",
+    "base_texture": "chisel:block/waterstone/water_still",
+    "layer0": "chisel:block/waterstone/water_still",
+    "layer1": "chisel:block/lavastone/lavastone_tiles_large",
+    "particle": "chisel:block/lavastone/lavastone_tiles_large",
+    "standard_corner": "chisel:block/lavastone/lavastone_tiles_large-ctm_corner",
+    "standard_cornerless": "chisel:block/lavastone/lavastone_mosaic-ctm_cornerless",
+    "standard_horizontal": "chisel:block/lavastone/lavastone_tiles_large-ctm_horizontal",
+    "standard_none": "chisel:block/lavastone/lavastone_tiles_large",
+    "standard_vertical": "chisel:block/lavastone/lavastone_tiles_large-ctm_vertical"
   }
 }

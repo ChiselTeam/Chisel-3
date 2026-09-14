@@ -2,13 +2,13 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/marble/marble_pillar_greek_plain-side",
-    "bottom": "chisel:block/marble/marble_pillar_greek_plain-bottom",
+    "bottom": "chisel:block/marble/marble_pillar_rough-top",
     "particle": "chisel:block/marble/marble_pillar_greek_plain-side",
     "side": "chisel:block/marble/marble_pillar_greek_plain-side",
-    "top": "chisel:block/marble/marble_pillar_greek_plain-top",
-    "vertical_both": "chisel:block/marble/marble_pillar_greek_plain-vertical_both",
+    "top": "chisel:block/marble/marble_pillar_rough-top",
+    "vertical_both": "chisel:block/marble/marble_pillar_greek_decor-vertical_both",
     "vertical_bottom": "chisel:block/marble/marble_pillar_greek_plain-vertical_bottom",
-    "vertical_none": "chisel:block/marble/marble_pillar_greek_plain-vertical_none",
+    "vertical_none": "chisel:block/marble/marble_pillar_greek_plain-side",
     "vertical_top": "chisel:block/marble/marble_pillar_greek_plain-vertical_top"
   }
 }

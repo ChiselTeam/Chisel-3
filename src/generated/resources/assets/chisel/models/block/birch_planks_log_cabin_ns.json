@@ -4,8 +4,8 @@
     "all": "chisel:block/birch_planks/birch_planks_log_cabin_ns",
     "particle": "chisel:block/birch_planks/birch_planks_log_cabin_ns",
     "standard_corner": "chisel:block/birch_planks/birch_planks_log_cabin_ns-ctm_corner",
-    "standard_cornerless": "chisel:block/birch_planks/birch_planks_log_cabin_ns-ctm_cornerless",
-    "standard_horizontal": "chisel:block/birch_planks/birch_planks_log_cabin_ns-ctm_horizontal",
+    "standard_cornerless": "chisel:block/birch_planks/birch_planks_log_cabin_ns-ctm_vertical",
+    "standard_horizontal": "chisel:block/birch_planks/birch_planks_log_cabin_ns",
     "standard_none": "chisel:block/birch_planks/birch_planks_log_cabin_ns",
     "standard_vertical": "chisel:block/birch_planks/birch_planks_log_cabin_ns-ctm_vertical"
   }

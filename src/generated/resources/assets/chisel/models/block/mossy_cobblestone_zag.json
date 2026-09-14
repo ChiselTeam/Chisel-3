@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/mossy_cobblestone/mossy_cobblestone_zag",
-    "ar_1": "chisel:block/mossy_cobblestone/mossy_cobblestone_zag-ar_variant_1",
+    "ar_1": "chisel:block/mossy_cobblestone/mossy_cobblestone_zag",
     "ar_2": "chisel:block/mossy_cobblestone/mossy_cobblestone_zag-ar_variant_2",
     "ar_3": "chisel:block/mossy_cobblestone/mossy_cobblestone_zag-ar_variant_3",
     "ar_4": "chisel:block/mossy_cobblestone/mossy_cobblestone_zag-ar_variant_4",

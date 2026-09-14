@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/oc_tallow/tallow_block-bottom",
+    "bottom": "chisel:block/oc_tallow/tallow_smooth",
     "side": "chisel:block/oc_tallow/tallow_block-side",
-    "top": "chisel:block/oc_tallow/tallow_block-top"
+    "top": "chisel:block/oc_tallow/tallow_smooth"
   }
 }

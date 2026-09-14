@@ -9,7 +9,18 @@
     {
       "block": "chisel:crimson_planks_braced",
       "model_type": "connected_tbs",
-      "name": "crimson_planks_braced"
+      "name": "crimson_planks_braced",
+      "textures": {
+        "bottom": "chisel:block/crimson_planks/crimson_planks_braced",
+        "side": "chisel:block/crimson_planks/crimson_planks_braced",
+        "side-ctm_cornerless": "chisel:block/crimson_planks/crimson_planks_log_bordered-ctm_cornerless",
+        "side-ctm_vertical": "chisel:block/crimson_planks/crimson_planks_braced",
+        "top": "chisel:block/crimson_planks/crimson_planks_braced",
+        "top-ctm_corner": "chisel:block/crimson_planks/crimson_planks_log_bordered",
+        "top-ctm_cornerless": "chisel:block/crimson_planks/crimson_planks_log_bordered-ctm_cornerless",
+        "top-ctm_horizontal": "chisel:block/crimson_planks/crimson_planks_log_bordered",
+        "top-ctm_vertical": "chisel:block/crimson_planks/crimson_planks_braced"
+      }
     },
     {
       "block": "chisel:crimson_planks_braid",
@@ -28,7 +39,10 @@
     {
       "block": "chisel:crimson_planks_crude_vertical",
       "model_type": "multiblock_3x3",
-      "name": "crimson_planks_crude_vertical"
+      "name": "crimson_planks_crude_vertical",
+      "textures": {
+        "3x3_top_left": "chisel:block/crimson_planks/crimson_planks_crude_vertical"
+      }
     },
     {
       "block": "chisel:crimson_planks_encased",
@@ -38,12 +52,18 @@
     {
       "block": "chisel:crimson_planks_encased_large",
       "model_type": "connected",
-      "name": "crimson_planks_encased_large"
+      "name": "crimson_planks_encased_large",
+      "textures": {
+        "ctm_cornerless": "chisel:block/crimson_planks/crimson_planks_large"
+      }
     },
     {
       "block": "chisel:crimson_planks_encased_smooth",
       "model_type": "connected",
-      "name": "crimson_planks_encased_smooth"
+      "name": "crimson_planks_encased_smooth",
+      "textures": {
+        "ctm_cornerless": "chisel:block/crimson_planks/crimson_planks_smooth-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:crimson_planks_large",
@@ -52,22 +72,40 @@
     {
       "block": "chisel:crimson_planks_log_bordered",
       "model_type": "connected",
-      "name": "crimson_planks_log_bordered"
+      "name": "crimson_planks_log_bordered",
+      "textures": {
+        "ctm_corner": "chisel:block/crimson_planks/crimson_planks_log_bordered",
+        "ctm_horizontal": "chisel:block/crimson_planks/crimson_planks_log_bordered",
+        "ctm_vertical": "chisel:block/crimson_planks/crimson_planks_braced"
+      }
     },
     {
       "block": "chisel:crimson_planks_log_cabin_ew",
       "model_type": "connected",
-      "name": "crimson_planks_log_cabin_ew"
+      "name": "crimson_planks_log_cabin_ew",
+      "textures": {
+        "ctm_cornerless": "chisel:block/crimson_planks/crimson_planks_braced",
+        "ctm_vertical": "chisel:block/crimson_planks/crimson_planks_braced"
+      }
     },
     {
       "block": "chisel:crimson_planks_log_cabin_ns",
       "model_type": "connected",
-      "name": "crimson_planks_log_cabin_ns"
+      "name": "crimson_planks_log_cabin_ns",
+      "textures": {
+        "ctm_cornerless": "chisel:block/crimson_planks/crimson_planks_log_cabin_ns-ctm_vertical",
+        "ctm_horizontal": "chisel:block/crimson_planks/crimson_planks_log_cabin_ns"
+      }
     },
     {
       "block": "chisel:crimson_planks_paneling",
       "model_type": "connected",
-      "name": "crimson_planks_paneling"
+      "name": "crimson_planks_paneling",
+      "textures": {
+        "ctm_cornerless": "chisel:block/crimson_planks/crimson_planks_paneling-ctm_corner",
+        "ctm_horizontal": "chisel:block/crimson_planks/crimson_planks_paneling-ctm_corner",
+        "ctm_vertical": "chisel:block/crimson_planks/crimson_planks_paneling"
+      }
     },
     {
       "block": "chisel:crimson_planks_shipping",

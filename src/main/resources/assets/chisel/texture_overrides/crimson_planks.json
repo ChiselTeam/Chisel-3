@@ -1,0 +1,40 @@
+{
+  "crimson_planks_braced": {
+    "bottom": "chisel:block/crimson_planks/crimson_planks_braced",
+    "side": "chisel:block/crimson_planks/crimson_planks_braced",
+    "side-ctm_cornerless": "chisel:block/crimson_planks/crimson_planks_log_bordered-ctm_cornerless",
+    "side-ctm_vertical": "chisel:block/crimson_planks/crimson_planks_braced",
+    "top": "chisel:block/crimson_planks/crimson_planks_braced",
+    "top-ctm_corner": "chisel:block/crimson_planks/crimson_planks_log_bordered",
+    "top-ctm_cornerless": "chisel:block/crimson_planks/crimson_planks_log_bordered-ctm_cornerless",
+    "top-ctm_horizontal": "chisel:block/crimson_planks/crimson_planks_log_bordered",
+    "top-ctm_vertical": "chisel:block/crimson_planks/crimson_planks_braced"
+  },
+  "crimson_planks_crude_vertical": {
+    "3x3_top_left": "chisel:block/crimson_planks/crimson_planks_crude_vertical"
+  },
+  "crimson_planks_encased_large": {
+    "ctm_cornerless": "chisel:block/crimson_planks/crimson_planks_large"
+  },
+  "crimson_planks_encased_smooth": {
+    "ctm_cornerless": "chisel:block/crimson_planks/crimson_planks_smooth-ctm_cornerless"
+  },
+  "crimson_planks_log_bordered": {
+    "ctm_corner": "chisel:block/crimson_planks/crimson_planks_log_bordered",
+    "ctm_horizontal": "chisel:block/crimson_planks/crimson_planks_log_bordered",
+    "ctm_vertical": "chisel:block/crimson_planks/crimson_planks_braced"
+  },
+  "crimson_planks_log_cabin_ew": {
+    "ctm_cornerless": "chisel:block/crimson_planks/crimson_planks_braced",
+    "ctm_vertical": "chisel:block/crimson_planks/crimson_planks_braced"
+  },
+  "crimson_planks_log_cabin_ns": {
+    "ctm_cornerless": "chisel:block/crimson_planks/crimson_planks_log_cabin_ns-ctm_vertical",
+    "ctm_horizontal": "chisel:block/crimson_planks/crimson_planks_log_cabin_ns"
+  },
+  "crimson_planks_paneling": {
+    "ctm_cornerless": "chisel:block/crimson_planks/crimson_planks_paneling-ctm_corner",
+    "ctm_horizontal": "chisel:block/crimson_planks/crimson_planks_paneling-ctm_corner",
+    "ctm_vertical": "chisel:block/crimson_planks/crimson_planks_paneling"
+  }
+}

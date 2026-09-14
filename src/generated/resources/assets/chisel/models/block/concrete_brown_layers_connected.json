@@ -4,9 +4,9 @@
     "all": "chisel:block/concrete_brown/concrete_brown_layers_connected",
     "particle": "chisel:block/concrete_brown/concrete_brown_layers_connected",
     "standard_corner": "chisel:block/concrete_brown/concrete_brown_layers_connected-ctm_corner",
-    "standard_cornerless": "chisel:block/concrete_brown/concrete_brown_layers_connected-ctm_cornerless",
-    "standard_horizontal": "chisel:block/concrete_brown/concrete_brown_layers_connected-ctm_horizontal",
+    "standard_cornerless": "chisel:block/concrete_brown/concrete_brown_layers_connected-ctm_corner",
+    "standard_horizontal": "chisel:block/concrete_brown/concrete_brown_layers_connected",
     "standard_none": "chisel:block/concrete_brown/concrete_brown_layers_connected",
-    "standard_vertical": "chisel:block/concrete_brown/concrete_brown_layers_connected-ctm_vertical"
+    "standard_vertical": "chisel:block/concrete_brown/concrete_brown_layers_connected-ctm_corner"
   }
 }

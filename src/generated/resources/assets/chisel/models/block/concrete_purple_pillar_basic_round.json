@@ -2,10 +2,10 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/concrete_purple/concrete_purple_pillar_basic_round-side",
-    "bottom": "chisel:block/concrete_purple/concrete_purple_pillar_basic_round-bottom",
+    "bottom": "chisel:block/concrete_purple/concrete_purple_pillar_basic-top",
     "particle": "chisel:block/concrete_purple/concrete_purple_pillar_basic_round-side",
     "side": "chisel:block/concrete_purple/concrete_purple_pillar_basic_round-side",
-    "top": "chisel:block/concrete_purple/concrete_purple_pillar_basic_round-top",
+    "top": "chisel:block/concrete_purple/concrete_purple_pillar_basic-top",
     "vertical_both": "chisel:block/concrete_purple/concrete_purple_pillar_basic_round-vertical_both",
     "vertical_bottom": "chisel:block/concrete_purple/concrete_purple_pillar_basic_round-vertical_bottom",
     "vertical_none": "chisel:block/concrete_purple/concrete_purple_pillar_basic_round-vertical_none",

@@ -4,7 +4,7 @@
     "all": "chisel:block/calcite/calcite_facet_small_encased",
     "particle": "chisel:block/calcite/calcite_facet_small_encased",
     "standard_corner": "chisel:block/calcite/calcite_facet_small_encased-ctm_corner",
-    "standard_cornerless": "chisel:block/calcite/calcite_facet_small_encased-ctm_cornerless",
+    "standard_cornerless": "chisel:block/calcite/calcite_facet_small",
     "standard_horizontal": "chisel:block/calcite/calcite_facet_small_encased-ctm_horizontal",
     "standard_none": "chisel:block/calcite/calcite_facet_small_encased",
     "standard_vertical": "chisel:block/calcite/calcite_facet_small_encased-ctm_vertical"

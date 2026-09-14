@@ -4,7 +4,7 @@
     "all": "chisel:block/tuff/tuff_indent",
     "particle": "chisel:block/tuff/tuff_indent",
     "standard_corner": "chisel:block/tuff/tuff_indent-ctm_corner",
-    "standard_cornerless": "chisel:block/tuff/tuff_indent-ctm_cornerless",
+    "standard_cornerless": "chisel:block/tuff/tuff_dent-ctm_cornerless",
     "standard_horizontal": "chisel:block/tuff/tuff_indent-ctm_horizontal",
     "standard_none": "chisel:block/tuff/tuff_indent",
     "standard_vertical": "chisel:block/tuff/tuff_indent-ctm_vertical"

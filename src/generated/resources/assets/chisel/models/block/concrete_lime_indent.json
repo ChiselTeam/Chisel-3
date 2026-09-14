@@ -4,7 +4,7 @@
     "all": "chisel:block/concrete_lime/concrete_lime_indent",
     "particle": "chisel:block/concrete_lime/concrete_lime_indent",
     "standard_corner": "chisel:block/concrete_lime/concrete_lime_indent-ctm_corner",
-    "standard_cornerless": "chisel:block/concrete_lime/concrete_lime_indent-ctm_cornerless",
+    "standard_cornerless": "chisel:block/concrete_lime/concrete_lime_dent-ctm_cornerless",
     "standard_horizontal": "chisel:block/concrete_lime/concrete_lime_indent-ctm_horizontal",
     "standard_none": "chisel:block/concrete_lime/concrete_lime_indent",
     "standard_vertical": "chisel:block/concrete_lime/concrete_lime_indent-ctm_vertical"

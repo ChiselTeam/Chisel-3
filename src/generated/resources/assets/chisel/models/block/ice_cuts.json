@@ -1,6 +1,6 @@
 {
   "textures": {
-    "multiblock_4x4_row_0_column_0": "chisel:block/ice/ice_cuts-4x4_row_0_column_0",
+    "multiblock_4x4_row_0_column_0": "chisel:block/ice/ice_cuts",
     "multiblock_4x4_row_0_column_1": "chisel:block/ice/ice_cuts-4x4_row_0_column_1",
     "multiblock_4x4_row_0_column_2": "chisel:block/ice/ice_cuts-4x4_row_0_column_2",
     "multiblock_4x4_row_0_column_3": "chisel:block/ice/ice_cuts-4x4_row_0_column_3",

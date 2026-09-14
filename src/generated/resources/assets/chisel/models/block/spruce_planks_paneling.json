@@ -4,8 +4,8 @@
     "all": "chisel:block/spruce_planks/spruce_planks_paneling",
     "particle": "chisel:block/spruce_planks/spruce_planks_paneling",
     "standard_corner": "chisel:block/spruce_planks/spruce_planks_paneling-ctm_corner",
-    "standard_cornerless": "chisel:block/spruce_planks/spruce_planks_paneling-ctm_cornerless",
-    "standard_horizontal": "chisel:block/spruce_planks/spruce_planks_paneling-ctm_horizontal",
+    "standard_cornerless": "chisel:block/spruce_planks/spruce_planks_paneling-ctm_corner",
+    "standard_horizontal": "chisel:block/spruce_planks/spruce_planks_paneling-ctm_corner",
     "standard_none": "chisel:block/spruce_planks/spruce_planks_paneling",
     "standard_vertical": "chisel:block/spruce_planks/spruce_planks_paneling-ctm_vertical"
   }

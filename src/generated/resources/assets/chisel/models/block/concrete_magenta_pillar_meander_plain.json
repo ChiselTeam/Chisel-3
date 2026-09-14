@@ -1,14 +1,14 @@
 {
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/concrete_magenta/concrete_magenta_pillar_meander_plain-side",
-    "bottom": "chisel:block/concrete_magenta/concrete_magenta_pillar_meander_plain-bottom",
-    "particle": "chisel:block/concrete_magenta/concrete_magenta_pillar_meander_plain-side",
-    "side": "chisel:block/concrete_magenta/concrete_magenta_pillar_meander_plain-side",
-    "top": "chisel:block/concrete_magenta/concrete_magenta_pillar_meander_plain-top",
-    "vertical_both": "chisel:block/concrete_magenta/concrete_magenta_pillar_meander_plain-vertical_both",
+    "all": "chisel:block/concrete_magenta/concrete_magenta_pillar_meander-side",
+    "bottom": "chisel:block/concrete_magenta/concrete_magenta_pillar_basic-top",
+    "particle": "chisel:block/concrete_magenta/concrete_magenta_pillar_meander-side",
+    "side": "chisel:block/concrete_magenta/concrete_magenta_pillar_meander-side",
+    "top": "chisel:block/concrete_magenta/concrete_magenta_pillar_basic-top",
+    "vertical_both": "chisel:block/concrete_magenta/concrete_magenta_pillar_basic_plain-vertical_both",
     "vertical_bottom": "chisel:block/concrete_magenta/concrete_magenta_pillar_meander_plain-vertical_bottom",
-    "vertical_none": "chisel:block/concrete_magenta/concrete_magenta_pillar_meander_plain-vertical_none",
+    "vertical_none": "chisel:block/concrete_magenta/concrete_magenta_pillar_meander-vertical_none",
     "vertical_top": "chisel:block/concrete_magenta/concrete_magenta_pillar_meander_plain-vertical_top"
   }
 }

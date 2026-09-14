@@ -5,7 +5,11 @@
     {
       "block": "chisel:tallow_block",
       "model_type": "top_bottom_side",
-      "name": "tallow_block"
+      "name": "tallow_block",
+      "textures": {
+        "bottom": "chisel:block/oc_tallow/tallow_smooth",
+        "top": "chisel:block/oc_tallow/tallow_smooth"
+      }
     },
     {
       "block": "chisel:tallow_faces",

@@ -9,7 +9,10 @@
     {
       "block": "chisel:limestone_array",
       "model_type": "multiblock_2x2",
-      "name": "limestone_array"
+      "name": "limestone_array",
+      "textures": {
+        "2x2_top_left": "chisel:block/limestone/limestone_array"
+      }
     },
     {
       "block": "chisel:limestone_braid",
@@ -18,7 +21,10 @@
     {
       "block": "chisel:limestone_chaotic_bricks",
       "model_type": "multiblock_3x3",
-      "name": "limestone_chaotic_bricks"
+      "name": "limestone_chaotic_bricks",
+      "textures": {
+        "3x3_top_left": "chisel:block/limestone/limestone_chaotic_bricks"
+      }
     },
     {
       "block": "chisel:limestone_chaotic_medium",
@@ -44,7 +50,10 @@
     {
       "block": "chisel:limestone_cuts",
       "model_type": "multiblock_4x4",
-      "name": "limestone_cuts"
+      "name": "limestone_cuts",
+      "textures": {
+        "4x4_row_0_column_0": "chisel:block/limestone/limestone_cuts"
+      }
     },
     {
       "block": "chisel:limestone_dent",
@@ -67,7 +76,10 @@
     {
       "block": "chisel:limestone_jellybean",
       "model_type": "multiblock_2x2",
-      "name": "limestone_jellybean"
+      "name": "limestone_jellybean",
+      "textures": {
+        "2x2_top_left": "chisel:block/limestone/limestone_jellybean"
+      }
     },
     {
       "block": "chisel:limestone_layers",
@@ -89,7 +101,10 @@
     {
       "block": "chisel:limestone_pillar",
       "model_type": "top_bottom_side",
-      "name": "limestone_pillar"
+      "name": "limestone_pillar",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_pillar-top"
+      }
     },
     {
       "block": "chisel:limestone_prism",
@@ -102,7 +117,10 @@
     {
       "block": "chisel:limestone_slanted",
       "model_type": "multiblock_2x2",
-      "name": "limestone_slanted"
+      "name": "limestone_slanted",
+      "textures": {
+        "2x2_top_left": "chisel:block/limestone/limestone_slanted"
+      }
     },
     {
       "block": "chisel:limestone_small_bricks",
@@ -136,7 +154,10 @@
     {
       "block": "chisel:limestone_twisted",
       "model_type": "top_bottom_side",
-      "name": "limestone_twisted"
+      "name": "limestone_twisted",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_twisted-top"
+      }
     },
     {
       "block": "chisel:limestone_weaver",
@@ -146,7 +167,10 @@
     {
       "block": "chisel:limestone_zag",
       "model_type": "ar",
-      "name": "limestone_zag"
+      "name": "limestone_zag",
+      "textures": {
+        "ar_variant_1": "chisel:block/limestone/limestone_zag"
+      }
     }
   ]
 }

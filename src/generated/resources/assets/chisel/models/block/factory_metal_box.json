@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/factory/factory_metal_box-bottom",
+    "bottom": "chisel:block/factory/factory_metal_box-top",
     "side": "chisel:block/factory/factory_metal_box-side",
     "top": "chisel:block/factory/factory_metal_box-top"
   }

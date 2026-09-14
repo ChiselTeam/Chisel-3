@@ -1,0 +1,12 @@
+{
+  "deepslate_slanted": {
+    "2x2_bottom_left": "chisel:block/deepslate/deepslate_slanted-2x2_top_left",
+    "2x2_bottom_right": "chisel:block/deepslate/deepslate_slanted-2x2_top_right"
+  },
+  "deepslate_twisted": {
+    "bottom": "chisel:block/deepslate/deepslate_twisted-top"
+  },
+  "deepslate_weaver": {
+    "ctm_cornerless": "chisel:block/deepslate/deepslate_weaver-ctm_corner"
+  }
+}

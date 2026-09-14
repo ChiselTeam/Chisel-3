@@ -9,7 +9,17 @@
     {
       "block": "chisel:pale_oak_planks_braced",
       "model_type": "connected_tbs",
-      "name": "pale_oak_planks_braced"
+      "name": "pale_oak_planks_braced",
+      "textures": {
+        "bottom": "chisel:block/pale_oak_planks/pale_oak_planks_braced",
+        "side": "chisel:block/pale_oak_planks/pale_oak_planks_braced",
+        "side-ctm_cornerless": "chisel:block/pale_oak_planks/pale_oak_planks_log_bordered-ctm_cornerless",
+        "side-ctm_vertical": "chisel:block/pale_oak_planks/pale_oak_planks_braced",
+        "top": "chisel:block/pale_oak_planks/pale_oak_planks_braced",
+        "top-ctm_cornerless": "chisel:block/pale_oak_planks/pale_oak_planks_log_bordered-ctm_cornerless",
+        "top-ctm_horizontal": "chisel:block/pale_oak_planks/pale_oak_planks_log_bordered",
+        "top-ctm_vertical": "chisel:block/pale_oak_planks/pale_oak_planks_braced"
+      }
     },
     {
       "block": "chisel:pale_oak_planks_braid",
@@ -52,17 +62,31 @@
     {
       "block": "chisel:pale_oak_planks_log_bordered",
       "model_type": "connected",
-      "name": "pale_oak_planks_log_bordered"
+      "name": "pale_oak_planks_log_bordered",
+      "textures": {
+        "ctm_corner": "chisel:block/pale_oak_planks/pale_oak_planks_log_bordered",
+        "ctm_horizontal": "chisel:block/pale_oak_planks/pale_oak_planks_log_bordered",
+        "ctm_vertical": "chisel:block/pale_oak_planks/pale_oak_planks_braced"
+      }
     },
     {
       "block": "chisel:pale_oak_planks_log_cabin_ns",
       "model_type": "connected",
-      "name": "pale_oak_planks_log_cabin_ns"
+      "name": "pale_oak_planks_log_cabin_ns",
+      "textures": {
+        "ctm_cornerless": "chisel:block/pale_oak_planks/pale_oak_planks_log_cabin_ew-ctm_vertical",
+        "ctm_horizontal": "chisel:block/pale_oak_planks/pale_oak_planks_log_cabin_ns-ctm_corner",
+        "ctm_vertical": "chisel:block/pale_oak_planks/pale_oak_planks_log_cabin_ew-ctm_vertical"
+      }
     },
     {
       "block": "chisel:pale_oak_planks_log_cabin_ew",
       "model_type": "connected",
-      "name": "pale_oak_planks_log_cabin_ew"
+      "name": "pale_oak_planks_log_cabin_ew",
+      "textures": {
+        "ctm_cornerless": "chisel:block/pale_oak_planks/pale_oak_planks_log_cabin_ew-ctm_vertical",
+        "ctm_horizontal": "chisel:block/pale_oak_planks/pale_oak_planks_log_cabin_ew-ctm_corner"
+      }
     },
     {
       "block": "chisel:pale_oak_planks_paneling",

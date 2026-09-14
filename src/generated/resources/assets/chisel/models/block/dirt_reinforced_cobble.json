@@ -4,7 +4,7 @@
     "all": "chisel:block/dirt/dirt_reinforced_cobble",
     "particle": "chisel:block/dirt/dirt_reinforced_cobble",
     "standard_corner": "chisel:block/dirt/dirt_reinforced_cobble-ctm_corner",
-    "standard_cornerless": "chisel:block/dirt/dirt_reinforced_cobble-ctm_cornerless",
+    "standard_cornerless": "chisel:block/dirt/dirt_cobble",
     "standard_horizontal": "chisel:block/dirt/dirt_reinforced_cobble-ctm_horizontal",
     "standard_none": "chisel:block/dirt/dirt_reinforced_cobble",
     "standard_vertical": "chisel:block/dirt/dirt_reinforced_cobble-ctm_vertical"

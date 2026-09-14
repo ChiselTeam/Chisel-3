@@ -1,0 +1,30 @@
+{
+  "spruce_planks_crude_horizontal": {
+    "3x3_top_left": "chisel:block/spruce_planks/spruce_planks_crude_horizontal"
+  },
+  "spruce_planks_crude_vertical": {
+    "3x3_top_left": "chisel:block/spruce_planks/spruce_planks_crude_vertical"
+  },
+  "spruce_planks_encased_large": {
+    "ctm_cornerless": "chisel:block/spruce_planks/spruce_planks_large"
+  },
+  "spruce_planks_encased_smooth": {
+    "ctm_cornerless": "chisel:block/spruce_planks/spruce_planks_smooth-ctm_cornerless"
+  },
+  "spruce_planks_log_bordered": {
+    "ctm_corner": "chisel:block/spruce_planks/spruce_planks_log_bordered",
+    "ctm_horizontal": "chisel:block/spruce_planks/spruce_planks_log_bordered",
+    "ctm_vertical": "chisel:block/spruce_planks/spruce_planks_braced"
+  },
+  "spruce_planks_log_cabin_ew": {
+    "ctm_cornerless": "chisel:block/spruce_planks/spruce_planks_braced",
+    "ctm_vertical": "chisel:block/spruce_planks/spruce_planks_braced"
+  },
+  "spruce_planks_log_cabin_ns": {
+    "ctm_cornerless": "chisel:block/spruce_planks/spruce_planks_log_cabin_ns-ctm_vertical"
+  },
+  "spruce_planks_paneling": {
+    "ctm_cornerless": "chisel:block/spruce_planks/spruce_planks_paneling-ctm_corner",
+    "ctm_horizontal": "chisel:block/spruce_planks/spruce_planks_paneling-ctm_corner"
+  }
+}

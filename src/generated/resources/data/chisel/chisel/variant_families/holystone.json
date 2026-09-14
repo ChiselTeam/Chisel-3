@@ -21,7 +21,11 @@
     {
       "block": "chisel:holystone_chiseled",
       "model_type": "top_bottom_side",
-      "name": "holystone_chiseled"
+      "name": "holystone_chiseled",
+      "textures": {
+        "bottom": "chisel:block/holystone/holystone_smooth",
+        "top": "chisel:block/holystone/holystone_smooth"
+      }
     },
     {
       "block": "chisel:holystone_construction",
@@ -42,12 +46,18 @@
     {
       "block": "chisel:holystone_platform",
       "model_type": "top_bottom_side",
-      "name": "holystone_platform"
+      "name": "holystone_platform",
+      "textures": {
+        "bottom": "chisel:block/holystone/holystone_platform-side"
+      }
     },
     {
       "block": "chisel:holystone_platform_tiles",
       "model_type": "top_bottom_side",
-      "name": "holystone_platform_tiles"
+      "name": "holystone_platform_tiles",
+      "textures": {
+        "bottom": "chisel:block/holystone/holystone_raw"
+      }
     },
     {
       "block": "chisel:holystone_raw",

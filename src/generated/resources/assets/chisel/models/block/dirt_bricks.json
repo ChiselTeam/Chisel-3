@@ -1,14 +1,14 @@
 {
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/dirt/dirt_bricks-side",
-    "bottom": "chisel:block/dirt/dirt_bricks-bottom",
-    "particle": "chisel:block/dirt/dirt_bricks-side",
-    "side": "chisel:block/dirt/dirt_bricks-side",
+    "all": "chisel:block/dirt/dirt_bricks-top",
+    "bottom": "chisel:block/dirt/dirt_bricks-top",
+    "particle": "chisel:block/dirt/dirt_bricks-top",
+    "side": "chisel:block/dirt/dirt_bricks-top",
     "top": "chisel:block/dirt/dirt_bricks-top",
     "vertical_both": "chisel:block/dirt/dirt_bricks-vertical_both",
-    "vertical_bottom": "chisel:block/dirt/dirt_bricks-vertical_bottom",
-    "vertical_none": "chisel:block/dirt/dirt_bricks-vertical_none",
+    "vertical_bottom": "chisel:block/dirt/dirt_bricks-vertical_both",
+    "vertical_none": "chisel:block/dirt/dirt_bricks-vertical_top",
     "vertical_top": "chisel:block/dirt/dirt_bricks-vertical_top"
   }
 }

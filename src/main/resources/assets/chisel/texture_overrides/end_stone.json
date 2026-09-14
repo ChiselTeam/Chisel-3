@@ -1,0 +1,26 @@
+{
+  "end_stone_array": {
+    "2x2_top_left": "chisel:block/end_stone/end_stone_array"
+  },
+  "end_stone_chaotic_bricks": {
+    "3x3_top_left": "chisel:block/end_stone/end_stone_chaotic_bricks"
+  },
+  "end_stone_cuts": {
+    "4x4_row_0_column_0": "chisel:block/end_stone/end_stone_cuts"
+  },
+  "end_stone_jellybean": {
+    "2x2_top_left": "chisel:block/end_stone/end_stone_jellybean"
+  },
+  "end_stone_pillar": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar-top"
+  },
+  "end_stone_slanted": {
+    "2x2_top_left": "chisel:block/end_stone/end_stone_slanted"
+  },
+  "end_stone_twisted": {
+    "bottom": "chisel:block/end_stone/end_stone_twisted-top"
+  },
+  "end_stone_zag": {
+    "ar_variant_1": "chisel:block/end_stone/end_stone_zag"
+  }
+}

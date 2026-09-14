@@ -1,14 +1,14 @@
 {
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_plain-side",
-    "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_plain-bottom",
-    "particle": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_plain-side",
-    "side": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_plain-side",
-    "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_plain-top",
-    "vertical_both": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_plain-vertical_both",
+    "all": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander-side",
+    "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+    "particle": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander-side",
+    "side": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander-side",
+    "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+    "vertical_both": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic_plain-vertical_both",
     "vertical_bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_plain-vertical_bottom",
-    "vertical_none": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_plain-vertical_none",
+    "vertical_none": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander-vertical_none",
     "vertical_top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander_plain-vertical_top"
   }
 }

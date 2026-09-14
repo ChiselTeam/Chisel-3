@@ -4,7 +4,7 @@
     "all": "chisel:block/quartz/quartz_encased_bricks",
     "particle": "chisel:block/quartz/quartz_encased_bricks",
     "standard_corner": "chisel:block/quartz/quartz_encased_bricks-ctm_corner",
-    "standard_cornerless": "chisel:block/quartz/quartz_encased_bricks-ctm_cornerless",
+    "standard_cornerless": "chisel:block/quartz/quartz_solid_bricks",
     "standard_horizontal": "chisel:block/quartz/quartz_encased_bricks-ctm_horizontal",
     "standard_none": "chisel:block/quartz/quartz_encased_bricks",
     "standard_vertical": "chisel:block/quartz/quartz_encased_bricks-ctm_vertical"

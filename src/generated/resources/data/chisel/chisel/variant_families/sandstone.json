@@ -21,7 +21,10 @@
     {
       "block": "chisel:sandstone_base",
       "model_type": "top_bottom_side",
-      "name": "sandstone_base"
+      "name": "sandstone_base",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_base-top"
+      }
     },
     {
       "block": "chisel:sandstone_block",
@@ -39,122 +42,215 @@
     {
       "block": "chisel:sandstone_capstone",
       "model_type": "top_bottom_side",
-      "name": "sandstone_capstone"
+      "name": "sandstone_capstone",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_base-top",
+        "top": "chisel:block/sandstone/sandstone_base-top"
+      }
     },
     {
       "block": "chisel:sandstone_cobble_solid",
       "model_type": "top_bottom_side",
-      "name": "sandstone_cobble_solid"
+      "name": "sandstone_cobble_solid",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_cobble_solid-top",
+        "side": "chisel:block/sandstone/sandstone_cobble_solid-top"
+      }
     },
     {
       "block": "chisel:sandstone_column",
       "model_type": "top_bottom_side",
-      "name": "sandstone_column"
+      "name": "sandstone_column",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_base-top",
+        "top": "chisel:block/sandstone/sandstone_base-top"
+      }
     },
     {
       "block": "chisel:sandstone_creeper",
       "model_type": "top_bottom_side",
-      "name": "sandstone_creeper"
+      "name": "sandstone_creeper",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_creeper-top",
+        "side": "chisel:block/sandstone/sandstone_creeper-top"
+      }
     },
     {
       "block": "chisel:sandstone_faded",
       "model_type": "top_bottom_side",
-      "name": "sandstone_faded"
+      "name": "sandstone_faded",
+      "textures": {
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_horizontal_tiles",
       "model_type": "top_bottom_side",
-      "name": "sandstone_horizontal_tiles"
+      "name": "sandstone_horizontal_tiles",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_horizontal_tiles-top"
+      }
     },
     {
       "block": "chisel:sandstone_mosaic",
       "model_type": "connected",
-      "name": "sandstone_mosaic"
+      "name": "sandstone_mosaic",
+      "textures": {
+        "ctm_cornerless": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_scribbles_0",
       "model_type": "top_bottom_side",
-      "name": "sandstone_scribbles_0"
+      "name": "sandstone_scribbles_0",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_scribbles_1",
       "model_type": "top_bottom_side",
-      "name": "sandstone_scribbles_1"
+      "name": "sandstone_scribbles_1",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_scribbles_2",
       "model_type": "top_bottom_side",
-      "name": "sandstone_scribbles_2"
+      "name": "sandstone_scribbles_2",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_scribbles_3",
       "model_type": "top_bottom_side",
-      "name": "sandstone_scribbles_3"
+      "name": "sandstone_scribbles_3",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_scribbles_4",
       "model_type": "top_bottom_side",
-      "name": "sandstone_scribbles_4"
+      "name": "sandstone_scribbles_4",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_scribbles_5",
       "model_type": "top_bottom_side",
-      "name": "sandstone_scribbles_5"
+      "name": "sandstone_scribbles_5",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_scribbles_6",
       "model_type": "top_bottom_side",
-      "name": "sandstone_scribbles_6"
+      "name": "sandstone_scribbles_6",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_scribbles_7",
       "model_type": "top_bottom_side",
-      "name": "sandstone_scribbles_7"
+      "name": "sandstone_scribbles_7",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_scribbles_8",
       "model_type": "top_bottom_side",
-      "name": "sandstone_scribbles_8"
+      "name": "sandstone_scribbles_8",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_scribbles_9",
       "model_type": "top_bottom_side",
-      "name": "sandstone_scribbles_9"
+      "name": "sandstone_scribbles_9",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_scribbles_10",
       "model_type": "top_bottom_side",
-      "name": "sandstone_scribbles_10"
+      "name": "sandstone_scribbles_10",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_scribbles_11",
       "model_type": "top_bottom_side",
-      "name": "sandstone_scribbles_11"
+      "name": "sandstone_scribbles_11",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_scribbles_12",
       "model_type": "top_bottom_side",
-      "name": "sandstone_scribbles_12"
+      "name": "sandstone_scribbles_12",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_scribbles_13",
       "model_type": "top_bottom_side",
-      "name": "sandstone_scribbles_13"
+      "name": "sandstone_scribbles_13",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_scribbles_14",
       "model_type": "top_bottom_side",
-      "name": "sandstone_scribbles_14"
+      "name": "sandstone_scribbles_14",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_scribbles_15",
       "model_type": "top_bottom_side",
-      "name": "sandstone_scribbles_15"
+      "name": "sandstone_scribbles_15",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_small",
       "model_type": "top_bottom_side",
-      "name": "sandstone_small"
+      "name": "sandstone_small",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_base-top",
+        "top": "chisel:block/sandstone/sandstone_base-top"
+      }
     },
     {
       "block": "chisel:sandstone_smooth",
@@ -163,27 +259,47 @@
     {
       "block": "chisel:sandstone_smooth_base",
       "model_type": "top_bottom_side",
-      "name": "sandstone_smooth_base"
+      "name": "sandstone_smooth_base",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_smooth_cap",
       "model_type": "top_bottom_side",
-      "name": "sandstone_smooth_cap"
+      "name": "sandstone_smooth_cap",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     },
     {
       "block": "chisel:sandstone_smooth_flat",
       "model_type": "top_bottom_side",
-      "name": "sandstone_smooth_flat"
+      "name": "sandstone_smooth_flat",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_brick_flat-top",
+        "top": "chisel:block/sandstone/sandstone_brick_flat-top"
+      }
     },
     {
       "block": "chisel:sandstone_smooth_glyph",
       "model_type": "top_bottom_side",
-      "name": "sandstone_smooth_glyph"
+      "name": "sandstone_smooth_glyph",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_brick_flat-top",
+        "top": "chisel:block/sandstone/sandstone_brick_flat-top"
+      }
     },
     {
       "block": "chisel:sandstone_smooth_small",
       "model_type": "top_bottom_side",
-      "name": "sandstone_smooth_small"
+      "name": "sandstone_smooth_small",
+      "textures": {
+        "bottom": "chisel:block/sandstone/sandstone_smooth",
+        "top": "chisel:block/sandstone/sandstone_smooth"
+      }
     }
   ]
 }

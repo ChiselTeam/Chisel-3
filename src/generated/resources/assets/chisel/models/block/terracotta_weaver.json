@@ -4,7 +4,7 @@
     "all": "chisel:block/terracotta/terracotta_weaver",
     "particle": "chisel:block/terracotta/terracotta_weaver",
     "standard_corner": "chisel:block/terracotta/terracotta_weaver-ctm_corner",
-    "standard_cornerless": "chisel:block/terracotta/terracotta_weaver-ctm_cornerless",
+    "standard_cornerless": "chisel:block/terracotta/terracotta_weaver-ctm_corner",
     "standard_horizontal": "chisel:block/terracotta/terracotta_weaver-ctm_horizontal",
     "standard_none": "chisel:block/terracotta/terracotta_weaver",
     "standard_vertical": "chisel:block/terracotta/terracotta_weaver-ctm_vertical"

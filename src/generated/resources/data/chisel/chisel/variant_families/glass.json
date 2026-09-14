@@ -9,12 +9,18 @@
     {
       "block": "chisel:glass_borderless",
       "model_type": "glass",
-      "name": "glass_borderless"
+      "name": "glass_borderless",
+      "textures": {
+        "ctm_cornerless": "chisel:block/glass/glass_edge-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:glass_bubble",
       "model_type": "glass",
-      "name": "glass_bubble"
+      "name": "glass_bubble",
+      "textures": {
+        "ctm_cornerless": "chisel:block/glass/glass_streak"
+      }
     },
     {
       "block": "chisel:glass_chinese",
@@ -41,7 +47,10 @@
     {
       "block": "chisel:glass_edge_steel",
       "model_type": "glass",
-      "name": "glass_edge_steel"
+      "name": "glass_edge_steel",
+      "textures": {
+        "ctm_cornerless": "chisel:block/glass/glass_edge-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:glass_fence",
@@ -71,7 +80,10 @@
     {
       "block": "chisel:glass_ornate",
       "model_type": "glass",
-      "name": "glass_ornate"
+      "name": "glass_ornate",
+      "textures": {
+        "ctm_cornerless": "chisel:block/glass/glass_light-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:glass_ornate_old",
@@ -84,17 +96,26 @@
     {
       "block": "chisel:glass_shale",
       "model_type": "glass",
-      "name": "glass_shale"
+      "name": "glass_shale",
+      "textures": {
+        "ctm_cornerless": "chisel:block/glass/glass_light-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:glass_steel",
       "model_type": "glass",
-      "name": "glass_steel"
+      "name": "glass_steel",
+      "textures": {
+        "ctm_cornerless": "chisel:block/glass/glass_light-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:glass_stone",
       "model_type": "glass",
-      "name": "glass_stone"
+      "name": "glass_stone",
+      "textures": {
+        "ctm_cornerless": "chisel:block/glass/glass_light-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:glass_streak",

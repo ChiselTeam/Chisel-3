@@ -5,7 +5,7 @@
     "bottom": "minecraft:block/bamboo_planks",
     "horizontal_both": "chisel:block/bookshelf/bookshelf_cans-horizontal_both",
     "horizontal_left": "chisel:block/bookshelf/bookshelf_cans-horizontal_left",
-    "horizontal_none": "chisel:block/bookshelf/bookshelf_cans-horizontal_none",
+    "horizontal_none": "chisel:block/bookshelf/bookshelf_cans",
     "horizontal_right": "chisel:block/bookshelf/bookshelf_cans-horizontal_right",
     "layer0": "minecraft:block/bamboo_planks",
     "layer1": "minecraft:block/bamboo_planks",

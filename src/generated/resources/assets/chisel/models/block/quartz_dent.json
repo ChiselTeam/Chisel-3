@@ -4,7 +4,7 @@
     "all": "chisel:block/quartz/quartz_dent",
     "particle": "chisel:block/quartz/quartz_dent",
     "standard_corner": "chisel:block/quartz/quartz_dent-ctm_corner",
-    "standard_cornerless": "chisel:block/quartz/quartz_dent-ctm_cornerless",
+    "standard_cornerless": "chisel:block/quartz/quartz_raw",
     "standard_horizontal": "chisel:block/quartz/quartz_dent-ctm_horizontal",
     "standard_none": "chisel:block/quartz/quartz_dent",
     "standard_vertical": "chisel:block/quartz/quartz_dent-ctm_vertical"

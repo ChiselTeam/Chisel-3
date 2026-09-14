@@ -5,7 +5,7 @@
     "bottom": "minecraft:block/birch_planks",
     "horizontal_both": "chisel:block/bookshelf/bookshelf_necromancer_apprentice-horizontal_both",
     "horizontal_left": "chisel:block/bookshelf/bookshelf_necromancer_apprentice-horizontal_left",
-    "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer_apprentice-horizontal_none",
+    "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer_apprentice",
     "horizontal_right": "chisel:block/bookshelf/bookshelf_necromancer_apprentice-horizontal_right",
     "layer0": "minecraft:block/birch_planks",
     "layer1": "minecraft:block/birch_planks",

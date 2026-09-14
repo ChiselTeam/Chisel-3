@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/concrete_blue/concrete_blue_meander_vertical-side",
-    "bottom": "chisel:block/concrete_blue/concrete_blue_meander_vertical-bottom",
+    "bottom": "chisel:block/concrete_blue/concrete_blue_meander_vertical-top",
     "particle": "chisel:block/concrete_blue/concrete_blue_meander_vertical-side",
     "side": "chisel:block/concrete_blue/concrete_blue_meander_vertical-side",
     "top": "chisel:block/concrete_blue/concrete_blue_meander_vertical-top",

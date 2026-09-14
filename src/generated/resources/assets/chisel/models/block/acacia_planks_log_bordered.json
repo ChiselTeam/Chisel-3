@@ -3,10 +3,10 @@
   "textures": {
     "all": "chisel:block/acacia_planks/acacia_planks_log_bordered",
     "particle": "chisel:block/acacia_planks/acacia_planks_log_bordered",
-    "standard_corner": "chisel:block/acacia_planks/acacia_planks_log_bordered-ctm_corner",
-    "standard_cornerless": "chisel:block/acacia_planks/acacia_planks_log_bordered-ctm_cornerless",
-    "standard_horizontal": "chisel:block/acacia_planks/acacia_planks_log_bordered-ctm_horizontal",
+    "standard_corner": "chisel:block/acacia_planks/acacia_planks_log_bordered",
+    "standard_cornerless": "chisel:block/acacia_planks/acacia_planks_encased-ctm_cornerless",
+    "standard_horizontal": "chisel:block/acacia_planks/acacia_planks_log_bordered",
     "standard_none": "chisel:block/acacia_planks/acacia_planks_log_bordered",
-    "standard_vertical": "chisel:block/acacia_planks/acacia_planks_log_bordered-ctm_vertical"
+    "standard_vertical": "chisel:block/acacia_planks/acacia_planks_braced"
   }
 }

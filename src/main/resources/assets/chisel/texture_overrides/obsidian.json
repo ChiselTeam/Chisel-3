@@ -1,0 +1,20 @@
+{
+  "obsidian_chiseled": {
+    "bottom": "chisel:block/obsidian/obsidian_chiseled-top"
+  },
+  "obsidian_crate": {
+    "top": "chisel:block/obsidian/obsidian_tiles"
+  },
+  "obsidian_crate_unboxed": {
+    "": "chisel:block/obsidian/obsidian_tiles"
+  },
+  "obsidian_greek": {
+    "bottom": "chisel:block/obsidian/obsidian_greek-top"
+  },
+  "obsidian_pillar": {
+    "bottom": "chisel:block/obsidian/obsidian_pillar-top"
+  },
+  "obsidian_pillar_quartz": {
+    "bottom": "chisel:block/obsidian/obsidian_pillar_quartz-top"
+  }
+}

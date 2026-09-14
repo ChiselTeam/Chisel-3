@@ -2,10 +2,10 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/concrete_pink/concrete_pink_pillar_basic_dent-side",
-    "bottom": "chisel:block/concrete_pink/concrete_pink_pillar_basic_dent-bottom",
+    "bottom": "chisel:block/concrete_pink/concrete_pink_pillar_basic-top",
     "particle": "chisel:block/concrete_pink/concrete_pink_pillar_basic_dent-side",
     "side": "chisel:block/concrete_pink/concrete_pink_pillar_basic_dent-side",
-    "top": "chisel:block/concrete_pink/concrete_pink_pillar_basic_dent-top",
+    "top": "chisel:block/concrete_pink/concrete_pink_pillar_basic-top",
     "vertical_both": "chisel:block/concrete_pink/concrete_pink_pillar_basic_dent-vertical_both",
     "vertical_bottom": "chisel:block/concrete_pink/concrete_pink_pillar_basic_dent-vertical_bottom",
     "vertical_none": "chisel:block/concrete_pink/concrete_pink_pillar_basic_dent-vertical_none",

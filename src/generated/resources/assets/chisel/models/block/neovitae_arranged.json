@@ -3,7 +3,7 @@
   "textures": {
     "all": "chisel:block/nv_rune/neovitae_arranged",
     "particle": "chisel:block/nv_rune/neovitae_arranged",
-    "standard_corner": "chisel:block/nv_rune/neovitae_arranged-ctm_corner",
+    "standard_corner": "chisel:block/nv_rune/neovitae_arranged",
     "standard_cornerless": "chisel:block/nv_rune/neovitae_arranged-ctm_cornerless",
     "standard_horizontal": "chisel:block/nv_rune/neovitae_arranged-ctm_horizontal",
     "standard_none": "chisel:block/nv_rune/neovitae_arranged",

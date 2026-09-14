@@ -2,8 +2,8 @@
   "parent": "chisel:block/cube_multi_pass",
   "textures": {
     "all": "chisel:block/magma/magma_encased_bricks",
-    "base_texture": "chisel:block/magma/magma_encased_bricks-bg",
-    "layer0": "chisel:block/magma/magma_encased_bricks-bg",
+    "base_texture": "chisel:block/magma/magma_dent-bg",
+    "layer0": "chisel:block/magma/magma_dent-bg",
     "layer1": "chisel:block/magma/magma_encased_bricks",
     "particle": "chisel:block/magma/magma_encased_bricks",
     "standard_corner": "chisel:block/magma/magma_encased_bricks-ctm_corner",

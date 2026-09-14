@@ -9,7 +9,7 @@
     "multiblock_3x3_center_left": "chisel:block/crimson_planks/crimson_planks_crude_vertical-3x3_center_left",
     "multiblock_3x3_center_right": "chisel:block/crimson_planks/crimson_planks_crude_vertical-3x3_center_right",
     "multiblock_3x3_top_center": "chisel:block/crimson_planks/crimson_planks_crude_vertical-3x3_top_center",
-    "multiblock_3x3_top_left": "chisel:block/crimson_planks/crimson_planks_crude_vertical-3x3_top_left",
+    "multiblock_3x3_top_left": "chisel:block/crimson_planks/crimson_planks_crude_vertical",
     "multiblock_3x3_top_right": "chisel:block/crimson_planks/crimson_planks_crude_vertical-3x3_top_right",
     "particle": "chisel:block/crimson_planks/crimson_planks_crude_vertical"
   }

@@ -14,32 +14,56 @@
     {
       "block": "chisel:glass_pane_bubble",
       "model_type": "glass_pane",
-      "name": "glass_pane_bubble"
+      "name": "glass_pane_bubble",
+      "textures": {
+        "": "chisel:block/glass/glass_bubble",
+        "top": "chisel:block/glass_pane/glass_pane_bubble-top"
+      }
     },
     {
       "block": "chisel:glass_pane_chinese",
       "model_type": "glass_pane",
-      "name": "glass_pane_chinese"
+      "name": "glass_pane_chinese",
+      "textures": {
+        "": "chisel:block/glass/glass_chinese",
+        "top": "chisel:block/glass_pane/glass_pane_chinese-top"
+      }
     },
     {
       "block": "chisel:glass_pane_chinese_gold",
       "model_type": "glass_pane",
-      "name": "glass_pane_chinese_gold"
+      "name": "glass_pane_chinese_gold",
+      "textures": {
+        "": "chisel:block/glass/glass_chinese_2",
+        "top": "chisel:block/glass_pane/glass_pane_chinese_gold-top"
+      }
     },
     {
       "block": "chisel:glass_pane_japanese",
       "model_type": "glass_pane",
-      "name": "glass_pane_japanese"
+      "name": "glass_pane_japanese",
+      "textures": {
+        "": "chisel:block/glass/glass_japanese",
+        "top": "chisel:block/glass_pane/glass_pane_japanese-top"
+      }
     },
     {
       "block": "chisel:glass_pane_japanese2",
       "model_type": "glass_pane",
-      "name": "glass_pane_japanese2"
+      "name": "glass_pane_japanese2",
+      "textures": {
+        "": "chisel:block/glass/glass_japanese_2",
+        "top": "chisel:block/glass_pane/glass_pane_japanese-top"
+      }
     },
     {
       "block": "chisel:glass_pane_streak",
       "model_type": "glass_pane",
-      "name": "glass_pane_streak"
+      "name": "glass_pane_streak",
+      "textures": {
+        "": "chisel:block/glass/glass_streak",
+        "top": "chisel:block/magma/magma_dent-ctm_cornerless"
+      }
     }
   ]
 }

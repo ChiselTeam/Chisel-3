@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/holystone/holystone_platform_tiles-bottom",
+    "bottom": "chisel:block/holystone/holystone_raw",
     "side": "chisel:block/holystone/holystone_platform_tiles-side",
     "top": "chisel:block/holystone/holystone_platform_tiles-top"
   }

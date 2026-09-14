@@ -13,7 +13,10 @@
     {
       "block": "chisel:granite_array",
       "model_type": "multiblock_2x2",
-      "name": "granite_array"
+      "name": "granite_array",
+      "textures": {
+        "2x2_top_left": "chisel:block/granite/granite_array"
+      }
     },
     {
       "block": "chisel:granite_braid",
@@ -22,7 +25,10 @@
     {
       "block": "chisel:granite_chaotic_bricks",
       "model_type": "multiblock_3x3",
-      "name": "granite_chaotic_bricks"
+      "name": "granite_chaotic_bricks",
+      "textures": {
+        "3x3_top_left": "chisel:block/granite/granite_chaotic_bricks"
+      }
     },
     {
       "block": "chisel:granite_chaotic_medium",
@@ -35,7 +41,10 @@
     {
       "block": "chisel:granite_circular",
       "model_type": "connected",
-      "name": "granite_circular"
+      "name": "granite_circular",
+      "textures": {
+        "ctm_cornerless": "chisel:block/granite/granite_dent-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:granite_cracked",
@@ -48,7 +57,10 @@
     {
       "block": "chisel:granite_cuts",
       "model_type": "multiblock_4x4",
-      "name": "granite_cuts"
+      "name": "granite_cuts",
+      "textures": {
+        "4x4_row_0_column_0": "chisel:block/granite/granite_cuts"
+      }
     },
     {
       "block": "chisel:granite_dent",
@@ -71,7 +83,10 @@
     {
       "block": "chisel:granite_jellybean",
       "model_type": "multiblock_2x2",
-      "name": "granite_jellybean"
+      "name": "granite_jellybean",
+      "textures": {
+        "2x2_top_left": "chisel:block/granite/granite_jellybean"
+      }
     },
     {
       "block": "chisel:granite_layers",
@@ -80,7 +95,10 @@
     {
       "block": "chisel:granite_mosaic",
       "model_type": "connected",
-      "name": "granite_mosaic"
+      "name": "granite_mosaic",
+      "textures": {
+        "ctm_cornerless": "chisel:block/granite/granite_raw"
+      }
     },
     {
       "block": "chisel:granite_ornate",
@@ -93,7 +111,10 @@
     {
       "block": "chisel:granite_pillar",
       "model_type": "top_bottom_side",
-      "name": "granite_pillar"
+      "name": "granite_pillar",
+      "textures": {
+        "bottom": "chisel:block/granite/granite_pillar-top"
+      }
     },
     {
       "block": "chisel:granite_prism",
@@ -110,7 +131,12 @@
     {
       "block": "chisel:granite_slanted",
       "model_type": "multiblock_2x2",
-      "name": "granite_slanted"
+      "name": "granite_slanted",
+      "textures": {
+        "2x2_bottom_left": "chisel:block/granite/granite_slanted",
+        "2x2_bottom_right": "chisel:block/granite/granite_slanted-2x2_top_right",
+        "2x2_top_left": "chisel:block/granite/granite_slanted"
+      }
     },
     {
       "block": "chisel:granite_small_bricks",
@@ -127,7 +153,10 @@
     {
       "block": "chisel:granite_tiles_large",
       "model_type": "connected",
-      "name": "granite_tiles_large"
+      "name": "granite_tiles_large",
+      "textures": {
+        "ctm_cornerless": "chisel:block/granite/granite_raw"
+      }
     },
     {
       "block": "chisel:granite_tiles_medium",
@@ -144,17 +173,26 @@
     {
       "block": "chisel:granite_twisted",
       "model_type": "top_bottom_side",
-      "name": "granite_twisted"
+      "name": "granite_twisted",
+      "textures": {
+        "bottom": "chisel:block/granite/granite_twisted-top"
+      }
     },
     {
       "block": "chisel:granite_weaver",
       "model_type": "connected",
-      "name": "granite_weaver"
+      "name": "granite_weaver",
+      "textures": {
+        "ctm_cornerless": "chisel:block/granite/granite_weaver-ctm_corner"
+      }
     },
     {
       "block": "chisel:granite_zag",
       "model_type": "ar",
-      "name": "granite_zag"
+      "name": "granite_zag",
+      "textures": {
+        "ar_variant_1": "chisel:block/granite/granite_zag"
+      }
     }
   ]
 }

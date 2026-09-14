@@ -4,7 +4,7 @@
     "all": "chisel:block/dirt/dirt_reinforced",
     "particle": "chisel:block/dirt/dirt_reinforced",
     "standard_corner": "chisel:block/dirt/dirt_reinforced-ctm_corner",
-    "standard_cornerless": "chisel:block/dirt/dirt_reinforced-ctm_cornerless",
+    "standard_cornerless": "chisel:block/dirt/dirt_bricks-vertical_both",
     "standard_horizontal": "chisel:block/dirt/dirt_reinforced-ctm_horizontal",
     "standard_none": "chisel:block/dirt/dirt_reinforced",
     "standard_vertical": "chisel:block/dirt/dirt_reinforced-ctm_vertical"

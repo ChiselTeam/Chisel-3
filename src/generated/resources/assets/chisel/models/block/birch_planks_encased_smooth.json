@@ -4,7 +4,7 @@
     "all": "chisel:block/birch_planks/birch_planks_encased_smooth",
     "particle": "chisel:block/birch_planks/birch_planks_encased_smooth",
     "standard_corner": "chisel:block/birch_planks/birch_planks_encased_smooth-ctm_corner",
-    "standard_cornerless": "chisel:block/birch_planks/birch_planks_encased_smooth-ctm_cornerless",
+    "standard_cornerless": "chisel:block/birch_planks/birch_planks_smooth-ctm_cornerless",
     "standard_horizontal": "chisel:block/birch_planks/birch_planks_encased_smooth-ctm_horizontal",
     "standard_none": "chisel:block/birch_planks/birch_planks_encased_smooth",
     "standard_vertical": "chisel:block/birch_planks/birch_planks_encased_smooth-ctm_vertical"

@@ -1,0 +1,10 @@
+{
+  "futura_controller_purple": {
+    "": "chisel:block/futura/futura_controller",
+    "bg": "chisel:block/futura/futura_controller_purple-bg"
+  },
+  "futura_screen_gray": {
+    "bg": "chisel:block/futura/futura_screen_cyan-bg",
+    "ctm_cornerless": "chisel:block/glass/glass_edge-ctm_cornerless"
+  }
+}

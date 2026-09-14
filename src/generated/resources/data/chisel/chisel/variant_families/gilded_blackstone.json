@@ -14,7 +14,10 @@
     {
       "block": "chisel:gilded_blackstone_border_square",
       "model_type": "connected",
-      "name": "gilded_blackstone_border_square"
+      "name": "gilded_blackstone_border_square",
+      "textures": {
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_dent-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_braid",
@@ -91,7 +94,10 @@
     {
       "block": "chisel:gilded_blackstone_circular",
       "model_type": "connected",
-      "name": "gilded_blackstone_circular"
+      "name": "gilded_blackstone_circular",
+      "textures": {
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_dent-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_cobble",
@@ -118,7 +124,10 @@
     {
       "block": "chisel:gilded_blackstone_indent",
       "model_type": "connected",
-      "name": "gilded_blackstone_indent"
+      "name": "gilded_blackstone_indent",
+      "textures": {
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_dent-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_jellybean",
@@ -145,17 +154,26 @@
     {
       "block": "chisel:gilded_blackstone_meander_horizontal",
       "model_type": "ctmh",
-      "name": "gilded_blackstone_meander_horizontal"
+      "name": "gilded_blackstone_meander_horizontal",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_meander_horizontal-top"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_meander_vertical",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_meander_vertical"
+      "name": "gilded_blackstone_meander_vertical",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_meander_vertical-top"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_mosaic",
       "model_type": "connected",
-      "name": "gilded_blackstone_mosaic"
+      "name": "gilded_blackstone_mosaic",
+      "textures": {
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_dent-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_ornate_small",
@@ -168,102 +186,203 @@
     {
       "block": "chisel:gilded_blackstone_pillar",
       "model_type": "top_bottom_side",
-      "name": "gilded_blackstone_pillar"
+      "name": "gilded_blackstone_pillar",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar-top"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_basic",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_pillar_basic"
+      "name": "gilded_blackstone_pillar_basic",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_basic_dent",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_pillar_basic_dent"
+      "name": "gilded_blackstone_pillar_basic_dent",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_basic_plain",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_pillar_basic_plain"
+      "name": "gilded_blackstone_pillar_basic_plain",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_basic_round",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_pillar_basic_round"
+      "name": "gilded_blackstone_pillar_basic_round",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_basic_spiral",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_pillar_basic_spiral"
+      "name": "gilded_blackstone_pillar_basic_spiral",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_classic",
       "model_type": "top_bottom_side",
-      "name": "gilded_blackstone_pillar_classic"
+      "name": "gilded_blackstone_pillar_classic",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_classic-top"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_classic_large",
       "model_type": "top_bottom_side",
-      "name": "gilded_blackstone_pillar_classic_large"
+      "name": "gilded_blackstone_pillar_classic_large",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_classic_large-top"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_ionic",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_pillar_ionic"
+      "name": "gilded_blackstone_pillar_ionic",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_ionic_dent",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_pillar_ionic_dent"
+      "name": "gilded_blackstone_pillar_ionic_dent",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "side": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-side",
+        "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic_dent-vertical_both",
+        "vertical_none": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-vertical_none"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_ionic_plain",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_pillar_ionic_plain"
+      "name": "gilded_blackstone_pillar_ionic_plain",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "side": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-side",
+        "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic_plain-vertical_both",
+        "vertical_none": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-vertical_none"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_ionic_round",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_pillar_ionic_round"
+      "name": "gilded_blackstone_pillar_ionic_round",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "side": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-side",
+        "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic_round-vertical_both",
+        "vertical_none": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-vertical_none"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_ionic_spiral",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_pillar_ionic_spiral"
+      "name": "gilded_blackstone_pillar_ionic_spiral",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "side": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-side",
+        "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic_spiral-vertical_both",
+        "vertical_none": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-vertical_none"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_large_basic_triple",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_pillar_large_basic_triple"
+      "name": "gilded_blackstone_pillar_large_basic_triple",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_large_ionic_triple",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_pillar_large_ionic_triple"
+      "name": "gilded_blackstone_pillar_large_ionic_triple",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_large_basic_triple-vertical_both"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_meander",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_pillar_meander"
+      "name": "gilded_blackstone_pillar_meander",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-vertical_both"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_meander_dent",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_pillar_meander_dent"
+      "name": "gilded_blackstone_pillar_meander_dent",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "side": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander-side",
+        "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "vertical_none": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander-vertical_none"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_meander_plain",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_pillar_meander_plain"
+      "name": "gilded_blackstone_pillar_meander_plain",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "side": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander-side",
+        "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic_plain-vertical_both",
+        "vertical_none": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander-vertical_none"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_meander_round",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_pillar_meander_round"
+      "name": "gilded_blackstone_pillar_meander_round",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "side": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander-side",
+        "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic_round-vertical_both",
+        "vertical_none": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander-vertical_none"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_pillar_meander_spiral",
       "model_type": "ctmv",
-      "name": "gilded_blackstone_pillar_meander_spiral"
+      "name": "gilded_blackstone_pillar_meander_spiral",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "side": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander-side",
+        "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic_spiral-vertical_both",
+        "vertical_none": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_meander-vertical_none"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_plate",
@@ -272,7 +391,10 @@
     {
       "block": "chisel:gilded_blackstone_plate_connected",
       "model_type": "connected",
-      "name": "gilded_blackstone_plate_connected"
+      "name": "gilded_blackstone_plate_connected",
+      "textures": {
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_dent-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_polished",
@@ -307,7 +429,14 @@
     {
       "block": "chisel:gilded_blackstone_tiles_large",
       "model_type": "connected",
-      "name": "gilded_blackstone_tiles_large"
+      "name": "gilded_blackstone_tiles_large",
+      "textures": {
+        "": "chisel:block/gilded_blackstone/gilded_blackstone_polished",
+        "ctm_corner": "chisel:block/gilded_blackstone/gilded_blackstone_tiles_large-ctm_corner",
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_dent-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/gilded_blackstone/gilded_blackstone_tiles_large-ctm_horizontal",
+        "ctm_vertical": "chisel:block/gilded_blackstone/gilded_blackstone_tiles_large-ctm_vertical"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_tiles_small",
@@ -316,7 +445,10 @@
     {
       "block": "chisel:gilded_blackstone_twisted",
       "model_type": "top_bottom_side",
-      "name": "gilded_blackstone_twisted"
+      "name": "gilded_blackstone_twisted",
+      "textures": {
+        "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_twisted-top"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_weaver",
@@ -340,7 +472,10 @@
     {
       "block": "chisel:gilded_blackstone_herringbone_encased",
       "model_type": "connected",
-      "name": "gilded_blackstone_herringbone_encased"
+      "name": "gilded_blackstone_herringbone_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_herringbone"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_medallion",
@@ -349,7 +484,10 @@
     {
       "block": "chisel:gilded_blackstone_medallion_encased",
       "model_type": "connected",
-      "name": "gilded_blackstone_medallion_encased"
+      "name": "gilded_blackstone_medallion_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_medallion"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_dots",
@@ -358,7 +496,10 @@
     {
       "block": "chisel:gilded_blackstone_dots_encased",
       "model_type": "connected",
-      "name": "gilded_blackstone_dots_encased"
+      "name": "gilded_blackstone_dots_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_dots"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_heart",
@@ -379,7 +520,14 @@
     {
       "block": "chisel:gilded_blackstone_lodestone_connected",
       "model_type": "connected",
-      "name": "gilded_blackstone_lodestone_connected"
+      "name": "gilded_blackstone_lodestone_connected",
+      "textures": {
+        "": "chisel:block/gilded_blackstone/gilded_blackstone_lodestone",
+        "ctm_corner": "chisel:block/gilded_blackstone/gilded_blackstone_lodestone_connected-ctm_corner",
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_lodestone",
+        "ctm_horizontal": "chisel:block/gilded_blackstone/gilded_blackstone_lodestone_connected-ctm_horizontal",
+        "ctm_vertical": "chisel:block/gilded_blackstone/gilded_blackstone_lodestone_connected-ctm_vertical"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_plank",
@@ -388,7 +536,14 @@
     {
       "block": "chisel:gilded_blackstone_plank_connected",
       "model_type": "connected",
-      "name": "gilded_blackstone_plank_connected"
+      "name": "gilded_blackstone_plank_connected",
+      "textures": {
+        "": "chisel:block/gilded_blackstone/gilded_blackstone_plank",
+        "ctm_corner": "chisel:block/gilded_blackstone/gilded_blackstone_plank_connected-ctm_corner",
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_plank_connected-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/gilded_blackstone/gilded_blackstone_plank_connected-ctm_horizontal",
+        "ctm_vertical": "chisel:block/gilded_blackstone/gilded_blackstone_plank_connected-ctm_vertical"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_frame",
@@ -421,7 +576,10 @@
     {
       "block": "chisel:gilded_blackstone_stripes_encased",
       "model_type": "connected",
-      "name": "gilded_blackstone_stripes_encased"
+      "name": "gilded_blackstone_stripes_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_stripes"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_chisel_1",
@@ -458,7 +616,10 @@
     {
       "block": "chisel:gilded_blackstone_facet_small_encased",
       "model_type": "connected",
-      "name": "gilded_blackstone_facet_small_encased"
+      "name": "gilded_blackstone_facet_small_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_facet_small"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_shiny",
@@ -467,7 +628,14 @@
     {
       "block": "chisel:gilded_blackstone_shiny_connected",
       "model_type": "connected",
-      "name": "gilded_blackstone_shiny_connected"
+      "name": "gilded_blackstone_shiny_connected",
+      "textures": {
+        "": "chisel:block/gilded_blackstone/gilded_blackstone_shiny",
+        "ctm_corner": "chisel:block/gilded_blackstone/gilded_blackstone_shiny_connected-ctm_corner",
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_shiny_connected-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/gilded_blackstone/gilded_blackstone_shiny_connected-ctm_horizontal",
+        "ctm_vertical": "chisel:block/gilded_blackstone/gilded_blackstone_shiny_connected-ctm_vertical"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_gem",
@@ -480,7 +648,14 @@
     {
       "block": "chisel:gilded_blackstone_gem_1_connected",
       "model_type": "connected",
-      "name": "gilded_blackstone_gem_1_connected"
+      "name": "gilded_blackstone_gem_1_connected",
+      "textures": {
+        "": "chisel:block/gilded_blackstone/gilded_blackstone_gem_1",
+        "ctm_corner": "chisel:block/gilded_blackstone/gilded_blackstone_gem_1_connected-ctm_corner",
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_dent-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/gilded_blackstone/gilded_blackstone_gem_1_connected-ctm_horizontal",
+        "ctm_vertical": "chisel:block/gilded_blackstone/gilded_blackstone_gem_1_connected-ctm_vertical"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_gem_2",
@@ -489,7 +664,14 @@
     {
       "block": "chisel:gilded_blackstone_gem_2_connected",
       "model_type": "connected",
-      "name": "gilded_blackstone_gem_2_connected"
+      "name": "gilded_blackstone_gem_2_connected",
+      "textures": {
+        "": "chisel:block/gilded_blackstone/gilded_blackstone_gem_2",
+        "ctm_corner": "chisel:block/gilded_blackstone/gilded_blackstone_gem_2_connected-ctm_corner",
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_dent-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/gilded_blackstone/gilded_blackstone_gem_2_connected-ctm_horizontal",
+        "ctm_vertical": "chisel:block/gilded_blackstone/gilded_blackstone_gem_2_connected-ctm_vertical"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_gem_3",
@@ -498,7 +680,14 @@
     {
       "block": "chisel:gilded_blackstone_gem_3_connected",
       "model_type": "connected",
-      "name": "gilded_blackstone_gem_3_connected"
+      "name": "gilded_blackstone_gem_3_connected",
+      "textures": {
+        "": "chisel:block/gilded_blackstone/gilded_blackstone_gem_3",
+        "ctm_corner": "chisel:block/gilded_blackstone/gilded_blackstone_gem_3_connected-ctm_corner",
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_gem_3_connected-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/gilded_blackstone/gilded_blackstone_gem_3_connected-ctm_horizontal",
+        "ctm_vertical": "chisel:block/gilded_blackstone/gilded_blackstone_gem_3_connected-ctm_vertical"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_bricks_square",
@@ -515,7 +704,10 @@
     {
       "block": "chisel:gilded_blackstone_scaffold_encased",
       "model_type": "connected",
-      "name": "gilded_blackstone_scaffold_encased"
+      "name": "gilded_blackstone_scaffold_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_scaffold"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_tiles_inlayed",
@@ -524,7 +716,10 @@
     {
       "block": "chisel:gilded_blackstone_waves",
       "model_type": "multiblock_2x2",
-      "name": "gilded_blackstone_waves"
+      "name": "gilded_blackstone_waves",
+      "textures": {
+        "2x2_top_left": "chisel:block/gilded_blackstone/gilded_blackstone_waves"
+      }
     },
     {
       "block": "chisel:gilded_blackstone_parquet",
@@ -533,7 +728,10 @@
     {
       "block": "chisel:gilded_blackstone_parquet_encased",
       "model_type": "connected",
-      "name": "gilded_blackstone_parquet_encased"
+      "name": "gilded_blackstone_parquet_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_parquet"
+      }
     }
   ]
 }

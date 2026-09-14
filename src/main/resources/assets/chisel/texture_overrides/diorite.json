@@ -1,0 +1,26 @@
+{
+  "diorite_array": {
+    "2x2_top_left": "chisel:block/diorite/diorite_array"
+  },
+  "diorite_chaotic": {
+    "3x3_top_left": "chisel:block/diorite/diorite_chaotic"
+  },
+  "diorite_cuts": {
+    "4x4_row_0_column_0": "chisel:block/diorite/diorite_cuts"
+  },
+  "diorite_jellybean": {
+    "2x2_top_left": "chisel:block/diorite/diorite_jellybean"
+  },
+  "diorite_pillar": {
+    "bottom": "chisel:block/diorite/diorite_pillar-top"
+  },
+  "diorite_slanted": {
+    "2x2_top_left": "chisel:block/diorite/diorite_slanted"
+  },
+  "diorite_twisted": {
+    "bottom": "chisel:block/diorite/diorite_twisted-top"
+  },
+  "diorite_zag": {
+    "ar_variant_1": "chisel:block/diorite/diorite_zag"
+  }
+}

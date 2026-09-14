@@ -3,10 +3,10 @@
   "textures": {
     "all": "chisel:block/jungle_planks/jungle_planks_log_bordered",
     "particle": "chisel:block/jungle_planks/jungle_planks_log_bordered",
-    "standard_corner": "chisel:block/jungle_planks/jungle_planks_log_bordered-ctm_corner",
+    "standard_corner": "chisel:block/jungle_planks/jungle_planks_log_bordered",
     "standard_cornerless": "chisel:block/jungle_planks/jungle_planks_log_bordered-ctm_cornerless",
-    "standard_horizontal": "chisel:block/jungle_planks/jungle_planks_log_bordered-ctm_horizontal",
+    "standard_horizontal": "chisel:block/jungle_planks/jungle_planks_log_bordered",
     "standard_none": "chisel:block/jungle_planks/jungle_planks_log_bordered",
-    "standard_vertical": "chisel:block/jungle_planks/jungle_planks_log_bordered-ctm_vertical"
+    "standard_vertical": "chisel:block/jungle_planks/jungle_planks_braced"
   }
 }

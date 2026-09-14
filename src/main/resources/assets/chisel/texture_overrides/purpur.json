@@ -1,0 +1,37 @@
+{
+  "purpur_array": {
+    "2x2_top_left": "chisel:block/purpur/purpur_array"
+  },
+  "purpur_chaotic_bricks": {
+    "3x3_top_left": "chisel:block/purpur/purpur_chaotic_bricks"
+  },
+  "purpur_circular": {
+    "ctm_cornerless": "chisel:block/purpur/purpur_dent-ctm_cornerless"
+  },
+  "purpur_cuts": {
+    "4x4_row_0_column_0": "chisel:block/purpur/purpur_cuts"
+  },
+  "purpur_jellybean": {
+    "2x2_top_left": "chisel:block/purpur/purpur_jellybean"
+  },
+  "purpur_pillar": {
+    "bottom": "chisel:block/purpur/purpur_pillar-top"
+  },
+  "purpur_slanted": {
+    "2x2_bottom_left": "chisel:block/purpur/purpur_slanted",
+    "2x2_bottom_right": "chisel:block/purpur/purpur_slanted-2x2_top_right",
+    "2x2_top_left": "chisel:block/purpur/purpur_slanted"
+  },
+  "purpur_tiles_large": {
+    "ctm_cornerless": "chisel:block/purpur/purpur_mosaic-ctm_cornerless"
+  },
+  "purpur_twisted": {
+    "bottom": "chisel:block/purpur/purpur_twisted-top"
+  },
+  "purpur_weaver": {
+    "ctm_cornerless": "chisel:block/purpur/purpur_weaver-ctm_corner"
+  },
+  "purpur_zag": {
+    "ar_variant_1": "chisel:block/purpur/purpur_zag"
+  }
+}

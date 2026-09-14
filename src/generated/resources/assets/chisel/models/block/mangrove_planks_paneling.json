@@ -5,8 +5,8 @@
     "particle": "chisel:block/mangrove_planks/mangrove_planks_paneling",
     "standard_corner": "chisel:block/mangrove_planks/mangrove_planks_paneling-ctm_corner",
     "standard_cornerless": "chisel:block/mangrove_planks/mangrove_planks_paneling-ctm_cornerless",
-    "standard_horizontal": "chisel:block/mangrove_planks/mangrove_planks_paneling-ctm_horizontal",
+    "standard_horizontal": "chisel:block/mangrove_planks/mangrove_planks_paneling-ctm_corner",
     "standard_none": "chisel:block/mangrove_planks/mangrove_planks_paneling",
-    "standard_vertical": "chisel:block/mangrove_planks/mangrove_planks_paneling-ctm_vertical"
+    "standard_vertical": "chisel:block/mangrove_planks/mangrove_planks_paneling"
   }
 }

@@ -2,11 +2,11 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/factory/factory_vent-side",
-    "bottom": "chisel:block/factory/factory_vent-bottom",
+    "bottom": "chisel:block/factory/factory_vent-top",
     "particle": "chisel:block/factory/factory_vent-side",
     "side": "chisel:block/factory/factory_vent-side",
     "top": "chisel:block/factory/factory_vent-top",
-    "vertical_both": "chisel:block/factory/factory_vent-vertical_both",
+    "vertical_both": "chisel:block/factory/factory_vent-side",
     "vertical_bottom": "chisel:block/factory/factory_vent-vertical_bottom",
     "vertical_none": "chisel:block/factory/factory_vent-vertical_none",
     "vertical_top": "chisel:block/factory/factory_vent-vertical_top"

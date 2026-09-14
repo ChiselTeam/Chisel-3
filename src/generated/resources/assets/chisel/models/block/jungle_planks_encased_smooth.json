@@ -4,7 +4,7 @@
     "all": "chisel:block/jungle_planks/jungle_planks_encased_smooth",
     "particle": "chisel:block/jungle_planks/jungle_planks_encased_smooth",
     "standard_corner": "chisel:block/jungle_planks/jungle_planks_encased_smooth-ctm_corner",
-    "standard_cornerless": "chisel:block/jungle_planks/jungle_planks_encased_smooth-ctm_cornerless",
+    "standard_cornerless": "chisel:block/jungle_planks/jungle_planks_smooth-ctm_cornerless",
     "standard_horizontal": "chisel:block/jungle_planks/jungle_planks_encased_smooth-ctm_horizontal",
     "standard_none": "chisel:block/jungle_planks/jungle_planks_encased_smooth",
     "standard_vertical": "chisel:block/jungle_planks/jungle_planks_encased_smooth-ctm_vertical"

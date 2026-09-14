@@ -2,12 +2,12 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/dirt/dirt_horizontal",
-    "bottom": "chisel:block/dirt/dirt_horizontal-bottom",
-    "horizontal_both": "chisel:block/dirt/dirt_horizontal-horizontal_both",
+    "bottom": "chisel:block/dirt/dirt_horizontal",
+    "horizontal_both": "chisel:block/dirt/dirt_horizontal",
     "horizontal_left": "chisel:block/dirt/dirt_horizontal-horizontal_left",
     "horizontal_none": "chisel:block/dirt/dirt_horizontal-horizontal_none",
     "horizontal_right": "chisel:block/dirt/dirt_horizontal-horizontal_right",
     "particle": "chisel:block/dirt/dirt_horizontal",
-    "top": "chisel:block/dirt/dirt_horizontal-top"
+    "top": "chisel:block/dirt/dirt_horizontal"
   }
 }

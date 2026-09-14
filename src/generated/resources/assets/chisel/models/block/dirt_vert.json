@@ -1,10 +1,10 @@
 {
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/dirt/dirt_vert-side",
-    "bottom": "chisel:block/dirt/dirt_vert-bottom",
-    "particle": "chisel:block/dirt/dirt_vert-side",
-    "side": "chisel:block/dirt/dirt_vert-side",
+    "all": "chisel:block/dirt/dirt_vert-top",
+    "bottom": "chisel:block/dirt/dirt_vert-top",
+    "particle": "chisel:block/dirt/dirt_vert-top",
+    "side": "chisel:block/dirt/dirt_vert-top",
     "top": "chisel:block/dirt/dirt_vert-top",
     "vertical_both": "chisel:block/dirt/dirt_vert-vertical_both",
     "vertical_bottom": "chisel:block/dirt/dirt_vert-vertical_bottom",

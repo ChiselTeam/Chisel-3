@@ -4,8 +4,8 @@
     "all": "chisel:block/dripstone/dripstone_border_square",
     "particle": "chisel:block/dripstone/dripstone_border_square",
     "standard_corner": "chisel:block/dripstone/dripstone_border_square-ctm_corner",
-    "standard_cornerless": "chisel:block/dripstone/dripstone_border_square-ctm_cornerless",
-    "standard_horizontal": "chisel:block/dripstone/dripstone_border_square-ctm_horizontal",
+    "standard_cornerless": "chisel:block/dripstone/dripstone_dent-ctm_cornerless",
+    "standard_horizontal": "chisel:block/dripstone/dripstone_border_square-ctm_vertical",
     "standard_none": "chisel:block/dripstone/dripstone_border_square",
     "standard_vertical": "chisel:block/dripstone/dripstone_border_square-ctm_vertical"
   }

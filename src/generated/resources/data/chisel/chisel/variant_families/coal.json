@@ -9,7 +9,10 @@
     {
       "block": "chisel:coal_array",
       "model_type": "multiblock_2x2",
-      "name": "coal_array"
+      "name": "coal_array",
+      "textures": {
+        "2x2_top_left": "chisel:block/coal/coal_array"
+      }
     },
     {
       "block": "chisel:coal_braid",
@@ -18,7 +21,10 @@
     {
       "block": "chisel:coal_chaotic_bricks",
       "model_type": "multiblock_3x3",
-      "name": "coal_chaotic_bricks"
+      "name": "coal_chaotic_bricks",
+      "textures": {
+        "3x3_top_left": "chisel:block/coal/coal_chaotic_bricks"
+      }
     },
     {
       "block": "chisel:coal_chaotic_medium",
@@ -44,7 +50,10 @@
     {
       "block": "chisel:coal_cuts",
       "model_type": "multiblock_4x4",
-      "name": "coal_cuts"
+      "name": "coal_cuts",
+      "textures": {
+        "4x4_row_0_column_0": "chisel:block/coal/coal_cuts"
+      }
     },
     {
       "block": "chisel:coal_dent",
@@ -67,7 +76,10 @@
     {
       "block": "chisel:coal_jellybean",
       "model_type": "multiblock_2x2",
-      "name": "coal_jellybean"
+      "name": "coal_jellybean",
+      "textures": {
+        "2x2_top_left": "chisel:block/coal/coal_jellybean"
+      }
     },
     {
       "block": "chisel:coal_layers",
@@ -89,7 +101,10 @@
     {
       "block": "chisel:coal_pillar",
       "model_type": "top_bottom_side",
-      "name": "coal_pillar"
+      "name": "coal_pillar",
+      "textures": {
+        "bottom": "chisel:block/coal/coal_pillar-top"
+      }
     },
     {
       "block": "chisel:coal_prism",
@@ -106,7 +121,11 @@
     {
       "block": "chisel:coal_slanted",
       "model_type": "multiblock_2x2",
-      "name": "coal_slanted"
+      "name": "coal_slanted",
+      "textures": {
+        "2x2_bottom_left": "chisel:block/coal/coal_slanted",
+        "2x2_top_left": "chisel:block/coal/coal_slanted"
+      }
     },
     {
       "block": "chisel:coal_small_bricks",
@@ -140,7 +159,10 @@
     {
       "block": "chisel:coal_twisted",
       "model_type": "top_bottom_side",
-      "name": "coal_twisted"
+      "name": "coal_twisted",
+      "textures": {
+        "bottom": "chisel:block/coal/coal_twisted-top"
+      }
     },
     {
       "block": "chisel:coal_weaver",
@@ -150,7 +172,10 @@
     {
       "block": "chisel:coal_zag",
       "model_type": "ar",
-      "name": "coal_zag"
+      "name": "coal_zag",
+      "textures": {
+        "ar_variant_1": "chisel:block/coal/coal_zag"
+      }
     }
   ]
 }

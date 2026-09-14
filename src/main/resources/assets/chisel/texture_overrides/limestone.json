@@ -1,0 +1,26 @@
+{
+  "limestone_array": {
+    "2x2_top_left": "chisel:block/limestone/limestone_array"
+  },
+  "limestone_chaotic_bricks": {
+    "3x3_top_left": "chisel:block/limestone/limestone_chaotic_bricks"
+  },
+  "limestone_cuts": {
+    "4x4_row_0_column_0": "chisel:block/limestone/limestone_cuts"
+  },
+  "limestone_jellybean": {
+    "2x2_top_left": "chisel:block/limestone/limestone_jellybean"
+  },
+  "limestone_pillar": {
+    "bottom": "chisel:block/limestone/limestone_pillar-top"
+  },
+  "limestone_slanted": {
+    "2x2_top_left": "chisel:block/limestone/limestone_slanted"
+  },
+  "limestone_twisted": {
+    "bottom": "chisel:block/limestone/limestone_twisted-top"
+  },
+  "limestone_zag": {
+    "ar_variant_1": "chisel:block/limestone/limestone_zag"
+  }
+}

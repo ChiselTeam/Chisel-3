@@ -4,7 +4,7 @@
     "all": "chisel:block/basalt/basalt_circular",
     "particle": "chisel:block/basalt/basalt_circular",
     "standard_corner": "chisel:block/basalt/basalt_circular-ctm_corner",
-    "standard_cornerless": "chisel:block/basalt/basalt_circular-ctm_cornerless",
+    "standard_cornerless": "chisel:block/basalt/basalt_dent-ctm_cornerless",
     "standard_horizontal": "chisel:block/basalt/basalt_circular-ctm_horizontal",
     "standard_none": "chisel:block/basalt/basalt_circular",
     "standard_vertical": "chisel:block/basalt/basalt_circular-ctm_vertical"

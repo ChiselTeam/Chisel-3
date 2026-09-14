@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/tuff/tuff_meander_vertical-side",
-    "bottom": "chisel:block/tuff/tuff_meander_vertical-bottom",
+    "bottom": "chisel:block/tuff/tuff_meander_vertical-top",
     "particle": "chisel:block/tuff/tuff_meander_vertical-side",
     "side": "chisel:block/tuff/tuff_meander_vertical-side",
     "top": "chisel:block/tuff/tuff_meander_vertical-top",

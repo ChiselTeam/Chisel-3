@@ -3,10 +3,10 @@
   "textures": {
     "all": "chisel:block/quartz/quartz_square_border",
     "particle": "chisel:block/quartz/quartz_square_border",
-    "standard_corner": "chisel:block/quartz/quartz_square_border-ctm_corner",
-    "standard_cornerless": "chisel:block/quartz/quartz_square_border-ctm_cornerless",
-    "standard_horizontal": "chisel:block/quartz/quartz_square_border-ctm_horizontal",
+    "standard_corner": "chisel:block/quartz/quartz_square_border",
+    "standard_cornerless": "chisel:block/quartz/quartz_raw",
+    "standard_horizontal": "chisel:block/quartz/quartz_square_border",
     "standard_none": "chisel:block/quartz/quartz_square_border",
-    "standard_vertical": "chisel:block/quartz/quartz_square_border-ctm_vertical"
+    "standard_vertical": "chisel:block/quartz/quartz_square_border"
   }
 }

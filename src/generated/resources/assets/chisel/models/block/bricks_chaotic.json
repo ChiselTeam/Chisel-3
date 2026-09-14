@@ -9,7 +9,7 @@
     "multiblock_3x3_center_left": "chisel:block/bricks/bricks_chaotic-3x3_center_left",
     "multiblock_3x3_center_right": "chisel:block/bricks/bricks_chaotic-3x3_center_right",
     "multiblock_3x3_top_center": "chisel:block/bricks/bricks_chaotic-3x3_top_center",
-    "multiblock_3x3_top_left": "chisel:block/bricks/bricks_chaotic-3x3_top_left",
+    "multiblock_3x3_top_left": "chisel:block/bricks/bricks_chaotic",
     "multiblock_3x3_top_right": "chisel:block/bricks/bricks_chaotic-3x3_top_right",
     "particle": "chisel:block/bricks/bricks_chaotic"
   }

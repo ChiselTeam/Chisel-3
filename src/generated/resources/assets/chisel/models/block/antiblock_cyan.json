@@ -1,15 +1,15 @@
 {
   "parent": "chisel:block/cube_multi_pass_no_shade",
   "textures": {
-    "all": "chisel:block/antiblock/antiblock_cyan",
-    "base_texture": "chisel:block/antiblock/antiblock_cyan-bg",
-    "layer0": "chisel:block/antiblock/antiblock_cyan-bg",
-    "layer1": "chisel:block/antiblock/antiblock_cyan",
-    "particle": "chisel:block/antiblock/antiblock_cyan",
-    "standard_corner": "chisel:block/antiblock/antiblock_cyan-ctm_corner",
-    "standard_cornerless": "chisel:block/antiblock/antiblock_cyan-ctm_cornerless",
-    "standard_horizontal": "chisel:block/antiblock/antiblock_cyan-ctm_horizontal",
-    "standard_none": "chisel:block/antiblock/antiblock_cyan",
-    "standard_vertical": "chisel:block/antiblock/antiblock_cyan-ctm_vertical"
+    "all": "chisel:block/antiblock/antiblock_red",
+    "base_texture": "chisel:block/antiblock/antiblock_cyan_borderless",
+    "layer0": "chisel:block/antiblock/antiblock_cyan_borderless",
+    "layer1": "chisel:block/antiblock/antiblock_red",
+    "particle": "chisel:block/antiblock/antiblock_red",
+    "standard_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "standard_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "standard_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "standard_none": "chisel:block/antiblock/antiblock_red",
+    "standard_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
   }
 }

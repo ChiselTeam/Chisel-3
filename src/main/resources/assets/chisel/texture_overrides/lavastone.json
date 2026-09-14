@@ -1,0 +1,48 @@
+{
+  "lavastone_array": {
+    "2x2_top_left": "chisel:block/lavastone/lavastone_array"
+  },
+  "lavastone_chaotic_bricks": {
+    "3x3_top_left": "chisel:block/lavastone/lavastone_chaotic_bricks"
+  },
+  "lavastone_circular": {
+    "bg": "chisel:block/magma/magma_dent-bg"
+  },
+  "lavastone_cuts": {
+    "4x4_row_0_column_0": "chisel:block/lavastone/lavastone_cuts"
+  },
+  "lavastone_dent": {
+    "bg": "chisel:block/magma/magma_dent-bg"
+  },
+  "lavastone_encased_bricks": {
+    "bg": "chisel:block/magma/magma_dent-bg"
+  },
+  "lavastone_jellybean": {
+    "2x2_top_left": "chisel:block/lavastone/lavastone_jellybean"
+  },
+  "lavastone_mosaic": {
+    "bg": "chisel:block/magma/magma_dent-bg"
+  },
+  "lavastone_pillar": {
+    "bottom": "chisel:block/lavastone/lavastone_pillar-top"
+  },
+  "lavastone_slanted": {
+    "2x2_bottom_left": "chisel:block/lavastone/lavastone_slanted",
+    "2x2_bottom_right": "chisel:block/lavastone/lavastone_slanted-2x2_top_right",
+    "2x2_top_left": "chisel:block/lavastone/lavastone_slanted"
+  },
+  "lavastone_tiles_large": {
+    "bg": "chisel:block/magma/magma_dent-bg",
+    "ctm_cornerless": "chisel:block/lavastone/lavastone_mosaic-ctm_cornerless"
+  },
+  "lavastone_twisted": {
+    "bottom": "chisel:block/lavastone/lavastone_twisted-top"
+  },
+  "lavastone_weaver": {
+    "bg": "chisel:block/magma/magma_dent-bg"
+  },
+  "lavastone_zag": {
+    "ar_variant_1": "chisel:block/lavastone/lavastone_zag",
+    "bg": "chisel:block/magma/magma_dent-bg"
+  }
+}

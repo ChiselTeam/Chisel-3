@@ -5,9 +5,11 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import io.github.chiselteam.chisel.api.model.VariantModelHandler;
 import io.github.chiselteam.chisel.api.model.VariantModelHandlers;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.ApiStatus;
 
+import java.util.Map;
 import java.util.function.Supplier;
 
 import static io.github.chiselteam.chisel.api.model.ChiselModelHandlers.CUBE_ALL;
@@ -17,8 +19,9 @@ public class Variant {
     public static final Codec<Variant> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Codec.STRING.fieldOf("name").forGetter(Variant::getName),
             BuiltInRegistries.BLOCK.byNameCodec().fieldOf("block").forGetter(Variant::getBlock),
-            VariantModelHandlers.CODEC.optionalFieldOf("model_type", CUBE_ALL).forGetter(Variant::getModelType)
-    ).apply(instance, (name, block, modelType) -> new Variant(name, () -> block, null, modelType, false)));
+            VariantModelHandlers.CODEC.optionalFieldOf("model_type", CUBE_ALL).forGetter(Variant::getModelType),
+            Codec.unboundedMap(Codec.STRING, Identifier.CODEC).optionalFieldOf("textures", Map.of()).forGetter(Variant::getTextures)
+    ).apply(instance, (name, block, modelType, textures) -> new Variant(name, () -> block, null, modelType, false).setTextures(textures)));
 
     private final String name;
     private final Supplier<Block> block;
@@ -27,6 +30,7 @@ public class Variant {
 
     private VariantFamily family;
     private Variant dropsAs;
+    private Map<String, Identifier> textures = Map.of();
 
     private boolean inTab = true;
     private boolean eldritch = false;
@@ -53,6 +57,16 @@ public class Variant {
 
     public String getName() {
         return name;
+    }
+
+    public Map<String, Identifier> getTextures() {
+        return textures;
+    }
+
+    @ApiStatus.Internal
+    public Variant setTextures(Map<String, Identifier> textures) {
+        this.textures = Map.copyOf(textures);
+        return this;
     }
 
     public Block getBlock() {

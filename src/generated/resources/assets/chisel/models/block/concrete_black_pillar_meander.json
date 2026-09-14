@@ -2,11 +2,11 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/concrete_black/concrete_black_pillar_meander-side",
-    "bottom": "chisel:block/concrete_black/concrete_black_pillar_meander-bottom",
+    "bottom": "chisel:block/concrete_black/concrete_black_pillar_basic-top",
     "particle": "chisel:block/concrete_black/concrete_black_pillar_meander-side",
     "side": "chisel:block/concrete_black/concrete_black_pillar_meander-side",
-    "top": "chisel:block/concrete_black/concrete_black_pillar_meander-top",
-    "vertical_both": "chisel:block/concrete_black/concrete_black_pillar_meander-vertical_both",
+    "top": "chisel:block/concrete_black/concrete_black_pillar_basic-top",
+    "vertical_both": "chisel:block/concrete_black/concrete_black_pillar_ionic-vertical_both",
     "vertical_bottom": "chisel:block/concrete_black/concrete_black_pillar_meander-vertical_bottom",
     "vertical_none": "chisel:block/concrete_black/concrete_black_pillar_meander-vertical_none",
     "vertical_top": "chisel:block/concrete_black/concrete_black_pillar_meander-vertical_top"

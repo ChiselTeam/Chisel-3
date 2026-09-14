@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/laboratory/laboratory_wall_vent-bottom",
+    "bottom": "chisel:block/laboratory/laboratory_wall_vent-top",
     "side": "chisel:block/laboratory/laboratory_wall_vent-side",
     "top": "chisel:block/laboratory/laboratory_wall_vent-top"
   }

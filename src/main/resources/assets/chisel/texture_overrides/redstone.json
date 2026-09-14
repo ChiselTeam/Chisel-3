@@ -1,0 +1,11 @@
+{
+  "redstone_chiseled": {
+    "bottom": "chisel:block/redstone/redstone_chiseled-top"
+  },
+  "redstone_greek": {
+    "": "chisel:block/redstone/redstone_ere"
+  },
+  "redstone_pillar": {
+    "bottom": "chisel:block/redstone/redstone_pillar-top"
+  }
+}

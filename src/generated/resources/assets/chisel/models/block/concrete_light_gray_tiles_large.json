@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/concrete_light_gray/concrete_light_gray_tiles_large",
-    "particle": "chisel:block/concrete_light_gray/concrete_light_gray_tiles_large",
+    "all": "chisel:block/concrete_light_gray/concrete_light_gray_polished",
+    "particle": "chisel:block/concrete_light_gray/concrete_light_gray_polished",
     "standard_corner": "chisel:block/concrete_light_gray/concrete_light_gray_tiles_large-ctm_corner",
-    "standard_cornerless": "chisel:block/concrete_light_gray/concrete_light_gray_tiles_large-ctm_cornerless",
+    "standard_cornerless": "chisel:block/concrete_light_gray/concrete_light_gray_dent-ctm_cornerless",
     "standard_horizontal": "chisel:block/concrete_light_gray/concrete_light_gray_tiles_large-ctm_horizontal",
-    "standard_none": "chisel:block/concrete_light_gray/concrete_light_gray_tiles_large",
+    "standard_none": "chisel:block/concrete_light_gray/concrete_light_gray_polished",
     "standard_vertical": "chisel:block/concrete_light_gray/concrete_light_gray_tiles_large-ctm_vertical"
   }
 }

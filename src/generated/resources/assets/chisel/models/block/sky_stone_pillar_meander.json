@@ -2,11 +2,11 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/ae2_sky_stone/sky_stone_pillar_meander-side",
-    "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_meander-bottom",
+    "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
     "particle": "chisel:block/ae2_sky_stone/sky_stone_pillar_meander-side",
     "side": "chisel:block/ae2_sky_stone/sky_stone_pillar_meander-side",
-    "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_meander-top",
-    "vertical_both": "chisel:block/ae2_sky_stone/sky_stone_pillar_meander-vertical_both",
+    "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
+    "vertical_both": "chisel:block/ae2_sky_stone/sky_stone_pillar_ionic-vertical_both",
     "vertical_bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_meander-vertical_bottom",
     "vertical_none": "chisel:block/ae2_sky_stone/sky_stone_pillar_meander-vertical_none",
     "vertical_top": "chisel:block/ae2_sky_stone/sky_stone_pillar_meander-vertical_top"

@@ -13,7 +13,10 @@
     {
       "block": "chisel:andesite_array",
       "model_type": "multiblock_2x2",
-      "name": "andesite_array"
+      "name": "andesite_array",
+      "textures": {
+        "2x2_top_left": "chisel:block/andesite/andesite_array"
+      }
     },
     {
       "block": "chisel:andesite_braid",
@@ -22,7 +25,10 @@
     {
       "block": "chisel:andesite_chaotic_bricks",
       "model_type": "multiblock_3x3",
-      "name": "andesite_chaotic_bricks"
+      "name": "andesite_chaotic_bricks",
+      "textures": {
+        "3x3_top_left": "chisel:block/andesite/andesite_chaotic_bricks"
+      }
     },
     {
       "block": "chisel:andesite_chaotic_medium",
@@ -35,7 +41,10 @@
     {
       "block": "chisel:andesite_circular",
       "model_type": "connected",
-      "name": "andesite_circular"
+      "name": "andesite_circular",
+      "textures": {
+        "ctm_cornerless": "chisel:block/andesite/andesite_dent-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:andesite_cracked",
@@ -48,7 +57,10 @@
     {
       "block": "chisel:andesite_cuts",
       "model_type": "multiblock_4x4",
-      "name": "andesite_cuts"
+      "name": "andesite_cuts",
+      "textures": {
+        "4x4_row_0_column_0": "chisel:block/andesite/andesite_cuts"
+      }
     },
     {
       "block": "chisel:andesite_dent",
@@ -71,7 +83,10 @@
     {
       "block": "chisel:andesite_jellybean",
       "model_type": "multiblock_2x2",
-      "name": "andesite_jellybean"
+      "name": "andesite_jellybean",
+      "textures": {
+        "2x2_top_left": "chisel:block/andesite/andesite_jellybean"
+      }
     },
     {
       "block": "chisel:andesite_layers",
@@ -93,7 +108,10 @@
     {
       "block": "chisel:andesite_pillar",
       "model_type": "top_bottom_side",
-      "name": "andesite_pillar"
+      "name": "andesite_pillar",
+      "textures": {
+        "bottom": "chisel:block/andesite/andesite_pillar-top"
+      }
     },
     {
       "block": "chisel:andesite_prism",
@@ -106,7 +124,12 @@
     {
       "block": "chisel:andesite_slanted",
       "model_type": "multiblock_2x2",
-      "name": "andesite_slanted"
+      "name": "andesite_slanted",
+      "textures": {
+        "2x2_bottom_left": "chisel:block/andesite/andesite_slanted",
+        "2x2_bottom_right": "chisel:block/andesite/andesite_slanted-2x2_top_right",
+        "2x2_top_left": "chisel:block/andesite/andesite_slanted"
+      }
     },
     {
       "block": "chisel:andesite_small_bricks",
@@ -123,7 +146,10 @@
     {
       "block": "chisel:andesite_tiles_large",
       "model_type": "connected",
-      "name": "andesite_tiles_large"
+      "name": "andesite_tiles_large",
+      "textures": {
+        "ctm_cornerless": "chisel:block/andesite/andesite_mosaic-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:andesite_tiles_medium",
@@ -140,17 +166,26 @@
     {
       "block": "chisel:andesite_twisted",
       "model_type": "top_bottom_side",
-      "name": "andesite_twisted"
+      "name": "andesite_twisted",
+      "textures": {
+        "bottom": "chisel:block/andesite/andesite_twisted-top"
+      }
     },
     {
       "block": "chisel:andesite_weaver",
       "model_type": "connected",
-      "name": "andesite_weaver"
+      "name": "andesite_weaver",
+      "textures": {
+        "ctm_cornerless": "chisel:block/andesite/andesite_weaver-ctm_corner"
+      }
     },
     {
       "block": "chisel:andesite_zag",
       "model_type": "ar",
-      "name": "andesite_zag"
+      "name": "andesite_zag",
+      "textures": {
+        "ar_variant_1": "chisel:block/andesite/andesite_zag"
+      }
     }
   ]
 }

@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/quartz/quartz_array",
-    "multiblock_2x2_bottom_left": "chisel:block/quartz/quartz_array-2x2_bottom_left",
+    "multiblock_2x2_bottom_left": "chisel:block/quartz/quartz_array",
     "multiblock_2x2_bottom_right": "chisel:block/quartz/quartz_array-2x2_bottom_right",
     "multiblock_2x2_top_left": "chisel:block/quartz/quartz_array-2x2_top_left",
     "multiblock_2x2_top_right": "chisel:block/quartz/quartz_array-2x2_top_right",

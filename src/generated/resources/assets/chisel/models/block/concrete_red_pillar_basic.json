@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/concrete_red/concrete_red_pillar_basic-side",
-    "bottom": "chisel:block/concrete_red/concrete_red_pillar_basic-bottom",
+    "bottom": "chisel:block/concrete_red/concrete_red_pillar_basic-top",
     "particle": "chisel:block/concrete_red/concrete_red_pillar_basic-side",
     "side": "chisel:block/concrete_red/concrete_red_pillar_basic-side",
     "top": "chisel:block/concrete_red/concrete_red_pillar_basic-top",

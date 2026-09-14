@@ -25,7 +25,11 @@
     {
       "block": "chisel:mossy_temple_column",
       "model_type": "top_bottom_side",
-      "name": "mossy_temple_column"
+      "name": "mossy_temple_column",
+      "textures": {
+        "bottom": "chisel:block/mossy_temple/mossy_temple_tiles",
+        "top": "chisel:block/mossy_temple/mossy_temple_tiles"
+      }
     },
     {
       "block": "chisel:mossy_temple_ornate",
@@ -42,17 +46,29 @@
     {
       "block": "chisel:mossy_temple_stand",
       "model_type": "top_bottom_side",
-      "name": "mossy_temple_stand"
+      "name": "mossy_temple_stand",
+      "textures": {
+        "bottom": "chisel:block/mossy_temple/mossy_temple_plate",
+        "top": "chisel:block/mossy_temple/mossy_temple_plate"
+      }
     },
     {
       "block": "chisel:mossy_temple_stand_creeper",
       "model_type": "top_bottom_side",
-      "name": "mossy_temple_stand_creeper"
+      "name": "mossy_temple_stand_creeper",
+      "textures": {
+        "bottom": "chisel:block/mossy_temple/mossy_temple_plate",
+        "top": "chisel:block/mossy_temple/mossy_temple_plate"
+      }
     },
     {
       "block": "chisel:mossy_temple_stand_mosaic",
       "model_type": "top_bottom_side",
-      "name": "mossy_temple_stand_mosaic"
+      "name": "mossy_temple_stand_mosaic",
+      "textures": {
+        "bottom": "chisel:block/mossy_temple/mossy_temple_plate",
+        "top": "chisel:block/mossy_temple/mossy_temple_plate"
+      }
     },
     {
       "block": "chisel:mossy_temple_tiles",

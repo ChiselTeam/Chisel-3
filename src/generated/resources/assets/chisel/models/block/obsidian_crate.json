@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/obsidian/obsidian_crate-bottom",
     "side": "chisel:block/obsidian/obsidian_crate-side",
-    "top": "chisel:block/obsidian/obsidian_crate-top"
+    "top": "chisel:block/obsidian/obsidian_tiles"
   }
 }

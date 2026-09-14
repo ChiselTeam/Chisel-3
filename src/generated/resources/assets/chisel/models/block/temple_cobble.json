@@ -4,7 +4,7 @@
     "all": "chisel:block/temple/temple_cobble",
     "particle": "chisel:block/temple/temple_cobble",
     "standard_corner": "chisel:block/temple/temple_cobble-ctm_corner",
-    "standard_cornerless": "chisel:block/temple/temple_cobble-ctm_cornerless",
+    "standard_cornerless": "chisel:block/temple/temple_cobble",
     "standard_horizontal": "chisel:block/temple/temple_cobble-ctm_horizontal",
     "standard_none": "chisel:block/temple/temple_cobble",
     "standard_vertical": "chisel:block/temple/temple_cobble-ctm_vertical"

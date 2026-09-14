@@ -24,7 +24,10 @@
     },
     {
       "block": "chisel:stone_bricks_disordered_panel",
-      "name": "stone_bricks_disordered_panel"
+      "name": "stone_bricks_disordered_panel",
+      "textures": {
+        "": "chisel:block/stone_bricks/stone_bricks_panel_hard"
+      }
     },
     {
       "block": "chisel:stone_bricks_disordered_small",
@@ -44,7 +47,10 @@
     },
     {
       "block": "chisel:stone_bricks_mason_bricks_felsic",
-      "name": "stone_bricks_mason_bricks_felsic"
+      "name": "stone_bricks_mason_bricks_felsic",
+      "textures": {
+        "": "chisel:block/stone_bricks/stone_bricks_felsic"
+      }
     },
     {
       "block": "chisel:stone_bricks_mason_bricks_felsic_2",
@@ -56,7 +62,10 @@
     },
     {
       "block": "chisel:stone_bricks_mason_bricks_mixed",
-      "name": "stone_bricks_mason_bricks_mixed"
+      "name": "stone_bricks_mason_bricks_mixed",
+      "textures": {
+        "": "chisel:block/stone_bricks/stone_bricks_small"
+      }
     },
     {
       "block": "chisel:stone_bricks_mason_bricks_mixed_2",
@@ -93,7 +102,10 @@
     {
       "block": "chisel:stone_bricks_panel_hard",
       "model_type": "connected",
-      "name": "stone_bricks_panel_hard"
+      "name": "stone_bricks_panel_hard",
+      "textures": {
+        "ctm_cornerless": "chisel:block/stone_bricks/stone_bricks_smooth"
+      }
     },
     {
       "block": "chisel:stone_bricks_panel_ornate",
@@ -102,7 +114,10 @@
     {
       "block": "chisel:stone_bricks_panel_sunken",
       "model_type": "connected",
-      "name": "stone_bricks_panel_sunken"
+      "name": "stone_bricks_panel_sunken",
+      "textures": {
+        "ctm_cornerless": "chisel:block/stone_bricks/stone_bricks_smooth"
+      }
     },
     {
       "block": "chisel:stone_bricks_poison",

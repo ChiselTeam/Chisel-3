@@ -1,0 +1,47 @@
+{
+  "warning_biohazard": {
+    "bg": "chisel:block/warning/warning_chem-bg"
+  },
+  "warning_construction": {
+    "bg": "chisel:block/warning/warning_chem-bg"
+  },
+  "warning_cryogenic": {
+    "bg": "chisel:block/warning/warning_chem-bg"
+  },
+  "warning_death": {
+    "bg": "chisel:block/warning/warning_chem-bg"
+  },
+  "warning_explosion": {
+    "bg": "chisel:block/warning/warning_chem-bg"
+  },
+  "warning_falling": {
+    "bg": "chisel:block/warning/warning_chem-bg"
+  },
+  "warning_falling_objects": {
+    "bg": "chisel:block/warning/warning_chem-bg"
+  },
+  "warning_fire": {
+    "bg": "chisel:block/warning/warning_chem-bg"
+  },
+  "warning_generic": {
+    "bg": "chisel:block/warning/warning_chem-bg"
+  },
+  "warning_illuminati": {
+    "bg": "chisel:block/warning/warning_chem-bg"
+  },
+  "warning_loud": {
+    "bg": "chisel:block/warning/warning_chem-bg"
+  },
+  "warning_no_entry": {
+    "bg": "chisel:block/warning/warning_chem-bg"
+  },
+  "warning_oxygen": {
+    "bg": "chisel:block/warning/warning_chem-bg"
+  },
+  "warning_radiation": {
+    "bg": "chisel:block/warning/warning_chem-bg"
+  },
+  "warning_voltage": {
+    "bg": "chisel:block/warning/warning_chem-bg"
+  }
+}

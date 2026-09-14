@@ -4,7 +4,7 @@
     "all": "chisel:block/stone_bricks/stone_bricks_panel_sunken",
     "particle": "chisel:block/stone_bricks/stone_bricks_panel_sunken",
     "standard_corner": "chisel:block/stone_bricks/stone_bricks_panel_sunken-ctm_corner",
-    "standard_cornerless": "chisel:block/stone_bricks/stone_bricks_panel_sunken-ctm_cornerless",
+    "standard_cornerless": "chisel:block/stone_bricks/stone_bricks_smooth",
     "standard_horizontal": "chisel:block/stone_bricks/stone_bricks_panel_sunken-ctm_horizontal",
     "standard_none": "chisel:block/stone_bricks/stone_bricks_panel_sunken",
     "standard_vertical": "chisel:block/stone_bricks/stone_bricks_panel_sunken-ctm_vertical"

@@ -2,13 +2,13 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/tuff/tuff_pillar_large_ionic_triple-side",
-    "bottom": "chisel:block/tuff/tuff_pillar_large_ionic_triple-bottom",
+    "bottom": "chisel:block/tuff/tuff_pillar_basic-top",
     "particle": "chisel:block/tuff/tuff_pillar_large_ionic_triple-side",
     "side": "chisel:block/tuff/tuff_pillar_large_ionic_triple-side",
-    "top": "chisel:block/tuff/tuff_pillar_large_ionic_triple-top",
-    "vertical_both": "chisel:block/tuff/tuff_pillar_large_ionic_triple-vertical_both",
+    "top": "chisel:block/tuff/tuff_pillar_basic-top",
+    "vertical_both": "chisel:block/tuff/tuff_pillar_large_basic_triple-vertical_both",
     "vertical_bottom": "chisel:block/tuff/tuff_pillar_large_ionic_triple-vertical_bottom",
-    "vertical_none": "chisel:block/tuff/tuff_pillar_large_ionic_triple-vertical_none",
+    "vertical_none": "chisel:block/tuff/tuff_pillar_large_ionic_triple-side",
     "vertical_top": "chisel:block/tuff/tuff_pillar_large_ionic_triple-vertical_top"
   }
 }

@@ -4,7 +4,7 @@
     "all": "chisel:block/atm_ancient_stone/ancient_stone_circular",
     "particle": "chisel:block/atm_ancient_stone/ancient_stone_circular",
     "standard_corner": "chisel:block/atm_ancient_stone/ancient_stone_circular-ctm_corner",
-    "standard_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_circular-ctm_cornerless",
+    "standard_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_raw",
     "standard_horizontal": "chisel:block/atm_ancient_stone/ancient_stone_circular-ctm_horizontal",
     "standard_none": "chisel:block/atm_ancient_stone/ancient_stone_circular",
     "standard_vertical": "chisel:block/atm_ancient_stone/ancient_stone_circular-ctm_vertical"

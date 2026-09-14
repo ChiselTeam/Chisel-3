@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-side",
-    "bottom": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-bottom",
+    "bottom": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-top",
     "particle": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-side",
     "side": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-side",
     "top": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-top",

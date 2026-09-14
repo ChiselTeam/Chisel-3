@@ -2,8 +2,8 @@
   "parent": "chisel:block/cube_multi_pass",
   "textures": {
     "all": "chisel:block/lavastone/lavastone_dent",
-    "base_texture": "chisel:block/lavastone/lavastone_dent-bg",
-    "layer0": "chisel:block/lavastone/lavastone_dent-bg",
+    "base_texture": "chisel:block/magma/magma_dent-bg",
+    "layer0": "chisel:block/magma/magma_dent-bg",
     "layer1": "chisel:block/lavastone/lavastone_dent",
     "particle": "chisel:block/lavastone/lavastone_dent",
     "standard_corner": "chisel:block/lavastone/lavastone_dent-ctm_corner",

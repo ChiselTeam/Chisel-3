@@ -9,7 +9,7 @@
     "multiblock_3x3_center_left": "chisel:block/technical/technical_rusty-r9_center_left",
     "multiblock_3x3_center_right": "chisel:block/technical/technical_rusty-r9_center_right",
     "multiblock_3x3_top_center": "chisel:block/technical/technical_rusty-r9_top_center",
-    "multiblock_3x3_top_left": "chisel:block/technical/technical_rusty-r9_top_left",
+    "multiblock_3x3_top_left": "chisel:block/technical/technical_rusty",
     "multiblock_3x3_top_right": "chisel:block/technical/technical_rusty-r9_top_right",
     "particle": "chisel:block/technical/technical_rusty"
   }

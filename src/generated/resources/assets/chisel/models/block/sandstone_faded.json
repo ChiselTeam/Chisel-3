@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/sandstone/sandstone_faded-bottom",
     "side": "chisel:block/sandstone/sandstone_faded-side",
-    "top": "chisel:block/sandstone/sandstone_faded-top"
+    "top": "chisel:block/sandstone/sandstone_smooth"
   }
 }

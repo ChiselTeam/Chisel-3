@@ -5,7 +5,7 @@
     "bottom": "minecraft:block/oak_planks",
     "horizontal_both": "chisel:block/bookshelf/bookshelf_papers-horizontal_both",
     "horizontal_left": "chisel:block/bookshelf/bookshelf_papers-horizontal_left",
-    "horizontal_none": "chisel:block/bookshelf/bookshelf_papers-horizontal_none",
+    "horizontal_none": "chisel:block/bookshelf/bookshelf_papers",
     "horizontal_right": "chisel:block/bookshelf/bookshelf_papers-horizontal_right",
     "layer0": "minecraft:block/oak_planks",
     "layer1": "minecraft:block/oak_planks",

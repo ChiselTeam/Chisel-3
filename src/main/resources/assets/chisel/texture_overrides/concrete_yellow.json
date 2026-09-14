@@ -1,0 +1,206 @@
+{
+  "concrete_yellow_border_square": {
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_dent-ctm_cornerless"
+  },
+  "concrete_yellow_circular": {
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_dent-ctm_cornerless"
+  },
+  "concrete_yellow_dots_encased": {
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_dots"
+  },
+  "concrete_yellow_facet_small_encased": {
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_facet_small"
+  },
+  "concrete_yellow_gem_1_connected": {
+    "": "chisel:block/concrete_yellow/concrete_yellow_gem_1",
+    "ctm_corner": "chisel:block/concrete_yellow/concrete_yellow_gem_1_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_gem_1_connected-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/concrete_yellow/concrete_yellow_gem_1_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/concrete_yellow/concrete_yellow_gem_1_connected-ctm_vertical"
+  },
+  "concrete_yellow_gem_2_connected": {
+    "": "chisel:block/concrete_yellow/concrete_yellow_gem_2",
+    "ctm_corner": "chisel:block/concrete_yellow/concrete_yellow_gem_2_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_gem_1_connected-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/concrete_yellow/concrete_yellow_gem_2_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/concrete_yellow/concrete_yellow_gem_2_connected-ctm_vertical"
+  },
+  "concrete_yellow_gem_3_connected": {
+    "": "chisel:block/concrete_yellow/concrete_yellow_gem_3",
+    "ctm_corner": "chisel:block/concrete_yellow/concrete_yellow_gem_3_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_gem_3_connected-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/concrete_yellow/concrete_yellow_gem_3_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/concrete_yellow/concrete_yellow_gem_3_connected-ctm_vertical"
+  },
+  "concrete_yellow_herringbone_encased": {
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_herringbone"
+  },
+  "concrete_yellow_indent": {
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_dent-ctm_cornerless"
+  },
+  "concrete_yellow_layers_connected": {
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_layers_connected-ctm_corner",
+    "ctm_horizontal": "chisel:block/concrete_yellow/concrete_yellow_layers_connected",
+    "ctm_vertical": "chisel:block/concrete_yellow/concrete_yellow_layers_connected-ctm_corner"
+  },
+  "concrete_yellow_lodestone_connected": {
+    "": "chisel:block/concrete_yellow/concrete_yellow_lodestone",
+    "ctm_corner": "chisel:block/concrete_yellow/concrete_yellow_lodestone_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_lodestone",
+    "ctm_horizontal": "chisel:block/concrete_yellow/concrete_yellow_lodestone_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/concrete_yellow/concrete_yellow_lodestone_connected-ctm_vertical"
+  },
+  "concrete_yellow_meander_horizontal": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_meander_horizontal-top"
+  },
+  "concrete_yellow_meander_vertical": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_meander_vertical-top"
+  },
+  "concrete_yellow_medallion_encased": {
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_medallion"
+  },
+  "concrete_yellow_mosaic": {
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_dent-ctm_cornerless"
+  },
+  "concrete_yellow_parquet_encased": {
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_parquet"
+  },
+  "concrete_yellow_pillar": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar-top"
+  },
+  "concrete_yellow_pillar_basic": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top"
+  },
+  "concrete_yellow_pillar_basic_dent": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "top": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top"
+  },
+  "concrete_yellow_pillar_basic_plain": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "top": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top"
+  },
+  "concrete_yellow_pillar_basic_round": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "top": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top"
+  },
+  "concrete_yellow_pillar_basic_spiral": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "top": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top"
+  },
+  "concrete_yellow_pillar_classic": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_classic-top"
+  },
+  "concrete_yellow_pillar_classic_large": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_classic_large-top"
+  },
+  "concrete_yellow_pillar_ionic": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "top": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top"
+  },
+  "concrete_yellow_pillar_ionic_dent": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "side": "chisel:block/concrete_yellow/concrete_yellow_pillar_ionic-side",
+    "top": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "vertical_both": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic_dent-vertical_both",
+    "vertical_none": "chisel:block/concrete_yellow/concrete_yellow_pillar_ionic-vertical_none"
+  },
+  "concrete_yellow_pillar_ionic_plain": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "side": "chisel:block/concrete_yellow/concrete_yellow_pillar_ionic-side",
+    "top": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "vertical_both": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic_plain-vertical_both",
+    "vertical_none": "chisel:block/concrete_yellow/concrete_yellow_pillar_ionic-vertical_none"
+  },
+  "concrete_yellow_pillar_ionic_round": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "side": "chisel:block/concrete_yellow/concrete_yellow_pillar_ionic-side",
+    "top": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "vertical_both": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic_round-vertical_both",
+    "vertical_none": "chisel:block/concrete_yellow/concrete_yellow_pillar_ionic-vertical_none"
+  },
+  "concrete_yellow_pillar_ionic_spiral": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "side": "chisel:block/concrete_yellow/concrete_yellow_pillar_ionic-side",
+    "top": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "vertical_both": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic_spiral-vertical_both",
+    "vertical_none": "chisel:block/concrete_yellow/concrete_yellow_pillar_ionic-vertical_none"
+  },
+  "concrete_yellow_pillar_large_basic_triple": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "top": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top"
+  },
+  "concrete_yellow_pillar_large_ionic_triple": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "top": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "vertical_both": "chisel:block/concrete_yellow/concrete_yellow_pillar_large_basic_triple-vertical_both"
+  },
+  "concrete_yellow_pillar_meander": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "top": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "vertical_both": "chisel:block/concrete_yellow/concrete_yellow_pillar_ionic-vertical_both"
+  },
+  "concrete_yellow_pillar_meander_dent": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "side": "chisel:block/concrete_yellow/concrete_yellow_pillar_meander-side",
+    "top": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "vertical_both": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic_dent-vertical_both",
+    "vertical_none": "chisel:block/concrete_yellow/concrete_yellow_pillar_meander-vertical_none"
+  },
+  "concrete_yellow_pillar_meander_plain": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "side": "chisel:block/concrete_yellow/concrete_yellow_pillar_meander-side",
+    "top": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "vertical_both": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic_plain-vertical_both",
+    "vertical_none": "chisel:block/concrete_yellow/concrete_yellow_pillar_meander-vertical_none"
+  },
+  "concrete_yellow_pillar_meander_round": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "side": "chisel:block/concrete_yellow/concrete_yellow_pillar_meander-side",
+    "top": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "vertical_both": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic_round-vertical_both",
+    "vertical_none": "chisel:block/concrete_yellow/concrete_yellow_pillar_meander-vertical_none"
+  },
+  "concrete_yellow_pillar_meander_spiral": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "side": "chisel:block/concrete_yellow/concrete_yellow_pillar_meander-side",
+    "top": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic-top",
+    "vertical_both": "chisel:block/concrete_yellow/concrete_yellow_pillar_basic_spiral-vertical_both",
+    "vertical_none": "chisel:block/concrete_yellow/concrete_yellow_pillar_meander-vertical_none"
+  },
+  "concrete_yellow_plank_connected": {
+    "": "chisel:block/concrete_yellow/concrete_yellow_plank",
+    "ctm_corner": "chisel:block/concrete_yellow/concrete_yellow_plank_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_plank_connected-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/concrete_yellow/concrete_yellow_plank_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/concrete_yellow/concrete_yellow_plank_connected-ctm_vertical"
+  },
+  "concrete_yellow_plate_connected": {
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_gem_1_connected-ctm_cornerless"
+  },
+  "concrete_yellow_scaffold_encased": {
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_scaffold"
+  },
+  "concrete_yellow_shiny_connected": {
+    "": "chisel:block/concrete_yellow/concrete_yellow_shiny",
+    "ctm_corner": "chisel:block/concrete_yellow/concrete_yellow_shiny_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_shiny_connected-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/concrete_yellow/concrete_yellow_shiny_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/concrete_yellow/concrete_yellow_shiny_connected-ctm_vertical"
+  },
+  "concrete_yellow_stripes_encased": {
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_stripes"
+  },
+  "concrete_yellow_tiles_large": {
+    "": "chisel:block/concrete_yellow/concrete_yellow_polished",
+    "ctm_corner": "chisel:block/concrete_yellow/concrete_yellow_tiles_large-ctm_corner",
+    "ctm_cornerless": "chisel:block/concrete_yellow/concrete_yellow_dent-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/concrete_yellow/concrete_yellow_tiles_large-ctm_horizontal",
+    "ctm_vertical": "chisel:block/concrete_yellow/concrete_yellow_tiles_large-ctm_vertical"
+  },
+  "concrete_yellow_twisted": {
+    "bottom": "chisel:block/concrete_yellow/concrete_yellow_twisted-top"
+  },
+  "concrete_yellow_waves": {
+    "2x2_top_left": "chisel:block/concrete_yellow/concrete_yellow_waves"
+  }
+}

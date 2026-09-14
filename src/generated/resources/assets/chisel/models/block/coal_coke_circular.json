@@ -4,7 +4,7 @@
     "all": "chisel:block/coal_coke/coal_coke_circular",
     "particle": "chisel:block/coal_coke/coal_coke_circular",
     "standard_corner": "chisel:block/coal_coke/coal_coke_circular-ctm_corner",
-    "standard_cornerless": "chisel:block/coal_coke/coal_coke_circular-ctm_cornerless",
+    "standard_cornerless": "chisel:block/coal_coke/coal_coke_dent-ctm_cornerless",
     "standard_horizontal": "chisel:block/coal_coke/coal_coke_circular-ctm_horizontal",
     "standard_none": "chisel:block/coal_coke/coal_coke_circular",
     "standard_vertical": "chisel:block/coal_coke/coal_coke_circular-ctm_vertical"

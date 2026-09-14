@@ -9,7 +9,10 @@
     {
       "block": "chisel:bricks_array",
       "model_type": "multiblock_2x2",
-      "name": "bricks_array"
+      "name": "bricks_array",
+      "textures": {
+        "2x2_top_left": "chisel:block/bricks/bricks_array"
+      }
     },
     {
       "block": "chisel:bricks_braid",
@@ -18,7 +21,10 @@
     {
       "block": "chisel:bricks_chaotic",
       "model_type": "multiblock_3x3",
-      "name": "bricks_chaotic"
+      "name": "bricks_chaotic",
+      "textures": {
+        "3x3_top_left": "chisel:block/bricks/bricks_chaotic"
+      }
     },
     {
       "block": "chisel:bricks_chaotic_medium",
@@ -44,7 +50,10 @@
     {
       "block": "chisel:bricks_cuts",
       "model_type": "multiblock_4x4",
-      "name": "bricks_cuts"
+      "name": "bricks_cuts",
+      "textures": {
+        "4x4_row_0_column_0": "chisel:block/bricks/bricks_cuts"
+      }
     },
     {
       "block": "chisel:bricks_dent",
@@ -67,7 +76,10 @@
     {
       "block": "chisel:bricks_jellybean",
       "model_type": "multiblock_2x2",
-      "name": "bricks_jellybean"
+      "name": "bricks_jellybean",
+      "textures": {
+        "2x2_top_left": "chisel:block/bricks/bricks_jellybean"
+      }
     },
     {
       "block": "chisel:bricks_layers",
@@ -89,7 +101,10 @@
     {
       "block": "chisel:bricks_pillar",
       "model_type": "top_bottom_side",
-      "name": "bricks_pillar"
+      "name": "bricks_pillar",
+      "textures": {
+        "bottom": "chisel:block/bricks/bricks_pillar-top"
+      }
     },
     {
       "block": "chisel:bricks_prism",
@@ -106,7 +121,10 @@
     {
       "block": "chisel:bricks_slanted",
       "model_type": "multiblock_2x2",
-      "name": "bricks_slanted"
+      "name": "bricks_slanted",
+      "textures": {
+        "2x2_top_left": "chisel:block/bricks/bricks_slanted"
+      }
     },
     {
       "block": "chisel:bricks_small",
@@ -140,7 +158,10 @@
     {
       "block": "chisel:bricks_twisted",
       "model_type": "top_bottom_side",
-      "name": "bricks_twisted"
+      "name": "bricks_twisted",
+      "textures": {
+        "bottom": "chisel:block/bricks/bricks_twisted-top"
+      }
     },
     {
       "block": "chisel:bricks_weaver",
@@ -150,7 +171,10 @@
     {
       "block": "chisel:bricks_zag",
       "model_type": "ar",
-      "name": "bricks_zag"
+      "name": "bricks_zag",
+      "textures": {
+        "ar_variant_1": "chisel:block/bricks/bricks_zag"
+      }
     }
   ]
 }

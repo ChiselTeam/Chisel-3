@@ -13,7 +13,10 @@
     {
       "block": "chisel:end_stone_array",
       "model_type": "multiblock_2x2",
-      "name": "end_stone_array"
+      "name": "end_stone_array",
+      "textures": {
+        "2x2_top_left": "chisel:block/end_stone/end_stone_array"
+      }
     },
     {
       "block": "chisel:end_stone_braid",
@@ -22,7 +25,10 @@
     {
       "block": "chisel:end_stone_chaotic_bricks",
       "model_type": "multiblock_3x3",
-      "name": "end_stone_chaotic_bricks"
+      "name": "end_stone_chaotic_bricks",
+      "textures": {
+        "3x3_top_left": "chisel:block/end_stone/end_stone_chaotic_bricks"
+      }
     },
     {
       "block": "chisel:end_stone_chaotic_medium",
@@ -48,7 +54,10 @@
     {
       "block": "chisel:end_stone_cuts",
       "model_type": "multiblock_4x4",
-      "name": "end_stone_cuts"
+      "name": "end_stone_cuts",
+      "textures": {
+        "4x4_row_0_column_0": "chisel:block/end_stone/end_stone_cuts"
+      }
     },
     {
       "block": "chisel:end_stone_dent",
@@ -71,7 +80,10 @@
     {
       "block": "chisel:end_stone_jellybean",
       "model_type": "multiblock_2x2",
-      "name": "end_stone_jellybean"
+      "name": "end_stone_jellybean",
+      "textures": {
+        "2x2_top_left": "chisel:block/end_stone/end_stone_jellybean"
+      }
     },
     {
       "block": "chisel:end_stone_layers",
@@ -93,7 +105,10 @@
     {
       "block": "chisel:end_stone_pillar",
       "model_type": "top_bottom_side",
-      "name": "end_stone_pillar"
+      "name": "end_stone_pillar",
+      "textures": {
+        "bottom": "chisel:block/end_stone/end_stone_pillar-top"
+      }
     },
     {
       "block": "chisel:end_stone_prism",
@@ -110,7 +125,10 @@
     {
       "block": "chisel:end_stone_slanted",
       "model_type": "multiblock_2x2",
-      "name": "end_stone_slanted"
+      "name": "end_stone_slanted",
+      "textures": {
+        "2x2_top_left": "chisel:block/end_stone/end_stone_slanted"
+      }
     },
     {
       "block": "chisel:end_stone_small_bricks",
@@ -144,7 +162,10 @@
     {
       "block": "chisel:end_stone_twisted",
       "model_type": "top_bottom_side",
-      "name": "end_stone_twisted"
+      "name": "end_stone_twisted",
+      "textures": {
+        "bottom": "chisel:block/end_stone/end_stone_twisted-top"
+      }
     },
     {
       "block": "chisel:end_stone_weaver",
@@ -154,7 +175,10 @@
     {
       "block": "chisel:end_stone_zag",
       "model_type": "ar",
-      "name": "end_stone_zag"
+      "name": "end_stone_zag",
+      "textures": {
+        "ar_variant_1": "chisel:block/end_stone/end_stone_zag"
+      }
     }
   ]
 }

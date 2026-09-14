@@ -3,10 +3,10 @@
   "textures": {
     "all": "chisel:block/mangrove_planks/mangrove_planks_log_cabin_ns",
     "particle": "chisel:block/mangrove_planks/mangrove_planks_log_cabin_ns",
-    "standard_corner": "chisel:block/mangrove_planks/mangrove_planks_log_cabin_ns-ctm_corner",
-    "standard_cornerless": "chisel:block/mangrove_planks/mangrove_planks_log_cabin_ns-ctm_cornerless",
-    "standard_horizontal": "chisel:block/mangrove_planks/mangrove_planks_log_cabin_ns-ctm_horizontal",
+    "standard_corner": "chisel:block/mangrove_planks/mangrove_planks_log_cabin_ns",
+    "standard_cornerless": "chisel:block/mangrove_planks/mangrove_planks_braced",
+    "standard_horizontal": "chisel:block/mangrove_planks/mangrove_planks_log_cabin_ns",
     "standard_none": "chisel:block/mangrove_planks/mangrove_planks_log_cabin_ns",
-    "standard_vertical": "chisel:block/mangrove_planks/mangrove_planks_log_cabin_ns-ctm_vertical"
+    "standard_vertical": "chisel:block/mangrove_planks/mangrove_planks_braced"
   }
 }

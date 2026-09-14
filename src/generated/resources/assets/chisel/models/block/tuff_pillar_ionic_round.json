@@ -1,14 +1,14 @@
 {
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/tuff/tuff_pillar_ionic_round-side",
-    "bottom": "chisel:block/tuff/tuff_pillar_ionic_round-bottom",
-    "particle": "chisel:block/tuff/tuff_pillar_ionic_round-side",
-    "side": "chisel:block/tuff/tuff_pillar_ionic_round-side",
-    "top": "chisel:block/tuff/tuff_pillar_ionic_round-top",
-    "vertical_both": "chisel:block/tuff/tuff_pillar_ionic_round-vertical_both",
+    "all": "chisel:block/tuff/tuff_pillar_ionic-side",
+    "bottom": "chisel:block/tuff/tuff_pillar_basic-top",
+    "particle": "chisel:block/tuff/tuff_pillar_ionic-side",
+    "side": "chisel:block/tuff/tuff_pillar_ionic-side",
+    "top": "chisel:block/tuff/tuff_pillar_basic-top",
+    "vertical_both": "chisel:block/tuff/tuff_pillar_basic_round-vertical_both",
     "vertical_bottom": "chisel:block/tuff/tuff_pillar_ionic_round-vertical_bottom",
-    "vertical_none": "chisel:block/tuff/tuff_pillar_ionic_round-vertical_none",
+    "vertical_none": "chisel:block/tuff/tuff_pillar_ionic-side",
     "vertical_top": "chisel:block/tuff/tuff_pillar_ionic_round-vertical_top"
   }
 }

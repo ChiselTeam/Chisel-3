@@ -4,7 +4,7 @@
     "all": "chisel:block/andesite/andesite_weaver",
     "particle": "chisel:block/andesite/andesite_weaver",
     "standard_corner": "chisel:block/andesite/andesite_weaver-ctm_corner",
-    "standard_cornerless": "chisel:block/andesite/andesite_weaver-ctm_cornerless",
+    "standard_cornerless": "chisel:block/andesite/andesite_weaver-ctm_corner",
     "standard_horizontal": "chisel:block/andesite/andesite_weaver-ctm_horizontal",
     "standard_none": "chisel:block/andesite/andesite_weaver",
     "standard_vertical": "chisel:block/andesite/andesite_weaver-ctm_vertical"

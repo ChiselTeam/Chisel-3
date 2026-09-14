@@ -1,0 +1,240 @@
+{
+  "ancient_stone_border_square": {
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_raw"
+  },
+  "ancient_stone_braid_encased": {
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_braid"
+  },
+  "ancient_stone_bricks_encased": {
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_bricks_solid"
+  },
+  "ancient_stone_bricks_large": {
+    "2x2_top_left": "chisel:block/atm_ancient_stone/ancient_stone_bricks_large"
+  },
+  "ancient_stone_circular": {
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_raw"
+  },
+  "ancient_stone_dent": {
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_raw"
+  },
+  "ancient_stone_dots_encased": {
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_dots"
+  },
+  "ancient_stone_facet_small_encased": {
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_facet_small"
+  },
+  "ancient_stone_gem_1_connected": {
+    "": "chisel:block/atm_ancient_stone/ancient_stone_gem_1",
+    "ctm_corner": "chisel:block/atm_ancient_stone/ancient_stone_gem_1_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_raw",
+    "ctm_horizontal": "chisel:block/atm_ancient_stone/ancient_stone_gem_1_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/atm_ancient_stone/ancient_stone_gem_1_connected-ctm_vertical"
+  },
+  "ancient_stone_gem_2_connected": {
+    "": "chisel:block/atm_ancient_stone/ancient_stone_gem_2",
+    "ctm_corner": "chisel:block/atm_ancient_stone/ancient_stone_gem_2_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_raw",
+    "ctm_horizontal": "chisel:block/atm_ancient_stone/ancient_stone_gem_2_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/atm_ancient_stone/ancient_stone_gem_2_connected-ctm_vertical"
+  },
+  "ancient_stone_gem_3_connected": {
+    "": "chisel:block/atm_ancient_stone/ancient_stone_gem_3",
+    "ctm_corner": "chisel:block/atm_ancient_stone/ancient_stone_gem_3_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_gem_3_connected-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/atm_ancient_stone/ancient_stone_gem_3_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/atm_ancient_stone/ancient_stone_gem_3_connected-ctm_vertical"
+  },
+  "ancient_stone_herringbone_encased": {
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_herringbone"
+  },
+  "ancient_stone_indent": {
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_raw"
+  },
+  "ancient_stone_jellybean": {
+    "2x2_top_left": "chisel:block/atm_ancient_stone/ancient_stone_jellybean"
+  },
+  "ancient_stone_layers_connected": {
+    "": "chisel:block/atm_ancient_stone/ancient_stone_layers",
+    "ctm_corner": "chisel:block/atm_ancient_stone/ancient_stone_layers_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_layers_connected-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/atm_ancient_stone/ancient_stone_layers_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/atm_ancient_stone/ancient_stone_layers_connected-ctm_vertical"
+  },
+  "ancient_stone_lodestone_connected": {
+    "": "chisel:block/atm_ancient_stone/ancient_stone_lodestone",
+    "ctm_corner": "chisel:block/atm_ancient_stone/ancient_stone_lodestone_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_lodestone",
+    "ctm_horizontal": "chisel:block/atm_ancient_stone/ancient_stone_lodestone_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/atm_ancient_stone/ancient_stone_lodestone_connected-ctm_vertical"
+  },
+  "ancient_stone_meander_horizontal": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_meander_horizontal-top"
+  },
+  "ancient_stone_meander_vertical": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_meander_vertical-top",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_meander_vertical-side"
+  },
+  "ancient_stone_medallion_encased": {
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_medallion"
+  },
+  "ancient_stone_mosaic": {
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_raw"
+  },
+  "ancient_stone_parquet_encased": {
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_parquet"
+  },
+  "ancient_stone_pillar": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar-top"
+  },
+  "ancient_stone_pillar_basic": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-side"
+  },
+  "ancient_stone_pillar_basic_dent": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-side"
+  },
+  "ancient_stone_pillar_basic_plain": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_plain-side"
+  },
+  "ancient_stone_pillar_basic_round": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_round-side"
+  },
+  "ancient_stone_pillar_basic_spiral": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_spiral-side"
+  },
+  "ancient_stone_pillar_classic": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_classic-top"
+  },
+  "ancient_stone_pillar_classic_large": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_classic_large-top"
+  },
+  "ancient_stone_pillar_ionic": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_ionic-side"
+  },
+  "ancient_stone_pillar_ionic_dent": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "side": "chisel:block/atm_ancient_stone/ancient_stone_pillar_ionic-side",
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "vertical_both": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-vertical_both",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_ionic-side"
+  },
+  "ancient_stone_pillar_ionic_plain": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "side": "chisel:block/atm_ancient_stone/ancient_stone_pillar_ionic-side",
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "vertical_both": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_plain-vertical_both",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_ionic-side"
+  },
+  "ancient_stone_pillar_ionic_round": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "side": "chisel:block/atm_ancient_stone/ancient_stone_pillar_ionic-side",
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "vertical_both": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_round-vertical_both",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_ionic-side"
+  },
+  "ancient_stone_pillar_ionic_spiral": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "side": "chisel:block/atm_ancient_stone/ancient_stone_pillar_ionic-side",
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "vertical_both": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_spiral-vertical_both",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_ionic-side"
+  },
+  "ancient_stone_pillar_large_basic_triple": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_large_basic_triple-side"
+  },
+  "ancient_stone_pillar_large_ionic_triple": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "vertical_both": "chisel:block/atm_ancient_stone/ancient_stone_pillar_large_basic_triple-vertical_both",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_large_ionic_triple-side"
+  },
+  "ancient_stone_pillar_meander": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "vertical_both": "chisel:block/atm_ancient_stone/ancient_stone_pillar_ionic-vertical_both",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_meander-side"
+  },
+  "ancient_stone_pillar_meander_dent": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "side": "chisel:block/atm_ancient_stone/ancient_stone_pillar_meander-side",
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "vertical_both": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-vertical_both",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_meander-side"
+  },
+  "ancient_stone_pillar_meander_plain": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "side": "chisel:block/atm_ancient_stone/ancient_stone_pillar_meander-side",
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "vertical_both": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_plain-vertical_both",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_meander-side"
+  },
+  "ancient_stone_pillar_meander_round": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "side": "chisel:block/atm_ancient_stone/ancient_stone_pillar_meander-side",
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "vertical_both": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_round-vertical_both",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_meander-side"
+  },
+  "ancient_stone_pillar_meander_spiral": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "side": "chisel:block/atm_ancient_stone/ancient_stone_pillar_meander-side",
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic-top",
+    "vertical_both": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_spiral-vertical_both",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_meander-side"
+  },
+  "ancient_stone_plank_connected": {
+    "": "chisel:block/atm_ancient_stone/ancient_stone_plank",
+    "ctm_corner": "chisel:block/atm_ancient_stone/ancient_stone_plank_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_plank_connected-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/atm_ancient_stone/ancient_stone_plank_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/atm_ancient_stone/ancient_stone_plank_connected-ctm_vertical"
+  },
+  "ancient_stone_plate_connected": {
+    "": "chisel:block/atm_ancient_stone/ancient_stone_plate",
+    "ctm_corner": "chisel:block/atm_ancient_stone/ancient_stone_plate_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_raw",
+    "ctm_horizontal": "chisel:block/atm_ancient_stone/ancient_stone_plate_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/atm_ancient_stone/ancient_stone_plate_connected-ctm_vertical"
+  },
+  "ancient_stone_scaffold_encased": {
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_scaffold"
+  },
+  "ancient_stone_shiny_connected": {
+    "": "chisel:block/atm_ancient_stone/ancient_stone_shiny",
+    "ctm_corner": "chisel:block/atm_ancient_stone/ancient_stone_shiny_connected-ctm_corner",
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_shiny_connected-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/atm_ancient_stone/ancient_stone_shiny_connected-ctm_horizontal",
+    "ctm_vertical": "chisel:block/atm_ancient_stone/ancient_stone_shiny_connected-ctm_vertical"
+  },
+  "ancient_stone_stripes_encased": {
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_stripes"
+  },
+  "ancient_stone_tiles_large": {
+    "": "chisel:block/atm_ancient_stone/ancient_stone_polished",
+    "ctm_corner": "chisel:block/atm_ancient_stone/ancient_stone_tiles_large-ctm_corner",
+    "ctm_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_raw",
+    "ctm_horizontal": "chisel:block/atm_ancient_stone/ancient_stone_tiles_large-ctm_horizontal",
+    "ctm_vertical": "chisel:block/atm_ancient_stone/ancient_stone_tiles_large-ctm_vertical"
+  },
+  "ancient_stone_twisted": {
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_twisted-top"
+  },
+  "ancient_stone_waves": {
+    "2x2_top_left": "chisel:block/atm_ancient_stone/ancient_stone_waves"
+  },
+  "ancient_stone_zag": {
+    "2x2_top_left": "chisel:block/atm_ancient_stone/ancient_stone_zag"
+  }
+}

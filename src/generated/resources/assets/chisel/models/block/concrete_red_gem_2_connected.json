@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/concrete_red/concrete_red_gem_2_connected",
-    "particle": "chisel:block/concrete_red/concrete_red_gem_2_connected",
+    "all": "chisel:block/concrete_red/concrete_red_gem_2",
+    "particle": "chisel:block/concrete_red/concrete_red_gem_2",
     "standard_corner": "chisel:block/concrete_red/concrete_red_gem_2_connected-ctm_corner",
-    "standard_cornerless": "chisel:block/concrete_red/concrete_red_gem_2_connected-ctm_cornerless",
+    "standard_cornerless": "chisel:block/concrete_red/concrete_red_gem_1_connected-ctm_cornerless",
     "standard_horizontal": "chisel:block/concrete_red/concrete_red_gem_2_connected-ctm_horizontal",
-    "standard_none": "chisel:block/concrete_red/concrete_red_gem_2_connected",
+    "standard_none": "chisel:block/concrete_red/concrete_red_gem_2",
     "standard_vertical": "chisel:block/concrete_red/concrete_red_gem_2_connected-ctm_vertical"
   }
 }

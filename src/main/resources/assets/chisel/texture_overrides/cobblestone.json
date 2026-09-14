@@ -1,0 +1,26 @@
+{
+  "cobblestone_array": {
+    "2x2_top_left": "chisel:block/cobblestone/cobblestone_array"
+  },
+  "cobblestone_chaotic": {
+    "3x3_top_left": "chisel:block/cobblestone/cobblestone_chaotic"
+  },
+  "cobblestone_cuts": {
+    "4x4_row_0_column_0": "chisel:block/cobblestone/cobblestone_cuts"
+  },
+  "cobblestone_jellybean": {
+    "2x2_top_left": "chisel:block/cobblestone/cobblestone_jellybean"
+  },
+  "cobblestone_pillar": {
+    "bottom": "chisel:block/cobblestone/cobblestone_pillar-top"
+  },
+  "cobblestone_slanted": {
+    "2x2_top_left": "chisel:block/cobblestone/cobblestone_slanted"
+  },
+  "cobblestone_twisted": {
+    "bottom": "chisel:block/cobblestone/cobblestone_twisted-top"
+  },
+  "cobblestone_zag": {
+    "ar_variant_1": "chisel:block/cobblestone/cobblestone_zag"
+  }
+}

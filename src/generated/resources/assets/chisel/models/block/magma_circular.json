@@ -2,12 +2,12 @@
   "parent": "chisel:block/cube_multi_pass",
   "textures": {
     "all": "chisel:block/magma/magma_circular",
-    "base_texture": "chisel:block/magma/magma_circular-bg",
-    "layer0": "chisel:block/magma/magma_circular-bg",
+    "base_texture": "chisel:block/magma/magma_dent-bg",
+    "layer0": "chisel:block/magma/magma_dent-bg",
     "layer1": "chisel:block/magma/magma_circular",
     "particle": "chisel:block/magma/magma_circular",
     "standard_corner": "chisel:block/magma/magma_circular-ctm_corner",
-    "standard_cornerless": "chisel:block/magma/magma_circular-ctm_cornerless",
+    "standard_cornerless": "chisel:block/magma/magma_dent-ctm_cornerless",
     "standard_horizontal": "chisel:block/magma/magma_circular-ctm_horizontal",
     "standard_none": "chisel:block/magma/magma_circular",
     "standard_vertical": "chisel:block/magma/magma_circular-ctm_vertical"

@@ -5,7 +5,7 @@
     "bottom": "minecraft:block/warped_planks",
     "horizontal_both": "chisel:block/bookshelf/bookshelf_brim-horizontal_both",
     "horizontal_left": "chisel:block/bookshelf/bookshelf_brim-horizontal_left",
-    "horizontal_none": "chisel:block/bookshelf/bookshelf_brim-horizontal_none",
+    "horizontal_none": "chisel:block/bookshelf/bookshelf_brim",
     "horizontal_right": "chisel:block/bookshelf/bookshelf_brim-horizontal_right",
     "layer0": "minecraft:block/warped_planks",
     "layer1": "minecraft:block/warped_planks",

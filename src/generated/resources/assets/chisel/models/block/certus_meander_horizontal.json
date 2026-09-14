@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/ae2_certus/certus_meander_horizontal",
-    "bottom": "chisel:block/ae2_certus/certus_meander_horizontal-bottom",
+    "bottom": "chisel:block/ae2_certus/certus_meander_horizontal-top",
     "horizontal_both": "chisel:block/ae2_certus/certus_meander_horizontal-horizontal_both",
     "horizontal_left": "chisel:block/ae2_certus/certus_meander_horizontal-horizontal_left",
     "horizontal_none": "chisel:block/ae2_certus/certus_meander_horizontal-horizontal_none",

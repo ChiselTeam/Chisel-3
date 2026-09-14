@@ -1,0 +1,40 @@
+{
+  "granite_array": {
+    "2x2_top_left": "chisel:block/granite/granite_array"
+  },
+  "granite_chaotic_bricks": {
+    "3x3_top_left": "chisel:block/granite/granite_chaotic_bricks"
+  },
+  "granite_circular": {
+    "ctm_cornerless": "chisel:block/granite/granite_dent-ctm_cornerless"
+  },
+  "granite_cuts": {
+    "4x4_row_0_column_0": "chisel:block/granite/granite_cuts"
+  },
+  "granite_jellybean": {
+    "2x2_top_left": "chisel:block/granite/granite_jellybean"
+  },
+  "granite_mosaic": {
+    "ctm_cornerless": "chisel:block/granite/granite_raw"
+  },
+  "granite_pillar": {
+    "bottom": "chisel:block/granite/granite_pillar-top"
+  },
+  "granite_slanted": {
+    "2x2_bottom_left": "chisel:block/granite/granite_slanted",
+    "2x2_bottom_right": "chisel:block/granite/granite_slanted-2x2_top_right",
+    "2x2_top_left": "chisel:block/granite/granite_slanted"
+  },
+  "granite_tiles_large": {
+    "ctm_cornerless": "chisel:block/granite/granite_raw"
+  },
+  "granite_twisted": {
+    "bottom": "chisel:block/granite/granite_twisted-top"
+  },
+  "granite_weaver": {
+    "ctm_cornerless": "chisel:block/granite/granite_weaver-ctm_corner"
+  },
+  "granite_zag": {
+    "ar_variant_1": "chisel:block/granite/granite_zag"
+  }
+}

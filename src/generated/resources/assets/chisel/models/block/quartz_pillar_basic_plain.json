@@ -2,13 +2,13 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/quartz/quartz_pillar_basic_plain-side",
-    "bottom": "chisel:block/quartz/quartz_pillar_basic_plain-bottom",
+    "bottom": "chisel:block/quartz/quartz_pillar_basic-top",
     "particle": "chisel:block/quartz/quartz_pillar_basic_plain-side",
     "side": "chisel:block/quartz/quartz_pillar_basic_plain-side",
-    "top": "chisel:block/quartz/quartz_pillar_basic_plain-top",
+    "top": "chisel:block/quartz/quartz_pillar_basic-top",
     "vertical_both": "chisel:block/quartz/quartz_pillar_basic_plain-vertical_both",
     "vertical_bottom": "chisel:block/quartz/quartz_pillar_basic_plain-vertical_bottom",
-    "vertical_none": "chisel:block/quartz/quartz_pillar_basic_plain-vertical_none",
+    "vertical_none": "chisel:block/quartz/quartz_pillar_basic_plain-side",
     "vertical_top": "chisel:block/quartz/quartz_pillar_basic_plain-vertical_top"
   }
 }

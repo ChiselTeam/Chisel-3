@@ -4,7 +4,7 @@
     "all": "chisel:block/granite/granite_weaver",
     "particle": "chisel:block/granite/granite_weaver",
     "standard_corner": "chisel:block/granite/granite_weaver-ctm_corner",
-    "standard_cornerless": "chisel:block/granite/granite_weaver-ctm_cornerless",
+    "standard_cornerless": "chisel:block/granite/granite_weaver-ctm_corner",
     "standard_horizontal": "chisel:block/granite/granite_weaver-ctm_horizontal",
     "standard_none": "chisel:block/granite/granite_weaver",
     "standard_vertical": "chisel:block/granite/granite_weaver-ctm_vertical"

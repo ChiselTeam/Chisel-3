@@ -4,7 +4,7 @@
     "all": "chisel:block/sandstone/sandstone_mosaic",
     "particle": "chisel:block/sandstone/sandstone_mosaic",
     "standard_corner": "chisel:block/sandstone/sandstone_mosaic-ctm_corner",
-    "standard_cornerless": "chisel:block/sandstone/sandstone_mosaic-ctm_cornerless",
+    "standard_cornerless": "chisel:block/sandstone/sandstone_smooth",
     "standard_horizontal": "chisel:block/sandstone/sandstone_mosaic-ctm_horizontal",
     "standard_none": "chisel:block/sandstone/sandstone_mosaic",
     "standard_vertical": "chisel:block/sandstone/sandstone_mosaic-ctm_vertical"

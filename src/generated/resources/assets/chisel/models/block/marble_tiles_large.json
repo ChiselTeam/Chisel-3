@@ -4,7 +4,7 @@
     "all": "chisel:block/marble/marble_tiles_large",
     "particle": "chisel:block/marble/marble_tiles_large",
     "standard_corner": "chisel:block/marble/marble_tiles_large-ctm_corner",
-    "standard_cornerless": "chisel:block/marble/marble_tiles_large-ctm_cornerless",
+    "standard_cornerless": "chisel:block/marble/marble_mosaic-ctm_cornerless",
     "standard_horizontal": "chisel:block/marble/marble_tiles_large-ctm_horizontal",
     "standard_none": "chisel:block/marble/marble_tiles_large",
     "standard_vertical": "chisel:block/marble/marble_tiles_large-ctm_vertical"

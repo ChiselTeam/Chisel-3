@@ -4,9 +4,9 @@
     "all": "chisel:block/pale_oak_planks/pale_oak_planks_log_cabin_ns",
     "particle": "chisel:block/pale_oak_planks/pale_oak_planks_log_cabin_ns",
     "standard_corner": "chisel:block/pale_oak_planks/pale_oak_planks_log_cabin_ns-ctm_corner",
-    "standard_cornerless": "chisel:block/pale_oak_planks/pale_oak_planks_log_cabin_ns-ctm_cornerless",
-    "standard_horizontal": "chisel:block/pale_oak_planks/pale_oak_planks_log_cabin_ns-ctm_horizontal",
+    "standard_cornerless": "chisel:block/pale_oak_planks/pale_oak_planks_log_cabin_ew-ctm_vertical",
+    "standard_horizontal": "chisel:block/pale_oak_planks/pale_oak_planks_log_cabin_ns-ctm_corner",
     "standard_none": "chisel:block/pale_oak_planks/pale_oak_planks_log_cabin_ns",
-    "standard_vertical": "chisel:block/pale_oak_planks/pale_oak_planks_log_cabin_ns-ctm_vertical"
+    "standard_vertical": "chisel:block/pale_oak_planks/pale_oak_planks_log_cabin_ew-ctm_vertical"
   }
 }

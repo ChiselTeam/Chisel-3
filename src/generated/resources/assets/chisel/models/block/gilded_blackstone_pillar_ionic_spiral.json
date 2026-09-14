@@ -1,14 +1,14 @@
 {
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic_spiral-side",
-    "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic_spiral-bottom",
-    "particle": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic_spiral-side",
-    "side": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic_spiral-side",
-    "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic_spiral-top",
-    "vertical_both": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic_spiral-vertical_both",
+    "all": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-side",
+    "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+    "particle": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-side",
+    "side": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-side",
+    "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
+    "vertical_both": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic_spiral-vertical_both",
     "vertical_bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic_spiral-vertical_bottom",
-    "vertical_none": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic_spiral-vertical_none",
+    "vertical_none": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-vertical_none",
     "vertical_top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic_spiral-vertical_top"
   }
 }

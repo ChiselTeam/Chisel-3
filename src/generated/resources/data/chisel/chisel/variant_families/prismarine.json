@@ -97,7 +97,10 @@
     {
       "block": "chisel:prismarine_pillar",
       "model_type": "top_bottom_side",
-      "name": "prismarine_pillar"
+      "name": "prismarine_pillar",
+      "textures": {
+        "bottom": "chisel:block/prismarine/prismarine_pillar-top"
+      }
     },
     {
       "block": "chisel:prismarine_prism",
@@ -144,7 +147,10 @@
     {
       "block": "chisel:prismarine_twisted",
       "model_type": "top_bottom_side",
-      "name": "prismarine_twisted"
+      "name": "prismarine_twisted",
+      "textures": {
+        "bottom": "chisel:block/prismarine/prismarine_twisted-top"
+      }
     },
     {
       "block": "chisel:prismarine_weaver",

@@ -14,7 +14,7 @@
     "multiblock_4x4_row_2_column_1": "chisel:block/quartz/quartz_cuts-4x4_row_2_column_1",
     "multiblock_4x4_row_2_column_2": "chisel:block/quartz/quartz_cuts-4x4_row_2_column_2",
     "multiblock_4x4_row_2_column_3": "chisel:block/quartz/quartz_cuts-4x4_row_2_column_3",
-    "multiblock_4x4_row_3_column_0": "chisel:block/quartz/quartz_cuts-4x4_row_3_column_0",
+    "multiblock_4x4_row_3_column_0": "chisel:block/quartz/quartz_cuts",
     "multiblock_4x4_row_3_column_1": "chisel:block/quartz/quartz_cuts-4x4_row_3_column_1",
     "multiblock_4x4_row_3_column_2": "chisel:block/quartz/quartz_cuts-4x4_row_3_column_2",
     "multiblock_4x4_row_3_column_3": "chisel:block/quartz/quartz_cuts-4x4_row_3_column_3",

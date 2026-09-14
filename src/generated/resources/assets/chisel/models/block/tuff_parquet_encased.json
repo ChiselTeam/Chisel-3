@@ -4,7 +4,7 @@
     "all": "chisel:block/tuff/tuff_parquet_encased",
     "particle": "chisel:block/tuff/tuff_parquet_encased",
     "standard_corner": "chisel:block/tuff/tuff_parquet_encased-ctm_corner",
-    "standard_cornerless": "chisel:block/tuff/tuff_parquet_encased-ctm_cornerless",
+    "standard_cornerless": "chisel:block/tuff/tuff_parquet",
     "standard_horizontal": "chisel:block/tuff/tuff_parquet_encased-ctm_horizontal",
     "standard_none": "chisel:block/tuff/tuff_parquet_encased",
     "standard_vertical": "chisel:block/tuff/tuff_parquet_encased-ctm_vertical"

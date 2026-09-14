@@ -4,7 +4,7 @@
     "all": "chisel:block/dark_oak_planks/dark_oak_planks_encased_large",
     "particle": "chisel:block/dark_oak_planks/dark_oak_planks_encased_large",
     "standard_corner": "chisel:block/dark_oak_planks/dark_oak_planks_encased_large-ctm_corner",
-    "standard_cornerless": "chisel:block/dark_oak_planks/dark_oak_planks_encased_large-ctm_cornerless",
+    "standard_cornerless": "chisel:block/dark_oak_planks/dark_oak_planks_large",
     "standard_horizontal": "chisel:block/dark_oak_planks/dark_oak_planks_encased_large-ctm_horizontal",
     "standard_none": "chisel:block/dark_oak_planks/dark_oak_planks_encased_large",
     "standard_vertical": "chisel:block/dark_oak_planks/dark_oak_planks_encased_large-ctm_vertical"

@@ -1,0 +1,89 @@
+{
+  "red_sandstone_array": {
+    "2x2_top_left": "chisel:block/red_sandstone/red_sandstone_array"
+  },
+  "red_sandstone_chaotic_bricks": {
+    "3x3_top_left": "chisel:block/red_sandstone/red_sandstone_chaotic_bricks"
+  },
+  "red_sandstone_cuts": {
+    "4x4_row_0_column_0": "chisel:block/red_sandstone/red_sandstone_cuts"
+  },
+  "red_sandstone_jellybean": {
+    "2x2_top_left": "chisel:block/red_sandstone/red_sandstone_jellybean"
+  },
+  "red_sandstone_pillar": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_pillar-top"
+  },
+  "red_sandstone_scribbles_0": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top"
+  },
+  "red_sandstone_scribbles_1": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top",
+    "top": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top"
+  },
+  "red_sandstone_scribbles_10": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top",
+    "top": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top"
+  },
+  "red_sandstone_scribbles_11": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top",
+    "top": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top"
+  },
+  "red_sandstone_scribbles_12": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top",
+    "top": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top"
+  },
+  "red_sandstone_scribbles_13": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top",
+    "top": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top"
+  },
+  "red_sandstone_scribbles_14": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top",
+    "top": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top"
+  },
+  "red_sandstone_scribbles_15": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top",
+    "top": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top"
+  },
+  "red_sandstone_scribbles_2": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top",
+    "top": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top"
+  },
+  "red_sandstone_scribbles_3": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top",
+    "top": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top"
+  },
+  "red_sandstone_scribbles_4": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top",
+    "top": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top"
+  },
+  "red_sandstone_scribbles_5": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top",
+    "top": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top"
+  },
+  "red_sandstone_scribbles_6": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top",
+    "top": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top"
+  },
+  "red_sandstone_scribbles_7": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top",
+    "top": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top"
+  },
+  "red_sandstone_scribbles_8": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top",
+    "top": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top"
+  },
+  "red_sandstone_scribbles_9": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top",
+    "top": "chisel:block/red_sandstone/red_sandstone_scribbles_0-top"
+  },
+  "red_sandstone_slanted": {
+    "2x2_top_left": "chisel:block/red_sandstone/red_sandstone_slanted"
+  },
+  "red_sandstone_twisted": {
+    "bottom": "chisel:block/red_sandstone/red_sandstone_twisted-top"
+  },
+  "red_sandstone_zag": {
+    "ar_variant_1": "chisel:block/red_sandstone/red_sandstone_zag"
+  }
+}

@@ -4,7 +4,7 @@
     "all": "chisel:block/deepslate/deepslate_weaver",
     "particle": "chisel:block/deepslate/deepslate_weaver",
     "standard_corner": "chisel:block/deepslate/deepslate_weaver-ctm_corner",
-    "standard_cornerless": "chisel:block/deepslate/deepslate_weaver-ctm_cornerless",
+    "standard_cornerless": "chisel:block/deepslate/deepslate_weaver-ctm_corner",
     "standard_horizontal": "chisel:block/deepslate/deepslate_weaver-ctm_horizontal",
     "standard_none": "chisel:block/deepslate/deepslate_weaver",
     "standard_vertical": "chisel:block/deepslate/deepslate_weaver-ctm_vertical"

@@ -1,0 +1,123 @@
+{
+  "marble_array": {
+    "2x2_top_left": "chisel:block/marble/marble_array"
+  },
+  "marble_chaotic_bricks": {
+    "3x3_top_left": "chisel:block/marble/marble_chaotic_bricks"
+  },
+  "marble_circular": {
+    "ctm_cornerless": "chisel:block/marble/marble_dent-ctm_cornerless"
+  },
+  "marble_cuts": {
+    "4x4_row_0_column_0": "chisel:block/marble/marble_cuts"
+  },
+  "marble_jellybean": {
+    "2x2_top_left": "chisel:block/marble/marble_jellybean"
+  },
+  "marble_pillar": {
+    "bottom": "chisel:block/marble/marble_pillar-top"
+  },
+  "marble_pillar_carved": {
+    "bottom": "chisel:block/marble/marble_pillar_carved-top"
+  },
+  "marble_pillar_convex": {
+    "bottom": "chisel:block/marble/marble_pillar_carved-top",
+    "top": "chisel:block/marble/marble_pillar_carved-top",
+    "vertical_none": "chisel:block/marble/marble_pillar_convex-side"
+  },
+  "marble_pillar_greek_decor": {
+    "bottom": "chisel:block/marble/marble_pillar_rough-top",
+    "top": "chisel:block/marble/marble_pillar_rough-top",
+    "vertical_none": "chisel:block/marble/marble_pillar_greek_decor-side"
+  },
+  "marble_pillar_greek_greek": {
+    "bottom": "chisel:block/marble/marble_pillar_rough-top",
+    "side": "chisel:block/marble/marble_pillar_wide_greek-side",
+    "top": "chisel:block/marble/marble_pillar_rough-top",
+    "vertical_both": "chisel:block/marble/marble_pillar_greek_decor-vertical_both",
+    "vertical_none": "chisel:block/marble/marble_pillar_wide_greek-side"
+  },
+  "marble_pillar_greek_plain": {
+    "bottom": "chisel:block/marble/marble_pillar_rough-top",
+    "top": "chisel:block/marble/marble_pillar_rough-top",
+    "vertical_both": "chisel:block/marble/marble_pillar_greek_decor-vertical_both",
+    "vertical_none": "chisel:block/marble/marble_pillar_greek_plain-side"
+  },
+  "marble_pillar_normal": {
+    "bottom": "chisel:block/marble/marble_pillar_carved-top",
+    "top": "chisel:block/marble/marble_pillar_carved-top",
+    "vertical_none": "chisel:block/marble/marble_pillar_normal-side"
+  },
+  "marble_pillar_normal2": {
+    "bottom": "chisel:block/marble/marble_pillar_carved-top",
+    "top": "chisel:block/marble/marble_pillar_carved-top",
+    "vertical_none": "chisel:block/marble/marble_pillar_normal2-side"
+  },
+  "marble_pillar_ornamental": {
+    "bottom": "chisel:block/marble/marble_pillar_rough-top",
+    "top": "chisel:block/marble/marble_pillar_rough-top"
+  },
+  "marble_pillar_plain_decor": {
+    "bottom": "chisel:block/marble/marble_pillar_rough-top",
+    "top": "chisel:block/marble/marble_pillar_rough-top",
+    "vertical_none": "chisel:block/marble/marble_pillar_plain_decor-side"
+  },
+  "marble_pillar_plain_greek": {
+    "bottom": "chisel:block/marble/marble_pillar_rough-top",
+    "side": "chisel:block/marble/marble_pillar_wide_greek-side",
+    "top": "chisel:block/marble/marble_pillar_rough-top",
+    "vertical_both": "chisel:block/marble/marble_pillar_plain_decor-vertical_both",
+    "vertical_none": "chisel:block/marble/marble_pillar_wide_greek-side"
+  },
+  "marble_pillar_plain_plain": {
+    "bottom": "chisel:block/marble/marble_pillar_rough-top",
+    "top": "chisel:block/marble/marble_pillar_rough-top",
+    "vertical_both": "chisel:block/marble/marble_pillar_plain_decor-vertical_both",
+    "vertical_none": "chisel:block/marble/marble_pillar_plain_plain-side"
+  },
+  "marble_pillar_rough": {
+    "bottom": "chisel:block/marble/marble_pillar_rough-top",
+    "vertical_none": "chisel:block/marble/marble_pillar_rough-side"
+  },
+  "marble_pillar_simple": {
+    "bottom": "chisel:block/marble/marble_pillar_simple-top",
+    "vertical_both": "chisel:block/marble/marble_pillar_simple-side",
+    "vertical_bottom": "chisel:block/marble/marble_pillar_simple-side",
+    "vertical_none": "chisel:block/marble/marble_pillar_simple-side",
+    "vertical_top": "chisel:block/marble/marble_pillar_simple-side"
+  },
+  "marble_pillar_wide_decor": {
+    "bottom": "chisel:block/marble/marble_pillar_rough-top",
+    "top": "chisel:block/marble/marble_pillar_rough-top",
+    "vertical_none": "chisel:block/marble/marble_pillar_wide_decor-side"
+  },
+  "marble_pillar_wide_greek": {
+    "bottom": "chisel:block/marble/marble_pillar_rough-top",
+    "top": "chisel:block/marble/marble_pillar_rough-top",
+    "vertical_both": "chisel:block/marble/marble_pillar_wide_decor-vertical_both",
+    "vertical_none": "chisel:block/marble/marble_pillar_wide_greek-side"
+  },
+  "marble_pillar_wide_plain": {
+    "bottom": "chisel:block/marble/marble_pillar_rough-top",
+    "top": "chisel:block/marble/marble_pillar_rough-top",
+    "vertical_both": "chisel:block/marble/marble_pillar_wide_decor-vertical_both",
+    "vertical_none": "chisel:block/marble/marble_pillar_wide_plain-side"
+  },
+  "marble_slanted": {
+    "2x2_bottom_left": "chisel:block/marble/marble_slanted",
+    "2x2_bottom_right": "chisel:block/marble/marble_slanted-2x2_top_right",
+    "2x2_top_left": "chisel:block/marble/marble_slanted"
+  },
+  "marble_tiles_large": {
+    "ctm_cornerless": "chisel:block/marble/marble_mosaic-ctm_cornerless"
+  },
+  "marble_twisted": {
+    "bottom": "chisel:block/marble/marble_twisted-top"
+  },
+  "marble_weaver": {
+    "ctm_cornerless": "chisel:block/marble/marble_weaver-ctm_corner"
+  },
+  "marble_zag": {
+    "ar_variant_1": "chisel:block/marble/marble_zag"
+  }
+}

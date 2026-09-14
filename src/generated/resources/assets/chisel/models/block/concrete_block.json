@@ -4,7 +4,7 @@
     "all": "chisel:block/c_concrete/concrete_block",
     "particle": "chisel:block/c_concrete/concrete_block",
     "standard_corner": "chisel:block/c_concrete/concrete_block-ctm_corner",
-    "standard_cornerless": "chisel:block/c_concrete/concrete_block-ctm_cornerless",
+    "standard_cornerless": "chisel:block/c_concrete/concrete_block",
     "standard_horizontal": "chisel:block/c_concrete/concrete_block-ctm_horizontal",
     "standard_none": "chisel:block/c_concrete/concrete_block",
     "standard_vertical": "chisel:block/c_concrete/concrete_block-ctm_vertical"
