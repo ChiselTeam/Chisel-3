@@ -2,7 +2,6 @@ package io.github.chiselteam.chisel.datagen.model.generator.ctm;
 
 import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.datagen.model.ChiselModelTemplates;
-import io.github.chiselteam.chisel.datagen.model.ChiselTextureSlots;
 import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateDefinitionGenerator;
@@ -17,10 +16,9 @@ import org.joml.Vector3f;
 public class ARModelGenerator extends VariantModelGenerator {
     @Override
     public TextureMapping getTextureMapping() {
-        return (new TextureMapping())
+        return VariantTextures.ctm(variant, textures -> textures.arTextures(VariantTextures.get(variant, "ar_variant").sprite()))
                 .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
-                .put(TextureSlot.ALL, VariantTextures.get(variant))
-                .put(ChiselTextureSlots.CTM_OVERLAY_2X2, VariantTextures.get(variant, "ctm"));
+                .put(TextureSlot.ALL, VariantTextures.get(variant));
     }
 
     @Override

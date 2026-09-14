@@ -2,7 +2,10 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/concrete_green/concrete_green_waves",
-    "overlay_2x2": "chisel:block/concrete_green/concrete_green_waves-2x2",
+    "multiblock_2x2_bottom_left": "chisel:block/concrete_green/concrete_green_waves-2x2_bottom_left",
+    "multiblock_2x2_bottom_right": "chisel:block/concrete_green/concrete_green_waves-2x2_bottom_right",
+    "multiblock_2x2_top_left": "chisel:block/concrete_green/concrete_green_waves-2x2_top_left",
+    "multiblock_2x2_top_right": "chisel:block/concrete_green/concrete_green_waves-2x2_top_right",
     "particle": "chisel:block/concrete_green/concrete_green_waves"
   }
 }

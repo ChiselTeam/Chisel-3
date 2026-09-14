@@ -3,7 +3,10 @@
   "textures": {
     "all": "chisel:block/laboratory/laboratory_console_information",
     "bottom": "chisel:block/laboratory/laboratory_console_information-bottom",
-    "overlay_horizontal": "chisel:block/laboratory/laboratory_console_information-ctmh",
+    "horizontal_both": "chisel:block/laboratory/laboratory_console_information-horizontal_both",
+    "horizontal_left": "chisel:block/laboratory/laboratory_console_information-horizontal_left",
+    "horizontal_none": "chisel:block/laboratory/laboratory_console_information-horizontal_none",
+    "horizontal_right": "chisel:block/laboratory/laboratory_console_information-horizontal_right",
     "particle": "chisel:block/laboratory/laboratory_console_information",
     "top": "chisel:block/laboratory/laboratory_console_information-top"
   }

@@ -3,7 +3,10 @@
   "textures": {
     "all": "chisel:block/blackstone/blackstone_meander_horizontal",
     "bottom": "chisel:block/blackstone/blackstone_meander_horizontal-bottom",
-    "overlay_horizontal": "chisel:block/blackstone/blackstone_meander_horizontal-ctmh",
+    "horizontal_both": "chisel:block/blackstone/blackstone_meander_horizontal-horizontal_both",
+    "horizontal_left": "chisel:block/blackstone/blackstone_meander_horizontal-horizontal_left",
+    "horizontal_none": "chisel:block/blackstone/blackstone_meander_horizontal-horizontal_none",
+    "horizontal_right": "chisel:block/blackstone/blackstone_meander_horizontal-horizontal_right",
     "particle": "chisel:block/blackstone/blackstone_meander_horizontal",
     "top": "chisel:block/blackstone/blackstone_meander_horizontal-top"
   }

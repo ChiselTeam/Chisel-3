@@ -3,13 +3,12 @@
   "textures": {
     "all": "chisel:block/blackstone/blackstone_pillar_large_ionic_triple-side",
     "bottom": "chisel:block/blackstone/blackstone_pillar_large_ionic_triple-bottom",
-    "overlay_bottom": "chisel:block/blackstone/blackstone_pillar_large_ionic_triple-bottom",
-    "overlay_side_connected": "chisel:block/blackstone/blackstone_pillar_large_ionic_triple-side-ctm",
-    "overlay_texture": "chisel:block/blackstone/blackstone_pillar_large_ionic_triple-side",
-    "overlay_top": "chisel:block/blackstone/blackstone_pillar_large_ionic_triple-top",
-    "overlay_vertical": "chisel:block/blackstone/blackstone_pillar_large_ionic_triple-side-ctm",
     "particle": "chisel:block/blackstone/blackstone_pillar_large_ionic_triple-side",
     "side": "chisel:block/blackstone/blackstone_pillar_large_ionic_triple-side",
-    "top": "chisel:block/blackstone/blackstone_pillar_large_ionic_triple-top"
+    "top": "chisel:block/blackstone/blackstone_pillar_large_ionic_triple-top",
+    "vertical_both": "chisel:block/blackstone/blackstone_pillar_large_ionic_triple-vertical_both",
+    "vertical_bottom": "chisel:block/blackstone/blackstone_pillar_large_ionic_triple-vertical_bottom",
+    "vertical_none": "chisel:block/blackstone/blackstone_pillar_large_ionic_triple-vertical_none",
+    "vertical_top": "chisel:block/blackstone/blackstone_pillar_large_ionic_triple-vertical_top"
   }
 }

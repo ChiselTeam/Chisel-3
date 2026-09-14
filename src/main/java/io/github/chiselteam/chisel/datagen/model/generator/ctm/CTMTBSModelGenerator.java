@@ -2,7 +2,6 @@ package io.github.chiselteam.chisel.datagen.model.generator.ctm;
 
 import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.datagen.model.ChiselModelTemplates;
-import io.github.chiselteam.chisel.datagen.model.ChiselTextureSlots;
 import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateDefinitionGenerator;
@@ -18,20 +17,16 @@ public class CTMTBSModelGenerator extends VariantModelGenerator {
 
     @Override
     public TextureMapping getTextureMapping() {
-        return (new TextureMapping())
+        // The braced variants share identical top/bottom connected artwork.
+        return VariantTextures.ctm(variant, textures -> textures
+                        .tbsTopTextures(VariantTextures.get(variant, "top").sprite(), VariantTextures.get(variant, "top-ctm_cornerless").sprite(), VariantTextures.get(variant, "top-ctm_vertical").sprite(), VariantTextures.get(variant, "top-ctm_horizontal").sprite(), VariantTextures.get(variant, "top-ctm_corner").sprite())
+                        .tbsBottomTextures(VariantTextures.get(variant, "bottom").sprite(), VariantTextures.get(variant, "top-ctm_cornerless").sprite(), VariantTextures.get(variant, "top-ctm_vertical").sprite(), VariantTextures.get(variant, "top-ctm_horizontal").sprite(), VariantTextures.get(variant, "top-ctm_corner").sprite())
+                        .tbsSideTextures(VariantTextures.get(variant, "side").sprite(), VariantTextures.get(variant, "side-ctm_cornerless").sprite(), VariantTextures.get(variant, "side-ctm_vertical").sprite(), VariantTextures.get(variant, "side-ctm_horizontal").sprite(), VariantTextures.get(variant, "side-ctm_corner").sprite()))
                 .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
                 .put(TextureSlot.ALL, VariantTextures.get(variant))
                 .put(TextureSlot.TOP, VariantTextures.get(variant, "top"))
                 .put(TextureSlot.BOTTOM, VariantTextures.get(variant, "bottom"))
-                .put(TextureSlot.SIDE, VariantTextures.get(variant, "side"))
-                .put(ChiselTextureSlots.CTM_OVERLAY, VariantTextures.get(variant))
-                .put(ChiselTextureSlots.CTM_OVERLAY_TOP, VariantTextures.get(variant, "top"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_BOTTOM, VariantTextures.get(variant, "bottom"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_SIDE, VariantTextures.get(variant, "side"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_SIDE_CONNECTED, VariantTextures.get(variant, "side-ctm"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_BOTTOM_CONNECTED, VariantTextures.get(variant, "bottom-ctm"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_TOP_CONNECTED, VariantTextures.get(variant, "top-ctm"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_CONNECTED, VariantTextures.get(variant, "ctm"));
+                .put(TextureSlot.SIDE, VariantTextures.get(variant, "side"));
     }
 
     @Override

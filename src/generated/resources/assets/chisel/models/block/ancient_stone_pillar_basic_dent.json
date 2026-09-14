@@ -3,13 +3,12 @@
   "textures": {
     "all": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-side",
     "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-bottom",
-    "overlay_bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-bottom",
-    "overlay_side_connected": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-side-ctm",
-    "overlay_texture": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-side",
-    "overlay_top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-top",
-    "overlay_vertical": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-side-ctm",
     "particle": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-side",
     "side": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-side",
-    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-top"
+    "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-top",
+    "vertical_both": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-vertical_both",
+    "vertical_bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-vertical_bottom",
+    "vertical_none": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-vertical_none",
+    "vertical_top": "chisel:block/atm_ancient_stone/ancient_stone_pillar_basic_dent-vertical_top"
   }
 }

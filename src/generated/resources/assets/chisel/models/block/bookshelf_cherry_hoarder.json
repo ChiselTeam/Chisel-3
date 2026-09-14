@@ -3,9 +3,12 @@
   "textures": {
     "base_texture": "minecraft:block/cherry_planks",
     "bottom": "minecraft:block/cherry_planks",
+    "horizontal_both": "chisel:block/bookshelf/bookshelf_hoarder-horizontal_both",
+    "horizontal_left": "chisel:block/bookshelf/bookshelf_hoarder-horizontal_left",
+    "horizontal_none": "chisel:block/bookshelf/bookshelf_hoarder-horizontal_none",
+    "horizontal_right": "chisel:block/bookshelf/bookshelf_hoarder-horizontal_right",
     "layer0": "minecraft:block/cherry_planks",
     "layer1": "minecraft:block/cherry_planks",
-    "overlay_horizontal": "chisel:block/bookshelf/bookshelf_hoarder-ctm",
     "particle": "minecraft:block/cherry_planks",
     "side": "chisel:block/bookshelf/bookshelf_hoarder",
     "top": "minecraft:block/cherry_planks"

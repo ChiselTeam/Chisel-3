@@ -3,9 +3,12 @@
   "textures": {
     "base_texture": "minecraft:block/oak_planks",
     "bottom": "minecraft:block/oak_planks",
+    "horizontal_both": "chisel:block/bookshelf/bookshelf_abandoned-horizontal_both",
+    "horizontal_left": "chisel:block/bookshelf/bookshelf_abandoned-horizontal_left",
+    "horizontal_none": "chisel:block/bookshelf/bookshelf_abandoned-horizontal_none",
+    "horizontal_right": "chisel:block/bookshelf/bookshelf_abandoned-horizontal_right",
     "layer0": "minecraft:block/oak_planks",
     "layer1": "minecraft:block/oak_planks",
-    "overlay_horizontal": "chisel:block/bookshelf/bookshelf_abandoned-ctm",
     "particle": "minecraft:block/oak_planks",
     "side": "chisel:block/bookshelf/bookshelf_abandoned",
     "top": "minecraft:block/oak_planks"

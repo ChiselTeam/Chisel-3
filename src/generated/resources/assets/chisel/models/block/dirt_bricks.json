@@ -3,13 +3,12 @@
   "textures": {
     "all": "chisel:block/dirt/dirt_bricks-side",
     "bottom": "chisel:block/dirt/dirt_bricks-bottom",
-    "overlay_bottom": "chisel:block/dirt/dirt_bricks-bottom",
-    "overlay_side_connected": "chisel:block/dirt/dirt_bricks-side-ctm",
-    "overlay_texture": "chisel:block/dirt/dirt_bricks-side",
-    "overlay_top": "chisel:block/dirt/dirt_bricks-top",
-    "overlay_vertical": "chisel:block/dirt/dirt_bricks-side-ctm",
     "particle": "chisel:block/dirt/dirt_bricks-side",
     "side": "chisel:block/dirt/dirt_bricks-side",
-    "top": "chisel:block/dirt/dirt_bricks-top"
+    "top": "chisel:block/dirt/dirt_bricks-top",
+    "vertical_both": "chisel:block/dirt/dirt_bricks-vertical_both",
+    "vertical_bottom": "chisel:block/dirt/dirt_bricks-vertical_bottom",
+    "vertical_none": "chisel:block/dirt/dirt_bricks-vertical_none",
+    "vertical_top": "chisel:block/dirt/dirt_bricks-vertical_top"
   }
 }

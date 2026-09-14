@@ -2,7 +2,6 @@ package io.github.chiselteam.chisel.datagen.model.generator.special.lavastone;
 
 import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.datagen.model.ChiselModelTemplates;
-import io.github.chiselteam.chisel.datagen.model.ChiselTextureSlots;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateDefinitionGenerator;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateModelBuilder;
@@ -20,10 +19,9 @@ import org.joml.Vector3f;
 public class LavastoneARModelGenerator extends ARModelGenerator {
     @Override
     public TextureMapping getTextureMapping() {
-        return (new TextureMapping())
+        return VariantTextures.ctm(variant, textures -> textures.arTextures(VariantTextures.get(variant, "ar_variant").sprite()))
                 .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
                 .put(TextureSlot.ALL, VariantTextures.get(variant))
-                .put(ChiselTextureSlots.CTM_OVERLAY_2X2, VariantTextures.get(variant, "ctm"))
                 .put(TextureSlot.LAYER0, new Material(BuiltInRegistries.FLUID.getKey(Fluids.LAVA.getSource()).withPrefix("block/").withSuffix("_still")))
                 .put(TextureSlot.LAYER1, VariantTextures.get(variant));
     }

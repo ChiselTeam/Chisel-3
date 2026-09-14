@@ -3,13 +3,12 @@
   "textures": {
     "all": "chisel:block/quartz/quartz_meander_vertical-side",
     "bottom": "chisel:block/quartz/quartz_meander_vertical-bottom",
-    "overlay_bottom": "chisel:block/quartz/quartz_meander_vertical-bottom",
-    "overlay_side_connected": "chisel:block/quartz/quartz_meander_vertical-side-ctm",
-    "overlay_texture": "chisel:block/quartz/quartz_meander_vertical-side",
-    "overlay_top": "chisel:block/quartz/quartz_meander_vertical-top",
-    "overlay_vertical": "chisel:block/quartz/quartz_meander_vertical-side-ctm",
     "particle": "chisel:block/quartz/quartz_meander_vertical-side",
     "side": "chisel:block/quartz/quartz_meander_vertical-side",
-    "top": "chisel:block/quartz/quartz_meander_vertical-top"
+    "top": "chisel:block/quartz/quartz_meander_vertical-top",
+    "vertical_both": "chisel:block/quartz/quartz_meander_vertical-vertical_both",
+    "vertical_bottom": "chisel:block/quartz/quartz_meander_vertical-vertical_bottom",
+    "vertical_none": "chisel:block/quartz/quartz_meander_vertical-vertical_none",
+    "vertical_top": "chisel:block/quartz/quartz_meander_vertical-vertical_top"
   }
 }

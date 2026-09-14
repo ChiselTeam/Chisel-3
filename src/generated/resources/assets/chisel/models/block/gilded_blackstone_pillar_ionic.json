@@ -3,13 +3,12 @@
   "textures": {
     "all": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-side",
     "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-bottom",
-    "overlay_bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-bottom",
-    "overlay_side_connected": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-side-ctm",
-    "overlay_texture": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-side",
-    "overlay_top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-top",
-    "overlay_vertical": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-side-ctm",
     "particle": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-side",
     "side": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-side",
-    "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-top"
+    "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-top",
+    "vertical_both": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-vertical_both",
+    "vertical_bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-vertical_bottom",
+    "vertical_none": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-vertical_none",
+    "vertical_top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-vertical_top"
   }
 }

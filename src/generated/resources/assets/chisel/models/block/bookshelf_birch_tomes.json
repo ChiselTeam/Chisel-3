@@ -3,9 +3,12 @@
   "textures": {
     "base_texture": "minecraft:block/birch_planks",
     "bottom": "minecraft:block/birch_planks",
+    "horizontal_both": "chisel:block/bookshelf/bookshelf_tomes-horizontal_both",
+    "horizontal_left": "chisel:block/bookshelf/bookshelf_tomes-horizontal_left",
+    "horizontal_none": "chisel:block/bookshelf/bookshelf_tomes-horizontal_none",
+    "horizontal_right": "chisel:block/bookshelf/bookshelf_tomes-horizontal_right",
     "layer0": "minecraft:block/birch_planks",
     "layer1": "minecraft:block/birch_planks",
-    "overlay_horizontal": "chisel:block/bookshelf/bookshelf_tomes-ctm",
     "particle": "minecraft:block/birch_planks",
     "side": "chisel:block/bookshelf/bookshelf_tomes",
     "top": "minecraft:block/birch_planks"

@@ -2,7 +2,15 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/dark_oak_planks/dark_oak_planks_crude_vertical",
-    "overlay_3x3": "chisel:block/dark_oak_planks/dark_oak_planks_crude_vertical-3x3",
+    "multiblock_3x3_bottom_center": "chisel:block/dark_oak_planks/dark_oak_planks_crude_vertical-3x3_bottom_center",
+    "multiblock_3x3_bottom_left": "chisel:block/dark_oak_planks/dark_oak_planks_crude_vertical-3x3_bottom_left",
+    "multiblock_3x3_bottom_right": "chisel:block/dark_oak_planks/dark_oak_planks_crude_vertical-3x3_bottom_right",
+    "multiblock_3x3_center": "chisel:block/dark_oak_planks/dark_oak_planks_crude_vertical-3x3_center",
+    "multiblock_3x3_center_left": "chisel:block/dark_oak_planks/dark_oak_planks_crude_vertical-3x3_center_left",
+    "multiblock_3x3_center_right": "chisel:block/dark_oak_planks/dark_oak_planks_crude_vertical-3x3_center_right",
+    "multiblock_3x3_top_center": "chisel:block/dark_oak_planks/dark_oak_planks_crude_vertical-3x3_top_center",
+    "multiblock_3x3_top_left": "chisel:block/dark_oak_planks/dark_oak_planks_crude_vertical-3x3_top_left",
+    "multiblock_3x3_top_right": "chisel:block/dark_oak_planks/dark_oak_planks_crude_vertical-3x3_top_right",
     "particle": "chisel:block/dark_oak_planks/dark_oak_planks_crude_vertical"
   }
 }

@@ -3,13 +3,12 @@
   "textures": {
     "all": "chisel:block/tuff/tuff_pillar_basic_plain-side",
     "bottom": "chisel:block/tuff/tuff_pillar_basic_plain-bottom",
-    "overlay_bottom": "chisel:block/tuff/tuff_pillar_basic_plain-bottom",
-    "overlay_side_connected": "chisel:block/tuff/tuff_pillar_basic_plain-side-ctm",
-    "overlay_texture": "chisel:block/tuff/tuff_pillar_basic_plain-side",
-    "overlay_top": "chisel:block/tuff/tuff_pillar_basic_plain-top",
-    "overlay_vertical": "chisel:block/tuff/tuff_pillar_basic_plain-side-ctm",
     "particle": "chisel:block/tuff/tuff_pillar_basic_plain-side",
     "side": "chisel:block/tuff/tuff_pillar_basic_plain-side",
-    "top": "chisel:block/tuff/tuff_pillar_basic_plain-top"
+    "top": "chisel:block/tuff/tuff_pillar_basic_plain-top",
+    "vertical_both": "chisel:block/tuff/tuff_pillar_basic_plain-vertical_both",
+    "vertical_bottom": "chisel:block/tuff/tuff_pillar_basic_plain-vertical_bottom",
+    "vertical_none": "chisel:block/tuff/tuff_pillar_basic_plain-vertical_none",
+    "vertical_top": "chisel:block/tuff/tuff_pillar_basic_plain-vertical_top"
   }
 }

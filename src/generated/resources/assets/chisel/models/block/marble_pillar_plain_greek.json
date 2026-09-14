@@ -3,13 +3,12 @@
   "textures": {
     "all": "chisel:block/marble/marble_pillar_plain_greek-side",
     "bottom": "chisel:block/marble/marble_pillar_plain_greek-bottom",
-    "overlay_bottom": "chisel:block/marble/marble_pillar_plain_greek-bottom",
-    "overlay_side_connected": "chisel:block/marble/marble_pillar_plain_greek-side-ctm",
-    "overlay_texture": "chisel:block/marble/marble_pillar_plain_greek-side",
-    "overlay_top": "chisel:block/marble/marble_pillar_plain_greek-top",
-    "overlay_vertical": "chisel:block/marble/marble_pillar_plain_greek-side-ctm",
     "particle": "chisel:block/marble/marble_pillar_plain_greek-side",
     "side": "chisel:block/marble/marble_pillar_plain_greek-side",
-    "top": "chisel:block/marble/marble_pillar_plain_greek-top"
+    "top": "chisel:block/marble/marble_pillar_plain_greek-top",
+    "vertical_both": "chisel:block/marble/marble_pillar_plain_greek-vertical_both",
+    "vertical_bottom": "chisel:block/marble/marble_pillar_plain_greek-vertical_bottom",
+    "vertical_none": "chisel:block/marble/marble_pillar_plain_greek-vertical_none",
+    "vertical_top": "chisel:block/marble/marble_pillar_plain_greek-vertical_top"
   }
 }

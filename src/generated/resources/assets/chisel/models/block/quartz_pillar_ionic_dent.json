@@ -3,13 +3,12 @@
   "textures": {
     "all": "chisel:block/quartz/quartz_pillar_ionic_dent-side",
     "bottom": "chisel:block/quartz/quartz_pillar_ionic_dent-bottom",
-    "overlay_bottom": "chisel:block/quartz/quartz_pillar_ionic_dent-bottom",
-    "overlay_side_connected": "chisel:block/quartz/quartz_pillar_ionic_dent-side-ctm",
-    "overlay_texture": "chisel:block/quartz/quartz_pillar_ionic_dent-side",
-    "overlay_top": "chisel:block/quartz/quartz_pillar_ionic_dent-top",
-    "overlay_vertical": "chisel:block/quartz/quartz_pillar_ionic_dent-side-ctm",
     "particle": "chisel:block/quartz/quartz_pillar_ionic_dent-side",
     "side": "chisel:block/quartz/quartz_pillar_ionic_dent-side",
-    "top": "chisel:block/quartz/quartz_pillar_ionic_dent-top"
+    "top": "chisel:block/quartz/quartz_pillar_ionic_dent-top",
+    "vertical_both": "chisel:block/quartz/quartz_pillar_ionic_dent-vertical_both",
+    "vertical_bottom": "chisel:block/quartz/quartz_pillar_ionic_dent-vertical_bottom",
+    "vertical_none": "chisel:block/quartz/quartz_pillar_ionic_dent-vertical_none",
+    "vertical_top": "chisel:block/quartz/quartz_pillar_ionic_dent-vertical_top"
   }
 }

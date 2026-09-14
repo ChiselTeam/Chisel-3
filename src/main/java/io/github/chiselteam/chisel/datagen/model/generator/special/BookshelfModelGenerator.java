@@ -21,15 +21,14 @@ public class BookshelfModelGenerator extends VariantModelGenerator {
 
     @Override
     public TextureMapping getTextureMapping() {
-        return (new TextureMapping())
+        return VariantTextures.ctm(variant, textures -> textures.horizontalTextures(getMaterialCTM().sprite()))
                 .put(TextureSlot.PARTICLE, getBlockMaterial())
                 .put(TextureSlot.TOP, getBlockMaterial())
                 .put(TextureSlot.BOTTOM, getBlockMaterial())
                 .put(TextureSlot.SIDE, getMaterial())
                 .put(TextureSlot.LAYER0, getBlockMaterial())
                 .put(TextureSlot.LAYER1, getBlockMaterial())
-                .put(ChiselTextureSlots.CTM_BASE, getBlockMaterial())
-                .put(ChiselTextureSlots.CTM_OVERLAY_HORIZONTAL, getMaterialCTM());
+                .put(ChiselTextureSlots.CTM_BASE, getBlockMaterial());
     }
 
     @Override
@@ -65,7 +64,7 @@ public class BookshelfModelGenerator extends VariantModelGenerator {
     }
 
     private Material getMaterialCTM() {
-        return new Material(Chisel.prefix(cleanId(VariantTextures.get(variant, "ctm").sprite().getPath())));
+        return new Material(Chisel.prefix(cleanId(VariantTextures.get(variant, "horizontal").sprite().getPath())));
     }
 
     private String cleanId(String path) {
