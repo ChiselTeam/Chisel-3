@@ -17,7 +17,11 @@ public class V9ModelGenerator extends VariantModelGenerator {
 
     @Override
     public TextureMapping getTextureMapping() {
-        return VariantTextures.ctm(variant, textures -> textures.multiblock3x3Textures(VariantTextures.get(variant, "v9").sprite()))
+        return VariantTextures.ctm(variant, textures -> {
+                    var atlas = variant.getTextures().get("overlay_3x3");
+                    if (atlas != null) textures.texture("overlay_3x3", atlas);
+                    else textures.multiblock3x3Textures(VariantTextures.get(variant, "v9").sprite());
+                })
                 .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
                 .put(TextureSlot.ALL, VariantTextures.get(variant));
     }

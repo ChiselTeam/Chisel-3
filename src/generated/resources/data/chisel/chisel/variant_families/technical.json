@@ -79,7 +79,10 @@
     {
       "block": "chisel:technical_fan_massive",
       "model_type": "v9",
-      "name": "technical_fan_massive"
+      "name": "technical_fan_massive",
+      "textures": {
+        "overlay_3x3": "chisel:block/technical/technical_fan_massive"
+      }
     },
     {
       "block": "chisel:technical_fan_still",

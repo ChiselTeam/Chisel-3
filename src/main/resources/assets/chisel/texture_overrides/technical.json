@@ -14,6 +14,9 @@
     "bottom": "chisel:block/technical/technical_fan_fast-top",
     "top": "chisel:block/technical/technical_fan_fast-top"
   },
+  "technical_fan_massive": {
+    "overlay_3x3": "chisel:block/technical/technical_fan_massive"
+  },
   "technical_fan_still": {
     "bottom": "chisel:block/technical/technical_fan_fast-top",
     "top": "chisel:block/technical/technical_fan_fast-top"
