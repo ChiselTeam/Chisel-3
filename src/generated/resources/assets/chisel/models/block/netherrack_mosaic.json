@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/netherrack/netherrack_mosaic",
+    "overlay_connected": "chisel:block/netherrack/netherrack_mosaic-ctm",
+    "overlay_texture": "chisel:block/netherrack/netherrack_mosaic",
+    "particle": "chisel:block/netherrack/netherrack_mosaic"
+  }
+}
