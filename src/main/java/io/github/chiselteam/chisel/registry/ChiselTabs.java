@@ -28,7 +28,7 @@ public class ChiselTabs {
                     ChiselFamilies.CHARCOAL.getFamily(),
                     ChiselFamilies.COAL.getFamily(),
                     ChiselFamilies.COBBLESTONE.getFamily(),
-                    ChiselFamilies.STONE_BRICKS.getFamily(),
+                //     ChiselFamilies.STONE_BRICKS.getFamily(),
                     ChiselFamilies.C_CONCRETE.getFamily(),
                     ChiselFamilies.BASALT.getFamily(),
                     ChiselFamilies.DIORITE.getFamily(),

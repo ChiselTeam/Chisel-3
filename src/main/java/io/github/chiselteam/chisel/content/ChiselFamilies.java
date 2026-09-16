@@ -101,7 +101,7 @@ public class ChiselFamilies {
     public static final ChiselFamily SILVER = MetalFamilies.SILVER;
     public static final ChiselFamily SPRUCE = WoodFamilies.SPRUCE;
     public static final ChiselFamily STEEL = MetalFamilies.STEEL;
-    public static final ChiselFamily STONE_BRICKS = StoneFamilies.STONE_BRICKS;
+    // public static final ChiselFamily STONE_BRICKS = StoneFamilies.STONE_BRICKS;
     public static final ChiselFamily OC_TALLOW = OccultismFamilies.OC_TALLOW;
     public static final ChiselFamily TECHNICAL = DecorativeFamilies.TECHNICAL;
     public static final ChiselFamily TEMPLE = DecorativeFamilies.TEMPLE;
