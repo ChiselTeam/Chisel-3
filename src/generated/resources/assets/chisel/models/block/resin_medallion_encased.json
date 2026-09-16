@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/resin/resin_medallion_encased",
+    "overlay_connected": "chisel:block/resin/resin_medallion_encased-ctm",
+    "overlay_texture": "chisel:block/resin/resin_medallion_encased",
+    "particle": "chisel:block/resin/resin_medallion_encased"
+  }
+}
