@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/nether_brick/nether_bricks_pillar-bottom",
+    "side": "chisel:block/nether_brick/nether_bricks_pillar-side",
+    "top": "chisel:block/nether_brick/nether_bricks_pillar-top"
+  }
+}

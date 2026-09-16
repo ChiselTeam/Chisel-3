@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/nether_brick/nether_bricks_circular",
+    "overlay_connected": "chisel:block/nether_brick/nether_bricks_circular-ctm",
+    "overlay_texture": "chisel:block/nether_brick/nether_bricks_circular",
+    "particle": "chisel:block/nether_brick/nether_bricks_circular"
+  }
+}

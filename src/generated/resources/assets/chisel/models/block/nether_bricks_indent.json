@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/nether_brick/nether_bricks_indent",
+    "overlay_connected": "chisel:block/nether_brick/nether_bricks_indent-ctm",
+    "overlay_texture": "chisel:block/nether_brick/nether_bricks_indent",
+    "particle": "chisel:block/nether_brick/nether_bricks_indent"
+  }
+}

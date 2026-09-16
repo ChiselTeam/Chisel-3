@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/nether_brick/nether_bricks_parquet_encased",
+    "overlay_connected": "chisel:block/nether_brick/nether_bricks_parquet_encased-ctm",
+    "overlay_texture": "chisel:block/nether_brick/nether_bricks_parquet_encased",
+    "particle": "chisel:block/nether_brick/nether_bricks_parquet_encased"
+  }
+}
