@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/purpur/purpur_meander_horizontal",
+    "bottom": "chisel:block/purpur/purpur_meander_horizontal-bottom",
+    "overlay_horizontal": "chisel:block/purpur/purpur_meander_horizontal-ctmh",
+    "particle": "chisel:block/purpur/purpur_meander_horizontal",
+    "top": "chisel:block/purpur/purpur_meander_horizontal-top"
+  }
+}

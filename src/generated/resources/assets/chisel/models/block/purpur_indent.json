@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/purpur/purpur_indent",
+    "overlay_connected": "chisel:block/purpur/purpur_indent-ctm",
+    "overlay_texture": "chisel:block/purpur/purpur_indent",
+    "particle": "chisel:block/purpur/purpur_indent"
+  }
+}

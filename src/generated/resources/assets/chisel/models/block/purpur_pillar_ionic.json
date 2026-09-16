@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/purpur/purpur_pillar_ionic-side",
+    "bottom": "chisel:block/purpur/purpur_pillar_ionic-bottom",
+    "overlay_bottom": "chisel:block/purpur/purpur_pillar_ionic-bottom",
+    "overlay_side_connected": "chisel:block/purpur/purpur_pillar_ionic-side-ctm",
+    "overlay_texture": "chisel:block/purpur/purpur_pillar_ionic-side",
+    "overlay_top": "chisel:block/purpur/purpur_pillar_ionic-top",
+    "overlay_vertical": "chisel:block/purpur/purpur_pillar_ionic-side-ctm",
+    "particle": "chisel:block/purpur/purpur_pillar_ionic-side",
+    "side": "chisel:block/purpur/purpur_pillar_ionic-side",
+    "top": "chisel:block/purpur/purpur_pillar_ionic-top"
+  }
+}
