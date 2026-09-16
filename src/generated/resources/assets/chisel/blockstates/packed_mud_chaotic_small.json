@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/packed_mud_chaotic_small"
+    }
+  }
+}

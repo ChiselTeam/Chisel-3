@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/mud/mud_crate",
+    "overlay_connected": "chisel:block/mud/mud_crate-ctm",
+    "overlay_texture": "chisel:block/mud/mud_crate",
+    "particle": "chisel:block/mud/mud_crate"
+  }
+}

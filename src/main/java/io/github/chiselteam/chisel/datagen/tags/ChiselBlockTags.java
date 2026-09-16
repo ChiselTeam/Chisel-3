@@ -70,6 +70,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         // MARK: SHOVEL
         addToTag(BlockTags.MINEABLE_WITH_SHOVEL, ChiselFamilies.DIRT.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_SHOVEL, ChiselFamilies.WOOLEN_CLAY.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_SHOVEL, ChiselFamilies.MUD.getFamily());
 
         // MARK: HOE MINEABLE
         addToTag(BlockTags.MINEABLE_WITH_HOE, ChiselFamilies.LEAF.getFamily());
@@ -146,7 +147,6 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.SHINGLE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.SILVER.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.STEEL.getFamily());
-        // addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.STONE_BRICKS.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TECHNICAL.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TEMPLE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TERRACOTTA.getFamily());
@@ -159,7 +159,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.VOIDSTONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.WARNING.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.WATERSTONE.getFamily());
-        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.MUD.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.PACKED_MUD.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.NEXUS.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.KITCHEN.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.STONE.getFamily());
