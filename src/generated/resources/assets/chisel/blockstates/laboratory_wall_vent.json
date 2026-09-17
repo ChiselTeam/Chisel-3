@@ -1,7 +1,15 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/laboratory_wall_vent"
-    }
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "north",
+    "south",
+    "west",
+    "east"
+  ],
+  "model_location": "chisel:block/laboratory_wall_vent",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:laboratory_wall_vent",
+    "kind": "ctmh"
   }
 }

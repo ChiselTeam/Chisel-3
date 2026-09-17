@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "minecraft:black_concrete",
+    "W": "minecraft:white_concrete"
+  },
+  "pattern": [
+    "WB",
+    "BW"
+  ],
+  "result": {
+    "count": 32,
+    "id": "chisel:kitchen_checker"
+  }
+}

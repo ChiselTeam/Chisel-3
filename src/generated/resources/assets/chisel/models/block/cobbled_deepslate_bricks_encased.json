@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/cobbled_deepslate/cobbled_deepslate_bricks_encased",
+    "overlay_connected": "chisel:block/cobbled_deepslate/cobbled_deepslate_bricks_encased-ctm",
+    "overlay_texture": "chisel:block/cobbled_deepslate/cobbled_deepslate_bricks_encased",
+    "particle": "chisel:block/cobbled_deepslate/cobbled_deepslate_bricks_encased"
+  }
+}

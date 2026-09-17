@@ -1,0 +1,32 @@
+{
+  "family_name": "light_brown",
+  "tag": "c:chisel/light_brown",
+  "variants": [
+    {
+      "block": "chisel:light_brown_framed",
+      "name": "light_brown_framed"
+    },
+    {
+      "block": "chisel:light_brown_framed_connected",
+      "model_type": "connected",
+      "name": "light_brown_framed_connected"
+    },
+    {
+      "block": "chisel:light_brown_frame_1",
+      "name": "light_brown_frame_1"
+    },
+    {
+      "block": "chisel:light_brown_frame_2",
+      "name": "light_brown_frame_2"
+    },
+    {
+      "block": "chisel:light_brown_panel",
+      "name": "light_brown_panel"
+    },
+    {
+      "block": "chisel:light_brown_panel_connected",
+      "model_type": "connected",
+      "name": "light_brown_panel_connected"
+    }
+  ]
+}

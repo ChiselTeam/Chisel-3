@@ -1,0 +1,23 @@
+﻿{
+  "values": [
+    {"id": "colors:blue_asteroid_bricks", "required": false},
+    {"id": "colors:blue_asteroid", "required": false},
+    {"id": "colors:blue_asteroid_tiles", "required": false},
+    {"id": "colors:blue_braid", "required": false},
+    {"id": "colors:blue_bricks", "required": false},
+    {"id": "colors:blue_chaotic", "required": false},
+    {"id": "colors:blue_cobblestone_bricks", "required": false},
+    {"id": "colors:blue_cobblestone", "required": false},
+    {"id": "colors:blue_cracked_stone_bricks", "required": false},
+    {"id": "colors:blue_encased", "required": false},
+    {"id": "colors:blue_marble_bricks", "required": false},
+    {"id": "colors:blue_marble", "required": false},
+    {"id": "colors:blue_mosaic", "required": false},
+    {"id": "colors:blue_polished", "required": false},
+    {"id": "colors:blue_road", "required": false},
+    {"id": "colors:blue_sandstone", "required": false},
+    {"id": "colors:blue_stone_bricks", "required": false},
+    {"id": "colors:blue_tiles", "required": false},
+    {"id": "colors:blue_triple", "required": false}
+  ]
+}

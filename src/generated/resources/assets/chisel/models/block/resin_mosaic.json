@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/resin/resin_mosaic",
+    "overlay_connected": "chisel:block/resin/resin_mosaic-ctm",
+    "overlay_texture": "chisel:block/resin/resin_mosaic",
+    "particle": "chisel:block/resin/resin_mosaic"
+  }
+}

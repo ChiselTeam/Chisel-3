@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/smooth_stone/smooth_stone_slanted",
+    "overlay_2x2": "chisel:block/smooth_stone/smooth_stone_slanted-2x2",
+    "particle": "chisel:block/smooth_stone/smooth_stone_slanted"
+  }
+}

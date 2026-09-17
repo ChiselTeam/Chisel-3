@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/smooth_stone/smooth_stone_facet_small_encased",
+    "overlay_connected": "chisel:block/smooth_stone/smooth_stone_facet_small_encased-ctm",
+    "overlay_texture": "chisel:block/smooth_stone/smooth_stone_facet_small_encased",
+    "particle": "chisel:block/smooth_stone/smooth_stone_facet_small_encased"
+  }
+}

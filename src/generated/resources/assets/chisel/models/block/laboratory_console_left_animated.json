@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/laboratory/laboratory_console_left_animated",
+    "bottom": "chisel:block/laboratory/laboratory_console_left_animated-bottom",
+    "overlay_horizontal": "chisel:block/laboratory/laboratory_console_left_animated-ctmh",
+    "particle": "chisel:block/laboratory/laboratory_console_left_animated",
+    "top": "chisel:block/laboratory/laboratory_console_left_animated-top"
+  }
+}

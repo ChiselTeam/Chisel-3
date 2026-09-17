@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/resin/resin_cuts",
+    "overlay_4x4": "chisel:block/resin/resin_cuts-4x4",
+    "particle": "chisel:block/resin/resin_cuts"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/nexus/nexus_path",
+    "overlay_connected": "chisel:block/nexus/nexus_path-ctm",
+    "overlay_texture": "chisel:block/nexus/nexus_path",
+    "particle": "chisel:block/nexus/nexus_path"
+  }
+}

@@ -43,6 +43,7 @@ public class ChiselFamilies {
     public static final ChiselFamily BASALT = StoneFamilies.BASALT;
     public static final ChiselFamily DIAMOND = MetalFamilies.DIAMOND;
     public static final ChiselFamily DIORITE = StoneFamilies.DIORITE;
+    public static final ChiselFamily COBBLED_DEEPSLATE = StoneFamilies.COBBLED_DEEPSLATE;
     public static final ChiselFamily DEEPSLATE = StoneFamilies.DEEPSLATE;
     public static final ChiselFamily DIRT = DecorativeFamilies.DIRT;
     public static final ChiselFamily ELECTRUM = MetalFamilies.ELECTRUM;
@@ -100,7 +101,6 @@ public class ChiselFamilies {
     public static final ChiselFamily SILVER = MetalFamilies.SILVER;
     public static final ChiselFamily SPRUCE = WoodFamilies.SPRUCE;
     public static final ChiselFamily STEEL = MetalFamilies.STEEL;
-    public static final ChiselFamily STONE_BRICKS = StoneFamilies.STONE_BRICKS;
     public static final ChiselFamily OC_TALLOW = OccultismFamilies.OC_TALLOW;
     public static final ChiselFamily TECHNICAL = DecorativeFamilies.TECHNICAL;
     public static final ChiselFamily TEMPLE = DecorativeFamilies.TEMPLE;
@@ -119,15 +119,21 @@ public class ChiselFamilies {
     public static final ChiselFamily CALCITE = StoneFamilies.CALCITE;
     public static final ChiselFamily NETHERITE = MetalFamilies.NETHERITE;
     public static final ChiselFamily DRIPSTONE = StoneFamilies.DRIPSTONE;
-    public static final ChiselFamily MUD = StoneFamilies.MUD;
+    public static final ChiselFamily MUD = DecorativeFamilies.MUD;
+    public static final ChiselFamily PACKED_MUD = StoneFamilies.PACKED_MUD;
     public static final ChiselFamily RESIN = DecorativeFamilies.RESIN;
+    public static final ChiselFamily NEXUS = DecorativeFamilies.NEXUS;
+    public static final ChiselFamily KITCHEN = DecorativeFamilies.KITCHEN;
+    public static final ChiselFamily LIMINAL = DecorativeFamilies.LIMINAL;
+    public static final ChiselFamily STONE = StoneFamilies.STONE;
+    public static final ChiselFamily SMOOTH_STONE = StoneFamilies.SMOOTH_STONE;
     // public static final ChiselFamily MA_SOULSTONE = MysticalAgricultureFamilies.MA_SOULSTONE;
 
     public static final List<ChiselFamily> WOOLS = ColorCollectionFamilies.WOOLS;
     public static final List<ChiselFamily> CONCRETE = ColorCollectionFamilies.CONCRETE;
     public static final List<ChiselFamily> STAINED_GLASS = ColorCollectionFamilies.STAINED_GLASS;
     public static final List<ChiselFamily> STAINED_GLASS_PANE = ColorCollectionFamilies.STAINED_GLASS_PANE;
-
+    public static final List<ChiselFamily> LIGHT = ColorCollectionFamilies.LIGHT;
     private ChiselFamilies() {
     }
 

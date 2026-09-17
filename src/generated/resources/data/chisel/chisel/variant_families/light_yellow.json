@@ -1,0 +1,32 @@
+{
+  "family_name": "light_yellow",
+  "tag": "c:chisel/light_yellow",
+  "variants": [
+    {
+      "block": "chisel:light_yellow_framed",
+      "name": "light_yellow_framed"
+    },
+    {
+      "block": "chisel:light_yellow_framed_connected",
+      "model_type": "connected",
+      "name": "light_yellow_framed_connected"
+    },
+    {
+      "block": "chisel:light_yellow_frame_1",
+      "name": "light_yellow_frame_1"
+    },
+    {
+      "block": "chisel:light_yellow_frame_2",
+      "name": "light_yellow_frame_2"
+    },
+    {
+      "block": "chisel:light_yellow_panel",
+      "name": "light_yellow_panel"
+    },
+    {
+      "block": "chisel:light_yellow_panel_connected",
+      "model_type": "connected",
+      "name": "light_yellow_panel_connected"
+    }
+  ]
+}

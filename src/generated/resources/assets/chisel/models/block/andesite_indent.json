@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/andesite/andesite_indent",
+    "overlay_connected": "chisel:block/andesite/andesite_indent-ctm",
+    "overlay_texture": "chisel:block/andesite/andesite_indent",
+    "particle": "chisel:block/andesite/andesite_indent"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/cobbled_deepslate/cobbled_deepslate_stripes"
+  }
+}

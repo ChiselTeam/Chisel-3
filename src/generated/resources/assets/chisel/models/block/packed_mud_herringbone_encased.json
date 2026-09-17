@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/packed_mud/packed_mud_herringbone_encased",
+    "overlay_connected": "chisel:block/packed_mud/packed_mud_herringbone_encased-ctm",
+    "overlay_texture": "chisel:block/packed_mud/packed_mud_herringbone_encased",
+    "particle": "chisel:block/packed_mud/packed_mud_herringbone_encased"
+  }
+}

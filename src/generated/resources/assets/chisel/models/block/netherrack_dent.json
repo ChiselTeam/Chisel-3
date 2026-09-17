@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/netherrack/netherrack_dent",
+    "overlay_connected": "chisel:block/netherrack/netherrack_dent-ctm",
+    "overlay_texture": "chisel:block/netherrack/netherrack_dent",
+    "particle": "chisel:block/netherrack/netherrack_dent"
+  }
+}

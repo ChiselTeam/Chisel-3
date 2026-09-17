@@ -1,0 +1,32 @@
+{
+  "family_name": "light_pink",
+  "tag": "c:chisel/light_pink",
+  "variants": [
+    {
+      "block": "chisel:light_pink_framed",
+      "name": "light_pink_framed"
+    },
+    {
+      "block": "chisel:light_pink_framed_connected",
+      "model_type": "connected",
+      "name": "light_pink_framed_connected"
+    },
+    {
+      "block": "chisel:light_pink_frame_1",
+      "name": "light_pink_frame_1"
+    },
+    {
+      "block": "chisel:light_pink_frame_2",
+      "name": "light_pink_frame_2"
+    },
+    {
+      "block": "chisel:light_pink_panel",
+      "name": "light_pink_panel"
+    },
+    {
+      "block": "chisel:light_pink_panel_connected",
+      "model_type": "connected",
+      "name": "light_pink_panel_connected"
+    }
+  ]
+}

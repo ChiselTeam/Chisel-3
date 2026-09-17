@@ -1,0 +1,32 @@
+{
+  "family_name": "light_lime",
+  "tag": "c:chisel/light_lime",
+  "variants": [
+    {
+      "block": "chisel:light_lime_framed",
+      "name": "light_lime_framed"
+    },
+    {
+      "block": "chisel:light_lime_framed_connected",
+      "model_type": "connected",
+      "name": "light_lime_framed_connected"
+    },
+    {
+      "block": "chisel:light_lime_frame_1",
+      "name": "light_lime_frame_1"
+    },
+    {
+      "block": "chisel:light_lime_frame_2",
+      "name": "light_lime_frame_2"
+    },
+    {
+      "block": "chisel:light_lime_panel",
+      "name": "light_lime_panel"
+    },
+    {
+      "block": "chisel:light_lime_panel_connected",
+      "model_type": "connected",
+      "name": "light_lime_panel_connected"
+    }
+  ]
+}

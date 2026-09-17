@@ -1,0 +1,32 @@
+{
+  "family_name": "light_cyan",
+  "tag": "c:chisel/light_cyan",
+  "variants": [
+    {
+      "block": "chisel:light_cyan_framed",
+      "name": "light_cyan_framed"
+    },
+    {
+      "block": "chisel:light_cyan_framed_connected",
+      "model_type": "connected",
+      "name": "light_cyan_framed_connected"
+    },
+    {
+      "block": "chisel:light_cyan_frame_1",
+      "name": "light_cyan_frame_1"
+    },
+    {
+      "block": "chisel:light_cyan_frame_2",
+      "name": "light_cyan_frame_2"
+    },
+    {
+      "block": "chisel:light_cyan_panel",
+      "name": "light_cyan_panel"
+    },
+    {
+      "block": "chisel:light_cyan_panel_connected",
+      "model_type": "connected",
+      "name": "light_cyan_panel_connected"
+    }
+  ]
+}

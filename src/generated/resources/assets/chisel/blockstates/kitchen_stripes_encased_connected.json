@@ -1,0 +1,12 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/kitchen_stripes_encased_connected",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:kitchen_stripes_encased_connected",
+    "kind": "standard"
+  }
+}

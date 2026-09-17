@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/netherite/netherite_plank_connected",
+    "overlay_connected": "chisel:block/netherite/netherite_plank_connected-ctm",
+    "overlay_texture": "chisel:block/netherite/netherite_plank_connected",
+    "particle": "chisel:block/netherite/netherite_plank_connected"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/packed_mud/packed_mud_meander_horizontal",
+    "bottom": "chisel:block/packed_mud/packed_mud_meander_horizontal-bottom",
+    "overlay_horizontal": "chisel:block/packed_mud/packed_mud_meander_horizontal-ctmh",
+    "particle": "chisel:block/packed_mud/packed_mud_meander_horizontal",
+    "top": "chisel:block/packed_mud/packed_mud_meander_horizontal-top"
+  }
+}

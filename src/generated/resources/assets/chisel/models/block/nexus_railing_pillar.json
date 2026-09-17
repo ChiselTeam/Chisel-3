@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/nexus/nexus_railing_pillar-side",
+    "bottom": "chisel:block/nexus/nexus_railing_pillar-bottom",
+    "overlay_bottom": "chisel:block/nexus/nexus_railing_pillar-bottom",
+    "overlay_side_connected": "chisel:block/nexus/nexus_railing_pillar-side-ctm",
+    "overlay_texture": "chisel:block/nexus/nexus_railing_pillar-side",
+    "overlay_top": "chisel:block/nexus/nexus_railing_pillar-top",
+    "overlay_vertical": "chisel:block/nexus/nexus_railing_pillar-side-ctm",
+    "particle": "chisel:block/nexus/nexus_railing_pillar-side",
+    "side": "chisel:block/nexus/nexus_railing_pillar-side",
+    "top": "chisel:block/nexus/nexus_railing_pillar-top"
+  }
+}

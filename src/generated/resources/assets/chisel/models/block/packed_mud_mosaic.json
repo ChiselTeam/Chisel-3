@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/packed_mud/packed_mud_mosaic",
+    "overlay_connected": "chisel:block/packed_mud/packed_mud_mosaic-ctm",
+    "overlay_texture": "chisel:block/packed_mud/packed_mud_mosaic",
+    "particle": "chisel:block/packed_mud/packed_mud_mosaic"
+  }
+}

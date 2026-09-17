@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/light_white/light_white_framed_connected",
+    "overlay_connected": "chisel:block/light_white/light_white_framed_connected-ctm",
+    "overlay_texture": "chisel:block/light_white/light_white_framed_connected",
+    "particle": "chisel:block/light_white/light_white_framed_connected"
+  }
+}

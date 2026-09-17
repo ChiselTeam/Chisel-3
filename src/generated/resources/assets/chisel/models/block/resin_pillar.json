@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/resin/resin_pillar-bottom",
+    "side": "chisel:block/resin/resin_pillar-side",
+    "top": "chisel:block/resin/resin_pillar-top"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/light_yellow/light_yellow_panel_connected",
+    "overlay_connected": "chisel:block/light_yellow/light_yellow_panel_connected-ctm",
+    "overlay_texture": "chisel:block/light_yellow/light_yellow_panel_connected",
+    "particle": "chisel:block/light_yellow/light_yellow_panel_connected"
+  }
+}

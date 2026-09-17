@@ -1,0 +1,53 @@
+{
+  "family_name": "liminal",
+  "tag": "c:chisel/liminal",
+  "variants": [
+    {
+      "block": "chisel:liminal_wall_1",
+      "name": "liminal_wall_1"
+    },
+    {
+      "block": "chisel:liminal_wall_2",
+      "name": "liminal_wall_2"
+    },
+    {
+      "block": "chisel:liminal_wall_3",
+      "name": "liminal_wall_3"
+    },
+    {
+      "block": "chisel:liminal_carpet_1",
+      "name": "liminal_carpet_1"
+    },
+    {
+      "block": "chisel:liminal_carpet_2",
+      "model_type": "multi_layer_connected",
+      "name": "liminal_carpet_2"
+    },
+    {
+      "block": "chisel:liminal_carpet_3",
+      "name": "liminal_carpet_3"
+    },
+    {
+      "block": "chisel:liminal_carpet_4",
+      "model_type": "v16",
+      "name": "liminal_carpet_4"
+    },
+    {
+      "block": "chisel:liminal_carpet_5",
+      "model_type": "v16",
+      "name": "liminal_carpet_5"
+    },
+    {
+      "block": "chisel:liminal_ceiling_1",
+      "name": "liminal_ceiling_1"
+    },
+    {
+      "block": "chisel:liminal_ceiling_2",
+      "name": "liminal_ceiling_2"
+    },
+    {
+      "block": "chisel:liminal_tiles_1",
+      "name": "liminal_tiles_1"
+    }
+  ]
+}

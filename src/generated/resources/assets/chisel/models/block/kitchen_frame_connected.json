@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/kitchen/kitchen_frame_connected",
+    "overlay_connected": "chisel:block/kitchen/kitchen_frame_connected-ctm",
+    "overlay_texture": "chisel:block/kitchen/kitchen_frame_connected",
+    "particle": "chisel:block/kitchen/kitchen_frame_connected"
+  }
+}

@@ -28,10 +28,10 @@ public class ChiselTabs {
                     ChiselFamilies.CHARCOAL.getFamily(),
                     ChiselFamilies.COAL.getFamily(),
                     ChiselFamilies.COBBLESTONE.getFamily(),
-                    ChiselFamilies.STONE_BRICKS.getFamily(),
                     ChiselFamilies.C_CONCRETE.getFamily(),
                     ChiselFamilies.BASALT.getFamily(),
                     ChiselFamilies.DIORITE.getFamily(),
+                    ChiselFamilies.COBBLED_DEEPSLATE.getFamily(),
                     ChiselFamilies.DEEPSLATE.getFamily(),
                     ChiselFamilies.END_STONE.getFamily(),
                     ChiselFamilies.GRANITE.getFamily(),
@@ -59,9 +59,11 @@ public class ChiselTabs {
                     ChiselFamilies.TUFF.getFamily(),
                     ChiselFamilies.CALCITE.getFamily(),
                     ChiselFamilies.DRIPSTONE.getFamily(),
-                    ChiselFamilies.MUD.getFamily(),
+                    ChiselFamilies.PACKED_MUD.getFamily(),
                     ChiselFamilies.RESIN.getFamily(),
-                    ChiselFamilies.WATERSTONE.getFamily()
+                    ChiselFamilies.WATERSTONE.getFamily(),
+                    ChiselFamilies.STONE.getFamily(),
+                    ChiselFamilies.SMOOTH_STONE.getFamily()
                 
                 ).forEach(family -> family.getVariants().forEach(variant -> {
                 if (variant.shouldGenerateModel() && variant.isInTab())
@@ -129,6 +131,7 @@ public class ChiselTabs {
                         ChiselFamilies.CLOUD.getFamily(),
                         ChiselFamilies.DIAMOND.getFamily(),
                         ChiselFamilies.DIRT.getFamily(),
+                        ChiselFamilies.MUD.getFamily(),
                         ChiselFamilies.EMERALD.getFamily(),
                         ChiselFamilies.ENERGIZED_VOIDSTONE.getFamily(),
                         ChiselFamilies.GLASS_PANE.getFamily(),
@@ -146,7 +149,10 @@ public class ChiselTabs {
                         ChiselFamilies.ROAD_LINE.getFamily(),
                         ChiselFamilies.VALENTINES.getFamily(),
                         ChiselFamilies.NETHERITE.getFamily(),
-                        ChiselFamilies.WOOLEN_CLAY.getFamily()
+                        ChiselFamilies.WOOLEN_CLAY.getFamily(),
+                        ChiselFamilies.NEXUS.getFamily(),
+                        ChiselFamilies.KITCHEN.getFamily(),
+                        ChiselFamilies.LIMINAL.getFamily()
                 
                 ).forEach(family -> family.getVariants().forEach(variant ->  {
                     if (variant.shouldGenerateModel() && variant.isInTab())
@@ -164,6 +170,11 @@ public class ChiselTabs {
                 ChiselFamilies.TORCH.getVariant("torch_10").get();
 
                 ChiselFamilies.WOOLS.forEach(family -> family.getFamily().getVariants().forEach(variant -> {
+                    if (variant.shouldGenerateModel() && variant.isInTab())
+                        output.accept(variant.getBlock());
+                }));
+
+                ChiselFamilies.LIGHT.forEach(family -> family.getFamily().getVariants().forEach(variant -> {
                     if (variant.shouldGenerateModel() && variant.isInTab())
                         output.accept(variant.getBlock());
                 }));

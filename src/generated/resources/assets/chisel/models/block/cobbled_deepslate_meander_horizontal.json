@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/cobbled_deepslate/cobbled_deepslate_meander_horizontal",
+    "bottom": "chisel:block/cobbled_deepslate/cobbled_deepslate_meander_horizontal-bottom",
+    "overlay_horizontal": "chisel:block/cobbled_deepslate/cobbled_deepslate_meander_horizontal-ctmh",
+    "particle": "chisel:block/cobbled_deepslate/cobbled_deepslate_meander_horizontal",
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_meander_horizontal-top"
+  }
+}

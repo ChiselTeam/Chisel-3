@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/diorite/diorite_meander_vertical-side",
+    "bottom": "chisel:block/diorite/diorite_meander_vertical-bottom",
+    "overlay_bottom": "chisel:block/diorite/diorite_meander_vertical-bottom",
+    "overlay_side_connected": "chisel:block/diorite/diorite_meander_vertical-side-ctm",
+    "overlay_texture": "chisel:block/diorite/diorite_meander_vertical-side",
+    "overlay_top": "chisel:block/diorite/diorite_meander_vertical-top",
+    "overlay_vertical": "chisel:block/diorite/diorite_meander_vertical-side-ctm",
+    "particle": "chisel:block/diorite/diorite_meander_vertical-side",
+    "side": "chisel:block/diorite/diorite_meander_vertical-side",
+    "top": "chisel:block/diorite/diorite_meander_vertical-top"
+  }
+}

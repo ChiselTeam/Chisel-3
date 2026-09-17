@@ -1,0 +1,32 @@
+{
+  "family_name": "light_green",
+  "tag": "c:chisel/light_green",
+  "variants": [
+    {
+      "block": "chisel:light_green_framed",
+      "name": "light_green_framed"
+    },
+    {
+      "block": "chisel:light_green_framed_connected",
+      "model_type": "connected",
+      "name": "light_green_framed_connected"
+    },
+    {
+      "block": "chisel:light_green_frame_1",
+      "name": "light_green_frame_1"
+    },
+    {
+      "block": "chisel:light_green_frame_2",
+      "name": "light_green_frame_2"
+    },
+    {
+      "block": "chisel:light_green_panel",
+      "name": "light_green_panel"
+    },
+    {
+      "block": "chisel:light_green_panel_connected",
+      "model_type": "connected",
+      "name": "light_green_panel_connected"
+    }
+  ]
+}
