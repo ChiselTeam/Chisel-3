@@ -10,6 +10,9 @@
     "top-ctm_horizontal": "chisel:block/crimson_planks/crimson_planks_log_bordered",
     "top-ctm_vertical": "chisel:block/crimson_planks/crimson_planks_braced"
   },
+  "crimson_planks_crude_horizontal": {
+    "3x3_top_left": "chisel:block/crimson_planks/crimson_planks_crude_horizontal"
+  },
   "crimson_planks_crude_vertical": {
     "3x3_top_left": "chisel:block/crimson_planks/crimson_planks_crude_vertical"
   },

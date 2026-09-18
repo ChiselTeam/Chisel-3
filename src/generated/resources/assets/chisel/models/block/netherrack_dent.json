@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/netherrack/netherrack_dent",
-    "overlay_connected": "chisel:block/netherrack/netherrack_dent-ctm",
-    "overlay_texture": "chisel:block/netherrack/netherrack_dent",
-    "particle": "chisel:block/netherrack/netherrack_dent"
+    "particle": "chisel:block/netherrack/netherrack_dent",
+    "standard_corner": "chisel:block/netherrack/netherrack_dent-ctm_corner",
+    "standard_cornerless": "chisel:block/netherrack/netherrack_border_square-ctm_cornerless",
+    "standard_horizontal": "chisel:block/netherrack/netherrack_dent-ctm_horizontal",
+    "standard_none": "chisel:block/netherrack/netherrack_dent",
+    "standard_vertical": "chisel:block/netherrack/netherrack_dent-ctm_vertical"
   }
 }

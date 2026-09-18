@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/mud/mud_twisted-bottom",
     "side": "chisel:block/mud/mud_twisted-side",
-    "top": "chisel:block/mud/mud_twisted-top"
+    "top": "chisel:block/mud/mud_twisted-bottom"
   }
 }

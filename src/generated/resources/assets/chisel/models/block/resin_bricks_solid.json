@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/resin/resin_bricks_solid"
+    "all": "chisel:block/resin/resin_bricks_encased-ctm_cornerless"
   }
 }

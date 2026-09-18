@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/nexus/nexus_grate_pillar-bottom",
     "side": "chisel:block/nexus/nexus_grate_pillar-side",
-    "top": "chisel:block/nexus/nexus_grate_pillar-top"
+    "top": "chisel:block/nexus/nexus_grate_pillar-bottom"
   }
 }

@@ -9,7 +9,10 @@
     {
       "block": "chisel:nexus_grate_pillar",
       "model_type": "top_bottom_side",
-      "name": "nexus_grate_pillar"
+      "name": "nexus_grate_pillar",
+      "textures": {
+        "top": "chisel:block/nexus/nexus_grate_pillar-bottom"
+      }
     },
     {
       "block": "chisel:nexus_junction",
@@ -31,17 +34,30 @@
     {
       "block": "chisel:nexus_plating_pillar",
       "model_type": "top_bottom_side",
-      "name": "nexus_plating_pillar"
+      "name": "nexus_plating_pillar",
+      "textures": {
+        "top": "chisel:block/nexus/nexus_plating_pillar-bottom"
+      }
     },
     {
       "block": "chisel:nexus_weave_pillar",
       "model_type": "top_bottom_side",
-      "name": "nexus_weave_pillar"
+      "name": "nexus_weave_pillar",
+      "textures": {
+        "top": "chisel:block/nexus/nexus_weave_pillar-bottom"
+      }
     },
     {
       "block": "chisel:nexus_railing_pillar",
       "model_type": "ctmv",
-      "name": "nexus_railing_pillar"
+      "name": "nexus_railing_pillar",
+      "textures": {
+        "bottom": "chisel:block/nexus/nexus_railing_pillar-side",
+        "top": "chisel:block/nexus/nexus_railing_pillar-side",
+        "vertical_bottom": "chisel:block/nexus/nexus_railing_pillar-side",
+        "vertical_none": "chisel:block/nexus/nexus_railing_pillar-side",
+        "vertical_top": "chisel:block/nexus/nexus_railing_pillar-side"
+      }
     }
   ]
 }

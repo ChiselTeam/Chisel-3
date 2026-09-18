@@ -204,7 +204,6 @@
       "name": "technical_spinning_stuff",
       "textures": {
         "": "chisel:block/technical/technical_gears",
-        "ctm": "chisel:block/technical/technical_spinning_stuff-ctm",
         "ctm_corner": "chisel:block/technical/technical_spinning_stuff-ctm_corner",
         "ctm_cornerless": "chisel:block/technical/technical_spinning_stuff-ctm_cornerless",
         "ctm_horizontal": "chisel:block/technical/technical_spinning_stuff-ctm_horizontal",

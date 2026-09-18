@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/packed_mud/packed_mud_mosaic",
-    "overlay_connected": "chisel:block/packed_mud/packed_mud_mosaic-ctm",
-    "overlay_texture": "chisel:block/packed_mud/packed_mud_mosaic",
-    "particle": "chisel:block/packed_mud/packed_mud_mosaic"
+    "particle": "chisel:block/packed_mud/packed_mud_mosaic",
+    "standard_corner": "chisel:block/packed_mud/packed_mud_mosaic-ctm_corner",
+    "standard_cornerless": "chisel:block/packed_mud/packed_mud_border_square-ctm_cornerless",
+    "standard_horizontal": "chisel:block/packed_mud/packed_mud_mosaic-ctm_horizontal",
+    "standard_none": "chisel:block/packed_mud/packed_mud_mosaic",
+    "standard_vertical": "chisel:block/packed_mud/packed_mud_mosaic-ctm_vertical"
   }
 }

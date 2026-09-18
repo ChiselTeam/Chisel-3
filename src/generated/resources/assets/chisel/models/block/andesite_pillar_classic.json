@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/andesite/andesite_pillar_classic-bottom",
     "side": "chisel:block/andesite/andesite_pillar_classic-side",
-    "top": "chisel:block/andesite/andesite_pillar_classic-top"
+    "top": "chisel:block/andesite/andesite_pillar_classic-bottom"
   }
 }

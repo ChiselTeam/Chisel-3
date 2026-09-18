@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/kitchen/kitchen_frame"
+    "all": "chisel:block/kitchen/kitchen_frame_connected"
   }
 }

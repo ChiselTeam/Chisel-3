@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/diorite/diorite_pillar_classic_large-bottom",
     "side": "chisel:block/diorite/diorite_pillar_classic_large-side",
-    "top": "chisel:block/diorite/diorite_pillar_classic_large-top"
+    "top": "chisel:block/diorite/diorite_pillar_classic_large-bottom"
   }
 }

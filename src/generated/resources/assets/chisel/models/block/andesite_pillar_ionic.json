@@ -2,14 +2,13 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/andesite/andesite_pillar_ionic-side",
-    "bottom": "chisel:block/andesite/andesite_pillar_ionic-bottom",
-    "overlay_bottom": "chisel:block/andesite/andesite_pillar_ionic-bottom",
-    "overlay_side_connected": "chisel:block/andesite/andesite_pillar_ionic-side-ctm",
-    "overlay_texture": "chisel:block/andesite/andesite_pillar_ionic-side",
-    "overlay_top": "chisel:block/andesite/andesite_pillar_ionic-top",
-    "overlay_vertical": "chisel:block/andesite/andesite_pillar_ionic-side-ctm",
+    "bottom": "chisel:block/andesite/andesite_pillar_basic-bottom",
     "particle": "chisel:block/andesite/andesite_pillar_ionic-side",
     "side": "chisel:block/andesite/andesite_pillar_ionic-side",
-    "top": "chisel:block/andesite/andesite_pillar_ionic-top"
+    "top": "chisel:block/andesite/andesite_pillar_basic-bottom",
+    "vertical_both": "chisel:block/andesite/andesite_pillar_ionic-vertical_both",
+    "vertical_bottom": "chisel:block/andesite/andesite_pillar_ionic-vertical_bottom",
+    "vertical_none": "chisel:block/andesite/andesite_pillar_ionic-side",
+    "vertical_top": "chisel:block/andesite/andesite_pillar_ionic-vertical_top"
   }
 }

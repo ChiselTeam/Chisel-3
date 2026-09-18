@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/diorite/diorite_lodestone"
+    "all": "chisel:block/diorite/diorite_lodestone_connected"
   }
 }

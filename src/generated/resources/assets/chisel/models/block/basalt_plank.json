@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/basalt/basalt_plank"
+    "all": "chisel:block/basalt/basalt_plank_connected"
   }
 }

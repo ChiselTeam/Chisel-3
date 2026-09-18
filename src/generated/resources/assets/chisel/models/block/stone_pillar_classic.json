@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/stone/stone_pillar_classic-bottom",
     "side": "chisel:block/stone/stone_pillar_classic-side",
-    "top": "chisel:block/stone/stone_pillar_classic-top"
+    "top": "chisel:block/stone/stone_pillar_classic-bottom"
   }
 }

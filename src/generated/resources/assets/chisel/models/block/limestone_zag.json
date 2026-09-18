@@ -2,10 +2,10 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/limestone/limestone_zag",
-    "ar_1": "chisel:block/limestone/limestone_zag",
-    "ar_2": "chisel:block/limestone/limestone_zag-ar_variant_2",
-    "ar_3": "chisel:block/limestone/limestone_zag-ar_variant_3",
-    "ar_4": "chisel:block/limestone/limestone_zag-ar_variant_4",
+    "multiblock_2x2_bottom_left": "chisel:block/limestone/limestone_zag-v4_bottom_left",
+    "multiblock_2x2_bottom_right": "chisel:block/limestone/limestone_zag-v4_bottom_right",
+    "multiblock_2x2_top_left": "chisel:block/limestone/limestone_zag-v4_top_left",
+    "multiblock_2x2_top_right": "chisel:block/limestone/limestone_zag-v4_bottom_left",
     "particle": "chisel:block/limestone/limestone_zag"
   }
 }

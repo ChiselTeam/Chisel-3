@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/basalt/basalt_pillar_classic_large-bottom",
     "side": "chisel:block/basalt/basalt_pillar_classic_large-side",
-    "top": "chisel:block/basalt/basalt_pillar_classic_large-top"
+    "top": "chisel:block/basalt/basalt_pillar_classic_large-bottom"
   }
 }

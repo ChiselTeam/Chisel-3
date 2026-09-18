@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/smooth_stone/smooth_stone_raw"
+    "all": "chisel:block/smooth_stone/smooth_stone_border_square-ctm_cornerless"
   }
 }

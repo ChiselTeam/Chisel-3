@@ -4,7 +4,10 @@
   "variants": [
     {
       "block": "chisel:light_magenta_framed",
-      "name": "light_magenta_framed"
+      "name": "light_magenta_framed",
+      "textures": {
+        "": "chisel:block/light_magenta/light_magenta_framed_connected"
+      }
     },
     {
       "block": "chisel:light_magenta_framed_connected",

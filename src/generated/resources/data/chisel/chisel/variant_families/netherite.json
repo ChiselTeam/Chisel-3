@@ -91,7 +91,10 @@
     {
       "block": "chisel:netherite_circular",
       "model_type": "connected",
-      "name": "netherite_circular"
+      "name": "netherite_circular",
+      "textures": {
+        "ctm_cornerless": "chisel:block/netherite/netherite_border_square-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:netherite_cracked",
@@ -104,12 +107,18 @@
     {
       "block": "chisel:netherite_cuts",
       "model_type": "multiblock_4x4",
-      "name": "netherite_cuts"
+      "name": "netherite_cuts",
+      "textures": {
+        "4x4_row_0_column_0": "chisel:block/netherite/netherite_cuts"
+      }
     },
     {
       "block": "chisel:netherite_dent",
       "model_type": "connected",
-      "name": "netherite_dent"
+      "name": "netherite_dent",
+      "textures": {
+        "ctm_cornerless": "chisel:block/netherite/netherite_border_square-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:netherite_french_1",
@@ -122,7 +131,10 @@
     {
       "block": "chisel:netherite_indent",
       "model_type": "connected",
-      "name": "netherite_indent"
+      "name": "netherite_indent",
+      "textures": {
+        "ctm_cornerless": "chisel:block/netherite/netherite_border_square-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:netherite_jellybean",
@@ -131,7 +143,10 @@
     },
     {
       "block": "chisel:netherite_layers",
-      "name": "netherite_layers"
+      "name": "netherite_layers",
+      "textures": {
+        "": "chisel:block/netherite/netherite_layers_connected"
+      }
     },
     {
       "block": "chisel:netherite_layers_connected",
@@ -149,17 +164,26 @@
     {
       "block": "chisel:netherite_meander_horizontal",
       "model_type": "ctmh",
-      "name": "netherite_meander_horizontal"
+      "name": "netherite_meander_horizontal",
+      "textures": {
+        "top": "chisel:block/netherite/netherite_meander_horizontal-bottom"
+      }
     },
     {
       "block": "chisel:netherite_meander_vertical",
       "model_type": "ctmv",
-      "name": "netherite_meander_vertical"
+      "name": "netherite_meander_vertical",
+      "textures": {
+        "top": "chisel:block/netherite/netherite_meander_vertical-bottom"
+      }
     },
     {
       "block": "chisel:netherite_mosaic",
       "model_type": "connected",
-      "name": "netherite_mosaic"
+      "name": "netherite_mosaic",
+      "textures": {
+        "ctm_cornerless": "chisel:block/netherite/netherite_border_square-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:netherite_ornate_small",
@@ -172,115 +196,226 @@
     {
       "block": "chisel:netherite_pillar",
       "model_type": "top_bottom_side",
-      "name": "netherite_pillar"
+      "name": "netherite_pillar",
+      "textures": {
+        "top": "chisel:block/netherite/netherite_pillar-bottom"
+      }
     },
     {
       "block": "chisel:netherite_pillar_basic",
       "model_type": "ctmv",
-      "name": "netherite_pillar_basic"
+      "name": "netherite_pillar_basic",
+      "textures": {
+        "top": "chisel:block/netherite/netherite_pillar_basic-bottom"
+      }
     },
     {
       "block": "chisel:netherite_pillar_basic_dent",
       "model_type": "ctmv",
-      "name": "netherite_pillar_basic_dent"
+      "name": "netherite_pillar_basic_dent",
+      "textures": {
+        "bottom": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "top": "chisel:block/netherite/netherite_pillar_basic-bottom"
+      }
     },
     {
       "block": "chisel:netherite_pillar_basic_plain",
       "model_type": "ctmv",
-      "name": "netherite_pillar_basic_plain"
+      "name": "netherite_pillar_basic_plain",
+      "textures": {
+        "bottom": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "top": "chisel:block/netherite/netherite_pillar_basic-bottom"
+      }
     },
     {
       "block": "chisel:netherite_pillar_basic_round",
       "model_type": "ctmv",
-      "name": "netherite_pillar_basic_round"
+      "name": "netherite_pillar_basic_round",
+      "textures": {
+        "bottom": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "top": "chisel:block/netherite/netherite_pillar_basic-bottom"
+      }
     },
     {
       "block": "chisel:netherite_pillar_basic_spiral",
       "model_type": "ctmv",
-      "name": "netherite_pillar_basic_spiral"
+      "name": "netherite_pillar_basic_spiral",
+      "textures": {
+        "bottom": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "top": "chisel:block/netherite/netherite_pillar_basic-bottom"
+      }
     },
     {
       "block": "chisel:netherite_pillar_classic",
       "model_type": "top_bottom_side",
-      "name": "netherite_pillar_classic"
+      "name": "netherite_pillar_classic",
+      "textures": {
+        "top": "chisel:block/netherite/netherite_pillar_classic-bottom"
+      }
     },
     {
       "block": "chisel:netherite_pillar_classic_large",
       "model_type": "top_bottom_side",
-      "name": "netherite_pillar_classic_large"
+      "name": "netherite_pillar_classic_large",
+      "textures": {
+        "top": "chisel:block/netherite/netherite_pillar_classic_large-bottom"
+      }
     },
     {
       "block": "chisel:netherite_pillar_ionic",
       "model_type": "ctmv",
-      "name": "netherite_pillar_ionic"
+      "name": "netherite_pillar_ionic",
+      "textures": {
+        "bottom": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "top": "chisel:block/netherite/netherite_pillar_basic-bottom"
+      }
     },
     {
       "block": "chisel:netherite_pillar_ionic_dent",
       "model_type": "ctmv",
-      "name": "netherite_pillar_ionic_dent"
+      "name": "netherite_pillar_ionic_dent",
+      "textures": {
+        "bottom": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "side": "chisel:block/netherite/netherite_pillar_ionic-side",
+        "top": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "vertical_both": "chisel:block/netherite/netherite_pillar_basic_dent-vertical_both",
+        "vertical_none": "chisel:block/netherite/netherite_pillar_ionic-vertical_none"
+      }
     },
     {
       "block": "chisel:netherite_pillar_ionic_plain",
       "model_type": "ctmv",
-      "name": "netherite_pillar_ionic_plain"
+      "name": "netherite_pillar_ionic_plain",
+      "textures": {
+        "bottom": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "side": "chisel:block/netherite/netherite_pillar_ionic-side",
+        "top": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "vertical_both": "chisel:block/netherite/netherite_pillar_basic_plain-vertical_both",
+        "vertical_none": "chisel:block/netherite/netherite_pillar_ionic-vertical_none"
+      }
     },
     {
       "block": "chisel:netherite_pillar_ionic_round",
       "model_type": "ctmv",
-      "name": "netherite_pillar_ionic_round"
+      "name": "netherite_pillar_ionic_round",
+      "textures": {
+        "bottom": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "side": "chisel:block/netherite/netherite_pillar_ionic-side",
+        "top": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "vertical_both": "chisel:block/netherite/netherite_pillar_basic_round-vertical_both",
+        "vertical_none": "chisel:block/netherite/netherite_pillar_ionic-vertical_none"
+      }
     },
     {
       "block": "chisel:netherite_pillar_ionic_spiral",
       "model_type": "ctmv",
-      "name": "netherite_pillar_ionic_spiral"
+      "name": "netherite_pillar_ionic_spiral",
+      "textures": {
+        "bottom": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "side": "chisel:block/netherite/netherite_pillar_ionic-side",
+        "top": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "vertical_both": "chisel:block/netherite/netherite_pillar_basic_spiral-vertical_both",
+        "vertical_none": "chisel:block/netherite/netherite_pillar_ionic-vertical_none"
+      }
     },
     {
       "block": "chisel:netherite_pillar_large_basic_triple",
       "model_type": "ctmv",
-      "name": "netherite_pillar_large_basic_triple"
+      "name": "netherite_pillar_large_basic_triple",
+      "textures": {
+        "bottom": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "top": "chisel:block/netherite/netherite_pillar_basic-bottom"
+      }
     },
     {
       "block": "chisel:netherite_pillar_large_ionic_triple",
       "model_type": "ctmv",
-      "name": "netherite_pillar_large_ionic_triple"
+      "name": "netherite_pillar_large_ionic_triple",
+      "textures": {
+        "bottom": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "top": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "vertical_both": "chisel:block/netherite/netherite_pillar_large_basic_triple-vertical_both"
+      }
     },
     {
       "block": "chisel:netherite_pillar_meander",
       "model_type": "ctmv",
-      "name": "netherite_pillar_meander"
+      "name": "netherite_pillar_meander",
+      "textures": {
+        "bottom": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "top": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "vertical_both": "chisel:block/netherite/netherite_pillar_ionic-vertical_both"
+      }
     },
     {
       "block": "chisel:netherite_pillar_meander_dent",
       "model_type": "ctmv",
-      "name": "netherite_pillar_meander_dent"
+      "name": "netherite_pillar_meander_dent",
+      "textures": {
+        "bottom": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "side": "chisel:block/netherite/netherite_pillar_meander-side",
+        "top": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "vertical_both": "chisel:block/netherite/netherite_pillar_basic_dent-vertical_both",
+        "vertical_none": "chisel:block/netherite/netherite_pillar_meander-vertical_none"
+      }
     },
     {
       "block": "chisel:netherite_pillar_meander_plain",
       "model_type": "ctmv",
-      "name": "netherite_pillar_meander_plain"
+      "name": "netherite_pillar_meander_plain",
+      "textures": {
+        "bottom": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "side": "chisel:block/netherite/netherite_pillar_meander-side",
+        "top": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "vertical_both": "chisel:block/netherite/netherite_pillar_basic_plain-vertical_both",
+        "vertical_none": "chisel:block/netherite/netherite_pillar_meander-vertical_none"
+      }
     },
     {
       "block": "chisel:netherite_pillar_meander_round",
       "model_type": "ctmv",
-      "name": "netherite_pillar_meander_round"
+      "name": "netherite_pillar_meander_round",
+      "textures": {
+        "bottom": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "side": "chisel:block/netherite/netherite_pillar_meander-side",
+        "top": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "vertical_both": "chisel:block/netherite/netherite_pillar_basic_round-vertical_both",
+        "vertical_none": "chisel:block/netherite/netherite_pillar_meander-vertical_none"
+      }
     },
     {
       "block": "chisel:netherite_pillar_meander_spiral",
       "model_type": "ctmv",
-      "name": "netherite_pillar_meander_spiral"
+      "name": "netherite_pillar_meander_spiral",
+      "textures": {
+        "bottom": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "side": "chisel:block/netherite/netherite_pillar_meander-side",
+        "top": "chisel:block/netherite/netherite_pillar_basic-bottom",
+        "vertical_both": "chisel:block/netherite/netherite_pillar_basic_spiral-vertical_both",
+        "vertical_none": "chisel:block/netherite/netherite_pillar_meander-vertical_none"
+      }
     },
     {
       "block": "chisel:netherite_plate",
-      "name": "netherite_plate"
+      "name": "netherite_plate",
+      "textures": {
+        "": "chisel:block/netherite/netherite_plate_connected"
+      }
     },
     {
       "block": "chisel:netherite_plate_connected",
       "model_type": "connected",
-      "name": "netherite_plate_connected"
+      "name": "netherite_plate_connected",
+      "textures": {
+        "ctm_cornerless": "chisel:block/netherite/netherite_border_square-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:netherite_polished",
-      "name": "netherite_polished"
+      "name": "netherite_polished",
+      "textures": {
+        "": "chisel:block/netherite/netherite_tiles_large"
+      }
     },
     {
       "block": "chisel:netherite_polished_encased",
@@ -311,7 +446,10 @@
     {
       "block": "chisel:netherite_tiles_large",
       "model_type": "connected",
-      "name": "netherite_tiles_large"
+      "name": "netherite_tiles_large",
+      "textures": {
+        "ctm_cornerless": "chisel:block/netherite/netherite_border_square-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:netherite_tiles_small",
@@ -320,7 +458,10 @@
     {
       "block": "chisel:netherite_twisted",
       "model_type": "top_bottom_side",
-      "name": "netherite_twisted"
+      "name": "netherite_twisted",
+      "textures": {
+        "top": "chisel:block/netherite/netherite_twisted-bottom"
+      }
     },
     {
       "block": "chisel:netherite_weaver",
@@ -378,7 +519,10 @@
     },
     {
       "block": "chisel:netherite_lodestone",
-      "name": "netherite_lodestone"
+      "name": "netherite_lodestone",
+      "textures": {
+        "": "chisel:block/netherite/netherite_lodestone_connected"
+      }
     },
     {
       "block": "chisel:netherite_lodestone_connected",
@@ -387,7 +531,10 @@
     },
     {
       "block": "chisel:netherite_plank",
-      "name": "netherite_plank"
+      "name": "netherite_plank",
+      "textures": {
+        "": "chisel:block/netherite/netherite_plank_connected"
+      }
     },
     {
       "block": "chisel:netherite_plank_connected",
@@ -466,7 +613,10 @@
     },
     {
       "block": "chisel:netherite_shiny",
-      "name": "netherite_shiny"
+      "name": "netherite_shiny",
+      "textures": {
+        "": "chisel:block/netherite/netherite_shiny_connected"
+      }
     },
     {
       "block": "chisel:netherite_shiny_connected",
@@ -479,25 +629,40 @@
     },
     {
       "block": "chisel:netherite_gem_1",
-      "name": "netherite_gem_1"
+      "name": "netherite_gem_1",
+      "textures": {
+        "": "chisel:block/netherite/netherite_gem_1_connected"
+      }
     },
     {
       "block": "chisel:netherite_gem_1_connected",
       "model_type": "connected",
-      "name": "netherite_gem_1_connected"
+      "name": "netherite_gem_1_connected",
+      "textures": {
+        "ctm_cornerless": "chisel:block/netherite/netherite_border_square-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:netherite_gem_2",
-      "name": "netherite_gem_2"
+      "name": "netherite_gem_2",
+      "textures": {
+        "": "chisel:block/netherite/netherite_gem_2_connected"
+      }
     },
     {
       "block": "chisel:netherite_gem_2_connected",
       "model_type": "connected",
-      "name": "netherite_gem_2_connected"
+      "name": "netherite_gem_2_connected",
+      "textures": {
+        "ctm_cornerless": "chisel:block/netherite/netherite_border_square-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:netherite_gem_3",
-      "name": "netherite_gem_3"
+      "name": "netherite_gem_3",
+      "textures": {
+        "": "chisel:block/netherite/netherite_gem_3_connected"
+      }
     },
     {
       "block": "chisel:netherite_gem_3_connected",

@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/deepslate/deepslate_pillar_classic-bottom",
     "side": "chisel:block/deepslate/deepslate_pillar_classic-side",
-    "top": "chisel:block/deepslate/deepslate_pillar_classic-top"
+    "top": "chisel:block/deepslate/deepslate_pillar_classic-bottom"
   }
 }

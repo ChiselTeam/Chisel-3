@@ -181,7 +181,7 @@
       "name": "antiblock_white",
       "textures": {
         "": "chisel:block/antiblock/antiblock_red",
-        "bg": "chisel:block/antiblock/antiblock_white_borderless",
+        "bg": "chisel:block/technical/technical_fan_fast-top",
         "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
         "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
         "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
@@ -274,7 +274,10 @@
     {
       "block": "chisel:antiblock_white_borderless",
       "model_type": "shadeless",
-      "name": "antiblock_white_borderless"
+      "name": "antiblock_white_borderless",
+      "textures": {
+        "": "chisel:block/technical/technical_fan_fast-top"
+      }
     },
     {
       "block": "chisel:antiblock_yellow_borderless",
@@ -469,7 +472,7 @@
       "name": "antiblock_white_dull",
       "textures": {
         "": "chisel:block/antiblock/antiblock_red",
-        "bg": "chisel:block/antiblock/antiblock_white_borderless",
+        "bg": "chisel:block/technical/technical_fan_fast-top",
         "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
         "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
         "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
@@ -591,7 +594,7 @@
       "block": "chisel:antiblock_white_dull_borderless",
       "name": "antiblock_white_dull_borderless",
       "textures": {
-        "": "chisel:block/antiblock/antiblock_white_borderless"
+        "": "chisel:block/technical/technical_fan_fast-top"
       }
     },
     {

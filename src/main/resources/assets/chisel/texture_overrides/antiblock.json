@@ -258,22 +258,25 @@
   },
   "antiblock_white": {
     "": "chisel:block/antiblock/antiblock_red",
-    "bg": "chisel:block/antiblock/antiblock_white_borderless",
+    "bg": "chisel:block/technical/technical_fan_fast-top",
     "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
     "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
     "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
     "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
   },
+  "antiblock_white_borderless": {
+    "": "chisel:block/technical/technical_fan_fast-top"
+  },
   "antiblock_white_dull": {
     "": "chisel:block/antiblock/antiblock_red",
-    "bg": "chisel:block/antiblock/antiblock_white_borderless",
+    "bg": "chisel:block/technical/technical_fan_fast-top",
     "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
     "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
     "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
     "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
   },
   "antiblock_white_dull_borderless": {
-    "": "chisel:block/antiblock/antiblock_white_borderless"
+    "": "chisel:block/technical/technical_fan_fast-top"
   },
   "antiblock_yellow": {
     "": "chisel:block/antiblock/antiblock_red",

@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/stone/stone_weaver",
-    "overlay_connected": "chisel:block/stone/stone_weaver-ctm",
-    "overlay_texture": "chisel:block/stone/stone_weaver",
-    "particle": "chisel:block/stone/stone_weaver"
+    "particle": "chisel:block/stone/stone_weaver",
+    "standard_corner": "chisel:block/stone/stone_weaver-ctm_corner",
+    "standard_cornerless": "chisel:block/stone/stone_weaver-ctm_corner",
+    "standard_horizontal": "chisel:block/stone/stone_weaver-ctm_horizontal",
+    "standard_none": "chisel:block/stone/stone_weaver",
+    "standard_vertical": "chisel:block/stone/stone_weaver-ctm_vertical"
   }
 }

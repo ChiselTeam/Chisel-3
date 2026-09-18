@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/light_white/light_white_framed"
+    "all": "chisel:block/light_white/light_white_framed_connected"
   }
 }

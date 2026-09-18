@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/netherite/netherite_shiny"
+    "all": "chisel:block/netherite/netherite_shiny_connected"
   }
 }

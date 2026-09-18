@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/andesite/andesite_shiny"
+    "all": "chisel:block/andesite/andesite_shiny_connected"
   }
 }

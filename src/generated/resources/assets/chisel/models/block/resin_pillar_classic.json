@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/resin/resin_pillar_classic-bottom",
     "side": "chisel:block/resin/resin_pillar_classic-side",
-    "top": "chisel:block/resin/resin_pillar_classic-top"
+    "top": "chisel:block/resin/resin_pillar_classic-bottom"
   }
 }

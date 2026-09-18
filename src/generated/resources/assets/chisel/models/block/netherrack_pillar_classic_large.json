@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/netherrack/netherrack_pillar_classic_large-bottom",
     "side": "chisel:block/netherrack/netherrack_pillar_classic_large-side",
-    "top": "chisel:block/netherrack/netherrack_pillar_classic_large-top"
+    "top": "chisel:block/netherrack/netherrack_pillar_classic_large-bottom"
   }
 }

@@ -2,14 +2,13 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/basalt/basalt_pillar_ionic_dent-side",
-    "bottom": "chisel:block/basalt/basalt_pillar_ionic_dent-bottom",
-    "overlay_bottom": "chisel:block/basalt/basalt_pillar_ionic_dent-bottom",
-    "overlay_side_connected": "chisel:block/basalt/basalt_pillar_ionic_dent-side-ctm",
-    "overlay_texture": "chisel:block/basalt/basalt_pillar_ionic_dent-side",
-    "overlay_top": "chisel:block/basalt/basalt_pillar_ionic_dent-top",
-    "overlay_vertical": "chisel:block/basalt/basalt_pillar_ionic_dent-side-ctm",
+    "bottom": "chisel:block/basalt/basalt_pillar_basic-bottom",
     "particle": "chisel:block/basalt/basalt_pillar_ionic_dent-side",
     "side": "chisel:block/basalt/basalt_pillar_ionic_dent-side",
-    "top": "chisel:block/basalt/basalt_pillar_ionic_dent-top"
+    "top": "chisel:block/basalt/basalt_pillar_basic-bottom",
+    "vertical_both": "chisel:block/basalt/basalt_pillar_basic_dent-vertical_both",
+    "vertical_bottom": "chisel:block/basalt/basalt_pillar_ionic_dent-side",
+    "vertical_none": "chisel:block/basalt/basalt_pillar_ionic-vertical_none",
+    "vertical_top": "chisel:block/basalt/basalt_pillar_ionic_dent-vertical_top"
   }
 }

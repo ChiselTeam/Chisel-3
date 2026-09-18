@@ -3,13 +3,12 @@
   "textures": {
     "all": "chisel:block/netherrack/netherrack_pillar_basic-side",
     "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-    "overlay_bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-    "overlay_side_connected": "chisel:block/netherrack/netherrack_pillar_basic-side-ctm",
-    "overlay_texture": "chisel:block/netherrack/netherrack_pillar_basic-side",
-    "overlay_top": "chisel:block/netherrack/netherrack_pillar_basic-top",
-    "overlay_vertical": "chisel:block/netherrack/netherrack_pillar_basic-side-ctm",
     "particle": "chisel:block/netherrack/netherrack_pillar_basic-side",
     "side": "chisel:block/netherrack/netherrack_pillar_basic-side",
-    "top": "chisel:block/netherrack/netherrack_pillar_basic-top"
+    "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
+    "vertical_both": "chisel:block/netherrack/netherrack_pillar_basic-vertical_both",
+    "vertical_bottom": "chisel:block/netherrack/netherrack_pillar_basic-vertical_bottom",
+    "vertical_none": "chisel:block/netherrack/netherrack_pillar_basic-side",
+    "vertical_top": "chisel:block/netherrack/netherrack_pillar_basic-vertical_top"
   }
 }

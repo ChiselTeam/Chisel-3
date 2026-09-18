@@ -15,8 +15,70 @@
       }
     },
     {
+      "block": "chisel:limestone_border_square",
+      "model_type": "connected",
+      "name": "limestone_border_square",
+      "textures": {
+        "ctm_corner": "chisel:block/limestone/limestone_border_square",
+        "ctm_horizontal": "chisel:block/limestone/limestone_border_square",
+        "ctm_vertical": "chisel:block/limestone/limestone_border_square"
+      }
+    },
+    {
       "block": "chisel:limestone_braid",
       "name": "limestone_braid"
+    },
+    {
+      "block": "chisel:limestone_braid_encased",
+      "model_type": "connected",
+      "name": "limestone_braid_encased"
+    },
+    {
+      "block": "chisel:limestone_cracked_bricks",
+      "name": "limestone_cracked_bricks"
+    },
+    {
+      "block": "chisel:limestone_encased_bricks",
+      "model_type": "connected",
+      "name": "limestone_encased_bricks"
+    },
+    {
+      "block": "chisel:limestone_bricks_indent",
+      "name": "limestone_bricks_indent"
+    },
+    {
+      "block": "chisel:limestone_bricks_inlayed",
+      "name": "limestone_bricks_inlayed"
+    },
+    {
+      "block": "chisel:limestone_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "limestone_bricks_large",
+      "textures": {
+        "2x2_bottom_right": "chisel:block/limestone/limestone_bricks_large",
+        "2x2_top_left": "chisel:block/limestone/limestone_bricks_large",
+        "2x2_top_right": "chisel:block/limestone/limestone_bricks_large-2x2_bottom_left"
+      }
+    },
+    {
+      "block": "chisel:limestone_small_bricks",
+      "name": "limestone_small_bricks"
+    },
+    {
+      "block": "chisel:limestone_soft_bricks",
+      "name": "limestone_soft_bricks"
+    },
+    {
+      "block": "chisel:limestone_solid_bricks",
+      "name": "limestone_solid_bricks"
+    },
+    {
+      "block": "chisel:limestone_triple_bricks",
+      "name": "limestone_triple_bricks"
+    },
+    {
+      "block": "chisel:limestone_bricks_vertical",
+      "name": "limestone_bricks_vertical"
     },
     {
       "block": "chisel:limestone_chaotic_bricks",
@@ -35,17 +97,25 @@
       "name": "limestone_chaotic_small"
     },
     {
+      "block": "chisel:limestone_checker",
+      "name": "limestone_checker"
+    },
+    {
+      "block": "chisel:limestone_checker_small",
+      "name": "limestone_checker_small"
+    },
+    {
       "block": "chisel:limestone_circular",
       "model_type": "connected",
       "name": "limestone_circular"
     },
     {
-      "block": "chisel:limestone_cracked",
-      "name": "limestone_cracked"
+      "block": "chisel:limestone_cobble",
+      "name": "limestone_cobble"
     },
     {
-      "block": "chisel:limestone_cracked_bricks",
-      "name": "limestone_cracked_bricks"
+      "block": "chisel:limestone_cracked",
+      "name": "limestone_cracked"
     },
     {
       "block": "chisel:limestone_cuts",
@@ -61,17 +131,20 @@
       "name": "limestone_dent"
     },
     {
-      "block": "chisel:limestone_encased_bricks",
-      "model_type": "connected",
-      "name": "limestone_encased_bricks"
-    },
-    {
       "block": "chisel:limestone_french_1",
       "name": "limestone_french_1"
     },
     {
       "block": "chisel:limestone_french_2",
       "name": "limestone_french_2"
+    },
+    {
+      "block": "chisel:limestone_indent",
+      "model_type": "connected",
+      "name": "limestone_indent",
+      "textures": {
+        "ctm_cornerless": "chisel:block/limestone/limestone_border_square-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:limestone_jellybean",
@@ -84,6 +157,41 @@
     {
       "block": "chisel:limestone_layers",
       "name": "limestone_layers"
+    },
+    {
+      "block": "chisel:limestone_layers_connected",
+      "model_type": "connected",
+      "name": "limestone_layers_connected",
+      "textures": {
+        "ctm_cornerless": "chisel:block/limestone/limestone_layers_connected-ctm_corner",
+        "ctm_horizontal": "chisel:block/limestone/limestone_layers_connected",
+        "ctm_vertical": "chisel:block/limestone/limestone_layers_connected-ctm_corner"
+      }
+    },
+    {
+      "block": "chisel:limestone_line_horizontal",
+      "name": "limestone_line_horizontal"
+    },
+    {
+      "block": "chisel:limestone_line_vertical",
+      "name": "limestone_line_vertical"
+    },
+    {
+      "block": "chisel:limestone_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "limestone_meander_horizontal",
+      "textures": {
+        "top": "chisel:block/limestone/limestone_meander_horizontal-bottom"
+      }
+    },
+    {
+      "block": "chisel:limestone_meander_vertical",
+      "model_type": "ctmv",
+      "name": "limestone_meander_vertical",
+      "textures": {
+        "top": "chisel:block/limestone/limestone_meander_vertical-bottom",
+        "vertical_none": "chisel:block/limestone/limestone_meander_vertical-side"
+      }
     },
     {
       "block": "chisel:limestone_mosaic",
@@ -107,6 +215,236 @@
       }
     },
     {
+      "block": "chisel:limestone_pillar_basic",
+      "model_type": "ctmv",
+      "name": "limestone_pillar_basic",
+      "textures": {
+        "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "vertical_none": "chisel:block/limestone/limestone_pillar_basic-side"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "limestone_pillar_basic_dent",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "vertical_none": "chisel:block/limestone/limestone_pillar_basic_dent-side"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "limestone_pillar_basic_plain",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "vertical_none": "chisel:block/limestone/limestone_pillar_basic_plain-side"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "limestone_pillar_basic_round",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "vertical_none": "chisel:block/limestone/limestone_pillar_basic_round-side"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "limestone_pillar_basic_spiral",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "vertical_none": "chisel:block/limestone/limestone_pillar_basic_spiral-side"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "limestone_pillar_classic",
+      "textures": {
+        "top": "chisel:block/limestone/limestone_pillar_classic-bottom"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "limestone_pillar_classic_large",
+      "textures": {
+        "top": "chisel:block/limestone/limestone_pillar_classic_large-bottom"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "limestone_pillar_ionic",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "vertical_none": "chisel:block/limestone/limestone_pillar_ionic-side"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "limestone_pillar_ionic_dent",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "side": "chisel:block/limestone/limestone_pillar_ionic-side",
+        "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/limestone/limestone_pillar_basic_dent-vertical_both",
+        "vertical_none": "chisel:block/limestone/limestone_pillar_ionic-side"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "limestone_pillar_ionic_plain",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "side": "chisel:block/limestone/limestone_pillar_ionic-side",
+        "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/limestone/limestone_pillar_basic_plain-vertical_both",
+        "vertical_none": "chisel:block/limestone/limestone_pillar_ionic-side"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "limestone_pillar_ionic_round",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "side": "chisel:block/limestone/limestone_pillar_ionic-side",
+        "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/limestone/limestone_pillar_basic_round-vertical_both",
+        "vertical_none": "chisel:block/limestone/limestone_pillar_ionic-side"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "limestone_pillar_ionic_spiral",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "side": "chisel:block/limestone/limestone_pillar_ionic-side",
+        "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/limestone/limestone_pillar_basic_spiral-vertical_both",
+        "vertical_none": "chisel:block/limestone/limestone_pillar_ionic-side"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "limestone_pillar_large_basic_triple",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "vertical_none": "chisel:block/limestone/limestone_pillar_large_basic_triple-side"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "limestone_pillar_large_ionic_triple",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/limestone/limestone_pillar_large_basic_triple-vertical_both",
+        "vertical_none": "chisel:block/limestone/limestone_pillar_large_ionic_triple-side"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_meander",
+      "model_type": "ctmv",
+      "name": "limestone_pillar_meander",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/limestone/limestone_pillar_ionic-vertical_both",
+        "vertical_none": "chisel:block/limestone/limestone_pillar_meander-side"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "limestone_pillar_meander_dent",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "side": "chisel:block/limestone/limestone_pillar_meander-side",
+        "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/limestone/limestone_pillar_basic_dent-vertical_both",
+        "vertical_none": "chisel:block/limestone/limestone_pillar_meander-side"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "limestone_pillar_meander_plain",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "side": "chisel:block/limestone/limestone_pillar_meander-side",
+        "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/limestone/limestone_pillar_basic_plain-vertical_both",
+        "vertical_none": "chisel:block/limestone/limestone_pillar_meander-side"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "limestone_pillar_meander_round",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "side": "chisel:block/limestone/limestone_pillar_meander-side",
+        "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/limestone/limestone_pillar_basic_round-vertical_both",
+        "vertical_none": "chisel:block/limestone/limestone_pillar_meander-side"
+      }
+    },
+    {
+      "block": "chisel:limestone_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "limestone_pillar_meander_spiral",
+      "textures": {
+        "bottom": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "side": "chisel:block/limestone/limestone_pillar_meander-side",
+        "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/limestone/limestone_pillar_basic_spiral-vertical_both",
+        "vertical_none": "chisel:block/limestone/limestone_pillar_meander-side"
+      }
+    },
+    {
+      "block": "chisel:limestone_plate",
+      "name": "limestone_plate",
+      "textures": {
+        "": "chisel:block/limestone/limestone_plate_connected"
+      }
+    },
+    {
+      "block": "chisel:limestone_plate_connected",
+      "model_type": "connected",
+      "name": "limestone_plate_connected",
+      "textures": {
+        "ctm_cornerless": "chisel:block/limestone/limestone_border_square-ctm_cornerless"
+      }
+    },
+    {
+      "block": "chisel:limestone_polished",
+      "name": "limestone_polished",
+      "textures": {
+        "": "chisel:block/limestone/limestone_tiles_large"
+      }
+    },
+    {
+      "block": "chisel:limestone_polished_encased",
+      "model_type": "connected",
+      "name": "limestone_polished_encased"
+    },
+    {
       "block": "chisel:limestone_prism",
       "name": "limestone_prism"
     },
@@ -123,16 +461,8 @@
       }
     },
     {
-      "block": "chisel:limestone_small_bricks",
-      "name": "limestone_small_bricks"
-    },
-    {
-      "block": "chisel:limestone_soft_bricks",
-      "name": "limestone_soft_bricks"
-    },
-    {
-      "block": "chisel:limestone_solid_bricks",
-      "name": "limestone_solid_bricks"
+      "block": "chisel:limestone_tiles_medium",
+      "name": "limestone_tiles_medium"
     },
     {
       "block": "chisel:limestone_tiles_large",
@@ -140,16 +470,8 @@
       "name": "limestone_tiles_large"
     },
     {
-      "block": "chisel:limestone_tiles_medium",
-      "name": "limestone_tiles_medium"
-    },
-    {
       "block": "chisel:limestone_tiles_small",
       "name": "limestone_tiles_small"
-    },
-    {
-      "block": "chisel:limestone_triple_bricks",
-      "name": "limestone_triple_bricks"
     },
     {
       "block": "chisel:limestone_twisted",
@@ -166,10 +488,269 @@
     },
     {
       "block": "chisel:limestone_zag",
-      "model_type": "ar",
+      "model_type": "v4",
       "name": "limestone_zag",
       "textures": {
-        "ar_variant_1": "chisel:block/limestone/limestone_zag"
+        "ar_variant_1": "chisel:block/limestone/limestone_zag",
+        "v4_top_right": "chisel:block/limestone/limestone_zag-v4_bottom_left"
+      }
+    },
+    {
+      "block": "chisel:limestone_crate",
+      "model_type": "connected",
+      "name": "limestone_crate"
+    },
+    {
+      "block": "chisel:limestone_herringbone",
+      "name": "limestone_herringbone"
+    },
+    {
+      "block": "chisel:limestone_herringbone_encased",
+      "model_type": "connected",
+      "name": "limestone_herringbone_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/limestone/limestone_herringbone"
+      }
+    },
+    {
+      "block": "chisel:limestone_medallion",
+      "name": "limestone_medallion"
+    },
+    {
+      "block": "chisel:limestone_medallion_encased",
+      "model_type": "connected",
+      "name": "limestone_medallion_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/limestone/limestone_medallion"
+      }
+    },
+    {
+      "block": "chisel:limestone_dots",
+      "name": "limestone_dots"
+    },
+    {
+      "block": "chisel:limestone_dots_encased",
+      "model_type": "connected",
+      "name": "limestone_dots_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/limestone/limestone_dots"
+      }
+    },
+    {
+      "block": "chisel:limestone_heart",
+      "name": "limestone_heart"
+    },
+    {
+      "block": "chisel:limestone_star",
+      "name": "limestone_star"
+    },
+    {
+      "block": "chisel:limestone_plating",
+      "name": "limestone_plating"
+    },
+    {
+      "block": "chisel:limestone_lodestone",
+      "name": "limestone_lodestone",
+      "textures": {
+        "": "chisel:block/limestone/limestone_lodestone_connected"
+      }
+    },
+    {
+      "block": "chisel:limestone_lodestone_connected",
+      "model_type": "connected",
+      "name": "limestone_lodestone_connected",
+      "textures": {
+        "ctm_cornerless": "chisel:block/limestone/limestone_lodestone_connected"
+      }
+    },
+    {
+      "block": "chisel:limestone_plank",
+      "name": "limestone_plank",
+      "textures": {
+        "": "chisel:block/limestone/limestone_plank_connected"
+      }
+    },
+    {
+      "block": "chisel:limestone_plank_connected",
+      "model_type": "connected",
+      "name": "limestone_plank_connected"
+    },
+    {
+      "block": "chisel:limestone_frame",
+      "name": "limestone_frame"
+    },
+    {
+      "block": "chisel:limestone_panel_1",
+      "name": "limestone_panel_1"
+    },
+    {
+      "block": "chisel:limestone_panel_2",
+      "name": "limestone_panel_2"
+    },
+    {
+      "block": "chisel:limestone_panel_3",
+      "name": "limestone_panel_3"
+    },
+    {
+      "block": "chisel:limestone_skull_creeper",
+      "name": "limestone_skull_creeper"
+    },
+    {
+      "block": "chisel:limestone_skull_skeleton",
+      "name": "limestone_skull_skeleton"
+    },
+    {
+      "block": "chisel:limestone_stripes",
+      "name": "limestone_stripes"
+    },
+    {
+      "block": "chisel:limestone_stripes_encased",
+      "model_type": "connected",
+      "name": "limestone_stripes_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/limestone/limestone_stripes"
+      }
+    },
+    {
+      "block": "chisel:limestone_chisel_1",
+      "name": "limestone_chisel_1"
+    },
+    {
+      "block": "chisel:limestone_chisel_2",
+      "name": "limestone_chisel_2"
+    },
+    {
+      "block": "chisel:limestone_chisel_3",
+      "name": "limestone_chisel_3"
+    },
+    {
+      "block": "chisel:limestone_chisel_4",
+      "name": "limestone_chisel_4"
+    },
+    {
+      "block": "chisel:limestone_chisel_5",
+      "name": "limestone_chisel_5"
+    },
+    {
+      "block": "chisel:limestone_chisel_6",
+      "name": "limestone_chisel_6"
+    },
+    {
+      "block": "chisel:limestone_facet",
+      "name": "limestone_facet"
+    },
+    {
+      "block": "chisel:limestone_facet_small",
+      "name": "limestone_facet_small"
+    },
+    {
+      "block": "chisel:limestone_facet_small_encased",
+      "model_type": "connected",
+      "name": "limestone_facet_small_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/limestone/limestone_facet_small"
+      }
+    },
+    {
+      "block": "chisel:limestone_shiny",
+      "name": "limestone_shiny",
+      "textures": {
+        "": "chisel:block/limestone/limestone_shiny_connected"
+      }
+    },
+    {
+      "block": "chisel:limestone_shiny_connected",
+      "model_type": "connected",
+      "name": "limestone_shiny_connected"
+    },
+    {
+      "block": "chisel:limestone_gem",
+      "name": "limestone_gem"
+    },
+    {
+      "block": "chisel:limestone_gem_1",
+      "name": "limestone_gem_1",
+      "textures": {
+        "": "chisel:block/limestone/limestone_gem_1_connected"
+      }
+    },
+    {
+      "block": "chisel:limestone_gem_1_connected",
+      "model_type": "connected",
+      "name": "limestone_gem_1_connected",
+      "textures": {
+        "ctm_cornerless": "chisel:block/limestone/limestone_border_square-ctm_cornerless"
+      }
+    },
+    {
+      "block": "chisel:limestone_gem_2",
+      "name": "limestone_gem_2",
+      "textures": {
+        "": "chisel:block/limestone/limestone_gem_2_connected"
+      }
+    },
+    {
+      "block": "chisel:limestone_gem_2_connected",
+      "model_type": "connected",
+      "name": "limestone_gem_2_connected",
+      "textures": {
+        "ctm_cornerless": "chisel:block/limestone/limestone_border_square-ctm_cornerless"
+      }
+    },
+    {
+      "block": "chisel:limestone_gem_3",
+      "name": "limestone_gem_3",
+      "textures": {
+        "": "chisel:block/limestone/limestone_gem_3_connected"
+      }
+    },
+    {
+      "block": "chisel:limestone_gem_3_connected",
+      "model_type": "connected",
+      "name": "limestone_gem_3_connected"
+    },
+    {
+      "block": "chisel:limestone_bricks_square",
+      "name": "limestone_bricks_square"
+    },
+    {
+      "block": "chisel:limestone_slab",
+      "name": "limestone_slab"
+    },
+    {
+      "block": "chisel:limestone_scaffold",
+      "name": "limestone_scaffold"
+    },
+    {
+      "block": "chisel:limestone_scaffold_encased",
+      "model_type": "connected",
+      "name": "limestone_scaffold_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/limestone/limestone_scaffold"
+      }
+    },
+    {
+      "block": "chisel:limestone_tiles_inlayed",
+      "name": "limestone_tiles_inlayed"
+    },
+    {
+      "block": "chisel:limestone_waves",
+      "model_type": "multiblock_2x2",
+      "name": "limestone_waves",
+      "textures": {
+        "2x2_top_left": "chisel:block/limestone/limestone_waves"
+      }
+    },
+    {
+      "block": "chisel:limestone_parquet",
+      "name": "limestone_parquet"
+    },
+    {
+      "block": "chisel:limestone_parquet_encased",
+      "model_type": "connected",
+      "name": "limestone_parquet_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/limestone/limestone_parquet"
       }
     }
   ]

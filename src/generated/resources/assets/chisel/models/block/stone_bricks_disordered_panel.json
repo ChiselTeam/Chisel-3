@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/stone_bricks/stone_bricks_panel_hard"
+    "all": "chisel:block/stone/stone_bricks_panel_hard"
   }
 }

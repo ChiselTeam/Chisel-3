@@ -1,15 +1,14 @@
 {
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/resin/resin_pillar_ionic_dent-side",
-    "bottom": "chisel:block/resin/resin_pillar_ionic_dent-bottom",
-    "overlay_bottom": "chisel:block/resin/resin_pillar_ionic_dent-bottom",
-    "overlay_side_connected": "chisel:block/resin/resin_pillar_ionic_dent-side-ctm",
-    "overlay_texture": "chisel:block/resin/resin_pillar_ionic_dent-side",
-    "overlay_top": "chisel:block/resin/resin_pillar_ionic_dent-top",
-    "overlay_vertical": "chisel:block/resin/resin_pillar_ionic_dent-side-ctm",
-    "particle": "chisel:block/resin/resin_pillar_ionic_dent-side",
-    "side": "chisel:block/resin/resin_pillar_ionic_dent-side",
-    "top": "chisel:block/resin/resin_pillar_ionic_dent-top"
+    "all": "chisel:block/resin/resin_pillar_ionic-side",
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "particle": "chisel:block/resin/resin_pillar_ionic-side",
+    "side": "chisel:block/resin/resin_pillar_ionic-side",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_both": "chisel:block/resin/resin_pillar_basic_dent-vertical_both",
+    "vertical_bottom": "chisel:block/resin/resin_pillar_ionic_dent-vertical_bottom",
+    "vertical_none": "chisel:block/resin/resin_pillar_ionic-side",
+    "vertical_top": "chisel:block/resin/resin_pillar_ionic_dent-vertical_top"
   }
 }

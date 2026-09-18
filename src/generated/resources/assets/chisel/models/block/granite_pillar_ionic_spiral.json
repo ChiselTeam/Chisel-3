@@ -1,15 +1,14 @@
 {
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/granite/granite_pillar_ionic_spiral-side",
-    "bottom": "chisel:block/granite/granite_pillar_ionic_spiral-bottom",
-    "overlay_bottom": "chisel:block/granite/granite_pillar_ionic_spiral-bottom",
-    "overlay_side_connected": "chisel:block/granite/granite_pillar_ionic_spiral-side-ctm",
-    "overlay_texture": "chisel:block/granite/granite_pillar_ionic_spiral-side",
-    "overlay_top": "chisel:block/granite/granite_pillar_ionic_spiral-top",
-    "overlay_vertical": "chisel:block/granite/granite_pillar_ionic_spiral-side-ctm",
-    "particle": "chisel:block/granite/granite_pillar_ionic_spiral-side",
-    "side": "chisel:block/granite/granite_pillar_ionic_spiral-side",
-    "top": "chisel:block/granite/granite_pillar_ionic_spiral-top"
+    "all": "chisel:block/granite/granite_pillar_ionic-side",
+    "bottom": "chisel:block/granite/granite_pillar_basic-bottom",
+    "particle": "chisel:block/granite/granite_pillar_ionic-side",
+    "side": "chisel:block/granite/granite_pillar_ionic-side",
+    "top": "chisel:block/granite/granite_pillar_basic-bottom",
+    "vertical_both": "chisel:block/granite/granite_pillar_basic_spiral-vertical_both",
+    "vertical_bottom": "chisel:block/granite/granite_pillar_ionic_spiral-vertical_bottom",
+    "vertical_none": "chisel:block/granite/granite_pillar_ionic-vertical_none",
+    "vertical_top": "chisel:block/granite/granite_pillar_ionic_spiral-vertical_top"
   }
 }

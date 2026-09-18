@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/packed_mud/packed_mud_pillar_classic_large-bottom",
     "side": "chisel:block/packed_mud/packed_mud_pillar_classic_large-side",
-    "top": "chisel:block/packed_mud/packed_mud_pillar_classic_large-top"
+    "top": "chisel:block/packed_mud/packed_mud_pillar_classic_large-bottom"
   }
 }

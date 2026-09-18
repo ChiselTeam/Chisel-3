@@ -2,14 +2,13 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/nether_brick/nether_bricks_pillar_basic_round-side",
-    "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic_round-bottom",
-    "overlay_bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic_round-bottom",
-    "overlay_side_connected": "chisel:block/nether_brick/nether_bricks_pillar_basic_round-side-ctm",
-    "overlay_texture": "chisel:block/nether_brick/nether_bricks_pillar_basic_round-side",
-    "overlay_top": "chisel:block/nether_brick/nether_bricks_pillar_basic_round-top",
-    "overlay_vertical": "chisel:block/nether_brick/nether_bricks_pillar_basic_round-side-ctm",
+    "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
     "particle": "chisel:block/nether_brick/nether_bricks_pillar_basic_round-side",
     "side": "chisel:block/nether_brick/nether_bricks_pillar_basic_round-side",
-    "top": "chisel:block/nether_brick/nether_bricks_pillar_basic_round-top"
+    "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
+    "vertical_both": "chisel:block/nether_brick/nether_bricks_pillar_basic_round-vertical_both",
+    "vertical_bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic_round-vertical_bottom",
+    "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_basic_round-side",
+    "vertical_top": "chisel:block/nether_brick/nether_bricks_pillar_basic_round-vertical_top"
   }
 }

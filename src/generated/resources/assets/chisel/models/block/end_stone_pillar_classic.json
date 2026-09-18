@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/end_stone/end_stone_pillar_classic-bottom",
     "side": "chisel:block/end_stone/end_stone_pillar_classic-side",
-    "top": "chisel:block/end_stone/end_stone_pillar_classic-top"
+    "top": "chisel:block/end_stone/end_stone_pillar_classic-bottom"
   }
 }
