@@ -1,0 +1,18 @@
+{
+  "nexus_grate_pillar": {
+    "top": "chisel:block/nexus/nexus_grate_pillar-bottom"
+  },
+  "nexus_plating_pillar": {
+    "top": "chisel:block/nexus/nexus_plating_pillar-bottom"
+  },
+  "nexus_railing_pillar": {
+    "bottom": "chisel:block/nexus/nexus_railing_pillar-side",
+    "top": "chisel:block/nexus/nexus_railing_pillar-side",
+    "vertical_bottom": "chisel:block/nexus/nexus_railing_pillar-side",
+    "vertical_none": "chisel:block/nexus/nexus_railing_pillar-side",
+    "vertical_top": "chisel:block/nexus/nexus_railing_pillar-side"
+  },
+  "nexus_weave_pillar": {
+    "top": "chisel:block/nexus/nexus_weave_pillar-bottom"
+  }
+}

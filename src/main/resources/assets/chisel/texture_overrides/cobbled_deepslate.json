@@ -1,0 +1,247 @@
+{
+  "cobbled_deepslate_array": {
+    "2x2_bottom_left": "chisel:block/cobbled_deepslate/cobbled_deepslate_array"
+  },
+  "cobbled_deepslate_border_square": {
+    "ctm_corner": "chisel:block/cobbled_deepslate/cobbled_deepslate_border_square",
+    "ctm_horizontal": "chisel:block/cobbled_deepslate/cobbled_deepslate_border_square",
+    "ctm_vertical": "chisel:block/cobbled_deepslate/cobbled_deepslate_border_square"
+  },
+  "cobbled_deepslate_braid_encased": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_braid"
+  },
+  "cobbled_deepslate_bricks_large": {
+    "2x2_bottom_right": "chisel:block/cobbled_deepslate/cobbled_deepslate_bricks_large",
+    "2x2_top_left": "chisel:block/cobbled_deepslate/cobbled_deepslate_bricks_large",
+    "2x2_top_right": "chisel:block/cobbled_deepslate/cobbled_deepslate_bricks_large-2x2_bottom_left"
+  },
+  "cobbled_deepslate_bricks_solid": {
+    "": "chisel:block/cobbled_deepslate/cobbled_deepslate_bricks_encased-ctm_cornerless"
+  },
+  "cobbled_deepslate_chaotic": {
+    "3x3_top_left": "chisel:block/cobbled_deepslate/cobbled_deepslate_chaotic"
+  },
+  "cobbled_deepslate_circular": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_border_square-ctm_cornerless"
+  },
+  "cobbled_deepslate_cuts": {
+    "4x4_row_0_column_0": "chisel:block/cobbled_deepslate/cobbled_deepslate_cuts"
+  },
+  "cobbled_deepslate_dent": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_border_square-ctm_cornerless"
+  },
+  "cobbled_deepslate_dots_encased": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_dots"
+  },
+  "cobbled_deepslate_facet_small_encased": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_facet_small"
+  },
+  "cobbled_deepslate_gem_1": {
+    "": "chisel:block/cobbled_deepslate/cobbled_deepslate_gem_1_connected"
+  },
+  "cobbled_deepslate_gem_1_connected": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_border_square-ctm_cornerless"
+  },
+  "cobbled_deepslate_gem_2": {
+    "": "chisel:block/cobbled_deepslate/cobbled_deepslate_gem_2_connected"
+  },
+  "cobbled_deepslate_gem_2_connected": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_border_square-ctm_cornerless"
+  },
+  "cobbled_deepslate_gem_3": {
+    "": "chisel:block/cobbled_deepslate/cobbled_deepslate_gem_3_connected"
+  },
+  "cobbled_deepslate_herringbone_encased": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_herringbone"
+  },
+  "cobbled_deepslate_indent": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_border_square-ctm_cornerless"
+  },
+  "cobbled_deepslate_jellybean": {
+    "2x2_top_left": "chisel:block/cobbled_deepslate/cobbled_deepslate_jellybean"
+  },
+  "cobbled_deepslate_layers": {
+    "": "chisel:block/cobbled_deepslate/cobbled_deepslate_layers_connected"
+  },
+  "cobbled_deepslate_layers_connected": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_layers_connected-ctm_corner",
+    "ctm_horizontal": "chisel:block/cobbled_deepslate/cobbled_deepslate_layers_connected",
+    "ctm_vertical": "chisel:block/cobbled_deepslate/cobbled_deepslate_layers_connected-ctm_corner"
+  },
+  "cobbled_deepslate_lodestone": {
+    "": "chisel:block/cobbled_deepslate/cobbled_deepslate_lodestone_connected"
+  },
+  "cobbled_deepslate_lodestone_connected": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_lodestone_connected"
+  },
+  "cobbled_deepslate_meander_horizontal": {
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_meander_horizontal-bottom"
+  },
+  "cobbled_deepslate_meander_vertical": {
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_meander_vertical-bottom",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_meander_vertical-side"
+  },
+  "cobbled_deepslate_medallion_encased": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_medallion"
+  },
+  "cobbled_deepslate_mosaic": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_border_square-ctm_cornerless"
+  },
+  "cobbled_deepslate_parquet_encased": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_parquet"
+  },
+  "cobbled_deepslate_pillar": {
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar-bottom"
+  },
+  "cobbled_deepslate_pillar_basic": {
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-side"
+  },
+  "cobbled_deepslate_pillar_basic_dent": {
+    "bottom": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic_dent-side"
+  },
+  "cobbled_deepslate_pillar_basic_plain": {
+    "bottom": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic_plain-side"
+  },
+  "cobbled_deepslate_pillar_basic_round": {
+    "bottom": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic_round-side"
+  },
+  "cobbled_deepslate_pillar_basic_spiral": {
+    "bottom": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic_spiral-side"
+  },
+  "cobbled_deepslate_pillar_classic": {
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_classic-bottom"
+  },
+  "cobbled_deepslate_pillar_classic_large": {
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_classic_large-bottom"
+  },
+  "cobbled_deepslate_pillar_ionic": {
+    "bottom": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_ionic-side"
+  },
+  "cobbled_deepslate_pillar_ionic_dent": {
+    "bottom": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "side": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_ionic-side",
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "vertical_both": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic_dent-vertical_both",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_ionic-side"
+  },
+  "cobbled_deepslate_pillar_ionic_plain": {
+    "bottom": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "side": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_ionic-side",
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "vertical_both": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic_plain-vertical_both",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_ionic-side"
+  },
+  "cobbled_deepslate_pillar_ionic_round": {
+    "bottom": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "side": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_ionic-side",
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "vertical_both": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic_round-vertical_both",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_ionic-side"
+  },
+  "cobbled_deepslate_pillar_ionic_spiral": {
+    "bottom": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "side": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_ionic-side",
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "vertical_both": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic_spiral-vertical_both",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_ionic-side"
+  },
+  "cobbled_deepslate_pillar_large_basic_triple": {
+    "bottom": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_large_basic_triple-side"
+  },
+  "cobbled_deepslate_pillar_large_ionic_triple": {
+    "bottom": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "vertical_both": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_large_basic_triple-vertical_both",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_large_ionic_triple-side"
+  },
+  "cobbled_deepslate_pillar_meander": {
+    "bottom": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "vertical_both": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_ionic-vertical_both",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_meander-side"
+  },
+  "cobbled_deepslate_pillar_meander_dent": {
+    "bottom": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "side": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_meander-side",
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "vertical_both": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic_dent-vertical_both",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_meander-side"
+  },
+  "cobbled_deepslate_pillar_meander_plain": {
+    "bottom": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "side": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_meander-side",
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "vertical_both": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic_plain-vertical_both",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_meander-side"
+  },
+  "cobbled_deepslate_pillar_meander_round": {
+    "bottom": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "side": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_meander-side",
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "vertical_both": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic_round-vertical_both",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_meander-side"
+  },
+  "cobbled_deepslate_pillar_meander_spiral": {
+    "bottom": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "side": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_meander-side",
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic-bottom",
+    "vertical_both": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_basic_spiral-vertical_both",
+    "vertical_none": "chisel:block/cobbled_deepslate/cobbled_deepslate_pillar_meander-side"
+  },
+  "cobbled_deepslate_plank": {
+    "": "chisel:block/cobbled_deepslate/cobbled_deepslate_plank_connected"
+  },
+  "cobbled_deepslate_plate": {
+    "": "chisel:block/cobbled_deepslate/cobbled_deepslate_plate_connected"
+  },
+  "cobbled_deepslate_plate_connected": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_border_square-ctm_cornerless"
+  },
+  "cobbled_deepslate_polished": {
+    "": "chisel:block/cobbled_deepslate/cobbled_deepslate_tiles_large"
+  },
+  "cobbled_deepslate_raw": {
+    "": "chisel:block/cobbled_deepslate/cobbled_deepslate_border_square-ctm_cornerless"
+  },
+  "cobbled_deepslate_scaffold_encased": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_scaffold"
+  },
+  "cobbled_deepslate_shiny": {
+    "": "chisel:block/cobbled_deepslate/cobbled_deepslate_shiny_connected"
+  },
+  "cobbled_deepslate_slanted": {
+    "2x2_bottom_left": "chisel:block/cobbled_deepslate/cobbled_deepslate_slanted"
+  },
+  "cobbled_deepslate_stripes_encased": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_stripes"
+  },
+  "cobbled_deepslate_tiles_large": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_border_square-ctm_cornerless"
+  },
+  "cobbled_deepslate_twisted": {
+    "top": "chisel:block/cobbled_deepslate/cobbled_deepslate_twisted-bottom"
+  },
+  "cobbled_deepslate_waves": {
+    "2x2_top_left": "chisel:block/cobbled_deepslate/cobbled_deepslate_waves"
+  },
+  "cobbled_deepslate_weaver": {
+    "ctm_cornerless": "chisel:block/cobbled_deepslate/cobbled_deepslate_weaver-ctm_corner"
+  },
+  "cobbled_deepslate_zag": {
+    "v4_top_left": "chisel:block/cobbled_deepslate/cobbled_deepslate_zag",
+    "v4_top_right": "chisel:block/cobbled_deepslate/cobbled_deepslate_zag-v4_bottom_left"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "light_white_framed": {
+    "": "chisel:block/light_white/light_white_framed_connected"
+  },
+  "light_white_framed_connected": {
+    "ctm_cornerless": "chisel:block/technical/technical_fan_fast-top"
+  }
+}

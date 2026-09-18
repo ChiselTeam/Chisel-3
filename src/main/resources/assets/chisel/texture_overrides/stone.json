@@ -1,0 +1,264 @@
+{
+  "stone_array": {
+    "2x2_bottom_left": "chisel:block/stone/stone_array"
+  },
+  "stone_border_square": {
+    "ctm_corner": "chisel:block/stone/stone_border_square",
+    "ctm_horizontal": "chisel:block/stone/stone_border_square",
+    "ctm_vertical": "chisel:block/stone/stone_border_square"
+  },
+  "stone_braid_encased": {
+    "ctm_cornerless": "chisel:block/stone/stone_braid"
+  },
+  "stone_bricks_disordered_panel": {
+    "": "chisel:block/stone/stone_bricks_panel_hard"
+  },
+  "stone_bricks_encased": {
+    "ctm_cornerless": "chisel:block/stone/stone_large_bricks"
+  },
+  "stone_bricks_mason_bricks_felsic": {
+    "": "chisel:block/stone/stone_bricks_felsic"
+  },
+  "stone_bricks_mason_bricks_mixed": {
+    "": "chisel:block/stone/stone_bricks_small"
+  },
+  "stone_bricks_panel_hard": {
+    "ctm_cornerless": "chisel:block/stone/stone_bricks_smooth"
+  },
+  "stone_bricks_panel_sunken": {
+    "ctm_cornerless": "chisel:block/stone/stone_bricks_smooth"
+  },
+  "stone_bricks_solid": {
+    "": "chisel:block/stone/stone_large_bricks"
+  },
+  "stone_chaotic": {
+    "3x3_top_left": "chisel:block/stone/stone_chaotic"
+  },
+  "stone_circular": {
+    "ctm_cornerless": "chisel:block/stone/stone_border_square-ctm_cornerless"
+  },
+  "stone_cuts": {
+    "4x4_row_0_column_0": "chisel:block/stone/stone_cuts"
+  },
+  "stone_dent": {
+    "ctm_cornerless": "chisel:block/stone/stone_border_square-ctm_cornerless"
+  },
+  "stone_dots_encased": {
+    "ctm_cornerless": "chisel:block/stone/stone_dots"
+  },
+  "stone_facet_small_encased": {
+    "ctm_cornerless": "chisel:block/stone/stone_facet_small"
+  },
+  "stone_gem_1": {
+    "": "chisel:block/stone/stone_gem_1_connected"
+  },
+  "stone_gem_1_connected": {
+    "ctm_cornerless": "chisel:block/stone/stone_border_square-ctm_cornerless"
+  },
+  "stone_gem_2": {
+    "": "chisel:block/stone/stone_gem_2_connected"
+  },
+  "stone_gem_2_connected": {
+    "ctm_cornerless": "chisel:block/stone/stone_border_square-ctm_cornerless"
+  },
+  "stone_gem_3": {
+    "": "chisel:block/stone/stone_gem_3_connected"
+  },
+  "stone_herringbone_encased": {
+    "ctm_cornerless": "chisel:block/stone/stone_herringbone"
+  },
+  "stone_indent": {
+    "ctm_cornerless": "chisel:block/stone/stone_border_square-ctm_cornerless"
+  },
+  "stone_jellybean": {
+    "2x2_top_left": "chisel:block/stone/stone_jellybean"
+  },
+  "stone_large_bricks": {
+    "2x2_top_left": "chisel:block/stone/stone_large_bricks-2x2_bottom_right",
+    "2x2_top_right": "chisel:block/stone/stone_large_bricks-2x2_bottom_left"
+  },
+  "stone_layers": {
+    "": "chisel:block/stone/stone_layers_connected"
+  },
+  "stone_layers_connected": {
+    "ctm_cornerless": "chisel:block/stone/stone_layers_connected-ctm_corner",
+    "ctm_horizontal": "chisel:block/stone/stone_layers_connected",
+    "ctm_vertical": "chisel:block/stone/stone_layers_connected-ctm_corner"
+  },
+  "stone_lodestone": {
+    "": "chisel:block/stone/stone_lodestone_connected"
+  },
+  "stone_lodestone_connected": {
+    "ctm_cornerless": "chisel:block/stone/stone_lodestone_connected"
+  },
+  "stone_meander_horizontal": {
+    "top": "chisel:block/stone/stone_meander_horizontal-bottom"
+  },
+  "stone_meander_vertical": {
+    "top": "chisel:block/stone/stone_meander_vertical-bottom",
+    "vertical_none": "chisel:block/stone/stone_meander_vertical-side"
+  },
+  "stone_medallion_encased": {
+    "ctm_cornerless": "chisel:block/stone/stone_medallion"
+  },
+  "stone_mosaic": {
+    "ctm_cornerless": "chisel:block/stone/stone_border_square-ctm_cornerless"
+  },
+  "stone_parquet_encased": {
+    "ctm_cornerless": "chisel:block/stone/stone_parquet"
+  },
+  "stone_pillar": {
+    "top": "chisel:block/stone/stone_pillar-bottom"
+  },
+  "stone_pillar_basic": {
+    "top": "chisel:block/stone/stone_pillar_basic-bottom",
+    "vertical_none": "chisel:block/stone/stone_pillar_basic-side"
+  },
+  "stone_pillar_basic_dent": {
+    "bottom": "chisel:block/stone/stone_pillar_basic-bottom",
+    "top": "chisel:block/stone/stone_pillar_basic-bottom",
+    "vertical_none": "chisel:block/stone/stone_pillar_basic_dent-side"
+  },
+  "stone_pillar_basic_plain": {
+    "bottom": "chisel:block/stone/stone_pillar_basic-bottom",
+    "top": "chisel:block/stone/stone_pillar_basic-bottom",
+    "vertical_none": "chisel:block/stone/stone_pillar_basic_plain-side"
+  },
+  "stone_pillar_basic_round": {
+    "bottom": "chisel:block/stone/stone_pillar_basic-bottom",
+    "top": "chisel:block/stone/stone_pillar_basic-bottom",
+    "vertical_none": "chisel:block/stone/stone_pillar_basic_round-side"
+  },
+  "stone_pillar_basic_spiral": {
+    "bottom": "chisel:block/stone/stone_pillar_basic-bottom",
+    "top": "chisel:block/stone/stone_pillar_basic-bottom",
+    "vertical_none": "chisel:block/stone/stone_pillar_basic_spiral-side"
+  },
+  "stone_pillar_classic": {
+    "top": "chisel:block/stone/stone_pillar_classic-bottom"
+  },
+  "stone_pillar_classic_large": {
+    "top": "chisel:block/stone/stone_pillar_classic_large-bottom"
+  },
+  "stone_pillar_ionic": {
+    "bottom": "chisel:block/stone/stone_pillar_basic-bottom",
+    "top": "chisel:block/stone/stone_pillar_basic-bottom",
+    "vertical_none": "chisel:block/stone/stone_pillar_ionic-side"
+  },
+  "stone_pillar_ionic_dent": {
+    "bottom": "chisel:block/stone/stone_pillar_basic-bottom",
+    "side": "chisel:block/stone/stone_pillar_ionic-side",
+    "top": "chisel:block/stone/stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/stone/stone_pillar_basic_dent-vertical_both",
+    "vertical_none": "chisel:block/stone/stone_pillar_ionic-side"
+  },
+  "stone_pillar_ionic_plain": {
+    "bottom": "chisel:block/stone/stone_pillar_basic-bottom",
+    "side": "chisel:block/stone/stone_pillar_ionic-side",
+    "top": "chisel:block/stone/stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/stone/stone_pillar_basic_plain-vertical_both",
+    "vertical_none": "chisel:block/stone/stone_pillar_ionic-side"
+  },
+  "stone_pillar_ionic_round": {
+    "bottom": "chisel:block/stone/stone_pillar_basic-bottom",
+    "side": "chisel:block/stone/stone_pillar_ionic-side",
+    "top": "chisel:block/stone/stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/stone/stone_pillar_basic_round-vertical_both",
+    "vertical_none": "chisel:block/stone/stone_pillar_ionic-side"
+  },
+  "stone_pillar_ionic_spiral": {
+    "bottom": "chisel:block/stone/stone_pillar_basic-bottom",
+    "side": "chisel:block/stone/stone_pillar_ionic-side",
+    "top": "chisel:block/stone/stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/stone/stone_pillar_basic_spiral-vertical_both",
+    "vertical_none": "chisel:block/stone/stone_pillar_ionic-side"
+  },
+  "stone_pillar_large_basic_triple": {
+    "bottom": "chisel:block/stone/stone_pillar_basic-bottom",
+    "top": "chisel:block/stone/stone_pillar_basic-bottom",
+    "vertical_none": "chisel:block/stone/stone_pillar_large_basic_triple-side"
+  },
+  "stone_pillar_large_ionic_triple": {
+    "bottom": "chisel:block/stone/stone_pillar_basic-bottom",
+    "top": "chisel:block/stone/stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/stone/stone_pillar_large_basic_triple-vertical_both",
+    "vertical_none": "chisel:block/stone/stone_pillar_large_ionic_triple-side"
+  },
+  "stone_pillar_meander": {
+    "bottom": "chisel:block/stone/stone_pillar_basic-bottom",
+    "top": "chisel:block/stone/stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/stone/stone_pillar_ionic-vertical_both",
+    "vertical_none": "chisel:block/stone/stone_pillar_meander-side"
+  },
+  "stone_pillar_meander_dent": {
+    "bottom": "chisel:block/stone/stone_pillar_basic-bottom",
+    "side": "chisel:block/stone/stone_pillar_meander-side",
+    "top": "chisel:block/stone/stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/stone/stone_pillar_basic_dent-vertical_both",
+    "vertical_none": "chisel:block/stone/stone_pillar_meander-side"
+  },
+  "stone_pillar_meander_plain": {
+    "bottom": "chisel:block/stone/stone_pillar_basic-bottom",
+    "side": "chisel:block/stone/stone_pillar_meander-side",
+    "top": "chisel:block/stone/stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/stone/stone_pillar_basic_plain-vertical_both",
+    "vertical_none": "chisel:block/stone/stone_pillar_meander-side"
+  },
+  "stone_pillar_meander_round": {
+    "bottom": "chisel:block/stone/stone_pillar_basic-bottom",
+    "side": "chisel:block/stone/stone_pillar_meander-side",
+    "top": "chisel:block/stone/stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/stone/stone_pillar_basic_round-vertical_both",
+    "vertical_none": "chisel:block/stone/stone_pillar_meander-side"
+  },
+  "stone_pillar_meander_spiral": {
+    "bottom": "chisel:block/stone/stone_pillar_basic-bottom",
+    "side": "chisel:block/stone/stone_pillar_meander-side",
+    "top": "chisel:block/stone/stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/stone/stone_pillar_basic_spiral-vertical_both",
+    "vertical_none": "chisel:block/stone/stone_pillar_meander-side"
+  },
+  "stone_plank": {
+    "": "chisel:block/stone/stone_plank_connected"
+  },
+  "stone_plate": {
+    "": "chisel:block/stone/stone_plate_connected"
+  },
+  "stone_plate_connected": {
+    "ctm_cornerless": "chisel:block/stone/stone_border_square-ctm_cornerless"
+  },
+  "stone_polished": {
+    "": "chisel:block/stone/stone_tiles_large"
+  },
+  "stone_raw": {
+    "": "chisel:block/stone/stone_border_square-ctm_cornerless"
+  },
+  "stone_scaffold_encased": {
+    "ctm_cornerless": "chisel:block/stone/stone_scaffold"
+  },
+  "stone_shiny": {
+    "": "chisel:block/stone/stone_shiny_connected"
+  },
+  "stone_slanted": {
+    "2x2_bottom_left": "chisel:block/stone/stone_slanted"
+  },
+  "stone_stripes_encased": {
+    "ctm_cornerless": "chisel:block/stone/stone_stripes"
+  },
+  "stone_tiles_large": {
+    "ctm_cornerless": "chisel:block/stone/stone_border_square-ctm_cornerless"
+  },
+  "stone_twisted": {
+    "top": "chisel:block/stone/stone_twisted-bottom"
+  },
+  "stone_waves": {
+    "2x2_top_left": "chisel:block/stone/stone_waves"
+  },
+  "stone_weaver": {
+    "ctm_cornerless": "chisel:block/stone/stone_weaver-ctm_corner"
+  },
+  "stone_zag": {
+    "v4_top_left": "chisel:block/stone/stone_zag",
+    "v4_top_right": "chisel:block/stone/stone_zag-v4_bottom_left"
+  }
+}

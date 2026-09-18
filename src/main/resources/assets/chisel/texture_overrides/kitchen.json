@@ -1,0 +1,18 @@
+{
+  "kitchen_checker": {
+    "": "chisel:block/kitchen/kitchen_checker_large"
+  },
+  "kitchen_checker_large": {
+    "v4_top_left": "chisel:block/kitchen/kitchen_checker_large-v4_bottom_right",
+    "v4_top_right": "chisel:block/kitchen/kitchen_checker_large-v4_bottom_left"
+  },
+  "kitchen_frame": {
+    "": "chisel:block/kitchen/kitchen_frame_connected"
+  },
+  "kitchen_stripes_encased_connected": {
+    "ctm_cornerless": "chisel:block/kitchen/kitchen_stripes-ctm_cornerless"
+  },
+  "kitchen_stripes_small_encased_connected": {
+    "ctm_cornerless": "chisel:block/kitchen/kitchen_stripes_small"
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "resin_array": {
+    "2x2_bottom_left": "chisel:block/resin/resin_array"
+  },
+  "resin_border_square": {
+    "ctm_corner": "chisel:block/resin/resin_border_square",
+    "ctm_horizontal": "chisel:block/resin/resin_border_square",
+    "ctm_vertical": "chisel:block/resin/resin_border_square"
+  },
+  "resin_braid_encased": {
+    "ctm_cornerless": "chisel:block/resin/resin_braid"
+  },
+  "resin_bricks_large": {
+    "2x2_bottom_right": "chisel:block/resin/resin_bricks_large",
+    "2x2_top_left": "chisel:block/resin/resin_bricks_large",
+    "2x2_top_right": "chisel:block/resin/resin_bricks_large-2x2_bottom_left"
+  },
+  "resin_bricks_solid": {
+    "": "chisel:block/resin/resin_bricks_encased-ctm_cornerless"
+  },
+  "resin_chaotic": {
+    "3x3_top_left": "chisel:block/resin/resin_chaotic"
+  },
+  "resin_circular": {
+    "ctm_cornerless": "chisel:block/resin/resin_border_square-ctm_cornerless"
+  },
+  "resin_cuts": {
+    "4x4_row_0_column_0": "chisel:block/resin/resin_cuts"
+  },
+  "resin_dent": {
+    "ctm_cornerless": "chisel:block/resin/resin_border_square-ctm_cornerless"
+  },
+  "resin_dots_encased": {
+    "ctm_cornerless": "chisel:block/resin/resin_dots"
+  },
+  "resin_facet_small_encased": {
+    "ctm_cornerless": "chisel:block/resin/resin_facet_small"
+  },
+  "resin_gem_1": {
+    "": "chisel:block/resin/resin_gem_1_connected"
+  },
+  "resin_gem_1_connected": {
+    "ctm_cornerless": "chisel:block/resin/resin_border_square-ctm_cornerless"
+  },
+  "resin_gem_2": {
+    "": "chisel:block/resin/resin_gem_2_connected"
+  },
+  "resin_gem_2_connected": {
+    "ctm_cornerless": "chisel:block/resin/resin_border_square-ctm_cornerless"
+  },
+  "resin_gem_3": {
+    "": "chisel:block/resin/resin_gem_3_connected"
+  },
+  "resin_herringbone_encased": {
+    "ctm_cornerless": "chisel:block/resin/resin_herringbone"
+  },
+  "resin_indent": {
+    "ctm_cornerless": "chisel:block/resin/resin_border_square-ctm_cornerless"
+  },
+  "resin_jellybean": {
+    "2x2_top_left": "chisel:block/resin/resin_jellybean"
+  },
+  "resin_layers": {
+    "": "chisel:block/resin/resin_layers_connected"
+  },
+  "resin_layers_connected": {
+    "ctm_cornerless": "chisel:block/resin/resin_layers_connected-ctm_corner",
+    "ctm_horizontal": "chisel:block/resin/resin_layers_connected",
+    "ctm_vertical": "chisel:block/resin/resin_layers_connected-ctm_corner"
+  },
+  "resin_lodestone": {
+    "": "chisel:block/resin/resin_lodestone_connected"
+  },
+  "resin_lodestone_connected": {
+    "ctm_cornerless": "chisel:block/resin/resin_lodestone_connected"
+  },
+  "resin_meander_horizontal": {
+    "top": "chisel:block/resin/resin_meander_horizontal-bottom"
+  },
+  "resin_meander_vertical": {
+    "top": "chisel:block/resin/resin_meander_vertical-bottom",
+    "vertical_none": "chisel:block/resin/resin_meander_vertical-side"
+  },
+  "resin_medallion_encased": {
+    "ctm_cornerless": "chisel:block/resin/resin_medallion"
+  },
+  "resin_mosaic": {
+    "ctm_cornerless": "chisel:block/resin/resin_border_square-ctm_cornerless"
+  },
+  "resin_parquet_encased": {
+    "ctm_cornerless": "chisel:block/resin/resin_parquet"
+  },
+  "resin_pillar": {
+    "top": "chisel:block/resin/resin_pillar-bottom"
+  },
+  "resin_pillar_basic": {
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_none": "chisel:block/resin/resin_pillar_basic-side"
+  },
+  "resin_pillar_basic_dent": {
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_none": "chisel:block/resin/resin_pillar_basic_dent-side"
+  },
+  "resin_pillar_basic_plain": {
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_none": "chisel:block/resin/resin_pillar_basic_plain-side"
+  },
+  "resin_pillar_basic_round": {
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_none": "chisel:block/resin/resin_pillar_basic_round-side"
+  },
+  "resin_pillar_basic_spiral": {
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_none": "chisel:block/resin/resin_pillar_basic_spiral-side"
+  },
+  "resin_pillar_classic": {
+    "top": "chisel:block/resin/resin_pillar_classic-bottom"
+  },
+  "resin_pillar_classic_large": {
+    "top": "chisel:block/resin/resin_pillar_classic_large-bottom"
+  },
+  "resin_pillar_ionic": {
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_none": "chisel:block/resin/resin_pillar_ionic-side"
+  },
+  "resin_pillar_ionic_dent": {
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "side": "chisel:block/resin/resin_pillar_ionic-side",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_both": "chisel:block/resin/resin_pillar_basic_dent-vertical_both",
+    "vertical_none": "chisel:block/resin/resin_pillar_ionic-side"
+  },
+  "resin_pillar_ionic_plain": {
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "side": "chisel:block/resin/resin_pillar_ionic-side",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_both": "chisel:block/resin/resin_pillar_basic_plain-vertical_both",
+    "vertical_none": "chisel:block/resin/resin_pillar_ionic-side"
+  },
+  "resin_pillar_ionic_round": {
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "side": "chisel:block/resin/resin_pillar_ionic-side",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_both": "chisel:block/resin/resin_pillar_basic_round-vertical_both",
+    "vertical_none": "chisel:block/resin/resin_pillar_ionic-side"
+  },
+  "resin_pillar_ionic_spiral": {
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "side": "chisel:block/resin/resin_pillar_ionic-side",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_both": "chisel:block/resin/resin_pillar_basic_spiral-vertical_both",
+    "vertical_none": "chisel:block/resin/resin_pillar_ionic-side"
+  },
+  "resin_pillar_large_basic_triple": {
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_none": "chisel:block/resin/resin_pillar_large_basic_triple-side"
+  },
+  "resin_pillar_large_ionic_triple": {
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_both": "chisel:block/resin/resin_pillar_large_basic_triple-vertical_both",
+    "vertical_none": "chisel:block/resin/resin_pillar_large_ionic_triple-side"
+  },
+  "resin_pillar_meander": {
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_both": "chisel:block/resin/resin_pillar_ionic-vertical_both",
+    "vertical_none": "chisel:block/resin/resin_pillar_meander-side"
+  },
+  "resin_pillar_meander_dent": {
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "side": "chisel:block/resin/resin_pillar_meander-side",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_both": "chisel:block/resin/resin_pillar_basic_dent-vertical_both",
+    "vertical_none": "chisel:block/resin/resin_pillar_meander-side"
+  },
+  "resin_pillar_meander_plain": {
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "side": "chisel:block/resin/resin_pillar_meander-side",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_both": "chisel:block/resin/resin_pillar_basic_plain-vertical_both",
+    "vertical_none": "chisel:block/resin/resin_pillar_meander-side"
+  },
+  "resin_pillar_meander_round": {
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "side": "chisel:block/resin/resin_pillar_meander-side",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_both": "chisel:block/resin/resin_pillar_basic_round-vertical_both",
+    "vertical_none": "chisel:block/resin/resin_pillar_meander-side"
+  },
+  "resin_pillar_meander_spiral": {
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "side": "chisel:block/resin/resin_pillar_meander-side",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_both": "chisel:block/resin/resin_pillar_basic_spiral-vertical_both",
+    "vertical_none": "chisel:block/resin/resin_pillar_meander-side"
+  },
+  "resin_plank": {
+    "": "chisel:block/resin/resin_plank_connected"
+  },
+  "resin_plate": {
+    "": "chisel:block/resin/resin_plate_connected"
+  },
+  "resin_plate_connected": {
+    "ctm_cornerless": "chisel:block/resin/resin_border_square-ctm_cornerless"
+  },
+  "resin_polished": {
+    "": "chisel:block/resin/resin_tiles_large"
+  },
+  "resin_raw": {
+    "": "chisel:block/resin/resin_border_square-ctm_cornerless"
+  },
+  "resin_scaffold_encased": {
+    "ctm_cornerless": "chisel:block/resin/resin_scaffold"
+  },
+  "resin_shiny": {
+    "": "chisel:block/resin/resin_shiny_connected"
+  },
+  "resin_slanted": {
+    "2x2_bottom_left": "chisel:block/resin/resin_slanted"
+  },
+  "resin_stripes_encased": {
+    "ctm_cornerless": "chisel:block/resin/resin_stripes"
+  },
+  "resin_tiles_large": {
+    "ctm_cornerless": "chisel:block/resin/resin_border_square-ctm_cornerless"
+  },
+  "resin_twisted": {
+    "top": "chisel:block/resin/resin_twisted-bottom"
+  },
+  "resin_waves": {
+    "2x2_top_left": "chisel:block/resin/resin_waves"
+  },
+  "resin_weaver": {
+    "ctm_cornerless": "chisel:block/resin/resin_weaver-ctm_corner"
+  },
+  "resin_zag": {
+    "v4_top_left": "chisel:block/resin/resin_zag",
+    "v4_top_right": "chisel:block/resin/resin_zag-v4_bottom_left"
+  }
+}
