@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.content.definition;
 
+import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
 import io.github.chiselteam.chisel.api.model.VariantModelHandler;
 import io.github.chiselteam.chisel.block.ChiselRotatedPillarBlock;
@@ -22,6 +23,7 @@ public final class VariantFamilyDefinitionBuilder {
     private final List<VariantDefinition> variants = new ArrayList<>();
     private final List<TorchVariantDefinition> torchVariants = new ArrayList<>();
     private final Map<String, VariantTranslation> translations = new LinkedHashMap<>();
+    private final Map<String, Map<String, Identifier>> textures = new LinkedHashMap<>();
     private TagKey<Block> tag;
     private Supplier<Properties> defaultProperties;
 
@@ -133,7 +135,48 @@ public final class VariantFamilyDefinitionBuilder {
     public VariantFamilyDefinition build() {
         validateDefinitions();
         validateTranslations();
-        return new VariantFamilyDefinition(name, variants, torchVariants, translations, tag);
+        validateTextures();
+        return new VariantFamilyDefinition(name, variants, torchVariants, translations, tag, textures);
+    }
+
+    /**
+     * Reuses a texture base name within this family, including its suffixed textures.
+     */
+    public VariantFamilyDefinitionBuilder textureName(String variant, String textureName) {
+        return texture(variant, Chisel.prefix("block/%s/%s".formatted(name, requireName(textureName, "texture"))));
+    }
+
+    /**
+     * Reuses a full texture identifier, including its suffixed textures, across families or namespaces.
+     */
+    public VariantFamilyDefinitionBuilder texture(String variant, Identifier texture) {
+        return texture(variant, "", texture);
+    }
+
+    /**
+     * Overrides an exact suffix (e.g. top or top-ctm_cornerless); an empty suffix overrides the base.
+     */
+    public VariantFamilyDefinitionBuilder texture(String variant, String suffix, Identifier texture) {
+        requireName(variant, "texture variant");
+        Objects.requireNonNull(suffix, "Texture suffix cannot be null");
+        Objects.requireNonNull(texture, "Texture cannot be null");
+        var overrides = textures.computeIfAbsent(variant, _ -> new LinkedHashMap<>());
+        if (overrides.putIfAbsent(suffix, texture) != null)
+            throw new IllegalArgumentException("Duplicate texture suffix '%s' for variant '%s' in family '%s'".formatted(suffix, variant, name));
+        return this;
+    }
+
+    private void validateTextures() {
+        var names = new HashSet<String>();
+        variants.stream().filter(variant -> !variant.isExistingBlock()).forEach(variant -> names.add(variant.name()));
+        torchVariants.forEach(torch -> {
+            names.add(torch.name());
+            names.add(torch.wallName());
+        });
+        for (String variant : textures.keySet()) {
+            if (!names.contains(variant))
+                throw new IllegalStateException("Texture references unknown generated variant '%s' in family '%s'".formatted(variant, name));
+        }
     }
 
     private Supplier<Properties> requireDefaultProperties() {

@@ -1,0 +1,300 @@
+{
+  "antiblock_black": {
+    "bg": "chisel:block/antiblock/antiblock_black_borderless",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless"
+  },
+  "antiblock_black_dull": {
+    "": "chisel:block/antiblock/antiblock_black",
+    "bg": "chisel:block/antiblock/antiblock_black_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_black-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_black-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_black-ctm_vertical"
+  },
+  "antiblock_black_dull_borderless": {
+    "": "chisel:block/antiblock/antiblock_black_borderless"
+  },
+  "antiblock_blue": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_blue_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_blue_dull": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_blue_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_blue_dull_borderless": {
+    "": "chisel:block/antiblock/antiblock_blue_borderless"
+  },
+  "antiblock_brown": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_brown_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_brown_dull": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_brown_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_brown_dull_borderless": {
+    "": "chisel:block/antiblock/antiblock_brown_borderless"
+  },
+  "antiblock_cyan": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_cyan_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_cyan_dull": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_cyan_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_cyan_dull_borderless": {
+    "": "chisel:block/antiblock/antiblock_cyan_borderless"
+  },
+  "antiblock_gray": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_gray_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_gray_dull": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_gray_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_gray_dull_borderless": {
+    "": "chisel:block/antiblock/antiblock_gray_borderless"
+  },
+  "antiblock_green": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_green_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_green_dull": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_green_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_green_dull_borderless": {
+    "": "chisel:block/antiblock/antiblock_green_borderless"
+  },
+  "antiblock_light_blue": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_light_blue_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_light_blue_dull": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_light_blue_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_light_blue_dull_borderless": {
+    "": "chisel:block/antiblock/antiblock_light_blue_borderless"
+  },
+  "antiblock_light_gray": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_light_gray_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_light_gray_dull": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_light_gray_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_light_gray_dull_borderless": {
+    "": "chisel:block/antiblock/antiblock_light_gray_borderless"
+  },
+  "antiblock_lime": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_lime_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_lime_dull": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_lime_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_lime_dull_borderless": {
+    "": "chisel:block/antiblock/antiblock_lime_borderless"
+  },
+  "antiblock_magenta": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_magenta_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_magenta_dull": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_magenta_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_magenta_dull_borderless": {
+    "": "chisel:block/antiblock/antiblock_magenta_borderless"
+  },
+  "antiblock_orange": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_orange_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_orange_dull": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_orange_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_orange_dull_borderless": {
+    "": "chisel:block/antiblock/antiblock_orange_borderless"
+  },
+  "antiblock_pink": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_pink_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_pink_dull": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_pink_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_pink_dull_borderless": {
+    "": "chisel:block/antiblock/antiblock_pink_borderless"
+  },
+  "antiblock_purple": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_purple_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_purple_dull": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_purple_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_purple_dull_borderless": {
+    "": "chisel:block/antiblock/antiblock_purple_borderless"
+  },
+  "antiblock_red": {
+    "bg": "chisel:block/antiblock/antiblock_red_borderless"
+  },
+  "antiblock_red_dull": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_red_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_red_dull_borderless": {
+    "": "chisel:block/antiblock/antiblock_red_borderless"
+  },
+  "antiblock_white": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/technical/technical_fan_fast-top",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_white_borderless": {
+    "": "chisel:block/technical/technical_fan_fast-top"
+  },
+  "antiblock_white_dull": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/technical/technical_fan_fast-top",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_white_dull_borderless": {
+    "": "chisel:block/technical/technical_fan_fast-top"
+  },
+  "antiblock_yellow": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_yellow_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_yellow_dull": {
+    "": "chisel:block/antiblock/antiblock_red",
+    "bg": "chisel:block/antiblock/antiblock_yellow_borderless",
+    "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+    "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+    "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+  },
+  "antiblock_yellow_dull_borderless": {
+    "": "chisel:block/antiblock/antiblock_yellow_borderless"
+  }
+}

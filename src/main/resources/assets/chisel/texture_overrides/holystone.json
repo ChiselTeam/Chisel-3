@@ -1,0 +1,12 @@
+{
+  "holystone_chiseled": {
+    "bottom": "chisel:block/holystone/holystone_smooth",
+    "top": "chisel:block/holystone/holystone_smooth"
+  },
+  "holystone_platform": {
+    "bottom": "chisel:block/holystone/holystone_platform-side"
+  },
+  "holystone_platform_tiles": {
+    "bottom": "chisel:block/holystone/holystone_raw"
+  }
+}

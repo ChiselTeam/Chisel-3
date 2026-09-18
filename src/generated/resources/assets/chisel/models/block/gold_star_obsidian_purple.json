@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
     "bottom": "chisel:block/gold/gold_star_obsidian_purple-bottom",
-    "side": "chisel:block/gold/gold_star_obsidian_purple-side",
+    "side": "chisel:block/gold/gold_star_obsidian_purple-top",
     "top": "chisel:block/gold/gold_star_obsidian_purple-top"
   }
 }

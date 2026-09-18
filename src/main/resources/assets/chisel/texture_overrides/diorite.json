@@ -1,0 +1,223 @@
+{
+  "diorite_array": {
+    "2x2_top_left": "chisel:block/diorite/diorite_array"
+  },
+  "diorite_border_square": {
+    "ctm_corner": "chisel:block/diorite/diorite_border_square",
+    "ctm_horizontal": "chisel:block/diorite/diorite_border_square",
+    "ctm_vertical": "chisel:block/diorite/diorite_border_square"
+  },
+  "diorite_braid_encased": {
+    "ctm_cornerless": "chisel:block/diorite/diorite_braid"
+  },
+  "diorite_bricks_large": {
+    "2x2_bottom_right": "chisel:block/diorite/diorite_bricks_large",
+    "2x2_top_left": "chisel:block/diorite/diorite_bricks_large",
+    "2x2_top_right": "chisel:block/diorite/diorite_bricks_large-2x2_bottom_left"
+  },
+  "diorite_chaotic": {
+    "3x3_top_left": "chisel:block/diorite/diorite_chaotic"
+  },
+  "diorite_cuts": {
+    "4x4_row_0_column_0": "chisel:block/diorite/diorite_cuts"
+  },
+  "diorite_dots_encased": {
+    "ctm_cornerless": "chisel:block/diorite/diorite_dots"
+  },
+  "diorite_facet_small_encased": {
+    "ctm_cornerless": "chisel:block/diorite/diorite_facet_small"
+  },
+  "diorite_gem_1": {
+    "": "chisel:block/diorite/diorite_gem_1_connected"
+  },
+  "diorite_gem_1_connected": {
+    "ctm_cornerless": "chisel:block/diorite/diorite_border_square-ctm_cornerless"
+  },
+  "diorite_gem_2": {
+    "": "chisel:block/diorite/diorite_gem_2_connected"
+  },
+  "diorite_gem_2_connected": {
+    "ctm_cornerless": "chisel:block/diorite/diorite_border_square-ctm_cornerless"
+  },
+  "diorite_gem_3": {
+    "": "chisel:block/diorite/diorite_gem_3_connected"
+  },
+  "diorite_herringbone_encased": {
+    "ctm_cornerless": "chisel:block/diorite/diorite_herringbone"
+  },
+  "diorite_indent": {
+    "ctm_cornerless": "chisel:block/diorite/diorite_border_square-ctm_cornerless"
+  },
+  "diorite_jellybean": {
+    "2x2_top_left": "chisel:block/diorite/diorite_jellybean"
+  },
+  "diorite_layers": {
+    "": "chisel:block/diorite/diorite_layers_connected"
+  },
+  "diorite_layers_connected": {
+    "ctm_cornerless": "chisel:block/diorite/diorite_layers_connected-ctm_corner",
+    "ctm_horizontal": "chisel:block/diorite/diorite_layers_connected",
+    "ctm_vertical": "chisel:block/diorite/diorite_layers_connected-ctm_corner"
+  },
+  "diorite_lodestone": {
+    "": "chisel:block/diorite/diorite_lodestone_connected"
+  },
+  "diorite_lodestone_connected": {
+    "ctm_cornerless": "chisel:block/diorite/diorite_lodestone_connected"
+  },
+  "diorite_meander_horizontal": {
+    "top": "chisel:block/diorite/diorite_meander_horizontal-bottom"
+  },
+  "diorite_meander_vertical": {
+    "top": "chisel:block/diorite/diorite_meander_vertical-bottom",
+    "vertical_none": "chisel:block/diorite/diorite_meander_vertical-side"
+  },
+  "diorite_medallion_encased": {
+    "ctm_cornerless": "chisel:block/diorite/diorite_medallion"
+  },
+  "diorite_parquet_encased": {
+    "ctm_cornerless": "chisel:block/diorite/diorite_parquet"
+  },
+  "diorite_pillar": {
+    "bottom": "chisel:block/diorite/diorite_pillar-top"
+  },
+  "diorite_pillar_basic": {
+    "top": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "vertical_none": "chisel:block/diorite/diorite_pillar_basic-side"
+  },
+  "diorite_pillar_basic_dent": {
+    "bottom": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "top": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "vertical_none": "chisel:block/diorite/diorite_pillar_basic_dent-side"
+  },
+  "diorite_pillar_basic_plain": {
+    "bottom": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "top": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "vertical_none": "chisel:block/diorite/diorite_pillar_basic_plain-side"
+  },
+  "diorite_pillar_basic_round": {
+    "bottom": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "top": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "vertical_none": "chisel:block/diorite/diorite_pillar_basic_round-side"
+  },
+  "diorite_pillar_basic_spiral": {
+    "bottom": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "top": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "vertical_none": "chisel:block/diorite/diorite_pillar_basic_spiral-side"
+  },
+  "diorite_pillar_classic": {
+    "top": "chisel:block/diorite/diorite_pillar_classic-bottom"
+  },
+  "diorite_pillar_classic_large": {
+    "top": "chisel:block/diorite/diorite_pillar_classic_large-bottom"
+  },
+  "diorite_pillar_ionic": {
+    "bottom": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "top": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "vertical_none": "chisel:block/diorite/diorite_pillar_ionic-side"
+  },
+  "diorite_pillar_ionic_dent": {
+    "bottom": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "side": "chisel:block/diorite/diorite_pillar_ionic-side",
+    "top": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "vertical_both": "chisel:block/diorite/diorite_pillar_basic_dent-vertical_both",
+    "vertical_none": "chisel:block/diorite/diorite_pillar_ionic-side"
+  },
+  "diorite_pillar_ionic_plain": {
+    "bottom": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "side": "chisel:block/diorite/diorite_pillar_ionic-side",
+    "top": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "vertical_both": "chisel:block/diorite/diorite_pillar_basic_plain-vertical_both",
+    "vertical_none": "chisel:block/diorite/diorite_pillar_ionic-side"
+  },
+  "diorite_pillar_ionic_round": {
+    "bottom": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "side": "chisel:block/diorite/diorite_pillar_ionic-side",
+    "top": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "vertical_both": "chisel:block/diorite/diorite_pillar_basic_round-vertical_both",
+    "vertical_none": "chisel:block/diorite/diorite_pillar_ionic-side"
+  },
+  "diorite_pillar_ionic_spiral": {
+    "bottom": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "side": "chisel:block/diorite/diorite_pillar_ionic-side",
+    "top": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "vertical_both": "chisel:block/diorite/diorite_pillar_basic_spiral-vertical_both",
+    "vertical_none": "chisel:block/diorite/diorite_pillar_ionic-side"
+  },
+  "diorite_pillar_large_basic_triple": {
+    "bottom": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "top": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "vertical_none": "chisel:block/diorite/diorite_pillar_large_basic_triple-side"
+  },
+  "diorite_pillar_large_ionic_triple": {
+    "bottom": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "top": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "vertical_both": "chisel:block/diorite/diorite_pillar_large_basic_triple-vertical_both",
+    "vertical_none": "chisel:block/diorite/diorite_pillar_large_ionic_triple-side"
+  },
+  "diorite_pillar_meander": {
+    "bottom": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "top": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "vertical_both": "chisel:block/diorite/diorite_pillar_ionic-vertical_both",
+    "vertical_none": "chisel:block/diorite/diorite_pillar_meander-side"
+  },
+  "diorite_pillar_meander_dent": {
+    "bottom": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "side": "chisel:block/diorite/diorite_pillar_meander-side",
+    "top": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "vertical_both": "chisel:block/diorite/diorite_pillar_basic_dent-vertical_both",
+    "vertical_none": "chisel:block/diorite/diorite_pillar_meander-side"
+  },
+  "diorite_pillar_meander_plain": {
+    "bottom": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "side": "chisel:block/diorite/diorite_pillar_meander-side",
+    "top": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "vertical_both": "chisel:block/diorite/diorite_pillar_basic_plain-vertical_both",
+    "vertical_none": "chisel:block/diorite/diorite_pillar_meander-side"
+  },
+  "diorite_pillar_meander_round": {
+    "bottom": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "side": "chisel:block/diorite/diorite_pillar_meander-side",
+    "top": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "vertical_both": "chisel:block/diorite/diorite_pillar_basic_round-vertical_both",
+    "vertical_none": "chisel:block/diorite/diorite_pillar_meander-side"
+  },
+  "diorite_pillar_meander_spiral": {
+    "bottom": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "side": "chisel:block/diorite/diorite_pillar_meander-side",
+    "top": "chisel:block/diorite/diorite_pillar_basic-bottom",
+    "vertical_both": "chisel:block/diorite/diorite_pillar_basic_spiral-vertical_both",
+    "vertical_none": "chisel:block/diorite/diorite_pillar_meander-side"
+  },
+  "diorite_plank": {
+    "": "chisel:block/diorite/diorite_plank_connected"
+  },
+  "diorite_plate": {
+    "": "chisel:block/diorite/diorite_plate_connected"
+  },
+  "diorite_plate_connected": {
+    "ctm_cornerless": "chisel:block/diorite/diorite_border_square-ctm_cornerless"
+  },
+  "diorite_scaffold_encased": {
+    "ctm_cornerless": "chisel:block/diorite/diorite_scaffold"
+  },
+  "diorite_shiny": {
+    "": "chisel:block/diorite/diorite_shiny_connected"
+  },
+  "diorite_slanted": {
+    "2x2_top_left": "chisel:block/diorite/diorite_slanted"
+  },
+  "diorite_stripes_encased": {
+    "ctm_cornerless": "chisel:block/diorite/diorite_stripes"
+  },
+  "diorite_twisted": {
+    "bottom": "chisel:block/diorite/diorite_twisted-top"
+  },
+  "diorite_waves": {
+    "2x2_top_left": "chisel:block/diorite/diorite_waves"
+  },
+  "diorite_zag": {
+    "ar_variant_1": "chisel:block/diorite/diorite_zag",
+    "v4_top_right": "chisel:block/diorite/diorite_zag-v4_bottom_left"
+  }
+}

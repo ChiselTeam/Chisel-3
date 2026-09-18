@@ -5,82 +5,201 @@
     {
       "block": "chisel:antiblock_black",
       "model_type": "antiblock",
-      "name": "antiblock_black"
+      "name": "antiblock_black",
+      "textures": {
+        "bg": "chisel:block/antiblock/antiblock_black_borderless",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:antiblock_blue",
       "model_type": "antiblock",
-      "name": "antiblock_blue"
+      "name": "antiblock_blue",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_blue_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_brown",
       "model_type": "antiblock",
-      "name": "antiblock_brown"
+      "name": "antiblock_brown",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_brown_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_cyan",
       "model_type": "antiblock",
-      "name": "antiblock_cyan"
+      "name": "antiblock_cyan",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_cyan_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_gray",
       "model_type": "antiblock",
-      "name": "antiblock_gray"
+      "name": "antiblock_gray",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_gray_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_green",
       "model_type": "antiblock",
-      "name": "antiblock_green"
+      "name": "antiblock_green",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_green_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_light_blue",
       "model_type": "antiblock",
-      "name": "antiblock_light_blue"
+      "name": "antiblock_light_blue",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_light_blue_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_light_gray",
       "model_type": "antiblock",
-      "name": "antiblock_light_gray"
+      "name": "antiblock_light_gray",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_light_gray_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_lime",
       "model_type": "antiblock",
-      "name": "antiblock_lime"
+      "name": "antiblock_lime",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_lime_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_magenta",
       "model_type": "antiblock",
-      "name": "antiblock_magenta"
+      "name": "antiblock_magenta",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_magenta_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_orange",
       "model_type": "antiblock",
-      "name": "antiblock_orange"
+      "name": "antiblock_orange",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_orange_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_pink",
       "model_type": "antiblock",
-      "name": "antiblock_pink"
+      "name": "antiblock_pink",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_pink_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_purple",
       "model_type": "antiblock",
-      "name": "antiblock_purple"
+      "name": "antiblock_purple",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_purple_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_red",
       "model_type": "antiblock",
-      "name": "antiblock_red"
+      "name": "antiblock_red",
+      "textures": {
+        "bg": "chisel:block/antiblock/antiblock_red_borderless"
+      }
     },
     {
       "block": "chisel:antiblock_white",
       "model_type": "antiblock",
-      "name": "antiblock_white"
+      "name": "antiblock_white",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/technical/technical_fan_fast-top",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_yellow",
       "model_type": "antiblock",
-      "name": "antiblock_yellow"
+      "name": "antiblock_yellow",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_yellow_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_black_borderless",
@@ -155,7 +274,10 @@
     {
       "block": "chisel:antiblock_white_borderless",
       "model_type": "shadeless",
-      "name": "antiblock_white_borderless"
+      "name": "antiblock_white_borderless",
+      "textures": {
+        "": "chisel:block/technical/technical_fan_fast-top"
+      }
     },
     {
       "block": "chisel:antiblock_yellow_borderless",
@@ -165,146 +287,322 @@
     {
       "block": "chisel:antiblock_black_dull",
       "model_type": "multi_layer_connected_glow",
-      "name": "antiblock_black_dull"
+      "name": "antiblock_black_dull",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_black",
+        "bg": "chisel:block/antiblock/antiblock_black_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_black-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_black-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_black-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_blue_dull",
       "model_type": "multi_layer_connected_glow",
-      "name": "antiblock_blue_dull"
+      "name": "antiblock_blue_dull",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_blue_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_brown_dull",
       "model_type": "multi_layer_connected_glow",
-      "name": "antiblock_brown_dull"
+      "name": "antiblock_brown_dull",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_brown_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_cyan_dull",
       "model_type": "multi_layer_connected_glow",
-      "name": "antiblock_cyan_dull"
+      "name": "antiblock_cyan_dull",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_cyan_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_gray_dull",
       "model_type": "multi_layer_connected_glow",
-      "name": "antiblock_gray_dull"
+      "name": "antiblock_gray_dull",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_gray_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_green_dull",
       "model_type": "multi_layer_connected_glow",
-      "name": "antiblock_green_dull"
+      "name": "antiblock_green_dull",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_green_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_light_blue_dull",
       "model_type": "multi_layer_connected_glow",
-      "name": "antiblock_light_blue_dull"
+      "name": "antiblock_light_blue_dull",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_light_blue_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_light_gray_dull",
       "model_type": "multi_layer_connected_glow",
-      "name": "antiblock_light_gray_dull"
+      "name": "antiblock_light_gray_dull",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_light_gray_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_lime_dull",
       "model_type": "multi_layer_connected_glow",
-      "name": "antiblock_lime_dull"
+      "name": "antiblock_lime_dull",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_lime_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_magenta_dull",
       "model_type": "multi_layer_connected_glow",
-      "name": "antiblock_magenta_dull"
+      "name": "antiblock_magenta_dull",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_magenta_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_orange_dull",
       "model_type": "multi_layer_connected_glow",
-      "name": "antiblock_orange_dull"
+      "name": "antiblock_orange_dull",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_orange_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_pink_dull",
       "model_type": "multi_layer_connected_glow",
-      "name": "antiblock_pink_dull"
+      "name": "antiblock_pink_dull",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_pink_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_purple_dull",
       "model_type": "multi_layer_connected_glow",
-      "name": "antiblock_purple_dull"
+      "name": "antiblock_purple_dull",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_purple_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_red_dull",
       "model_type": "multi_layer_connected_glow",
-      "name": "antiblock_red_dull"
+      "name": "antiblock_red_dull",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_red_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_white_dull",
       "model_type": "multi_layer_connected_glow",
-      "name": "antiblock_white_dull"
+      "name": "antiblock_white_dull",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/technical/technical_fan_fast-top",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_yellow_dull",
       "model_type": "multi_layer_connected_glow",
-      "name": "antiblock_yellow_dull"
+      "name": "antiblock_yellow_dull",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red",
+        "bg": "chisel:block/antiblock/antiblock_yellow_borderless",
+        "ctm_corner": "chisel:block/antiblock/antiblock_red-ctm_corner",
+        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/antiblock/antiblock_red-ctm_horizontal",
+        "ctm_vertical": "chisel:block/antiblock/antiblock_red-ctm_vertical"
+      }
     },
     {
       "block": "chisel:antiblock_black_dull_borderless",
-      "name": "antiblock_black_dull_borderless"
+      "name": "antiblock_black_dull_borderless",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_black_borderless"
+      }
     },
     {
       "block": "chisel:antiblock_blue_dull_borderless",
-      "name": "antiblock_blue_dull_borderless"
+      "name": "antiblock_blue_dull_borderless",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_blue_borderless"
+      }
     },
     {
       "block": "chisel:antiblock_brown_dull_borderless",
-      "name": "antiblock_brown_dull_borderless"
+      "name": "antiblock_brown_dull_borderless",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_brown_borderless"
+      }
     },
     {
       "block": "chisel:antiblock_cyan_dull_borderless",
-      "name": "antiblock_cyan_dull_borderless"
+      "name": "antiblock_cyan_dull_borderless",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_cyan_borderless"
+      }
     },
     {
       "block": "chisel:antiblock_gray_dull_borderless",
-      "name": "antiblock_gray_dull_borderless"
+      "name": "antiblock_gray_dull_borderless",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_gray_borderless"
+      }
     },
     {
       "block": "chisel:antiblock_green_dull_borderless",
-      "name": "antiblock_green_dull_borderless"
+      "name": "antiblock_green_dull_borderless",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_green_borderless"
+      }
     },
     {
       "block": "chisel:antiblock_light_blue_dull_borderless",
-      "name": "antiblock_light_blue_dull_borderless"
+      "name": "antiblock_light_blue_dull_borderless",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_light_blue_borderless"
+      }
     },
     {
       "block": "chisel:antiblock_light_gray_dull_borderless",
-      "name": "antiblock_light_gray_dull_borderless"
+      "name": "antiblock_light_gray_dull_borderless",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_light_gray_borderless"
+      }
     },
     {
       "block": "chisel:antiblock_lime_dull_borderless",
-      "name": "antiblock_lime_dull_borderless"
+      "name": "antiblock_lime_dull_borderless",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_lime_borderless"
+      }
     },
     {
       "block": "chisel:antiblock_magenta_dull_borderless",
-      "name": "antiblock_magenta_dull_borderless"
+      "name": "antiblock_magenta_dull_borderless",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_magenta_borderless"
+      }
     },
     {
       "block": "chisel:antiblock_orange_dull_borderless",
-      "name": "antiblock_orange_dull_borderless"
+      "name": "antiblock_orange_dull_borderless",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_orange_borderless"
+      }
     },
     {
       "block": "chisel:antiblock_pink_dull_borderless",
-      "name": "antiblock_pink_dull_borderless"
+      "name": "antiblock_pink_dull_borderless",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_pink_borderless"
+      }
     },
     {
       "block": "chisel:antiblock_purple_dull_borderless",
-      "name": "antiblock_purple_dull_borderless"
+      "name": "antiblock_purple_dull_borderless",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_purple_borderless"
+      }
     },
     {
       "block": "chisel:antiblock_red_dull_borderless",
-      "name": "antiblock_red_dull_borderless"
+      "name": "antiblock_red_dull_borderless",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_red_borderless"
+      }
     },
     {
       "block": "chisel:antiblock_white_dull_borderless",
-      "name": "antiblock_white_dull_borderless"
+      "name": "antiblock_white_dull_borderless",
+      "textures": {
+        "": "chisel:block/technical/technical_fan_fast-top"
+      }
     },
     {
       "block": "chisel:antiblock_yellow_dull_borderless",
-      "name": "antiblock_yellow_dull_borderless"
+      "name": "antiblock_yellow_dull_borderless",
+      "textures": {
+        "": "chisel:block/antiblock/antiblock_yellow_borderless"
+      }
     }
   ]
 }

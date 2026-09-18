@@ -1,9 +1,12 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/tuff/tuff_plank_connected",
-    "overlay_connected": "chisel:block/tuff/tuff_plank_connected-ctm",
-    "overlay_texture": "chisel:block/tuff/tuff_plank_connected",
-    "particle": "chisel:block/tuff/tuff_plank_connected"
+    "all": "chisel:block/tuff/tuff_plank",
+    "particle": "chisel:block/tuff/tuff_plank",
+    "standard_corner": "chisel:block/tuff/tuff_plank_connected-ctm_corner",
+    "standard_cornerless": "chisel:block/tuff/tuff_plank_connected-ctm_cornerless",
+    "standard_horizontal": "chisel:block/tuff/tuff_plank_connected-ctm_horizontal",
+    "standard_none": "chisel:block/tuff/tuff_plank",
+    "standard_vertical": "chisel:block/tuff/tuff_plank_connected-ctm_vertical"
   }
 }

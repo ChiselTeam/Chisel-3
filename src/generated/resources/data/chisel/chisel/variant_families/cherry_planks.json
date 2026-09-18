@@ -9,7 +9,17 @@
     {
       "block": "chisel:cherry_planks_braced",
       "model_type": "connected_tbs",
-      "name": "cherry_planks_braced"
+      "name": "cherry_planks_braced",
+      "textures": {
+        "bottom": "chisel:block/cherry_planks/cherry_planks_braced",
+        "side": "chisel:block/cherry_planks/cherry_planks_braced",
+        "side-ctm_cornerless": "chisel:block/cherry_planks/cherry_planks_log_bordered-ctm_cornerless",
+        "side-ctm_vertical": "chisel:block/cherry_planks/cherry_planks_braced",
+        "top": "chisel:block/cherry_planks/cherry_planks_braced",
+        "top-ctm_cornerless": "chisel:block/cherry_planks/cherry_planks_log_bordered-ctm_cornerless",
+        "top-ctm_horizontal": "chisel:block/cherry_planks/cherry_planks_log_bordered",
+        "top-ctm_vertical": "chisel:block/cherry_planks/cherry_planks_braced"
+      }
     },
     {
       "block": "chisel:cherry_planks_braid",
@@ -38,7 +48,10 @@
     {
       "block": "chisel:cherry_planks_encased_large",
       "model_type": "connected",
-      "name": "cherry_planks_encased_large"
+      "name": "cherry_planks_encased_large",
+      "textures": {
+        "ctm_cornerless": "chisel:block/cherry_planks/cherry_planks_large"
+      }
     },
     {
       "block": "chisel:cherry_planks_encased_smooth",
@@ -52,17 +65,31 @@
     {
       "block": "chisel:cherry_planks_log_bordered",
       "model_type": "connected",
-      "name": "cherry_planks_log_bordered"
+      "name": "cherry_planks_log_bordered",
+      "textures": {
+        "ctm_corner": "chisel:block/cherry_planks/cherry_planks_log_bordered",
+        "ctm_horizontal": "chisel:block/cherry_planks/cherry_planks_log_bordered",
+        "ctm_vertical": "chisel:block/cherry_planks/cherry_planks_braced"
+      }
     },
     {
       "block": "chisel:cherry_planks_log_cabin_ns",
       "model_type": "connected",
-      "name": "cherry_planks_log_cabin_ns"
+      "name": "cherry_planks_log_cabin_ns",
+      "textures": {
+        "ctm_cornerless": "chisel:block/cherry_planks/cherry_planks_log_cabin_ns-ctm_vertical",
+        "ctm_horizontal": "chisel:block/cherry_planks/cherry_planks_log_cabin_ns-ctm_corner"
+      }
     },
     {
       "block": "chisel:cherry_planks_log_cabin_ew",
       "model_type": "connected",
-      "name": "cherry_planks_log_cabin_ew"
+      "name": "cherry_planks_log_cabin_ew",
+      "textures": {
+        "ctm_cornerless": "chisel:block/cherry_planks/cherry_planks_braced",
+        "ctm_horizontal": "chisel:block/cherry_planks/cherry_planks_log_cabin_ew-ctm_corner",
+        "ctm_vertical": "chisel:block/cherry_planks/cherry_planks_braced"
+      }
     },
     {
       "block": "chisel:cherry_planks_paneling",

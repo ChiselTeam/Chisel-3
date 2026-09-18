@@ -1,0 +1,23 @@
+{
+  "glass_borderless": {
+    "ctm_cornerless": "chisel:block/glass/glass_edge-ctm_cornerless"
+  },
+  "glass_bubble": {
+    "ctm_cornerless": "chisel:block/glass/glass_streak"
+  },
+  "glass_edge_steel": {
+    "ctm_cornerless": "chisel:block/glass/glass_edge-ctm_cornerless"
+  },
+  "glass_ornate": {
+    "ctm_cornerless": "chisel:block/glass/glass_light-ctm_cornerless"
+  },
+  "glass_shale": {
+    "ctm_cornerless": "chisel:block/glass/glass_light-ctm_cornerless"
+  },
+  "glass_steel": {
+    "ctm_cornerless": "chisel:block/glass/glass_light-ctm_cornerless"
+  },
+  "glass_stone": {
+    "ctm_cornerless": "chisel:block/glass/glass_light-ctm_cornerless"
+  }
+}

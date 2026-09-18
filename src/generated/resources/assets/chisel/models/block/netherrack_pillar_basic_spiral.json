@@ -2,14 +2,13 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/netherrack/netherrack_pillar_basic_spiral-side",
-    "bottom": "chisel:block/netherrack/netherrack_pillar_basic_spiral-bottom",
-    "overlay_bottom": "chisel:block/netherrack/netherrack_pillar_basic_spiral-bottom",
-    "overlay_side_connected": "chisel:block/netherrack/netherrack_pillar_basic_spiral-side-ctm",
-    "overlay_texture": "chisel:block/netherrack/netherrack_pillar_basic_spiral-side",
-    "overlay_top": "chisel:block/netherrack/netherrack_pillar_basic_spiral-top",
-    "overlay_vertical": "chisel:block/netherrack/netherrack_pillar_basic_spiral-side-ctm",
+    "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
     "particle": "chisel:block/netherrack/netherrack_pillar_basic_spiral-side",
     "side": "chisel:block/netherrack/netherrack_pillar_basic_spiral-side",
-    "top": "chisel:block/netherrack/netherrack_pillar_basic_spiral-top"
+    "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
+    "vertical_both": "chisel:block/netherrack/netherrack_pillar_basic_spiral-vertical_both",
+    "vertical_bottom": "chisel:block/netherrack/netherrack_pillar_basic_spiral-vertical_bottom",
+    "vertical_none": "chisel:block/netherrack/netherrack_pillar_basic_spiral-side",
+    "vertical_top": "chisel:block/netherrack/netherrack_pillar_basic_spiral-vertical_top"
   }
 }

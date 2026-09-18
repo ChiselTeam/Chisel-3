@@ -9,17 +9,29 @@
     {
       "block": "chisel:stained_glass_pane_red_borderless",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_red_borderless"
+      "name": "stained_glass_pane_red_borderless",
+      "textures": {
+        "": "chisel:block/stained_glass_red/stained_glass_red_borderless",
+        "top": "chisel:block/stained_glass_pane_red/stained_glass_pane_red_borderless-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_red_bubble",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_red_bubble"
+      "name": "stained_glass_pane_red_bubble",
+      "textures": {
+        "": "chisel:block/stained_glass_red/stained_glass_red_bubble",
+        "top": "chisel:block/stained_glass_pane_red/stained_glass_pane_red_quad-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_red_panel",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_red_panel"
+      "name": "stained_glass_pane_red_panel",
+      "textures": {
+        "": "chisel:block/stained_glass_red/stained_glass_red_panel",
+        "top": "chisel:block/stained_glass_pane_red/stained_glass_pane_red_quad-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_red_quad",
@@ -29,7 +41,10 @@
     {
       "block": "chisel:stained_glass_pane_red_fancy",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_red_fancy"
+      "name": "stained_glass_pane_red_fancy",
+      "textures": {
+        "top": "chisel:block/stained_glass_pane_red/stained_glass_pane_red_quad-top"
+      }
     }
   ]
 }

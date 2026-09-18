@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/gold/gold_star_obsidian-bottom",
-    "side": "chisel:block/gold/gold_star_obsidian-side",
+    "bottom": "chisel:block/gold/gold_star_obsidian-top",
+    "side": "chisel:block/gold/gold_star_obsidian-top",
     "top": "chisel:block/gold/gold_star_obsidian-top"
   }
 }

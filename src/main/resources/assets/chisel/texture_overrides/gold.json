@@ -1,0 +1,39 @@
+{
+  "gold_adv": {
+    "": "chisel:block/gold/gold_125"
+  },
+  "gold_brick": {
+    "bottom": "chisel:block/gold/gold_brick-top"
+  },
+  "gold_cart": {
+    "bottom": "chisel:block/gold/gold_cart-top"
+  },
+  "gold_coin_tails": {
+    "side": "chisel:block/gold/gold_coin_heads-side"
+  },
+  "gold_crate_dark": {
+    "top": "chisel:block/gold/gold_brick-top"
+  },
+  "gold_crate_light": {
+    "top": "chisel:block/gold/gold_brick-top"
+  },
+  "gold_ingots_large": {
+    "top": "chisel:block/gold/gold_cart-top"
+  },
+  "gold_ingots_small": {
+    "top": "chisel:block/gold/gold_brick-top"
+  },
+  "gold_plates": {
+    "side": "chisel:block/gold/gold_plates-top"
+  },
+  "gold_simple": {
+    "top": "chisel:block/gold/gold_cart-top"
+  },
+  "gold_star_obsidian": {
+    "bottom": "chisel:block/gold/gold_star_obsidian-top",
+    "side": "chisel:block/gold/gold_star_obsidian-top"
+  },
+  "gold_star_obsidian_purple": {
+    "side": "chisel:block/gold/gold_star_obsidian_purple-top"
+  }
+}

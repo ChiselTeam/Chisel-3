@@ -13,7 +13,12 @@
     {
       "block": "chisel:thaumium_bricks",
       "model_type": "connected",
-      "name": "thaumium_bricks"
+      "name": "thaumium_bricks",
+      "textures": {
+        "ctm_cornerless": "chisel:block/thaumium/thaumium_bricks-ctm_corner",
+        "ctm_horizontal": "chisel:block/thaumium/thaumium_bricks",
+        "ctm_vertical": "chisel:block/thaumium/thaumium_bricks-ctm_corner"
+      }
     },
     {
       "block": "chisel:thaumium_chunks",
@@ -35,12 +40,18 @@
     {
       "block": "chisel:thaumium_runes_purple",
       "model_type": "v9",
-      "name": "thaumium_runes_purple"
+      "name": "thaumium_runes_purple",
+      "textures": {
+        "v9_top_left": "chisel:block/thaumium/thaumium_runes_purple"
+      }
     },
     {
       "block": "chisel:thaumium_runes",
       "model_type": "v9",
-      "name": "thaumium_runes"
+      "name": "thaumium_runes",
+      "textures": {
+        "v9_top_left": "chisel:block/thaumium/thaumium_runes"
+      }
     },
     {
       "block": "chisel:thaumium_small",
@@ -49,7 +60,10 @@
     {
       "block": "chisel:thaumium_totem",
       "model_type": "r4",
-      "name": "thaumium_totem"
+      "name": "thaumium_totem",
+      "textures": {
+        "r4_top_right": "chisel:block/thaumium/thaumium_totem"
+      }
     }
   ]
 }

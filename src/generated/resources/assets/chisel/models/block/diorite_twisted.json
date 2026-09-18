@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/diorite/diorite_twisted-bottom",
+    "bottom": "chisel:block/diorite/diorite_twisted-top",
     "side": "chisel:block/diorite/diorite_twisted-side",
     "top": "chisel:block/diorite/diorite_twisted-top"
   }

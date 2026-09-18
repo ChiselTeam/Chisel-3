@@ -9,602 +9,962 @@
     {
       "block": "chisel:bookshelf_oak_abandoned",
       "model_type": "bookshelf",
-      "name": "bookshelf_oak_abandoned"
+      "name": "bookshelf_oak_abandoned",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_abandoned"
+      }
     },
     {
       "block": "chisel:bookshelf_oak_brim",
       "model_type": "bookshelf",
-      "name": "bookshelf_oak_brim"
+      "name": "bookshelf_oak_brim",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_brim"
+      }
     },
     {
       "block": "chisel:bookshelf_oak_cans",
       "model_type": "bookshelf",
-      "name": "bookshelf_oak_cans"
+      "name": "bookshelf_oak_cans",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_cans"
+      }
     },
     {
       "block": "chisel:bookshelf_oak_historian",
       "model_type": "bookshelf",
-      "name": "bookshelf_oak_historian"
+      "name": "bookshelf_oak_historian",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_historian"
+      }
     },
     {
       "block": "chisel:bookshelf_oak_hoarder",
       "model_type": "bookshelf",
-      "name": "bookshelf_oak_hoarder"
+      "name": "bookshelf_oak_hoarder",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_hoarder"
+      }
     },
     {
       "block": "chisel:bookshelf_oak_necromancer",
       "model_type": "bookshelf",
-      "name": "bookshelf_oak_necromancer"
+      "name": "bookshelf_oak_necromancer",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer"
+      }
     },
     {
       "block": "chisel:bookshelf_oak_necromancer_apprentice",
       "model_type": "bookshelf",
-      "name": "bookshelf_oak_necromancer_apprentice"
+      "name": "bookshelf_oak_necromancer_apprentice",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer_apprentice"
+      }
     },
     {
       "block": "chisel:bookshelf_oak_papers",
       "model_type": "bookshelf",
-      "name": "bookshelf_oak_papers"
+      "name": "bookshelf_oak_papers",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_papers"
+      }
     },
     {
       "block": "chisel:bookshelf_oak_rainbow",
       "model_type": "bookshelf",
-      "name": "bookshelf_oak_rainbow"
+      "name": "bookshelf_oak_rainbow",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_rainbow"
+      }
     },
     {
       "block": "chisel:bookshelf_oak_tomes",
       "model_type": "bookshelf",
-      "name": "bookshelf_oak_tomes"
+      "name": "bookshelf_oak_tomes",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_tomes"
+      }
     },
     {
       "block": "chisel:bookshelf_spruce_abandoned",
       "model_type": "bookshelf",
-      "name": "bookshelf_spruce_abandoned"
+      "name": "bookshelf_spruce_abandoned",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_abandoned"
+      }
     },
     {
       "block": "chisel:bookshelf_spruce_brim",
       "model_type": "bookshelf",
-      "name": "bookshelf_spruce_brim"
+      "name": "bookshelf_spruce_brim",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_brim"
+      }
     },
     {
       "block": "chisel:bookshelf_spruce_cans",
       "model_type": "bookshelf",
-      "name": "bookshelf_spruce_cans"
+      "name": "bookshelf_spruce_cans",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_cans"
+      }
     },
     {
       "block": "chisel:bookshelf_spruce_historian",
       "model_type": "bookshelf",
-      "name": "bookshelf_spruce_historian"
+      "name": "bookshelf_spruce_historian",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_historian"
+      }
     },
     {
       "block": "chisel:bookshelf_spruce_hoarder",
       "model_type": "bookshelf",
-      "name": "bookshelf_spruce_hoarder"
+      "name": "bookshelf_spruce_hoarder",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_hoarder"
+      }
     },
     {
       "block": "chisel:bookshelf_spruce_necromancer",
       "model_type": "bookshelf",
-      "name": "bookshelf_spruce_necromancer"
+      "name": "bookshelf_spruce_necromancer",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer"
+      }
     },
     {
       "block": "chisel:bookshelf_spruce_necromancer_apprentice",
       "model_type": "bookshelf",
-      "name": "bookshelf_spruce_necromancer_apprentice"
+      "name": "bookshelf_spruce_necromancer_apprentice",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer_apprentice"
+      }
     },
     {
       "block": "chisel:bookshelf_spruce_papers",
       "model_type": "bookshelf",
-      "name": "bookshelf_spruce_papers"
+      "name": "bookshelf_spruce_papers",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_papers"
+      }
     },
     {
       "block": "chisel:bookshelf_spruce_rainbow",
       "model_type": "bookshelf",
-      "name": "bookshelf_spruce_rainbow"
+      "name": "bookshelf_spruce_rainbow",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_rainbow"
+      }
     },
     {
       "block": "chisel:bookshelf_spruce_tomes",
       "model_type": "bookshelf",
-      "name": "bookshelf_spruce_tomes"
+      "name": "bookshelf_spruce_tomes",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_tomes"
+      }
     },
     {
       "block": "chisel:bookshelf_birch_abandoned",
       "model_type": "bookshelf",
-      "name": "bookshelf_birch_abandoned"
+      "name": "bookshelf_birch_abandoned",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_abandoned"
+      }
     },
     {
       "block": "chisel:bookshelf_birch_brim",
       "model_type": "bookshelf",
-      "name": "bookshelf_birch_brim"
+      "name": "bookshelf_birch_brim",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_brim"
+      }
     },
     {
       "block": "chisel:bookshelf_birch_cans",
       "model_type": "bookshelf",
-      "name": "bookshelf_birch_cans"
+      "name": "bookshelf_birch_cans",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_cans"
+      }
     },
     {
       "block": "chisel:bookshelf_birch_historian",
       "model_type": "bookshelf",
-      "name": "bookshelf_birch_historian"
+      "name": "bookshelf_birch_historian",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_historian"
+      }
     },
     {
       "block": "chisel:bookshelf_birch_hoarder",
       "model_type": "bookshelf",
-      "name": "bookshelf_birch_hoarder"
+      "name": "bookshelf_birch_hoarder",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_hoarder"
+      }
     },
     {
       "block": "chisel:bookshelf_birch_necromancer",
       "model_type": "bookshelf",
-      "name": "bookshelf_birch_necromancer"
+      "name": "bookshelf_birch_necromancer",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer"
+      }
     },
     {
       "block": "chisel:bookshelf_birch_necromancer_apprentice",
       "model_type": "bookshelf",
-      "name": "bookshelf_birch_necromancer_apprentice"
+      "name": "bookshelf_birch_necromancer_apprentice",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer_apprentice"
+      }
     },
     {
       "block": "chisel:bookshelf_birch_papers",
       "model_type": "bookshelf",
-      "name": "bookshelf_birch_papers"
+      "name": "bookshelf_birch_papers",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_papers"
+      }
     },
     {
       "block": "chisel:bookshelf_birch_rainbow",
       "model_type": "bookshelf",
-      "name": "bookshelf_birch_rainbow"
+      "name": "bookshelf_birch_rainbow",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_rainbow"
+      }
     },
     {
       "block": "chisel:bookshelf_birch_tomes",
       "model_type": "bookshelf",
-      "name": "bookshelf_birch_tomes"
+      "name": "bookshelf_birch_tomes",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_tomes"
+      }
     },
     {
       "block": "chisel:bookshelf_jungle_abandoned",
       "model_type": "bookshelf",
-      "name": "bookshelf_jungle_abandoned"
+      "name": "bookshelf_jungle_abandoned",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_abandoned"
+      }
     },
     {
       "block": "chisel:bookshelf_jungle_brim",
       "model_type": "bookshelf",
-      "name": "bookshelf_jungle_brim"
+      "name": "bookshelf_jungle_brim",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_brim"
+      }
     },
     {
       "block": "chisel:bookshelf_jungle_cans",
       "model_type": "bookshelf",
-      "name": "bookshelf_jungle_cans"
+      "name": "bookshelf_jungle_cans",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_cans"
+      }
     },
     {
       "block": "chisel:bookshelf_jungle_historian",
       "model_type": "bookshelf",
-      "name": "bookshelf_jungle_historian"
+      "name": "bookshelf_jungle_historian",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_historian"
+      }
     },
     {
       "block": "chisel:bookshelf_jungle_hoarder",
       "model_type": "bookshelf",
-      "name": "bookshelf_jungle_hoarder"
+      "name": "bookshelf_jungle_hoarder",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_hoarder"
+      }
     },
     {
       "block": "chisel:bookshelf_jungle_necromancer",
       "model_type": "bookshelf",
-      "name": "bookshelf_jungle_necromancer"
+      "name": "bookshelf_jungle_necromancer",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer"
+      }
     },
     {
       "block": "chisel:bookshelf_jungle_necromancer_apprentice",
       "model_type": "bookshelf",
-      "name": "bookshelf_jungle_necromancer_apprentice"
+      "name": "bookshelf_jungle_necromancer_apprentice",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer_apprentice"
+      }
     },
     {
       "block": "chisel:bookshelf_jungle_papers",
       "model_type": "bookshelf",
-      "name": "bookshelf_jungle_papers"
+      "name": "bookshelf_jungle_papers",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_papers"
+      }
     },
     {
       "block": "chisel:bookshelf_jungle_rainbow",
       "model_type": "bookshelf",
-      "name": "bookshelf_jungle_rainbow"
+      "name": "bookshelf_jungle_rainbow",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_rainbow"
+      }
     },
     {
       "block": "chisel:bookshelf_jungle_tomes",
       "model_type": "bookshelf",
-      "name": "bookshelf_jungle_tomes"
+      "name": "bookshelf_jungle_tomes",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_tomes"
+      }
     },
     {
       "block": "chisel:bookshelf_acacia_abandoned",
       "model_type": "bookshelf",
-      "name": "bookshelf_acacia_abandoned"
+      "name": "bookshelf_acacia_abandoned",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_abandoned"
+      }
     },
     {
       "block": "chisel:bookshelf_acacia_brim",
       "model_type": "bookshelf",
-      "name": "bookshelf_acacia_brim"
+      "name": "bookshelf_acacia_brim",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_brim"
+      }
     },
     {
       "block": "chisel:bookshelf_acacia_cans",
       "model_type": "bookshelf",
-      "name": "bookshelf_acacia_cans"
+      "name": "bookshelf_acacia_cans",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_cans"
+      }
     },
     {
       "block": "chisel:bookshelf_acacia_historian",
       "model_type": "bookshelf",
-      "name": "bookshelf_acacia_historian"
+      "name": "bookshelf_acacia_historian",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_historian"
+      }
     },
     {
       "block": "chisel:bookshelf_acacia_hoarder",
       "model_type": "bookshelf",
-      "name": "bookshelf_acacia_hoarder"
+      "name": "bookshelf_acacia_hoarder",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_hoarder"
+      }
     },
     {
       "block": "chisel:bookshelf_acacia_necromancer",
       "model_type": "bookshelf",
-      "name": "bookshelf_acacia_necromancer"
+      "name": "bookshelf_acacia_necromancer",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer"
+      }
     },
     {
       "block": "chisel:bookshelf_acacia_necromancer_apprentice",
       "model_type": "bookshelf",
-      "name": "bookshelf_acacia_necromancer_apprentice"
+      "name": "bookshelf_acacia_necromancer_apprentice",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer_apprentice"
+      }
     },
     {
       "block": "chisel:bookshelf_acacia_papers",
       "model_type": "bookshelf",
-      "name": "bookshelf_acacia_papers"
+      "name": "bookshelf_acacia_papers",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_papers"
+      }
     },
     {
       "block": "chisel:bookshelf_acacia_rainbow",
       "model_type": "bookshelf",
-      "name": "bookshelf_acacia_rainbow"
+      "name": "bookshelf_acacia_rainbow",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_rainbow"
+      }
     },
     {
       "block": "chisel:bookshelf_acacia_tomes",
       "model_type": "bookshelf",
-      "name": "bookshelf_acacia_tomes"
+      "name": "bookshelf_acacia_tomes",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_tomes"
+      }
     },
     {
       "block": "chisel:bookshelf_dark_oak_abandoned",
       "model_type": "bookshelf",
-      "name": "bookshelf_dark_oak_abandoned"
+      "name": "bookshelf_dark_oak_abandoned",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_abandoned"
+      }
     },
     {
       "block": "chisel:bookshelf_dark_oak_brim",
       "model_type": "bookshelf",
-      "name": "bookshelf_dark_oak_brim"
+      "name": "bookshelf_dark_oak_brim",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_brim"
+      }
     },
     {
       "block": "chisel:bookshelf_dark_oak_cans",
       "model_type": "bookshelf",
-      "name": "bookshelf_dark_oak_cans"
+      "name": "bookshelf_dark_oak_cans",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_cans"
+      }
     },
     {
       "block": "chisel:bookshelf_dark_oak_historian",
       "model_type": "bookshelf",
-      "name": "bookshelf_dark_oak_historian"
+      "name": "bookshelf_dark_oak_historian",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_historian"
+      }
     },
     {
       "block": "chisel:bookshelf_dark_oak_hoarder",
       "model_type": "bookshelf",
-      "name": "bookshelf_dark_oak_hoarder"
+      "name": "bookshelf_dark_oak_hoarder",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_hoarder"
+      }
     },
     {
       "block": "chisel:bookshelf_dark_oak_necromancer",
       "model_type": "bookshelf",
-      "name": "bookshelf_dark_oak_necromancer"
+      "name": "bookshelf_dark_oak_necromancer",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer"
+      }
     },
     {
       "block": "chisel:bookshelf_dark_oak_necromancer_apprentice",
       "model_type": "bookshelf",
-      "name": "bookshelf_dark_oak_necromancer_apprentice"
+      "name": "bookshelf_dark_oak_necromancer_apprentice",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer_apprentice"
+      }
     },
     {
       "block": "chisel:bookshelf_dark_oak_papers",
       "model_type": "bookshelf",
-      "name": "bookshelf_dark_oak_papers"
+      "name": "bookshelf_dark_oak_papers",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_papers"
+      }
     },
     {
       "block": "chisel:bookshelf_dark_oak_rainbow",
       "model_type": "bookshelf",
-      "name": "bookshelf_dark_oak_rainbow"
+      "name": "bookshelf_dark_oak_rainbow",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_rainbow"
+      }
     },
     {
       "block": "chisel:bookshelf_dark_oak_tomes",
       "model_type": "bookshelf",
-      "name": "bookshelf_dark_oak_tomes"
+      "name": "bookshelf_dark_oak_tomes",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_tomes"
+      }
     },
     {
       "block": "chisel:bookshelf_mangrove_abandoned",
       "model_type": "bookshelf",
-      "name": "bookshelf_mangrove_abandoned"
+      "name": "bookshelf_mangrove_abandoned",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_abandoned"
+      }
     },
     {
       "block": "chisel:bookshelf_mangrove_brim",
       "model_type": "bookshelf",
-      "name": "bookshelf_mangrove_brim"
+      "name": "bookshelf_mangrove_brim",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_brim"
+      }
     },
     {
       "block": "chisel:bookshelf_mangrove_cans",
       "model_type": "bookshelf",
-      "name": "bookshelf_mangrove_cans"
+      "name": "bookshelf_mangrove_cans",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_cans"
+      }
     },
     {
       "block": "chisel:bookshelf_mangrove_historian",
       "model_type": "bookshelf",
-      "name": "bookshelf_mangrove_historian"
+      "name": "bookshelf_mangrove_historian",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_historian"
+      }
     },
     {
       "block": "chisel:bookshelf_mangrove_hoarder",
       "model_type": "bookshelf",
-      "name": "bookshelf_mangrove_hoarder"
+      "name": "bookshelf_mangrove_hoarder",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_hoarder"
+      }
     },
     {
       "block": "chisel:bookshelf_mangrove_necromancer",
       "model_type": "bookshelf",
-      "name": "bookshelf_mangrove_necromancer"
+      "name": "bookshelf_mangrove_necromancer",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer"
+      }
     },
     {
       "block": "chisel:bookshelf_mangrove_necromancer_apprentice",
       "model_type": "bookshelf",
-      "name": "bookshelf_mangrove_necromancer_apprentice"
+      "name": "bookshelf_mangrove_necromancer_apprentice",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer_apprentice"
+      }
     },
     {
       "block": "chisel:bookshelf_mangrove_papers",
       "model_type": "bookshelf",
-      "name": "bookshelf_mangrove_papers"
+      "name": "bookshelf_mangrove_papers",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_papers"
+      }
     },
     {
       "block": "chisel:bookshelf_mangrove_rainbow",
       "model_type": "bookshelf",
-      "name": "bookshelf_mangrove_rainbow"
+      "name": "bookshelf_mangrove_rainbow",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_rainbow"
+      }
     },
     {
       "block": "chisel:bookshelf_mangrove_tomes",
       "model_type": "bookshelf",
-      "name": "bookshelf_mangrove_tomes"
+      "name": "bookshelf_mangrove_tomes",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_tomes"
+      }
     },
     {
       "block": "chisel:bookshelf_cherry_abandoned",
       "model_type": "bookshelf",
-      "name": "bookshelf_cherry_abandoned"
+      "name": "bookshelf_cherry_abandoned",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_abandoned"
+      }
     },
     {
       "block": "chisel:bookshelf_cherry_brim",
       "model_type": "bookshelf",
-      "name": "bookshelf_cherry_brim"
+      "name": "bookshelf_cherry_brim",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_brim"
+      }
     },
     {
       "block": "chisel:bookshelf_cherry_cans",
       "model_type": "bookshelf",
-      "name": "bookshelf_cherry_cans"
+      "name": "bookshelf_cherry_cans",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_cans"
+      }
     },
     {
       "block": "chisel:bookshelf_cherry_historian",
       "model_type": "bookshelf",
-      "name": "bookshelf_cherry_historian"
+      "name": "bookshelf_cherry_historian",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_historian"
+      }
     },
     {
       "block": "chisel:bookshelf_cherry_hoarder",
       "model_type": "bookshelf",
-      "name": "bookshelf_cherry_hoarder"
+      "name": "bookshelf_cherry_hoarder",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_hoarder"
+      }
     },
     {
       "block": "chisel:bookshelf_cherry_necromancer",
       "model_type": "bookshelf",
-      "name": "bookshelf_cherry_necromancer"
+      "name": "bookshelf_cherry_necromancer",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer"
+      }
     },
     {
       "block": "chisel:bookshelf_cherry_necromancer_apprentice",
       "model_type": "bookshelf",
-      "name": "bookshelf_cherry_necromancer_apprentice"
+      "name": "bookshelf_cherry_necromancer_apprentice",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer_apprentice"
+      }
     },
     {
       "block": "chisel:bookshelf_cherry_papers",
       "model_type": "bookshelf",
-      "name": "bookshelf_cherry_papers"
+      "name": "bookshelf_cherry_papers",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_papers"
+      }
     },
     {
       "block": "chisel:bookshelf_cherry_rainbow",
       "model_type": "bookshelf",
-      "name": "bookshelf_cherry_rainbow"
+      "name": "bookshelf_cherry_rainbow",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_rainbow"
+      }
     },
     {
       "block": "chisel:bookshelf_cherry_tomes",
       "model_type": "bookshelf",
-      "name": "bookshelf_cherry_tomes"
+      "name": "bookshelf_cherry_tomes",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_tomes"
+      }
     },
     {
       "block": "chisel:bookshelf_pale_oak_abandoned",
       "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_abandoned"
+      "name": "bookshelf_pale_oak_abandoned",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_abandoned"
+      }
     },
     {
       "block": "chisel:bookshelf_pale_oak_brim",
       "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_brim"
+      "name": "bookshelf_pale_oak_brim",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_brim"
+      }
     },
     {
       "block": "chisel:bookshelf_pale_oak_cans",
       "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_cans"
+      "name": "bookshelf_pale_oak_cans",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_cans"
+      }
     },
     {
       "block": "chisel:bookshelf_pale_oak_historian",
       "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_historian"
+      "name": "bookshelf_pale_oak_historian",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_historian"
+      }
     },
     {
       "block": "chisel:bookshelf_pale_oak_hoarder",
       "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_hoarder"
+      "name": "bookshelf_pale_oak_hoarder",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_hoarder"
+      }
     },
     {
       "block": "chisel:bookshelf_pale_oak_necromancer",
       "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_necromancer"
+      "name": "bookshelf_pale_oak_necromancer",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer"
+      }
     },
     {
       "block": "chisel:bookshelf_pale_oak_necromancer_apprentice",
       "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_necromancer_apprentice"
+      "name": "bookshelf_pale_oak_necromancer_apprentice",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer_apprentice"
+      }
     },
     {
       "block": "chisel:bookshelf_pale_oak_papers",
       "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_papers"
+      "name": "bookshelf_pale_oak_papers",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_papers"
+      }
     },
     {
       "block": "chisel:bookshelf_pale_oak_rainbow",
       "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_rainbow"
+      "name": "bookshelf_pale_oak_rainbow",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_rainbow"
+      }
     },
     {
       "block": "chisel:bookshelf_pale_oak_tomes",
       "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_tomes"
+      "name": "bookshelf_pale_oak_tomes",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_tomes"
+      }
     },
     {
       "block": "chisel:bookshelf_bamboo_abandoned",
       "model_type": "bookshelf",
-      "name": "bookshelf_bamboo_abandoned"
+      "name": "bookshelf_bamboo_abandoned",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_abandoned"
+      }
     },
     {
       "block": "chisel:bookshelf_bamboo_brim",
       "model_type": "bookshelf",
-      "name": "bookshelf_bamboo_brim"
+      "name": "bookshelf_bamboo_brim",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_brim"
+      }
     },
     {
       "block": "chisel:bookshelf_bamboo_cans",
       "model_type": "bookshelf",
-      "name": "bookshelf_bamboo_cans"
+      "name": "bookshelf_bamboo_cans",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_cans"
+      }
     },
     {
       "block": "chisel:bookshelf_bamboo_historian",
       "model_type": "bookshelf",
-      "name": "bookshelf_bamboo_historian"
+      "name": "bookshelf_bamboo_historian",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_historian"
+      }
     },
     {
       "block": "chisel:bookshelf_bamboo_hoarder",
       "model_type": "bookshelf",
-      "name": "bookshelf_bamboo_hoarder"
+      "name": "bookshelf_bamboo_hoarder",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_hoarder"
+      }
     },
     {
       "block": "chisel:bookshelf_bamboo_necromancer",
       "model_type": "bookshelf",
-      "name": "bookshelf_bamboo_necromancer"
+      "name": "bookshelf_bamboo_necromancer",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer"
+      }
     },
     {
       "block": "chisel:bookshelf_bamboo_necromancer_apprentice",
       "model_type": "bookshelf",
-      "name": "bookshelf_bamboo_necromancer_apprentice"
+      "name": "bookshelf_bamboo_necromancer_apprentice",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer_apprentice"
+      }
     },
     {
       "block": "chisel:bookshelf_bamboo_papers",
       "model_type": "bookshelf",
-      "name": "bookshelf_bamboo_papers"
+      "name": "bookshelf_bamboo_papers",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_papers"
+      }
     },
     {
       "block": "chisel:bookshelf_bamboo_rainbow",
       "model_type": "bookshelf",
-      "name": "bookshelf_bamboo_rainbow"
+      "name": "bookshelf_bamboo_rainbow",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_rainbow"
+      }
     },
     {
       "block": "chisel:bookshelf_bamboo_tomes",
       "model_type": "bookshelf",
-      "name": "bookshelf_bamboo_tomes"
+      "name": "bookshelf_bamboo_tomes",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_tomes"
+      }
     },
     {
       "block": "chisel:bookshelf_crimson_abandoned",
       "model_type": "bookshelf",
-      "name": "bookshelf_crimson_abandoned"
+      "name": "bookshelf_crimson_abandoned",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_abandoned"
+      }
     },
     {
       "block": "chisel:bookshelf_crimson_brim",
       "model_type": "bookshelf",
-      "name": "bookshelf_crimson_brim"
+      "name": "bookshelf_crimson_brim",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_brim"
+      }
     },
     {
       "block": "chisel:bookshelf_crimson_cans",
       "model_type": "bookshelf",
-      "name": "bookshelf_crimson_cans"
+      "name": "bookshelf_crimson_cans",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_cans"
+      }
     },
     {
       "block": "chisel:bookshelf_crimson_historian",
       "model_type": "bookshelf",
-      "name": "bookshelf_crimson_historian"
+      "name": "bookshelf_crimson_historian",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_historian"
+      }
     },
     {
       "block": "chisel:bookshelf_crimson_hoarder",
       "model_type": "bookshelf",
-      "name": "bookshelf_crimson_hoarder"
+      "name": "bookshelf_crimson_hoarder",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_hoarder"
+      }
     },
     {
       "block": "chisel:bookshelf_crimson_necromancer",
       "model_type": "bookshelf",
-      "name": "bookshelf_crimson_necromancer"
+      "name": "bookshelf_crimson_necromancer",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer"
+      }
     },
     {
       "block": "chisel:bookshelf_crimson_necromancer_apprentice",
       "model_type": "bookshelf",
-      "name": "bookshelf_crimson_necromancer_apprentice"
+      "name": "bookshelf_crimson_necromancer_apprentice",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer_apprentice"
+      }
     },
     {
       "block": "chisel:bookshelf_crimson_papers",
       "model_type": "bookshelf",
-      "name": "bookshelf_crimson_papers"
+      "name": "bookshelf_crimson_papers",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_papers"
+      }
     },
     {
       "block": "chisel:bookshelf_crimson_rainbow",
       "model_type": "bookshelf",
-      "name": "bookshelf_crimson_rainbow"
+      "name": "bookshelf_crimson_rainbow",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_rainbow"
+      }
     },
     {
       "block": "chisel:bookshelf_crimson_tomes",
       "model_type": "bookshelf",
-      "name": "bookshelf_crimson_tomes"
+      "name": "bookshelf_crimson_tomes",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_tomes"
+      }
     },
     {
       "block": "chisel:bookshelf_warped_abandoned",
       "model_type": "bookshelf",
-      "name": "bookshelf_warped_abandoned"
+      "name": "bookshelf_warped_abandoned",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_abandoned"
+      }
     },
     {
       "block": "chisel:bookshelf_warped_brim",
       "model_type": "bookshelf",
-      "name": "bookshelf_warped_brim"
+      "name": "bookshelf_warped_brim",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_brim"
+      }
     },
     {
       "block": "chisel:bookshelf_warped_cans",
       "model_type": "bookshelf",
-      "name": "bookshelf_warped_cans"
+      "name": "bookshelf_warped_cans",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_cans"
+      }
     },
     {
       "block": "chisel:bookshelf_warped_historian",
       "model_type": "bookshelf",
-      "name": "bookshelf_warped_historian"
+      "name": "bookshelf_warped_historian",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_historian"
+      }
     },
     {
       "block": "chisel:bookshelf_warped_hoarder",
       "model_type": "bookshelf",
-      "name": "bookshelf_warped_hoarder"
+      "name": "bookshelf_warped_hoarder",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_hoarder"
+      }
     },
     {
       "block": "chisel:bookshelf_warped_necromancer",
       "model_type": "bookshelf",
-      "name": "bookshelf_warped_necromancer"
+      "name": "bookshelf_warped_necromancer",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer"
+      }
     },
     {
       "block": "chisel:bookshelf_warped_necromancer_apprentice",
       "model_type": "bookshelf",
-      "name": "bookshelf_warped_necromancer_apprentice"
+      "name": "bookshelf_warped_necromancer_apprentice",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer_apprentice"
+      }
     },
     {
       "block": "chisel:bookshelf_warped_papers",
       "model_type": "bookshelf",
-      "name": "bookshelf_warped_papers"
+      "name": "bookshelf_warped_papers",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_papers"
+      }
     },
     {
       "block": "chisel:bookshelf_warped_rainbow",
       "model_type": "bookshelf",
-      "name": "bookshelf_warped_rainbow"
+      "name": "bookshelf_warped_rainbow",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_rainbow"
+      }
     },
     {
       "block": "chisel:bookshelf_warped_tomes",
       "model_type": "bookshelf",
-      "name": "bookshelf_warped_tomes"
+      "name": "bookshelf_warped_tomes",
+      "textures": {
+        "horizontal_none": "chisel:block/bookshelf/bookshelf_tomes"
+      }
     }
   ]
 }

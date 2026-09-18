@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/coal_coke/coal_coke_weaver",
-    "overlay_connected": "chisel:block/coal_coke/coal_coke_weaver-ctm",
-    "overlay_texture": "chisel:block/coal_coke/coal_coke_weaver",
-    "particle": "chisel:block/coal_coke/coal_coke_weaver"
+    "particle": "chisel:block/coal_coke/coal_coke_weaver",
+    "standard_corner": "chisel:block/coal_coke/coal_coke_weaver-ctm_corner",
+    "standard_cornerless": "chisel:block/coal_coke/coal_coke_weaver-ctm_cornerless",
+    "standard_horizontal": "chisel:block/coal_coke/coal_coke_weaver-ctm_horizontal",
+    "standard_none": "chisel:block/coal_coke/coal_coke_weaver",
+    "standard_vertical": "chisel:block/coal_coke/coal_coke_weaver-ctm_vertical"
   }
 }

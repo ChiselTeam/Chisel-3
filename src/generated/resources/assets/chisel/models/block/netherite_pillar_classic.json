@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/netherite/netherite_pillar_classic-bottom",
     "side": "chisel:block/netherite/netherite_pillar_classic-side",
-    "top": "chisel:block/netherite/netherite_pillar_classic-top"
+    "top": "chisel:block/netherite/netherite_pillar_classic-bottom"
   }
 }

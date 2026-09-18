@@ -1,15 +1,14 @@
 {
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/dripstone/dripstone_pillar_ionic_plain-side",
-    "bottom": "chisel:block/dripstone/dripstone_pillar_ionic_plain-bottom",
-    "overlay_bottom": "chisel:block/dripstone/dripstone_pillar_ionic_plain-bottom",
-    "overlay_side_connected": "chisel:block/dripstone/dripstone_pillar_ionic_plain-side-ctm",
-    "overlay_texture": "chisel:block/dripstone/dripstone_pillar_ionic_plain-side",
-    "overlay_top": "chisel:block/dripstone/dripstone_pillar_ionic_plain-top",
-    "overlay_vertical": "chisel:block/dripstone/dripstone_pillar_ionic_plain-side-ctm",
-    "particle": "chisel:block/dripstone/dripstone_pillar_ionic_plain-side",
-    "side": "chisel:block/dripstone/dripstone_pillar_ionic_plain-side",
-    "top": "chisel:block/dripstone/dripstone_pillar_ionic_plain-top"
+    "all": "chisel:block/dripstone/dripstone_pillar_ionic-side",
+    "bottom": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "particle": "chisel:block/dripstone/dripstone_pillar_ionic-side",
+    "side": "chisel:block/dripstone/dripstone_pillar_ionic-side",
+    "top": "chisel:block/dripstone/dripstone_pillar_basic-top",
+    "vertical_both": "chisel:block/dripstone/dripstone_pillar_basic_plain-vertical_both",
+    "vertical_bottom": "chisel:block/dripstone/dripstone_pillar_ionic_plain-vertical_bottom",
+    "vertical_none": "chisel:block/dripstone/dripstone_pillar_ionic-side",
+    "vertical_top": "chisel:block/dripstone/dripstone_pillar_ionic_plain-vertical_top"
   }
 }

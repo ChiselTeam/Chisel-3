@@ -1,11 +1,11 @@
 {
   "parent": "chisel:block/cube_multi_pass_top_bottom_side_tinted",
   "textures": {
-    "bottom": "chisel:block/waterstone/waterstone_twisted-bottom",
-    "layer0": "chisel:block/waterstone/waterstone_twisted-bg",
-    "layer1": "chisel:block/waterstone/waterstone_twisted-side",
-    "particle": "chisel:block/waterstone/waterstone_twisted-side",
-    "side": "chisel:block/waterstone/waterstone_twisted-side",
-    "top": "chisel:block/waterstone/waterstone_twisted-top"
+    "bottom": "chisel:block/lavastone/lavastone_twisted-top",
+    "layer0": "chisel:block/waterstone/water_still",
+    "layer1": "chisel:block/lavastone/lavastone_twisted-side",
+    "particle": "chisel:block/lavastone/lavastone_twisted-side",
+    "side": "chisel:block/lavastone/lavastone_twisted-side",
+    "top": "chisel:block/lavastone/lavastone_twisted-top"
   }
 }

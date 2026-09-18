@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/template_glass_pane_post",
   "textures": {
-    "edge": "chisel:block/stained_glass_pane_light_blue/stained_glass_pane_light_blue_fancy-top",
+    "edge": "chisel:block/stained_glass_pane_light_blue/stained_glass_pane_light_blue_quad-top",
     "pane": "chisel:block/stained_glass_pane_light_blue/stained_glass_pane_light_blue_fancy"
   }
 }

@@ -3,13 +3,12 @@
   "textures": {
     "all": "chisel:block/cobblestone/cobblestone_meander_vertical-side",
     "bottom": "chisel:block/cobblestone/cobblestone_meander_vertical-bottom",
-    "overlay_bottom": "chisel:block/cobblestone/cobblestone_meander_vertical-bottom",
-    "overlay_side_connected": "chisel:block/cobblestone/cobblestone_meander_vertical-side-ctm",
-    "overlay_texture": "chisel:block/cobblestone/cobblestone_meander_vertical-side",
-    "overlay_top": "chisel:block/cobblestone/cobblestone_meander_vertical-top",
-    "overlay_vertical": "chisel:block/cobblestone/cobblestone_meander_vertical-side-ctm",
     "particle": "chisel:block/cobblestone/cobblestone_meander_vertical-side",
     "side": "chisel:block/cobblestone/cobblestone_meander_vertical-side",
-    "top": "chisel:block/cobblestone/cobblestone_meander_vertical-top"
+    "top": "chisel:block/cobblestone/cobblestone_meander_vertical-bottom",
+    "vertical_both": "chisel:block/cobblestone/cobblestone_meander_vertical-vertical_both",
+    "vertical_bottom": "chisel:block/cobblestone/cobblestone_meander_vertical-vertical_bottom",
+    "vertical_none": "chisel:block/cobblestone/cobblestone_meander_vertical-side",
+    "vertical_top": "chisel:block/cobblestone/cobblestone_meander_vertical-vertical_top"
   }
 }

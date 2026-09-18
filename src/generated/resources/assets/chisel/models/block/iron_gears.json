@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/iron/iron_gears-bottom",
+    "bottom": "chisel:block/iron/iron_gears-top",
     "side": "chisel:block/iron/iron_gears-side",
     "top": "chisel:block/iron/iron_gears-top"
   }

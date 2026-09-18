@@ -9,17 +9,29 @@
     {
       "block": "chisel:stained_glass_pane_pink_borderless",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_pink_borderless"
+      "name": "stained_glass_pane_pink_borderless",
+      "textures": {
+        "": "chisel:block/stained_glass_pink/stained_glass_pink_borderless",
+        "top": "chisel:block/stained_glass_pane_pink/stained_glass_pane_pink_borderless-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_pink_bubble",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_pink_bubble"
+      "name": "stained_glass_pane_pink_bubble",
+      "textures": {
+        "": "chisel:block/stained_glass_pink/stained_glass_pink_bubble",
+        "top": "chisel:block/stained_glass_pane_pink/stained_glass_pane_pink_quad-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_pink_panel",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_pink_panel"
+      "name": "stained_glass_pane_pink_panel",
+      "textures": {
+        "": "chisel:block/stained_glass_pink/stained_glass_pink_panel",
+        "top": "chisel:block/stained_glass_pane_pink/stained_glass_pane_pink_quad-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_pink_quad",
@@ -29,7 +41,10 @@
     {
       "block": "chisel:stained_glass_pane_pink_fancy",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_pink_fancy"
+      "name": "stained_glass_pane_pink_fancy",
+      "textures": {
+        "top": "chisel:block/stained_glass_pane_pink/stained_glass_pane_pink_quad-top"
+      }
     }
   ]
 }

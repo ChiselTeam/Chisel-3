@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/granite/granite_pillar_classic_large-bottom",
     "side": "chisel:block/granite/granite_pillar_classic_large-side",
-    "top": "chisel:block/granite/granite_pillar_classic_large-top"
+    "top": "chisel:block/granite/granite_pillar_classic_large-bottom"
   }
 }

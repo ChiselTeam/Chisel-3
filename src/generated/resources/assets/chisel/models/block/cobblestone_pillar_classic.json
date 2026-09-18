@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/cobblestone/cobblestone_pillar_classic-bottom",
     "side": "chisel:block/cobblestone/cobblestone_pillar_classic-side",
-    "top": "chisel:block/cobblestone/cobblestone_pillar_classic-top"
+    "top": "chisel:block/cobblestone/cobblestone_pillar_classic-bottom"
   }
 }

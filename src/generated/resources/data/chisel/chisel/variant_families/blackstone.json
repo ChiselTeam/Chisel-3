@@ -26,7 +26,10 @@
     {
       "block": "chisel:blackstone_border_square",
       "model_type": "connected",
-      "name": "blackstone_border_square"
+      "name": "blackstone_border_square",
+      "textures": {
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_dent-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:blackstone_braid",
@@ -103,7 +106,10 @@
     {
       "block": "chisel:blackstone_circular",
       "model_type": "connected",
-      "name": "blackstone_circular"
+      "name": "blackstone_circular",
+      "textures": {
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_dent-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:blackstone_cobble",
@@ -130,7 +136,10 @@
     {
       "block": "chisel:blackstone_indent",
       "model_type": "connected",
-      "name": "blackstone_indent"
+      "name": "blackstone_indent",
+      "textures": {
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_dent-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:blackstone_jellybean",
@@ -157,17 +166,26 @@
     {
       "block": "chisel:blackstone_meander_horizontal",
       "model_type": "ctmh",
-      "name": "blackstone_meander_horizontal"
+      "name": "blackstone_meander_horizontal",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_meander_horizontal-top"
+      }
     },
     {
       "block": "chisel:blackstone_meander_vertical",
       "model_type": "ctmv",
-      "name": "blackstone_meander_vertical"
+      "name": "blackstone_meander_vertical",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_meander_vertical-top"
+      }
     },
     {
       "block": "chisel:blackstone_mosaic",
       "model_type": "connected",
-      "name": "blackstone_mosaic"
+      "name": "blackstone_mosaic",
+      "textures": {
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_dent-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:blackstone_ornate_small",
@@ -180,102 +198,204 @@
     {
       "block": "chisel:blackstone_pillar",
       "model_type": "top_bottom_side",
-      "name": "blackstone_pillar"
+      "name": "blackstone_pillar",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar-top"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_basic",
       "model_type": "ctmv",
-      "name": "blackstone_pillar_basic"
+      "name": "blackstone_pillar_basic",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_basic-top"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_basic_dent",
       "model_type": "ctmv",
-      "name": "blackstone_pillar_basic_dent"
+      "name": "blackstone_pillar_basic_dent",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "top": "chisel:block/blackstone/blackstone_pillar_basic-top"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_basic_plain",
       "model_type": "ctmv",
-      "name": "blackstone_pillar_basic_plain"
+      "name": "blackstone_pillar_basic_plain",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "top": "chisel:block/blackstone/blackstone_pillar_basic-top"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_basic_round",
       "model_type": "ctmv",
-      "name": "blackstone_pillar_basic_round"
+      "name": "blackstone_pillar_basic_round",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "top": "chisel:block/blackstone/blackstone_pillar_basic-top"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_basic_spiral",
       "model_type": "ctmv",
-      "name": "blackstone_pillar_basic_spiral"
+      "name": "blackstone_pillar_basic_spiral",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "top": "chisel:block/blackstone/blackstone_pillar_basic-top"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_classic",
       "model_type": "top_bottom_side",
-      "name": "blackstone_pillar_classic"
+      "name": "blackstone_pillar_classic",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_classic-top"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_classic_large",
       "model_type": "top_bottom_side",
-      "name": "blackstone_pillar_classic_large"
+      "name": "blackstone_pillar_classic_large",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_classic_large-top"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_ionic",
       "model_type": "ctmv",
-      "name": "blackstone_pillar_ionic"
+      "name": "blackstone_pillar_ionic",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "top": "chisel:block/blackstone/blackstone_pillar_basic-top"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_ionic_dent",
       "model_type": "ctmv",
-      "name": "blackstone_pillar_ionic_dent"
+      "name": "blackstone_pillar_ionic_dent",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "side": "chisel:block/blackstone/blackstone_pillar_ionic-side",
+        "top": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/blackstone/blackstone_pillar_basic_dent-vertical_both",
+        "vertical_none": "chisel:block/blackstone/blackstone_pillar_ionic-vertical_none"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_ionic_plain",
       "model_type": "ctmv",
-      "name": "blackstone_pillar_ionic_plain"
+      "name": "blackstone_pillar_ionic_plain",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "side": "chisel:block/blackstone/blackstone_pillar_ionic-side",
+        "top": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/blackstone/blackstone_pillar_basic_plain-vertical_both",
+        "vertical_none": "chisel:block/blackstone/blackstone_pillar_ionic-vertical_none"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_ionic_round",
       "model_type": "ctmv",
-      "name": "blackstone_pillar_ionic_round"
+      "name": "blackstone_pillar_ionic_round",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "side": "chisel:block/blackstone/blackstone_pillar_ionic-side",
+        "top": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/blackstone/blackstone_pillar_basic_round-vertical_both",
+        "vertical_none": "chisel:block/blackstone/blackstone_pillar_ionic-vertical_none"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_ionic_spiral",
       "model_type": "ctmv",
-      "name": "blackstone_pillar_ionic_spiral"
+      "name": "blackstone_pillar_ionic_spiral",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "side": "chisel:block/blackstone/blackstone_pillar_ionic-side",
+        "top": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/blackstone/blackstone_pillar_basic_spiral-vertical_both",
+        "vertical_none": "chisel:block/blackstone/blackstone_pillar_ionic-vertical_none"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_large_basic_triple",
       "model_type": "ctmv",
-      "name": "blackstone_pillar_large_basic_triple"
+      "name": "blackstone_pillar_large_basic_triple",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "top": "chisel:block/blackstone/blackstone_pillar_basic-top"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_large_ionic_triple",
       "model_type": "ctmv",
-      "name": "blackstone_pillar_large_ionic_triple"
+      "name": "blackstone_pillar_large_ionic_triple",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "top": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/blackstone/blackstone_pillar_large_basic_triple-vertical_both"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_meander",
       "model_type": "ctmv",
-      "name": "blackstone_pillar_meander"
+      "name": "blackstone_pillar_meander",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "top": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/blackstone/blackstone_pillar_ionic-vertical_both"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_meander_dent",
       "model_type": "ctmv",
-      "name": "blackstone_pillar_meander_dent"
+      "name": "blackstone_pillar_meander_dent",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "side": "chisel:block/blackstone/blackstone_pillar_meander-side",
+        "top": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/blackstone/blackstone_pillar_basic_dent-vertical_both",
+        "vertical_none": "chisel:block/blackstone/blackstone_pillar_meander-vertical_none"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_meander_plain",
       "model_type": "ctmv",
-      "name": "blackstone_pillar_meander_plain"
+      "name": "blackstone_pillar_meander_plain",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "side": "chisel:block/blackstone/blackstone_pillar_meander-side",
+        "top": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/blackstone/blackstone_pillar_basic_plain-vertical_both",
+        "vertical_none": "chisel:block/blackstone/blackstone_pillar_meander-vertical_none"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_meander_round",
       "model_type": "ctmv",
-      "name": "blackstone_pillar_meander_round"
+      "name": "blackstone_pillar_meander_round",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "side": "chisel:block/blackstone/blackstone_pillar_meander-side",
+        "top": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/blackstone/blackstone_pillar_basic_round-vertical_both",
+        "vertical_none": "chisel:block/blackstone/blackstone_pillar_meander-vertical_none"
+      }
     },
     {
       "block": "chisel:blackstone_pillar_meander_spiral",
       "model_type": "ctmv",
-      "name": "blackstone_pillar_meander_spiral"
+      "name": "blackstone_pillar_meander_spiral",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "side": "chisel:block/blackstone/blackstone_pillar_meander-side",
+        "top": "chisel:block/blackstone/blackstone_pillar_basic-top",
+        "vertical_both": "chisel:block/blackstone/blackstone_pillar_basic_spiral-vertical_both",
+        "vertical_none": "chisel:block/blackstone/blackstone_pillar_meander-vertical_none"
+      }
     },
     {
       "block": "chisel:blackstone_plate",
@@ -284,7 +404,10 @@
     {
       "block": "chisel:blackstone_plate_connected",
       "model_type": "connected",
-      "name": "blackstone_plate_connected"
+      "name": "blackstone_plate_connected",
+      "textures": {
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_dent-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:blackstone_polished",
@@ -319,7 +442,14 @@
     {
       "block": "chisel:blackstone_tiles_large",
       "model_type": "connected",
-      "name": "blackstone_tiles_large"
+      "name": "blackstone_tiles_large",
+      "textures": {
+        "": "chisel:block/blackstone/blackstone_polished",
+        "ctm_corner": "chisel:block/blackstone/blackstone_tiles_large-ctm_corner",
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_dent-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/blackstone/blackstone_tiles_large-ctm_horizontal",
+        "ctm_vertical": "chisel:block/blackstone/blackstone_tiles_large-ctm_vertical"
+      }
     },
     {
       "block": "chisel:blackstone_tiles_small",
@@ -328,7 +458,10 @@
     {
       "block": "chisel:blackstone_twisted",
       "model_type": "top_bottom_side",
-      "name": "blackstone_twisted"
+      "name": "blackstone_twisted",
+      "textures": {
+        "bottom": "chisel:block/blackstone/blackstone_twisted-top"
+      }
     },
     {
       "block": "chisel:blackstone_weaver",
@@ -352,7 +485,10 @@
     {
       "block": "chisel:blackstone_herringbone_encased",
       "model_type": "connected",
-      "name": "blackstone_herringbone_encased"
+      "name": "blackstone_herringbone_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_herringbone"
+      }
     },
     {
       "block": "chisel:blackstone_medallion",
@@ -361,7 +497,10 @@
     {
       "block": "chisel:blackstone_medallion_encased",
       "model_type": "connected",
-      "name": "blackstone_medallion_encased"
+      "name": "blackstone_medallion_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_medallion"
+      }
     },
     {
       "block": "chisel:blackstone_dots",
@@ -370,7 +509,10 @@
     {
       "block": "chisel:blackstone_dots_encased",
       "model_type": "connected",
-      "name": "blackstone_dots_encased"
+      "name": "blackstone_dots_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_dots"
+      }
     },
     {
       "block": "chisel:blackstone_heart",
@@ -391,7 +533,14 @@
     {
       "block": "chisel:blackstone_lodestone_connected",
       "model_type": "connected",
-      "name": "blackstone_lodestone_connected"
+      "name": "blackstone_lodestone_connected",
+      "textures": {
+        "": "chisel:block/blackstone/blackstone_lodestone",
+        "ctm_corner": "chisel:block/blackstone/blackstone_lodestone_connected-ctm_corner",
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_lodestone",
+        "ctm_horizontal": "chisel:block/blackstone/blackstone_lodestone_connected-ctm_horizontal",
+        "ctm_vertical": "chisel:block/blackstone/blackstone_lodestone_connected-ctm_vertical"
+      }
     },
     {
       "block": "chisel:blackstone_plank",
@@ -400,7 +549,14 @@
     {
       "block": "chisel:blackstone_plank_connected",
       "model_type": "connected",
-      "name": "blackstone_plank_connected"
+      "name": "blackstone_plank_connected",
+      "textures": {
+        "": "chisel:block/blackstone/blackstone_plank",
+        "ctm_corner": "chisel:block/blackstone/blackstone_plank_connected-ctm_corner",
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_plank_connected-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/blackstone/blackstone_plank_connected-ctm_horizontal",
+        "ctm_vertical": "chisel:block/blackstone/blackstone_plank_connected-ctm_vertical"
+      }
     },
     {
       "block": "chisel:blackstone_frame",
@@ -433,7 +589,10 @@
     {
       "block": "chisel:blackstone_stripes_encased",
       "model_type": "connected",
-      "name": "blackstone_stripes_encased"
+      "name": "blackstone_stripes_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_stripes"
+      }
     },
     {
       "block": "chisel:blackstone_chisel_1",
@@ -470,7 +629,10 @@
     {
       "block": "chisel:blackstone_facet_small_encased",
       "model_type": "connected",
-      "name": "blackstone_facet_small_encased"
+      "name": "blackstone_facet_small_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_facet_small"
+      }
     },
     {
       "block": "chisel:blackstone_shiny",
@@ -479,7 +641,14 @@
     {
       "block": "chisel:blackstone_shiny_connected",
       "model_type": "connected",
-      "name": "blackstone_shiny_connected"
+      "name": "blackstone_shiny_connected",
+      "textures": {
+        "": "chisel:block/blackstone/blackstone_shiny",
+        "ctm_corner": "chisel:block/blackstone/blackstone_shiny_connected-ctm_corner",
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_shiny_connected-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/blackstone/blackstone_shiny_connected-ctm_horizontal",
+        "ctm_vertical": "chisel:block/blackstone/blackstone_shiny_connected-ctm_vertical"
+      }
     },
     {
       "block": "chisel:blackstone_gem",
@@ -492,7 +661,14 @@
     {
       "block": "chisel:blackstone_gem_1_connected",
       "model_type": "connected",
-      "name": "blackstone_gem_1_connected"
+      "name": "blackstone_gem_1_connected",
+      "textures": {
+        "": "chisel:block/blackstone/blackstone_gem_1",
+        "ctm_corner": "chisel:block/blackstone/blackstone_gem_1_connected-ctm_corner",
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_dent-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/blackstone/blackstone_gem_1_connected-ctm_horizontal",
+        "ctm_vertical": "chisel:block/blackstone/blackstone_gem_1_connected-ctm_vertical"
+      }
     },
     {
       "block": "chisel:blackstone_gem_2",
@@ -501,7 +677,14 @@
     {
       "block": "chisel:blackstone_gem_2_connected",
       "model_type": "connected",
-      "name": "blackstone_gem_2_connected"
+      "name": "blackstone_gem_2_connected",
+      "textures": {
+        "": "chisel:block/blackstone/blackstone_gem_2",
+        "ctm_corner": "chisel:block/blackstone/blackstone_gem_2_connected-ctm_corner",
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_dent-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/blackstone/blackstone_gem_2_connected-ctm_horizontal",
+        "ctm_vertical": "chisel:block/blackstone/blackstone_gem_2_connected-ctm_vertical"
+      }
     },
     {
       "block": "chisel:blackstone_gem_3",
@@ -510,7 +693,14 @@
     {
       "block": "chisel:blackstone_gem_3_connected",
       "model_type": "connected",
-      "name": "blackstone_gem_3_connected"
+      "name": "blackstone_gem_3_connected",
+      "textures": {
+        "": "chisel:block/blackstone/blackstone_gem_3",
+        "ctm_corner": "chisel:block/blackstone/blackstone_gem_3_connected-ctm_corner",
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_gem_3_connected-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/blackstone/blackstone_gem_3_connected-ctm_horizontal",
+        "ctm_vertical": "chisel:block/blackstone/blackstone_gem_3_connected-ctm_vertical"
+      }
     },
     {
       "block": "chisel:blackstone_bricks_square",
@@ -527,7 +717,10 @@
     {
       "block": "chisel:blackstone_scaffold_encased",
       "model_type": "connected",
-      "name": "blackstone_scaffold_encased"
+      "name": "blackstone_scaffold_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_scaffold"
+      }
     },
     {
       "block": "chisel:blackstone_tiles_inlayed",
@@ -536,7 +729,10 @@
     {
       "block": "chisel:blackstone_waves",
       "model_type": "multiblock_2x2",
-      "name": "blackstone_waves"
+      "name": "blackstone_waves",
+      "textures": {
+        "2x2_top_left": "chisel:block/blackstone/blackstone_waves"
+      }
     },
     {
       "block": "chisel:blackstone_parquet",
@@ -545,7 +741,10 @@
     {
       "block": "chisel:blackstone_parquet_encased",
       "model_type": "connected",
-      "name": "blackstone_parquet_encased"
+      "name": "blackstone_parquet_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/blackstone/blackstone_parquet"
+      }
     }
   ]
 }

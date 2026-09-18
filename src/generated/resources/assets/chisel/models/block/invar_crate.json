@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/invar/invar_crate",
-    "overlay_connected": "chisel:block/invar/invar_crate-ctm",
-    "overlay_texture": "chisel:block/invar/invar_crate",
-    "particle": "chisel:block/invar/invar_crate"
+    "particle": "chisel:block/invar/invar_crate",
+    "standard_corner": "chisel:block/invar/invar_crate-ctm_corner",
+    "standard_cornerless": "chisel:block/invar/invar_crate-ctm_cornerless",
+    "standard_horizontal": "chisel:block/invar/invar_crate-ctm_horizontal",
+    "standard_none": "chisel:block/invar/invar_crate",
+    "standard_vertical": "chisel:block/invar/invar_crate-ctm_vertical"
   }
 }

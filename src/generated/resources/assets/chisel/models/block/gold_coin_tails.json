@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
     "bottom": "chisel:block/gold/gold_coin_tails-bottom",
-    "side": "chisel:block/gold/gold_coin_tails-side",
+    "side": "chisel:block/gold/gold_coin_heads-side",
     "top": "chisel:block/gold/gold_coin_tails-top"
   }
 }

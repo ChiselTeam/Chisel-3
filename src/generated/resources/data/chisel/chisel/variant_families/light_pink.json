@@ -4,7 +4,10 @@
   "variants": [
     {
       "block": "chisel:light_pink_framed",
-      "name": "light_pink_framed"
+      "name": "light_pink_framed",
+      "textures": {
+        "": "chisel:block/light_pink/light_pink_framed_connected"
+      }
     },
     {
       "block": "chisel:light_pink_framed_connected",

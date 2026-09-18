@@ -9,17 +9,29 @@
     {
       "block": "chisel:stained_glass_pane_magenta_borderless",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_magenta_borderless"
+      "name": "stained_glass_pane_magenta_borderless",
+      "textures": {
+        "": "chisel:block/stained_glass_magenta/stained_glass_magenta_borderless",
+        "top": "chisel:block/stained_glass_pane_magenta/stained_glass_pane_magenta_borderless-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_magenta_bubble",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_magenta_bubble"
+      "name": "stained_glass_pane_magenta_bubble",
+      "textures": {
+        "": "chisel:block/stained_glass_magenta/stained_glass_magenta_bubble",
+        "top": "chisel:block/stained_glass_pane_magenta/stained_glass_pane_magenta_quad-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_magenta_panel",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_magenta_panel"
+      "name": "stained_glass_pane_magenta_panel",
+      "textures": {
+        "": "chisel:block/stained_glass_magenta/stained_glass_magenta_panel",
+        "top": "chisel:block/stained_glass_pane_magenta/stained_glass_pane_magenta_quad-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_magenta_quad",
@@ -29,7 +41,10 @@
     {
       "block": "chisel:stained_glass_pane_magenta_fancy",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_magenta_fancy"
+      "name": "stained_glass_pane_magenta_fancy",
+      "textures": {
+        "top": "chisel:block/stained_glass_pane_magenta/stained_glass_pane_magenta_quad-top"
+      }
     }
   ]
 }

@@ -1,15 +1,14 @@
 {
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/mud/mud_pillar_meander_spiral-side",
-    "bottom": "chisel:block/mud/mud_pillar_meander_spiral-bottom",
-    "overlay_bottom": "chisel:block/mud/mud_pillar_meander_spiral-bottom",
-    "overlay_side_connected": "chisel:block/mud/mud_pillar_meander_spiral-side-ctm",
-    "overlay_texture": "chisel:block/mud/mud_pillar_meander_spiral-side",
-    "overlay_top": "chisel:block/mud/mud_pillar_meander_spiral-top",
-    "overlay_vertical": "chisel:block/mud/mud_pillar_meander_spiral-side-ctm",
-    "particle": "chisel:block/mud/mud_pillar_meander_spiral-side",
-    "side": "chisel:block/mud/mud_pillar_meander_spiral-side",
-    "top": "chisel:block/mud/mud_pillar_meander_spiral-top"
+    "all": "chisel:block/mud/mud_pillar_meander-side",
+    "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
+    "particle": "chisel:block/mud/mud_pillar_meander-side",
+    "side": "chisel:block/mud/mud_pillar_meander-side",
+    "top": "chisel:block/mud/mud_pillar_basic-bottom",
+    "vertical_both": "chisel:block/mud/mud_pillar_basic_spiral-vertical_both",
+    "vertical_bottom": "chisel:block/mud/mud_pillar_meander_spiral-vertical_bottom",
+    "vertical_none": "chisel:block/mud/mud_pillar_meander-side",
+    "vertical_top": "chisel:block/mud/mud_pillar_meander_spiral-vertical_top"
   }
 }

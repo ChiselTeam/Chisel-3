@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/nexus/nexus_path",
-    "overlay_connected": "chisel:block/nexus/nexus_path-ctm",
-    "overlay_texture": "chisel:block/nexus/nexus_path",
-    "particle": "chisel:block/nexus/nexus_path"
+    "particle": "chisel:block/nexus/nexus_path",
+    "standard_corner": "chisel:block/nexus/nexus_path-ctm_corner",
+    "standard_cornerless": "chisel:block/nexus/nexus_path-ctm_cornerless",
+    "standard_horizontal": "chisel:block/nexus/nexus_path-ctm_horizontal",
+    "standard_none": "chisel:block/nexus/nexus_path",
+    "standard_vertical": "chisel:block/nexus/nexus_path-ctm_vertical"
   }
 }

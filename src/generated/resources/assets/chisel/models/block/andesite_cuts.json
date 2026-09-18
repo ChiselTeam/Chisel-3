@@ -2,7 +2,22 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/andesite/andesite_cuts",
-    "overlay_4x4": "chisel:block/andesite/andesite_cuts-4x4",
+    "multiblock_4x4_row_0_column_0": "chisel:block/andesite/andesite_cuts",
+    "multiblock_4x4_row_0_column_1": "chisel:block/andesite/andesite_cuts-4x4_row_0_column_1",
+    "multiblock_4x4_row_0_column_2": "chisel:block/andesite/andesite_cuts-4x4_row_0_column_2",
+    "multiblock_4x4_row_0_column_3": "chisel:block/andesite/andesite_cuts-4x4_row_0_column_3",
+    "multiblock_4x4_row_1_column_0": "chisel:block/andesite/andesite_cuts-4x4_row_1_column_0",
+    "multiblock_4x4_row_1_column_1": "chisel:block/andesite/andesite_cuts-4x4_row_1_column_1",
+    "multiblock_4x4_row_1_column_2": "chisel:block/andesite/andesite_cuts-4x4_row_1_column_2",
+    "multiblock_4x4_row_1_column_3": "chisel:block/andesite/andesite_cuts-4x4_row_1_column_3",
+    "multiblock_4x4_row_2_column_0": "chisel:block/andesite/andesite_cuts-4x4_row_2_column_0",
+    "multiblock_4x4_row_2_column_1": "chisel:block/andesite/andesite_cuts-4x4_row_2_column_1",
+    "multiblock_4x4_row_2_column_2": "chisel:block/andesite/andesite_cuts-4x4_row_2_column_2",
+    "multiblock_4x4_row_2_column_3": "chisel:block/andesite/andesite_cuts-4x4_row_2_column_3",
+    "multiblock_4x4_row_3_column_0": "chisel:block/andesite/andesite_cuts-4x4_row_3_column_0",
+    "multiblock_4x4_row_3_column_1": "chisel:block/andesite/andesite_cuts-4x4_row_3_column_1",
+    "multiblock_4x4_row_3_column_2": "chisel:block/andesite/andesite_cuts-4x4_row_3_column_2",
+    "multiblock_4x4_row_3_column_3": "chisel:block/andesite/andesite_cuts-4x4_row_3_column_3",
     "particle": "chisel:block/andesite/andesite_cuts"
   }
 }

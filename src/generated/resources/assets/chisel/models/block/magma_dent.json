@@ -5,8 +5,11 @@
     "base_texture": "chisel:block/magma/magma_dent-bg",
     "layer0": "chisel:block/magma/magma_dent-bg",
     "layer1": "chisel:block/magma/magma_dent",
-    "overlay_connected": "chisel:block/magma/magma_dent-ctm",
-    "overlay_texture": "chisel:block/magma/magma_dent",
-    "particle": "chisel:block/magma/magma_dent"
+    "particle": "chisel:block/magma/magma_dent",
+    "standard_corner": "chisel:block/magma/magma_dent-ctm_corner",
+    "standard_cornerless": "chisel:block/magma/magma_dent-ctm_cornerless",
+    "standard_horizontal": "chisel:block/magma/magma_dent-ctm_horizontal",
+    "standard_none": "chisel:block/magma/magma_dent",
+    "standard_vertical": "chisel:block/magma/magma_dent-ctm_vertical"
   }
 }

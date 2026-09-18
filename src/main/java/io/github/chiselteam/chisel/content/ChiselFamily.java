@@ -2,6 +2,7 @@ package io.github.chiselteam.chisel.content;
 
 import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.api.family.VariantFamily;
+import io.github.chiselteam.chisel.content.definition.FamilyTextureOverrides;
 import io.github.chiselteam.chisel.content.definition.VariantFamilyDefinition;
 import io.github.chiselteam.chisel.content.definition.VariantFamilyDefinitionBuilder;
 import io.github.chiselteam.chisel.util.LangHelper;
@@ -22,6 +23,7 @@ public final class ChiselFamily {
     public static ChiselFamily build(String name, Consumer<VariantFamilyDefinitionBuilder> consumer) {
         VariantFamilyDefinitionBuilder builder = new VariantFamilyDefinitionBuilder(name);
         consumer.accept(builder);
+        FamilyTextureOverrides.apply(name, builder);
         return new ChiselFamily(builder.build());
     }
 

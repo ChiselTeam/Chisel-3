@@ -2,6 +2,6 @@
   "parent": "chisel:block/template_glass_pane_side_alt",
   "textures": {
     "edge": "chisel:block/stained_glass_pane_light_blue/stained_glass_pane_light_blue_borderless-top",
-    "pane": "chisel:block/stained_glass_pane_light_blue/stained_glass_pane_light_blue_borderless"
+    "pane": "chisel:block/stained_glass_light_blue/stained_glass_light_blue_borderless"
   }
 }

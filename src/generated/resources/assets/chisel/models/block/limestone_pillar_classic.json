@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/limestone/limestone_pillar_classic-bottom",
     "side": "chisel:block/limestone/limestone_pillar_classic-side",
-    "top": "chisel:block/limestone/limestone_pillar_classic-top"
+    "top": "chisel:block/limestone/limestone_pillar_classic-bottom"
   }
 }

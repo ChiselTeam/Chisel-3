@@ -1,6 +1,5 @@
 package io.github.chiselteam.chisel.datagen.model.generator.special;
 
-import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.datagen.model.ChiselModelTemplates;
 import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
@@ -11,7 +10,6 @@ import net.minecraft.client.data.models.model.ModelLocationUtils;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
-import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.world.item.Item;
 
 public class TorchModelGenerator extends VariantModelGenerator {
@@ -24,7 +22,7 @@ public class TorchModelGenerator extends VariantModelGenerator {
 
     @Override
     public TextureMapping getTextureMapping() {
-        return (new TextureMapping()).put(TextureSlot.TORCH, isWallTorch ? new Material(Chisel.prefix("block/torch/torch_%s".formatted(variant.getName().substring(11)))) : VariantTextures.get(variant));
+        return new TextureMapping().put(TextureSlot.TORCH, VariantTextures.get(variant));
     }
 
     @Override

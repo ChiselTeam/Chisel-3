@@ -9,17 +9,29 @@
     {
       "block": "chisel:stained_glass_pane_light_gray_borderless",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_light_gray_borderless"
+      "name": "stained_glass_pane_light_gray_borderless",
+      "textures": {
+        "": "chisel:block/stained_glass_light_gray/stained_glass_light_gray_borderless",
+        "top": "chisel:block/stained_glass_pane_light_gray/stained_glass_pane_light_gray_borderless-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_light_gray_bubble",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_light_gray_bubble"
+      "name": "stained_glass_pane_light_gray_bubble",
+      "textures": {
+        "": "chisel:block/stained_glass_light_gray/stained_glass_light_gray_bubble",
+        "top": "chisel:block/stained_glass_pane_light_gray/stained_glass_pane_light_gray_quad-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_light_gray_panel",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_light_gray_panel"
+      "name": "stained_glass_pane_light_gray_panel",
+      "textures": {
+        "": "chisel:block/stained_glass_light_gray/stained_glass_light_gray_panel",
+        "top": "chisel:block/stained_glass_pane_light_gray/stained_glass_pane_light_gray_quad-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_light_gray_quad",
@@ -29,7 +41,10 @@
     {
       "block": "chisel:stained_glass_pane_light_gray_fancy",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_light_gray_fancy"
+      "name": "stained_glass_pane_light_gray_fancy",
+      "textures": {
+        "top": "chisel:block/stained_glass_pane_light_gray/stained_glass_pane_light_gray_quad-top"
+      }
     }
   ]
 }

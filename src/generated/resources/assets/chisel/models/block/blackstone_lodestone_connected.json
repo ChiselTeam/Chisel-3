@@ -1,9 +1,12 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/blackstone/blackstone_lodestone_connected",
-    "overlay_connected": "chisel:block/blackstone/blackstone_lodestone_connected-ctm",
-    "overlay_texture": "chisel:block/blackstone/blackstone_lodestone_connected",
-    "particle": "chisel:block/blackstone/blackstone_lodestone_connected"
+    "all": "chisel:block/blackstone/blackstone_lodestone",
+    "particle": "chisel:block/blackstone/blackstone_lodestone",
+    "standard_corner": "chisel:block/blackstone/blackstone_lodestone_connected-ctm_corner",
+    "standard_cornerless": "chisel:block/blackstone/blackstone_lodestone",
+    "standard_horizontal": "chisel:block/blackstone/blackstone_lodestone_connected-ctm_horizontal",
+    "standard_none": "chisel:block/blackstone/blackstone_lodestone",
+    "standard_vertical": "chisel:block/blackstone/blackstone_lodestone_connected-ctm_vertical"
   }
 }

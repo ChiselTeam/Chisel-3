@@ -9,17 +9,29 @@
     {
       "block": "chisel:stained_glass_pane_light_blue_borderless",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_light_blue_borderless"
+      "name": "stained_glass_pane_light_blue_borderless",
+      "textures": {
+        "": "chisel:block/stained_glass_light_blue/stained_glass_light_blue_borderless",
+        "top": "chisel:block/stained_glass_pane_light_blue/stained_glass_pane_light_blue_borderless-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_light_blue_bubble",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_light_blue_bubble"
+      "name": "stained_glass_pane_light_blue_bubble",
+      "textures": {
+        "": "chisel:block/stained_glass_light_blue/stained_glass_light_blue_bubble",
+        "top": "chisel:block/stained_glass_pane_light_blue/stained_glass_pane_light_blue_quad-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_light_blue_panel",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_light_blue_panel"
+      "name": "stained_glass_pane_light_blue_panel",
+      "textures": {
+        "": "chisel:block/stained_glass_light_blue/stained_glass_light_blue_panel",
+        "top": "chisel:block/stained_glass_pane_light_blue/stained_glass_pane_light_blue_quad-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_light_blue_quad",
@@ -29,7 +41,10 @@
     {
       "block": "chisel:stained_glass_pane_light_blue_fancy",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_light_blue_fancy"
+      "name": "stained_glass_pane_light_blue_fancy",
+      "textures": {
+        "top": "chisel:block/stained_glass_pane_light_blue/stained_glass_pane_light_blue_quad-top"
+      }
     }
   ]
 }

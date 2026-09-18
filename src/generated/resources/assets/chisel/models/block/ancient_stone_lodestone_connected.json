@@ -1,9 +1,12 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/atm_ancient_stone/ancient_stone_lodestone_connected",
-    "overlay_connected": "chisel:block/atm_ancient_stone/ancient_stone_lodestone_connected-ctm",
-    "overlay_texture": "chisel:block/atm_ancient_stone/ancient_stone_lodestone_connected",
-    "particle": "chisel:block/atm_ancient_stone/ancient_stone_lodestone_connected"
+    "all": "chisel:block/atm_ancient_stone/ancient_stone_lodestone",
+    "particle": "chisel:block/atm_ancient_stone/ancient_stone_lodestone",
+    "standard_corner": "chisel:block/atm_ancient_stone/ancient_stone_lodestone_connected-ctm_corner",
+    "standard_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_lodestone",
+    "standard_horizontal": "chisel:block/atm_ancient_stone/ancient_stone_lodestone_connected-ctm_horizontal",
+    "standard_none": "chisel:block/atm_ancient_stone/ancient_stone_lodestone",
+    "standard_vertical": "chisel:block/atm_ancient_stone/ancient_stone_lodestone_connected-ctm_vertical"
   }
 }

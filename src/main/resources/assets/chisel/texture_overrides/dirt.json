@@ -1,0 +1,28 @@
+{
+  "dirt_bricks": {
+    "bottom": "chisel:block/dirt/dirt_bricks-top",
+    "side": "chisel:block/dirt/dirt_bricks-top",
+    "vertical_bottom": "chisel:block/dirt/dirt_bricks-vertical_both",
+    "vertical_none": "chisel:block/dirt/dirt_bricks-vertical_top"
+  },
+  "dirt_horizontal": {
+    "bottom": "chisel:block/dirt/dirt_horizontal",
+    "horizontal_both": "chisel:block/dirt/dirt_horizontal",
+    "top": "chisel:block/dirt/dirt_horizontal"
+  },
+  "dirt_reinforced": {
+    "ctm_cornerless": "chisel:block/dirt/dirt_bricks-vertical_both"
+  },
+  "dirt_reinforced_cobble": {
+    "ctm_cornerless": "chisel:block/dirt/dirt_cobble"
+  },
+  "dirt_vert": {
+    "bottom": "chisel:block/dirt/dirt_vert-top",
+    "side": "chisel:block/dirt/dirt_vert-top"
+  },
+  "dirt_vertical": {
+    "bottom": "chisel:block/dirt/dirt_vert-top",
+    "side": "chisel:block/dirt/dirt_vert-top",
+    "top": "chisel:block/dirt/dirt_vert-top"
+  }
+}

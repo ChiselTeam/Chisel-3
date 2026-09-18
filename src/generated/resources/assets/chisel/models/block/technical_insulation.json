@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/technical/technical_insulation",
-    "overlay_connected": "chisel:block/technical/technical_insulation-ctm",
-    "overlay_texture": "chisel:block/technical/technical_insulation",
-    "particle": "chisel:block/technical/technical_insulation"
+    "particle": "chisel:block/technical/technical_insulation",
+    "standard_corner": "chisel:block/technical/technical_insulation-ctm_corner",
+    "standard_cornerless": "chisel:block/technical/technical_insulation-ctm_cornerless",
+    "standard_horizontal": "chisel:block/technical/technical_insulation-ctm_horizontal",
+    "standard_none": "chisel:block/technical/technical_insulation",
+    "standard_vertical": "chisel:block/technical/technical_insulation-ctm_vertical"
   }
 }

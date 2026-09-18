@@ -9,12 +9,20 @@
     {
       "block": "chisel:cobblestone_array",
       "model_type": "multiblock_2x2",
-      "name": "cobblestone_array"
+      "name": "cobblestone_array",
+      "textures": {
+        "2x2_top_left": "chisel:block/cobblestone/cobblestone_array"
+      }
     },
     {
       "block": "chisel:cobblestone_border_square",
       "model_type": "connected",
-      "name": "cobblestone_border_square"
+      "name": "cobblestone_border_square",
+      "textures": {
+        "ctm_corner": "chisel:block/cobblestone/cobblestone_border_square",
+        "ctm_horizontal": "chisel:block/cobblestone/cobblestone_border_square",
+        "ctm_vertical": "chisel:block/cobblestone/cobblestone_border_square"
+      }
     },
     {
       "block": "chisel:cobblestone_braid",
@@ -45,7 +53,12 @@
     {
       "block": "chisel:cobblestone_bricks_large",
       "model_type": "multiblock_2x2",
-      "name": "cobblestone_bricks_large"
+      "name": "cobblestone_bricks_large",
+      "textures": {
+        "2x2_bottom_right": "chisel:block/cobblestone/cobblestone_bricks_large",
+        "2x2_top_left": "chisel:block/cobblestone/cobblestone_bricks_large",
+        "2x2_top_right": "chisel:block/cobblestone/cobblestone_bricks_large-2x2_bottom_left"
+      }
     },
     {
       "block": "chisel:cobblestone_small",
@@ -70,7 +83,10 @@
     {
       "block": "chisel:cobblestone_chaotic",
       "model_type": "multiblock_3x3",
-      "name": "cobblestone_chaotic"
+      "name": "cobblestone_chaotic",
+      "textures": {
+        "3x3_top_left": "chisel:block/cobblestone/cobblestone_chaotic"
+      }
     },
     {
       "block": "chisel:cobblestone_chaotic_medium",
@@ -100,7 +116,10 @@
     {
       "block": "chisel:cobblestone_cuts",
       "model_type": "multiblock_4x4",
-      "name": "cobblestone_cuts"
+      "name": "cobblestone_cuts",
+      "textures": {
+        "4x4_row_0_column_0": "chisel:block/cobblestone/cobblestone_cuts"
+      }
     },
     {
       "block": "chisel:cobblestone_dent",
@@ -128,7 +147,10 @@
     {
       "block": "chisel:cobblestone_jellybean",
       "model_type": "multiblock_2x2",
-      "name": "cobblestone_jellybean"
+      "name": "cobblestone_jellybean",
+      "textures": {
+        "2x2_top_left": "chisel:block/cobblestone/cobblestone_jellybean"
+      }
     },
     {
       "block": "chisel:cobblestone_layers",
@@ -141,7 +163,12 @@
     {
       "block": "chisel:cobblestone_layers_connected",
       "model_type": "connected",
-      "name": "cobblestone_layers_connected"
+      "name": "cobblestone_layers_connected",
+      "textures": {
+        "ctm_cornerless": "chisel:block/cobblestone/cobblestone_layers_connected-ctm_corner",
+        "ctm_horizontal": "chisel:block/cobblestone/cobblestone_layers_connected",
+        "ctm_vertical": "chisel:block/cobblestone/cobblestone_layers_connected-ctm_corner"
+      }
     },
     {
       "block": "chisel:cobblestone_line_horizontal",
@@ -154,12 +181,19 @@
     {
       "block": "chisel:cobblestone_meander_horizontal",
       "model_type": "ctmh",
-      "name": "cobblestone_meander_horizontal"
+      "name": "cobblestone_meander_horizontal",
+      "textures": {
+        "top": "chisel:block/cobblestone/cobblestone_meander_horizontal-bottom"
+      }
     },
     {
       "block": "chisel:cobblestone_meander_vertical",
       "model_type": "ctmv",
-      "name": "cobblestone_meander_vertical"
+      "name": "cobblestone_meander_vertical",
+      "textures": {
+        "top": "chisel:block/cobblestone/cobblestone_meander_vertical-bottom",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_meander_vertical-side"
+      }
     },
     {
       "block": "chisel:cobblestone_mosaic",
@@ -177,111 +211,228 @@
     {
       "block": "chisel:cobblestone_pillar",
       "model_type": "top_bottom_side",
-      "name": "cobblestone_pillar"
+      "name": "cobblestone_pillar",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_pillar-top"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_basic",
       "model_type": "ctmv",
-      "name": "cobblestone_pillar_basic"
+      "name": "cobblestone_pillar_basic",
+      "textures": {
+        "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_basic-side"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_basic_dent",
       "model_type": "ctmv",
-      "name": "cobblestone_pillar_basic_dent"
+      "name": "cobblestone_pillar_basic_dent",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_basic_dent-side"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_basic_plain",
       "model_type": "ctmv",
-      "name": "cobblestone_pillar_basic_plain"
+      "name": "cobblestone_pillar_basic_plain",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_basic_plain-side"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_basic_round",
       "model_type": "ctmv",
-      "name": "cobblestone_pillar_basic_round"
+      "name": "cobblestone_pillar_basic_round",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_basic_round-side"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_basic_spiral",
       "model_type": "ctmv",
-      "name": "cobblestone_pillar_basic_spiral"
+      "name": "cobblestone_pillar_basic_spiral",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_basic_spiral-side"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_classic",
       "model_type": "top_bottom_side",
-      "name": "cobblestone_pillar_classic"
+      "name": "cobblestone_pillar_classic",
+      "textures": {
+        "top": "chisel:block/cobblestone/cobblestone_pillar_classic-bottom"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_classic_large",
       "model_type": "top_bottom_side",
-      "name": "cobblestone_pillar_classic_large"
+      "name": "cobblestone_pillar_classic_large",
+      "textures": {
+        "top": "chisel:block/cobblestone/cobblestone_pillar_classic_large-bottom"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_ionic",
       "model_type": "ctmv",
-      "name": "cobblestone_pillar_ionic"
+      "name": "cobblestone_pillar_ionic",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_ionic-side"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_ionic_dent",
       "model_type": "ctmv",
-      "name": "cobblestone_pillar_ionic_dent"
+      "name": "cobblestone_pillar_ionic_dent",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "side": "chisel:block/cobblestone/cobblestone_pillar_ionic-side",
+        "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/cobblestone/cobblestone_pillar_basic_dent-vertical_both",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_ionic-side"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_ionic_plain",
       "model_type": "ctmv",
-      "name": "cobblestone_pillar_ionic_plain"
+      "name": "cobblestone_pillar_ionic_plain",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "side": "chisel:block/cobblestone/cobblestone_pillar_ionic-side",
+        "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/cobblestone/cobblestone_pillar_basic_plain-vertical_both",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_ionic-side"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_ionic_round",
       "model_type": "ctmv",
-      "name": "cobblestone_pillar_ionic_round"
+      "name": "cobblestone_pillar_ionic_round",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "side": "chisel:block/cobblestone/cobblestone_pillar_ionic-side",
+        "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/cobblestone/cobblestone_pillar_basic_round-vertical_both",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_ionic-side"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_ionic_spiral",
       "model_type": "ctmv",
-      "name": "cobblestone_pillar_ionic_spiral"
+      "name": "cobblestone_pillar_ionic_spiral",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "side": "chisel:block/cobblestone/cobblestone_pillar_ionic-side",
+        "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/cobblestone/cobblestone_pillar_basic_spiral-vertical_both",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_ionic-side"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_large_basic_triple",
       "model_type": "ctmv",
-      "name": "cobblestone_pillar_large_basic_triple"
+      "name": "cobblestone_pillar_large_basic_triple",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_large_basic_triple-side"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_large_ionic_triple",
       "model_type": "ctmv",
-      "name": "cobblestone_pillar_large_ionic_triple"
+      "name": "cobblestone_pillar_large_ionic_triple",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/cobblestone/cobblestone_pillar_large_basic_triple-vertical_both",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_large_ionic_triple-side"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_meander",
       "model_type": "ctmv",
-      "name": "cobblestone_pillar_meander"
+      "name": "cobblestone_pillar_meander",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/cobblestone/cobblestone_pillar_ionic-vertical_both",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_meander-side"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_meander_dent",
       "model_type": "ctmv",
-      "name": "cobblestone_pillar_meander_dent"
+      "name": "cobblestone_pillar_meander_dent",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "side": "chisel:block/cobblestone/cobblestone_pillar_meander-side",
+        "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/cobblestone/cobblestone_pillar_basic_dent-vertical_both",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_meander-side"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_meander_plain",
       "model_type": "ctmv",
-      "name": "cobblestone_pillar_meander_plain"
+      "name": "cobblestone_pillar_meander_plain",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "side": "chisel:block/cobblestone/cobblestone_pillar_meander-side",
+        "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/cobblestone/cobblestone_pillar_basic_plain-vertical_both",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_meander-side"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_meander_round",
       "model_type": "ctmv",
-      "name": "cobblestone_pillar_meander_round"
+      "name": "cobblestone_pillar_meander_round",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "side": "chisel:block/cobblestone/cobblestone_pillar_meander-side",
+        "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/cobblestone/cobblestone_pillar_basic_round-vertical_both",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_meander-side"
+      }
     },
     {
       "block": "chisel:cobblestone_pillar_meander_spiral",
       "model_type": "ctmv",
-      "name": "cobblestone_pillar_meander_spiral"
+      "name": "cobblestone_pillar_meander_spiral",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "side": "chisel:block/cobblestone/cobblestone_pillar_meander-side",
+        "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+        "vertical_both": "chisel:block/cobblestone/cobblestone_pillar_basic_spiral-vertical_both",
+        "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_meander-side"
+      }
     },
     {
       "block": "chisel:cobblestone_plate",
-      "name": "cobblestone_plate"
+      "name": "cobblestone_plate",
+      "textures": {
+        "": "chisel:block/cobblestone/cobblestone_plate_connected"
+      }
     },
     {
       "block": "chisel:cobblestone_plate_connected",
       "model_type": "connected",
-      "name": "cobblestone_plate_connected"
+      "name": "cobblestone_plate_connected",
+      "textures": {
+        "ctm_cornerless": "chisel:block/cobblestone/cobblestone_border_square-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:cobblestone_polished",
@@ -307,7 +458,10 @@
     {
       "block": "chisel:cobblestone_slanted",
       "model_type": "multiblock_2x2",
-      "name": "cobblestone_slanted"
+      "name": "cobblestone_slanted",
+      "textures": {
+        "2x2_top_left": "chisel:block/cobblestone/cobblestone_slanted"
+      }
     },
     {
       "block": "chisel:cobblestone_tiles_medium",
@@ -325,7 +479,10 @@
     {
       "block": "chisel:cobblestone_twisted",
       "model_type": "top_bottom_side",
-      "name": "cobblestone_twisted"
+      "name": "cobblestone_twisted",
+      "textures": {
+        "bottom": "chisel:block/cobblestone/cobblestone_twisted-top"
+      }
     },
     {
       "block": "chisel:cobblestone_weaver",
@@ -335,7 +492,11 @@
     {
       "block": "chisel:cobblestone_zag",
       "model_type": "v4",
-      "name": "cobblestone_zag"
+      "name": "cobblestone_zag",
+      "textures": {
+        "ar_variant_1": "chisel:block/cobblestone/cobblestone_zag",
+        "v4_top_right": "chisel:block/cobblestone/cobblestone_zag-v4_bottom_left"
+      }
     },
     {
       "block": "chisel:cobblestone_crate",
@@ -349,7 +510,10 @@
     {
       "block": "chisel:cobblestone_herringbone_encased",
       "model_type": "connected",
-      "name": "cobblestone_herringbone_encased"
+      "name": "cobblestone_herringbone_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/cobblestone/cobblestone_herringbone"
+      }
     },
     {
       "block": "chisel:cobblestone_medallion",
@@ -358,7 +522,10 @@
     {
       "block": "chisel:cobblestone_medallion_encased",
       "model_type": "connected",
-      "name": "cobblestone_medallion_encased"
+      "name": "cobblestone_medallion_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/cobblestone/cobblestone_medallion"
+      }
     },
     {
       "block": "chisel:cobblestone_dots",
@@ -367,7 +534,10 @@
     {
       "block": "chisel:cobblestone_dots_encased",
       "model_type": "connected",
-      "name": "cobblestone_dots_encased"
+      "name": "cobblestone_dots_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/cobblestone/cobblestone_dots"
+      }
     },
     {
       "block": "chisel:cobblestone_heart",
@@ -383,16 +553,25 @@
     },
     {
       "block": "chisel:cobblestone_lodestone",
-      "name": "cobblestone_lodestone"
+      "name": "cobblestone_lodestone",
+      "textures": {
+        "": "chisel:block/cobblestone/cobblestone_lodestone_connected"
+      }
     },
     {
       "block": "chisel:cobblestone_lodestone_connected",
       "model_type": "connected",
-      "name": "cobblestone_lodestone_connected"
+      "name": "cobblestone_lodestone_connected",
+      "textures": {
+        "ctm_cornerless": "chisel:block/cobblestone/cobblestone_lodestone_connected"
+      }
     },
     {
       "block": "chisel:cobblestone_plank",
-      "name": "cobblestone_plank"
+      "name": "cobblestone_plank",
+      "textures": {
+        "": "chisel:block/cobblestone/cobblestone_plank_connected"
+      }
     },
     {
       "block": "chisel:cobblestone_plank_connected",
@@ -430,7 +609,10 @@
     {
       "block": "chisel:cobblestone_stripes_encased",
       "model_type": "connected",
-      "name": "cobblestone_stripes_encased"
+      "name": "cobblestone_stripes_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/cobblestone/cobblestone_stripes"
+      }
     },
     {
       "block": "chisel:cobblestone_chisel_1",
@@ -467,11 +649,17 @@
     {
       "block": "chisel:cobblestone_facet_small_encased",
       "model_type": "connected",
-      "name": "cobblestone_facet_small_encased"
+      "name": "cobblestone_facet_small_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/cobblestone/cobblestone_facet_small"
+      }
     },
     {
       "block": "chisel:cobblestone_shiny",
-      "name": "cobblestone_shiny"
+      "name": "cobblestone_shiny",
+      "textures": {
+        "": "chisel:block/cobblestone/cobblestone_shiny_connected"
+      }
     },
     {
       "block": "chisel:cobblestone_shiny_connected",
@@ -484,25 +672,40 @@
     },
     {
       "block": "chisel:cobblestone_gem_1",
-      "name": "cobblestone_gem_1"
+      "name": "cobblestone_gem_1",
+      "textures": {
+        "": "chisel:block/cobblestone/cobblestone_gem_1_connected"
+      }
     },
     {
       "block": "chisel:cobblestone_gem_1_connected",
       "model_type": "connected",
-      "name": "cobblestone_gem_1_connected"
+      "name": "cobblestone_gem_1_connected",
+      "textures": {
+        "ctm_cornerless": "chisel:block/cobblestone/cobblestone_border_square-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:cobblestone_gem_2",
-      "name": "cobblestone_gem_2"
+      "name": "cobblestone_gem_2",
+      "textures": {
+        "": "chisel:block/cobblestone/cobblestone_gem_2_connected"
+      }
     },
     {
       "block": "chisel:cobblestone_gem_2_connected",
       "model_type": "connected",
-      "name": "cobblestone_gem_2_connected"
+      "name": "cobblestone_gem_2_connected",
+      "textures": {
+        "ctm_cornerless": "chisel:block/cobblestone/cobblestone_border_square-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:cobblestone_gem_3",
-      "name": "cobblestone_gem_3"
+      "name": "cobblestone_gem_3",
+      "textures": {
+        "": "chisel:block/cobblestone/cobblestone_gem_3_connected"
+      }
     },
     {
       "block": "chisel:cobblestone_gem_3_connected",
@@ -524,7 +727,10 @@
     {
       "block": "chisel:cobblestone_scaffold_encased",
       "model_type": "connected",
-      "name": "cobblestone_scaffold_encased"
+      "name": "cobblestone_scaffold_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/cobblestone/cobblestone_scaffold"
+      }
     },
     {
       "block": "chisel:cobblestone_tiles_inlayed",
@@ -533,7 +739,10 @@
     {
       "block": "chisel:cobblestone_waves",
       "model_type": "multiblock_2x2",
-      "name": "cobblestone_waves"
+      "name": "cobblestone_waves",
+      "textures": {
+        "2x2_top_left": "chisel:block/cobblestone/cobblestone_waves"
+      }
     },
     {
       "block": "chisel:cobblestone_parquet",
@@ -542,7 +751,10 @@
     {
       "block": "chisel:cobblestone_parquet_encased",
       "model_type": "connected",
-      "name": "cobblestone_parquet_encased"
+      "name": "cobblestone_parquet_encased",
+      "textures": {
+        "ctm_cornerless": "chisel:block/cobblestone/cobblestone_parquet"
+      }
     }
   ]
 }

@@ -1,15 +1,14 @@
 {
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/dirt/dirt_vertical-side",
-    "bottom": "chisel:block/dirt/dirt_vertical-bottom",
-    "overlay_bottom": "chisel:block/dirt/dirt_vertical-bottom",
-    "overlay_side_connected": "chisel:block/dirt/dirt_vertical-side-ctm",
-    "overlay_texture": "chisel:block/dirt/dirt_vertical-side",
-    "overlay_top": "chisel:block/dirt/dirt_vertical-top",
-    "overlay_vertical": "chisel:block/dirt/dirt_vertical-side-ctm",
-    "particle": "chisel:block/dirt/dirt_vertical-side",
-    "side": "chisel:block/dirt/dirt_vertical-side",
-    "top": "chisel:block/dirt/dirt_vertical-top"
+    "all": "chisel:block/dirt/dirt_vert-top",
+    "bottom": "chisel:block/dirt/dirt_vert-top",
+    "particle": "chisel:block/dirt/dirt_vert-top",
+    "side": "chisel:block/dirt/dirt_vert-top",
+    "top": "chisel:block/dirt/dirt_vert-top",
+    "vertical_both": "chisel:block/dirt/dirt_vertical-vertical_both",
+    "vertical_bottom": "chisel:block/dirt/dirt_vertical-vertical_bottom",
+    "vertical_none": "chisel:block/dirt/dirt_vertical-vertical_none",
+    "vertical_top": "chisel:block/dirt/dirt_vertical-vertical_top"
   }
 }

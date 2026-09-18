@@ -12,7 +12,10 @@
     },
     {
       "block": "chisel:gold_adv",
-      "name": "gold_adv"
+      "name": "gold_adv",
+      "textures": {
+        "": "chisel:block/gold/gold_125"
+      }
     },
     {
       "block": "chisel:gold_bad_greggy",
@@ -22,7 +25,10 @@
     {
       "block": "chisel:gold_brick",
       "model_type": "top_bottom_side",
-      "name": "gold_brick"
+      "name": "gold_brick",
+      "textures": {
+        "bottom": "chisel:block/gold/gold_brick-top"
+      }
     },
     {
       "block": "chisel:gold_caution",
@@ -32,7 +38,10 @@
     {
       "block": "chisel:gold_cart",
       "model_type": "top_bottom_side",
-      "name": "gold_cart"
+      "name": "gold_cart",
+      "textures": {
+        "bottom": "chisel:block/gold/gold_cart-top"
+      }
     },
     {
       "block": "chisel:gold_coin_heads",
@@ -42,17 +51,26 @@
     {
       "block": "chisel:gold_coin_tails",
       "model_type": "top_bottom_side",
-      "name": "gold_coin_tails"
+      "name": "gold_coin_tails",
+      "textures": {
+        "side": "chisel:block/gold/gold_coin_heads-side"
+      }
     },
     {
       "block": "chisel:gold_crate_dark",
       "model_type": "top_bottom_side",
-      "name": "gold_crate_dark"
+      "name": "gold_crate_dark",
+      "textures": {
+        "top": "chisel:block/gold/gold_brick-top"
+      }
     },
     {
       "block": "chisel:gold_crate_light",
       "model_type": "top_bottom_side",
-      "name": "gold_crate_light"
+      "name": "gold_crate_light",
+      "textures": {
+        "top": "chisel:block/gold/gold_brick-top"
+      }
     },
     {
       "block": "chisel:gold_egregious",
@@ -62,12 +80,18 @@
     {
       "block": "chisel:gold_ingots_large",
       "model_type": "top_bottom_side",
-      "name": "gold_ingots_large"
+      "name": "gold_ingots_large",
+      "textures": {
+        "top": "chisel:block/gold/gold_cart-top"
+      }
     },
     {
       "block": "chisel:gold_ingots_small",
       "model_type": "top_bottom_side",
-      "name": "gold_ingots_small"
+      "name": "gold_ingots_small",
+      "textures": {
+        "top": "chisel:block/gold/gold_brick-top"
+      }
     },
     {
       "block": "chisel:gold_machine",
@@ -76,7 +100,10 @@
     {
       "block": "chisel:gold_plates",
       "model_type": "top_bottom_side",
-      "name": "gold_plates"
+      "name": "gold_plates",
+      "textures": {
+        "side": "chisel:block/gold/gold_plates-top"
+      }
     },
     {
       "block": "chisel:gold_rivets",
@@ -95,7 +122,10 @@
     {
       "block": "chisel:gold_simple",
       "model_type": "top_bottom_side",
-      "name": "gold_simple"
+      "name": "gold_simple",
+      "textures": {
+        "top": "chisel:block/gold/gold_cart-top"
+      }
     },
     {
       "block": "chisel:gold_star_decor",
@@ -105,12 +135,19 @@
     {
       "block": "chisel:gold_star_obsidian",
       "model_type": "top_bottom_side",
-      "name": "gold_star_obsidian"
+      "name": "gold_star_obsidian",
+      "textures": {
+        "bottom": "chisel:block/gold/gold_star_obsidian-top",
+        "side": "chisel:block/gold/gold_star_obsidian-top"
+      }
     },
     {
       "block": "chisel:gold_star_obsidian_purple",
       "model_type": "top_bottom_side",
-      "name": "gold_star_obsidian_purple"
+      "name": "gold_star_obsidian_purple",
+      "textures": {
+        "side": "chisel:block/gold/gold_star_obsidian_purple-top"
+      }
     },
     {
       "block": "chisel:gold_thermal",

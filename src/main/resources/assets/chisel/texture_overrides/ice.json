@@ -1,0 +1,67 @@
+{
+  "ice_array": {
+    "2x2_top_left": "chisel:block/ice/ice_array"
+  },
+  "ice_chaotic_bricks": {
+    "3x3_top_left": "chisel:block/ice/ice_chaotic_bricks"
+  },
+  "ice_circular": {
+    "ctm_cornerless": "chisel:block/ice/ice_dent-ctm_cornerless"
+  },
+  "ice_cuts": {
+    "4x4_row_0_column_0": "chisel:block/ice/ice_cuts"
+  },
+  "ice_jellybean": {
+    "2x2_top_left": "chisel:block/ice/ice_jellybean"
+  },
+  "ice_mosaic": {
+    "ctm_cornerless": "chisel:block/ice/ice_raw"
+  },
+  "ice_pillar": {
+    "bottom": "chisel:block/ice/ice_pillar-top"
+  },
+  "ice_pillar_carved": {
+    "bottom": "chisel:block/ice/ice_pillar_carved-top"
+  },
+  "ice_pillar_convex": {
+    "bottom": "chisel:block/ice/ice_pillar_carved-top",
+    "top": "chisel:block/ice/ice_pillar_carved-top"
+  },
+  "ice_pillar_greek_greek": {
+    "bottom": "chisel:block/ice/ice_pillar_carved-top",
+    "top": "chisel:block/ice/ice_pillar_carved-top"
+  },
+  "ice_pillar_greek_plain": {
+    "bottom": "chisel:block/ice/ice_pillar_carved-top",
+    "top": "chisel:block/ice/ice_pillar_carved-top"
+  },
+  "ice_pillar_ornamental": {
+    "bottom": "chisel:block/ice/ice_pillar_carved-top",
+    "top": "chisel:block/ice/ice_pillar_carved-top"
+  },
+  "ice_pillar_plain_greek": {
+    "bottom": "chisel:block/ice/ice_pillar_carved-top",
+    "top": "chisel:block/ice/ice_pillar_carved-top"
+  },
+  "ice_pillar_plain_plain": {
+    "bottom": "chisel:block/ice/ice_pillar_carved-top",
+    "top": "chisel:block/ice/ice_pillar_carved-top"
+  },
+  "ice_slanted": {
+    "2x2_bottom_left": "chisel:block/ice/ice_slanted",
+    "2x2_bottom_right": "chisel:block/ice/ice_slanted-2x2_top_right",
+    "2x2_top_left": "chisel:block/ice/ice_slanted"
+  },
+  "ice_tiles_large": {
+    "ctm_cornerless": "chisel:block/ice/ice_raw"
+  },
+  "ice_twisted": {
+    "bottom": "chisel:block/ice/ice_twisted-top"
+  },
+  "ice_weaver": {
+    "ctm_cornerless": "chisel:block/ice/ice_weaver-ctm_corner"
+  },
+  "ice_zag": {
+    "ar_variant_1": "chisel:block/ice/ice_zag"
+  }
+}

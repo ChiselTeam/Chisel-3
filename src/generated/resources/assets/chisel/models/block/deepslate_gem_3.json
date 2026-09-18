@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/deepslate/deepslate_gem_3"
+    "all": "chisel:block/deepslate/deepslate_gem_3_connected"
   }
 }

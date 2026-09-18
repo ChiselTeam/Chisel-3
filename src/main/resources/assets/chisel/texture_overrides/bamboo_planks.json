@@ -1,0 +1,28 @@
+{
+  "bamboo_planks_braced": {
+    "bottom": "chisel:block/bamboo_planks/bamboo_planks_braced",
+    "side": "chisel:block/bamboo_planks/bamboo_planks_braced",
+    "side-ctm_cornerless": "chisel:block/bamboo_planks/bamboo_planks_encased-ctm_cornerless",
+    "side-ctm_vertical": "chisel:block/bamboo_planks/bamboo_planks_braced",
+    "top": "chisel:block/bamboo_planks/bamboo_planks_braced",
+    "top-ctm_corner": "chisel:block/bamboo_planks/bamboo_planks_log_bordered-ctm_corner",
+    "top-ctm_cornerless": "chisel:block/bamboo_planks/bamboo_planks_encased-ctm_cornerless",
+    "top-ctm_horizontal": "chisel:block/bamboo_planks/bamboo_planks_log_bordered",
+    "top-ctm_vertical": "chisel:block/bamboo_planks/bamboo_planks_braced"
+  },
+  "bamboo_planks_encased_2": {
+    "ctm_cornerless": "chisel:block/bamboo_planks/bamboo_planks_encased_2",
+    "ctm_horizontal": "chisel:block/bamboo_planks/bamboo_planks_encased-ctm_horizontal"
+  },
+  "bamboo_planks_encased_large": {
+    "ctm_cornerless": "chisel:block/bamboo_planks/bamboo_planks_large"
+  },
+  "bamboo_planks_encased_smooth": {
+    "ctm_cornerless": "chisel:block/bamboo_planks/bamboo_planks_smooth-ctm_cornerless"
+  },
+  "bamboo_planks_log_bordered": {
+    "ctm_cornerless": "chisel:block/bamboo_planks/bamboo_planks_encased-ctm_cornerless",
+    "ctm_horizontal": "chisel:block/bamboo_planks/bamboo_planks_log_bordered",
+    "ctm_vertical": "chisel:block/bamboo_planks/bamboo_planks_braced"
+  }
+}

@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/wool_lime/wool_lime_llama",
-    "overlay_connected": "chisel:block/wool_lime/wool_lime_llama-ctm",
-    "overlay_texture": "chisel:block/wool_lime/wool_lime_llama",
-    "particle": "chisel:block/wool_lime/wool_lime_llama"
+    "particle": "chisel:block/wool_lime/wool_lime_llama",
+    "standard_corner": "chisel:block/wool_lime/wool_lime_llama-ctm_corner",
+    "standard_cornerless": "chisel:block/wool_lime/wool_lime_llama-ctm_cornerless",
+    "standard_horizontal": "chisel:block/wool_lime/wool_lime_llama-ctm_horizontal",
+    "standard_none": "chisel:block/wool_lime/wool_lime_llama",
+    "standard_vertical": "chisel:block/wool_lime/wool_lime_llama-ctm_vertical"
   }
 }

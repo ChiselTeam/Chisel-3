@@ -2,7 +2,6 @@ package io.github.chiselteam.chisel.datagen.model.generator.ctm;
 
 import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.datagen.model.ChiselModelTemplates;
-import io.github.chiselteam.chisel.datagen.model.ChiselTextureSlots;
 import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateDefinitionGenerator;
@@ -18,10 +17,9 @@ public class Multiblock4x4ModelGenerator extends VariantModelGenerator {
 
     @Override
     public TextureMapping getTextureMapping() {
-        return (new TextureMapping())
+        return VariantTextures.ctm(variant, textures -> textures.multiblock4x4Textures(VariantTextures.get(variant, "4x4").sprite()))
                 .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
-                .put(TextureSlot.ALL, VariantTextures.get(variant))
-                .put(ChiselTextureSlots.CTM_OVERLAY_4X4, VariantTextures.get(variant, "4x4"));
+                .put(TextureSlot.ALL, VariantTextures.get(variant));
     }
 
     @Override

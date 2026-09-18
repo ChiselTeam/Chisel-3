@@ -1,0 +1,14 @@
+{
+  "military_imperial_camo": {
+    "v4_top_left": "chisel:block/military/military_imperial_camo"
+  },
+  "military_imperial_camo_secluded": {
+    "v4_top_left": "chisel:block/military/military_imperial_camo_secluded"
+  },
+  "military_rebel_camo": {
+    "v4_top_left": "chisel:block/military/military_rebel_camo"
+  },
+  "military_rebel_camo_secluded": {
+    "v4_top_left": "chisel:block/military/military_rebel_camo_secluded"
+  }
+}

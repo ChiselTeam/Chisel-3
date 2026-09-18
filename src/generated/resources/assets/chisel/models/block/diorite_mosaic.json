@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/diorite/diorite_mosaic",
-    "overlay_connected": "chisel:block/diorite/diorite_mosaic-ctm",
-    "overlay_texture": "chisel:block/diorite/diorite_mosaic",
-    "particle": "chisel:block/diorite/diorite_mosaic"
+    "particle": "chisel:block/diorite/diorite_mosaic",
+    "standard_corner": "chisel:block/diorite/diorite_mosaic-ctm_corner",
+    "standard_cornerless": "chisel:block/diorite/diorite_mosaic-ctm_cornerless",
+    "standard_horizontal": "chisel:block/diorite/diorite_mosaic-ctm_horizontal",
+    "standard_none": "chisel:block/diorite/diorite_mosaic",
+    "standard_vertical": "chisel:block/diorite/diorite_mosaic-ctm_vertical"
   }
 }

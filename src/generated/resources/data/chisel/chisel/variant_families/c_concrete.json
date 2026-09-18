@@ -13,7 +13,10 @@
     {
       "block": "chisel:concrete_block",
       "model_type": "connected",
-      "name": "concrete_block"
+      "name": "concrete_block",
+      "textures": {
+        "ctm_cornerless": "chisel:block/c_concrete/concrete_block"
+      }
     },
     {
       "block": "chisel:concrete_block_weathered",

@@ -1,15 +1,14 @@
 {
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
-    "all": "chisel:block/netherrack/netherrack_pillar_meander_plain-side",
-    "bottom": "chisel:block/netherrack/netherrack_pillar_meander_plain-bottom",
-    "overlay_bottom": "chisel:block/netherrack/netherrack_pillar_meander_plain-bottom",
-    "overlay_side_connected": "chisel:block/netherrack/netherrack_pillar_meander_plain-side-ctm",
-    "overlay_texture": "chisel:block/netherrack/netherrack_pillar_meander_plain-side",
-    "overlay_top": "chisel:block/netherrack/netherrack_pillar_meander_plain-top",
-    "overlay_vertical": "chisel:block/netherrack/netherrack_pillar_meander_plain-side-ctm",
-    "particle": "chisel:block/netherrack/netherrack_pillar_meander_plain-side",
-    "side": "chisel:block/netherrack/netherrack_pillar_meander_plain-side",
-    "top": "chisel:block/netherrack/netherrack_pillar_meander_plain-top"
+    "all": "chisel:block/netherrack/netherrack_pillar_meander-side",
+    "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
+    "particle": "chisel:block/netherrack/netherrack_pillar_meander-side",
+    "side": "chisel:block/netherrack/netherrack_pillar_meander-side",
+    "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
+    "vertical_both": "chisel:block/netherrack/netherrack_pillar_basic_plain-vertical_both",
+    "vertical_bottom": "chisel:block/netherrack/netherrack_pillar_meander_plain-vertical_bottom",
+    "vertical_none": "chisel:block/netherrack/netherrack_pillar_meander-side",
+    "vertical_top": "chisel:block/netherrack/netherrack_pillar_meander_plain-vertical_top"
   }
 }

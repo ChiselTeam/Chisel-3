@@ -2,7 +2,6 @@ package io.github.chiselteam.chisel.datagen.model.generator.special.lavastone;
 
 import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.datagen.model.ChiselModelTemplates;
-import io.github.chiselteam.chisel.datagen.model.ChiselTextureSlots;
 import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateDefinitionGenerator;
@@ -28,13 +27,19 @@ public class LavastoneMultiblockModelGenerator extends VariantModelGenerator {
 
     @Override
     public TextureMapping getTextureMapping() {
-        TextureSlot overlaySlot = size == 2 ? ChiselTextureSlots.CTM_OVERLAY_2X2 : (size == 3 ? ChiselTextureSlots.CTM_OVERLAY_3X3 : ChiselTextureSlots.CTM_OVERLAY_4X4);
-        return (new TextureMapping())
+        return VariantTextures.ctm(variant, textures -> {
+                    Identifier base = VariantTextures.get(variant, size + "x" + size).sprite();
+                    switch (size) {
+                        case 2 -> textures.multiblock2x2Textures(base);
+                        case 3 -> textures.multiblock3x3Textures(base);
+                        case 4 -> textures.multiblock4x4Textures(base);
+                        default -> throw new IllegalStateException("Unsupported multiblock size: " + size);
+                    }
+                })
                 .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
                 .put(TextureSlot.ALL, VariantTextures.get(variant))
                 .put(TextureSlot.LAYER0, new Material(BuiltInRegistries.FLUID.getKey(Fluids.LAVA.getSource()).withPrefix("block/").withSuffix("_still")))
-                .put(TextureSlot.LAYER1, VariantTextures.get(variant))
-                .put(overlaySlot, VariantTextures.get(variant, size + "x" + size));
+                .put(TextureSlot.LAYER1, VariantTextures.get(variant));
     }
 
     @Override

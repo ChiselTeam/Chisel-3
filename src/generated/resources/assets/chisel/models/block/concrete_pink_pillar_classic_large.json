@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/concrete_pink/concrete_pink_pillar_classic_large-bottom",
+    "bottom": "chisel:block/concrete_pink/concrete_pink_pillar_classic_large-top",
     "side": "chisel:block/concrete_pink/concrete_pink_pillar_classic_large-side",
     "top": "chisel:block/concrete_pink/concrete_pink_pillar_classic_large-top"
   }

@@ -3,8 +3,11 @@
   "textures": {
     "all": "chisel:block/netherite/netherite_meander_horizontal",
     "bottom": "chisel:block/netherite/netherite_meander_horizontal-bottom",
-    "overlay_horizontal": "chisel:block/netherite/netherite_meander_horizontal-ctmh",
+    "horizontal_both": "chisel:block/netherite/netherite_meander_horizontal-horizontal_both",
+    "horizontal_left": "chisel:block/netherite/netherite_meander_horizontal-horizontal_left",
+    "horizontal_none": "chisel:block/netherite/netherite_meander_horizontal-horizontal_none",
+    "horizontal_right": "chisel:block/netherite/netherite_meander_horizontal-horizontal_right",
     "particle": "chisel:block/netherite/netherite_meander_horizontal",
-    "top": "chisel:block/netherite/netherite_meander_horizontal-top"
+    "top": "chisel:block/netherite/netherite_meander_horizontal-bottom"
   }
 }

@@ -1,10 +1,13 @@
 {
   "parent": "chisel:block/cube_multi_pass_tinted",
   "textures": {
-    "all": "chisel:block/waterstone/waterstone_zag",
+    "all": "chisel:block/lavastone/lavastone_zag",
+    "ar_1": "chisel:block/lavastone/lavastone_zag",
+    "ar_2": "chisel:block/lavastone/lavastone_zag-ar_variant_2",
+    "ar_3": "chisel:block/lavastone/lavastone_zag-ar_variant_3",
+    "ar_4": "chisel:block/lavastone/lavastone_zag-ar_variant_4",
     "layer0": "minecraft:block/water_still",
-    "layer1": "chisel:block/waterstone/waterstone_zag",
-    "overlay_2x2": "chisel:block/waterstone/waterstone_zag-ctm",
-    "particle": "chisel:block/waterstone/waterstone_zag"
+    "layer1": "chisel:block/lavastone/lavastone_zag",
+    "particle": "chisel:block/lavastone/lavastone_zag"
   }
 }

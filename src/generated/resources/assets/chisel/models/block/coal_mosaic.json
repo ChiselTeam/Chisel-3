@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/coal/coal_mosaic",
-    "overlay_connected": "chisel:block/coal/coal_mosaic-ctm",
-    "overlay_texture": "chisel:block/coal/coal_mosaic",
-    "particle": "chisel:block/coal/coal_mosaic"
+    "particle": "chisel:block/coal/coal_mosaic",
+    "standard_corner": "chisel:block/coal/coal_mosaic-ctm_corner",
+    "standard_cornerless": "chisel:block/coal/coal_mosaic-ctm_cornerless",
+    "standard_horizontal": "chisel:block/coal/coal_mosaic-ctm_horizontal",
+    "standard_none": "chisel:block/coal/coal_mosaic",
+    "standard_vertical": "chisel:block/coal/coal_mosaic-ctm_vertical"
   }
 }

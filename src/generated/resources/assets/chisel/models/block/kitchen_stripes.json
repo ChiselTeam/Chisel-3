@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/kitchen/kitchen_stripes",
-    "overlay_connected": "chisel:block/kitchen/kitchen_stripes-ctm",
-    "overlay_texture": "chisel:block/kitchen/kitchen_stripes",
-    "particle": "chisel:block/kitchen/kitchen_stripes"
+    "particle": "chisel:block/kitchen/kitchen_stripes",
+    "standard_corner": "chisel:block/kitchen/kitchen_stripes-ctm_corner",
+    "standard_cornerless": "chisel:block/kitchen/kitchen_stripes-ctm_cornerless",
+    "standard_horizontal": "chisel:block/kitchen/kitchen_stripes-ctm_horizontal",
+    "standard_none": "chisel:block/kitchen/kitchen_stripes",
+    "standard_vertical": "chisel:block/kitchen/kitchen_stripes-ctm_vertical"
   }
 }

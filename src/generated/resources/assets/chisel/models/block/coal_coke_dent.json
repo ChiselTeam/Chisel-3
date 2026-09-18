@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/coal_coke/coal_coke_dent",
-    "overlay_connected": "chisel:block/coal_coke/coal_coke_dent-ctm",
-    "overlay_texture": "chisel:block/coal_coke/coal_coke_dent",
-    "particle": "chisel:block/coal_coke/coal_coke_dent"
+    "particle": "chisel:block/coal_coke/coal_coke_dent",
+    "standard_corner": "chisel:block/coal_coke/coal_coke_dent-ctm_corner",
+    "standard_cornerless": "chisel:block/coal_coke/coal_coke_dent-ctm_cornerless",
+    "standard_horizontal": "chisel:block/coal_coke/coal_coke_dent-ctm_horizontal",
+    "standard_none": "chisel:block/coal_coke/coal_coke_dent",
+    "standard_vertical": "chisel:block/coal_coke/coal_coke_dent-ctm_vertical"
   }
 }

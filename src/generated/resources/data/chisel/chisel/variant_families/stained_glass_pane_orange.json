@@ -9,17 +9,29 @@
     {
       "block": "chisel:stained_glass_pane_orange_borderless",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_orange_borderless"
+      "name": "stained_glass_pane_orange_borderless",
+      "textures": {
+        "": "chisel:block/stained_glass_orange/stained_glass_orange_borderless",
+        "top": "chisel:block/stained_glass_pane_orange/stained_glass_pane_orange_borderless-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_orange_bubble",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_orange_bubble"
+      "name": "stained_glass_pane_orange_bubble",
+      "textures": {
+        "": "chisel:block/stained_glass_orange/stained_glass_orange_bubble",
+        "top": "chisel:block/stained_glass_pane_orange/stained_glass_pane_orange_quad-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_orange_panel",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_orange_panel"
+      "name": "stained_glass_pane_orange_panel",
+      "textures": {
+        "": "chisel:block/stained_glass_orange/stained_glass_orange_panel",
+        "top": "chisel:block/stained_glass_pane_orange/stained_glass_pane_orange_quad-top"
+      }
     },
     {
       "block": "chisel:stained_glass_pane_orange_quad",
@@ -29,7 +41,10 @@
     {
       "block": "chisel:stained_glass_pane_orange_fancy",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_orange_fancy"
+      "name": "stained_glass_pane_orange_fancy",
+      "textures": {
+        "top": "chisel:block/stained_glass_pane_orange/stained_glass_pane_orange_quad-top"
+      }
     }
   ]
 }

@@ -3,9 +3,12 @@
   "textures": {
     "base_texture": "minecraft:block/mangrove_planks",
     "bottom": "minecraft:block/mangrove_planks",
+    "horizontal_both": "chisel:block/bookshelf/bookshelf_necromancer_apprentice-horizontal_both",
+    "horizontal_left": "chisel:block/bookshelf/bookshelf_necromancer_apprentice-horizontal_left",
+    "horizontal_none": "chisel:block/bookshelf/bookshelf_necromancer_apprentice",
+    "horizontal_right": "chisel:block/bookshelf/bookshelf_necromancer_apprentice-horizontal_right",
     "layer0": "minecraft:block/mangrove_planks",
     "layer1": "minecraft:block/mangrove_planks",
-    "overlay_horizontal": "chisel:block/bookshelf/bookshelf_necromancer_apprentice-ctm",
     "particle": "minecraft:block/mangrove_planks",
     "side": "chisel:block/bookshelf/bookshelf_necromancer_apprentice",
     "top": "minecraft:block/mangrove_planks"

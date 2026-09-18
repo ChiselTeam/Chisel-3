@@ -9,7 +9,10 @@
     {
       "block": "chisel:mossy_cobblestone_array",
       "model_type": "multiblock_2x2",
-      "name": "mossy_cobblestone_array"
+      "name": "mossy_cobblestone_array",
+      "textures": {
+        "2x2_top_left": "chisel:block/mossy_cobblestone/mossy_cobblestone_array"
+      }
     },
     {
       "block": "chisel:mossy_cobblestone_braid",
@@ -18,7 +21,10 @@
     {
       "block": "chisel:mossy_cobblestone_chaotic",
       "model_type": "multiblock_3x3",
-      "name": "mossy_cobblestone_chaotic"
+      "name": "mossy_cobblestone_chaotic",
+      "textures": {
+        "3x3_top_left": "chisel:block/mossy_cobblestone/mossy_cobblestone_chaotic"
+      }
     },
     {
       "block": "chisel:mossy_cobblestone_chaotic_medium",
@@ -44,7 +50,10 @@
     {
       "block": "chisel:mossy_cobblestone_cuts",
       "model_type": "multiblock_4x4",
-      "name": "mossy_cobblestone_cuts"
+      "name": "mossy_cobblestone_cuts",
+      "textures": {
+        "4x4_row_0_column_0": "chisel:block/mossy_cobblestone/mossy_cobblestone_cuts"
+      }
     },
     {
       "block": "chisel:mossy_cobblestone_dent",
@@ -77,7 +86,10 @@
     {
       "block": "chisel:mossy_cobblestone_jellybean",
       "model_type": "multiblock_2x2",
-      "name": "mossy_cobblestone_jellybean"
+      "name": "mossy_cobblestone_jellybean",
+      "textures": {
+        "2x2_top_left": "chisel:block/mossy_cobblestone/mossy_cobblestone_jellybean"
+      }
     },
     {
       "block": "chisel:mossy_cobblestone_layers",
@@ -103,7 +115,10 @@
     {
       "block": "chisel:mossy_cobblestone_pillar",
       "model_type": "top_bottom_side",
-      "name": "mossy_cobblestone_pillar"
+      "name": "mossy_cobblestone_pillar",
+      "textures": {
+        "bottom": "chisel:block/mossy_cobblestone/mossy_cobblestone_pillar-top"
+      }
     },
     {
       "block": "chisel:mossy_cobblestone_prism",
@@ -120,7 +135,10 @@
     {
       "block": "chisel:mossy_cobblestone_slanted",
       "model_type": "multiblock_2x2",
-      "name": "mossy_cobblestone_slanted"
+      "name": "mossy_cobblestone_slanted",
+      "textures": {
+        "2x2_top_left": "chisel:block/mossy_cobblestone/mossy_cobblestone_slanted"
+      }
     },
     {
       "block": "chisel:mossy_cobblestone_small",
@@ -154,7 +172,10 @@
     {
       "block": "chisel:mossy_cobblestone_twisted",
       "model_type": "top_bottom_side",
-      "name": "mossy_cobblestone_twisted"
+      "name": "mossy_cobblestone_twisted",
+      "textures": {
+        "bottom": "chisel:block/mossy_cobblestone/mossy_cobblestone_twisted-top"
+      }
     },
     {
       "block": "chisel:mossy_cobblestone_weaver",
@@ -164,7 +185,10 @@
     {
       "block": "chisel:mossy_cobblestone_zag",
       "model_type": "ar",
-      "name": "mossy_cobblestone_zag"
+      "name": "mossy_cobblestone_zag",
+      "textures": {
+        "ar_variant_1": "chisel:block/mossy_cobblestone/mossy_cobblestone_zag"
+      }
     }
   ]
 }

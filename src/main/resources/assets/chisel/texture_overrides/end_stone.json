@@ -1,0 +1,217 @@
+{
+  "end_stone_array": {
+    "2x2_top_left": "chisel:block/end_stone/end_stone_array"
+  },
+  "end_stone_border_square": {
+    "ctm_corner": "chisel:block/end_stone/end_stone_border_square",
+    "ctm_horizontal": "chisel:block/end_stone/end_stone_border_square",
+    "ctm_vertical": "chisel:block/end_stone/end_stone_border_square"
+  },
+  "end_stone_bricks_large": {
+    "2x2_bottom_right": "chisel:block/end_stone/end_stone_bricks_large",
+    "2x2_top_left": "chisel:block/end_stone/end_stone_bricks_large",
+    "2x2_top_right": "chisel:block/end_stone/end_stone_bricks_large-2x2_bottom_left"
+  },
+  "end_stone_chaotic_bricks": {
+    "3x3_top_left": "chisel:block/end_stone/end_stone_chaotic_bricks"
+  },
+  "end_stone_cuts": {
+    "4x4_row_0_column_0": "chisel:block/end_stone/end_stone_cuts"
+  },
+  "end_stone_dots_encased": {
+    "ctm_cornerless": "chisel:block/end_stone/end_stone_dots"
+  },
+  "end_stone_facet_small_encased": {
+    "ctm_cornerless": "chisel:block/end_stone/end_stone_facet_small"
+  },
+  "end_stone_gem_1": {
+    "": "chisel:block/end_stone/end_stone_gem_1_connected"
+  },
+  "end_stone_gem_1_connected": {
+    "ctm_cornerless": "chisel:block/end_stone/end_stone_border_square-ctm_cornerless"
+  },
+  "end_stone_gem_2": {
+    "": "chisel:block/end_stone/end_stone_gem_2_connected"
+  },
+  "end_stone_gem_2_connected": {
+    "ctm_cornerless": "chisel:block/end_stone/end_stone_border_square-ctm_cornerless"
+  },
+  "end_stone_gem_3": {
+    "": "chisel:block/end_stone/end_stone_gem_3_connected"
+  },
+  "end_stone_herringbone_encased": {
+    "ctm_cornerless": "chisel:block/end_stone/end_stone_herringbone"
+  },
+  "end_stone_indent": {
+    "ctm_cornerless": "chisel:block/end_stone/end_stone_border_square-ctm_cornerless"
+  },
+  "end_stone_jellybean": {
+    "2x2_top_left": "chisel:block/end_stone/end_stone_jellybean"
+  },
+  "end_stone_layers_connected": {
+    "ctm_cornerless": "chisel:block/end_stone/end_stone_layers_connected-ctm_corner",
+    "ctm_horizontal": "chisel:block/end_stone/end_stone_layers_connected",
+    "ctm_vertical": "chisel:block/end_stone/end_stone_layers_connected-ctm_corner"
+  },
+  "end_stone_lodestone": {
+    "": "chisel:block/end_stone/end_stone_lodestone_connected"
+  },
+  "end_stone_lodestone_connected": {
+    "ctm_cornerless": "chisel:block/end_stone/end_stone_lodestone_connected"
+  },
+  "end_stone_meander_horizontal": {
+    "top": "chisel:block/end_stone/end_stone_meander_horizontal-bottom"
+  },
+  "end_stone_meander_vertical": {
+    "top": "chisel:block/end_stone/end_stone_meander_vertical-bottom",
+    "vertical_none": "chisel:block/end_stone/end_stone_meander_vertical-side"
+  },
+  "end_stone_medallion_encased": {
+    "ctm_cornerless": "chisel:block/end_stone/end_stone_medallion"
+  },
+  "end_stone_parquet_encased": {
+    "ctm_cornerless": "chisel:block/end_stone/end_stone_parquet"
+  },
+  "end_stone_pillar": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar-top"
+  },
+  "end_stone_pillar_basic": {
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "vertical_none": "chisel:block/end_stone/end_stone_pillar_basic-side"
+  },
+  "end_stone_pillar_basic_dent": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "vertical_none": "chisel:block/end_stone/end_stone_pillar_basic_dent-side"
+  },
+  "end_stone_pillar_basic_plain": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "vertical_none": "chisel:block/end_stone/end_stone_pillar_basic_plain-side"
+  },
+  "end_stone_pillar_basic_round": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "vertical_none": "chisel:block/end_stone/end_stone_pillar_basic_round-side"
+  },
+  "end_stone_pillar_basic_spiral": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "vertical_none": "chisel:block/end_stone/end_stone_pillar_basic_spiral-side"
+  },
+  "end_stone_pillar_classic": {
+    "top": "chisel:block/end_stone/end_stone_pillar_classic-bottom"
+  },
+  "end_stone_pillar_classic_large": {
+    "top": "chisel:block/end_stone/end_stone_pillar_classic_large-bottom"
+  },
+  "end_stone_pillar_ionic": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "vertical_none": "chisel:block/end_stone/end_stone_pillar_ionic-side"
+  },
+  "end_stone_pillar_ionic_dent": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "side": "chisel:block/end_stone/end_stone_pillar_ionic-side",
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/end_stone/end_stone_pillar_basic_dent-vertical_both",
+    "vertical_none": "chisel:block/end_stone/end_stone_pillar_ionic-side"
+  },
+  "end_stone_pillar_ionic_plain": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "side": "chisel:block/end_stone/end_stone_pillar_ionic-side",
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/end_stone/end_stone_pillar_basic_plain-vertical_both",
+    "vertical_none": "chisel:block/end_stone/end_stone_pillar_ionic-side"
+  },
+  "end_stone_pillar_ionic_round": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "side": "chisel:block/end_stone/end_stone_pillar_ionic-side",
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/end_stone/end_stone_pillar_basic_round-vertical_both",
+    "vertical_none": "chisel:block/end_stone/end_stone_pillar_ionic-side"
+  },
+  "end_stone_pillar_ionic_spiral": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "side": "chisel:block/end_stone/end_stone_pillar_ionic-side",
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/end_stone/end_stone_pillar_basic_spiral-vertical_both",
+    "vertical_none": "chisel:block/end_stone/end_stone_pillar_ionic-side"
+  },
+  "end_stone_pillar_large_basic_triple": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "vertical_none": "chisel:block/end_stone/end_stone_pillar_large_basic_triple-side"
+  },
+  "end_stone_pillar_large_ionic_triple": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/end_stone/end_stone_pillar_large_basic_triple-vertical_both",
+    "vertical_none": "chisel:block/end_stone/end_stone_pillar_large_ionic_triple-side"
+  },
+  "end_stone_pillar_meander": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/end_stone/end_stone_pillar_ionic-vertical_both",
+    "vertical_none": "chisel:block/end_stone/end_stone_pillar_meander-side"
+  },
+  "end_stone_pillar_meander_dent": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "side": "chisel:block/end_stone/end_stone_pillar_meander-side",
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/end_stone/end_stone_pillar_basic_dent-vertical_both",
+    "vertical_none": "chisel:block/end_stone/end_stone_pillar_meander-side"
+  },
+  "end_stone_pillar_meander_plain": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "side": "chisel:block/end_stone/end_stone_pillar_meander-side",
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/end_stone/end_stone_pillar_basic_plain-vertical_both",
+    "vertical_none": "chisel:block/end_stone/end_stone_pillar_meander-side"
+  },
+  "end_stone_pillar_meander_round": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "side": "chisel:block/end_stone/end_stone_pillar_meander-side",
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/end_stone/end_stone_pillar_basic_round-vertical_both",
+    "vertical_none": "chisel:block/end_stone/end_stone_pillar_meander-side"
+  },
+  "end_stone_pillar_meander_spiral": {
+    "bottom": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "side": "chisel:block/end_stone/end_stone_pillar_meander-side",
+    "top": "chisel:block/end_stone/end_stone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/end_stone/end_stone_pillar_basic_spiral-vertical_both",
+    "vertical_none": "chisel:block/end_stone/end_stone_pillar_meander-side"
+  },
+  "end_stone_plank": {
+    "": "chisel:block/end_stone/end_stone_plank_connected"
+  },
+  "end_stone_plate": {
+    "": "chisel:block/end_stone/end_stone_plate_connected"
+  },
+  "end_stone_plate_connected": {
+    "ctm_cornerless": "chisel:block/end_stone/end_stone_border_square-ctm_cornerless"
+  },
+  "end_stone_scaffold_encased": {
+    "ctm_cornerless": "chisel:block/end_stone/end_stone_scaffold"
+  },
+  "end_stone_shiny": {
+    "": "chisel:block/end_stone/end_stone_shiny_connected"
+  },
+  "end_stone_slanted": {
+    "2x2_top_left": "chisel:block/end_stone/end_stone_slanted"
+  },
+  "end_stone_stripes_encased": {
+    "ctm_cornerless": "chisel:block/end_stone/end_stone_stripes"
+  },
+  "end_stone_twisted": {
+    "bottom": "chisel:block/end_stone/end_stone_twisted-top"
+  },
+  "end_stone_waves": {
+    "2x2_top_left": "chisel:block/end_stone/end_stone_waves"
+  },
+  "end_stone_zag": {
+    "ar_variant_1": "chisel:block/end_stone/end_stone_zag",
+    "v4_top_right": "chisel:block/end_stone/end_stone_zag-v4_bottom_left"
+  }
+}

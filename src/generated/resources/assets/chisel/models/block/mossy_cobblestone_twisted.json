@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/mossy_cobblestone/mossy_cobblestone_twisted-bottom",
+    "bottom": "chisel:block/mossy_cobblestone/mossy_cobblestone_twisted-top",
     "side": "chisel:block/mossy_cobblestone/mossy_cobblestone_twisted-side",
     "top": "chisel:block/mossy_cobblestone/mossy_cobblestone_twisted-top"
   }

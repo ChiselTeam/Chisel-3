@@ -2,14 +2,13 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/netherite/netherite_pillar_basic_spiral-side",
-    "bottom": "chisel:block/netherite/netherite_pillar_basic_spiral-bottom",
-    "overlay_bottom": "chisel:block/netherite/netherite_pillar_basic_spiral-bottom",
-    "overlay_side_connected": "chisel:block/netherite/netherite_pillar_basic_spiral-side-ctm",
-    "overlay_texture": "chisel:block/netherite/netherite_pillar_basic_spiral-side",
-    "overlay_top": "chisel:block/netherite/netherite_pillar_basic_spiral-top",
-    "overlay_vertical": "chisel:block/netherite/netherite_pillar_basic_spiral-side-ctm",
+    "bottom": "chisel:block/netherite/netherite_pillar_basic-bottom",
     "particle": "chisel:block/netherite/netherite_pillar_basic_spiral-side",
     "side": "chisel:block/netherite/netherite_pillar_basic_spiral-side",
-    "top": "chisel:block/netherite/netherite_pillar_basic_spiral-top"
+    "top": "chisel:block/netherite/netherite_pillar_basic-bottom",
+    "vertical_both": "chisel:block/netherite/netherite_pillar_basic_spiral-vertical_both",
+    "vertical_bottom": "chisel:block/netherite/netherite_pillar_basic_spiral-vertical_bottom",
+    "vertical_none": "chisel:block/netherite/netherite_pillar_basic_spiral-vertical_none",
+    "vertical_top": "chisel:block/netherite/netherite_pillar_basic_spiral-vertical_top"
   }
 }

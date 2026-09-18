@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/concrete_purple/concrete_purple_meander_horizontal",
-    "bottom": "chisel:block/concrete_purple/concrete_purple_meander_horizontal-bottom",
-    "overlay_horizontal": "chisel:block/concrete_purple/concrete_purple_meander_horizontal-ctmh",
+    "bottom": "chisel:block/concrete_purple/concrete_purple_meander_horizontal-top",
+    "horizontal_both": "chisel:block/concrete_purple/concrete_purple_meander_horizontal-horizontal_both",
+    "horizontal_left": "chisel:block/concrete_purple/concrete_purple_meander_horizontal-horizontal_left",
+    "horizontal_none": "chisel:block/concrete_purple/concrete_purple_meander_horizontal-horizontal_none",
+    "horizontal_right": "chisel:block/concrete_purple/concrete_purple_meander_horizontal-horizontal_right",
     "particle": "chisel:block/concrete_purple/concrete_purple_meander_horizontal",
     "top": "chisel:block/concrete_purple/concrete_purple_meander_horizontal-top"
   }

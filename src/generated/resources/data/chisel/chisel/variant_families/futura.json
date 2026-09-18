@@ -10,7 +10,11 @@
     {
       "block": "chisel:futura_controller_purple",
       "model_type": "multi_layer",
-      "name": "futura_controller_purple"
+      "name": "futura_controller_purple",
+      "textures": {
+        "": "chisel:block/futura/futura_controller",
+        "bg": "chisel:block/futura/futura_controller_purple-bg"
+      }
     },
     {
       "block": "chisel:futura_rainbow",
@@ -25,7 +29,11 @@
     {
       "block": "chisel:futura_screen_gray",
       "model_type": "multi_layer_connected_glow",
-      "name": "futura_screen_gray"
+      "name": "futura_screen_gray",
+      "textures": {
+        "bg": "chisel:block/futura/futura_screen_cyan-bg",
+        "ctm_cornerless": "chisel:block/glass/glass_edge-ctm_cornerless"
+      }
     },
     {
       "block": "chisel:futura_matrix",

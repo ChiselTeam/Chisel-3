@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/glowstone/glowstone_encased_bricks",
-    "overlay_connected": "chisel:block/glowstone/glowstone_encased_bricks-ctm",
-    "overlay_texture": "chisel:block/glowstone/glowstone_encased_bricks",
-    "particle": "chisel:block/glowstone/glowstone_encased_bricks"
+    "particle": "chisel:block/glowstone/glowstone_encased_bricks",
+    "standard_corner": "chisel:block/glowstone/glowstone_encased_bricks-ctm_corner",
+    "standard_cornerless": "chisel:block/glowstone/glowstone_encased_bricks-ctm_cornerless",
+    "standard_horizontal": "chisel:block/glowstone/glowstone_encased_bricks-ctm_horizontal",
+    "standard_none": "chisel:block/glowstone/glowstone_encased_bricks",
+    "standard_vertical": "chisel:block/glowstone/glowstone_encased_bricks-ctm_vertical"
   }
 }

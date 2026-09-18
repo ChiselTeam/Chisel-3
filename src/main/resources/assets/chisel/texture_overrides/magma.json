@@ -1,0 +1,43 @@
+{
+  "magma_array": {
+    "2x2_top_left": "chisel:block/magma/magma_array"
+  },
+  "magma_chaotic_bricks": {
+    "3x3_top_left": "chisel:block/magma/magma_chaotic_bricks"
+  },
+  "magma_circular": {
+    "bg": "chisel:block/magma/magma_dent-bg",
+    "ctm_cornerless": "chisel:block/magma/magma_dent-ctm_cornerless"
+  },
+  "magma_cuts": {
+    "4x4_row_0_column_0": "chisel:block/magma/magma_cuts"
+  },
+  "magma_encased_bricks": {
+    "bg": "chisel:block/magma/magma_dent-bg"
+  },
+  "magma_jellybean": {
+    "2x2_top_left": "chisel:block/magma/magma_jellybean"
+  },
+  "magma_mosaic": {
+    "bg": "chisel:block/magma/magma_dent-bg"
+  },
+  "magma_pillar": {
+    "bottom": "chisel:block/magma/magma_pillar-top"
+  },
+  "magma_slanted": {
+    "2x2_top_left": "chisel:block/magma/magma_slanted"
+  },
+  "magma_tiles_large": {
+    "bg": "chisel:block/magma/magma_dent-bg"
+  },
+  "magma_twisted": {
+    "bottom": "chisel:block/magma/magma_twisted-top"
+  },
+  "magma_weaver": {
+    "bg": "chisel:block/magma/magma_dent-bg"
+  },
+  "magma_zag": {
+    "ar_variant_1": "chisel:block/magma/magma_zag",
+    "bg": "chisel:block/magma/magma_dent-bg"
+  }
+}

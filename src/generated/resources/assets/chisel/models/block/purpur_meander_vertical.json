@@ -3,13 +3,12 @@
   "textures": {
     "all": "chisel:block/purpur/purpur_meander_vertical-side",
     "bottom": "chisel:block/purpur/purpur_meander_vertical-bottom",
-    "overlay_bottom": "chisel:block/purpur/purpur_meander_vertical-bottom",
-    "overlay_side_connected": "chisel:block/purpur/purpur_meander_vertical-side-ctm",
-    "overlay_texture": "chisel:block/purpur/purpur_meander_vertical-side",
-    "overlay_top": "chisel:block/purpur/purpur_meander_vertical-top",
-    "overlay_vertical": "chisel:block/purpur/purpur_meander_vertical-side-ctm",
     "particle": "chisel:block/purpur/purpur_meander_vertical-side",
     "side": "chisel:block/purpur/purpur_meander_vertical-side",
-    "top": "chisel:block/purpur/purpur_meander_vertical-top"
+    "top": "chisel:block/purpur/purpur_meander_vertical-bottom",
+    "vertical_both": "chisel:block/purpur/purpur_meander_vertical-vertical_both",
+    "vertical_bottom": "chisel:block/purpur/purpur_meander_vertical-vertical_bottom",
+    "vertical_none": "chisel:block/purpur/purpur_meander_vertical-side",
+    "vertical_top": "chisel:block/purpur/purpur_meander_vertical-vertical_top"
   }
 }

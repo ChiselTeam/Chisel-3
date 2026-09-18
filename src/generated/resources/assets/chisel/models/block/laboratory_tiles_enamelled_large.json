@@ -1,9 +1,12 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/laboratory/laboratory_tiles_enamelled_large",
-    "overlay_connected": "chisel:block/laboratory/laboratory_tiles_enamelled_large-ctm",
-    "overlay_texture": "chisel:block/laboratory/laboratory_tiles_enamelled_large",
-    "particle": "chisel:block/laboratory/laboratory_tiles_enamelled_large"
+    "all": "chisel:block/laboratory/laboratory_tiles_large",
+    "particle": "chisel:block/laboratory/laboratory_tiles_large",
+    "standard_corner": "chisel:block/laboratory/laboratory_tiles_large-ctm_corner",
+    "standard_cornerless": "chisel:block/laboratory/laboratory_tiles_large-ctm_cornerless",
+    "standard_horizontal": "chisel:block/laboratory/laboratory_tiles_large-ctm_horizontal",
+    "standard_none": "chisel:block/laboratory/laboratory_tiles_large",
+    "standard_vertical": "chisel:block/laboratory/laboratory_tiles_large-ctm_vertical"
   }
 }

@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/aluminum/aluminum_scaffold",
-    "overlay_connected": "chisel:block/aluminum/aluminum_scaffold-ctm",
-    "overlay_texture": "chisel:block/aluminum/aluminum_scaffold",
-    "particle": "chisel:block/aluminum/aluminum_scaffold"
+    "particle": "chisel:block/aluminum/aluminum_scaffold",
+    "standard_corner": "chisel:block/aluminum/aluminum_scaffold-ctm_corner",
+    "standard_cornerless": "chisel:block/aluminum/aluminum_scaffold-ctm_cornerless",
+    "standard_horizontal": "chisel:block/aluminum/aluminum_scaffold-ctm_horizontal",
+    "standard_none": "chisel:block/aluminum/aluminum_scaffold",
+    "standard_vertical": "chisel:block/aluminum/aluminum_scaffold-ctm_vertical"
   }
 }

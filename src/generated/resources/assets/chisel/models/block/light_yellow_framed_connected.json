@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/light_yellow/light_yellow_framed_connected",
-    "overlay_connected": "chisel:block/light_yellow/light_yellow_framed_connected-ctm",
-    "overlay_texture": "chisel:block/light_yellow/light_yellow_framed_connected",
-    "particle": "chisel:block/light_yellow/light_yellow_framed_connected"
+    "particle": "chisel:block/light_yellow/light_yellow_framed_connected",
+    "standard_corner": "chisel:block/light_yellow/light_yellow_framed_connected-ctm_corner",
+    "standard_cornerless": "chisel:block/light_yellow/light_yellow_framed_connected-ctm_cornerless",
+    "standard_horizontal": "chisel:block/light_yellow/light_yellow_framed_connected-ctm_horizontal",
+    "standard_none": "chisel:block/light_yellow/light_yellow_framed_connected",
+    "standard_vertical": "chisel:block/light_yellow/light_yellow_framed_connected-ctm_vertical"
   }
 }

@@ -1,9 +1,12 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/quartz/quartz_gem_1_connected",
-    "overlay_connected": "chisel:block/quartz/quartz_gem_1_connected-ctm",
-    "overlay_texture": "chisel:block/quartz/quartz_gem_1_connected",
-    "particle": "chisel:block/quartz/quartz_gem_1_connected"
+    "all": "chisel:block/quartz/quartz_gem_1",
+    "particle": "chisel:block/quartz/quartz_gem_1",
+    "standard_corner": "chisel:block/quartz/quartz_gem_1_connected-ctm_corner",
+    "standard_cornerless": "chisel:block/quartz/quartz_raw",
+    "standard_horizontal": "chisel:block/quartz/quartz_gem_1_connected-ctm_horizontal",
+    "standard_none": "chisel:block/quartz/quartz_gem_1",
+    "standard_vertical": "chisel:block/quartz/quartz_gem_1_connected-ctm_vertical"
   }
 }

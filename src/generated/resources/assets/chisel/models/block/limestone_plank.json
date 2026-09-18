@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/limestone/limestone_plank"
+    "all": "chisel:block/limestone/limestone_plank_connected"
   }
 }

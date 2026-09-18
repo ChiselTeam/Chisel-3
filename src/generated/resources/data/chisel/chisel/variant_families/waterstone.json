@@ -5,157 +5,328 @@
     {
       "block": "chisel:waterstone_array",
       "model_type": "multi_layer_water_2x2",
-      "name": "waterstone_array"
+      "name": "waterstone_array",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_array",
+        "2x2_bottom_left": "chisel:block/lavastone/lavastone_array-2x2_bottom_left",
+        "2x2_bottom_right": "chisel:block/lavastone/lavastone_array-2x2_bottom_right",
+        "2x2_top_left": "chisel:block/lavastone/lavastone_array",
+        "2x2_top_right": "chisel:block/lavastone/lavastone_array-2x2_top_right"
+      }
     },
     {
       "block": "chisel:waterstone_braid",
       "model_type": "multi_layer_water",
-      "name": "waterstone_braid"
+      "name": "waterstone_braid",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_braid"
+      }
     },
     {
       "block": "chisel:waterstone_chaotic_bricks",
       "model_type": "multi_layer_water_3x3",
-      "name": "waterstone_chaotic_bricks"
+      "name": "waterstone_chaotic_bricks",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_chaotic_bricks",
+        "3x3_bottom_center": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_bottom_center",
+        "3x3_bottom_left": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_bottom_left",
+        "3x3_bottom_right": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_bottom_right",
+        "3x3_center": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_center",
+        "3x3_center_left": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_center_left",
+        "3x3_center_right": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_center_right",
+        "3x3_top_center": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_top_center",
+        "3x3_top_left": "chisel:block/lavastone/lavastone_chaotic_bricks",
+        "3x3_top_right": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_top_right"
+      }
     },
     {
       "block": "chisel:waterstone_chaotic_medium",
       "model_type": "multi_layer_water",
-      "name": "waterstone_chaotic_medium"
+      "name": "waterstone_chaotic_medium",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_chaotic_medium"
+      }
     },
     {
       "block": "chisel:waterstone_chaotic_small",
       "model_type": "multi_layer_water",
-      "name": "waterstone_chaotic_small"
+      "name": "waterstone_chaotic_small",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_chaotic_small"
+      }
     },
     {
       "block": "chisel:waterstone_circular",
       "model_type": "multi_layer_connected_tinted",
-      "name": "waterstone_circular"
+      "name": "waterstone_circular",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_circular",
+        "bg": "chisel:block/waterstone/water_still",
+        "ctm_corner": "chisel:block/lavastone/lavastone_circular-ctm_corner",
+        "ctm_cornerless": "chisel:block/lavastone/lavastone_circular-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/lavastone/lavastone_circular-ctm_horizontal",
+        "ctm_vertical": "chisel:block/lavastone/lavastone_circular-ctm_vertical"
+      }
     },
     {
       "block": "chisel:waterstone_cracked",
       "model_type": "multi_layer_water",
-      "name": "waterstone_cracked"
+      "name": "waterstone_cracked",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_cracked"
+      }
     },
     {
       "block": "chisel:waterstone_cracked_bricks",
       "model_type": "multi_layer_water",
-      "name": "waterstone_cracked_bricks"
+      "name": "waterstone_cracked_bricks",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_cracked_bricks"
+      }
     },
     {
       "block": "chisel:waterstone_cuts",
       "model_type": "multi_layer_water_4x4",
-      "name": "waterstone_cuts"
+      "name": "waterstone_cuts",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_cuts",
+        "4x4_row_0_column_0": "chisel:block/lavastone/lavastone_cuts",
+        "4x4_row_0_column_1": "chisel:block/lavastone/lavastone_cuts-4x4_row_0_column_1",
+        "4x4_row_0_column_2": "chisel:block/lavastone/lavastone_cuts-4x4_row_0_column_2",
+        "4x4_row_0_column_3": "chisel:block/lavastone/lavastone_cuts-4x4_row_0_column_3",
+        "4x4_row_1_column_0": "chisel:block/lavastone/lavastone_cuts-4x4_row_1_column_0",
+        "4x4_row_1_column_1": "chisel:block/lavastone/lavastone_cuts-4x4_row_1_column_1",
+        "4x4_row_1_column_2": "chisel:block/lavastone/lavastone_cuts-4x4_row_1_column_2",
+        "4x4_row_1_column_3": "chisel:block/lavastone/lavastone_cuts-4x4_row_1_column_3",
+        "4x4_row_2_column_0": "chisel:block/lavastone/lavastone_cuts-4x4_row_2_column_0",
+        "4x4_row_2_column_1": "chisel:block/lavastone/lavastone_cuts-4x4_row_2_column_1",
+        "4x4_row_2_column_2": "chisel:block/lavastone/lavastone_cuts-4x4_row_2_column_2",
+        "4x4_row_2_column_3": "chisel:block/lavastone/lavastone_cuts-4x4_row_2_column_3",
+        "4x4_row_3_column_0": "chisel:block/lavastone/lavastone_cuts-4x4_row_3_column_0",
+        "4x4_row_3_column_1": "chisel:block/lavastone/lavastone_cuts-4x4_row_3_column_1",
+        "4x4_row_3_column_2": "chisel:block/lavastone/lavastone_cuts-4x4_row_3_column_2",
+        "4x4_row_3_column_3": "chisel:block/lavastone/lavastone_cuts-4x4_row_3_column_3"
+      }
     },
     {
       "block": "chisel:waterstone_dent",
       "model_type": "multi_layer_connected_tinted",
-      "name": "waterstone_dent"
+      "name": "waterstone_dent",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_dent",
+        "bg": "chisel:block/waterstone/water_still",
+        "ctm_corner": "chisel:block/lavastone/lavastone_dent-ctm_corner",
+        "ctm_cornerless": "chisel:block/lavastone/lavastone_dent-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/lavastone/lavastone_dent-ctm_horizontal",
+        "ctm_vertical": "chisel:block/lavastone/lavastone_dent-ctm_vertical"
+      }
     },
     {
       "block": "chisel:waterstone_encased_bricks",
       "model_type": "multi_layer_connected_tinted",
-      "name": "waterstone_encased_bricks"
+      "name": "waterstone_encased_bricks",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_encased_bricks",
+        "bg": "chisel:block/waterstone/water_still",
+        "ctm_corner": "chisel:block/lavastone/lavastone_encased_bricks-ctm_corner",
+        "ctm_cornerless": "chisel:block/lavastone/lavastone_encased_bricks-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/lavastone/lavastone_encased_bricks-ctm_horizontal",
+        "ctm_vertical": "chisel:block/lavastone/lavastone_encased_bricks-ctm_vertical"
+      }
     },
     {
       "block": "chisel:waterstone_french_1",
       "model_type": "multi_layer_water",
-      "name": "waterstone_french_1"
+      "name": "waterstone_french_1",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_french_1"
+      }
     },
     {
       "block": "chisel:waterstone_french_2",
       "model_type": "multi_layer_water",
-      "name": "waterstone_french_2"
+      "name": "waterstone_french_2",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_french_2"
+      }
     },
     {
       "block": "chisel:waterstone_jellybean",
       "model_type": "multi_layer_water_2x2",
-      "name": "waterstone_jellybean"
+      "name": "waterstone_jellybean",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_jellybean",
+        "2x2_bottom_left": "chisel:block/lavastone/lavastone_jellybean-2x2_bottom_left",
+        "2x2_bottom_right": "chisel:block/lavastone/lavastone_jellybean-2x2_bottom_right",
+        "2x2_top_left": "chisel:block/lavastone/lavastone_jellybean",
+        "2x2_top_right": "chisel:block/lavastone/lavastone_jellybean-2x2_top_right"
+      }
     },
     {
       "block": "chisel:waterstone_layers",
       "model_type": "multi_layer_water",
-      "name": "waterstone_layers"
+      "name": "waterstone_layers",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_layers"
+      }
     },
     {
       "block": "chisel:waterstone_mosaic",
       "model_type": "multi_layer_connected_tinted",
-      "name": "waterstone_mosaic"
+      "name": "waterstone_mosaic",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_mosaic",
+        "bg": "chisel:block/waterstone/water_still",
+        "ctm_corner": "chisel:block/lavastone/lavastone_mosaic-ctm_corner",
+        "ctm_cornerless": "chisel:block/lavastone/lavastone_mosaic-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/lavastone/lavastone_mosaic-ctm_horizontal",
+        "ctm_vertical": "chisel:block/lavastone/lavastone_mosaic-ctm_vertical"
+      }
     },
     {
       "block": "chisel:waterstone_ornate",
       "model_type": "multi_layer_water",
-      "name": "waterstone_ornate"
+      "name": "waterstone_ornate",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_ornate"
+      }
     },
     {
       "block": "chisel:waterstone_panel",
       "model_type": "multi_layer_water",
-      "name": "waterstone_panel"
+      "name": "waterstone_panel",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_panel"
+      }
     },
     {
       "block": "chisel:waterstone_pillar",
       "model_type": "multi_layer_tbs_tinted",
-      "name": "waterstone_pillar"
+      "name": "waterstone_pillar",
+      "textures": {
+        "bg": "chisel:block/waterstone/water_still",
+        "bottom": "chisel:block/lavastone/lavastone_pillar-top",
+        "side": "chisel:block/lavastone/lavastone_pillar-side",
+        "top": "chisel:block/lavastone/lavastone_pillar-top"
+      }
     },
     {
       "block": "chisel:waterstone_prism",
       "model_type": "multi_layer_water",
-      "name": "waterstone_prism"
+      "name": "waterstone_prism",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_prism"
+      }
     },
     {
       "block": "chisel:waterstone_raw",
       "model_type": "multi_layer_water",
-      "name": "waterstone_raw"
+      "name": "waterstone_raw",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_raw"
+      }
     },
     {
       "block": "chisel:waterstone_road",
       "model_type": "multi_layer_water",
-      "name": "waterstone_road"
+      "name": "waterstone_road",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_road"
+      }
     },
     {
       "block": "chisel:waterstone_slanted",
       "model_type": "multi_layer_water_2x2",
-      "name": "waterstone_slanted"
+      "name": "waterstone_slanted",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_slanted",
+        "2x2_bottom_left": "chisel:block/lavastone/lavastone_slanted",
+        "2x2_bottom_right": "chisel:block/lavastone/lavastone_slanted-2x2_top_right",
+        "2x2_top_left": "chisel:block/lavastone/lavastone_slanted",
+        "2x2_top_right": "chisel:block/lavastone/lavastone_slanted-2x2_top_right"
+      }
     },
     {
       "block": "chisel:waterstone_small_bricks",
       "model_type": "multi_layer_water",
-      "name": "waterstone_small_bricks"
+      "name": "waterstone_small_bricks",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_small_bricks"
+      }
     },
     {
       "block": "chisel:waterstone_soft_bricks",
       "model_type": "multi_layer_water",
-      "name": "waterstone_soft_bricks"
+      "name": "waterstone_soft_bricks",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_soft_bricks"
+      }
     },
     {
       "block": "chisel:waterstone_tiles_large",
       "model_type": "multi_layer_connected_tinted",
-      "name": "waterstone_tiles_large"
+      "name": "waterstone_tiles_large",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_tiles_large",
+        "bg": "chisel:block/waterstone/water_still",
+        "ctm_corner": "chisel:block/lavastone/lavastone_tiles_large-ctm_corner",
+        "ctm_cornerless": "chisel:block/lavastone/lavastone_mosaic-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/lavastone/lavastone_tiles_large-ctm_horizontal",
+        "ctm_vertical": "chisel:block/lavastone/lavastone_tiles_large-ctm_vertical"
+      }
     },
     {
       "block": "chisel:waterstone_tiles_medium",
       "model_type": "multi_layer_water",
-      "name": "waterstone_tiles_medium"
+      "name": "waterstone_tiles_medium",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_tiles_medium"
+      }
     },
     {
       "block": "chisel:waterstone_triple_bricks",
       "model_type": "multi_layer_water",
-      "name": "waterstone_triple_bricks"
+      "name": "waterstone_triple_bricks",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_triple_bricks"
+      }
     },
     {
       "block": "chisel:waterstone_twisted",
       "model_type": "multi_layer_tbs_tinted",
-      "name": "waterstone_twisted"
+      "name": "waterstone_twisted",
+      "textures": {
+        "bg": "chisel:block/waterstone/water_still",
+        "bottom": "chisel:block/lavastone/lavastone_twisted-top",
+        "side": "chisel:block/lavastone/lavastone_twisted-side",
+        "top": "chisel:block/lavastone/lavastone_twisted-top"
+      }
     },
     {
       "block": "chisel:waterstone_weaver",
       "model_type": "multi_layer_connected_tinted",
-      "name": "waterstone_weaver"
+      "name": "waterstone_weaver",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_weaver",
+        "bg": "chisel:block/waterstone/water_still",
+        "ctm_corner": "chisel:block/lavastone/lavastone_weaver-ctm_corner",
+        "ctm_cornerless": "chisel:block/lavastone/lavastone_weaver-ctm_cornerless",
+        "ctm_horizontal": "chisel:block/lavastone/lavastone_weaver-ctm_horizontal",
+        "ctm_vertical": "chisel:block/lavastone/lavastone_weaver-ctm_vertical"
+      }
     },
     {
       "block": "chisel:waterstone_zag",
       "model_type": "multi_layer_water_ar",
-      "name": "waterstone_zag"
+      "name": "waterstone_zag",
+      "textures": {
+        "": "chisel:block/lavastone/lavastone_zag",
+        "ar_variant_1": "chisel:block/lavastone/lavastone_zag",
+        "ar_variant_2": "chisel:block/lavastone/lavastone_zag-ar_variant_2",
+        "ar_variant_3": "chisel:block/lavastone/lavastone_zag-ar_variant_3",
+        "ar_variant_4": "chisel:block/lavastone/lavastone_zag-ar_variant_4",
+        "bg": "chisel:block/waterstone/water_still"
+      }
     }
   ]
 }

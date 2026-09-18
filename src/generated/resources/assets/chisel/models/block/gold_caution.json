@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/gold/gold_caution",
-    "overlay_connected": "chisel:block/gold/gold_caution-ctm",
-    "overlay_texture": "chisel:block/gold/gold_caution",
-    "particle": "chisel:block/gold/gold_caution"
+    "particle": "chisel:block/gold/gold_caution",
+    "standard_corner": "chisel:block/gold/gold_caution-ctm_corner",
+    "standard_cornerless": "chisel:block/gold/gold_caution-ctm_cornerless",
+    "standard_horizontal": "chisel:block/gold/gold_caution-ctm_horizontal",
+    "standard_none": "chisel:block/gold/gold_caution",
+    "standard_vertical": "chisel:block/gold/gold_caution-ctm_vertical"
   }
 }

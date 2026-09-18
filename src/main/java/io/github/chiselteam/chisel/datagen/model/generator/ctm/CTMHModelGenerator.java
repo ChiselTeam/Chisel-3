@@ -2,7 +2,6 @@ package io.github.chiselteam.chisel.datagen.model.generator.ctm;
 
 import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.datagen.model.ChiselModelTemplates;
-import io.github.chiselteam.chisel.datagen.model.ChiselTextureSlots;
 import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateDefinitionGenerator;
@@ -17,17 +16,11 @@ import org.joml.Vector3f;
 public class CTMHModelGenerator extends VariantModelGenerator {
     @Override
     public TextureMapping getTextureMapping() {
-        return (new TextureMapping())
+        return VariantTextures.ctm(variant, textures -> textures.horizontalTextures(VariantTextures.get(variant, "horizontal").sprite()))
                 .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
                 .put(TextureSlot.ALL, VariantTextures.get(variant))
                 .put(TextureSlot.TOP, VariantTextures.get(variant, "top"))
-                .put(TextureSlot.BOTTOM, VariantTextures.get(variant, "bottom"))
-                .put(ChiselTextureSlots.CTM_OVERLAY, VariantTextures.get(variant))
-                .put(ChiselTextureSlots.CTM_OVERLAY_TOP, VariantTextures.get(variant, "top"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_BOTTOM, VariantTextures.get(variant, "bottom"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_HORIZONTAL, VariantTextures.get(variant, "ctmh"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_HORIZONTAL_TOP, VariantTextures.get(variant, "top"))
-                .put(ChiselTextureSlots.CTM_OVERLAY_HORIZONTAL_BOTTOM, VariantTextures.get(variant, "bottom"));
+                .put(TextureSlot.BOTTOM, VariantTextures.get(variant, "bottom"));
     }
 
     @Override

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/nv_rune/neovitae_bricks-bottom",
+    "bottom": "chisel:block/nv_rune/neovitae_bricks-top",
     "side": "chisel:block/nv_rune/neovitae_bricks-side",
     "top": "chisel:block/nv_rune/neovitae_bricks-top"
   }

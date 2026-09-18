@@ -2,7 +2,6 @@ package io.github.chiselteam.chisel.datagen.model.generator.special;
 
 import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.datagen.model.ChiselModelTemplates;
-import io.github.chiselteam.chisel.datagen.model.ChiselTextureSlots;
 import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateDefinitionGenerator;
@@ -19,17 +18,16 @@ public class IceModelGenerator extends VariantModelGenerator {
     @Override
     public TextureMapping getTextureMapping() {
         CTMKind kind = variant.getModelHandler().ctmKind();
-        TextureMapping mapping = new TextureMapping().put(TextureSlot.PARTICLE, VariantTextures.get(variant));
-        return switch (kind) {
-            case STANDARD -> mapping
-                    .put(ChiselTextureSlots.CTM_OVERLAY, VariantTextures.get(variant))
-                    .put(ChiselTextureSlots.CTM_OVERLAY_CONNECTED, VariantTextures.get(variant, "ctm"));
-            case MULTIBLOCK_2X2 -> mapping.put(ChiselTextureSlots.CTM_OVERLAY_2X2, VariantTextures.get(variant, "2x2"));
-            case MULTIBLOCK_3X3 -> mapping.put(ChiselTextureSlots.CTM_OVERLAY_3X3, VariantTextures.get(variant, "3x3"));
-            case MULTIBLOCK_4X4 -> mapping.put(ChiselTextureSlots.CTM_OVERLAY_4X4, VariantTextures.get(variant, "4x4"));
-            case AR -> mapping.put(ChiselTextureSlots.CTM_OVERLAY_2X2, VariantTextures.get(variant, "ctm"));
-            default -> throw new IllegalStateException("Unsupported ice CTM kind: " + kind);
-        };
+        TextureMapping mapping = kind == CTMKind.STANDARD ? VariantTextures.standard(variant) : VariantTextures.ctm(variant, textures -> {
+            switch (kind) {
+                case MULTIBLOCK_2X2 -> textures.multiblock2x2Textures(VariantTextures.get(variant, "2x2").sprite());
+                case MULTIBLOCK_3X3 -> textures.multiblock3x3Textures(VariantTextures.get(variant, "3x3").sprite());
+                case MULTIBLOCK_4X4 -> textures.multiblock4x4Textures(VariantTextures.get(variant, "4x4").sprite());
+                case AR -> textures.arTextures(VariantTextures.get(variant, "ar_variant").sprite());
+                default -> throw new IllegalStateException("Unsupported ice CTM kind: " + kind);
+            }
+        });
+        return mapping.put(TextureSlot.PARTICLE, VariantTextures.get(variant));
     }
 
     @Override

@@ -2,7 +2,10 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/red_sandstone/red_sandstone_zag",
-    "overlay_2x2": "chisel:block/red_sandstone/red_sandstone_zag-ctm",
+    "ar_1": "chisel:block/red_sandstone/red_sandstone_zag",
+    "ar_2": "chisel:block/red_sandstone/red_sandstone_zag-ar_variant_2",
+    "ar_3": "chisel:block/red_sandstone/red_sandstone_zag-ar_variant_3",
+    "ar_4": "chisel:block/red_sandstone/red_sandstone_zag-ar_variant_4",
     "particle": "chisel:block/red_sandstone/red_sandstone_zag"
   }
 }

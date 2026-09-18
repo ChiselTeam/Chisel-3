@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/red_sandstone/red_sandstone_weaver",
-    "overlay_connected": "chisel:block/red_sandstone/red_sandstone_weaver-ctm",
-    "overlay_texture": "chisel:block/red_sandstone/red_sandstone_weaver",
-    "particle": "chisel:block/red_sandstone/red_sandstone_weaver"
+    "particle": "chisel:block/red_sandstone/red_sandstone_weaver",
+    "standard_corner": "chisel:block/red_sandstone/red_sandstone_weaver-ctm_corner",
+    "standard_cornerless": "chisel:block/red_sandstone/red_sandstone_weaver-ctm_cornerless",
+    "standard_horizontal": "chisel:block/red_sandstone/red_sandstone_weaver-ctm_horizontal",
+    "standard_none": "chisel:block/red_sandstone/red_sandstone_weaver",
+    "standard_vertical": "chisel:block/red_sandstone/red_sandstone_weaver-ctm_vertical"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/resin/resin_lodestone"
+    "all": "chisel:block/resin/resin_lodestone_connected"
   }
 }
