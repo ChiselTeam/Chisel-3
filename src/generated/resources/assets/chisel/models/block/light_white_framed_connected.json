@@ -4,7 +4,7 @@
     "all": "chisel:block/light_white/light_white_framed_connected",
     "particle": "chisel:block/light_white/light_white_framed_connected",
     "standard_corner": "chisel:block/light_white/light_white_framed_connected-ctm_corner",
-    "standard_cornerless": "chisel:block/technical/technical_fan_fast-top",
+    "standard_cornerless": "chisel:block/antiblock/antiblock_white",
     "standard_horizontal": "chisel:block/light_white/light_white_framed_connected-ctm_horizontal",
     "standard_none": "chisel:block/light_white/light_white_framed_connected",
     "standard_vertical": "chisel:block/light_white/light_white_framed_connected-ctm_vertical"

@@ -50,7 +50,7 @@ public class ColorCollectionFamilies {
                     .addVariant("%s_panel".formatted(lightName)).translation("%s_panel".formatted(lightName), "%s Light".formatted(colorName), "Panel")
                     .addVariant("%s_panel_connected".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_panel_connected".formatted(lightName), "%s Light".formatted(colorName), "Panel Connected");
                 if (color == DyeColor.WHITE) {
-                    builder.texture("%s_framed_connected".formatted(lightName), "ctm_cornerless", Chisel.prefix("block/technical/technical_fan_fast-top"));
+                    builder.texture("%s_framed_connected".formatted(lightName), "ctm_cornerless", Chisel.prefix("block/antiblock/antiblock_white"));
                 }
             })));
             CONCRETE.add(add(ChiselFamily.build(concreteName, builder -> builder
