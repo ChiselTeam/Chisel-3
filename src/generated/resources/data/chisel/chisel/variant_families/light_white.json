@@ -4,18 +4,12 @@
   "variants": [
     {
       "block": "chisel:light_white_framed",
-      "name": "light_white_framed",
-      "textures": {
-        "": "chisel:block/light_white/light_white_framed_connected"
-      }
+      "name": "light_white_framed"
     },
     {
       "block": "chisel:light_white_framed_connected",
       "model_type": "connected",
-      "name": "light_white_framed_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/technical/technical_fan_fast-top"
-      }
+      "name": "light_white_framed_connected"
     },
     {
       "block": "chisel:light_white_frame_1",

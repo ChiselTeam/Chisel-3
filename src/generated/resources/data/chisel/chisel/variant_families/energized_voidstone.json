@@ -5,11 +5,7 @@
     {
       "block": "chisel:energized_voidstone_bevel",
       "model_type": "multi_layer_connected_glow",
-      "name": "energized_voidstone_bevel",
-      "textures": {
-        "bg": "chisel:block/energized_voidstone/energized_voidstone_eye-bg",
-        "ctm_cornerless": "chisel:block/glass/glass_edge-ctm_cornerless"
-      }
+      "name": "energized_voidstone_bevel"
     },
     {
       "block": "chisel:energized_voidstone_eye",
@@ -19,51 +15,32 @@
     {
       "block": "chisel:energized_voidstone_metal",
       "model_type": "multi_layer_connected_glow",
-      "name": "energized_voidstone_metal",
-      "textures": {
-        "bg": "chisel:block/energized_voidstone/energized_voidstone_eye-bg",
-        "ctm_cornerless": "chisel:block/glass/glass_edge-ctm_cornerless"
-      }
+      "name": "energized_voidstone_metal"
     },
     {
       "block": "chisel:energized_voidstone_raw",
       "model_type": "multi_layer",
-      "name": "energized_voidstone_raw",
-      "textures": {
-        "bg": "chisel:block/energized_voidstone/energized_voidstone_eye-bg"
-      }
+      "name": "energized_voidstone_raw"
     },
     {
       "block": "chisel:energized_voidstone_runic",
       "model_type": "multi_layer",
-      "name": "energized_voidstone_runic",
-      "textures": {
-        "bg": "chisel:block/energized_voidstone/energized_voidstone_eye-bg"
-      }
+      "name": "energized_voidstone_runic"
     },
     {
       "block": "chisel:energized_voidstone_skull",
       "model_type": "multi_layer",
-      "name": "energized_voidstone_skull",
-      "textures": {
-        "bg": "chisel:block/energized_voidstone/energized_voidstone_eye-bg"
-      }
+      "name": "energized_voidstone_skull"
     },
     {
       "block": "chisel:energized_voidstone_smooth",
       "model_type": "multi_layer",
-      "name": "energized_voidstone_smooth",
-      "textures": {
-        "bg": "chisel:block/energized_voidstone/energized_voidstone_eye-bg"
-      }
+      "name": "energized_voidstone_smooth"
     },
     {
       "block": "chisel:energized_voidstone_tiles",
       "model_type": "multi_layer",
-      "name": "energized_voidstone_tiles",
-      "textures": {
-        "bg": "chisel:block/energized_voidstone/energized_voidstone_eye-bg"
-      }
+      "name": "energized_voidstone_tiles"
     }
   ]
 }

@@ -5,10 +5,7 @@
     {
       "block": "chisel:coal_coke_array",
       "model_type": "multiblock_2x2",
-      "name": "coal_coke_array",
-      "textures": {
-        "2x2_top_left": "chisel:block/coal_coke/coal_coke_array"
-      }
+      "name": "coal_coke_array"
     },
     {
       "block": "chisel:coal_coke_braid",
@@ -17,10 +14,7 @@
     {
       "block": "chisel:coal_coke_chaotic_bricks",
       "model_type": "multiblock_3x3",
-      "name": "coal_coke_chaotic_bricks",
-      "textures": {
-        "3x3_top_left": "chisel:block/coal_coke/coal_coke_chaotic_bricks"
-      }
+      "name": "coal_coke_chaotic_bricks"
     },
     {
       "block": "chisel:coal_coke_chaotic_medium",
@@ -33,10 +27,7 @@
     {
       "block": "chisel:coal_coke_circular",
       "model_type": "connected",
-      "name": "coal_coke_circular",
-      "textures": {
-        "ctm_cornerless": "chisel:block/coal_coke/coal_coke_dent-ctm_cornerless"
-      }
+      "name": "coal_coke_circular"
     },
     {
       "block": "chisel:coal_coke_cracked",
@@ -49,10 +40,7 @@
     {
       "block": "chisel:coal_coke_cuts",
       "model_type": "multiblock_4x4",
-      "name": "coal_coke_cuts",
-      "textures": {
-        "4x4_row_0_column_0": "chisel:block/coal_coke/coal_coke_cuts"
-      }
+      "name": "coal_coke_cuts"
     },
     {
       "block": "chisel:coal_coke_dent",
@@ -75,10 +63,7 @@
     {
       "block": "chisel:coal_coke_jellybean",
       "model_type": "multiblock_2x2",
-      "name": "coal_coke_jellybean",
-      "textures": {
-        "2x2_top_left": "chisel:block/coal_coke/coal_coke_jellybean"
-      }
+      "name": "coal_coke_jellybean"
     },
     {
       "block": "chisel:coal_coke_layers",
@@ -87,10 +72,7 @@
     {
       "block": "chisel:coal_coke_mosaic",
       "model_type": "connected",
-      "name": "coal_coke_mosaic",
-      "textures": {
-        "ctm_cornerless": "chisel:block/coal_coke/coal_coke_raw"
-      }
+      "name": "coal_coke_mosaic"
     },
     {
       "block": "chisel:coal_coke_ornate",
@@ -103,10 +85,7 @@
     {
       "block": "chisel:coal_coke_pillar",
       "model_type": "top_bottom_side",
-      "name": "coal_coke_pillar",
-      "textures": {
-        "bottom": "chisel:block/coal_coke/coal_coke_pillar-top"
-      }
+      "name": "coal_coke_pillar"
     },
     {
       "block": "chisel:coal_coke_prism",
@@ -123,12 +102,7 @@
     {
       "block": "chisel:coal_coke_slanted",
       "model_type": "multiblock_2x2",
-      "name": "coal_coke_slanted",
-      "textures": {
-        "2x2_bottom_left": "chisel:block/coal_coke/coal_coke_slanted",
-        "2x2_bottom_right": "chisel:block/coal_coke/coal_coke_slanted-2x2_top_right",
-        "2x2_top_left": "chisel:block/coal_coke/coal_coke_slanted"
-      }
+      "name": "coal_coke_slanted"
     },
     {
       "block": "chisel:coal_coke_small_bricks",
@@ -162,10 +136,7 @@
     {
       "block": "chisel:coal_coke_twisted",
       "model_type": "top_bottom_side",
-      "name": "coal_coke_twisted",
-      "textures": {
-        "bottom": "chisel:block/coal_coke/coal_coke_twisted-top"
-      }
+      "name": "coal_coke_twisted"
     },
     {
       "block": "chisel:coal_coke_weaver",
@@ -175,10 +146,7 @@
     {
       "block": "chisel:coal_coke_zag",
       "model_type": "ar",
-      "name": "coal_coke_zag",
-      "textures": {
-        "ar_variant_1": "chisel:block/coal_coke/coal_coke_zag"
-      }
+      "name": "coal_coke_zag"
     }
   ]
 }

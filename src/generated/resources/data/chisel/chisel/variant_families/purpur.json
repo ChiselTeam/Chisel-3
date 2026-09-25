@@ -13,10 +13,7 @@
     {
       "block": "chisel:purpur_array",
       "model_type": "multiblock_2x2",
-      "name": "purpur_array",
-      "textures": {
-        "2x2_top_left": "chisel:block/purpur/purpur_array"
-      }
+      "name": "purpur_array"
     },
     {
       "block": "chisel:purpur_border_square",
@@ -52,10 +49,7 @@
     {
       "block": "chisel:purpur_bricks_large",
       "model_type": "multiblock_2x2",
-      "name": "purpur_bricks_large",
-      "textures": {
-        "2x2_top_left": "chisel:block/purpur/purpur_bricks_large"
-      }
+      "name": "purpur_bricks_large"
     },
     {
       "block": "chisel:purpur_small_bricks",
@@ -80,10 +74,7 @@
     {
       "block": "chisel:purpur_chaotic_bricks",
       "model_type": "multiblock_3x3",
-      "name": "purpur_chaotic_bricks",
-      "textures": {
-        "3x3_top_left": "chisel:block/purpur/purpur_chaotic_bricks"
-      }
+      "name": "purpur_chaotic_bricks"
     },
     {
       "block": "chisel:purpur_chaotic_medium",
@@ -104,10 +95,7 @@
     {
       "block": "chisel:purpur_circular",
       "model_type": "connected",
-      "name": "purpur_circular",
-      "textures": {
-        "ctm_cornerless": "chisel:block/purpur/purpur_dent-ctm_cornerless"
-      }
+      "name": "purpur_circular"
     },
     {
       "block": "chisel:purpur_cobble",
@@ -120,10 +108,7 @@
     {
       "block": "chisel:purpur_cuts",
       "model_type": "multiblock_4x4",
-      "name": "purpur_cuts",
-      "textures": {
-        "4x4_row_0_column_0": "chisel:block/purpur/purpur_cuts"
-      }
+      "name": "purpur_cuts"
     },
     {
       "block": "chisel:purpur_dent",
@@ -141,18 +126,12 @@
     {
       "block": "chisel:purpur_indent",
       "model_type": "connected",
-      "name": "purpur_indent",
-      "textures": {
-        "ctm_cornerless": "chisel:block/purpur/purpur_border_square-ctm_cornerless"
-      }
+      "name": "purpur_indent"
     },
     {
       "block": "chisel:purpur_jellybean",
       "model_type": "multiblock_2x2",
-      "name": "purpur_jellybean",
-      "textures": {
-        "2x2_top_left": "chisel:block/purpur/purpur_jellybean"
-      }
+      "name": "purpur_jellybean"
     },
     {
       "block": "chisel:purpur_layers",
@@ -174,19 +153,12 @@
     {
       "block": "chisel:purpur_meander_horizontal",
       "model_type": "ctmh",
-      "name": "purpur_meander_horizontal",
-      "textures": {
-        "top": "chisel:block/purpur/purpur_meander_horizontal-bottom"
-      }
+      "name": "purpur_meander_horizontal"
     },
     {
       "block": "chisel:purpur_meander_vertical",
       "model_type": "ctmv",
-      "name": "purpur_meander_vertical",
-      "textures": {
-        "top": "chisel:block/purpur/purpur_meander_vertical-bottom",
-        "vertical_none": "chisel:block/purpur/purpur_meander_vertical-side"
-      }
+      "name": "purpur_meander_vertical"
     },
     {
       "block": "chisel:purpur_mosaic",
@@ -204,228 +176,111 @@
     {
       "block": "chisel:purpur_pillar",
       "model_type": "top_bottom_side",
-      "name": "purpur_pillar",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_pillar-top"
-      }
+      "name": "purpur_pillar"
     },
     {
       "block": "chisel:purpur_pillar_basic",
       "model_type": "ctmv",
-      "name": "purpur_pillar_basic",
-      "textures": {
-        "top": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "vertical_none": "chisel:block/purpur/purpur_pillar_basic-side"
-      }
+      "name": "purpur_pillar_basic"
     },
     {
       "block": "chisel:purpur_pillar_basic_dent",
       "model_type": "ctmv",
-      "name": "purpur_pillar_basic_dent",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "top": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "vertical_none": "chisel:block/purpur/purpur_pillar_basic_dent-side"
-      }
+      "name": "purpur_pillar_basic_dent"
     },
     {
       "block": "chisel:purpur_pillar_basic_plain",
       "model_type": "ctmv",
-      "name": "purpur_pillar_basic_plain",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "top": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "vertical_none": "chisel:block/purpur/purpur_pillar_basic_plain-side"
-      }
+      "name": "purpur_pillar_basic_plain"
     },
     {
       "block": "chisel:purpur_pillar_basic_round",
       "model_type": "ctmv",
-      "name": "purpur_pillar_basic_round",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "top": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "vertical_none": "chisel:block/purpur/purpur_pillar_basic_round-side"
-      }
+      "name": "purpur_pillar_basic_round"
     },
     {
       "block": "chisel:purpur_pillar_basic_spiral",
       "model_type": "ctmv",
-      "name": "purpur_pillar_basic_spiral",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "top": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "vertical_none": "chisel:block/purpur/purpur_pillar_basic_spiral-side"
-      }
+      "name": "purpur_pillar_basic_spiral"
     },
     {
       "block": "chisel:purpur_pillar_classic",
       "model_type": "top_bottom_side",
-      "name": "purpur_pillar_classic",
-      "textures": {
-        "top": "chisel:block/purpur/purpur_pillar_classic-bottom"
-      }
+      "name": "purpur_pillar_classic"
     },
     {
       "block": "chisel:purpur_pillar_classic_large",
       "model_type": "top_bottom_side",
-      "name": "purpur_pillar_classic_large",
-      "textures": {
-        "top": "chisel:block/purpur/purpur_pillar_classic_large-bottom"
-      }
+      "name": "purpur_pillar_classic_large"
     },
     {
       "block": "chisel:purpur_pillar_ionic",
       "model_type": "ctmv",
-      "name": "purpur_pillar_ionic",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "top": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "vertical_none": "chisel:block/purpur/purpur_pillar_ionic-side"
-      }
+      "name": "purpur_pillar_ionic"
     },
     {
       "block": "chisel:purpur_pillar_ionic_dent",
       "model_type": "ctmv",
-      "name": "purpur_pillar_ionic_dent",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "side": "chisel:block/purpur/purpur_pillar_ionic-side",
-        "top": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "vertical_both": "chisel:block/purpur/purpur_pillar_basic_dent-vertical_both",
-        "vertical_none": "chisel:block/purpur/purpur_pillar_ionic-side"
-      }
+      "name": "purpur_pillar_ionic_dent"
     },
     {
       "block": "chisel:purpur_pillar_ionic_plain",
       "model_type": "ctmv",
-      "name": "purpur_pillar_ionic_plain",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "side": "chisel:block/purpur/purpur_pillar_ionic-side",
-        "top": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "vertical_both": "chisel:block/purpur/purpur_pillar_basic_plain-vertical_both",
-        "vertical_none": "chisel:block/purpur/purpur_pillar_ionic-side"
-      }
+      "name": "purpur_pillar_ionic_plain"
     },
     {
       "block": "chisel:purpur_pillar_ionic_round",
       "model_type": "ctmv",
-      "name": "purpur_pillar_ionic_round",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "side": "chisel:block/purpur/purpur_pillar_ionic-side",
-        "top": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "vertical_both": "chisel:block/purpur/purpur_pillar_basic_round-vertical_both",
-        "vertical_none": "chisel:block/purpur/purpur_pillar_ionic-side"
-      }
+      "name": "purpur_pillar_ionic_round"
     },
     {
       "block": "chisel:purpur_pillar_ionic_spiral",
       "model_type": "ctmv",
-      "name": "purpur_pillar_ionic_spiral",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "side": "chisel:block/purpur/purpur_pillar_ionic-side",
-        "top": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "vertical_both": "chisel:block/purpur/purpur_pillar_basic_spiral-vertical_both",
-        "vertical_none": "chisel:block/purpur/purpur_pillar_ionic-side"
-      }
+      "name": "purpur_pillar_ionic_spiral"
     },
     {
       "block": "chisel:purpur_pillar_large_basic_triple",
       "model_type": "ctmv",
-      "name": "purpur_pillar_large_basic_triple",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "top": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "vertical_none": "chisel:block/purpur/purpur_pillar_large_basic_triple-side"
-      }
+      "name": "purpur_pillar_large_basic_triple"
     },
     {
       "block": "chisel:purpur_pillar_large_ionic_triple",
       "model_type": "ctmv",
-      "name": "purpur_pillar_large_ionic_triple",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "top": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "vertical_both": "chisel:block/purpur/purpur_pillar_large_basic_triple-vertical_both",
-        "vertical_none": "chisel:block/purpur/purpur_pillar_large_ionic_triple-side"
-      }
+      "name": "purpur_pillar_large_ionic_triple"
     },
     {
       "block": "chisel:purpur_pillar_meander",
       "model_type": "ctmv",
-      "name": "purpur_pillar_meander",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "top": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "vertical_both": "chisel:block/purpur/purpur_pillar_ionic-vertical_both",
-        "vertical_none": "chisel:block/purpur/purpur_pillar_meander-side"
-      }
+      "name": "purpur_pillar_meander"
     },
     {
       "block": "chisel:purpur_pillar_meander_dent",
       "model_type": "ctmv",
-      "name": "purpur_pillar_meander_dent",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "side": "chisel:block/purpur/purpur_pillar_meander-side",
-        "top": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "vertical_both": "chisel:block/purpur/purpur_pillar_basic_dent-vertical_both",
-        "vertical_none": "chisel:block/purpur/purpur_pillar_meander-side"
-      }
+      "name": "purpur_pillar_meander_dent"
     },
     {
       "block": "chisel:purpur_pillar_meander_plain",
       "model_type": "ctmv",
-      "name": "purpur_pillar_meander_plain",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "side": "chisel:block/purpur/purpur_pillar_meander-side",
-        "top": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "vertical_both": "chisel:block/purpur/purpur_pillar_basic_plain-vertical_both",
-        "vertical_none": "chisel:block/purpur/purpur_pillar_meander-side"
-      }
+      "name": "purpur_pillar_meander_plain"
     },
     {
       "block": "chisel:purpur_pillar_meander_round",
       "model_type": "ctmv",
-      "name": "purpur_pillar_meander_round",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "side": "chisel:block/purpur/purpur_pillar_meander-side",
-        "top": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "vertical_both": "chisel:block/purpur/purpur_pillar_basic_round-vertical_both",
-        "vertical_none": "chisel:block/purpur/purpur_pillar_meander-side"
-      }
+      "name": "purpur_pillar_meander_round"
     },
     {
       "block": "chisel:purpur_pillar_meander_spiral",
       "model_type": "ctmv",
-      "name": "purpur_pillar_meander_spiral",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "side": "chisel:block/purpur/purpur_pillar_meander-side",
-        "top": "chisel:block/purpur/purpur_pillar_basic-bottom",
-        "vertical_both": "chisel:block/purpur/purpur_pillar_basic_spiral-vertical_both",
-        "vertical_none": "chisel:block/purpur/purpur_pillar_meander-side"
-      }
+      "name": "purpur_pillar_meander_spiral"
     },
     {
       "block": "chisel:purpur_plate",
-      "name": "purpur_plate",
-      "textures": {
-        "": "chisel:block/purpur/purpur_plate_connected"
-      }
+      "name": "purpur_plate"
     },
     {
       "block": "chisel:purpur_plate_connected",
       "model_type": "connected",
-      "name": "purpur_plate_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/purpur/purpur_border_square-ctm_cornerless"
-      }
+      "name": "purpur_plate_connected"
     },
     {
       "block": "chisel:purpur_polished",
@@ -442,10 +297,7 @@
     },
     {
       "block": "chisel:purpur_raw",
-      "name": "purpur_raw",
-      "textures": {
-        "": "chisel:block/purpur/purpur_mosaic-ctm_cornerless"
-      }
+      "name": "purpur_raw"
     },
     {
       "block": "chisel:purpur_road",
@@ -454,12 +306,7 @@
     {
       "block": "chisel:purpur_slanted",
       "model_type": "multiblock_2x2",
-      "name": "purpur_slanted",
-      "textures": {
-        "2x2_bottom_left": "chisel:block/purpur/purpur_slanted",
-        "2x2_bottom_right": "chisel:block/purpur/purpur_slanted-2x2_top_right",
-        "2x2_top_left": "chisel:block/purpur/purpur_slanted"
-      }
+      "name": "purpur_slanted"
     },
     {
       "block": "chisel:purpur_tiles_medium",
@@ -468,10 +315,7 @@
     {
       "block": "chisel:purpur_tiles_large",
       "model_type": "connected",
-      "name": "purpur_tiles_large",
-      "textures": {
-        "ctm_cornerless": "chisel:block/purpur/purpur_mosaic-ctm_cornerless"
-      }
+      "name": "purpur_tiles_large"
     },
     {
       "block": "chisel:purpur_tiles_small",
@@ -480,26 +324,17 @@
     {
       "block": "chisel:purpur_twisted",
       "model_type": "top_bottom_side",
-      "name": "purpur_twisted",
-      "textures": {
-        "bottom": "chisel:block/purpur/purpur_twisted-top"
-      }
+      "name": "purpur_twisted"
     },
     {
       "block": "chisel:purpur_weaver",
       "model_type": "connected",
-      "name": "purpur_weaver",
-      "textures": {
-        "ctm_cornerless": "chisel:block/purpur/purpur_weaver-ctm_corner"
-      }
+      "name": "purpur_weaver"
     },
     {
       "block": "chisel:purpur_zag",
       "model_type": "v4",
-      "name": "purpur_zag",
-      "textures": {
-        "ar_variant_1": "chisel:block/purpur/purpur_zag"
-      }
+      "name": "purpur_zag"
     },
     {
       "block": "chisel:purpur_crate",
@@ -513,10 +348,7 @@
     {
       "block": "chisel:purpur_herringbone_encased",
       "model_type": "connected",
-      "name": "purpur_herringbone_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/purpur/purpur_herringbone"
-      }
+      "name": "purpur_herringbone_encased"
     },
     {
       "block": "chisel:purpur_medallion",
@@ -525,10 +357,7 @@
     {
       "block": "chisel:purpur_medallion_encased",
       "model_type": "connected",
-      "name": "purpur_medallion_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/purpur/purpur_medallion"
-      }
+      "name": "purpur_medallion_encased"
     },
     {
       "block": "chisel:purpur_dots",
@@ -537,10 +366,7 @@
     {
       "block": "chisel:purpur_dots_encased",
       "model_type": "connected",
-      "name": "purpur_dots_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/purpur/purpur_dots"
-      }
+      "name": "purpur_dots_encased"
     },
     {
       "block": "chisel:purpur_heart",
@@ -556,25 +382,16 @@
     },
     {
       "block": "chisel:purpur_lodestone",
-      "name": "purpur_lodestone",
-      "textures": {
-        "": "chisel:block/purpur/purpur_lodestone_connected"
-      }
+      "name": "purpur_lodestone"
     },
     {
       "block": "chisel:purpur_lodestone_connected",
       "model_type": "connected",
-      "name": "purpur_lodestone_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/purpur/purpur_lodestone_connected"
-      }
+      "name": "purpur_lodestone_connected"
     },
     {
       "block": "chisel:purpur_plank",
-      "name": "purpur_plank",
-      "textures": {
-        "": "chisel:block/purpur/purpur_plank_connected"
-      }
+      "name": "purpur_plank"
     },
     {
       "block": "chisel:purpur_plank_connected",
@@ -612,10 +429,7 @@
     {
       "block": "chisel:purpur_stripes_encased",
       "model_type": "connected",
-      "name": "purpur_stripes_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/purpur/purpur_stripes"
-      }
+      "name": "purpur_stripes_encased"
     },
     {
       "block": "chisel:purpur_chisel_1",
@@ -652,17 +466,11 @@
     {
       "block": "chisel:purpur_facet_small_encased",
       "model_type": "connected",
-      "name": "purpur_facet_small_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/purpur/purpur_facet_small"
-      }
+      "name": "purpur_facet_small_encased"
     },
     {
       "block": "chisel:purpur_shiny",
-      "name": "purpur_shiny",
-      "textures": {
-        "": "chisel:block/purpur/purpur_shiny_connected"
-      }
+      "name": "purpur_shiny"
     },
     {
       "block": "chisel:purpur_shiny_connected",
@@ -675,40 +483,25 @@
     },
     {
       "block": "chisel:purpur_gem_1",
-      "name": "purpur_gem_1",
-      "textures": {
-        "": "chisel:block/purpur/purpur_gem_1_connected"
-      }
+      "name": "purpur_gem_1"
     },
     {
       "block": "chisel:purpur_gem_1_connected",
       "model_type": "connected",
-      "name": "purpur_gem_1_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/purpur/purpur_border_square-ctm_cornerless"
-      }
+      "name": "purpur_gem_1_connected"
     },
     {
       "block": "chisel:purpur_gem_2",
-      "name": "purpur_gem_2",
-      "textures": {
-        "": "chisel:block/purpur/purpur_gem_2_connected"
-      }
+      "name": "purpur_gem_2"
     },
     {
       "block": "chisel:purpur_gem_2_connected",
       "model_type": "connected",
-      "name": "purpur_gem_2_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/purpur/purpur_border_square-ctm_cornerless"
-      }
+      "name": "purpur_gem_2_connected"
     },
     {
       "block": "chisel:purpur_gem_3",
-      "name": "purpur_gem_3",
-      "textures": {
-        "": "chisel:block/purpur/purpur_gem_3_connected"
-      }
+      "name": "purpur_gem_3"
     },
     {
       "block": "chisel:purpur_gem_3_connected",
@@ -730,10 +523,7 @@
     {
       "block": "chisel:purpur_scaffold_encased",
       "model_type": "connected",
-      "name": "purpur_scaffold_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/purpur/purpur_scaffold"
-      }
+      "name": "purpur_scaffold_encased"
     },
     {
       "block": "chisel:purpur_tiles_inlayed",
@@ -742,10 +532,7 @@
     {
       "block": "chisel:purpur_waves",
       "model_type": "multiblock_2x2",
-      "name": "purpur_waves",
-      "textures": {
-        "2x2_top_left": "chisel:block/purpur/purpur_waves"
-      }
+      "name": "purpur_waves"
     },
     {
       "block": "chisel:purpur_parquet",
@@ -754,10 +541,7 @@
     {
       "block": "chisel:purpur_parquet_encased",
       "model_type": "connected",
-      "name": "purpur_parquet_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/purpur/purpur_parquet"
-      }
+      "name": "purpur_parquet_encased"
     }
   ]
 }

@@ -9,13 +9,7 @@
     {
       "block": "chisel:dirt_bricks",
       "model_type": "ctmv",
-      "name": "dirt_bricks",
-      "textures": {
-        "bottom": "chisel:block/dirt/dirt_bricks-top",
-        "side": "chisel:block/dirt/dirt_bricks-top",
-        "vertical_bottom": "chisel:block/dirt/dirt_bricks-vertical_both",
-        "vertical_none": "chisel:block/dirt/dirt_bricks-vertical_top"
-      }
+      "name": "dirt_bricks"
     },
     {
       "block": "chisel:dirt_bricks_arranged",
@@ -44,12 +38,7 @@
     {
       "block": "chisel:dirt_horizontal",
       "model_type": "ctmh",
-      "name": "dirt_horizontal",
-      "textures": {
-        "bottom": "chisel:block/dirt/dirt_horizontal",
-        "horizontal_both": "chisel:block/dirt/dirt_horizontal",
-        "top": "chisel:block/dirt/dirt_horizontal"
-      }
+      "name": "dirt_horizontal"
     },
     {
       "block": "chisel:dirt_layers",
@@ -66,37 +55,22 @@
     {
       "block": "chisel:dirt_reinforced",
       "model_type": "connected",
-      "name": "dirt_reinforced",
-      "textures": {
-        "ctm_cornerless": "chisel:block/dirt/dirt_bricks-vertical_both"
-      }
+      "name": "dirt_reinforced"
     },
     {
       "block": "chisel:dirt_reinforced_cobble",
       "model_type": "connected",
-      "name": "dirt_reinforced_cobble",
-      "textures": {
-        "ctm_cornerless": "chisel:block/dirt/dirt_cobble"
-      }
+      "name": "dirt_reinforced_cobble"
     },
     {
       "block": "chisel:dirt_vert",
       "model_type": "ctmv",
-      "name": "dirt_vert",
-      "textures": {
-        "bottom": "chisel:block/dirt/dirt_vert-top",
-        "side": "chisel:block/dirt/dirt_vert-top"
-      }
+      "name": "dirt_vert"
     },
     {
       "block": "chisel:dirt_vertical",
       "model_type": "ctmv",
-      "name": "dirt_vertical",
-      "textures": {
-        "bottom": "chisel:block/dirt/dirt_vert-top",
-        "side": "chisel:block/dirt/dirt_vert-top",
-        "top": "chisel:block/dirt/dirt_vert-top"
-      }
+      "name": "dirt_vertical"
     }
   ]
 }

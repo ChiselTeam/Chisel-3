@@ -14,10 +14,7 @@
     {
       "block": "chisel:concrete_blue_border_square",
       "model_type": "connected",
-      "name": "concrete_blue_border_square",
-      "textures": {
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_dent-ctm_cornerless"
-      }
+      "name": "concrete_blue_border_square"
     },
     {
       "block": "chisel:concrete_blue_braid",
@@ -94,10 +91,7 @@
     {
       "block": "chisel:concrete_blue_circular",
       "model_type": "connected",
-      "name": "concrete_blue_circular",
-      "textures": {
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_dent-ctm_cornerless"
-      }
+      "name": "concrete_blue_circular"
     },
     {
       "block": "chisel:concrete_blue_cobble",
@@ -124,10 +118,7 @@
     {
       "block": "chisel:concrete_blue_indent",
       "model_type": "connected",
-      "name": "concrete_blue_indent",
-      "textures": {
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_dent-ctm_cornerless"
-      }
+      "name": "concrete_blue_indent"
     },
     {
       "block": "chisel:concrete_blue_jellybean",
@@ -141,12 +132,7 @@
     {
       "block": "chisel:concrete_blue_layers_connected",
       "model_type": "connected",
-      "name": "concrete_blue_layers_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_layers_connected-ctm_corner",
-        "ctm_horizontal": "chisel:block/concrete_blue/concrete_blue_layers_connected",
-        "ctm_vertical": "chisel:block/concrete_blue/concrete_blue_layers_connected-ctm_corner"
-      }
+      "name": "concrete_blue_layers_connected"
     },
     {
       "block": "chisel:concrete_blue_line_horizontal",
@@ -159,26 +145,17 @@
     {
       "block": "chisel:concrete_blue_meander_horizontal",
       "model_type": "ctmh",
-      "name": "concrete_blue_meander_horizontal",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_meander_horizontal-top"
-      }
+      "name": "concrete_blue_meander_horizontal"
     },
     {
       "block": "chisel:concrete_blue_meander_vertical",
       "model_type": "ctmv",
-      "name": "concrete_blue_meander_vertical",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_meander_vertical-top"
-      }
+      "name": "concrete_blue_meander_vertical"
     },
     {
       "block": "chisel:concrete_blue_mosaic",
       "model_type": "connected",
-      "name": "concrete_blue_mosaic",
-      "textures": {
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_dent-ctm_cornerless"
-      }
+      "name": "concrete_blue_mosaic"
     },
     {
       "block": "chisel:concrete_blue_ornate_small",
@@ -191,204 +168,102 @@
     {
       "block": "chisel:concrete_blue_pillar",
       "model_type": "top_bottom_side",
-      "name": "concrete_blue_pillar",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar-top"
-      }
+      "name": "concrete_blue_pillar"
     },
     {
       "block": "chisel:concrete_blue_pillar_basic",
       "model_type": "ctmv",
-      "name": "concrete_blue_pillar_basic",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top"
-      }
+      "name": "concrete_blue_pillar_basic"
     },
     {
       "block": "chisel:concrete_blue_pillar_basic_dent",
       "model_type": "ctmv",
-      "name": "concrete_blue_pillar_basic_dent",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "top": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top"
-      }
+      "name": "concrete_blue_pillar_basic_dent"
     },
     {
       "block": "chisel:concrete_blue_pillar_basic_plain",
       "model_type": "ctmv",
-      "name": "concrete_blue_pillar_basic_plain",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "top": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top"
-      }
+      "name": "concrete_blue_pillar_basic_plain"
     },
     {
       "block": "chisel:concrete_blue_pillar_basic_round",
       "model_type": "ctmv",
-      "name": "concrete_blue_pillar_basic_round",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "top": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top"
-      }
+      "name": "concrete_blue_pillar_basic_round"
     },
     {
       "block": "chisel:concrete_blue_pillar_basic_spiral",
       "model_type": "ctmv",
-      "name": "concrete_blue_pillar_basic_spiral",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "top": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top"
-      }
+      "name": "concrete_blue_pillar_basic_spiral"
     },
     {
       "block": "chisel:concrete_blue_pillar_classic",
       "model_type": "top_bottom_side",
-      "name": "concrete_blue_pillar_classic",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_classic-top"
-      }
+      "name": "concrete_blue_pillar_classic"
     },
     {
       "block": "chisel:concrete_blue_pillar_classic_large",
       "model_type": "top_bottom_side",
-      "name": "concrete_blue_pillar_classic_large",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_classic_large-top"
-      }
+      "name": "concrete_blue_pillar_classic_large"
     },
     {
       "block": "chisel:concrete_blue_pillar_ionic",
       "model_type": "ctmv",
-      "name": "concrete_blue_pillar_ionic",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "top": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top"
-      }
+      "name": "concrete_blue_pillar_ionic"
     },
     {
       "block": "chisel:concrete_blue_pillar_ionic_dent",
       "model_type": "ctmv",
-      "name": "concrete_blue_pillar_ionic_dent",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "side": "chisel:block/concrete_blue/concrete_blue_pillar_ionic-side",
-        "top": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "vertical_both": "chisel:block/concrete_blue/concrete_blue_pillar_basic_dent-vertical_both",
-        "vertical_none": "chisel:block/concrete_blue/concrete_blue_pillar_ionic-vertical_none"
-      }
+      "name": "concrete_blue_pillar_ionic_dent"
     },
     {
       "block": "chisel:concrete_blue_pillar_ionic_plain",
       "model_type": "ctmv",
-      "name": "concrete_blue_pillar_ionic_plain",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "side": "chisel:block/concrete_blue/concrete_blue_pillar_ionic-side",
-        "top": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "vertical_both": "chisel:block/concrete_blue/concrete_blue_pillar_basic_plain-vertical_both",
-        "vertical_none": "chisel:block/concrete_blue/concrete_blue_pillar_ionic-vertical_none"
-      }
+      "name": "concrete_blue_pillar_ionic_plain"
     },
     {
       "block": "chisel:concrete_blue_pillar_ionic_round",
       "model_type": "ctmv",
-      "name": "concrete_blue_pillar_ionic_round",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "side": "chisel:block/concrete_blue/concrete_blue_pillar_ionic-side",
-        "top": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "vertical_both": "chisel:block/concrete_blue/concrete_blue_pillar_basic_round-vertical_both",
-        "vertical_none": "chisel:block/concrete_blue/concrete_blue_pillar_ionic-vertical_none"
-      }
+      "name": "concrete_blue_pillar_ionic_round"
     },
     {
       "block": "chisel:concrete_blue_pillar_ionic_spiral",
       "model_type": "ctmv",
-      "name": "concrete_blue_pillar_ionic_spiral",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "side": "chisel:block/concrete_blue/concrete_blue_pillar_ionic-side",
-        "top": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "vertical_both": "chisel:block/concrete_blue/concrete_blue_pillar_basic_spiral-vertical_both",
-        "vertical_none": "chisel:block/concrete_blue/concrete_blue_pillar_ionic-vertical_none"
-      }
+      "name": "concrete_blue_pillar_ionic_spiral"
     },
     {
       "block": "chisel:concrete_blue_pillar_large_basic_triple",
       "model_type": "ctmv",
-      "name": "concrete_blue_pillar_large_basic_triple",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "top": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top"
-      }
+      "name": "concrete_blue_pillar_large_basic_triple"
     },
     {
       "block": "chisel:concrete_blue_pillar_large_ionic_triple",
       "model_type": "ctmv",
-      "name": "concrete_blue_pillar_large_ionic_triple",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "top": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "vertical_both": "chisel:block/concrete_blue/concrete_blue_pillar_large_basic_triple-vertical_both"
-      }
+      "name": "concrete_blue_pillar_large_ionic_triple"
     },
     {
       "block": "chisel:concrete_blue_pillar_meander",
       "model_type": "ctmv",
-      "name": "concrete_blue_pillar_meander",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "top": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "vertical_both": "chisel:block/concrete_blue/concrete_blue_pillar_ionic-vertical_both"
-      }
+      "name": "concrete_blue_pillar_meander"
     },
     {
       "block": "chisel:concrete_blue_pillar_meander_dent",
       "model_type": "ctmv",
-      "name": "concrete_blue_pillar_meander_dent",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "side": "chisel:block/concrete_blue/concrete_blue_pillar_meander-side",
-        "top": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "vertical_both": "chisel:block/concrete_blue/concrete_blue_pillar_basic_dent-vertical_both",
-        "vertical_none": "chisel:block/concrete_blue/concrete_blue_pillar_meander-vertical_none"
-      }
+      "name": "concrete_blue_pillar_meander_dent"
     },
     {
       "block": "chisel:concrete_blue_pillar_meander_plain",
       "model_type": "ctmv",
-      "name": "concrete_blue_pillar_meander_plain",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "side": "chisel:block/concrete_blue/concrete_blue_pillar_meander-side",
-        "top": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "vertical_both": "chisel:block/concrete_blue/concrete_blue_pillar_basic_plain-vertical_both",
-        "vertical_none": "chisel:block/concrete_blue/concrete_blue_pillar_meander-vertical_none"
-      }
+      "name": "concrete_blue_pillar_meander_plain"
     },
     {
       "block": "chisel:concrete_blue_pillar_meander_round",
       "model_type": "ctmv",
-      "name": "concrete_blue_pillar_meander_round",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "side": "chisel:block/concrete_blue/concrete_blue_pillar_meander-side",
-        "top": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "vertical_both": "chisel:block/concrete_blue/concrete_blue_pillar_basic_round-vertical_both",
-        "vertical_none": "chisel:block/concrete_blue/concrete_blue_pillar_meander-vertical_none"
-      }
+      "name": "concrete_blue_pillar_meander_round"
     },
     {
       "block": "chisel:concrete_blue_pillar_meander_spiral",
       "model_type": "ctmv",
-      "name": "concrete_blue_pillar_meander_spiral",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "side": "chisel:block/concrete_blue/concrete_blue_pillar_meander-side",
-        "top": "chisel:block/concrete_blue/concrete_blue_pillar_basic-top",
-        "vertical_both": "chisel:block/concrete_blue/concrete_blue_pillar_basic_spiral-vertical_both",
-        "vertical_none": "chisel:block/concrete_blue/concrete_blue_pillar_meander-vertical_none"
-      }
+      "name": "concrete_blue_pillar_meander_spiral"
     },
     {
       "block": "chisel:concrete_blue_plate",
@@ -397,10 +272,7 @@
     {
       "block": "chisel:concrete_blue_plate_connected",
       "model_type": "connected",
-      "name": "concrete_blue_plate_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_gem_1_connected-ctm_cornerless"
-      }
+      "name": "concrete_blue_plate_connected"
     },
     {
       "block": "chisel:concrete_blue_polished",
@@ -435,14 +307,7 @@
     {
       "block": "chisel:concrete_blue_tiles_large",
       "model_type": "connected",
-      "name": "concrete_blue_tiles_large",
-      "textures": {
-        "": "chisel:block/concrete_blue/concrete_blue_polished",
-        "ctm_corner": "chisel:block/concrete_blue/concrete_blue_tiles_large-ctm_corner",
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_dent-ctm_cornerless",
-        "ctm_horizontal": "chisel:block/concrete_blue/concrete_blue_tiles_large-ctm_horizontal",
-        "ctm_vertical": "chisel:block/concrete_blue/concrete_blue_tiles_large-ctm_vertical"
-      }
+      "name": "concrete_blue_tiles_large"
     },
     {
       "block": "chisel:concrete_blue_tiles_small",
@@ -451,10 +316,7 @@
     {
       "block": "chisel:concrete_blue_twisted",
       "model_type": "top_bottom_side",
-      "name": "concrete_blue_twisted",
-      "textures": {
-        "bottom": "chisel:block/concrete_blue/concrete_blue_twisted-top"
-      }
+      "name": "concrete_blue_twisted"
     },
     {
       "block": "chisel:concrete_blue_weaver",
@@ -478,10 +340,7 @@
     {
       "block": "chisel:concrete_blue_herringbone_encased",
       "model_type": "connected",
-      "name": "concrete_blue_herringbone_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_herringbone"
-      }
+      "name": "concrete_blue_herringbone_encased"
     },
     {
       "block": "chisel:concrete_blue_medallion",
@@ -490,10 +349,7 @@
     {
       "block": "chisel:concrete_blue_medallion_encased",
       "model_type": "connected",
-      "name": "concrete_blue_medallion_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_medallion"
-      }
+      "name": "concrete_blue_medallion_encased"
     },
     {
       "block": "chisel:concrete_blue_dots",
@@ -502,10 +358,7 @@
     {
       "block": "chisel:concrete_blue_dots_encased",
       "model_type": "connected",
-      "name": "concrete_blue_dots_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_dots"
-      }
+      "name": "concrete_blue_dots_encased"
     },
     {
       "block": "chisel:concrete_blue_heart",
@@ -526,14 +379,7 @@
     {
       "block": "chisel:concrete_blue_lodestone_connected",
       "model_type": "connected",
-      "name": "concrete_blue_lodestone_connected",
-      "textures": {
-        "": "chisel:block/concrete_blue/concrete_blue_lodestone",
-        "ctm_corner": "chisel:block/concrete_blue/concrete_blue_lodestone_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_lodestone",
-        "ctm_horizontal": "chisel:block/concrete_blue/concrete_blue_lodestone_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/concrete_blue/concrete_blue_lodestone_connected-ctm_vertical"
-      }
+      "name": "concrete_blue_lodestone_connected"
     },
     {
       "block": "chisel:concrete_blue_plank",
@@ -542,14 +388,7 @@
     {
       "block": "chisel:concrete_blue_plank_connected",
       "model_type": "connected",
-      "name": "concrete_blue_plank_connected",
-      "textures": {
-        "": "chisel:block/concrete_blue/concrete_blue_plank",
-        "ctm_corner": "chisel:block/concrete_blue/concrete_blue_plank_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_plank_connected-ctm_cornerless",
-        "ctm_horizontal": "chisel:block/concrete_blue/concrete_blue_plank_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/concrete_blue/concrete_blue_plank_connected-ctm_vertical"
-      }
+      "name": "concrete_blue_plank_connected"
     },
     {
       "block": "chisel:concrete_blue_frame",
@@ -582,10 +421,7 @@
     {
       "block": "chisel:concrete_blue_stripes_encased",
       "model_type": "connected",
-      "name": "concrete_blue_stripes_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_stripes"
-      }
+      "name": "concrete_blue_stripes_encased"
     },
     {
       "block": "chisel:concrete_blue_chisel_1",
@@ -622,10 +458,7 @@
     {
       "block": "chisel:concrete_blue_facet_small_encased",
       "model_type": "connected",
-      "name": "concrete_blue_facet_small_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_facet_small"
-      }
+      "name": "concrete_blue_facet_small_encased"
     },
     {
       "block": "chisel:concrete_blue_shiny",
@@ -634,14 +467,7 @@
     {
       "block": "chisel:concrete_blue_shiny_connected",
       "model_type": "connected",
-      "name": "concrete_blue_shiny_connected",
-      "textures": {
-        "": "chisel:block/concrete_blue/concrete_blue_shiny",
-        "ctm_corner": "chisel:block/concrete_blue/concrete_blue_shiny_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_shiny_connected-ctm_cornerless",
-        "ctm_horizontal": "chisel:block/concrete_blue/concrete_blue_shiny_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/concrete_blue/concrete_blue_shiny_connected-ctm_vertical"
-      }
+      "name": "concrete_blue_shiny_connected"
     },
     {
       "block": "chisel:concrete_blue_gem",
@@ -654,14 +480,7 @@
     {
       "block": "chisel:concrete_blue_gem_1_connected",
       "model_type": "connected",
-      "name": "concrete_blue_gem_1_connected",
-      "textures": {
-        "": "chisel:block/concrete_blue/concrete_blue_gem_1",
-        "ctm_corner": "chisel:block/concrete_blue/concrete_blue_gem_1_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_gem_1_connected-ctm_cornerless",
-        "ctm_horizontal": "chisel:block/concrete_blue/concrete_blue_gem_1_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/concrete_blue/concrete_blue_gem_1_connected-ctm_vertical"
-      }
+      "name": "concrete_blue_gem_1_connected"
     },
     {
       "block": "chisel:concrete_blue_gem_2",
@@ -670,14 +489,7 @@
     {
       "block": "chisel:concrete_blue_gem_2_connected",
       "model_type": "connected",
-      "name": "concrete_blue_gem_2_connected",
-      "textures": {
-        "": "chisel:block/concrete_blue/concrete_blue_gem_2",
-        "ctm_corner": "chisel:block/concrete_blue/concrete_blue_gem_2_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_gem_1_connected-ctm_cornerless",
-        "ctm_horizontal": "chisel:block/concrete_blue/concrete_blue_gem_2_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/concrete_blue/concrete_blue_gem_2_connected-ctm_vertical"
-      }
+      "name": "concrete_blue_gem_2_connected"
     },
     {
       "block": "chisel:concrete_blue_gem_3",
@@ -686,14 +498,7 @@
     {
       "block": "chisel:concrete_blue_gem_3_connected",
       "model_type": "connected",
-      "name": "concrete_blue_gem_3_connected",
-      "textures": {
-        "": "chisel:block/concrete_blue/concrete_blue_gem_3",
-        "ctm_corner": "chisel:block/concrete_blue/concrete_blue_gem_3_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_gem_3_connected-ctm_cornerless",
-        "ctm_horizontal": "chisel:block/concrete_blue/concrete_blue_gem_3_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/concrete_blue/concrete_blue_gem_3_connected-ctm_vertical"
-      }
+      "name": "concrete_blue_gem_3_connected"
     },
     {
       "block": "chisel:concrete_blue_bricks_square",
@@ -710,10 +515,7 @@
     {
       "block": "chisel:concrete_blue_scaffold_encased",
       "model_type": "connected",
-      "name": "concrete_blue_scaffold_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_scaffold"
-      }
+      "name": "concrete_blue_scaffold_encased"
     },
     {
       "block": "chisel:concrete_blue_tiles_inlayed",
@@ -722,10 +524,7 @@
     {
       "block": "chisel:concrete_blue_waves",
       "model_type": "multiblock_2x2",
-      "name": "concrete_blue_waves",
-      "textures": {
-        "2x2_top_left": "chisel:block/concrete_blue/concrete_blue_waves"
-      }
+      "name": "concrete_blue_waves"
     },
     {
       "block": "chisel:concrete_blue_parquet",
@@ -734,10 +533,7 @@
     {
       "block": "chisel:concrete_blue_parquet_encased",
       "model_type": "connected",
-      "name": "concrete_blue_parquet_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/concrete_blue/concrete_blue_parquet"
-      }
+      "name": "concrete_blue_parquet_encased"
     }
   ]
 }

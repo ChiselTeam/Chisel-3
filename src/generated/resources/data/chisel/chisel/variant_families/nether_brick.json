@@ -95,10 +95,7 @@
     {
       "block": "chisel:nether_bricks_braid_encased",
       "model_type": "connected",
-      "name": "nether_bricks_braid_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/nether_brick/nether_bricks_braid"
-      }
+      "name": "nether_bricks_braid_encased"
     },
     {
       "block": "chisel:nether_bricks_bricks_cracked",
@@ -120,10 +117,7 @@
     {
       "block": "chisel:nether_bricks_bricks_large",
       "model_type": "multiblock_2x2",
-      "name": "nether_bricks_bricks_large",
-      "textures": {
-        "2x2_top_left": "chisel:block/nether_brick/nether_bricks_bricks_large"
-      }
+      "name": "nether_bricks_bricks_large"
     },
     {
       "block": "chisel:nether_bricks_bricks_small",
@@ -135,10 +129,7 @@
     },
     {
       "block": "chisel:nether_bricks_bricks_solid",
-      "name": "nether_bricks_bricks_solid",
-      "textures": {
-        "": "chisel:block/nether_brick/nether_bricks_bricks_encased-ctm_cornerless"
-      }
+      "name": "nether_bricks_bricks_solid"
     },
     {
       "block": "chisel:nether_bricks_bricks_triple",
@@ -151,10 +142,7 @@
     {
       "block": "chisel:nether_bricks_chaotic",
       "model_type": "multiblock_3x3",
-      "name": "nether_bricks_chaotic",
-      "textures": {
-        "3x3_top_left": "chisel:block/nether_brick/nether_bricks_chaotic"
-      }
+      "name": "nether_bricks_chaotic"
     },
     {
       "block": "chisel:nether_bricks_chaotic_medium",
@@ -175,10 +163,7 @@
     {
       "block": "chisel:nether_bricks_circular",
       "model_type": "connected",
-      "name": "nether_bricks_circular",
-      "textures": {
-        "ctm_cornerless": "chisel:block/nether_brick/nether_bricks_border_square-ctm_cornerless"
-      }
+      "name": "nether_bricks_circular"
     },
     {
       "block": "chisel:nether_bricks_cracked",
@@ -191,18 +176,12 @@
     {
       "block": "chisel:nether_bricks_cuts",
       "model_type": "multiblock_4x4",
-      "name": "nether_bricks_cuts",
-      "textures": {
-        "4x4_row_0_column_0": "chisel:block/nether_brick/nether_bricks_cuts"
-      }
+      "name": "nether_bricks_cuts"
     },
     {
       "block": "chisel:nether_bricks_dent",
       "model_type": "connected",
-      "name": "nether_bricks_dent",
-      "textures": {
-        "ctm_cornerless": "chisel:block/nether_brick/nether_bricks_border_square-ctm_cornerless"
-      }
+      "name": "nether_bricks_dent"
     },
     {
       "block": "chisel:nether_bricks_french_1",
@@ -215,25 +194,16 @@
     {
       "block": "chisel:nether_bricks_indent",
       "model_type": "connected",
-      "name": "nether_bricks_indent",
-      "textures": {
-        "ctm_cornerless": "chisel:block/nether_brick/nether_bricks_border_square-ctm_cornerless"
-      }
+      "name": "nether_bricks_indent"
     },
     {
       "block": "chisel:nether_bricks_jellybean",
       "model_type": "multiblock_2x2",
-      "name": "nether_bricks_jellybean",
-      "textures": {
-        "2x2_top_left": "chisel:block/nether_brick/nether_bricks_jellybean"
-      }
+      "name": "nether_bricks_jellybean"
     },
     {
       "block": "chisel:nether_bricks_layers",
-      "name": "nether_bricks_layers",
-      "textures": {
-        "": "chisel:block/nether_brick/nether_bricks_layers_connected"
-      }
+      "name": "nether_bricks_layers"
     },
     {
       "block": "chisel:nether_bricks_layers_connected",
@@ -251,27 +221,17 @@
     {
       "block": "chisel:nether_bricks_meander_horizontal",
       "model_type": "ctmh",
-      "name": "nether_bricks_meander_horizontal",
-      "textures": {
-        "top": "chisel:block/nether_brick/nether_bricks_meander_horizontal-bottom"
-      }
+      "name": "nether_bricks_meander_horizontal"
     },
     {
       "block": "chisel:nether_bricks_meander_vertical",
       "model_type": "ctmv",
-      "name": "nether_bricks_meander_vertical",
-      "textures": {
-        "top": "chisel:block/nether_brick/nether_bricks_meander_vertical-bottom",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_meander_vertical-side"
-      }
+      "name": "nether_bricks_meander_vertical"
     },
     {
       "block": "chisel:nether_bricks_mosaic",
       "model_type": "connected",
-      "name": "nether_bricks_mosaic",
-      "textures": {
-        "ctm_cornerless": "chisel:block/nether_brick/nether_bricks_border_square-ctm_cornerless"
-      }
+      "name": "nether_bricks_mosaic"
     },
     {
       "block": "chisel:nether_bricks_ornate_small",
@@ -284,235 +244,115 @@
     {
       "block": "chisel:nether_bricks_pillar",
       "model_type": "top_bottom_side",
-      "name": "nether_bricks_pillar",
-      "textures": {
-        "top": "chisel:block/nether_brick/nether_bricks_pillar-bottom"
-      }
+      "name": "nether_bricks_pillar"
     },
     {
       "block": "chisel:nether_bricks_pillar_basic",
       "model_type": "ctmv",
-      "name": "nether_bricks_pillar_basic",
-      "textures": {
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_basic-side"
-      }
+      "name": "nether_bricks_pillar_basic"
     },
     {
       "block": "chisel:nether_bricks_pillar_basic_dent",
       "model_type": "ctmv",
-      "name": "nether_bricks_pillar_basic_dent",
-      "textures": {
-        "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_basic_dent-side"
-      }
+      "name": "nether_bricks_pillar_basic_dent"
     },
     {
       "block": "chisel:nether_bricks_pillar_basic_plain",
       "model_type": "ctmv",
-      "name": "nether_bricks_pillar_basic_plain",
-      "textures": {
-        "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_basic_plain-side"
-      }
+      "name": "nether_bricks_pillar_basic_plain"
     },
     {
       "block": "chisel:nether_bricks_pillar_basic_round",
       "model_type": "ctmv",
-      "name": "nether_bricks_pillar_basic_round",
-      "textures": {
-        "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_basic_round-side"
-      }
+      "name": "nether_bricks_pillar_basic_round"
     },
     {
       "block": "chisel:nether_bricks_pillar_basic_spiral",
       "model_type": "ctmv",
-      "name": "nether_bricks_pillar_basic_spiral",
-      "textures": {
-        "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_basic_spiral-side"
-      }
+      "name": "nether_bricks_pillar_basic_spiral"
     },
     {
       "block": "chisel:nether_bricks_pillar_classic",
       "model_type": "top_bottom_side",
-      "name": "nether_bricks_pillar_classic",
-      "textures": {
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_classic-bottom"
-      }
+      "name": "nether_bricks_pillar_classic"
     },
     {
       "block": "chisel:nether_bricks_pillar_classic_large",
       "model_type": "top_bottom_side",
-      "name": "nether_bricks_pillar_classic_large",
-      "textures": {
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_classic_large-bottom"
-      }
+      "name": "nether_bricks_pillar_classic_large"
     },
     {
       "block": "chisel:nether_bricks_pillar_ionic",
       "model_type": "ctmv",
-      "name": "nether_bricks_pillar_ionic",
-      "textures": {
-        "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_ionic-side"
-      }
+      "name": "nether_bricks_pillar_ionic"
     },
     {
       "block": "chisel:nether_bricks_pillar_ionic_dent",
       "model_type": "ctmv",
-      "name": "nether_bricks_pillar_ionic_dent",
-      "textures": {
-        "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "side": "chisel:block/nether_brick/nether_bricks_pillar_ionic-side",
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "vertical_both": "chisel:block/nether_brick/nether_bricks_pillar_basic_dent-vertical_both",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_ionic-side"
-      }
+      "name": "nether_bricks_pillar_ionic_dent"
     },
     {
       "block": "chisel:nether_bricks_pillar_ionic_plain",
       "model_type": "ctmv",
-      "name": "nether_bricks_pillar_ionic_plain",
-      "textures": {
-        "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "side": "chisel:block/nether_brick/nether_bricks_pillar_ionic-side",
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "vertical_both": "chisel:block/nether_brick/nether_bricks_pillar_basic_plain-vertical_both",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_ionic-side"
-      }
+      "name": "nether_bricks_pillar_ionic_plain"
     },
     {
       "block": "chisel:nether_bricks_pillar_ionic_round",
       "model_type": "ctmv",
-      "name": "nether_bricks_pillar_ionic_round",
-      "textures": {
-        "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "side": "chisel:block/nether_brick/nether_bricks_pillar_ionic-side",
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "vertical_both": "chisel:block/nether_brick/nether_bricks_pillar_basic_round-vertical_both",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_ionic-side"
-      }
+      "name": "nether_bricks_pillar_ionic_round"
     },
     {
       "block": "chisel:nether_bricks_pillar_ionic_spiral",
       "model_type": "ctmv",
-      "name": "nether_bricks_pillar_ionic_spiral",
-      "textures": {
-        "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "side": "chisel:block/nether_brick/nether_bricks_pillar_ionic-side",
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "vertical_both": "chisel:block/nether_brick/nether_bricks_pillar_basic_spiral-vertical_both",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_ionic-side"
-      }
+      "name": "nether_bricks_pillar_ionic_spiral"
     },
     {
       "block": "chisel:nether_bricks_pillar_large_basic_triple",
       "model_type": "ctmv",
-      "name": "nether_bricks_pillar_large_basic_triple",
-      "textures": {
-        "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_large_basic_triple-side"
-      }
+      "name": "nether_bricks_pillar_large_basic_triple"
     },
     {
       "block": "chisel:nether_bricks_pillar_large_ionic_triple",
       "model_type": "ctmv",
-      "name": "nether_bricks_pillar_large_ionic_triple",
-      "textures": {
-        "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "vertical_both": "chisel:block/nether_brick/nether_bricks_pillar_large_basic_triple-vertical_both",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_large_ionic_triple-side"
-      }
+      "name": "nether_bricks_pillar_large_ionic_triple"
     },
     {
       "block": "chisel:nether_bricks_pillar_meander",
       "model_type": "ctmv",
-      "name": "nether_bricks_pillar_meander",
-      "textures": {
-        "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "vertical_both": "chisel:block/nether_brick/nether_bricks_pillar_ionic-vertical_both",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_meander-side"
-      }
+      "name": "nether_bricks_pillar_meander"
     },
     {
       "block": "chisel:nether_bricks_pillar_meander_dent",
       "model_type": "ctmv",
-      "name": "nether_bricks_pillar_meander_dent",
-      "textures": {
-        "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "side": "chisel:block/nether_brick/nether_bricks_pillar_meander-side",
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "vertical_both": "chisel:block/nether_brick/nether_bricks_pillar_basic_dent-vertical_both",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_meander-side"
-      }
+      "name": "nether_bricks_pillar_meander_dent"
     },
     {
       "block": "chisel:nether_bricks_pillar_meander_plain",
       "model_type": "ctmv",
-      "name": "nether_bricks_pillar_meander_plain",
-      "textures": {
-        "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "side": "chisel:block/nether_brick/nether_bricks_pillar_meander-side",
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "vertical_both": "chisel:block/nether_brick/nether_bricks_pillar_basic_plain-vertical_both",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_meander-side"
-      }
+      "name": "nether_bricks_pillar_meander_plain"
     },
     {
       "block": "chisel:nether_bricks_pillar_meander_round",
       "model_type": "ctmv",
-      "name": "nether_bricks_pillar_meander_round",
-      "textures": {
-        "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "side": "chisel:block/nether_brick/nether_bricks_pillar_meander-side",
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "vertical_both": "chisel:block/nether_brick/nether_bricks_pillar_basic_round-vertical_both",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_meander-side"
-      }
+      "name": "nether_bricks_pillar_meander_round"
     },
     {
       "block": "chisel:nether_bricks_pillar_meander_spiral",
       "model_type": "ctmv",
-      "name": "nether_bricks_pillar_meander_spiral",
-      "textures": {
-        "bottom": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "side": "chisel:block/nether_brick/nether_bricks_pillar_meander-side",
-        "top": "chisel:block/nether_brick/nether_bricks_pillar_basic-bottom",
-        "vertical_both": "chisel:block/nether_brick/nether_bricks_pillar_basic_spiral-vertical_both",
-        "vertical_none": "chisel:block/nether_brick/nether_bricks_pillar_meander-side"
-      }
+      "name": "nether_bricks_pillar_meander_spiral"
     },
     {
       "block": "chisel:nether_bricks_plate",
-      "name": "nether_bricks_plate",
-      "textures": {
-        "": "chisel:block/nether_brick/nether_bricks_plate_connected"
-      }
+      "name": "nether_bricks_plate"
     },
     {
       "block": "chisel:nether_bricks_plate_connected",
       "model_type": "connected",
-      "name": "nether_bricks_plate_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/nether_brick/nether_bricks_border_square-ctm_cornerless"
-      }
+      "name": "nether_bricks_plate_connected"
     },
     {
       "block": "chisel:nether_bricks_polished",
-      "name": "nether_bricks_polished",
-      "textures": {
-        "": "chisel:block/nether_brick/nether_bricks_tiles_large"
-      }
+      "name": "nether_bricks_polished"
     },
     {
       "block": "chisel:nether_bricks_polished_encased",
@@ -525,10 +365,7 @@
     },
     {
       "block": "chisel:nether_bricks_raw",
-      "name": "nether_bricks_raw",
-      "textures": {
-        "": "chisel:block/nether_brick/nether_bricks_border_square-ctm_cornerless"
-      }
+      "name": "nether_bricks_raw"
     },
     {
       "block": "chisel:nether_bricks_road",
@@ -546,10 +383,7 @@
     {
       "block": "chisel:nether_bricks_tiles_large",
       "model_type": "connected",
-      "name": "nether_bricks_tiles_large",
-      "textures": {
-        "ctm_cornerless": "chisel:block/nether_brick/nether_bricks_border_square-ctm_cornerless"
-      }
+      "name": "nether_bricks_tiles_large"
     },
     {
       "block": "chisel:nether_bricks_tiles_small",
@@ -558,10 +392,7 @@
     {
       "block": "chisel:nether_bricks_twisted",
       "model_type": "top_bottom_side",
-      "name": "nether_bricks_twisted",
-      "textures": {
-        "top": "chisel:block/nether_brick/nether_bricks_twisted-bottom"
-      }
+      "name": "nether_bricks_twisted"
     },
     {
       "block": "chisel:nether_bricks_weaver",
@@ -571,10 +402,7 @@
     {
       "block": "chisel:nether_bricks_zag",
       "model_type": "v4",
-      "name": "nether_bricks_zag",
-      "textures": {
-        "v4_top_left": "chisel:block/nether_brick/nether_bricks_zag"
-      }
+      "name": "nether_bricks_zag"
     },
     {
       "block": "chisel:nether_bricks_crate",
@@ -588,10 +416,7 @@
     {
       "block": "chisel:nether_bricks_herringbone_encased",
       "model_type": "connected",
-      "name": "nether_bricks_herringbone_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/nether_brick/nether_bricks_herringbone"
-      }
+      "name": "nether_bricks_herringbone_encased"
     },
     {
       "block": "chisel:nether_bricks_medallion",
@@ -600,10 +425,7 @@
     {
       "block": "chisel:nether_bricks_medallion_encased",
       "model_type": "connected",
-      "name": "nether_bricks_medallion_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/nether_brick/nether_bricks_medallion"
-      }
+      "name": "nether_bricks_medallion_encased"
     },
     {
       "block": "chisel:nether_bricks_dots",
@@ -612,10 +434,7 @@
     {
       "block": "chisel:nether_bricks_dots_encased",
       "model_type": "connected",
-      "name": "nether_bricks_dots_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/nether_brick/nether_bricks_dots"
-      }
+      "name": "nether_bricks_dots_encased"
     },
     {
       "block": "chisel:nether_bricks_heart",
@@ -631,25 +450,16 @@
     },
     {
       "block": "chisel:nether_bricks_lodestone",
-      "name": "nether_bricks_lodestone",
-      "textures": {
-        "": "chisel:block/nether_brick/nether_bricks_lodestone_connected"
-      }
+      "name": "nether_bricks_lodestone"
     },
     {
       "block": "chisel:nether_bricks_lodestone_connected",
       "model_type": "connected",
-      "name": "nether_bricks_lodestone_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/nether_brick/nether_bricks_lodestone_connected"
-      }
+      "name": "nether_bricks_lodestone_connected"
     },
     {
       "block": "chisel:nether_bricks_plank",
-      "name": "nether_bricks_plank",
-      "textures": {
-        "": "chisel:block/nether_brick/nether_bricks_plank_connected"
-      }
+      "name": "nether_bricks_plank"
     },
     {
       "block": "chisel:nether_bricks_plank_connected",
@@ -687,10 +497,7 @@
     {
       "block": "chisel:nether_bricks_stripes_encased",
       "model_type": "connected",
-      "name": "nether_bricks_stripes_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/nether_brick/nether_bricks_stripes"
-      }
+      "name": "nether_bricks_stripes_encased"
     },
     {
       "block": "chisel:nether_bricks_chisel_1",
@@ -727,17 +534,11 @@
     {
       "block": "chisel:nether_bricks_facet_small_encased",
       "model_type": "connected",
-      "name": "nether_bricks_facet_small_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/nether_brick/nether_bricks_facet_small"
-      }
+      "name": "nether_bricks_facet_small_encased"
     },
     {
       "block": "chisel:nether_bricks_shiny",
-      "name": "nether_bricks_shiny",
-      "textures": {
-        "": "chisel:block/nether_brick/nether_bricks_shiny_connected"
-      }
+      "name": "nether_bricks_shiny"
     },
     {
       "block": "chisel:nether_bricks_shiny_connected",
@@ -750,40 +551,25 @@
     },
     {
       "block": "chisel:nether_bricks_gem_1",
-      "name": "nether_bricks_gem_1",
-      "textures": {
-        "": "chisel:block/nether_brick/nether_bricks_gem_1_connected"
-      }
+      "name": "nether_bricks_gem_1"
     },
     {
       "block": "chisel:nether_bricks_gem_1_connected",
       "model_type": "connected",
-      "name": "nether_bricks_gem_1_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/nether_brick/nether_bricks_border_square-ctm_cornerless"
-      }
+      "name": "nether_bricks_gem_1_connected"
     },
     {
       "block": "chisel:nether_bricks_gem_2",
-      "name": "nether_bricks_gem_2",
-      "textures": {
-        "": "chisel:block/nether_brick/nether_bricks_gem_2_connected"
-      }
+      "name": "nether_bricks_gem_2"
     },
     {
       "block": "chisel:nether_bricks_gem_2_connected",
       "model_type": "connected",
-      "name": "nether_bricks_gem_2_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/nether_brick/nether_bricks_border_square-ctm_cornerless"
-      }
+      "name": "nether_bricks_gem_2_connected"
     },
     {
       "block": "chisel:nether_bricks_gem_3",
-      "name": "nether_bricks_gem_3",
-      "textures": {
-        "": "chisel:block/nether_brick/nether_bricks_gem_3_connected"
-      }
+      "name": "nether_bricks_gem_3"
     },
     {
       "block": "chisel:nether_bricks_gem_3_connected",
@@ -805,10 +591,7 @@
     {
       "block": "chisel:nether_bricks_scaffold_encased",
       "model_type": "connected",
-      "name": "nether_bricks_scaffold_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/nether_brick/nether_bricks_scaffold"
-      }
+      "name": "nether_bricks_scaffold_encased"
     },
     {
       "block": "chisel:nether_bricks_tiles_inlayed",
@@ -817,10 +600,7 @@
     {
       "block": "chisel:nether_bricks_waves",
       "model_type": "multiblock_2x2",
-      "name": "nether_bricks_waves",
-      "textures": {
-        "2x2_top_left": "chisel:block/nether_brick/nether_bricks_waves"
-      }
+      "name": "nether_bricks_waves"
     },
     {
       "block": "chisel:nether_bricks_parquet",
@@ -829,10 +609,7 @@
     {
       "block": "chisel:nether_bricks_parquet_encased",
       "model_type": "connected",
-      "name": "nether_bricks_parquet_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/nether_brick/nether_bricks_parquet"
-      }
+      "name": "nether_bricks_parquet_encased"
     }
   ]
 }

@@ -4,10 +4,7 @@
   "variants": [
     {
       "block": "chisel:light_gray_framed",
-      "name": "light_gray_framed",
-      "textures": {
-        "": "chisel:block/light_gray/light_gray_framed_connected"
-      }
+      "name": "light_gray_framed"
     },
     {
       "block": "chisel:light_gray_framed_connected",

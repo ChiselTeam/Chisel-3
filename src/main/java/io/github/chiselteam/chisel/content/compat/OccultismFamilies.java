@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.content.compat;
 
+import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
 import io.github.chiselteam.chisel.content.ChiselFamily;
 import net.minecraft.world.level.block.Blocks;
@@ -15,6 +16,8 @@ public class OccultismFamilies {
         OC_TALLOW = ChiselFamily.build("oc_tallow", builder -> builder
                 .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL))
                 .addVariant("tallow_block", ChiselModelHandlers.TBS).translation("tallow_block", "Tallow", "Block")
+                .texture("tallow_block", "bottom", Chisel.prefix("block/oc_tallow/tallow_smooth"))
+                .texture("tallow_block", "top", Chisel.prefix("block/oc_tallow/tallow_smooth"))
                 .addVariant("tallow_faces").translation("tallow_faces", "Tallow", "Pareidolia")
                 .addVariant("tallow_smooth").translation("tallow_smooth", "Tallow", "Smooth")
                 .build());

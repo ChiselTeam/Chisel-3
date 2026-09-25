@@ -19,9 +19,8 @@ public class Variant {
     public static final Codec<Variant> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             Codec.STRING.fieldOf("name").forGetter(Variant::getName),
             BuiltInRegistries.BLOCK.byNameCodec().fieldOf("block").forGetter(Variant::getBlock),
-            VariantModelHandlers.CODEC.optionalFieldOf("model_type", CUBE_ALL).forGetter(Variant::getModelType),
-            Codec.unboundedMap(Codec.STRING, Identifier.CODEC).optionalFieldOf("textures", Map.of()).forGetter(Variant::getTextures)
-    ).apply(instance, (name, block, modelType, textures) -> new Variant(name, () -> block, null, modelType, false).setTextures(textures)));
+            VariantModelHandlers.CODEC.optionalFieldOf("model_type", CUBE_ALL).forGetter(Variant::getModelType)
+    ).apply(instance, (name, block, modelType) -> new Variant(name, () -> block, null, modelType, false)));
 
     private final String name;
     private final Supplier<Block> block;

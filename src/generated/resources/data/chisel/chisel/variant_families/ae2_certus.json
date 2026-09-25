@@ -5,21 +5,12 @@
     {
       "block": "chisel:certus_array",
       "model_type": "multiblock_2x2",
-      "name": "certus_array",
-      "textures": {
-        "2x2_bottom_left": "chisel:block/ae2_certus/certus_array"
-      }
+      "name": "certus_array"
     },
     {
       "block": "chisel:certus_border_square",
       "model_type": "connected",
-      "name": "certus_border_square",
-      "textures": {
-        "ctm_corner": "chisel:block/ae2_certus/certus_border_square",
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_raw",
-        "ctm_horizontal": "chisel:block/ae2_certus/certus_border_square",
-        "ctm_vertical": "chisel:block/ae2_certus/certus_border_square"
-      }
+      "name": "certus_border_square"
     },
     {
       "block": "chisel:certus_braid",
@@ -37,10 +28,7 @@
     {
       "block": "chisel:certus_bricks_encased",
       "model_type": "connected",
-      "name": "certus_bricks_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_bricks_solid"
-      }
+      "name": "certus_bricks_encased"
     },
     {
       "block": "chisel:certus_bricks_indent",
@@ -53,12 +41,7 @@
     {
       "block": "chisel:certus_bricks_large",
       "model_type": "multiblock_2x2",
-      "name": "certus_bricks_large",
-      "textures": {
-        "2x2_bottom_left": "chisel:block/ae2_certus/certus_bricks_large-2x2_top_right",
-        "2x2_bottom_right": "chisel:block/ae2_certus/certus_bricks_large",
-        "2x2_top_left": "chisel:block/ae2_certus/certus_bricks_large"
-      }
+      "name": "certus_bricks_large"
     },
     {
       "block": "chisel:certus_bricks_small",
@@ -83,10 +66,7 @@
     {
       "block": "chisel:certus_chaotic",
       "model_type": "multiblock_3x3",
-      "name": "certus_chaotic",
-      "textures": {
-        "3x3_top_left": "chisel:block/ae2_certus/certus_chaotic"
-      }
+      "name": "certus_chaotic"
     },
     {
       "block": "chisel:certus_chaotic_medium",
@@ -107,10 +87,7 @@
     {
       "block": "chisel:certus_circular",
       "model_type": "connected",
-      "name": "certus_circular",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_raw"
-      }
+      "name": "certus_circular"
     },
     {
       "block": "chisel:certus_cobble",
@@ -119,18 +96,12 @@
     {
       "block": "chisel:certus_cuts",
       "model_type": "multiblock_4x4",
-      "name": "certus_cuts",
-      "textures": {
-        "4x4_row_0_column_0": "chisel:block/ae2_certus/certus_cuts"
-      }
+      "name": "certus_cuts"
     },
     {
       "block": "chisel:certus_dent",
       "model_type": "connected",
-      "name": "certus_dent",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_raw"
-      }
+      "name": "certus_dent"
     },
     {
       "block": "chisel:certus_french_1",
@@ -143,18 +114,12 @@
     {
       "block": "chisel:certus_indent",
       "model_type": "connected",
-      "name": "certus_indent",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_raw"
-      }
+      "name": "certus_indent"
     },
     {
       "block": "chisel:certus_jellybean",
       "model_type": "multiblock_2x2",
-      "name": "certus_jellybean",
-      "textures": {
-        "2x2_top_left": "chisel:block/ae2_certus/certus_jellybean"
-      }
+      "name": "certus_jellybean"
     },
     {
       "block": "chisel:certus_layers",
@@ -163,12 +128,7 @@
     {
       "block": "chisel:certus_layers_connected",
       "model_type": "connected",
-      "name": "certus_layers_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_layers_connected-ctm_corner",
-        "ctm_horizontal": "chisel:block/ae2_certus/certus_layers_connected",
-        "ctm_vertical": "chisel:block/ae2_certus/certus_layers_connected-ctm_corner"
-      }
+      "name": "certus_layers_connected"
     },
     {
       "block": "chisel:certus_line_horizontal",
@@ -181,27 +141,17 @@
     {
       "block": "chisel:certus_meander_horizontal",
       "model_type": "ctmh",
-      "name": "certus_meander_horizontal",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_meander_horizontal-top"
-      }
+      "name": "certus_meander_horizontal"
     },
     {
       "block": "chisel:certus_meander_vertical",
       "model_type": "ctmv",
-      "name": "certus_meander_vertical",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_meander_vertical-top",
-        "vertical_none": "chisel:block/ae2_certus/certus_meander_vertical-side"
-      }
+      "name": "certus_meander_vertical"
     },
     {
       "block": "chisel:certus_mosaic",
       "model_type": "connected",
-      "name": "certus_mosaic",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_raw"
-      }
+      "name": "certus_mosaic"
     },
     {
       "block": "chisel:certus_ornate_small",
@@ -214,212 +164,102 @@
     {
       "block": "chisel:certus_pillar",
       "model_type": "top_bottom_side",
-      "name": "certus_pillar",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar-top"
-      }
+      "name": "certus_pillar"
     },
     {
       "block": "chisel:certus_pillar_basic",
       "model_type": "ctmv",
-      "name": "certus_pillar_basic",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "vertical_none": "chisel:block/ae2_certus/certus_pillar_basic-side"
-      }
+      "name": "certus_pillar_basic"
     },
     {
       "block": "chisel:certus_pillar_basic_dent",
       "model_type": "ctmv",
-      "name": "certus_pillar_basic_dent",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "top": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "vertical_none": "chisel:block/ae2_certus/certus_pillar_basic_dent-side"
-      }
+      "name": "certus_pillar_basic_dent"
     },
     {
       "block": "chisel:certus_pillar_basic_plain",
       "model_type": "ctmv",
-      "name": "certus_pillar_basic_plain",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "top": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "vertical_none": "chisel:block/ae2_certus/certus_pillar_basic_plain-side"
-      }
+      "name": "certus_pillar_basic_plain"
     },
     {
       "block": "chisel:certus_pillar_basic_round",
       "model_type": "ctmv",
-      "name": "certus_pillar_basic_round",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "top": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "vertical_none": "chisel:block/ae2_certus/certus_pillar_basic_round-side"
-      }
+      "name": "certus_pillar_basic_round"
     },
     {
       "block": "chisel:certus_pillar_basic_spiral",
       "model_type": "ctmv",
-      "name": "certus_pillar_basic_spiral",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "top": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "vertical_none": "chisel:block/ae2_certus/certus_pillar_basic_spiral-side"
-      }
+      "name": "certus_pillar_basic_spiral"
     },
     {
       "block": "chisel:certus_pillar_classic",
       "model_type": "top_bottom_side",
-      "name": "certus_pillar_classic",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_classic-top"
-      }
+      "name": "certus_pillar_classic"
     },
     {
       "block": "chisel:certus_pillar_classic_large",
       "model_type": "top_bottom_side",
-      "name": "certus_pillar_classic_large",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_classic_large-top"
-      }
+      "name": "certus_pillar_classic_large"
     },
     {
       "block": "chisel:certus_pillar_ionic",
       "model_type": "ctmv",
-      "name": "certus_pillar_ionic",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "top": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "vertical_none": "chisel:block/ae2_certus/certus_pillar_ionic-side"
-      }
+      "name": "certus_pillar_ionic"
     },
     {
       "block": "chisel:certus_pillar_ionic_dent",
       "model_type": "ctmv",
-      "name": "certus_pillar_ionic_dent",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "side": "chisel:block/ae2_certus/certus_pillar_ionic-side",
-        "top": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_certus/certus_pillar_basic_dent-vertical_both",
-        "vertical_none": "chisel:block/ae2_certus/certus_pillar_ionic-side"
-      }
+      "name": "certus_pillar_ionic_dent"
     },
     {
       "block": "chisel:certus_pillar_ionic_plain",
       "model_type": "ctmv",
-      "name": "certus_pillar_ionic_plain",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "side": "chisel:block/ae2_certus/certus_pillar_ionic-side",
-        "top": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_certus/certus_pillar_basic_plain-vertical_both",
-        "vertical_none": "chisel:block/ae2_certus/certus_pillar_ionic-side"
-      }
+      "name": "certus_pillar_ionic_plain"
     },
     {
       "block": "chisel:certus_pillar_ionic_round",
       "model_type": "ctmv",
-      "name": "certus_pillar_ionic_round",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "side": "chisel:block/ae2_certus/certus_pillar_ionic-side",
-        "top": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_certus/certus_pillar_basic_round-vertical_both",
-        "vertical_none": "chisel:block/ae2_certus/certus_pillar_ionic-side"
-      }
+      "name": "certus_pillar_ionic_round"
     },
     {
       "block": "chisel:certus_pillar_ionic_spiral",
       "model_type": "ctmv",
-      "name": "certus_pillar_ionic_spiral",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "side": "chisel:block/ae2_certus/certus_pillar_ionic-side",
-        "top": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_certus/certus_pillar_basic_spiral-vertical_both",
-        "vertical_none": "chisel:block/ae2_certus/certus_pillar_ionic-side"
-      }
+      "name": "certus_pillar_ionic_spiral"
     },
     {
       "block": "chisel:certus_pillar_large_basic_triple",
       "model_type": "ctmv",
-      "name": "certus_pillar_large_basic_triple",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "top": "chisel:block/ae2_certus/certus_pillar_basic-top"
-      }
+      "name": "certus_pillar_large_basic_triple"
     },
     {
       "block": "chisel:certus_pillar_large_ionic_triple",
       "model_type": "ctmv",
-      "name": "certus_pillar_large_ionic_triple",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "top": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_certus/certus_pillar_large_basic_triple-vertical_both",
-        "vertical_none": "chisel:block/ae2_certus/certus_pillar_large_ionic_triple-side"
-      }
+      "name": "certus_pillar_large_ionic_triple"
     },
     {
       "block": "chisel:certus_pillar_meander",
       "model_type": "ctmv",
-      "name": "certus_pillar_meander",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "top": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_certus/certus_pillar_ionic-vertical_both",
-        "vertical_none": "chisel:block/ae2_certus/certus_pillar_meander-side"
-      }
+      "name": "certus_pillar_meander"
     },
     {
       "block": "chisel:certus_pillar_meander_dent",
       "model_type": "ctmv",
-      "name": "certus_pillar_meander_dent",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "side": "chisel:block/ae2_certus/certus_pillar_meander-side",
-        "top": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_certus/certus_pillar_basic_dent-vertical_both",
-        "vertical_none": "chisel:block/ae2_certus/certus_pillar_meander-side"
-      }
+      "name": "certus_pillar_meander_dent"
     },
     {
       "block": "chisel:certus_pillar_meander_plain",
       "model_type": "ctmv",
-      "name": "certus_pillar_meander_plain",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "side": "chisel:block/ae2_certus/certus_pillar_meander-side",
-        "top": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_certus/certus_pillar_basic_plain-vertical_both",
-        "vertical_none": "chisel:block/ae2_certus/certus_pillar_meander-side"
-      }
+      "name": "certus_pillar_meander_plain"
     },
     {
       "block": "chisel:certus_pillar_meander_round",
       "model_type": "ctmv",
-      "name": "certus_pillar_meander_round",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "side": "chisel:block/ae2_certus/certus_pillar_meander-side",
-        "top": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_certus/certus_pillar_basic_round-vertical_both",
-        "vertical_none": "chisel:block/ae2_certus/certus_pillar_meander-side"
-      }
+      "name": "certus_pillar_meander_round"
     },
     {
       "block": "chisel:certus_pillar_meander_spiral",
       "model_type": "ctmv",
-      "name": "certus_pillar_meander_spiral",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "side": "chisel:block/ae2_certus/certus_pillar_meander-side",
-        "top": "chisel:block/ae2_certus/certus_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_certus/certus_pillar_basic_spiral-vertical_both",
-        "vertical_none": "chisel:block/ae2_certus/certus_pillar_meander-side"
-      }
+      "name": "certus_pillar_meander_spiral"
     },
     {
       "block": "chisel:certus_plate",
@@ -428,14 +268,7 @@
     {
       "block": "chisel:certus_plate_connected",
       "model_type": "connected",
-      "name": "certus_plate_connected",
-      "textures": {
-        "": "chisel:block/ae2_certus/certus_plate",
-        "ctm_corner": "chisel:block/ae2_certus/certus_plate_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_raw",
-        "ctm_horizontal": "chisel:block/ae2_certus/certus_plate_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/ae2_certus/certus_plate_connected-ctm_vertical"
-      }
+      "name": "certus_plate_connected"
     },
     {
       "block": "chisel:certus_polished",
@@ -461,10 +294,7 @@
     {
       "block": "chisel:certus_slanted",
       "model_type": "multiblock_2x2",
-      "name": "certus_slanted",
-      "textures": {
-        "2x2_bottom_left": "chisel:block/ae2_certus/certus_slanted"
-      }
+      "name": "certus_slanted"
     },
     {
       "block": "chisel:certus_tiles",
@@ -473,14 +303,7 @@
     {
       "block": "chisel:certus_tiles_large",
       "model_type": "connected",
-      "name": "certus_tiles_large",
-      "textures": {
-        "": "chisel:block/ae2_certus/certus_polished",
-        "ctm_corner": "chisel:block/ae2_certus/certus_tiles_large-ctm_corner",
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_raw",
-        "ctm_horizontal": "chisel:block/ae2_certus/certus_tiles_large-ctm_horizontal",
-        "ctm_vertical": "chisel:block/ae2_certus/certus_tiles_large-ctm_vertical"
-      }
+      "name": "certus_tiles_large"
     },
     {
       "block": "chisel:certus_tiles_small",
@@ -489,27 +312,17 @@
     {
       "block": "chisel:certus_twisted",
       "model_type": "top_bottom_side",
-      "name": "certus_twisted",
-      "textures": {
-        "bottom": "chisel:block/ae2_certus/certus_twisted-top"
-      }
+      "name": "certus_twisted"
     },
     {
       "block": "chisel:certus_weaver",
       "model_type": "connected",
-      "name": "certus_weaver",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_weaver-ctm_corner"
-      }
+      "name": "certus_weaver"
     },
     {
       "block": "chisel:certus_zag",
       "model_type": "multiblock_2x2",
-      "name": "certus_zag",
-      "textures": {
-        "2x2_bottom_left": "chisel:block/ae2_certus/certus_zag-2x2_top_right",
-        "2x2_top_left": "chisel:block/ae2_certus/certus_zag"
-      }
+      "name": "certus_zag"
     },
     {
       "block": "chisel:certus_crate",
@@ -523,10 +336,7 @@
     {
       "block": "chisel:certus_herringbone_encased",
       "model_type": "connected",
-      "name": "certus_herringbone_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_herringbone"
-      }
+      "name": "certus_herringbone_encased"
     },
     {
       "block": "chisel:certus_medallion",
@@ -535,10 +345,7 @@
     {
       "block": "chisel:certus_medallion_encased",
       "model_type": "connected",
-      "name": "certus_medallion_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_medallion"
-      }
+      "name": "certus_medallion_encased"
     },
     {
       "block": "chisel:certus_dots",
@@ -547,10 +354,7 @@
     {
       "block": "chisel:certus_dots_encased",
       "model_type": "connected",
-      "name": "certus_dots_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_dots"
-      }
+      "name": "certus_dots_encased"
     },
     {
       "block": "chisel:certus_heart",
@@ -571,14 +375,7 @@
     {
       "block": "chisel:certus_lodestone_connected",
       "model_type": "connected",
-      "name": "certus_lodestone_connected",
-      "textures": {
-        "": "chisel:block/ae2_certus/certus_lodestone",
-        "ctm_corner": "chisel:block/ae2_certus/certus_lodestone_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_lodestone",
-        "ctm_horizontal": "chisel:block/ae2_certus/certus_lodestone_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/ae2_certus/certus_lodestone_connected-ctm_vertical"
-      }
+      "name": "certus_lodestone_connected"
     },
     {
       "block": "chisel:certus_plank",
@@ -587,14 +384,7 @@
     {
       "block": "chisel:certus_plank_connected",
       "model_type": "connected",
-      "name": "certus_plank_connected",
-      "textures": {
-        "": "chisel:block/ae2_certus/certus_plank",
-        "ctm_corner": "chisel:block/ae2_certus/certus_plank_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_plank_connected-ctm_cornerless",
-        "ctm_horizontal": "chisel:block/ae2_certus/certus_plank_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/ae2_certus/certus_plank_connected-ctm_vertical"
-      }
+      "name": "certus_plank_connected"
     },
     {
       "block": "chisel:certus_frame",
@@ -627,10 +417,7 @@
     {
       "block": "chisel:certus_stripes_encased",
       "model_type": "connected",
-      "name": "certus_stripes_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_stripes"
-      }
+      "name": "certus_stripes_encased"
     },
     {
       "block": "chisel:certus_chisel_1",
@@ -667,10 +454,7 @@
     {
       "block": "chisel:certus_facet_small_encased",
       "model_type": "connected",
-      "name": "certus_facet_small_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_facet_small"
-      }
+      "name": "certus_facet_small_encased"
     },
     {
       "block": "chisel:certus_shiny",
@@ -679,14 +463,7 @@
     {
       "block": "chisel:certus_shiny_connected",
       "model_type": "connected",
-      "name": "certus_shiny_connected",
-      "textures": {
-        "": "chisel:block/ae2_certus/certus_shiny",
-        "ctm_corner": "chisel:block/ae2_certus/certus_shiny_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_shiny_connected-ctm_cornerless",
-        "ctm_horizontal": "chisel:block/ae2_certus/certus_shiny_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/ae2_certus/certus_shiny_connected-ctm_vertical"
-      }
+      "name": "certus_shiny_connected"
     },
     {
       "block": "chisel:certus_gem",
@@ -699,14 +476,7 @@
     {
       "block": "chisel:certus_gem_1_connected",
       "model_type": "connected",
-      "name": "certus_gem_1_connected",
-      "textures": {
-        "": "chisel:block/ae2_certus/certus_gem_1",
-        "ctm_corner": "chisel:block/ae2_certus/certus_gem_1_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_raw",
-        "ctm_horizontal": "chisel:block/ae2_certus/certus_gem_1_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/ae2_certus/certus_gem_1_connected-ctm_vertical"
-      }
+      "name": "certus_gem_1_connected"
     },
     {
       "block": "chisel:certus_gem_2",
@@ -715,14 +485,7 @@
     {
       "block": "chisel:certus_gem_2_connected",
       "model_type": "connected",
-      "name": "certus_gem_2_connected",
-      "textures": {
-        "": "chisel:block/ae2_certus/certus_gem_2",
-        "ctm_corner": "chisel:block/ae2_certus/certus_gem_2_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_raw",
-        "ctm_horizontal": "chisel:block/ae2_certus/certus_gem_2_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/ae2_certus/certus_gem_2_connected-ctm_vertical"
-      }
+      "name": "certus_gem_2_connected"
     },
     {
       "block": "chisel:certus_gem_3",
@@ -731,14 +494,7 @@
     {
       "block": "chisel:certus_gem_3_connected",
       "model_type": "connected",
-      "name": "certus_gem_3_connected",
-      "textures": {
-        "": "chisel:block/ae2_certus/certus_gem_3",
-        "ctm_corner": "chisel:block/ae2_certus/certus_gem_3_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_gem_3_connected-ctm_cornerless",
-        "ctm_horizontal": "chisel:block/ae2_certus/certus_gem_3_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/ae2_certus/certus_gem_3_connected-ctm_vertical"
-      }
+      "name": "certus_gem_3_connected"
     },
     {
       "block": "chisel:certus_bricks_square",
@@ -755,10 +511,7 @@
     {
       "block": "chisel:certus_scaffold_encased",
       "model_type": "connected",
-      "name": "certus_scaffold_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_scaffold"
-      }
+      "name": "certus_scaffold_encased"
     },
     {
       "block": "chisel:certus_tiles_inlayed",
@@ -767,10 +520,7 @@
     {
       "block": "chisel:certus_waves",
       "model_type": "multiblock_2x2",
-      "name": "certus_waves",
-      "textures": {
-        "2x2_top_left": "chisel:block/ae2_certus/certus_waves"
-      }
+      "name": "certus_waves"
     },
     {
       "block": "chisel:certus_parquet",
@@ -779,10 +529,7 @@
     {
       "block": "chisel:certus_parquet_encased",
       "model_type": "connected",
-      "name": "certus_parquet_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_certus/certus_parquet"
-      }
+      "name": "certus_parquet_encased"
     }
   ]
 }

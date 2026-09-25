@@ -9,19 +9,12 @@
     {
       "block": "chisel:sea_lantern_connected",
       "model_type": "multi_layer_connected",
-      "name": "sea_lantern_connected",
-      "textures": {
-        "bg": "chisel:block/sea_lantern/sea_lantern_raw",
-        "ctm_cornerless": "chisel:block/magma/magma_dent-ctm_cornerless"
-      }
+      "name": "sea_lantern_connected"
     },
     {
       "block": "chisel:sea_lantern_dent",
       "model_type": "multi_layer_connected",
-      "name": "sea_lantern_dent",
-      "textures": {
-        "bg": "chisel:block/sea_lantern/sea_lantern_raw"
-      }
+      "name": "sea_lantern_dent"
     },
     {
       "block": "chisel:sea_lantern_braid",
@@ -74,26 +67,17 @@
     {
       "block": "chisel:sea_lantern_pillar_dent",
       "model_type": "ctmv",
-      "name": "sea_lantern_pillar_dent",
-      "textures": {
-        "bottom": "chisel:block/sea_lantern/sea_lantern_pillar_dent-top"
-      }
+      "name": "sea_lantern_pillar_dent"
     },
     {
       "block": "chisel:sea_lantern_pillar_dent_invert",
       "model_type": "ctmv",
-      "name": "sea_lantern_pillar_dent_invert",
-      "textures": {
-        "bottom": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-top"
-      }
+      "name": "sea_lantern_pillar_dent_invert"
     },
     {
       "block": "chisel:sea_lantern_frame2",
       "model_type": "multi_layer_connected",
-      "name": "sea_lantern_frame2",
-      "textures": {
-        "bg": "chisel:block/sea_lantern/sea_lantern_raw"
-      }
+      "name": "sea_lantern_frame2"
     }
   ]
 }

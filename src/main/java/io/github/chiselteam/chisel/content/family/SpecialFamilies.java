@@ -2,8 +2,10 @@ package io.github.chiselteam.chisel.content.family;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
+import io.github.chiselteam.chisel.api.model.VariantModelHandler;
 import io.github.chiselteam.chisel.block.*;
 import io.github.chiselteam.chisel.content.ChiselFamily;
+import io.github.chiselteam.chisel.content.definition.VariantFamilyDefinitionBuilder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Blocks;
@@ -11,79 +13,14 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 
 import java.util.List;
+import java.util.Locale;
 
 public class SpecialFamilies {
     public static final ChiselFamily ANTIBLOCK, BOOKSHELF, GLASS, GLASS_PANE, IRON_BARS, JACK_O_LANTERN, PUMPKIN, REDSTONE_LAMP, ROAD_LINE, TORCH;
     private static final List<ChiselFamily> FAMILIES;
 
     static {
-        ANTIBLOCK = ChiselFamily.build("antiblock", builder -> builder
-                .properties(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).strength(3.0F, 5.0F).requiresCorrectToolForDrops().lightLevel((_) -> 15))
-                .addVariant("antiblock_black", ChiselModelHandlers.ANTIBLOCK).translation("antiblock_black", "Antiblock", "Black Anti Block")
-                .addVariant("antiblock_blue", ChiselModelHandlers.ANTIBLOCK).translation("antiblock_blue", "Antiblock", "Blue Anti Block")
-                .addVariant("antiblock_brown", ChiselModelHandlers.ANTIBLOCK).translation("antiblock_brown", "Antiblock", "Brown Anti Block")
-                .addVariant("antiblock_cyan", ChiselModelHandlers.ANTIBLOCK).translation("antiblock_cyan", "Antiblock", "Cyan Anti Block")
-                .addVariant("antiblock_gray", ChiselModelHandlers.ANTIBLOCK).translation("antiblock_gray", "Antiblock", "Gray Anti Block")
-                .addVariant("antiblock_green", ChiselModelHandlers.ANTIBLOCK).translation("antiblock_green", "Antiblock", "Green Anti Block")
-                .addVariant("antiblock_light_blue", ChiselModelHandlers.ANTIBLOCK).translation("antiblock_light_blue", "Antiblock", "Light Blue Anti Block")
-                .addVariant("antiblock_light_gray", ChiselModelHandlers.ANTIBLOCK).translation("antiblock_light_gray", "Antiblock", "Light Gray Anti Block")
-                .addVariant("antiblock_lime", ChiselModelHandlers.ANTIBLOCK).translation("antiblock_lime", "Antiblock", "Lime Anti Block")
-                .addVariant("antiblock_magenta", ChiselModelHandlers.ANTIBLOCK).translation("antiblock_magenta", "Antiblock", "Magenta Anti Block")
-                .addVariant("antiblock_orange", ChiselModelHandlers.ANTIBLOCK).translation("antiblock_orange", "Antiblock", "Orange Anti Block")
-                .addVariant("antiblock_pink", ChiselModelHandlers.ANTIBLOCK).translation("antiblock_pink", "Antiblock", "Pink Anti Block")
-                .addVariant("antiblock_purple", ChiselModelHandlers.ANTIBLOCK).translation("antiblock_purple", "Antiblock", "Purple Anti Block")
-                .addVariant("antiblock_red", ChiselModelHandlers.ANTIBLOCK).translation("antiblock_red", "Antiblock", "Red Anti Block")
-                .addVariant("antiblock_white", ChiselModelHandlers.ANTIBLOCK).translation("antiblock_white", "Antiblock", "White Anti Block")
-                .addVariant("antiblock_yellow", ChiselModelHandlers.ANTIBLOCK).translation("antiblock_yellow", "Antiblock", "Yellow Anti Block")
-                .addVariant("antiblock_black_borderless", ChiselModelHandlers.SHADELESS).translation("antiblock_black_borderless", "Antiblock", "Black Borderless Anti Block")
-                .addVariant("antiblock_blue_borderless", ChiselModelHandlers.SHADELESS).translation("antiblock_blue_borderless", "Antiblock", "Blue Borderless Anti Block")
-                .addVariant("antiblock_brown_borderless", ChiselModelHandlers.SHADELESS).translation("antiblock_brown_borderless", "Antiblock", "Brown Borderless Anti Block")
-                .addVariant("antiblock_cyan_borderless", ChiselModelHandlers.SHADELESS).translation("antiblock_cyan_borderless", "Antiblock", "Cyan Borderless Anti Block")
-                .addVariant("antiblock_gray_borderless", ChiselModelHandlers.SHADELESS).translation("antiblock_gray_borderless", "Antiblock", "Gray Borderless Anti Block")
-                .addVariant("antiblock_green_borderless", ChiselModelHandlers.SHADELESS).translation("antiblock_green_borderless", "Antiblock", "Green Borderless Anti Block")
-                .addVariant("antiblock_light_blue_borderless", ChiselModelHandlers.SHADELESS).translation("antiblock_light_blue_borderless", "Antiblock", "Light Blue Borderless Anti Block")
-                .addVariant("antiblock_light_gray_borderless", ChiselModelHandlers.SHADELESS).translation("antiblock_light_gray_borderless", "Antiblock", "Light Gray Borderless Anti Block")
-                .addVariant("antiblock_lime_borderless", ChiselModelHandlers.SHADELESS).translation("antiblock_lime_borderless", "Antiblock", "Lime Borderless Anti Block")
-                .addVariant("antiblock_magenta_borderless", ChiselModelHandlers.SHADELESS).translation("antiblock_magenta_borderless", "Antiblock", "Magenta Borderless Anti Block")
-                .addVariant("antiblock_orange_borderless", ChiselModelHandlers.SHADELESS).translation("antiblock_orange_borderless", "Antiblock", "Orange Borderless Anti Block")
-                .addVariant("antiblock_pink_borderless", ChiselModelHandlers.SHADELESS).translation("antiblock_pink_borderless", "Antiblock", "Pink Borderless Anti Block")
-                .addVariant("antiblock_purple_borderless", ChiselModelHandlers.SHADELESS).translation("antiblock_purple_borderless", "Antiblock", "Purple Borderless Anti Block")
-                .addVariant("antiblock_red_borderless", ChiselModelHandlers.SHADELESS).translation("antiblock_red_borderless", "Antiblock", "Red Borderless Anti Block")
-                .addVariant("antiblock_white_borderless", ChiselModelHandlers.SHADELESS).translation("antiblock_white_borderless", "Antiblock", "White Borderless Anti Block")
-                .addVariant("antiblock_yellow_borderless", ChiselModelHandlers.SHADELESS).translation("antiblock_yellow_borderless", "Antiblock", "Yellow Borderless Anti Block")
-                .addVariant("antiblock_black_dull", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW).translation("antiblock_black_dull", "Antiblock", "Black Dull Anti Block")
-                .addVariant("antiblock_blue_dull", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW).translation("antiblock_blue_dull", "Antiblock", "Blue Dull Anti Block")
-                .addVariant("antiblock_brown_dull", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW).translation("antiblock_brown_dull", "Antiblock", "Brown Dull Anti Block")
-                .addVariant("antiblock_cyan_dull", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW).translation("antiblock_cyan_dull", "Antiblock", "Cyan Dull Anti Block")
-                .addVariant("antiblock_gray_dull", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW).translation("antiblock_gray_dull", "Antiblock", "Gray Dull Anti Block")
-                .addVariant("antiblock_green_dull", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW).translation("antiblock_green_dull", "Antiblock", "Green Dull Anti Block")
-                .addVariant("antiblock_light_blue_dull", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW).translation("antiblock_light_blue_dull", "Antiblock", "Light Blue Dull Anti Block")
-                .addVariant("antiblock_light_gray_dull", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW).translation("antiblock_light_gray_dull", "Antiblock", "Light Gray Dull Anti Block")
-                .addVariant("antiblock_lime_dull", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW).translation("antiblock_lime_dull", "Antiblock", "Lime Dull Anti Block")
-                .addVariant("antiblock_magenta_dull", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW).translation("antiblock_magenta_dull", "Antiblock", "Magenta Dull Anti Block")
-                .addVariant("antiblock_orange_dull", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW).translation("antiblock_orange_dull", "Antiblock", "Orange Dull Anti Block")
-                .addVariant("antiblock_pink_dull", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW).translation("antiblock_pink_dull", "Antiblock", "Pink Dull Anti Block")
-                .addVariant("antiblock_purple_dull", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW).translation("antiblock_purple_dull", "Antiblock", "Purple Dull Anti Block")
-                .addVariant("antiblock_red_dull", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW).translation("antiblock_red_dull", "Antiblock", "Red Dull Anti Block")
-                .addVariant("antiblock_white_dull", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW).translation("antiblock_white_dull", "Antiblock", "White Dull Anti Block")
-                .addVariant("antiblock_yellow_dull", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW).translation("antiblock_yellow_dull", "Antiblock", "Yellow Dull Anti Block")
-                .addVariant("antiblock_black_dull_borderless").translation("antiblock_black_dull_borderless", "Antiblock", "Black Dull Borderless Anti Block")
-                .addVariant("antiblock_blue_dull_borderless").translation("antiblock_blue_dull_borderless", "Antiblock", "Blue Dull Borderless Anti Block")
-                .addVariant("antiblock_brown_dull_borderless").translation("antiblock_brown_dull_borderless", "Antiblock", "Brown Dull Borderless Anti Block")
-                .addVariant("antiblock_cyan_dull_borderless").translation("antiblock_cyan_dull_borderless", "Antiblock", "Cyan Dull Borderless Anti Block")
-                .addVariant("antiblock_gray_dull_borderless").translation("antiblock_gray_dull_borderless", "Antiblock", "Gray Dull Borderless Anti Block")
-                .addVariant("antiblock_green_dull_borderless").translation("antiblock_green_dull_borderless", "Antiblock", "Green Dull Borderless Anti Block")
-                .addVariant("antiblock_light_blue_dull_borderless").translation("antiblock_light_blue_dull_borderless", "Antiblock", "Light Blue Dull Borderless Anti Block")
-                .addVariant("antiblock_light_gray_dull_borderless").translation("antiblock_light_gray_dull_borderless", "Antiblock", "Light Gray Dull Borderless Anti Block")
-                .addVariant("antiblock_lime_dull_borderless").translation("antiblock_lime_dull_borderless", "Antiblock", "Lime Dull Borderless Anti Block")
-                .addVariant("antiblock_magenta_dull_borderless").translation("antiblock_magenta_dull_borderless", "Antiblock", "Magenta Dull Borderless Anti Block")
-                .addVariant("antiblock_orange_dull_borderless").translation("antiblock_orange_dull_borderless", "Antiblock", "Orange Dull Borderless Anti Block")
-                .addVariant("antiblock_pink_dull_borderless").translation("antiblock_pink_dull_borderless", "Antiblock", "Pink Dull Borderless Anti Block")
-                .addVariant("antiblock_purple_dull_borderless").translation("antiblock_purple_dull_borderless", "Antiblock", "Purple Dull Borderless Anti Block")
-                .addVariant("antiblock_red_dull_borderless").translation("antiblock_red_dull_borderless", "Antiblock", "Red Dull Borderless Anti Block")
-                .addVariant("antiblock_white_dull_borderless").translation("antiblock_white_dull_borderless", "Antiblock", "White Dull Borderless Anti Block")
-                .addVariant("antiblock_yellow_dull_borderless").translation("antiblock_yellow_dull_borderless", "Antiblock", "Yellow Dull Borderless Anti Block")
-                .build());
+        ANTIBLOCK = buildAntiblock();
 
         BOOKSHELF = buildBookshelf(BlockBehaviour.Properties.ofFullCopy(Blocks.BOOKSHELF));
 
@@ -91,13 +28,16 @@ public class SpecialFamilies {
                 .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS))
                 .addVariant(Blocks.GLASS)
                 .addVariant("glass_borderless", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_borderless", "Glass", "Borderless Glass")
+                .texture("glass_borderless", "ctm_cornerless", Chisel.prefix("block/glass/glass_edge-ctm_cornerless"))
                 .addVariant("glass_bubble", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_bubble", "Glass", "Bubble Glass")
+                .texture("glass_bubble", "ctm_cornerless", Chisel.prefix("block/glass/glass_streak"))
                 .addVariant("glass_chinese", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("glass_chinese", "Glass", "Chinese Glass")
                 .addVariant("glass_chinese_2", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("glass_chinese_2", "Glass", "Chinese Glass")
                 .addVariant("glass_chrono", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_chrono", "Glass", "Chrono")
                 .addVariant("glass_dungeon", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("glass_dungeon", "Glass", "Dungeon Glass")
                 .addVariant("glass_edge", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_edge", "Glass", "Edge")
                 .addVariant("glass_edge_steel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_edge_steel", "Glass", "Steel Edge")
+                .texture("glass_edge_steel", "ctm_cornerless", Chisel.prefix("block/glass/glass_edge-ctm_cornerless"))
                 .addVariant("glass_fence", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("glass_fence", "Glass", "Modern Iron Fence")
                 .addVariant("glass_grid_thick", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("glass_grid_thick", "Glass", "Thick Grid Glass")
                 .addVariant("glass_grid_thin", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("glass_grid_thin", "Glass", "Thin Grid Glass")
@@ -105,11 +45,15 @@ public class SpecialFamilies {
                 .addVariant("glass_japanese_2", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("glass_japanese_2", "Glass", "Japanese Glass")
                 .addVariant("glass_light", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_light", "Glass", "Light Glass")
                 .addVariant("glass_ornate", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_ornate", "Glass", "Ornate Steel Glass")
+                .texture("glass_ornate", "ctm_cornerless", Chisel.prefix("block/glass/glass_light-ctm_cornerless"))
                 .addVariant("glass_ornate_old", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("glass_ornate_old", "Glass", "Old Ornate")
                 .addVariant("glass_screen", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("glass_screen", "Glass", "Screen")
                 .addVariant("glass_shale", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_shale", "Glass", "Shale Glass")
+                .texture("glass_shale", "ctm_cornerless", Chisel.prefix("block/glass/glass_light-ctm_cornerless"))
                 .addVariant("glass_steel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_steel", "Glass", "Steel Frame Glass")
+                .texture("glass_steel", "ctm_cornerless", Chisel.prefix("block/glass/glass_light-ctm_cornerless"))
                 .addVariant("glass_stone", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_stone", "Glass", "Stone Frame Glass")
+                .texture("glass_stone", "ctm_cornerless", Chisel.prefix("block/glass/glass_light-ctm_cornerless"))
                 .addVariant("glass_streak", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("glass_streak", "Glass", "Streak Glass")
                 .build());
 
@@ -118,11 +62,23 @@ public class SpecialFamilies {
                 .addVariant(Blocks.GLASS_PANE)
                 .addVariant("glass_pane_borderless", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_borderless")))), ChiselModelHandlers.GLASS_PANE).translation("glass_pane_borderless", "Glass Pane", "Borderless Glass Pane")
                 .addVariant("glass_pane_bubble", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_bubble")))), ChiselModelHandlers.GLASS_PANE).translation("glass_pane_bubble", "Glass Pane", "Bubble Glass Pane")
+                .texture("glass_pane_bubble", Chisel.prefix("block/glass/glass_bubble"))
+                .texture("glass_pane_bubble", "top", Chisel.prefix("block/glass_pane/glass_pane_bubble-top"))
                 .addVariant("glass_pane_chinese", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_chinese")))), ChiselModelHandlers.GLASS_PANE).translation("glass_pane_chinese", "Glass Pane", "Chinese Glass Pane")
+                .texture("glass_pane_chinese", Chisel.prefix("block/glass/glass_chinese"))
+                .texture("glass_pane_chinese", "top", Chisel.prefix("block/glass_pane/glass_pane_chinese-top"))
                 .addVariant("glass_pane_chinese_gold", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_chinese_gold")))), ChiselModelHandlers.GLASS_PANE).translation("glass_pane_chinese_gold", "Glass Pane", "Chinese Glass Pane with Golden Frame")
+                .texture("glass_pane_chinese_gold", Chisel.prefix("block/glass/glass_chinese_2"))
+                .texture("glass_pane_chinese_gold", "top", Chisel.prefix("block/glass_pane/glass_pane_chinese_gold-top"))
                 .addVariant("glass_pane_japanese", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_japanese")))), ChiselModelHandlers.GLASS_PANE).translation("glass_pane_japanese", "Glass Pane", "Japanese Glass Pane")
+                .texture("glass_pane_japanese", Chisel.prefix("block/glass/glass_japanese"))
+                .texture("glass_pane_japanese", "top", Chisel.prefix("block/glass_pane/glass_pane_japanese-top"))
                 .addVariant("glass_pane_japanese2", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_japanese2")))), ChiselModelHandlers.GLASS_PANE).translation("glass_pane_japanese2", "Glass Pane", "Ornate Japanese Glass Pane")
+                .texture("glass_pane_japanese2", Chisel.prefix("block/glass/glass_japanese_2"))
+                .texture("glass_pane_japanese2", "top", Chisel.prefix("block/glass_pane/glass_pane_japanese-top"))
                 .addVariant("glass_pane_streak", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("glass_pane_streak")))), ChiselModelHandlers.GLASS_PANE).translation("glass_pane_streak", "Glass Pane", "Streak Glass Pane")
+                .texture("glass_pane_streak", Chisel.prefix("block/glass/glass_streak"))
+                .texture("glass_pane_streak", "top", Chisel.prefix("block/magma/magma_dent-ctm_cornerless"))
                 .build());
 
         IRON_BARS = ChiselFamily.build("iron_bars", builder -> builder
@@ -137,9 +93,12 @@ public class SpecialFamilies {
                 .addVariant("iron_bars_fence", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_fence")))), ChiselModelHandlers.IRON_BARS).translation("iron_bars_fence", "Iron Bars", "Ornate Iron Pane Fence")
                 .addVariant("iron_bars_modern", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_modern")))), ChiselModelHandlers.IRON_BARS).translation("iron_bars_modern", "Iron Bars", "Modern")
                 .addVariant("iron_bars_ornate_steel", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_ornate_steel")))), ChiselModelHandlers.IRON_BARS).translation("iron_bars_ornate_steel", "Iron Bars", "Ornate Steel")
+                .texture("iron_bars_ornate_steel", Chisel.prefix("block/glass/glass_ornate_old"))
                 .addVariant("iron_bars_spikes", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_spikes")))), ChiselModelHandlers.IRON_BARS).translation("iron_bars_spikes", "Iron Bars", "Iron Spikes")
                 .addVariant("iron_bars_thick_grid", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_thick_grid")))), ChiselModelHandlers.IRON_BARS).translation("iron_bars_thick_grid", "Iron Bars", "Thick Iron Grid")
+                .texture("iron_bars_thick_grid", Chisel.prefix("block/glass/glass_grid_thick"))
                 .addVariant("iron_bars_thin_grid", (p) -> new ChiselIronBarsBlock(p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("iron_bars_thin_grid")))), ChiselModelHandlers.IRON_BARS).translation("iron_bars_thin_grid", "Iron Bars", "Thin Iron Grid")
+                .texture("iron_bars_thin_grid", Chisel.prefix("block/glass/glass_grid_thin"))
                 .build());
 
         JACK_O_LANTERN = ChiselFamily.build("jack_o_lantern", builder -> builder
@@ -233,6 +192,41 @@ public class SpecialFamilies {
         return FAMILIES;
     }
 
+    private static ChiselFamily buildAntiblock() {
+        var colors = List.of("Black", "Blue", "Brown", "Cyan", "Gray", "Green", "Light Blue", "Light Gray", "Lime", "Magenta", "Orange", "Pink", "Purple", "Red", "White", "Yellow");
+        return ChiselFamily.build("antiblock", builder -> {
+            builder.properties(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).strength(3.0F, 5.0F)
+                    .requiresCorrectToolForDrops().lightLevel((_) -> 15));
+            addAntiblockVariants(builder, colors, "", "%s Anti Block", ChiselModelHandlers.ANTIBLOCK);
+            addAntiblockVariants(builder, colors, "_borderless", "%s Borderless Anti Block", ChiselModelHandlers.SHADELESS);
+            addAntiblockVariants(builder, colors, "_dull", "%s Dull Anti Block", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW);
+            addAntiblockVariants(builder, colors, "_dull_borderless", "%s Dull Borderless Anti Block", ChiselModelHandlers.CUBE_ALL);
+        });
+    }
+
+    private static void addAntiblockVariants(VariantFamilyDefinitionBuilder builder, List<String> colors, String suffix, String description, VariantModelHandler modelHandler) {
+        for (var colorName : colors) {
+            var color = colorName.toLowerCase(Locale.ROOT).replace(' ', '_');
+            var variant = "antiblock_" + color + suffix;
+            builder.addVariant(variant, modelHandler).translation(variant, "Antiblock", description.formatted(colorName));
+            if (suffix.endsWith("_borderless")) {
+                builder.texture(variant, Chisel.prefix("block/antiblock/antiblock_" + color));
+            } else {
+                addAntiblockOverlayTextures(builder, variant, color);
+            }
+        }
+    }
+
+    private static void addAntiblockOverlayTextures(VariantFamilyDefinitionBuilder builder, String variant, String color) {
+        var overlay = "block/antiblock/antiblock_overlay" + (color.equals("black") ? "_white" : "");
+        builder.texture(variant, Chisel.prefix(overlay))
+                .texture(variant, "bg", Chisel.prefix("block/antiblock/antiblock_" + color))
+                .texture(variant, "ctm_cornerless", Chisel.prefix("block/antiblock/antiblock_overlay-ctm_cornerless"));
+        for (var suffix : List.of("ctm_corner", "ctm_horizontal", "ctm_vertical")) {
+            builder.texture(variant, suffix, Chisel.prefix(overlay + "-" + suffix));
+        }
+    }
+
     private static ChiselFamily buildBookshelf(BlockBehaviour.Properties properties) {
         String[] woods = {"oak", "spruce", "birch", "jungle", "acacia", "dark_oak", "mangrove", "cherry", "pale_oak", "bamboo", "crimson", "warped"};
         String[] woodNames = {"Oak", "Spruce", "Birch", "Jungle", "Acacia", "Dark Oak", "Mangrove", "Cherry", "Pale Oak", "Bamboo", "Crimson", "Warped"};
@@ -255,7 +249,8 @@ public class SpecialFamilies {
                         case "tomes" -> description = "Bookshelf with Red Tomes";
                     }
                     String variant = "bookshelf_%s_%s".formatted(woods[wood], types[type]);
-                    builder.addVariant(variant, ChiselModelHandlers.BOOKSHELF).translation(variant, "%s Bookshelf".formatted(woodNames[wood]), description);
+                    builder.addVariant(variant, ChiselModelHandlers.BOOKSHELF).translation(variant, "%s Bookshelf".formatted(woodNames[wood]), description)
+                            .texture(variant, "horizontal_none", Chisel.prefix("block/bookshelf/bookshelf_%s".formatted(types[type])));
                 }
             }
         });

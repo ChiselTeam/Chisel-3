@@ -1,6 +1,6 @@
 {
   "parent": "chisel:block/shadeless",
   "textures": {
-    "all": "chisel:block/technical/technical_fan_fast-top"
+    "all": "chisel:block/antiblock/antiblock_white"
   }
 }

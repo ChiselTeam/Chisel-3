@@ -19,6 +19,7 @@ public class CTMHModelGenerator extends VariantModelGenerator {
         return VariantTextures.ctm(variant, textures -> textures.horizontalTextures(VariantTextures.get(variant, "horizontal").sprite()))
                 .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
                 .put(TextureSlot.ALL, VariantTextures.get(variant))
+                .put(TextureSlot.SIDE, VariantTextures.get(variant))
                 .put(TextureSlot.TOP, VariantTextures.get(variant, "top"))
                 .put(TextureSlot.BOTTOM, VariantTextures.get(variant, "bottom"));
     }

@@ -9,18 +9,7 @@
     {
       "block": "chisel:bamboo_planks_braced",
       "model_type": "connected_tbs",
-      "name": "bamboo_planks_braced",
-      "textures": {
-        "bottom": "chisel:block/bamboo_planks/bamboo_planks_braced",
-        "side": "chisel:block/bamboo_planks/bamboo_planks_braced",
-        "side-ctm_cornerless": "chisel:block/bamboo_planks/bamboo_planks_encased-ctm_cornerless",
-        "side-ctm_vertical": "chisel:block/bamboo_planks/bamboo_planks_braced",
-        "top": "chisel:block/bamboo_planks/bamboo_planks_braced",
-        "top-ctm_corner": "chisel:block/bamboo_planks/bamboo_planks_log_bordered-ctm_corner",
-        "top-ctm_cornerless": "chisel:block/bamboo_planks/bamboo_planks_encased-ctm_cornerless",
-        "top-ctm_horizontal": "chisel:block/bamboo_planks/bamboo_planks_log_bordered",
-        "top-ctm_vertical": "chisel:block/bamboo_planks/bamboo_planks_braced"
-      }
+      "name": "bamboo_planks_braced"
     },
     {
       "block": "chisel:bamboo_planks_braid",
@@ -35,27 +24,17 @@
     {
       "block": "chisel:bamboo_planks_encased_2",
       "model_type": "connected",
-      "name": "bamboo_planks_encased_2",
-      "textures": {
-        "ctm_cornerless": "chisel:block/bamboo_planks/bamboo_planks_encased_2",
-        "ctm_horizontal": "chisel:block/bamboo_planks/bamboo_planks_encased-ctm_horizontal"
-      }
+      "name": "bamboo_planks_encased_2"
     },
     {
       "block": "chisel:bamboo_planks_encased_large",
       "model_type": "connected",
-      "name": "bamboo_planks_encased_large",
-      "textures": {
-        "ctm_cornerless": "chisel:block/bamboo_planks/bamboo_planks_large"
-      }
+      "name": "bamboo_planks_encased_large"
     },
     {
       "block": "chisel:bamboo_planks_encased_smooth",
       "model_type": "connected",
-      "name": "bamboo_planks_encased_smooth",
-      "textures": {
-        "ctm_cornerless": "chisel:block/bamboo_planks/bamboo_planks_smooth-ctm_cornerless"
-      }
+      "name": "bamboo_planks_encased_smooth"
     },
     {
       "block": "chisel:bamboo_planks_large",
@@ -64,12 +43,7 @@
     {
       "block": "chisel:bamboo_planks_log_bordered",
       "model_type": "connected",
-      "name": "bamboo_planks_log_bordered",
-      "textures": {
-        "ctm_cornerless": "chisel:block/bamboo_planks/bamboo_planks_encased-ctm_cornerless",
-        "ctm_horizontal": "chisel:block/bamboo_planks/bamboo_planks_log_bordered",
-        "ctm_vertical": "chisel:block/bamboo_planks/bamboo_planks_braced"
-      }
+      "name": "bamboo_planks_log_bordered"
     },
     {
       "block": "chisel:bamboo_planks_shipping",

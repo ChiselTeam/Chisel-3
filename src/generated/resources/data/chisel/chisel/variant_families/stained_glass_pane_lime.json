@@ -9,29 +9,17 @@
     {
       "block": "chisel:stained_glass_pane_lime_borderless",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_lime_borderless",
-      "textures": {
-        "": "chisel:block/stained_glass_lime/stained_glass_lime_borderless",
-        "top": "chisel:block/stained_glass_pane_lime/stained_glass_pane_lime_borderless-top"
-      }
+      "name": "stained_glass_pane_lime_borderless"
     },
     {
       "block": "chisel:stained_glass_pane_lime_bubble",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_lime_bubble",
-      "textures": {
-        "": "chisel:block/stained_glass_lime/stained_glass_lime_bubble",
-        "top": "chisel:block/stained_glass_pane_lime/stained_glass_pane_lime_quad-top"
-      }
+      "name": "stained_glass_pane_lime_bubble"
     },
     {
       "block": "chisel:stained_glass_pane_lime_panel",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_lime_panel",
-      "textures": {
-        "": "chisel:block/stained_glass_lime/stained_glass_lime_panel",
-        "top": "chisel:block/stained_glass_pane_lime/stained_glass_pane_lime_quad-top"
-      }
+      "name": "stained_glass_pane_lime_panel"
     },
     {
       "block": "chisel:stained_glass_pane_lime_quad",
@@ -41,10 +29,7 @@
     {
       "block": "chisel:stained_glass_pane_lime_fancy",
       "model_type": "glass_pane",
-      "name": "stained_glass_pane_lime_fancy",
-      "textures": {
-        "top": "chisel:block/stained_glass_pane_lime/stained_glass_pane_lime_quad-top"
-      }
+      "name": "stained_glass_pane_lime_fancy"
     }
   ]
 }

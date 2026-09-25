@@ -51,10 +51,7 @@
     {
       "block": "chisel:iron_brick",
       "model_type": "top_bottom_side",
-      "name": "iron_brick",
-      "textures": {
-        "bottom": "chisel:block/iron/iron_brick-top"
-      }
+      "name": "iron_brick"
     },
     {
       "block": "chisel:iron_coin_heads",
@@ -64,35 +61,22 @@
     {
       "block": "chisel:iron_coin_tails",
       "model_type": "top_bottom_side",
-      "name": "iron_coin_tails",
-      "textures": {
-        "side": "chisel:block/iron/iron_coin_heads-side"
-      }
+      "name": "iron_coin_tails"
     },
     {
       "block": "chisel:iron_crate_dark",
       "model_type": "top_bottom_side",
-      "name": "iron_crate_dark",
-      "textures": {
-        "bottom": "chisel:block/gold/gold_crate_dark-bottom"
-      }
+      "name": "iron_crate_dark"
     },
     {
       "block": "chisel:iron_crate_light",
       "model_type": "top_bottom_side",
-      "name": "iron_crate_light",
-      "textures": {
-        "bottom": "chisel:block/gold/gold_crate_light-bottom",
-        "top": "chisel:block/iron/iron_crate_dark-top"
-      }
+      "name": "iron_crate_light"
     },
     {
       "block": "chisel:iron_gears",
       "model_type": "top_bottom_side",
-      "name": "iron_gears",
-      "textures": {
-        "bottom": "chisel:block/iron/iron_gears-top"
-      }
+      "name": "iron_gears"
     },
     {
       "block": "chisel:iron_ingots_large",
@@ -102,10 +86,7 @@
     {
       "block": "chisel:iron_ingots_small",
       "model_type": "top_bottom_side",
-      "name": "iron_ingots_small",
-      "textures": {
-        "top": "chisel:block/iron/iron_crate_dark-top"
-      }
+      "name": "iron_ingots_small"
     },
     {
       "block": "chisel:iron_moon",
@@ -123,10 +104,7 @@
     {
       "block": "chisel:iron_plates",
       "model_type": "top_bottom_side",
-      "name": "iron_plates",
-      "textures": {
-        "side": "chisel:block/iron/iron_plates-top"
-      }
+      "name": "iron_plates"
     },
     {
       "block": "chisel:iron_rivets",
@@ -146,10 +124,7 @@
     {
       "block": "chisel:iron_vents",
       "model_type": "top_bottom_side",
-      "name": "iron_vents",
-      "textures": {
-        "bottom": "chisel:block/iron/iron_vents-top"
-      }
+      "name": "iron_vents"
     }
   ]
 }

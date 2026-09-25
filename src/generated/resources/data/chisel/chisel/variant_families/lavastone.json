@@ -5,10 +5,7 @@
     {
       "block": "chisel:lavastone_array",
       "model_type": "lava_2x2",
-      "name": "lavastone_array",
-      "textures": {
-        "2x2_top_left": "chisel:block/lavastone/lavastone_array"
-      }
+      "name": "lavastone_array"
     },
     {
       "block": "chisel:lavastone_braid",
@@ -18,10 +15,7 @@
     {
       "block": "chisel:lavastone_chaotic_bricks",
       "model_type": "lava_3x3",
-      "name": "lavastone_chaotic_bricks",
-      "textures": {
-        "3x3_top_left": "chisel:block/lavastone/lavastone_chaotic_bricks"
-      }
+      "name": "lavastone_chaotic_bricks"
     },
     {
       "block": "chisel:lavastone_chaotic_medium",
@@ -36,10 +30,7 @@
     {
       "block": "chisel:lavastone_circular",
       "model_type": "multi_layer_connected_glow",
-      "name": "lavastone_circular",
-      "textures": {
-        "bg": "chisel:block/magma/magma_dent-bg"
-      }
+      "name": "lavastone_circular"
     },
     {
       "block": "chisel:lavastone_cracked",
@@ -54,26 +45,17 @@
     {
       "block": "chisel:lavastone_cuts",
       "model_type": "lava_4x4",
-      "name": "lavastone_cuts",
-      "textures": {
-        "4x4_row_0_column_0": "chisel:block/lavastone/lavastone_cuts"
-      }
+      "name": "lavastone_cuts"
     },
     {
       "block": "chisel:lavastone_dent",
       "model_type": "multi_layer_connected_glow",
-      "name": "lavastone_dent",
-      "textures": {
-        "bg": "chisel:block/magma/magma_dent-bg"
-      }
+      "name": "lavastone_dent"
     },
     {
       "block": "chisel:lavastone_encased_bricks",
       "model_type": "multi_layer_connected_glow",
-      "name": "lavastone_encased_bricks",
-      "textures": {
-        "bg": "chisel:block/magma/magma_dent-bg"
-      }
+      "name": "lavastone_encased_bricks"
     },
     {
       "block": "chisel:lavastone_french_1",
@@ -88,10 +70,7 @@
     {
       "block": "chisel:lavastone_jellybean",
       "model_type": "lava_2x2",
-      "name": "lavastone_jellybean",
-      "textures": {
-        "2x2_top_left": "chisel:block/lavastone/lavastone_jellybean"
-      }
+      "name": "lavastone_jellybean"
     },
     {
       "block": "chisel:lavastone_layers",
@@ -101,10 +80,7 @@
     {
       "block": "chisel:lavastone_mosaic",
       "model_type": "multi_layer_connected_glow",
-      "name": "lavastone_mosaic",
-      "textures": {
-        "bg": "chisel:block/magma/magma_dent-bg"
-      }
+      "name": "lavastone_mosaic"
     },
     {
       "block": "chisel:lavastone_ornate",
@@ -119,10 +95,7 @@
     {
       "block": "chisel:lavastone_pillar",
       "model_type": "multi_layer_lava_top_bottom_side",
-      "name": "lavastone_pillar",
-      "textures": {
-        "bottom": "chisel:block/lavastone/lavastone_pillar-top"
-      }
+      "name": "lavastone_pillar"
     },
     {
       "block": "chisel:lavastone_prism",
@@ -142,12 +115,7 @@
     {
       "block": "chisel:lavastone_slanted",
       "model_type": "lava_2x2",
-      "name": "lavastone_slanted",
-      "textures": {
-        "2x2_bottom_left": "chisel:block/lavastone/lavastone_slanted",
-        "2x2_bottom_right": "chisel:block/lavastone/lavastone_slanted-2x2_top_right",
-        "2x2_top_left": "chisel:block/lavastone/lavastone_slanted"
-      }
+      "name": "lavastone_slanted"
     },
     {
       "block": "chisel:lavastone_small_bricks",
@@ -162,11 +130,7 @@
     {
       "block": "chisel:lavastone_tiles_large",
       "model_type": "multi_layer_connected_glow",
-      "name": "lavastone_tiles_large",
-      "textures": {
-        "bg": "chisel:block/magma/magma_dent-bg",
-        "ctm_cornerless": "chisel:block/lavastone/lavastone_mosaic-ctm_cornerless"
-      }
+      "name": "lavastone_tiles_large"
     },
     {
       "block": "chisel:lavastone_tiles_medium",
@@ -181,27 +145,17 @@
     {
       "block": "chisel:lavastone_twisted",
       "model_type": "multi_layer_lava_top_bottom_side",
-      "name": "lavastone_twisted",
-      "textures": {
-        "bottom": "chisel:block/lavastone/lavastone_twisted-top"
-      }
+      "name": "lavastone_twisted"
     },
     {
       "block": "chisel:lavastone_weaver",
       "model_type": "multi_layer_connected_glow",
-      "name": "lavastone_weaver",
-      "textures": {
-        "bg": "chisel:block/magma/magma_dent-bg"
-      }
+      "name": "lavastone_weaver"
     },
     {
       "block": "chisel:lavastone_zag",
       "model_type": "multi_layer_lava_ar",
-      "name": "lavastone_zag",
-      "textures": {
-        "ar_variant_1": "chisel:block/lavastone/lavastone_zag",
-        "bg": "chisel:block/magma/magma_dent-bg"
-      }
+      "name": "lavastone_zag"
     }
   ]
 }

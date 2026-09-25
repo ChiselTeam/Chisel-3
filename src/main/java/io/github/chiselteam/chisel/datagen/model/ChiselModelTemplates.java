@@ -30,7 +30,7 @@ public class ChiselModelTemplates extends ModelTemplates {
     public static final ModelTemplate CTM_MULTIBLOCK_2x2_LAVA = create("chisel:ctm_multiblock_2x2_lava", PARTICLE, ALL, LAYER0, LAYER1).extend().parent(Chisel.prefix("block/cube_multi_pass")).build();
     public static final ModelTemplate CTM_MULTIBLOCK_3x3_WATER = create("chisel:ctm_multiblock_3x3_water", PARTICLE, ALL, LAYER0, LAYER1).extend().parent(Chisel.prefix("block/cube_multi_pass_tinted")).build();
     public static final ModelTemplate CTM_MULTIBLOCK_4x4_WATER = create("chisel:ctm_multiblock_4x4_water", PARTICLE, ALL, LAYER0, LAYER1).extend().parent(Chisel.prefix("block/cube_multi_pass_tinted")).build();
-    public static final ModelTemplate CTM_HORIZONTAL = create("chisel:ctm_horizontal", PARTICLE, ALL, TOP, BOTTOM).extend().parent(Identifier.withDefaultNamespace("block/cube_all")).build();
+    public static final ModelTemplate CTM_HORIZONTAL = create("chisel:ctm_horizontal", PARTICLE, ALL, TOP, BOTTOM, SIDE).extend().parent(Identifier.withDefaultNamespace("block/cube_bottom_top")).build();
     public static final ModelTemplate CTM_VERTICAL = create("chisel:ctm_vertical", PARTICLE, ALL, TOP, BOTTOM, SIDE).extend().parent(Identifier.withDefaultNamespace("block/cube_bottom_top_inner_faces")).build();
     public static final ModelTemplate CTM_HORIZONTAL_MULTI_PASS = create("chisel:ctm_horizontal_multi_pass", PARTICLE, TOP, BOTTOM, SIDE, LAYER0, LAYER1, CTM_BASE).extend().parent(Chisel.prefix("block/cube_multi_pass_top_bottom_side")).build();
 

@@ -21,10 +21,7 @@
     {
       "block": "chisel:liminal_carpet_2",
       "model_type": "multi_layer_connected",
-      "name": "liminal_carpet_2",
-      "textures": {
-        "ctm_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless"
-      }
+      "name": "liminal_carpet_2"
     },
     {
       "block": "chisel:liminal_carpet_3",

@@ -25,12 +25,7 @@
     {
       "block": "chisel:arcane_big_brick",
       "model_type": "connected",
-      "name": "arcane_big_brick",
-      "textures": {
-        "ctm_cornerless": "chisel:block/fa_arcane_darkstone/arcane_big_brick-ctm_corner",
-        "ctm_horizontal": "chisel:block/fa_arcane_darkstone/arcane_big_brick",
-        "ctm_vertical": "chisel:block/fa_arcane_darkstone/arcane_big_brick-ctm_corner"
-      }
+      "name": "arcane_big_brick"
     },
     {
       "block": "chisel:arcane_border_brain",
@@ -40,10 +35,7 @@
     {
       "block": "chisel:arcane_conduit",
       "model_type": "connected",
-      "name": "arcane_conduit",
-      "textures": {
-        "ctm_cornerless": "chisel:block/fa_arcane_darkstone/arcane_conduit-ctm_corner"
-      }
+      "name": "arcane_conduit"
     },
     {
       "block": "chisel:arcane_moon_engrave",
@@ -56,18 +48,12 @@
     {
       "block": "chisel:arcane_runes",
       "model_type": "v16",
-      "name": "arcane_runes",
-      "textures": {
-        "v16_row_0_column_0": "chisel:block/fa_arcane_darkstone/arcane_runes"
-      }
+      "name": "arcane_runes"
     },
     {
       "block": "chisel:arcane_runes_glow",
       "model_type": "v16",
-      "name": "arcane_runes_glow",
-      "textures": {
-        "v16_row_0_column_0": "chisel:block/fa_arcane_darkstone/arcane_runes_glow"
-      }
+      "name": "arcane_runes_glow"
     }
   ]
 }

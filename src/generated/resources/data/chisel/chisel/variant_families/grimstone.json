@@ -21,11 +21,7 @@
     {
       "block": "chisel:grimstone_chiseled",
       "model_type": "top_bottom_side",
-      "name": "grimstone_chiseled",
-      "textures": {
-        "bottom": "chisel:block/grimstone/grimstone_smooth",
-        "top": "chisel:block/grimstone/grimstone_smooth"
-      }
+      "name": "grimstone_chiseled"
     },
     {
       "block": "chisel:grimstone_chunks",
@@ -54,19 +50,12 @@
     {
       "block": "chisel:grimstone_platform",
       "model_type": "top_bottom_side",
-      "name": "grimstone_platform",
-      "textures": {
-        "bottom": "chisel:block/grimstone/grimstone_raw"
-      }
+      "name": "grimstone_platform"
     },
     {
       "block": "chisel:grimstone_platform_tiles",
       "model_type": "top_bottom_side",
-      "name": "grimstone_platform_tiles",
-      "textures": {
-        "bottom": "chisel:block/grimstone/grimstone_raw",
-        "side": "chisel:block/grimstone/grimstone_platform-side"
-      }
+      "name": "grimstone_platform_tiles"
     },
     {
       "block": "chisel:grimstone_raw",

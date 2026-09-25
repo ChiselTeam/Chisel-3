@@ -9,15 +9,7 @@
     {
       "block": "chisel:mangrove_planks_braced",
       "model_type": "connected_tbs",
-      "name": "mangrove_planks_braced",
-      "textures": {
-        "bottom": "chisel:block/mangrove_planks/mangrove_planks_braced",
-        "side": "chisel:block/mangrove_planks/mangrove_planks_braced",
-        "side-ctm_cornerless": "chisel:block/mangrove_planks/mangrove_planks_log_bordered-ctm_cornerless",
-        "side-ctm_vertical": "chisel:block/mangrove_planks/mangrove_planks_braced",
-        "top": "chisel:block/mangrove_planks/mangrove_planks_braced",
-        "top-ctm_cornerless": "chisel:block/mangrove_planks/mangrove_planks_log_bordered-ctm_cornerless"
-      }
+      "name": "mangrove_planks_braced"
     },
     {
       "block": "chisel:mangrove_planks_braid",
@@ -46,10 +38,7 @@
     {
       "block": "chisel:mangrove_planks_encased_large",
       "model_type": "connected",
-      "name": "mangrove_planks_encased_large",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mangrove_planks/mangrove_planks_large"
-      }
+      "name": "mangrove_planks_encased_large"
     },
     {
       "block": "chisel:mangrove_planks_encased_smooth",
@@ -63,42 +52,22 @@
     {
       "block": "chisel:mangrove_planks_log_bordered",
       "model_type": "connected",
-      "name": "mangrove_planks_log_bordered",
-      "textures": {
-        "ctm_corner": "chisel:block/mangrove_planks/mangrove_planks_log_bordered",
-        "ctm_horizontal": "chisel:block/mangrove_planks/mangrove_planks_log_bordered",
-        "ctm_vertical": "chisel:block/mangrove_planks/mangrove_planks_braced"
-      }
+      "name": "mangrove_planks_log_bordered"
     },
     {
       "block": "chisel:mangrove_planks_log_cabin_ns",
       "model_type": "connected",
-      "name": "mangrove_planks_log_cabin_ns",
-      "textures": {
-        "ctm_corner": "chisel:block/mangrove_planks/mangrove_planks_log_cabin_ns",
-        "ctm_cornerless": "chisel:block/mangrove_planks/mangrove_planks_braced",
-        "ctm_horizontal": "chisel:block/mangrove_planks/mangrove_planks_log_cabin_ns",
-        "ctm_vertical": "chisel:block/mangrove_planks/mangrove_planks_braced"
-      }
+      "name": "mangrove_planks_log_cabin_ns"
     },
     {
       "block": "chisel:mangrove_planks_log_cabin_ew",
       "model_type": "connected",
-      "name": "mangrove_planks_log_cabin_ew",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mangrove_planks/mangrove_planks_braced",
-        "ctm_horizontal": "chisel:block/mangrove_planks/mangrove_planks_log_cabin_ew-ctm_corner",
-        "ctm_vertical": "chisel:block/mangrove_planks/mangrove_planks_braced"
-      }
+      "name": "mangrove_planks_log_cabin_ew"
     },
     {
       "block": "chisel:mangrove_planks_paneling",
       "model_type": "connected",
-      "name": "mangrove_planks_paneling",
-      "textures": {
-        "ctm_horizontal": "chisel:block/mangrove_planks/mangrove_planks_paneling-ctm_corner",
-        "ctm_vertical": "chisel:block/mangrove_planks/mangrove_planks_paneling"
-      }
+      "name": "mangrove_planks_paneling"
     },
     {
       "block": "chisel:mangrove_planks_shipping",

@@ -9,10 +9,7 @@
     {
       "block": "chisel:glowstone_array",
       "model_type": "multiblock_2x2",
-      "name": "glowstone_array",
-      "textures": {
-        "2x2_top_left": "chisel:block/glowstone/glowstone_array"
-      }
+      "name": "glowstone_array"
     },
     {
       "block": "chisel:glowstone_bismuth",
@@ -63,10 +60,7 @@
     {
       "block": "chisel:glowstone_jellybean",
       "model_type": "multiblock_2x2",
-      "name": "glowstone_jellybean",
-      "textures": {
-        "2x2_top_left": "chisel:block/glowstone/glowstone_jellybean"
-      }
+      "name": "glowstone_jellybean"
     },
     {
       "block": "chisel:glowstone_layers",
@@ -96,10 +90,7 @@
     {
       "block": "chisel:glowstone_pillar",
       "model_type": "top_bottom_side",
-      "name": "glowstone_pillar",
-      "textures": {
-        "bottom": "chisel:block/glowstone/glowstone_pillar-top"
-      }
+      "name": "glowstone_pillar"
     },
     {
       "block": "chisel:glowstone_prism",
@@ -112,12 +103,7 @@
     {
       "block": "chisel:glowstone_slanted",
       "model_type": "multiblock_2x2",
-      "name": "glowstone_slanted",
-      "textures": {
-        "2x2_bottom_left": "chisel:block/glowstone/glowstone_slanted",
-        "2x2_bottom_right": "chisel:block/glowstone/glowstone_slanted-2x2_top_right",
-        "2x2_top_left": "chisel:block/glowstone/glowstone_slanted"
-      }
+      "name": "glowstone_slanted"
     },
     {
       "block": "chisel:glowstone_small_bricks",
@@ -126,10 +112,7 @@
     {
       "block": "chisel:glowstone_tiles_large",
       "model_type": "connected",
-      "name": "glowstone_tiles_large",
-      "textures": {
-        "ctm_cornerless": "chisel:block/glowstone/glowstone_mosaic-ctm_cornerless"
-      }
+      "name": "glowstone_tiles_large"
     },
     {
       "block": "chisel:glowstone_tiles_large_bismuth",
@@ -150,10 +133,7 @@
     {
       "block": "chisel:glowstone_twisted",
       "model_type": "top_bottom_side",
-      "name": "glowstone_twisted",
-      "textures": {
-        "bottom": "chisel:block/glowstone/glowstone_twisted-top"
-      }
+      "name": "glowstone_twisted"
     }
   ]
 }

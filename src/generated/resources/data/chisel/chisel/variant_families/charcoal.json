@@ -5,10 +5,7 @@
     {
       "block": "chisel:charcoal_array",
       "model_type": "multiblock_2x2",
-      "name": "charcoal_array",
-      "textures": {
-        "2x2_top_left": "chisel:block/charcoal/charcoal_array"
-      }
+      "name": "charcoal_array"
     },
     {
       "block": "chisel:charcoal_braid",
@@ -17,10 +14,7 @@
     {
       "block": "chisel:charcoal_chaotic_bricks",
       "model_type": "multiblock_3x3",
-      "name": "charcoal_chaotic_bricks",
-      "textures": {
-        "3x3_top_left": "chisel:block/charcoal/charcoal_chaotic_bricks"
-      }
+      "name": "charcoal_chaotic_bricks"
     },
     {
       "block": "chisel:charcoal_chaotic_medium",
@@ -46,10 +40,7 @@
     {
       "block": "chisel:charcoal_cuts",
       "model_type": "multiblock_4x4",
-      "name": "charcoal_cuts",
-      "textures": {
-        "4x4_row_0_column_0": "chisel:block/charcoal/charcoal_cuts"
-      }
+      "name": "charcoal_cuts"
     },
     {
       "block": "chisel:charcoal_dent",
@@ -72,10 +63,7 @@
     {
       "block": "chisel:charcoal_jellybean",
       "model_type": "multiblock_2x2",
-      "name": "charcoal_jellybean",
-      "textures": {
-        "2x2_top_left": "chisel:block/charcoal/charcoal_jellybean"
-      }
+      "name": "charcoal_jellybean"
     },
     {
       "block": "chisel:charcoal_layers",
@@ -97,10 +85,7 @@
     {
       "block": "chisel:charcoal_pillar",
       "model_type": "top_bottom_side",
-      "name": "charcoal_pillar",
-      "textures": {
-        "bottom": "chisel:block/charcoal/charcoal_pillar-top"
-      }
+      "name": "charcoal_pillar"
     },
     {
       "block": "chisel:charcoal_prism",
@@ -117,10 +102,7 @@
     {
       "block": "chisel:charcoal_slanted",
       "model_type": "multiblock_2x2",
-      "name": "charcoal_slanted",
-      "textures": {
-        "2x2_top_left": "chisel:block/charcoal/charcoal_slanted"
-      }
+      "name": "charcoal_slanted"
     },
     {
       "block": "chisel:charcoal_small_bricks",
@@ -154,10 +136,7 @@
     {
       "block": "chisel:charcoal_twisted",
       "model_type": "top_bottom_side",
-      "name": "charcoal_twisted",
-      "textures": {
-        "bottom": "chisel:block/charcoal/charcoal_twisted-top"
-      }
+      "name": "charcoal_twisted"
     },
     {
       "block": "chisel:charcoal_weaver",
@@ -167,10 +146,7 @@
     {
       "block": "chisel:charcoal_zag",
       "model_type": "ar",
-      "name": "charcoal_zag",
-      "textures": {
-        "ar_variant_1": "chisel:block/charcoal/charcoal_zag"
-      }
+      "name": "charcoal_zag"
     }
   ]
 }

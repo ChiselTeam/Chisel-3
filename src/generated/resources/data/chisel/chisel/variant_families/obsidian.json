@@ -13,25 +13,16 @@
     {
       "block": "chisel:obsidian_chiseled",
       "model_type": "top_bottom_side",
-      "name": "obsidian_chiseled",
-      "textures": {
-        "bottom": "chisel:block/obsidian/obsidian_chiseled-top"
-      }
+      "name": "obsidian_chiseled"
     },
     {
       "block": "chisel:obsidian_crate",
       "model_type": "top_bottom_side",
-      "name": "obsidian_crate",
-      "textures": {
-        "top": "chisel:block/obsidian/obsidian_tiles"
-      }
+      "name": "obsidian_crate"
     },
     {
       "block": "chisel:obsidian_crate_unboxed",
-      "name": "obsidian_crate_unboxed",
-      "textures": {
-        "": "chisel:block/obsidian/obsidian_tiles"
-      }
+      "name": "obsidian_crate_unboxed"
     },
     {
       "block": "chisel:obsidian_crystal",
@@ -40,10 +31,7 @@
     {
       "block": "chisel:obsidian_greek",
       "model_type": "top_bottom_side",
-      "name": "obsidian_greek",
-      "textures": {
-        "bottom": "chisel:block/obsidian/obsidian_greek-top"
-      }
+      "name": "obsidian_greek"
     },
     {
       "block": "chisel:obsidian_organic_chunks",
@@ -76,18 +64,12 @@
     {
       "block": "chisel:obsidian_pillar",
       "model_type": "top_bottom_side",
-      "name": "obsidian_pillar",
-      "textures": {
-        "bottom": "chisel:block/obsidian/obsidian_pillar-top"
-      }
+      "name": "obsidian_pillar"
     },
     {
       "block": "chisel:obsidian_pillar_quartz",
       "model_type": "top_bottom_side",
-      "name": "obsidian_pillar_quartz",
-      "textures": {
-        "bottom": "chisel:block/obsidian/obsidian_pillar_quartz-top"
-      }
+      "name": "obsidian_pillar_quartz"
     },
     {
       "block": "chisel:obsidian_tiles",

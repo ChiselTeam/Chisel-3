@@ -10,10 +10,7 @@
     {
       "block": "chisel:sky_stone_border_square",
       "model_type": "connected",
-      "name": "sky_stone_border_square",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_dent-ctm_cornerless"
-      }
+      "name": "sky_stone_border_square"
     },
     {
       "block": "chisel:sky_stone_braid",
@@ -90,10 +87,7 @@
     {
       "block": "chisel:sky_stone_circular",
       "model_type": "connected",
-      "name": "sky_stone_circular",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_dent-ctm_cornerless"
-      }
+      "name": "sky_stone_circular"
     },
     {
       "block": "chisel:sky_stone_cobble",
@@ -120,10 +114,7 @@
     {
       "block": "chisel:sky_stone_indent",
       "model_type": "connected",
-      "name": "sky_stone_indent",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_dent-ctm_cornerless"
-      }
+      "name": "sky_stone_indent"
     },
     {
       "block": "chisel:sky_stone_jellybean",
@@ -150,26 +141,17 @@
     {
       "block": "chisel:sky_stone_meander_horizontal",
       "model_type": "ctmh",
-      "name": "sky_stone_meander_horizontal",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_meander_horizontal-top"
-      }
+      "name": "sky_stone_meander_horizontal"
     },
     {
       "block": "chisel:sky_stone_meander_vertical",
       "model_type": "ctmv",
-      "name": "sky_stone_meander_vertical",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_meander_vertical-top"
-      }
+      "name": "sky_stone_meander_vertical"
     },
     {
       "block": "chisel:sky_stone_mosaic",
       "model_type": "connected",
-      "name": "sky_stone_mosaic",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_dent-ctm_cornerless"
-      }
+      "name": "sky_stone_mosaic"
     },
     {
       "block": "chisel:sky_stone_ornate_small",
@@ -182,204 +164,102 @@
     {
       "block": "chisel:sky_stone_pillar",
       "model_type": "top_bottom_side",
-      "name": "sky_stone_pillar",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar-top"
-      }
+      "name": "sky_stone_pillar"
     },
     {
       "block": "chisel:sky_stone_pillar_basic",
       "model_type": "ctmv",
-      "name": "sky_stone_pillar_basic",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top"
-      }
+      "name": "sky_stone_pillar_basic"
     },
     {
       "block": "chisel:sky_stone_pillar_basic_dent",
       "model_type": "ctmv",
-      "name": "sky_stone_pillar_basic_dent",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top"
-      }
+      "name": "sky_stone_pillar_basic_dent"
     },
     {
       "block": "chisel:sky_stone_pillar_basic_plain",
       "model_type": "ctmv",
-      "name": "sky_stone_pillar_basic_plain",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top"
-      }
+      "name": "sky_stone_pillar_basic_plain"
     },
     {
       "block": "chisel:sky_stone_pillar_basic_round",
       "model_type": "ctmv",
-      "name": "sky_stone_pillar_basic_round",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top"
-      }
+      "name": "sky_stone_pillar_basic_round"
     },
     {
       "block": "chisel:sky_stone_pillar_basic_spiral",
       "model_type": "ctmv",
-      "name": "sky_stone_pillar_basic_spiral",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top"
-      }
+      "name": "sky_stone_pillar_basic_spiral"
     },
     {
       "block": "chisel:sky_stone_pillar_classic",
       "model_type": "top_bottom_side",
-      "name": "sky_stone_pillar_classic",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_classic-top"
-      }
+      "name": "sky_stone_pillar_classic"
     },
     {
       "block": "chisel:sky_stone_pillar_classic_large",
       "model_type": "top_bottom_side",
-      "name": "sky_stone_pillar_classic_large",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_classic_large-top"
-      }
+      "name": "sky_stone_pillar_classic_large"
     },
     {
       "block": "chisel:sky_stone_pillar_ionic",
       "model_type": "ctmv",
-      "name": "sky_stone_pillar_ionic",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top"
-      }
+      "name": "sky_stone_pillar_ionic"
     },
     {
       "block": "chisel:sky_stone_pillar_ionic_dent",
       "model_type": "ctmv",
-      "name": "sky_stone_pillar_ionic_dent",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "side": "chisel:block/ae2_sky_stone/sky_stone_pillar_ionic-side",
-        "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic_dent-vertical_both",
-        "vertical_none": "chisel:block/ae2_sky_stone/sky_stone_pillar_ionic-vertical_none"
-      }
+      "name": "sky_stone_pillar_ionic_dent"
     },
     {
       "block": "chisel:sky_stone_pillar_ionic_plain",
       "model_type": "ctmv",
-      "name": "sky_stone_pillar_ionic_plain",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "side": "chisel:block/ae2_sky_stone/sky_stone_pillar_ionic-side",
-        "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic_plain-vertical_both",
-        "vertical_none": "chisel:block/ae2_sky_stone/sky_stone_pillar_ionic-vertical_none"
-      }
+      "name": "sky_stone_pillar_ionic_plain"
     },
     {
       "block": "chisel:sky_stone_pillar_ionic_round",
       "model_type": "ctmv",
-      "name": "sky_stone_pillar_ionic_round",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "side": "chisel:block/ae2_sky_stone/sky_stone_pillar_ionic-side",
-        "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic_round-vertical_both",
-        "vertical_none": "chisel:block/ae2_sky_stone/sky_stone_pillar_ionic-vertical_none"
-      }
+      "name": "sky_stone_pillar_ionic_round"
     },
     {
       "block": "chisel:sky_stone_pillar_ionic_spiral",
       "model_type": "ctmv",
-      "name": "sky_stone_pillar_ionic_spiral",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "side": "chisel:block/ae2_sky_stone/sky_stone_pillar_ionic-side",
-        "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic_spiral-vertical_both",
-        "vertical_none": "chisel:block/ae2_sky_stone/sky_stone_pillar_ionic-vertical_none"
-      }
+      "name": "sky_stone_pillar_ionic_spiral"
     },
     {
       "block": "chisel:sky_stone_pillar_large_basic_triple",
       "model_type": "ctmv",
-      "name": "sky_stone_pillar_large_basic_triple",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top"
-      }
+      "name": "sky_stone_pillar_large_basic_triple"
     },
     {
       "block": "chisel:sky_stone_pillar_large_ionic_triple",
       "model_type": "ctmv",
-      "name": "sky_stone_pillar_large_ionic_triple",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_sky_stone/sky_stone_pillar_large_basic_triple-vertical_both"
-      }
+      "name": "sky_stone_pillar_large_ionic_triple"
     },
     {
       "block": "chisel:sky_stone_pillar_meander",
       "model_type": "ctmv",
-      "name": "sky_stone_pillar_meander",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_sky_stone/sky_stone_pillar_ionic-vertical_both"
-      }
+      "name": "sky_stone_pillar_meander"
     },
     {
       "block": "chisel:sky_stone_pillar_meander_dent",
       "model_type": "ctmv",
-      "name": "sky_stone_pillar_meander_dent",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "side": "chisel:block/ae2_sky_stone/sky_stone_pillar_meander-side",
-        "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic_dent-vertical_both",
-        "vertical_none": "chisel:block/ae2_sky_stone/sky_stone_pillar_meander-vertical_none"
-      }
+      "name": "sky_stone_pillar_meander_dent"
     },
     {
       "block": "chisel:sky_stone_pillar_meander_plain",
       "model_type": "ctmv",
-      "name": "sky_stone_pillar_meander_plain",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "side": "chisel:block/ae2_sky_stone/sky_stone_pillar_meander-side",
-        "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic_plain-vertical_both",
-        "vertical_none": "chisel:block/ae2_sky_stone/sky_stone_pillar_meander-vertical_none"
-      }
+      "name": "sky_stone_pillar_meander_plain"
     },
     {
       "block": "chisel:sky_stone_pillar_meander_round",
       "model_type": "ctmv",
-      "name": "sky_stone_pillar_meander_round",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "side": "chisel:block/ae2_sky_stone/sky_stone_pillar_meander-side",
-        "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic_round-vertical_both",
-        "vertical_none": "chisel:block/ae2_sky_stone/sky_stone_pillar_meander-vertical_none"
-      }
+      "name": "sky_stone_pillar_meander_round"
     },
     {
       "block": "chisel:sky_stone_pillar_meander_spiral",
       "model_type": "ctmv",
-      "name": "sky_stone_pillar_meander_spiral",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "side": "chisel:block/ae2_sky_stone/sky_stone_pillar_meander-side",
-        "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
-        "vertical_both": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic_spiral-vertical_both",
-        "vertical_none": "chisel:block/ae2_sky_stone/sky_stone_pillar_meander-vertical_none"
-      }
+      "name": "sky_stone_pillar_meander_spiral"
     },
     {
       "block": "chisel:sky_stone_plate",
@@ -388,10 +268,7 @@
     {
       "block": "chisel:sky_stone_plate_connected",
       "model_type": "connected",
-      "name": "sky_stone_plate_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_dent-ctm_cornerless"
-      }
+      "name": "sky_stone_plate_connected"
     },
     {
       "block": "chisel:sky_stone_polished",
@@ -426,14 +303,7 @@
     {
       "block": "chisel:sky_stone_tiles_large",
       "model_type": "connected",
-      "name": "sky_stone_tiles_large",
-      "textures": {
-        "": "chisel:block/ae2_sky_stone/sky_stone_polished",
-        "ctm_corner": "chisel:block/ae2_sky_stone/sky_stone_tiles_large-ctm_corner",
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_dent-ctm_cornerless",
-        "ctm_horizontal": "chisel:block/ae2_sky_stone/sky_stone_tiles_large-ctm_horizontal",
-        "ctm_vertical": "chisel:block/ae2_sky_stone/sky_stone_tiles_large-ctm_vertical"
-      }
+      "name": "sky_stone_tiles_large"
     },
     {
       "block": "chisel:sky_stone_tiles_small",
@@ -442,10 +312,7 @@
     {
       "block": "chisel:sky_stone_twisted",
       "model_type": "top_bottom_side",
-      "name": "sky_stone_twisted",
-      "textures": {
-        "bottom": "chisel:block/ae2_sky_stone/sky_stone_twisted-top"
-      }
+      "name": "sky_stone_twisted"
     },
     {
       "block": "chisel:sky_stone_weaver",
@@ -469,10 +336,7 @@
     {
       "block": "chisel:sky_stone_herringbone_encased",
       "model_type": "connected",
-      "name": "sky_stone_herringbone_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_herringbone"
-      }
+      "name": "sky_stone_herringbone_encased"
     },
     {
       "block": "chisel:sky_stone_medallion",
@@ -481,10 +345,7 @@
     {
       "block": "chisel:sky_stone_medallion_encased",
       "model_type": "connected",
-      "name": "sky_stone_medallion_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_medallion"
-      }
+      "name": "sky_stone_medallion_encased"
     },
     {
       "block": "chisel:sky_stone_dots",
@@ -493,10 +354,7 @@
     {
       "block": "chisel:sky_stone_dots_encased",
       "model_type": "connected",
-      "name": "sky_stone_dots_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_dots"
-      }
+      "name": "sky_stone_dots_encased"
     },
     {
       "block": "chisel:sky_stone_heart",
@@ -517,14 +375,7 @@
     {
       "block": "chisel:sky_stone_lodestone_connected",
       "model_type": "connected",
-      "name": "sky_stone_lodestone_connected",
-      "textures": {
-        "": "chisel:block/ae2_sky_stone/sky_stone_lodestone",
-        "ctm_corner": "chisel:block/ae2_sky_stone/sky_stone_lodestone_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_lodestone",
-        "ctm_horizontal": "chisel:block/ae2_sky_stone/sky_stone_lodestone_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/ae2_sky_stone/sky_stone_lodestone_connected-ctm_vertical"
-      }
+      "name": "sky_stone_lodestone_connected"
     },
     {
       "block": "chisel:sky_stone_plank",
@@ -533,14 +384,7 @@
     {
       "block": "chisel:sky_stone_plank_connected",
       "model_type": "connected",
-      "name": "sky_stone_plank_connected",
-      "textures": {
-        "": "chisel:block/ae2_sky_stone/sky_stone_plank",
-        "ctm_corner": "chisel:block/ae2_sky_stone/sky_stone_plank_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_plank_connected-ctm_cornerless",
-        "ctm_horizontal": "chisel:block/ae2_sky_stone/sky_stone_plank_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/ae2_sky_stone/sky_stone_plank_connected-ctm_vertical"
-      }
+      "name": "sky_stone_plank_connected"
     },
     {
       "block": "chisel:sky_stone_frame",
@@ -573,10 +417,7 @@
     {
       "block": "chisel:sky_stone_stripes_encased",
       "model_type": "connected",
-      "name": "sky_stone_stripes_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_stripes"
-      }
+      "name": "sky_stone_stripes_encased"
     },
     {
       "block": "chisel:sky_stone_chisel_1",
@@ -613,10 +454,7 @@
     {
       "block": "chisel:sky_stone_facet_small_encased",
       "model_type": "connected",
-      "name": "sky_stone_facet_small_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_facet_small"
-      }
+      "name": "sky_stone_facet_small_encased"
     },
     {
       "block": "chisel:sky_stone_shiny",
@@ -625,14 +463,7 @@
     {
       "block": "chisel:sky_stone_shiny_connected",
       "model_type": "connected",
-      "name": "sky_stone_shiny_connected",
-      "textures": {
-        "": "chisel:block/ae2_sky_stone/sky_stone_shiny",
-        "ctm_corner": "chisel:block/ae2_sky_stone/sky_stone_shiny_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_shiny_connected-ctm_cornerless",
-        "ctm_horizontal": "chisel:block/ae2_sky_stone/sky_stone_shiny_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/ae2_sky_stone/sky_stone_shiny_connected-ctm_vertical"
-      }
+      "name": "sky_stone_shiny_connected"
     },
     {
       "block": "chisel:sky_stone_gem",
@@ -645,14 +476,7 @@
     {
       "block": "chisel:sky_stone_gem_1_connected",
       "model_type": "connected",
-      "name": "sky_stone_gem_1_connected",
-      "textures": {
-        "": "chisel:block/ae2_sky_stone/sky_stone_gem_1",
-        "ctm_corner": "chisel:block/ae2_sky_stone/sky_stone_gem_1_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_dent-ctm_cornerless",
-        "ctm_horizontal": "chisel:block/ae2_sky_stone/sky_stone_gem_1_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/ae2_sky_stone/sky_stone_gem_1_connected-ctm_vertical"
-      }
+      "name": "sky_stone_gem_1_connected"
     },
     {
       "block": "chisel:sky_stone_gem_2",
@@ -661,14 +485,7 @@
     {
       "block": "chisel:sky_stone_gem_2_connected",
       "model_type": "connected",
-      "name": "sky_stone_gem_2_connected",
-      "textures": {
-        "": "chisel:block/ae2_sky_stone/sky_stone_gem_2",
-        "ctm_corner": "chisel:block/ae2_sky_stone/sky_stone_gem_2_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_dent-ctm_cornerless",
-        "ctm_horizontal": "chisel:block/ae2_sky_stone/sky_stone_gem_2_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/ae2_sky_stone/sky_stone_gem_2_connected-ctm_vertical"
-      }
+      "name": "sky_stone_gem_2_connected"
     },
     {
       "block": "chisel:sky_stone_gem_3",
@@ -677,14 +494,7 @@
     {
       "block": "chisel:sky_stone_gem_3_connected",
       "model_type": "connected",
-      "name": "sky_stone_gem_3_connected",
-      "textures": {
-        "": "chisel:block/ae2_sky_stone/sky_stone_gem_3",
-        "ctm_corner": "chisel:block/ae2_sky_stone/sky_stone_gem_3_connected-ctm_corner",
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_gem_3_connected-ctm_cornerless",
-        "ctm_horizontal": "chisel:block/ae2_sky_stone/sky_stone_gem_3_connected-ctm_horizontal",
-        "ctm_vertical": "chisel:block/ae2_sky_stone/sky_stone_gem_3_connected-ctm_vertical"
-      }
+      "name": "sky_stone_gem_3_connected"
     },
     {
       "block": "chisel:sky_stone_bricks_square",
@@ -701,10 +511,7 @@
     {
       "block": "chisel:sky_stone_scaffold_encased",
       "model_type": "connected",
-      "name": "sky_stone_scaffold_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_scaffold"
-      }
+      "name": "sky_stone_scaffold_encased"
     },
     {
       "block": "chisel:sky_stone_tiles_inlayed",
@@ -713,10 +520,7 @@
     {
       "block": "chisel:sky_stone_waves",
       "model_type": "multiblock_2x2",
-      "name": "sky_stone_waves",
-      "textures": {
-        "2x2_top_left": "chisel:block/ae2_sky_stone/sky_stone_waves"
-      }
+      "name": "sky_stone_waves"
     },
     {
       "block": "chisel:sky_stone_parquet",
@@ -725,10 +529,7 @@
     {
       "block": "chisel:sky_stone_parquet_encased",
       "model_type": "connected",
-      "name": "sky_stone_parquet_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/ae2_sky_stone/sky_stone_parquet"
-      }
+      "name": "sky_stone_parquet_encased"
     }
   ]
 }

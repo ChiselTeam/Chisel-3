@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top",
   "textures": {
     "all": "chisel:block/stone/stone_meander_horizontal",
     "bottom": "chisel:block/stone/stone_meander_horizontal-bottom",
@@ -8,6 +8,7 @@
     "horizontal_none": "chisel:block/stone/stone_meander_horizontal-horizontal_none",
     "horizontal_right": "chisel:block/stone/stone_meander_horizontal-horizontal_right",
     "particle": "chisel:block/stone/stone_meander_horizontal",
+    "side": "chisel:block/stone/stone_meander_horizontal",
     "top": "chisel:block/stone/stone_meander_horizontal-bottom"
   }
 }

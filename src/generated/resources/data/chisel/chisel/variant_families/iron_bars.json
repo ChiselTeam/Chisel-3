@@ -49,10 +49,7 @@
     {
       "block": "chisel:iron_bars_ornate_steel",
       "model_type": "iron_bars",
-      "name": "iron_bars_ornate_steel",
-      "textures": {
-        "": "chisel:block/glass/glass_ornate_old"
-      }
+      "name": "iron_bars_ornate_steel"
     },
     {
       "block": "chisel:iron_bars_spikes",
@@ -62,18 +59,12 @@
     {
       "block": "chisel:iron_bars_thick_grid",
       "model_type": "iron_bars",
-      "name": "iron_bars_thick_grid",
-      "textures": {
-        "": "chisel:block/glass/glass_grid_thick"
-      }
+      "name": "iron_bars_thick_grid"
     },
     {
       "block": "chisel:iron_bars_thin_grid",
       "model_type": "iron_bars",
-      "name": "iron_bars_thin_grid",
-      "textures": {
-        "": "chisel:block/glass/glass_grid_thin"
-      }
+      "name": "iron_bars_thin_grid"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top",
   "textures": {
     "all": "chisel:block/packed_mud/packed_mud_meander_horizontal",
     "bottom": "chisel:block/packed_mud/packed_mud_meander_horizontal-bottom",
@@ -8,6 +8,7 @@
     "horizontal_none": "chisel:block/packed_mud/packed_mud_meander_horizontal-horizontal_none",
     "horizontal_right": "chisel:block/packed_mud/packed_mud_meander_horizontal-horizontal_right",
     "particle": "chisel:block/packed_mud/packed_mud_meander_horizontal",
+    "side": "chisel:block/packed_mud/packed_mud_meander_horizontal",
     "top": "chisel:block/packed_mud/packed_mud_meander_horizontal-bottom"
   }
 }

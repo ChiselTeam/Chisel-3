@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top",
   "textures": {
     "all": "chisel:block/laboratory/laboratory_console_information_animated",
     "bottom": "chisel:block/laboratory/laboratory_wall_vent-top",
@@ -8,6 +8,7 @@
     "horizontal_none": "chisel:block/laboratory/laboratory_console_information_animated",
     "horizontal_right": "chisel:block/laboratory/laboratory_console_information_animated-horizontal_right",
     "particle": "chisel:block/laboratory/laboratory_console_information_animated",
+    "side": "chisel:block/laboratory/laboratory_console_information_animated",
     "top": "chisel:block/laboratory/laboratory_wall_vent-top"
   }
 }

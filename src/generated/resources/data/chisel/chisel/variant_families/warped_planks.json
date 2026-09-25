@@ -9,18 +9,7 @@
     {
       "block": "chisel:warped_planks_braced",
       "model_type": "connected_tbs",
-      "name": "warped_planks_braced",
-      "textures": {
-        "bottom": "chisel:block/warped_planks/warped_planks_braced",
-        "side": "chisel:block/warped_planks/warped_planks_braced",
-        "side-ctm_cornerless": "chisel:block/warped_planks/warped_planks_log_bordered-ctm_cornerless",
-        "side-ctm_vertical": "chisel:block/warped_planks/warped_planks_braced",
-        "top": "chisel:block/warped_planks/warped_planks_braced",
-        "top-ctm_corner": "chisel:block/warped_planks/warped_planks_log_bordered",
-        "top-ctm_cornerless": "chisel:block/warped_planks/warped_planks_log_bordered-ctm_cornerless",
-        "top-ctm_horizontal": "chisel:block/warped_planks/warped_planks_log_bordered",
-        "top-ctm_vertical": "chisel:block/warped_planks/warped_planks_braced"
-      }
+      "name": "warped_planks_braced"
     },
     {
       "block": "chisel:warped_planks_braid",
@@ -63,21 +52,12 @@
     {
       "block": "chisel:warped_planks_log_bordered",
       "model_type": "connected",
-      "name": "warped_planks_log_bordered",
-      "textures": {
-        "ctm_corner": "chisel:block/warped_planks/warped_planks_log_bordered",
-        "ctm_horizontal": "chisel:block/warped_planks/warped_planks_log_bordered",
-        "ctm_vertical": "chisel:block/warped_planks/warped_planks_braced"
-      }
+      "name": "warped_planks_log_bordered"
     },
     {
       "block": "chisel:warped_planks_log_cabin_ns",
       "model_type": "connected",
-      "name": "warped_planks_log_cabin_ns",
-      "textures": {
-        "ctm_cornerless": "chisel:block/warped_planks/warped_planks_log_cabin_ew-ctm_cornerless",
-        "ctm_vertical": "chisel:block/warped_planks/warped_planks_log_cabin_ew-ctm_vertical"
-      }
+      "name": "warped_planks_log_cabin_ns"
     },
     {
       "block": "chisel:warped_planks_log_cabin_ew",

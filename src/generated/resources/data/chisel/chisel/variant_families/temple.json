@@ -5,10 +5,7 @@
     {
       "block": "chisel:temple_cobble",
       "model_type": "connected",
-      "name": "temple_cobble",
-      "textures": {
-        "ctm_cornerless": "chisel:block/temple/temple_cobble"
-      }
+      "name": "temple_cobble"
     },
     {
       "block": "chisel:temple_bricks",
@@ -29,11 +26,7 @@
     {
       "block": "chisel:temple_column",
       "model_type": "top_bottom_side",
-      "name": "temple_column",
-      "textures": {
-        "bottom": "chisel:block/temple/temple_tiles",
-        "top": "chisel:block/temple/temple_tiles"
-      }
+      "name": "temple_column"
     },
     {
       "block": "chisel:temple_ornate",
@@ -50,29 +43,17 @@
     {
       "block": "chisel:temple_stand",
       "model_type": "top_bottom_side",
-      "name": "temple_stand",
-      "textures": {
-        "bottom": "chisel:block/temple/temple_plate",
-        "top": "chisel:block/temple/temple_plate"
-      }
+      "name": "temple_stand"
     },
     {
       "block": "chisel:temple_stand_creeper",
       "model_type": "top_bottom_side",
-      "name": "temple_stand_creeper",
-      "textures": {
-        "bottom": "chisel:block/temple/temple_plate",
-        "top": "chisel:block/temple/temple_plate"
-      }
+      "name": "temple_stand_creeper"
     },
     {
       "block": "chisel:temple_stand_mosaic",
       "model_type": "top_bottom_side",
-      "name": "temple_stand_mosaic",
-      "textures": {
-        "bottom": "chisel:block/temple/temple_plate",
-        "top": "chisel:block/temple/temple_plate"
-      }
+      "name": "temple_stand_mosaic"
     },
     {
       "block": "chisel:temple_tiles",

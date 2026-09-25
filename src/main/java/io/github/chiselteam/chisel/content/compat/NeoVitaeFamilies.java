@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.content.compat;
 
+import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
 import io.github.chiselteam.chisel.content.ChiselFamily;
 import net.minecraft.world.level.block.Blocks;
@@ -113,13 +114,20 @@ public class NeoVitaeFamilies {
         NV_RUNE = ChiselFamily.build("nv_rune", builder -> builder
                 .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE))
                 .addVariant("neovitae_arranged", ChiselModelHandlers.CONNECTED).translation("neovitae_arranged", "Blank Rune", "Arranged")
+                .texture("neovitae_arranged", "ctm_corner", Chisel.prefix("block/nv_rune/neovitae_arranged"))
                 .addVariant("neovitae_bricks", ChiselModelHandlers.TBS).translation("neovitae_bricks", "Blank Rune", "Blank Rune Bricks")
+                .texture("neovitae_bricks", "bottom", Chisel.prefix("block/nv_rune/neovitae_bricks-top"))
                 .addVariant("neovitae_carved").translation("neovitae_carved", "Blank Rune", "Carved Blank Rune")
                 .addVariant("neovitae_carved_radial").translation("neovitae_carved_radial", "Blank Rune", "Radial Carved Rune")
                 .addVariant("neovitae_classic").translation("neovitae_classic", "Blank Rune", "Classic")
                 .addVariant("neovitae_classic_panel").translation("neovitae_classic_panel", "Blank Rune", "Classic Panel")
                 .addVariant("neovitae_diagonal_bricks").translation("neovitae_diagonal_bricks", "Blank Rune", "Diagonal Rune Bricks")
                 .addVariant("neovitae_diagonal_bricks_0", ChiselModelHandlers.CONNECTED).translation("neovitae_diagonal_bricks_0", "Blank Rune", "Diagonal Rune Bricks")
+                .texture("neovitae_diagonal_bricks_0", Chisel.prefix("block/nv_rune/neovitae_diagonal_bricks"))
+                .texture("neovitae_diagonal_bricks_0", "ctm_corner", Chisel.prefix("block/nv_rune/neovitae_diagonal_bricks_0-ctm_corner"))
+                .texture("neovitae_diagonal_bricks_0", "ctm_cornerless", Chisel.prefix("block/nv_rune/neovitae_diagonal_bricks_0-ctm_cornerless"))
+                .texture("neovitae_diagonal_bricks_0", "ctm_horizontal", Chisel.prefix("block/nv_rune/neovitae_diagonal_bricks_0-ctm_horizontal"))
+                .texture("neovitae_diagonal_bricks_0", "ctm_vertical", Chisel.prefix("block/nv_rune/neovitae_diagonal_bricks_0-ctm_vertical"))
                 .addVariant("neovitae_diagonal_bricks_1", ChiselModelHandlers.CONNECTED).translation("neovitae_diagonal_bricks_1", "Blank Rune", "Diagonal Rune Bricks")
                 .addVariant("neovitae_diagonal_bricks_2", ChiselModelHandlers.CONNECTED).translation("neovitae_diagonal_bricks_2", "Blank Rune", "Diagonal Rune Bricks")
                 .addVariant("neovitae_diagonal_bricks_3", ChiselModelHandlers.CONNECTED).translation("neovitae_diagonal_bricks_3", "Blank Rune", "Diagonal Rune Bricks")

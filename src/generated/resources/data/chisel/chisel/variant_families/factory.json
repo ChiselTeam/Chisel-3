@@ -10,11 +10,7 @@
     {
       "block": "chisel:factory_column",
       "model_type": "ctmv",
-      "name": "factory_column",
-      "textures": {
-        "bottom": "chisel:block/factory/factory_column-top",
-        "vertical_both": "chisel:block/factory/factory_column-side"
-      }
+      "name": "factory_column"
     },
     {
       "block": "chisel:factory_dots",
@@ -59,10 +55,7 @@
     {
       "block": "chisel:factory_metal_box",
       "model_type": "top_bottom_side",
-      "name": "factory_metal_box",
-      "textures": {
-        "bottom": "chisel:block/factory/factory_metal_box-top"
-      }
+      "name": "factory_metal_box"
     },
     {
       "block": "chisel:factory_platex",
@@ -96,11 +89,7 @@
     {
       "block": "chisel:factory_vent",
       "model_type": "ctmv",
-      "name": "factory_vent",
-      "textures": {
-        "bottom": "chisel:block/factory/factory_vent-top",
-        "vertical_both": "chisel:block/factory/factory_vent-side"
-      }
+      "name": "factory_vent"
     },
     {
       "block": "chisel:factory_wireframe",

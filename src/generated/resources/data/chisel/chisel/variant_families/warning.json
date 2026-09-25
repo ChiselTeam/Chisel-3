@@ -5,10 +5,7 @@
     {
       "block": "chisel:warning_biohazard",
       "model_type": "multi_layer",
-      "name": "warning_biohazard",
-      "textures": {
-        "bg": "chisel:block/warning/warning_chem-bg"
-      }
+      "name": "warning_biohazard"
     },
     {
       "block": "chisel:warning_chem",
@@ -18,114 +15,72 @@
     {
       "block": "chisel:warning_construction",
       "model_type": "multi_layer",
-      "name": "warning_construction",
-      "textures": {
-        "bg": "chisel:block/warning/warning_chem-bg"
-      }
+      "name": "warning_construction"
     },
     {
       "block": "chisel:warning_cryogenic",
       "model_type": "multi_layer",
-      "name": "warning_cryogenic",
-      "textures": {
-        "bg": "chisel:block/warning/warning_chem-bg"
-      }
+      "name": "warning_cryogenic"
     },
     {
       "block": "chisel:warning_death",
       "model_type": "multi_layer",
-      "name": "warning_death",
-      "textures": {
-        "bg": "chisel:block/warning/warning_chem-bg"
-      }
+      "name": "warning_death"
     },
     {
       "block": "chisel:warning_explosion",
       "model_type": "multi_layer",
-      "name": "warning_explosion",
-      "textures": {
-        "bg": "chisel:block/warning/warning_chem-bg"
-      }
+      "name": "warning_explosion"
     },
     {
       "block": "chisel:warning_falling",
       "model_type": "multi_layer",
-      "name": "warning_falling",
-      "textures": {
-        "bg": "chisel:block/warning/warning_chem-bg"
-      }
+      "name": "warning_falling"
     },
     {
       "block": "chisel:warning_falling_objects",
       "model_type": "multi_layer",
-      "name": "warning_falling_objects",
-      "textures": {
-        "bg": "chisel:block/warning/warning_chem-bg"
-      }
+      "name": "warning_falling_objects"
     },
     {
       "block": "chisel:warning_fire",
       "model_type": "multi_layer",
-      "name": "warning_fire",
-      "textures": {
-        "bg": "chisel:block/warning/warning_chem-bg"
-      }
+      "name": "warning_fire"
     },
     {
       "block": "chisel:warning_generic",
       "model_type": "multi_layer",
-      "name": "warning_generic",
-      "textures": {
-        "bg": "chisel:block/warning/warning_chem-bg"
-      }
+      "name": "warning_generic"
     },
     {
       "block": "chisel:warning_illuminati",
       "model_type": "multi_layer",
-      "name": "warning_illuminati",
-      "textures": {
-        "bg": "chisel:block/warning/warning_chem-bg"
-      }
+      "name": "warning_illuminati"
     },
     {
       "block": "chisel:warning_loud",
       "model_type": "multi_layer",
-      "name": "warning_loud",
-      "textures": {
-        "bg": "chisel:block/warning/warning_chem-bg"
-      }
+      "name": "warning_loud"
     },
     {
       "block": "chisel:warning_no_entry",
       "model_type": "multi_layer",
-      "name": "warning_no_entry",
-      "textures": {
-        "bg": "chisel:block/warning/warning_chem-bg"
-      }
+      "name": "warning_no_entry"
     },
     {
       "block": "chisel:warning_oxygen",
       "model_type": "multi_layer",
-      "name": "warning_oxygen",
-      "textures": {
-        "bg": "chisel:block/warning/warning_chem-bg"
-      }
+      "name": "warning_oxygen"
     },
     {
       "block": "chisel:warning_radiation",
       "model_type": "multi_layer",
-      "name": "warning_radiation",
-      "textures": {
-        "bg": "chisel:block/warning/warning_chem-bg"
-      }
+      "name": "warning_radiation"
     },
     {
       "block": "chisel:warning_voltage",
       "model_type": "multi_layer",
-      "name": "warning_voltage",
-      "textures": {
-        "bg": "chisel:block/warning/warning_chem-bg"
-      }
+      "name": "warning_voltage"
     }
   ]
 }

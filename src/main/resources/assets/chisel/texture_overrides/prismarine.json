@@ -1,8 +1,0 @@
-{
-  "prismarine_pillar": {
-    "bottom": "chisel:block/prismarine/prismarine_pillar-top"
-  },
-  "prismarine_twisted": {
-    "bottom": "chisel:block/prismarine/prismarine_twisted-top"
-  }
-}

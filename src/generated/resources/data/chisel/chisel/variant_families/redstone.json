@@ -21,10 +21,7 @@
     {
       "block": "chisel:redstone_chiseled",
       "model_type": "top_bottom_side",
-      "name": "redstone_chiseled",
-      "textures": {
-        "bottom": "chisel:block/redstone/redstone_chiseled-top"
-      }
+      "name": "redstone_chiseled"
     },
     {
       "block": "chisel:redstone_chunk",
@@ -44,10 +41,7 @@
     },
     {
       "block": "chisel:redstone_greek",
-      "name": "redstone_greek",
-      "textures": {
-        "": "chisel:block/redstone/redstone_ere"
-      }
+      "name": "redstone_greek"
     },
     {
       "block": "chisel:redstone_large",
@@ -57,10 +51,7 @@
     {
       "block": "chisel:redstone_pillar",
       "model_type": "top_bottom_side",
-      "name": "redstone_pillar",
-      "textures": {
-        "bottom": "chisel:block/redstone/redstone_pillar-top"
-      }
+      "name": "redstone_pillar"
     },
     {
       "block": "chisel:redstone_skulls",

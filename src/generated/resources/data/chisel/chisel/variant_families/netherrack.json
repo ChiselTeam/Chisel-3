@@ -65,20 +65,12 @@
     {
       "block": "chisel:netherrack_array",
       "model_type": "multiblock_2x2",
-      "name": "netherrack_array",
-      "textures": {
-        "2x2_bottom_left": "chisel:block/netherrack/netherrack_array"
-      }
+      "name": "netherrack_array"
     },
     {
       "block": "chisel:netherrack_border_square",
       "model_type": "connected",
-      "name": "netherrack_border_square",
-      "textures": {
-        "ctm_corner": "chisel:block/netherrack/netherrack_border_square",
-        "ctm_horizontal": "chisel:block/netherrack/netherrack_border_square",
-        "ctm_vertical": "chisel:block/netherrack/netherrack_border_square"
-      }
+      "name": "netherrack_border_square"
     },
     {
       "block": "chisel:netherrack_braid",
@@ -87,10 +79,7 @@
     {
       "block": "chisel:netherrack_braid_encased",
       "model_type": "connected",
-      "name": "netherrack_braid_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_braid"
-      }
+      "name": "netherrack_braid_encased"
     },
     {
       "block": "chisel:netherrack_bricks_cracked",
@@ -112,12 +101,7 @@
     {
       "block": "chisel:netherrack_bricks_large",
       "model_type": "multiblock_2x2",
-      "name": "netherrack_bricks_large",
-      "textures": {
-        "2x2_bottom_right": "chisel:block/netherrack/netherrack_bricks_large",
-        "2x2_top_left": "chisel:block/netherrack/netherrack_bricks_large",
-        "2x2_top_right": "chisel:block/netherrack/netherrack_bricks_large-2x2_bottom_left"
-      }
+      "name": "netherrack_bricks_large"
     },
     {
       "block": "chisel:netherrack_bricks_small",
@@ -129,10 +113,7 @@
     },
     {
       "block": "chisel:netherrack_bricks_solid",
-      "name": "netherrack_bricks_solid",
-      "textures": {
-        "": "chisel:block/netherrack/netherrack_bricks_encased-ctm_cornerless"
-      }
+      "name": "netherrack_bricks_solid"
     },
     {
       "block": "chisel:netherrack_bricks_triple",
@@ -145,10 +126,7 @@
     {
       "block": "chisel:netherrack_chaotic",
       "model_type": "multiblock_3x3",
-      "name": "netherrack_chaotic",
-      "textures": {
-        "3x3_top_left": "chisel:block/netherrack/netherrack_chaotic"
-      }
+      "name": "netherrack_chaotic"
     },
     {
       "block": "chisel:netherrack_chaotic_medium",
@@ -169,10 +147,7 @@
     {
       "block": "chisel:netherrack_circular",
       "model_type": "connected",
-      "name": "netherrack_circular",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_border_square-ctm_cornerless"
-      }
+      "name": "netherrack_circular"
     },
     {
       "block": "chisel:netherrack_cracked",
@@ -185,18 +160,12 @@
     {
       "block": "chisel:netherrack_cuts",
       "model_type": "multiblock_4x4",
-      "name": "netherrack_cuts",
-      "textures": {
-        "4x4_row_0_column_0": "chisel:block/netherrack/netherrack_cuts"
-      }
+      "name": "netherrack_cuts"
     },
     {
       "block": "chisel:netherrack_dent",
       "model_type": "connected",
-      "name": "netherrack_dent",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_border_square-ctm_cornerless"
-      }
+      "name": "netherrack_dent"
     },
     {
       "block": "chisel:netherrack_french_1",
@@ -209,35 +178,21 @@
     {
       "block": "chisel:netherrack_indent",
       "model_type": "connected",
-      "name": "netherrack_indent",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_border_square-ctm_cornerless"
-      }
+      "name": "netherrack_indent"
     },
     {
       "block": "chisel:netherrack_jellybean",
       "model_type": "multiblock_2x2",
-      "name": "netherrack_jellybean",
-      "textures": {
-        "2x2_top_left": "chisel:block/netherrack/netherrack_jellybean"
-      }
+      "name": "netherrack_jellybean"
     },
     {
       "block": "chisel:netherrack_layers",
-      "name": "netherrack_layers",
-      "textures": {
-        "": "chisel:block/netherrack/netherrack_layers_connected"
-      }
+      "name": "netherrack_layers"
     },
     {
       "block": "chisel:netherrack_layers_connected",
       "model_type": "connected",
-      "name": "netherrack_layers_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_layers_connected-ctm_corner",
-        "ctm_horizontal": "chisel:block/netherrack/netherrack_layers_connected",
-        "ctm_vertical": "chisel:block/netherrack/netherrack_layers_connected-ctm_corner"
-      }
+      "name": "netherrack_layers_connected"
     },
     {
       "block": "chisel:netherrack_line_horizontal",
@@ -250,27 +205,17 @@
     {
       "block": "chisel:netherrack_meander_horizontal",
       "model_type": "ctmh",
-      "name": "netherrack_meander_horizontal",
-      "textures": {
-        "top": "chisel:block/netherrack/netherrack_meander_horizontal-bottom"
-      }
+      "name": "netherrack_meander_horizontal"
     },
     {
       "block": "chisel:netherrack_meander_vertical",
       "model_type": "ctmv",
-      "name": "netherrack_meander_vertical",
-      "textures": {
-        "top": "chisel:block/netherrack/netherrack_meander_vertical-bottom",
-        "vertical_none": "chisel:block/netherrack/netherrack_meander_vertical-side"
-      }
+      "name": "netherrack_meander_vertical"
     },
     {
       "block": "chisel:netherrack_mosaic",
       "model_type": "connected",
-      "name": "netherrack_mosaic",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_border_square-ctm_cornerless"
-      }
+      "name": "netherrack_mosaic"
     },
     {
       "block": "chisel:netherrack_ornate_small",
@@ -283,235 +228,115 @@
     {
       "block": "chisel:netherrack_pillar",
       "model_type": "top_bottom_side",
-      "name": "netherrack_pillar",
-      "textures": {
-        "top": "chisel:block/netherrack/netherrack_pillar-bottom"
-      }
+      "name": "netherrack_pillar"
     },
     {
       "block": "chisel:netherrack_pillar_basic",
       "model_type": "ctmv",
-      "name": "netherrack_pillar_basic",
-      "textures": {
-        "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "vertical_none": "chisel:block/netherrack/netherrack_pillar_basic-side"
-      }
+      "name": "netherrack_pillar_basic"
     },
     {
       "block": "chisel:netherrack_pillar_basic_dent",
       "model_type": "ctmv",
-      "name": "netherrack_pillar_basic_dent",
-      "textures": {
-        "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "vertical_none": "chisel:block/netherrack/netherrack_pillar_basic_dent-side"
-      }
+      "name": "netherrack_pillar_basic_dent"
     },
     {
       "block": "chisel:netherrack_pillar_basic_plain",
       "model_type": "ctmv",
-      "name": "netherrack_pillar_basic_plain",
-      "textures": {
-        "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "vertical_none": "chisel:block/netherrack/netherrack_pillar_basic_plain-side"
-      }
+      "name": "netherrack_pillar_basic_plain"
     },
     {
       "block": "chisel:netherrack_pillar_basic_round",
       "model_type": "ctmv",
-      "name": "netherrack_pillar_basic_round",
-      "textures": {
-        "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "vertical_none": "chisel:block/netherrack/netherrack_pillar_basic_round-side"
-      }
+      "name": "netherrack_pillar_basic_round"
     },
     {
       "block": "chisel:netherrack_pillar_basic_spiral",
       "model_type": "ctmv",
-      "name": "netherrack_pillar_basic_spiral",
-      "textures": {
-        "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "vertical_none": "chisel:block/netherrack/netherrack_pillar_basic_spiral-side"
-      }
+      "name": "netherrack_pillar_basic_spiral"
     },
     {
       "block": "chisel:netherrack_pillar_classic",
       "model_type": "top_bottom_side",
-      "name": "netherrack_pillar_classic",
-      "textures": {
-        "top": "chisel:block/netherrack/netherrack_pillar_classic-bottom"
-      }
+      "name": "netherrack_pillar_classic"
     },
     {
       "block": "chisel:netherrack_pillar_classic_large",
       "model_type": "top_bottom_side",
-      "name": "netherrack_pillar_classic_large",
-      "textures": {
-        "top": "chisel:block/netherrack/netherrack_pillar_classic_large-bottom"
-      }
+      "name": "netherrack_pillar_classic_large"
     },
     {
       "block": "chisel:netherrack_pillar_ionic",
       "model_type": "ctmv",
-      "name": "netherrack_pillar_ionic",
-      "textures": {
-        "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "vertical_none": "chisel:block/netherrack/netherrack_pillar_ionic-side"
-      }
+      "name": "netherrack_pillar_ionic"
     },
     {
       "block": "chisel:netherrack_pillar_ionic_dent",
       "model_type": "ctmv",
-      "name": "netherrack_pillar_ionic_dent",
-      "textures": {
-        "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "side": "chisel:block/netherrack/netherrack_pillar_ionic-side",
-        "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "vertical_both": "chisel:block/netherrack/netherrack_pillar_basic_dent-vertical_both",
-        "vertical_none": "chisel:block/netherrack/netherrack_pillar_ionic-side"
-      }
+      "name": "netherrack_pillar_ionic_dent"
     },
     {
       "block": "chisel:netherrack_pillar_ionic_plain",
       "model_type": "ctmv",
-      "name": "netherrack_pillar_ionic_plain",
-      "textures": {
-        "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "side": "chisel:block/netherrack/netherrack_pillar_ionic-side",
-        "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "vertical_both": "chisel:block/netherrack/netherrack_pillar_basic_plain-vertical_both",
-        "vertical_none": "chisel:block/netherrack/netherrack_pillar_ionic-side"
-      }
+      "name": "netherrack_pillar_ionic_plain"
     },
     {
       "block": "chisel:netherrack_pillar_ionic_round",
       "model_type": "ctmv",
-      "name": "netherrack_pillar_ionic_round",
-      "textures": {
-        "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "side": "chisel:block/netherrack/netherrack_pillar_ionic-side",
-        "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "vertical_both": "chisel:block/netherrack/netherrack_pillar_basic_round-vertical_both",
-        "vertical_none": "chisel:block/netherrack/netherrack_pillar_ionic-side"
-      }
+      "name": "netherrack_pillar_ionic_round"
     },
     {
       "block": "chisel:netherrack_pillar_ionic_spiral",
       "model_type": "ctmv",
-      "name": "netherrack_pillar_ionic_spiral",
-      "textures": {
-        "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "side": "chisel:block/netherrack/netherrack_pillar_ionic-side",
-        "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "vertical_both": "chisel:block/netherrack/netherrack_pillar_basic_spiral-vertical_both",
-        "vertical_none": "chisel:block/netherrack/netherrack_pillar_ionic-side"
-      }
+      "name": "netherrack_pillar_ionic_spiral"
     },
     {
       "block": "chisel:netherrack_pillar_large_basic_triple",
       "model_type": "ctmv",
-      "name": "netherrack_pillar_large_basic_triple",
-      "textures": {
-        "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "vertical_none": "chisel:block/netherrack/netherrack_pillar_large_basic_triple-side"
-      }
+      "name": "netherrack_pillar_large_basic_triple"
     },
     {
       "block": "chisel:netherrack_pillar_large_ionic_triple",
       "model_type": "ctmv",
-      "name": "netherrack_pillar_large_ionic_triple",
-      "textures": {
-        "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "vertical_both": "chisel:block/netherrack/netherrack_pillar_large_basic_triple-vertical_both",
-        "vertical_none": "chisel:block/netherrack/netherrack_pillar_large_ionic_triple-side"
-      }
+      "name": "netherrack_pillar_large_ionic_triple"
     },
     {
       "block": "chisel:netherrack_pillar_meander",
       "model_type": "ctmv",
-      "name": "netherrack_pillar_meander",
-      "textures": {
-        "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "vertical_both": "chisel:block/netherrack/netherrack_pillar_ionic-vertical_both",
-        "vertical_none": "chisel:block/netherrack/netherrack_pillar_meander-side"
-      }
+      "name": "netherrack_pillar_meander"
     },
     {
       "block": "chisel:netherrack_pillar_meander_dent",
       "model_type": "ctmv",
-      "name": "netherrack_pillar_meander_dent",
-      "textures": {
-        "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "side": "chisel:block/netherrack/netherrack_pillar_meander-side",
-        "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "vertical_both": "chisel:block/netherrack/netherrack_pillar_basic_dent-vertical_both",
-        "vertical_none": "chisel:block/netherrack/netherrack_pillar_meander-side"
-      }
+      "name": "netherrack_pillar_meander_dent"
     },
     {
       "block": "chisel:netherrack_pillar_meander_plain",
       "model_type": "ctmv",
-      "name": "netherrack_pillar_meander_plain",
-      "textures": {
-        "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "side": "chisel:block/netherrack/netherrack_pillar_meander-side",
-        "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "vertical_both": "chisel:block/netherrack/netherrack_pillar_basic_plain-vertical_both",
-        "vertical_none": "chisel:block/netherrack/netherrack_pillar_meander-side"
-      }
+      "name": "netherrack_pillar_meander_plain"
     },
     {
       "block": "chisel:netherrack_pillar_meander_round",
       "model_type": "ctmv",
-      "name": "netherrack_pillar_meander_round",
-      "textures": {
-        "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "side": "chisel:block/netherrack/netherrack_pillar_meander-side",
-        "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "vertical_both": "chisel:block/netherrack/netherrack_pillar_basic_round-vertical_both",
-        "vertical_none": "chisel:block/netherrack/netherrack_pillar_meander-side"
-      }
+      "name": "netherrack_pillar_meander_round"
     },
     {
       "block": "chisel:netherrack_pillar_meander_spiral",
       "model_type": "ctmv",
-      "name": "netherrack_pillar_meander_spiral",
-      "textures": {
-        "bottom": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "side": "chisel:block/netherrack/netherrack_pillar_meander-side",
-        "top": "chisel:block/netherrack/netherrack_pillar_basic-bottom",
-        "vertical_both": "chisel:block/netherrack/netherrack_pillar_basic_spiral-vertical_both",
-        "vertical_none": "chisel:block/netherrack/netherrack_pillar_meander-side"
-      }
+      "name": "netherrack_pillar_meander_spiral"
     },
     {
       "block": "chisel:netherrack_plate",
-      "name": "netherrack_plate",
-      "textures": {
-        "": "chisel:block/netherrack/netherrack_plate_connected"
-      }
+      "name": "netherrack_plate"
     },
     {
       "block": "chisel:netherrack_plate_connected",
       "model_type": "connected",
-      "name": "netherrack_plate_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_border_square-ctm_cornerless"
-      }
+      "name": "netherrack_plate_connected"
     },
     {
       "block": "chisel:netherrack_polished",
-      "name": "netherrack_polished",
-      "textures": {
-        "": "chisel:block/netherrack/netherrack_tiles_large"
-      }
+      "name": "netherrack_polished"
     },
     {
       "block": "chisel:netherrack_polished_encased",
@@ -524,10 +349,7 @@
     },
     {
       "block": "chisel:netherrack_raw",
-      "name": "netherrack_raw",
-      "textures": {
-        "": "chisel:block/netherrack/netherrack_border_square-ctm_cornerless"
-      }
+      "name": "netherrack_raw"
     },
     {
       "block": "chisel:netherrack_road",
@@ -536,10 +358,7 @@
     {
       "block": "chisel:netherrack_slanted",
       "model_type": "multiblock_2x2",
-      "name": "netherrack_slanted",
-      "textures": {
-        "2x2_bottom_left": "chisel:block/netherrack/netherrack_slanted"
-      }
+      "name": "netherrack_slanted"
     },
     {
       "block": "chisel:netherrack_tiles",
@@ -548,10 +367,7 @@
     {
       "block": "chisel:netherrack_tiles_large",
       "model_type": "connected",
-      "name": "netherrack_tiles_large",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_border_square-ctm_cornerless"
-      }
+      "name": "netherrack_tiles_large"
     },
     {
       "block": "chisel:netherrack_tiles_small",
@@ -560,27 +376,17 @@
     {
       "block": "chisel:netherrack_twisted",
       "model_type": "top_bottom_side",
-      "name": "netherrack_twisted",
-      "textures": {
-        "top": "chisel:block/netherrack/netherrack_twisted-bottom"
-      }
+      "name": "netherrack_twisted"
     },
     {
       "block": "chisel:netherrack_weaver",
       "model_type": "connected",
-      "name": "netherrack_weaver",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_weaver-ctm_corner"
-      }
+      "name": "netherrack_weaver"
     },
     {
       "block": "chisel:netherrack_zag",
       "model_type": "v4",
-      "name": "netherrack_zag",
-      "textures": {
-        "v4_top_left": "chisel:block/netherrack/netherrack_zag",
-        "v4_top_right": "chisel:block/netherrack/netherrack_zag-v4_bottom_left"
-      }
+      "name": "netherrack_zag"
     },
     {
       "block": "chisel:netherrack_crate",
@@ -594,10 +400,7 @@
     {
       "block": "chisel:netherrack_herringbone_encased",
       "model_type": "connected",
-      "name": "netherrack_herringbone_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_herringbone"
-      }
+      "name": "netherrack_herringbone_encased"
     },
     {
       "block": "chisel:netherrack_medallion",
@@ -606,10 +409,7 @@
     {
       "block": "chisel:netherrack_medallion_encased",
       "model_type": "connected",
-      "name": "netherrack_medallion_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_medallion"
-      }
+      "name": "netherrack_medallion_encased"
     },
     {
       "block": "chisel:netherrack_dots",
@@ -618,10 +418,7 @@
     {
       "block": "chisel:netherrack_dots_encased",
       "model_type": "connected",
-      "name": "netherrack_dots_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_dots"
-      }
+      "name": "netherrack_dots_encased"
     },
     {
       "block": "chisel:netherrack_heart",
@@ -637,25 +434,16 @@
     },
     {
       "block": "chisel:netherrack_lodestone",
-      "name": "netherrack_lodestone",
-      "textures": {
-        "": "chisel:block/netherrack/netherrack_lodestone_connected"
-      }
+      "name": "netherrack_lodestone"
     },
     {
       "block": "chisel:netherrack_lodestone_connected",
       "model_type": "connected",
-      "name": "netherrack_lodestone_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_lodestone_connected"
-      }
+      "name": "netherrack_lodestone_connected"
     },
     {
       "block": "chisel:netherrack_plank",
-      "name": "netherrack_plank",
-      "textures": {
-        "": "chisel:block/netherrack/netherrack_plank_connected"
-      }
+      "name": "netherrack_plank"
     },
     {
       "block": "chisel:netherrack_plank_connected",
@@ -693,10 +481,7 @@
     {
       "block": "chisel:netherrack_stripes_encased",
       "model_type": "connected",
-      "name": "netherrack_stripes_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_stripes"
-      }
+      "name": "netherrack_stripes_encased"
     },
     {
       "block": "chisel:netherrack_chisel_1",
@@ -733,17 +518,11 @@
     {
       "block": "chisel:netherrack_facet_small_encased",
       "model_type": "connected",
-      "name": "netherrack_facet_small_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_facet_small"
-      }
+      "name": "netherrack_facet_small_encased"
     },
     {
       "block": "chisel:netherrack_shiny",
-      "name": "netherrack_shiny",
-      "textures": {
-        "": "chisel:block/netherrack/netherrack_shiny_connected"
-      }
+      "name": "netherrack_shiny"
     },
     {
       "block": "chisel:netherrack_shiny_connected",
@@ -756,40 +535,25 @@
     },
     {
       "block": "chisel:netherrack_gem_1",
-      "name": "netherrack_gem_1",
-      "textures": {
-        "": "chisel:block/netherrack/netherrack_gem_1_connected"
-      }
+      "name": "netherrack_gem_1"
     },
     {
       "block": "chisel:netherrack_gem_1_connected",
       "model_type": "connected",
-      "name": "netherrack_gem_1_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_border_square-ctm_cornerless"
-      }
+      "name": "netherrack_gem_1_connected"
     },
     {
       "block": "chisel:netherrack_gem_2",
-      "name": "netherrack_gem_2",
-      "textures": {
-        "": "chisel:block/netherrack/netherrack_gem_2_connected"
-      }
+      "name": "netherrack_gem_2"
     },
     {
       "block": "chisel:netherrack_gem_2_connected",
       "model_type": "connected",
-      "name": "netherrack_gem_2_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_border_square-ctm_cornerless"
-      }
+      "name": "netherrack_gem_2_connected"
     },
     {
       "block": "chisel:netherrack_gem_3",
-      "name": "netherrack_gem_3",
-      "textures": {
-        "": "chisel:block/netherrack/netherrack_gem_3_connected"
-      }
+      "name": "netherrack_gem_3"
     },
     {
       "block": "chisel:netherrack_gem_3_connected",
@@ -811,10 +575,7 @@
     {
       "block": "chisel:netherrack_scaffold_encased",
       "model_type": "connected",
-      "name": "netherrack_scaffold_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_scaffold"
-      }
+      "name": "netherrack_scaffold_encased"
     },
     {
       "block": "chisel:netherrack_tiles_inlayed",
@@ -823,10 +584,7 @@
     {
       "block": "chisel:netherrack_waves",
       "model_type": "multiblock_2x2",
-      "name": "netherrack_waves",
-      "textures": {
-        "2x2_top_left": "chisel:block/netherrack/netherrack_waves"
-      }
+      "name": "netherrack_waves"
     },
     {
       "block": "chisel:netherrack_parquet",
@@ -835,10 +593,7 @@
     {
       "block": "chisel:netherrack_parquet_encased",
       "model_type": "connected",
-      "name": "netherrack_parquet_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/netherrack/netherrack_parquet"
-      }
+      "name": "netherrack_parquet_encased"
     }
   ]
 }

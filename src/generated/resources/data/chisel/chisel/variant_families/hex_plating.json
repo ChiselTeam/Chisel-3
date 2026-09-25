@@ -10,137 +10,77 @@
     {
       "block": "chisel:hex_plating_1",
       "model_type": "multi_layer",
-      "name": "hex_plating_1",
-      "textures": {
-        "": "chisel:block/hex_plating/hex_plating_0",
-        "bg": "chisel:block/hex_plating/hex_plating_1-bg"
-      }
+      "name": "hex_plating_1"
     },
     {
       "block": "chisel:hex_plating_2",
       "model_type": "multi_layer",
-      "name": "hex_plating_2",
-      "textures": {
-        "": "chisel:block/hex_plating/hex_plating_0",
-        "bg": "chisel:block/hex_plating/hex_plating_2-bg"
-      }
+      "name": "hex_plating_2"
     },
     {
       "block": "chisel:hex_plating_3",
       "model_type": "multi_layer",
-      "name": "hex_plating_3",
-      "textures": {
-        "": "chisel:block/hex_plating/hex_plating_0",
-        "bg": "chisel:block/hex_plating/hex_plating_3-bg"
-      }
+      "name": "hex_plating_3"
     },
     {
       "block": "chisel:hex_plating_4",
       "model_type": "multi_layer",
-      "name": "hex_plating_4",
-      "textures": {
-        "": "chisel:block/hex_plating/hex_plating_0",
-        "bg": "chisel:block/hex_plating/hex_plating_4-bg"
-      }
+      "name": "hex_plating_4"
     },
     {
       "block": "chisel:hex_plating_5",
       "model_type": "multi_layer",
-      "name": "hex_plating_5",
-      "textures": {
-        "": "chisel:block/hex_plating/hex_plating_0",
-        "bg": "chisel:block/hex_plating/hex_plating_5-bg"
-      }
+      "name": "hex_plating_5"
     },
     {
       "block": "chisel:hex_plating_6",
       "model_type": "multi_layer",
-      "name": "hex_plating_6",
-      "textures": {
-        "": "chisel:block/hex_plating/hex_plating_0",
-        "bg": "chisel:block/hex_plating/hex_plating_6-bg"
-      }
+      "name": "hex_plating_6"
     },
     {
       "block": "chisel:hex_plating_7",
       "model_type": "multi_layer",
-      "name": "hex_plating_7",
-      "textures": {
-        "": "chisel:block/hex_plating/hex_plating_0",
-        "bg": "chisel:block/hex_plating/hex_plating_7-bg"
-      }
+      "name": "hex_plating_7"
     },
     {
       "block": "chisel:hex_plating_8",
       "model_type": "multi_layer",
-      "name": "hex_plating_8",
-      "textures": {
-        "": "chisel:block/hex_plating/hex_plating_0",
-        "bg": "chisel:block/hex_plating/hex_plating_8-bg"
-      }
+      "name": "hex_plating_8"
     },
     {
       "block": "chisel:hex_plating_9",
       "model_type": "multi_layer",
-      "name": "hex_plating_9",
-      "textures": {
-        "": "chisel:block/hex_plating/hex_plating_0",
-        "bg": "chisel:block/hex_plating/hex_plating_9-bg"
-      }
+      "name": "hex_plating_9"
     },
     {
       "block": "chisel:hex_plating_10",
       "model_type": "multi_layer",
-      "name": "hex_plating_10",
-      "textures": {
-        "": "chisel:block/hex_plating/hex_plating_0",
-        "bg": "chisel:block/hex_plating/hex_plating_10-bg"
-      }
+      "name": "hex_plating_10"
     },
     {
       "block": "chisel:hex_plating_11",
       "model_type": "multi_layer",
-      "name": "hex_plating_11",
-      "textures": {
-        "": "chisel:block/hex_plating/hex_plating_0",
-        "bg": "chisel:block/hex_plating/hex_plating_11-bg"
-      }
+      "name": "hex_plating_11"
     },
     {
       "block": "chisel:hex_plating_12",
       "model_type": "multi_layer",
-      "name": "hex_plating_12",
-      "textures": {
-        "": "chisel:block/hex_plating/hex_plating_0",
-        "bg": "chisel:block/hex_plating/hex_plating_12-bg"
-      }
+      "name": "hex_plating_12"
     },
     {
       "block": "chisel:hex_plating_13",
       "model_type": "multi_layer",
-      "name": "hex_plating_13",
-      "textures": {
-        "": "chisel:block/hex_plating/hex_plating_0",
-        "bg": "chisel:block/hex_plating/hex_plating_13-bg"
-      }
+      "name": "hex_plating_13"
     },
     {
       "block": "chisel:hex_plating_14",
       "model_type": "multi_layer",
-      "name": "hex_plating_14",
-      "textures": {
-        "": "chisel:block/hex_plating/hex_plating_0",
-        "bg": "chisel:block/hex_plating/hex_plating_14-bg"
-      }
+      "name": "hex_plating_14"
     },
     {
       "block": "chisel:hex_plating_15",
       "model_type": "multi_layer",
-      "name": "hex_plating_15",
-      "textures": {
-        "": "chisel:block/hex_plating/hex_plating_0",
-        "bg": "chisel:block/hex_plating/hex_plating_15-bg"
-      }
+      "name": "hex_plating_15"
     }
   ]
 }

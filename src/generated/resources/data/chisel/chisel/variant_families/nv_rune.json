@@ -5,18 +5,12 @@
     {
       "block": "chisel:neovitae_arranged",
       "model_type": "connected",
-      "name": "neovitae_arranged",
-      "textures": {
-        "ctm_corner": "chisel:block/nv_rune/neovitae_arranged"
-      }
+      "name": "neovitae_arranged"
     },
     {
       "block": "chisel:neovitae_bricks",
       "model_type": "top_bottom_side",
-      "name": "neovitae_bricks",
-      "textures": {
-        "bottom": "chisel:block/nv_rune/neovitae_bricks-top"
-      }
+      "name": "neovitae_bricks"
     },
     {
       "block": "chisel:neovitae_carved",
@@ -41,14 +35,7 @@
     {
       "block": "chisel:neovitae_diagonal_bricks_0",
       "model_type": "connected",
-      "name": "neovitae_diagonal_bricks_0",
-      "textures": {
-        "": "chisel:block/nv_rune/neovitae_diagonal_bricks",
-        "ctm_corner": "chisel:block/nv_rune/neovitae_diagonal_bricks_0-ctm_corner",
-        "ctm_cornerless": "chisel:block/nv_rune/neovitae_diagonal_bricks_0-ctm_cornerless",
-        "ctm_horizontal": "chisel:block/nv_rune/neovitae_diagonal_bricks_0-ctm_horizontal",
-        "ctm_vertical": "chisel:block/nv_rune/neovitae_diagonal_bricks_0-ctm_vertical"
-      }
+      "name": "neovitae_diagonal_bricks_0"
     },
     {
       "block": "chisel:neovitae_diagonal_bricks_1",

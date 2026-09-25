@@ -9,20 +9,12 @@
     {
       "block": "chisel:mud_array",
       "model_type": "multiblock_2x2",
-      "name": "mud_array",
-      "textures": {
-        "2x2_bottom_left": "chisel:block/mud/mud_array"
-      }
+      "name": "mud_array"
     },
     {
       "block": "chisel:mud_border_square",
       "model_type": "connected",
-      "name": "mud_border_square",
-      "textures": {
-        "ctm_corner": "chisel:block/mud/mud_border_square",
-        "ctm_horizontal": "chisel:block/mud/mud_border_square",
-        "ctm_vertical": "chisel:block/mud/mud_border_square"
-      }
+      "name": "mud_border_square"
     },
     {
       "block": "chisel:mud_braid",
@@ -31,10 +23,7 @@
     {
       "block": "chisel:mud_braid_encased",
       "model_type": "connected",
-      "name": "mud_braid_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_braid"
-      }
+      "name": "mud_braid_encased"
     },
     {
       "block": "chisel:mud_bricks_cracked",
@@ -56,12 +45,7 @@
     {
       "block": "chisel:mud_bricks_large",
       "model_type": "multiblock_2x2",
-      "name": "mud_bricks_large",
-      "textures": {
-        "2x2_bottom_right": "chisel:block/mud/mud_bricks_large",
-        "2x2_top_left": "chisel:block/mud/mud_bricks_large",
-        "2x2_top_right": "chisel:block/mud/mud_bricks_large-2x2_bottom_left"
-      }
+      "name": "mud_bricks_large"
     },
     {
       "block": "chisel:mud_bricks_small",
@@ -73,10 +57,7 @@
     },
     {
       "block": "chisel:mud_bricks_solid",
-      "name": "mud_bricks_solid",
-      "textures": {
-        "": "chisel:block/mud/mud_bricks_encased-ctm_cornerless"
-      }
+      "name": "mud_bricks_solid"
     },
     {
       "block": "chisel:mud_bricks_triple",
@@ -89,10 +70,7 @@
     {
       "block": "chisel:mud_chaotic",
       "model_type": "multiblock_3x3",
-      "name": "mud_chaotic",
-      "textures": {
-        "3x3_top_left": "chisel:block/mud/mud_chaotic"
-      }
+      "name": "mud_chaotic"
     },
     {
       "block": "chisel:mud_chaotic_medium",
@@ -113,10 +91,7 @@
     {
       "block": "chisel:mud_circular",
       "model_type": "connected",
-      "name": "mud_circular",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_border_square-ctm_cornerless"
-      }
+      "name": "mud_circular"
     },
     {
       "block": "chisel:mud_cracked",
@@ -129,18 +104,12 @@
     {
       "block": "chisel:mud_cuts",
       "model_type": "multiblock_4x4",
-      "name": "mud_cuts",
-      "textures": {
-        "4x4_row_0_column_0": "chisel:block/mud/mud_cuts"
-      }
+      "name": "mud_cuts"
     },
     {
       "block": "chisel:mud_dent",
       "model_type": "connected",
-      "name": "mud_dent",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_border_square-ctm_cornerless"
-      }
+      "name": "mud_dent"
     },
     {
       "block": "chisel:mud_french_1",
@@ -153,35 +122,21 @@
     {
       "block": "chisel:mud_indent",
       "model_type": "connected",
-      "name": "mud_indent",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_border_square-ctm_cornerless"
-      }
+      "name": "mud_indent"
     },
     {
       "block": "chisel:mud_jellybean",
       "model_type": "multiblock_2x2",
-      "name": "mud_jellybean",
-      "textures": {
-        "2x2_top_left": "chisel:block/mud/mud_jellybean"
-      }
+      "name": "mud_jellybean"
     },
     {
       "block": "chisel:mud_layers",
-      "name": "mud_layers",
-      "textures": {
-        "": "chisel:block/mud/mud_layers_connected"
-      }
+      "name": "mud_layers"
     },
     {
       "block": "chisel:mud_layers_connected",
       "model_type": "connected",
-      "name": "mud_layers_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_layers_connected-ctm_corner",
-        "ctm_horizontal": "chisel:block/mud/mud_layers_connected",
-        "ctm_vertical": "chisel:block/mud/mud_layers_connected-ctm_corner"
-      }
+      "name": "mud_layers_connected"
     },
     {
       "block": "chisel:mud_line_horizontal",
@@ -194,27 +149,17 @@
     {
       "block": "chisel:mud_meander_horizontal",
       "model_type": "ctmh",
-      "name": "mud_meander_horizontal",
-      "textures": {
-        "top": "chisel:block/mud/mud_meander_horizontal-bottom"
-      }
+      "name": "mud_meander_horizontal"
     },
     {
       "block": "chisel:mud_meander_vertical",
       "model_type": "ctmv",
-      "name": "mud_meander_vertical",
-      "textures": {
-        "top": "chisel:block/mud/mud_meander_vertical-bottom",
-        "vertical_none": "chisel:block/mud/mud_meander_vertical-side"
-      }
+      "name": "mud_meander_vertical"
     },
     {
       "block": "chisel:mud_mosaic",
       "model_type": "connected",
-      "name": "mud_mosaic",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_border_square-ctm_cornerless"
-      }
+      "name": "mud_mosaic"
     },
     {
       "block": "chisel:mud_ornate_small",
@@ -227,235 +172,115 @@
     {
       "block": "chisel:mud_pillar",
       "model_type": "top_bottom_side",
-      "name": "mud_pillar",
-      "textures": {
-        "top": "chisel:block/mud/mud_pillar-bottom"
-      }
+      "name": "mud_pillar"
     },
     {
       "block": "chisel:mud_pillar_basic",
       "model_type": "ctmv",
-      "name": "mud_pillar_basic",
-      "textures": {
-        "top": "chisel:block/mud/mud_pillar_basic-bottom",
-        "vertical_none": "chisel:block/mud/mud_pillar_basic-side"
-      }
+      "name": "mud_pillar_basic"
     },
     {
       "block": "chisel:mud_pillar_basic_dent",
       "model_type": "ctmv",
-      "name": "mud_pillar_basic_dent",
-      "textures": {
-        "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
-        "top": "chisel:block/mud/mud_pillar_basic-bottom",
-        "vertical_none": "chisel:block/mud/mud_pillar_basic_dent-side"
-      }
+      "name": "mud_pillar_basic_dent"
     },
     {
       "block": "chisel:mud_pillar_basic_plain",
       "model_type": "ctmv",
-      "name": "mud_pillar_basic_plain",
-      "textures": {
-        "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
-        "top": "chisel:block/mud/mud_pillar_basic-bottom",
-        "vertical_none": "chisel:block/mud/mud_pillar_basic_plain-side"
-      }
+      "name": "mud_pillar_basic_plain"
     },
     {
       "block": "chisel:mud_pillar_basic_round",
       "model_type": "ctmv",
-      "name": "mud_pillar_basic_round",
-      "textures": {
-        "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
-        "top": "chisel:block/mud/mud_pillar_basic-bottom",
-        "vertical_none": "chisel:block/mud/mud_pillar_basic_round-side"
-      }
+      "name": "mud_pillar_basic_round"
     },
     {
       "block": "chisel:mud_pillar_basic_spiral",
       "model_type": "ctmv",
-      "name": "mud_pillar_basic_spiral",
-      "textures": {
-        "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
-        "top": "chisel:block/mud/mud_pillar_basic-bottom",
-        "vertical_none": "chisel:block/mud/mud_pillar_basic_spiral-side"
-      }
+      "name": "mud_pillar_basic_spiral"
     },
     {
       "block": "chisel:mud_pillar_classic",
       "model_type": "top_bottom_side",
-      "name": "mud_pillar_classic",
-      "textures": {
-        "top": "chisel:block/mud/mud_pillar_classic-bottom"
-      }
+      "name": "mud_pillar_classic"
     },
     {
       "block": "chisel:mud_pillar_classic_large",
       "model_type": "top_bottom_side",
-      "name": "mud_pillar_classic_large",
-      "textures": {
-        "top": "chisel:block/mud/mud_pillar_classic_large-bottom"
-      }
+      "name": "mud_pillar_classic_large"
     },
     {
       "block": "chisel:mud_pillar_ionic",
       "model_type": "ctmv",
-      "name": "mud_pillar_ionic",
-      "textures": {
-        "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
-        "top": "chisel:block/mud/mud_pillar_basic-bottom",
-        "vertical_none": "chisel:block/mud/mud_pillar_ionic-side"
-      }
+      "name": "mud_pillar_ionic"
     },
     {
       "block": "chisel:mud_pillar_ionic_dent",
       "model_type": "ctmv",
-      "name": "mud_pillar_ionic_dent",
-      "textures": {
-        "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
-        "side": "chisel:block/mud/mud_pillar_ionic-side",
-        "top": "chisel:block/mud/mud_pillar_basic-bottom",
-        "vertical_both": "chisel:block/mud/mud_pillar_basic_dent-vertical_both",
-        "vertical_none": "chisel:block/mud/mud_pillar_ionic-side"
-      }
+      "name": "mud_pillar_ionic_dent"
     },
     {
       "block": "chisel:mud_pillar_ionic_plain",
       "model_type": "ctmv",
-      "name": "mud_pillar_ionic_plain",
-      "textures": {
-        "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
-        "side": "chisel:block/mud/mud_pillar_ionic-side",
-        "top": "chisel:block/mud/mud_pillar_basic-bottom",
-        "vertical_both": "chisel:block/mud/mud_pillar_basic_plain-vertical_both",
-        "vertical_none": "chisel:block/mud/mud_pillar_ionic-side"
-      }
+      "name": "mud_pillar_ionic_plain"
     },
     {
       "block": "chisel:mud_pillar_ionic_round",
       "model_type": "ctmv",
-      "name": "mud_pillar_ionic_round",
-      "textures": {
-        "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
-        "side": "chisel:block/mud/mud_pillar_ionic-side",
-        "top": "chisel:block/mud/mud_pillar_basic-bottom",
-        "vertical_both": "chisel:block/mud/mud_pillar_basic_round-vertical_both",
-        "vertical_none": "chisel:block/mud/mud_pillar_ionic-side"
-      }
+      "name": "mud_pillar_ionic_round"
     },
     {
       "block": "chisel:mud_pillar_ionic_spiral",
       "model_type": "ctmv",
-      "name": "mud_pillar_ionic_spiral",
-      "textures": {
-        "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
-        "side": "chisel:block/mud/mud_pillar_ionic-side",
-        "top": "chisel:block/mud/mud_pillar_basic-bottom",
-        "vertical_both": "chisel:block/mud/mud_pillar_basic_spiral-vertical_both",
-        "vertical_none": "chisel:block/mud/mud_pillar_ionic-side"
-      }
+      "name": "mud_pillar_ionic_spiral"
     },
     {
       "block": "chisel:mud_pillar_large_basic_triple",
       "model_type": "ctmv",
-      "name": "mud_pillar_large_basic_triple",
-      "textures": {
-        "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
-        "top": "chisel:block/mud/mud_pillar_basic-bottom",
-        "vertical_none": "chisel:block/mud/mud_pillar_large_basic_triple-side"
-      }
+      "name": "mud_pillar_large_basic_triple"
     },
     {
       "block": "chisel:mud_pillar_large_ionic_triple",
       "model_type": "ctmv",
-      "name": "mud_pillar_large_ionic_triple",
-      "textures": {
-        "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
-        "top": "chisel:block/mud/mud_pillar_basic-bottom",
-        "vertical_both": "chisel:block/mud/mud_pillar_large_basic_triple-vertical_both",
-        "vertical_none": "chisel:block/mud/mud_pillar_large_ionic_triple-side"
-      }
+      "name": "mud_pillar_large_ionic_triple"
     },
     {
       "block": "chisel:mud_pillar_meander",
       "model_type": "ctmv",
-      "name": "mud_pillar_meander",
-      "textures": {
-        "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
-        "top": "chisel:block/mud/mud_pillar_basic-bottom",
-        "vertical_both": "chisel:block/mud/mud_pillar_ionic-vertical_both",
-        "vertical_none": "chisel:block/mud/mud_pillar_meander-side"
-      }
+      "name": "mud_pillar_meander"
     },
     {
       "block": "chisel:mud_pillar_meander_dent",
       "model_type": "ctmv",
-      "name": "mud_pillar_meander_dent",
-      "textures": {
-        "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
-        "side": "chisel:block/mud/mud_pillar_meander-side",
-        "top": "chisel:block/mud/mud_pillar_basic-bottom",
-        "vertical_both": "chisel:block/mud/mud_pillar_basic_dent-vertical_both",
-        "vertical_none": "chisel:block/mud/mud_pillar_meander-side"
-      }
+      "name": "mud_pillar_meander_dent"
     },
     {
       "block": "chisel:mud_pillar_meander_plain",
       "model_type": "ctmv",
-      "name": "mud_pillar_meander_plain",
-      "textures": {
-        "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
-        "side": "chisel:block/mud/mud_pillar_meander-side",
-        "top": "chisel:block/mud/mud_pillar_basic-bottom",
-        "vertical_both": "chisel:block/mud/mud_pillar_basic_plain-vertical_both",
-        "vertical_none": "chisel:block/mud/mud_pillar_meander-side"
-      }
+      "name": "mud_pillar_meander_plain"
     },
     {
       "block": "chisel:mud_pillar_meander_round",
       "model_type": "ctmv",
-      "name": "mud_pillar_meander_round",
-      "textures": {
-        "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
-        "side": "chisel:block/mud/mud_pillar_meander-side",
-        "top": "chisel:block/mud/mud_pillar_basic-bottom",
-        "vertical_both": "chisel:block/mud/mud_pillar_basic_round-vertical_both",
-        "vertical_none": "chisel:block/mud/mud_pillar_meander-side"
-      }
+      "name": "mud_pillar_meander_round"
     },
     {
       "block": "chisel:mud_pillar_meander_spiral",
       "model_type": "ctmv",
-      "name": "mud_pillar_meander_spiral",
-      "textures": {
-        "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
-        "side": "chisel:block/mud/mud_pillar_meander-side",
-        "top": "chisel:block/mud/mud_pillar_basic-bottom",
-        "vertical_both": "chisel:block/mud/mud_pillar_basic_spiral-vertical_both",
-        "vertical_none": "chisel:block/mud/mud_pillar_meander-side"
-      }
+      "name": "mud_pillar_meander_spiral"
     },
     {
       "block": "chisel:mud_plate",
-      "name": "mud_plate",
-      "textures": {
-        "": "chisel:block/mud/mud_plate_connected"
-      }
+      "name": "mud_plate"
     },
     {
       "block": "chisel:mud_plate_connected",
       "model_type": "connected",
-      "name": "mud_plate_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_border_square-ctm_cornerless"
-      }
+      "name": "mud_plate_connected"
     },
     {
       "block": "chisel:mud_polished",
-      "name": "mud_polished",
-      "textures": {
-        "": "chisel:block/mud/mud_tiles_large"
-      }
+      "name": "mud_polished"
     },
     {
       "block": "chisel:mud_polished_encased",
@@ -468,10 +293,7 @@
     },
     {
       "block": "chisel:mud_raw",
-      "name": "mud_raw",
-      "textures": {
-        "": "chisel:block/mud/mud_border_square-ctm_cornerless"
-      }
+      "name": "mud_raw"
     },
     {
       "block": "chisel:mud_road",
@@ -480,10 +302,7 @@
     {
       "block": "chisel:mud_slanted",
       "model_type": "multiblock_2x2",
-      "name": "mud_slanted",
-      "textures": {
-        "2x2_bottom_left": "chisel:block/mud/mud_slanted"
-      }
+      "name": "mud_slanted"
     },
     {
       "block": "chisel:mud_tiles",
@@ -492,10 +311,7 @@
     {
       "block": "chisel:mud_tiles_large",
       "model_type": "connected",
-      "name": "mud_tiles_large",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_border_square-ctm_cornerless"
-      }
+      "name": "mud_tiles_large"
     },
     {
       "block": "chisel:mud_tiles_small",
@@ -504,27 +320,17 @@
     {
       "block": "chisel:mud_twisted",
       "model_type": "top_bottom_side",
-      "name": "mud_twisted",
-      "textures": {
-        "top": "chisel:block/mud/mud_twisted-bottom"
-      }
+      "name": "mud_twisted"
     },
     {
       "block": "chisel:mud_weaver",
       "model_type": "connected",
-      "name": "mud_weaver",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_weaver-ctm_corner"
-      }
+      "name": "mud_weaver"
     },
     {
       "block": "chisel:mud_zag",
       "model_type": "v4",
-      "name": "mud_zag",
-      "textures": {
-        "v4_top_left": "chisel:block/mud/mud_zag",
-        "v4_top_right": "chisel:block/mud/mud_zag-v4_bottom_left"
-      }
+      "name": "mud_zag"
     },
     {
       "block": "chisel:mud_crate",
@@ -538,10 +344,7 @@
     {
       "block": "chisel:mud_herringbone_encased",
       "model_type": "connected",
-      "name": "mud_herringbone_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_herringbone"
-      }
+      "name": "mud_herringbone_encased"
     },
     {
       "block": "chisel:mud_medallion",
@@ -550,10 +353,7 @@
     {
       "block": "chisel:mud_medallion_encased",
       "model_type": "connected",
-      "name": "mud_medallion_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_medallion"
-      }
+      "name": "mud_medallion_encased"
     },
     {
       "block": "chisel:mud_dots",
@@ -562,10 +362,7 @@
     {
       "block": "chisel:mud_dots_encased",
       "model_type": "connected",
-      "name": "mud_dots_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_dots"
-      }
+      "name": "mud_dots_encased"
     },
     {
       "block": "chisel:mud_heart",
@@ -581,25 +378,16 @@
     },
     {
       "block": "chisel:mud_lodestone",
-      "name": "mud_lodestone",
-      "textures": {
-        "": "chisel:block/mud/mud_lodestone_connected"
-      }
+      "name": "mud_lodestone"
     },
     {
       "block": "chisel:mud_lodestone_connected",
       "model_type": "connected",
-      "name": "mud_lodestone_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_lodestone_connected"
-      }
+      "name": "mud_lodestone_connected"
     },
     {
       "block": "chisel:mud_plank",
-      "name": "mud_plank",
-      "textures": {
-        "": "chisel:block/mud/mud_plank_connected"
-      }
+      "name": "mud_plank"
     },
     {
       "block": "chisel:mud_plank_connected",
@@ -637,10 +425,7 @@
     {
       "block": "chisel:mud_stripes_encased",
       "model_type": "connected",
-      "name": "mud_stripes_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_stripes"
-      }
+      "name": "mud_stripes_encased"
     },
     {
       "block": "chisel:mud_chisel_1",
@@ -677,17 +462,11 @@
     {
       "block": "chisel:mud_facet_small_encased",
       "model_type": "connected",
-      "name": "mud_facet_small_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_facet_small"
-      }
+      "name": "mud_facet_small_encased"
     },
     {
       "block": "chisel:mud_shiny",
-      "name": "mud_shiny",
-      "textures": {
-        "": "chisel:block/mud/mud_shiny_connected"
-      }
+      "name": "mud_shiny"
     },
     {
       "block": "chisel:mud_shiny_connected",
@@ -700,40 +479,25 @@
     },
     {
       "block": "chisel:mud_gem_1",
-      "name": "mud_gem_1",
-      "textures": {
-        "": "chisel:block/mud/mud_gem_1_connected"
-      }
+      "name": "mud_gem_1"
     },
     {
       "block": "chisel:mud_gem_1_connected",
       "model_type": "connected",
-      "name": "mud_gem_1_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_border_square-ctm_cornerless"
-      }
+      "name": "mud_gem_1_connected"
     },
     {
       "block": "chisel:mud_gem_2",
-      "name": "mud_gem_2",
-      "textures": {
-        "": "chisel:block/mud/mud_gem_2_connected"
-      }
+      "name": "mud_gem_2"
     },
     {
       "block": "chisel:mud_gem_2_connected",
       "model_type": "connected",
-      "name": "mud_gem_2_connected",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_border_square-ctm_cornerless"
-      }
+      "name": "mud_gem_2_connected"
     },
     {
       "block": "chisel:mud_gem_3",
-      "name": "mud_gem_3",
-      "textures": {
-        "": "chisel:block/mud/mud_gem_3_connected"
-      }
+      "name": "mud_gem_3"
     },
     {
       "block": "chisel:mud_gem_3_connected",
@@ -755,10 +519,7 @@
     {
       "block": "chisel:mud_scaffold_encased",
       "model_type": "connected",
-      "name": "mud_scaffold_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_scaffold"
-      }
+      "name": "mud_scaffold_encased"
     },
     {
       "block": "chisel:mud_tiles_inlayed",
@@ -767,10 +528,7 @@
     {
       "block": "chisel:mud_waves",
       "model_type": "multiblock_2x2",
-      "name": "mud_waves",
-      "textures": {
-        "2x2_top_left": "chisel:block/mud/mud_waves"
-      }
+      "name": "mud_waves"
     },
     {
       "block": "chisel:mud_parquet",
@@ -779,10 +537,7 @@
     {
       "block": "chisel:mud_parquet_encased",
       "model_type": "connected",
-      "name": "mud_parquet_encased",
-      "textures": {
-        "ctm_cornerless": "chisel:block/mud/mud_parquet"
-      }
+      "name": "mud_parquet_encased"
     }
   ]
 }

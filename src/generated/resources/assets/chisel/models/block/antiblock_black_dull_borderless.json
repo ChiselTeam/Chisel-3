@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/antiblock/antiblock_black_borderless"
+    "all": "chisel:block/antiblock/antiblock_black"
   }
 }
