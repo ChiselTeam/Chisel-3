@@ -3,10 +3,10 @@
   "category": "misc",
   "ingredients": [
     "minecraft:sea_lantern",
-    "minecraft:white_concrete"
+    "#c:dyes/gray"
   ],
   "result": {
     "count": 8,
-    "id": "chisel:nexus_core"
+    "id": "chisel:light_gray_framed"
   }
 }

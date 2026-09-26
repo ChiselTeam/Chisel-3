@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_planks": {
+    "has_purple_dye": {
       "conditions": {
         "items": [
           {
-            "items": "#minecraft:planks"
+            "items": "#c:dyes/purple"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:liminal_wall_1"
+        "recipe": "chisel:light_purple_framed"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_planks"
+      "has_purple_dye"
     ]
   ],
   "rewards": {
     "recipes": [
-      "chisel:liminal_wall_1"
+      "chisel:light_purple_framed"
     ]
   }
 }

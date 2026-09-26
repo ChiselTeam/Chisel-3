@@ -2,6 +2,8 @@ package io.github.chiselteam.chisel.datagen;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.content.ChiselFamilies;
+import io.github.chiselteam.chisel.content.family.ColorCollectionFamilies;
+import net.minecraft.world.item.DyeColor;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
 import io.github.chiselteam.chisel.registry.ChiselItems;
 import net.minecraft.core.HolderLookup;
@@ -60,32 +62,33 @@ public class ChiselRecipes extends RecipeProvider {
                 .requires(Ingredient.of(Items.VINE, Items.MOSS_BLOCK))
                 .unlockedBy("has_blackstone", has(Items.BLACKSTONE))
                 .save(output);
-// idk how to do 2 recipes
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.LIMINAL.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.LIMINAL.getFamily().getVariants().getFirst().getBlock().asItem(), 16))
                 .pattern(" O ")
                 .pattern("ODO")
                 .pattern(" O ")
-                .define('O', Items.OAK_PLANKS)
-                .define('D', Items.OAK_DOOR)
-                .unlockedBy("has_oak_planks", has(Items.OAK_PLANKS))
+                .define('O', ItemTags.PLANKS)
+                .define('D', ItemTags.WOODEN_DOORS)
+                .unlockedBy("has_planks", has(ItemTags.PLANKS))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.KITCHEN.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.KITCHEN.getFamily().getVariants().getFirst().getBlock().asItem(), 16))
                 .pattern("WB")
                 .pattern("BW")
                 .define('W', Items.WHITE_CONCRETE)
                 .define('B', Items.BLACK_CONCRETE)
                 .unlockedBy("has_white_concrete", has(Items.WHITE_CONCRETE))
                 .save(output);
-
-/*         shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.LIGHT_WHITE.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
+                
+        for (DyeColor color : DyeColor.values()) {
+        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ColorCollectionFamilies.LIGHT.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .requires(Items.SEA_LANTERN)
-                .requires(Items.WHITE_DYE)
-                .unlockedBy("has_white_dye", has(Items.WHITE_DYE))
-                .save(output); */
+                .requires(color.getTag())
+                .unlockedBy("has_" + color.getName() + "_dye", has(color.getTag()))
+                .save(output);
+        }
 
-        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.NEXUS.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
+        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.NEXUS.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .requires(Items.SEA_LANTERN)
                 .requires(Items.WHITE_CONCRETE)
                 .unlockedBy("has_white_concrete", has(Items.WHITE_CONCRETE))
@@ -185,6 +188,14 @@ public class ChiselRecipes extends RecipeProvider {
                 .save(output);
 
         // MARK: Items
+        shaped(RecipeCategory.MISC, ChiselItems.MEASURING_TAPE)
+                .pattern(" WW")
+                .pattern("SSW")
+                .define('S', Tags.Items.STRINGS)
+                .define('W', ItemTags.PLANKS)
+                .unlockedBy("has_planks", has(ItemTags.PLANKS))
+                .save(output);
+
         shaped(RecipeCategory.MISC, ChiselItems.CLOUD_IN_A_BOTTLE)
                 .pattern("G G")
                 .pattern("GQG")
