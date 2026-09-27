@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import java.util.List;
 
 public class MetalFamilies {
-    public static final ChiselFamily ALUMINUM, BRONZE, COBALT, COPPER, EXPOSED_COPPER, WEATHERED_COPPER, OXIDIZED_COPPER, DIAMOND, ELECTRUM, EMERALD, GOLD, INVAR, IRON, LAPIS, LEAD, NETHERITE, NICKEL, PLATINUM, SILVER, STEEL, THAUMIUM, TIN, URANIUM;
+    public static final ChiselFamily RAW_IRON, RAW_GOLD, RAW_COPPER, ALUMINUM, BRONZE, COBALT, COPPER, EXPOSED_COPPER, WEATHERED_COPPER, OXIDIZED_COPPER, DIAMOND, ELECTRUM, EMERALD, GOLD, INVAR, IRON, LAPIS, LEAD, NETHERITE, NICKEL, PLATINUM, SILVER, STEEL, THAUMIUM, TIN, URANIUM;
     private static final List<ChiselFamily> FAMILIES;
 
     static {
@@ -44,6 +44,12 @@ public class MetalFamilies {
                 .addVariant("cobalt_machine").translation("cobalt_machine", "Cobalt", "Machine")
                 .addVariant("cobalt_scaffold", ChiselModelHandlers.CONNECTED).translation("cobalt_scaffold", "Cobalt", "Scaffold")
                 .addVariant("cobalt_thermal", ChiselModelHandlers.TBS).translation("cobalt_thermal", "Cobalt", "Thermal")
+                .build());
+
+        RAW_COPPER = ChiselFamily.build("raw_copper", builder -> builder
+                .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_COPPER_BLOCK))
+                .addVariant(Blocks.RAW_COPPER_BLOCK)
+                
                 .build());
 
         COPPER = ChiselFamily.build("copper", builder -> builder
@@ -141,6 +147,133 @@ public class MetalFamilies {
                 .addVariant("emerald_zelda").translation("emerald_zelda", "Block of Emerald", "Zelda Emerald Block")
                 .build());
 
+        RAW_GOLD = ChiselFamily.build("raw_gold", builder -> builder
+                .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_GOLD_BLOCK))
+                .addVariant(Blocks.RAW_GOLD_BLOCK)
+                .addVariant("raw_gold_array", ChiselModelHandlers.MULTIBLOCK_2X2).translation("raw_gold_array", "Block of Raw Gold", "Array")
+                .addVariant("raw_gold_border_square", ChiselModelHandlers.CONNECTED).translation("raw_gold_border_square", "Block of Raw Gold", "Square Border")
+                .addVariant("raw_gold_braid").translation("raw_gold_braid", "Block of Raw Gold", "Braid")
+                .addVariant("raw_gold_braid_encased", ChiselModelHandlers.CONNECTED).translation("raw_gold_braid_encased", "Block of Raw Gold", "Encased Braid")
+                .addVariant("raw_gold_bricks_cracked").translation("raw_gold_bricks_cracked", "Block of Raw Gold", "Cracked Bricks")
+                .addVariant("raw_gold_bricks_encased", ChiselModelHandlers.CONNECTED).translation("raw_gold_bricks_encased", "Block of Raw Gold", "Encased Bricks")
+                .addVariant("raw_gold_bricks_indent").translation("raw_gold_bricks_indent", "Block of Raw Gold", "Indent Bricks")
+                .addVariant("raw_gold_bricks_inlayed").translation("raw_gold_bricks_inlayed", "Block of Raw Gold", "Inlayed Bricks")
+                .addVariant("raw_gold_bricks_large", ChiselModelHandlers.MULTIBLOCK_2X2).translation("raw_gold_bricks_large", "Block of Raw Gold", "Large Bricks")
+                .addVariant("raw_gold_bricks_small").translation("raw_gold_bricks_small", "Block of Raw Gold", "Small Bricks")
+                .addVariant("raw_gold_bricks_soft").translation("raw_gold_bricks_soft", "Block of Raw Gold", "Soft Bricks")
+                .addVariant("raw_gold_bricks_solid").translation("raw_gold_bricks_solid", "Block of Raw Gold", "Solid Bricks")
+                .addVariant("raw_gold_bricks_triple").translation("raw_gold_bricks_triple", "Block of Raw Gold", "Triple Bricks")
+                .addVariant("raw_gold_bricks_vertical").translation("raw_gold_bricks_vertical", "Block of Raw Gold", "Vertical Bricks")
+                .addVariant("raw_gold_chaotic", ChiselModelHandlers.MULTIBLOCK_3X3).translation("raw_gold_chaotic", "Block of Raw Gold", "Chaotic")
+                .addVariant("raw_gold_chaotic_medium").translation("raw_gold_chaotic_medium", "Block of Raw Gold", "Chaotic Medium")
+                .addVariant("raw_gold_chaotic_small").translation("raw_gold_chaotic_small", "Block of Raw Gold", "Chaotic Small")
+                .addVariant("raw_gold_checker").translation("raw_gold_checker", "Block of Raw Gold", "Checker")
+                .addVariant("raw_gold_checker_small").translation("raw_gold_checker_small", "Block of Raw Gold", "Small Checker")
+                .addVariant("raw_gold_circular", ChiselModelHandlers.CONNECTED).translation("raw_gold_circular", "Block of Raw Gold", "Circular")
+		.addVariant("raw_gold_cracked").translation("raw_gold_cracked", "Block of Raw Gold", "Cracked")
+                .addVariant("raw_gold_cobble").translation("raw_gold_cobble", "Block of Raw Gold", "Cobble")
+                .addVariant("raw_gold_cuts", ChiselModelHandlers.MULTIBLOCK_4X4).translation("raw_gold_cuts", "Block of Raw Gold", "Cuts")
+                .addVariant("raw_gold_dent", ChiselModelHandlers.CONNECTED).translation("raw_gold_dent", "Block of Raw Gold", "Dent")
+                .addVariant("raw_gold_french_1").translation("raw_gold_french_1", "Block of Raw Gold", "French 1")
+                .addVariant("raw_gold_french_2").translation("raw_gold_french_2", "Block of Raw Gold", "French 2")
+                .addVariant("raw_gold_indent", ChiselModelHandlers.CONNECTED).translation("raw_gold_indent", "Block of Raw Gold", "Indent")
+                .addVariant("raw_gold_jellybean", ChiselModelHandlers.MULTIBLOCK_2X2).translation("raw_gold_jellybean", "Block of Raw Gold", "Jellybean")
+                .addVariant("raw_gold_layers").translation("raw_gold_layers", "Block of Raw Gold", "Layers")
+                .addVariant("raw_gold_layers_connected", ChiselModelHandlers.CONNECTED).translation("raw_gold_layers_connected", "Block of Raw Gold", "Layers Connected")
+                .addVariant("raw_gold_line_horizontal").translation("raw_gold_line_horizontal", "Block of Raw Gold", "Horizontal Line")
+                .addVariant("raw_gold_line_vertical").translation("raw_gold_line_vertical", "Block of Raw Gold", "Vertical Line")
+                .addVariant("raw_gold_meander_horizontal", ChiselModelHandlers.CTMH).translation("raw_gold_meander_horizontal", "Block of Raw Gold", "Horizontal Meander")
+                .addVariant("raw_gold_meander_vertical", ChiselModelHandlers.CTMV).translation("raw_gold_meander_vertical", "Block of Raw Gold", "Vertical Meander")
+                .addVariant("raw_gold_mosaic", ChiselModelHandlers.CONNECTED).translation("raw_gold_mosaic", "Block of Raw Gold", "Mosaic")
+                .addVariant("raw_gold_ornate_small").translation("raw_gold_ornate_small", "Block of Raw Gold", "Small Ornate")
+                .addVariant("raw_gold_panel").translation("raw_gold_panel", "Block of Raw Gold", "Panel")
+                .addVariant("raw_gold_pillar", ChiselModelHandlers.TBS).translation("raw_gold_pillar", "Block of Raw Gold", "Pillar")
+                .addVariant("raw_gold_pillar_basic", ChiselModelHandlers.CTMV).translation("raw_gold_pillar_basic", "Block of Raw Gold", "Basic Pillar")
+                .addVariant("raw_gold_pillar_basic_dent", ChiselModelHandlers.CTMV).translation("raw_gold_pillar_basic_dent", "Block of Raw Gold", "Basic Dent Pillar")
+                .addVariant("raw_gold_pillar_basic_plain", ChiselModelHandlers.CTMV).translation("raw_gold_pillar_basic_plain", "Block of Raw Gold", "Basic Plain Pillar")
+                .addVariant("raw_gold_pillar_basic_round", ChiselModelHandlers.CTMV).translation("raw_gold_pillar_basic_round", "Block of Raw Gold", "Basic Round Pillar")
+                .addVariant("raw_gold_pillar_basic_spiral", ChiselModelHandlers.CTMV).translation("raw_gold_pillar_basic_spiral", "Block of Raw Gold", "Basic Spiral Pillar")
+                .addVariant("raw_gold_pillar_classic", ChiselModelHandlers.TBS).translation("raw_gold_pillar_classic", "Block of Raw Gold", "Classic Pillar")
+                .addVariant("raw_gold_pillar_classic_large", ChiselModelHandlers.TBS).translation("raw_gold_pillar_classic_large", "Block of Raw Gold", "Large Classic Pillar")
+                .addVariant("raw_gold_pillar_ionic", ChiselModelHandlers.CTMV).translation("raw_gold_pillar_ionic", "Block of Raw Gold", "Ionic Pillar")
+                .addVariant("raw_gold_pillar_ionic_dent", ChiselModelHandlers.CTMV).translation("raw_gold_pillar_ionic_dent", "Block of Raw Gold", "Ionic Dent Pillar")
+                .addVariant("raw_gold_pillar_ionic_plain", ChiselModelHandlers.CTMV).translation("raw_gold_pillar_ionic_plain", "Block of Raw Gold", "Ionic Plain Pillar")
+                .addVariant("raw_gold_pillar_ionic_round", ChiselModelHandlers.CTMV).translation("raw_gold_pillar_ionic_round", "Block of Raw Gold", "Ionic Round Pillar")
+                .addVariant("raw_gold_pillar_ionic_spiral", ChiselModelHandlers.CTMV).translation("raw_gold_pillar_ionic_spiral", "Block of Raw Gold", "Ionic Spiral Pillar")
+                .addVariant("raw_gold_pillar_large_basic_triple", ChiselModelHandlers.CTMV).translation("raw_gold_pillar_large_basic_triple", "Block of Raw Gold", "Large Basic Triple Pillar")
+                .addVariant("raw_gold_pillar_large_ionic_triple", ChiselModelHandlers.CTMV).translation("raw_gold_pillar_large_ionic_triple", "Block of Raw Gold", "Large Ionic Triple Pillar")
+                .addVariant("raw_gold_pillar_meander", ChiselModelHandlers.CTMV).translation("raw_gold_pillar_meander", "Block of Raw Gold", "Meander Pillar")
+                .addVariant("raw_gold_pillar_meander_dent", ChiselModelHandlers.CTMV).translation("raw_gold_pillar_meander_dent", "Block of Raw Gold", "Meander Dent Pillar")
+                .addVariant("raw_gold_pillar_meander_plain", ChiselModelHandlers.CTMV).translation("raw_gold_pillar_meander_plain", "Block of Raw Gold", "Meander Plain Pillar")
+                .addVariant("raw_gold_pillar_meander_round", ChiselModelHandlers.CTMV).translation("raw_gold_pillar_meander_round", "Block of Raw Gold", "Meander Round Pillar")
+                .addVariant("raw_gold_pillar_meander_spiral", ChiselModelHandlers.CTMV).translation("raw_gold_pillar_meander_spiral", "Block of Raw Gold", "Meander Spiral Pillar")
+                .addVariant("raw_gold_plate").translation("raw_gold_plate", "Block of Raw Gold", "Plate")
+                .addVariant("raw_gold_plate_connected", ChiselModelHandlers.CONNECTED).translation("raw_gold_plate_connected", "Block of Raw Gold", "Plate Connected")
+                .addVariant("raw_gold_polished").translation("raw_gold_polished", "Block of Raw Gold", "Polished")
+                .addVariant("raw_gold_polished_encased", ChiselModelHandlers.CONNECTED).translation("raw_gold_polished_encased", "Block of Raw Gold", "Polished Encased")
+                .addVariant("raw_gold_prism").translation("raw_gold_prism", "Block of Raw Gold", "Prismatic")
+                .addVariant("raw_gold_raw").translation("raw_gold_raw", "Block of Raw Gold", "Raw")
+                .addVariant("raw_gold_road").translation("raw_gold_road", "Block of Raw Gold", "Road")
+                .addVariant("raw_gold_slanted", ChiselModelHandlers.MULTIBLOCK_2X2).translation("raw_gold_slanted", "Block of Raw Gold", "Slanted")
+                .addVariant("raw_gold_tiles").translation("raw_gold_tiles", "Block of Raw Gold", "Tiles")
+                .addVariant("raw_gold_tiles_large", ChiselModelHandlers.CONNECTED).translation("raw_gold_tiles_large", "Block of Raw Gold", "Large Tiles")
+                .addVariant("raw_gold_tiles_small").translation("raw_gold_tiles_small", "Block of Raw Gold", "Small Tiles")
+                .addVariant("raw_gold_twisted", ChiselModelHandlers.TBS).translation("raw_gold_twisted", "Block of Raw Gold", "Twisted")
+                .addVariant("raw_gold_weaver", ChiselModelHandlers.CONNECTED).translation("raw_gold_weaver", "Block of Raw Gold", "Weaver")
+                .addVariant("raw_gold_zag", ChiselModelHandlers.V4).translation("raw_gold_zag", "Block of Raw Gold", "Zag")
+                .addVariant("raw_gold_crate", ChiselModelHandlers.CONNECTED).translation("raw_gold_crate", "Block of Raw Gold", "Crate")
+                .addVariant("raw_gold_herringbone").translation("raw_gold_herringbone", "Block of Raw Gold", "Herringbone")
+                .addVariant("raw_gold_herringbone_encased", ChiselModelHandlers.CONNECTED).translation("raw_gold_herringbone_encased", "Block of Raw Gold", "Encased Herringbone")
+                .addVariant("raw_gold_medallion").translation("raw_gold_medallion", "Block of Raw Gold", "Medallion")
+                .addVariant("raw_gold_medallion_encased", ChiselModelHandlers.CONNECTED).translation("raw_gold_medallion_encased", "Block of Raw Gold", "Encased Medallion")
+                .addVariant("raw_gold_dots").translation("raw_gold_dots", "Block of Raw Gold", "Dots")
+                .addVariant("raw_gold_dots_encased", ChiselModelHandlers.CONNECTED).translation("raw_gold_dots_encased", "Block of Raw Gold", "Encased Dots")
+                .addVariant("raw_gold_heart").translation("raw_gold_heart", "Block of Raw Gold", "Heart")
+                .addVariant("raw_gold_star").translation("raw_gold_star", "Block of Raw Gold", "Star")
+                .addVariant("raw_gold_plating").translation("raw_gold_plating", "Block of Raw Gold", "Plating")
+                .addVariant("raw_gold_lodestone").translation("raw_gold_lodestone", "Block of Raw Gold", "Lodestone")
+                .addVariant("raw_gold_lodestone_connected", ChiselModelHandlers.CONNECTED).translation("raw_gold_lodestone_connected", "Block of Raw Gold", "Lodestone Connected")
+                .addVariant("raw_gold_plank").translation("raw_gold_plank", "Block of Raw Gold", "Plank")
+                .addVariant("raw_gold_plank_connected", ChiselModelHandlers.CONNECTED).translation("raw_gold_plank_connected", "Block of Raw Gold", "Plank Connected")
+                .addVariant("raw_gold_frame").translation("raw_gold_frame", "Block of Raw Gold", "Frame")
+                .addVariant("raw_gold_panel_1").translation("raw_gold_panel_1", "Block of Raw Gold", "Panel 1")
+                .addVariant("raw_gold_panel_2").translation("raw_gold_panel_2", "Block of Raw Gold", "Panel 2")
+                .addVariant("raw_gold_panel_3").translation("raw_gold_panel_3", "Block of Raw Gold", "Panel 3")
+                .addVariant("raw_gold_skull_creeper").translation("raw_gold_skull_creeper", "Block of Raw Gold", "Creeper Skull")
+                .addVariant("raw_gold_skull_skeleton").translation("raw_gold_skull_skeleton", "Block of Raw Gold", "Skeleton Skull")
+                .addVariant("raw_gold_stripes").translation("raw_gold_stripes", "Block of Raw Gold", "Stripes")
+                .addVariant("raw_gold_stripes_encased", ChiselModelHandlers.CONNECTED).translation("raw_gold_stripes_encased", "Block of Raw Gold", "Encased Stripes")
+                .addVariant("raw_gold_chisel_1").translation("raw_gold_chisel_1", "Block of Raw Gold", "Chisel 1")
+                .addVariant("raw_gold_chisel_2").translation("raw_gold_chisel_2", "Block of Raw Gold", "Chisel 2")
+                .addVariant("raw_gold_chisel_3").translation("raw_gold_chisel_3", "Block of Raw Gold", "Chisel 3")
+                .addVariant("raw_gold_chisel_4").translation("raw_gold_chisel_4", "Block of Raw Gold", "Chisel 4")
+                .addVariant("raw_gold_chisel_5").translation("raw_gold_chisel_5", "Block of Raw Gold", "Chisel 5")
+                .addVariant("raw_gold_chisel_6").translation("raw_gold_chisel_6", "Block of Raw Gold", "Chisel 6")
+                .addVariant("raw_gold_facet").translation("raw_gold_facet", "Block of Raw Gold", "Facet")
+                .addVariant("raw_gold_facet_small").translation("raw_gold_facet_small", "Block of Raw Gold", "Small Facet")
+                .addVariant("raw_gold_facet_small_encased", ChiselModelHandlers.CONNECTED).translation("raw_gold_facet_small_encased", "Block of Raw Gold", "Encased Small Facet")
+                .addVariant("raw_gold_shiny").translation("raw_gold_shiny", "Block of Raw Gold", "Shiny")
+                .addVariant("raw_gold_shiny_connected", ChiselModelHandlers.CONNECTED).translation("raw_gold_shiny_connected", "Block of Raw Gold", "Shiny Connected")
+                .addVariant("raw_gold_gem").translation("raw_gold_gem", "Block of Raw Gold", "Gem")
+                .addVariant("raw_gold_gem_1").translation("raw_gold_gem_1", "Block of Raw Gold", "Gem 1")
+                .addVariant("raw_gold_gem_1_connected", ChiselModelHandlers.CONNECTED).translation("raw_gold_gem_1_connected", "Block of Raw Gold", "Gem 1 Connected")
+                .addVariant("raw_gold_gem_2").translation("raw_gold_gem_2", "Block of Raw Gold", "Gem 2")
+                .addVariant("raw_gold_gem_2_connected", ChiselModelHandlers.CONNECTED).translation("raw_gold_gem_2_connected", "Block of Raw Gold", "Gem 2 Connected")
+                .addVariant("raw_gold_gem_3").translation("raw_gold_gem_3", "Block of Raw Gold", "Gem 3")
+                .addVariant("raw_gold_gem_3_connected", ChiselModelHandlers.CONNECTED).translation("raw_gold_gem_3_connected", "Block of Raw Gold", "Gem 3 Connected")
+                .addVariant("raw_gold_bricks_square").translation("raw_gold_bricks_square", "Block of Raw Gold", "Square Bricks")
+                .addVariant("raw_gold_slab").translation("raw_gold_slab", "Block of Raw Gold", "Slab")
+                .addVariant("raw_gold_scaffold").translation("raw_gold_scaffold", "Block of Raw Gold", "Scaffold")
+                .addVariant("raw_gold_scaffold_encased", ChiselModelHandlers.CONNECTED).translation("raw_gold_scaffold_encased", "Block of Raw Gold", "Encased Scaffold")
+                .addVariant("raw_gold_tiles_inlayed").translation("raw_gold_tiles_inlayed", "Block of Raw Gold", "Inlayed Tiles")
+                .addVariant("raw_gold_waves", ChiselModelHandlers.MULTIBLOCK_2X2).translation("raw_gold_waves", "Block of Raw Gold", "Waves")
+                .addVariant("raw_gold_parquet").translation("raw_gold_parquet", "Block of Raw Gold", "Parquet")
+                .addVariant("raw_gold_parquet_encased", ChiselModelHandlers.CONNECTED).translation("raw_gold_parquet_encased", "Block of Raw Gold", "Encased Parquet")
+                .addVariant("raw_gold_bricks_large_rough", ChiselModelHandlers.MULTIBLOCK_2X2).translation("raw_gold_bricks_large_rough", "Block of Raw Gold", "Large Rough Bricks")
+                .addVariant("raw_gold_tiles_small_encased", ChiselModelHandlers.CONNECTED).translation("raw_gold_tiles_small_encased", "Block of Raw Gold", "Encased Small Tiles")
+                .addVariant("raw_gold_bricks_round").translation("raw_gold_bricks_round", "Block of Raw Gold", "Round Bricks")
+                .build());
+
         GOLD = ChiselFamily.build("gold", builder -> builder
                 .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK))
                 .addVariant(Blocks.GOLD_BLOCK)
@@ -191,6 +324,12 @@ public class MetalFamilies {
                 .addVariant("invar_machine").translation("invar_machine", "Invar", "Machine")
                 .addVariant("invar_scaffold", ChiselModelHandlers.CONNECTED).translation("invar_scaffold", "Invar", "Scaffold")
                 .addVariant("invar_thermal", ChiselModelHandlers.TBS).translation("invar_thermal", "Invar", "Thermal")
+                .build());
+
+        RAW_IRON = ChiselFamily.build("raw_iron", builder -> builder
+                .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_IRON_BLOCK))
+                .addVariant(Blocks.RAW_IRON_BLOCK)
+                
                 .build());
 
         IRON = ChiselFamily.build("iron", builder -> builder
@@ -554,7 +693,7 @@ public class MetalFamilies {
                 .addVariant("uranium_thermal", ChiselModelHandlers.TBS).translation("uranium_thermal", "Uranium", "Thermal")
                 .build());
 
-        FAMILIES = List.of(ALUMINUM, BRONZE, COBALT, COPPER, EXPOSED_COPPER, WEATHERED_COPPER, OXIDIZED_COPPER, DIAMOND, ELECTRUM, EMERALD, GOLD, INVAR, IRON, LAPIS, LEAD, NETHERITE, NICKEL, PLATINUM, SILVER, STEEL, THAUMIUM, TIN, URANIUM);
+        FAMILIES = List.of(RAW_IRON, RAW_GOLD, RAW_COPPER, ALUMINUM, BRONZE, COBALT, COPPER, EXPOSED_COPPER, WEATHERED_COPPER, OXIDIZED_COPPER, DIAMOND, ELECTRUM, EMERALD, GOLD, INVAR, IRON, LAPIS, LEAD, NETHERITE, NICKEL, PLATINUM, SILVER, STEEL, THAUMIUM, TIN, URANIUM);
     }
 
     private MetalFamilies() {

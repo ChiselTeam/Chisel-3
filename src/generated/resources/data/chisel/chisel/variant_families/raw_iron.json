@@ -1,0 +1,10 @@
+{
+  "family_name": "raw_iron",
+  "tag": "c:chisel/raw_iron",
+  "variants": [
+    {
+      "block": "minecraft:raw_iron_block",
+      "name": "block.minecraft.raw_iron_block"
+    }
+  ]
+}

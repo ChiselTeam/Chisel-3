@@ -1,0 +1,10 @@
+{
+  "family_name": "raw_copper",
+  "tag": "c:chisel/raw_copper",
+  "variants": [
+    {
+      "block": "minecraft:raw_copper_block",
+      "name": "block.minecraft.raw_copper_block"
+    }
+  ]
+}

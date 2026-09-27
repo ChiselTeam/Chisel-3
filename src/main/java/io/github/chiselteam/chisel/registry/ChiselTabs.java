@@ -112,7 +112,10 @@ public class ChiselTabs {
                     ChiselFamilies.MILITARY.getFamily(),
                     ChiselFamilies.TECHNICAL.getFamily(),
                     ChiselFamilies.TYRIAN.getFamily(),
-                    ChiselFamilies.WARNING.getFamily()
+                    ChiselFamilies.WARNING.getFamily(),
+                    ChiselFamilies.RAW_IRON.getFamily(),
+                    ChiselFamilies.RAW_GOLD.getFamily(),
+                    ChiselFamilies.RAW_COPPER.getFamily()
                 
                 ).forEach(family -> family.getVariants().forEach(variant ->  {
                 if (variant.shouldGenerateModel() && variant.isInTab())
