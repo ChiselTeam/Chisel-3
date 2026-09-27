@@ -91,8 +91,8 @@ public class ChiselFamilies {
     public static final ChiselFamily PLATINUM = MetalFamilies.PLATINUM;
     public static final ChiselFamily QUARTZ = StoneFamilies.QUARTZ;
     public static final ChiselFamily PRISMARINE = StoneFamilies.PRISMARINE;
-    public static final ChiselFamily PRISMARINE_BRICKS = StoneFamilies.PRISMARINE;
-    public static final ChiselFamily DARK_PRISMARINE = StoneFamilies.PRISMARINE;
+    public static final ChiselFamily PRISMARINE_BRICKS = StoneFamilies.PRISMARINE_BRICKS;
+    public static final ChiselFamily DARK_PRISMARINE = StoneFamilies.DARK_PRISMARINE;
     public static final ChiselFamily PUMPKIN = SpecialFamilies.PUMPKIN;
     public static final ChiselFamily PURPUR = StoneFamilies.PURPUR;
     public static final ChiselFamily RED_SANDSTONE = StoneFamilies.RED_SANDSTONE;
