@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/ancient_debris/ancient_debris_dent",
+    "particle": "chisel:block/ancient_debris/ancient_debris_dent",
+    "standard_corner": "chisel:block/ancient_debris/ancient_debris_dent-ctm_corner",
+    "standard_cornerless": "chisel:block/ancient_debris/ancient_debris_dent-ctm_cornerless",
+    "standard_horizontal": "chisel:block/ancient_debris/ancient_debris_dent-ctm_horizontal",
+    "standard_none": "chisel:block/ancient_debris/ancient_debris_dent",
+    "standard_vertical": "chisel:block/ancient_debris/ancient_debris_dent-ctm_vertical"
+  }
+}

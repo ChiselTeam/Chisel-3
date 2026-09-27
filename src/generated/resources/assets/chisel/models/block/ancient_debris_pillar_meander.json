@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/ancient_debris/ancient_debris_pillar_meander-side",
+    "bottom": "chisel:block/ancient_debris/ancient_debris_pillar_meander-bottom",
+    "particle": "chisel:block/ancient_debris/ancient_debris_pillar_meander-side",
+    "side": "chisel:block/ancient_debris/ancient_debris_pillar_meander-side",
+    "top": "chisel:block/ancient_debris/ancient_debris_pillar_meander-top",
+    "vertical_both": "chisel:block/ancient_debris/ancient_debris_pillar_meander-vertical_both",
+    "vertical_bottom": "chisel:block/ancient_debris/ancient_debris_pillar_meander-vertical_bottom",
+    "vertical_none": "chisel:block/ancient_debris/ancient_debris_pillar_meander-vertical_none",
+    "vertical_top": "chisel:block/ancient_debris/ancient_debris_pillar_meander-vertical_top"
+  }
+}
