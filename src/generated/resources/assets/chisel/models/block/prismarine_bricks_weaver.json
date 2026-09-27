@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/prismarine_bricks/prismarine_bricks_weaver",
+    "particle": "chisel:block/prismarine_bricks/prismarine_bricks_weaver",
+    "standard_corner": "chisel:block/prismarine_bricks/prismarine_bricks_weaver-ctm_corner",
+    "standard_cornerless": "chisel:block/prismarine_bricks/prismarine_bricks_weaver-ctm_cornerless",
+    "standard_horizontal": "chisel:block/prismarine_bricks/prismarine_bricks_weaver-ctm_horizontal",
+    "standard_none": "chisel:block/prismarine_bricks/prismarine_bricks_weaver",
+    "standard_vertical": "chisel:block/prismarine_bricks/prismarine_bricks_weaver-ctm_vertical"
+  }
+}

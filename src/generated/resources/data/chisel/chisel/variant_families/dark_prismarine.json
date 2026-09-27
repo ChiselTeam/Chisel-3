@@ -1,0 +1,10 @@
+{
+  "family_name": "dark_prismarine",
+  "tag": "c:chisel/dark_prismarine",
+  "variants": [
+    {
+      "block": "minecraft:dark_prismarine",
+      "name": "block.minecraft.dark_prismarine"
+    }
+  ]
+}

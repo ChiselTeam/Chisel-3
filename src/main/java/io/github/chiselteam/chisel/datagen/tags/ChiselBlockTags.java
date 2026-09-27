@@ -137,6 +137,8 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.OBSIDIAN.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.PLATINUM.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.PRISMARINE.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.PRISMARINE_BRICKS.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.DARK_PRISMARINE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.PURPUR.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.QUARTZ.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.RED_SANDSTONE.getFamily());
