@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/amethyst/amethyst_pillar_meander_round-side",
+    "bottom": "chisel:block/amethyst/amethyst_pillar_meander_round-bottom",
+    "particle": "chisel:block/amethyst/amethyst_pillar_meander_round-side",
+    "side": "chisel:block/amethyst/amethyst_pillar_meander_round-side",
+    "top": "chisel:block/amethyst/amethyst_pillar_meander_round-top",
+    "vertical_both": "chisel:block/amethyst/amethyst_pillar_meander_round-vertical_both",
+    "vertical_bottom": "chisel:block/amethyst/amethyst_pillar_meander_round-vertical_bottom",
+    "vertical_none": "chisel:block/amethyst/amethyst_pillar_meander_round-vertical_none",
+    "vertical_top": "chisel:block/amethyst/amethyst_pillar_meander_round-vertical_top"
+  }
+}

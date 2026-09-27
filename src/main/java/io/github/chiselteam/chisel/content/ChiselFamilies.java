@@ -130,6 +130,7 @@ public class ChiselFamilies {
     public static final ChiselFamily RAW_COPPER = MetalFamilies.RAW_COPPER;
     public static final ChiselFamily RAW_IRON = MetalFamilies.RAW_IRON;
     public static final ChiselFamily RAW_GOLD = MetalFamilies.RAW_GOLD;
+    public static final ChiselFamily AMETHYST = DecorativeFamilies.AMETHYST;
     // public static final ChiselFamily MA_SOULSTONE = MysticalAgricultureFamilies.MA_SOULSTONE;
 
     public static final List<ChiselFamily> WOOLS = ColorCollectionFamilies.WOOLS;

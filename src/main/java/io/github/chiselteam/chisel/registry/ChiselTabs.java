@@ -63,6 +63,7 @@ public class ChiselTabs {
                     ChiselFamilies.RESIN.getFamily(),
                     ChiselFamilies.WATERSTONE.getFamily(),
                     ChiselFamilies.STONE.getFamily(),
+                    ChiselFamilies.AMETHYST.getFamily(),
                     ChiselFamilies.SMOOTH_STONE.getFamily()
                 
                 ).forEach(family -> family.getVariants().forEach(variant -> {
