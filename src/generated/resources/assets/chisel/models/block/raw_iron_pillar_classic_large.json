@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/raw_iron/raw_iron_pillar_classic_large-bottom",
+    "side": "chisel:block/raw_iron/raw_iron_pillar_classic_large-side",
+    "top": "chisel:block/raw_iron/raw_iron_pillar_classic_large-top"
+  }
+}

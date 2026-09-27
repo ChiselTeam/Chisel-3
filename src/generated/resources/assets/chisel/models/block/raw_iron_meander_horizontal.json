@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "all": "chisel:block/raw_iron/raw_iron_meander_horizontal",
+    "bottom": "chisel:block/raw_iron/raw_iron_meander_horizontal-bottom",
+    "horizontal_both": "chisel:block/raw_iron/raw_iron_meander_horizontal-horizontal_both",
+    "horizontal_left": "chisel:block/raw_iron/raw_iron_meander_horizontal-horizontal_left",
+    "horizontal_none": "chisel:block/raw_iron/raw_iron_meander_horizontal-horizontal_none",
+    "horizontal_right": "chisel:block/raw_iron/raw_iron_meander_horizontal-horizontal_right",
+    "particle": "chisel:block/raw_iron/raw_iron_meander_horizontal",
+    "side": "chisel:block/raw_iron/raw_iron_meander_horizontal",
+    "top": "chisel:block/raw_iron/raw_iron_meander_horizontal-top"
+  }
+}

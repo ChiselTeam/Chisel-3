@@ -5,6 +5,553 @@
     {
       "block": "minecraft:raw_iron_block",
       "name": "block.minecraft.raw_iron_block"
+    },
+    {
+      "block": "chisel:raw_iron_array",
+      "model_type": "multiblock_2x2",
+      "name": "raw_iron_array"
+    },
+    {
+      "block": "chisel:raw_iron_border_square",
+      "model_type": "connected",
+      "name": "raw_iron_border_square"
+    },
+    {
+      "block": "chisel:raw_iron_braid",
+      "name": "raw_iron_braid"
+    },
+    {
+      "block": "chisel:raw_iron_braid_encased",
+      "model_type": "connected",
+      "name": "raw_iron_braid_encased"
+    },
+    {
+      "block": "chisel:raw_iron_bricks_cracked",
+      "name": "raw_iron_bricks_cracked"
+    },
+    {
+      "block": "chisel:raw_iron_bricks_encased",
+      "model_type": "connected",
+      "name": "raw_iron_bricks_encased"
+    },
+    {
+      "block": "chisel:raw_iron_bricks_indent",
+      "name": "raw_iron_bricks_indent"
+    },
+    {
+      "block": "chisel:raw_iron_bricks_inlayed",
+      "name": "raw_iron_bricks_inlayed"
+    },
+    {
+      "block": "chisel:raw_iron_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "raw_iron_bricks_large"
+    },
+    {
+      "block": "chisel:raw_iron_bricks_small",
+      "name": "raw_iron_bricks_small"
+    },
+    {
+      "block": "chisel:raw_iron_bricks_soft",
+      "name": "raw_iron_bricks_soft"
+    },
+    {
+      "block": "chisel:raw_iron_bricks_solid",
+      "name": "raw_iron_bricks_solid"
+    },
+    {
+      "block": "chisel:raw_iron_bricks_triple",
+      "name": "raw_iron_bricks_triple"
+    },
+    {
+      "block": "chisel:raw_iron_bricks_vertical",
+      "name": "raw_iron_bricks_vertical"
+    },
+    {
+      "block": "chisel:raw_iron_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "raw_iron_chaotic"
+    },
+    {
+      "block": "chisel:raw_iron_chaotic_medium",
+      "name": "raw_iron_chaotic_medium"
+    },
+    {
+      "block": "chisel:raw_iron_chaotic_small",
+      "name": "raw_iron_chaotic_small"
+    },
+    {
+      "block": "chisel:raw_iron_checker",
+      "name": "raw_iron_checker"
+    },
+    {
+      "block": "chisel:raw_iron_checker_small",
+      "name": "raw_iron_checker_small"
+    },
+    {
+      "block": "chisel:raw_iron_circular",
+      "model_type": "connected",
+      "name": "raw_iron_circular"
+    },
+    {
+      "block": "chisel:raw_iron_cracked",
+      "name": "raw_iron_cracked"
+    },
+    {
+      "block": "chisel:raw_iron_cobble",
+      "name": "raw_iron_cobble"
+    },
+    {
+      "block": "chisel:raw_iron_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "raw_iron_cuts"
+    },
+    {
+      "block": "chisel:raw_iron_dent",
+      "model_type": "connected",
+      "name": "raw_iron_dent"
+    },
+    {
+      "block": "chisel:raw_iron_french_1",
+      "name": "raw_iron_french_1"
+    },
+    {
+      "block": "chisel:raw_iron_french_2",
+      "name": "raw_iron_french_2"
+    },
+    {
+      "block": "chisel:raw_iron_indent",
+      "model_type": "connected",
+      "name": "raw_iron_indent"
+    },
+    {
+      "block": "chisel:raw_iron_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "raw_iron_jellybean"
+    },
+    {
+      "block": "chisel:raw_iron_layers",
+      "name": "raw_iron_layers"
+    },
+    {
+      "block": "chisel:raw_iron_layers_connected",
+      "model_type": "connected",
+      "name": "raw_iron_layers_connected"
+    },
+    {
+      "block": "chisel:raw_iron_line_horizontal",
+      "name": "raw_iron_line_horizontal"
+    },
+    {
+      "block": "chisel:raw_iron_line_vertical",
+      "name": "raw_iron_line_vertical"
+    },
+    {
+      "block": "chisel:raw_iron_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "raw_iron_meander_horizontal"
+    },
+    {
+      "block": "chisel:raw_iron_meander_vertical",
+      "model_type": "ctmv",
+      "name": "raw_iron_meander_vertical"
+    },
+    {
+      "block": "chisel:raw_iron_mosaic",
+      "model_type": "connected",
+      "name": "raw_iron_mosaic"
+    },
+    {
+      "block": "chisel:raw_iron_ornate_small",
+      "name": "raw_iron_ornate_small"
+    },
+    {
+      "block": "chisel:raw_iron_panel",
+      "name": "raw_iron_panel"
+    },
+    {
+      "block": "chisel:raw_iron_pillar",
+      "model_type": "top_bottom_side",
+      "name": "raw_iron_pillar"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_basic",
+      "model_type": "ctmv",
+      "name": "raw_iron_pillar_basic"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "raw_iron_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "raw_iron_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "raw_iron_pillar_basic_round"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "raw_iron_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "raw_iron_pillar_classic"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "raw_iron_pillar_classic_large"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "raw_iron_pillar_ionic"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "raw_iron_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "raw_iron_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "raw_iron_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "raw_iron_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "raw_iron_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "raw_iron_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_meander",
+      "model_type": "ctmv",
+      "name": "raw_iron_pillar_meander"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "raw_iron_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "raw_iron_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "raw_iron_pillar_meander_round"
+    },
+    {
+      "block": "chisel:raw_iron_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "raw_iron_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:raw_iron_plate",
+      "name": "raw_iron_plate"
+    },
+    {
+      "block": "chisel:raw_iron_plate_connected",
+      "model_type": "connected",
+      "name": "raw_iron_plate_connected"
+    },
+    {
+      "block": "chisel:raw_iron_polished",
+      "name": "raw_iron_polished"
+    },
+    {
+      "block": "chisel:raw_iron_polished_encased",
+      "model_type": "connected",
+      "name": "raw_iron_polished_encased"
+    },
+    {
+      "block": "chisel:raw_iron_prism",
+      "name": "raw_iron_prism"
+    },
+    {
+      "block": "chisel:raw_iron_raw",
+      "name": "raw_iron_raw"
+    },
+    {
+      "block": "chisel:raw_iron_road",
+      "name": "raw_iron_road"
+    },
+    {
+      "block": "chisel:raw_iron_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "raw_iron_slanted"
+    },
+    {
+      "block": "chisel:raw_iron_tiles",
+      "name": "raw_iron_tiles"
+    },
+    {
+      "block": "chisel:raw_iron_tiles_large",
+      "model_type": "connected",
+      "name": "raw_iron_tiles_large"
+    },
+    {
+      "block": "chisel:raw_iron_tiles_small",
+      "name": "raw_iron_tiles_small"
+    },
+    {
+      "block": "chisel:raw_iron_twisted",
+      "model_type": "top_bottom_side",
+      "name": "raw_iron_twisted"
+    },
+    {
+      "block": "chisel:raw_iron_weaver",
+      "model_type": "connected",
+      "name": "raw_iron_weaver"
+    },
+    {
+      "block": "chisel:raw_iron_zag",
+      "model_type": "v4",
+      "name": "raw_iron_zag"
+    },
+    {
+      "block": "chisel:raw_iron_crate",
+      "model_type": "connected",
+      "name": "raw_iron_crate"
+    },
+    {
+      "block": "chisel:raw_iron_herringbone",
+      "name": "raw_iron_herringbone"
+    },
+    {
+      "block": "chisel:raw_iron_herringbone_encased",
+      "model_type": "connected",
+      "name": "raw_iron_herringbone_encased"
+    },
+    {
+      "block": "chisel:raw_iron_medallion",
+      "name": "raw_iron_medallion"
+    },
+    {
+      "block": "chisel:raw_iron_medallion_encased",
+      "model_type": "connected",
+      "name": "raw_iron_medallion_encased"
+    },
+    {
+      "block": "chisel:raw_iron_dots",
+      "name": "raw_iron_dots"
+    },
+    {
+      "block": "chisel:raw_iron_dots_encased",
+      "model_type": "connected",
+      "name": "raw_iron_dots_encased"
+    },
+    {
+      "block": "chisel:raw_iron_heart",
+      "name": "raw_iron_heart"
+    },
+    {
+      "block": "chisel:raw_iron_star",
+      "name": "raw_iron_star"
+    },
+    {
+      "block": "chisel:raw_iron_plating",
+      "name": "raw_iron_plating"
+    },
+    {
+      "block": "chisel:raw_iron_lodestone",
+      "name": "raw_iron_lodestone"
+    },
+    {
+      "block": "chisel:raw_iron_lodestone_connected",
+      "model_type": "connected",
+      "name": "raw_iron_lodestone_connected"
+    },
+    {
+      "block": "chisel:raw_iron_plank",
+      "name": "raw_iron_plank"
+    },
+    {
+      "block": "chisel:raw_iron_plank_connected",
+      "model_type": "connected",
+      "name": "raw_iron_plank_connected"
+    },
+    {
+      "block": "chisel:raw_iron_frame",
+      "name": "raw_iron_frame"
+    },
+    {
+      "block": "chisel:raw_iron_panel_1",
+      "name": "raw_iron_panel_1"
+    },
+    {
+      "block": "chisel:raw_iron_panel_2",
+      "name": "raw_iron_panel_2"
+    },
+    {
+      "block": "chisel:raw_iron_panel_3",
+      "name": "raw_iron_panel_3"
+    },
+    {
+      "block": "chisel:raw_iron_skull_creeper",
+      "name": "raw_iron_skull_creeper"
+    },
+    {
+      "block": "chisel:raw_iron_skull_skeleton",
+      "name": "raw_iron_skull_skeleton"
+    },
+    {
+      "block": "chisel:raw_iron_stripes",
+      "name": "raw_iron_stripes"
+    },
+    {
+      "block": "chisel:raw_iron_stripes_encased",
+      "model_type": "connected",
+      "name": "raw_iron_stripes_encased"
+    },
+    {
+      "block": "chisel:raw_iron_chisel_1",
+      "name": "raw_iron_chisel_1"
+    },
+    {
+      "block": "chisel:raw_iron_chisel_2",
+      "name": "raw_iron_chisel_2"
+    },
+    {
+      "block": "chisel:raw_iron_chisel_3",
+      "name": "raw_iron_chisel_3"
+    },
+    {
+      "block": "chisel:raw_iron_chisel_4",
+      "name": "raw_iron_chisel_4"
+    },
+    {
+      "block": "chisel:raw_iron_chisel_5",
+      "name": "raw_iron_chisel_5"
+    },
+    {
+      "block": "chisel:raw_iron_chisel_6",
+      "name": "raw_iron_chisel_6"
+    },
+    {
+      "block": "chisel:raw_iron_facet",
+      "name": "raw_iron_facet"
+    },
+    {
+      "block": "chisel:raw_iron_facet_small",
+      "name": "raw_iron_facet_small"
+    },
+    {
+      "block": "chisel:raw_iron_facet_small_encased",
+      "model_type": "connected",
+      "name": "raw_iron_facet_small_encased"
+    },
+    {
+      "block": "chisel:raw_iron_shiny",
+      "name": "raw_iron_shiny"
+    },
+    {
+      "block": "chisel:raw_iron_shiny_connected",
+      "model_type": "connected",
+      "name": "raw_iron_shiny_connected"
+    },
+    {
+      "block": "chisel:raw_iron_gem",
+      "name": "raw_iron_gem"
+    },
+    {
+      "block": "chisel:raw_iron_gem_1",
+      "name": "raw_iron_gem_1"
+    },
+    {
+      "block": "chisel:raw_iron_gem_1_connected",
+      "model_type": "connected",
+      "name": "raw_iron_gem_1_connected"
+    },
+    {
+      "block": "chisel:raw_iron_gem_2",
+      "name": "raw_iron_gem_2"
+    },
+    {
+      "block": "chisel:raw_iron_gem_2_connected",
+      "model_type": "connected",
+      "name": "raw_iron_gem_2_connected"
+    },
+    {
+      "block": "chisel:raw_iron_gem_3",
+      "name": "raw_iron_gem_3"
+    },
+    {
+      "block": "chisel:raw_iron_gem_3_connected",
+      "model_type": "connected",
+      "name": "raw_iron_gem_3_connected"
+    },
+    {
+      "block": "chisel:raw_iron_bricks_square",
+      "name": "raw_iron_bricks_square"
+    },
+    {
+      "block": "chisel:raw_iron_slab",
+      "name": "raw_iron_slab"
+    },
+    {
+      "block": "chisel:raw_iron_scaffold",
+      "name": "raw_iron_scaffold"
+    },
+    {
+      "block": "chisel:raw_iron_scaffold_encased",
+      "model_type": "connected",
+      "name": "raw_iron_scaffold_encased"
+    },
+    {
+      "block": "chisel:raw_iron_tiles_inlayed",
+      "name": "raw_iron_tiles_inlayed"
+    },
+    {
+      "block": "chisel:raw_iron_waves",
+      "model_type": "multiblock_2x2",
+      "name": "raw_iron_waves"
+    },
+    {
+      "block": "chisel:raw_iron_parquet",
+      "name": "raw_iron_parquet"
+    },
+    {
+      "block": "chisel:raw_iron_parquet_encased",
+      "model_type": "connected",
+      "name": "raw_iron_parquet_encased"
+    },
+    {
+      "block": "chisel:raw_iron_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "raw_iron_bricks_large_rough"
+    },
+    {
+      "block": "chisel:raw_iron_tiles_small_encased",
+      "model_type": "connected",
+      "name": "raw_iron_tiles_small_encased"
+    },
+    {
+      "block": "chisel:raw_iron_bricks_round",
+      "name": "raw_iron_bricks_round"
     }
   ]
 }
