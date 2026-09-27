@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/prismarine/prismarine_indent",
+    "particle": "chisel:block/prismarine/prismarine_indent",
+    "standard_corner": "chisel:block/prismarine/prismarine_indent-ctm_corner",
+    "standard_cornerless": "chisel:block/prismarine/prismarine_indent-ctm_cornerless",
+    "standard_horizontal": "chisel:block/prismarine/prismarine_indent-ctm_horizontal",
+    "standard_none": "chisel:block/prismarine/prismarine_indent",
+    "standard_vertical": "chisel:block/prismarine/prismarine_indent-ctm_vertical"
+  }
+}
