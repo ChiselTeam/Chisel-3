@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_ionic_spiral-side",
+    "bottom": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_ionic_spiral-bottom",
+    "particle": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_ionic_spiral-side",
+    "side": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_ionic_spiral-side",
+    "top": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_ionic_spiral-top",
+    "vertical_both": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_ionic_spiral-vertical_both",
+    "vertical_bottom": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_ionic_spiral-vertical_bottom",
+    "vertical_none": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_ionic_spiral-vertical_none",
+    "vertical_top": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_ionic_spiral-vertical_top"
+  }
+}

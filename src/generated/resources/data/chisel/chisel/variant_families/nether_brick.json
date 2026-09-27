@@ -15,10 +15,6 @@
       "name": "block.minecraft.chiseled_nether_bricks"
     },
     {
-      "block": "minecraft:red_nether_bricks",
-      "name": "block.minecraft.red_nether_bricks"
-    },
-    {
       "block": "chisel:nether_brick_blue",
       "name": "nether_brick_blue"
     },

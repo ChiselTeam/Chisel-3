@@ -81,6 +81,7 @@ public class ChiselFamilies {
     public static final ChiselFamily MOSSY_TEMPLE = DecorativeFamilies.MOSSY_TEMPLE;
     public static final ChiselFamily NV_RUNE = NeoVitaeFamilies.NV_RUNE;
     public static final ChiselFamily NETHERBRICK = StoneFamilies.NETHERBRICK;
+    public static final ChiselFamily RED_NETHER_BRICKS = StoneFamilies.RED_NETHER_BRICKS;
     public static final ChiselFamily NETHERRACK = StoneFamilies.NETHERRACK;
     public static final ChiselFamily NICKEL = MetalFamilies.NICKEL;
     public static final ChiselFamily OAK = WoodFamilies.OAK;

@@ -44,6 +44,7 @@ public class ChiselTabs {
                         ChiselFamilies.MOSSY_COBBLESTONE.getFamily(),
                         ChiselFamilies.MOSSY_BLACKSTONE.getFamily(),
                         ChiselFamilies.MOSSY_TEMPLE.getFamily(),
+                        ChiselFamilies.RED_NETHER_BRICKS.getFamily(),
                         ChiselFamilies.NETHERBRICK.getFamily(),
                         ChiselFamilies.NETHERRACK.getFamily(),
                         ChiselFamilies.OBSIDIAN.getFamily(),
