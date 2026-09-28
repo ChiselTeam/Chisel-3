@@ -148,6 +148,7 @@ public class ChiselTabs {
                         ChiselFamilies.ICE.getFamily(),
                         ChiselFamilies.PACKED_ICE.getFamily(),
                         ChiselFamilies.BLUE_ICE.getFamily(),
+                        ChiselFamilies.SNOW.getFamily(),
                         ChiselFamilies.JACK_O_LANTERN.getFamily(),
                         ChiselFamilies.IRON_BARS.getFamily(),
                         ChiselFamilies.LAPIS.getFamily(),

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/snow/snow_circular",
+    "particle": "chisel:block/snow/snow_circular",
+    "standard_corner": "chisel:block/snow/snow_circular-ctm_corner",
+    "standard_cornerless": "chisel:block/snow/snow_circular-ctm_cornerless",
+    "standard_horizontal": "chisel:block/snow/snow_circular-ctm_horizontal",
+    "standard_none": "chisel:block/snow/snow_circular",
+    "standard_vertical": "chisel:block/snow/snow_circular-ctm_vertical"
+  }
+}

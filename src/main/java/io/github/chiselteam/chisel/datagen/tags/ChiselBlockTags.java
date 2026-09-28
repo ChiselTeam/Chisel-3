@@ -71,6 +71,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_SHOVEL, ChiselFamilies.DIRT.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_SHOVEL, ChiselFamilies.WOOLEN_CLAY.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_SHOVEL, ChiselFamilies.MUD.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_SHOVEL, ChiselFamilies.SNOW.getFamily());
 
         // MARK: HOE MINEABLE
         addToTag(BlockTags.MINEABLE_WITH_HOE, ChiselFamilies.LEAF.getFamily());
