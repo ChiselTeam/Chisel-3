@@ -210,6 +210,11 @@
     {
       "block": "chisel:technical_wires",
       "name": "technical_wires"
+    },
+    {
+      "block": "chisel:technical_fan_reverse_fast",
+      "model_type": "top_bottom_side",
+      "name": "technical_fan_reverse_fast"
     }
   ]
 }

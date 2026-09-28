@@ -16181,6 +16181,8 @@
   "block.chisel.technical_fan_malfunction_slow.desc": "Slow Malfunctioning Fan",
   "block.chisel.technical_fan_massive": "Technical Block",
   "block.chisel.technical_fan_massive.desc": "Massive Fan",
+  "block.chisel.technical_fan_reverse_fast": "Technical Block",
+  "block.chisel.technical_fan_reverse_fast.desc": "Fan Reversed (Fast)",
   "block.chisel.technical_fan_still": "Technical Block",
   "block.chisel.technical_fan_still.desc": "Fan (Off)",
   "block.chisel.technical_fan_still_transparent": "Technical Block",
