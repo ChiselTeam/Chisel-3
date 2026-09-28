@@ -87,6 +87,7 @@ public class ChiselFamilies {
     public static final ChiselFamily OAK = WoodFamilies.OAK;
     public static final ChiselFamily PALE_OAK = WoodFamilies.PALE_OAK;
     public static final ChiselFamily OBSIDIAN = StoneFamilies.OBSIDIAN;
+    public static final ChiselFamily CRYING_OBSIDIAN = StoneFamilies.CRYING_OBSIDIAN;
     public static final ChiselFamily PAPERWALL = DecorativeFamilies.PAPERWALL;
     public static final ChiselFamily PLATINUM = MetalFamilies.PLATINUM;
     public static final ChiselFamily QUARTZ = StoneFamilies.QUARTZ;
