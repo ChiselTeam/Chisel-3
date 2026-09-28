@@ -74,6 +74,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
 
         // MARK: HOE MINEABLE
         addToTag(BlockTags.MINEABLE_WITH_HOE, ChiselFamilies.LEAF.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_HOE, ChiselFamilies.SCULK.getFamily());
 
         // MARK: PICKAXE
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.ALUMINUM.getFamily());

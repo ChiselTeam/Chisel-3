@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/sculk_checker_small"
+    }
+  }
+}
