@@ -138,6 +138,7 @@ public class ChiselFamilies {
     public static final ChiselFamily ANCIENT_DEBRIS = MetalFamilies.ANCIENT_DEBRIS;
     public static final ChiselFamily SCULK = DecorativeFamilies.SCULK;
     public static final ChiselFamily PACKED_ICE = DecorativeFamilies.PACKED_ICE;
+    public static final ChiselFamily BLUE_ICE = DecorativeFamilies.BLUE_ICE;
     // public static final ChiselFamily MA_SOULSTONE = MysticalAgricultureFamilies.MA_SOULSTONE;
 
     public static final List<ChiselFamily> WOOLS = ColorCollectionFamilies.WOOLS;

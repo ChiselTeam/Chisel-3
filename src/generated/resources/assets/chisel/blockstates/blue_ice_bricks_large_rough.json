@@ -1,0 +1,12 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/blue_ice_bricks_large_rough",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:blue_ice_bricks_large_rough",
+    "kind": "multiblock_2x2"
+  }
+}

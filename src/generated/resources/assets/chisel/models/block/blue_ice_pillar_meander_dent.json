@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/blue_ice/blue_ice_pillar_meander_dent-side",
+    "bottom": "chisel:block/blue_ice/blue_ice_pillar_meander_dent-bottom",
+    "particle": "chisel:block/blue_ice/blue_ice_pillar_meander_dent-side",
+    "side": "chisel:block/blue_ice/blue_ice_pillar_meander_dent-side",
+    "top": "chisel:block/blue_ice/blue_ice_pillar_meander_dent-top",
+    "vertical_both": "chisel:block/blue_ice/blue_ice_pillar_meander_dent-vertical_both",
+    "vertical_bottom": "chisel:block/blue_ice/blue_ice_pillar_meander_dent-vertical_bottom",
+    "vertical_none": "chisel:block/blue_ice/blue_ice_pillar_meander_dent-vertical_none",
+    "vertical_top": "chisel:block/blue_ice/blue_ice_pillar_meander_dent-vertical_top"
+  }
+}
