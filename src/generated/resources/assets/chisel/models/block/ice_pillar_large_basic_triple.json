@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/ice/ice_pillar_large_basic_triple-side",
+    "bottom": "chisel:block/ice/ice_pillar_large_basic_triple-bottom",
+    "particle": "chisel:block/ice/ice_pillar_large_basic_triple-side",
+    "side": "chisel:block/ice/ice_pillar_large_basic_triple-side",
+    "top": "chisel:block/ice/ice_pillar_large_basic_triple-top",
+    "vertical_both": "chisel:block/ice/ice_pillar_large_basic_triple-vertical_both",
+    "vertical_bottom": "chisel:block/ice/ice_pillar_large_basic_triple-vertical_bottom",
+    "vertical_none": "chisel:block/ice/ice_pillar_large_basic_triple-vertical_none",
+    "vertical_top": "chisel:block/ice/ice_pillar_large_basic_triple-vertical_top"
+  }
+}

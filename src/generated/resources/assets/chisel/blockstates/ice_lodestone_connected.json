@@ -1,0 +1,11 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/ice_lodestone_connected",
+  "variant": {
+    "block": "chisel:ice_lodestone_connected",
+    "kind": "standard"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/ice/ice_plank_connected",
+    "standard_corner": "chisel:block/ice/ice_plank_connected-ctm_corner",
+    "standard_cornerless": "chisel:block/ice/ice_plank_connected-ctm_cornerless",
+    "standard_horizontal": "chisel:block/ice/ice_plank_connected-ctm_horizontal",
+    "standard_none": "chisel:block/ice/ice_plank_connected",
+    "standard_vertical": "chisel:block/ice/ice_plank_connected-ctm_vertical"
+  }
+}
