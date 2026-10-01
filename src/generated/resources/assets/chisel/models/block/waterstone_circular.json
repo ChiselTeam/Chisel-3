@@ -2,8 +2,8 @@
   "parent": "chisel:block/cube_multi_pass_tinted",
   "textures": {
     "all": "chisel:block/lavastone/lavastone_circular",
-    "base_texture": "chisel:block/waterstone/water_still",
-    "layer0": "chisel:block/waterstone/water_still",
+    "base_texture": "minecraft:block/water_still",
+    "layer0": "minecraft:block/water_still",
     "layer1": "chisel:block/lavastone/lavastone_circular",
     "particle": "chisel:block/lavastone/lavastone_circular",
     "standard_corner": "chisel:block/lavastone/lavastone_circular-ctm_corner",

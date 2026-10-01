@@ -2,6 +2,7 @@
   "parent": "chisel:block/cube_multi_pass",
   "textures": {
     "all": "chisel:block/lavastone/lavastone_cuts",
+    "base_texture": "minecraft:block/lava_still",
     "layer0": "minecraft:block/lava_still",
     "layer1": "chisel:block/lavastone/lavastone_cuts",
     "multiblock_4x4_row_0_column_0": "chisel:block/lavastone/lavastone_cuts",

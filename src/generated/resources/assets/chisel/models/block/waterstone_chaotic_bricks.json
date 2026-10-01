@@ -2,7 +2,8 @@
   "parent": "chisel:block/cube_multi_pass_tinted",
   "textures": {
     "all": "chisel:block/lavastone/lavastone_chaotic_bricks",
-    "layer0": "chisel:block/waterstone/water_still",
+    "base_texture": "minecraft:block/water_still",
+    "layer0": "minecraft:block/water_still",
     "layer1": "chisel:block/lavastone/lavastone_chaotic_bricks",
     "multiblock_3x3_bottom_center": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_bottom_center",
     "multiblock_3x3_bottom_left": "chisel:block/lavastone/lavastone_chaotic_bricks-3x3_bottom_left",
