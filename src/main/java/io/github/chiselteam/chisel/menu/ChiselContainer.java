@@ -19,7 +19,7 @@ public class ChiselContainer extends SimpleContainer {
     private ItemStack committedStack = ItemStack.EMPTY;
 
     public ChiselContainer(Inventory inventory, ChiselSelectionInventory selectionInventory, InteractionHand hand, int chiselSlot, ItemStack chisel) {
-        super(46);
+        super(58);
         this.inventory = inventory;
         this.selectionInventory = selectionInventory;
         this.hand = hand;

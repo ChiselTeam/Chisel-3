@@ -45,15 +45,15 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
     private boolean isScrolling;
     private float previewRotX = 0.0F;
     private float previewRotY = 0.0F;
-    private static final float IDLE_ANGULAR_VELOCITY = 0.03F;
+    private static final float IDLE_ANGULAR_VELOCITY = 0.01F;
     private static final float INERTIA_DAMPING_PER_SECOND = 0.05F;
     private float previewZoom = 1.0F;
     private boolean isDraggingPreview;
     private static final float INERTIA_STOP_SPEED = 0.02F;
     private static final float PREVIEW_DRAG_SENSITIVITY = 0.15F;
-    private static final int VARIANT_COLUMNS = 7;
+    private static final int VARIANT_COLUMNS = 9;
     private static final int VISIBLE_VARIANT_ROWS = 6;
-    private static final int SCROLLER_X = 222;
+    private static final int SCROLLER_X = 258;
     private static final int SCROLLER_Y = 10;
     private static final int SCROLLER_WIDTH = 12;
     private static final int SCROLLER_TRACK_HEIGHT = 122;
@@ -65,7 +65,7 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
     private static final int BULK_HIGHLIGHT_COLOR = 0x80FF842B;
 
     public ChiselScreen(ChiselMenu menu, Inventory inventory, Component title) {
-        super(menu, inventory, title, 256, 256);
+        super(menu, inventory, title, 278, 233);
         this.inventory = inventory;
     }
 
@@ -75,7 +75,7 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
         topPos += 10;
         lastPreviewFrameNanos = System.nanoTime();
 
-        searchBox = new EditBox(font, leftPos + 92, topPos + 10, 88, 10, Component.translatable("chisel.gui.search"));
+        searchBox = new EditBox(font, leftPos + 92, topPos + 10, 160, 10, Component.translatable("chisel.gui.search"));
         searchBox.setMaxLength(50);
         searchBox.setResponder(this::onSearchTextChange);
         searchBox.setBordered(false);
@@ -272,7 +272,7 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
         super.extractBackground(graphics, mouseX, mouseY, a);
         updatePreviewRotation();
 
-        graphics.blit(RenderPipelines.GUI_TEXTURED, TEXTURE, leftPos, topPos, 0, 0, 242, 233, 256, 256);
+        graphics.blit(RenderPipelines.GUI_TEXTURED, TEXTURE, leftPos, topPos, 0, 0, 278, 233, 278, 233);
         extractBulkHighlights(graphics);
 
         Slot main = getMenu().inputSlot;
