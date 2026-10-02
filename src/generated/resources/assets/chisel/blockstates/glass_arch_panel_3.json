@@ -1,0 +1,11 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/glass_arch_panel_3",
+  "variant": {
+    "block": "chisel:glass_arch_panel_3",
+    "kind": "standard"
+  }
+}

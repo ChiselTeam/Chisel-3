@@ -1,0 +1,11 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/stained_glass_magenta_arch_panel_1",
+  "variant": {
+    "block": "chisel:stained_glass_magenta_arch_panel_1",
+    "kind": "standard"
+  }
+}

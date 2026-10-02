@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/stained_glass_orange/stained_glass_orange_frame_thick",
+    "standard_corner": "chisel:block/stained_glass_orange/stained_glass_orange_frame_thick-ctm_corner",
+    "standard_cornerless": "chisel:block/stained_glass_orange/stained_glass_orange_frame_thick-ctm_cornerless",
+    "standard_horizontal": "chisel:block/stained_glass_orange/stained_glass_orange_frame_thick-ctm_horizontal",
+    "standard_none": "chisel:block/stained_glass_orange/stained_glass_orange_frame_thick",
+    "standard_vertical": "chisel:block/stained_glass_orange/stained_glass_orange_frame_thick-ctm_vertical"
+  }
+}

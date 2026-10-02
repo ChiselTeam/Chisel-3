@@ -4,6 +4,7 @@ import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
 import io.github.chiselteam.chisel.block.ChiselStainedGlassPaneBlock;
 import io.github.chiselteam.chisel.content.ChiselFamily;
+import io.github.chiselteam.chisel.block.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.DyeColor;
@@ -31,7 +32,7 @@ public class ColorCollectionFamilies {
             var woolName = "wool_%s".formatted(color.getName());
             var lightName = "light_%s".formatted(color.getName());
             var concreteName = "concrete_%s".formatted(color.getName());
-            var baseName = "%s Concrete".formatted(legacyColorName);
+            var baseName = "%s Concrete".formatted(colorName);
 
             WOOLS.add(add(ChiselFamily.build(woolName, builder -> builder
                     .properties(BlockBehaviour.Properties.ofFullCopy(getVanillaWool(color)))
@@ -294,10 +295,33 @@ public class ColorCollectionFamilies {
             STAINED_GLASS.add(add(ChiselFamily.build("stained_glass_%s".formatted(color.getName()), builder -> builder
                     .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS))
                     .addVariant(getVanillaStainedGlass(color))
-                    .addVariant("stained_glass_%s_borderless".formatted(color.getName())).translation("stained_glass_%s_borderless".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Borderless Glass".formatted(colorName))
-                    .addVariant("stained_glass_%s_bubble".formatted(color.getName())).translation("stained_glass_%s_bubble".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Bubble Glass".formatted(colorName))
-                    .addVariant("stained_glass_%s_panel".formatted(color.getName())).translation("stained_glass_%s_panel".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Glass Panel".formatted(colorName))
-                    .addVariant("stained_glass_%s_panel_fancy".formatted(color.getName())).translation("stained_glass_%s_panel_fancy".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Fancy Glass Panel".formatted(colorName))
+                    .addVariant("stained_glass_%s_borderless".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("stained_glass_%s_borderless".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Borderless Glass".formatted(colorName))
+                    .addVariant("stained_glass_%s_bubble".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_bubble".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Bubble Glass".formatted(colorName))
+                    .addVariant("stained_glass_%s_panel".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_panel".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Glass Panel".formatted(colorName))
+                    .addVariant("stained_glass_%s_panel_fancy".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_panel_fancy".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Fancy Glass Panel".formatted(colorName))
+                    .addVariant("stained_glass_%s_frame_thick".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_frame_thick".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Thick Frame".formatted(colorName))
+                    .addVariant("stained_glass_%s_frame_thick_panel".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_frame_thick_panel".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Thick Frame Panel".formatted(colorName))
+                    .addVariant("stained_glass_%s_tile".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("stained_glass_%s_tile".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Tile".formatted(colorName))
+                    .addVariant("stained_glass_%s_brick".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_brick".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Brick".formatted(colorName))
+                    .addVariant("stained_glass_%s_line_vertical".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("stained_glass_%s_line_vertical".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Vertical Line".formatted(colorName))
+                    .addVariant("stained_glass_%s_line_vertical_panel".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_line_vertical_panel".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Vertical Line Panel".formatted(colorName))
+                    .addVariant("stained_glass_%s_line_horizontal".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("stained_glass_%s_line_horizontal".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Horizontal Line".formatted(colorName))
+                    .addVariant("stained_glass_%s_line_horizontal_panel".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_line_horizontal_panel".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Horizontal Line Panel".formatted(colorName))
+                    .addVariant("stained_glass_%s_arch_panel".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_arch_panel".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Arch Panel".formatted(colorName))
+                    .addVariant("stained_glass_%s_arch_panel_1".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_arch_panel_1".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Arch Panel 1".formatted(colorName))
+                    .addVariant("stained_glass_%s_arch_panel_2".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_arch_panel_2".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Arch Panel 2".formatted(colorName))
+                    .addVariant("stained_glass_%s_arch_panel_3".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_arch_panel_3".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Arch Panel 3".formatted(colorName))
+                    .addVariant("stained_glass_%s_scaffold".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_scaffold".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Scaffold".formatted(colorName))
+                    .addVariant("stained_glass_%s_scaffold_left".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_scaffold_left".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Scaffold Left".formatted(colorName))
+                    .addVariant("stained_glass_%s_scaffold_right".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_scaffold_right".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Scaffold Right".formatted(colorName))
+                    .addVariant("stained_glass_%s_basketweave".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("stained_glass_%s_basketweave".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Basketweave".formatted(colorName))
+                    .addVariant("stained_glass_%s_mosaic_1".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_mosaic_1".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Mosaic 1".formatted(colorName))
+                    .addVariant("stained_glass_%s_mosaic_2".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_mosaic_2".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Mosaic 2".formatted(colorName))
+                    .addVariant("stained_glass_%s_round".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_round".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Round".formatted(colorName))
+                    .addVariant("stained_glass_%s_circle".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_circle".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Circle".formatted(colorName))
+                    .addVariant("stained_glass_%s_rings".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_rings".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Rings".formatted(colorName))
+                    .addVariant("stained_glass_%s_diamond".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_diamond".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Diamond".formatted(colorName))
+                    .addVariant("stained_glass_%s_frame_1".formatted(color.getName()), ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("stained_glass_%s_frame_1".formatted(color.getName()), "%s Stained Glass".formatted(colorName), "%s Frame 1".formatted(colorName))
             )));
             STAINED_GLASS_PANE.add(add(ChiselFamily.build("stained_glass_pane_%s".formatted(color), builder -> builder
                     .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS_PANE))

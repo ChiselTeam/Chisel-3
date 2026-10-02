@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/stained_glass_orange/stained_glass_orange_brick",
+    "standard_corner": "chisel:block/stained_glass_orange/stained_glass_orange_brick-ctm_corner",
+    "standard_cornerless": "chisel:block/stained_glass_orange/stained_glass_orange_brick-ctm_cornerless",
+    "standard_horizontal": "chisel:block/stained_glass_orange/stained_glass_orange_brick-ctm_horizontal",
+    "standard_none": "chisel:block/stained_glass_orange/stained_glass_orange_brick",
+    "standard_vertical": "chisel:block/stained_glass_orange/stained_glass_orange_brick-ctm_vertical"
+  }
+}

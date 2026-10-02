@@ -12,15 +12,129 @@
     },
     {
       "block": "chisel:stained_glass_gray_bubble",
+      "model_type": "glass",
       "name": "stained_glass_gray_bubble"
     },
     {
       "block": "chisel:stained_glass_gray_panel",
+      "model_type": "glass",
       "name": "stained_glass_gray_panel"
     },
     {
       "block": "chisel:stained_glass_gray_panel_fancy",
+      "model_type": "glass",
       "name": "stained_glass_gray_panel_fancy"
+    },
+    {
+      "block": "chisel:stained_glass_gray_frame_thick",
+      "model_type": "glass",
+      "name": "stained_glass_gray_frame_thick"
+    },
+    {
+      "block": "chisel:stained_glass_gray_frame_thick_panel",
+      "model_type": "glass",
+      "name": "stained_glass_gray_frame_thick_panel"
+    },
+    {
+      "block": "chisel:stained_glass_gray_tile",
+      "name": "stained_glass_gray_tile"
+    },
+    {
+      "block": "chisel:stained_glass_gray_brick",
+      "model_type": "glass",
+      "name": "stained_glass_gray_brick"
+    },
+    {
+      "block": "chisel:stained_glass_gray_line_vertical",
+      "name": "stained_glass_gray_line_vertical"
+    },
+    {
+      "block": "chisel:stained_glass_gray_line_vertical_panel",
+      "model_type": "glass",
+      "name": "stained_glass_gray_line_vertical_panel"
+    },
+    {
+      "block": "chisel:stained_glass_gray_line_horizontal",
+      "name": "stained_glass_gray_line_horizontal"
+    },
+    {
+      "block": "chisel:stained_glass_gray_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "stained_glass_gray_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:stained_glass_gray_arch_panel",
+      "model_type": "glass",
+      "name": "stained_glass_gray_arch_panel"
+    },
+    {
+      "block": "chisel:stained_glass_gray_arch_panel_1",
+      "model_type": "glass",
+      "name": "stained_glass_gray_arch_panel_1"
+    },
+    {
+      "block": "chisel:stained_glass_gray_arch_panel_2",
+      "model_type": "glass",
+      "name": "stained_glass_gray_arch_panel_2"
+    },
+    {
+      "block": "chisel:stained_glass_gray_arch_panel_3",
+      "model_type": "glass",
+      "name": "stained_glass_gray_arch_panel_3"
+    },
+    {
+      "block": "chisel:stained_glass_gray_scaffold",
+      "model_type": "glass",
+      "name": "stained_glass_gray_scaffold"
+    },
+    {
+      "block": "chisel:stained_glass_gray_scaffold_left",
+      "model_type": "glass",
+      "name": "stained_glass_gray_scaffold_left"
+    },
+    {
+      "block": "chisel:stained_glass_gray_scaffold_right",
+      "model_type": "glass",
+      "name": "stained_glass_gray_scaffold_right"
+    },
+    {
+      "block": "chisel:stained_glass_gray_basketweave",
+      "name": "stained_glass_gray_basketweave"
+    },
+    {
+      "block": "chisel:stained_glass_gray_mosaic_1",
+      "model_type": "glass",
+      "name": "stained_glass_gray_mosaic_1"
+    },
+    {
+      "block": "chisel:stained_glass_gray_mosaic_2",
+      "model_type": "glass",
+      "name": "stained_glass_gray_mosaic_2"
+    },
+    {
+      "block": "chisel:stained_glass_gray_round",
+      "model_type": "glass",
+      "name": "stained_glass_gray_round"
+    },
+    {
+      "block": "chisel:stained_glass_gray_circle",
+      "model_type": "glass",
+      "name": "stained_glass_gray_circle"
+    },
+    {
+      "block": "chisel:stained_glass_gray_rings",
+      "model_type": "glass",
+      "name": "stained_glass_gray_rings"
+    },
+    {
+      "block": "chisel:stained_glass_gray_diamond",
+      "model_type": "glass",
+      "name": "stained_glass_gray_diamond"
+    },
+    {
+      "block": "chisel:stained_glass_gray_frame_1",
+      "model_type": "glass",
+      "name": "stained_glass_gray_frame_1"
     }
   ]
 }
