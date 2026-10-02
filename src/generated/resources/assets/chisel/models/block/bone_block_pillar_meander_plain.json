@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/bone_block/bone_block_pillar_meander_plain-side",
+    "bottom": "chisel:block/bone_block/bone_block_pillar_meander_plain-bottom",
+    "particle": "chisel:block/bone_block/bone_block_pillar_meander_plain-side",
+    "side": "chisel:block/bone_block/bone_block_pillar_meander_plain-side",
+    "top": "chisel:block/bone_block/bone_block_pillar_meander_plain-top",
+    "vertical_both": "chisel:block/bone_block/bone_block_pillar_meander_plain-vertical_both",
+    "vertical_bottom": "chisel:block/bone_block/bone_block_pillar_meander_plain-vertical_bottom",
+    "vertical_none": "chisel:block/bone_block/bone_block_pillar_meander_plain-vertical_none",
+    "vertical_top": "chisel:block/bone_block/bone_block_pillar_meander_plain-vertical_top"
+  }
+}

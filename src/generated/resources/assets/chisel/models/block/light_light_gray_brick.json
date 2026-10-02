@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/light_light_gray/light_light_gray_brick",
+    "particle": "chisel:block/light_light_gray/light_light_gray_brick",
+    "standard_corner": "chisel:block/light_light_gray/light_light_gray_brick-ctm_corner",
+    "standard_cornerless": "chisel:block/light_light_gray/light_light_gray_brick-ctm_cornerless",
+    "standard_horizontal": "chisel:block/light_light_gray/light_light_gray_brick-ctm_horizontal",
+    "standard_none": "chisel:block/light_light_gray/light_light_gray_brick",
+    "standard_vertical": "chisel:block/light_light_gray/light_light_gray_brick-ctm_vertical"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:sea_lantern",
+    "#c:dyes/light_gray"
+  ],
+  "result": {
+    "count": 8,
+    "id": "chisel:light_light_gray_regular"
+  }
+}

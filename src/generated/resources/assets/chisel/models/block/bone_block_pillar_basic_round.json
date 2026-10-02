@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/bone_block/bone_block_pillar_basic_round-side",
+    "bottom": "chisel:block/bone_block/bone_block_pillar_basic_round-bottom",
+    "particle": "chisel:block/bone_block/bone_block_pillar_basic_round-side",
+    "side": "chisel:block/bone_block/bone_block_pillar_basic_round-side",
+    "top": "chisel:block/bone_block/bone_block_pillar_basic_round-top",
+    "vertical_both": "chisel:block/bone_block/bone_block_pillar_basic_round-vertical_both",
+    "vertical_bottom": "chisel:block/bone_block/bone_block_pillar_basic_round-vertical_bottom",
+    "vertical_none": "chisel:block/bone_block/bone_block_pillar_basic_round-vertical_none",
+    "vertical_top": "chisel:block/bone_block/bone_block_pillar_basic_round-vertical_top"
+  }
+}

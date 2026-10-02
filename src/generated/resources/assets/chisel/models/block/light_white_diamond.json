@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/light_white/light_white_diamond",
+    "particle": "chisel:block/light_white/light_white_diamond",
+    "standard_corner": "chisel:block/light_white/light_white_diamond-ctm_corner",
+    "standard_cornerless": "chisel:block/light_white/light_white_diamond-ctm_cornerless",
+    "standard_horizontal": "chisel:block/light_white/light_white_diamond-ctm_horizontal",
+    "standard_none": "chisel:block/light_white/light_white_diamond",
+    "standard_vertical": "chisel:block/light_white/light_white_diamond-ctm_vertical"
+  }
+}

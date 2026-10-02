@@ -166,6 +166,7 @@ public class ChiselTabs {
                         ChiselFamilies.KITCHEN.getFamily(),
                         ChiselFamilies.AMETHYST.getFamily(),
                         ChiselFamilies.SCULK.getFamily(),
+                        ChiselFamilies.BONE_BLOCK.getFamily(),
                         ChiselFamilies.LIMINAL.getFamily()
                 
                 ).forEach(family -> family.getVariants().forEach(variant ->  {

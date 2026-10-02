@@ -3,6 +3,40 @@
   "tag": "c:chisel/light_green",
   "variants": [
     {
+      "block": "chisel:light_green_regular",
+      "model_type": "connected",
+      "name": "light_green_regular"
+    },
+    {
+      "block": "chisel:light_green_borderless",
+      "model_type": "connected",
+      "name": "light_green_borderless"
+    },
+    {
+      "block": "chisel:light_green_diamond",
+      "model_type": "connected",
+      "name": "light_green_diamond"
+    },
+    {
+      "block": "chisel:light_green_panel_fancy",
+      "model_type": "connected",
+      "name": "light_green_panel_fancy"
+    },
+    {
+      "block": "chisel:light_green_bubble",
+      "model_type": "connected",
+      "name": "light_green_bubble"
+    },
+    {
+      "block": "chisel:light_green_panel",
+      "name": "light_green_panel"
+    },
+    {
+      "block": "chisel:light_green_panel_connected",
+      "model_type": "connected",
+      "name": "light_green_panel_connected"
+    },
+    {
       "block": "chisel:light_green_framed",
       "name": "light_green_framed"
     },
@@ -13,6 +47,7 @@
     },
     {
       "block": "chisel:light_green_frame_1",
+      "model_type": "connected",
       "name": "light_green_frame_1"
     },
     {
@@ -20,13 +55,109 @@
       "name": "light_green_frame_2"
     },
     {
-      "block": "chisel:light_green_panel",
-      "name": "light_green_panel"
+      "block": "chisel:light_green_frame_3",
+      "name": "light_green_frame_3"
     },
     {
-      "block": "chisel:light_green_panel_connected",
+      "block": "chisel:light_green_circle",
       "model_type": "connected",
-      "name": "light_green_panel_connected"
+      "name": "light_green_circle"
+    },
+    {
+      "block": "chisel:light_green_round",
+      "model_type": "connected",
+      "name": "light_green_round"
+    },
+    {
+      "block": "chisel:light_green_mosaic_1",
+      "model_type": "connected",
+      "name": "light_green_mosaic_1"
+    },
+    {
+      "block": "chisel:light_green_mosaic_2",
+      "model_type": "connected",
+      "name": "light_green_mosaic_2"
+    },
+    {
+      "block": "chisel:light_green_rings",
+      "model_type": "connected",
+      "name": "light_green_rings"
+    },
+    {
+      "block": "chisel:light_green_basketweave",
+      "name": "light_green_basketweave"
+    },
+    {
+      "block": "chisel:light_green_scaffold",
+      "model_type": "connected",
+      "name": "light_green_scaffold"
+    },
+    {
+      "block": "chisel:light_green_scaffold_left",
+      "model_type": "connected",
+      "name": "light_green_scaffold_left"
+    },
+    {
+      "block": "chisel:light_green_scaffold_right",
+      "model_type": "connected",
+      "name": "light_green_scaffold_right"
+    },
+    {
+      "block": "chisel:light_green_arch_panel",
+      "model_type": "connected",
+      "name": "light_green_arch_panel"
+    },
+    {
+      "block": "chisel:light_green_arch_panel_1",
+      "model_type": "connected",
+      "name": "light_green_arch_panel_1"
+    },
+    {
+      "block": "chisel:light_green_arch_panel_2",
+      "model_type": "connected",
+      "name": "light_green_arch_panel_2"
+    },
+    {
+      "block": "chisel:light_green_arch_panel_3",
+      "model_type": "connected",
+      "name": "light_green_arch_panel_3"
+    },
+    {
+      "block": "chisel:light_green_frame_thick",
+      "model_type": "connected",
+      "name": "light_green_frame_thick"
+    },
+    {
+      "block": "chisel:light_green_frame_thick_panel",
+      "model_type": "connected",
+      "name": "light_green_frame_thick_panel"
+    },
+    {
+      "block": "chisel:light_green_tile",
+      "name": "light_green_tile"
+    },
+    {
+      "block": "chisel:light_green_brick",
+      "model_type": "connected",
+      "name": "light_green_brick"
+    },
+    {
+      "block": "chisel:light_green_line_vertical",
+      "name": "light_green_line_vertical"
+    },
+    {
+      "block": "chisel:light_green_line_horizontal",
+      "name": "light_green_line_horizontal"
+    },
+    {
+      "block": "chisel:light_green_line_vertical_panel",
+      "model_type": "connected",
+      "name": "light_green_line_vertical_panel"
+    },
+    {
+      "block": "chisel:light_green_line_horizontal_panel",
+      "model_type": "connected",
+      "name": "light_green_line_horizontal_panel"
     }
   ]
 }

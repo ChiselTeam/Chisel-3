@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/light_pink/light_pink_scaffold_right",
+    "particle": "chisel:block/light_pink/light_pink_scaffold_right",
+    "standard_corner": "chisel:block/light_pink/light_pink_scaffold_right-ctm_corner",
+    "standard_cornerless": "chisel:block/light_pink/light_pink_scaffold_right-ctm_cornerless",
+    "standard_horizontal": "chisel:block/light_pink/light_pink_scaffold_right-ctm_horizontal",
+    "standard_none": "chisel:block/light_pink/light_pink_scaffold_right",
+    "standard_vertical": "chisel:block/light_pink/light_pink_scaffold_right-ctm_vertical"
+  }
+}

@@ -40,20 +40,43 @@ public class ColorCollectionFamilies {
                     .addVariant("%s_legacy".formatted(woolName), ChiselModelHandlers.CONNECTED).translation("%s_legacy".formatted(woolName), "%s Wool".formatted(legacyColorName), "Legacy")
                     .addVariant("%s_llama".formatted(woolName), ChiselModelHandlers.CONNECTED).translation("%s_llama".formatted(woolName), "%s Wool".formatted(legacyColorName), "Llama")
             )));
-            LIGHT.add(add(ChiselFamily.build(lightName, builder -> {
-                builder
+            LIGHT.add(add(ChiselFamily.build(lightName, builder -> builder
                     .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.SEA_LANTERN))
-                    .addVariant("%s_framed".formatted(lightName)).translation("%s_framed".formatted(lightName), "%s Light".formatted(colorName), "Framed")
-                    .texture("%s_framed".formatted(lightName), Chisel.prefix("block/light_%s/light_%s_framed_connected".formatted(color.getName(), color.getName())))
-                    .addVariant("%s_framed_connected".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_framed_connected".formatted(lightName), "%s Light".formatted(colorName), "Framed Connected")
-                    .addVariant("%s_frame_1".formatted(lightName)).translation("%s_frame_1".formatted(lightName), "%s Light".formatted(colorName), "Frame 1")
-                    .addVariant("%s_frame_2".formatted(lightName)).translation("%s_frame_2".formatted(lightName), "%s Light".formatted(colorName), "Frame 2")
+                    .addVariant("%s_regular".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_regular".formatted(lightName), "%s Light".formatted(colorName), "Regular")
+                    .addVariant("%s_borderless".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_borderless".formatted(lightName), "%s Light".formatted(colorName), "Borderless")
+                    .addVariant("%s_diamond".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_diamond".formatted(lightName), "%s Light".formatted(colorName), "Diamond")
+                    .addVariant("%s_panel_fancy".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_panel_fancy".formatted(lightName), "%s Light".formatted(colorName), "Fancy Panel")
+                    .addVariant("%s_bubble".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_bubble".formatted(lightName), "%s Light".formatted(colorName), "Bubble")
                     .addVariant("%s_panel".formatted(lightName)).translation("%s_panel".formatted(lightName), "%s Light".formatted(colorName), "Panel")
-                    .addVariant("%s_panel_connected".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_panel_connected".formatted(lightName), "%s Light".formatted(colorName), "Panel Connected");
-                if (color == DyeColor.WHITE) {
-                    builder.texture("%s_framed_connected".formatted(lightName), "ctm_cornerless", Chisel.prefix("block/antiblock/antiblock_white"));
-                }
-            })));
+                    .addVariant("%s_panel_connected".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_panel_connected".formatted(lightName), "%s Light".formatted(colorName), "Panel Connected")
+                    .addVariant("%s_framed".formatted(lightName)).translation("%s_framed".formatted(lightName), "%s Light".formatted(colorName), "Framed")
+                    .addVariant("%s_framed_connected".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_framed_connected".formatted(lightName), "%s Light".formatted(colorName), "Framed Connected")
+                    .addVariant("%s_frame_1".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_frame_1".formatted(lightName), "%s Light".formatted(colorName), "Frame 1")
+                    .addVariant("%s_frame_2".formatted(lightName)).translation("%s_frame_2".formatted(lightName), "%s Light".formatted(colorName), "Frame 2")
+                    .addVariant("%s_frame_3".formatted(lightName)).translation("%s_frame_3".formatted(lightName), "%s Light".formatted(colorName), "Frame 3")
+                    .addVariant("%s_circle".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_circle".formatted(lightName), "%s Light".formatted(colorName), "Circle")
+                    .addVariant("%s_round".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_round".formatted(lightName), "%s Light".formatted(colorName), "Round")
+                    .addVariant("%s_mosaic_1".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_mosaic_1".formatted(lightName), "%s Light".formatted(colorName), "Mosaic 1")
+                    .addVariant("%s_mosaic_2".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_mosaic_2".formatted(lightName), "%s Light".formatted(colorName), "Mosaic 2")
+                    .addVariant("%s_rings".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_rings".formatted(lightName), "%s Light".formatted(colorName), "Rings")
+                    .addVariant("%s_basketweave".formatted(lightName)).translation("%s_basketweave".formatted(lightName), "%s Light".formatted(colorName), "Basketweave")
+                    .addVariant("%s_scaffold".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_scaffold".formatted(lightName), "%s Light".formatted(colorName), "Scaffold")
+                    .addVariant("%s_scaffold_left".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_scaffold_left".formatted(lightName), "%s Light".formatted(colorName), "Scaffold Left")
+                    .addVariant("%s_scaffold_right".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_scaffold_right".formatted(lightName), "%s Light".formatted(colorName), "Scaffold Right")
+                    .addVariant("%s_arch_panel".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_arch_panel".formatted(lightName), "%s Light".formatted(colorName), "Arch Panel")
+                    .addVariant("%s_arch_panel_1".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_arch_panel_1".formatted(lightName), "%s Light".formatted(colorName), "Arch Panel 1")
+                    .addVariant("%s_arch_panel_2".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_arch_panel_2".formatted(lightName), "%s Light".formatted(colorName), "Arch Panel 2")
+                    .addVariant("%s_arch_panel_3".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_arch_panel_3".formatted(lightName), "%s Light".formatted(colorName), "Arch Panel 3")
+                    .addVariant("%s_frame_thick".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_frame_thick".formatted(lightName), "%s Light".formatted(colorName), "Thick Frame")
+                    .addVariant("%s_frame_thick_panel".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_frame_thick_panel".formatted(lightName), "%s Light".formatted(colorName), "Thick Frame Panel")
+                    .addVariant("%s_tile".formatted(lightName)).translation("%s_tile".formatted(lightName), "%s Light".formatted(colorName), "Tile")
+                    .addVariant("%s_brick".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_brick".formatted(lightName), "%s Light".formatted(colorName), "Brick")
+                    .addVariant("%s_line_vertical".formatted(lightName)).translation("%s_line_vertical".formatted(lightName), "%s Light".formatted(colorName), "Vertical Line")
+                    .addVariant("%s_line_horizontal".formatted(lightName)).translation("%s_line_horizontal".formatted(lightName), "%s Light".formatted(colorName), "Horizontal Line")
+                    .addVariant("%s_line_vertical_panel".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_line_vertical_panel".formatted(lightName), "%s Light".formatted(colorName), "Vertical Line Panel")
+                    .addVariant("%s_line_horizontal_panel".formatted(lightName), ChiselModelHandlers.CONNECTED).translation("%s_line_horizontal_panel".formatted(lightName), "%s Light".formatted(colorName), "Horizontal Line Panel")
+            )));
+
             CONCRETE.add(add(ChiselFamily.build(concreteName, builder -> builder
                     .properties(BlockBehaviour.Properties.ofFullCopy(getVanillaConcrete(color)))
                     .addVariant(getVanillaConcrete(color))
@@ -292,6 +315,7 @@ public class ColorCollectionFamilies {
                     .addVariant("%s_parquet_encased".formatted(concreteName), ChiselModelHandlers.CONNECTED).translation("%s_parquet_encased".formatted(concreteName), baseName, "Encased Parquet")
                     .texture("%s_parquet_encased".formatted(concreteName), "ctm_cornerless", Chisel.prefix("block/concrete_%s/concrete_%s_parquet".formatted(color.getName(), color.getName())))
             )));
+            
             STAINED_GLASS.add(add(ChiselFamily.build("stained_glass_%s".formatted(color.getName()), builder -> builder
                     .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS))
                     .addVariant(getVanillaStainedGlass(color))
