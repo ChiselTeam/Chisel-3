@@ -94,6 +94,15 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_white_concrete", has(Items.WHITE_CONCRETE))
                 .save(output);
 
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.BRIGHT_GLASS.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
+                .pattern(" D ")
+                .pattern("DGD")
+                .pattern(" D ")
+                .define('D', Tags.Items.DUSTS_GLOWSTONE)
+                .define('G', Tags.Items.GLASS_BLOCKS_COLORLESS)
+                .unlockedBy("has_glowstone", has(Tags.Items.DUSTS_GLOWSTONE))
+                .save(output);
+
         shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.FACTORY.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
                 .pattern("SIS")
                 .pattern("I I")

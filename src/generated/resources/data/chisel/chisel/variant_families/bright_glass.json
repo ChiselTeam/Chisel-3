@@ -1,0 +1,142 @@
+{
+  "family_name": "bright_glass",
+  "tag": "c:chisel/bright_glass",
+  "variants": [
+    {
+      "block": "chisel:bright_glass",
+      "model_type": "glass",
+      "name": "bright_glass"
+    },
+    {
+      "block": "chisel:bright_glass_panel_fancy",
+      "model_type": "glass",
+      "name": "bright_glass_panel_fancy"
+    },
+    {
+      "block": "chisel:bright_glass_panel",
+      "model_type": "glass",
+      "name": "bright_glass_panel"
+    },
+    {
+      "block": "chisel:bright_glass_bubble",
+      "model_type": "glass",
+      "name": "bright_glass_bubble"
+    },
+    {
+      "block": "chisel:bright_glass_borderless",
+      "model_type": "glass",
+      "name": "bright_glass_borderless"
+    },
+    {
+      "block": "chisel:bright_glass_frame_thick",
+      "model_type": "glass",
+      "name": "bright_glass_frame_thick"
+    },
+    {
+      "block": "chisel:bright_glass_frame_thick_panel",
+      "model_type": "glass",
+      "name": "bright_glass_frame_thick_panel"
+    },
+    {
+      "block": "chisel:bright_glass_tile",
+      "name": "bright_glass_tile"
+    },
+    {
+      "block": "chisel:bright_glass_brick",
+      "model_type": "glass",
+      "name": "bright_glass_brick"
+    },
+    {
+      "block": "chisel:bright_glass_line_vertical",
+      "name": "bright_glass_line_vertical"
+    },
+    {
+      "block": "chisel:bright_glass_line_vertical_panel",
+      "model_type": "glass",
+      "name": "bright_glass_line_vertical_panel"
+    },
+    {
+      "block": "chisel:bright_glass_line_horizontal",
+      "name": "bright_glass_line_horizontal"
+    },
+    {
+      "block": "chisel:bright_glass_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "bright_glass_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:bright_glass_arch_panel",
+      "model_type": "glass",
+      "name": "bright_glass_arch_panel"
+    },
+    {
+      "block": "chisel:bright_glass_arch_panel_1",
+      "model_type": "glass",
+      "name": "bright_glass_arch_panel_1"
+    },
+    {
+      "block": "chisel:bright_glass_arch_panel_2",
+      "model_type": "glass",
+      "name": "bright_glass_arch_panel_2"
+    },
+    {
+      "block": "chisel:bright_glass_arch_panel_3",
+      "model_type": "glass",
+      "name": "bright_glass_arch_panel_3"
+    },
+    {
+      "block": "chisel:bright_glass_scaffold",
+      "model_type": "glass",
+      "name": "bright_glass_scaffold"
+    },
+    {
+      "block": "chisel:bright_glass_scaffold_left",
+      "model_type": "glass",
+      "name": "bright_glass_scaffold_left"
+    },
+    {
+      "block": "chisel:bright_glass_scaffold_right",
+      "model_type": "glass",
+      "name": "bright_glass_scaffold_right"
+    },
+    {
+      "block": "chisel:bright_glass_basketweave",
+      "name": "bright_glass_basketweave"
+    },
+    {
+      "block": "chisel:bright_glass_mosaic_1",
+      "model_type": "glass",
+      "name": "bright_glass_mosaic_1"
+    },
+    {
+      "block": "chisel:bright_glass_mosaic_2",
+      "model_type": "glass",
+      "name": "bright_glass_mosaic_2"
+    },
+    {
+      "block": "chisel:bright_glass_round",
+      "model_type": "glass",
+      "name": "bright_glass_round"
+    },
+    {
+      "block": "chisel:bright_glass_circle",
+      "model_type": "glass",
+      "name": "bright_glass_circle"
+    },
+    {
+      "block": "chisel:bright_glass_rings",
+      "model_type": "glass",
+      "name": "bright_glass_rings"
+    },
+    {
+      "block": "chisel:bright_glass_diamond",
+      "model_type": "glass",
+      "name": "bright_glass_diamond"
+    },
+    {
+      "block": "chisel:bright_glass_frame_1",
+      "model_type": "glass",
+      "name": "bright_glass_frame_1"
+    }
+  ]
+}

@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class SpecialFamilies {
-    public static final ChiselFamily ANTIBLOCK, BOOKSHELF, GLASS, GLASS_PANE, IRON_BARS, JACK_O_LANTERN, PUMPKIN, REDSTONE_LAMP, ROAD_LINE, TORCH;
+    public static final ChiselFamily ANTIBLOCK, BOOKSHELF, GLASS, BRIGHT_GLASS, GLASS_PANE, IRON_BARS, JACK_O_LANTERN, PUMPKIN, REDSTONE_LAMP, ROAD_LINE, TORCH;
     private static final List<ChiselFamily> FAMILIES;
 
     static {
@@ -80,6 +80,39 @@ public class SpecialFamilies {
                 .addVariant("glass_diamond", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_diamond", "Glass", "Diamond")
                 .addVariant("glass_frame_1", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_frame_1", "Glass", "Frame 1")
                 
+                .build());
+
+        BRIGHT_GLASS = ChiselFamily.build("bright_glass", builder -> builder
+                .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).lightLevel(state -> 15))
+                .addVariant("bright_glass", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass", "Bright Glass", "Bright Glass")
+
+                .addVariant("bright_glass_panel_fancy", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_panel_fancy", "Bright Glass", "Fancy Panel")
+                .addVariant("bright_glass_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_panel", "Bright Glass", "Panel")
+                .addVariant("bright_glass_bubble", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_bubble", "Bright Glass", "Bubble")
+                .addVariant("bright_glass_borderless", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_borderless", "Bright Glass", "Borderless")
+                .addVariant("bright_glass_frame_thick", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_frame_thick", "Bright Glass", "Thick Frame")
+                .addVariant("bright_glass_frame_thick_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_frame_thick_panel", "Bright Glass", "Thick Frame Panel")
+                .addVariant("bright_glass_tile", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("bright_glass_tile", "Bright Glass", "Tile")
+                .addVariant("bright_glass_brick", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_brick", "Bright Glass", "Brick")
+                .addVariant("bright_glass_line_vertical", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("bright_glass_line_vertical", "Bright Glass", "Vertical Line")
+                .addVariant("bright_glass_line_vertical_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_line_vertical_panel", "Bright Glass", "Vertical Line Panel")
+                .addVariant("bright_glass_line_horizontal", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("bright_glass_line_horizontal", "Bright Glass", "Horizontal Line")
+                .addVariant("bright_glass_line_horizontal_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_line_horizontal_panel", "Bright Glass", "Horizontal Line Panel")
+                .addVariant("bright_glass_arch_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_arch_panel", "Bright Glass", "Arch Panel")
+                .addVariant("bright_glass_arch_panel_1", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_arch_panel_1", "Bright Glass", "Arch Panel 1")
+                .addVariant("bright_glass_arch_panel_2", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_arch_panel_2", "Bright Glass", "Arch Panel 2")
+                .addVariant("bright_glass_arch_panel_3", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_arch_panel_3", "Bright Glass", "Arch Panel 3")
+                .addVariant("bright_glass_scaffold", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_scaffold", "Bright Glass", "Scaffold")
+                .addVariant("bright_glass_scaffold_left", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_scaffold_left", "Bright Glass", "Scaffold Left")
+                .addVariant("bright_glass_scaffold_right", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_scaffold_right", "Bright Glass", "Scaffold Right")
+                .addVariant("bright_glass_basketweave", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("bright_glass_basketweave", "Bright Glass", "Basketweave")
+                .addVariant("bright_glass_mosaic_1", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_mosaic_1", "Bright Glass", "Mosaic 1")
+                .addVariant("bright_glass_mosaic_2", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_mosaic_2", "Bright Glass", "Mosaic 2")
+                .addVariant("bright_glass_round", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_round", "Bright Glass", "Round")
+                .addVariant("bright_glass_circle", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_circle", "Bright Glass", "Circle")
+                .addVariant("bright_glass_rings", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_rings", "Bright Glass", "Rings")
+                .addVariant("bright_glass_diamond", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_diamond", "Bright Glass", "Diamond")
+                .addVariant("bright_glass_frame_1", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_frame_1", "Bright Glass", "Frame 1")
                 .build());
 
         GLASS_PANE = ChiselFamily.build("glass_pane", builder -> builder
@@ -207,7 +240,7 @@ public class SpecialFamilies {
                 .addTorchVariant("torch_10", NoParticleTorchBlock::new, NoParticleWallTorchBlock::new).translation("torch_10", "Torch", "Clear Light Bulb")
                 .build());
 
-        FAMILIES = List.of(ANTIBLOCK, BOOKSHELF, GLASS, GLASS_PANE, IRON_BARS, JACK_O_LANTERN, PUMPKIN, REDSTONE_LAMP, ROAD_LINE, TORCH);
+        FAMILIES = List.of(ANTIBLOCK, BOOKSHELF, GLASS, BRIGHT_GLASS, GLASS_PANE, IRON_BARS, JACK_O_LANTERN, PUMPKIN, REDSTONE_LAMP, ROAD_LINE, TORCH);
     }
 
     private SpecialFamilies() {

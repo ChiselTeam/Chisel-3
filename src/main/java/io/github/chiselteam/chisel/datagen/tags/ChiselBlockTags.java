@@ -172,11 +172,11 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.SMOOTH_STONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.AMETHYST.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.RED_NETHER_BRICKS.getFamily());
-        addToTag(BlockTags.NEEDS_DIAMOND_TOOL, ChiselFamilies.CRYING_OBSIDIAN.getFamily());
-        addToTag(BlockTags.NEEDS_DIAMOND_TOOL, ChiselFamilies.ANCIENT_DEBRIS.getFamily());
-        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.RAW_IRON.getFamily());
-        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.RAW_COPPER.getFamily());
-        addToTag(BlockTags.NEEDS_IRON_TOOL, ChiselFamilies.RAW_GOLD.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.CRYING_OBSIDIAN.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.ANCIENT_DEBRIS.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.RAW_IRON.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.RAW_COPPER.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.RAW_GOLD.getFamily());
 
         // MARK: HARVEST TIERS
         addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.ALUMINUM.getFamily());
@@ -244,6 +244,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(Tags.Blocks.BOOKSHELVES, ChiselFamilies.BOOKSHELF.getFamily());
 
         addToTag(Tags.Blocks.GLASS_BLOCKS, ChiselFamilies.GLASS.getFamily());
+        addToTag(Tags.Blocks.GLASS_BLOCKS, ChiselFamilies.BRIGHT_GLASS.getFamily());
         addToTag(Tags.Blocks.GLASS_PANES, ChiselFamilies.GLASS_PANE.getFamily());
 
         addToTag(Tags.Blocks.SANDS, ChiselFamilies.DIRT.getFamily());
