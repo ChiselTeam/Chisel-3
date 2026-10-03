@@ -69,9 +69,10 @@ public class ChiselBlockTags extends BlockTagsProvider {
 
         // MARK: SHOVEL
         addToTag(BlockTags.MINEABLE_WITH_SHOVEL, ChiselFamilies.DIRT.getFamily());
-        addToTag(BlockTags.MINEABLE_WITH_SHOVEL, ChiselFamilies.WOOLEN_CLAY.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_SHOVEL, ChiselFamilies.CLAY.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_SHOVEL, ChiselFamilies.MUD.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_SHOVEL, ChiselFamilies.SNOW.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_SHOVEL, ChiselFamilies.SOUL_SOIL.getFamily());
 
         // MARK: HOE MINEABLE
         addToTag(BlockTags.MINEABLE_WITH_HOE, ChiselFamilies.LEAF.getFamily());
@@ -237,6 +238,8 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.LEAVES, ChiselFamilies.LEAF.getFamily());
         ChiselFamilies.WOOLS.forEach(family -> addToTag(BlockTags.WOOL, family.getFamily()));
         addToTag(BlockTags.ENCHANTMENT_POWER_PROVIDER, ChiselFamilies.BOOKSHELF.getFamily());
+        addToTag(BlockTags.SOUL_SPEED_BLOCKS, ChiselFamilies.SOUL_SOIL.getFamily());
+        addToTag(BlockTags.SOUL_FIRE_BASE_BLOCKS, ChiselFamilies.SOUL_SOIL.getFamily());
 
         // MARK: NEOFORGE TAGS
         addToTag(Tags.Blocks.COBBLESTONES, ChiselFamilies.COBBLESTONE.getFamily());

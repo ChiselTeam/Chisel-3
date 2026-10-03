@@ -15,7 +15,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import java.util.List;
 
 public class DecorativeFamilies {
-    public static final ChiselFamily BONE_BLOCK, SCULK, AMETHYST, MUD, LIMINAL, KITCHEN, NEXUS, C_CONCRETE, CHARCOAL, CLOUD, COAL, COAL_COKE, DIRT, ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLOWSTONE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, PACKED_ICE, BLUE_ICE, SNOW, LABORATORY, LAVASTONE, LEAF, MAGMA, MILITARY, MOSSY_BLACKSTONE, MOSSY_TEMPLE, PAPERWALL, REDSTONE, RESIN, SEA_LANTERN, SHINGLE, TECHNICAL, TEMPLE, TERRACOTTA, TYRIAN, VALENTINES, VOIDSTONE, WARNING, WATERSTONE, WOOLEN_CLAY;
+    public static final ChiselFamily SOUL_SOIL, BONE_BLOCK, SCULK, AMETHYST, MUD, LIMINAL, KITCHEN, NEXUS, C_CONCRETE, CHARCOAL, CLOUD, COAL, COAL_COKE, DIRT, ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLOWSTONE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, PACKED_ICE, BLUE_ICE, SNOW, LABORATORY, LAVASTONE, LEAF, MAGMA, MILITARY, MOSSY_BLACKSTONE, MOSSY_TEMPLE, PAPERWALL, REDSTONE, RESIN, SEA_LANTERN, SHINGLE, TECHNICAL, TEMPLE, TERRACOTTA, TYRIAN, VALENTINES, VOIDSTONE, WARNING, WATERSTONE, CLAY;
     private static final List<ChiselFamily> FAMILIES;
 
     static {
@@ -2067,7 +2067,7 @@ public class DecorativeFamilies {
                 .texture("waterstone_zag", "ar_variant_4", Chisel.prefix("block/lavastone/lavastone_zag-ar_variant_4"))
                 .build());
 
-        WOOLEN_CLAY = ChiselFamily.build("woolen_clay", builder -> builder
+        CLAY = ChiselFamily.build("clay", builder -> builder
                 .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.CLAY))
                 .addVariant(Blocks.CLAY)
                 .addVariant("woolen_clay_0").translation("woolen_clay_0", "Woolen Clay", "White Woolen Clay")
@@ -2086,6 +2086,7 @@ public class DecorativeFamilies {
                 .addVariant("woolen_clay_13").translation("woolen_clay_13", "Woolen Clay", "Green Woolen Clay")
                 .addVariant("woolen_clay_14").translation("woolen_clay_14", "Woolen Clay", "Red Woolen Clay")
                 .addVariant("woolen_clay_15").translation("woolen_clay_15", "Woolen Clay", "Black Woolen Clay")
+                
                 .build());
 
         NEXUS = ChiselFamily.build("nexus", builder -> builder
@@ -2130,6 +2131,21 @@ public class DecorativeFamilies {
                 .addVariant("kitchen_stripes_small").translation("kitchen_stripes_small", "Kitchen Block", "Small Stripes Kitchen")
                 .addVariant("kitchen_stripes_small_encased_connected", ChiselModelHandlers.CONNECTED).translation("kitchen_stripes_small_encased_connected", "Kitchen Block", "Encased Small Stripes Kitchen Connected")
                 .texture("kitchen_stripes_small_encased_connected", "ctm_cornerless", Chisel.prefix("block/kitchen/kitchen_stripes_small"))
+                .build());
+
+        LIMINAL = ChiselFamily.build("liminal", builder -> builder
+                .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS))
+                .addVariant("liminal_wall_1").translation("liminal_wall_1", "Liminal Block", "Liminal Wall 1")
+                .addVariant("liminal_wall_2").translation("liminal_wall_2", "Liminal Block", "Liminal Wall 2")
+                .addVariant("liminal_wall_3").translation("liminal_wall_3", "Liminal Block", "Liminal Wall 3")
+                .addVariant("liminal_carpet_1").translation("liminal_carpet_1", "Liminal Block", "Liminal Carpet 1")
+                .addVariant("liminal_carpet_2", ChiselModelHandlers.MULTI_LAYER_CONNECTED).translation("liminal_carpet_2", "Liminal Block", "Liminal Carpet 2")
+                .addVariant("liminal_carpet_3").translation("liminal_carpet_3", "Liminal Block", "Liminal Carpet 3")
+                .addVariant("liminal_carpet_4", ChiselModelHandlers.V16).translation("liminal_carpet_4", "Liminal Block", "Liminal Carpet 4")
+                .addVariant("liminal_carpet_5", ChiselModelHandlers.V16).translation("liminal_carpet_5", "Liminal Block", "Liminal Carpet 5")
+                .addVariant("liminal_ceiling_1").translation("liminal_ceiling_1", "Liminal Block", "Liminal Ceiling 1")
+                .addVariant("liminal_ceiling_2").translation("liminal_ceiling_2", "Liminal Block", "Liminal Ceiling 2")
+                .addVariant("liminal_tiles_1").translation("liminal_tiles_1", "Liminal Block", "Liminal Tiles 1")
                 .build());
 
         MUD = ChiselFamily.build("mud", builder -> builder
@@ -2759,19 +2775,132 @@ public class DecorativeFamilies {
                 .addVariant("bone_block_bricks_round").translation("bone_block_bricks_round", "Bone Block", "Round Bricks")
                 .build());
 
-        LIMINAL = ChiselFamily.build("liminal", builder -> builder
-                .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS))
-                .addVariant("liminal_wall_1").translation("liminal_wall_1", "Liminal Block", "Liminal Wall 1")
-                .addVariant("liminal_wall_2").translation("liminal_wall_2", "Liminal Block", "Liminal Wall 2")
-                .addVariant("liminal_wall_3").translation("liminal_wall_3", "Liminal Block", "Liminal Wall 3")
-                .addVariant("liminal_carpet_1").translation("liminal_carpet_1", "Liminal Block", "Liminal Carpet 1")
-                .addVariant("liminal_carpet_2", ChiselModelHandlers.MULTI_LAYER_CONNECTED).translation("liminal_carpet_2", "Liminal Block", "Liminal Carpet 2")
-                .addVariant("liminal_carpet_3").translation("liminal_carpet_3", "Liminal Block", "Liminal Carpet 3")
-                .addVariant("liminal_carpet_4", ChiselModelHandlers.V16).translation("liminal_carpet_4", "Liminal Block", "Liminal Carpet 4")
-                .addVariant("liminal_carpet_5", ChiselModelHandlers.V16).translation("liminal_carpet_5", "Liminal Block", "Liminal Carpet 5")
-                .addVariant("liminal_ceiling_1").translation("liminal_ceiling_1", "Liminal Block", "Liminal Ceiling 1")
-                .addVariant("liminal_ceiling_2").translation("liminal_ceiling_2", "Liminal Block", "Liminal Ceiling 2")
-                .addVariant("liminal_tiles_1").translation("liminal_tiles_1", "Liminal Block", "Liminal Tiles 1")
+        SOUL_SOIL = ChiselFamily.build("soul_soil", builder -> builder
+                .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.SOUL_SOIL))
+                .addVariant(Blocks.SOUL_SOIL)
+                .addVariant("soul_soil_array", ChiselModelHandlers.MULTIBLOCK_2X2).translation("soul_soil_array", "Soul Soil", "Array")
+                .addVariant("soul_soil_border_square", ChiselModelHandlers.CONNECTED).translation("soul_soil_border_square", "Soul Soil", "Square Border")
+                .addVariant("soul_soil_border_square_small", ChiselModelHandlers.CONNECTED).translation("soul_soil_border_square_small", "Soul Soil", "Small Square Border")
+                .addVariant("soul_soil_braid").translation("soul_soil_braid", "Soul Soil", "Braid")
+                .addVariant("soul_soil_braid_encased", ChiselModelHandlers.CONNECTED).translation("soul_soil_braid_encased", "Soul Soil", "Encased Braid")
+                .addVariant("soul_soil_bricks_cracked").translation("soul_soil_bricks_cracked", "Soul Soil", "Cracked Bricks")
+                .addVariant("soul_soil_bricks_encased", ChiselModelHandlers.CONNECTED).translation("soul_soil_bricks_encased", "Soul Soil", "Encased Bricks")
+                .addVariant("soul_soil_bricks_indent").translation("soul_soil_bricks_indent", "Soul Soil", "Indent Bricks")
+                .addVariant("soul_soil_bricks_inlayed").translation("soul_soil_bricks_inlayed", "Soul Soil", "Inlayed Bricks")
+                .addVariant("soul_soil_bricks_large", ChiselModelHandlers.MULTIBLOCK_2X2).translation("soul_soil_bricks_large", "Soul Soil", "Large Bricks")
+                .addVariant("soul_soil_bricks_small").translation("soul_soil_bricks_small", "Soul Soil", "Small Bricks")
+                .addVariant("soul_soil_bricks_soft").translation("soul_soil_bricks_soft", "Soul Soil", "Soft Bricks")
+                .addVariant("soul_soil_bricks_solid").translation("soul_soil_bricks_solid", "Soul Soil", "Solid Bricks")
+                .addVariant("soul_soil_bricks_triple").translation("soul_soil_bricks_triple", "Soul Soil", "Triple Bricks")
+                .addVariant("soul_soil_bricks_vertical").translation("soul_soil_bricks_vertical", "Soul Soil", "Vertical Bricks")
+                .addVariant("soul_soil_chaotic", ChiselModelHandlers.MULTIBLOCK_3X3).translation("soul_soil_chaotic", "Soul Soil", "Chaotic")
+                .addVariant("soul_soil_chaotic_medium").translation("soul_soil_chaotic_medium", "Soul Soil", "Chaotic Medium")
+                .addVariant("soul_soil_chaotic_small").translation("soul_soil_chaotic_small", "Soul Soil", "Chaotic Small")
+                .addVariant("soul_soil_checker").translation("soul_soil_checker", "Soul Soil", "Checker")
+                .addVariant("soul_soil_checker_small").translation("soul_soil_checker_small", "Soul Soil", "Small Checker")
+                .addVariant("soul_soil_circular", ChiselModelHandlers.CONNECTED).translation("soul_soil_circular", "Soul Soil", "Circular")
+		.addVariant("soul_soil_cracked").translation("soul_soil_cracked", "Soul Soil", "Cracked")
+                .addVariant("soul_soil_cobble").translation("soul_soil_cobble", "Soul Soil", "Cobble")
+                .addVariant("soul_soil_cuts", ChiselModelHandlers.MULTIBLOCK_4X4).translation("soul_soil_cuts", "Soul Soil", "Cuts")
+                .addVariant("soul_soil_dent", ChiselModelHandlers.CONNECTED).translation("soul_soil_dent", "Soul Soil", "Dent")
+                .addVariant("soul_soil_french_1").translation("soul_soil_french_1", "Soul Soil", "French 1")
+                .addVariant("soul_soil_french_2").translation("soul_soil_french_2", "Soul Soil", "French 2")
+                .addVariant("soul_soil_indent", ChiselModelHandlers.CONNECTED).translation("soul_soil_indent", "Soul Soil", "Indent")
+                .addVariant("soul_soil_jellybean", ChiselModelHandlers.MULTIBLOCK_2X2).translation("soul_soil_jellybean", "Soul Soil", "Jellybean")
+                .addVariant("soul_soil_layers").translation("soul_soil_layers", "Soul Soil", "Layers")
+                .addVariant("soul_soil_layers_connected", ChiselModelHandlers.CONNECTED).translation("soul_soil_layers_connected", "Soul Soil", "Layers Connected")
+                .addVariant("soul_soil_line_horizontal").translation("soul_soil_line_horizontal", "Soul Soil", "Horizontal Line")
+                .addVariant("soul_soil_line_vertical").translation("soul_soil_line_vertical", "Soul Soil", "Vertical Line")
+                .addVariant("soul_soil_meander_horizontal", ChiselModelHandlers.CTMH).translation("soul_soil_meander_horizontal", "Soul Soil", "Horizontal Meander")
+                .addVariant("soul_soil_meander_vertical", ChiselModelHandlers.CTMV).translation("soul_soil_meander_vertical", "Soul Soil", "Vertical Meander")
+                .addVariant("soul_soil_mosaic", ChiselModelHandlers.CONNECTED).translation("soul_soil_mosaic", "Soul Soil", "Mosaic")
+                .addVariant("soul_soil_ornate_small").translation("soul_soil_ornate_small", "Soul Soil", "Small Ornate")
+                .addVariant("soul_soil_panel").translation("soul_soil_panel", "Soul Soil", "Panel")
+                .addVariant("soul_soil_pillar", ChiselModelHandlers.TBS).translation("soul_soil_pillar", "Soul Soil", "Pillar")
+                .addVariant("soul_soil_pillar_basic", ChiselModelHandlers.CTMV).translation("soul_soil_pillar_basic", "Soul Soil", "Basic Pillar")
+                .addVariant("soul_soil_pillar_basic_dent", ChiselModelHandlers.CTMV).translation("soul_soil_pillar_basic_dent", "Soul Soil", "Basic Dent Pillar")
+                .addVariant("soul_soil_pillar_basic_plain", ChiselModelHandlers.CTMV).translation("soul_soil_pillar_basic_plain", "Soul Soil", "Basic Plain Pillar")
+                .addVariant("soul_soil_pillar_basic_round", ChiselModelHandlers.CTMV).translation("soul_soil_pillar_basic_round", "Soul Soil", "Basic Round Pillar")
+                .addVariant("soul_soil_pillar_basic_spiral", ChiselModelHandlers.CTMV).translation("soul_soil_pillar_basic_spiral", "Soul Soil", "Basic Spiral Pillar")
+                .addVariant("soul_soil_pillar_classic", ChiselModelHandlers.TBS).translation("soul_soil_pillar_classic", "Soul Soil", "Classic Pillar")
+                .addVariant("soul_soil_pillar_classic_large", ChiselModelHandlers.TBS).translation("soul_soil_pillar_classic_large", "Soul Soil", "Large Classic Pillar")
+                .addVariant("soul_soil_pillar_ionic", ChiselModelHandlers.CTMV).translation("soul_soil_pillar_ionic", "Soul Soil", "Ionic Pillar")
+                .addVariant("soul_soil_pillar_ionic_dent", ChiselModelHandlers.CTMV).translation("soul_soil_pillar_ionic_dent", "Soul Soil", "Ionic Dent Pillar")
+                .addVariant("soul_soil_pillar_ionic_plain", ChiselModelHandlers.CTMV).translation("soul_soil_pillar_ionic_plain", "Soul Soil", "Ionic Plain Pillar")
+                .addVariant("soul_soil_pillar_ionic_round", ChiselModelHandlers.CTMV).translation("soul_soil_pillar_ionic_round", "Soul Soil", "Ionic Round Pillar")
+                .addVariant("soul_soil_pillar_ionic_spiral", ChiselModelHandlers.CTMV).translation("soul_soil_pillar_ionic_spiral", "Soul Soil", "Ionic Spiral Pillar")
+                .addVariant("soul_soil_pillar_large_basic_triple", ChiselModelHandlers.CTMV).translation("soul_soil_pillar_large_basic_triple", "Soul Soil", "Large Basic Triple Pillar")
+                .addVariant("soul_soil_pillar_large_ionic_triple", ChiselModelHandlers.CTMV).translation("soul_soil_pillar_large_ionic_triple", "Soul Soil", "Large Ionic Triple Pillar")
+                .addVariant("soul_soil_pillar_meander", ChiselModelHandlers.CTMV).translation("soul_soil_pillar_meander", "Soul Soil", "Meander Pillar")
+                .addVariant("soul_soil_pillar_meander_dent", ChiselModelHandlers.CTMV).translation("soul_soil_pillar_meander_dent", "Soul Soil", "Meander Dent Pillar")
+                .addVariant("soul_soil_pillar_meander_plain", ChiselModelHandlers.CTMV).translation("soul_soil_pillar_meander_plain", "Soul Soil", "Meander Plain Pillar")
+                .addVariant("soul_soil_pillar_meander_round", ChiselModelHandlers.CTMV).translation("soul_soil_pillar_meander_round", "Soul Soil", "Meander Round Pillar")
+                .addVariant("soul_soil_pillar_meander_spiral", ChiselModelHandlers.CTMV).translation("soul_soil_pillar_meander_spiral", "Soul Soil", "Meander Spiral Pillar")
+                .addVariant("soul_soil_plate").translation("soul_soil_plate", "Soul Soil", "Plate")
+                .addVariant("soul_soil_plate_connected", ChiselModelHandlers.CONNECTED).translation("soul_soil_plate_connected", "Soul Soil", "Plate Connected")
+                .addVariant("soul_soil_polished").translation("soul_soil_polished", "Soul Soil", "Polished")
+                .addVariant("soul_soil_polished_encased", ChiselModelHandlers.CONNECTED).translation("soul_soil_polished_encased", "Soul Soil", "Polished Encased")
+                .addVariant("soul_soil_prism").translation("soul_soil_prism", "Soul Soil", "Prismatic")
+                .addVariant("soul_soil_raw").translation("soul_soil_raw", "Soul Soil", "Raw")
+                .addVariant("soul_soil_road").translation("soul_soil_road", "Soul Soil", "Road")
+                .addVariant("soul_soil_slanted", ChiselModelHandlers.MULTIBLOCK_2X2).translation("soul_soil_slanted", "Soul Soil", "Slanted")
+                .addVariant("soul_soil_tiles").translation("soul_soil_tiles", "Soul Soil", "Tiles")
+                .addVariant("soul_soil_tiles_large", ChiselModelHandlers.CONNECTED).translation("soul_soil_tiles_large", "Soul Soil", "Large Tiles")
+                .addVariant("soul_soil_tiles_small").translation("soul_soil_tiles_small", "Soul Soil", "Small Tiles")
+                .addVariant("soul_soil_twisted", ChiselModelHandlers.TBS).translation("soul_soil_twisted", "Soul Soil", "Twisted")
+                .addVariant("soul_soil_weaver", ChiselModelHandlers.CONNECTED).translation("soul_soil_weaver", "Soul Soil", "Weaver")
+                .addVariant("soul_soil_zag", ChiselModelHandlers.V4).translation("soul_soil_zag", "Soul Soil", "Zag")
+                .addVariant("soul_soil_crate", ChiselModelHandlers.CONNECTED).translation("soul_soil_crate", "Soul Soil", "Crate")
+                .addVariant("soul_soil_herringbone").translation("soul_soil_herringbone", "Soul Soil", "Herringbone")
+                .addVariant("soul_soil_herringbone_encased", ChiselModelHandlers.CONNECTED).translation("soul_soil_herringbone_encased", "Soul Soil", "Encased Herringbone")
+                .addVariant("soul_soil_medallion").translation("soul_soil_medallion", "Soul Soil", "Medallion")
+                .addVariant("soul_soil_medallion_encased", ChiselModelHandlers.CONNECTED).translation("soul_soil_medallion_encased", "Soul Soil", "Encased Medallion")
+                .addVariant("soul_soil_dots").translation("soul_soil_dots", "Soul Soil", "Dots")
+                .addVariant("soul_soil_dots_encased", ChiselModelHandlers.CONNECTED).translation("soul_soil_dots_encased", "Soul Soil", "Encased Dots")
+                .addVariant("soul_soil_heart").translation("soul_soil_heart", "Soul Soil", "Heart")
+                .addVariant("soul_soil_star").translation("soul_soil_star", "Soul Soil", "Star")
+                .addVariant("soul_soil_plating").translation("soul_soil_plating", "Soul Soil", "Plating")
+                .addVariant("soul_soil_lodestone").translation("soul_soil_lodestone", "Soul Soil", "Lodestone")
+                .addVariant("soul_soil_lodestone_connected", ChiselModelHandlers.CONNECTED).translation("soul_soil_lodestone_connected", "Soul Soil", "Lodestone Connected")
+                .addVariant("soul_soil_plank").translation("soul_soil_plank", "Soul Soil", "Plank")
+                .addVariant("soul_soil_plank_connected", ChiselModelHandlers.CONNECTED).translation("soul_soil_plank_connected", "Soul Soil", "Plank Connected")
+                .addVariant("soul_soil_frame").translation("soul_soil_frame", "Soul Soil", "Frame")
+                .addVariant("soul_soil_panel_1").translation("soul_soil_panel_1", "Soul Soil", "Panel 1")
+                .addVariant("soul_soil_panel_2").translation("soul_soil_panel_2", "Soul Soil", "Panel 2")
+                .addVariant("soul_soil_panel_3").translation("soul_soil_panel_3", "Soul Soil", "Panel 3")
+                .addVariant("soul_soil_skull_creeper").translation("soul_soil_skull_creeper", "Soul Soil", "Creeper Skull")
+                .addVariant("soul_soil_skull_skeleton").translation("soul_soil_skull_skeleton", "Soul Soil", "Skeleton Skull")
+                .addVariant("soul_soil_stripes").translation("soul_soil_stripes", "Soul Soil", "Stripes")
+                .addVariant("soul_soil_stripes_encased", ChiselModelHandlers.CONNECTED).translation("soul_soil_stripes_encased", "Soul Soil", "Encased Stripes")
+                .addVariant("soul_soil_chisel_1").translation("soul_soil_chisel_1", "Soul Soil", "Chisel 1")
+                .addVariant("soul_soil_chisel_2").translation("soul_soil_chisel_2", "Soul Soil", "Chisel 2")
+                .addVariant("soul_soil_chisel_3").translation("soul_soil_chisel_3", "Soul Soil", "Chisel 3")
+                .addVariant("soul_soil_chisel_4").translation("soul_soil_chisel_4", "Soul Soil", "Chisel 4")
+                .addVariant("soul_soil_chisel_5").translation("soul_soil_chisel_5", "Soul Soil", "Chisel 5")
+                .addVariant("soul_soil_chisel_6").translation("soul_soil_chisel_6", "Soul Soil", "Chisel 6")
+                .addVariant("soul_soil_facet").translation("soul_soil_facet", "Soul Soil", "Facet")
+                .addVariant("soul_soil_facet_small").translation("soul_soil_facet_small", "Soul Soil", "Small Facet")
+                .addVariant("soul_soil_facet_small_encased", ChiselModelHandlers.CONNECTED).translation("soul_soil_facet_small_encased", "Soul Soil", "Encased Small Facet")
+                .addVariant("soul_soil_shiny").translation("soul_soil_shiny", "Soul Soil", "Shiny")
+                .addVariant("soul_soil_shiny_connected", ChiselModelHandlers.CONNECTED).translation("soul_soil_shiny_connected", "Soul Soil", "Shiny Connected")
+                .addVariant("soul_soil_gem").translation("soul_soil_gem", "Soul Soil", "Gem")
+                .addVariant("soul_soil_gem_1").translation("soul_soil_gem_1", "Soul Soil", "Gem 1")
+                .addVariant("soul_soil_gem_1_connected", ChiselModelHandlers.CONNECTED).translation("soul_soil_gem_1_connected", "Soul Soil", "Gem 1 Connected")
+                .addVariant("soul_soil_gem_2").translation("soul_soil_gem_2", "Soul Soil", "Gem 2")
+                .addVariant("soul_soil_gem_2_connected", ChiselModelHandlers.CONNECTED).translation("soul_soil_gem_2_connected", "Soul Soil", "Gem 2 Connected")
+                .addVariant("soul_soil_gem_3").translation("soul_soil_gem_3", "Soul Soil", "Gem 3")
+                .addVariant("soul_soil_gem_3_connected", ChiselModelHandlers.CONNECTED).translation("soul_soil_gem_3_connected", "Soul Soil", "Gem 3 Connected")
+                .addVariant("soul_soil_bricks_square").translation("soul_soil_bricks_square", "Soul Soil", "Square Bricks")
+                .addVariant("soul_soil_slab").translation("soul_soil_slab", "Soul Soil", "Slab")
+                .addVariant("soul_soil_scaffold").translation("soul_soil_scaffold", "Soul Soil", "Scaffold")
+                .addVariant("soul_soil_scaffold_encased", ChiselModelHandlers.CONNECTED).translation("soul_soil_scaffold_encased", "Soul Soil", "Encased Scaffold")
+                .addVariant("soul_soil_tiles_inlayed").translation("soul_soil_tiles_inlayed", "Soul Soil", "Inlayed Tiles")
+                .addVariant("soul_soil_waves", ChiselModelHandlers.MULTIBLOCK_2X2).translation("soul_soil_waves", "Soul Soil", "Waves")
+                .addVariant("soul_soil_parquet").translation("soul_soil_parquet", "Soul Soil", "Parquet")
+                .addVariant("soul_soil_parquet_encased", ChiselModelHandlers.CONNECTED).translation("soul_soil_parquet_encased", "Soul Soil", "Encased Parquet")
+                .addVariant("soul_soil_bricks_large_rough", ChiselModelHandlers.MULTIBLOCK_2X2).translation("soul_soil_bricks_large_rough", "Soul Soil", "Large Rough Bricks")
+                .addVariant("soul_soil_tiles_small_encased", ChiselModelHandlers.CONNECTED).translation("soul_soil_tiles_small_encased", "Soul Soil", "Encased Small Tiles")
+                .addVariant("soul_soil_bricks_round").translation("soul_soil_bricks_round", "Soul Soil", "Round Bricks")
                 .build());
 
         FAMILIES = List.of(
@@ -2779,7 +2908,7 @@ public class DecorativeFamilies {
                 FUTURA, GLOWSTONE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, PACKED_ICE, BLUE_ICE, SNOW, LABORATORY, LAVASTONE,
                 LEAF, MAGMA, MILITARY, MOSSY_BLACKSTONE, MOSSY_TEMPLE, PAPERWALL, REDSTONE, RESIN,
                 SEA_LANTERN, SHINGLE, TECHNICAL, TEMPLE, TERRACOTTA, TYRIAN, VALENTINES, VOIDSTONE,
-                WARNING, WATERSTONE, WOOLEN_CLAY, NEXUS, KITCHEN, LIMINAL, MUD, AMETHYST, SCULK, BONE_BLOCK
+                WARNING, WATERSTONE, CLAY, NEXUS, KITCHEN, LIMINAL, MUD, AMETHYST, SCULK, BONE_BLOCK, SOUL_SOIL
         );
     }
 

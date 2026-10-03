@@ -119,7 +119,7 @@ public class ChiselFamilies {
     public static final ChiselFamily VOIDSTONE = DecorativeFamilies.VOIDSTONE;
     public static final ChiselFamily WARNING = DecorativeFamilies.WARNING;
     public static final ChiselFamily WATERSTONE = DecorativeFamilies.WATERSTONE;
-    public static final ChiselFamily WOOLEN_CLAY = DecorativeFamilies.WOOLEN_CLAY;
+    public static final ChiselFamily CLAY = DecorativeFamilies.CLAY;
     public static final ChiselFamily TUFF = StoneFamilies.TUFF;
     public static final ChiselFamily CALCITE = StoneFamilies.CALCITE;
     public static final ChiselFamily NETHERITE = MetalFamilies.NETHERITE;
@@ -142,6 +142,7 @@ public class ChiselFamilies {
     public static final ChiselFamily BLUE_ICE = DecorativeFamilies.BLUE_ICE;
     public static final ChiselFamily SNOW = DecorativeFamilies.SNOW;
     public static final ChiselFamily BONE_BLOCK = DecorativeFamilies.BONE_BLOCK;
+    public static final ChiselFamily SOUL_SOIL = DecorativeFamilies.SOUL_SOIL;
     // public static final ChiselFamily MA_SOULSTONE = MysticalAgricultureFamilies.MA_SOULSTONE;
 
     public static final List<ChiselFamily> WOOLS = ColorCollectionFamilies.WOOLS;

@@ -161,12 +161,13 @@ public class ChiselTabs {
                         ChiselFamilies.ROAD_LINE.getFamily(),
                         ChiselFamilies.VALENTINES.getFamily(),
                         ChiselFamilies.NETHERITE.getFamily(),
-                        ChiselFamilies.WOOLEN_CLAY.getFamily(),
+                        ChiselFamilies.CLAY.getFamily(),
                         ChiselFamilies.NEXUS.getFamily(),
                         ChiselFamilies.KITCHEN.getFamily(),
                         ChiselFamilies.AMETHYST.getFamily(),
                         ChiselFamilies.SCULK.getFamily(),
                         ChiselFamilies.BONE_BLOCK.getFamily(),
+                        ChiselFamilies.SOUL_SOIL.getFamily(),
                         ChiselFamilies.LIMINAL.getFamily()
                 
                 ).forEach(family -> family.getVariants().forEach(variant ->  {
