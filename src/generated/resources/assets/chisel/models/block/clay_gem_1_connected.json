@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/clay/clay_gem_1_connected",
+    "particle": "chisel:block/clay/clay_gem_1_connected",
+    "standard_corner": "chisel:block/clay/clay_gem_1_connected-ctm_corner",
+    "standard_cornerless": "chisel:block/clay/clay_gem_1_connected-ctm_cornerless",
+    "standard_horizontal": "chisel:block/clay/clay_gem_1_connected-ctm_horizontal",
+    "standard_none": "chisel:block/clay/clay_gem_1_connected",
+    "standard_vertical": "chisel:block/clay/clay_gem_1_connected-ctm_vertical"
+  }
+}
