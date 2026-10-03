@@ -42,6 +42,7 @@ public class ChiselTabs {
                         ChiselFamilies.MAGMA.getFamily(),
                         ChiselFamilies.MARBLE.getFamily(),
                         ChiselFamilies.MOSSY_COBBLESTONE.getFamily(),
+                        ChiselFamilies.MOSSY_STONE.getFamily(),
                         ChiselFamilies.MOSSY_BLACKSTONE.getFamily(),
                         ChiselFamilies.MOSSY_TEMPLE.getFamily(),
                         ChiselFamilies.RED_NETHER_BRICKS.getFamily(),

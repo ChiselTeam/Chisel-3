@@ -57,6 +57,12 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_blue_dye", has(Tags.Items.DYES_BLUE))
                 .save(output);
 
+        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.MOSSY_STONE.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
+                .requires(Items.STONE)
+                .requires(Ingredient.of(Items.VINE, Items.MOSS_BLOCK))
+                .unlockedBy("has_stone", has(Items.STONE))
+                .save(output);
+        
         shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.MOSSY_BLACKSTONE.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
                 .requires(Items.BLACKSTONE)
                 .requires(Ingredient.of(Items.VINE, Items.MOSS_BLOCK))
@@ -218,7 +224,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .pattern("VSV")
                 .pattern("SVS")
                 .pattern("VSV")
-                .define('V', Blocks.VINE)
+                .define('V', Ingredient.of(Items.VINE, Items.MOSS_BLOCK))
                 .define('S', Tags.Items.RODS_WOODEN)
                 .unlockedBy("has_vine", has(Blocks.VINE))
                 .save(output);
@@ -239,12 +245,6 @@ public class ChiselRecipes extends RecipeProvider {
         chiselRecipe("has_diamond", Tags.Items.GEMS_DIAMOND, ChiselItems.CHISEL_DIAMOND);
         chiselRecipe("has_obsidian", Tags.Items.OBSIDIANS, ChiselItems.CHISEL_OBSIDIAN);
         chiselRecipe("has_ender_pearl", Tags.Items.ENDER_PEARLS, ChiselItems.OFFSET_TOOL);
-
-        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselItems.SMASHING_ROCK.get(), 16))
-                .requires(Items.STONE_PICKAXE)
-                .requires(Items.GLASS_BOTTLE)
-                .requires(Items.STONE_SHOVEL)
-                .unlockedBy("has_glass_bottle", has(Items.GLASS_BOTTLE));
     }
 
     private void stoneAround(String unlockedBy, TagKey<Item> recipeItem, ItemLike outputItem, int count) {

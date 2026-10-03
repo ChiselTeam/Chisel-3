@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/mossy_stone/mossy_stone_braid_encased",
+    "particle": "chisel:block/mossy_stone/mossy_stone_braid_encased",
+    "standard_corner": "chisel:block/mossy_stone/mossy_stone_braid_encased-ctm_corner",
+    "standard_cornerless": "chisel:block/mossy_stone/mossy_stone_braid_encased-ctm_cornerless",
+    "standard_horizontal": "chisel:block/mossy_stone/mossy_stone_braid_encased-ctm_horizontal",
+    "standard_none": "chisel:block/mossy_stone/mossy_stone_braid_encased",
+    "standard_vertical": "chisel:block/mossy_stone/mossy_stone_braid_encased-ctm_vertical"
+  }
+}

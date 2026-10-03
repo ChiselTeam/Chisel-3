@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/mossy_stone/mossy_stone_pillar_meander_plain-side",
+    "bottom": "chisel:block/mossy_stone/mossy_stone_pillar_meander_plain-bottom",
+    "particle": "chisel:block/mossy_stone/mossy_stone_pillar_meander_plain-side",
+    "side": "chisel:block/mossy_stone/mossy_stone_pillar_meander_plain-side",
+    "top": "chisel:block/mossy_stone/mossy_stone_pillar_meander_plain-top",
+    "vertical_both": "chisel:block/mossy_stone/mossy_stone_pillar_meander_plain-vertical_both",
+    "vertical_bottom": "chisel:block/mossy_stone/mossy_stone_pillar_meander_plain-vertical_bottom",
+    "vertical_none": "chisel:block/mossy_stone/mossy_stone_pillar_meander_plain-vertical_none",
+    "vertical_top": "chisel:block/mossy_stone/mossy_stone_pillar_meander_plain-vertical_top"
+  }
+}

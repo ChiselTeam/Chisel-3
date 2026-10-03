@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/mossy_stone/mossy_stone_gem_1_connected",
+    "particle": "chisel:block/mossy_stone/mossy_stone_gem_1_connected",
+    "standard_corner": "chisel:block/mossy_stone/mossy_stone_gem_1_connected-ctm_corner",
+    "standard_cornerless": "chisel:block/mossy_stone/mossy_stone_gem_1_connected-ctm_cornerless",
+    "standard_horizontal": "chisel:block/mossy_stone/mossy_stone_gem_1_connected-ctm_horizontal",
+    "standard_none": "chisel:block/mossy_stone/mossy_stone_gem_1_connected",
+    "standard_vertical": "chisel:block/mossy_stone/mossy_stone_gem_1_connected-ctm_vertical"
+  }
+}

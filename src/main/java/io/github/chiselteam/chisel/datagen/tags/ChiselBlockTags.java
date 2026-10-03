@@ -41,9 +41,9 @@ public class ChiselBlockTags extends BlockTagsProvider {
         WoodFamilies.families().forEach(family -> addToWood(family.getFamily()));
         addToWood(ChiselFamilies.BOOKSHELF.getFamily());
 
-        addToTag(ChiselTags.CANT_BE_MOSSED, ChiselFamilies.MOSSY_COBBLESTONE.getFamily());
-        addToTag(ChiselTags.CANT_BE_MOSSED, ChiselFamilies.MOSSY_BLACKSTONE.getFamily());
-        addToTag(ChiselTags.CANT_BE_MOSSED, ChiselFamilies.MOSSY_TEMPLE.getFamily());
+        // addToTag(ChiselTags.CANT_BE_MOSSED, ChiselFamilies.MOSSY_COBBLESTONE.getFamily());
+        // addToTag(ChiselTags.CANT_BE_MOSSED, ChiselFamilies.MOSSY_BLACKSTONE.getFamily());
+        // addToTag(ChiselTags.CANT_BE_MOSSED, ChiselFamilies.MOSSY_TEMPLE.getFamily());
 
         tag(ChiselTags.CANT_BE_MOSSED).add(Blocks.BEDROCK);
 
@@ -132,6 +132,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.MARBLE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.MILITARY.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.MOSSY_COBBLESTONE.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.MOSSY_STONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.MOSSY_BLACKSTONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.MOSSY_TEMPLE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.NETHERBRICK.getFamily());

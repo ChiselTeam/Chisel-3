@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/mossy_stone/mossy_stone_chisel_4"
+  }
+}
