@@ -45,8 +45,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(ChiselTags.CANT_BE_MOSSED, ChiselFamilies.MOSSY_BLACKSTONE.getFamily());
         addToTag(ChiselTags.CANT_BE_MOSSED, ChiselFamilies.MOSSY_TEMPLE.getFamily());
 
-        tag(ChiselTags.CANT_BE_MOSSED)
-                .add(Blocks.BEDROCK);
+        tag(ChiselTags.CANT_BE_MOSSED).add(Blocks.BEDROCK);
 
         // MARK: AXE
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselFamilies.ACACIA.getFamily());
@@ -240,22 +239,25 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.ENCHANTMENT_POWER_PROVIDER, ChiselFamilies.BOOKSHELF.getFamily());
         addToTag(BlockTags.SOUL_SPEED_BLOCKS, ChiselFamilies.SOUL_SOIL.getFamily());
         addToTag(BlockTags.SOUL_FIRE_BASE_BLOCKS, ChiselFamilies.SOUL_SOIL.getFamily());
+        addToTag(BlockTags.INFINIBURN_OVERWORLD, ChiselFamilies.NETHERRACK.getFamily());
+        addToTag(BlockTags.INFINIBURN_NETHER, ChiselFamilies.NETHERRACK.getFamily());
+        addToTag(BlockTags.INFINIBURN_END, ChiselFamilies.NETHERRACK.getFamily());
+        addToTag(BlockTags.DIRT, ChiselFamilies.DIRT.getFamily());
 
         // MARK: NEOFORGE TAGS
         addToTag(Tags.Blocks.COBBLESTONES, ChiselFamilies.COBBLESTONE.getFamily());
         addToTag(Tags.Blocks.COBBLESTONES_NORMAL, ChiselFamilies.COBBLESTONE.getFamily());
         addToTag(Tags.Blocks.COBBLESTONES_MOSSY, ChiselFamilies.MOSSY_COBBLESTONE.getFamily());
         addToTag(Tags.Blocks.BOOKSHELVES, ChiselFamilies.BOOKSHELF.getFamily());
-
         addToTag(Tags.Blocks.GLASS_BLOCKS, ChiselFamilies.GLASS.getFamily());
         addToTag(Tags.Blocks.GLASS_BLOCKS, ChiselFamilies.BRIGHT_GLASS.getFamily());
         addToTag(Tags.Blocks.GLASS_PANES, ChiselFamilies.GLASS_PANE.getFamily());
-
-        addToTag(Tags.Blocks.SANDS, ChiselFamilies.DIRT.getFamily());
-
         addToTag(Tags.Blocks.END_STONES, ChiselFamilies.END_STONE.getFamily());
         addToTag(Tags.Blocks.NETHERRACKS, ChiselFamilies.NETHERRACK.getFamily());
         addToTag(Tags.Blocks.OBSIDIANS, ChiselFamilies.OBSIDIAN.getFamily());
+        addToTag(Tags.Blocks.OBSIDIANS_NORMAL, ChiselFamilies.OBSIDIAN.getFamily());
+        addToTag(Tags.Blocks.OBSIDIANS, ChiselFamilies.CRYING_OBSIDIAN.getFamily());
+        addToTag(Tags.Blocks.OBSIDIANS_CRYING, ChiselFamilies.CRYING_OBSIDIAN.getFamily());
         addToTag(Tags.Blocks.SANDSTONE_BLOCKS, ChiselFamilies.SANDSTONE.getFamily());
         addToTag(Tags.Blocks.SANDSTONE_BLOCKS, ChiselFamilies.RED_SANDSTONE.getFamily());
 
