@@ -3,8 +3,8 @@
   "tag": "c:chisel/mossy_blackstone",
   "variants": [
     {
-      "block": "chisel:mossy_blackstone",
-      "name": "mossy_blackstone"
+      "block": "chisel:mossy_blackstone_raw",
+      "name": "mossy_blackstone_raw"
     },
     {
       "block": "chisel:mossy_blackstone_array",
@@ -295,10 +295,6 @@
     {
       "block": "chisel:mossy_blackstone_prism",
       "name": "mossy_blackstone_prism"
-    },
-    {
-      "block": "chisel:mossy_blackstone_raw",
-      "name": "mossy_blackstone_raw"
     },
     {
       "block": "chisel:mossy_blackstone_road",

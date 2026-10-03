@@ -62,6 +62,12 @@ public class ChiselRecipes extends RecipeProvider {
                 .requires(Ingredient.of(Items.VINE, Items.MOSS_BLOCK))
                 .unlockedBy("has_stone", has(Items.STONE))
                 .save(output);
+
+        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.MOSSY_DEEPSLATE.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
+                .requires(Items.DEEPSLATE)
+                .requires(Ingredient.of(Items.VINE, Items.MOSS_BLOCK))
+                .unlockedBy("has_deepslate", has(Items.DEEPSLATE))
+                .save(output);
         
         shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.MOSSY_BLACKSTONE.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
                 .requires(Items.BLACKSTONE)

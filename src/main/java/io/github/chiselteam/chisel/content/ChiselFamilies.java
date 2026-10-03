@@ -79,6 +79,7 @@ public class ChiselFamilies {
     public static final ChiselFamily MILITARY = DecorativeFamilies.MILITARY;
     public static final ChiselFamily MOSSY_COBBLESTONE = StoneFamilies.MOSSY_COBBLESTONE;
     public static final ChiselFamily MOSSY_STONE = StoneFamilies.MOSSY_STONE;
+    public static final ChiselFamily MOSSY_DEEPSLATE = StoneFamilies.MOSSY_DEEPSLATE;
     public static final ChiselFamily MOSSY_BLACKSTONE = StoneFamilies.MOSSY_BLACKSTONE;
     public static final ChiselFamily MOSSY_TEMPLE = DecorativeFamilies.MOSSY_TEMPLE;
     public static final ChiselFamily NV_RUNE = NeoVitaeFamilies.NV_RUNE;
