@@ -106,6 +106,24 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_white_concrete", has(Items.WHITE_CONCRETE))
                 .save(output);
 
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.STEEL_FRAMED_GLASS.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+                .pattern("GGG")
+                .pattern("GIG")
+                .pattern("GGG")
+                .define('I', Tags.Items.INGOTS_IRON)
+                .define('G', Tags.Items.GLASS_BLOCKS_COLORLESS)
+                .unlockedBy("has_glass", has(Tags.Items.GLASS_BLOCKS))
+                .save(output);
+
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.OAK_FRAMED_GLASS.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+                .pattern("GGG")
+                .pattern("GIG")
+                .pattern("GGG")
+                .define('I', Items.OAK_PLANKS)
+                .define('G', Tags.Items.GLASS_BLOCKS_COLORLESS)
+                .unlockedBy("has_glass", has(Tags.Items.GLASS_BLOCKS))
+                .save(output);
+
         shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.BRIGHT_GLASS.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
                 .pattern(" D ")
                 .pattern("DGD")

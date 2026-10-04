@@ -137,6 +137,8 @@ public class ChiselTabs {
                 List.of(
                         ChiselFamilies.ANTIBLOCK.getFamily(),
                         ChiselFamilies.GLASS.getFamily(),
+                        ChiselFamilies.STEEL_FRAMED_GLASS.getFamily(),
+                        ChiselFamilies.OAK_FRAMED_GLASS.getFamily(),
                         ChiselFamilies.BRIGHT_GLASS.getFamily(),
                         ChiselFamilies.TORCH.getFamily(),
                         ChiselFamilies.CLOUD.getFamily(),

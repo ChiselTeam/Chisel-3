@@ -53,6 +53,8 @@ public class ChiselFamilies {
     public static final ChiselFamily FACTORY = DecorativeFamilies.FACTORY;
     public static final ChiselFamily FUTURA = DecorativeFamilies.FUTURA;
     public static final ChiselFamily GLASS = SpecialFamilies.GLASS;
+    public static final ChiselFamily STEEL_FRAMED_GLASS = SpecialFamilies.STEEL_FRAMED_GLASS;
+    public static final ChiselFamily OAK_FRAMED_GLASS = SpecialFamilies.OAK_FRAMED_GLASS;
     public static final ChiselFamily BRIGHT_GLASS = SpecialFamilies.BRIGHT_GLASS;
     public static final ChiselFamily GLASS_PANE = SpecialFamilies.GLASS_PANE;
     public static final ChiselFamily GLOWSTONE = DecorativeFamilies.GLOWSTONE;

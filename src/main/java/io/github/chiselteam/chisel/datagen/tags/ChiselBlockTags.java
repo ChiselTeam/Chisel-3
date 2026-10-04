@@ -252,6 +252,8 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(Tags.Blocks.COBBLESTONES_MOSSY, ChiselFamilies.MOSSY_COBBLESTONE.getFamily());
         addToTag(Tags.Blocks.BOOKSHELVES, ChiselFamilies.BOOKSHELF.getFamily());
         addToTag(Tags.Blocks.GLASS_BLOCKS, ChiselFamilies.GLASS.getFamily());
+        addToTag(Tags.Blocks.GLASS_BLOCKS, ChiselFamilies.STEEL_FRAMED_GLASS.getFamily());
+        addToTag(Tags.Blocks.GLASS_BLOCKS, ChiselFamilies.OAK_FRAMED_GLASS.getFamily());
         addToTag(Tags.Blocks.GLASS_BLOCKS, ChiselFamilies.BRIGHT_GLASS.getFamily());
         addToTag(Tags.Blocks.GLASS_PANES, ChiselFamilies.GLASS_PANE.getFamily());
         addToTag(Tags.Blocks.END_STONES, ChiselFamilies.END_STONE.getFamily());

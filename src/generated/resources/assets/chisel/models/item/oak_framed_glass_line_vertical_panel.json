@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/oak_framed_glass/oak_framed_glass_line_vertical_panel"
+  }
+}
