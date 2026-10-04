@@ -534,6 +534,26 @@
       "block": "chisel:concrete_gray_parquet_encased",
       "model_type": "connected",
       "name": "concrete_gray_parquet_encased"
+    },
+    {
+      "block": "chisel:concrete_gray_plumbing_encased",
+      "model_type": "connected",
+      "name": "concrete_gray_plumbing_encased"
+    },
+    {
+      "block": "chisel:concrete_gray_diamond_plating_encased",
+      "model_type": "connected",
+      "name": "concrete_gray_diamond_plating_encased"
+    },
+    {
+      "block": "chisel:concrete_gray_mesh_encased",
+      "model_type": "connected",
+      "name": "concrete_gray_mesh_encased"
+    },
+    {
+      "block": "chisel:concrete_gray_caution_encased",
+      "model_type": "connected",
+      "name": "concrete_gray_caution_encased"
     }
   ]
 }

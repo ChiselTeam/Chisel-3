@@ -314,6 +314,10 @@ public class ColorCollectionFamilies {
                     .addVariant("%s_parquet".formatted(concreteName)).translation("%s_parquet".formatted(concreteName), baseName, "Parquet")
                     .addVariant("%s_parquet_encased".formatted(concreteName), ChiselModelHandlers.CONNECTED).translation("%s_parquet_encased".formatted(concreteName), baseName, "Encased Parquet")
                     .texture("%s_parquet_encased".formatted(concreteName), "ctm_cornerless", Chisel.prefix("block/concrete_%s/concrete_%s_parquet".formatted(color.getName(), color.getName())))
+                    .addVariant("%s_plumbing_encased".formatted(concreteName), ChiselModelHandlers.CONNECTED).translation("%s_plumbing_encased".formatted(concreteName), baseName, "Encased Plumbing")
+                    .addVariant("%s_diamond_plating_encased".formatted(concreteName), ChiselModelHandlers.CONNECTED).translation("%s_diamond_plating_encased".formatted(concreteName), baseName, "Encased Diamond Plating")
+                    .addVariant("%s_mesh_encased".formatted(concreteName), ChiselModelHandlers.CONNECTED).translation("%s_mesh_encased".formatted(concreteName), baseName, "Encased Mesh")
+                    .addVariant("%s_caution_encased".formatted(concreteName), ChiselModelHandlers.CONNECTED).translation("%s_caution_encased".formatted(concreteName), baseName, "Encased Caution")
             )));
             
             STAINED_GLASS.add(add(ChiselFamily.build("stained_glass_%s".formatted(color.getName()), builder -> builder
