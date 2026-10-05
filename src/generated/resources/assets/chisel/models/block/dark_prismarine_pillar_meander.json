@@ -8,7 +8,7 @@
     "top": "chisel:block/dark_prismarine/dark_prismarine_pillar_meander-top",
     "vertical_both": "chisel:block/dark_prismarine/dark_prismarine_pillar_meander-vertical_both",
     "vertical_bottom": "chisel:block/dark_prismarine/dark_prismarine_pillar_meander-vertical_bottom",
-    "vertical_none": "chisel:block/dark_prismarine/dark_prismarine_pillar_meander-vertical_none",
+    "vertical_none": "chisel:block/dark_prismarine/dark_prismarine_pillar_meander-side",
     "vertical_top": "chisel:block/dark_prismarine/dark_prismarine_pillar_meander-vertical_top"
   }
 }

@@ -8,7 +8,7 @@
     "top": "chisel:block/amethyst/amethyst_pillar_large_basic_triple-top",
     "vertical_both": "chisel:block/amethyst/amethyst_pillar_large_basic_triple-vertical_both",
     "vertical_bottom": "chisel:block/amethyst/amethyst_pillar_large_basic_triple-vertical_bottom",
-    "vertical_none": "chisel:block/amethyst/amethyst_pillar_large_basic_triple-vertical_none",
+    "vertical_none": "chisel:block/amethyst/amethyst_pillar_large_basic_triple-side",
     "vertical_top": "chisel:block/amethyst/amethyst_pillar_large_basic_triple-vertical_top"
   }
 }

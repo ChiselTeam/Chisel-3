@@ -8,7 +8,7 @@
     "top": "chisel:block/mossy_stone/mossy_stone_pillar_meander_dent-top",
     "vertical_both": "chisel:block/mossy_stone/mossy_stone_pillar_meander_dent-vertical_both",
     "vertical_bottom": "chisel:block/mossy_stone/mossy_stone_pillar_meander_dent-vertical_bottom",
-    "vertical_none": "chisel:block/mossy_stone/mossy_stone_pillar_meander_dent-vertical_none",
+    "vertical_none": "chisel:block/mossy_stone/mossy_stone_pillar_meander_dent-side",
     "vertical_top": "chisel:block/mossy_stone/mossy_stone_pillar_meander_dent-vertical_top"
   }
 }

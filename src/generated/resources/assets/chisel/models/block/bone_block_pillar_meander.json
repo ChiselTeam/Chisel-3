@@ -8,7 +8,7 @@
     "top": "chisel:block/bone_block/bone_block_pillar_meander-top",
     "vertical_both": "chisel:block/bone_block/bone_block_pillar_meander-vertical_both",
     "vertical_bottom": "chisel:block/bone_block/bone_block_pillar_meander-vertical_bottom",
-    "vertical_none": "chisel:block/bone_block/bone_block_pillar_meander-vertical_none",
+    "vertical_none": "chisel:block/bone_block/bone_block_pillar_meander-side",
     "vertical_top": "chisel:block/bone_block/bone_block_pillar_meander-vertical_top"
   }
 }

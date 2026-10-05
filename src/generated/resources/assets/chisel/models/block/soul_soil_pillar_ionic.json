@@ -8,7 +8,7 @@
     "top": "chisel:block/soul_soil/soul_soil_pillar_ionic-top",
     "vertical_both": "chisel:block/soul_soil/soul_soil_pillar_ionic-vertical_both",
     "vertical_bottom": "chisel:block/soul_soil/soul_soil_pillar_ionic-vertical_bottom",
-    "vertical_none": "chisel:block/soul_soil/soul_soil_pillar_ionic-vertical_none",
+    "vertical_none": "chisel:block/soul_soil/soul_soil_pillar_ionic-side",
     "vertical_top": "chisel:block/soul_soil/soul_soil_pillar_ionic-vertical_top"
   }
 }

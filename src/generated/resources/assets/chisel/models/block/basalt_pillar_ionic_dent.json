@@ -8,7 +8,7 @@
     "top": "chisel:block/basalt/basalt_pillar_basic-bottom",
     "vertical_both": "chisel:block/basalt/basalt_pillar_basic_dent-vertical_both",
     "vertical_bottom": "chisel:block/basalt/basalt_pillar_ionic_dent-side",
-    "vertical_none": "chisel:block/basalt/basalt_pillar_ionic-vertical_none",
+    "vertical_none": "chisel:block/basalt/basalt_pillar_ionic_dent-side",
     "vertical_top": "chisel:block/basalt/basalt_pillar_ionic_dent-vertical_top"
   }
 }

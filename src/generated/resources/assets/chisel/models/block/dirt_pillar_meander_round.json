@@ -8,7 +8,7 @@
     "top": "chisel:block/dirt/dirt_pillar_meander_round-top",
     "vertical_both": "chisel:block/dirt/dirt_pillar_meander_round-vertical_both",
     "vertical_bottom": "chisel:block/dirt/dirt_pillar_meander_round-vertical_bottom",
-    "vertical_none": "chisel:block/dirt/dirt_pillar_meander_round-vertical_none",
+    "vertical_none": "chisel:block/dirt/dirt_pillar_meander_round-side",
     "vertical_top": "chisel:block/dirt/dirt_pillar_meander_round-vertical_top"
   }
 }

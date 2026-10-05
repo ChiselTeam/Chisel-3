@@ -8,7 +8,7 @@
     "top": "chisel:block/raw_iron/raw_iron_pillar_basic_dent-top",
     "vertical_both": "chisel:block/raw_iron/raw_iron_pillar_basic_dent-vertical_both",
     "vertical_bottom": "chisel:block/raw_iron/raw_iron_pillar_basic_dent-vertical_bottom",
-    "vertical_none": "chisel:block/raw_iron/raw_iron_pillar_basic_dent-vertical_none",
+    "vertical_none": "chisel:block/raw_iron/raw_iron_pillar_basic_dent-side",
     "vertical_top": "chisel:block/raw_iron/raw_iron_pillar_basic_dent-vertical_top"
   }
 }

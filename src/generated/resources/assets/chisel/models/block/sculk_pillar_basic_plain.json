@@ -8,7 +8,7 @@
     "top": "chisel:block/sculk/sculk_pillar_basic_plain-top",
     "vertical_both": "chisel:block/sculk/sculk_pillar_basic_plain-vertical_both",
     "vertical_bottom": "chisel:block/sculk/sculk_pillar_basic_plain-vertical_bottom",
-    "vertical_none": "chisel:block/sculk/sculk_pillar_basic_plain-vertical_none",
+    "vertical_none": "chisel:block/sculk/sculk_pillar_basic_plain-side",
     "vertical_top": "chisel:block/sculk/sculk_pillar_basic_plain-vertical_top"
   }
 }

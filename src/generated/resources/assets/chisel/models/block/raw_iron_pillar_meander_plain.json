@@ -8,7 +8,7 @@
     "top": "chisel:block/raw_iron/raw_iron_pillar_meander_plain-top",
     "vertical_both": "chisel:block/raw_iron/raw_iron_pillar_meander_plain-vertical_both",
     "vertical_bottom": "chisel:block/raw_iron/raw_iron_pillar_meander_plain-vertical_bottom",
-    "vertical_none": "chisel:block/raw_iron/raw_iron_pillar_meander_plain-vertical_none",
+    "vertical_none": "chisel:block/raw_iron/raw_iron_pillar_meander_plain-side",
     "vertical_top": "chisel:block/raw_iron/raw_iron_pillar_meander_plain-vertical_top"
   }
 }

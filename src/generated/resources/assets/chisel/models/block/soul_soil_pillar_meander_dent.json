@@ -8,7 +8,7 @@
     "top": "chisel:block/soul_soil/soul_soil_pillar_meander_dent-top",
     "vertical_both": "chisel:block/soul_soil/soul_soil_pillar_meander_dent-vertical_both",
     "vertical_bottom": "chisel:block/soul_soil/soul_soil_pillar_meander_dent-vertical_bottom",
-    "vertical_none": "chisel:block/soul_soil/soul_soil_pillar_meander_dent-vertical_none",
+    "vertical_none": "chisel:block/soul_soil/soul_soil_pillar_meander_dent-side",
     "vertical_top": "chisel:block/soul_soil/soul_soil_pillar_meander_dent-vertical_top"
   }
 }

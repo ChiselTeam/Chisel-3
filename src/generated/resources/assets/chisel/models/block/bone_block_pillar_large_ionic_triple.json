@@ -8,7 +8,7 @@
     "top": "chisel:block/bone_block/bone_block_pillar_large_ionic_triple-top",
     "vertical_both": "chisel:block/bone_block/bone_block_pillar_large_ionic_triple-vertical_both",
     "vertical_bottom": "chisel:block/bone_block/bone_block_pillar_large_ionic_triple-vertical_bottom",
-    "vertical_none": "chisel:block/bone_block/bone_block_pillar_large_ionic_triple-vertical_none",
+    "vertical_none": "chisel:block/bone_block/bone_block_pillar_large_ionic_triple-side",
     "vertical_top": "chisel:block/bone_block/bone_block_pillar_large_ionic_triple-vertical_top"
   }
 }

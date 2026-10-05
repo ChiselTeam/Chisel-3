@@ -8,7 +8,7 @@
     "top": "chisel:block/mossy_blackstone/mossy_blackstone_pillar_large_basic_triple-top",
     "vertical_both": "chisel:block/mossy_blackstone/mossy_blackstone_pillar_large_basic_triple-vertical_both",
     "vertical_bottom": "chisel:block/mossy_blackstone/mossy_blackstone_pillar_large_basic_triple-vertical_bottom",
-    "vertical_none": "chisel:block/mossy_blackstone/mossy_blackstone_pillar_large_basic_triple-vertical_none",
+    "vertical_none": "chisel:block/mossy_blackstone/mossy_blackstone_pillar_large_basic_triple-side",
     "vertical_top": "chisel:block/mossy_blackstone/mossy_blackstone_pillar_large_basic_triple-vertical_top"
   }
 }
