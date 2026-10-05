@@ -46,11 +46,11 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
     private float previewRotX = 0.0F;
     private float previewRotY = 0.0F;
     private static final float IDLE_ANGULAR_VELOCITY = 0.01F;
-    private static final float INERTIA_DAMPING_PER_SECOND = 0.05F;
+    private static final float INERTIA_DAMPING_PER_SECOND = 0.01F;
     private float previewZoom = 1.0F;
     private boolean isDraggingPreview;
-    private static final float INERTIA_STOP_SPEED = 0.02F;
-    private static final float PREVIEW_DRAG_SENSITIVITY = 0.15F;
+    private static final float INERTIA_STOP_SPEED = 0.00001F;
+    private static final float PREVIEW_DRAG_SENSITIVITY = 0.075F;
     private static final int VARIANT_COLUMNS = 9;
     private static final int VISIBLE_VARIANT_ROWS = 6;
     private static final int SCROLLER_X = 258;
