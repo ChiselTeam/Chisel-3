@@ -276,6 +276,18 @@ public class ChiselBlockTags extends BlockTagsProvider {
             addToTag(getTagForColor(family.getFamily().getFamilyName().substring("stained_glass_".length())), family.getFamily());
         });
 
+        ChiselFamilies.OAK_FRAMED_STAINED_GLASS.forEach(family -> {
+            addToTag(Tags.Blocks.GLASS_BLOCKS, family.getFamily());
+            addToTag(Tags.Blocks.DYED, family.getFamily());
+            addToTag(getTagForColor(family.getFamily().getFamilyName().substring("oak_framed_stained_glass_".length())), family.getFamily());
+        });
+
+        ChiselFamilies.STEEL_FRAMED_STAINED_GLASS.forEach(family -> {
+            addToTag(Tags.Blocks.GLASS_BLOCKS, family.getFamily());
+            addToTag(Tags.Blocks.DYED, family.getFamily());
+            addToTag(getTagForColor(family.getFamily().getFamilyName().substring("steel_framed_stained_glass_".length())), family.getFamily());
+        });
+
         ChiselFamilies.STAINED_GLASS_PANE.forEach(family -> {
             addToTag(Tags.Blocks.GLASS_PANES, family.getFamily());
             addToTag(Tags.Blocks.DYED, family.getFamily());

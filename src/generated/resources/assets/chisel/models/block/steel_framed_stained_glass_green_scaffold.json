@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/steel_framed_stained_glass_green/steel_framed_stained_glass_green_scaffold",
+    "standard_corner": "chisel:block/steel_framed_stained_glass_green/steel_framed_stained_glass_green_scaffold-ctm_corner",
+    "standard_cornerless": "chisel:block/steel_framed_stained_glass_green/steel_framed_stained_glass_green_scaffold-ctm_cornerless",
+    "standard_horizontal": "chisel:block/steel_framed_stained_glass_green/steel_framed_stained_glass_green_scaffold-ctm_horizontal",
+    "standard_none": "chisel:block/steel_framed_stained_glass_green/steel_framed_stained_glass_green_scaffold",
+    "standard_vertical": "chisel:block/steel_framed_stained_glass_green/steel_framed_stained_glass_green_scaffold-ctm_vertical"
+  }
+}

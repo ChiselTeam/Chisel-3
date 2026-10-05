@@ -100,6 +100,28 @@ public class ChiselRecipes extends RecipeProvider {
                 .save(output);
         }
 
+        for (DyeColor color : DyeColor.values()) {
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ColorCollectionFamilies.OAK_FRAMED_STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+                .pattern("GGG")
+                .pattern("GIG")
+                .pattern("GGG")
+                .define('I', Items.OAK_PLANKS)
+                .define('G', ColorCollectionFamilies.STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock())
+                .unlockedBy("has_" + color.getName() + "_stained_glass", has(ColorCollectionFamilies.STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock()))
+                .save(output);
+        }
+
+        for (DyeColor color : DyeColor.values()) {
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ColorCollectionFamilies.STEEL_FRAMED_STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+                .pattern("GGG")
+                .pattern("GIG")
+                .pattern("GGG")
+                .define('I', Tags.Items.INGOTS_IRON)
+                .define('G', ColorCollectionFamilies.STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock())
+                .unlockedBy("has_" + color.getName() + "_stained_glass", has(ColorCollectionFamilies.STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock()))
+                .save(output);
+        }
+
         shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.NEXUS.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .requires(Items.SEA_LANTERN)
                 .requires(Items.WHITE_CONCRETE)

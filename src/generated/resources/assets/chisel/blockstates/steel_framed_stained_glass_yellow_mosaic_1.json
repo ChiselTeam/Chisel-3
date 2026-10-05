@@ -1,0 +1,11 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/steel_framed_stained_glass_yellow_mosaic_1",
+  "variant": {
+    "block": "chisel:steel_framed_stained_glass_yellow_mosaic_1",
+    "kind": "standard"
+  }
+}

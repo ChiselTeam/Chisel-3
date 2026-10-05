@@ -106,23 +106,28 @@ public class ChiselTabs {
             .icon(() -> new ItemStack(ChiselFamilies.IRON.getVariant("iron_ingots_small").get()))
             .displayItems((_, output) -> List.of(
                         ChiselFamilies.FACTORY.getFamily(),
-                        ChiselFamilies.COPPER.getFamily(),
-                        ChiselFamilies.EXPOSED_COPPER.getFamily(),
-                        ChiselFamilies.WEATHERED_COPPER.getFamily(),
-                        ChiselFamilies.OXIDIZED_COPPER.getFamily(),
                         ChiselFamilies.FUTURA.getFamily(),
-                        ChiselFamilies.GOLD.getFamily(),
                         ChiselFamilies.HEX_PLATING.getFamily(),
-                        ChiselFamilies.IRON.getFamily(),
                         ChiselFamilies.LABORATORY.getFamily(),
                         ChiselFamilies.MILITARY.getFamily(),
                         ChiselFamilies.TECHNICAL.getFamily(),
                         ChiselFamilies.TYRIAN.getFamily(),
                         ChiselFamilies.WARNING.getFamily(),
-                        ChiselFamilies.ANCIENT_DEBRIS.getFamily(),
+                        ChiselFamilies.RAW_COPPER.getFamily(),
+                        ChiselFamilies.COPPER.getFamily(),
+                        ChiselFamilies.EXPOSED_COPPER.getFamily(),
+                        ChiselFamilies.WEATHERED_COPPER.getFamily(),
+                        ChiselFamilies.OXIDIZED_COPPER.getFamily(),
+                        ChiselFamilies.LAPIS.getFamily(),
+                        ChiselFamilies.REDSTONE.getFamily(),
                         ChiselFamilies.RAW_IRON.getFamily(),
+                        ChiselFamilies.IRON.getFamily(),
                         ChiselFamilies.RAW_GOLD.getFamily(),
-                        ChiselFamilies.RAW_COPPER.getFamily()
+                        ChiselFamilies.GOLD.getFamily(),
+                        ChiselFamilies.DIAMOND.getFamily(),
+                        ChiselFamilies.EMERALD.getFamily(),
+                        ChiselFamilies.ANCIENT_DEBRIS.getFamily(),
+                        ChiselFamilies.NETHERITE.getFamily()
                 
                 ).forEach(family -> family.getVariants().forEach(variant ->  {
                 if (variant.shouldGenerateModel() && variant.isInTab())
@@ -142,10 +147,8 @@ public class ChiselTabs {
                         ChiselFamilies.BRIGHT_GLASS.getFamily(),
                         ChiselFamilies.TORCH.getFamily(),
                         ChiselFamilies.CLOUD.getFamily(),
-                        ChiselFamilies.DIAMOND.getFamily(),
                         ChiselFamilies.DIRT.getFamily(),
                         ChiselFamilies.MUD.getFamily(),
-                        ChiselFamilies.EMERALD.getFamily(),
                         ChiselFamilies.ENERGIZED_VOIDSTONE.getFamily(),
                         ChiselFamilies.GLASS_PANE.getFamily(),
                         ChiselFamilies.GLOWSTONE.getFamily(),
@@ -156,15 +159,12 @@ public class ChiselTabs {
                         ChiselFamilies.SNOW.getFamily(),
                         ChiselFamilies.JACK_O_LANTERN.getFamily(),
                         ChiselFamilies.IRON_BARS.getFamily(),
-                        ChiselFamilies.LAPIS.getFamily(),
                         ChiselFamilies.LEAF.getFamily(),
                         ChiselFamilies.PAPERWALL.getFamily(),
                         ChiselFamilies.PUMPKIN.getFamily(),
-                        ChiselFamilies.REDSTONE.getFamily(),
                         ChiselFamilies.REDSTONE_LAMP.getFamily(),
                         ChiselFamilies.ROAD_LINE.getFamily(),
                         ChiselFamilies.VALENTINES.getFamily(),
-                        ChiselFamilies.NETHERITE.getFamily(),
                         ChiselFamilies.CLAY.getFamily(),
                         ChiselFamilies.NEXUS.getFamily(),
                         ChiselFamilies.KITCHEN.getFamily(),
@@ -205,6 +205,8 @@ public class ChiselTabs {
                 }));
 
                 ChiselFamilies.STAINED_GLASS.forEach(block -> block.getFamily().getVariants().forEach(variant -> output.accept(variant.getBlock())));
+                ChiselFamilies.OAK_FRAMED_STAINED_GLASS.forEach(block -> block.getFamily().getVariants().forEach(variant -> output.accept(variant.getBlock())));
+                ChiselFamilies.STEEL_FRAMED_STAINED_GLASS.forEach(block -> block.getFamily().getVariants().forEach(variant -> output.accept(variant.getBlock())));
                 ChiselFamilies.STAINED_GLASS_PANE.forEach(block -> block.getFamily().getVariants().forEach(variant -> output.accept(variant.getBlock())));
             })
             .build());

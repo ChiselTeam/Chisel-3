@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": "minecraft:magenta_stained_glass",
+    "I": "minecraft:oak_planks"
+  },
+  "pattern": [
+    "GGG",
+    "GIG",
+    "GGG"
+  ],
+  "result": {
+    "count": 8,
+    "id": "chisel:oak_framed_stained_glass_magenta"
+  }
+}

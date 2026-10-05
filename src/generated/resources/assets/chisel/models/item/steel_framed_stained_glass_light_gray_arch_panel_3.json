@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/steel_framed_stained_glass_light_gray/steel_framed_stained_glass_light_gray_arch_panel_3"
+  }
+}

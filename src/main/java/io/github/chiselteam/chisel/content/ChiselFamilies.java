@@ -152,6 +152,8 @@ public class ChiselFamilies {
     public static final List<ChiselFamily> WOOLS = ColorCollectionFamilies.WOOLS;
     public static final List<ChiselFamily> CONCRETE = ColorCollectionFamilies.CONCRETE;
     public static final List<ChiselFamily> STAINED_GLASS = ColorCollectionFamilies.STAINED_GLASS;
+    public static final List<ChiselFamily> OAK_FRAMED_STAINED_GLASS = ColorCollectionFamilies.OAK_FRAMED_STAINED_GLASS;
+    public static final List<ChiselFamily> STEEL_FRAMED_STAINED_GLASS = ColorCollectionFamilies.STEEL_FRAMED_STAINED_GLASS;
     public static final List<ChiselFamily> STAINED_GLASS_PANE = ColorCollectionFamilies.STAINED_GLASS_PANE;
     public static final List<ChiselFamily> LIGHT = ColorCollectionFamilies.LIGHT;
     private ChiselFamilies() {
