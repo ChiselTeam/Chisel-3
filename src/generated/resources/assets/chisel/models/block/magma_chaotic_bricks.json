@@ -2,6 +2,7 @@
   "parent": "chisel:block/cube_multi_pass",
   "textures": {
     "all": "chisel:block/magma/magma_chaotic_bricks",
+    "base_texture": "minecraft:block/lava_still",
     "layer0": "minecraft:block/lava_still",
     "layer1": "chisel:block/magma/magma_chaotic_bricks",
     "multiblock_3x3_bottom_center": "chisel:block/magma/magma_chaotic_bricks-3x3_bottom_center",

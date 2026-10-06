@@ -8,7 +8,7 @@
     "top": "chisel:block/basalt/basalt_pillar_basic-bottom",
     "vertical_both": "chisel:block/basalt/basalt_pillar_basic_spiral-vertical_both",
     "vertical_bottom": "chisel:block/basalt/basalt_pillar_ionic_plain-side",
-    "vertical_none": "chisel:block/basalt/basalt_pillar_ionic-vertical_none",
+    "vertical_none": "chisel:block/basalt/basalt_pillar_ionic_plain-side",
     "vertical_top": "chisel:block/basalt/basalt_pillar_ionic_spiral-vertical_top"
   }
 }

@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/soul_soil/soul_soil_bricks_large",
+    "multiblock_2x2_bottom_left": "chisel:block/soul_soil/soul_soil_bricks_large-2x2_bottom_left",
+    "multiblock_2x2_bottom_right": "chisel:block/soul_soil/soul_soil_bricks_large-2x2_bottom_right",
+    "multiblock_2x2_top_left": "chisel:block/soul_soil/soul_soil_bricks_large-2x2_top_left",
+    "multiblock_2x2_top_right": "chisel:block/soul_soil/soul_soil_bricks_large-2x2_top_right",
+    "particle": "chisel:block/soul_soil/soul_soil_bricks_large"
+  }
+}

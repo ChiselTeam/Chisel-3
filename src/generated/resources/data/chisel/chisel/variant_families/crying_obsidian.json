@@ -1,0 +1,557 @@
+{
+  "family_name": "crying_obsidian",
+  "tag": "c:chisel/crying_obsidian",
+  "variants": [
+    {
+      "block": "minecraft:crying_obsidian",
+      "name": "block.minecraft.crying_obsidian"
+    },
+    {
+      "block": "chisel:crying_obsidian_array",
+      "model_type": "multiblock_2x2",
+      "name": "crying_obsidian_array"
+    },
+    {
+      "block": "chisel:crying_obsidian_border_square",
+      "model_type": "connected",
+      "name": "crying_obsidian_border_square"
+    },
+    {
+      "block": "chisel:crying_obsidian_braid",
+      "name": "crying_obsidian_braid"
+    },
+    {
+      "block": "chisel:crying_obsidian_braid_encased",
+      "model_type": "connected",
+      "name": "crying_obsidian_braid_encased"
+    },
+    {
+      "block": "chisel:crying_obsidian_bricks_cracked",
+      "name": "crying_obsidian_bricks_cracked"
+    },
+    {
+      "block": "chisel:crying_obsidian_bricks_encased",
+      "model_type": "connected",
+      "name": "crying_obsidian_bricks_encased"
+    },
+    {
+      "block": "chisel:crying_obsidian_bricks_indent",
+      "name": "crying_obsidian_bricks_indent"
+    },
+    {
+      "block": "chisel:crying_obsidian_bricks_inlayed",
+      "name": "crying_obsidian_bricks_inlayed"
+    },
+    {
+      "block": "chisel:crying_obsidian_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "crying_obsidian_bricks_large"
+    },
+    {
+      "block": "chisel:crying_obsidian_bricks_small",
+      "name": "crying_obsidian_bricks_small"
+    },
+    {
+      "block": "chisel:crying_obsidian_bricks_soft",
+      "name": "crying_obsidian_bricks_soft"
+    },
+    {
+      "block": "chisel:crying_obsidian_bricks_solid",
+      "name": "crying_obsidian_bricks_solid"
+    },
+    {
+      "block": "chisel:crying_obsidian_bricks_triple",
+      "name": "crying_obsidian_bricks_triple"
+    },
+    {
+      "block": "chisel:crying_obsidian_bricks_vertical",
+      "name": "crying_obsidian_bricks_vertical"
+    },
+    {
+      "block": "chisel:crying_obsidian_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "crying_obsidian_chaotic"
+    },
+    {
+      "block": "chisel:crying_obsidian_chaotic_medium",
+      "name": "crying_obsidian_chaotic_medium"
+    },
+    {
+      "block": "chisel:crying_obsidian_chaotic_small",
+      "name": "crying_obsidian_chaotic_small"
+    },
+    {
+      "block": "chisel:crying_obsidian_checker",
+      "name": "crying_obsidian_checker"
+    },
+    {
+      "block": "chisel:crying_obsidian_checker_small",
+      "name": "crying_obsidian_checker_small"
+    },
+    {
+      "block": "chisel:crying_obsidian_circular",
+      "model_type": "connected",
+      "name": "crying_obsidian_circular"
+    },
+    {
+      "block": "chisel:crying_obsidian_cracked",
+      "name": "crying_obsidian_cracked"
+    },
+    {
+      "block": "chisel:crying_obsidian_cobble",
+      "name": "crying_obsidian_cobble"
+    },
+    {
+      "block": "chisel:crying_obsidian_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "crying_obsidian_cuts"
+    },
+    {
+      "block": "chisel:crying_obsidian_dent",
+      "model_type": "connected",
+      "name": "crying_obsidian_dent"
+    },
+    {
+      "block": "chisel:crying_obsidian_french_1",
+      "name": "crying_obsidian_french_1"
+    },
+    {
+      "block": "chisel:crying_obsidian_french_2",
+      "name": "crying_obsidian_french_2"
+    },
+    {
+      "block": "chisel:crying_obsidian_indent",
+      "model_type": "connected",
+      "name": "crying_obsidian_indent"
+    },
+    {
+      "block": "chisel:crying_obsidian_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "crying_obsidian_jellybean"
+    },
+    {
+      "block": "chisel:crying_obsidian_layers",
+      "name": "crying_obsidian_layers"
+    },
+    {
+      "block": "chisel:crying_obsidian_layers_connected",
+      "model_type": "connected",
+      "name": "crying_obsidian_layers_connected"
+    },
+    {
+      "block": "chisel:crying_obsidian_line_horizontal",
+      "name": "crying_obsidian_line_horizontal"
+    },
+    {
+      "block": "chisel:crying_obsidian_line_vertical",
+      "name": "crying_obsidian_line_vertical"
+    },
+    {
+      "block": "chisel:crying_obsidian_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "crying_obsidian_meander_horizontal"
+    },
+    {
+      "block": "chisel:crying_obsidian_meander_vertical",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_meander_vertical"
+    },
+    {
+      "block": "chisel:crying_obsidian_mosaic",
+      "model_type": "connected",
+      "name": "crying_obsidian_mosaic"
+    },
+    {
+      "block": "chisel:crying_obsidian_ornate_small",
+      "name": "crying_obsidian_ornate_small"
+    },
+    {
+      "block": "chisel:crying_obsidian_panel",
+      "name": "crying_obsidian_panel"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar",
+      "model_type": "top_bottom_side",
+      "name": "crying_obsidian_pillar"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_basic",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_pillar_basic"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_pillar_basic_round"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "crying_obsidian_pillar_classic"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "crying_obsidian_pillar_classic_large"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_pillar_ionic"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_meander",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_pillar_meander"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_pillar_meander_round"
+    },
+    {
+      "block": "chisel:crying_obsidian_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "crying_obsidian_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:crying_obsidian_plate",
+      "name": "crying_obsidian_plate"
+    },
+    {
+      "block": "chisel:crying_obsidian_plate_connected",
+      "model_type": "connected",
+      "name": "crying_obsidian_plate_connected"
+    },
+    {
+      "block": "chisel:crying_obsidian_polished",
+      "name": "crying_obsidian_polished"
+    },
+    {
+      "block": "chisel:crying_obsidian_polished_encased",
+      "model_type": "connected",
+      "name": "crying_obsidian_polished_encased"
+    },
+    {
+      "block": "chisel:crying_obsidian_prism",
+      "name": "crying_obsidian_prism"
+    },
+    {
+      "block": "chisel:crying_obsidian_raw",
+      "name": "crying_obsidian_raw"
+    },
+    {
+      "block": "chisel:crying_obsidian_road",
+      "name": "crying_obsidian_road"
+    },
+    {
+      "block": "chisel:crying_obsidian_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "crying_obsidian_slanted"
+    },
+    {
+      "block": "chisel:crying_obsidian_tiles",
+      "name": "crying_obsidian_tiles"
+    },
+    {
+      "block": "chisel:crying_obsidian_tiles_large",
+      "model_type": "connected",
+      "name": "crying_obsidian_tiles_large"
+    },
+    {
+      "block": "chisel:crying_obsidian_tiles_small",
+      "name": "crying_obsidian_tiles_small"
+    },
+    {
+      "block": "chisel:crying_obsidian_twisted",
+      "model_type": "top_bottom_side",
+      "name": "crying_obsidian_twisted"
+    },
+    {
+      "block": "chisel:crying_obsidian_weaver",
+      "model_type": "connected",
+      "name": "crying_obsidian_weaver"
+    },
+    {
+      "block": "chisel:crying_obsidian_zag",
+      "model_type": "v4",
+      "name": "crying_obsidian_zag"
+    },
+    {
+      "block": "chisel:crying_obsidian_crate",
+      "model_type": "connected",
+      "name": "crying_obsidian_crate"
+    },
+    {
+      "block": "chisel:crying_obsidian_herringbone",
+      "name": "crying_obsidian_herringbone"
+    },
+    {
+      "block": "chisel:crying_obsidian_herringbone_encased",
+      "model_type": "connected",
+      "name": "crying_obsidian_herringbone_encased"
+    },
+    {
+      "block": "chisel:crying_obsidian_medallion",
+      "name": "crying_obsidian_medallion"
+    },
+    {
+      "block": "chisel:crying_obsidian_medallion_encased",
+      "model_type": "connected",
+      "name": "crying_obsidian_medallion_encased"
+    },
+    {
+      "block": "chisel:crying_obsidian_dots",
+      "name": "crying_obsidian_dots"
+    },
+    {
+      "block": "chisel:crying_obsidian_dots_encased",
+      "model_type": "connected",
+      "name": "crying_obsidian_dots_encased"
+    },
+    {
+      "block": "chisel:crying_obsidian_heart",
+      "name": "crying_obsidian_heart"
+    },
+    {
+      "block": "chisel:crying_obsidian_star",
+      "name": "crying_obsidian_star"
+    },
+    {
+      "block": "chisel:crying_obsidian_plating",
+      "name": "crying_obsidian_plating"
+    },
+    {
+      "block": "chisel:crying_obsidian_lodestone",
+      "name": "crying_obsidian_lodestone"
+    },
+    {
+      "block": "chisel:crying_obsidian_lodestone_connected",
+      "model_type": "connected",
+      "name": "crying_obsidian_lodestone_connected"
+    },
+    {
+      "block": "chisel:crying_obsidian_plank",
+      "name": "crying_obsidian_plank"
+    },
+    {
+      "block": "chisel:crying_obsidian_plank_connected",
+      "model_type": "connected",
+      "name": "crying_obsidian_plank_connected"
+    },
+    {
+      "block": "chisel:crying_obsidian_frame",
+      "name": "crying_obsidian_frame"
+    },
+    {
+      "block": "chisel:crying_obsidian_panel_1",
+      "name": "crying_obsidian_panel_1"
+    },
+    {
+      "block": "chisel:crying_obsidian_panel_2",
+      "name": "crying_obsidian_panel_2"
+    },
+    {
+      "block": "chisel:crying_obsidian_panel_3",
+      "name": "crying_obsidian_panel_3"
+    },
+    {
+      "block": "chisel:crying_obsidian_skull_creeper",
+      "name": "crying_obsidian_skull_creeper"
+    },
+    {
+      "block": "chisel:crying_obsidian_skull_skeleton",
+      "name": "crying_obsidian_skull_skeleton"
+    },
+    {
+      "block": "chisel:crying_obsidian_stripes",
+      "name": "crying_obsidian_stripes"
+    },
+    {
+      "block": "chisel:crying_obsidian_stripes_encased",
+      "model_type": "connected",
+      "name": "crying_obsidian_stripes_encased"
+    },
+    {
+      "block": "chisel:crying_obsidian_chisel_1",
+      "name": "crying_obsidian_chisel_1"
+    },
+    {
+      "block": "chisel:crying_obsidian_chisel_2",
+      "name": "crying_obsidian_chisel_2"
+    },
+    {
+      "block": "chisel:crying_obsidian_chisel_3",
+      "name": "crying_obsidian_chisel_3"
+    },
+    {
+      "block": "chisel:crying_obsidian_chisel_4",
+      "name": "crying_obsidian_chisel_4"
+    },
+    {
+      "block": "chisel:crying_obsidian_chisel_5",
+      "name": "crying_obsidian_chisel_5"
+    },
+    {
+      "block": "chisel:crying_obsidian_chisel_6",
+      "name": "crying_obsidian_chisel_6"
+    },
+    {
+      "block": "chisel:crying_obsidian_facet",
+      "name": "crying_obsidian_facet"
+    },
+    {
+      "block": "chisel:crying_obsidian_facet_small",
+      "name": "crying_obsidian_facet_small"
+    },
+    {
+      "block": "chisel:crying_obsidian_facet_small_encased",
+      "model_type": "connected",
+      "name": "crying_obsidian_facet_small_encased"
+    },
+    {
+      "block": "chisel:crying_obsidian_shiny",
+      "name": "crying_obsidian_shiny"
+    },
+    {
+      "block": "chisel:crying_obsidian_shiny_connected",
+      "model_type": "connected",
+      "name": "crying_obsidian_shiny_connected"
+    },
+    {
+      "block": "chisel:crying_obsidian_gem",
+      "name": "crying_obsidian_gem"
+    },
+    {
+      "block": "chisel:crying_obsidian_gem_1",
+      "name": "crying_obsidian_gem_1"
+    },
+    {
+      "block": "chisel:crying_obsidian_gem_1_connected",
+      "model_type": "connected",
+      "name": "crying_obsidian_gem_1_connected"
+    },
+    {
+      "block": "chisel:crying_obsidian_gem_2",
+      "name": "crying_obsidian_gem_2"
+    },
+    {
+      "block": "chisel:crying_obsidian_gem_2_connected",
+      "model_type": "connected",
+      "name": "crying_obsidian_gem_2_connected"
+    },
+    {
+      "block": "chisel:crying_obsidian_gem_3",
+      "name": "crying_obsidian_gem_3"
+    },
+    {
+      "block": "chisel:crying_obsidian_gem_3_connected",
+      "model_type": "connected",
+      "name": "crying_obsidian_gem_3_connected"
+    },
+    {
+      "block": "chisel:crying_obsidian_bricks_square",
+      "name": "crying_obsidian_bricks_square"
+    },
+    {
+      "block": "chisel:crying_obsidian_slab",
+      "name": "crying_obsidian_slab"
+    },
+    {
+      "block": "chisel:crying_obsidian_scaffold",
+      "name": "crying_obsidian_scaffold"
+    },
+    {
+      "block": "chisel:crying_obsidian_scaffold_encased",
+      "model_type": "connected",
+      "name": "crying_obsidian_scaffold_encased"
+    },
+    {
+      "block": "chisel:crying_obsidian_tiles_inlayed",
+      "name": "crying_obsidian_tiles_inlayed"
+    },
+    {
+      "block": "chisel:crying_obsidian_waves",
+      "model_type": "multiblock_2x2",
+      "name": "crying_obsidian_waves"
+    },
+    {
+      "block": "chisel:crying_obsidian_parquet",
+      "name": "crying_obsidian_parquet"
+    },
+    {
+      "block": "chisel:crying_obsidian_parquet_encased",
+      "model_type": "connected",
+      "name": "crying_obsidian_parquet_encased"
+    },
+    {
+      "block": "chisel:crying_obsidian_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "crying_obsidian_bricks_large_rough"
+    },
+    {
+      "block": "chisel:crying_obsidian_tiles_small_encased",
+      "model_type": "connected",
+      "name": "crying_obsidian_tiles_small_encased"
+    },
+    {
+      "block": "chisel:crying_obsidian_bricks_round",
+      "name": "crying_obsidian_bricks_round"
+    }
+  ]
+}

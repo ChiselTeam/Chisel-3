@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/stained_glass_black/stained_glass_black_round",
+    "standard_corner": "chisel:block/stained_glass_black/stained_glass_black_round-ctm_corner",
+    "standard_cornerless": "chisel:block/stained_glass_black/stained_glass_black_round-ctm_cornerless",
+    "standard_horizontal": "chisel:block/stained_glass_black/stained_glass_black_round-ctm_horizontal",
+    "standard_none": "chisel:block/stained_glass_black/stained_glass_black_round",
+    "standard_vertical": "chisel:block/stained_glass_black/stained_glass_black_round-ctm_vertical"
+  }
+}

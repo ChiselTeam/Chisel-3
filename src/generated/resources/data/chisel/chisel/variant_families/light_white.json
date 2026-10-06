@@ -3,6 +3,40 @@
   "tag": "c:chisel/light_white",
   "variants": [
     {
+      "block": "chisel:light_white_regular",
+      "model_type": "connected",
+      "name": "light_white_regular"
+    },
+    {
+      "block": "chisel:light_white_borderless",
+      "model_type": "connected",
+      "name": "light_white_borderless"
+    },
+    {
+      "block": "chisel:light_white_diamond",
+      "model_type": "connected",
+      "name": "light_white_diamond"
+    },
+    {
+      "block": "chisel:light_white_panel_fancy",
+      "model_type": "connected",
+      "name": "light_white_panel_fancy"
+    },
+    {
+      "block": "chisel:light_white_bubble",
+      "model_type": "connected",
+      "name": "light_white_bubble"
+    },
+    {
+      "block": "chisel:light_white_panel",
+      "name": "light_white_panel"
+    },
+    {
+      "block": "chisel:light_white_panel_connected",
+      "model_type": "connected",
+      "name": "light_white_panel_connected"
+    },
+    {
       "block": "chisel:light_white_framed",
       "name": "light_white_framed"
     },
@@ -13,6 +47,7 @@
     },
     {
       "block": "chisel:light_white_frame_1",
+      "model_type": "connected",
       "name": "light_white_frame_1"
     },
     {
@@ -20,13 +55,109 @@
       "name": "light_white_frame_2"
     },
     {
-      "block": "chisel:light_white_panel",
-      "name": "light_white_panel"
+      "block": "chisel:light_white_frame_3",
+      "name": "light_white_frame_3"
     },
     {
-      "block": "chisel:light_white_panel_connected",
+      "block": "chisel:light_white_circle",
       "model_type": "connected",
-      "name": "light_white_panel_connected"
+      "name": "light_white_circle"
+    },
+    {
+      "block": "chisel:light_white_round",
+      "model_type": "connected",
+      "name": "light_white_round"
+    },
+    {
+      "block": "chisel:light_white_mosaic_1",
+      "model_type": "connected",
+      "name": "light_white_mosaic_1"
+    },
+    {
+      "block": "chisel:light_white_mosaic_2",
+      "model_type": "connected",
+      "name": "light_white_mosaic_2"
+    },
+    {
+      "block": "chisel:light_white_rings",
+      "model_type": "connected",
+      "name": "light_white_rings"
+    },
+    {
+      "block": "chisel:light_white_basketweave",
+      "name": "light_white_basketweave"
+    },
+    {
+      "block": "chisel:light_white_scaffold",
+      "model_type": "connected",
+      "name": "light_white_scaffold"
+    },
+    {
+      "block": "chisel:light_white_scaffold_left",
+      "model_type": "connected",
+      "name": "light_white_scaffold_left"
+    },
+    {
+      "block": "chisel:light_white_scaffold_right",
+      "model_type": "connected",
+      "name": "light_white_scaffold_right"
+    },
+    {
+      "block": "chisel:light_white_arch_panel",
+      "model_type": "connected",
+      "name": "light_white_arch_panel"
+    },
+    {
+      "block": "chisel:light_white_arch_panel_1",
+      "model_type": "connected",
+      "name": "light_white_arch_panel_1"
+    },
+    {
+      "block": "chisel:light_white_arch_panel_2",
+      "model_type": "connected",
+      "name": "light_white_arch_panel_2"
+    },
+    {
+      "block": "chisel:light_white_arch_panel_3",
+      "model_type": "connected",
+      "name": "light_white_arch_panel_3"
+    },
+    {
+      "block": "chisel:light_white_frame_thick",
+      "model_type": "connected",
+      "name": "light_white_frame_thick"
+    },
+    {
+      "block": "chisel:light_white_frame_thick_panel",
+      "model_type": "connected",
+      "name": "light_white_frame_thick_panel"
+    },
+    {
+      "block": "chisel:light_white_tile",
+      "name": "light_white_tile"
+    },
+    {
+      "block": "chisel:light_white_brick",
+      "model_type": "connected",
+      "name": "light_white_brick"
+    },
+    {
+      "block": "chisel:light_white_line_vertical",
+      "name": "light_white_line_vertical"
+    },
+    {
+      "block": "chisel:light_white_line_horizontal",
+      "name": "light_white_line_horizontal"
+    },
+    {
+      "block": "chisel:light_white_line_vertical_panel",
+      "model_type": "connected",
+      "name": "light_white_line_vertical_panel"
+    },
+    {
+      "block": "chisel:light_white_line_horizontal_panel",
+      "model_type": "connected",
+      "name": "light_white_line_horizontal_panel"
     }
   ]
 }

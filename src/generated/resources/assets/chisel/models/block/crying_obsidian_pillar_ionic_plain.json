@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/crying_obsidian/crying_obsidian_pillar_ionic_plain-side",
+    "bottom": "chisel:block/crying_obsidian/crying_obsidian_pillar_ionic_plain-bottom",
+    "particle": "chisel:block/crying_obsidian/crying_obsidian_pillar_ionic_plain-side",
+    "side": "chisel:block/crying_obsidian/crying_obsidian_pillar_ionic_plain-side",
+    "top": "chisel:block/crying_obsidian/crying_obsidian_pillar_ionic_plain-top",
+    "vertical_both": "chisel:block/crying_obsidian/crying_obsidian_pillar_ionic_plain-vertical_both",
+    "vertical_bottom": "chisel:block/crying_obsidian/crying_obsidian_pillar_ionic_plain-vertical_bottom",
+    "vertical_none": "chisel:block/crying_obsidian/crying_obsidian_pillar_ionic_plain-side",
+    "vertical_top": "chisel:block/crying_obsidian/crying_obsidian_pillar_ionic_plain-vertical_top"
+  }
+}

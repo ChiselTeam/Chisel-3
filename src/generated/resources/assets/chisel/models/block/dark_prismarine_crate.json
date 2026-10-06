@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/dark_prismarine/dark_prismarine_crate",
+    "particle": "chisel:block/dark_prismarine/dark_prismarine_crate",
+    "standard_corner": "chisel:block/dark_prismarine/dark_prismarine_crate-ctm_corner",
+    "standard_cornerless": "chisel:block/dark_prismarine/dark_prismarine_crate-ctm_cornerless",
+    "standard_horizontal": "chisel:block/dark_prismarine/dark_prismarine_crate-ctm_horizontal",
+    "standard_none": "chisel:block/dark_prismarine/dark_prismarine_crate",
+    "standard_vertical": "chisel:block/dark_prismarine/dark_prismarine_crate-ctm_vertical"
+  }
+}

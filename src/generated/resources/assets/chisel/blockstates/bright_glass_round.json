@@ -1,0 +1,11 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/bright_glass_round",
+  "variant": {
+    "block": "chisel:bright_glass_round",
+    "kind": "standard"
+  }
+}

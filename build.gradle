@@ -228,6 +228,10 @@ tasks.withType(JavaCompile).configureEach {
     options.compilerArgs << "-Xmaxerrs" << "10000"
 }
 
+tasks.withType(Jar).configureEach {
+    zip64 = true
+}
+
 idea {
     module {
         inheritOutputDirs = true

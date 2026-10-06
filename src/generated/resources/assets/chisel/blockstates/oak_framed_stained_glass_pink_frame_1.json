@@ -1,0 +1,11 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/oak_framed_stained_glass_pink_frame_1",
+  "variant": {
+    "block": "chisel:oak_framed_stained_glass_pink_frame_1",
+    "kind": "standard"
+  }
+}

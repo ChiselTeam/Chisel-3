@@ -3,6 +3,40 @@
   "tag": "c:chisel/light_orange",
   "variants": [
     {
+      "block": "chisel:light_orange_regular",
+      "model_type": "connected",
+      "name": "light_orange_regular"
+    },
+    {
+      "block": "chisel:light_orange_borderless",
+      "model_type": "connected",
+      "name": "light_orange_borderless"
+    },
+    {
+      "block": "chisel:light_orange_diamond",
+      "model_type": "connected",
+      "name": "light_orange_diamond"
+    },
+    {
+      "block": "chisel:light_orange_panel_fancy",
+      "model_type": "connected",
+      "name": "light_orange_panel_fancy"
+    },
+    {
+      "block": "chisel:light_orange_bubble",
+      "model_type": "connected",
+      "name": "light_orange_bubble"
+    },
+    {
+      "block": "chisel:light_orange_panel",
+      "name": "light_orange_panel"
+    },
+    {
+      "block": "chisel:light_orange_panel_connected",
+      "model_type": "connected",
+      "name": "light_orange_panel_connected"
+    },
+    {
       "block": "chisel:light_orange_framed",
       "name": "light_orange_framed"
     },
@@ -13,6 +47,7 @@
     },
     {
       "block": "chisel:light_orange_frame_1",
+      "model_type": "connected",
       "name": "light_orange_frame_1"
     },
     {
@@ -20,13 +55,109 @@
       "name": "light_orange_frame_2"
     },
     {
-      "block": "chisel:light_orange_panel",
-      "name": "light_orange_panel"
+      "block": "chisel:light_orange_frame_3",
+      "name": "light_orange_frame_3"
     },
     {
-      "block": "chisel:light_orange_panel_connected",
+      "block": "chisel:light_orange_circle",
       "model_type": "connected",
-      "name": "light_orange_panel_connected"
+      "name": "light_orange_circle"
+    },
+    {
+      "block": "chisel:light_orange_round",
+      "model_type": "connected",
+      "name": "light_orange_round"
+    },
+    {
+      "block": "chisel:light_orange_mosaic_1",
+      "model_type": "connected",
+      "name": "light_orange_mosaic_1"
+    },
+    {
+      "block": "chisel:light_orange_mosaic_2",
+      "model_type": "connected",
+      "name": "light_orange_mosaic_2"
+    },
+    {
+      "block": "chisel:light_orange_rings",
+      "model_type": "connected",
+      "name": "light_orange_rings"
+    },
+    {
+      "block": "chisel:light_orange_basketweave",
+      "name": "light_orange_basketweave"
+    },
+    {
+      "block": "chisel:light_orange_scaffold",
+      "model_type": "connected",
+      "name": "light_orange_scaffold"
+    },
+    {
+      "block": "chisel:light_orange_scaffold_left",
+      "model_type": "connected",
+      "name": "light_orange_scaffold_left"
+    },
+    {
+      "block": "chisel:light_orange_scaffold_right",
+      "model_type": "connected",
+      "name": "light_orange_scaffold_right"
+    },
+    {
+      "block": "chisel:light_orange_arch_panel",
+      "model_type": "connected",
+      "name": "light_orange_arch_panel"
+    },
+    {
+      "block": "chisel:light_orange_arch_panel_1",
+      "model_type": "connected",
+      "name": "light_orange_arch_panel_1"
+    },
+    {
+      "block": "chisel:light_orange_arch_panel_2",
+      "model_type": "connected",
+      "name": "light_orange_arch_panel_2"
+    },
+    {
+      "block": "chisel:light_orange_arch_panel_3",
+      "model_type": "connected",
+      "name": "light_orange_arch_panel_3"
+    },
+    {
+      "block": "chisel:light_orange_frame_thick",
+      "model_type": "connected",
+      "name": "light_orange_frame_thick"
+    },
+    {
+      "block": "chisel:light_orange_frame_thick_panel",
+      "model_type": "connected",
+      "name": "light_orange_frame_thick_panel"
+    },
+    {
+      "block": "chisel:light_orange_tile",
+      "name": "light_orange_tile"
+    },
+    {
+      "block": "chisel:light_orange_brick",
+      "model_type": "connected",
+      "name": "light_orange_brick"
+    },
+    {
+      "block": "chisel:light_orange_line_vertical",
+      "name": "light_orange_line_vertical"
+    },
+    {
+      "block": "chisel:light_orange_line_horizontal",
+      "name": "light_orange_line_horizontal"
+    },
+    {
+      "block": "chisel:light_orange_line_vertical_panel",
+      "model_type": "connected",
+      "name": "light_orange_line_vertical_panel"
+    },
+    {
+      "block": "chisel:light_orange_line_horizontal_panel",
+      "model_type": "connected",
+      "name": "light_orange_line_horizontal_panel"
     }
   ]
 }

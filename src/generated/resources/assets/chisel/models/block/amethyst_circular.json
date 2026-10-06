@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/amethyst/amethyst_circular",
+    "particle": "chisel:block/amethyst/amethyst_circular",
+    "standard_corner": "chisel:block/amethyst/amethyst_circular-ctm_corner",
+    "standard_cornerless": "chisel:block/amethyst/amethyst_circular-ctm_cornerless",
+    "standard_horizontal": "chisel:block/amethyst/amethyst_circular-ctm_horizontal",
+    "standard_none": "chisel:block/amethyst/amethyst_circular",
+    "standard_vertical": "chisel:block/amethyst/amethyst_circular-ctm_vertical"
+  }
+}

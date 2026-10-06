@@ -1,0 +1,137 @@
+{
+  "family_name": "oak_framed_stained_glass_yellow",
+  "tag": "c:chisel/oak_framed_stained_glass_yellow",
+  "variants": [
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_bubble",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_bubble"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_panel_fancy",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_panel_fancy"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_frame_thick",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_frame_thick"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_frame_thick_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_frame_thick_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_tile",
+      "name": "oak_framed_stained_glass_yellow_tile"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_brick",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_brick"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_line_vertical",
+      "name": "oak_framed_stained_glass_yellow_line_vertical"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_line_vertical_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_line_vertical_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_line_horizontal",
+      "name": "oak_framed_stained_glass_yellow_line_horizontal"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_arch_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_arch_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_arch_panel_1",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_arch_panel_1"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_arch_panel_2",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_arch_panel_2"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_arch_panel_3",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_arch_panel_3"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_scaffold",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_scaffold"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_scaffold_left",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_scaffold_left"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_scaffold_right",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_scaffold_right"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_basketweave",
+      "name": "oak_framed_stained_glass_yellow_basketweave"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_mosaic_1",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_mosaic_1"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_mosaic_2",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_mosaic_2"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_round",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_round"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_circle",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_circle"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_rings",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_rings"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_diamond",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_diamond"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_yellow_frame_1",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_yellow_frame_1"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/dirt/dirt_indent",
+    "particle": "chisel:block/dirt/dirt_indent",
+    "standard_corner": "chisel:block/dirt/dirt_indent-ctm_corner",
+    "standard_cornerless": "chisel:block/dirt/dirt_indent-ctm_cornerless",
+    "standard_horizontal": "chisel:block/dirt/dirt_indent-ctm_horizontal",
+    "standard_none": "chisel:block/dirt/dirt_indent",
+    "standard_vertical": "chisel:block/dirt/dirt_indent-ctm_vertical"
+  }
+}

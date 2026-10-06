@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/raw_gold/raw_gold_chisel_6"
+  }
+}

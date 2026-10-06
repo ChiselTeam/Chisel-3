@@ -1,0 +1,137 @@
+{
+  "family_name": "oak_framed_stained_glass_red",
+  "tag": "c:chisel/oak_framed_stained_glass_red",
+  "variants": [
+    {
+      "block": "chisel:oak_framed_stained_glass_red",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_bubble",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_bubble"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_panel_fancy",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_panel_fancy"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_frame_thick",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_frame_thick"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_frame_thick_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_frame_thick_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_tile",
+      "name": "oak_framed_stained_glass_red_tile"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_brick",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_brick"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_line_vertical",
+      "name": "oak_framed_stained_glass_red_line_vertical"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_line_vertical_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_line_vertical_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_line_horizontal",
+      "name": "oak_framed_stained_glass_red_line_horizontal"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_arch_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_arch_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_arch_panel_1",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_arch_panel_1"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_arch_panel_2",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_arch_panel_2"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_arch_panel_3",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_arch_panel_3"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_scaffold",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_scaffold"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_scaffold_left",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_scaffold_left"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_scaffold_right",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_scaffold_right"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_basketweave",
+      "name": "oak_framed_stained_glass_red_basketweave"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_mosaic_1",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_mosaic_1"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_mosaic_2",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_mosaic_2"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_round",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_round"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_circle",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_circle"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_rings",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_rings"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_diamond",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_diamond"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_red_frame_1",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_red_frame_1"
+    }
+  ]
+}

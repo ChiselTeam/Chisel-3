@@ -534,6 +534,26 @@
       "block": "chisel:concrete_lime_parquet_encased",
       "model_type": "connected",
       "name": "concrete_lime_parquet_encased"
+    },
+    {
+      "block": "chisel:concrete_lime_plumbing_encased",
+      "model_type": "connected",
+      "name": "concrete_lime_plumbing_encased"
+    },
+    {
+      "block": "chisel:concrete_lime_diamond_plating_encased",
+      "model_type": "connected",
+      "name": "concrete_lime_diamond_plating_encased"
+    },
+    {
+      "block": "chisel:concrete_lime_mesh_encased",
+      "model_type": "connected",
+      "name": "concrete_lime_mesh_encased"
+    },
+    {
+      "block": "chisel:concrete_lime_caution_encased",
+      "model_type": "connected",
+      "name": "concrete_lime_caution_encased"
     }
   ]
 }

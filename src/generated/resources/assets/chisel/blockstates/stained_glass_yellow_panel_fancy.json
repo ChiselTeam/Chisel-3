@@ -1,7 +1,11 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/stained_glass_yellow_panel_fancy"
-    }
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/stained_glass_yellow_panel_fancy",
+  "variant": {
+    "block": "chisel:stained_glass_yellow_panel_fancy",
+    "kind": "standard"
   }
 }

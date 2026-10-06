@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class SpecialFamilies {
-    public static final ChiselFamily ANTIBLOCK, BOOKSHELF, GLASS, GLASS_PANE, IRON_BARS, JACK_O_LANTERN, PUMPKIN, REDSTONE_LAMP, ROAD_LINE, TORCH;
+    public static final ChiselFamily ANTIBLOCK, BOOKSHELF, GLASS, STEEL_FRAMED_GLASS, OAK_FRAMED_GLASS, BRIGHT_GLASS, GLASS_PANE, IRON_BARS, JACK_O_LANTERN, PUMPKIN, REDSTONE_LAMP, ROAD_LINE, TORCH;
     private static final List<ChiselFamily> FAMILIES;
 
     static {
@@ -55,6 +55,127 @@ public class SpecialFamilies {
                 .addVariant("glass_stone", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_stone", "Glass", "Stone Frame Glass")
                 .texture("glass_stone", "ctm_cornerless", Chisel.prefix("block/glass/glass_light-ctm_cornerless"))
                 .addVariant("glass_streak", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("glass_streak", "Glass", "Streak Glass")
+
+                .addVariant("glass_frame_thick", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_frame_thick", "Glass", "Thick Frame")
+                .addVariant("glass_frame_thick_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_frame_thick_panel", "Glass", "Thick Frame Panel")
+                .addVariant("glass_tile", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("glass_tile", "Glass", "Tile")
+                .addVariant("glass_brick", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_brick", "Glass", "Brick")
+                .addVariant("glass_line_vertical", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("glass_line_vertical", "Glass", "Vertical Line")
+                .addVariant("glass_line_vertical_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_line_vertical_panel", "Glass", "Vertical Line Panel")
+                .addVariant("glass_line_horizontal", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("glass_line_horizontal", "Glass", "Horizontal Line")
+                .addVariant("glass_line_horizontal_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_line_horizontal_panel", "Glass", "Horizontal Line Panel")
+                .addVariant("glass_arch_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_arch_panel", "Glass", "Arch Panel")
+                .addVariant("glass_arch_panel_1", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_arch_panel_1", "Glass", "Arch Panel 1")
+                .addVariant("glass_arch_panel_2", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_arch_panel_2", "Glass", "Arch Panel 2")
+                .addVariant("glass_arch_panel_3", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_arch_panel_3", "Glass", "Arch Panel 3")
+                .addVariant("glass_scaffold", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_scaffold", "Glass", "Scaffold")
+                .addVariant("glass_scaffold_left", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_scaffold_left", "Glass", "Scaffold Left")
+                .addVariant("glass_scaffold_right", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_scaffold_right", "Glass", "Scaffold Right")
+                .addVariant("glass_basketweave", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("glass_basketweave", "Glass", "Basketweave")
+                .addVariant("glass_mosaic_1", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_mosaic_1", "Glass", "Mosaic 1")
+                .addVariant("glass_mosaic_2", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_mosaic_2", "Glass", "Mosaic 2")
+                .addVariant("glass_round", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_round", "Glass", "Round")
+                .addVariant("glass_circle", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_circle", "Glass", "Circle")
+                .addVariant("glass_rings", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_rings", "Glass", "Rings")
+                .addVariant("glass_diamond", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_diamond", "Glass", "Diamond")
+                .addVariant("glass_frame_1", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("glass_frame_1", "Glass", "Frame 1")
+                .build());
+
+        STEEL_FRAMED_GLASS = ChiselFamily.build("steel_framed_glass", builder -> builder
+                .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS))
+                .addVariant("steel_framed_glass", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass", "Steel Framed Glass", "Steel Framed Glass")
+
+                .addVariant("steel_framed_glass_panel_fancy", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_panel_fancy", "Steel Framed Glass", "Fancy Panel")
+                .addVariant("steel_framed_glass_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_panel", "Steel Framed Glass", "Panel")
+                .addVariant("steel_framed_glass_bubble", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_bubble", "Steel Framed Glass", "Bubble")
+                .addVariant("steel_framed_glass_frame_thick", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_frame_thick", "Steel Framed Glass", "Thick Frame")
+                .addVariant("steel_framed_glass_frame_thick_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_frame_thick_panel", "Steel Framed Glass", "Thick Frame Panel")
+                .addVariant("steel_framed_glass_tile", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("steel_framed_glass_tile", "Steel Framed Glass", "Tile")
+                .addVariant("steel_framed_glass_brick", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_brick", "Steel Framed Glass", "Brick")
+                .addVariant("steel_framed_glass_line_vertical", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("steel_framed_glass_line_vertical", "Steel Framed Glass", "Vertical Line")
+                .addVariant("steel_framed_glass_line_vertical_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_line_vertical_panel", "Steel Framed Glass", "Vertical Line Panel")
+                .addVariant("steel_framed_glass_line_horizontal", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("steel_framed_glass_line_horizontal", "Steel Framed Glass", "Horizontal Line")
+                .addVariant("steel_framed_glass_line_horizontal_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_line_horizontal_panel", "Steel Framed Glass", "Horizontal Line Panel")
+                .addVariant("steel_framed_glass_arch_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_arch_panel", "Steel Framed Glass", "Arch Panel")
+                .addVariant("steel_framed_glass_arch_panel_1", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_arch_panel_1", "Steel Framed Glass", "Arch Panel 1")
+                .addVariant("steel_framed_glass_arch_panel_2", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_arch_panel_2", "Steel Framed Glass", "Arch Panel 2")
+                .addVariant("steel_framed_glass_arch_panel_3", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_arch_panel_3", "Steel Framed Glass", "Arch Panel 3")
+                .addVariant("steel_framed_glass_scaffold", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_scaffold", "Steel Framed Glass", "Scaffold")
+                .addVariant("steel_framed_glass_scaffold_left", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_scaffold_left", "Steel Framed Glass", "Scaffold Left")
+                .addVariant("steel_framed_glass_scaffold_right", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_scaffold_right", "Steel Framed Glass", "Scaffold Right")
+                .addVariant("steel_framed_glass_basketweave", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("steel_framed_glass_basketweave", "Steel Framed Glass", "Basketweave")
+                .addVariant("steel_framed_glass_mosaic_1", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_mosaic_1", "Steel Framed Glass", "Mosaic 1")
+                .addVariant("steel_framed_glass_mosaic_2", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_mosaic_2", "Steel Framed Glass", "Mosaic 2")
+                .addVariant("steel_framed_glass_round", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_round", "Steel Framed Glass", "Round")
+                .addVariant("steel_framed_glass_circle", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_circle", "Steel Framed Glass", "Circle")
+                .addVariant("steel_framed_glass_rings", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_rings", "Steel Framed Glass", "Rings")
+                .addVariant("steel_framed_glass_diamond", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_diamond", "Steel Framed Glass", "Diamond")
+                .addVariant("steel_framed_glass_frame_1", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("steel_framed_glass_frame_1", "Steel Framed Glass", "Frame 1")
+                .build());
+
+        OAK_FRAMED_GLASS = ChiselFamily.build("oak_framed_glass", builder -> builder
+                .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS))
+                .addVariant("oak_framed_glass", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass", "Oak Framed Glass", "Oak Framed Glass")
+
+                .addVariant("oak_framed_glass_panel_fancy", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_panel_fancy", "Oak Framed Glass", "Fancy Panel")
+                .addVariant("oak_framed_glass_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_panel", "Oak Framed Glass", "Panel")
+                .addVariant("oak_framed_glass_bubble", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_bubble", "Oak Framed Glass", "Bubble")
+                .addVariant("oak_framed_glass_frame_thick", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_frame_thick", "Oak Framed Glass", "Thick Frame")
+                .addVariant("oak_framed_glass_frame_thick_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_frame_thick_panel", "Oak Framed Glass", "Thick Frame Panel")
+                .addVariant("oak_framed_glass_tile", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("oak_framed_glass_tile", "Oak Framed Glass", "Tile")
+                .addVariant("oak_framed_glass_brick", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_brick", "Oak Framed Glass", "Brick")
+                .addVariant("oak_framed_glass_line_vertical", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("oak_framed_glass_line_vertical", "Oak Framed Glass", "Vertical Line")
+                .addVariant("oak_framed_glass_line_vertical_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_line_vertical_panel", "Oak Framed Glass", "Vertical Line Panel")
+                .addVariant("oak_framed_glass_line_horizontal", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("oak_framed_glass_line_horizontal", "Oak Framed Glass", "Horizontal Line")
+                .addVariant("oak_framed_glass_line_horizontal_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_line_horizontal_panel", "Oak Framed Glass", "Horizontal Line Panel")
+                .addVariant("oak_framed_glass_arch_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_arch_panel", "Oak Framed Glass", "Arch Panel")
+                .addVariant("oak_framed_glass_arch_panel_1", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_arch_panel_1", "Oak Framed Glass", "Arch Panel 1")
+                .addVariant("oak_framed_glass_arch_panel_2", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_arch_panel_2", "Oak Framed Glass", "Arch Panel 2")
+                .addVariant("oak_framed_glass_arch_panel_3", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_arch_panel_3", "Oak Framed Glass", "Arch Panel 3")
+                .addVariant("oak_framed_glass_scaffold", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_scaffold", "Oak Framed Glass", "Scaffold")
+                .addVariant("oak_framed_glass_scaffold_left", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_scaffold_left", "Oak Framed Glass", "Scaffold Left")
+                .addVariant("oak_framed_glass_scaffold_right", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_scaffold_right", "Oak Framed Glass", "Scaffold Right")
+                .addVariant("oak_framed_glass_basketweave", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("oak_framed_glass_basketweave", "Oak Framed Glass", "Basketweave")
+                .addVariant("oak_framed_glass_mosaic_1", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_mosaic_1", "Oak Framed Glass", "Mosaic 1")
+                .addVariant("oak_framed_glass_mosaic_2", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_mosaic_2", "Oak Framed Glass", "Mosaic 2")
+                .addVariant("oak_framed_glass_round", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_round", "Oak Framed Glass", "Round")
+                .addVariant("oak_framed_glass_circle", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_circle", "Oak Framed Glass", "Circle")
+                .addVariant("oak_framed_glass_rings", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_rings", "Oak Framed Glass", "Rings")
+                .addVariant("oak_framed_glass_diamond", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_diamond", "Oak Framed Glass", "Diamond")
+                .addVariant("oak_framed_glass_frame_1", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("oak_framed_glass_frame_1", "Oak Framed Glass", "Frame 1")
+                .build());
+        
+        BRIGHT_GLASS = ChiselFamily.build("bright_glass", builder -> builder
+                .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS).lightLevel(state -> 15))
+                .addVariant("bright_glass", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass", "Bright Glass", "Bright Glass")
+
+                .addVariant("bright_glass_panel_fancy", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_panel_fancy", "Bright Glass", "Fancy Panel")
+                .addVariant("bright_glass_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_panel", "Bright Glass", "Panel")
+                .addVariant("bright_glass_bubble", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_bubble", "Bright Glass", "Bubble")
+                .addVariant("bright_glass_borderless", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_borderless", "Bright Glass", "Borderless")
+                .addVariant("bright_glass_frame_thick", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_frame_thick", "Bright Glass", "Thick Frame")
+                .addVariant("bright_glass_frame_thick_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_frame_thick_panel", "Bright Glass", "Thick Frame Panel")
+                .addVariant("bright_glass_tile", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("bright_glass_tile", "Bright Glass", "Tile")
+                .addVariant("bright_glass_brick", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_brick", "Bright Glass", "Brick")
+                .addVariant("bright_glass_line_vertical", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("bright_glass_line_vertical", "Bright Glass", "Vertical Line")
+                .addVariant("bright_glass_line_vertical_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_line_vertical_panel", "Bright Glass", "Vertical Line Panel")
+                .addVariant("bright_glass_line_horizontal", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("bright_glass_line_horizontal", "Bright Glass", "Horizontal Line")
+                .addVariant("bright_glass_line_horizontal_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_line_horizontal_panel", "Bright Glass", "Horizontal Line Panel")
+                .addVariant("bright_glass_arch_panel", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_arch_panel", "Bright Glass", "Arch Panel")
+                .addVariant("bright_glass_arch_panel_1", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_arch_panel_1", "Bright Glass", "Arch Panel 1")
+                .addVariant("bright_glass_arch_panel_2", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_arch_panel_2", "Bright Glass", "Arch Panel 2")
+                .addVariant("bright_glass_arch_panel_3", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_arch_panel_3", "Bright Glass", "Arch Panel 3")
+                .addVariant("bright_glass_scaffold", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_scaffold", "Bright Glass", "Scaffold")
+                .addVariant("bright_glass_scaffold_left", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_scaffold_left", "Bright Glass", "Scaffold Left")
+                .addVariant("bright_glass_scaffold_right", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_scaffold_right", "Bright Glass", "Scaffold Right")
+                .addVariant("bright_glass_basketweave", ChiselTransparentBlock::new, ChiselModelHandlers.CUBE_ALL).translation("bright_glass_basketweave", "Bright Glass", "Basketweave")
+                .addVariant("bright_glass_mosaic_1", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_mosaic_1", "Bright Glass", "Mosaic 1")
+                .addVariant("bright_glass_mosaic_2", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_mosaic_2", "Bright Glass", "Mosaic 2")
+                .addVariant("bright_glass_round", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_round", "Bright Glass", "Round")
+                .addVariant("bright_glass_circle", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_circle", "Bright Glass", "Circle")
+                .addVariant("bright_glass_rings", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_rings", "Bright Glass", "Rings")
+                .addVariant("bright_glass_diamond", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_diamond", "Bright Glass", "Diamond")
+                .addVariant("bright_glass_frame_1", ChiselTransparentBlock::new, ChiselModelHandlers.GLASS).translation("bright_glass_frame_1", "Bright Glass", "Frame 1")
                 .build());
 
         GLASS_PANE = ChiselFamily.build("glass_pane", builder -> builder
@@ -182,7 +303,7 @@ public class SpecialFamilies {
                 .addTorchVariant("torch_10", NoParticleTorchBlock::new, NoParticleWallTorchBlock::new).translation("torch_10", "Torch", "Clear Light Bulb")
                 .build());
 
-        FAMILIES = List.of(ANTIBLOCK, BOOKSHELF, GLASS, GLASS_PANE, IRON_BARS, JACK_O_LANTERN, PUMPKIN, REDSTONE_LAMP, ROAD_LINE, TORCH);
+        FAMILIES = List.of(ANTIBLOCK, BOOKSHELF, GLASS, STEEL_FRAMED_GLASS, OAK_FRAMED_GLASS, BRIGHT_GLASS, GLASS_PANE, IRON_BARS, JACK_O_LANTERN, PUMPKIN, REDSTONE_LAMP, ROAD_LINE, TORCH);
     }
 
     private SpecialFamilies() {

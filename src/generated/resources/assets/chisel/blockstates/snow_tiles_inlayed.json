@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/snow_tiles_inlayed"
+    }
+  }
+}

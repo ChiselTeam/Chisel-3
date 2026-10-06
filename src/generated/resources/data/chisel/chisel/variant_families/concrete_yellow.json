@@ -534,6 +534,26 @@
       "block": "chisel:concrete_yellow_parquet_encased",
       "model_type": "connected",
       "name": "concrete_yellow_parquet_encased"
+    },
+    {
+      "block": "chisel:concrete_yellow_plumbing_encased",
+      "model_type": "connected",
+      "name": "concrete_yellow_plumbing_encased"
+    },
+    {
+      "block": "chisel:concrete_yellow_diamond_plating_encased",
+      "model_type": "connected",
+      "name": "concrete_yellow_diamond_plating_encased"
+    },
+    {
+      "block": "chisel:concrete_yellow_mesh_encased",
+      "model_type": "connected",
+      "name": "concrete_yellow_mesh_encased"
+    },
+    {
+      "block": "chisel:concrete_yellow_caution_encased",
+      "model_type": "connected",
+      "name": "concrete_yellow_caution_encased"
     }
   ]
 }

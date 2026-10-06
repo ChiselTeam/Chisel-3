@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/stained_glass_white/stained_glass_white_arch_panel",
+    "standard_corner": "chisel:block/stained_glass_white/stained_glass_white_arch_panel-ctm_corner",
+    "standard_cornerless": "chisel:block/stained_glass_white/stained_glass_white_arch_panel-ctm_cornerless",
+    "standard_horizontal": "chisel:block/stained_glass_white/stained_glass_white_arch_panel-ctm_horizontal",
+    "standard_none": "chisel:block/stained_glass_white/stained_glass_white_arch_panel",
+    "standard_vertical": "chisel:block/stained_glass_white/stained_glass_white_arch_panel-ctm_vertical"
+  }
+}

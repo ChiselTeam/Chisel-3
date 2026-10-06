@@ -5,16 +5,13 @@ import io.github.chiselteam.chisel.datagen.model.VariantTextures;
 import io.github.chiselteam.chisel.datagen.model.generator.MultiLayerModelGenerator;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
-import net.minecraft.client.resources.model.sprite.Material;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.world.level.material.Fluids;
 
 public class LavastoneModelGenerator extends MultiLayerModelGenerator {
     @Override
     public TextureMapping getTextureMapping() {
         return (new TextureMapping())
                 .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
-                .put(TextureSlot.LAYER0, new Material(BuiltInRegistries.FLUID.getKey(Fluids.LAVA.getSource()).withPrefix("block/").withSuffix("_still")))
+                .put(TextureSlot.LAYER0, VariantTextures.get(variant, "bg"))
                 .put(TextureSlot.LAYER1, VariantTextures.get(variant));
     }
 }

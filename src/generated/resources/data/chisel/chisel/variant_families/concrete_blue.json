@@ -534,6 +534,26 @@
       "block": "chisel:concrete_blue_parquet_encased",
       "model_type": "connected",
       "name": "concrete_blue_parquet_encased"
+    },
+    {
+      "block": "chisel:concrete_blue_plumbing_encased",
+      "model_type": "connected",
+      "name": "concrete_blue_plumbing_encased"
+    },
+    {
+      "block": "chisel:concrete_blue_diamond_plating_encased",
+      "model_type": "connected",
+      "name": "concrete_blue_diamond_plating_encased"
+    },
+    {
+      "block": "chisel:concrete_blue_mesh_encased",
+      "model_type": "connected",
+      "name": "concrete_blue_mesh_encased"
+    },
+    {
+      "block": "chisel:concrete_blue_caution_encased",
+      "model_type": "connected",
+      "name": "concrete_blue_caution_encased"
     }
   ]
 }

@@ -4,8 +4,9 @@
     "all"
   ],
   "model_location": "chisel:block/ice_zag",
+  "render_overlay_on_all_faces": true,
   "variant": {
     "block": "chisel:ice_zag",
-    "kind": "ar"
+    "kind": "v4"
   }
 }

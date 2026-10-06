@@ -534,6 +534,26 @@
       "block": "chisel:concrete_green_parquet_encased",
       "model_type": "connected",
       "name": "concrete_green_parquet_encased"
+    },
+    {
+      "block": "chisel:concrete_green_plumbing_encased",
+      "model_type": "connected",
+      "name": "concrete_green_plumbing_encased"
+    },
+    {
+      "block": "chisel:concrete_green_diamond_plating_encased",
+      "model_type": "connected",
+      "name": "concrete_green_diamond_plating_encased"
+    },
+    {
+      "block": "chisel:concrete_green_mesh_encased",
+      "model_type": "connected",
+      "name": "concrete_green_mesh_encased"
+    },
+    {
+      "block": "chisel:concrete_green_caution_encased",
+      "model_type": "connected",
+      "name": "concrete_green_caution_encased"
     }
   ]
 }

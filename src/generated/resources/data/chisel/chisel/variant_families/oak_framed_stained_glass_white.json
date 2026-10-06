@@ -1,0 +1,137 @@
+{
+  "family_name": "oak_framed_stained_glass_white",
+  "tag": "c:chisel/oak_framed_stained_glass_white",
+  "variants": [
+    {
+      "block": "chisel:oak_framed_stained_glass_white",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_bubble",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_bubble"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_panel_fancy",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_panel_fancy"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_frame_thick",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_frame_thick"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_frame_thick_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_frame_thick_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_tile",
+      "name": "oak_framed_stained_glass_white_tile"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_brick",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_brick"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_line_vertical",
+      "name": "oak_framed_stained_glass_white_line_vertical"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_line_vertical_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_line_vertical_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_line_horizontal",
+      "name": "oak_framed_stained_glass_white_line_horizontal"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_arch_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_arch_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_arch_panel_1",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_arch_panel_1"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_arch_panel_2",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_arch_panel_2"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_arch_panel_3",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_arch_panel_3"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_scaffold",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_scaffold"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_scaffold_left",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_scaffold_left"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_scaffold_right",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_scaffold_right"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_basketweave",
+      "name": "oak_framed_stained_glass_white_basketweave"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_mosaic_1",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_mosaic_1"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_mosaic_2",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_mosaic_2"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_round",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_round"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_circle",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_circle"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_rings",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_rings"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_diamond",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_diamond"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_white_frame_1",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_white_frame_1"
+    }
+  ]
+}

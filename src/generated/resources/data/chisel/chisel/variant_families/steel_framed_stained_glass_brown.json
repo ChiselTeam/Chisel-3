@@ -1,0 +1,137 @@
+{
+  "family_name": "steel_framed_stained_glass_brown",
+  "tag": "c:chisel/steel_framed_stained_glass_brown",
+  "variants": [
+    {
+      "block": "chisel:steel_framed_stained_glass_brown",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_bubble",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_bubble"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_panel",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_panel"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_panel_fancy",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_panel_fancy"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_frame_thick",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_frame_thick"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_frame_thick_panel",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_frame_thick_panel"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_tile",
+      "name": "steel_framed_stained_glass_brown_tile"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_brick",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_brick"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_line_vertical",
+      "name": "steel_framed_stained_glass_brown_line_vertical"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_line_vertical_panel",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_line_vertical_panel"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_line_horizontal",
+      "name": "steel_framed_stained_glass_brown_line_horizontal"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_arch_panel",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_arch_panel"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_arch_panel_1",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_arch_panel_1"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_arch_panel_2",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_arch_panel_2"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_arch_panel_3",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_arch_panel_3"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_scaffold",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_scaffold"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_scaffold_left",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_scaffold_left"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_scaffold_right",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_scaffold_right"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_basketweave",
+      "name": "steel_framed_stained_glass_brown_basketweave"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_mosaic_1",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_mosaic_1"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_mosaic_2",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_mosaic_2"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_round",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_round"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_circle",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_circle"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_rings",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_rings"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_diamond",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_diamond"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_brown_frame_1",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_brown_frame_1"
+    }
+  ]
+}

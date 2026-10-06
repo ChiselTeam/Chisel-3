@@ -1,7 +1,7 @@
 {
   "parent": "chisel:block/cube_multi_pass_tinted",
   "textures": {
-    "layer0": "chisel:block/waterstone/water_still",
+    "layer0": "minecraft:block/water_still",
     "layer1": "chisel:block/lavastone/lavastone_chaotic_small",
     "particle": "chisel:block/lavastone/lavastone_chaotic_small"
   }

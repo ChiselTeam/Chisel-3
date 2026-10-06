@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/packed_ice/packed_ice_pillar_ionic_dent-side",
+    "bottom": "chisel:block/packed_ice/packed_ice_pillar_ionic_dent-bottom",
+    "particle": "chisel:block/packed_ice/packed_ice_pillar_ionic_dent-side",
+    "side": "chisel:block/packed_ice/packed_ice_pillar_ionic_dent-side",
+    "top": "chisel:block/packed_ice/packed_ice_pillar_ionic_dent-top",
+    "vertical_both": "chisel:block/packed_ice/packed_ice_pillar_ionic_dent-vertical_both",
+    "vertical_bottom": "chisel:block/packed_ice/packed_ice_pillar_ionic_dent-vertical_bottom",
+    "vertical_none": "chisel:block/packed_ice/packed_ice_pillar_ionic_dent-side",
+    "vertical_top": "chisel:block/packed_ice/packed_ice_pillar_ionic_dent-vertical_top"
+  }
+}

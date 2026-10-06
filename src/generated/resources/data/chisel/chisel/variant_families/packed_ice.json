@@ -1,0 +1,557 @@
+{
+  "family_name": "packed_ice",
+  "tag": "c:chisel/packed_ice",
+  "variants": [
+    {
+      "block": "minecraft:packed_ice",
+      "name": "block.minecraft.packed_ice"
+    },
+    {
+      "block": "chisel:packed_ice_array",
+      "model_type": "multiblock_2x2",
+      "name": "packed_ice_array"
+    },
+    {
+      "block": "chisel:packed_ice_border_square",
+      "model_type": "connected",
+      "name": "packed_ice_border_square"
+    },
+    {
+      "block": "chisel:packed_ice_braid",
+      "name": "packed_ice_braid"
+    },
+    {
+      "block": "chisel:packed_ice_braid_encased",
+      "model_type": "connected",
+      "name": "packed_ice_braid_encased"
+    },
+    {
+      "block": "chisel:packed_ice_bricks_cracked",
+      "name": "packed_ice_bricks_cracked"
+    },
+    {
+      "block": "chisel:packed_ice_bricks_encased",
+      "model_type": "connected",
+      "name": "packed_ice_bricks_encased"
+    },
+    {
+      "block": "chisel:packed_ice_bricks_indent",
+      "name": "packed_ice_bricks_indent"
+    },
+    {
+      "block": "chisel:packed_ice_bricks_inlayed",
+      "name": "packed_ice_bricks_inlayed"
+    },
+    {
+      "block": "chisel:packed_ice_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "packed_ice_bricks_large"
+    },
+    {
+      "block": "chisel:packed_ice_bricks_small",
+      "name": "packed_ice_bricks_small"
+    },
+    {
+      "block": "chisel:packed_ice_bricks_soft",
+      "name": "packed_ice_bricks_soft"
+    },
+    {
+      "block": "chisel:packed_ice_bricks_solid",
+      "name": "packed_ice_bricks_solid"
+    },
+    {
+      "block": "chisel:packed_ice_bricks_triple",
+      "name": "packed_ice_bricks_triple"
+    },
+    {
+      "block": "chisel:packed_ice_bricks_vertical",
+      "name": "packed_ice_bricks_vertical"
+    },
+    {
+      "block": "chisel:packed_ice_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "packed_ice_chaotic"
+    },
+    {
+      "block": "chisel:packed_ice_chaotic_medium",
+      "name": "packed_ice_chaotic_medium"
+    },
+    {
+      "block": "chisel:packed_ice_chaotic_small",
+      "name": "packed_ice_chaotic_small"
+    },
+    {
+      "block": "chisel:packed_ice_checker",
+      "name": "packed_ice_checker"
+    },
+    {
+      "block": "chisel:packed_ice_checker_small",
+      "name": "packed_ice_checker_small"
+    },
+    {
+      "block": "chisel:packed_ice_circular",
+      "model_type": "connected",
+      "name": "packed_ice_circular"
+    },
+    {
+      "block": "chisel:packed_ice_cracked",
+      "name": "packed_ice_cracked"
+    },
+    {
+      "block": "chisel:packed_ice_cobble",
+      "name": "packed_ice_cobble"
+    },
+    {
+      "block": "chisel:packed_ice_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "packed_ice_cuts"
+    },
+    {
+      "block": "chisel:packed_ice_dent",
+      "model_type": "connected",
+      "name": "packed_ice_dent"
+    },
+    {
+      "block": "chisel:packed_ice_french_1",
+      "name": "packed_ice_french_1"
+    },
+    {
+      "block": "chisel:packed_ice_french_2",
+      "name": "packed_ice_french_2"
+    },
+    {
+      "block": "chisel:packed_ice_indent",
+      "model_type": "connected",
+      "name": "packed_ice_indent"
+    },
+    {
+      "block": "chisel:packed_ice_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "packed_ice_jellybean"
+    },
+    {
+      "block": "chisel:packed_ice_layers",
+      "name": "packed_ice_layers"
+    },
+    {
+      "block": "chisel:packed_ice_layers_connected",
+      "model_type": "connected",
+      "name": "packed_ice_layers_connected"
+    },
+    {
+      "block": "chisel:packed_ice_line_horizontal",
+      "name": "packed_ice_line_horizontal"
+    },
+    {
+      "block": "chisel:packed_ice_line_vertical",
+      "name": "packed_ice_line_vertical"
+    },
+    {
+      "block": "chisel:packed_ice_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "packed_ice_meander_horizontal"
+    },
+    {
+      "block": "chisel:packed_ice_meander_vertical",
+      "model_type": "ctmv",
+      "name": "packed_ice_meander_vertical"
+    },
+    {
+      "block": "chisel:packed_ice_mosaic",
+      "model_type": "connected",
+      "name": "packed_ice_mosaic"
+    },
+    {
+      "block": "chisel:packed_ice_ornate_small",
+      "name": "packed_ice_ornate_small"
+    },
+    {
+      "block": "chisel:packed_ice_panel",
+      "name": "packed_ice_panel"
+    },
+    {
+      "block": "chisel:packed_ice_pillar",
+      "model_type": "top_bottom_side",
+      "name": "packed_ice_pillar"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_basic",
+      "model_type": "ctmv",
+      "name": "packed_ice_pillar_basic"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "packed_ice_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "packed_ice_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "packed_ice_pillar_basic_round"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "packed_ice_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "packed_ice_pillar_classic"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "packed_ice_pillar_classic_large"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "packed_ice_pillar_ionic"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "packed_ice_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "packed_ice_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "packed_ice_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "packed_ice_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "packed_ice_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "packed_ice_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_meander",
+      "model_type": "ctmv",
+      "name": "packed_ice_pillar_meander"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "packed_ice_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "packed_ice_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "packed_ice_pillar_meander_round"
+    },
+    {
+      "block": "chisel:packed_ice_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "packed_ice_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:packed_ice_plate",
+      "name": "packed_ice_plate"
+    },
+    {
+      "block": "chisel:packed_ice_plate_connected",
+      "model_type": "connected",
+      "name": "packed_ice_plate_connected"
+    },
+    {
+      "block": "chisel:packed_ice_polished",
+      "name": "packed_ice_polished"
+    },
+    {
+      "block": "chisel:packed_ice_polished_encased",
+      "model_type": "connected",
+      "name": "packed_ice_polished_encased"
+    },
+    {
+      "block": "chisel:packed_ice_prism",
+      "name": "packed_ice_prism"
+    },
+    {
+      "block": "chisel:packed_ice_raw",
+      "name": "packed_ice_raw"
+    },
+    {
+      "block": "chisel:packed_ice_road",
+      "name": "packed_ice_road"
+    },
+    {
+      "block": "chisel:packed_ice_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "packed_ice_slanted"
+    },
+    {
+      "block": "chisel:packed_ice_tiles",
+      "name": "packed_ice_tiles"
+    },
+    {
+      "block": "chisel:packed_ice_tiles_large",
+      "model_type": "connected",
+      "name": "packed_ice_tiles_large"
+    },
+    {
+      "block": "chisel:packed_ice_tiles_small",
+      "name": "packed_ice_tiles_small"
+    },
+    {
+      "block": "chisel:packed_ice_twisted",
+      "model_type": "top_bottom_side",
+      "name": "packed_ice_twisted"
+    },
+    {
+      "block": "chisel:packed_ice_weaver",
+      "model_type": "connected",
+      "name": "packed_ice_weaver"
+    },
+    {
+      "block": "chisel:packed_ice_zag",
+      "model_type": "v4",
+      "name": "packed_ice_zag"
+    },
+    {
+      "block": "chisel:packed_ice_crate",
+      "model_type": "connected",
+      "name": "packed_ice_crate"
+    },
+    {
+      "block": "chisel:packed_ice_herringbone",
+      "name": "packed_ice_herringbone"
+    },
+    {
+      "block": "chisel:packed_ice_herringbone_encased",
+      "model_type": "connected",
+      "name": "packed_ice_herringbone_encased"
+    },
+    {
+      "block": "chisel:packed_ice_medallion",
+      "name": "packed_ice_medallion"
+    },
+    {
+      "block": "chisel:packed_ice_medallion_encased",
+      "model_type": "connected",
+      "name": "packed_ice_medallion_encased"
+    },
+    {
+      "block": "chisel:packed_ice_dots",
+      "name": "packed_ice_dots"
+    },
+    {
+      "block": "chisel:packed_ice_dots_encased",
+      "model_type": "connected",
+      "name": "packed_ice_dots_encased"
+    },
+    {
+      "block": "chisel:packed_ice_heart",
+      "name": "packed_ice_heart"
+    },
+    {
+      "block": "chisel:packed_ice_star",
+      "name": "packed_ice_star"
+    },
+    {
+      "block": "chisel:packed_ice_plating",
+      "name": "packed_ice_plating"
+    },
+    {
+      "block": "chisel:packed_ice_lodestone",
+      "name": "packed_ice_lodestone"
+    },
+    {
+      "block": "chisel:packed_ice_lodestone_connected",
+      "model_type": "connected",
+      "name": "packed_ice_lodestone_connected"
+    },
+    {
+      "block": "chisel:packed_ice_plank",
+      "name": "packed_ice_plank"
+    },
+    {
+      "block": "chisel:packed_ice_plank_connected",
+      "model_type": "connected",
+      "name": "packed_ice_plank_connected"
+    },
+    {
+      "block": "chisel:packed_ice_frame",
+      "name": "packed_ice_frame"
+    },
+    {
+      "block": "chisel:packed_ice_panel_1",
+      "name": "packed_ice_panel_1"
+    },
+    {
+      "block": "chisel:packed_ice_panel_2",
+      "name": "packed_ice_panel_2"
+    },
+    {
+      "block": "chisel:packed_ice_panel_3",
+      "name": "packed_ice_panel_3"
+    },
+    {
+      "block": "chisel:packed_ice_skull_creeper",
+      "name": "packed_ice_skull_creeper"
+    },
+    {
+      "block": "chisel:packed_ice_skull_skeleton",
+      "name": "packed_ice_skull_skeleton"
+    },
+    {
+      "block": "chisel:packed_ice_stripes",
+      "name": "packed_ice_stripes"
+    },
+    {
+      "block": "chisel:packed_ice_stripes_encased",
+      "model_type": "connected",
+      "name": "packed_ice_stripes_encased"
+    },
+    {
+      "block": "chisel:packed_ice_chisel_1",
+      "name": "packed_ice_chisel_1"
+    },
+    {
+      "block": "chisel:packed_ice_chisel_2",
+      "name": "packed_ice_chisel_2"
+    },
+    {
+      "block": "chisel:packed_ice_chisel_3",
+      "name": "packed_ice_chisel_3"
+    },
+    {
+      "block": "chisel:packed_ice_chisel_4",
+      "name": "packed_ice_chisel_4"
+    },
+    {
+      "block": "chisel:packed_ice_chisel_5",
+      "name": "packed_ice_chisel_5"
+    },
+    {
+      "block": "chisel:packed_ice_chisel_6",
+      "name": "packed_ice_chisel_6"
+    },
+    {
+      "block": "chisel:packed_ice_facet",
+      "name": "packed_ice_facet"
+    },
+    {
+      "block": "chisel:packed_ice_facet_small",
+      "name": "packed_ice_facet_small"
+    },
+    {
+      "block": "chisel:packed_ice_facet_small_encased",
+      "model_type": "connected",
+      "name": "packed_ice_facet_small_encased"
+    },
+    {
+      "block": "chisel:packed_ice_shiny",
+      "name": "packed_ice_shiny"
+    },
+    {
+      "block": "chisel:packed_ice_shiny_connected",
+      "model_type": "connected",
+      "name": "packed_ice_shiny_connected"
+    },
+    {
+      "block": "chisel:packed_ice_gem",
+      "name": "packed_ice_gem"
+    },
+    {
+      "block": "chisel:packed_ice_gem_1",
+      "name": "packed_ice_gem_1"
+    },
+    {
+      "block": "chisel:packed_ice_gem_1_connected",
+      "model_type": "connected",
+      "name": "packed_ice_gem_1_connected"
+    },
+    {
+      "block": "chisel:packed_ice_gem_2",
+      "name": "packed_ice_gem_2"
+    },
+    {
+      "block": "chisel:packed_ice_gem_2_connected",
+      "model_type": "connected",
+      "name": "packed_ice_gem_2_connected"
+    },
+    {
+      "block": "chisel:packed_ice_gem_3",
+      "name": "packed_ice_gem_3"
+    },
+    {
+      "block": "chisel:packed_ice_gem_3_connected",
+      "model_type": "connected",
+      "name": "packed_ice_gem_3_connected"
+    },
+    {
+      "block": "chisel:packed_ice_bricks_square",
+      "name": "packed_ice_bricks_square"
+    },
+    {
+      "block": "chisel:packed_ice_slab",
+      "name": "packed_ice_slab"
+    },
+    {
+      "block": "chisel:packed_ice_scaffold",
+      "name": "packed_ice_scaffold"
+    },
+    {
+      "block": "chisel:packed_ice_scaffold_encased",
+      "model_type": "connected",
+      "name": "packed_ice_scaffold_encased"
+    },
+    {
+      "block": "chisel:packed_ice_tiles_inlayed",
+      "name": "packed_ice_tiles_inlayed"
+    },
+    {
+      "block": "chisel:packed_ice_waves",
+      "model_type": "multiblock_2x2",
+      "name": "packed_ice_waves"
+    },
+    {
+      "block": "chisel:packed_ice_parquet",
+      "name": "packed_ice_parquet"
+    },
+    {
+      "block": "chisel:packed_ice_parquet_encased",
+      "model_type": "connected",
+      "name": "packed_ice_parquet_encased"
+    },
+    {
+      "block": "chisel:packed_ice_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "packed_ice_bricks_large_rough"
+    },
+    {
+      "block": "chisel:packed_ice_tiles_small_encased",
+      "model_type": "connected",
+      "name": "packed_ice_tiles_small_encased"
+    },
+    {
+      "block": "chisel:packed_ice_bricks_round",
+      "name": "packed_ice_bricks_round"
+    }
+  ]
+}

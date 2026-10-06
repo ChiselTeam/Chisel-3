@@ -7,7 +7,7 @@
     "layer1": "chisel:block/liminal/liminal_carpet_2",
     "particle": "chisel:block/liminal/liminal_carpet_2",
     "standard_corner": "chisel:block/liminal/liminal_carpet_2-ctm_corner",
-    "standard_cornerless": "chisel:block/antiblock/antiblock_red-ctm_cornerless",
+    "standard_cornerless": "chisel:block/liminal/liminal_carpet_2-ctm_cornerless",
     "standard_horizontal": "chisel:block/liminal/liminal_carpet_2-ctm_horizontal",
     "standard_none": "chisel:block/liminal/liminal_carpet_2",
     "standard_vertical": "chisel:block/liminal/liminal_carpet_2-ctm_vertical"

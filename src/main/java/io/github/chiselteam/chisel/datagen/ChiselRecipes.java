@@ -2,6 +2,8 @@ package io.github.chiselteam.chisel.datagen;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.content.ChiselFamilies;
+import io.github.chiselteam.chisel.content.family.ColorCollectionFamilies;
+import net.minecraft.world.item.DyeColor;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
 import io.github.chiselteam.chisel.registry.ChiselItems;
 import net.minecraft.core.HolderLookup;
@@ -55,40 +57,102 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_blue_dye", has(Tags.Items.DYES_BLUE))
                 .save(output);
 
+        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.MOSSY_STONE.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
+                .requires(Items.STONE)
+                .requires(Ingredient.of(Items.VINE, Items.MOSS_BLOCK))
+                .unlockedBy("has_stone", has(Items.STONE))
+                .save(output);
+
+        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.MOSSY_DEEPSLATE.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
+                .requires(Items.DEEPSLATE)
+                .requires(Ingredient.of(Items.VINE, Items.MOSS_BLOCK))
+                .unlockedBy("has_deepslate", has(Items.DEEPSLATE))
+                .save(output);
+        
         shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.MOSSY_BLACKSTONE.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
                 .requires(Items.BLACKSTONE)
                 .requires(Ingredient.of(Items.VINE, Items.MOSS_BLOCK))
                 .unlockedBy("has_blackstone", has(Items.BLACKSTONE))
                 .save(output);
-// idk how to do 2 recipes
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.LIMINAL.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.LIMINAL.getFamily().getVariants().getFirst().getBlock().asItem(), 16))
                 .pattern(" O ")
                 .pattern("ODO")
                 .pattern(" O ")
-                .define('O', Items.OAK_PLANKS)
-                .define('D', Items.OAK_DOOR)
-                .unlockedBy("has_oak_planks", has(Items.OAK_PLANKS))
+                .define('O', ItemTags.PLANKS)
+                .define('D', ItemTags.WOODEN_DOORS)
+                .unlockedBy("has_planks", has(ItemTags.PLANKS))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.KITCHEN.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.KITCHEN.getFamily().getVariants().getFirst().getBlock().asItem(), 16))
                 .pattern("WB")
                 .pattern("BW")
                 .define('W', Items.WHITE_CONCRETE)
                 .define('B', Items.BLACK_CONCRETE)
                 .unlockedBy("has_white_concrete", has(Items.WHITE_CONCRETE))
                 .save(output);
-
-/*         shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.LIGHT_WHITE.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
+                
+        for (DyeColor color : DyeColor.values()) {
+        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ColorCollectionFamilies.LIGHT.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .requires(Items.SEA_LANTERN)
-                .requires(Items.WHITE_DYE)
-                .unlockedBy("has_white_dye", has(Items.WHITE_DYE))
-                .save(output); */
+                .requires(color.getTag())
+                .unlockedBy("has_" + color.getName() + "_dye", has(color.getTag()))
+                .save(output);
+        }
 
-        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.NEXUS.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
+        for (DyeColor color : DyeColor.values()) {
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ColorCollectionFamilies.OAK_FRAMED_STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+                .pattern("GGG")
+                .pattern("GIG")
+                .pattern("GGG")
+                .define('I', Items.OAK_PLANKS)
+                .define('G', ColorCollectionFamilies.STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock())
+                .unlockedBy("has_" + color.getName() + "_stained_glass", has(ColorCollectionFamilies.STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock()))
+                .save(output);
+        }
+
+        for (DyeColor color : DyeColor.values()) {
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ColorCollectionFamilies.STEEL_FRAMED_STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+                .pattern("GGG")
+                .pattern("GIG")
+                .pattern("GGG")
+                .define('I', Tags.Items.INGOTS_IRON)
+                .define('G', ColorCollectionFamilies.STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock())
+                .unlockedBy("has_" + color.getName() + "_stained_glass", has(ColorCollectionFamilies.STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock()))
+                .save(output);
+        }
+
+        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.NEXUS.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .requires(Items.SEA_LANTERN)
                 .requires(Items.WHITE_CONCRETE)
                 .unlockedBy("has_white_concrete", has(Items.WHITE_CONCRETE))
+                .save(output);
+
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.STEEL_FRAMED_GLASS.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+                .pattern("GGG")
+                .pattern("GIG")
+                .pattern("GGG")
+                .define('I', Tags.Items.INGOTS_IRON)
+                .define('G', Tags.Items.GLASS_BLOCKS_COLORLESS)
+                .unlockedBy("has_glass", has(Tags.Items.GLASS_BLOCKS))
+                .save(output);
+
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.OAK_FRAMED_GLASS.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+                .pattern("GGG")
+                .pattern("GIG")
+                .pattern("GGG")
+                .define('I', Items.OAK_PLANKS)
+                .define('G', Tags.Items.GLASS_BLOCKS_COLORLESS)
+                .unlockedBy("has_glass", has(Tags.Items.GLASS_BLOCKS))
+                .save(output);
+
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.BRIGHT_GLASS.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
+                .pattern(" D ")
+                .pattern("DGD")
+                .pattern(" D ")
+                .define('D', Tags.Items.DUSTS_GLOWSTONE)
+                .define('G', Tags.Items.GLASS_BLOCKS_COLORLESS)
+                .unlockedBy("has_glowstone", has(Tags.Items.DUSTS_GLOWSTONE))
                 .save(output);
 
         shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.FACTORY.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
@@ -185,6 +249,14 @@ public class ChiselRecipes extends RecipeProvider {
                 .save(output);
 
         // MARK: Items
+        shaped(RecipeCategory.MISC, ChiselItems.MEASURING_TAPE)
+                .pattern(" WW")
+                .pattern("SSW")
+                .define('S', Tags.Items.STRINGS)
+                .define('W', ItemTags.PLANKS)
+                .unlockedBy("has_planks", has(ItemTags.PLANKS))
+                .save(output);
+
         shaped(RecipeCategory.MISC, ChiselItems.CLOUD_IN_A_BOTTLE)
                 .pattern("G G")
                 .pattern("GQG")
@@ -198,7 +270,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .pattern("VSV")
                 .pattern("SVS")
                 .pattern("VSV")
-                .define('V', Blocks.VINE)
+                .define('V', Ingredient.of(Items.VINE, Items.MOSS_BLOCK))
                 .define('S', Tags.Items.RODS_WOODEN)
                 .unlockedBy("has_vine", has(Blocks.VINE))
                 .save(output);
@@ -219,12 +291,6 @@ public class ChiselRecipes extends RecipeProvider {
         chiselRecipe("has_diamond", Tags.Items.GEMS_DIAMOND, ChiselItems.CHISEL_DIAMOND);
         chiselRecipe("has_obsidian", Tags.Items.OBSIDIANS, ChiselItems.CHISEL_OBSIDIAN);
         chiselRecipe("has_ender_pearl", Tags.Items.ENDER_PEARLS, ChiselItems.OFFSET_TOOL);
-
-        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselItems.SMASHING_ROCK.get(), 16))
-                .requires(Items.STONE_PICKAXE)
-                .requires(Items.GLASS_BOTTLE)
-                .requires(Items.STONE_SHOVEL)
-                .unlockedBy("has_glass_bottle", has(Items.GLASS_BOTTLE));
     }
 
     private void stoneAround(String unlockedBy, TagKey<Item> recipeItem, ItemLike outputItem, int count) {

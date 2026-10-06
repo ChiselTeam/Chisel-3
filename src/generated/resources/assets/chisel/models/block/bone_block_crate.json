@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/bone_block/bone_block_crate",
+    "particle": "chisel:block/bone_block/bone_block_crate",
+    "standard_corner": "chisel:block/bone_block/bone_block_crate-ctm_corner",
+    "standard_cornerless": "chisel:block/bone_block/bone_block_crate-ctm_cornerless",
+    "standard_horizontal": "chisel:block/bone_block/bone_block_crate-ctm_horizontal",
+    "standard_none": "chisel:block/bone_block/bone_block_crate",
+    "standard_vertical": "chisel:block/bone_block/bone_block_crate-ctm_vertical"
+  }
+}

@@ -1,0 +1,557 @@
+{
+  "family_name": "snow",
+  "tag": "c:chisel/snow",
+  "variants": [
+    {
+      "block": "minecraft:snow_block",
+      "name": "block.minecraft.snow_block"
+    },
+    {
+      "block": "chisel:snow_array",
+      "model_type": "multiblock_2x2",
+      "name": "snow_array"
+    },
+    {
+      "block": "chisel:snow_border_square",
+      "model_type": "connected",
+      "name": "snow_border_square"
+    },
+    {
+      "block": "chisel:snow_braid",
+      "name": "snow_braid"
+    },
+    {
+      "block": "chisel:snow_braid_encased",
+      "model_type": "connected",
+      "name": "snow_braid_encased"
+    },
+    {
+      "block": "chisel:snow_bricks_cracked",
+      "name": "snow_bricks_cracked"
+    },
+    {
+      "block": "chisel:snow_bricks_encased",
+      "model_type": "connected",
+      "name": "snow_bricks_encased"
+    },
+    {
+      "block": "chisel:snow_bricks_indent",
+      "name": "snow_bricks_indent"
+    },
+    {
+      "block": "chisel:snow_bricks_inlayed",
+      "name": "snow_bricks_inlayed"
+    },
+    {
+      "block": "chisel:snow_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "snow_bricks_large"
+    },
+    {
+      "block": "chisel:snow_bricks_small",
+      "name": "snow_bricks_small"
+    },
+    {
+      "block": "chisel:snow_bricks_soft",
+      "name": "snow_bricks_soft"
+    },
+    {
+      "block": "chisel:snow_bricks_solid",
+      "name": "snow_bricks_solid"
+    },
+    {
+      "block": "chisel:snow_bricks_triple",
+      "name": "snow_bricks_triple"
+    },
+    {
+      "block": "chisel:snow_bricks_vertical",
+      "name": "snow_bricks_vertical"
+    },
+    {
+      "block": "chisel:snow_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "snow_chaotic"
+    },
+    {
+      "block": "chisel:snow_chaotic_medium",
+      "name": "snow_chaotic_medium"
+    },
+    {
+      "block": "chisel:snow_chaotic_small",
+      "name": "snow_chaotic_small"
+    },
+    {
+      "block": "chisel:snow_checker",
+      "name": "snow_checker"
+    },
+    {
+      "block": "chisel:snow_checker_small",
+      "name": "snow_checker_small"
+    },
+    {
+      "block": "chisel:snow_circular",
+      "model_type": "connected",
+      "name": "snow_circular"
+    },
+    {
+      "block": "chisel:snow_cracked",
+      "name": "snow_cracked"
+    },
+    {
+      "block": "chisel:snow_cobble",
+      "name": "snow_cobble"
+    },
+    {
+      "block": "chisel:snow_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "snow_cuts"
+    },
+    {
+      "block": "chisel:snow_dent",
+      "model_type": "connected",
+      "name": "snow_dent"
+    },
+    {
+      "block": "chisel:snow_french_1",
+      "name": "snow_french_1"
+    },
+    {
+      "block": "chisel:snow_french_2",
+      "name": "snow_french_2"
+    },
+    {
+      "block": "chisel:snow_indent",
+      "model_type": "connected",
+      "name": "snow_indent"
+    },
+    {
+      "block": "chisel:snow_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "snow_jellybean"
+    },
+    {
+      "block": "chisel:snow_layers",
+      "name": "snow_layers"
+    },
+    {
+      "block": "chisel:snow_layers_connected",
+      "model_type": "connected",
+      "name": "snow_layers_connected"
+    },
+    {
+      "block": "chisel:snow_line_horizontal",
+      "name": "snow_line_horizontal"
+    },
+    {
+      "block": "chisel:snow_line_vertical",
+      "name": "snow_line_vertical"
+    },
+    {
+      "block": "chisel:snow_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "snow_meander_horizontal"
+    },
+    {
+      "block": "chisel:snow_meander_vertical",
+      "model_type": "ctmv",
+      "name": "snow_meander_vertical"
+    },
+    {
+      "block": "chisel:snow_mosaic",
+      "model_type": "connected",
+      "name": "snow_mosaic"
+    },
+    {
+      "block": "chisel:snow_ornate_small",
+      "name": "snow_ornate_small"
+    },
+    {
+      "block": "chisel:snow_panel",
+      "name": "snow_panel"
+    },
+    {
+      "block": "chisel:snow_pillar",
+      "model_type": "top_bottom_side",
+      "name": "snow_pillar"
+    },
+    {
+      "block": "chisel:snow_pillar_basic",
+      "model_type": "ctmv",
+      "name": "snow_pillar_basic"
+    },
+    {
+      "block": "chisel:snow_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "snow_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:snow_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "snow_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:snow_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "snow_pillar_basic_round"
+    },
+    {
+      "block": "chisel:snow_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "snow_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:snow_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "snow_pillar_classic"
+    },
+    {
+      "block": "chisel:snow_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "snow_pillar_classic_large"
+    },
+    {
+      "block": "chisel:snow_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "snow_pillar_ionic"
+    },
+    {
+      "block": "chisel:snow_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "snow_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:snow_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "snow_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:snow_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "snow_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:snow_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "snow_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:snow_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "snow_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:snow_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "snow_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:snow_pillar_meander",
+      "model_type": "ctmv",
+      "name": "snow_pillar_meander"
+    },
+    {
+      "block": "chisel:snow_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "snow_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:snow_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "snow_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:snow_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "snow_pillar_meander_round"
+    },
+    {
+      "block": "chisel:snow_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "snow_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:snow_plate",
+      "name": "snow_plate"
+    },
+    {
+      "block": "chisel:snow_plate_connected",
+      "model_type": "connected",
+      "name": "snow_plate_connected"
+    },
+    {
+      "block": "chisel:snow_polished",
+      "name": "snow_polished"
+    },
+    {
+      "block": "chisel:snow_polished_encased",
+      "model_type": "connected",
+      "name": "snow_polished_encased"
+    },
+    {
+      "block": "chisel:snow_prism",
+      "name": "snow_prism"
+    },
+    {
+      "block": "chisel:snow_raw",
+      "name": "snow_raw"
+    },
+    {
+      "block": "chisel:snow_road",
+      "name": "snow_road"
+    },
+    {
+      "block": "chisel:snow_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "snow_slanted"
+    },
+    {
+      "block": "chisel:snow_tiles",
+      "name": "snow_tiles"
+    },
+    {
+      "block": "chisel:snow_tiles_large",
+      "model_type": "connected",
+      "name": "snow_tiles_large"
+    },
+    {
+      "block": "chisel:snow_tiles_small",
+      "name": "snow_tiles_small"
+    },
+    {
+      "block": "chisel:snow_twisted",
+      "model_type": "top_bottom_side",
+      "name": "snow_twisted"
+    },
+    {
+      "block": "chisel:snow_weaver",
+      "model_type": "connected",
+      "name": "snow_weaver"
+    },
+    {
+      "block": "chisel:snow_zag",
+      "model_type": "v4",
+      "name": "snow_zag"
+    },
+    {
+      "block": "chisel:snow_crate",
+      "model_type": "connected",
+      "name": "snow_crate"
+    },
+    {
+      "block": "chisel:snow_herringbone",
+      "name": "snow_herringbone"
+    },
+    {
+      "block": "chisel:snow_herringbone_encased",
+      "model_type": "connected",
+      "name": "snow_herringbone_encased"
+    },
+    {
+      "block": "chisel:snow_medallion",
+      "name": "snow_medallion"
+    },
+    {
+      "block": "chisel:snow_medallion_encased",
+      "model_type": "connected",
+      "name": "snow_medallion_encased"
+    },
+    {
+      "block": "chisel:snow_dots",
+      "name": "snow_dots"
+    },
+    {
+      "block": "chisel:snow_dots_encased",
+      "model_type": "connected",
+      "name": "snow_dots_encased"
+    },
+    {
+      "block": "chisel:snow_heart",
+      "name": "snow_heart"
+    },
+    {
+      "block": "chisel:snow_star",
+      "name": "snow_star"
+    },
+    {
+      "block": "chisel:snow_plating",
+      "name": "snow_plating"
+    },
+    {
+      "block": "chisel:snow_lodestone",
+      "name": "snow_lodestone"
+    },
+    {
+      "block": "chisel:snow_lodestone_connected",
+      "model_type": "connected",
+      "name": "snow_lodestone_connected"
+    },
+    {
+      "block": "chisel:snow_plank",
+      "name": "snow_plank"
+    },
+    {
+      "block": "chisel:snow_plank_connected",
+      "model_type": "connected",
+      "name": "snow_plank_connected"
+    },
+    {
+      "block": "chisel:snow_frame",
+      "name": "snow_frame"
+    },
+    {
+      "block": "chisel:snow_panel_1",
+      "name": "snow_panel_1"
+    },
+    {
+      "block": "chisel:snow_panel_2",
+      "name": "snow_panel_2"
+    },
+    {
+      "block": "chisel:snow_panel_3",
+      "name": "snow_panel_3"
+    },
+    {
+      "block": "chisel:snow_skull_creeper",
+      "name": "snow_skull_creeper"
+    },
+    {
+      "block": "chisel:snow_skull_skeleton",
+      "name": "snow_skull_skeleton"
+    },
+    {
+      "block": "chisel:snow_stripes",
+      "name": "snow_stripes"
+    },
+    {
+      "block": "chisel:snow_stripes_encased",
+      "model_type": "connected",
+      "name": "snow_stripes_encased"
+    },
+    {
+      "block": "chisel:snow_chisel_1",
+      "name": "snow_chisel_1"
+    },
+    {
+      "block": "chisel:snow_chisel_2",
+      "name": "snow_chisel_2"
+    },
+    {
+      "block": "chisel:snow_chisel_3",
+      "name": "snow_chisel_3"
+    },
+    {
+      "block": "chisel:snow_chisel_4",
+      "name": "snow_chisel_4"
+    },
+    {
+      "block": "chisel:snow_chisel_5",
+      "name": "snow_chisel_5"
+    },
+    {
+      "block": "chisel:snow_chisel_6",
+      "name": "snow_chisel_6"
+    },
+    {
+      "block": "chisel:snow_facet",
+      "name": "snow_facet"
+    },
+    {
+      "block": "chisel:snow_facet_small",
+      "name": "snow_facet_small"
+    },
+    {
+      "block": "chisel:snow_facet_small_encased",
+      "model_type": "connected",
+      "name": "snow_facet_small_encased"
+    },
+    {
+      "block": "chisel:snow_shiny",
+      "name": "snow_shiny"
+    },
+    {
+      "block": "chisel:snow_shiny_connected",
+      "model_type": "connected",
+      "name": "snow_shiny_connected"
+    },
+    {
+      "block": "chisel:snow_gem",
+      "name": "snow_gem"
+    },
+    {
+      "block": "chisel:snow_gem_1",
+      "name": "snow_gem_1"
+    },
+    {
+      "block": "chisel:snow_gem_1_connected",
+      "model_type": "connected",
+      "name": "snow_gem_1_connected"
+    },
+    {
+      "block": "chisel:snow_gem_2",
+      "name": "snow_gem_2"
+    },
+    {
+      "block": "chisel:snow_gem_2_connected",
+      "model_type": "connected",
+      "name": "snow_gem_2_connected"
+    },
+    {
+      "block": "chisel:snow_gem_3",
+      "name": "snow_gem_3"
+    },
+    {
+      "block": "chisel:snow_gem_3_connected",
+      "model_type": "connected",
+      "name": "snow_gem_3_connected"
+    },
+    {
+      "block": "chisel:snow_bricks_square",
+      "name": "snow_bricks_square"
+    },
+    {
+      "block": "chisel:snow_slab",
+      "name": "snow_slab"
+    },
+    {
+      "block": "chisel:snow_scaffold",
+      "name": "snow_scaffold"
+    },
+    {
+      "block": "chisel:snow_scaffold_encased",
+      "model_type": "connected",
+      "name": "snow_scaffold_encased"
+    },
+    {
+      "block": "chisel:snow_tiles_inlayed",
+      "name": "snow_tiles_inlayed"
+    },
+    {
+      "block": "chisel:snow_waves",
+      "model_type": "multiblock_2x2",
+      "name": "snow_waves"
+    },
+    {
+      "block": "chisel:snow_parquet",
+      "name": "snow_parquet"
+    },
+    {
+      "block": "chisel:snow_parquet_encased",
+      "model_type": "connected",
+      "name": "snow_parquet_encased"
+    },
+    {
+      "block": "chisel:snow_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "snow_bricks_large_rough"
+    },
+    {
+      "block": "chisel:snow_tiles_small_encased",
+      "model_type": "connected",
+      "name": "snow_tiles_small_encased"
+    },
+    {
+      "block": "chisel:snow_bricks_round",
+      "name": "snow_bricks_round"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/obsidian/obsidian_pillar_meander_dent-side",
+    "bottom": "chisel:block/obsidian/obsidian_pillar_meander_dent-bottom",
+    "particle": "chisel:block/obsidian/obsidian_pillar_meander_dent-side",
+    "side": "chisel:block/obsidian/obsidian_pillar_meander_dent-side",
+    "top": "chisel:block/obsidian/obsidian_pillar_meander_dent-top",
+    "vertical_both": "chisel:block/obsidian/obsidian_pillar_meander_dent-vertical_both",
+    "vertical_bottom": "chisel:block/obsidian/obsidian_pillar_meander_dent-vertical_bottom",
+    "vertical_none": "chisel:block/obsidian/obsidian_pillar_meander_dent-side",
+    "vertical_top": "chisel:block/obsidian/obsidian_pillar_meander_dent-vertical_top"
+  }
+}

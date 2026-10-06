@@ -8,7 +8,7 @@
     "top": "chisel:block/granite/granite_pillar_basic-bottom",
     "vertical_both": "chisel:block/granite/granite_pillar_basic_dent-vertical_both",
     "vertical_bottom": "chisel:block/granite/granite_pillar_meander_dent-vertical_bottom",
-    "vertical_none": "chisel:block/granite/granite_pillar_meander-vertical_none",
+    "vertical_none": "chisel:block/granite/granite_pillar_meander-side",
     "vertical_top": "chisel:block/granite/granite_pillar_meander_dent-vertical_top"
   }
 }

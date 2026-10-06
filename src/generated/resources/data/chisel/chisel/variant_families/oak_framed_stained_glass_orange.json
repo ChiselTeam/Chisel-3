@@ -1,0 +1,137 @@
+{
+  "family_name": "oak_framed_stained_glass_orange",
+  "tag": "c:chisel/oak_framed_stained_glass_orange",
+  "variants": [
+    {
+      "block": "chisel:oak_framed_stained_glass_orange",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_bubble",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_bubble"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_panel_fancy",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_panel_fancy"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_frame_thick",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_frame_thick"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_frame_thick_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_frame_thick_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_tile",
+      "name": "oak_framed_stained_glass_orange_tile"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_brick",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_brick"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_line_vertical",
+      "name": "oak_framed_stained_glass_orange_line_vertical"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_line_vertical_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_line_vertical_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_line_horizontal",
+      "name": "oak_framed_stained_glass_orange_line_horizontal"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_arch_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_arch_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_arch_panel_1",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_arch_panel_1"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_arch_panel_2",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_arch_panel_2"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_arch_panel_3",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_arch_panel_3"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_scaffold",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_scaffold"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_scaffold_left",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_scaffold_left"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_scaffold_right",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_scaffold_right"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_basketweave",
+      "name": "oak_framed_stained_glass_orange_basketweave"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_mosaic_1",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_mosaic_1"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_mosaic_2",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_mosaic_2"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_round",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_round"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_circle",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_circle"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_rings",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_rings"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_diamond",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_diamond"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_orange_frame_1",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_orange_frame_1"
+    }
+  ]
+}

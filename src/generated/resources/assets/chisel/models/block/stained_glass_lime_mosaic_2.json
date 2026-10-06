@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/stained_glass_lime/stained_glass_lime_mosaic_2",
+    "standard_corner": "chisel:block/stained_glass_lime/stained_glass_lime_mosaic_2-ctm_corner",
+    "standard_cornerless": "chisel:block/stained_glass_lime/stained_glass_lime_mosaic_2-ctm_cornerless",
+    "standard_horizontal": "chisel:block/stained_glass_lime/stained_glass_lime_mosaic_2-ctm_horizontal",
+    "standard_none": "chisel:block/stained_glass_lime/stained_glass_lime_mosaic_2",
+    "standard_vertical": "chisel:block/stained_glass_lime/stained_glass_lime_mosaic_2-ctm_vertical"
+  }
+}

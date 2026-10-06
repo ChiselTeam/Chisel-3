@@ -1,8 +1,8 @@
 package io.github.chiselteam.chisel.datagen.model.generator.special.waterstone;
 
-import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.datagen.model.ChiselModelTemplates;
+import io.github.chiselteam.chisel.datagen.model.ChiselTextureSlots;
 import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateDefinitionGenerator;
@@ -11,7 +11,6 @@ import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplate;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
-import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.Identifier;
 import org.joml.Vector3f;
@@ -37,7 +36,8 @@ public class WaterstoneMultiblockModelGenerator extends VariantModelGenerator {
                 })
                 .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
                 .put(TextureSlot.ALL, VariantTextures.get(variant))
-                .put(TextureSlot.LAYER0, new Material(Chisel.prefix("block/%s/water_still".formatted(variant.getFamily().getFamilyName()))))
+                .putForced(ChiselTextureSlots.CTM_BASE, VariantTextures.get(variant, "bg"))
+                .put(TextureSlot.LAYER0, VariantTextures.get(variant, "bg"))
                 .put(TextureSlot.LAYER1, VariantTextures.get(variant));
     }
 
