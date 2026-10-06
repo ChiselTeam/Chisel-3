@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/charcoal/charcoal_pillar_meander-side",
+    "bottom": "chisel:block/charcoal/charcoal_pillar_basic-bottom",
+    "particle": "chisel:block/charcoal/charcoal_pillar_meander-side",
+    "side": "chisel:block/charcoal/charcoal_pillar_meander-side",
+    "top": "chisel:block/charcoal/charcoal_pillar_basic-bottom",
+    "vertical_both": "chisel:block/charcoal/charcoal_pillar_basic_dent-vertical_both",
+    "vertical_bottom": "chisel:block/charcoal/charcoal_pillar_meander_dent-vertical_bottom",
+    "vertical_none": "chisel:block/charcoal/charcoal_pillar_meander-side",
+    "vertical_top": "chisel:block/charcoal/charcoal_pillar_meander_dent-vertical_top"
+  }
+}

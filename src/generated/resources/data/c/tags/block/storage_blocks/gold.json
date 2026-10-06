@@ -1,0 +1,27 @@
+{
+  "values": [
+    "chisel:gold_125",
+    "chisel:gold_adv",
+    "chisel:gold_bad_greggy",
+    "chisel:gold_brick",
+    "chisel:gold_caution",
+    "chisel:gold_cart",
+    "chisel:gold_coin_heads",
+    "chisel:gold_coin_tails",
+    "chisel:gold_crate_dark",
+    "chisel:gold_crate_light",
+    "chisel:gold_egregious",
+    "chisel:gold_ingots_large",
+    "chisel:gold_ingots_small",
+    "chisel:gold_machine",
+    "chisel:gold_plates",
+    "chisel:gold_rivets",
+    "chisel:gold_scaffold",
+    "chisel:gold_shipping",
+    "chisel:gold_simple",
+    "chisel:gold_star_decor",
+    "chisel:gold_star_obsidian",
+    "chisel:gold_star_obsidian_purple",
+    "chisel:gold_thermal"
+  ]
+}

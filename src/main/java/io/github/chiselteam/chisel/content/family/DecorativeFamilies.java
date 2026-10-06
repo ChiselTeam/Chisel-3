@@ -15,7 +15,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import java.util.List;
 
 public class DecorativeFamilies {
-    public static final ChiselFamily SOUL_SOIL, BONE_BLOCK, SCULK, AMETHYST, MUD, LIMINAL, KITCHEN, NEXUS, C_CONCRETE, CHARCOAL, CLOUD, COAL, COAL_COKE, DIRT, ENERGIZED_VOIDSTONE, 
+    public static final ChiselFamily SOUL_SOIL, BONE_BLOCK, SCULK, AMETHYST, MUD, LIMINAL, KITCHEN, NEXUS, C_CONCRETE, CLOUD, DIRT, ENERGIZED_VOIDSTONE,
     FACTORY, FUTURA, GLOWSTONE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, PACKED_ICE, BLUE_ICE, SNOW, LABORATORY, LAVASTONE, LEAF, MAGMA, MILITARY, MOSSY_TEMPLE, PAPERWALL, REDSTONE, 
     RESIN, SEA_LANTERN, SHINGLE, TECHNICAL, TEMPLE, TERRACOTTA, TYRIAN, VALENTINES, VOIDSTONE, WARNING, WATERSTONE, CLAY;
     private static final List<ChiselFamily> FAMILIES;
@@ -33,51 +33,6 @@ public class DecorativeFamilies {
                 .addVariant("concrete_raw_weathered").translation("concrete_raw_weathered", "Concrete", "Weathered Concrete")
                 .build());
 
-        CHARCOAL = ChiselFamily.build("charcoal", builder -> builder
-                .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE))
-                .addVariant("charcoal_array", ChiselModelHandlers.MULTIBLOCK_2X2).translation("charcoal_array", "Charcoal", "Array")
-                .texture("charcoal_array", "2x2_top_left", Chisel.prefix("block/charcoal/charcoal_array"))
-                .addVariant("charcoal_braid").translation("charcoal_braid", "Charcoal", "Braid")
-                .addVariant("charcoal_chaotic_bricks", ChiselModelHandlers.MULTIBLOCK_3X3).translation("charcoal_chaotic_bricks", "Charcoal", "Chaotic Bricks")
-                .texture("charcoal_chaotic_bricks", "3x3_top_left", Chisel.prefix("block/charcoal/charcoal_chaotic_bricks"))
-                .addVariant("charcoal_chaotic_medium").translation("charcoal_chaotic_medium", "Charcoal", "Charcoal Bricks")
-                .addVariant("charcoal_chaotic_small").translation("charcoal_chaotic_small", "Charcoal", "Charcoal Small Tiles")
-                .addVariant("charcoal_circular", ChiselModelHandlers.CONNECTED).translation("charcoal_circular", "Charcoal", "Circular")
-                .addVariant("charcoal_cracked").translation("charcoal_cracked", "Charcoal", "Cracked")
-                .addVariant("charcoal_cracked_bricks").translation("charcoal_cracked_bricks", "Charcoal", "Cracked Bricks")
-                .addVariant("charcoal_cuts", ChiselModelHandlers.MULTIBLOCK_4X4).translation("charcoal_cuts", "Charcoal", "Cuts")
-                .texture("charcoal_cuts", "4x4_row_0_column_0", Chisel.prefix("block/charcoal/charcoal_cuts"))
-                .addVariant("charcoal_dent", ChiselModelHandlers.CONNECTED).translation("charcoal_dent", "Charcoal", "Dent")
-                .addVariant("charcoal_encased_bricks", ChiselModelHandlers.CONNECTED).translation("charcoal_encased_bricks", "Charcoal", "Encased Bricks")
-                .addVariant("charcoal_french_1").translation("charcoal_french_1", "Charcoal", "French 1")
-                .addVariant("charcoal_french_2").translation("charcoal_french_2", "Charcoal", "French 2")
-                .addVariant("charcoal_jellybean", ChiselModelHandlers.MULTIBLOCK_2X2).translation("charcoal_jellybean", "Charcoal", "Jellybean")
-                .texture("charcoal_jellybean", "2x2_top_left", Chisel.prefix("block/charcoal/charcoal_jellybean"))
-                .addVariant("charcoal_layers").translation("charcoal_layers", "Charcoal", "Layers")
-                .addVariant("charcoal_mosaic", ChiselModelHandlers.CONNECTED).translation("charcoal_mosaic", "Charcoal", "Mosaic")
-                .addVariant("charcoal_ornate").translation("charcoal_ornate", "Charcoal", "Ornate Charcoal")
-                .addVariant("charcoal_panel").translation("charcoal_panel", "Charcoal", "Panel")
-                .addVariant("charcoal_pillar", ChiselModelHandlers.TBS).translation("charcoal_pillar", "Charcoal", "Pillar")
-                .texture("charcoal_pillar", "bottom", Chisel.prefix("block/charcoal/charcoal_pillar-top"))
-                .addVariant("charcoal_prism").translation("charcoal_prism", "Charcoal", "Prismatic Charcoal")
-                .addVariant("charcoal_raw").translation("charcoal_raw", "Charcoal", "Raw")
-                .addVariant("charcoal_road").translation("charcoal_road", "Charcoal", "Road")
-                .addVariant("charcoal_slanted", ChiselModelHandlers.MULTIBLOCK_2X2).translation("charcoal_slanted", "Charcoal", "Slanted")
-                .texture("charcoal_slanted", "2x2_top_left", Chisel.prefix("block/charcoal/charcoal_slanted"))
-                .addVariant("charcoal_small_bricks").translation("charcoal_small_bricks", "Charcoal", "Small Bricks")
-                .addVariant("charcoal_soft_bricks").translation("charcoal_soft_bricks", "Charcoal", "Soft Bricks")
-                .addVariant("charcoal_solid_bricks").translation("charcoal_solid_bricks", "Charcoal", "Solid Bricks")
-                .addVariant("charcoal_tiles_large", ChiselModelHandlers.CONNECTED).translation("charcoal_tiles_large", "Charcoal", "Large Tiles")
-                .addVariant("charcoal_tiles_medium").translation("charcoal_tiles_medium", "Charcoal", "Medium Tiles")
-                .addVariant("charcoal_tiles_small").translation("charcoal_tiles_small", "Charcoal", "Small Tiles")
-                .addVariant("charcoal_triple_bricks").translation("charcoal_triple_bricks", "Charcoal", "Triple Bricks")
-                .addVariant("charcoal_twisted", ChiselModelHandlers.TBS).translation("charcoal_twisted", "Charcoal", "Twisted")
-                .texture("charcoal_twisted", "bottom", Chisel.prefix("block/charcoal/charcoal_twisted-top"))
-                .addVariant("charcoal_weaver", ChiselModelHandlers.CONNECTED).translation("charcoal_weaver", "Charcoal", "Weaver")
-                .addVariant("charcoal_zag", ChiselModelHandlers.AR).translation("charcoal_zag", "Charcoal", "Zag")
-                .texture("charcoal_zag", "ar_variant_1", Chisel.prefix("block/charcoal/charcoal_zag"))
-                .build());
-
         CLOUD = ChiselFamily.build("cloud", builder -> builder
                 .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL).noOcclusion())
                 .addVariant("cloud_grid").translation("cloud_grid", "Cloud", "Gridded Cloud Bricks")
@@ -85,102 +40,6 @@ public class DecorativeFamilies {
                 .addVariant("cloud_normal").translation("cloud_normal", "Cloud", "Cloud Block")
                 .addVariant("cloud_small").translation("cloud_small", "Cloud", "Small Cloud Bricks")
                 .addVariant("cloud_vertical").translation("cloud_vertical", "Cloud", "Small Vertical Cloud Bricks")
-                .build());
-
-        COAL = ChiselFamily.build("coal", builder -> builder
-                .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE))
-                .addVariant(Blocks.COAL_BLOCK)
-                .addVariant("coal_array", ChiselModelHandlers.MULTIBLOCK_2X2).translation("coal_array", "Block of Coal", "Array")
-                .texture("coal_array", "2x2_top_left", Chisel.prefix("block/coal/coal_array"))
-                .addVariant("coal_braid").translation("coal_braid", "Block of Coal", "Braid")
-                .addVariant("coal_chaotic_bricks", ChiselModelHandlers.MULTIBLOCK_3X3).translation("coal_chaotic_bricks", "Block of Coal", "Chaotic Bricks")
-                .texture("coal_chaotic_bricks", "3x3_top_left", Chisel.prefix("block/coal/coal_chaotic_bricks"))
-                .addVariant("coal_chaotic_medium").translation("coal_chaotic_medium", "Block of Coal", "Coal Bricks")
-                .addVariant("coal_chaotic_small").translation("coal_chaotic_small", "Block of Coal", "Coal Small Tiles")
-                .addVariant("coal_circular", ChiselModelHandlers.CONNECTED).translation("coal_circular", "Block of Coal", "Circular")
-                .addVariant("coal_cracked").translation("coal_cracked", "Block of Coal", "Cracked")
-                .addVariant("coal_cracked_bricks").translation("coal_cracked_bricks", "Block of Coal", "Cracked Bricks")
-                .addVariant("coal_cuts", ChiselModelHandlers.MULTIBLOCK_4X4).translation("coal_cuts", "Block of Coal", "Cuts")
-                .texture("coal_cuts", "4x4_row_0_column_0", Chisel.prefix("block/coal/coal_cuts"))
-                .addVariant("coal_dent", ChiselModelHandlers.CONNECTED).translation("coal_dent", "Block of Coal", "Dent")
-                .addVariant("coal_encased_bricks", ChiselModelHandlers.CONNECTED).translation("coal_encased_bricks", "Block of Coal", "Encased Bricks")
-                .addVariant("coal_french_1").translation("coal_french_1", "Block of Coal", "French 1")
-                .addVariant("coal_french_2").translation("coal_french_2", "Block of Coal", "French 2")
-                .addVariant("coal_jellybean", ChiselModelHandlers.MULTIBLOCK_2X2).translation("coal_jellybean", "Block of Coal", "Jellybean")
-                .texture("coal_jellybean", "2x2_top_left", Chisel.prefix("block/coal/coal_jellybean"))
-                .addVariant("coal_layers").translation("coal_layers", "Block of Coal", "Layers")
-                .addVariant("coal_mosaic", ChiselModelHandlers.CONNECTED).translation("coal_mosaic", "Block of Coal", "Mosaic")
-                .addVariant("coal_ornate").translation("coal_ornate", "Block of Coal", "Ornate Coal")
-                .addVariant("coal_panel").translation("coal_panel", "Block of Coal", "Panel")
-                .addVariant("coal_pillar", ChiselModelHandlers.TBS).translation("coal_pillar", "Block of Coal", "Pillar")
-                .texture("coal_pillar", "bottom", Chisel.prefix("block/coal/coal_pillar-top"))
-                .addVariant("coal_prism").translation("coal_prism", "Block of Coal", "Prismatic Coal")
-                .addVariant("coal_raw").translation("coal_raw", "Block of Coal", "Raw")
-                .addVariant("coal_road").translation("coal_road", "Block of Coal", "Road")
-                .addVariant("coal_slanted", ChiselModelHandlers.MULTIBLOCK_2X2).translation("coal_slanted", "Block of Coal", "Slanted")
-                .texture("coal_slanted", "2x2_bottom_left", Chisel.prefix("block/coal/coal_slanted"))
-                .texture("coal_slanted", "2x2_top_left", Chisel.prefix("block/coal/coal_slanted"))
-                .addVariant("coal_small_bricks").translation("coal_small_bricks", "Block of Coal", "Small Bricks")
-                .addVariant("coal_soft_bricks").translation("coal_soft_bricks", "Block of Coal", "Soft Bricks")
-                .addVariant("coal_solid_bricks").translation("coal_solid_bricks", "Block of Coal", "Solid Bricks")
-                .addVariant("coal_tiles_large", ChiselModelHandlers.CONNECTED).translation("coal_tiles_large", "Block of Coal", "Large Tiles")
-                .addVariant("coal_tiles_medium").translation("coal_tiles_medium", "Block of Coal", "Medium Tiles")
-                .addVariant("coal_tiles_small").translation("coal_tiles_small", "Block of Coal", "Small Tiles")
-                .addVariant("coal_triple_bricks").translation("coal_triple_bricks", "Block of Coal", "Triple Bricks")
-                .addVariant("coal_twisted", ChiselModelHandlers.TBS).translation("coal_twisted", "Block of Coal", "Twisted")
-                .texture("coal_twisted", "bottom", Chisel.prefix("block/coal/coal_twisted-top"))
-                .addVariant("coal_weaver", ChiselModelHandlers.CONNECTED).translation("coal_weaver", "Block of Coal", "Weaver")
-                .addVariant("coal_zag", ChiselModelHandlers.AR).translation("coal_zag", "Block of Coal", "Zag")
-                .texture("coal_zag", "ar_variant_1", Chisel.prefix("block/coal/coal_zag"))
-                .build());
-
-        COAL_COKE = ChiselFamily.build("coal_coke", builder -> builder
-                .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE))
-                .addVariant("coal_coke_array", ChiselModelHandlers.MULTIBLOCK_2X2).translation("coal_coke_array", "Coal Coke", "Array")
-                .texture("coal_coke_array", "2x2_top_left", Chisel.prefix("block/coal_coke/coal_coke_array"))
-                .addVariant("coal_coke_braid").translation("coal_coke_braid", "Coal Coke", "Braid")
-                .addVariant("coal_coke_chaotic_bricks", ChiselModelHandlers.MULTIBLOCK_3X3).translation("coal_coke_chaotic_bricks", "Coal Coke", "Chaotic Bricks")
-                .texture("coal_coke_chaotic_bricks", "3x3_top_left", Chisel.prefix("block/coal_coke/coal_coke_chaotic_bricks"))
-                .addVariant("coal_coke_chaotic_medium").translation("coal_coke_chaotic_medium", "Coal Coke", "Coal Coke Bricks")
-                .addVariant("coal_coke_chaotic_small").translation("coal_coke_chaotic_small", "Coal Coke", "Coal Coke Small Tiles")
-                .addVariant("coal_coke_circular", ChiselModelHandlers.CONNECTED).translation("coal_coke_circular", "Coal Coke", "Circular")
-                .texture("coal_coke_circular", "ctm_cornerless", Chisel.prefix("block/coal_coke/coal_coke_dent-ctm_cornerless"))
-                .addVariant("coal_coke_cracked").translation("coal_coke_cracked", "Coal Coke", "Cracked")
-                .addVariant("coal_coke_cracked_bricks").translation("coal_coke_cracked_bricks", "Coal Coke", "Cracked Bricks")
-                .addVariant("coal_coke_cuts", ChiselModelHandlers.MULTIBLOCK_4X4).translation("coal_coke_cuts", "Coal Coke", "Cuts")
-                .texture("coal_coke_cuts", "4x4_row_0_column_0", Chisel.prefix("block/coal_coke/coal_coke_cuts"))
-                .addVariant("coal_coke_dent", ChiselModelHandlers.CONNECTED).translation("coal_coke_dent", "Coal Coke", "Dent")
-                .addVariant("coal_coke_encased_bricks", ChiselModelHandlers.CONNECTED).translation("coal_coke_encased_bricks", "Coal Coke", "Encased Bricks")
-                .addVariant("coal_coke_french_1").translation("coal_coke_french_1", "Coal Coke", "French 1")
-                .addVariant("coal_coke_french_2").translation("coal_coke_french_2", "Coal Coke", "French 2")
-                .addVariant("coal_coke_jellybean", ChiselModelHandlers.MULTIBLOCK_2X2).translation("coal_coke_jellybean", "Coal Coke", "Jellybean")
-                .texture("coal_coke_jellybean", "2x2_top_left", Chisel.prefix("block/coal_coke/coal_coke_jellybean"))
-                .addVariant("coal_coke_layers").translation("coal_coke_layers", "Coal Coke", "Layers")
-                .addVariant("coal_coke_mosaic", ChiselModelHandlers.CONNECTED).translation("coal_coke_mosaic", "Coal Coke", "Mosaic")
-                .texture("coal_coke_mosaic", "ctm_cornerless", Chisel.prefix("block/coal_coke/coal_coke_raw"))
-                .addVariant("coal_coke_ornate").translation("coal_coke_ornate", "Coal Coke", "Ornate Coal Coke")
-                .addVariant("coal_coke_panel").translation("coal_coke_panel", "Coal Coke", "Panel")
-                .addVariant("coal_coke_pillar", ChiselModelHandlers.TBS).translation("coal_coke_pillar", "Coal Coke", "Pillar")
-                .texture("coal_coke_pillar", "bottom", Chisel.prefix("block/coal_coke/coal_coke_pillar-top"))
-                .addVariant("coal_coke_prism").translation("coal_coke_prism", "Coal Coke", "Prismatic Coal Coke")
-                .addVariant("coal_coke_raw").translation("coal_coke_raw", "Coal Coke", "Raw")
-                .addVariant("coal_coke_road").translation("coal_coke_road", "Coal Coke", "Road")
-                .addVariant("coal_coke_slanted", ChiselModelHandlers.MULTIBLOCK_2X2).translation("coal_coke_slanted", "Coal Coke", "Slanted")
-                .texture("coal_coke_slanted", "2x2_bottom_left", Chisel.prefix("block/coal_coke/coal_coke_slanted"))
-                .texture("coal_coke_slanted", "2x2_bottom_right", Chisel.prefix("block/coal_coke/coal_coke_slanted-2x2_top_right"))
-                .texture("coal_coke_slanted", "2x2_top_left", Chisel.prefix("block/coal_coke/coal_coke_slanted"))
-                .addVariant("coal_coke_small_bricks").translation("coal_coke_small_bricks", "Coal Coke", "Small Bricks")
-                .addVariant("coal_coke_soft_bricks").translation("coal_coke_soft_bricks", "Coal Coke", "Soft Bricks")
-                .addVariant("coal_coke_solid_bricks").translation("coal_coke_solid_bricks", "Coal Coke", "Solid Bricks")
-                .addVariant("coal_coke_tiles_large", ChiselModelHandlers.CONNECTED).translation("coal_coke_tiles_large", "Coal Coke", "Large Tiles")
-                .addVariant("coal_coke_tiles_medium").translation("coal_coke_tiles_medium", "Coal Coke", "Medium Tiles")
-                .addVariant("coal_coke_tiles_small").translation("coal_coke_tiles_small", "Coal Coke", "Small Tiles")
-                .addVariant("coal_coke_triple_bricks").translation("coal_coke_triple_bricks", "Coal Coke", "Triple Bricks")
-                .addVariant("coal_coke_twisted", ChiselModelHandlers.TBS).translation("coal_coke_twisted", "Coal Coke", "Twisted")
-                .texture("coal_coke_twisted", "bottom", Chisel.prefix("block/coal_coke/coal_coke_twisted-top"))
-                .addVariant("coal_coke_weaver", ChiselModelHandlers.CONNECTED).translation("coal_coke_weaver", "Coal Coke", "Weaver")
-                .addVariant("coal_coke_zag", ChiselModelHandlers.AR).translation("coal_coke_zag", "Coal Coke", "Zag")
-                .texture("coal_coke_zag", "ar_variant_1", Chisel.prefix("block/coal_coke/coal_coke_zag"))
                 .build());
 
         DIRT = ChiselFamily.build("dirt", builder -> builder
@@ -3202,7 +3061,7 @@ public class DecorativeFamilies {
                 .build());
 
         FAMILIES = List.of(
-                C_CONCRETE, CHARCOAL, CLOUD, COAL, COAL_COKE, DIRT, ENERGIZED_VOIDSTONE, FACTORY,
+                C_CONCRETE, CLOUD, DIRT, ENERGIZED_VOIDSTONE, FACTORY,
                 FUTURA, GLOWSTONE, GRIMSTONE, HEX_PLATING, HOLYSTONE, ICE, PACKED_ICE, BLUE_ICE, SNOW, LABORATORY, LAVASTONE,
                 LEAF, MAGMA, MILITARY, MOSSY_TEMPLE, PAPERWALL, REDSTONE, RESIN,
                 SEA_LANTERN, SHINGLE, TECHNICAL, TEMPLE, TERRACOTTA, TYRIAN, VALENTINES, VOIDSTONE,

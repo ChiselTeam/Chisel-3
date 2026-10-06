@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "all": "chisel:block/coal/coal_meander_horizontal",
+    "bottom": "chisel:block/coal/coal_meander_horizontal-bottom",
+    "horizontal_both": "chisel:block/coal/coal_meander_horizontal-horizontal_both",
+    "horizontal_left": "chisel:block/coal/coal_meander_horizontal-horizontal_left",
+    "horizontal_none": "chisel:block/coal/coal_meander_horizontal-horizontal_none",
+    "horizontal_right": "chisel:block/coal/coal_meander_horizontal-horizontal_right",
+    "particle": "chisel:block/coal/coal_meander_horizontal",
+    "side": "chisel:block/coal/coal_meander_horizontal",
+    "top": "chisel:block/coal/coal_meander_horizontal-bottom"
+  }
+}

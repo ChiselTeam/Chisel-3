@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/coal/coal_meander_vertical-side",
+    "bottom": "chisel:block/coal/coal_meander_vertical-bottom",
+    "particle": "chisel:block/coal/coal_meander_vertical-side",
+    "side": "chisel:block/coal/coal_meander_vertical-side",
+    "top": "chisel:block/coal/coal_meander_vertical-bottom",
+    "vertical_both": "chisel:block/coal/coal_meander_vertical-vertical_both",
+    "vertical_bottom": "chisel:block/coal/coal_meander_vertical-vertical_bottom",
+    "vertical_none": "chisel:block/coal/coal_meander_vertical-side",
+    "vertical_top": "chisel:block/coal/coal_meander_vertical-vertical_top"
+  }
+}
