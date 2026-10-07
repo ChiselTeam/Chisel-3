@@ -3,7 +3,6 @@ package io.github.chiselteam.chisel.datagen.tags;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.family.VariantFamily;
 import io.github.chiselteam.chisel.content.ChiselFamilies;
-import io.github.chiselteam.chisel.content.family.WoodFamilies;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
 import io.github.chiselteam.chisel.registry.ChiselTags;
 import net.minecraft.core.HolderLookup;
@@ -38,7 +37,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NonNull Provider provider) {
         // MARK: Chisel Tags
-        WoodFamilies.families().forEach(family -> addToWood(family.getFamily()));
+        ChiselFamilies.WOOD_FAMILIES.forEach(family -> addToWood(family.getFamily()));
         addToWood(ChiselFamilies.BOOKSHELF.getFamily());
 
         // addToTag(ChiselTags.CANT_BE_MOSSED, ChiselFamilies.MOSSY_COBBLESTONE.getFamily());

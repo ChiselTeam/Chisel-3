@@ -2,8 +2,6 @@ package io.github.chiselteam.chisel.datagen;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.content.ChiselFamilies;
-import io.github.chiselteam.chisel.content.family.ColorCollectionFamilies;
-import net.minecraft.world.item.DyeColor;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
 import io.github.chiselteam.chisel.registry.ChiselItems;
 import net.minecraft.core.HolderLookup;
@@ -13,6 +11,7 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStackTemplate;
 import net.minecraft.world.item.Items;
@@ -93,7 +92,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .save(output);
                 
         for (DyeColor color : DyeColor.values()) {
-        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ColorCollectionFamilies.LIGHT.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+            shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.LIGHT.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .requires(Items.SEA_LANTERN)
                 .requires(color.getTag())
                 .unlockedBy("has_" + color.getName() + "_dye", has(color.getTag()))
@@ -101,24 +100,24 @@ public class ChiselRecipes extends RecipeProvider {
         }
 
         for (DyeColor color : DyeColor.values()) {
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ColorCollectionFamilies.OAK_FRAMED_STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+            shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.OAK_FRAMED_STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("GGG")
                 .pattern("GIG")
                 .pattern("GGG")
                 .define('I', Items.OAK_PLANKS)
-                .define('G', ColorCollectionFamilies.STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock())
-                .unlockedBy("has_" + color.getName() + "_stained_glass", has(ColorCollectionFamilies.STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock()))
+                    .define('G', ChiselFamilies.STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock())
+                    .unlockedBy("has_" + color.getName() + "_stained_glass", has(ChiselFamilies.STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock()))
                 .save(output);
         }
 
         for (DyeColor color : DyeColor.values()) {
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ColorCollectionFamilies.STEEL_FRAMED_STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+            shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.STEEL_FRAMED_STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("GGG")
                 .pattern("GIG")
                 .pattern("GGG")
                 .define('I', Tags.Items.INGOTS_IRON)
-                .define('G', ColorCollectionFamilies.STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock())
-                .unlockedBy("has_" + color.getName() + "_stained_glass", has(ColorCollectionFamilies.STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock()))
+                    .define('G', ChiselFamilies.STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock())
+                    .unlockedBy("has_" + color.getName() + "_stained_glass", has(ChiselFamilies.STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock()))
                 .save(output);
         }
 

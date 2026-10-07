@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 import org.jetbrains.annotations.ApiStatus;
 
 import java.util.*;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
@@ -24,8 +25,8 @@ public final class VariantFamilyDefinitionBuilder {
     private final List<TorchVariantDefinition> torchVariants = new ArrayList<>();
     private final Map<String, VariantTranslation> translations = new LinkedHashMap<>();
     private final Map<String, Map<String, Identifier>> textures = new LinkedHashMap<>();
-    private TagKey<Block> tag;
-    private Supplier<Properties> defaultProperties;
+    private final TagKey<Block> tag;
+    private VariantBuilder defaults = new VariantBuilder();
 
     public VariantFamilyDefinitionBuilder(String name) {
         this.name = requireName(name, "family");
@@ -38,98 +39,217 @@ public final class VariantFamilyDefinitionBuilder {
         return value;
     }
 
-    public VariantFamilyDefinitionBuilder properties(Properties properties) {
-        defaultProperties = () -> Objects.requireNonNull(properties, "Default properties cannot be null for family '" + name + "'");
+    /**
+     * Updates shared settings for subsequent variants using a detached copy.
+     */
+    public VariantFamilyDefinitionBuilder defaults(Consumer<VariantBuilder> configure) {
+        var settings = new VariantBuilder(defaults);
+        Objects.requireNonNull(configure, "Defaults callback cannot be null").accept(settings);
+        defaults = new VariantBuilder(settings);
         return this;
     }
 
-    public VariantFamilyDefinitionBuilder properties(Supplier<Properties> properties) {
-        defaultProperties = Objects.requireNonNull(properties, "Default properties supplier cannot be null for family '" + name + "'");
+    /**
+     * Declares a generated variant using its complete registration name.
+     */
+    public VariantFamilyDefinitionBuilder variant(String variantName, Consumer<VariantBuilder> configure) {
+        var settings = configureVariant(variantName, configure);
+        if (settings.eldritch && settings.weathering)
+            throw new IllegalArgumentException("Variant cannot be both eldritch and weathering: " + variantName);
+        Function<Properties, ? extends Block> factory = settings.weathering ? null : settings.blockFactory != null ? settings.blockFactory
+                : settings.eldritch ? ConnectedTextureBlock::new : defaultBlockFactory(variantName);
+        variants.add(new VariantDefinition(variantName, null, factory, settings.requireProperties(), settings.model,
+                true, true, settings.eldritch, settings.weathering));
+        addSettings(variantName, settings);
         return this;
     }
 
-    public VariantFamilyDefinitionBuilder tag(TagKey<Block> tag) {
-        this.tag = Objects.requireNonNull(tag, "Tag cannot be null for family '" + name + "'");
+    /**
+     * Declares a standing/wall torch pair with scoped settings.
+     */
+    public VariantFamilyDefinitionBuilder torchVariant(String variantName, Consumer<VariantBuilder> configure) {
+        var settings = configureVariant(variantName, configure);
+        if (settings.eldritch || settings.weathering || settings.waxed)
+            throw new IllegalArgumentException("Torch variant has incompatible registration settings: " + variantName);
+        torchVariants.add(new TorchVariantDefinition(variantName, settings.blockFactory, settings.requireProperties(), settings.wallFactory));
+        addSettings(variantName, settings);
         return this;
     }
 
-    public VariantFamilyDefinitionBuilder addVariant(Block block) {
+    /**
+     * Includes an existing block without applying generated-variant defaults.
+     */
+    public VariantFamilyDefinitionBuilder existingBlock(Block block) {
         Objects.requireNonNull(block, "Existing block cannot be null for family '" + name + "'");
         variants.add(new VariantDefinition(block.getDescriptionId(), () -> block, null, null, ChiselModelHandlers.CUBE_ALL, false, true, false, false));
-
         return this;
+    }
+
+    private VariantBuilder configureVariant(String variantName, Consumer<VariantBuilder> configure) {
+        requireName(variantName, "variant");
+        var settings = new VariantBuilder(defaults);
+        Objects.requireNonNull(configure, "Variant callback cannot be null").accept(settings);
+        return settings;
+    }
+
+    private void addSettings(String variantName, VariantBuilder settings) {
+        if (settings.blockName != null || settings.description != null)
+            addTranslation(variantName, settings.blockName, settings.description, settings.waxed);
+        var resolved = settings.resolveTextures(variantName);
+        if (!resolved.isEmpty() && textures.putIfAbsent(variantName, resolved) != null)
+            throw new IllegalArgumentException("Duplicate textures for variant '" + variantName + "' in family '" + name + "'");
+    }
+
+    public final class VariantBuilder {
+        private String blockName;
+        private String description;
+        private VariantModelHandler model = ChiselModelHandlers.CUBE_ALL;
+        private Function<Properties, ? extends Block> blockFactory;
+        private Supplier<Properties> properties;
+        private Function<Properties, ? extends Block> wallFactory;
+        private boolean eldritch;
+        private boolean weathering;
+        private boolean waxed;
+        private final Map<String, Identifier> textures = new LinkedHashMap<>();
+        private final Map<String, String> aliases = new LinkedHashMap<>();
+
+        private VariantBuilder() {
+        }
+
+        private VariantBuilder(VariantBuilder source) {
+            blockName = source.blockName;
+            description = source.description;
+            model = source.model;
+            blockFactory = source.blockFactory;
+            properties = source.properties;
+            wallFactory = source.wallFactory;
+            eldritch = source.eldritch;
+            weathering = source.weathering;
+            waxed = source.waxed;
+            textures.putAll(source.textures);
+            aliases.putAll(source.aliases);
+        }
+
+        public VariantBuilder blockName(String value) {
+            blockName = Objects.requireNonNull(value, "Block name cannot be null");
+            return this;
+        }
+
+        public VariantBuilder description(String value) {
+            description = Objects.requireNonNull(value, "Description cannot be null");
+            return this;
+        }
+
+        public VariantBuilder model(VariantModelHandler value) {
+            model = Objects.requireNonNull(value, "Model handler cannot be null");
+            return this;
+        }
+
+        public VariantBuilder blockFactory(Function<Properties, ? extends Block> value) {
+            blockFactory = Objects.requireNonNull(value, "Block factory cannot be null");
+            return this;
+        }
+
+        public VariantBuilder wallFactory(Function<Properties, ? extends Block> value) {
+            wallFactory = Objects.requireNonNull(value, "Wall block factory cannot be null");
+            return this;
+        }
+
+        public VariantBuilder eldritch() {
+            return eldritch(true);
+        }
+
+        public VariantBuilder eldritch(boolean value) {
+            eldritch = value;
+            return this;
+        }
+
+        public VariantBuilder weathering() {
+            return weathering(true);
+        }
+
+        public VariantBuilder weathering(boolean value) {
+            weathering = value;
+            return this;
+        }
+
+        public VariantBuilder waxed() {
+            return waxed(true);
+        }
+
+        public VariantBuilder waxed(boolean value) {
+            waxed = value;
+            return this;
+        }
+
+        private Supplier<Properties> requireProperties() {
+            if (properties == null)
+                throw new IllegalStateException("No block properties configured for family '%s'".formatted(name));
+            return properties;
+        }
+
+        public VariantBuilder properties(Properties value) {
+            Objects.requireNonNull(value, "Block properties cannot be null");
+            return properties(() -> value);
+        }
+
+        public VariantBuilder properties(Supplier<Properties> value) {
+            properties = Objects.requireNonNull(value, "Block properties supplier cannot be null");
+            return this;
+        }
+
+        public VariantBuilder texture(Identifier value) {
+            return texture("", value);
+        }
+
+        public VariantBuilder texture(String suffix, Identifier value) {
+            Objects.requireNonNull(suffix, "Texture suffix cannot be null");
+            textures.put(suffix, Objects.requireNonNull(value, "Texture cannot be null"));
+            aliases.remove(suffix);
+            return this;
+        }
+
+        public VariantBuilder textureFromBase(String suffix) {
+            return textureAlias(suffix, "");
+        }
+
+        /**
+         * Sources without overrides resolve through the normal base-plus-suffix convention.
+         */
+        public VariantBuilder textureAlias(String targetSuffix, String sourceSuffix) {
+            Objects.requireNonNull(targetSuffix, "Target texture suffix cannot be null");
+            Objects.requireNonNull(sourceSuffix, "Source texture suffix cannot be null");
+            aliases.put(targetSuffix, sourceSuffix);
+            textures.remove(targetSuffix);
+            return this;
+        }
+
+        private Map<String, Identifier> resolveTextures(String variantName) {
+            var resolved = new LinkedHashMap<>(textures);
+            aliases.keySet().forEach(suffix -> resolveTexture(suffix, variantName, resolved, new HashSet<>()));
+            return resolved;
+        }
+
+        private Identifier resolveTexture(String suffix, String variantName, Map<String, Identifier> resolved, Set<String> visiting) {
+            var texture = resolved.get(suffix);
+            if (texture != null) return texture;
+            if (!visiting.add(suffix))
+                throw new IllegalArgumentException("Cyclic texture alias at suffix '%s' for variant '%s'".formatted(suffix, variantName));
+            if (aliases.containsKey(suffix)) {
+                texture = resolveTexture(aliases.get(suffix), variantName, resolved, visiting);
+                resolved.put(suffix, texture);
+            } else {
+                var base = suffix.isEmpty() ? Chisel.prefix("block/%s/%s".formatted(name, variantName))
+                        : resolveTexture("", variantName, resolved, visiting);
+                texture = suffix.isEmpty() ? base : base.withPath(base.getPath() + "-" + suffix);
+            }
+            visiting.remove(suffix);
+            return texture;
+        }
     }
 
     private static Function<Properties, ? extends Block> defaultBlockFactory(String variantName) {
         return variantName.contains("pillar") ? ChiselRotatedPillarBlock::new : ConnectedTextureBlock::new;
-    }
-
-    public VariantFamilyDefinitionBuilder addVariant(String name) {
-        return addVariant(name, defaultBlockFactory(name), requireDefaultProperties(), ChiselModelHandlers.CUBE_ALL);
-    }
-
-    public VariantFamilyDefinitionBuilder addVariant(String name, VariantModelHandler modelType) {
-        return addVariant(name, defaultBlockFactory(name), requireDefaultProperties(), modelType);
-    }
-
-    public VariantFamilyDefinitionBuilder addVariant(String name, Properties properties) {
-        return addVariant(name, defaultBlockFactory(name), () -> properties, ChiselModelHandlers.CUBE_ALL);
-    }
-
-    public VariantFamilyDefinitionBuilder addVariant(String name, Function<Properties, ? extends Block> blockFactory, Supplier<Properties> properties) {
-        return addVariant(name, blockFactory, properties, ChiselModelHandlers.CUBE_ALL);
-    }
-
-    public VariantFamilyDefinitionBuilder addVariant(String name, Function<Properties, ? extends Block> blockFactory, VariantModelHandler modelType) {
-        return addVariant(name, blockFactory, requireDefaultProperties(), modelType);
-    }
-
-    public VariantFamilyDefinitionBuilder addVariant(String name, Function<Properties, ? extends Block> blockFactory, Supplier<Properties> properties, VariantModelHandler modelType) {
-        variants.add(new VariantDefinition(name, null, blockFactory, properties, modelType, true, true, false, false));
-        return this;
-    }
-
-    public VariantFamilyDefinitionBuilder addEldritchVariant(String name) {
-        return addEldritchVariant(name, ChiselModelHandlers.CUBE_ALL);
-    }
-
-    public VariantFamilyDefinitionBuilder addEldritchVariant(String name, VariantModelHandler modelType) {
-        return addEldritchVariant(name, requireDefaultProperties(), modelType);
-    }
-
-    public VariantFamilyDefinitionBuilder addEldritchVariant(String name, Supplier<Properties> properties, VariantModelHandler modelType) {
-        variants.add(new VariantDefinition(name, null, ConnectedTextureBlock::new, properties, modelType, true, true, true, false));
-        return this;
-    }
-
-    public VariantFamilyDefinitionBuilder addWeatheringVariant(String name) {
-        return addWeatheringVariant(name, ChiselModelHandlers.CUBE_ALL);
-    }
-
-    public VariantFamilyDefinitionBuilder addWeatheringVariant(String name, VariantModelHandler modelType) {
-        return addWeatheringVariant(name, requireDefaultProperties(), modelType);
-    }
-
-    public VariantFamilyDefinitionBuilder addWeatheringVariant(String name, Supplier<Properties> properties, VariantModelHandler modelType) {
-        variants.add(new VariantDefinition(name, null, null, properties, modelType, true, true, false, true));
-        return this;
-    }
-
-    public VariantFamilyDefinitionBuilder addTorchVariant(String name, Function<Properties, ? extends Block> standingFactory, Function<Properties, ? extends Block> wallFactory) {
-        return addTorchVariant(name, standingFactory, requireDefaultProperties(), wallFactory);
-    }
-
-    public VariantFamilyDefinitionBuilder addTorchVariant(String name, Function<Properties, ? extends Block> standingFactory, Supplier<Properties> standingProperties, Function<Properties, ? extends Block> wallFactory) {
-        torchVariants.add(new TorchVariantDefinition(name, standingFactory, standingProperties, wallFactory));
-        return this;
-    }
-
-    public VariantFamilyDefinitionBuilder translation(String variant, String blockName, String description) {
-        return addTranslation(variant, blockName, description, false);
-    }
-
-    public VariantFamilyDefinitionBuilder waxedTranslation(String variant, String blockName, String description) {
-        return addTranslation(variant, blockName, description, true);
     }
 
     public VariantFamilyDefinition build() {
@@ -137,33 +257,6 @@ public final class VariantFamilyDefinitionBuilder {
         validateTranslations();
         validateTextures();
         return new VariantFamilyDefinition(name, variants, torchVariants, translations, tag, textures);
-    }
-
-    /**
-     * Reuses a texture base name within this family, including its suffixed textures.
-     */
-    public VariantFamilyDefinitionBuilder textureName(String variant, String textureName) {
-        return texture(variant, Chisel.prefix("block/%s/%s".formatted(name, requireName(textureName, "texture"))));
-    }
-
-    /**
-     * Reuses a full texture identifier, including its suffixed textures, across families or namespaces.
-     */
-    public VariantFamilyDefinitionBuilder texture(String variant, Identifier texture) {
-        return texture(variant, "", texture);
-    }
-
-    /**
-     * Overrides an exact suffix (e.g. top or top-ctm_cornerless); an empty suffix overrides the base.
-     */
-    public VariantFamilyDefinitionBuilder texture(String variant, String suffix, Identifier texture) {
-        requireName(variant, "texture variant");
-        Objects.requireNonNull(suffix, "Texture suffix cannot be null");
-        Objects.requireNonNull(texture, "Texture cannot be null");
-        var overrides = textures.computeIfAbsent(variant, _ -> new LinkedHashMap<>());
-        if (overrides.putIfAbsent(suffix, texture) != null)
-            throw new IllegalArgumentException("Duplicate texture suffix '%s' for variant '%s' in family '%s'".formatted(suffix, variant, name));
-        return this;
     }
 
     private void validateTextures() {
@@ -177,16 +270,6 @@ public final class VariantFamilyDefinitionBuilder {
             if (!names.contains(variant))
                 throw new IllegalStateException("Texture references unknown generated variant '%s' in family '%s'".formatted(variant, name));
         }
-    }
-
-    private Supplier<Properties> requireDefaultProperties() {
-        if (defaultProperties == null)
-            throw new IllegalStateException("No default block properties configured for family '%s'".formatted(name));
-        return defaultProperties;
-    }
-
-    public VariantFamilyDefinitionBuilder addVariant(String name, Properties properties, VariantModelHandler modelType) {
-        return addVariant(name, defaultBlockFactory(name), () -> properties, modelType);
     }
 
     private void validateTranslations() {
@@ -209,14 +292,13 @@ public final class VariantFamilyDefinitionBuilder {
         });
     }
 
-    private VariantFamilyDefinitionBuilder addTranslation(String variant, String blockName, String description, boolean waxed) {
+    private void addTranslation(String variant, String blockName, String description, boolean waxed) {
         variant = requireName(variant, "translation variant");
         Objects.requireNonNull(blockName, "Translation block name cannot be null for family '" + name + "'");
         Objects.requireNonNull(description, "Translation description cannot be null for family '" + name + "'");
         if (translations.putIfAbsent(variant, new VariantTranslation(blockName, description, waxed)) != null) {
             throw new IllegalArgumentException("Duplicate translation for variant '%s' in family '%s'".formatted(variant, name));
         }
-        return this;
     }
 
     private void validateDefinitions() {

@@ -8,8 +8,60 @@
       "name": "charcoal_array"
     },
     {
+      "block": "chisel:charcoal_border_square",
+      "model_type": "connected",
+      "name": "charcoal_border_square"
+    },
+    {
       "block": "chisel:charcoal_braid",
       "name": "charcoal_braid"
+    },
+    {
+      "block": "chisel:charcoal_braid_encased",
+      "model_type": "connected",
+      "name": "charcoal_braid_encased"
+    },
+    {
+      "block": "chisel:charcoal_cracked_bricks",
+      "name": "charcoal_cracked_bricks"
+    },
+    {
+      "block": "chisel:charcoal_encased_bricks",
+      "model_type": "connected",
+      "name": "charcoal_encased_bricks"
+    },
+    {
+      "block": "chisel:charcoal_bricks_indent",
+      "name": "charcoal_bricks_indent"
+    },
+    {
+      "block": "chisel:charcoal_bricks_inlayed",
+      "name": "charcoal_bricks_inlayed"
+    },
+    {
+      "block": "chisel:charcoal_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "charcoal_bricks_large"
+    },
+    {
+      "block": "chisel:charcoal_small_bricks",
+      "name": "charcoal_small_bricks"
+    },
+    {
+      "block": "chisel:charcoal_soft_bricks",
+      "name": "charcoal_soft_bricks"
+    },
+    {
+      "block": "chisel:charcoal_solid_bricks",
+      "name": "charcoal_solid_bricks"
+    },
+    {
+      "block": "chisel:charcoal_triple_bricks",
+      "name": "charcoal_triple_bricks"
+    },
+    {
+      "block": "chisel:charcoal_bricks_vertical",
+      "name": "charcoal_bricks_vertical"
     },
     {
       "block": "chisel:charcoal_chaotic_bricks",
@@ -25,6 +77,14 @@
       "name": "charcoal_chaotic_small"
     },
     {
+      "block": "chisel:charcoal_checker",
+      "name": "charcoal_checker"
+    },
+    {
+      "block": "chisel:charcoal_checker_small",
+      "name": "charcoal_checker_small"
+    },
+    {
       "block": "chisel:charcoal_circular",
       "model_type": "connected",
       "name": "charcoal_circular"
@@ -32,10 +92,6 @@
     {
       "block": "chisel:charcoal_cracked",
       "name": "charcoal_cracked"
-    },
-    {
-      "block": "chisel:charcoal_cracked_bricks",
-      "name": "charcoal_cracked_bricks"
     },
     {
       "block": "chisel:charcoal_cuts",
@@ -48,17 +104,17 @@
       "name": "charcoal_dent"
     },
     {
-      "block": "chisel:charcoal_encased_bricks",
-      "model_type": "connected",
-      "name": "charcoal_encased_bricks"
-    },
-    {
       "block": "chisel:charcoal_french_1",
       "name": "charcoal_french_1"
     },
     {
       "block": "chisel:charcoal_french_2",
       "name": "charcoal_french_2"
+    },
+    {
+      "block": "chisel:charcoal_indent",
+      "model_type": "connected",
+      "name": "charcoal_indent"
     },
     {
       "block": "chisel:charcoal_jellybean",
@@ -68,6 +124,29 @@
     {
       "block": "chisel:charcoal_layers",
       "name": "charcoal_layers"
+    },
+    {
+      "block": "chisel:charcoal_layers_connected",
+      "model_type": "connected",
+      "name": "charcoal_layers_connected"
+    },
+    {
+      "block": "chisel:charcoal_line_horizontal",
+      "name": "charcoal_line_horizontal"
+    },
+    {
+      "block": "chisel:charcoal_line_vertical",
+      "name": "charcoal_line_vertical"
+    },
+    {
+      "block": "chisel:charcoal_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "charcoal_meander_horizontal"
+    },
+    {
+      "block": "chisel:charcoal_meander_vertical",
+      "model_type": "ctmv",
+      "name": "charcoal_meander_vertical"
     },
     {
       "block": "chisel:charcoal_mosaic",
@@ -88,6 +167,119 @@
       "name": "charcoal_pillar"
     },
     {
+      "block": "chisel:charcoal_pillar_basic",
+      "model_type": "ctmv",
+      "name": "charcoal_pillar_basic"
+    },
+    {
+      "block": "chisel:charcoal_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "charcoal_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:charcoal_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "charcoal_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:charcoal_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "charcoal_pillar_basic_round"
+    },
+    {
+      "block": "chisel:charcoal_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "charcoal_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:charcoal_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "charcoal_pillar_classic"
+    },
+    {
+      "block": "chisel:charcoal_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "charcoal_pillar_classic_large"
+    },
+    {
+      "block": "chisel:charcoal_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "charcoal_pillar_ionic"
+    },
+    {
+      "block": "chisel:charcoal_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "charcoal_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:charcoal_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "charcoal_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:charcoal_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "charcoal_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:charcoal_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "charcoal_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:charcoal_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "charcoal_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:charcoal_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "charcoal_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:charcoal_pillar_meander",
+      "model_type": "ctmv",
+      "name": "charcoal_pillar_meander"
+    },
+    {
+      "block": "chisel:charcoal_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "charcoal_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:charcoal_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "charcoal_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:charcoal_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "charcoal_pillar_meander_round"
+    },
+    {
+      "block": "chisel:charcoal_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "charcoal_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:charcoal_plate",
+      "name": "charcoal_plate"
+    },
+    {
+      "block": "chisel:charcoal_plate_connected",
+      "model_type": "connected",
+      "name": "charcoal_plate_connected"
+    },
+    {
+      "block": "chisel:charcoal_polished",
+      "name": "charcoal_polished"
+    },
+    {
+      "block": "chisel:charcoal_polished_encased",
+      "model_type": "connected",
+      "name": "charcoal_polished_encased"
+    },
+    {
       "block": "chisel:charcoal_prism",
       "name": "charcoal_prism"
     },
@@ -105,16 +297,8 @@
       "name": "charcoal_slanted"
     },
     {
-      "block": "chisel:charcoal_small_bricks",
-      "name": "charcoal_small_bricks"
-    },
-    {
-      "block": "chisel:charcoal_soft_bricks",
-      "name": "charcoal_soft_bricks"
-    },
-    {
-      "block": "chisel:charcoal_solid_bricks",
-      "name": "charcoal_solid_bricks"
+      "block": "chisel:charcoal_tiles_medium",
+      "name": "charcoal_tiles_medium"
     },
     {
       "block": "chisel:charcoal_tiles_large",
@@ -122,16 +306,8 @@
       "name": "charcoal_tiles_large"
     },
     {
-      "block": "chisel:charcoal_tiles_medium",
-      "name": "charcoal_tiles_medium"
-    },
-    {
       "block": "chisel:charcoal_tiles_small",
       "name": "charcoal_tiles_small"
-    },
-    {
-      "block": "chisel:charcoal_triple_bricks",
-      "name": "charcoal_triple_bricks"
     },
     {
       "block": "chisel:charcoal_twisted",
@@ -145,8 +321,238 @@
     },
     {
       "block": "chisel:charcoal_zag",
-      "model_type": "ar",
+      "model_type": "v4",
       "name": "charcoal_zag"
+    },
+    {
+      "block": "chisel:charcoal_crate",
+      "model_type": "connected",
+      "name": "charcoal_crate"
+    },
+    {
+      "block": "chisel:charcoal_herringbone",
+      "name": "charcoal_herringbone"
+    },
+    {
+      "block": "chisel:charcoal_herringbone_encased",
+      "model_type": "connected",
+      "name": "charcoal_herringbone_encased"
+    },
+    {
+      "block": "chisel:charcoal_medallion",
+      "name": "charcoal_medallion"
+    },
+    {
+      "block": "chisel:charcoal_medallion_encased",
+      "model_type": "connected",
+      "name": "charcoal_medallion_encased"
+    },
+    {
+      "block": "chisel:charcoal_dots",
+      "name": "charcoal_dots"
+    },
+    {
+      "block": "chisel:charcoal_dots_encased",
+      "model_type": "connected",
+      "name": "charcoal_dots_encased"
+    },
+    {
+      "block": "chisel:charcoal_heart",
+      "name": "charcoal_heart"
+    },
+    {
+      "block": "chisel:charcoal_star",
+      "name": "charcoal_star"
+    },
+    {
+      "block": "chisel:charcoal_plating",
+      "name": "charcoal_plating"
+    },
+    {
+      "block": "chisel:charcoal_lodestone",
+      "name": "charcoal_lodestone"
+    },
+    {
+      "block": "chisel:charcoal_lodestone_connected",
+      "model_type": "connected",
+      "name": "charcoal_lodestone_connected"
+    },
+    {
+      "block": "chisel:charcoal_plank",
+      "name": "charcoal_plank"
+    },
+    {
+      "block": "chisel:charcoal_plank_connected",
+      "model_type": "connected",
+      "name": "charcoal_plank_connected"
+    },
+    {
+      "block": "chisel:charcoal_frame",
+      "name": "charcoal_frame"
+    },
+    {
+      "block": "chisel:charcoal_panel_1",
+      "name": "charcoal_panel_1"
+    },
+    {
+      "block": "chisel:charcoal_panel_2",
+      "name": "charcoal_panel_2"
+    },
+    {
+      "block": "chisel:charcoal_panel_3",
+      "name": "charcoal_panel_3"
+    },
+    {
+      "block": "chisel:charcoal_skull_creeper",
+      "name": "charcoal_skull_creeper"
+    },
+    {
+      "block": "chisel:charcoal_skull_skeleton",
+      "name": "charcoal_skull_skeleton"
+    },
+    {
+      "block": "chisel:charcoal_stripes",
+      "name": "charcoal_stripes"
+    },
+    {
+      "block": "chisel:charcoal_stripes_encased",
+      "model_type": "connected",
+      "name": "charcoal_stripes_encased"
+    },
+    {
+      "block": "chisel:charcoal_chisel_1",
+      "name": "charcoal_chisel_1"
+    },
+    {
+      "block": "chisel:charcoal_chisel_2",
+      "name": "charcoal_chisel_2"
+    },
+    {
+      "block": "chisel:charcoal_chisel_3",
+      "name": "charcoal_chisel_3"
+    },
+    {
+      "block": "chisel:charcoal_chisel_4",
+      "name": "charcoal_chisel_4"
+    },
+    {
+      "block": "chisel:charcoal_chisel_5",
+      "name": "charcoal_chisel_5"
+    },
+    {
+      "block": "chisel:charcoal_chisel_6",
+      "name": "charcoal_chisel_6"
+    },
+    {
+      "block": "chisel:charcoal_facet",
+      "name": "charcoal_facet"
+    },
+    {
+      "block": "chisel:charcoal_facet_small",
+      "name": "charcoal_facet_small"
+    },
+    {
+      "block": "chisel:charcoal_facet_small_encased",
+      "model_type": "connected",
+      "name": "charcoal_facet_small_encased"
+    },
+    {
+      "block": "chisel:charcoal_shiny",
+      "name": "charcoal_shiny"
+    },
+    {
+      "block": "chisel:charcoal_shiny_connected",
+      "model_type": "connected",
+      "name": "charcoal_shiny_connected"
+    },
+    {
+      "block": "chisel:charcoal_gem",
+      "name": "charcoal_gem"
+    },
+    {
+      "block": "chisel:charcoal_gem_1",
+      "name": "charcoal_gem_1"
+    },
+    {
+      "block": "chisel:charcoal_gem_1_connected",
+      "model_type": "connected",
+      "name": "charcoal_gem_1_connected"
+    },
+    {
+      "block": "chisel:charcoal_gem_2",
+      "name": "charcoal_gem_2"
+    },
+    {
+      "block": "chisel:charcoal_gem_2_connected",
+      "model_type": "connected",
+      "name": "charcoal_gem_2_connected"
+    },
+    {
+      "block": "chisel:charcoal_gem_3",
+      "name": "charcoal_gem_3"
+    },
+    {
+      "block": "chisel:charcoal_gem_3_connected",
+      "model_type": "connected",
+      "name": "charcoal_gem_3_connected"
+    },
+    {
+      "block": "chisel:charcoal_bricks_square",
+      "name": "charcoal_bricks_square"
+    },
+    {
+      "block": "chisel:charcoal_slab",
+      "name": "charcoal_slab"
+    },
+    {
+      "block": "chisel:charcoal_scaffold",
+      "name": "charcoal_scaffold"
+    },
+    {
+      "block": "chisel:charcoal_scaffold_encased",
+      "model_type": "connected",
+      "name": "charcoal_scaffold_encased"
+    },
+    {
+      "block": "chisel:charcoal_tiles_inlayed",
+      "name": "charcoal_tiles_inlayed"
+    },
+    {
+      "block": "chisel:charcoal_waves",
+      "model_type": "multiblock_2x2",
+      "name": "charcoal_waves"
+    },
+    {
+      "block": "chisel:charcoal_parquet",
+      "name": "charcoal_parquet"
+    },
+    {
+      "block": "chisel:charcoal_parquet_encased",
+      "model_type": "connected",
+      "name": "charcoal_parquet_encased"
+    },
+    {
+      "block": "chisel:charcoal_border_square_small",
+      "model_type": "connected",
+      "name": "charcoal_border_square_small"
+    },
+    {
+      "block": "chisel:charcoal_cobble",
+      "name": "charcoal_cobble"
+    },
+    {
+      "block": "chisel:charcoal_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "charcoal_bricks_large_rough"
+    },
+    {
+      "block": "chisel:charcoal_tiles_small_encased",
+      "model_type": "connected",
+      "name": "charcoal_tiles_small_encased"
+    },
+    {
+      "block": "chisel:charcoal_bricks_round",
+      "name": "charcoal_bricks_round"
     }
   ]
 }

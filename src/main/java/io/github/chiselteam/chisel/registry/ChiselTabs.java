@@ -2,6 +2,7 @@ package io.github.chiselteam.chisel.registry;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.content.ChiselFamilies;
+import io.github.chiselteam.chisel.content.compat.CompatFamilies;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,7 +21,6 @@ public class ChiselTabs {
             .title(Component.translatable("itemGroup.tabStoneChiselBlocks"))
             .icon(() -> new ItemStack(ChiselFamilies.MARBLE.getVariant("marble_raw").get()))
             .displayItems((_, output) -> List.of(
-                        ChiselFamilies.ATM_ANCIENT_STONE.getFamily(),
                         ChiselFamilies.ANDESITE.getFamily(),
                         ChiselFamilies.BLACKSTONE.getFamily(),
                         ChiselFamilies.GILDED_BLACKSTONE.getFamily(),
@@ -213,33 +213,32 @@ public class ChiselTabs {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MODDED = CREATIVE_MODE_TABS.register("chisel_modded", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabModdedChiselBlocks"))
             .icon(() -> new ItemStack(ChiselFamilies.BRONZE.getVariant("bronze_caution").get()))
-            .displayItems((_, output) -> List.of(
-                        ChiselFamilies.ATM_ANCIENT_STONE.getFamily(),
-                        ChiselFamilies.ALUMINUM.getFamily(),
-                        ChiselFamilies.FA_ARCANE_DARKSTONE.getFamily(),
-                        ChiselFamilies.BRONZE.getFamily(),
-                        ChiselFamilies.AE2_CERTUS.getFamily(),
-                        ChiselFamilies.AE2_SKY_STONE.getFamily(),
-                        ChiselFamilies.CHARCOAL.getFamily(),
-                        ChiselFamilies.COAL_COKE.getFamily(),
-                        ChiselFamilies.COBALT.getFamily(),
-                        ChiselFamilies.ELECTRUM.getFamily(),
-                        ChiselFamilies.INVAR.getFamily(),
-                        ChiselFamilies.LEAD.getFamily(),
-                        ChiselFamilies.NV_RUNE.getFamily(),
-                        ChiselFamilies.NICKEL.getFamily(),
-                        ChiselFamilies.PLATINUM.getFamily(),
-                        ChiselFamilies.SILVER.getFamily(),
-                        ChiselFamilies.STEEL.getFamily(),
-                        ChiselFamilies.THAUMIUM.getFamily(),
-                        ChiselFamilies.TIN.getFamily(),
-                        ChiselFamilies.OC_TALLOW.getFamily(),
-                        ChiselFamilies.URANIUM.getFamily()
-                
-                ).forEach(family -> family.getVariants().forEach(variant -> {
-                if (variant.shouldGenerateModel() && variant.isInTab())
-                            output.accept(variant.getBlock());
-            })))
+            .displayItems((_, output) -> {
+                List.of(
+                        ChiselFamilies.ALUMINUM,
+                        ChiselFamilies.BRONZE,
+                        ChiselFamilies.CHARCOAL,
+                        ChiselFamilies.COAL_COKE,
+                        ChiselFamilies.COBALT,
+                        ChiselFamilies.ELECTRUM,
+                        ChiselFamilies.INVAR,
+                        ChiselFamilies.LEAD,
+                        ChiselFamilies.NICKEL,
+                        ChiselFamilies.PLATINUM,
+                        ChiselFamilies.SILVER,
+                        ChiselFamilies.STEEL,
+                        ChiselFamilies.THAUMIUM,
+                        ChiselFamilies.TIN,
+                        ChiselFamilies.URANIUM
+                ).forEach(family -> family.getFamily().getVariants().forEach(variant -> {
+                    if (variant.shouldGenerateModel() && variant.isInTab())
+                        output.accept(variant.getBlock());
+                }));
+                CompatFamilies.families().forEach(family -> family.getFamily().getVariants().forEach(variant -> {
+                    if (variant.shouldGenerateModel() && variant.isInTab())
+                        output.accept(variant.getBlock());
+                }));
+            })
             .build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CHISEL = CREATIVE_MODE_TABS.register("chisel_main", () -> CreativeModeTab.builder()
