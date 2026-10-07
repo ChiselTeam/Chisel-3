@@ -7,14 +7,14 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.text.WordUtils;
 
 public final class ConcreteFamily {
     private ConcreteFamily() {
     }
 
     public static ChiselFamily create(DyeColor color) {
-        var colorName = StringUtils.capitalize(color.getName().replace("_", " "));
+        var colorName = WordUtils.capitalize(color.getName().replace("_", " "));
         var concreteName = "concrete_%s".formatted(color.getName());
         var baseName = "%s Concrete".formatted(colorName);
         return ChiselFamily.build(concreteName, builder -> builder

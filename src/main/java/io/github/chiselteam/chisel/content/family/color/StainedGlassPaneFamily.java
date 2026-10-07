@@ -10,14 +10,14 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.text.WordUtils;
 
 public final class StainedGlassPaneFamily {
     private StainedGlassPaneFamily() {
     }
 
     public static ChiselFamily create(DyeColor color) {
-        var colorName = StringUtils.capitalize(color.getName().replace("_", " "));
+        var colorName = WordUtils.capitalize(color.getName().replace("_", " "));
         return ChiselFamily.build("stained_glass_pane_%s".formatted(color), builder -> builder
                 .defaults(variant -> variant
                         .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS_PANE))

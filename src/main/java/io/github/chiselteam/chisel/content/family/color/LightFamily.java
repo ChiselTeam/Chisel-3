@@ -5,14 +5,14 @@ import io.github.chiselteam.chisel.content.ChiselFamily;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.text.WordUtils;
 
 public final class LightFamily {
     private LightFamily() {
     }
 
     public static ChiselFamily create(DyeColor color) {
-        var colorName = StringUtils.capitalize(color.getName().replace("_", " "));
+        var colorName = WordUtils.capitalize(color.getName().replace("_", " "));
         var lightName = "light_%s".formatted(color.getName());
         return ChiselFamily.build(lightName, builder -> builder
                 .defaults(variant -> variant

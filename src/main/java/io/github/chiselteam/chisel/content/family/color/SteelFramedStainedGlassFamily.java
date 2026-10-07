@@ -6,14 +6,14 @@ import io.github.chiselteam.chisel.content.ChiselFamily;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.text.WordUtils;
 
 public final class SteelFramedStainedGlassFamily {
     private SteelFramedStainedGlassFamily() {
     }
 
     public static ChiselFamily create(DyeColor color) {
-        var colorName = StringUtils.capitalize(color.getName().replace("_", " "));
+        var colorName = WordUtils.capitalize(color.getName().replace("_", " "));
         return ChiselFamily.build("steel_framed_stained_glass_%s".formatted(color.getName()), builder -> builder
                 .defaults(variant -> variant
                         .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS))
