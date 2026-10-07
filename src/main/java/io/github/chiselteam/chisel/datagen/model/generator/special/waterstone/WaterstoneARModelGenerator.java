@@ -31,7 +31,7 @@ public class WaterstoneARModelGenerator extends ARModelGenerator {
         this.blockModels = blockModels;
         
         Identifier modelLocation = ChiselModelTemplates.CTM_MULTIBLOCK_2x2_WATER.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
-        blockModels.registerSimpleItemModel(getBlock(), modelLocation);
+        WaterstoneModelGenerator.registerItemModel(blockModels, getBlock(), modelLocation);
         blockModels.blockStateOutput.accept(ConnectedTextureBlockStateDefinitionGenerator.dispatch(variant.getBlock(), new ConnectedTextureBlockStateModelBuilder()
                 .modelLocation(modelLocation)
                 .renderOverlayOnAllFaces(true)

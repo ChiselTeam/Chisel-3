@@ -7,6 +7,7 @@ import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateDefinitionGenerator;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateModelBuilder;
+import io.github.chiselteam.chisel.datagen.model.generator.special.waterstone.WaterstoneModelGenerator;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
@@ -30,7 +31,7 @@ public class MultiLayerCTMTintedModelGenerator extends VariantModelGenerator {
     public void generate(Variant variant, BlockModelGenerators blockModels) {
         super.generate(variant, blockModels);
         Identifier modelLocation = ChiselModelTemplates.CTM_MULTI_PASS_TINTED.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
-        blockModels.registerSimpleItemModel(getBlock(), modelLocation);
+        WaterstoneModelGenerator.registerItemModel(blockModels, getBlock(), modelLocation);
         blockModels.blockStateOutput.accept(ConnectedTextureBlockStateDefinitionGenerator.dispatch(variant.getBlock(), new ConnectedTextureBlockStateModelBuilder()
                 .modelLocation(modelLocation)
                 .renderOverlayOnAllFaces(true)

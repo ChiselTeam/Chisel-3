@@ -1,6 +1,12 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "chisel:block/waterstone_mosaic"
+    "model": "chisel:block/waterstone_mosaic",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": -12618012
+      }
+    ]
   }
 }

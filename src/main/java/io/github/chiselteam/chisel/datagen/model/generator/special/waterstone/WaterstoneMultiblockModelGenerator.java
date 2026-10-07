@@ -46,7 +46,7 @@ public class WaterstoneMultiblockModelGenerator extends VariantModelGenerator {
         super.generate(variant, blockModels);
         ModelTemplate template = size == 2 ? ChiselModelTemplates.CTM_MULTIBLOCK_2x2_WATER : (size == 3 ? ChiselModelTemplates.CTM_MULTIBLOCK_3x3_WATER : ChiselModelTemplates.CTM_MULTIBLOCK_4x4_WATER);
         Identifier modelLocation = template.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
-        blockModels.registerSimpleItemModel(getBlock(), modelLocation);
+        WaterstoneModelGenerator.registerItemModel(blockModels, getBlock(), modelLocation);
         blockModels.blockStateOutput.accept(ConnectedTextureBlockStateDefinitionGenerator.dispatch(variant.getBlock(), new ConnectedTextureBlockStateModelBuilder()
                 .modelLocation(modelLocation)
                 .renderOverlayOnAllFaces(true)

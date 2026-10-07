@@ -4,10 +4,12 @@ import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.datagen.model.ChiselModelTemplates;
 import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
+import io.github.chiselteam.chisel.datagen.model.generator.special.waterstone.WaterstoneModelGenerator;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.MultiVariant;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
+import net.minecraft.resources.Identifier;
 
 import static net.minecraft.client.data.models.BlockModelGenerators.plainVariant;
 
@@ -27,7 +29,9 @@ public class MultiLayerTBSTintedModelGenerator extends VariantModelGenerator {
     @Override
     public void generate(Variant variant, BlockModelGenerators blockModels) {
         super.generate(variant, blockModels);
-        MultiVariant model = plainVariant(ChiselModelTemplates.CUBE_MULTI_PASS_TOP_BOTTOM_SIDE_TINTED.create(getBlock(), getTextureMapping(), blockModels.modelOutput));
+        Identifier modelLocation = ChiselModelTemplates.CUBE_MULTI_PASS_TOP_BOTTOM_SIDE_TINTED.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
+        WaterstoneModelGenerator.registerItemModel(blockModels, getBlock(), modelLocation);
+        MultiVariant model = plainVariant(modelLocation);
         generateSimpleBlockState(model);
     }
 }
