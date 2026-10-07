@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/enderium", "required": false},
+    {"id": "alltheores:enderium_block", "required": false}
+  ]
+}

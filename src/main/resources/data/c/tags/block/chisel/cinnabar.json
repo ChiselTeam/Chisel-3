@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/cinnabar", "required": false},
+    {"id": "alltheores:cinnabar_block", "required": false}
+  ]
+}

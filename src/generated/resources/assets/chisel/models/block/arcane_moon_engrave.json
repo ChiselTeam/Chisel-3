@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/fa_arcane_darkstone/arcane_moon_engrave"
+    "all": "chisel:block/tt_arcane_stone/arcane_moon_engrave"
   }
 }

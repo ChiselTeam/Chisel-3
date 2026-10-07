@@ -21,7 +21,6 @@ public class ChiselItemTags extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         addToTag(Tags.Items.STORAGE_BLOCKS, ChiselFamilies.COAL.getFamily());
-        addToTag(Tags.Items.STORAGE_BLOCKS_COAL, ChiselFamilies.COAL.getFamily());
         addToTag(Tags.Items.STORAGE_BLOCKS, ChiselFamilies.CHARCOAL.getFamily());
         addToTag(Tags.Items.STORAGE_BLOCKS, ChiselFamilies.COAL_COKE.getFamily());
         addToTag(ItemTags.create(Chisel.prefix("marble")), ChiselFamilies.MARBLE.getFamily());

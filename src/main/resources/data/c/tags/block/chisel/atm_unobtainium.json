@@ -1,5 +1,5 @@
-﻿{
+{
   "values": [
-    {"id":"allthemodium:unobtainium_block", "required": false}
+    {"id": "allthemodium:unobtainium_block", "required": false}
   ]
 }

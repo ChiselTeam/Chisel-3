@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/raw_lead", "required": false},
+    {"id": "alltheores:raw_lead_block", "required": false}
+  ]
+}

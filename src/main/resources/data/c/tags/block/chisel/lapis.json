@@ -1,4 +1,4 @@
-﻿{
+{
   "values": [
     {"id": "#c:storage_blocks/lapis", "required": false},
     {"id": "#rechiseled:lapis_block", "required": false}

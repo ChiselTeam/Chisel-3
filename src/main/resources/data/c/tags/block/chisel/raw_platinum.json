@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/raw_platinum", "required": false},
+    {"id": "alltheores:raw_platinum_block", "required": false}
+  ]
+}

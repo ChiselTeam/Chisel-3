@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "thaumaturge:stone_arcane", "required": false},
+    {"id": "thaumaturge:stone_arcane_brick", "required": false}
+  ]
+}

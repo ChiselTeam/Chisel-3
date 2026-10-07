@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/raw_aluminum", "required": false},
+    {"id": "alltheores:raw_aluminum_block", "required": false}
+  ]
+}

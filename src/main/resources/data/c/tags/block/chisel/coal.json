@@ -1,4 +1,4 @@
-﻿{
+{
   "values": [
     {"id": "#c:storage_blocks/coal", "required": false},
     {"id": "#rechiseled:coal_block", "required": false}

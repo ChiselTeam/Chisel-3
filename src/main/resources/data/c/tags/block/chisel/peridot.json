@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/peridot", "required": false},
+    {"id": "alltheores:peridot_block", "required": false}
+  ]
+}

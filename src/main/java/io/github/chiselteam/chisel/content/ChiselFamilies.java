@@ -4,10 +4,11 @@ import io.github.chiselteam.chisel.content.compat.CompatFamilies;
 import io.github.chiselteam.chisel.content.compat.allthemods.AtmAncientStoneFamily;
 import io.github.chiselteam.chisel.content.compat.appliedenergistics.Ae2CertusFamily;
 import io.github.chiselteam.chisel.content.compat.appliedenergistics.Ae2SkyStoneFamily;
-import io.github.chiselteam.chisel.content.compat.forbiddenarcanus.FaArcaneDarkstoneFamily;
 import io.github.chiselteam.chisel.content.compat.moddedmetal.*;
 import io.github.chiselteam.chisel.content.compat.neovitae.NvRuneFamily;
-import io.github.chiselteam.chisel.content.compat.occultism.OcTallowFamily;
+import io.github.chiselteam.chisel.content.compat.thaumaturge.TTTallowFamily;
+import io.github.chiselteam.chisel.content.compat.thaumaturge.TTArcaneStoneFamily;
+import io.github.chiselteam.chisel.content.compat.thaumaturge.TTThaumiumFamily;
 import io.github.chiselteam.chisel.content.family.color.*;
 import io.github.chiselteam.chisel.content.family.decorative.*;
 import io.github.chiselteam.chisel.content.family.metal.*;
@@ -26,7 +27,7 @@ public class ChiselFamilies {
     public static final ChiselFamily ATM_ANCIENT_STONE = AtmAncientStoneFamily.FAMILY;
     public static final ChiselFamily ANDESITE = AndesiteFamily.FAMILY;
     public static final ChiselFamily ANTIBLOCK = AntiblockFamily.FAMILY;
-    public static final ChiselFamily FA_ARCANE_DARKSTONE = FaArcaneDarkstoneFamily.FAMILY;
+    public static final ChiselFamily TT_ARCANE_STONE = TTArcaneStoneFamily.FAMILY;
     public static final ChiselFamily BAMBOO = BambooFamily.FAMILY;
     public static final ChiselFamily BIRCH = BirchFamily.FAMILY;
     public static final ChiselFamily BLACKSTONE = BlackstoneFamily.FAMILY;
@@ -122,11 +123,11 @@ public class ChiselFamilies {
     public static final ChiselFamily SILVER = SilverFamily.FAMILY;
     public static final ChiselFamily SPRUCE = SpruceFamily.FAMILY;
     public static final ChiselFamily STEEL = SteelFamily.FAMILY;
-    public static final ChiselFamily OC_TALLOW = OcTallowFamily.FAMILY;
+    public static final ChiselFamily TT_TALLOW = TTTallowFamily.FAMILY;
     public static final ChiselFamily TECHNICAL = TechnicalFamily.FAMILY;
     public static final ChiselFamily TEMPLE = TempleFamily.FAMILY;
     public static final ChiselFamily TERRACOTTA = TerracottaFamily.FAMILY;
-    public static final ChiselFamily THAUMIUM = ThaumiumFamily.FAMILY;
+    public static final ChiselFamily TT_THAUMIUM = TTThaumiumFamily.FAMILY;
     public static final ChiselFamily TIN = TinFamily.FAMILY;
     public static final ChiselFamily TORCH = TorchFamily.FAMILY;
     public static final ChiselFamily TYRIAN = TyrianFamily.FAMILY;
@@ -191,7 +192,7 @@ public class ChiselFamilies {
         // Modded metals
         families.addAll(List.of(
                 ALUMINUM, BRONZE, COBALT, ELECTRUM, INVAR, LEAD, NICKEL, PLATINUM,
-                SILVER, STEEL, THAUMIUM, TIN, URANIUM, CHARCOAL, COAL_COKE
+                SILVER, STEEL, TIN, URANIUM, CHARCOAL, COAL_COKE
         ));
 
         // Special

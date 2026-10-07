@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/sulfur", "required": false},
+    {"id": "alltheores:sulfur_block", "required": false}
+  ]
+}

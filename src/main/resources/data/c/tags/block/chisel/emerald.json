@@ -1,4 +1,4 @@
-﻿{
+{
   "values": [
     {"id": "#c:storage_blocks/emerald", "required": false},
     {"id": "#rechiseled:emerald_block", "required": false}

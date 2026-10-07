@@ -1,6 +1,8 @@
-﻿{
+{
   "values": [
     {"id": "#rechiseled:obsidian", "required": false},
-    {"id": "#c:obsidians/normal", "required": false}
+    {"id": "#c:obsidians/normal", "required": false},
+    {"id": "thaumaturge:obsidian_tile", "required": false},
+    {"id": "thaumaturge:obsidian_totem", "required": false}
   ]
 }

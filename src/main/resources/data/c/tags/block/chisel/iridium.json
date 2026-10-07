@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/iridium", "required": false},
+    {"id": "alltheores:iridium_block", "required": false}
+  ]
+}

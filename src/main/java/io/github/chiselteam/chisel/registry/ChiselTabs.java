@@ -227,7 +227,6 @@ public class ChiselTabs {
                         ChiselFamilies.PLATINUM,
                         ChiselFamilies.SILVER,
                         ChiselFamilies.STEEL,
-                        ChiselFamilies.THAUMIUM,
                         ChiselFamilies.TIN,
                         ChiselFamilies.URANIUM
                 ).forEach(family -> family.getFamily().getVariants().forEach(variant -> {

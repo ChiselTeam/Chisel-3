@@ -1,4 +1,4 @@
-﻿{
+{
   "values": [
     {"id": "#c:storage_blocks/gold", "required": false},
     {"id": "#rechiseled:gold_block", "required": false}

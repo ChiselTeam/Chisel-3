@@ -81,7 +81,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.ATM_ANCIENT_STONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.ANDESITE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.ANTIBLOCK.getFamily());
-        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.FA_ARCANE_DARKSTONE.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TT_ARCANE_STONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.BASALT.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.BRICKS.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.BRONZE.getFamily());
@@ -157,7 +157,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TECHNICAL.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TEMPLE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TERRACOTTA.getFamily());
-        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.THAUMIUM.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TT_THAUMIUM.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TIN.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TUFF.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TYRIAN.getFamily());
@@ -203,7 +203,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.SILVER.getFamily());
         addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.STEEL.getFamily());
         addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.TECHNICAL.getFamily());
-        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.THAUMIUM.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.TT_THAUMIUM.getFamily());
         addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.TIN.getFamily());
         addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.URANIUM.getFamily());
         addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.RAW_IRON.getFamily());
@@ -268,9 +268,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(Tags.Blocks.END_STONES, ChiselFamilies.END_STONE.getFamily());
         addToTag(Tags.Blocks.NETHERRACKS, ChiselFamilies.NETHERRACK.getFamily());
         addToTag(Tags.Blocks.OBSIDIANS, ChiselFamilies.OBSIDIAN.getFamily());
-        addToTag(Tags.Blocks.OBSIDIANS_NORMAL, ChiselFamilies.OBSIDIAN.getFamily());
         addToTag(Tags.Blocks.OBSIDIANS, ChiselFamilies.CRYING_OBSIDIAN.getFamily());
-        addToTag(Tags.Blocks.OBSIDIANS_CRYING, ChiselFamilies.CRYING_OBSIDIAN.getFamily());
         addToTag(Tags.Blocks.SANDSTONE_BLOCKS, ChiselFamilies.SANDSTONE.getFamily());
         addToTag(Tags.Blocks.SANDSTONE_BLOCKS, ChiselFamilies.RED_SANDSTONE.getFamily());
 
@@ -309,32 +307,20 @@ public class ChiselBlockTags extends BlockTagsProvider {
 
         // MARK: STORAGE BLOCKS
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.COAL.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS_COAL, ChiselFamilies.COAL.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.COPPER.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS_COPPER, ChiselFamilies.COPPER.getFamily());
         if (ChiselFamilies.COPPER.getFamily().getWaxedFamily() != null) {
             addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.COPPER.getFamily().getWaxedFamily());
-            addToTag(Tags.Blocks.STORAGE_BLOCKS_COPPER, ChiselFamilies.COPPER.getFamily().getWaxedFamily());
         }
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.DIAMOND.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS_DIAMOND, ChiselFamilies.DIAMOND.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.EMERALD.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS_EMERALD, ChiselFamilies.EMERALD.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.GOLD.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS_GOLD, ChiselFamilies.GOLD.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.IRON.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS_IRON, ChiselFamilies.IRON.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.LAPIS.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS_LAPIS, ChiselFamilies.LAPIS.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.REDSTONE.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS_REDSTONE, ChiselFamilies.REDSTONE.getFamily());
 
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.RAW_IRON.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS_RAW_IRON, ChiselFamilies.RAW_IRON.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.RAW_COPPER.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS_RAW_COPPER, ChiselFamilies.RAW_COPPER.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.RAW_GOLD.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS_RAW_GOLD, ChiselFamilies.RAW_GOLD.getFamily());
 
         // MARK: MODDED STORAGE BLOCKS
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.CHARCOAL.getFamily());

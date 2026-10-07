@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/ruby", "required": false},
+    {"id": "alltheores:ruby_block", "required": false}
+  ]
+}

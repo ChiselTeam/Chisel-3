@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/thaumium/thaumium_lattice"
+    "all": "chisel:block/tt_thaumium/thaumium_lattice"
   }
 }

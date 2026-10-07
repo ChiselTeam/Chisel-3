@@ -26,7 +26,7 @@ All notable changes to this project will be documented in this file.
 #### Others
 - **Recipes**: Added crafting recipes for the Measuring Tape (forgot last update) and for custom blocks
 
-- **Compatibility**: Added BBL Colors support
+- **Compatibility**: Added BBL Colors support, Thaumaturge
 
 ### Changes
 
