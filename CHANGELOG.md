@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file.
 
+## [26.1.2.19]
+
+### Added
+
+- **Decorative Families**: Added Kitchen, Liminal, and Nexus block sets.
+- **Block Families**: Added Resin, Mud, Packed Mud, Netherite, Raw Gold, Raw Iron, Raw Copper, Amethyst,
+  Ancient Debris, Red Nether Bricks, Prismarine Bricks, Dark Prismarine, Obsidian, Crying Obsidian, Sculk,
+  Packed Ice, Blue Ice, Snow Block, and Soul Soil variants.
+- **Mossy Blocks**: Added Mossy Stone and Mossy Deepslate, and expanded Mossy Blackstone.
+- **Glass**: Added Bright Glass, Steel and Oak Framed Glass, and framed stained glass variants.
+- **Lighting and Laboratory**: Added colored lights and connected and animated Laboratory variants.
+- **Concrete**: Added special concrete variants.
+- **Recipes**: Added crafting recipes for the Measuring Tape and framed lights.
+- **Compatibility**: Added BBL Colors support.
+
+### Changed
+
+- **Chisel Menu**: Expanded the visible variant grid from 42 to 54 slots, widened the search field, and adjusted
+  block preview rotation.
+- **Block Variants**: Expanded and refreshed many existing families, including stone, Deepslate, Nether Bricks,
+  Netherrack, Purpur, Prismarine, Dirt, Clay, Snow, Ice, Coal, Charcoal, Glass, and Stained Glass.
+- **Stone Families**: Combined Stone and Stone Bricks into one family, and added Smooth Stone and Cobbled
+  Deepslate variants.
+- **Block Tags**: Expanded mining, storage block, beacon base, dye, and impermeable tags.
+- **Compatibility**: Mod-specific block families now load only when their corresponding mod is installed.
+- **Dependencies**: Updated CTM to `26.1.2.10` and set it as the minimum supported version.
+
+### Fixed
+
+- **Dedicated Servers**: Fixed a crash caused by client-only code in variant-family lookups.
+- **Waterstone**: Fixed tinting and item rendering.
+
 ## [26.1.2.18]
 
 ### Added
