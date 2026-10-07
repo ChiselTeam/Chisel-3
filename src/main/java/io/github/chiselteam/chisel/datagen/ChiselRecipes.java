@@ -261,7 +261,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .pattern("GQG")
                 .pattern(" G ")
                 .define('G', Blocks.GLASS)
-                .define('Q', Tags.Items.GEMS_QUARTZ)
+                .define('Q', ItemTags.WOOL)
                 .unlockedBy("has_glass", has(Blocks.GLASS))
                 .save(output);
 
