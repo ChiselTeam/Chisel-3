@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/charcoal/charcoal_pillar_large_ionic_triple-side",
+    "bottom": "chisel:block/charcoal/charcoal_pillar_basic-bottom",
+    "particle": "chisel:block/charcoal/charcoal_pillar_large_ionic_triple-side",
+    "side": "chisel:block/charcoal/charcoal_pillar_large_ionic_triple-side",
+    "top": "chisel:block/charcoal/charcoal_pillar_basic-bottom",
+    "vertical_both": "chisel:block/charcoal/charcoal_pillar_large_basic_triple-vertical_both",
+    "vertical_bottom": "chisel:block/charcoal/charcoal_pillar_large_ionic_triple-vertical_bottom",
+    "vertical_none": "chisel:block/charcoal/charcoal_pillar_large_ionic_triple-side",
+    "vertical_top": "chisel:block/charcoal/charcoal_pillar_large_ionic_triple-vertical_top"
+  }
+}

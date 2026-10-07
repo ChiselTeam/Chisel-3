@@ -236,6 +236,11 @@ public class ChiselBlockTags extends BlockTagsProvider {
         ChiselFamilies.CONCRETE.forEach(family -> addToTag(BlockTags.MINEABLE_WITH_PICKAXE, family.getFamily()));
 
         // MARK: VANILLA TAGS
+        addToTag(BlockTags.BEACON_BASE_BLOCKS, ChiselFamilies.IRON.getFamily());
+        addToTag(BlockTags.BEACON_BASE_BLOCKS, ChiselFamilies.GOLD.getFamily());
+        addToTag(BlockTags.BEACON_BASE_BLOCKS, ChiselFamilies.DIAMOND.getFamily());
+        addToTag(BlockTags.BEACON_BASE_BLOCKS, ChiselFamilies.EMERALD.getFamily());
+        addToTag(BlockTags.BEACON_BASE_BLOCKS, ChiselFamilies.NETHERITE.getFamily());
         addToTag(BlockTags.LEAVES, ChiselFamilies.LEAF.getFamily());
         ChiselFamilies.WOOLS.forEach(family -> addToTag(BlockTags.WOOL, family.getFamily()));
         addToTag(BlockTags.ENCHANTMENT_POWER_PROVIDER, ChiselFamilies.BOOKSHELF.getFamily());
@@ -252,10 +257,15 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(Tags.Blocks.COBBLESTONES_MOSSY, ChiselFamilies.MOSSY_COBBLESTONE.getFamily());
         addToTag(Tags.Blocks.BOOKSHELVES, ChiselFamilies.BOOKSHELF.getFamily());
         addToTag(Tags.Blocks.GLASS_BLOCKS, ChiselFamilies.GLASS.getFamily());
+        addToTag(BlockTags.IMPERMEABLE, ChiselFamilies.GLASS.getFamily());
         addToTag(Tags.Blocks.GLASS_BLOCKS, ChiselFamilies.STEEL_FRAMED_GLASS.getFamily());
+        addToTag(BlockTags.IMPERMEABLE, ChiselFamilies.STEEL_FRAMED_GLASS.getFamily());
         addToTag(Tags.Blocks.GLASS_BLOCKS, ChiselFamilies.OAK_FRAMED_GLASS.getFamily());
+        addToTag(BlockTags.IMPERMEABLE, ChiselFamilies.OAK_FRAMED_GLASS.getFamily());
         addToTag(Tags.Blocks.GLASS_BLOCKS, ChiselFamilies.BRIGHT_GLASS.getFamily());
+        addToTag(BlockTags.IMPERMEABLE, ChiselFamilies.BRIGHT_GLASS.getFamily());
         addToTag(Tags.Blocks.GLASS_PANES, ChiselFamilies.GLASS_PANE.getFamily());
+        addToTag(BlockTags.IMPERMEABLE, ChiselFamilies.GLASS_PANE.getFamily());
         addToTag(Tags.Blocks.END_STONES, ChiselFamilies.END_STONE.getFamily());
         addToTag(Tags.Blocks.NETHERRACKS, ChiselFamilies.NETHERRACK.getFamily());
         addToTag(Tags.Blocks.OBSIDIANS, ChiselFamilies.OBSIDIAN.getFamily());
@@ -272,47 +282,72 @@ public class ChiselBlockTags extends BlockTagsProvider {
 
         ChiselFamilies.STAINED_GLASS.forEach(family -> {
             addToTag(Tags.Blocks.GLASS_BLOCKS, family.getFamily());
+            addToTag(BlockTags.IMPERMEABLE, family.getFamily());
             addToTag(Tags.Blocks.DYED, family.getFamily());
             addToTag(getTagForColor(family.getFamily().getFamilyName().substring("stained_glass_".length())), family.getFamily());
         });
 
         ChiselFamilies.OAK_FRAMED_STAINED_GLASS.forEach(family -> {
             addToTag(Tags.Blocks.GLASS_BLOCKS, family.getFamily());
+            addToTag(BlockTags.IMPERMEABLE, family.getFamily());
             addToTag(Tags.Blocks.DYED, family.getFamily());
             addToTag(getTagForColor(family.getFamily().getFamilyName().substring("oak_framed_stained_glass_".length())), family.getFamily());
         });
 
         ChiselFamilies.STEEL_FRAMED_STAINED_GLASS.forEach(family -> {
             addToTag(Tags.Blocks.GLASS_BLOCKS, family.getFamily());
+            addToTag(BlockTags.IMPERMEABLE, family.getFamily());
             addToTag(Tags.Blocks.DYED, family.getFamily());
             addToTag(getTagForColor(family.getFamily().getFamilyName().substring("steel_framed_stained_glass_".length())), family.getFamily());
         });
 
         ChiselFamilies.STAINED_GLASS_PANE.forEach(family -> {
             addToTag(Tags.Blocks.GLASS_PANES, family.getFamily());
+            addToTag(BlockTags.IMPERMEABLE, family.getFamily());
             addToTag(Tags.Blocks.DYED, family.getFamily());
             addToTag(getTagForColor(family.getFamily().getFamilyName().substring("stained_glass_pane_".length())), family.getFamily());
         });
 
         // MARK: STORAGE BLOCKS
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.COAL.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS_COAL, ChiselFamilies.COAL.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.COPPER.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS_COPPER, ChiselFamilies.COPPER.getFamily());
+        if (ChiselFamilies.COPPER.getFamily().getWaxedFamily() != null) {
+            addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.COPPER.getFamily().getWaxedFamily());
+            addToTag(Tags.Blocks.STORAGE_BLOCKS_COPPER, ChiselFamilies.COPPER.getFamily().getWaxedFamily());
+        }
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.DIAMOND.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS_DIAMOND, ChiselFamilies.DIAMOND.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.EMERALD.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS_EMERALD, ChiselFamilies.EMERALD.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.GOLD.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS_GOLD, ChiselFamilies.GOLD.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.IRON.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS_IRON, ChiselFamilies.IRON.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.LAPIS.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS_LAPIS, ChiselFamilies.LAPIS.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.REDSTONE.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS_REDSTONE, ChiselFamilies.REDSTONE.getFamily());
+
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.RAW_IRON.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS_RAW_IRON, ChiselFamilies.RAW_IRON.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.RAW_COPPER.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS_RAW_COPPER, ChiselFamilies.RAW_COPPER.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.RAW_GOLD.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS_RAW_GOLD, ChiselFamilies.RAW_GOLD.getFamily());
+
+        // MARK: MODDED STORAGE BLOCKS
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.CHARCOAL.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.COAL_COKE.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.ALUMINUM.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.BRONZE.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.COBALT.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.COPPER.getFamily());
-        if (ChiselFamilies.COPPER.getFamily().getWaxedFamily() != null) {
-            addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.COPPER.getFamily().getWaxedFamily());
-        }
-        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.DIAMOND.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.ELECTRUM.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.EMERALD.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.GOLD.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.INVAR.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.IRON.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.LAPIS.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.LEAD.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.NICKEL.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.PLATINUM.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.REDSTONE.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.SILVER.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.STEEL.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.TIN.getFamily());

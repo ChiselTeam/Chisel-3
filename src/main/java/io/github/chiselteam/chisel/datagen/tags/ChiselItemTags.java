@@ -9,6 +9,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.common.data.ItemTagsProvider;
+import net.neoforged.neoforge.common.Tags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -19,6 +20,10 @@ public class ChiselItemTags extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        addToTag(Tags.Items.STORAGE_BLOCKS, ChiselFamilies.COAL.getFamily());
+        addToTag(Tags.Items.STORAGE_BLOCKS_COAL, ChiselFamilies.COAL.getFamily());
+        addToTag(Tags.Items.STORAGE_BLOCKS, ChiselFamilies.CHARCOAL.getFamily());
+        addToTag(Tags.Items.STORAGE_BLOCKS, ChiselFamilies.COAL_COKE.getFamily());
         addToTag(ItemTags.create(Chisel.prefix("marble")), ChiselFamilies.MARBLE.getFamily());
         addToTag(ItemTags.create(Chisel.prefix("limestone")), ChiselFamilies.LIMESTONE.getFamily());
     }

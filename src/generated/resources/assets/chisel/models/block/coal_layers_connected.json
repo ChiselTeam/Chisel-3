@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/coal/coal_layers_connected",
+    "particle": "chisel:block/coal/coal_layers_connected",
+    "standard_corner": "chisel:block/coal/coal_layers_connected-ctm_corner",
+    "standard_cornerless": "chisel:block/coal/coal_layers_connected-ctm_corner",
+    "standard_horizontal": "chisel:block/coal/coal_layers_connected",
+    "standard_none": "chisel:block/coal/coal_layers_connected",
+    "standard_vertical": "chisel:block/coal/coal_layers_connected-ctm_corner"
+  }
+}

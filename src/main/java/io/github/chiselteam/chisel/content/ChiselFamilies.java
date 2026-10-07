@@ -25,10 +25,10 @@ public class ChiselFamilies {
     public static final ChiselFamily BRONZE = ModdedMetalFamilies.BRONZE;
     public static final ChiselFamily AE2_CERTUS = AppliedEnergisticsFamilies.AE2_CERTUS;
     public static final ChiselFamily AE2_SKY_STONE = AppliedEnergisticsFamilies.AE2_SKY_STONE;
-    public static final ChiselFamily CHARCOAL = DecorativeFamilies.CHARCOAL;
+    public static final ChiselFamily CHARCOAL = ModdedMetalFamilies.CHARCOAL;
     public static final ChiselFamily CLOUD = DecorativeFamilies.CLOUD;
-    public static final ChiselFamily COAL = DecorativeFamilies.COAL;
-    public static final ChiselFamily COAL_COKE = DecorativeFamilies.COAL_COKE;
+    public static final ChiselFamily COAL = MetalFamilies.COAL;
+    public static final ChiselFamily COAL_COKE = ModdedMetalFamilies.COAL_COKE;
     public static final ChiselFamily COBALT = ModdedMetalFamilies.COBALT;
     public static final ChiselFamily COBBLESTONE = StoneFamilies.COBBLESTONE;
     public static final ChiselFamily C_CONCRETE = DecorativeFamilies.C_CONCRETE;
