@@ -55,9 +55,9 @@ public final class DeepslateFamily {
                     .description("Chaotic Bricks")
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3))
             .variant("deepslate_chaotic_medium", variant -> variant
-                    .description("Deepslate Bricks"))
+                    .description("Chaotic Medium"))
             .variant("deepslate_chaotic_small", variant -> variant
-                    .description("Deepslate Small Tiles"))
+                    .description("Chaotic Small"))
             .variant("deepslate_checker", variant -> variant
                     .description("Checker"))
             .variant("deepslate_checker_small", variant -> variant

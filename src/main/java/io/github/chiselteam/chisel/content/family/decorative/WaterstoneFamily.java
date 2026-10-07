@@ -28,10 +28,10 @@ public final class WaterstoneFamily {
                     .texture(Chisel.prefix("block/lavastone/lavastone_chaotic_bricks"))
                     .textureFromBase("3x3_top_left"))
             .variant("waterstone_chaotic_medium", variant -> variant
-                    .description("Waterstone Bricks")
+                    .description("Chaotic Medium")
                     .texture(Chisel.prefix("block/lavastone/lavastone_chaotic_medium")))
             .variant("waterstone_chaotic_small", variant -> variant
-                    .description("Waterstone Tiles")
+                    .description("Chaotic Small")
                     .texture(Chisel.prefix("block/lavastone/lavastone_chaotic_small")))
             .variant("waterstone_circular", variant -> variant
                     .description("Circular")
@@ -71,7 +71,7 @@ public final class WaterstoneFamily {
                     .description("Layers")
                     .texture(Chisel.prefix("block/lavastone/lavastone_layers")))
             .variant("waterstone_mosaic", variant -> variant
-                    .description("Water Creeper in Tiles")
+                    .description("Mosaic")
                     .model(ChiselModelHandlers.MULTI_LAYER_CONNECTED_TINTED)
                     .texture(Chisel.prefix("block/lavastone/lavastone_mosaic")))
             .variant("waterstone_ornate", variant -> variant

@@ -12,6 +12,7 @@ public final class LiminalFamily {
                     .blockName("Liminal Block"))
             .variant("liminal_wall_1", variant -> variant
                     .description("Liminal Wall 1"))
+            .variant("liminal_wall_1_trim", v -> v.description("Liminal Wall 1 Trim").model(ChiselModelHandlers.CONNECTED))
             .variant("liminal_wall_2", variant -> variant
                     .description("Liminal Wall 2"))
             .variant("liminal_wall_3", variant -> variant

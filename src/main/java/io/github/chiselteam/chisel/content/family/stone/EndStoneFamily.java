@@ -57,9 +57,9 @@ public final class EndStoneFamily {
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
             .variant("end_stone_chaotic_medium", variant -> variant
-                    .description("End Stone Bricks"))
+                    .description("Chaotic Medium"))
             .variant("end_stone_chaotic_small", variant -> variant
-                    .description("End Stone Small Tiles"))
+                    .description("Chaotic Small"))
             .variant("end_stone_checker", variant -> variant
                     .description("Checker"))
             .variant("end_stone_checker_small", variant -> variant

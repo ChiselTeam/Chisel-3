@@ -52,9 +52,9 @@ public final class PurpurFamily {
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
             .variant("purpur_chaotic_medium", variant -> variant
-                    .description("Purpur Bricks"))
+                    .description("Chaotic Medium"))
             .variant("purpur_chaotic_small", variant -> variant
-                    .description("Purpur Small Tiles"))
+                    .description("Chaotic Small"))
             .variant("purpur_checker", variant -> variant
                     .description("Checker"))
             .variant("purpur_checker_small", variant -> variant

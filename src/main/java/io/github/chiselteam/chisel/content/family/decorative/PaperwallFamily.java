@@ -22,11 +22,11 @@ public final class PaperwallFamily {
             .variant("paperwall_six", variant -> variant
                     .description("Six Sectioned Paperwall"))
             .variant("paperwall_strike_horizontal", variant -> variant
-                    .description("Horizontally Striked Paperwall"))
+                    .description("Horizontally Striped Paperwall"))
             .variant("paperwall_strike_middle", variant -> variant
-                    .description("Middle Striked Paperwall"))
+                    .description("Middle Striped Paperwall"))
             .variant("paperwall_strike_vertical", variant -> variant
-                    .description("Vertically Striked Paperwall")));
+                    .description("Vertically Striped Paperwall")));
 
     private PaperwallFamily() {
     }

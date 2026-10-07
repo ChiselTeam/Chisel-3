@@ -58,9 +58,9 @@ public final class DioriteFamily {
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
             .variant("diorite_chaotic_medium", variant -> variant
-                    .description("Diorite Bricks"))
+                    .description("Chaotic Medium"))
             .variant("diorite_chaotic_small", variant -> variant
-                    .description("Diorite Small Tiles"))
+                    .description("Chaotic Small"))
             .variant("diorite_checker", variant -> variant
                     .description("Checker"))
             .variant("diorite_checker_small", variant -> variant

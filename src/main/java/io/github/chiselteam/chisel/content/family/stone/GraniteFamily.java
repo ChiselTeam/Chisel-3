@@ -52,9 +52,9 @@ public final class GraniteFamily {
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
             .variant("granite_chaotic_medium", variant -> variant
-                    .description("Granite Bricks"))
+                    .description("Chaotic Medium"))
             .variant("granite_chaotic_small", variant -> variant
-                    .description("Granite Small Tiles"))
+                    .description("Chaotic Small"))
             .variant("granite_checker", variant -> variant
                     .description("Checker"))
             .variant("granite_checker_small", variant -> variant

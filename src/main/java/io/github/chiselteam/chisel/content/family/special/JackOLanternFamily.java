@@ -15,9 +15,9 @@ public final class JackOLanternFamily {
                     .blockFactory(ChiselCarvedPumpkinBlock::new))
             .existingBlock(Blocks.JACK_O_LANTERN)
             .variant("jack_o_lantern_0", variant -> variant
-                    .description("Suprised"))
+                    .description("Surprised"))
             .variant("jack_o_lantern_1", variant -> variant
-                    .description("Smiling open"))
+                    .description("Smiling Open"))
             .variant("jack_o_lantern_2", variant -> variant
                     .description("Cheeky"))
             .variant("jack_o_lantern_3", variant -> variant
@@ -35,7 +35,7 @@ public final class JackOLanternFamily {
             .variant("jack_o_lantern_9", variant -> variant
                     .description("Evil"))
             .variant("jack_o_lantern_10", variant -> variant
-                    .description("Exited"))
+                    .description("Excited"))
             .variant("jack_o_lantern_11", variant -> variant
                     .description("Sleeping"))
             .variant("jack_o_lantern_12", variant -> variant

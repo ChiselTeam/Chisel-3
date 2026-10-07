@@ -23,9 +23,9 @@ public final class TerracottaFamily {
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
             .variant("terracotta_chaotic_medium", variant -> variant
-                    .description("Terracotta Bricks"))
+                    .description("Chaotic Medium"))
             .variant("terracotta_chaotic_small", variant -> variant
-                    .description("Terracotta Small Tiles"))
+                    .description("Chaotic Small"))
             .variant("terracotta_circular", variant -> variant
                     .description("Circular")
                     .model(ChiselModelHandlers.CONNECTED)

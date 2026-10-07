@@ -26,9 +26,9 @@ public final class MagmaFamily {
                     .model(ChiselModelHandlers.LAVA_3x3)
                     .textureFromBase("3x3_top_left"))
             .variant("magma_chaotic_medium", variant -> variant
-                    .description("Magma Bricks"))
+                    .description("Chaotic Medium"))
             .variant("magma_chaotic_small", variant -> variant
-                    .description("Magma Small Tiles"))
+                    .description("Chaotic Small"))
             .variant("magma_circular", variant -> variant
                     .description("Circular")
                     .model(ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW)

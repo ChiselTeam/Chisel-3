@@ -25,9 +25,9 @@ public final class LavastoneFamily {
                     .model(ChiselModelHandlers.LAVA_3x3)
                     .textureFromBase("3x3_top_left"))
             .variant("lavastone_chaotic_medium", variant -> variant
-                    .description("Lavastone Bricks"))
+                    .description("Chaotic Medium"))
             .variant("lavastone_chaotic_small", variant -> variant
-                    .description("Lavastone Tiles"))
+                    .description("Chaotic Small"))
             .variant("lavastone_circular", variant -> variant
                     .description("Circular")
                     .model(ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW))
@@ -56,7 +56,7 @@ public final class LavastoneFamily {
             .variant("lavastone_layers", variant -> variant
                     .description("Layers"))
             .variant("lavastone_mosaic", variant -> variant
-                    .description("Lava Creeper in Tiles")
+                    .description("Mosaic")
                     .model(ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW))
             .variant("lavastone_ornate", variant -> variant
                     .description("Ornate Lava Panel"))
@@ -69,7 +69,7 @@ public final class LavastoneFamily {
             .variant("lavastone_prism", variant -> variant
                     .description("Prism"))
             .variant("lavastone_raw", variant -> variant
-                    .description("Black Lavastone"))
+                    .description("Raw"))
             .variant("lavastone_road", variant -> variant
                     .description("Road"))
             .variant("lavastone_slanted", variant -> variant

@@ -26,9 +26,9 @@ public final class RedSandstoneFamily {
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
             .variant("red_sandstone_chaotic_medium", variant -> variant
-                    .description("Red Sandstone Bricks"))
+                    .description("Chaotic Medium"))
             .variant("red_sandstone_chaotic_small", variant -> variant
-                    .description("Red Sandstone Small Tiles"))
+                    .description("Chaotic Small"))
             .variant("red_sandstone_circular", variant -> variant
                     .description("Circular")
                     .model(ChiselModelHandlers.CONNECTED))

@@ -432,7 +432,7 @@ public final class StoneFamily {
                     .texture("ctm_cornerless", Chisel.prefix("block/stone/stone_parquet")))
             .variant("stone_bricks_chaotic_small", variant -> variant
                     .blockName("Stone Bricks")
-                    .description("Small Disordered Stone Bricks"))
+                    .description("Chaotic Small"))
             .variant("stone_bricks_disordered", variant -> variant
                     .blockName("Stone Bricks")
                     .description("Disordered Stone Bricks"))
@@ -486,7 +486,7 @@ public final class StoneFamily {
                     .description("Modern Neutral Masonry"))
             .variant("stone_bricks_ornate", variant -> variant
                     .blockName("Stone Bricks")
-                    .description("Ornate Stone Brick tiles"))
+                    .description("Ornate Stone Brick Tiles"))
             .variant("stone_bricks_ornate_large", variant -> variant
                     .blockName("Stone Bricks")
                     .description("Large Ornate Stone Brick Tiles"))

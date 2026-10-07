@@ -35,7 +35,7 @@ public final class PumpkinFamily {
             .variant("pumpkin_9", variant -> variant
                     .description("Evil"))
             .variant("pumpkin_10", variant -> variant
-                    .description("Exited"))
+                    .description("Excited"))
             .variant("pumpkin_11", variant -> variant
                     .description("Sleeping"))
             .variant("pumpkin_12", variant -> variant

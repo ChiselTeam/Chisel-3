@@ -22,9 +22,9 @@ public final class CoalCokeFamily {
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
             .variant("coal_coke_chaotic_medium", variant -> variant
-                    .description("Coal Coke Bricks"))
+                    .description("Chaotic Medium"))
             .variant("coal_coke_chaotic_small", variant -> variant
-                    .description("Coal Coke Small Tiles"))
+                    .description("Chaotic Small"))
             .variant("coal_coke_circular", variant -> variant
                     .description("Circular")
                     .model(ChiselModelHandlers.CONNECTED)

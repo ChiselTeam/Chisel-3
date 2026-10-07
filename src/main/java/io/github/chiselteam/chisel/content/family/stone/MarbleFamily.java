@@ -20,13 +20,13 @@ public final class MarbleFamily {
             .variant("marble_braid", variant -> variant
                     .description("Braid"))
             .variant("marble_chaotic_bricks", variant -> variant
-                    .description("Arranged Marble Tiles")
+                    .description("Chaotic Bricks")
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
             .variant("marble_chaotic_medium", variant -> variant
-                    .description("Marble Brick"))
+                    .description("Chaotic Medium"))
             .variant("marble_chaotic_small", variant -> variant
-                    .description("Marble Tiles"))
+                    .description("Chaotic Small"))
             .variant("marble_circular", variant -> variant
                     .description("Circular")
                     .model(ChiselModelHandlers.CONNECTED)
@@ -56,7 +56,7 @@ public final class MarbleFamily {
             .variant("marble_layers", variant -> variant
                     .description("Layers"))
             .variant("marble_mosaic", variant -> variant
-                    .description("Fancy Marble Tiles")
+                    .description("Mosaic")
                     .model(ChiselModelHandlers.CONNECTED))
             .variant("marble_ornate", variant -> variant
                     .description("Ornate Marble Panel"))

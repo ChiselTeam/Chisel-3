@@ -58,9 +58,9 @@ public final class AndesiteFamily {
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
             .variant("andesite_chaotic_medium", variant -> variant
-                    .description("Andesite Bricks"))
+                    .description("Chaotic Medium"))
             .variant("andesite_chaotic_small", variant -> variant
-                    .description("Andesite Small Tiles"))
+                    .description("Chaotic Small"))
             .variant("andesite_checker", variant -> variant
                     .description("Checker"))
             .variant("andesite_checker_small", variant -> variant

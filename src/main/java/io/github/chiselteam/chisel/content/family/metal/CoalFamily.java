@@ -58,9 +58,9 @@ public final class CoalFamily {
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
             .variant("coal_chaotic_medium", variant -> variant
-                    .description("Coal Bricks"))
+                    .description("Chaotic Medium"))
             .variant("coal_chaotic_small", variant -> variant
-                    .description("Coal Small Tiles"))
+                    .description("Chaotic Small"))
             .variant("coal_checker", variant -> variant
                     .description("Checker"))
             .variant("coal_checker_small", variant -> variant

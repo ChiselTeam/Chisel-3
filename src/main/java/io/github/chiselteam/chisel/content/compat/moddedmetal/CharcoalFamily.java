@@ -57,9 +57,9 @@ public final class CharcoalFamily {
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
             .variant("charcoal_chaotic_medium", variant -> variant
-                    .description("Charcoal Bricks"))
+                    .description("Chaotic Medium"))
             .variant("charcoal_chaotic_small", variant -> variant
-                    .description("Charcoal Small Tiles"))
+                    .description("Chaotic Small"))
             .variant("charcoal_checker", variant -> variant
                     .description("Checker"))
             .variant("charcoal_checker_small", variant -> variant

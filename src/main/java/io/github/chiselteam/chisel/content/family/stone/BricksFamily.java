@@ -19,18 +19,18 @@ public final class BricksFamily {
             .variant("bricks_braid", variant -> variant
                     .description("Braid"))
             .variant("bricks_chaotic", variant -> variant
-                    .description("Varied Bricks")
+                    .description("Chaotic")
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
             .variant("bricks_chaotic_medium", variant -> variant
-                    .description("Detailed Bricks"))
+                    .description("Chaotic Medium"))
             .variant("bricks_chaotic_small", variant -> variant
-                    .description("Small Bricks"))
+                    .description("Chaotic Small"))
             .variant("bricks_circular", variant -> variant
                     .description("Circular")
                     .model(ChiselModelHandlers.CONNECTED))
             .variant("bricks_cracked", variant -> variant
-                    .description("Damaged Bricks"))
+                    .description("Cracked Bricks"))
             .variant("bricks_cracked_bricks", variant -> variant
                     .description("Cracked Bricks"))
             .variant("bricks_cuts", variant -> variant
@@ -38,15 +38,15 @@ public final class BricksFamily {
                     .model(ChiselModelHandlers.MULTIBLOCK_4X4)
                     .textureFromBase("4x4_row_0_column_0"))
             .variant("bricks_dent", variant -> variant
-                    .description("Bricks with Dent")
+                    .description("Dented Bricks")
                     .model(ChiselModelHandlers.CONNECTED))
             .variant("bricks_encased", variant -> variant
                     .description("Encased")
                     .model(ChiselModelHandlers.CONNECTED))
             .variant("bricks_french", variant -> variant
-                    .description("Mortarless Bricks"))
+                    .description("French 1"))
             .variant("bricks_french_2", variant -> variant
-                    .description("Aged Bricks"))
+                    .description("French 2"))
             .variant("bricks_jellybean", variant -> variant
                     .description("Jellybean")
                     .model(ChiselModelHandlers.MULTIBLOCK_2X2)

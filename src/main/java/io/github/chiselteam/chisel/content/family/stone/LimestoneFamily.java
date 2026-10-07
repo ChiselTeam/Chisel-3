@@ -57,9 +57,9 @@ public final class LimestoneFamily {
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
             .variant("limestone_chaotic_medium", variant -> variant
-                    .description("Small Limestone Bricks"))
+                    .description("Chaotic Medium"))
             .variant("limestone_chaotic_small", variant -> variant
-                    .description("Small Limestone Tiles"))
+                    .description("Chaotic Small"))
             .variant("limestone_checker", variant -> variant
                     .description("Checker"))
             .variant("limestone_checker_small", variant -> variant
@@ -70,7 +70,7 @@ public final class LimestoneFamily {
             .variant("limestone_cobble", variant -> variant
                     .description("Cobble"))
             .variant("limestone_cracked", variant -> variant
-                    .description("Damaged Limestone Tiles"))
+                    .description("Cracked Bricks"))
             .variant("limestone_cuts", variant -> variant
                     .description("Cuts")
                     .model(ChiselModelHandlers.MULTIBLOCK_4X4)

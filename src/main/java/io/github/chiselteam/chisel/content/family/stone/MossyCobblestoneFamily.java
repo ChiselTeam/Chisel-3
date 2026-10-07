@@ -23,14 +23,14 @@ public final class MossyCobblestoneFamily {
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
             .variant("mossy_cobblestone_chaotic_medium", variant -> variant
-                    .description("Detailed Mossy Cobblestone Bricks"))
+                    .description("Chaotic Medium"))
             .variant("mossy_cobblestone_chaotic_small", variant -> variant
-                    .description("Small Mossy Cobblestone Bricks"))
+                    .description("Chaotic Small"))
             .variant("mossy_cobblestone_circular", variant -> variant
                     .description("Circular")
                     .model(ChiselModelHandlers.CONNECTED))
             .variant("mossy_cobblestone_cracked", variant -> variant
-                    .description("Damaged Mossy Cobblestone Tiles"))
+                    .description("Cracked Bricks"))
             .variant("mossy_cobblestone_cracked_bricks", variant -> variant
                     .description("Cracked Bricks"))
             .variant("mossy_cobblestone_cuts", variant -> variant

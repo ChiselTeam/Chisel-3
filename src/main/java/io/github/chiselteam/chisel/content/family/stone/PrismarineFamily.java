@@ -51,9 +51,9 @@ public final class PrismarineFamily {
                     .description("Chaotic Bricks")
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3))
             .variant("prismarine_chaotic_medium", variant -> variant
-                    .description("Small Prismarine Bricks"))
+                    .description("Chaotic Medium"))
             .variant("prismarine_chaotic_small", variant -> variant
-                    .description("Small Prismarine Tiles"))
+                    .description("Chaotic Small"))
             .variant("prismarine_checker", variant -> variant
                     .description("Checker"))
             .variant("prismarine_checker_small", variant -> variant
@@ -64,7 +64,7 @@ public final class PrismarineFamily {
             .variant("prismarine_cobble", variant -> variant
                     .description("Cobble"))
             .variant("prismarine_cracked", variant -> variant
-                    .description("Damaged Prismarine Tiles"))
+                    .description("Cracked Bricks"))
             .variant("prismarine_cuts", variant -> variant
                     .description("Cuts")
                     .model(ChiselModelHandlers.MULTIBLOCK_4X4))

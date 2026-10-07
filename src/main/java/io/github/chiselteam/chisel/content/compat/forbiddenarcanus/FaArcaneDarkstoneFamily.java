@@ -15,7 +15,7 @@ public final class FaArcaneDarkstoneFamily {
             .variant("arcane_border", variant -> variant
                     .description("Border"))
             .variant("arcane_crack", variant -> variant
-                    .description("Damaged")
+                    .description("Cracked")
                     .model(ChiselModelHandlers.V9))
             .variant("arcane_matrix", variant -> variant
                     .description("Matrix")

@@ -58,9 +58,9 @@ public final class BasaltFamily {
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
             .variant("basalt_chaotic_medium", variant -> variant
-                    .description("Basalt Bricks"))
+                    .description("Chaotic Medium"))
             .variant("basalt_chaotic_small", variant -> variant
-                    .description("Basalt Small Tiles"))
+                    .description("Chaotic Small"))
             .variant("basalt_checker", variant -> variant
                     .description("Checker"))
             .variant("basalt_checker_small", variant -> variant

@@ -25,7 +25,7 @@ public final class QuartzFamily {
                     .description("Encased Braid")
                     .model(ChiselModelHandlers.CONNECTED))
             .variant("quartz_bricks_indent", variant -> variant
-                    .description("Bricks Indent"))
+                    .description("Indent Bricks"))
             .variant("quartz_bricks_inlayed", variant -> variant
                     .description("Inlayed Bricks"))
             .variant("quartz_bricks_large", variant -> variant
@@ -39,9 +39,9 @@ public final class QuartzFamily {
                     .description("Chaotic")
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3))
             .variant("quartz_chaotic_medium", variant -> variant
-                    .description("Quartz Bricks"))
+                    .description("Chaotic Medium"))
             .variant("quartz_chaotic_small", variant -> variant
-                    .description("Quartz Small Tiles"))
+                    .description("Chaotic Small"))
             .variant("quartz_checker", variant -> variant
                     .description("Checker"))
             .variant("quartz_checker_small", variant -> variant

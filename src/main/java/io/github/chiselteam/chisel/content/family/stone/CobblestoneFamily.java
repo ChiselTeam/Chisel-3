@@ -52,13 +52,13 @@ public final class CobblestoneFamily {
             .variant("cobblestone_bricks_vertical", variant -> variant
                     .description("Vertical Bricks"))
             .variant("cobblestone_chaotic", variant -> variant
-                    .description("Huge Cobblestone Tiles")
+                    .description("Chaotic")
                     .model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
             .variant("cobblestone_chaotic_medium", variant -> variant
-                    .description("Detailed Cobblestone Bricks"))
+                    .description("Chaotic Medium"))
             .variant("cobblestone_chaotic_small", variant -> variant
-                    .description("Small Cobblestone Bricks"))
+                    .description("Chaotic Small"))
             .variant("cobblestone_checker", variant -> variant
                     .description("Checker"))
             .variant("cobblestone_checker_small", variant -> variant
@@ -67,7 +67,7 @@ public final class CobblestoneFamily {
                     .description("Circular")
                     .model(ChiselModelHandlers.CONNECTED))
             .variant("cobblestone_cracked", variant -> variant
-                    .description("Damaged Cobblestone Tiles"))
+                    .description("Cracked Bricks"))
             .variant("cobblestone_cuts", variant -> variant
                     .description("Cuts")
                     .model(ChiselModelHandlers.MULTIBLOCK_4X4)
