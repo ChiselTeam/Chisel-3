@@ -53,6 +53,11 @@
     {
       "block": "chisel:liminal_tiles_1",
       "name": "liminal_tiles_1"
+    },
+    {
+      "block": "chisel:liminal_tiles_2",
+      "model_type": "r4",
+      "name": "liminal_tiles_2"
     }
   ]
 }
