@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "aether_ii:greatroot_wood", "required": false},
+    {"id": "aether_ii:greatroot_trunk", "required": false}
+  ]
+}

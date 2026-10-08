@@ -1,6 +1,5 @@
 {
   "values": [
-    {"id": "aether_ii:ichorite", "required": false},
     {"id": "aether_ii:ichorite_bricks", "required": false},
     {"id": "aether_ii:ichorite_flagstones", "required": false},
     {"id": "aether_ii:ichorite_runestone", "required": false},
@@ -9,6 +8,7 @@
     {"id": "aether_ii:ichorite_capstone_bricks", "required": false},
     {"id": "aether_ii:ichorite_base_pillar", "required": false},
     {"id": "aether_ii:ichorite_capstone_pillar", "required": false},
-    {"id": "aether_ii:ichorite_pillar", "required": false}
+    {"id": "aether_ii:ichorite_pillar", "required": false},
+    {"id": "aether_ii:smooth_ichorite", "required": false}
   ]
 }
