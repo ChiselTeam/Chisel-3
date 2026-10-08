@@ -1,0 +1,20 @@
+{
+  "values": [
+    {"id": "xycraft_world:lamp_pillar_white", "required": false},
+    {"id": "xycraft_world:lamp_pillar_light_gray", "required": false},
+    {"id": "xycraft_world:lamp_pillar_gray", "required": false},
+    {"id": "xycraft_world:lamp_pillar_black", "required": false},
+    {"id": "xycraft_world:lamp_pillar_brown", "required": false},
+    {"id": "xycraft_world:lamp_pillar_red", "required": false},
+    {"id": "xycraft_world:lamp_pillar_orange", "required": false},
+    {"id": "xycraft_world:lamp_pillar_yellow", "required": false},
+    {"id": "xycraft_world:lamp_pillar_lime", "required": false},
+    {"id": "xycraft_world:lamp_pillar_green", "required": false},
+    {"id": "xycraft_world:lamp_pillar_cyan", "required": false},
+    {"id": "xycraft_world:lamp_pillar_light_blue", "required": false},
+    {"id": "xycraft_world:lamp_pillar_blue", "required": false},
+    {"id": "xycraft_world:lamp_pillar_purple", "required": false},
+    {"id": "xycraft_world:lamp_pillar_magenta", "required": false},
+    {"id": "xycraft_world:lamp_pillar_pink", "required": false}
+  ]
+}

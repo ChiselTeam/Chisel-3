@@ -1,0 +1,20 @@
+{
+  "values": [
+    {"id": "xycraft_world:lamp_rgb_glowing_inverted_white", "required": false},
+    {"id": "xycraft_world:lamp_rgb_glowing_inverted_light_gray", "required": false},
+    {"id": "xycraft_world:lamp_rgb_glowing_inverted_gray", "required": false},
+    {"id": "xycraft_world:lamp_rgb_glowing_inverted_black", "required": false},
+    {"id": "xycraft_world:lamp_rgb_glowing_inverted_brown", "required": false},
+    {"id": "xycraft_world:lamp_rgb_glowing_inverted_red", "required": false},
+    {"id": "xycraft_world:lamp_rgb_glowing_inverted_orange", "required": false},
+    {"id": "xycraft_world:lamp_rgb_glowing_inverted_yellow", "required": false},
+    {"id": "xycraft_world:lamp_rgb_glowing_inverted_lime", "required": false},
+    {"id": "xycraft_world:lamp_rgb_glowing_inverted_green", "required": false},
+    {"id": "xycraft_world:lamp_rgb_glowing_inverted_cyan", "required": false},
+    {"id": "xycraft_world:lamp_rgb_glowing_inverted_light_blue", "required": false},
+    {"id": "xycraft_world:lamp_rgb_glowing_inverted_blue", "required": false},
+    {"id": "xycraft_world:lamp_rgb_glowing_inverted_purple", "required": false},
+    {"id": "xycraft_world:lamp_rgb_glowing_inverted_magenta", "required": false},
+    {"id": "xycraft_world:lamp_rgb_glowing_inverted_pink", "required": false}
+  ]
+}

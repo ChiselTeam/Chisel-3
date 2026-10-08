@@ -1,0 +1,9 @@
+{
+  "values": [
+    {"id": "xycraft_world:inverted_bricks_cloud_blue", "required": false},
+    {"id": "xycraft_world:inverted_tiles_cloud_blue", "required": false},
+    {"id": "xycraft_world:matte_xychorium_bricks_blue", "required": false},
+    {"id": "xycraft_world:matte_xychorium_bricks_shiny_blue", "required": false},
+    {"id": "xycraft_world:matte_xychorium_layers_shiny_blue", "required": false}
+  ]
+}

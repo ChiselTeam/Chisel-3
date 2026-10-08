@@ -1,0 +1,11 @@
+{
+  "values": [
+    {"id": "xycraft_world:aluminum_bricks", "required": false},
+    {"id": "xycraft_world:aluminum_pillar", "required": false},
+    {"id": "xycraft_world:aluminum_tiles", "required": false},
+    {"id": "xycraft_world:bordered_aluminum", "required": false},
+    {"id": "xycraft_world:bordered_aluminum_panel", "required": false},
+    {"id": "xycraft_world:smooth_aluminum", "required": false},
+    {"id": "xycraft_world:smooth_aluminum_panel", "required": false}
+  ]
+}

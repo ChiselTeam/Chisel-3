@@ -1,0 +1,9 @@
+{
+  "values": [
+    {"id": "xycraft_world:aluminum_brick_cloud_slab_blue", "required": false},
+    {"id": "xycraft_world:aluminum_tiles_cloud_slab_blue", "required": false},
+    {"id": "xycraft_world:aluminum_trim_slab_blue", "required": false},
+    {"id": "xycraft_world:aluminum_trim_panel_slab_blue", "required": false},
+    {"id": "xycraft_world:immortal_aluminum_slab_blue", "required": false}
+  ]
+}

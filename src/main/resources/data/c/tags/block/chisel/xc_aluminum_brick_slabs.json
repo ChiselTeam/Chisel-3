@@ -1,0 +1,10 @@
+{
+  "values": [
+    {"id": "xycraft_world:aluminum_brick_slab", "required": false},
+    {"id": "xycraft_world:aluminum_tiles_slab", "required": false},
+    {"id": "xycraft_world:bordered_aluminum_panel_slab", "required": false},
+    {"id": "xycraft_world:bordered_aluminum_slab", "required": false},
+    {"id": "xycraft_world:smooth_aluminum_panel_slab", "required": false},
+    {"id": "xycraft_world:smooth_aluminum_slab", "required": false}
+  ]
+}

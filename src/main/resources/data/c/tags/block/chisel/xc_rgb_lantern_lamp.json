@@ -1,0 +1,20 @@
+{
+  "values": [
+    {"id": "xycraft_world:lamp_lantern_white", "required": false},
+    {"id": "xycraft_world:lamp_lantern_light_gray", "required": false},
+    {"id": "xycraft_world:lamp_lantern_gray", "required": false},
+    {"id": "xycraft_world:lamp_lantern_black", "required": false},
+    {"id": "xycraft_world:lamp_lantern_brown", "required": false},
+    {"id": "xycraft_world:lamp_lantern_red", "required": false},
+    {"id": "xycraft_world:lamp_lantern_orange", "required": false},
+    {"id": "xycraft_world:lamp_lantern_yellow", "required": false},
+    {"id": "xycraft_world:lamp_lantern_lime", "required": false},
+    {"id": "xycraft_world:lamp_lantern_green", "required": false},
+    {"id": "xycraft_world:lamp_lantern_cyan", "required": false},
+    {"id": "xycraft_world:lamp_lantern_light_blue", "required": false},
+    {"id": "xycraft_world:lamp_lantern_blue", "required": false},
+    {"id": "xycraft_world:lamp_lantern_purple", "required": false},
+    {"id": "xycraft_world:lamp_lantern_magenta", "required": false},
+    {"id": "xycraft_world:lamp_lantern_pink", "required": false}
+  ]
+}
