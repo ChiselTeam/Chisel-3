@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "occultism:otherrock_bricks_wall", "required": false},
+    {"id": "occultism:otherrock_wall", "required": false}
+  ]
+}

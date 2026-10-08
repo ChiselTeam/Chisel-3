@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "thaumaturge:stairs_arcane", "required": false},
+    {"id": "thaumaturge:stairs_arcane_brick", "required": false}
+  ]
+}

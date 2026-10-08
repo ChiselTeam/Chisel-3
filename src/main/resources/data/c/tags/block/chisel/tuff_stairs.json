@@ -1,0 +1,7 @@
+{
+  "values": [
+    {"id": "minecraft:polished_tuff_stairs", "required": false},
+    {"id": "minecraft:tuff_brick_stairs", "required": false},
+    {"id": "minecraft:tuff_stairs", "required": false}
+  ]
+}

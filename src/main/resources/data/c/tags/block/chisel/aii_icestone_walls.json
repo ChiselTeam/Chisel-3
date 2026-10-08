@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "aether_ii:icestone_bricks_wall", "required": false},
+    {"id": "aether_ii:icestone_wall", "required": false}
+  ]
+}

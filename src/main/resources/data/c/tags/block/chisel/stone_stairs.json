@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "minecraft:stone_brick_stairs", "required": false},
+    {"id": "minecraft:stone_stairs", "required": false}
+  ]
+}

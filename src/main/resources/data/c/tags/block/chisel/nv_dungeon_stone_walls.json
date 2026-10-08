@@ -1,0 +1,8 @@
+{
+  "values": [
+    {"id": "neovitae:dungeon_brick_wall", "required": false},
+    {"id": "neovitae:dungeon_polished_wall", "required": false},
+    {"id": "neovitae:dungeon_stone_wall", "required": false},
+    {"id": "neovitae:dungeon_tile_wall", "required": false}
+  ]
+}

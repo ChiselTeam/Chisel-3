@@ -1,0 +1,8 @@
+{
+  "values": [
+    {"id": "neovitae:dungeon_brick_slab_d", "required": false},
+    {"id": "neovitae:dungeon_polished_slab_d", "required": false},
+    {"id": "neovitae:dungeon_stone_slab_d", "required": false},
+    {"id": "neovitae:dungeon_tile_slab_d", "required": false}
+  ]
+}

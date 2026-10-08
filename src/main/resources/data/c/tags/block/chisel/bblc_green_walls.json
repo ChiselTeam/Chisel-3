@@ -1,0 +1,23 @@
+{
+  "values": [
+    {"id": "colors:green_asteroid_brick_wall", "required": false},
+    {"id": "colors:green_asteroid_tile_wall", "required": false},
+    {"id": "colors:green_asteroid_wall", "required": false},
+    {"id": "colors:green_braid_wall", "required": false},
+    {"id": "colors:green_brick_wall", "required": false},
+    {"id": "colors:green_chaotic_wall", "required": false},
+    {"id": "colors:green_cobblestone_brick_wall", "required": false},
+    {"id": "colors:green_cobblestone_wall", "required": false},
+    {"id": "colors:green_cracked_stone_brick_wall", "required": false},
+    {"id": "colors:green_encased_wall", "required": false},
+    {"id": "colors:green_marble_brick_wall", "required": false},
+    {"id": "colors:green_marble_wall", "required": false},
+    {"id": "colors:green_mosaic_wall", "required": false},
+    {"id": "colors:green_polished_wall", "required": false},
+    {"id": "colors:green_road_wall", "required": false},
+    {"id": "colors:green_sandstone_wall", "required": false},
+    {"id": "colors:green_stone_brick_wall", "required": false},
+    {"id": "colors:green_tile_wall", "required": false},
+    {"id": "colors:green_triple_wall", "required": false}
+  ]
+}

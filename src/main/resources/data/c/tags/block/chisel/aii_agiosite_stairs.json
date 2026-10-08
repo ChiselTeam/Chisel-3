@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "aether_ii:agiosite_brick_stairs", "required": false},
+    {"id": "aether_ii:agiosite_stairs", "required": false}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "values": [
+    {"id": "minecraft:blackstone_wall", "required": false},
+    {"id": "minecraft:polished_blackstone_brick_wall", "required": false},
+    {"id": "minecraft:polished_blackstone_wall", "required": false}
+  ]
+}

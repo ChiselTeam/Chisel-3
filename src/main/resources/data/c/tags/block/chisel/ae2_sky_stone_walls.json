@@ -1,0 +1,7 @@
+{
+  "values": [
+    {"id": "ae2:sky_stone_brick_wall", "required": false},
+    {"id": "ae2:sky_stone_small_brick_wall", "required": false},
+    {"id": "ae2:smooth_sky_stone_wall", "required": false}
+  ]
+}

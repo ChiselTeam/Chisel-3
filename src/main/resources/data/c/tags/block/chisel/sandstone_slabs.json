@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "minecraft:cut_sandstone_slab", "required": false},
+    {"id": "minecraft:sandstone_slab", "required": false}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "values": [
+    {"id": "neovitae:dungeon_brick_stairs_st", "required": false},
+    {"id": "neovitae:dungeon_polished_stairs_st", "required": false},
+    {"id": "neovitae:dungeon_stone_stairs_st", "required": false}
+  ]
+}
