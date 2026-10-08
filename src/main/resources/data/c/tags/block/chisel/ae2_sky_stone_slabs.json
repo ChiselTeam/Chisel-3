@@ -1,0 +1,7 @@
+{
+  "values": [
+    {"id": "ae2:sky_stone_brick_slab", "required": false},
+    {"id": "ae2:sky_stone_small_brick_slab", "required": false},
+    {"id": "ae2:smooth_sky_stone_slab", "required": false}
+  ]
+}
