@@ -1,0 +1,24 @@
+{
+  "values": [
+    {"id": "colors:red_asteroid_brick_slab", "required": false},
+    {"id": "colors:red_asteroid_slab", "required": false},
+    {"id": "colors:red_asteroid_tile_slab", "required": false},
+    {"id": "colors:red_braid_slab", "required": false},
+    {"id": "colors:red_brick_slab", "required": false},
+    {"id": "colors:red_chaotic_slab", "required": false},
+    {"id": "colors:red_cobblestone_brick_slab", "required": false},
+    {"id": "colors:red_cobblestone_slab", "required": false},
+    {"id": "colors:red_cracked_stone_brick_slab", "required": false},
+    {"id": "colors:red_encased_slab", "required": false},
+    {"id": "colors:red_marble_brick_slab", "required": false},
+    {"id": "colors:red_marble_slab", "required": false},
+    {"id": "colors:red_mosaic_slab", "required": false},
+    {"id": "colors:red_polished_slab", "required": false},
+    {"id": "colors:red_road_slab", "required": false},
+    {"id": "colors:red_sandstone_slab", "required": false},
+    {"id": "colors:red_stone_brick_slab", "required": false},
+    {"id": "colors:red_stone_slab", "required": false},
+    {"id": "colors:red_tile_slab", "required": false},
+    {"id": "colors:red_triple_slab", "required": false}
+  ]
+}

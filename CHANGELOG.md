@@ -26,7 +26,7 @@ All notable changes to this project will be documented in this file.
 #### Others
 - **Recipes**: Added crafting recipes for the Measuring Tape (forgot last update) and for custom blocks
 
-- **Compatibility**: BBL Colors, Thaumaturge, Xycraft (Fully)
+- **Compatibility**: Full Compat for BBL Colors, Thaumaturge, Xycraft, AE2, Aether 2
 
 ### Changes
 

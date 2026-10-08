@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "colors:light_gray_dirt", "required": false},
+    {"id": "colors:light_gray_grass_block", "required": false}
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "values": [
+    {"id": "colors:magenta_asteroid_brick_slab", "required": false},
+    {"id": "colors:magenta_asteroid_slab", "required": false},
+    {"id": "colors:magenta_asteroid_tile_slab", "required": false},
+    {"id": "colors:magenta_braid_slab", "required": false},
+    {"id": "colors:magenta_brick_slab", "required": false},
+    {"id": "colors:magenta_chaotic_slab", "required": false},
+    {"id": "colors:magenta_cobblestone_brick_slab", "required": false},
+    {"id": "colors:magenta_cobblestone_slab", "required": false},
+    {"id": "colors:magenta_cracked_stone_brick_slab", "required": false},
+    {"id": "colors:magenta_encased_slab", "required": false},
+    {"id": "colors:magenta_marble_brick_slab", "required": false},
+    {"id": "colors:magenta_marble_slab", "required": false},
+    {"id": "colors:magenta_mosaic_slab", "required": false},
+    {"id": "colors:magenta_polished_slab", "required": false},
+    {"id": "colors:magenta_road_slab", "required": false},
+    {"id": "colors:magenta_sandstone_slab", "required": false},
+    {"id": "colors:magenta_stone_brick_slab", "required": false},
+    {"id": "colors:magenta_stone_slab", "required": false},
+    {"id": "colors:magenta_tile_slab", "required": false},
+    {"id": "colors:magenta_triple_slab", "required": false}
+  ]
+}
