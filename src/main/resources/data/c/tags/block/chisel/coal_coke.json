@@ -1,5 +1,6 @@
 {
   "values": [
+    {"id": "#c:storage_blocks/coal_coke", "required": false},
     {"id": "ftbmaterials:coal_coke_block", "required": false}
   ]
 }
