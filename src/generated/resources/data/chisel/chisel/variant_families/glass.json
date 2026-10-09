@@ -99,6 +99,117 @@
     {
       "block": "chisel:glass_streak",
       "name": "glass_streak"
+    },
+    {
+      "block": "chisel:glass_frame_thick",
+      "model_type": "glass",
+      "name": "glass_frame_thick"
+    },
+    {
+      "block": "chisel:glass_frame_thick_panel",
+      "model_type": "glass",
+      "name": "glass_frame_thick_panel"
+    },
+    {
+      "block": "chisel:glass_tile",
+      "name": "glass_tile"
+    },
+    {
+      "block": "chisel:glass_brick",
+      "model_type": "glass",
+      "name": "glass_brick"
+    },
+    {
+      "block": "chisel:glass_line_vertical",
+      "name": "glass_line_vertical"
+    },
+    {
+      "block": "chisel:glass_line_vertical_panel",
+      "model_type": "glass",
+      "name": "glass_line_vertical_panel"
+    },
+    {
+      "block": "chisel:glass_line_horizontal",
+      "name": "glass_line_horizontal"
+    },
+    {
+      "block": "chisel:glass_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "glass_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:glass_arch_panel",
+      "model_type": "glass",
+      "name": "glass_arch_panel"
+    },
+    {
+      "block": "chisel:glass_arch_panel_1",
+      "model_type": "glass",
+      "name": "glass_arch_panel_1"
+    },
+    {
+      "block": "chisel:glass_arch_panel_2",
+      "model_type": "glass",
+      "name": "glass_arch_panel_2"
+    },
+    {
+      "block": "chisel:glass_arch_panel_3",
+      "model_type": "glass",
+      "name": "glass_arch_panel_3"
+    },
+    {
+      "block": "chisel:glass_scaffold",
+      "model_type": "glass",
+      "name": "glass_scaffold"
+    },
+    {
+      "block": "chisel:glass_scaffold_left",
+      "model_type": "glass",
+      "name": "glass_scaffold_left"
+    },
+    {
+      "block": "chisel:glass_scaffold_right",
+      "model_type": "glass",
+      "name": "glass_scaffold_right"
+    },
+    {
+      "block": "chisel:glass_basketweave",
+      "name": "glass_basketweave"
+    },
+    {
+      "block": "chisel:glass_mosaic_1",
+      "model_type": "glass",
+      "name": "glass_mosaic_1"
+    },
+    {
+      "block": "chisel:glass_mosaic_2",
+      "model_type": "glass",
+      "name": "glass_mosaic_2"
+    },
+    {
+      "block": "chisel:glass_round",
+      "model_type": "glass",
+      "name": "glass_round"
+    },
+    {
+      "block": "chisel:glass_circle",
+      "model_type": "glass",
+      "name": "glass_circle"
+    },
+    {
+      "block": "chisel:glass_rings",
+      "model_type": "glass",
+      "name": "glass_rings"
+    },
+    {
+      "block": "chisel:glass_diamond",
+      "model_type": "glass",
+      "name": "glass_diamond"
+    },
+    {
+      "block": "chisel:glass_frame_1",
+      "model_type": "glass",
+      "name": "glass_frame_1"
     }
   ]
 }

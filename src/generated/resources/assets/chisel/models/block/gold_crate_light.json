@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/gold/gold_crate_light-bottom",
     "side": "chisel:block/gold/gold_crate_light-side",
-    "top": "chisel:block/gold/gold_crate_light-top"
+    "top": "chisel:block/gold/gold_brick-top"
   }
 }

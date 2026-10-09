@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar-bottom",
+    "bottom": "chisel:block/atm_ancient_stone/ancient_stone_pillar-top",
     "side": "chisel:block/atm_ancient_stone/ancient_stone_pillar-side",
     "top": "chisel:block/atm_ancient_stone/ancient_stone_pillar-top"
   }

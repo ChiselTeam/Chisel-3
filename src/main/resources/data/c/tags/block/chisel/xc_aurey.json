@@ -1,0 +1,7 @@
+{
+  "values": [
+    {"id": "xycraft_world:aurey_block_anti_flat_pink", "required": false},
+    {"id": "xycraft_world:aurey_block_anti_pink", "required": false},
+    {"id": "xycraft_world:aurey_block_matte_pink", "required": false}
+  ]
+}

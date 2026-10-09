@@ -1,7 +1,7 @@
 {
   "parent": "chisel:block/cube_multi_pass_top_bottom_side",
   "textures": {
-    "bottom": "chisel:block/magma/magma_pillar-bottom",
+    "bottom": "chisel:block/magma/magma_pillar-top",
     "layer0": "minecraft:block/lava_still",
     "layer1": "chisel:block/magma/magma_pillar-side",
     "particle": "chisel:block/magma/magma_pillar-side",

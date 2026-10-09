@@ -12,15 +12,129 @@
     },
     {
       "block": "chisel:stained_glass_cyan_bubble",
+      "model_type": "glass",
       "name": "stained_glass_cyan_bubble"
     },
     {
       "block": "chisel:stained_glass_cyan_panel",
+      "model_type": "glass",
       "name": "stained_glass_cyan_panel"
     },
     {
       "block": "chisel:stained_glass_cyan_panel_fancy",
+      "model_type": "glass",
       "name": "stained_glass_cyan_panel_fancy"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_frame_thick",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_frame_thick"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_frame_thick_panel",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_frame_thick_panel"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_tile",
+      "name": "stained_glass_cyan_tile"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_brick",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_brick"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_line_vertical",
+      "name": "stained_glass_cyan_line_vertical"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_line_vertical_panel",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_line_vertical_panel"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_line_horizontal",
+      "name": "stained_glass_cyan_line_horizontal"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_arch_panel",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_arch_panel"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_arch_panel_1",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_arch_panel_1"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_arch_panel_2",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_arch_panel_2"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_arch_panel_3",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_arch_panel_3"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_scaffold",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_scaffold"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_scaffold_left",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_scaffold_left"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_scaffold_right",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_scaffold_right"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_basketweave",
+      "name": "stained_glass_cyan_basketweave"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_mosaic_1",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_mosaic_1"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_mosaic_2",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_mosaic_2"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_round",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_round"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_circle",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_circle"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_rings",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_rings"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_diamond",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_diamond"
+    },
+    {
+      "block": "chisel:stained_glass_cyan_frame_1",
+      "model_type": "glass",
+      "name": "stained_glass_cyan_frame_1"
     }
   ]
 }

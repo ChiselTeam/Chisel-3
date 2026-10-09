@@ -1,8 +1,16 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/fa_arcane_darkstone/arcane_matrix",
-    "overlay_3x3": "chisel:block/fa_arcane_darkstone/arcane_matrix-v9",
-    "particle": "chisel:block/fa_arcane_darkstone/arcane_matrix"
+    "all": "chisel:block/tt_arcane_stone/arcane_matrix",
+    "multiblock_3x3_bottom_center": "chisel:block/tt_arcane_stone/arcane_matrix-v9_bottom_center",
+    "multiblock_3x3_bottom_left": "chisel:block/tt_arcane_stone/arcane_matrix-v9_bottom_left",
+    "multiblock_3x3_bottom_right": "chisel:block/tt_arcane_stone/arcane_matrix-v9_bottom_right",
+    "multiblock_3x3_center": "chisel:block/tt_arcane_stone/arcane_matrix-v9_center",
+    "multiblock_3x3_center_left": "chisel:block/tt_arcane_stone/arcane_matrix-v9_center_left",
+    "multiblock_3x3_center_right": "chisel:block/tt_arcane_stone/arcane_matrix-v9_center_right",
+    "multiblock_3x3_top_center": "chisel:block/tt_arcane_stone/arcane_matrix-v9_top_center",
+    "multiblock_3x3_top_left": "chisel:block/tt_arcane_stone/arcane_matrix-v9_top_left",
+    "multiblock_3x3_top_right": "chisel:block/tt_arcane_stone/arcane_matrix-v9_top_right",
+    "particle": "chisel:block/tt_arcane_stone/arcane_matrix"
   }
 }

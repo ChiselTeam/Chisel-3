@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/stained_glass_pink/stained_glass_pink_diamond",
+    "standard_corner": "chisel:block/stained_glass_pink/stained_glass_pink_diamond-ctm_corner",
+    "standard_cornerless": "chisel:block/stained_glass_pink/stained_glass_pink_diamond-ctm_cornerless",
+    "standard_horizontal": "chisel:block/stained_glass_pink/stained_glass_pink_diamond-ctm_horizontal",
+    "standard_none": "chisel:block/stained_glass_pink/stained_glass_pink_diamond",
+    "standard_vertical": "chisel:block/stained_glass_pink/stained_glass_pink_diamond-ctm_vertical"
+  }
+}

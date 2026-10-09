@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/crimson_planks/crimson_planks_braid",
-    "overlay_connected": "chisel:block/crimson_planks/crimson_planks_braid-ctm",
-    "overlay_texture": "chisel:block/crimson_planks/crimson_planks_braid",
-    "particle": "chisel:block/crimson_planks/crimson_planks_braid"
+    "particle": "chisel:block/crimson_planks/crimson_planks_braid",
+    "standard_corner": "chisel:block/crimson_planks/crimson_planks_braid-ctm_corner",
+    "standard_cornerless": "chisel:block/crimson_planks/crimson_planks_braid-ctm_cornerless",
+    "standard_horizontal": "chisel:block/crimson_planks/crimson_planks_braid-ctm_horizontal",
+    "standard_none": "chisel:block/crimson_planks/crimson_planks_braid",
+    "standard_vertical": "chisel:block/crimson_planks/crimson_planks_braid-ctm_vertical"
   }
 }

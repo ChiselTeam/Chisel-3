@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/charcoal/charcoal_twisted-bottom",
+    "bottom": "chisel:block/charcoal/charcoal_twisted-top",
     "side": "chisel:block/charcoal/charcoal_twisted-side",
     "top": "chisel:block/charcoal/charcoal_twisted-top"
   }

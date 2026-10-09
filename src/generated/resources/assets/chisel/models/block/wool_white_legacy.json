@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/wool_white/wool_white_legacy",
-    "overlay_connected": "chisel:block/wool_white/wool_white_legacy-ctm",
-    "overlay_texture": "chisel:block/wool_white/wool_white_legacy",
-    "particle": "chisel:block/wool_white/wool_white_legacy"
+    "particle": "chisel:block/wool_white/wool_white_legacy",
+    "standard_corner": "chisel:block/wool_white/wool_white_legacy-ctm_corner",
+    "standard_cornerless": "chisel:block/wool_white/wool_white_legacy-ctm_cornerless",
+    "standard_horizontal": "chisel:block/wool_white/wool_white_legacy-ctm_horizontal",
+    "standard_none": "chisel:block/wool_white/wool_white_legacy",
+    "standard_vertical": "chisel:block/wool_white/wool_white_legacy-ctm_vertical"
   }
 }

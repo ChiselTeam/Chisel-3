@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/limestone/limestone_pillar_large_basic_triple-side",
+    "bottom": "chisel:block/limestone/limestone_pillar_basic-bottom",
+    "particle": "chisel:block/limestone/limestone_pillar_large_basic_triple-side",
+    "side": "chisel:block/limestone/limestone_pillar_large_basic_triple-side",
+    "top": "chisel:block/limestone/limestone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/limestone/limestone_pillar_large_basic_triple-vertical_both",
+    "vertical_bottom": "chisel:block/limestone/limestone_pillar_large_basic_triple-vertical_bottom",
+    "vertical_none": "chisel:block/limestone/limestone_pillar_large_basic_triple-side",
+    "vertical_top": "chisel:block/limestone/limestone_pillar_large_basic_triple-vertical_top"
+  }
+}

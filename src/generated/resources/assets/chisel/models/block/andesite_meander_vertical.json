@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/andesite/andesite_meander_vertical-side",
+    "bottom": "chisel:block/andesite/andesite_meander_vertical-bottom",
+    "particle": "chisel:block/andesite/andesite_meander_vertical-side",
+    "side": "chisel:block/andesite/andesite_meander_vertical-side",
+    "top": "chisel:block/andesite/andesite_meander_vertical-bottom",
+    "vertical_both": "chisel:block/andesite/andesite_meander_vertical-vertical_both",
+    "vertical_bottom": "chisel:block/andesite/andesite_meander_vertical-vertical_bottom",
+    "vertical_none": "chisel:block/andesite/andesite_meander_vertical-side",
+    "vertical_top": "chisel:block/andesite/andesite_meander_vertical-vertical_top"
+  }
+}

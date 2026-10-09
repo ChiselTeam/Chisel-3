@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/fluorite", "required": false},
+    {"id": "alltheores:fluorite_block", "required": false}
+  ]
+}

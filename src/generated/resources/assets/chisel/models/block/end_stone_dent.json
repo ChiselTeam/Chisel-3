@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/end_stone/end_stone_dent",
-    "overlay_connected": "chisel:block/end_stone/end_stone_dent-ctm",
-    "overlay_texture": "chisel:block/end_stone/end_stone_dent",
-    "particle": "chisel:block/end_stone/end_stone_dent"
+    "particle": "chisel:block/end_stone/end_stone_dent",
+    "standard_corner": "chisel:block/end_stone/end_stone_dent-ctm_corner",
+    "standard_cornerless": "chisel:block/end_stone/end_stone_dent-ctm_cornerless",
+    "standard_horizontal": "chisel:block/end_stone/end_stone_dent-ctm_horizontal",
+    "standard_none": "chisel:block/end_stone/end_stone_dent",
+    "standard_vertical": "chisel:block/end_stone/end_stone_dent-ctm_vertical"
   }
 }

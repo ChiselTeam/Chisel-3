@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/signalum", "required": false},
+    {"id": "alltheores:signalum_block", "required": false}
+  ]
+}

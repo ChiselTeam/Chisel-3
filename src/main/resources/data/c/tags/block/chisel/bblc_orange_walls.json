@@ -1,0 +1,23 @@
+{
+  "values": [
+    {"id": "colors:orange_asteroid_brick_wall", "required": false},
+    {"id": "colors:orange_asteroid_tile_wall", "required": false},
+    {"id": "colors:orange_asteroid_wall", "required": false},
+    {"id": "colors:orange_braid_wall", "required": false},
+    {"id": "colors:orange_brick_wall", "required": false},
+    {"id": "colors:orange_chaotic_wall", "required": false},
+    {"id": "colors:orange_cobblestone_brick_wall", "required": false},
+    {"id": "colors:orange_cobblestone_wall", "required": false},
+    {"id": "colors:orange_cracked_stone_brick_wall", "required": false},
+    {"id": "colors:orange_encased_wall", "required": false},
+    {"id": "colors:orange_marble_brick_wall", "required": false},
+    {"id": "colors:orange_marble_wall", "required": false},
+    {"id": "colors:orange_mosaic_wall", "required": false},
+    {"id": "colors:orange_polished_wall", "required": false},
+    {"id": "colors:orange_road_wall", "required": false},
+    {"id": "colors:orange_sandstone_wall", "required": false},
+    {"id": "colors:orange_stone_brick_wall", "required": false},
+    {"id": "colors:orange_tile_wall", "required": false},
+    {"id": "colors:orange_triple_wall", "required": false}
+  ]
+}

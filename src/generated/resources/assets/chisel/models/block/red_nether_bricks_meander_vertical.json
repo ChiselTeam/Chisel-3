@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/red_nether_bricks/red_nether_bricks_meander_vertical-side",
+    "bottom": "chisel:block/red_nether_bricks/red_nether_bricks_meander_vertical-bottom",
+    "particle": "chisel:block/red_nether_bricks/red_nether_bricks_meander_vertical-side",
+    "side": "chisel:block/red_nether_bricks/red_nether_bricks_meander_vertical-side",
+    "top": "chisel:block/red_nether_bricks/red_nether_bricks_meander_vertical-top",
+    "vertical_both": "chisel:block/red_nether_bricks/red_nether_bricks_meander_vertical-vertical_both",
+    "vertical_bottom": "chisel:block/red_nether_bricks/red_nether_bricks_meander_vertical-vertical_bottom",
+    "vertical_none": "chisel:block/red_nether_bricks/red_nether_bricks_meander_vertical-side",
+    "vertical_top": "chisel:block/red_nether_bricks/red_nether_bricks_meander_vertical-vertical_top"
+  }
+}

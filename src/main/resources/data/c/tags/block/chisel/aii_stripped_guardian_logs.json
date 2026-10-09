@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "aether_ii:stripped_guardian_wood", "required": false},
+    {"id": "aether_ii:stripped_guardian_trunk", "required": false}
+  ]
+}

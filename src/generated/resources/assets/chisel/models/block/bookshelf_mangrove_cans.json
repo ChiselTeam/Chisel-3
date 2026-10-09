@@ -3,9 +3,12 @@
   "textures": {
     "base_texture": "minecraft:block/mangrove_planks",
     "bottom": "minecraft:block/mangrove_planks",
+    "horizontal_both": "chisel:block/bookshelf/bookshelf_cans-horizontal_both",
+    "horizontal_left": "chisel:block/bookshelf/bookshelf_cans-horizontal_left",
+    "horizontal_none": "chisel:block/bookshelf/bookshelf_cans",
+    "horizontal_right": "chisel:block/bookshelf/bookshelf_cans-horizontal_right",
     "layer0": "minecraft:block/mangrove_planks",
     "layer1": "minecraft:block/mangrove_planks",
-    "overlay_horizontal": "chisel:block/bookshelf/bookshelf_cans-ctm",
     "particle": "minecraft:block/mangrove_planks",
     "side": "chisel:block/bookshelf/bookshelf_cans",
     "top": "minecraft:block/mangrove_planks"

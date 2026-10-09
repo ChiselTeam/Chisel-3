@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/nv_rune/neovitae_diagonal_bricks_3",
-    "overlay_connected": "chisel:block/nv_rune/neovitae_diagonal_bricks_3-ctm",
-    "overlay_texture": "chisel:block/nv_rune/neovitae_diagonal_bricks_3",
-    "particle": "chisel:block/nv_rune/neovitae_diagonal_bricks_3"
+    "particle": "chisel:block/nv_rune/neovitae_diagonal_bricks_3",
+    "standard_corner": "chisel:block/nv_rune/neovitae_diagonal_bricks_3-ctm_corner",
+    "standard_cornerless": "chisel:block/nv_rune/neovitae_diagonal_bricks_3-ctm_cornerless",
+    "standard_horizontal": "chisel:block/nv_rune/neovitae_diagonal_bricks_3-ctm_horizontal",
+    "standard_none": "chisel:block/nv_rune/neovitae_diagonal_bricks_3",
+    "standard_vertical": "chisel:block/nv_rune/neovitae_diagonal_bricks_3-ctm_vertical"
   }
 }

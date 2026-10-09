@@ -1,0 +1,9 @@
+{
+  "values": [
+    {"id": "ae2:chiseled_quartz_slab", "required": false},
+    {"id": "ae2:cut_quartz_slab", "required": false},
+    {"id": "ae2:quartz_brick_slab", "required": false},
+    {"id": "ae2:quartz_pillar_slab", "required": false},
+    {"id": "ae2:quartz_slab", "required": false}
+  ]
+}

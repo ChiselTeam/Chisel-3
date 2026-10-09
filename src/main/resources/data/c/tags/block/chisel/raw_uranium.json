@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/raw_uranium", "required": false},
+    {"id": "alltheores:raw_uranium_block", "required": false}
+  ]
+}

@@ -1,9 +1,12 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/fa_arcane_darkstone/arcane_border",
-    "overlay_connected": "chisel:block/fa_arcane_darkstone/arcane_border-ctm",
-    "overlay_texture": "chisel:block/fa_arcane_darkstone/arcane_border",
-    "particle": "chisel:block/fa_arcane_darkstone/arcane_border"
+    "all": "chisel:block/tt_arcane_stone/arcane_border",
+    "particle": "chisel:block/tt_arcane_stone/arcane_border",
+    "standard_corner": "chisel:block/tt_arcane_stone/arcane_border-ctm_corner",
+    "standard_cornerless": "chisel:block/tt_arcane_stone/arcane_border-ctm_cornerless",
+    "standard_horizontal": "chisel:block/tt_arcane_stone/arcane_border-ctm_horizontal",
+    "standard_none": "chisel:block/tt_arcane_stone/arcane_border",
+    "standard_vertical": "chisel:block/tt_arcane_stone/arcane_border-ctm_vertical"
   }
 }

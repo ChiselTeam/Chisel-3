@@ -1,5 +1,5 @@
-﻿{
+{
   "values": [
-    {"id":"allthemodium:vibranium_block", "required": false}
+    {"id": "allthemodium:vibranium_block", "required": false}
   ]
 }

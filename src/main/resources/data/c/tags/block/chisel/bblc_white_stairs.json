@@ -1,0 +1,23 @@
+{
+  "values": [
+    {"id": "colors:white_asteroid_brick_stairs", "required": false},
+    {"id": "colors:white_asteroid_stairs", "required": false},
+    {"id": "colors:white_asteroid_tile_stairs", "required": false},
+    {"id": "colors:white_braid_stairs", "required": false},
+    {"id": "colors:white_brick_stairs", "required": false},
+    {"id": "colors:white_chaotic_stairs", "required": false},
+    {"id": "colors:white_cobblestone_brick_stairs", "required": false},
+    {"id": "colors:white_cobblestone_stairs", "required": false},
+    {"id": "colors:white_cracked_stone_brick_stairs", "required": false},
+    {"id": "colors:white_encased_stairs", "required": false},
+    {"id": "colors:white_marble_brick_stairs", "required": false},
+    {"id": "colors:white_marble_stairs", "required": false},
+    {"id": "colors:white_mosaic_stairs", "required": false},
+    {"id": "colors:white_polished_stairs", "required": false},
+    {"id": "colors:white_road_stairs", "required": false},
+    {"id": "colors:white_sandstone_stairs", "required": false},
+    {"id": "colors:white_stone_brick_stairs", "required": false},
+    {"id": "colors:white_tile_stairs", "required": false},
+    {"id": "colors:white_triple_stairs", "required": false}
+  ]
+}

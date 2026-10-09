@@ -3,9 +3,12 @@
   "textures": {
     "base_texture": "minecraft:block/crimson_planks",
     "bottom": "minecraft:block/crimson_planks",
+    "horizontal_both": "chisel:block/bookshelf/bookshelf_historian-horizontal_both",
+    "horizontal_left": "chisel:block/bookshelf/bookshelf_historian-horizontal_left",
+    "horizontal_none": "chisel:block/bookshelf/bookshelf_historian",
+    "horizontal_right": "chisel:block/bookshelf/bookshelf_historian-horizontal_right",
     "layer0": "minecraft:block/crimson_planks",
     "layer1": "minecraft:block/crimson_planks",
-    "overlay_horizontal": "chisel:block/bookshelf/bookshelf_historian-ctm",
     "particle": "minecraft:block/crimson_planks",
     "side": "chisel:block/bookshelf/bookshelf_historian",
     "top": "minecraft:block/crimson_planks"

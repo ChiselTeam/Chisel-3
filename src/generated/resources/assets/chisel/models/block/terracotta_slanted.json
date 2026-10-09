@@ -2,7 +2,10 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/terracotta/terracotta_slanted",
-    "overlay_2x2": "chisel:block/terracotta/terracotta_slanted-2x2",
+    "multiblock_2x2_bottom_left": "chisel:block/terracotta/terracotta_slanted",
+    "multiblock_2x2_bottom_right": "chisel:block/terracotta/terracotta_slanted-2x2_top_right",
+    "multiblock_2x2_top_left": "chisel:block/terracotta/terracotta_slanted",
+    "multiblock_2x2_top_right": "chisel:block/terracotta/terracotta_slanted-2x2_top_right",
     "particle": "chisel:block/terracotta/terracotta_slanted"
   }
 }

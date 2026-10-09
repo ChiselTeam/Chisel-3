@@ -1,7 +1,10 @@
 {
   "textures": {
-    "overlay_connected": "chisel:block/ice/ice_dent-ctm",
-    "overlay_texture": "chisel:block/ice/ice_dent",
-    "particle": "chisel:block/ice/ice_dent"
+    "particle": "chisel:block/ice/ice_dent",
+    "standard_corner": "chisel:block/ice/ice_dent-ctm_corner",
+    "standard_cornerless": "chisel:block/ice/ice_dent-ctm_cornerless",
+    "standard_horizontal": "chisel:block/ice/ice_dent-ctm_horizontal",
+    "standard_none": "chisel:block/ice/ice_dent",
+    "standard_vertical": "chisel:block/ice/ice_dent-ctm_vertical"
   }
 }

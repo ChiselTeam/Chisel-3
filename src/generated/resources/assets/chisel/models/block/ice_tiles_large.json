@@ -1,7 +1,10 @@
 {
   "textures": {
-    "overlay_connected": "chisel:block/ice/ice_tiles_large-ctm",
-    "overlay_texture": "chisel:block/ice/ice_tiles_large",
-    "particle": "chisel:block/ice/ice_tiles_large"
+    "particle": "chisel:block/ice/ice_tiles_large",
+    "standard_corner": "chisel:block/ice/ice_tiles_large-ctm_corner",
+    "standard_cornerless": "chisel:block/ice/ice_tiles_large-ctm_cornerless",
+    "standard_horizontal": "chisel:block/ice/ice_tiles_large-ctm_horizontal",
+    "standard_none": "chisel:block/ice/ice_tiles_large",
+    "standard_vertical": "chisel:block/ice/ice_tiles_large-ctm_vertical"
   }
 }

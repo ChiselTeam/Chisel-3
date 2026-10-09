@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/gold/gold_ingots_small-bottom",
     "side": "chisel:block/gold/gold_ingots_small-side",
-    "top": "chisel:block/gold/gold_ingots_small-top"
+    "top": "chisel:block/gold/gold_brick-top"
   }
 }

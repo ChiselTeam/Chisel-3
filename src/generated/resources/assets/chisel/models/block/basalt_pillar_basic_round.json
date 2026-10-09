@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/basalt/basalt_pillar_basic_round-side",
+    "bottom": "chisel:block/basalt/basalt_pillar_basic-bottom",
+    "particle": "chisel:block/basalt/basalt_pillar_basic_round-side",
+    "side": "chisel:block/basalt/basalt_pillar_basic_round-side",
+    "top": "chisel:block/basalt/basalt_pillar_basic-bottom",
+    "vertical_both": "chisel:block/basalt/basalt_pillar_basic_round-vertical_both",
+    "vertical_bottom": "chisel:block/basalt/basalt_pillar_basic_round-vertical_bottom",
+    "vertical_none": "chisel:block/basalt/basalt_pillar_basic_round-side",
+    "vertical_top": "chisel:block/basalt/basalt_pillar_basic_round-vertical_top"
+  }
+}

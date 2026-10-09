@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/crying_obsidian/crying_obsidian_crate",
+    "particle": "chisel:block/crying_obsidian/crying_obsidian_crate",
+    "standard_corner": "chisel:block/crying_obsidian/crying_obsidian_crate-ctm_corner",
+    "standard_cornerless": "chisel:block/crying_obsidian/crying_obsidian_crate-ctm_cornerless",
+    "standard_horizontal": "chisel:block/crying_obsidian/crying_obsidian_crate-ctm_horizontal",
+    "standard_none": "chisel:block/crying_obsidian/crying_obsidian_crate",
+    "standard_vertical": "chisel:block/crying_obsidian/crying_obsidian_crate-ctm_vertical"
+  }
+}

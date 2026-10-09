@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/sapphire", "required": false},
+    {"id": "alltheores:sapphire_block", "required": false}
+  ]
+}

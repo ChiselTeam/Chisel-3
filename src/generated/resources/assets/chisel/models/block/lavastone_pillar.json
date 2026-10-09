@@ -1,7 +1,7 @@
 {
   "parent": "chisel:block/cube_multi_pass_top_bottom_side",
   "textures": {
-    "bottom": "chisel:block/lavastone/lavastone_pillar-bottom",
+    "bottom": "chisel:block/lavastone/lavastone_pillar-top",
     "layer0": "minecraft:block/lava_still",
     "layer1": "chisel:block/lavastone/lavastone_pillar-side",
     "particle": "chisel:block/lavastone/lavastone_pillar-side",

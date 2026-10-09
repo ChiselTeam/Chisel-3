@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/iron/iron_ingots_small-bottom",
     "side": "chisel:block/iron/iron_ingots_small-side",
-    "top": "chisel:block/iron/iron_ingots_small-top"
+    "top": "chisel:block/iron/iron_crate_dark-top"
   }
 }

@@ -1,0 +1,20 @@
+{
+  "values": [
+    {"id": "xycraft_world:glass_viewer_rgb_white", "required": false},
+    {"id": "xycraft_world:glass_viewer_rgb_light_gray", "required": false},
+    {"id": "xycraft_world:glass_viewer_rgb_gray", "required": false},
+    {"id": "xycraft_world:glass_viewer_rgb_black", "required": false},
+    {"id": "xycraft_world:glass_viewer_rgb_brown", "required": false},
+    {"id": "xycraft_world:glass_viewer_rgb_red", "required": false},
+    {"id": "xycraft_world:glass_viewer_rgb_orange", "required": false},
+    {"id": "xycraft_world:glass_viewer_rgb_yellow", "required": false},
+    {"id": "xycraft_world:glass_viewer_rgb_lime", "required": false},
+    {"id": "xycraft_world:glass_viewer_rgb_green", "required": false},
+    {"id": "xycraft_world:glass_viewer_rgb_cyan", "required": false},
+    {"id": "xycraft_world:glass_viewer_rgb_light_blue", "required": false},
+    {"id": "xycraft_world:glass_viewer_rgb_blue", "required": false},
+    {"id": "xycraft_world:glass_viewer_rgb_purple", "required": false},
+    {"id": "xycraft_world:glass_viewer_rgb_magenta", "required": false},
+    {"id": "xycraft_world:glass_viewer_rgb_pink", "required": false}
+  ]
+}

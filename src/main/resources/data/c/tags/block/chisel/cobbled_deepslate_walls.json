@@ -1,0 +1,8 @@
+{
+  "values": [
+    {"id": "minecraft:cobbled_deepslate_wall", "required": false},
+    {"id": "minecraft:deepslate_brick_wall", "required": false},
+    {"id": "minecraft:deepslate_tile_wall", "required": false},
+    {"id": "minecraft:polished_deepslate_wall", "required": false}
+  ]
+}

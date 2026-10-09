@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/raw_silver", "required": false},
+    {"id": "alltheores:raw_silver_block", "required": false}
+  ]
+}

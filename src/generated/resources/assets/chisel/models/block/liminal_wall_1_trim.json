@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/liminal/liminal_wall_1_trim",
+    "particle": "chisel:block/liminal/liminal_wall_1_trim",
+    "standard_corner": "chisel:block/liminal/liminal_wall_1_trim-ctm_corner",
+    "standard_cornerless": "chisel:block/liminal/liminal_wall_1_trim-ctm_cornerless",
+    "standard_horizontal": "chisel:block/liminal/liminal_wall_1_trim-ctm_horizontal",
+    "standard_none": "chisel:block/liminal/liminal_wall_1_trim",
+    "standard_vertical": "chisel:block/liminal/liminal_wall_1_trim-ctm_vertical"
+  }
+}

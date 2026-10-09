@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/glass/glass_diamond",
+    "standard_corner": "chisel:block/glass/glass_diamond-ctm_corner",
+    "standard_cornerless": "chisel:block/glass/glass_diamond-ctm_cornerless",
+    "standard_horizontal": "chisel:block/glass/glass_diamond-ctm_horizontal",
+    "standard_none": "chisel:block/glass/glass_diamond",
+    "standard_vertical": "chisel:block/glass/glass_diamond-ctm_vertical"
+  }
+}

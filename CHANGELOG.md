@@ -2,6 +2,58 @@
 
 All notable changes to this project will be documented in this file.
 
+## [26.1.2.19]
+
+### Added
+#### Vanilla Blocks
+- **New Block Families**: Added Resin, Mud, Packed Mud, Netherite, Raw Gold, Raw Iron, Raw Copper, Amethyst,
+  Ancient Debris, Red Nether Bricks, Prismarine Bricks, Dark Prismarine, Obsidian, Crying Obsidian, Sculk,
+  Packed Ice, Blue Ice, Snow Block, and Soul Soil
+
+- **Updated Families**: Stone, Deepslate, Nether Bricks, Netherrack, Purpur, Prismarine, Dirt, Clay, Snow, Ice, Coal, Charcoal, Glass, and Stained Glass
+
+- **Concrete**: Added a few more concrete variants
+
+#### Custom Blocks
+- **Decorative Custom Families**: Added Kitchen, Liminal (Backrooms), and Nexus
+
+- **Lights**: Added colored lights for all 16 colors
+
+- **Mossy Blocks**: Added Mossy Stone and Mossy Deepslate, and expanded Mossy Blackstone
+
+- **Glass**: Added Bright Glass, Steel / Oak Framed Glass, and framed stained glass
+
+#### Others
+- **Recipes**: Added crafting recipes for the Measuring Tape (forgot last update) and for custom blocks
+
+- **Compatibility**: Stairs, Slabs, Walls. Full Compat for BBL Colors, Xycraft, AE2, Aether 2, Mystical Agriculture, Neo Vitae, Occultism
+
+### Changes
+
+- **Chisel Tool Menu**: Expanded width for variants by 2 slots. Lowered block preview speed when dragged
+
+- **Textures**: Added small animation for Chisel Tools
+
+- **Block Tags**: Storage block, Beacon base, Dye, Impermeable
+
+- **Compatibility**: Modded block families now load only when their corresponding mod is installed
+
+### Fixed
+- **Removed Commands**: Made chisel dev commands only runnable in Dev
+
+- **Waterstone / Lavastone**: Fixed lava / water not rendering
+
+- **CTMV (pillars) Fixed**: side textures being enlarged is now fixed
+
+- **Faint line on Connected blocks**: Fixed that faint line when blocks connected
+
+- **Recipe book missing on Auto Chisel**: Can now change block variant without exiting auto chisel using the recipe book
+
+ CTM minimum version `26.1.2.10`
+
+# Issues/Suggestions? Report it at [Github](https://github.com/ChiselTeam/Chisel-3/issues)!
+https://github.com/ChiselTeam/Chisel-3/issues
+
 ## [26.1.2.18]
 
 ### Added

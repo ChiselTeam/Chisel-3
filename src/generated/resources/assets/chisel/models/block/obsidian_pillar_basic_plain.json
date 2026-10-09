@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/obsidian/obsidian_pillar_basic_plain-side",
+    "bottom": "chisel:block/obsidian/obsidian_pillar_basic_plain-bottom",
+    "particle": "chisel:block/obsidian/obsidian_pillar_basic_plain-side",
+    "side": "chisel:block/obsidian/obsidian_pillar_basic_plain-side",
+    "top": "chisel:block/obsidian/obsidian_pillar_basic_plain-top",
+    "vertical_both": "chisel:block/obsidian/obsidian_pillar_basic_plain-vertical_both",
+    "vertical_bottom": "chisel:block/obsidian/obsidian_pillar_basic_plain-vertical_bottom",
+    "vertical_none": "chisel:block/obsidian/obsidian_pillar_basic_plain-side",
+    "vertical_top": "chisel:block/obsidian/obsidian_pillar_basic_plain-vertical_top"
+  }
+}

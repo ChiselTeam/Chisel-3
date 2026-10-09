@@ -534,6 +534,26 @@
       "block": "chisel:concrete_orange_parquet_encased",
       "model_type": "connected",
       "name": "concrete_orange_parquet_encased"
+    },
+    {
+      "block": "chisel:concrete_orange_plumbing_encased",
+      "model_type": "connected",
+      "name": "concrete_orange_plumbing_encased"
+    },
+    {
+      "block": "chisel:concrete_orange_diamond_plating_encased",
+      "model_type": "connected",
+      "name": "concrete_orange_diamond_plating_encased"
+    },
+    {
+      "block": "chisel:concrete_orange_mesh_encased",
+      "model_type": "connected",
+      "name": "concrete_orange_mesh_encased"
+    },
+    {
+      "block": "chisel:concrete_orange_caution_encased",
+      "model_type": "connected",
+      "name": "concrete_orange_caution_encased"
     }
   ]
 }

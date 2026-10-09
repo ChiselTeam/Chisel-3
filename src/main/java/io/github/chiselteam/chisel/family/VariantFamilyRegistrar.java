@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.family;
 
+import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.api.family.VariantFamily;
 import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
@@ -22,6 +23,10 @@ import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 import net.minecraft.world.level.material.PushReaction;
 import org.jetbrains.annotations.ApiStatus;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.Stream;
+
 @ApiStatus.Internal
 public class VariantFamilyRegistrar {
 
@@ -35,6 +40,22 @@ public class VariantFamilyRegistrar {
 
         definition.variants().forEach(variant -> registerVariant(family, variant));
         definition.torchVariants().forEach(torch -> registerTorchVariant(family, torch));
+
+        Stream.concat(family.getVariants().stream(), family.getHiddenVariants().stream()).forEach(variant ->
+                variant.setTextures(definition.textures().getOrDefault(variant.getName(), Map.of())));
+        if (family.getWaxedFamily() != null) {
+            var waxedFamily = family.getWaxedFamily();
+            Stream.concat(waxedFamily.getVariants().stream(), waxedFamily.getHiddenVariants().stream()).forEach(variant ->
+                    variant.setTextures(definition.textures().getOrDefault(variant.getName().substring("waxed_".length()), Map.of())));
+        }
+        family.getHiddenVariants().stream().filter(variant -> variant.getModelHandler() == ChiselModelHandlers.WALL_TORCH).forEach(variant -> {
+            var standing = variant.getDropsAs();
+            var textures = new HashMap<String, Identifier>();
+            textures.put("", Chisel.prefix("block/%s/%s".formatted(family.getFamilyName(), standing.getName())));
+            textures.putAll(standing.getTextures());
+            textures.putAll(variant.getTextures());
+            variant.setTextures(textures);
+        });
 
         chiselFamily.setFamily(family);
 

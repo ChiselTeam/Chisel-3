@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/raw_gold/raw_gold_pillar_classic_large-bottom",
+    "side": "chisel:block/raw_gold/raw_gold_pillar_classic_large-side",
+    "top": "chisel:block/raw_gold/raw_gold_pillar_classic_large-top"
+  }
+}

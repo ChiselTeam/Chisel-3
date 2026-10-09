@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/oak_framed_stained_glass_blue/oak_framed_stained_glass_blue_circle",
+    "standard_corner": "chisel:block/oak_framed_stained_glass_blue/oak_framed_stained_glass_blue_circle-ctm_corner",
+    "standard_cornerless": "chisel:block/oak_framed_stained_glass_blue/oak_framed_stained_glass_blue_circle-ctm_cornerless",
+    "standard_horizontal": "chisel:block/oak_framed_stained_glass_blue/oak_framed_stained_glass_blue_circle-ctm_horizontal",
+    "standard_none": "chisel:block/oak_framed_stained_glass_blue/oak_framed_stained_glass_blue_circle",
+    "standard_vertical": "chisel:block/oak_framed_stained_glass_blue/oak_framed_stained_glass_blue_circle-ctm_vertical"
+  }
+}

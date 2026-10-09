@@ -1,0 +1,137 @@
+{
+  "family_name": "oak_framed_stained_glass_magenta",
+  "tag": "c:chisel/oak_framed_stained_glass_magenta",
+  "variants": [
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_bubble",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_bubble"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_panel_fancy",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_panel_fancy"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_frame_thick",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_frame_thick"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_frame_thick_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_frame_thick_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_tile",
+      "name": "oak_framed_stained_glass_magenta_tile"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_brick",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_brick"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_line_vertical",
+      "name": "oak_framed_stained_glass_magenta_line_vertical"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_line_vertical_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_line_vertical_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_line_horizontal",
+      "name": "oak_framed_stained_glass_magenta_line_horizontal"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_arch_panel",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_arch_panel"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_arch_panel_1",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_arch_panel_1"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_arch_panel_2",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_arch_panel_2"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_arch_panel_3",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_arch_panel_3"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_scaffold",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_scaffold"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_scaffold_left",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_scaffold_left"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_scaffold_right",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_scaffold_right"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_basketweave",
+      "name": "oak_framed_stained_glass_magenta_basketweave"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_mosaic_1",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_mosaic_1"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_mosaic_2",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_mosaic_2"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_round",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_round"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_circle",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_circle"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_rings",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_rings"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_diamond",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_diamond"
+    },
+    {
+      "block": "chisel:oak_framed_stained_glass_magenta_frame_1",
+      "model_type": "glass",
+      "name": "oak_framed_stained_glass_magenta_frame_1"
+    }
+  ]
+}

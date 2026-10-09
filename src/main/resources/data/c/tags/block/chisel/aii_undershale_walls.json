@@ -1,0 +1,7 @@
+{
+  "values": [
+    {"id": "aether_ii:sentry_brick_wall", "required": false},
+    {"id": "aether_ii:undershale_brick_wall", "required": false},
+    {"id": "aether_ii:undershale_wall", "required": false}
+  ]
+}

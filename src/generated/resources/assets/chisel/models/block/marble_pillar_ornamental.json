@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/marble/marble_pillar_ornamental-bottom",
+    "bottom": "chisel:block/marble/marble_pillar_rough-top",
     "side": "chisel:block/marble/marble_pillar_ornamental-side",
-    "top": "chisel:block/marble/marble_pillar_ornamental-top"
+    "top": "chisel:block/marble/marble_pillar_rough-top"
   }
 }

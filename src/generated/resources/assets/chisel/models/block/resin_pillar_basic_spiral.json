@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/resin/resin_pillar_basic_spiral-side",
+    "bottom": "chisel:block/resin/resin_pillar_basic-bottom",
+    "particle": "chisel:block/resin/resin_pillar_basic_spiral-side",
+    "side": "chisel:block/resin/resin_pillar_basic_spiral-side",
+    "top": "chisel:block/resin/resin_pillar_basic-bottom",
+    "vertical_both": "chisel:block/resin/resin_pillar_basic_spiral-vertical_both",
+    "vertical_bottom": "chisel:block/resin/resin_pillar_basic_spiral-vertical_bottom",
+    "vertical_none": "chisel:block/resin/resin_pillar_basic_spiral-side",
+    "vertical_top": "chisel:block/resin/resin_pillar_basic_spiral-vertical_top"
+  }
+}

@@ -7,9 +7,17 @@
       "name": "laboratory_checkerboard"
     },
     {
-      "block": "chisel:laboratory_clearscreen",
-      "model_type": "connected",
-      "name": "laboratory_clearscreen"
+      "block": "chisel:laboratory_floor",
+      "name": "laboratory_floor"
+    },
+    {
+      "block": "chisel:laboratory_floor_dark",
+      "name": "laboratory_floor_dark"
+    },
+    {
+      "block": "chisel:laboratory_wall_vent",
+      "model_type": "ctmh",
+      "name": "laboratory_wall_vent"
     },
     {
       "block": "chisel:laboratory_console_information",
@@ -17,9 +25,19 @@
       "name": "laboratory_console_information"
     },
     {
+      "block": "chisel:laboratory_console_information_animated",
+      "model_type": "ctmh",
+      "name": "laboratory_console_information_animated"
+    },
+    {
       "block": "chisel:laboratory_console_left",
       "model_type": "ctmh",
       "name": "laboratory_console_left"
+    },
+    {
+      "block": "chisel:laboratory_console_left_animated",
+      "model_type": "ctmh",
+      "name": "laboratory_console_left_animated"
     },
     {
       "block": "chisel:laboratory_console_right",
@@ -27,16 +45,18 @@
       "name": "laboratory_console_right"
     },
     {
-      "block": "chisel:laboratory_floor",
-      "name": "laboratory_floor"
+      "block": "chisel:laboratory_console_right_animated",
+      "model_type": "ctmh",
+      "name": "laboratory_console_right_animated"
     },
     {
       "block": "chisel:laboratory_panel_clear",
       "name": "laboratory_panel_clear"
     },
     {
-      "block": "chisel:laboratory_panel_dotted",
-      "name": "laboratory_panel_dotted"
+      "block": "chisel:laboratory_clearscreen",
+      "model_type": "connected",
+      "name": "laboratory_clearscreen"
     },
     {
       "block": "chisel:laboratory_panel_fuzzy",
@@ -44,24 +64,48 @@
       "name": "laboratory_panel_fuzzy"
     },
     {
+      "block": "chisel:laboratory_panel_dotted",
+      "name": "laboratory_panel_dotted"
+    },
+    {
+      "block": "chisel:laboratory_panel_dotted_connected",
+      "model_type": "connected",
+      "name": "laboratory_panel_dotted_connected"
+    },
+    {
       "block": "chisel:laboratory_panel_wall",
       "name": "laboratory_panel_wall"
     },
     {
+      "block": "chisel:laboratory_panel_wall_connected",
+      "model_type": "connected",
+      "name": "laboratory_panel_wall_connected"
+    },
+    {
       "block": "chisel:laboratory_tiles_enamelled_large",
+      "model_type": "connected",
       "name": "laboratory_tiles_enamelled_large"
     },
     {
-      "block": "chisel:laboratory_tiles_enamelled_small",
-      "name": "laboratory_tiles_enamelled_small"
+      "block": "chisel:laboratory_wall",
+      "name": "laboratory_wall"
     },
     {
       "block": "chisel:laboratory_tiles_large",
       "name": "laboratory_tiles_large"
     },
     {
+      "block": "chisel:laboratory_tiles_enamelled_small",
+      "name": "laboratory_tiles_enamelled_small"
+    },
+    {
       "block": "chisel:laboratory_tiles_small",
       "name": "laboratory_tiles_small"
+    },
+    {
+      "block": "chisel:laboratory_wall_rounded",
+      "model_type": "connected",
+      "name": "laboratory_wall_rounded"
     },
     {
       "block": "chisel:laboratory_tiles_steel_large",
@@ -72,20 +116,6 @@
       "block": "chisel:laboratory_tiles_steel_small",
       "model_type": "top_bottom_side",
       "name": "laboratory_tiles_steel_small"
-    },
-    {
-      "block": "chisel:laboratory_wall",
-      "name": "laboratory_wall"
-    },
-    {
-      "block": "chisel:laboratory_wall_rounded",
-      "model_type": "connected",
-      "name": "laboratory_wall_rounded"
-    },
-    {
-      "block": "chisel:laboratory_wall_vent",
-      "model_type": "top_bottom_side",
-      "name": "laboratory_wall_vent"
     }
   ]
 }

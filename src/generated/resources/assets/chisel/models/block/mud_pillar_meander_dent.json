@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/mud/mud_pillar_meander-side",
+    "bottom": "chisel:block/mud/mud_pillar_basic-bottom",
+    "particle": "chisel:block/mud/mud_pillar_meander-side",
+    "side": "chisel:block/mud/mud_pillar_meander-side",
+    "top": "chisel:block/mud/mud_pillar_basic-bottom",
+    "vertical_both": "chisel:block/mud/mud_pillar_basic_dent-vertical_both",
+    "vertical_bottom": "chisel:block/mud/mud_pillar_meander_dent-vertical_bottom",
+    "vertical_none": "chisel:block/mud/mud_pillar_meander-side",
+    "vertical_top": "chisel:block/mud/mud_pillar_meander_dent-vertical_top"
+  }
+}

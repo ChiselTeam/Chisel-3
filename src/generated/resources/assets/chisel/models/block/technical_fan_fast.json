@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/technical/technical_fan_fast-bottom",
+    "bottom": "chisel:block/technical/technical_fan_fast-top",
     "side": "chisel:block/technical/technical_fan_fast-side",
     "top": "chisel:block/technical/technical_fan_fast-top"
   }

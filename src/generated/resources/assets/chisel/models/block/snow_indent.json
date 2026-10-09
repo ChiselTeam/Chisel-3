@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/snow/snow_indent",
+    "particle": "chisel:block/snow/snow_indent",
+    "standard_corner": "chisel:block/snow/snow_indent-ctm_corner",
+    "standard_cornerless": "chisel:block/snow/snow_indent-ctm_cornerless",
+    "standard_horizontal": "chisel:block/snow/snow_indent-ctm_horizontal",
+    "standard_none": "chisel:block/snow/snow_indent",
+    "standard_vertical": "chisel:block/snow/snow_indent-ctm_vertical"
+  }
+}

@@ -4,8 +4,8 @@
     "layer0": "chisel:block/hex_plating/hex_plating_15-bg",
     "layer1": {
       "force_translucent": true,
-      "sprite": "chisel:block/hex_plating/hex_plating_15"
+      "sprite": "chisel:block/hex_plating/hex_plating_0"
     },
-    "particle": "chisel:block/hex_plating/hex_plating_15"
+    "particle": "chisel:block/hex_plating/hex_plating_0"
   }
 }

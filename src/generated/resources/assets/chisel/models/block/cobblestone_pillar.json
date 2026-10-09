@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/cobblestone/cobblestone_pillar-bottom",
+    "bottom": "chisel:block/cobblestone/cobblestone_pillar-top",
     "side": "chisel:block/cobblestone/cobblestone_pillar-side",
     "top": "chisel:block/cobblestone/cobblestone_pillar-top"
   }

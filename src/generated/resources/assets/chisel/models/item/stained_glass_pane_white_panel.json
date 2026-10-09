@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "chisel:block/stained_glass_pane_white/stained_glass_pane_white_panel"
+    "layer0": "chisel:block/stained_glass_white/stained_glass_white_panel"
   }
 }

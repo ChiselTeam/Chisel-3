@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/lumium", "required": false},
+    {"id": "alltheores:lumium_block", "required": false}
+  ]
+}

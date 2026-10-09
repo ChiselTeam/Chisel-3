@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/crying_obsidian/crying_obsidian_scaffold_encased",
+    "particle": "chisel:block/crying_obsidian/crying_obsidian_scaffold_encased",
+    "standard_corner": "chisel:block/crying_obsidian/crying_obsidian_scaffold_encased-ctm_corner",
+    "standard_cornerless": "chisel:block/crying_obsidian/crying_obsidian_scaffold_encased-ctm_cornerless",
+    "standard_horizontal": "chisel:block/crying_obsidian/crying_obsidian_scaffold_encased-ctm_horizontal",
+    "standard_none": "chisel:block/crying_obsidian/crying_obsidian_scaffold_encased",
+    "standard_vertical": "chisel:block/crying_obsidian/crying_obsidian_scaffold_encased-ctm_vertical"
+  }
+}

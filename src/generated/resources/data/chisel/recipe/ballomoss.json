@@ -3,7 +3,10 @@
   "category": "misc",
   "key": {
     "S": "#c:rods/wooden",
-    "V": "minecraft:vine"
+    "V": [
+      "minecraft:vine",
+      "minecraft:moss_block"
+    ]
   },
   "pattern": [
     "VSV",

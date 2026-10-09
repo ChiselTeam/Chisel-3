@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/raw_allthemodium", "required": false},
+    {"id": "allthemodium:raw_allthemodium_block", "required": false}
+  ]
+}

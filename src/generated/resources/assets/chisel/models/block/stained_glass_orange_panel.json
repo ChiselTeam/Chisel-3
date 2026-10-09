@@ -1,6 +1,10 @@
 {
-  "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/stained_glass_orange/stained_glass_orange_panel"
+    "particle": "chisel:block/stained_glass_orange/stained_glass_orange_panel",
+    "standard_corner": "chisel:block/stained_glass_orange/stained_glass_orange_panel-ctm_corner",
+    "standard_cornerless": "chisel:block/stained_glass_orange/stained_glass_orange_panel-ctm_cornerless",
+    "standard_horizontal": "chisel:block/stained_glass_orange/stained_glass_orange_panel-ctm_horizontal",
+    "standard_none": "chisel:block/stained_glass_orange/stained_glass_orange_panel",
+    "standard_vertical": "chisel:block/stained_glass_orange/stained_glass_orange_panel-ctm_vertical"
   }
 }

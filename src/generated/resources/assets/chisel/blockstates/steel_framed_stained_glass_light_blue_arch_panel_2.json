@@ -1,0 +1,11 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/steel_framed_stained_glass_light_blue_arch_panel_2",
+  "variant": {
+    "block": "chisel:steel_framed_stained_glass_light_blue_arch_panel_2",
+    "kind": "standard"
+  }
+}

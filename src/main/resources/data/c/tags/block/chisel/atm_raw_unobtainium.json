@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/raw_unobtainium", "required": false},
+    {"id": "allthemodium:raw_unobtainium_block", "required": false}
+  ]
+}

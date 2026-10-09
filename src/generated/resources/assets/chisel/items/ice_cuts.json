@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "chisel:item/ice_cuts"
+    "model": "chisel:block/ice_cuts"
   }
 }

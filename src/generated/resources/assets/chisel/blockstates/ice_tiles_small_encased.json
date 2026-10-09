@@ -1,0 +1,11 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/ice_tiles_small_encased",
+  "variant": {
+    "block": "chisel:ice_tiles_small_encased",
+    "kind": "standard"
+  }
+}

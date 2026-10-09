@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/raw_gold/raw_gold_pillar_meander-side",
+    "bottom": "chisel:block/raw_gold/raw_gold_pillar_meander-bottom",
+    "particle": "chisel:block/raw_gold/raw_gold_pillar_meander-side",
+    "side": "chisel:block/raw_gold/raw_gold_pillar_meander-side",
+    "top": "chisel:block/raw_gold/raw_gold_pillar_meander-top",
+    "vertical_both": "chisel:block/raw_gold/raw_gold_pillar_meander-vertical_both",
+    "vertical_bottom": "chisel:block/raw_gold/raw_gold_pillar_meander-vertical_bottom",
+    "vertical_none": "chisel:block/raw_gold/raw_gold_pillar_meander-side",
+    "vertical_top": "chisel:block/raw_gold/raw_gold_pillar_meander-vertical_top"
+  }
+}

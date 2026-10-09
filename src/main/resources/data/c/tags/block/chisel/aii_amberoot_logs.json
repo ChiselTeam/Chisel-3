@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "aether_ii:amberoot_wood", "required": false},
+    {"id": "aether_ii:amberoot_trunk", "required": false}
+  ]
+}

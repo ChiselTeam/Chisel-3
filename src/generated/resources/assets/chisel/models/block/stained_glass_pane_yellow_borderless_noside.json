@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_glass_pane_noside",
   "textures": {
-    "pane": "chisel:block/stained_glass_pane_yellow/stained_glass_pane_yellow_borderless"
+    "pane": "chisel:block/stained_glass_yellow/stained_glass_yellow_borderless"
   }
 }

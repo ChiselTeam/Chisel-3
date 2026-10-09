@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/raw_vibranium", "required": false},
+    {"id": "allthemodium:raw_vibranium_block", "required": false}
+  ]
+}

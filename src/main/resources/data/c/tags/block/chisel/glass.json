@@ -1,0 +1,7 @@
+{
+  "values": [
+    {"id": "xycraft_world:glass_viewer", "required": false},
+    {"id": "xycraft_world:glass_viewer_dire", "required": false},
+    {"id": "xycraft_world:glass_viewer_silicon", "required": false}
+  ]
+}

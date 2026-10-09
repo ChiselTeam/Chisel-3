@@ -2,14 +2,13 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/concrete_black/concrete_black_meander_vertical-side",
-    "bottom": "chisel:block/concrete_black/concrete_black_meander_vertical-bottom",
-    "overlay_bottom": "chisel:block/concrete_black/concrete_black_meander_vertical-bottom",
-    "overlay_side_connected": "chisel:block/concrete_black/concrete_black_meander_vertical-side-ctm",
-    "overlay_texture": "chisel:block/concrete_black/concrete_black_meander_vertical-side",
-    "overlay_top": "chisel:block/concrete_black/concrete_black_meander_vertical-top",
-    "overlay_vertical": "chisel:block/concrete_black/concrete_black_meander_vertical-side-ctm",
+    "bottom": "chisel:block/concrete_black/concrete_black_meander_vertical-top",
     "particle": "chisel:block/concrete_black/concrete_black_meander_vertical-side",
     "side": "chisel:block/concrete_black/concrete_black_meander_vertical-side",
-    "top": "chisel:block/concrete_black/concrete_black_meander_vertical-top"
+    "top": "chisel:block/concrete_black/concrete_black_meander_vertical-top",
+    "vertical_both": "chisel:block/concrete_black/concrete_black_meander_vertical-vertical_both",
+    "vertical_bottom": "chisel:block/concrete_black/concrete_black_meander_vertical-vertical_bottom",
+    "vertical_none": "chisel:block/concrete_black/concrete_black_meander_vertical-vertical_none",
+    "vertical_top": "chisel:block/concrete_black/concrete_black_meander_vertical-vertical_top"
   }
 }

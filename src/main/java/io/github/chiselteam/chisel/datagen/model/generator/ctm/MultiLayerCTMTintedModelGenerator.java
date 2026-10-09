@@ -7,6 +7,7 @@ import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateDefinitionGenerator;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateModelBuilder;
+import io.github.chiselteam.chisel.datagen.model.generator.special.waterstone.WaterstoneModelGenerator;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
@@ -18,21 +19,19 @@ public class MultiLayerCTMTintedModelGenerator extends VariantModelGenerator {
 
     @Override
     public TextureMapping getTextureMapping() {
-        return (new TextureMapping())
+        return VariantTextures.standard(variant)
                 .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
                 .put(TextureSlot.ALL, VariantTextures.get(variant))
                 .put(TextureSlot.LAYER1, VariantTextures.get(variant))
                 .put(TextureSlot.LAYER0, VariantTextures.get(variant, "bg"))
-                .put(ChiselTextureSlots.CTM_BASE, VariantTextures.get(variant, "bg"))
-                .put(ChiselTextureSlots.CTM_OVERLAY, VariantTextures.get(variant))
-                .put(ChiselTextureSlots.CTM_OVERLAY_CONNECTED, VariantTextures.get(variant, "ctm"));
+                .put(ChiselTextureSlots.CTM_BASE, VariantTextures.get(variant, "bg"));
     }
 
     @Override
     public void generate(Variant variant, BlockModelGenerators blockModels) {
         super.generate(variant, blockModels);
         Identifier modelLocation = ChiselModelTemplates.CTM_MULTI_PASS_TINTED.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
-        blockModels.registerSimpleItemModel(getBlock(), modelLocation);
+        WaterstoneModelGenerator.registerItemModel(blockModels, getBlock(), modelLocation);
         blockModels.blockStateOutput.accept(ConnectedTextureBlockStateDefinitionGenerator.dispatch(variant.getBlock(), new ConnectedTextureBlockStateModelBuilder()
                 .modelLocation(modelLocation)
                 .renderOverlayOnAllFaces(true)

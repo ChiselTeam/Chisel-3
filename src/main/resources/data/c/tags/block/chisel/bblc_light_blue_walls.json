@@ -1,0 +1,23 @@
+{
+  "values": [
+    {"id": "colors:light_blue_asteroid_brick_wall", "required": false},
+    {"id": "colors:light_blue_asteroid_tile_wall", "required": false},
+    {"id": "colors:light_blue_asteroid_wall", "required": false},
+    {"id": "colors:light_blue_braid_wall", "required": false},
+    {"id": "colors:light_blue_brick_wall", "required": false},
+    {"id": "colors:light_blue_chaotic_wall", "required": false},
+    {"id": "colors:light_blue_cobblestone_brick_wall", "required": false},
+    {"id": "colors:light_blue_cobblestone_wall", "required": false},
+    {"id": "colors:light_blue_cracked_stone_brick_wall", "required": false},
+    {"id": "colors:light_blue_encased_wall", "required": false},
+    {"id": "colors:light_blue_marble_brick_wall", "required": false},
+    {"id": "colors:light_blue_marble_wall", "required": false},
+    {"id": "colors:light_blue_mosaic_wall", "required": false},
+    {"id": "colors:light_blue_polished_wall", "required": false},
+    {"id": "colors:light_blue_road_wall", "required": false},
+    {"id": "colors:light_blue_sandstone_wall", "required": false},
+    {"id": "colors:light_blue_stone_brick_wall", "required": false},
+    {"id": "colors:light_blue_tile_wall", "required": false},
+    {"id": "colors:light_blue_triple_wall", "required": false}
+  ]
+}

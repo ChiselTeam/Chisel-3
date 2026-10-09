@@ -1,0 +1,7 @@
+{
+  "values": [
+    {"id": "minecraft:polished_tuff_slab", "required": false},
+    {"id": "minecraft:tuff_brick_slab", "required": false},
+    {"id": "minecraft:tuff_slab", "required": false}
+  ]
+}

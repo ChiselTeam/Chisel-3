@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/steel_framed_stained_glass_light_gray/steel_framed_stained_glass_light_gray_brick",
+    "standard_corner": "chisel:block/steel_framed_stained_glass_light_gray/steel_framed_stained_glass_light_gray_brick-ctm_corner",
+    "standard_cornerless": "chisel:block/steel_framed_stained_glass_light_gray/steel_framed_stained_glass_light_gray_brick-ctm_cornerless",
+    "standard_horizontal": "chisel:block/steel_framed_stained_glass_light_gray/steel_framed_stained_glass_light_gray_brick-ctm_horizontal",
+    "standard_none": "chisel:block/steel_framed_stained_glass_light_gray/steel_framed_stained_glass_light_gray_brick",
+    "standard_vertical": "chisel:block/steel_framed_stained_glass_light_gray/steel_framed_stained_glass_light_gray_brick-ctm_vertical"
+  }
+}

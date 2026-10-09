@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/sandstone/sandstone_column-bottom",
+    "bottom": "chisel:block/sandstone/sandstone_base-top",
     "side": "chisel:block/sandstone/sandstone_column-side",
-    "top": "chisel:block/sandstone/sandstone_column-top"
+    "top": "chisel:block/sandstone/sandstone_base-top"
   }
 }

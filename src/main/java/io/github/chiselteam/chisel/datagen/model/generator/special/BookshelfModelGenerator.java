@@ -21,15 +21,16 @@ public class BookshelfModelGenerator extends VariantModelGenerator {
 
     @Override
     public TextureMapping getTextureMapping() {
-        return (new TextureMapping())
+        return VariantTextures.ctm(variant, textures -> textures.horizontalTextures(
+                        getMaterial("horizontal_none").sprite(), getMaterial("horizontal_both").sprite(),
+                        getMaterial("horizontal_left").sprite(), getMaterial("horizontal_right").sprite()))
                 .put(TextureSlot.PARTICLE, getBlockMaterial())
                 .put(TextureSlot.TOP, getBlockMaterial())
                 .put(TextureSlot.BOTTOM, getBlockMaterial())
-                .put(TextureSlot.SIDE, getMaterial())
+                .put(TextureSlot.SIDE, getMaterial(""))
                 .put(TextureSlot.LAYER0, getBlockMaterial())
                 .put(TextureSlot.LAYER1, getBlockMaterial())
-                .put(ChiselTextureSlots.CTM_BASE, getBlockMaterial())
-                .put(ChiselTextureSlots.CTM_OVERLAY_HORIZONTAL, getMaterialCTM());
+                .put(ChiselTextureSlots.CTM_BASE, getBlockMaterial());
     }
 
     @Override
@@ -50,7 +51,7 @@ public class BookshelfModelGenerator extends VariantModelGenerator {
     }
 
     private Material getBlockMaterial() {
-        String path = VariantTextures.get(variant).sprite().getPath();
+        String path = variant.getName();
         for(String wood : woods) {
             if(path.contains(wood)) {
                 return new Material(Identifier.withDefaultNamespace("block/%s_planks".formatted(wood.substring(1))));
@@ -60,12 +61,13 @@ public class BookshelfModelGenerator extends VariantModelGenerator {
         return new Material(Identifier.withDefaultNamespace("missingno"));
     }
 
-    private Material getMaterial() {
-        return new Material(Chisel.prefix(cleanId(VariantTextures.get(variant).sprite().getPath())));
-    }
-
-    private Material getMaterialCTM() {
-        return new Material(Chisel.prefix(cleanId(VariantTextures.get(variant, "ctm").sprite().getPath())));
+    private Material getMaterial(String suffix) {
+        var texture = variant.getTextures().get(suffix);
+        if (texture == null) {
+            String path = cleanId(VariantTextures.getTexturePath(variant));
+            texture = Chisel.prefix(suffix.isEmpty() ? path : path + "-" + suffix);
+        }
+        return new Material(texture);
     }
 
     private String cleanId(String path) {

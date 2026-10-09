@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/iron/iron_bordered",
-    "overlay_connected": "chisel:block/iron/iron_bordered-ctm",
-    "overlay_texture": "chisel:block/iron/iron_bordered",
-    "particle": "chisel:block/iron/iron_bordered"
+    "particle": "chisel:block/iron/iron_bordered",
+    "standard_corner": "chisel:block/iron/iron_bordered-ctm_corner",
+    "standard_cornerless": "chisel:block/iron/iron_bordered-ctm_cornerless",
+    "standard_horizontal": "chisel:block/iron/iron_bordered-ctm_horizontal",
+    "standard_none": "chisel:block/iron/iron_bordered",
+    "standard_vertical": "chisel:block/iron/iron_bordered-ctm_vertical"
   }
 }

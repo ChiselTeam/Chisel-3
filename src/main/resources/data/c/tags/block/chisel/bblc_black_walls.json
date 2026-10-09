@@ -1,0 +1,23 @@
+{
+  "values": [
+    {"id": "colors:black_asteroid_brick_wall", "required": false},
+    {"id": "colors:black_asteroid_tile_wall", "required": false},
+    {"id": "colors:black_asteroid_wall", "required": false},
+    {"id": "colors:black_braid_wall", "required": false},
+    {"id": "colors:black_brick_wall", "required": false},
+    {"id": "colors:black_chaotic_wall", "required": false},
+    {"id": "colors:black_cobblestone_brick_wall", "required": false},
+    {"id": "colors:black_cobblestone_wall", "required": false},
+    {"id": "colors:black_cracked_stone_brick_wall", "required": false},
+    {"id": "colors:black_encased_wall", "required": false},
+    {"id": "colors:black_marble_brick_wall", "required": false},
+    {"id": "colors:black_marble_wall", "required": false},
+    {"id": "colors:black_mosaic_wall", "required": false},
+    {"id": "colors:black_polished_wall", "required": false},
+    {"id": "colors:black_road_wall", "required": false},
+    {"id": "colors:black_sandstone_wall", "required": false},
+    {"id": "colors:black_stone_brick_wall", "required": false},
+    {"id": "colors:black_tile_wall", "required": false},
+    {"id": "colors:black_triple_wall", "required": false}
+  ]
+}

@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/military/military_imperial_caution_white",
-    "overlay_connected": "chisel:block/military/military_imperial_caution_white-ctm",
-    "overlay_texture": "chisel:block/military/military_imperial_caution_white",
-    "particle": "chisel:block/military/military_imperial_caution_white"
+    "particle": "chisel:block/military/military_imperial_caution_white",
+    "standard_corner": "chisel:block/military/military_imperial_caution_white-ctm_corner",
+    "standard_cornerless": "chisel:block/military/military_imperial_caution_white-ctm_cornerless",
+    "standard_horizontal": "chisel:block/military/military_imperial_caution_white-ctm_horizontal",
+    "standard_none": "chisel:block/military/military_imperial_caution_white",
+    "standard_vertical": "chisel:block/military/military_imperial_caution_white-ctm_vertical"
   }
 }

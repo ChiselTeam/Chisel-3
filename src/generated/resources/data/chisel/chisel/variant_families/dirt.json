@@ -71,6 +71,536 @@
       "block": "chisel:dirt_vertical",
       "model_type": "ctmv",
       "name": "dirt_vertical"
+    },
+    {
+      "block": "chisel:dirt_array",
+      "model_type": "multiblock_2x2",
+      "name": "dirt_array"
+    },
+    {
+      "block": "chisel:dirt_border_square",
+      "model_type": "connected",
+      "name": "dirt_border_square"
+    },
+    {
+      "block": "chisel:dirt_braid",
+      "name": "dirt_braid"
+    },
+    {
+      "block": "chisel:dirt_braid_encased",
+      "model_type": "connected",
+      "name": "dirt_braid_encased"
+    },
+    {
+      "block": "chisel:dirt_bricks_cracked",
+      "name": "dirt_bricks_cracked"
+    },
+    {
+      "block": "chisel:dirt_bricks_encased",
+      "model_type": "connected",
+      "name": "dirt_bricks_encased"
+    },
+    {
+      "block": "chisel:dirt_bricks_indent",
+      "name": "dirt_bricks_indent"
+    },
+    {
+      "block": "chisel:dirt_bricks_inlayed",
+      "name": "dirt_bricks_inlayed"
+    },
+    {
+      "block": "chisel:dirt_bricks_small",
+      "name": "dirt_bricks_small"
+    },
+    {
+      "block": "chisel:dirt_bricks_soft",
+      "name": "dirt_bricks_soft"
+    },
+    {
+      "block": "chisel:dirt_bricks_solid",
+      "name": "dirt_bricks_solid"
+    },
+    {
+      "block": "chisel:dirt_bricks_triple",
+      "name": "dirt_bricks_triple"
+    },
+    {
+      "block": "chisel:dirt_bricks_vertical",
+      "name": "dirt_bricks_vertical"
+    },
+    {
+      "block": "chisel:dirt_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "dirt_chaotic"
+    },
+    {
+      "block": "chisel:dirt_chaotic_medium",
+      "name": "dirt_chaotic_medium"
+    },
+    {
+      "block": "chisel:dirt_chaotic_small",
+      "name": "dirt_chaotic_small"
+    },
+    {
+      "block": "chisel:dirt_checker",
+      "name": "dirt_checker"
+    },
+    {
+      "block": "chisel:dirt_checker_small",
+      "name": "dirt_checker_small"
+    },
+    {
+      "block": "chisel:dirt_circular",
+      "model_type": "connected",
+      "name": "dirt_circular"
+    },
+    {
+      "block": "chisel:dirt_cracked",
+      "name": "dirt_cracked"
+    },
+    {
+      "block": "chisel:dirt_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "dirt_cuts"
+    },
+    {
+      "block": "chisel:dirt_dent",
+      "model_type": "connected",
+      "name": "dirt_dent"
+    },
+    {
+      "block": "chisel:dirt_french_1",
+      "name": "dirt_french_1"
+    },
+    {
+      "block": "chisel:dirt_french_2",
+      "name": "dirt_french_2"
+    },
+    {
+      "block": "chisel:dirt_indent",
+      "model_type": "connected",
+      "name": "dirt_indent"
+    },
+    {
+      "block": "chisel:dirt_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "dirt_jellybean"
+    },
+    {
+      "block": "chisel:dirt_layers_connected",
+      "model_type": "connected",
+      "name": "dirt_layers_connected"
+    },
+    {
+      "block": "chisel:dirt_line_horizontal",
+      "name": "dirt_line_horizontal"
+    },
+    {
+      "block": "chisel:dirt_line_vertical",
+      "name": "dirt_line_vertical"
+    },
+    {
+      "block": "chisel:dirt_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "dirt_meander_horizontal"
+    },
+    {
+      "block": "chisel:dirt_meander_vertical",
+      "model_type": "ctmv",
+      "name": "dirt_meander_vertical"
+    },
+    {
+      "block": "chisel:dirt_mosaic",
+      "model_type": "connected",
+      "name": "dirt_mosaic"
+    },
+    {
+      "block": "chisel:dirt_ornate_small",
+      "name": "dirt_ornate_small"
+    },
+    {
+      "block": "chisel:dirt_panel",
+      "name": "dirt_panel"
+    },
+    {
+      "block": "chisel:dirt_pillar",
+      "model_type": "top_bottom_side",
+      "name": "dirt_pillar"
+    },
+    {
+      "block": "chisel:dirt_pillar_basic",
+      "model_type": "ctmv",
+      "name": "dirt_pillar_basic"
+    },
+    {
+      "block": "chisel:dirt_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "dirt_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:dirt_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "dirt_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:dirt_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "dirt_pillar_basic_round"
+    },
+    {
+      "block": "chisel:dirt_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "dirt_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:dirt_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "dirt_pillar_classic"
+    },
+    {
+      "block": "chisel:dirt_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "dirt_pillar_classic_large"
+    },
+    {
+      "block": "chisel:dirt_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "dirt_pillar_ionic"
+    },
+    {
+      "block": "chisel:dirt_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "dirt_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:dirt_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "dirt_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:dirt_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "dirt_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:dirt_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "dirt_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:dirt_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "dirt_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:dirt_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "dirt_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:dirt_pillar_meander",
+      "model_type": "ctmv",
+      "name": "dirt_pillar_meander"
+    },
+    {
+      "block": "chisel:dirt_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "dirt_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:dirt_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "dirt_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:dirt_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "dirt_pillar_meander_round"
+    },
+    {
+      "block": "chisel:dirt_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "dirt_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:dirt_plate_connected",
+      "model_type": "connected",
+      "name": "dirt_plate_connected"
+    },
+    {
+      "block": "chisel:dirt_polished",
+      "name": "dirt_polished"
+    },
+    {
+      "block": "chisel:dirt_polished_encased",
+      "model_type": "connected",
+      "name": "dirt_polished_encased"
+    },
+    {
+      "block": "chisel:dirt_prism",
+      "name": "dirt_prism"
+    },
+    {
+      "block": "chisel:dirt_raw",
+      "name": "dirt_raw"
+    },
+    {
+      "block": "chisel:dirt_road",
+      "name": "dirt_road"
+    },
+    {
+      "block": "chisel:dirt_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "dirt_slanted"
+    },
+    {
+      "block": "chisel:dirt_tiles",
+      "name": "dirt_tiles"
+    },
+    {
+      "block": "chisel:dirt_tiles_large",
+      "model_type": "connected",
+      "name": "dirt_tiles_large"
+    },
+    {
+      "block": "chisel:dirt_tiles_small",
+      "name": "dirt_tiles_small"
+    },
+    {
+      "block": "chisel:dirt_twisted",
+      "model_type": "top_bottom_side",
+      "name": "dirt_twisted"
+    },
+    {
+      "block": "chisel:dirt_weaver",
+      "model_type": "connected",
+      "name": "dirt_weaver"
+    },
+    {
+      "block": "chisel:dirt_zag",
+      "model_type": "v4",
+      "name": "dirt_zag"
+    },
+    {
+      "block": "chisel:dirt_crate",
+      "model_type": "connected",
+      "name": "dirt_crate"
+    },
+    {
+      "block": "chisel:dirt_herringbone",
+      "name": "dirt_herringbone"
+    },
+    {
+      "block": "chisel:dirt_herringbone_encased",
+      "model_type": "connected",
+      "name": "dirt_herringbone_encased"
+    },
+    {
+      "block": "chisel:dirt_medallion",
+      "name": "dirt_medallion"
+    },
+    {
+      "block": "chisel:dirt_medallion_encased",
+      "model_type": "connected",
+      "name": "dirt_medallion_encased"
+    },
+    {
+      "block": "chisel:dirt_dots",
+      "name": "dirt_dots"
+    },
+    {
+      "block": "chisel:dirt_dots_encased",
+      "model_type": "connected",
+      "name": "dirt_dots_encased"
+    },
+    {
+      "block": "chisel:dirt_heart",
+      "name": "dirt_heart"
+    },
+    {
+      "block": "chisel:dirt_star",
+      "name": "dirt_star"
+    },
+    {
+      "block": "chisel:dirt_plating",
+      "name": "dirt_plating"
+    },
+    {
+      "block": "chisel:dirt_lodestone",
+      "name": "dirt_lodestone"
+    },
+    {
+      "block": "chisel:dirt_lodestone_connected",
+      "model_type": "connected",
+      "name": "dirt_lodestone_connected"
+    },
+    {
+      "block": "chisel:dirt_plank",
+      "name": "dirt_plank"
+    },
+    {
+      "block": "chisel:dirt_plank_connected",
+      "model_type": "connected",
+      "name": "dirt_plank_connected"
+    },
+    {
+      "block": "chisel:dirt_frame",
+      "name": "dirt_frame"
+    },
+    {
+      "block": "chisel:dirt_panel_1",
+      "name": "dirt_panel_1"
+    },
+    {
+      "block": "chisel:dirt_panel_2",
+      "name": "dirt_panel_2"
+    },
+    {
+      "block": "chisel:dirt_panel_3",
+      "name": "dirt_panel_3"
+    },
+    {
+      "block": "chisel:dirt_skull_creeper",
+      "name": "dirt_skull_creeper"
+    },
+    {
+      "block": "chisel:dirt_skull_skeleton",
+      "name": "dirt_skull_skeleton"
+    },
+    {
+      "block": "chisel:dirt_stripes",
+      "name": "dirt_stripes"
+    },
+    {
+      "block": "chisel:dirt_stripes_encased",
+      "model_type": "connected",
+      "name": "dirt_stripes_encased"
+    },
+    {
+      "block": "chisel:dirt_chisel_1",
+      "name": "dirt_chisel_1"
+    },
+    {
+      "block": "chisel:dirt_chisel_2",
+      "name": "dirt_chisel_2"
+    },
+    {
+      "block": "chisel:dirt_chisel_3",
+      "name": "dirt_chisel_3"
+    },
+    {
+      "block": "chisel:dirt_chisel_4",
+      "name": "dirt_chisel_4"
+    },
+    {
+      "block": "chisel:dirt_chisel_5",
+      "name": "dirt_chisel_5"
+    },
+    {
+      "block": "chisel:dirt_chisel_6",
+      "name": "dirt_chisel_6"
+    },
+    {
+      "block": "chisel:dirt_facet",
+      "name": "dirt_facet"
+    },
+    {
+      "block": "chisel:dirt_facet_small",
+      "name": "dirt_facet_small"
+    },
+    {
+      "block": "chisel:dirt_facet_small_encased",
+      "model_type": "connected",
+      "name": "dirt_facet_small_encased"
+    },
+    {
+      "block": "chisel:dirt_shiny",
+      "name": "dirt_shiny"
+    },
+    {
+      "block": "chisel:dirt_shiny_connected",
+      "model_type": "connected",
+      "name": "dirt_shiny_connected"
+    },
+    {
+      "block": "chisel:dirt_gem",
+      "name": "dirt_gem"
+    },
+    {
+      "block": "chisel:dirt_gem_1",
+      "name": "dirt_gem_1"
+    },
+    {
+      "block": "chisel:dirt_gem_1_connected",
+      "model_type": "connected",
+      "name": "dirt_gem_1_connected"
+    },
+    {
+      "block": "chisel:dirt_gem_2",
+      "name": "dirt_gem_2"
+    },
+    {
+      "block": "chisel:dirt_gem_2_connected",
+      "model_type": "connected",
+      "name": "dirt_gem_2_connected"
+    },
+    {
+      "block": "chisel:dirt_gem_3",
+      "name": "dirt_gem_3"
+    },
+    {
+      "block": "chisel:dirt_gem_3_connected",
+      "model_type": "connected",
+      "name": "dirt_gem_3_connected"
+    },
+    {
+      "block": "chisel:dirt_bricks_square",
+      "name": "dirt_bricks_square"
+    },
+    {
+      "block": "chisel:dirt_slab",
+      "name": "dirt_slab"
+    },
+    {
+      "block": "chisel:dirt_scaffold",
+      "name": "dirt_scaffold"
+    },
+    {
+      "block": "chisel:dirt_scaffold_encased",
+      "model_type": "connected",
+      "name": "dirt_scaffold_encased"
+    },
+    {
+      "block": "chisel:dirt_tiles_inlayed",
+      "name": "dirt_tiles_inlayed"
+    },
+    {
+      "block": "chisel:dirt_waves",
+      "model_type": "multiblock_2x2",
+      "name": "dirt_waves"
+    },
+    {
+      "block": "chisel:dirt_parquet",
+      "name": "dirt_parquet"
+    },
+    {
+      "block": "chisel:dirt_parquet_encased",
+      "model_type": "connected",
+      "name": "dirt_parquet_encased"
+    },
+    {
+      "block": "chisel:dirt_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "dirt_bricks_large_rough"
+    },
+    {
+      "block": "chisel:dirt_tiles_small_encased",
+      "model_type": "connected",
+      "name": "dirt_tiles_small_encased"
+    },
+    {
+      "block": "chisel:dirt_bricks_round",
+      "name": "dirt_bricks_round"
     }
   ]
 }

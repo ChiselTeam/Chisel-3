@@ -2,6 +2,6 @@
   "parent": "chisel:block/template_glass_pane_end_alt",
   "textures": {
     "edge": "chisel:block/glass_pane/glass_pane_bubble-top",
-    "pane": "chisel:block/glass_pane/glass_pane_bubble"
+    "pane": "chisel:block/glass/glass_bubble"
   }
 }

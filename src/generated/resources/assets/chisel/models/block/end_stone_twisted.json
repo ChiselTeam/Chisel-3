@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/end_stone/end_stone_twisted-bottom",
+    "bottom": "chisel:block/end_stone/end_stone_twisted-top",
     "side": "chisel:block/end_stone/end_stone_twisted-side",
     "top": "chisel:block/end_stone/end_stone_twisted-top"
   }

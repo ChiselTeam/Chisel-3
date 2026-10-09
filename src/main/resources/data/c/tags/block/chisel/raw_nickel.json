@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/raw_nickel", "required": false},
+    {"id": "alltheores:raw_nickel_block", "required": false}
+  ]
+}

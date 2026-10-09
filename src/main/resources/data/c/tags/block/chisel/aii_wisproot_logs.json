@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "aether_ii:wisproot_wood", "required": false},
+    {"id": "aether_ii:wisproot_trunk", "required": false}
+  ]
+}

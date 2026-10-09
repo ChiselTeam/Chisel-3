@@ -1,0 +1,137 @@
+{
+  "family_name": "steel_framed_stained_glass_pink",
+  "tag": "c:chisel/steel_framed_stained_glass_pink",
+  "variants": [
+    {
+      "block": "chisel:steel_framed_stained_glass_pink",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_bubble",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_bubble"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_panel",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_panel"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_panel_fancy",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_panel_fancy"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_frame_thick",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_frame_thick"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_frame_thick_panel",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_frame_thick_panel"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_tile",
+      "name": "steel_framed_stained_glass_pink_tile"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_brick",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_brick"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_line_vertical",
+      "name": "steel_framed_stained_glass_pink_line_vertical"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_line_vertical_panel",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_line_vertical_panel"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_line_horizontal",
+      "name": "steel_framed_stained_glass_pink_line_horizontal"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_arch_panel",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_arch_panel"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_arch_panel_1",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_arch_panel_1"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_arch_panel_2",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_arch_panel_2"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_arch_panel_3",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_arch_panel_3"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_scaffold",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_scaffold"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_scaffold_left",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_scaffold_left"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_scaffold_right",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_scaffold_right"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_basketweave",
+      "name": "steel_framed_stained_glass_pink_basketweave"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_mosaic_1",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_mosaic_1"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_mosaic_2",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_mosaic_2"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_round",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_round"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_circle",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_circle"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_rings",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_rings"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_diamond",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_diamond"
+    },
+    {
+      "block": "chisel:steel_framed_stained_glass_pink_frame_1",
+      "model_type": "glass",
+      "name": "steel_framed_stained_glass_pink_frame_1"
+    }
+  ]
+}

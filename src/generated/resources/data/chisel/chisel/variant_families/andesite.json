@@ -16,8 +16,60 @@
       "name": "andesite_array"
     },
     {
+      "block": "chisel:andesite_border_square",
+      "model_type": "connected",
+      "name": "andesite_border_square"
+    },
+    {
       "block": "chisel:andesite_braid",
       "name": "andesite_braid"
+    },
+    {
+      "block": "chisel:andesite_braid_encased",
+      "model_type": "connected",
+      "name": "andesite_braid_encased"
+    },
+    {
+      "block": "chisel:andesite_cracked_bricks",
+      "name": "andesite_cracked_bricks"
+    },
+    {
+      "block": "chisel:andesite_encased_bricks",
+      "model_type": "connected",
+      "name": "andesite_encased_bricks"
+    },
+    {
+      "block": "chisel:andesite_bricks_indent",
+      "name": "andesite_bricks_indent"
+    },
+    {
+      "block": "chisel:andesite_bricks_inlayed",
+      "name": "andesite_bricks_inlayed"
+    },
+    {
+      "block": "chisel:andesite_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "andesite_bricks_large"
+    },
+    {
+      "block": "chisel:andesite_small_bricks",
+      "name": "andesite_small_bricks"
+    },
+    {
+      "block": "chisel:andesite_soft_bricks",
+      "name": "andesite_soft_bricks"
+    },
+    {
+      "block": "chisel:andesite_solid_bricks",
+      "name": "andesite_solid_bricks"
+    },
+    {
+      "block": "chisel:andesite_triple_bricks",
+      "name": "andesite_triple_bricks"
+    },
+    {
+      "block": "chisel:andesite_bricks_vertical",
+      "name": "andesite_bricks_vertical"
     },
     {
       "block": "chisel:andesite_chaotic_bricks",
@@ -33,6 +85,14 @@
       "name": "andesite_chaotic_small"
     },
     {
+      "block": "chisel:andesite_checker",
+      "name": "andesite_checker"
+    },
+    {
+      "block": "chisel:andesite_checker_small",
+      "name": "andesite_checker_small"
+    },
+    {
       "block": "chisel:andesite_circular",
       "model_type": "connected",
       "name": "andesite_circular"
@@ -40,10 +100,6 @@
     {
       "block": "chisel:andesite_cracked",
       "name": "andesite_cracked"
-    },
-    {
-      "block": "chisel:andesite_cracked_bricks",
-      "name": "andesite_cracked_bricks"
     },
     {
       "block": "chisel:andesite_cuts",
@@ -56,17 +112,17 @@
       "name": "andesite_dent"
     },
     {
-      "block": "chisel:andesite_encased_bricks",
-      "model_type": "connected",
-      "name": "andesite_encased_bricks"
-    },
-    {
       "block": "chisel:andesite_french_1",
       "name": "andesite_french_1"
     },
     {
       "block": "chisel:andesite_french_2",
       "name": "andesite_french_2"
+    },
+    {
+      "block": "chisel:andesite_indent",
+      "model_type": "connected",
+      "name": "andesite_indent"
     },
     {
       "block": "chisel:andesite_jellybean",
@@ -76,6 +132,29 @@
     {
       "block": "chisel:andesite_layers",
       "name": "andesite_layers"
+    },
+    {
+      "block": "chisel:andesite_layers_connected",
+      "model_type": "connected",
+      "name": "andesite_layers_connected"
+    },
+    {
+      "block": "chisel:andesite_line_horizontal",
+      "name": "andesite_line_horizontal"
+    },
+    {
+      "block": "chisel:andesite_line_vertical",
+      "name": "andesite_line_vertical"
+    },
+    {
+      "block": "chisel:andesite_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "andesite_meander_horizontal"
+    },
+    {
+      "block": "chisel:andesite_meander_vertical",
+      "model_type": "ctmv",
+      "name": "andesite_meander_vertical"
     },
     {
       "block": "chisel:andesite_mosaic",
@@ -96,8 +175,125 @@
       "name": "andesite_pillar"
     },
     {
+      "block": "chisel:andesite_pillar_basic",
+      "model_type": "ctmv",
+      "name": "andesite_pillar_basic"
+    },
+    {
+      "block": "chisel:andesite_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "andesite_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:andesite_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "andesite_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:andesite_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "andesite_pillar_basic_round"
+    },
+    {
+      "block": "chisel:andesite_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "andesite_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:andesite_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "andesite_pillar_classic"
+    },
+    {
+      "block": "chisel:andesite_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "andesite_pillar_classic_large"
+    },
+    {
+      "block": "chisel:andesite_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "andesite_pillar_ionic"
+    },
+    {
+      "block": "chisel:andesite_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "andesite_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:andesite_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "andesite_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:andesite_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "andesite_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:andesite_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "andesite_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:andesite_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "andesite_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:andesite_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "andesite_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:andesite_pillar_meander",
+      "model_type": "ctmv",
+      "name": "andesite_pillar_meander"
+    },
+    {
+      "block": "chisel:andesite_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "andesite_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:andesite_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "andesite_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:andesite_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "andesite_pillar_meander_round"
+    },
+    {
+      "block": "chisel:andesite_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "andesite_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:andesite_plate",
+      "name": "andesite_plate"
+    },
+    {
+      "block": "chisel:andesite_plate_connected",
+      "model_type": "connected",
+      "name": "andesite_plate_connected"
+    },
+    {
+      "block": "chisel:andesite_polished",
+      "name": "andesite_polished"
+    },
+    {
+      "block": "chisel:andesite_polished_encased",
+      "model_type": "connected",
+      "name": "andesite_polished_encased"
+    },
+    {
       "block": "chisel:andesite_prism",
       "name": "andesite_prism"
+    },
+    {
+      "block": "chisel:andesite_raw",
+      "name": "andesite_raw"
     },
     {
       "block": "chisel:andesite_road",
@@ -109,16 +305,8 @@
       "name": "andesite_slanted"
     },
     {
-      "block": "chisel:andesite_small_bricks",
-      "name": "andesite_small_bricks"
-    },
-    {
-      "block": "chisel:andesite_soft_bricks",
-      "name": "andesite_soft_bricks"
-    },
-    {
-      "block": "chisel:andesite_solid_bricks",
-      "name": "andesite_solid_bricks"
+      "block": "chisel:andesite_tiles_medium",
+      "name": "andesite_tiles_medium"
     },
     {
       "block": "chisel:andesite_tiles_large",
@@ -126,16 +314,8 @@
       "name": "andesite_tiles_large"
     },
     {
-      "block": "chisel:andesite_tiles_medium",
-      "name": "andesite_tiles_medium"
-    },
-    {
       "block": "chisel:andesite_tiles_small",
       "name": "andesite_tiles_small"
-    },
-    {
-      "block": "chisel:andesite_triple_bricks",
-      "name": "andesite_triple_bricks"
     },
     {
       "block": "chisel:andesite_twisted",
@@ -149,8 +329,215 @@
     },
     {
       "block": "chisel:andesite_zag",
-      "model_type": "ar",
+      "model_type": "v4",
       "name": "andesite_zag"
+    },
+    {
+      "block": "chisel:andesite_crate",
+      "model_type": "connected",
+      "name": "andesite_crate"
+    },
+    {
+      "block": "chisel:andesite_herringbone",
+      "name": "andesite_herringbone"
+    },
+    {
+      "block": "chisel:andesite_herringbone_encased",
+      "model_type": "connected",
+      "name": "andesite_herringbone_encased"
+    },
+    {
+      "block": "chisel:andesite_medallion",
+      "name": "andesite_medallion"
+    },
+    {
+      "block": "chisel:andesite_medallion_encased",
+      "model_type": "connected",
+      "name": "andesite_medallion_encased"
+    },
+    {
+      "block": "chisel:andesite_dots",
+      "name": "andesite_dots"
+    },
+    {
+      "block": "chisel:andesite_dots_encased",
+      "model_type": "connected",
+      "name": "andesite_dots_encased"
+    },
+    {
+      "block": "chisel:andesite_heart",
+      "name": "andesite_heart"
+    },
+    {
+      "block": "chisel:andesite_star",
+      "name": "andesite_star"
+    },
+    {
+      "block": "chisel:andesite_plating",
+      "name": "andesite_plating"
+    },
+    {
+      "block": "chisel:andesite_lodestone",
+      "name": "andesite_lodestone"
+    },
+    {
+      "block": "chisel:andesite_lodestone_connected",
+      "model_type": "connected",
+      "name": "andesite_lodestone_connected"
+    },
+    {
+      "block": "chisel:andesite_plank",
+      "name": "andesite_plank"
+    },
+    {
+      "block": "chisel:andesite_plank_connected",
+      "model_type": "connected",
+      "name": "andesite_plank_connected"
+    },
+    {
+      "block": "chisel:andesite_frame",
+      "name": "andesite_frame"
+    },
+    {
+      "block": "chisel:andesite_panel_1",
+      "name": "andesite_panel_1"
+    },
+    {
+      "block": "chisel:andesite_panel_2",
+      "name": "andesite_panel_2"
+    },
+    {
+      "block": "chisel:andesite_panel_3",
+      "name": "andesite_panel_3"
+    },
+    {
+      "block": "chisel:andesite_skull_creeper",
+      "name": "andesite_skull_creeper"
+    },
+    {
+      "block": "chisel:andesite_skull_skeleton",
+      "name": "andesite_skull_skeleton"
+    },
+    {
+      "block": "chisel:andesite_stripes",
+      "name": "andesite_stripes"
+    },
+    {
+      "block": "chisel:andesite_stripes_encased",
+      "model_type": "connected",
+      "name": "andesite_stripes_encased"
+    },
+    {
+      "block": "chisel:andesite_chisel_1",
+      "name": "andesite_chisel_1"
+    },
+    {
+      "block": "chisel:andesite_chisel_2",
+      "name": "andesite_chisel_2"
+    },
+    {
+      "block": "chisel:andesite_chisel_3",
+      "name": "andesite_chisel_3"
+    },
+    {
+      "block": "chisel:andesite_chisel_4",
+      "name": "andesite_chisel_4"
+    },
+    {
+      "block": "chisel:andesite_chisel_5",
+      "name": "andesite_chisel_5"
+    },
+    {
+      "block": "chisel:andesite_chisel_6",
+      "name": "andesite_chisel_6"
+    },
+    {
+      "block": "chisel:andesite_facet",
+      "name": "andesite_facet"
+    },
+    {
+      "block": "chisel:andesite_facet_small",
+      "name": "andesite_facet_small"
+    },
+    {
+      "block": "chisel:andesite_facet_small_encased",
+      "model_type": "connected",
+      "name": "andesite_facet_small_encased"
+    },
+    {
+      "block": "chisel:andesite_shiny",
+      "name": "andesite_shiny"
+    },
+    {
+      "block": "chisel:andesite_shiny_connected",
+      "model_type": "connected",
+      "name": "andesite_shiny_connected"
+    },
+    {
+      "block": "chisel:andesite_gem",
+      "name": "andesite_gem"
+    },
+    {
+      "block": "chisel:andesite_gem_1",
+      "name": "andesite_gem_1"
+    },
+    {
+      "block": "chisel:andesite_gem_1_connected",
+      "model_type": "connected",
+      "name": "andesite_gem_1_connected"
+    },
+    {
+      "block": "chisel:andesite_gem_2",
+      "name": "andesite_gem_2"
+    },
+    {
+      "block": "chisel:andesite_gem_2_connected",
+      "model_type": "connected",
+      "name": "andesite_gem_2_connected"
+    },
+    {
+      "block": "chisel:andesite_gem_3",
+      "name": "andesite_gem_3"
+    },
+    {
+      "block": "chisel:andesite_gem_3_connected",
+      "model_type": "connected",
+      "name": "andesite_gem_3_connected"
+    },
+    {
+      "block": "chisel:andesite_bricks_square",
+      "name": "andesite_bricks_square"
+    },
+    {
+      "block": "chisel:andesite_slab",
+      "name": "andesite_slab"
+    },
+    {
+      "block": "chisel:andesite_scaffold",
+      "name": "andesite_scaffold"
+    },
+    {
+      "block": "chisel:andesite_scaffold_encased",
+      "model_type": "connected",
+      "name": "andesite_scaffold_encased"
+    },
+    {
+      "block": "chisel:andesite_tiles_inlayed",
+      "name": "andesite_tiles_inlayed"
+    },
+    {
+      "block": "chisel:andesite_waves",
+      "model_type": "multiblock_2x2",
+      "name": "andesite_waves"
+    },
+    {
+      "block": "chisel:andesite_parquet",
+      "name": "andesite_parquet"
+    },
+    {
+      "block": "chisel:andesite_parquet_encased",
+      "model_type": "connected",
+      "name": "andesite_parquet_encased"
     }
   ]
 }

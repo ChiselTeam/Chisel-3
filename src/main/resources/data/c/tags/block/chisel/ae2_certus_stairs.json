@@ -1,0 +1,9 @@
+{
+  "values": [
+    {"id": "ae2:chiseled_quartz_stairs", "required": false},
+    {"id": "ae2:cut_quartz_stairs", "required": false},
+    {"id": "ae2:quartz_brick_stairs", "required": false},
+    {"id": "ae2:quartz_pillar_stairs", "required": false},
+    {"id": "ae2:quartz_stairs", "required": false}
+  ]
+}

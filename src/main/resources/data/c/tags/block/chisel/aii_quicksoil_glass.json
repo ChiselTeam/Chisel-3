@@ -1,0 +1,7 @@
+{
+  "values": [
+    {"id": "aether_ii:quicksoil_glass", "required": false},
+    {"id": "aether_ii:gridded_quicksoil_glass", "required": false},
+    {"id": "aether_ii:tiled_quicksoil_glass", "required": false}
+  ]
+}

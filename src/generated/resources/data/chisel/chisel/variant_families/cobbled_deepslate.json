@@ -1,0 +1,555 @@
+{
+  "family_name": "cobbled_deepslate",
+  "tag": "c:chisel/cobbled_deepslate",
+  "variants": [
+    {
+      "block": "minecraft:cobbled_deepslate",
+      "name": "block.minecraft.cobbled_deepslate"
+    },
+    {
+      "block": "minecraft:chiseled_deepslate",
+      "name": "block.minecraft.chiseled_deepslate"
+    },
+    {
+      "block": "minecraft:polished_deepslate",
+      "name": "block.minecraft.polished_deepslate"
+    },
+    {
+      "block": "minecraft:deepslate_bricks",
+      "name": "block.minecraft.deepslate_bricks"
+    },
+    {
+      "block": "minecraft:deepslate_tiles",
+      "name": "block.minecraft.deepslate_tiles"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_array",
+      "model_type": "multiblock_2x2",
+      "name": "cobbled_deepslate_array"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_border_square",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_border_square"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_braid",
+      "name": "cobbled_deepslate_braid"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_braid_encased",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_braid_encased"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_bricks_cracked",
+      "name": "cobbled_deepslate_bricks_cracked"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_bricks_encased",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_bricks_encased"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_bricks_indent",
+      "name": "cobbled_deepslate_bricks_indent"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_bricks_inlayed",
+      "name": "cobbled_deepslate_bricks_inlayed"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "cobbled_deepslate_bricks_large"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_bricks_small",
+      "name": "cobbled_deepslate_bricks_small"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_bricks_soft",
+      "name": "cobbled_deepslate_bricks_soft"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_bricks_solid",
+      "name": "cobbled_deepslate_bricks_solid"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_bricks_triple",
+      "name": "cobbled_deepslate_bricks_triple"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_bricks_vertical",
+      "name": "cobbled_deepslate_bricks_vertical"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "cobbled_deepslate_chaotic"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_chaotic_medium",
+      "name": "cobbled_deepslate_chaotic_medium"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_chaotic_small",
+      "name": "cobbled_deepslate_chaotic_small"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_checker",
+      "name": "cobbled_deepslate_checker"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_checker_small",
+      "name": "cobbled_deepslate_checker_small"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_circular",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_circular"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_cobble",
+      "name": "cobbled_deepslate_cobble"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "cobbled_deepslate_cuts"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_dent",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_dent"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_french_1",
+      "name": "cobbled_deepslate_french_1"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_french_2",
+      "name": "cobbled_deepslate_french_2"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_indent",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_indent"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "cobbled_deepslate_jellybean"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_layers",
+      "name": "cobbled_deepslate_layers"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_layers_connected",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_layers_connected"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_line_horizontal",
+      "name": "cobbled_deepslate_line_horizontal"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_line_vertical",
+      "name": "cobbled_deepslate_line_vertical"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "cobbled_deepslate_meander_horizontal"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_meander_vertical",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_meander_vertical"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_mosaic",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_mosaic"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_ornate_small",
+      "name": "cobbled_deepslate_ornate_small"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_panel",
+      "name": "cobbled_deepslate_panel"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar",
+      "model_type": "top_bottom_side",
+      "name": "cobbled_deepslate_pillar"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_basic",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_pillar_basic"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_pillar_basic_round"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "cobbled_deepslate_pillar_classic"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "cobbled_deepslate_pillar_classic_large"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_pillar_ionic"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_meander",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_pillar_meander"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_pillar_meander_round"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "cobbled_deepslate_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_plate",
+      "name": "cobbled_deepslate_plate"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_plate_connected",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_plate_connected"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_polished",
+      "name": "cobbled_deepslate_polished"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_polished_encased",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_polished_encased"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_prism",
+      "name": "cobbled_deepslate_prism"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_raw",
+      "name": "cobbled_deepslate_raw"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_road",
+      "name": "cobbled_deepslate_road"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "cobbled_deepslate_slanted"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_tiles",
+      "name": "cobbled_deepslate_tiles"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_tiles_large",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_tiles_large"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_tiles_small",
+      "name": "cobbled_deepslate_tiles_small"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_twisted",
+      "model_type": "top_bottom_side",
+      "name": "cobbled_deepslate_twisted"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_weaver",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_weaver"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_zag",
+      "model_type": "v4",
+      "name": "cobbled_deepslate_zag"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_crate",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_crate"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_herringbone",
+      "name": "cobbled_deepslate_herringbone"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_herringbone_encased",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_herringbone_encased"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_medallion",
+      "name": "cobbled_deepslate_medallion"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_medallion_encased",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_medallion_encased"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_dots",
+      "name": "cobbled_deepslate_dots"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_dots_encased",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_dots_encased"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_heart",
+      "name": "cobbled_deepslate_heart"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_star",
+      "name": "cobbled_deepslate_star"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_plating",
+      "name": "cobbled_deepslate_plating"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_lodestone",
+      "name": "cobbled_deepslate_lodestone"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_lodestone_connected",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_lodestone_connected"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_plank",
+      "name": "cobbled_deepslate_plank"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_plank_connected",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_plank_connected"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_frame",
+      "name": "cobbled_deepslate_frame"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_panel_1",
+      "name": "cobbled_deepslate_panel_1"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_panel_2",
+      "name": "cobbled_deepslate_panel_2"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_panel_3",
+      "name": "cobbled_deepslate_panel_3"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_skull_creeper",
+      "name": "cobbled_deepslate_skull_creeper"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_skull_skeleton",
+      "name": "cobbled_deepslate_skull_skeleton"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_stripes",
+      "name": "cobbled_deepslate_stripes"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_stripes_encased",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_stripes_encased"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_chisel_1",
+      "name": "cobbled_deepslate_chisel_1"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_chisel_2",
+      "name": "cobbled_deepslate_chisel_2"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_chisel_3",
+      "name": "cobbled_deepslate_chisel_3"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_chisel_4",
+      "name": "cobbled_deepslate_chisel_4"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_chisel_5",
+      "name": "cobbled_deepslate_chisel_5"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_chisel_6",
+      "name": "cobbled_deepslate_chisel_6"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_facet",
+      "name": "cobbled_deepslate_facet"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_facet_small",
+      "name": "cobbled_deepslate_facet_small"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_facet_small_encased",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_facet_small_encased"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_shiny",
+      "name": "cobbled_deepslate_shiny"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_shiny_connected",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_shiny_connected"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_gem",
+      "name": "cobbled_deepslate_gem"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_gem_1",
+      "name": "cobbled_deepslate_gem_1"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_gem_1_connected",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_gem_1_connected"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_gem_2",
+      "name": "cobbled_deepslate_gem_2"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_gem_2_connected",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_gem_2_connected"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_gem_3",
+      "name": "cobbled_deepslate_gem_3"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_gem_3_connected",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_gem_3_connected"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_bricks_square",
+      "name": "cobbled_deepslate_bricks_square"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_slab",
+      "name": "cobbled_deepslate_slab"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_scaffold",
+      "name": "cobbled_deepslate_scaffold"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_scaffold_encased",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_scaffold_encased"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_tiles_inlayed",
+      "name": "cobbled_deepslate_tiles_inlayed"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_waves",
+      "model_type": "multiblock_2x2",
+      "name": "cobbled_deepslate_waves"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_parquet",
+      "name": "cobbled_deepslate_parquet"
+    },
+    {
+      "block": "chisel:cobbled_deepslate_parquet_encased",
+      "model_type": "connected",
+      "name": "cobbled_deepslate_parquet_encased"
+    }
+  ]
+}

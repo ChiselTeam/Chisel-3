@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/technical/technical_engineering_3",
-    "overlay_connected": "chisel:block/technical/technical_engineering_3-ctm",
-    "overlay_texture": "chisel:block/technical/technical_engineering_3",
-    "particle": "chisel:block/technical/technical_engineering_3"
+    "particle": "chisel:block/technical/technical_engineering_3",
+    "standard_corner": "chisel:block/technical/technical_engineering_3-ctm_corner",
+    "standard_cornerless": "chisel:block/technical/technical_engineering_3-ctm_cornerless",
+    "standard_horizontal": "chisel:block/technical/technical_engineering_3-ctm_horizontal",
+    "standard_none": "chisel:block/technical/technical_engineering_3",
+    "standard_vertical": "chisel:block/technical/technical_engineering_3-ctm_vertical"
   }
 }

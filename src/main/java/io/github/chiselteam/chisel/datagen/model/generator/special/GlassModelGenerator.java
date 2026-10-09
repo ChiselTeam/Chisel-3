@@ -2,7 +2,6 @@ package io.github.chiselteam.chisel.datagen.model.generator.special;
 
 import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.datagen.model.ChiselModelTemplates;
-import io.github.chiselteam.chisel.datagen.model.ChiselTextureSlots;
 import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateDefinitionGenerator;
@@ -20,10 +19,8 @@ public class GlassModelGenerator extends VariantModelGenerator {
 
     @Override
     public TextureMapping getTextureMapping() {
-        return new TextureMapping()
-                .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
-                .put(ChiselTextureSlots.CTM_OVERLAY, VariantTextures.get(variant))
-                .put(ChiselTextureSlots.CTM_OVERLAY_CONNECTED, VariantTextures.get(variant, "ctm"));
+        return VariantTextures.standard(variant)
+                .put(TextureSlot.PARTICLE, VariantTextures.get(variant));
     }
 
     @Override

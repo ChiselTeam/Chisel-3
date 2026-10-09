@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/grimstone/grimstone_platform_tiles-bottom",
-    "side": "chisel:block/grimstone/grimstone_platform_tiles-side",
+    "bottom": "chisel:block/grimstone/grimstone_raw",
+    "side": "chisel:block/grimstone/grimstone_platform-side",
     "top": "chisel:block/grimstone/grimstone_platform_tiles-top"
   }
 }

@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "aether_ii:agiosite_brick_wall", "required": false},
+    {"id": "aether_ii:agiosite_wall", "required": false}
+  ]
+}

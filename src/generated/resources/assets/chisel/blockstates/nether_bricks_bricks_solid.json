@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/nether_bricks_bricks_solid"
+    }
+  }
+}

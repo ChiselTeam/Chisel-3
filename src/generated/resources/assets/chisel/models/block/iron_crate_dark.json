@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/iron/iron_crate_dark-bottom",
+    "bottom": "chisel:block/gold/gold_crate_dark-bottom",
     "side": "chisel:block/iron/iron_crate_dark-side",
     "top": "chisel:block/iron/iron_crate_dark-top"
   }

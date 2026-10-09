@@ -1,0 +1,11 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/ice_gem_3_connected",
+  "variant": {
+    "block": "chisel:ice_gem_3_connected",
+    "kind": "standard"
+  }
+}

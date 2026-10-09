@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "minecraft:tinted_glass", "required": false},
+    {"id": "xycraft_world:glass_viewer_dark", "required": false}
+  ]
+}

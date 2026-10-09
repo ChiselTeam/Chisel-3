@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/sculk/sculk_gem_3_connected",
+    "particle": "chisel:block/sculk/sculk_gem_3_connected",
+    "standard_corner": "chisel:block/sculk/sculk_gem_3_connected-ctm_corner",
+    "standard_cornerless": "chisel:block/sculk/sculk_gem_3_connected-ctm_cornerless",
+    "standard_horizontal": "chisel:block/sculk/sculk_gem_3_connected-ctm_horizontal",
+    "standard_none": "chisel:block/sculk/sculk_gem_3_connected",
+    "standard_vertical": "chisel:block/sculk/sculk_gem_3_connected-ctm_vertical"
+  }
+}

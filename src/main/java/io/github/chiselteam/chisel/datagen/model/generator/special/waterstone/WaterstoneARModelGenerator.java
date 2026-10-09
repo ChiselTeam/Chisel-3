@@ -10,21 +10,18 @@ import io.github.chiselteam.chisel.datagen.model.generator.ctm.ARModelGenerator;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
-import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.core.Direction;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
-import net.minecraft.world.level.material.Fluids;
 import org.joml.Vector3f;
 
 public class WaterstoneARModelGenerator extends ARModelGenerator {
     @Override
     public TextureMapping getTextureMapping() {
-        return (new TextureMapping())
+        return VariantTextures.ctm(variant, textures -> textures.arTextures(VariantTextures.get(variant, "ar_variant").sprite()))
                 .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
                 .put(TextureSlot.ALL, VariantTextures.get(variant))
-                .put(ChiselTextureSlots.CTM_OVERLAY_2X2, VariantTextures.get(variant, "ctm"))
-                .put(TextureSlot.LAYER0, new Material(BuiltInRegistries.FLUID.getKey(Fluids.WATER.getSource()).withPrefix("block/").withSuffix("_still")))
+                .putForced(ChiselTextureSlots.CTM_BASE, VariantTextures.get(variant, "bg"))
+                .put(TextureSlot.LAYER0, VariantTextures.get(variant, "bg"))
                 .put(TextureSlot.LAYER1, VariantTextures.get(variant));
     }
 
@@ -34,7 +31,7 @@ public class WaterstoneARModelGenerator extends ARModelGenerator {
         this.blockModels = blockModels;
         
         Identifier modelLocation = ChiselModelTemplates.CTM_MULTIBLOCK_2x2_WATER.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
-        blockModels.registerSimpleItemModel(getBlock(), modelLocation);
+        WaterstoneModelGenerator.registerItemModel(blockModels, getBlock(), modelLocation);
         blockModels.blockStateOutput.accept(ConnectedTextureBlockStateDefinitionGenerator.dispatch(variant.getBlock(), new ConnectedTextureBlockStateModelBuilder()
                 .modelLocation(modelLocation)
                 .renderOverlayOnAllFaces(true)

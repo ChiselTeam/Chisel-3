@@ -1,0 +1,23 @@
+{
+  "values": [
+    {"id": "colors:yellow_asteroid_brick_wall", "required": false},
+    {"id": "colors:yellow_asteroid_tile_wall", "required": false},
+    {"id": "colors:yellow_asteroid_wall", "required": false},
+    {"id": "colors:yellow_braid_wall", "required": false},
+    {"id": "colors:yellow_brick_wall", "required": false},
+    {"id": "colors:yellow_chaotic_wall", "required": false},
+    {"id": "colors:yellow_cobblestone_brick_wall", "required": false},
+    {"id": "colors:yellow_cobblestone_wall", "required": false},
+    {"id": "colors:yellow_cracked_stone_brick_wall", "required": false},
+    {"id": "colors:yellow_encased_wall", "required": false},
+    {"id": "colors:yellow_marble_brick_wall", "required": false},
+    {"id": "colors:yellow_marble_wall", "required": false},
+    {"id": "colors:yellow_mosaic_wall", "required": false},
+    {"id": "colors:yellow_polished_wall", "required": false},
+    {"id": "colors:yellow_road_wall", "required": false},
+    {"id": "colors:yellow_sandstone_wall", "required": false},
+    {"id": "colors:yellow_stone_brick_wall", "required": false},
+    {"id": "colors:yellow_tile_wall", "required": false},
+    {"id": "colors:yellow_triple_wall", "required": false}
+  ]
+}

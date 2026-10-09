@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "xycraft_world:glass_viewer_glowing", "required": false},
+    {"id": "xycraft_world:glass_viewer_glowing_clear", "required": false}
+  ]
+}

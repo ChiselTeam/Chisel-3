@@ -2,14 +2,13 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/ae2_certus/certus_pillar_meander-side",
-    "bottom": "chisel:block/ae2_certus/certus_pillar_meander-bottom",
-    "overlay_bottom": "chisel:block/ae2_certus/certus_pillar_meander-bottom",
-    "overlay_side_connected": "chisel:block/ae2_certus/certus_pillar_meander-side-ctm",
-    "overlay_texture": "chisel:block/ae2_certus/certus_pillar_meander-side",
-    "overlay_top": "chisel:block/ae2_certus/certus_pillar_meander-top",
-    "overlay_vertical": "chisel:block/ae2_certus/certus_pillar_meander-side-ctm",
+    "bottom": "chisel:block/ae2_certus/certus_pillar_basic-top",
     "particle": "chisel:block/ae2_certus/certus_pillar_meander-side",
     "side": "chisel:block/ae2_certus/certus_pillar_meander-side",
-    "top": "chisel:block/ae2_certus/certus_pillar_meander-top"
+    "top": "chisel:block/ae2_certus/certus_pillar_basic-top",
+    "vertical_both": "chisel:block/ae2_certus/certus_pillar_ionic-vertical_both",
+    "vertical_bottom": "chisel:block/ae2_certus/certus_pillar_meander-vertical_bottom",
+    "vertical_none": "chisel:block/ae2_certus/certus_pillar_meander-side",
+    "vertical_top": "chisel:block/ae2_certus/certus_pillar_meander-vertical_top"
   }
 }

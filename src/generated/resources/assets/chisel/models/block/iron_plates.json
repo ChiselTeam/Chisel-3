@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
     "bottom": "chisel:block/iron/iron_plates-bottom",
-    "side": "chisel:block/iron/iron_plates-side",
+    "side": "chisel:block/iron/iron_plates-top",
     "top": "chisel:block/iron/iron_plates-top"
   }
 }

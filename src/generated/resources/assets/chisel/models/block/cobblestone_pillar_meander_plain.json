@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/cobblestone/cobblestone_pillar_meander-side",
+    "bottom": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+    "particle": "chisel:block/cobblestone/cobblestone_pillar_meander-side",
+    "side": "chisel:block/cobblestone/cobblestone_pillar_meander-side",
+    "top": "chisel:block/cobblestone/cobblestone_pillar_basic-bottom",
+    "vertical_both": "chisel:block/cobblestone/cobblestone_pillar_basic_plain-vertical_both",
+    "vertical_bottom": "chisel:block/cobblestone/cobblestone_pillar_meander_plain-vertical_bottom",
+    "vertical_none": "chisel:block/cobblestone/cobblestone_pillar_meander-side",
+    "vertical_top": "chisel:block/cobblestone/cobblestone_pillar_meander_plain-vertical_top"
+  }
+}

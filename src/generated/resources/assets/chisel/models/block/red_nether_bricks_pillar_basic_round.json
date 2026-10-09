@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_basic_round-side",
+    "bottom": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_basic_round-bottom",
+    "particle": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_basic_round-side",
+    "side": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_basic_round-side",
+    "top": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_basic_round-top",
+    "vertical_both": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_basic_round-vertical_both",
+    "vertical_bottom": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_basic_round-vertical_bottom",
+    "vertical_none": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_basic_round-side",
+    "vertical_top": "chisel:block/red_nether_bricks/red_nether_bricks_pillar_basic_round-vertical_top"
+  }
+}

@@ -2,6 +2,6 @@
   "parent": "minecraft:block/template_glass_pane_post",
   "textures": {
     "edge": "chisel:block/stained_glass_pane_pink/stained_glass_pane_pink_borderless-top",
-    "pane": "chisel:block/stained_glass_pane_pink/stained_glass_pane_pink_borderless"
+    "pane": "chisel:block/stained_glass_pink/stained_glass_pink_borderless"
   }
 }

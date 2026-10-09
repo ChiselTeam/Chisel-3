@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/stained_glass_gray/stained_glass_gray_scaffold_right",
+    "standard_corner": "chisel:block/stained_glass_gray/stained_glass_gray_scaffold_right-ctm_corner",
+    "standard_cornerless": "chisel:block/stained_glass_gray/stained_glass_gray_scaffold_right-ctm_cornerless",
+    "standard_horizontal": "chisel:block/stained_glass_gray/stained_glass_gray_scaffold_right-ctm_horizontal",
+    "standard_none": "chisel:block/stained_glass_gray/stained_glass_gray_scaffold_right",
+    "standard_vertical": "chisel:block/stained_glass_gray/stained_glass_gray_scaffold_right-ctm_vertical"
+  }
+}

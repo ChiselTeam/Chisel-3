@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/concrete_brown/concrete_brown_crate",
-    "overlay_connected": "chisel:block/concrete_brown/concrete_brown_crate-ctm",
-    "overlay_texture": "chisel:block/concrete_brown/concrete_brown_crate",
-    "particle": "chisel:block/concrete_brown/concrete_brown_crate"
+    "particle": "chisel:block/concrete_brown/concrete_brown_crate",
+    "standard_corner": "chisel:block/concrete_brown/concrete_brown_crate-ctm_corner",
+    "standard_cornerless": "chisel:block/concrete_brown/concrete_brown_crate-ctm_cornerless",
+    "standard_horizontal": "chisel:block/concrete_brown/concrete_brown_crate-ctm_horizontal",
+    "standard_none": "chisel:block/concrete_brown/concrete_brown_crate",
+    "standard_vertical": "chisel:block/concrete_brown/concrete_brown_crate-ctm_vertical"
   }
 }

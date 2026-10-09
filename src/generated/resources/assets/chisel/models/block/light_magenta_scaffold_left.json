@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/light_magenta/light_magenta_scaffold_left",
+    "particle": "chisel:block/light_magenta/light_magenta_scaffold_left",
+    "standard_corner": "chisel:block/light_magenta/light_magenta_scaffold_left-ctm_corner",
+    "standard_cornerless": "chisel:block/light_magenta/light_magenta_scaffold_left-ctm_cornerless",
+    "standard_horizontal": "chisel:block/light_magenta/light_magenta_scaffold_left-ctm_horizontal",
+    "standard_none": "chisel:block/light_magenta/light_magenta_scaffold_left",
+    "standard_vertical": "chisel:block/light_magenta/light_magenta_scaffold_left-ctm_vertical"
+  }
+}

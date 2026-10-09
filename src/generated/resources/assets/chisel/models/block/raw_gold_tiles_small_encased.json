@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/raw_gold/raw_gold_tiles_small_encased",
+    "particle": "chisel:block/raw_gold/raw_gold_tiles_small_encased",
+    "standard_corner": "chisel:block/raw_gold/raw_gold_tiles_small_encased-ctm_corner",
+    "standard_cornerless": "chisel:block/raw_gold/raw_gold_tiles_small_encased-ctm_cornerless",
+    "standard_horizontal": "chisel:block/raw_gold/raw_gold_tiles_small_encased-ctm_horizontal",
+    "standard_none": "chisel:block/raw_gold/raw_gold_tiles_small_encased",
+    "standard_vertical": "chisel:block/raw_gold/raw_gold_tiles_small_encased-ctm_vertical"
+  }
+}

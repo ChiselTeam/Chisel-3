@@ -1,12 +1,15 @@
 {
   "parent": "chisel:block/cube_multi_pass_no_shade",
   "textures": {
-    "all": "chisel:block/antiblock/antiblock_orange",
-    "base_texture": "chisel:block/antiblock/antiblock_orange-bg",
-    "layer0": "chisel:block/antiblock/antiblock_orange-bg",
-    "layer1": "chisel:block/antiblock/antiblock_orange",
-    "overlay_connected": "chisel:block/antiblock/antiblock_orange-ctm",
-    "overlay_texture": "chisel:block/antiblock/antiblock_orange",
-    "particle": "chisel:block/antiblock/antiblock_orange"
+    "all": "chisel:block/antiblock/antiblock_overlay",
+    "base_texture": "chisel:block/antiblock/antiblock_orange",
+    "layer0": "chisel:block/antiblock/antiblock_orange",
+    "layer1": "chisel:block/antiblock/antiblock_overlay",
+    "particle": "chisel:block/antiblock/antiblock_overlay",
+    "standard_corner": "chisel:block/antiblock/antiblock_overlay-ctm_corner",
+    "standard_cornerless": "chisel:block/antiblock/antiblock_overlay-ctm_cornerless",
+    "standard_horizontal": "chisel:block/antiblock/antiblock_overlay-ctm_horizontal",
+    "standard_none": "chisel:block/antiblock/antiblock_overlay",
+    "standard_vertical": "chisel:block/antiblock/antiblock_overlay-ctm_vertical"
   }
 }

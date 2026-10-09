@@ -52,6 +52,9 @@ public class ChiselRecipeCategory extends AbstractRecipeCategory<ChiselRecipe> {
     public void setRecipe(@NonNull IRecipeLayoutBuilder builder, @NonNull ChiselRecipe recipe, @NonNull IFocusGroup focuses) {
         VariantFamily family = recipe.family();
         List<Variant> variants = family.getAllVariants();
+
+        var inputs = builder.addInvisibleIngredients(RecipeIngredientRole.INPUT);
+        variants.forEach(variant -> inputs.add(variant.getBlock()));
         variants.forEach(variant -> builder.addOutputSlot().add(variant.getBlock()));
     }
 }

@@ -7,29 +7,65 @@
       "name": "block.minecraft.deepslate"
     },
     {
-      "block": "minecraft:chiseled_deepslate",
-      "name": "block.minecraft.chiseled_deepslate"
-    },
-    {
-      "block": "minecraft:polished_deepslate",
-      "name": "block.minecraft.polished_deepslate"
-    },
-    {
-      "block": "minecraft:deepslate_bricks",
-      "name": "block.minecraft.deepslate_bricks"
-    },
-    {
-      "block": "minecraft:deepslate_tiles",
-      "name": "block.minecraft.deepslate_tiles"
-    },
-    {
       "block": "chisel:deepslate_array",
       "model_type": "multiblock_2x2",
       "name": "deepslate_array"
     },
     {
+      "block": "chisel:deepslate_border_square",
+      "model_type": "connected",
+      "name": "deepslate_border_square"
+    },
+    {
       "block": "chisel:deepslate_braid",
       "name": "deepslate_braid"
+    },
+    {
+      "block": "chisel:deepslate_braid_encased",
+      "model_type": "connected",
+      "name": "deepslate_braid_encased"
+    },
+    {
+      "block": "chisel:deepslate_cracked_bricks",
+      "name": "deepslate_cracked_bricks"
+    },
+    {
+      "block": "chisel:deepslate_encased_bricks",
+      "model_type": "connected",
+      "name": "deepslate_encased_bricks"
+    },
+    {
+      "block": "chisel:deepslate_bricks_indent",
+      "name": "deepslate_bricks_indent"
+    },
+    {
+      "block": "chisel:deepslate_bricks_inlayed",
+      "name": "deepslate_bricks_inlayed"
+    },
+    {
+      "block": "chisel:deepslate_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "deepslate_bricks_large"
+    },
+    {
+      "block": "chisel:deepslate_small_bricks",
+      "name": "deepslate_small_bricks"
+    },
+    {
+      "block": "chisel:deepslate_soft_bricks",
+      "name": "deepslate_soft_bricks"
+    },
+    {
+      "block": "chisel:deepslate_solid_bricks",
+      "name": "deepslate_solid_bricks"
+    },
+    {
+      "block": "chisel:deepslate_triple_bricks",
+      "name": "deepslate_triple_bricks"
+    },
+    {
+      "block": "chisel:deepslate_bricks_vertical",
+      "name": "deepslate_bricks_vertical"
     },
     {
       "block": "chisel:deepslate_chaotic_bricks",
@@ -45,6 +81,14 @@
       "name": "deepslate_chaotic_small"
     },
     {
+      "block": "chisel:deepslate_checker",
+      "name": "deepslate_checker"
+    },
+    {
+      "block": "chisel:deepslate_checker_small",
+      "name": "deepslate_checker_small"
+    },
+    {
       "block": "chisel:deepslate_circular",
       "model_type": "connected",
       "name": "deepslate_circular"
@@ -52,10 +96,6 @@
     {
       "block": "chisel:deepslate_cracked",
       "name": "deepslate_cracked"
-    },
-    {
-      "block": "chisel:deepslate_cracked_bricks",
-      "name": "deepslate_cracked_bricks"
     },
     {
       "block": "chisel:deepslate_cuts",
@@ -68,17 +108,17 @@
       "name": "deepslate_dent"
     },
     {
-      "block": "chisel:deepslate_encased_bricks",
-      "model_type": "connected",
-      "name": "deepslate_encased_bricks"
-    },
-    {
       "block": "chisel:deepslate_french_1",
       "name": "deepslate_french_1"
     },
     {
       "block": "chisel:deepslate_french_2",
       "name": "deepslate_french_2"
+    },
+    {
+      "block": "chisel:deepslate_indent",
+      "model_type": "connected",
+      "name": "deepslate_indent"
     },
     {
       "block": "chisel:deepslate_jellybean",
@@ -88,6 +128,29 @@
     {
       "block": "chisel:deepslate_layers",
       "name": "deepslate_layers"
+    },
+    {
+      "block": "chisel:deepslate_layers_connected",
+      "model_type": "connected",
+      "name": "deepslate_layers_connected"
+    },
+    {
+      "block": "chisel:deepslate_line_horizontal",
+      "name": "deepslate_line_horizontal"
+    },
+    {
+      "block": "chisel:deepslate_line_vertical",
+      "name": "deepslate_line_vertical"
+    },
+    {
+      "block": "chisel:deepslate_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "deepslate_meander_horizontal"
+    },
+    {
+      "block": "chisel:deepslate_meander_vertical",
+      "model_type": "ctmv",
+      "name": "deepslate_meander_vertical"
     },
     {
       "block": "chisel:deepslate_mosaic",
@@ -108,8 +171,125 @@
       "name": "deepslate_pillar"
     },
     {
+      "block": "chisel:deepslate_pillar_basic",
+      "model_type": "ctmv",
+      "name": "deepslate_pillar_basic"
+    },
+    {
+      "block": "chisel:deepslate_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "deepslate_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:deepslate_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "deepslate_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:deepslate_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "deepslate_pillar_basic_round"
+    },
+    {
+      "block": "chisel:deepslate_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "deepslate_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:deepslate_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "deepslate_pillar_classic"
+    },
+    {
+      "block": "chisel:deepslate_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "deepslate_pillar_classic_large"
+    },
+    {
+      "block": "chisel:deepslate_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "deepslate_pillar_ionic"
+    },
+    {
+      "block": "chisel:deepslate_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "deepslate_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:deepslate_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "deepslate_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:deepslate_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "deepslate_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:deepslate_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "deepslate_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:deepslate_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "deepslate_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:deepslate_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "deepslate_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:deepslate_pillar_meander",
+      "model_type": "ctmv",
+      "name": "deepslate_pillar_meander"
+    },
+    {
+      "block": "chisel:deepslate_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "deepslate_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:deepslate_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "deepslate_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:deepslate_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "deepslate_pillar_meander_round"
+    },
+    {
+      "block": "chisel:deepslate_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "deepslate_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:deepslate_plate",
+      "name": "deepslate_plate"
+    },
+    {
+      "block": "chisel:deepslate_plate_connected",
+      "model_type": "connected",
+      "name": "deepslate_plate_connected"
+    },
+    {
+      "block": "chisel:deepslate_polished",
+      "name": "deepslate_polished"
+    },
+    {
+      "block": "chisel:deepslate_polished_encased",
+      "model_type": "connected",
+      "name": "deepslate_polished_encased"
+    },
+    {
       "block": "chisel:deepslate_prism",
       "name": "deepslate_prism"
+    },
+    {
+      "block": "chisel:deepslate_raw",
+      "name": "deepslate_raw"
     },
     {
       "block": "chisel:deepslate_road",
@@ -121,16 +301,8 @@
       "name": "deepslate_slanted"
     },
     {
-      "block": "chisel:deepslate_small_bricks",
-      "name": "deepslate_small_bricks"
-    },
-    {
-      "block": "chisel:deepslate_soft_bricks",
-      "name": "deepslate_soft_bricks"
-    },
-    {
-      "block": "chisel:deepslate_solid_bricks",
-      "name": "deepslate_solid_bricks"
+      "block": "chisel:deepslate_tiles_medium",
+      "name": "deepslate_tiles_medium"
     },
     {
       "block": "chisel:deepslate_tiles_large",
@@ -138,16 +310,8 @@
       "name": "deepslate_tiles_large"
     },
     {
-      "block": "chisel:deepslate_tiles_medium",
-      "name": "deepslate_tiles_medium"
-    },
-    {
       "block": "chisel:deepslate_tiles_small",
       "name": "deepslate_tiles_small"
-    },
-    {
-      "block": "chisel:deepslate_triple_bricks",
-      "name": "deepslate_triple_bricks"
     },
     {
       "block": "chisel:deepslate_twisted",
@@ -161,8 +325,215 @@
     },
     {
       "block": "chisel:deepslate_zag",
-      "model_type": "ar",
+      "model_type": "v4",
       "name": "deepslate_zag"
+    },
+    {
+      "block": "chisel:deepslate_crate",
+      "model_type": "connected",
+      "name": "deepslate_crate"
+    },
+    {
+      "block": "chisel:deepslate_herringbone",
+      "name": "deepslate_herringbone"
+    },
+    {
+      "block": "chisel:deepslate_herringbone_encased",
+      "model_type": "connected",
+      "name": "deepslate_herringbone_encased"
+    },
+    {
+      "block": "chisel:deepslate_medallion",
+      "name": "deepslate_medallion"
+    },
+    {
+      "block": "chisel:deepslate_medallion_encased",
+      "model_type": "connected",
+      "name": "deepslate_medallion_encased"
+    },
+    {
+      "block": "chisel:deepslate_dots",
+      "name": "deepslate_dots"
+    },
+    {
+      "block": "chisel:deepslate_dots_encased",
+      "model_type": "connected",
+      "name": "deepslate_dots_encased"
+    },
+    {
+      "block": "chisel:deepslate_heart",
+      "name": "deepslate_heart"
+    },
+    {
+      "block": "chisel:deepslate_star",
+      "name": "deepslate_star"
+    },
+    {
+      "block": "chisel:deepslate_plating",
+      "name": "deepslate_plating"
+    },
+    {
+      "block": "chisel:deepslate_lodestone",
+      "name": "deepslate_lodestone"
+    },
+    {
+      "block": "chisel:deepslate_lodestone_connected",
+      "model_type": "connected",
+      "name": "deepslate_lodestone_connected"
+    },
+    {
+      "block": "chisel:deepslate_plank",
+      "name": "deepslate_plank"
+    },
+    {
+      "block": "chisel:deepslate_plank_connected",
+      "model_type": "connected",
+      "name": "deepslate_plank_connected"
+    },
+    {
+      "block": "chisel:deepslate_frame",
+      "name": "deepslate_frame"
+    },
+    {
+      "block": "chisel:deepslate_panel_1",
+      "name": "deepslate_panel_1"
+    },
+    {
+      "block": "chisel:deepslate_panel_2",
+      "name": "deepslate_panel_2"
+    },
+    {
+      "block": "chisel:deepslate_panel_3",
+      "name": "deepslate_panel_3"
+    },
+    {
+      "block": "chisel:deepslate_skull_creeper",
+      "name": "deepslate_skull_creeper"
+    },
+    {
+      "block": "chisel:deepslate_skull_skeleton",
+      "name": "deepslate_skull_skeleton"
+    },
+    {
+      "block": "chisel:deepslate_stripes",
+      "name": "deepslate_stripes"
+    },
+    {
+      "block": "chisel:deepslate_stripes_encased",
+      "model_type": "connected",
+      "name": "deepslate_stripes_encased"
+    },
+    {
+      "block": "chisel:deepslate_chisel_1",
+      "name": "deepslate_chisel_1"
+    },
+    {
+      "block": "chisel:deepslate_chisel_2",
+      "name": "deepslate_chisel_2"
+    },
+    {
+      "block": "chisel:deepslate_chisel_3",
+      "name": "deepslate_chisel_3"
+    },
+    {
+      "block": "chisel:deepslate_chisel_4",
+      "name": "deepslate_chisel_4"
+    },
+    {
+      "block": "chisel:deepslate_chisel_5",
+      "name": "deepslate_chisel_5"
+    },
+    {
+      "block": "chisel:deepslate_chisel_6",
+      "name": "deepslate_chisel_6"
+    },
+    {
+      "block": "chisel:deepslate_facet",
+      "name": "deepslate_facet"
+    },
+    {
+      "block": "chisel:deepslate_facet_small",
+      "name": "deepslate_facet_small"
+    },
+    {
+      "block": "chisel:deepslate_facet_small_encased",
+      "model_type": "connected",
+      "name": "deepslate_facet_small_encased"
+    },
+    {
+      "block": "chisel:deepslate_shiny",
+      "name": "deepslate_shiny"
+    },
+    {
+      "block": "chisel:deepslate_shiny_connected",
+      "model_type": "connected",
+      "name": "deepslate_shiny_connected"
+    },
+    {
+      "block": "chisel:deepslate_gem",
+      "name": "deepslate_gem"
+    },
+    {
+      "block": "chisel:deepslate_gem_1",
+      "name": "deepslate_gem_1"
+    },
+    {
+      "block": "chisel:deepslate_gem_1_connected",
+      "model_type": "connected",
+      "name": "deepslate_gem_1_connected"
+    },
+    {
+      "block": "chisel:deepslate_gem_2",
+      "name": "deepslate_gem_2"
+    },
+    {
+      "block": "chisel:deepslate_gem_2_connected",
+      "model_type": "connected",
+      "name": "deepslate_gem_2_connected"
+    },
+    {
+      "block": "chisel:deepslate_gem_3",
+      "name": "deepslate_gem_3"
+    },
+    {
+      "block": "chisel:deepslate_gem_3_connected",
+      "model_type": "connected",
+      "name": "deepslate_gem_3_connected"
+    },
+    {
+      "block": "chisel:deepslate_bricks_square",
+      "name": "deepslate_bricks_square"
+    },
+    {
+      "block": "chisel:deepslate_slab",
+      "name": "deepslate_slab"
+    },
+    {
+      "block": "chisel:deepslate_scaffold",
+      "name": "deepslate_scaffold"
+    },
+    {
+      "block": "chisel:deepslate_scaffold_encased",
+      "model_type": "connected",
+      "name": "deepslate_scaffold_encased"
+    },
+    {
+      "block": "chisel:deepslate_tiles_inlayed",
+      "name": "deepslate_tiles_inlayed"
+    },
+    {
+      "block": "chisel:deepslate_waves",
+      "model_type": "multiblock_2x2",
+      "name": "deepslate_waves"
+    },
+    {
+      "block": "chisel:deepslate_parquet",
+      "name": "deepslate_parquet"
+    },
+    {
+      "block": "chisel:deepslate_parquet_encased",
+      "model_type": "connected",
+      "name": "deepslate_parquet_encased"
     }
   ]
 }

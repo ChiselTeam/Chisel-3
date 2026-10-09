@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#c:storage_blocks/salt", "required": false},
+    {"id": "alltheores:salt_block", "required": false}
+  ]
+}

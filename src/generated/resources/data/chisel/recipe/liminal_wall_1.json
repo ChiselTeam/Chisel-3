@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": "#minecraft:wooden_doors",
+    "O": "#minecraft:planks"
+  },
+  "pattern": [
+    " O ",
+    "ODO",
+    " O "
+  ],
+  "result": {
+    "count": 16,
+    "id": "chisel:liminal_wall_1"
+  }
+}

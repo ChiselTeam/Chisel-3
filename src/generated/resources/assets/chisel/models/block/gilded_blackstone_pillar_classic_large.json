@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_classic_large-bottom",
+    "bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_classic_large-top",
     "side": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_classic_large-side",
     "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_classic_large-top"
   }

@@ -1,0 +1,562 @@
+{
+  "family_name": "bone_block",
+  "tag": "c:chisel/bone_block",
+  "variants": [
+    {
+      "block": "minecraft:bone_block",
+      "name": "block.minecraft.bone_block"
+    },
+    {
+      "block": "chisel:bone_block_array",
+      "model_type": "multiblock_2x2",
+      "name": "bone_block_array"
+    },
+    {
+      "block": "chisel:bone_block_border_square",
+      "model_type": "connected",
+      "name": "bone_block_border_square"
+    },
+    {
+      "block": "chisel:bone_block_border_square_small",
+      "model_type": "connected",
+      "name": "bone_block_border_square_small"
+    },
+    {
+      "block": "chisel:bone_block_braid",
+      "name": "bone_block_braid"
+    },
+    {
+      "block": "chisel:bone_block_braid_encased",
+      "model_type": "connected",
+      "name": "bone_block_braid_encased"
+    },
+    {
+      "block": "chisel:bone_block_bricks_cracked",
+      "name": "bone_block_bricks_cracked"
+    },
+    {
+      "block": "chisel:bone_block_bricks_encased",
+      "model_type": "connected",
+      "name": "bone_block_bricks_encased"
+    },
+    {
+      "block": "chisel:bone_block_bricks_indent",
+      "name": "bone_block_bricks_indent"
+    },
+    {
+      "block": "chisel:bone_block_bricks_inlayed",
+      "name": "bone_block_bricks_inlayed"
+    },
+    {
+      "block": "chisel:bone_block_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "bone_block_bricks_large"
+    },
+    {
+      "block": "chisel:bone_block_bricks_small",
+      "name": "bone_block_bricks_small"
+    },
+    {
+      "block": "chisel:bone_block_bricks_soft",
+      "name": "bone_block_bricks_soft"
+    },
+    {
+      "block": "chisel:bone_block_bricks_solid",
+      "name": "bone_block_bricks_solid"
+    },
+    {
+      "block": "chisel:bone_block_bricks_triple",
+      "name": "bone_block_bricks_triple"
+    },
+    {
+      "block": "chisel:bone_block_bricks_vertical",
+      "name": "bone_block_bricks_vertical"
+    },
+    {
+      "block": "chisel:bone_block_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "bone_block_chaotic"
+    },
+    {
+      "block": "chisel:bone_block_chaotic_medium",
+      "name": "bone_block_chaotic_medium"
+    },
+    {
+      "block": "chisel:bone_block_chaotic_small",
+      "name": "bone_block_chaotic_small"
+    },
+    {
+      "block": "chisel:bone_block_checker",
+      "name": "bone_block_checker"
+    },
+    {
+      "block": "chisel:bone_block_checker_small",
+      "name": "bone_block_checker_small"
+    },
+    {
+      "block": "chisel:bone_block_circular",
+      "model_type": "connected",
+      "name": "bone_block_circular"
+    },
+    {
+      "block": "chisel:bone_block_cracked",
+      "name": "bone_block_cracked"
+    },
+    {
+      "block": "chisel:bone_block_cobble",
+      "name": "bone_block_cobble"
+    },
+    {
+      "block": "chisel:bone_block_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "bone_block_cuts"
+    },
+    {
+      "block": "chisel:bone_block_dent",
+      "model_type": "connected",
+      "name": "bone_block_dent"
+    },
+    {
+      "block": "chisel:bone_block_french_1",
+      "name": "bone_block_french_1"
+    },
+    {
+      "block": "chisel:bone_block_french_2",
+      "name": "bone_block_french_2"
+    },
+    {
+      "block": "chisel:bone_block_indent",
+      "model_type": "connected",
+      "name": "bone_block_indent"
+    },
+    {
+      "block": "chisel:bone_block_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "bone_block_jellybean"
+    },
+    {
+      "block": "chisel:bone_block_layers",
+      "name": "bone_block_layers"
+    },
+    {
+      "block": "chisel:bone_block_layers_connected",
+      "model_type": "connected",
+      "name": "bone_block_layers_connected"
+    },
+    {
+      "block": "chisel:bone_block_line_horizontal",
+      "name": "bone_block_line_horizontal"
+    },
+    {
+      "block": "chisel:bone_block_line_vertical",
+      "name": "bone_block_line_vertical"
+    },
+    {
+      "block": "chisel:bone_block_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "bone_block_meander_horizontal"
+    },
+    {
+      "block": "chisel:bone_block_meander_vertical",
+      "model_type": "ctmv",
+      "name": "bone_block_meander_vertical"
+    },
+    {
+      "block": "chisel:bone_block_mosaic",
+      "model_type": "connected",
+      "name": "bone_block_mosaic"
+    },
+    {
+      "block": "chisel:bone_block_ornate_small",
+      "name": "bone_block_ornate_small"
+    },
+    {
+      "block": "chisel:bone_block_panel",
+      "name": "bone_block_panel"
+    },
+    {
+      "block": "chisel:bone_block_pillar",
+      "model_type": "top_bottom_side",
+      "name": "bone_block_pillar"
+    },
+    {
+      "block": "chisel:bone_block_pillar_basic",
+      "model_type": "ctmv",
+      "name": "bone_block_pillar_basic"
+    },
+    {
+      "block": "chisel:bone_block_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "bone_block_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:bone_block_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "bone_block_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:bone_block_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "bone_block_pillar_basic_round"
+    },
+    {
+      "block": "chisel:bone_block_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "bone_block_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:bone_block_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "bone_block_pillar_classic"
+    },
+    {
+      "block": "chisel:bone_block_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "bone_block_pillar_classic_large"
+    },
+    {
+      "block": "chisel:bone_block_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "bone_block_pillar_ionic"
+    },
+    {
+      "block": "chisel:bone_block_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "bone_block_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:bone_block_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "bone_block_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:bone_block_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "bone_block_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:bone_block_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "bone_block_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:bone_block_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "bone_block_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:bone_block_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "bone_block_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:bone_block_pillar_meander",
+      "model_type": "ctmv",
+      "name": "bone_block_pillar_meander"
+    },
+    {
+      "block": "chisel:bone_block_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "bone_block_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:bone_block_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "bone_block_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:bone_block_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "bone_block_pillar_meander_round"
+    },
+    {
+      "block": "chisel:bone_block_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "bone_block_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:bone_block_plate",
+      "name": "bone_block_plate"
+    },
+    {
+      "block": "chisel:bone_block_plate_connected",
+      "model_type": "connected",
+      "name": "bone_block_plate_connected"
+    },
+    {
+      "block": "chisel:bone_block_polished",
+      "name": "bone_block_polished"
+    },
+    {
+      "block": "chisel:bone_block_polished_encased",
+      "model_type": "connected",
+      "name": "bone_block_polished_encased"
+    },
+    {
+      "block": "chisel:bone_block_prism",
+      "name": "bone_block_prism"
+    },
+    {
+      "block": "chisel:bone_block_raw",
+      "name": "bone_block_raw"
+    },
+    {
+      "block": "chisel:bone_block_road",
+      "name": "bone_block_road"
+    },
+    {
+      "block": "chisel:bone_block_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "bone_block_slanted"
+    },
+    {
+      "block": "chisel:bone_block_tiles",
+      "name": "bone_block_tiles"
+    },
+    {
+      "block": "chisel:bone_block_tiles_large",
+      "model_type": "connected",
+      "name": "bone_block_tiles_large"
+    },
+    {
+      "block": "chisel:bone_block_tiles_small",
+      "name": "bone_block_tiles_small"
+    },
+    {
+      "block": "chisel:bone_block_twisted",
+      "model_type": "top_bottom_side",
+      "name": "bone_block_twisted"
+    },
+    {
+      "block": "chisel:bone_block_weaver",
+      "model_type": "connected",
+      "name": "bone_block_weaver"
+    },
+    {
+      "block": "chisel:bone_block_zag",
+      "model_type": "v4",
+      "name": "bone_block_zag"
+    },
+    {
+      "block": "chisel:bone_block_crate",
+      "model_type": "connected",
+      "name": "bone_block_crate"
+    },
+    {
+      "block": "chisel:bone_block_herringbone",
+      "name": "bone_block_herringbone"
+    },
+    {
+      "block": "chisel:bone_block_herringbone_encased",
+      "model_type": "connected",
+      "name": "bone_block_herringbone_encased"
+    },
+    {
+      "block": "chisel:bone_block_medallion",
+      "name": "bone_block_medallion"
+    },
+    {
+      "block": "chisel:bone_block_medallion_encased",
+      "model_type": "connected",
+      "name": "bone_block_medallion_encased"
+    },
+    {
+      "block": "chisel:bone_block_dots",
+      "name": "bone_block_dots"
+    },
+    {
+      "block": "chisel:bone_block_dots_encased",
+      "model_type": "connected",
+      "name": "bone_block_dots_encased"
+    },
+    {
+      "block": "chisel:bone_block_heart",
+      "name": "bone_block_heart"
+    },
+    {
+      "block": "chisel:bone_block_star",
+      "name": "bone_block_star"
+    },
+    {
+      "block": "chisel:bone_block_plating",
+      "name": "bone_block_plating"
+    },
+    {
+      "block": "chisel:bone_block_lodestone",
+      "name": "bone_block_lodestone"
+    },
+    {
+      "block": "chisel:bone_block_lodestone_connected",
+      "model_type": "connected",
+      "name": "bone_block_lodestone_connected"
+    },
+    {
+      "block": "chisel:bone_block_plank",
+      "name": "bone_block_plank"
+    },
+    {
+      "block": "chisel:bone_block_plank_connected",
+      "model_type": "connected",
+      "name": "bone_block_plank_connected"
+    },
+    {
+      "block": "chisel:bone_block_frame",
+      "name": "bone_block_frame"
+    },
+    {
+      "block": "chisel:bone_block_panel_1",
+      "name": "bone_block_panel_1"
+    },
+    {
+      "block": "chisel:bone_block_panel_2",
+      "name": "bone_block_panel_2"
+    },
+    {
+      "block": "chisel:bone_block_panel_3",
+      "name": "bone_block_panel_3"
+    },
+    {
+      "block": "chisel:bone_block_skull_creeper",
+      "name": "bone_block_skull_creeper"
+    },
+    {
+      "block": "chisel:bone_block_skull_skeleton",
+      "name": "bone_block_skull_skeleton"
+    },
+    {
+      "block": "chisel:bone_block_stripes",
+      "name": "bone_block_stripes"
+    },
+    {
+      "block": "chisel:bone_block_stripes_encased",
+      "model_type": "connected",
+      "name": "bone_block_stripes_encased"
+    },
+    {
+      "block": "chisel:bone_block_chisel_1",
+      "name": "bone_block_chisel_1"
+    },
+    {
+      "block": "chisel:bone_block_chisel_2",
+      "name": "bone_block_chisel_2"
+    },
+    {
+      "block": "chisel:bone_block_chisel_3",
+      "name": "bone_block_chisel_3"
+    },
+    {
+      "block": "chisel:bone_block_chisel_4",
+      "name": "bone_block_chisel_4"
+    },
+    {
+      "block": "chisel:bone_block_chisel_5",
+      "name": "bone_block_chisel_5"
+    },
+    {
+      "block": "chisel:bone_block_chisel_6",
+      "name": "bone_block_chisel_6"
+    },
+    {
+      "block": "chisel:bone_block_facet",
+      "name": "bone_block_facet"
+    },
+    {
+      "block": "chisel:bone_block_facet_small",
+      "name": "bone_block_facet_small"
+    },
+    {
+      "block": "chisel:bone_block_facet_small_encased",
+      "model_type": "connected",
+      "name": "bone_block_facet_small_encased"
+    },
+    {
+      "block": "chisel:bone_block_shiny",
+      "name": "bone_block_shiny"
+    },
+    {
+      "block": "chisel:bone_block_shiny_connected",
+      "model_type": "connected",
+      "name": "bone_block_shiny_connected"
+    },
+    {
+      "block": "chisel:bone_block_gem",
+      "name": "bone_block_gem"
+    },
+    {
+      "block": "chisel:bone_block_gem_1",
+      "name": "bone_block_gem_1"
+    },
+    {
+      "block": "chisel:bone_block_gem_1_connected",
+      "model_type": "connected",
+      "name": "bone_block_gem_1_connected"
+    },
+    {
+      "block": "chisel:bone_block_gem_2",
+      "name": "bone_block_gem_2"
+    },
+    {
+      "block": "chisel:bone_block_gem_2_connected",
+      "model_type": "connected",
+      "name": "bone_block_gem_2_connected"
+    },
+    {
+      "block": "chisel:bone_block_gem_3",
+      "name": "bone_block_gem_3"
+    },
+    {
+      "block": "chisel:bone_block_gem_3_connected",
+      "model_type": "connected",
+      "name": "bone_block_gem_3_connected"
+    },
+    {
+      "block": "chisel:bone_block_bricks_square",
+      "name": "bone_block_bricks_square"
+    },
+    {
+      "block": "chisel:bone_block_slab",
+      "name": "bone_block_slab"
+    },
+    {
+      "block": "chisel:bone_block_scaffold",
+      "name": "bone_block_scaffold"
+    },
+    {
+      "block": "chisel:bone_block_scaffold_encased",
+      "model_type": "connected",
+      "name": "bone_block_scaffold_encased"
+    },
+    {
+      "block": "chisel:bone_block_tiles_inlayed",
+      "name": "bone_block_tiles_inlayed"
+    },
+    {
+      "block": "chisel:bone_block_waves",
+      "model_type": "multiblock_2x2",
+      "name": "bone_block_waves"
+    },
+    {
+      "block": "chisel:bone_block_parquet",
+      "name": "bone_block_parquet"
+    },
+    {
+      "block": "chisel:bone_block_parquet_encased",
+      "model_type": "connected",
+      "name": "bone_block_parquet_encased"
+    },
+    {
+      "block": "chisel:bone_block_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "bone_block_bricks_large_rough"
+    },
+    {
+      "block": "chisel:bone_block_tiles_small_encased",
+      "model_type": "connected",
+      "name": "bone_block_tiles_small_encased"
+    },
+    {
+      "block": "chisel:bone_block_bricks_round",
+      "name": "bone_block_bricks_round"
+    }
+  ]
+}

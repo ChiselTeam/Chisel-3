@@ -2,14 +2,13 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-side",
-    "bottom": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-bottom",
-    "overlay_bottom": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-bottom",
-    "overlay_side_connected": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-side-ctm",
-    "overlay_texture": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-side",
-    "overlay_top": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-top",
-    "overlay_vertical": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-side-ctm",
+    "bottom": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-top",
     "particle": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-side",
     "side": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-side",
-    "top": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-top"
+    "top": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-top",
+    "vertical_both": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-vertical_both",
+    "vertical_bottom": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-vertical_bottom",
+    "vertical_none": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-vertical_none",
+    "vertical_top": "chisel:block/sea_lantern/sea_lantern_pillar_dent_invert-vertical_top"
   }
 }

@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/oak_framed_stained_glass_yellow/oak_framed_stained_glass_yellow_arch_panel",
+    "standard_corner": "chisel:block/oak_framed_stained_glass_yellow/oak_framed_stained_glass_yellow_arch_panel-ctm_corner",
+    "standard_cornerless": "chisel:block/oak_framed_stained_glass_yellow/oak_framed_stained_glass_yellow_arch_panel-ctm_cornerless",
+    "standard_horizontal": "chisel:block/oak_framed_stained_glass_yellow/oak_framed_stained_glass_yellow_arch_panel-ctm_horizontal",
+    "standard_none": "chisel:block/oak_framed_stained_glass_yellow/oak_framed_stained_glass_yellow_arch_panel",
+    "standard_vertical": "chisel:block/oak_framed_stained_glass_yellow/oak_framed_stained_glass_yellow_arch_panel-ctm_vertical"
+  }
+}

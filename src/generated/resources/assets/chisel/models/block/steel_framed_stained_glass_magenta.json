@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/steel_framed_stained_glass_magenta/steel_framed_stained_glass_magenta",
+    "standard_corner": "chisel:block/steel_framed_stained_glass_magenta/steel_framed_stained_glass_magenta-ctm_corner",
+    "standard_cornerless": "chisel:block/steel_framed_stained_glass_magenta/steel_framed_stained_glass_magenta-ctm_cornerless",
+    "standard_horizontal": "chisel:block/steel_framed_stained_glass_magenta/steel_framed_stained_glass_magenta-ctm_horizontal",
+    "standard_none": "chisel:block/steel_framed_stained_glass_magenta/steel_framed_stained_glass_magenta",
+    "standard_vertical": "chisel:block/steel_framed_stained_glass_magenta/steel_framed_stained_glass_magenta-ctm_vertical"
+  }
+}

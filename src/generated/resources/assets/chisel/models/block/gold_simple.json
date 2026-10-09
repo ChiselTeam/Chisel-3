@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "chisel:block/gold/gold_simple-bottom",
     "side": "chisel:block/gold/gold_simple-side",
-    "top": "chisel:block/gold/gold_simple-top"
+    "top": "chisel:block/gold/gold_cart-top"
   }
 }

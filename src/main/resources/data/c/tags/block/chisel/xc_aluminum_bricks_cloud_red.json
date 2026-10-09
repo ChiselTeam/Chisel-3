@@ -1,0 +1,8 @@
+{
+  "values": [
+    {"id": "xycraft_world:aluminum_bricks_cloud_red", "required": false},
+    {"id": "xycraft_world:aluminum_pillar_cloud_red", "required": false},
+    {"id": "xycraft_world:aluminum_tiles_cloud_red", "required": false},
+    {"id": "xycraft_world:aluminum_trim_red", "required": false}
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "chisel:block/glass_pane/glass_pane_japanese2"
+    "layer0": "chisel:block/glass/glass_japanese_2"
   }
 }

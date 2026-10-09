@@ -1,0 +1,11 @@
+{
+  "values": [
+    {"id": "xycraft_world:kivi_brick_slab", "required": false},
+    {"id": "xycraft_world:kivi_rajan_panel_slab", "required": false},
+    {"id": "xycraft_world:kivi_rajan_slab", "required": false},
+    {"id": "xycraft_world:kivi_slab", "required": false},
+    {"id": "xycraft_world:kivi_tiles_slab", "required": false},
+    {"id": "xycraft_world:smooth_kivi_panel_slab", "required": false},
+    {"id": "xycraft_world:smooth_kivi_slab", "required": false}
+  ]
+}

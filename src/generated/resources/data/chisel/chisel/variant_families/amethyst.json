@@ -1,0 +1,557 @@
+{
+  "family_name": "amethyst",
+  "tag": "c:chisel/amethyst",
+  "variants": [
+    {
+      "block": "minecraft:amethyst_block",
+      "name": "block.minecraft.amethyst_block"
+    },
+    {
+      "block": "chisel:amethyst_array",
+      "model_type": "multiblock_2x2",
+      "name": "amethyst_array"
+    },
+    {
+      "block": "chisel:amethyst_border_square",
+      "model_type": "connected",
+      "name": "amethyst_border_square"
+    },
+    {
+      "block": "chisel:amethyst_braid",
+      "name": "amethyst_braid"
+    },
+    {
+      "block": "chisel:amethyst_braid_encased",
+      "model_type": "connected",
+      "name": "amethyst_braid_encased"
+    },
+    {
+      "block": "chisel:amethyst_bricks_cracked",
+      "name": "amethyst_bricks_cracked"
+    },
+    {
+      "block": "chisel:amethyst_bricks_encased",
+      "model_type": "connected",
+      "name": "amethyst_bricks_encased"
+    },
+    {
+      "block": "chisel:amethyst_bricks_indent",
+      "name": "amethyst_bricks_indent"
+    },
+    {
+      "block": "chisel:amethyst_bricks_inlayed",
+      "name": "amethyst_bricks_inlayed"
+    },
+    {
+      "block": "chisel:amethyst_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "amethyst_bricks_large"
+    },
+    {
+      "block": "chisel:amethyst_bricks_small",
+      "name": "amethyst_bricks_small"
+    },
+    {
+      "block": "chisel:amethyst_bricks_soft",
+      "name": "amethyst_bricks_soft"
+    },
+    {
+      "block": "chisel:amethyst_bricks_solid",
+      "name": "amethyst_bricks_solid"
+    },
+    {
+      "block": "chisel:amethyst_bricks_triple",
+      "name": "amethyst_bricks_triple"
+    },
+    {
+      "block": "chisel:amethyst_bricks_vertical",
+      "name": "amethyst_bricks_vertical"
+    },
+    {
+      "block": "chisel:amethyst_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "amethyst_chaotic"
+    },
+    {
+      "block": "chisel:amethyst_chaotic_medium",
+      "name": "amethyst_chaotic_medium"
+    },
+    {
+      "block": "chisel:amethyst_chaotic_small",
+      "name": "amethyst_chaotic_small"
+    },
+    {
+      "block": "chisel:amethyst_checker",
+      "name": "amethyst_checker"
+    },
+    {
+      "block": "chisel:amethyst_checker_small",
+      "name": "amethyst_checker_small"
+    },
+    {
+      "block": "chisel:amethyst_circular",
+      "model_type": "connected",
+      "name": "amethyst_circular"
+    },
+    {
+      "block": "chisel:amethyst_cracked",
+      "name": "amethyst_cracked"
+    },
+    {
+      "block": "chisel:amethyst_cobble",
+      "name": "amethyst_cobble"
+    },
+    {
+      "block": "chisel:amethyst_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "amethyst_cuts"
+    },
+    {
+      "block": "chisel:amethyst_dent",
+      "model_type": "connected",
+      "name": "amethyst_dent"
+    },
+    {
+      "block": "chisel:amethyst_french_1",
+      "name": "amethyst_french_1"
+    },
+    {
+      "block": "chisel:amethyst_french_2",
+      "name": "amethyst_french_2"
+    },
+    {
+      "block": "chisel:amethyst_indent",
+      "model_type": "connected",
+      "name": "amethyst_indent"
+    },
+    {
+      "block": "chisel:amethyst_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "amethyst_jellybean"
+    },
+    {
+      "block": "chisel:amethyst_layers",
+      "name": "amethyst_layers"
+    },
+    {
+      "block": "chisel:amethyst_layers_connected",
+      "model_type": "connected",
+      "name": "amethyst_layers_connected"
+    },
+    {
+      "block": "chisel:amethyst_line_horizontal",
+      "name": "amethyst_line_horizontal"
+    },
+    {
+      "block": "chisel:amethyst_line_vertical",
+      "name": "amethyst_line_vertical"
+    },
+    {
+      "block": "chisel:amethyst_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "amethyst_meander_horizontal"
+    },
+    {
+      "block": "chisel:amethyst_meander_vertical",
+      "model_type": "ctmv",
+      "name": "amethyst_meander_vertical"
+    },
+    {
+      "block": "chisel:amethyst_mosaic",
+      "model_type": "connected",
+      "name": "amethyst_mosaic"
+    },
+    {
+      "block": "chisel:amethyst_ornate_small",
+      "name": "amethyst_ornate_small"
+    },
+    {
+      "block": "chisel:amethyst_panel",
+      "name": "amethyst_panel"
+    },
+    {
+      "block": "chisel:amethyst_pillar",
+      "model_type": "top_bottom_side",
+      "name": "amethyst_pillar"
+    },
+    {
+      "block": "chisel:amethyst_pillar_basic",
+      "model_type": "ctmv",
+      "name": "amethyst_pillar_basic"
+    },
+    {
+      "block": "chisel:amethyst_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "amethyst_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:amethyst_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "amethyst_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:amethyst_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "amethyst_pillar_basic_round"
+    },
+    {
+      "block": "chisel:amethyst_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "amethyst_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:amethyst_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "amethyst_pillar_classic"
+    },
+    {
+      "block": "chisel:amethyst_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "amethyst_pillar_classic_large"
+    },
+    {
+      "block": "chisel:amethyst_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "amethyst_pillar_ionic"
+    },
+    {
+      "block": "chisel:amethyst_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "amethyst_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:amethyst_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "amethyst_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:amethyst_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "amethyst_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:amethyst_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "amethyst_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:amethyst_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "amethyst_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:amethyst_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "amethyst_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:amethyst_pillar_meander",
+      "model_type": "ctmv",
+      "name": "amethyst_pillar_meander"
+    },
+    {
+      "block": "chisel:amethyst_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "amethyst_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:amethyst_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "amethyst_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:amethyst_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "amethyst_pillar_meander_round"
+    },
+    {
+      "block": "chisel:amethyst_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "amethyst_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:amethyst_plate",
+      "name": "amethyst_plate"
+    },
+    {
+      "block": "chisel:amethyst_plate_connected",
+      "model_type": "connected",
+      "name": "amethyst_plate_connected"
+    },
+    {
+      "block": "chisel:amethyst_polished",
+      "name": "amethyst_polished"
+    },
+    {
+      "block": "chisel:amethyst_polished_encased",
+      "model_type": "connected",
+      "name": "amethyst_polished_encased"
+    },
+    {
+      "block": "chisel:amethyst_prism",
+      "name": "amethyst_prism"
+    },
+    {
+      "block": "chisel:amethyst_raw",
+      "name": "amethyst_raw"
+    },
+    {
+      "block": "chisel:amethyst_road",
+      "name": "amethyst_road"
+    },
+    {
+      "block": "chisel:amethyst_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "amethyst_slanted"
+    },
+    {
+      "block": "chisel:amethyst_tiles",
+      "name": "amethyst_tiles"
+    },
+    {
+      "block": "chisel:amethyst_tiles_large",
+      "model_type": "connected",
+      "name": "amethyst_tiles_large"
+    },
+    {
+      "block": "chisel:amethyst_tiles_small",
+      "name": "amethyst_tiles_small"
+    },
+    {
+      "block": "chisel:amethyst_twisted",
+      "model_type": "top_bottom_side",
+      "name": "amethyst_twisted"
+    },
+    {
+      "block": "chisel:amethyst_weaver",
+      "model_type": "connected",
+      "name": "amethyst_weaver"
+    },
+    {
+      "block": "chisel:amethyst_zag",
+      "model_type": "v4",
+      "name": "amethyst_zag"
+    },
+    {
+      "block": "chisel:amethyst_crate",
+      "model_type": "connected",
+      "name": "amethyst_crate"
+    },
+    {
+      "block": "chisel:amethyst_herringbone",
+      "name": "amethyst_herringbone"
+    },
+    {
+      "block": "chisel:amethyst_herringbone_encased",
+      "model_type": "connected",
+      "name": "amethyst_herringbone_encased"
+    },
+    {
+      "block": "chisel:amethyst_medallion",
+      "name": "amethyst_medallion"
+    },
+    {
+      "block": "chisel:amethyst_medallion_encased",
+      "model_type": "connected",
+      "name": "amethyst_medallion_encased"
+    },
+    {
+      "block": "chisel:amethyst_dots",
+      "name": "amethyst_dots"
+    },
+    {
+      "block": "chisel:amethyst_dots_encased",
+      "model_type": "connected",
+      "name": "amethyst_dots_encased"
+    },
+    {
+      "block": "chisel:amethyst_heart",
+      "name": "amethyst_heart"
+    },
+    {
+      "block": "chisel:amethyst_star",
+      "name": "amethyst_star"
+    },
+    {
+      "block": "chisel:amethyst_plating",
+      "name": "amethyst_plating"
+    },
+    {
+      "block": "chisel:amethyst_lodestone",
+      "name": "amethyst_lodestone"
+    },
+    {
+      "block": "chisel:amethyst_lodestone_connected",
+      "model_type": "connected",
+      "name": "amethyst_lodestone_connected"
+    },
+    {
+      "block": "chisel:amethyst_plank",
+      "name": "amethyst_plank"
+    },
+    {
+      "block": "chisel:amethyst_plank_connected",
+      "model_type": "connected",
+      "name": "amethyst_plank_connected"
+    },
+    {
+      "block": "chisel:amethyst_frame",
+      "name": "amethyst_frame"
+    },
+    {
+      "block": "chisel:amethyst_panel_1",
+      "name": "amethyst_panel_1"
+    },
+    {
+      "block": "chisel:amethyst_panel_2",
+      "name": "amethyst_panel_2"
+    },
+    {
+      "block": "chisel:amethyst_panel_3",
+      "name": "amethyst_panel_3"
+    },
+    {
+      "block": "chisel:amethyst_skull_creeper",
+      "name": "amethyst_skull_creeper"
+    },
+    {
+      "block": "chisel:amethyst_skull_skeleton",
+      "name": "amethyst_skull_skeleton"
+    },
+    {
+      "block": "chisel:amethyst_stripes",
+      "name": "amethyst_stripes"
+    },
+    {
+      "block": "chisel:amethyst_stripes_encased",
+      "model_type": "connected",
+      "name": "amethyst_stripes_encased"
+    },
+    {
+      "block": "chisel:amethyst_chisel_1",
+      "name": "amethyst_chisel_1"
+    },
+    {
+      "block": "chisel:amethyst_chisel_2",
+      "name": "amethyst_chisel_2"
+    },
+    {
+      "block": "chisel:amethyst_chisel_3",
+      "name": "amethyst_chisel_3"
+    },
+    {
+      "block": "chisel:amethyst_chisel_4",
+      "name": "amethyst_chisel_4"
+    },
+    {
+      "block": "chisel:amethyst_chisel_5",
+      "name": "amethyst_chisel_5"
+    },
+    {
+      "block": "chisel:amethyst_chisel_6",
+      "name": "amethyst_chisel_6"
+    },
+    {
+      "block": "chisel:amethyst_facet",
+      "name": "amethyst_facet"
+    },
+    {
+      "block": "chisel:amethyst_facet_small",
+      "name": "amethyst_facet_small"
+    },
+    {
+      "block": "chisel:amethyst_facet_small_encased",
+      "model_type": "connected",
+      "name": "amethyst_facet_small_encased"
+    },
+    {
+      "block": "chisel:amethyst_shiny",
+      "name": "amethyst_shiny"
+    },
+    {
+      "block": "chisel:amethyst_shiny_connected",
+      "model_type": "connected",
+      "name": "amethyst_shiny_connected"
+    },
+    {
+      "block": "chisel:amethyst_gem",
+      "name": "amethyst_gem"
+    },
+    {
+      "block": "chisel:amethyst_gem_1",
+      "name": "amethyst_gem_1"
+    },
+    {
+      "block": "chisel:amethyst_gem_1_connected",
+      "model_type": "connected",
+      "name": "amethyst_gem_1_connected"
+    },
+    {
+      "block": "chisel:amethyst_gem_2",
+      "name": "amethyst_gem_2"
+    },
+    {
+      "block": "chisel:amethyst_gem_2_connected",
+      "model_type": "connected",
+      "name": "amethyst_gem_2_connected"
+    },
+    {
+      "block": "chisel:amethyst_gem_3",
+      "name": "amethyst_gem_3"
+    },
+    {
+      "block": "chisel:amethyst_gem_3_connected",
+      "model_type": "connected",
+      "name": "amethyst_gem_3_connected"
+    },
+    {
+      "block": "chisel:amethyst_bricks_square",
+      "name": "amethyst_bricks_square"
+    },
+    {
+      "block": "chisel:amethyst_slab",
+      "name": "amethyst_slab"
+    },
+    {
+      "block": "chisel:amethyst_scaffold",
+      "name": "amethyst_scaffold"
+    },
+    {
+      "block": "chisel:amethyst_scaffold_encased",
+      "model_type": "connected",
+      "name": "amethyst_scaffold_encased"
+    },
+    {
+      "block": "chisel:amethyst_tiles_inlayed",
+      "name": "amethyst_tiles_inlayed"
+    },
+    {
+      "block": "chisel:amethyst_waves",
+      "model_type": "multiblock_2x2",
+      "name": "amethyst_waves"
+    },
+    {
+      "block": "chisel:amethyst_parquet",
+      "name": "amethyst_parquet"
+    },
+    {
+      "block": "chisel:amethyst_parquet_encased",
+      "model_type": "connected",
+      "name": "amethyst_parquet_encased"
+    },
+    {
+      "block": "chisel:amethyst_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "amethyst_bricks_large_rough"
+    },
+    {
+      "block": "chisel:amethyst_tiles_small_encased",
+      "model_type": "connected",
+      "name": "amethyst_tiles_small_encased"
+    },
+    {
+      "block": "chisel:amethyst_bricks_round",
+      "name": "amethyst_bricks_round"
+    }
+  ]
+}

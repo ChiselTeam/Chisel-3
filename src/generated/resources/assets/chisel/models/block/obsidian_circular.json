@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/obsidian/obsidian_circular",
+    "particle": "chisel:block/obsidian/obsidian_circular",
+    "standard_corner": "chisel:block/obsidian/obsidian_circular-ctm_corner",
+    "standard_cornerless": "chisel:block/obsidian/obsidian_circular-ctm_cornerless",
+    "standard_horizontal": "chisel:block/obsidian/obsidian_circular-ctm_horizontal",
+    "standard_none": "chisel:block/obsidian/obsidian_circular",
+    "standard_vertical": "chisel:block/obsidian/obsidian_circular-ctm_vertical"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "values": [
+    {"id": "aether_ii:undershale_slab", "required": false},
+    {"id": "aether_ii:undershale_brick_slab", "required": false},
+    {"id": "aether_ii:sentry_brick_slab", "required": false}
+  ]
+}

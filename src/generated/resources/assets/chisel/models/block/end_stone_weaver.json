@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/end_stone/end_stone_weaver",
-    "overlay_connected": "chisel:block/end_stone/end_stone_weaver-ctm",
-    "overlay_texture": "chisel:block/end_stone/end_stone_weaver",
-    "particle": "chisel:block/end_stone/end_stone_weaver"
+    "particle": "chisel:block/end_stone/end_stone_weaver",
+    "standard_corner": "chisel:block/end_stone/end_stone_weaver-ctm_corner",
+    "standard_cornerless": "chisel:block/end_stone/end_stone_weaver-ctm_cornerless",
+    "standard_horizontal": "chisel:block/end_stone/end_stone_weaver-ctm_horizontal",
+    "standard_none": "chisel:block/end_stone/end_stone_weaver",
+    "standard_vertical": "chisel:block/end_stone/end_stone_weaver-ctm_vertical"
   }
 }

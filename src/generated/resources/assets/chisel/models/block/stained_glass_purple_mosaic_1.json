@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/stained_glass_purple/stained_glass_purple_mosaic_1",
+    "standard_corner": "chisel:block/stained_glass_purple/stained_glass_purple_mosaic_1-ctm_corner",
+    "standard_cornerless": "chisel:block/stained_glass_purple/stained_glass_purple_mosaic_1-ctm_cornerless",
+    "standard_horizontal": "chisel:block/stained_glass_purple/stained_glass_purple_mosaic_1-ctm_horizontal",
+    "standard_none": "chisel:block/stained_glass_purple/stained_glass_purple_mosaic_1",
+    "standard_vertical": "chisel:block/stained_glass_purple/stained_glass_purple_mosaic_1-ctm_vertical"
+  }
+}

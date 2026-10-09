@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/basalt/basalt_encased_bricks",
-    "overlay_connected": "chisel:block/basalt/basalt_encased_bricks-ctm",
-    "overlay_texture": "chisel:block/basalt/basalt_encased_bricks",
-    "particle": "chisel:block/basalt/basalt_encased_bricks"
+    "particle": "chisel:block/basalt/basalt_encased_bricks",
+    "standard_corner": "chisel:block/basalt/basalt_encased_bricks-ctm_corner",
+    "standard_cornerless": "chisel:block/basalt/basalt_encased_bricks-ctm_cornerless",
+    "standard_horizontal": "chisel:block/basalt/basalt_encased_bricks-ctm_horizontal",
+    "standard_none": "chisel:block/basalt/basalt_encased_bricks",
+    "standard_vertical": "chisel:block/basalt/basalt_encased_bricks-ctm_vertical"
   }
 }

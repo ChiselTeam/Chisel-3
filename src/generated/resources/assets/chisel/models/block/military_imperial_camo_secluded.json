@@ -2,7 +2,10 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/military/military_imperial_camo_secluded",
-    "overlay_2x2": "chisel:block/military/military_imperial_camo_secluded-v4",
+    "multiblock_2x2_bottom_left": "chisel:block/military/military_imperial_camo_secluded-v4_bottom_left",
+    "multiblock_2x2_bottom_right": "chisel:block/military/military_imperial_camo_secluded-v4_bottom_right",
+    "multiblock_2x2_top_left": "chisel:block/military/military_imperial_camo_secluded",
+    "multiblock_2x2_top_right": "chisel:block/military/military_imperial_camo_secluded-v4_top_right",
     "particle": "chisel:block/military/military_imperial_camo_secluded"
   }
 }

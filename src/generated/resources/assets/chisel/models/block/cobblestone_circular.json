@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/cobblestone/cobblestone_circular",
-    "overlay_connected": "chisel:block/cobblestone/cobblestone_circular-ctm",
-    "overlay_texture": "chisel:block/cobblestone/cobblestone_circular",
-    "particle": "chisel:block/cobblestone/cobblestone_circular"
+    "particle": "chisel:block/cobblestone/cobblestone_circular",
+    "standard_corner": "chisel:block/cobblestone/cobblestone_circular-ctm_corner",
+    "standard_cornerless": "chisel:block/cobblestone/cobblestone_circular-ctm_cornerless",
+    "standard_horizontal": "chisel:block/cobblestone/cobblestone_circular-ctm_horizontal",
+    "standard_none": "chisel:block/cobblestone/cobblestone_circular",
+    "standard_vertical": "chisel:block/cobblestone/cobblestone_circular-ctm_vertical"
   }
 }

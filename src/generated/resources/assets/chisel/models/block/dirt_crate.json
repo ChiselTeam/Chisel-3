@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/dirt/dirt_crate",
+    "particle": "chisel:block/dirt/dirt_crate",
+    "standard_corner": "chisel:block/dirt/dirt_crate-ctm_corner",
+    "standard_cornerless": "chisel:block/dirt/dirt_crate-ctm_cornerless",
+    "standard_horizontal": "chisel:block/dirt/dirt_crate-ctm_horizontal",
+    "standard_none": "chisel:block/dirt/dirt_crate",
+    "standard_vertical": "chisel:block/dirt/dirt_crate-ctm_vertical"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_glass_pane_noside_alt",
   "textures": {
-    "pane": "chisel:block/glass_pane/glass_pane_streak"
+    "pane": "chisel:block/glass/glass_streak"
   }
 }

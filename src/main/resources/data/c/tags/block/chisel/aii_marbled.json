@@ -1,6 +1,5 @@
-﻿{
+{
   "values": [
-    {"id": "aether_ii:marbled", "required": false},
     {"id": "aether_ii:marbled_bricks", "required": false},
     {"id": "aether_ii:marbled_flagstones", "required": false},
     {"id": "aether_ii:marbled_keystone", "required": false},

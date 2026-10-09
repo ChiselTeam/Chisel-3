@@ -2,6 +2,6 @@
   "parent": "chisel:block/template_glass_pane_side",
   "textures": {
     "edge": "chisel:block/glass_pane/glass_pane_chinese-top",
-    "pane": "chisel:block/glass_pane/glass_pane_chinese"
+    "pane": "chisel:block/glass/glass_chinese"
   }
 }

@@ -1,0 +1,24 @@
+{
+  "values": [
+    {"id": "colors:lime_asteroid_brick_slab", "required": false},
+    {"id": "colors:lime_asteroid_slab", "required": false},
+    {"id": "colors:lime_asteroid_tile_slab", "required": false},
+    {"id": "colors:lime_braid_slab", "required": false},
+    {"id": "colors:lime_brick_slab", "required": false},
+    {"id": "colors:lime_chaotic_slab", "required": false},
+    {"id": "colors:lime_cobblestone_brick_slab", "required": false},
+    {"id": "colors:lime_cobblestone_slab", "required": false},
+    {"id": "colors:lime_cracked_stone_brick_slab", "required": false},
+    {"id": "colors:lime_encased_slab", "required": false},
+    {"id": "colors:lime_marble_brick_slab", "required": false},
+    {"id": "colors:lime_marble_slab", "required": false},
+    {"id": "colors:lime_mosaic_slab", "required": false},
+    {"id": "colors:lime_polished_slab", "required": false},
+    {"id": "colors:lime_road_slab", "required": false},
+    {"id": "colors:lime_sandstone_slab", "required": false},
+    {"id": "colors:lime_stone_brick_slab", "required": false},
+    {"id": "colors:lime_stone_slab", "required": false},
+    {"id": "colors:lime_tile_slab", "required": false},
+    {"id": "colors:lime_triple_slab", "required": false}
+  ]
+}

@@ -11,11 +11,8 @@ import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplate;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
-import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.core.Direction;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
-import net.minecraft.world.level.material.Fluids;
 import org.joml.Vector3f;
 
 public class LavastoneMultiblockModelGenerator extends VariantModelGenerator {
@@ -28,13 +25,20 @@ public class LavastoneMultiblockModelGenerator extends VariantModelGenerator {
 
     @Override
     public TextureMapping getTextureMapping() {
-        TextureSlot overlaySlot = size == 2 ? ChiselTextureSlots.CTM_OVERLAY_2X2 : (size == 3 ? ChiselTextureSlots.CTM_OVERLAY_3X3 : ChiselTextureSlots.CTM_OVERLAY_4X4);
-        return (new TextureMapping())
+        return VariantTextures.ctm(variant, textures -> {
+                    Identifier base = VariantTextures.get(variant, size + "x" + size).sprite();
+                    switch (size) {
+                        case 2 -> textures.multiblock2x2Textures(base);
+                        case 3 -> textures.multiblock3x3Textures(base);
+                        case 4 -> textures.multiblock4x4Textures(base);
+                        default -> throw new IllegalStateException("Unsupported multiblock size: " + size);
+                    }
+                })
                 .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
                 .put(TextureSlot.ALL, VariantTextures.get(variant))
-                .put(TextureSlot.LAYER0, new Material(BuiltInRegistries.FLUID.getKey(Fluids.LAVA.getSource()).withPrefix("block/").withSuffix("_still")))
-                .put(TextureSlot.LAYER1, VariantTextures.get(variant))
-                .put(overlaySlot, VariantTextures.get(variant, size + "x" + size));
+                .putForced(ChiselTextureSlots.CTM_BASE, VariantTextures.get(variant, "bg"))
+                .put(TextureSlot.LAYER0, VariantTextures.get(variant, "bg"))
+                .put(TextureSlot.LAYER1, VariantTextures.get(variant));
     }
 
     @Override

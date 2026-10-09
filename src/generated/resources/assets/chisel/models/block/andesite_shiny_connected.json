@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/andesite/andesite_shiny_connected",
+    "particle": "chisel:block/andesite/andesite_shiny_connected",
+    "standard_corner": "chisel:block/andesite/andesite_shiny_connected-ctm_corner",
+    "standard_cornerless": "chisel:block/andesite/andesite_shiny_connected-ctm_cornerless",
+    "standard_horizontal": "chisel:block/andesite/andesite_shiny_connected-ctm_horizontal",
+    "standard_none": "chisel:block/andesite/andesite_shiny_connected",
+    "standard_vertical": "chisel:block/andesite/andesite_shiny_connected-ctm_vertical"
+  }
+}

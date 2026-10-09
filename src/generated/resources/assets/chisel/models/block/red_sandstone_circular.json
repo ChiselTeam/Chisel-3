@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/red_sandstone/red_sandstone_circular",
-    "overlay_connected": "chisel:block/red_sandstone/red_sandstone_circular-ctm",
-    "overlay_texture": "chisel:block/red_sandstone/red_sandstone_circular",
-    "particle": "chisel:block/red_sandstone/red_sandstone_circular"
+    "particle": "chisel:block/red_sandstone/red_sandstone_circular",
+    "standard_corner": "chisel:block/red_sandstone/red_sandstone_circular-ctm_corner",
+    "standard_cornerless": "chisel:block/red_sandstone/red_sandstone_circular-ctm_cornerless",
+    "standard_horizontal": "chisel:block/red_sandstone/red_sandstone_circular-ctm_horizontal",
+    "standard_none": "chisel:block/red_sandstone/red_sandstone_circular",
+    "standard_vertical": "chisel:block/red_sandstone/red_sandstone_circular-ctm_vertical"
   }
 }

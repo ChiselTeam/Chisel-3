@@ -2,8 +2,11 @@
   "parent": "minecraft:block/cube_all",
   "textures": {
     "all": "chisel:block/aluminum/aluminum_bad_greggy",
-    "overlay_connected": "chisel:block/aluminum/aluminum_bad_greggy-ctm",
-    "overlay_texture": "chisel:block/aluminum/aluminum_bad_greggy",
-    "particle": "chisel:block/aluminum/aluminum_bad_greggy"
+    "particle": "chisel:block/aluminum/aluminum_bad_greggy",
+    "standard_corner": "chisel:block/aluminum/aluminum_bad_greggy-ctm_corner",
+    "standard_cornerless": "chisel:block/aluminum/aluminum_bad_greggy-ctm_cornerless",
+    "standard_horizontal": "chisel:block/aluminum/aluminum_bad_greggy-ctm_horizontal",
+    "standard_none": "chisel:block/aluminum/aluminum_bad_greggy",
+    "standard_vertical": "chisel:block/aluminum/aluminum_bad_greggy-ctm_vertical"
   }
 }
