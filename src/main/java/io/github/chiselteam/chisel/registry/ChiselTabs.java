@@ -233,7 +233,7 @@ public class ChiselTabs {
                     if (variant.shouldGenerateModel() && variant.isInTab())
                         output.accept(variant.getBlock());
                 }));
-                CompatFamilies.families().forEach(family -> family.getFamily().getVariants().forEach(variant -> {
+                CompatFamilies.visibleFamilies().forEach(family -> family.getFamily().getVariants().forEach(variant -> {
                     if (variant.shouldGenerateModel() && variant.isInTab())
                         output.accept(variant.getBlock());
                 }));

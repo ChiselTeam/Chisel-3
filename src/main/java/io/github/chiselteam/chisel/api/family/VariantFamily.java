@@ -8,10 +8,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.ApiStatus;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class VariantFamily {
 
@@ -50,11 +47,11 @@ public class VariantFamily {
     }
 
     public List<Variant> getVariants() {
-        return Collections.unmodifiableList(variants);
+        return List.copyOf(new LinkedHashSet<>(variants));
     }
 
     public List<Variant> getHiddenVariants() {
-        return Collections.unmodifiableList(hiddenVariants);
+        return List.copyOf(new LinkedHashSet<>(hiddenVariants));
     }
 
     public List<Variant> getAllVariants() {
@@ -66,7 +63,10 @@ public class VariantFamily {
         }
         all.addAll(variants);
         all.addAll(hiddenVariants);
-        return List.copyOf(all);
+
+        all.sort(Comparator.comparing(variant -> BuiltInRegistries.BLOCK.getKey(variant.getBlock()).getNamespace().equals("minecraft") ? 0 : 1));
+
+        return List.copyOf(new LinkedHashSet<>(all));
     }
 
     @ApiStatus.Internal

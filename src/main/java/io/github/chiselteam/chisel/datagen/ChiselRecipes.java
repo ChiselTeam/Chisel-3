@@ -90,8 +90,8 @@ public class ChiselRecipes extends RecipeProvider {
                 .define('B', Items.BLACK_CONCRETE)
                 .unlockedBy("has_white_concrete", has(Items.WHITE_CONCRETE))
                 .save(output);
-                
-        for (DyeColor color : DyeColor.values()) {
+
+        for (var color : DyeColor.values()) {
             shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.LIGHT.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .requires(Items.SEA_LANTERN)
                 .requires(color.getTag())
@@ -99,7 +99,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .save(output);
         }
 
-        for (DyeColor color : DyeColor.values()) {
+        for (var color : DyeColor.values()) {
             shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.OAK_FRAMED_STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("GGG")
                 .pattern("GIG")
@@ -110,7 +110,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .save(output);
         }
 
-        for (DyeColor color : DyeColor.values()) {
+        for (var color : DyeColor.values()) {
             shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.STEEL_FRAMED_STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("GGG")
                 .pattern("GIG")
@@ -261,7 +261,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .pattern("GQG")
                 .pattern(" G ")
                 .define('G', Blocks.GLASS)
-                .define('Q', ItemTags.WOOL)
+                .define('Q', Tags.Items.GEMS_QUARTZ)
                 .unlockedBy("has_glass", has(Blocks.GLASS))
                 .save(output);
 

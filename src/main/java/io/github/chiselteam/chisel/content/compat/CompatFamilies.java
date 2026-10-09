@@ -5,8 +5,8 @@ import io.github.chiselteam.chisel.content.compat.allthemods.AtmAncientStoneFami
 import io.github.chiselteam.chisel.content.compat.appliedenergistics.Ae2CertusFamily;
 import io.github.chiselteam.chisel.content.compat.appliedenergistics.Ae2SkyStoneFamily;
 import io.github.chiselteam.chisel.content.compat.neovitae.NvRuneFamily;
-import io.github.chiselteam.chisel.content.compat.thaumaturge.TTTallowFamily;
 import io.github.chiselteam.chisel.content.compat.thaumaturge.TTArcaneStoneFamily;
+import io.github.chiselteam.chisel.content.compat.thaumaturge.TTTallowFamily;
 import io.github.chiselteam.chisel.content.compat.thaumaturge.TTThaumiumFamily;
 
 import java.util.List;
@@ -29,10 +29,22 @@ public class CompatFamilies {
 
     public static List<ChiselFamily> families() {
         return MODULES.stream()
+                .flatMap(module -> module.families().stream())
+                .distinct()
+                .toList();
+    }
+
+    public static List<ChiselFamily> visibleFamilies() {
+        return MODULES.stream()
                 .filter(CompatModule::isEnabled)
                 .flatMap(module -> module.families().stream())
                 .distinct()
                 .toList();
+    }
+
+    public static List<ChiselFamily> hiddenFamilies() {
+        var visible = visibleFamilies();
+        return families().stream().filter(family -> !visible.contains(family)).toList();
     }
 
     public static List<CompatModule> modules() {
