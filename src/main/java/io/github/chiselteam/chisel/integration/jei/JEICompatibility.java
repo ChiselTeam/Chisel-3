@@ -39,6 +39,8 @@ public class JEICompatibility implements IModPlugin {
                 .collect(Collectors.toSet());
         registration.addRecipes(ChiselRecipeCategory.TYPE, ChiselAPI.getFamilies(Minecraft.getInstance().level.registryAccess()).stream()
                 .filter(family -> !hiddenFamilyNames.contains(family.getFamilyName()))
+                .filter(family -> !family.getAllVariants().isEmpty())
+                .filter(family -> family.getAllVariants().size() > 1)
                 .map(family -> new ChiselRecipe(family, Minecraft.getInstance().level.registryAccess()))
                 .collect(Collectors.toList()));
     }

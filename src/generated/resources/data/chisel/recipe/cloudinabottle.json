@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "G": "minecraft:glass",
-    "Q": "#minecraft:wool"
+    "Q": "#c:gems/quartz"
   },
   "pattern": [
     "G G",
