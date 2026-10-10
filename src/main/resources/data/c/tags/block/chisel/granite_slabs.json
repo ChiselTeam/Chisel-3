@@ -1,6 +1,10 @@
 {
   "values": [
     {"id": "minecraft:granite_slab", "required": false},
-    {"id": "minecraft:polished_granite_slab", "required": false}
+    {"id": "minecraft:polished_granite_slab", "required": false},
+    {"id": "mcwpaths:granite_crystal_floor_slab", "required": false},
+    {"id": "mcwpaths:granite_flagstone_slab", "required": false},
+    {"id": "mcwpaths:granite_running_bond_slab", "required": false},
+    {"id": "mcwpaths:granite_windmill_weave_slab", "required": false}
   ]
 }

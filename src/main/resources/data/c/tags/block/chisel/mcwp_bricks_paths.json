@@ -1,0 +1,15 @@
+{
+  "values": [
+    {"id": "mcwpaths:brick_basket_weave_paving", "required": false},
+    {"id": "mcwpaths:brick_clover_paving", "required": false},
+    {"id": "mcwpaths:brick_crystal_floor_path", "required": false},
+    {"id": "mcwpaths:brick_diamond_paving", "required": false},
+    {"id": "mcwpaths:brick_dumble_paving", "required": false},
+    {"id": "mcwpaths:brick_flagstone_path", "required": false},
+    {"id": "mcwpaths:brick_honeycomb_paving", "required": false},
+    {"id": "mcwpaths:brick_running_bond_path", "required": false},
+    {"id": "mcwpaths:brick_square_paving", "required": false},
+    {"id": "mcwpaths:brick_strewn_rocky_path", "required": false},
+    {"id": "mcwpaths:brick_windmill_weave_path", "required": false}
+  ]
+}

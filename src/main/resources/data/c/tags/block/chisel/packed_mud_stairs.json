@@ -1,0 +1,9 @@
+{
+  "values": [
+    {"id": "mcwpaths:mud_brick_crystal_floor_stairs", "required": false},
+    {"id": "mcwpaths:mud_brick_flagstone_stairs", "required": false},
+    {"id": "mcwpaths:mud_brick_running_bond_stairs", "required": false},
+    {"id": "mcwpaths:mud_brick_windmill_weave_stairs", "required": false},
+    {"id": "minecraft:mud_brick_stairs", "required": false}
+  ]
+}

@@ -1,6 +1,10 @@
 {
   "values": [
     {"id": "minecraft:cut_sandstone_slab", "required": false},
-    {"id": "minecraft:sandstone_slab", "required": false}
+    {"id": "minecraft:sandstone_slab", "required": false},
+    {"id": "mcwpaths:sandstone_crystal_floor_slab", "required": false},
+    {"id": "mcwpaths:sandstone_flagstone_slab", "required": false},
+    {"id": "mcwpaths:sandstone_running_bond_slab", "required": false},
+    {"id": "mcwpaths:sandstone_windmill_weave_slab", "required": false}
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "values": [
+    {"id": "mcwpaths:red_sandstone_crystal_floor_stairs", "required": false},
+    {"id": "mcwpaths:red_sandstone_flagstone_stairs", "required": false},
+    {"id": "mcwpaths:red_sandstone_running_bond_stairs", "required": false},
+    {"id": "mcwpaths:red_sandstone_windmill_weave_stairs", "required": false},
+    {"id": "minecraft:red_sandstone_stairs", "required": false}
+  ]
+}

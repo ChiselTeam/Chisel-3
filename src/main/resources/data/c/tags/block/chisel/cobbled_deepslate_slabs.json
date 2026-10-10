@@ -3,6 +3,10 @@
     {"id": "minecraft:cobbled_deepslate_slab", "required": false},
     {"id": "minecraft:deepslate_brick_slab", "required": false},
     {"id": "minecraft:deepslate_tile_slab", "required": false},
-    {"id": "minecraft:polished_deepslate_slab", "required": false}
+    {"id": "minecraft:polished_deepslate_slab", "required": false},
+    {"id": "mcwpaths:cobbled_deepslate_crystal_floor_slab", "required": false},
+    {"id": "mcwpaths:cobbled_deepslate_flagstone_slab", "required": false},
+    {"id": "mcwpaths:cobbled_deepslate_running_bond_slab", "required": false},
+    {"id": "mcwpaths:cobbled_deepslate_windmill_weave_slab", "required": false}
   ]
 }

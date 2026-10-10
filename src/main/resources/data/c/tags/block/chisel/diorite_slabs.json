@@ -1,6 +1,10 @@
 {
   "values": [
     {"id": "minecraft:diorite_slab", "required": false},
-    {"id": "minecraft:polished_diorite_slab", "required": false}
+    {"id": "minecraft:polished_diorite_slab", "required": false},
+    {"id": "mcwpaths:diorite_crystal_floor_slab", "required": false},
+    {"id": "mcwpaths:diorite_flagstone_slab", "required": false},
+    {"id": "mcwpaths:diorite_running_bond_slab", "required": false},
+    {"id": "mcwpaths:diorite_windmill_weave_slab", "required": false}
   ]
 }

@@ -1,0 +1,8 @@
+{
+  "values": [
+    {"id": "mcwpaths:deepslate_crystal_floor_stairs", "required": false},
+    {"id": "mcwpaths:deepslate_flagstone_stairs", "required": false},
+    {"id": "mcwpaths:deepslate_running_bond_stairs", "required": false},
+    {"id": "mcwpaths:deepslate_windmill_weave_stairs", "required": false}
+  ]
+}

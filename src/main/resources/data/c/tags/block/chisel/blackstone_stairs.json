@@ -2,6 +2,10 @@
   "values": [
     {"id": "minecraft:blackstone_stairs", "required": false},
     {"id": "minecraft:polished_blackstone_brick_stairs", "required": false},
-    {"id": "minecraft:polished_blackstone_stairs", "required": false}
+    {"id": "minecraft:polished_blackstone_stairs", "required": false},
+    {"id": "mcwpaths:blackstone_crystal_floor_stairs", "required": false},
+    {"id": "mcwpaths:blackstone_flagstone_stairs", "required": false},
+    {"id": "mcwpaths:blackstone_running_bond_stairs", "required": false},
+    {"id": "mcwpaths:blackstone_windmill_weave_stairs", "required": false}
   ]
 }

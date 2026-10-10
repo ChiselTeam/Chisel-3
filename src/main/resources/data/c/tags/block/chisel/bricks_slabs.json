@@ -1,0 +1,9 @@
+{
+  "values": [
+    {"id": "mcwpaths:brick_crystal_floor_slab", "required": false},
+    {"id": "mcwpaths:brick_flagstone_slab", "required": false},
+    {"id": "mcwpaths:brick_running_bond_slab", "required": false},
+    {"id": "mcwpaths:brick_windmill_weave_slab", "required": false},
+    {"id": "minecraft:brick_slab", "required": false}
+  ]
+}

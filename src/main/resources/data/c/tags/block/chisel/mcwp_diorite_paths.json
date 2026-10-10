@@ -1,0 +1,15 @@
+{
+  "values": [
+    {"id": "mcwpaths:diorite_basket_weave_paving", "required": false},
+    {"id": "mcwpaths:diorite_clover_paving", "required": false},
+    {"id": "mcwpaths:diorite_crystal_floor_path", "required": false},
+    {"id": "mcwpaths:diorite_diamond_paving", "required": false},
+    {"id": "mcwpaths:diorite_dumble_paving", "required": false},
+    {"id": "mcwpaths:diorite_flagstone_path", "required": false},
+    {"id": "mcwpaths:diorite_honeycomb_paving", "required": false},
+    {"id": "mcwpaths:diorite_running_bond_path", "required": false},
+    {"id": "mcwpaths:diorite_square_paving", "required": false},
+    {"id": "mcwpaths:diorite_strewn_rocky_path", "required": false},
+    {"id": "mcwpaths:diorite_windmill_weave_path", "required": false}
+  ]
+}

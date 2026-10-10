@@ -2,6 +2,10 @@
   "values": [
     {"id": "minecraft:blackstone_slab", "required": false},
     {"id": "minecraft:polished_blackstone_brick_slab", "required": false},
-    {"id": "minecraft:polished_blackstone_slab", "required": false}
+    {"id": "minecraft:polished_blackstone_slab", "required": false},
+    {"id": "mcwpaths:blackstone_crystal_floor_slab", "required": false},
+    {"id": "mcwpaths:blackstone_flagstone_slab", "required": false},
+    {"id": "mcwpaths:blackstone_running_bond_slab", "required": false},
+    {"id": "mcwpaths:blackstone_windmill_weave_slab", "required": false}
   ]
 }

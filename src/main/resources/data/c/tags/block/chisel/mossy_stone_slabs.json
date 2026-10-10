@@ -1,0 +1,9 @@
+{
+  "values": [
+    {"id": "mcwpaths:mossy_stone_crystal_floor_slab", "required": false},
+    {"id": "mcwpaths:mossy_stone_flagstone_slab", "required": false},
+    {"id": "mcwpaths:mossy_stone_running_bond_slab", "required": false},
+    {"id": "mcwpaths:mossy_stone_windmill_weave_slab", "required": false},
+    {"id": "minecraft:mossy_stone_brick_slab", "required": false}
+  ]
+}

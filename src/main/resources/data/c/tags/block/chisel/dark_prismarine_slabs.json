@@ -1,0 +1,9 @@
+{
+  "values": [
+    {"id": "mcwpaths:dark_prismarine_crystal_floor_slab", "required": false},
+    {"id": "mcwpaths:dark_prismarine_flagstone_slab", "required": false},
+    {"id": "mcwpaths:dark_prismarine_running_bond_slab", "required": false},
+    {"id": "mcwpaths:dark_prismarine_windmill_weave_slab", "required": false},
+    {"id": "minecraft:dark_prismarine_slab", "required": false}
+  ]
+}

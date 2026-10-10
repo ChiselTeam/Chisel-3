@@ -1,0 +1,9 @@
+{
+  "values": [
+    {"id": "mcwpaths:deepslate_crystal_floor_path", "required": false},
+    {"id": "mcwpaths:deepslate_flagstone_path", "required": false},
+    {"id": "mcwpaths:deepslate_running_bond_path", "required": false},
+    {"id": "mcwpaths:deepslate_strewn_rocky_path", "required": false},
+    {"id": "mcwpaths:deepslate_windmill_weave_path", "required": false}
+  ]
+}

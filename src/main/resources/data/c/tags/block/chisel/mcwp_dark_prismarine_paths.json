@@ -1,0 +1,15 @@
+{
+  "values": [
+    {"id": "mcwpaths:dark_prismarine_basket_weave_paving", "required": false},
+    {"id": "mcwpaths:dark_prismarine_clover_paving", "required": false},
+    {"id": "mcwpaths:dark_prismarine_crystal_floor_path", "required": false},
+    {"id": "mcwpaths:dark_prismarine_diamond_paving", "required": false},
+    {"id": "mcwpaths:dark_prismarine_dumble_paving", "required": false},
+    {"id": "mcwpaths:dark_prismarine_flagstone_path", "required": false},
+    {"id": "mcwpaths:dark_prismarine_honeycomb_paving", "required": false},
+    {"id": "mcwpaths:dark_prismarine_running_bond_path", "required": false},
+    {"id": "mcwpaths:dark_prismarine_square_paving", "required": false},
+    {"id": "mcwpaths:dark_prismarine_strewn_rocky_path", "required": false},
+    {"id": "mcwpaths:dark_prismarine_windmill_weave_path", "required": false}
+  ]
+}

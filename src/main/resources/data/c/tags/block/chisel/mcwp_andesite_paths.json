@@ -1,0 +1,15 @@
+{
+  "values": [
+    {"id": "mcwpaths:andesite_basket_weave_paving", "required": false},
+    {"id": "mcwpaths:andesite_clover_paving", "required": false},
+    {"id": "mcwpaths:andesite_crystal_floor_path", "required": false},
+    {"id": "mcwpaths:andesite_diamond_paving", "required": false},
+    {"id": "mcwpaths:andesite_dumble_paving", "required": false},
+    {"id": "mcwpaths:andesite_flagstone_path", "required": false},
+    {"id": "mcwpaths:andesite_honeycomb_paving", "required": false},
+    {"id": "mcwpaths:andesite_running_bond_path", "required": false},
+    {"id": "mcwpaths:andesite_square_paving", "required": false},
+    {"id": "mcwpaths:andesite_strewn_rocky_path", "required": false},
+    {"id": "mcwpaths:andesite_windmill_weave_path", "required": false}
+  ]
+}

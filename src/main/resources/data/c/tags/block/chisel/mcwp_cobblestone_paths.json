@@ -1,0 +1,10 @@
+{
+  "values": [
+    {"id": "mcwpaths:cobblestone_basket_weave_paving", "required": false},
+    {"id": "mcwpaths:cobblestone_clover_paving", "required": false},
+    {"id": "mcwpaths:cobblestone_diamond_paving", "required": false},
+    {"id": "mcwpaths:cobblestone_dumble_paving", "required": false},
+    {"id": "mcwpaths:cobblestone_honeycomb_paving", "required": false},
+    {"id": "mcwpaths:cobblestone_square_paving", "required": false}
+  ]
+}

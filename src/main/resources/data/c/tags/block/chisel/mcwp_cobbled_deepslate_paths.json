@@ -1,0 +1,21 @@
+{
+  "values": [
+    {"id": "mcwpaths:cobbled_deepslate_basket_weave_paving", "required": false},
+    {"id": "mcwpaths:cobbled_deepslate_clover_paving", "required": false},
+    {"id": "mcwpaths:cobbled_deepslate_crystal_floor_path", "required": false},
+    {"id": "mcwpaths:cobbled_deepslate_diamond_paving", "required": false},
+    {"id": "mcwpaths:cobbled_deepslate_dumble_paving", "required": false},
+    {"id": "mcwpaths:cobbled_deepslate_flagstone_path", "required": false},
+    {"id": "mcwpaths:cobbled_deepslate_honeycomb_paving", "required": false},
+    {"id": "mcwpaths:cobbled_deepslate_running_bond_path", "required": false},
+    {"id": "mcwpaths:cobbled_deepslate_square_paving", "required": false},
+    {"id": "mcwpaths:cobbled_deepslate_strewn_rocky_path", "required": false},
+    {"id": "mcwpaths:cobbled_deepslate_windmill_weave_path", "required": false},
+    {"id": "mcwpaths:deepslate_basket_weave_paving", "required": false},
+    {"id": "mcwpaths:deepslate_clover_paving", "required": false},
+    {"id": "mcwpaths:deepslate_diamond_paving", "required": false},
+    {"id": "mcwpaths:deepslate_dumble_paving", "required": false},
+    {"id": "mcwpaths:deepslate_honeycomb_paving", "required": false},
+    {"id": "mcwpaths:deepslate_square_paving", "required": false}
+  ]
+}

@@ -1,6 +1,10 @@
 {
   "values": [
     {"id": "minecraft:andesite_slab", "required": false},
-    {"id": "minecraft:polished_andesite_slab", "required": false}
+    {"id": "minecraft:polished_andesite_slab", "required": false},
+    {"id": "mcwpaths:andesite_crystal_floor_slab", "required": false},
+    {"id": "mcwpaths:andesite_flagstone_slab", "required": false},
+    {"id": "mcwpaths:andesite_running_bond_slab", "required": false},
+    {"id": "mcwpaths:andesite_windmill_weave_slab", "required": false}
   ]
 }

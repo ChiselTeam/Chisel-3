@@ -1,0 +1,15 @@
+{
+  "values": [
+    {"id": "mcwpaths:red_sandstone_basket_weave_paving", "required": false},
+    {"id": "mcwpaths:red_sandstone_clover_paving", "required": false},
+    {"id": "mcwpaths:red_sandstone_crystal_floor_path", "required": false},
+    {"id": "mcwpaths:red_sandstone_diamond_paving", "required": false},
+    {"id": "mcwpaths:red_sandstone_dumble_paving", "required": false},
+    {"id": "mcwpaths:red_sandstone_flagstone_path", "required": false},
+    {"id": "mcwpaths:red_sandstone_honeycomb_paving", "required": false},
+    {"id": "mcwpaths:red_sandstone_running_bond_path", "required": false},
+    {"id": "mcwpaths:red_sandstone_square_paving", "required": false},
+    {"id": "mcwpaths:red_sandstone_strewn_rocky_path", "required": false},
+    {"id": "mcwpaths:red_sandstone_windmill_weave_path", "required": false}
+  ]
+}
