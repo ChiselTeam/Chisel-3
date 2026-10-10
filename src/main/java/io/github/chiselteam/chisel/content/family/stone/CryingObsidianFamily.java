@@ -5,11 +5,12 @@ import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
 import io.github.chiselteam.chisel.content.ChiselFamily;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.PushReaction;
 
 public final class CryingObsidianFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("crying_obsidian", builder -> builder
             .defaults(variant -> variant
-                    .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.CRYING_OBSIDIAN))
+                    .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.CRYING_OBSIDIAN).pushReaction(PushReaction.BLOCK))
                     .blockName("Crying Obsidian"))
             .existingBlock(Blocks.CRYING_OBSIDIAN)
             .variant("crying_obsidian_array", variant -> variant
