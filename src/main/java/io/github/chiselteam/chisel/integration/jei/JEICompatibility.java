@@ -37,6 +37,7 @@ public class JEICompatibility implements IModPlugin {
         var hiddenFamilyNames = CompatFamilies.hiddenFamilies().stream()
                 .map(family -> family.getDefinition().name())
                 .collect(Collectors.toSet());
+
         registration.addRecipes(ChiselRecipeCategory.TYPE, ChiselAPI.getFamilies(Minecraft.getInstance().level.registryAccess()).stream()
                 .filter(family -> !hiddenFamilyNames.contains(family.getFamilyName()))
                 .filter(family -> !family.getAllVariants().isEmpty())
