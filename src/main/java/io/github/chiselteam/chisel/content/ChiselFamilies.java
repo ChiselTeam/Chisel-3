@@ -64,6 +64,11 @@ public class ChiselFamilies {
     public static final ChiselFamily END_STONE = EndStoneFamily.FAMILY;
     public static final ChiselFamily ENERGIZED_VOIDSTONE = EnergizedVoidstoneFamily.FAMILY;
     public static final ChiselFamily FACTORY = FactoryFamily.FAMILY;
+    public static final ChiselFamily FANTASY = FantasyFamily.FAMILY;
+    public static final ChiselFamily FANTASY_PURPLE = FantasyFamily.PURPLE_FAMILY;
+    public static final ChiselFamily FANTASY_GREEN = FantasyFamily.GREEN_FAMILY;
+    public static final ChiselFamily FANTASY_BLUE = FantasyFamily.BLUE_FAMILY;
+    public static final ChiselFamily FANTASY_RED = FantasyFamily.RED_FAMILY;
     public static final ChiselFamily FUTURA = FuturaFamily.FAMILY;
     public static final ChiselFamily GLASS = GlassFamily.FAMILY;
     public static final ChiselFamily STEEL_FRAMED_GLASS = SteelFramedGlassFamily.FAMILY;
@@ -203,7 +208,7 @@ public class ChiselFamilies {
 
         // Decorative
         families.addAll(List.of(
-                C_CONCRETE, CLOUD, DIRT, ENERGIZED_VOIDSTONE, FACTORY, FUTURA, GLOWSTONE, GRIMSTONE,
+                C_CONCRETE, CLOUD, DIRT, ENERGIZED_VOIDSTONE, FACTORY, FANTASY, FANTASY_PURPLE, FANTASY_GREEN, FANTASY_BLUE, FANTASY_RED, FUTURA, GLOWSTONE, GRIMSTONE,
                 HEX_PLATING, HOLYSTONE, ICE, PACKED_ICE, BLUE_ICE, SNOW, LABORATORY, LAVASTONE,
                 LEAF, MAGMA, MILITARY, MOSSY_TEMPLE, PAPERWALL, REDSTONE, RESIN, SEA_LANTERN,
                 SHINGLE, TECHNICAL, TEMPLE, TERRACOTTA, TYRIAN, VALENTINES, VOIDSTONE, WARNING,

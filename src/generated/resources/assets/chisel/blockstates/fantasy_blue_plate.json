@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "chisel:block/fantasy_blue_plate",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "chisel:block/fantasy_blue_plate"
+    },
+    "axis=z": {
+      "model": "chisel:block/fantasy_blue_plate",
+      "x": 90
+    }
+  }
+}

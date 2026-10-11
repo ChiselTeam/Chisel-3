@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": "#c:ingots/gold",
+    "L": "#chisel:limestone"
+  },
+  "pattern": [
+    "GLG",
+    "L L",
+    "GLG"
+  ],
+  "result": {
+    "count": 8,
+    "id": "chisel:fantasy_block"
+  }
+}

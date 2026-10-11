@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": "#c:dyes/green",
+    "G": "#c:ingots/gold",
+    "L": "#chisel:limestone"
+  },
+  "pattern": [
+    "GLG",
+    "LDL",
+    "GLG"
+  ],
+  "result": {
+    "count": 8,
+    "id": "chisel:fantasy_green_block"
+  }
+}

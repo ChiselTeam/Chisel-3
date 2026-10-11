@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/fantasy/fantasy_brick_worn-side",
+    "bottom": "chisel:block/fantasy/fantasy_brick_worn-bottom",
+    "particle": "chisel:block/fantasy/fantasy_brick_worn-side",
+    "side": "chisel:block/fantasy/fantasy_brick_worn-side",
+    "top": "chisel:block/fantasy/fantasy_brick_worn-top",
+    "vertical_both": "chisel:block/fantasy/fantasy_brick_worn-vertical_both",
+    "vertical_bottom": "chisel:block/fantasy/fantasy_brick_worn-vertical_bottom",
+    "vertical_none": "chisel:block/fantasy/fantasy_brick_worn-vertical_none",
+    "vertical_top": "chisel:block/fantasy/fantasy_brick_worn-vertical_top"
+  }
+}

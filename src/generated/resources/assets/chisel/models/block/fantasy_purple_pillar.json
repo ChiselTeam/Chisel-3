@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/fantasy_purple/fantasy_purple_pillar-bottom",
+    "side": "chisel:block/fantasy_purple/fantasy_purple_pillar-side",
+    "top": "chisel:block/fantasy_purple/fantasy_purple_pillar-top"
+  }
+}

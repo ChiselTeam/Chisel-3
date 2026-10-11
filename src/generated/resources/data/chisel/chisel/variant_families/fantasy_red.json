@@ -1,0 +1,58 @@
+{
+  "family_name": "fantasy_red",
+  "tag": "c:chisel/fantasy_red",
+  "variants": [
+    {
+      "block": "chisel:fantasy_red_block",
+      "model_type": "connected",
+      "name": "fantasy_red_block"
+    },
+    {
+      "block": "chisel:fantasy_red_brick",
+      "name": "fantasy_red_brick"
+    },
+    {
+      "block": "chisel:fantasy_red_brick_chaotic",
+      "name": "fantasy_red_brick_chaotic"
+    },
+    {
+      "block": "chisel:fantasy_red_brick_chaotic_worn",
+      "model_type": "ctmv",
+      "name": "fantasy_red_brick_chaotic_worn"
+    },
+    {
+      "block": "chisel:fantasy_red_brick_faded",
+      "name": "fantasy_red_brick_faded"
+    },
+    {
+      "block": "chisel:fantasy_red_brick_worn",
+      "model_type": "ctmv",
+      "name": "fantasy_red_brick_worn"
+    },
+    {
+      "block": "chisel:fantasy_red_path",
+      "model_type": "connected",
+      "name": "fantasy_red_path"
+    },
+    {
+      "block": "chisel:fantasy_red_pillar",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_red_pillar"
+    },
+    {
+      "block": "chisel:fantasy_red_pillar_2",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_red_pillar_2"
+    },
+    {
+      "block": "chisel:fantasy_red_pillar_3",
+      "model_type": "ctmv",
+      "name": "fantasy_red_pillar_3"
+    },
+    {
+      "block": "chisel:fantasy_red_plate",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_red_plate"
+    }
+  ]
+}

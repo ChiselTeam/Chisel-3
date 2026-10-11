@@ -1,0 +1,78 @@
+{
+  "family_name": "fantasy",
+  "tag": "c:chisel/fantasy",
+  "variants": [
+    {
+      "block": "chisel:fantasy_block",
+      "model_type": "connected",
+      "name": "fantasy_block"
+    },
+    {
+      "block": "chisel:fantasy_brick",
+      "name": "fantasy_brick"
+    },
+    {
+      "block": "chisel:fantasy_brick_chaotic",
+      "name": "fantasy_brick_chaotic"
+    },
+    {
+      "block": "chisel:fantasy_brick_chaotic_worn",
+      "model_type": "ctmv",
+      "name": "fantasy_brick_chaotic_worn"
+    },
+    {
+      "block": "chisel:fantasy_brick_faded",
+      "name": "fantasy_brick_faded"
+    },
+    {
+      "block": "chisel:fantasy_brick_worn",
+      "model_type": "ctmv",
+      "name": "fantasy_brick_worn"
+    },
+    {
+      "block": "chisel:fantasy_path",
+      "model_type": "connected",
+      "name": "fantasy_path"
+    },
+    {
+      "block": "chisel:fantasy_gold_decor_1",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_gold_decor_1"
+    },
+    {
+      "block": "chisel:fantasy_gold_decor_2",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_gold_decor_2"
+    },
+    {
+      "block": "chisel:fantasy_gold_decor_3",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_gold_decor_3"
+    },
+    {
+      "block": "chisel:fantasy_gold_decor_4",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_gold_decor_4"
+    },
+    {
+      "block": "chisel:fantasy_pillar",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_pillar"
+    },
+    {
+      "block": "chisel:fantasy_pillar_2",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_pillar_2"
+    },
+    {
+      "block": "chisel:fantasy_pillar_3",
+      "model_type": "ctmv",
+      "name": "fantasy_pillar_3"
+    },
+    {
+      "block": "chisel:fantasy_plate",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_plate"
+    }
+  ]
+}

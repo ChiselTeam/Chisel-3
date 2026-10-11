@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/fantasy_blue/fantasy_blue_brick_chaotic_worn-side",
+    "bottom": "chisel:block/fantasy_blue/fantasy_blue_brick_chaotic_worn-bottom",
+    "particle": "chisel:block/fantasy_blue/fantasy_blue_brick_chaotic_worn-side",
+    "side": "chisel:block/fantasy_blue/fantasy_blue_brick_chaotic_worn-side",
+    "top": "chisel:block/fantasy_blue/fantasy_blue_brick_chaotic_worn-top",
+    "vertical_both": "chisel:block/fantasy_blue/fantasy_blue_brick_chaotic_worn-vertical_both",
+    "vertical_bottom": "chisel:block/fantasy_blue/fantasy_blue_brick_chaotic_worn-vertical_bottom",
+    "vertical_none": "chisel:block/fantasy_blue/fantasy_blue_brick_chaotic_worn-vertical_none",
+    "vertical_top": "chisel:block/fantasy_blue/fantasy_blue_brick_chaotic_worn-vertical_top"
+  }
+}

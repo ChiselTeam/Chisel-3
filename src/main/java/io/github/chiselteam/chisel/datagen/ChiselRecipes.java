@@ -9,6 +9,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.DyeColor;
@@ -46,6 +47,55 @@ public class ChiselRecipes extends RecipeProvider {
         stoneAround("has_water_bucket", Tags.Items.BUCKETS_WATER, ChiselFamilies.WATERSTONE.getFamily().getVariants().getFirst().getBlock(), 8);
         stoneAround("has_blue_dye", Tags.Items.DYES_BLUE, ChiselFamilies.TEMPLE.getFamily().getVariants().getFirst().getBlock(), 8);
         stoneAround("has_sign", ItemTags.SIGNS, ChiselFamilies.WARNING.getFamily().getVariants().getFirst().getBlock(), 4);
+
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.FANTASY.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+                .pattern("GLG")
+                .pattern("L L")
+                .pattern("GLG")
+                .define('G', Tags.Items.INGOTS_GOLD)
+                .define('L', ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone")))
+                .unlockedBy("has_limestone", has(ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone"))))
+                .save(output);
+
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.FANTASY_PURPLE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+                .pattern("GLG")
+                .pattern("LDL")
+                .pattern("GLG")
+                .define('G', Tags.Items.INGOTS_GOLD)
+                .define('L', ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone")))
+                .define('D', Tags.Items.DYES_PURPLE)
+                .unlockedBy("has_limestone", has(ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone"))))
+                .save(output);
+
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.FANTASY_GREEN.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+                .pattern("GLG")
+                .pattern("LDL")
+                .pattern("GLG")
+                .define('G', Tags.Items.INGOTS_GOLD)
+                .define('L', ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone")))
+                .define('D', Tags.Items.DYES_GREEN)
+                .unlockedBy("has_limestone", has(ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone"))))
+                .save(output);
+
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.FANTASY_BLUE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+                .pattern("GLG")
+                .pattern("LDL")
+                .pattern("GLG")
+                .define('G', Tags.Items.INGOTS_GOLD)
+                .define('L', ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone")))
+                .define('D', Tags.Items.DYES_BLUE)
+                .unlockedBy("has_limestone", has(ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone"))))
+                .save(output);
+
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.FANTASY_RED.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+                .pattern("GLG")
+                .pattern("LDL")
+                .pattern("GLG")
+                .define('G', Tags.Items.INGOTS_GOLD)
+                .define('L', ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone")))
+                .define('D', Tags.Items.DYES_RED)
+                .unlockedBy("has_limestone", has(ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone"))))
+                .save(output);
 
         shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.MOSSY_TEMPLE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("SSS")

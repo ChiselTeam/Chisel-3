@@ -1,0 +1,58 @@
+{
+  "family_name": "fantasy_green",
+  "tag": "c:chisel/fantasy_green",
+  "variants": [
+    {
+      "block": "chisel:fantasy_green_block",
+      "model_type": "connected",
+      "name": "fantasy_green_block"
+    },
+    {
+      "block": "chisel:fantasy_green_brick",
+      "name": "fantasy_green_brick"
+    },
+    {
+      "block": "chisel:fantasy_green_brick_chaotic",
+      "name": "fantasy_green_brick_chaotic"
+    },
+    {
+      "block": "chisel:fantasy_green_brick_chaotic_worn",
+      "model_type": "ctmv",
+      "name": "fantasy_green_brick_chaotic_worn"
+    },
+    {
+      "block": "chisel:fantasy_green_brick_faded",
+      "name": "fantasy_green_brick_faded"
+    },
+    {
+      "block": "chisel:fantasy_green_brick_worn",
+      "model_type": "ctmv",
+      "name": "fantasy_green_brick_worn"
+    },
+    {
+      "block": "chisel:fantasy_green_path",
+      "model_type": "connected",
+      "name": "fantasy_green_path"
+    },
+    {
+      "block": "chisel:fantasy_green_pillar",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_green_pillar"
+    },
+    {
+      "block": "chisel:fantasy_green_pillar_2",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_green_pillar_2"
+    },
+    {
+      "block": "chisel:fantasy_green_pillar_3",
+      "model_type": "ctmv",
+      "name": "fantasy_green_pillar_3"
+    },
+    {
+      "block": "chisel:fantasy_green_plate",
+      "model_type": "top_bottom_side",
+      "name": "fantasy_green_plate"
+    }
+  ]
+}

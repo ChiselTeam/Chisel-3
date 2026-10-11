@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/fantasy/fantasy_path",
+    "particle": "chisel:block/fantasy/fantasy_path",
+    "standard_corner": "chisel:block/fantasy/fantasy_path-ctm_corner",
+    "standard_cornerless": "chisel:block/fantasy/fantasy_path-ctm_cornerless",
+    "standard_horizontal": "chisel:block/fantasy/fantasy_path-ctm_horizontal",
+    "standard_none": "chisel:block/fantasy/fantasy_path",
+    "standard_vertical": "chisel:block/fantasy/fantasy_path-ctm_vertical"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/fantasy_blue/fantasy_blue_pillar_3-side",
+    "bottom": "chisel:block/fantasy_blue/fantasy_blue_pillar_3-bottom",
+    "particle": "chisel:block/fantasy_blue/fantasy_blue_pillar_3-side",
+    "side": "chisel:block/fantasy_blue/fantasy_blue_pillar_3-side",
+    "top": "chisel:block/fantasy_blue/fantasy_blue_pillar_3-top",
+    "vertical_both": "chisel:block/fantasy_blue/fantasy_blue_pillar_3-vertical_both",
+    "vertical_bottom": "chisel:block/fantasy_blue/fantasy_blue_pillar_3-vertical_bottom",
+    "vertical_none": "chisel:block/fantasy_blue/fantasy_blue_pillar_3-vertical_none",
+    "vertical_top": "chisel:block/fantasy_blue/fantasy_blue_pillar_3-vertical_top"
+  }
+}

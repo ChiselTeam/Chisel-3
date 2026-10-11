@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "chisel:block/fantasy_purple_pillar_2",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "chisel:block/fantasy_purple_pillar_2"
+    },
+    "axis=z": {
+      "model": "chisel:block/fantasy_purple_pillar_2",
+      "x": 90
+    }
+  }
+}

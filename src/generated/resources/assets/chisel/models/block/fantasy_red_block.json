@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/fantasy_red/fantasy_red_block",
+    "particle": "chisel:block/fantasy_red/fantasy_red_block",
+    "standard_corner": "chisel:block/fantasy_red/fantasy_red_block-ctm_corner",
+    "standard_cornerless": "chisel:block/fantasy_red/fantasy_red_block-ctm_cornerless",
+    "standard_horizontal": "chisel:block/fantasy_red/fantasy_red_block-ctm_horizontal",
+    "standard_none": "chisel:block/fantasy_red/fantasy_red_block",
+    "standard_vertical": "chisel:block/fantasy_red/fantasy_red_block-ctm_vertical"
+  }
+}
