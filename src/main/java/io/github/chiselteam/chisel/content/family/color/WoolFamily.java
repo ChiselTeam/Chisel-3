@@ -16,15 +16,10 @@ public final class WoolFamily {
         var legacyColorName = WordUtils.capitalize(color.getName().replace("_", " "));
         var woolName = "wool_%s".formatted(color.getName());
         return ChiselFamily.build(woolName, builder -> builder
-                .defaults(variant -> variant
-                        .properties(BlockBehaviour.Properties.ofFullCopy(getVanillaWool(color)))
-                        .blockName("%s Wool".formatted(legacyColorName))
-                        .model(ChiselModelHandlers.CONNECTED))
+                .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(getVanillaWool(color))).blockName("%s Wool".formatted(legacyColorName)).model(ChiselModelHandlers.CONNECTED))
                 .existingBlock(getVanillaWool(color))
-                .variant("%s_legacy".formatted(woolName), variant -> variant
-                        .description("Legacy"))
-                .variant("%s_llama".formatted(woolName), variant -> variant
-                        .description("Llama")));
+                .variant("%s_legacy".formatted(woolName), v -> v.description("Legacy"))
+                .variant("%s_llama".formatted(woolName), v -> v.description("Llama")));
     }
 
     private static Block getVanillaWool(DyeColor color) {

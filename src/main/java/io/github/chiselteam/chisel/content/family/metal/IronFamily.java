@@ -8,80 +8,41 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class IronFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("iron", builder -> builder
-            .defaults(variant -> variant
-                    .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK))
-                    .blockName("Block of Iron")
-                    .model(ChiselModelHandlers.TBS))
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)).blockName("Block of Iron").model(ChiselModelHandlers.TBS))
             .existingBlock(Blocks.IRON_BLOCK)
-            .variant("iron_bad_greggy", variant -> variant
-                    .description("An Old Relic from the land of Oneteufyv")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("iron_bolted", variant -> variant
-                    .description("Fancy Bolted Plating")
-                    .model(ChiselModelHandlers.CUBE_ALL))
-            .variant("iron_caution", variant -> variant
-                    .description("Caution Stripes")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("iron_crate", variant -> variant
-                    .description("Shipping Crate")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("iron_machine", variant -> variant
-                    .description("Machine")
-                    .model(ChiselModelHandlers.CUBE_ALL))
-            .variant("iron_scaffold", variant -> variant
-                    .description("Scaffold")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("iron_thermal", variant -> variant
-                    .description("Thermal"))
-            .variant("iron_125", variant -> variant
-                    .description("125")
-                    .model(ChiselModelHandlers.CUBE_ALL))
-            .variant("iron_bordered", variant -> variant
-                    .description("Egregiously Bordered Block")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("iron_brick", variant -> variant
-                    .description("Iron Bricks")
+            .variant("iron_bad_greggy", v -> v.description("An Old Relic from the land of Oneteufyv").model(ChiselModelHandlers.CONNECTED))
+            .variant("iron_bolted", v -> v.description("Fancy Bolted Plating").model(ChiselModelHandlers.CUBE_ALL))
+            .variant("iron_caution", v -> v.description("Caution Stripes").model(ChiselModelHandlers.CONNECTED))
+            .variant("iron_crate", v -> v.description("Shipping Crate").model(ChiselModelHandlers.CONNECTED))
+            .variant("iron_machine", v -> v.description("Machine").model(ChiselModelHandlers.CUBE_ALL))
+            .variant("iron_scaffold", v -> v.description("Scaffold").model(ChiselModelHandlers.CONNECTED))
+            .variant("iron_thermal", v -> v.description("Thermal"))
+            .variant("iron_125", v -> v.description("125").model(ChiselModelHandlers.CUBE_ALL))
+            .variant("iron_bordered", v -> v.description("Egregiously Bordered Block").model(ChiselModelHandlers.CONNECTED))
+            .variant("iron_brick", v -> v.description("Iron Bricks")
                     .texture("bottom", Chisel.prefix("block/iron/iron_brick-top")))
-            .variant("iron_coin_heads", variant -> variant
-                    .description("Iron Coin Stack Heads-up"))
-            .variant("iron_coin_tails", variant -> variant
-                    .description("Iron Coin Stack Heads-down")
+            .variant("iron_coin_heads", v -> v.description("Iron Coin Stack Heads-up"))
+            .variant("iron_coin_tails", v -> v.description("Iron Coin Stack Heads-down")
                     .texture("side", Chisel.prefix("block/iron/iron_coin_heads-side")))
-            .variant("iron_crate_dark", variant -> variant
-                    .description("Dark Iron Crate")
+            .variant("iron_crate_dark", v -> v.description("Dark Iron Crate")
                     .texture("bottom", Chisel.prefix("block/gold/gold_crate_dark-bottom")))
-            .variant("iron_crate_light", variant -> variant
-                    .description("Light Iron Crate")
+            .variant("iron_crate_light", v -> v.description("Light Iron Crate")
                     .texture("bottom", Chisel.prefix("block/gold/gold_crate_light-bottom"))
                     .texture("top", Chisel.prefix("block/iron/iron_crate_dark-top")))
-            .variant("iron_gears", variant -> variant
-                    .description("Iron Gears")
+            .variant("iron_gears", v -> v.description("Iron Gears")
                     .texture("bottom", Chisel.prefix("block/iron/iron_gears-top")))
-            .variant("iron_ingots_large", variant -> variant
-                    .description("Large Iron Ingots"))
-            .variant("iron_ingots_small", variant -> variant
-                    .description("Small Iron Ingots")
+            .variant("iron_ingots_large", v -> v.description("Large Iron Ingots"))
+            .variant("iron_ingots_small", v -> v.description("Small Iron Ingots")
                     .texture("top", Chisel.prefix("block/iron/iron_crate_dark-top")))
-            .variant("iron_moon", variant -> variant
-                    .description("Iron Block with Moon Decoration"))
-            .variant("iron_moon_obsidian", variant -> variant
-                    .description("Iron Moon in Obsidian")
-                    .model(ChiselModelHandlers.CUBE_ALL))
-            .variant("iron_moon_obsidian_purple", variant -> variant
-                    .description("Iron Moon in Purple Obsidian")
-                    .model(ChiselModelHandlers.CUBE_ALL))
-            .variant("iron_plates", variant -> variant
-                    .description("Iron Plates")
+            .variant("iron_moon", v -> v.description("Iron Block with Moon Decoration"))
+            .variant("iron_moon_obsidian", v -> v.description("Iron Moon in Obsidian").model(ChiselModelHandlers.CUBE_ALL))
+            .variant("iron_moon_obsidian_purple", v -> v.description("Iron Moon in Purple Obsidian").model(ChiselModelHandlers.CUBE_ALL))
+            .variant("iron_plates", v -> v.description("Iron Plates")
                     .texture("side", Chisel.prefix("block/iron/iron_plates-top")))
-            .variant("iron_rivets", variant -> variant
-                    .description("Iron Plates with Rivets"))
-            .variant("iron_shipping", variant -> variant
-                    .description("Shipping Crate")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("iron_simple", variant -> variant
-                    .description("Simple Iron Block"))
-            .variant("iron_vents", variant -> variant
-                    .description("Iron Vents")
+            .variant("iron_rivets", v -> v.description("Iron Plates with Rivets"))
+            .variant("iron_shipping", v -> v.description("Shipping Crate").model(ChiselModelHandlers.CONNECTED))
+            .variant("iron_simple", v -> v.description("Simple Iron Block"))
+            .variant("iron_vents", v -> v.description("Iron Vents")
                     .texture("bottom", Chisel.prefix("block/iron/iron_vents-top"))));
 
     private IronFamily() {

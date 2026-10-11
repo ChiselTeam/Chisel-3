@@ -8,35 +8,19 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class NexusFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("nexus", builder -> builder
-            .defaults(variant -> variant
-                    .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(3.0F, 5.0F).lightLevel((_) -> 10))
-                    .blockName("Nexus Block"))
-            .variant("nexus_core", variant -> variant
-                    .description("Nexus Core"))
-            .variant("nexus_grate_pillar", variant -> variant
-                    .description("Nexus Grate Pillar")
-                    .model(ChiselModelHandlers.TBS)
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(3.0F, 5.0F).lightLevel((_) -> 10)).blockName("Nexus Block"))
+            .variant("nexus_core", v -> v.description("Nexus Core"))
+            .variant("nexus_grate_pillar", v -> v.description("Nexus Grate Pillar").model(ChiselModelHandlers.TBS)
                     .texture("top", Chisel.prefix("block/nexus/nexus_grate_pillar-bottom")))
-            .variant("nexus_junction", variant -> variant
-                    .description("Nexus Junction"))
-            .variant("nexus_link", variant -> variant
-                    .description("Nexus Link"))
-            .variant("nexus_path", variant -> variant
-                    .description("Nexus Path")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("nexus_plate", variant -> variant
-                    .description("Nexus Plate"))
-            .variant("nexus_plating_pillar", variant -> variant
-                    .description("Nexus Plating Pillar")
-                    .model(ChiselModelHandlers.TBS)
+            .variant("nexus_junction", v -> v.description("Nexus Junction"))
+            .variant("nexus_link", v -> v.description("Nexus Link"))
+            .variant("nexus_path", v -> v.description("Nexus Path").model(ChiselModelHandlers.CONNECTED))
+            .variant("nexus_plate", v -> v.description("Nexus Plate"))
+            .variant("nexus_plating_pillar", v -> v.description("Nexus Plating Pillar").model(ChiselModelHandlers.TBS)
                     .texture("top", Chisel.prefix("block/nexus/nexus_plating_pillar-bottom")))
-            .variant("nexus_weave_pillar", variant -> variant
-                    .description("Nexus Weave Pillar")
-                    .model(ChiselModelHandlers.TBS)
+            .variant("nexus_weave_pillar", v -> v.description("Nexus Weave Pillar").model(ChiselModelHandlers.TBS)
                     .texture("top", Chisel.prefix("block/nexus/nexus_weave_pillar-bottom")))
-            .variant("nexus_railing_pillar", variant -> variant
-                    .description("Nexus Railing Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("nexus_railing_pillar", v -> v.description("Nexus Railing Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/nexus/nexus_railing_pillar-side"))
                     .textureAlias("vertical_bottom", "top")

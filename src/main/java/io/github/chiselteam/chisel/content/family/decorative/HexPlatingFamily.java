@@ -8,70 +8,51 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class HexPlatingFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("hex_plating", builder -> builder
-            .defaults(variant -> variant
-                    .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK))
-                    .blockName("Hex Plating")
-                    .model(ChiselModelHandlers.MULTI_LAYER))
-            .variant("hex_plating_0", variant -> variant
-                    .description("White"))
-            .variant("hex_plating_1", variant -> variant
-                    .description("Orange")
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)).blockName("Hex Plating").model(ChiselModelHandlers.MULTI_LAYER))
+            .variant("hex_plating_0", v -> v.description("White"))
+            .variant("hex_plating_1", v -> v.description("Orange")
                     .texture(Chisel.prefix("block/hex_plating/hex_plating_0"))
                     .texture("bg", Chisel.prefix("block/hex_plating/hex_plating_1-bg")))
-            .variant("hex_plating_2", variant -> variant
-                    .description("Magenta")
+            .variant("hex_plating_2", v -> v.description("Magenta")
                     .texture(Chisel.prefix("block/hex_plating/hex_plating_0"))
                     .texture("bg", Chisel.prefix("block/hex_plating/hex_plating_2-bg")))
-            .variant("hex_plating_3", variant -> variant
-                    .description("Light Blue")
+            .variant("hex_plating_3", v -> v.description("Light Blue")
                     .texture(Chisel.prefix("block/hex_plating/hex_plating_0"))
                     .texture("bg", Chisel.prefix("block/hex_plating/hex_plating_3-bg")))
-            .variant("hex_plating_4", variant -> variant
-                    .description("Yellow")
+            .variant("hex_plating_4", v -> v.description("Yellow")
                     .texture(Chisel.prefix("block/hex_plating/hex_plating_0"))
                     .texture("bg", Chisel.prefix("block/hex_plating/hex_plating_4-bg")))
-            .variant("hex_plating_5", variant -> variant
-                    .description("Lime")
+            .variant("hex_plating_5", v -> v.description("Lime")
                     .texture(Chisel.prefix("block/hex_plating/hex_plating_0"))
                     .texture("bg", Chisel.prefix("block/hex_plating/hex_plating_5-bg")))
-            .variant("hex_plating_6", variant -> variant
-                    .description("Pink")
+            .variant("hex_plating_6", v -> v.description("Pink")
                     .texture(Chisel.prefix("block/hex_plating/hex_plating_0"))
                     .texture("bg", Chisel.prefix("block/hex_plating/hex_plating_6-bg")))
-            .variant("hex_plating_7", variant -> variant
-                    .description("Gray")
+            .variant("hex_plating_7", v -> v.description("Gray")
                     .texture(Chisel.prefix("block/hex_plating/hex_plating_0"))
                     .texture("bg", Chisel.prefix("block/hex_plating/hex_plating_7-bg")))
-            .variant("hex_plating_8", variant -> variant
-                    .description("Light Gray")
+            .variant("hex_plating_8", v -> v.description("Light Gray")
                     .texture(Chisel.prefix("block/hex_plating/hex_plating_0"))
                     .texture("bg", Chisel.prefix("block/hex_plating/hex_plating_8-bg")))
-            .variant("hex_plating_9", variant -> variant
-                    .description("Cyan")
+            .variant("hex_plating_9", v -> v.description("Cyan")
                     .texture(Chisel.prefix("block/hex_plating/hex_plating_0"))
                     .texture("bg", Chisel.prefix("block/hex_plating/hex_plating_9-bg")))
-            .variant("hex_plating_10", variant -> variant
-                    .description("Purple")
+            .variant("hex_plating_10", v -> v.description("Purple")
                     .texture(Chisel.prefix("block/hex_plating/hex_plating_0"))
                     .texture("bg", Chisel.prefix("block/hex_plating/hex_plating_10-bg")))
-            .variant("hex_plating_11", variant -> variant
-                    .description("Blue")
+            .variant("hex_plating_11", v -> v.description("Blue")
                     .texture(Chisel.prefix("block/hex_plating/hex_plating_0"))
                     .texture("bg", Chisel.prefix("block/hex_plating/hex_plating_11-bg")))
-            .variant("hex_plating_12", variant -> variant
-                    .description("Brown")
+            .variant("hex_plating_12", v -> v.description("Brown")
                     .texture(Chisel.prefix("block/hex_plating/hex_plating_0"))
                     .texture("bg", Chisel.prefix("block/hex_plating/hex_plating_12-bg")))
-            .variant("hex_plating_13", variant -> variant
-                    .description("Green")
+            .variant("hex_plating_13", v -> v.description("Green")
                     .texture(Chisel.prefix("block/hex_plating/hex_plating_0"))
                     .texture("bg", Chisel.prefix("block/hex_plating/hex_plating_13-bg")))
-            .variant("hex_plating_14", variant -> variant
-                    .description("Red")
+            .variant("hex_plating_14", v -> v.description("Red")
                     .texture(Chisel.prefix("block/hex_plating/hex_plating_0"))
                     .texture("bg", Chisel.prefix("block/hex_plating/hex_plating_14-bg")))
-            .variant("hex_plating_15", variant -> variant
-                    .description("Black")
+            .variant("hex_plating_15", v -> v.description("Black")
                     .texture(Chisel.prefix("block/hex_plating/hex_plating_0"))
                     .texture("bg", Chisel.prefix("block/hex_plating/hex_plating_15-bg"))));
 

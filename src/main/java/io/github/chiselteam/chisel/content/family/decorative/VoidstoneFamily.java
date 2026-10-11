@@ -7,27 +7,15 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class VoidstoneFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("voidstone", builder -> builder
-            .defaults(variant -> variant
-                    .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE))
-                    .blockName("Voidstone"))
-            .variant("voidstone_bevel", variant -> variant
-                    .description("Beveled Voidstone")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("voidstone_eye", variant -> variant
-                    .description("Eye Voidstone"))
-            .variant("voidstone_metal", variant -> variant
-                    .description("Metal-Bordered Voidstone")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("voidstone_raw", variant -> variant
-                    .description("Raw Voidstone"))
-            .variant("voidstone_runic", variant -> variant
-                    .description("Runic Voidstone"))
-            .variant("voidstone_skull", variant -> variant
-                    .description("Skull Voidstone"))
-            .variant("voidstone_smooth", variant -> variant
-                    .description("Smooth Voidstone"))
-            .variant("voidstone_tiles", variant -> variant
-                    .description("Large Voidstone Tiles")));
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)).blockName("Voidstone"))
+            .variant("voidstone_bevel", v -> v.description("Beveled Voidstone").model(ChiselModelHandlers.CONNECTED))
+            .variant("voidstone_eye", v -> v.description("Eye Voidstone"))
+            .variant("voidstone_metal", v -> v.description("Metal-Bordered Voidstone").model(ChiselModelHandlers.CONNECTED))
+            .variant("voidstone_raw", v -> v.description("Raw Voidstone"))
+            .variant("voidstone_runic", v -> v.description("Runic Voidstone"))
+            .variant("voidstone_skull", v -> v.description("Skull Voidstone"))
+            .variant("voidstone_smooth", v -> v.description("Smooth Voidstone"))
+            .variant("voidstone_tiles", v -> v.description("Large Voidstone Tiles")));
 
     private VoidstoneFamily() {
     }

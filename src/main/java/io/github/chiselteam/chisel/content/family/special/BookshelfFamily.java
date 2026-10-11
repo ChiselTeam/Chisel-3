@@ -19,7 +19,7 @@ public final class BookshelfFamily {
         String[] typeNames = {"Abandoned", "Brim", "Cans", "Historian", "Hoarder", "Necromancer", "Necromancer Apprentice", "Papers", "Rainbow", "Tomes"};
 
         return ChiselFamily.build("bookshelf", builder -> {
-            builder.defaults(variant -> variant.properties(properties).model(ChiselModelHandlers.BOOKSHELF))
+            builder.defaults(v -> v.properties(properties).model(ChiselModelHandlers.BOOKSHELF))
                     .existingBlock(Blocks.BOOKSHELF);
             for (int wood = 0; wood < woods.length; wood++) {
                 for (int type = 0; type < types.length; type++) {
@@ -37,8 +37,8 @@ public final class BookshelfFamily {
                     String variant = "bookshelf_%s_%s".formatted(woods[wood], types[type]);
                     String blockName = "%s Bookshelf".formatted(woodNames[wood]);
                     var texture = Chisel.prefix("block/bookshelf/bookshelf_%s".formatted(types[type]));
-                    builder.variant(variant, settings -> settings.blockName(blockName)
-                            .description(description).texture("horizontal_none", texture));
+                    builder.variant(variant, v -> v.blockName(blockName).description(description)
+                                    .texture("horizontal_none", texture));
                 }
             }
         });

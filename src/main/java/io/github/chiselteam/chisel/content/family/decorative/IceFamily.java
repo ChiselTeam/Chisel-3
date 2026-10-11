@@ -8,331 +8,148 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class IceFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("ice", builder -> builder
-            .defaults(variant -> variant
-                    .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.ICE))
-                    .blockName("Ice"))
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.ICE)).blockName("Ice"))
             .existingBlock(Blocks.ICE)
-            .variant("ice_array", variant -> variant
-                    .description("Array")
-                    .model(ChiselModelHandlers.MULTIBLOCK_2X2))
-            .variant("ice_border_square", variant -> variant
-                    .description("Square Border")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_braid", variant -> variant
-                    .description("Braid"))
-            .variant("ice_braid_encased", variant -> variant
-                    .description("Encased Braid")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_bricks_cracked", variant -> variant
-                    .description("Cracked Bricks"))
-            .variant("ice_bricks_encased", variant -> variant
-                    .description("Encased Bricks")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_bricks_indent", variant -> variant
-                    .description("Indent Bricks"))
-            .variant("ice_bricks_inlayed", variant -> variant
-                    .description("Inlayed Bricks"))
-            .variant("ice_bricks_large", variant -> variant
-                    .description("Large Bricks")
-                    .model(ChiselModelHandlers.MULTIBLOCK_2X2))
-            .variant("ice_bricks_small", variant -> variant
-                    .description("Small Bricks"))
-            .variant("ice_bricks_soft", variant -> variant
-                    .description("Soft Bricks"))
-            .variant("ice_bricks_solid", variant -> variant
-                    .description("Solid Bricks"))
-            .variant("ice_bricks_triple", variant -> variant
-                    .description("Triple Bricks"))
-            .variant("ice_bricks_vertical", variant -> variant
-                    .description("Vertical Bricks"))
-            .variant("ice_chaotic", variant -> variant
-                    .description("Chaotic")
-                    .model(ChiselModelHandlers.MULTIBLOCK_3X3))
-            .variant("ice_chaotic_medium", variant -> variant
-                    .description("Chaotic Medium"))
-            .variant("ice_chaotic_small", variant -> variant
-                    .description("Chaotic Small"))
-            .variant("ice_checker", variant -> variant
-                    .description("Checker"))
-            .variant("ice_checker_small", variant -> variant
-                    .description("Small Checker"))
-            .variant("ice_circular", variant -> variant
-                    .description("Circular")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_cracked", variant -> variant
-                    .description("Cracked"))
-            .variant("ice_cobble", variant -> variant
-                    .description("Cobble"))
-            .variant("ice_cuts", variant -> variant
-                    .description("Cuts")
-                    .model(ChiselModelHandlers.MULTIBLOCK_4X4))
-            .variant("ice_dent", variant -> variant
-                    .description("Dent")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_french_1", variant -> variant
-                    .description("French 1"))
-            .variant("ice_french_2", variant -> variant
-                    .description("French 2"))
-            .variant("ice_indent", variant -> variant
-                    .description("Indent")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_jellybean", variant -> variant
-                    .description("Jellybean")
-                    .model(ChiselModelHandlers.MULTIBLOCK_2X2))
-            .variant("ice_layers", variant -> variant
-                    .description("Layers"))
-            .variant("ice_layers_connected", variant -> variant
-                    .description("Layers Connected")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_line_horizontal", variant -> variant
-                    .description("Horizontal Line"))
-            .variant("ice_line_vertical", variant -> variant
-                    .description("Vertical Line"))
-            .variant("ice_meander_horizontal", variant -> variant
-                    .description("Horizontal Meander")
-                    .model(ChiselModelHandlers.CTMH))
-            .variant("ice_meander_vertical", variant -> variant
-                    .description("Vertical Meander")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_array", v -> v.description("Array").model(ChiselModelHandlers.MULTIBLOCK_2X2))
+            .variant("ice_border_square", v -> v.description("Square Border").model(ChiselModelHandlers.ICE))
+            .variant("ice_braid", v -> v.description("Braid"))
+            .variant("ice_braid_encased", v -> v.description("Encased Braid").model(ChiselModelHandlers.ICE))
+            .variant("ice_bricks_cracked", v -> v.description("Cracked Bricks"))
+            .variant("ice_bricks_encased", v -> v.description("Encased Bricks").model(ChiselModelHandlers.ICE))
+            .variant("ice_bricks_indent", v -> v.description("Indent Bricks"))
+            .variant("ice_bricks_inlayed", v -> v.description("Inlayed Bricks"))
+            .variant("ice_bricks_large", v -> v.description("Large Bricks").model(ChiselModelHandlers.MULTIBLOCK_2X2))
+            .variant("ice_bricks_small", v -> v.description("Small Bricks"))
+            .variant("ice_bricks_soft", v -> v.description("Soft Bricks"))
+            .variant("ice_bricks_solid", v -> v.description("Solid Bricks"))
+            .variant("ice_bricks_triple", v -> v.description("Triple Bricks"))
+            .variant("ice_bricks_vertical", v -> v.description("Vertical Bricks"))
+            .variant("ice_chaotic", v -> v.description("Chaotic").model(ChiselModelHandlers.MULTIBLOCK_3X3))
+            .variant("ice_chaotic_medium", v -> v.description("Chaotic Medium"))
+            .variant("ice_chaotic_small", v -> v.description("Chaotic Small"))
+            .variant("ice_checker", v -> v.description("Checker"))
+            .variant("ice_checker_small", v -> v.description("Small Checker"))
+            .variant("ice_circular", v -> v.description("Circular").model(ChiselModelHandlers.ICE))
+            .variant("ice_cracked", v -> v.description("Cracked"))
+            .variant("ice_cobble", v -> v.description("Cobble"))
+            .variant("ice_cuts", v -> v.description("Cuts").model(ChiselModelHandlers.MULTIBLOCK_4X4))
+            .variant("ice_dent", v -> v.description("Dent").model(ChiselModelHandlers.ICE))
+            .variant("ice_french_1", v -> v.description("French 1"))
+            .variant("ice_french_2", v -> v.description("French 2"))
+            .variant("ice_indent", v -> v.description("Indent").model(ChiselModelHandlers.ICE))
+            .variant("ice_jellybean", v -> v.description("Jellybean").model(ChiselModelHandlers.MULTIBLOCK_2X2))
+            .variant("ice_layers", v -> v.description("Layers"))
+            .variant("ice_layers_connected", v -> v.description("Layers Connected").model(ChiselModelHandlers.ICE))
+            .variant("ice_line_horizontal", v -> v.description("Horizontal Line"))
+            .variant("ice_line_vertical", v -> v.description("Vertical Line"))
+            .variant("ice_meander_horizontal", v -> v.description("Horizontal Meander").model(ChiselModelHandlers.CTMH))
+            .variant("ice_meander_vertical", v -> v.description("Vertical Meander").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_meander_vertical-side")))
-            .variant("ice_mosaic", variant -> variant
-                    .description("Mosaic")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_ornate_small", variant -> variant
-                    .description("Small Ornate"))
-            .variant("ice_panel", variant -> variant
-                    .description("Panel"))
-            .variant("ice_pillar", variant -> variant
-                    .description("Pillar")
-                    .model(ChiselModelHandlers.TBS))
-            .variant("ice_pillar_basic", variant -> variant
-                    .description("Basic Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_mosaic", v -> v.description("Mosaic").model(ChiselModelHandlers.ICE))
+            .variant("ice_ornate_small", v -> v.description("Small Ornate"))
+            .variant("ice_panel", v -> v.description("Panel"))
+            .variant("ice_pillar", v -> v.description("Pillar").model(ChiselModelHandlers.TBS))
+            .variant("ice_pillar_basic", v -> v.description("Basic Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_pillar_basic-side")))
-            .variant("ice_pillar_basic_dent", variant -> variant
-                    .description("Basic Dent Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_pillar_basic_dent", v -> v.description("Basic Dent Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_pillar_basic_dent-side")))
-            .variant("ice_pillar_basic_plain", variant -> variant
-                    .description("Basic Plain Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_pillar_basic_plain", v -> v.description("Basic Plain Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_pillar_basic_plain-side")))
-            .variant("ice_pillar_basic_round", variant -> variant
-                    .description("Basic Round Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_pillar_basic_round", v -> v.description("Basic Round Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_pillar_basic_round-side")))
-            .variant("ice_pillar_basic_spiral", variant -> variant
-                    .description("Basic Spiral Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_pillar_basic_spiral", v -> v.description("Basic Spiral Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_pillar_basic_spiral-side")))
-            .variant("ice_pillar_classic", variant -> variant
-                    .description("Classic Pillar")
-                    .model(ChiselModelHandlers.TBS))
-            .variant("ice_pillar_classic_large", variant -> variant
-                    .description("Large Classic Pillar")
-                    .model(ChiselModelHandlers.TBS))
-            .variant("ice_pillar_ionic", variant -> variant
-                    .description("Ionic Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_pillar_classic", v -> v.description("Classic Pillar").model(ChiselModelHandlers.TBS))
+            .variant("ice_pillar_classic_large", v -> v.description("Large Classic Pillar").model(ChiselModelHandlers.TBS))
+            .variant("ice_pillar_ionic", v -> v.description("Ionic Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_pillar_ionic-side")))
-            .variant("ice_pillar_ionic_dent", variant -> variant
-                    .description("Ionic Dent Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_pillar_ionic_dent", v -> v.description("Ionic Dent Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_pillar_ionic_dent-side")))
-            .variant("ice_pillar_ionic_plain", variant -> variant
-                    .description("Ionic Plain Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_pillar_ionic_plain", v -> v.description("Ionic Plain Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_pillar_ionic_plain-side")))
-            .variant("ice_pillar_ionic_round", variant -> variant
-                    .description("Ionic Round Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_pillar_ionic_round", v -> v.description("Ionic Round Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_pillar_ionic_round-side")))
-            .variant("ice_pillar_ionic_spiral", variant -> variant
-                    .description("Ionic Spiral Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_pillar_ionic_spiral", v -> v.description("Ionic Spiral Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_pillar_ionic_spiral-side")))
-            .variant("ice_pillar_large_basic_triple", variant -> variant
-                    .description("Large Basic Triple Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_pillar_large_basic_triple", v -> v.description("Large Basic Triple Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_pillar_large_basic_triple-side")))
-            .variant("ice_pillar_large_ionic_triple", variant -> variant
-                    .description("Large Ionic Triple Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_pillar_large_ionic_triple", v -> v.description("Large Ionic Triple Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_pillar_large_ionic_triple-side")))
-            .variant("ice_pillar_meander", variant -> variant
-                    .description("Meander Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_pillar_meander", v -> v.description("Meander Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_pillar_meander-side")))
-            .variant("ice_pillar_meander_dent", variant -> variant
-                    .description("Meander Dent Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_pillar_meander_dent", v -> v.description("Meander Dent Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_pillar_meander_dent-side")))
-            .variant("ice_pillar_meander_plain", variant -> variant
-                    .description("Meander Plain Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_pillar_meander_plain", v -> v.description("Meander Plain Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_pillar_meander_plain-side")))
-            .variant("ice_pillar_meander_round", variant -> variant
-                    .description("Meander Round Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_pillar_meander_round", v -> v.description("Meander Round Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_pillar_meander_round-side")))
-            .variant("ice_pillar_meander_spiral", variant -> variant
-                    .description("Meander Spiral Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("ice_pillar_meander_spiral", v -> v.description("Meander Spiral Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("vertical_none", Chisel.prefix("block/ice/ice_pillar_meander_spiral-side")))
-            .variant("ice_plate", variant -> variant
-                    .description("Plate"))
-            .variant("ice_plate_connected", variant -> variant
-                    .description("Plate Connected")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_polished", variant -> variant
-                    .description("Polished"))
-            .variant("ice_polished_encased", variant -> variant
-                    .description("Polished Encased")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_prism", variant -> variant
-                    .description("Prismatic"))
-            .variant("ice_raw", variant -> variant
-                    .description("Raw"))
-            .variant("ice_road", variant -> variant
-                    .description("Road"))
-            .variant("ice_slanted", variant -> variant
-                    .description("Slanted")
-                    .model(ChiselModelHandlers.MULTIBLOCK_2X2))
-            .variant("ice_tiles", variant -> variant
-                    .description("Tiles"))
-            .variant("ice_tiles_large", variant -> variant
-                    .description("Large Tiles")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_tiles_small", variant -> variant
-                    .description("Small Tiles"))
-            .variant("ice_twisted", variant -> variant
-                    .description("Twisted")
-                    .model(ChiselModelHandlers.TBS))
-            .variant("ice_weaver", variant -> variant
-                    .description("Weaver")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_zag", variant -> variant
-                    .description("Zag")
-                    .model(ChiselModelHandlers.V4))
-            .variant("ice_crate", variant -> variant
-                    .description("Crate")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_herringbone", variant -> variant
-                    .description("Herringbone"))
-            .variant("ice_herringbone_encased", variant -> variant
-                    .description("Encased Herringbone")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_medallion", variant -> variant
-                    .description("Medallion"))
-            .variant("ice_medallion_encased", variant -> variant
-                    .description("Encased Medallion")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_dots", variant -> variant
-                    .description("Dots"))
-            .variant("ice_dots_encased", variant -> variant
-                    .description("Encased Dots")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_heart", variant -> variant
-                    .description("Heart"))
-            .variant("ice_star", variant -> variant
-                    .description("Star"))
-            .variant("ice_plating", variant -> variant
-                    .description("Plating"))
-            .variant("ice_lodestone", variant -> variant
-                    .description("Lodestone"))
-            .variant("ice_lodestone_connected", variant -> variant
-                    .description("Lodestone Connected")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_plank", variant -> variant
-                    .description("Plank"))
-            .variant("ice_plank_connected", variant -> variant
-                    .description("Plank Connected")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_frame", variant -> variant
-                    .description("Frame"))
-            .variant("ice_panel_1", variant -> variant
-                    .description("Panel 1"))
-            .variant("ice_panel_2", variant -> variant
-                    .description("Panel 2"))
-            .variant("ice_panel_3", variant -> variant
-                    .description("Panel 3"))
-            .variant("ice_skull_creeper", variant -> variant
-                    .description("Creeper Skull"))
-            .variant("ice_skull_skeleton", variant -> variant
-                    .description("Skeleton Skull"))
-            .variant("ice_stripes", variant -> variant
-                    .description("Stripes"))
-            .variant("ice_stripes_encased", variant -> variant
-                    .description("Encased Stripes")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_chisel_1", variant -> variant
-                    .description("Chisel 1"))
-            .variant("ice_chisel_2", variant -> variant
-                    .description("Chisel 2"))
-            .variant("ice_chisel_3", variant -> variant
-                    .description("Chisel 3"))
-            .variant("ice_chisel_4", variant -> variant
-                    .description("Chisel 4"))
-            .variant("ice_chisel_5", variant -> variant
-                    .description("Chisel 5"))
-            .variant("ice_chisel_6", variant -> variant
-                    .description("Chisel 6"))
-            .variant("ice_facet", variant -> variant
-                    .description("Facet"))
-            .variant("ice_facet_small", variant -> variant
-                    .description("Small Facet"))
-            .variant("ice_facet_small_encased", variant -> variant
-                    .description("Encased Small Facet")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_shiny", variant -> variant
-                    .description("Shiny"))
-            .variant("ice_shiny_connected", variant -> variant
-                    .description("Shiny Connected")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_gem", variant -> variant
-                    .description("Gem"))
-            .variant("ice_gem_1", variant -> variant
-                    .description("Gem 1"))
-            .variant("ice_gem_1_connected", variant -> variant
-                    .description("Gem 1 Connected")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_gem_2", variant -> variant
-                    .description("Gem 2"))
-            .variant("ice_gem_2_connected", variant -> variant
-                    .description("Gem 2 Connected")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_gem_3", variant -> variant
-                    .description("Gem 3"))
-            .variant("ice_gem_3_connected", variant -> variant
-                    .description("Gem 3 Connected")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_bricks_square", variant -> variant
-                    .description("Square Bricks"))
-            .variant("ice_slab", variant -> variant
-                    .description("Slab"))
-            .variant("ice_scaffold", variant -> variant
-                    .description("Scaffold"))
-            .variant("ice_scaffold_encased", variant -> variant
-                    .description("Encased Scaffold")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_tiles_inlayed", variant -> variant
-                    .description("Inlayed Tiles"))
-            .variant("ice_waves", variant -> variant
-                    .description("Waves")
-                    .model(ChiselModelHandlers.MULTIBLOCK_2X2))
-            .variant("ice_parquet", variant -> variant
-                    .description("Parquet"))
-            .variant("ice_parquet_encased", variant -> variant
-                    .description("Encased Parquet")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_bricks_large_rough", variant -> variant
-                    .description("Large Rough Bricks")
-                    .model(ChiselModelHandlers.MULTIBLOCK_2X2))
-            .variant("ice_tiles_small_encased", variant -> variant
-                    .description("Encased Small Tiles")
-                    .model(ChiselModelHandlers.ICE))
-            .variant("ice_bricks_round", variant -> variant
-                    .description("Round Bricks")));
+            .variant("ice_plate", v -> v.description("Plate"))
+            .variant("ice_plate_connected", v -> v.description("Plate Connected").model(ChiselModelHandlers.ICE))
+            .variant("ice_polished", v -> v.description("Polished"))
+            .variant("ice_polished_encased", v -> v.description("Polished Encased").model(ChiselModelHandlers.ICE))
+            .variant("ice_prism", v -> v.description("Prismatic"))
+            .variant("ice_raw", v -> v.description("Raw"))
+            .variant("ice_road", v -> v.description("Road"))
+            .variant("ice_slanted", v -> v.description("Slanted").model(ChiselModelHandlers.MULTIBLOCK_2X2))
+            .variant("ice_tiles", v -> v.description("Tiles"))
+            .variant("ice_tiles_large", v -> v.description("Large Tiles").model(ChiselModelHandlers.ICE))
+            .variant("ice_tiles_small", v -> v.description("Small Tiles"))
+            .variant("ice_twisted", v -> v.description("Twisted").model(ChiselModelHandlers.TBS))
+            .variant("ice_weaver", v -> v.description("Weaver").model(ChiselModelHandlers.ICE))
+            .variant("ice_zag", v -> v.description("Zag").model(ChiselModelHandlers.V4))
+            .variant("ice_crate", v -> v.description("Crate").model(ChiselModelHandlers.ICE))
+            .variant("ice_herringbone", v -> v.description("Herringbone"))
+            .variant("ice_herringbone_encased", v -> v.description("Encased Herringbone").model(ChiselModelHandlers.ICE))
+            .variant("ice_medallion", v -> v.description("Medallion"))
+            .variant("ice_medallion_encased", v -> v.description("Encased Medallion").model(ChiselModelHandlers.ICE))
+            .variant("ice_dots", v -> v.description("Dots"))
+            .variant("ice_dots_encased", v -> v.description("Encased Dots").model(ChiselModelHandlers.ICE))
+            .variant("ice_heart", v -> v.description("Heart"))
+            .variant("ice_star", v -> v.description("Star"))
+            .variant("ice_plating", v -> v.description("Plating"))
+            .variant("ice_lodestone", v -> v.description("Lodestone"))
+            .variant("ice_lodestone_connected", v -> v.description("Lodestone Connected").model(ChiselModelHandlers.ICE))
+            .variant("ice_plank", v -> v.description("Plank"))
+            .variant("ice_plank_connected", v -> v.description("Plank Connected").model(ChiselModelHandlers.ICE))
+            .variant("ice_frame", v -> v.description("Frame"))
+            .variant("ice_panel_1", v -> v.description("Panel 1"))
+            .variant("ice_panel_2", v -> v.description("Panel 2"))
+            .variant("ice_panel_3", v -> v.description("Panel 3"))
+            .variant("ice_skull_creeper", v -> v.description("Creeper Skull"))
+            .variant("ice_skull_skeleton", v -> v.description("Skeleton Skull"))
+            .variant("ice_stripes", v -> v.description("Stripes"))
+            .variant("ice_stripes_encased", v -> v.description("Encased Stripes").model(ChiselModelHandlers.ICE))
+            .variant("ice_chisel_1", v -> v.description("Chisel 1"))
+            .variant("ice_chisel_2", v -> v.description("Chisel 2"))
+            .variant("ice_chisel_3", v -> v.description("Chisel 3"))
+            .variant("ice_chisel_4", v -> v.description("Chisel 4"))
+            .variant("ice_chisel_5", v -> v.description("Chisel 5"))
+            .variant("ice_chisel_6", v -> v.description("Chisel 6"))
+            .variant("ice_facet", v -> v.description("Facet"))
+            .variant("ice_facet_small", v -> v.description("Small Facet"))
+            .variant("ice_facet_small_encased", v -> v.description("Encased Small Facet").model(ChiselModelHandlers.ICE))
+            .variant("ice_shiny", v -> v.description("Shiny"))
+            .variant("ice_shiny_connected", v -> v.description("Shiny Connected").model(ChiselModelHandlers.ICE))
+            .variant("ice_gem", v -> v.description("Gem"))
+            .variant("ice_gem_1", v -> v.description("Gem 1"))
+            .variant("ice_gem_1_connected", v -> v.description("Gem 1 Connected").model(ChiselModelHandlers.ICE))
+            .variant("ice_gem_2", v -> v.description("Gem 2"))
+            .variant("ice_gem_2_connected", v -> v.description("Gem 2 Connected").model(ChiselModelHandlers.ICE))
+            .variant("ice_gem_3", v -> v.description("Gem 3"))
+            .variant("ice_gem_3_connected", v -> v.description("Gem 3 Connected").model(ChiselModelHandlers.ICE))
+            .variant("ice_bricks_square", v -> v.description("Square Bricks"))
+            .variant("ice_slab", v -> v.description("Slab"))
+            .variant("ice_scaffold", v -> v.description("Scaffold"))
+            .variant("ice_scaffold_encased", v -> v.description("Encased Scaffold").model(ChiselModelHandlers.ICE))
+            .variant("ice_tiles_inlayed", v -> v.description("Inlayed Tiles"))
+            .variant("ice_waves", v -> v.description("Waves").model(ChiselModelHandlers.MULTIBLOCK_2X2))
+            .variant("ice_parquet", v -> v.description("Parquet"))
+            .variant("ice_parquet_encased", v -> v.description("Encased Parquet").model(ChiselModelHandlers.ICE))
+            .variant("ice_bricks_large_rough", v -> v.description("Large Rough Bricks").model(ChiselModelHandlers.MULTIBLOCK_2X2))
+            .variant("ice_tiles_small_encased", v -> v.description("Encased Small Tiles").model(ChiselModelHandlers.ICE))
+            .variant("ice_bricks_round", v -> v.description("Round Bricks")));
 
     private IceFamily() {
     }

@@ -8,425 +8,247 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class MudFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("mud", builder -> builder
-            .defaults(variant -> variant
-                    .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD))
-                    .blockName("Mud"))
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.MUD)).blockName("Mud"))
             .existingBlock(Blocks.MUD)
-            .variant("mud_array", variant -> variant
-                    .description("Array")
-                    .model(ChiselModelHandlers.MULTIBLOCK_2X2)
+            .variant("mud_array", v -> v.description("Array").model(ChiselModelHandlers.MULTIBLOCK_2X2)
                     .textureFromBase("2x2_bottom_left"))
-            .variant("mud_border_square", variant -> variant
-                    .description("Square Border")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_border_square", v -> v.description("Square Border").model(ChiselModelHandlers.CONNECTED)
                     .textureFromBase("ctm_corner")
                     .textureFromBase("ctm_horizontal")
                     .textureFromBase("ctm_vertical"))
-            .variant("mud_braid", variant -> variant
-                    .description("Braid"))
-            .variant("mud_braid_encased", variant -> variant
-                    .description("Encased Braid")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_braid", v -> v.description("Braid"))
+            .variant("mud_braid_encased", v -> v.description("Encased Braid").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_braid")))
-            .variant("mud_bricks_cracked", variant -> variant
-                    .description("Cracked Bricks"))
-            .variant("mud_bricks_encased", variant -> variant
-                    .description("Encased Bricks")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("mud_bricks_indent", variant -> variant
-                    .description("Indent Bricks"))
-            .variant("mud_bricks_inlayed", variant -> variant
-                    .description("Inlayed Bricks"))
-            .variant("mud_bricks_large", variant -> variant
-                    .description("Large Bricks")
-                    .model(ChiselModelHandlers.MULTIBLOCK_2X2)
+            .variant("mud_bricks_cracked", v -> v.description("Cracked Bricks"))
+            .variant("mud_bricks_encased", v -> v.description("Encased Bricks").model(ChiselModelHandlers.CONNECTED))
+            .variant("mud_bricks_indent", v -> v.description("Indent Bricks"))
+            .variant("mud_bricks_inlayed", v -> v.description("Inlayed Bricks"))
+            .variant("mud_bricks_large", v -> v.description("Large Bricks").model(ChiselModelHandlers.MULTIBLOCK_2X2)
                     .textureFromBase("2x2_bottom_right")
                     .textureFromBase("2x2_top_left")
                     .texture("2x2_top_right", Chisel.prefix("block/mud/mud_bricks_large-2x2_bottom_left")))
-            .variant("mud_bricks_small", variant -> variant
-                    .description("Small Bricks"))
-            .variant("mud_bricks_soft", variant -> variant
-                    .description("Soft Bricks"))
-            .variant("mud_bricks_solid", variant -> variant
-                    .description("Solid Bricks")
+            .variant("mud_bricks_small", v -> v.description("Small Bricks"))
+            .variant("mud_bricks_soft", v -> v.description("Soft Bricks"))
+            .variant("mud_bricks_solid", v -> v.description("Solid Bricks")
                     .texture(Chisel.prefix("block/mud/mud_bricks_encased-ctm_cornerless")))
-            .variant("mud_bricks_triple", variant -> variant
-                    .description("Triple Bricks"))
-            .variant("mud_bricks_vertical", variant -> variant
-                    .description("Vertical Bricks"))
-            .variant("mud_chaotic", variant -> variant
-                    .description("Chaotic")
-                    .model(ChiselModelHandlers.MULTIBLOCK_3X3)
+            .variant("mud_bricks_triple", v -> v.description("Triple Bricks"))
+            .variant("mud_bricks_vertical", v -> v.description("Vertical Bricks"))
+            .variant("mud_chaotic", v -> v.description("Chaotic").model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
-            .variant("mud_chaotic_medium", variant -> variant
-                    .description("Chaotic Medium"))
-            .variant("mud_chaotic_small", variant -> variant
-                    .description("Chaotic Small"))
-            .variant("mud_checker", variant -> variant
-                    .description("Checker"))
-            .variant("mud_checker_small", variant -> variant
-                    .description("Small Checker"))
-            .variant("mud_circular", variant -> variant
-                    .description("Circular")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_chaotic_medium", v -> v.description("Chaotic Medium"))
+            .variant("mud_chaotic_small", v -> v.description("Chaotic Small"))
+            .variant("mud_checker", v -> v.description("Checker"))
+            .variant("mud_checker_small", v -> v.description("Small Checker"))
+            .variant("mud_circular", v -> v.description("Circular").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_border_square-ctm_cornerless")))
-            .variant("mud_cracked", variant -> variant
-                    .description("Cracked"))
-            .variant("mud_cobble", variant -> variant
-                    .description("Cobble"))
-            .variant("mud_cuts", variant -> variant
-                    .description("Cuts")
-                    .model(ChiselModelHandlers.MULTIBLOCK_4X4)
+            .variant("mud_cracked", v -> v.description("Cracked"))
+            .variant("mud_cobble", v -> v.description("Cobble"))
+            .variant("mud_cuts", v -> v.description("Cuts").model(ChiselModelHandlers.MULTIBLOCK_4X4)
                     .textureFromBase("4x4_row_0_column_0"))
-            .variant("mud_dent", variant -> variant
-                    .description("Dent")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_dent", v -> v.description("Dent").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_border_square-ctm_cornerless")))
-            .variant("mud_french_1", variant -> variant
-                    .description("French 1"))
-            .variant("mud_french_2", variant -> variant
-                    .description("French 2"))
-            .variant("mud_indent", variant -> variant
-                    .description("Indent")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_french_1", v -> v.description("French 1"))
+            .variant("mud_french_2", v -> v.description("French 2"))
+            .variant("mud_indent", v -> v.description("Indent").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_border_square-ctm_cornerless")))
-            .variant("mud_jellybean", variant -> variant
-                    .description("Jellybean")
-                    .model(ChiselModelHandlers.MULTIBLOCK_2X2)
+            .variant("mud_jellybean", v -> v.description("Jellybean").model(ChiselModelHandlers.MULTIBLOCK_2X2)
                     .textureFromBase("2x2_top_left"))
-            .variant("mud_layers", variant -> variant
-                    .description("Layers")
+            .variant("mud_layers", v -> v.description("Layers")
                     .texture(Chisel.prefix("block/mud/mud_layers_connected")))
-            .variant("mud_layers_connected", variant -> variant
-                    .description("Layers Connected")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_layers_connected", v -> v.description("Layers Connected").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_layers_connected-ctm_corner"))
                     .textureFromBase("ctm_horizontal")
                     .textureAlias("ctm_vertical", "ctm_cornerless"))
-            .variant("mud_line_horizontal", variant -> variant
-                    .description("Horizontal Line"))
-            .variant("mud_line_vertical", variant -> variant
-                    .description("Vertical Line"))
-            .variant("mud_meander_horizontal", variant -> variant
-                    .description("Horizontal Meander")
-                    .model(ChiselModelHandlers.CTMH)
+            .variant("mud_line_horizontal", v -> v.description("Horizontal Line"))
+            .variant("mud_line_vertical", v -> v.description("Vertical Line"))
+            .variant("mud_meander_horizontal", v -> v.description("Horizontal Meander").model(ChiselModelHandlers.CTMH)
                     .texture("top", Chisel.prefix("block/mud/mud_meander_horizontal-bottom")))
-            .variant("mud_meander_vertical", variant -> variant
-                    .description("Vertical Meander")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_meander_vertical", v -> v.description("Vertical Meander").model(ChiselModelHandlers.CTMV)
                     .texture("top", Chisel.prefix("block/mud/mud_meander_vertical-bottom"))
                     .texture("vertical_none", Chisel.prefix("block/mud/mud_meander_vertical-side")))
-            .variant("mud_mosaic", variant -> variant
-                    .description("Mosaic")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_mosaic", v -> v.description("Mosaic").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_border_square-ctm_cornerless")))
-            .variant("mud_ornate_small", variant -> variant
-                    .description("Small Ornate"))
-            .variant("mud_panel", variant -> variant
-                    .description("Panel"))
-            .variant("mud_pillar", variant -> variant
-                    .description("Pillar")
-                    .model(ChiselModelHandlers.TBS)
+            .variant("mud_ornate_small", v -> v.description("Small Ornate"))
+            .variant("mud_panel", v -> v.description("Panel"))
+            .variant("mud_pillar", v -> v.description("Pillar").model(ChiselModelHandlers.TBS)
                     .texture("top", Chisel.prefix("block/mud/mud_pillar-bottom")))
-            .variant("mud_pillar_basic", variant -> variant
-                    .description("Basic Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_pillar_basic", v -> v.description("Basic Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_basic-bottom"))
                     .texture("vertical_none", Chisel.prefix("block/mud/mud_pillar_basic-side")))
-            .variant("mud_pillar_basic_dent", variant -> variant
-                    .description("Basic Dent Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_pillar_basic_dent", v -> v.description("Basic Dent Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_basic-bottom"))
                     .texture("vertical_none", Chisel.prefix("block/mud/mud_pillar_basic_dent-side")))
-            .variant("mud_pillar_basic_plain", variant -> variant
-                    .description("Basic Plain Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_pillar_basic_plain", v -> v.description("Basic Plain Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_basic-bottom"))
                     .texture("vertical_none", Chisel.prefix("block/mud/mud_pillar_basic_plain-side")))
-            .variant("mud_pillar_basic_round", variant -> variant
-                    .description("Basic Round Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_pillar_basic_round", v -> v.description("Basic Round Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_basic-bottom"))
                     .texture("vertical_none", Chisel.prefix("block/mud/mud_pillar_basic_round-side")))
-            .variant("mud_pillar_basic_spiral", variant -> variant
-                    .description("Basic Spiral Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_pillar_basic_spiral", v -> v.description("Basic Spiral Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_basic-bottom"))
                     .texture("vertical_none", Chisel.prefix("block/mud/mud_pillar_basic_spiral-side")))
-            .variant("mud_pillar_classic", variant -> variant
-                    .description("Classic Pillar")
-                    .model(ChiselModelHandlers.TBS)
+            .variant("mud_pillar_classic", v -> v.description("Classic Pillar").model(ChiselModelHandlers.TBS)
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_classic-bottom")))
-            .variant("mud_pillar_classic_large", variant -> variant
-                    .description("Large Classic Pillar")
-                    .model(ChiselModelHandlers.TBS)
+            .variant("mud_pillar_classic_large", v -> v.description("Large Classic Pillar").model(ChiselModelHandlers.TBS)
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_classic_large-bottom")))
-            .variant("mud_pillar_ionic", variant -> variant
-                    .description("Ionic Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_pillar_ionic", v -> v.description("Ionic Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_basic-bottom"))
                     .texture("vertical_none", Chisel.prefix("block/mud/mud_pillar_ionic-side")))
-            .variant("mud_pillar_ionic_dent", variant -> variant
-                    .description("Ionic Dent Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_pillar_ionic_dent", v -> v.description("Ionic Dent Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("side", Chisel.prefix("block/mud/mud_pillar_ionic-side"))
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/mud/mud_pillar_basic_dent-vertical_both"))
                     .textureAlias("vertical_none", "side"))
-            .variant("mud_pillar_ionic_plain", variant -> variant
-                    .description("Ionic Plain Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_pillar_ionic_plain", v -> v.description("Ionic Plain Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("side", Chisel.prefix("block/mud/mud_pillar_ionic-side"))
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/mud/mud_pillar_basic_plain-vertical_both"))
                     .textureAlias("vertical_none", "side"))
-            .variant("mud_pillar_ionic_round", variant -> variant
-                    .description("Ionic Round Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_pillar_ionic_round", v -> v.description("Ionic Round Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("side", Chisel.prefix("block/mud/mud_pillar_ionic-side"))
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/mud/mud_pillar_basic_round-vertical_both"))
                     .textureAlias("vertical_none", "side"))
-            .variant("mud_pillar_ionic_spiral", variant -> variant
-                    .description("Ionic Spiral Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_pillar_ionic_spiral", v -> v.description("Ionic Spiral Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("side", Chisel.prefix("block/mud/mud_pillar_ionic-side"))
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/mud/mud_pillar_basic_spiral-vertical_both"))
                     .textureAlias("vertical_none", "side"))
-            .variant("mud_pillar_large_basic_triple", variant -> variant
-                    .description("Large Basic Triple Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_pillar_large_basic_triple", v -> v.description("Large Basic Triple Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_basic-bottom"))
                     .texture("vertical_none", Chisel.prefix("block/mud/mud_pillar_large_basic_triple-side")))
-            .variant("mud_pillar_large_ionic_triple", variant -> variant
-                    .description("Large Ionic Triple Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_pillar_large_ionic_triple", v -> v.description("Large Ionic Triple Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/mud/mud_pillar_large_basic_triple-vertical_both"))
                     .texture("vertical_none", Chisel.prefix("block/mud/mud_pillar_large_ionic_triple-side")))
-            .variant("mud_pillar_meander", variant -> variant
-                    .description("Meander Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_pillar_meander", v -> v.description("Meander Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/mud/mud_pillar_ionic-vertical_both"))
                     .texture("vertical_none", Chisel.prefix("block/mud/mud_pillar_meander-side")))
-            .variant("mud_pillar_meander_dent", variant -> variant
-                    .description("Meander Dent Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_pillar_meander_dent", v -> v.description("Meander Dent Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("side", Chisel.prefix("block/mud/mud_pillar_meander-side"))
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/mud/mud_pillar_basic_dent-vertical_both"))
                     .textureAlias("vertical_none", "side"))
-            .variant("mud_pillar_meander_plain", variant -> variant
-                    .description("Meander Plain Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_pillar_meander_plain", v -> v.description("Meander Plain Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("side", Chisel.prefix("block/mud/mud_pillar_meander-side"))
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/mud/mud_pillar_basic_plain-vertical_both"))
                     .textureAlias("vertical_none", "side"))
-            .variant("mud_pillar_meander_round", variant -> variant
-                    .description("Meander Round Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_pillar_meander_round", v -> v.description("Meander Round Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("side", Chisel.prefix("block/mud/mud_pillar_meander-side"))
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/mud/mud_pillar_basic_round-vertical_both"))
                     .textureAlias("vertical_none", "side"))
-            .variant("mud_pillar_meander_spiral", variant -> variant
-                    .description("Meander Spiral Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("mud_pillar_meander_spiral", v -> v.description("Meander Spiral Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("side", Chisel.prefix("block/mud/mud_pillar_meander-side"))
                     .texture("top", Chisel.prefix("block/mud/mud_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/mud/mud_pillar_basic_spiral-vertical_both"))
                     .textureAlias("vertical_none", "side"))
-            .variant("mud_plate", variant -> variant
-                    .description("Plate")
+            .variant("mud_plate", v -> v.description("Plate")
                     .texture(Chisel.prefix("block/mud/mud_plate_connected")))
-            .variant("mud_plate_connected", variant -> variant
-                    .description("Plate Connected")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_plate_connected", v -> v.description("Plate Connected").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_border_square-ctm_cornerless")))
-            .variant("mud_polished", variant -> variant
-                    .description("Polished")
+            .variant("mud_polished", v -> v.description("Polished")
                     .texture(Chisel.prefix("block/mud/mud_tiles_large")))
-            .variant("mud_polished_encased", variant -> variant
-                    .description("Polished Encased")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("mud_prism", variant -> variant
-                    .description("Prismatic"))
-            .variant("mud_raw", variant -> variant
-                    .description("Raw")
+            .variant("mud_polished_encased", v -> v.description("Polished Encased").model(ChiselModelHandlers.CONNECTED))
+            .variant("mud_prism", v -> v.description("Prismatic"))
+            .variant("mud_raw", v -> v.description("Raw")
                     .texture(Chisel.prefix("block/mud/mud_border_square-ctm_cornerless")))
-            .variant("mud_road", variant -> variant
-                    .description("Road"))
-            .variant("mud_slanted", variant -> variant
-                    .description("Slanted")
-                    .model(ChiselModelHandlers.MULTIBLOCK_2X2)
+            .variant("mud_road", v -> v.description("Road"))
+            .variant("mud_slanted", v -> v.description("Slanted").model(ChiselModelHandlers.MULTIBLOCK_2X2)
                     .textureFromBase("2x2_bottom_left"))
-            .variant("mud_tiles", variant -> variant
-                    .description("Tiles"))
-            .variant("mud_tiles_large", variant -> variant
-                    .description("Large Tiles")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_tiles", v -> v.description("Tiles"))
+            .variant("mud_tiles_large", v -> v.description("Large Tiles").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_border_square-ctm_cornerless")))
-            .variant("mud_tiles_small", variant -> variant
-                    .description("Small Tiles"))
-            .variant("mud_twisted", variant -> variant
-                    .description("Twisted")
-                    .model(ChiselModelHandlers.TBS)
+            .variant("mud_tiles_small", v -> v.description("Small Tiles"))
+            .variant("mud_twisted", v -> v.description("Twisted").model(ChiselModelHandlers.TBS)
                     .texture("top", Chisel.prefix("block/mud/mud_twisted-bottom")))
-            .variant("mud_weaver", variant -> variant
-                    .description("Weaver")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_weaver", v -> v.description("Weaver").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_weaver-ctm_corner")))
-            .variant("mud_zag", variant -> variant
-                    .description("Zag")
-                    .model(ChiselModelHandlers.V4)
+            .variant("mud_zag", v -> v.description("Zag").model(ChiselModelHandlers.V4)
                     .textureFromBase("v4_top_left")
                     .texture("v4_top_right", Chisel.prefix("block/mud/mud_zag-v4_bottom_left")))
-            .variant("mud_crate", variant -> variant
-                    .description("Crate")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("mud_herringbone", variant -> variant
-                    .description("Herringbone"))
-            .variant("mud_herringbone_encased", variant -> variant
-                    .description("Encased Herringbone")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_crate", v -> v.description("Crate").model(ChiselModelHandlers.CONNECTED))
+            .variant("mud_herringbone", v -> v.description("Herringbone"))
+            .variant("mud_herringbone_encased", v -> v.description("Encased Herringbone").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_herringbone")))
-            .variant("mud_medallion", variant -> variant
-                    .description("Medallion"))
-            .variant("mud_medallion_encased", variant -> variant
-                    .description("Encased Medallion")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_medallion", v -> v.description("Medallion"))
+            .variant("mud_medallion_encased", v -> v.description("Encased Medallion").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_medallion")))
-            .variant("mud_dots", variant -> variant
-                    .description("Dots"))
-            .variant("mud_dots_encased", variant -> variant
-                    .description("Encased Dots")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_dots", v -> v.description("Dots"))
+            .variant("mud_dots_encased", v -> v.description("Encased Dots").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_dots")))
-            .variant("mud_heart", variant -> variant
-                    .description("Heart"))
-            .variant("mud_star", variant -> variant
-                    .description("Star"))
-            .variant("mud_plating", variant -> variant
-                    .description("Plating"))
-            .variant("mud_lodestone", variant -> variant
-                    .description("Lodestone")
+            .variant("mud_heart", v -> v.description("Heart"))
+            .variant("mud_star", v -> v.description("Star"))
+            .variant("mud_plating", v -> v.description("Plating"))
+            .variant("mud_lodestone", v -> v.description("Lodestone")
                     .texture(Chisel.prefix("block/mud/mud_lodestone_connected")))
-            .variant("mud_lodestone_connected", variant -> variant
-                    .description("Lodestone Connected")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_lodestone_connected", v -> v.description("Lodestone Connected").model(ChiselModelHandlers.CONNECTED)
                     .textureFromBase("ctm_cornerless"))
-            .variant("mud_plank", variant -> variant
-                    .description("Plank")
+            .variant("mud_plank", v -> v.description("Plank")
                     .texture(Chisel.prefix("block/mud/mud_plank_connected")))
-            .variant("mud_plank_connected", variant -> variant
-                    .description("Plank Connected")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("mud_frame", variant -> variant
-                    .description("Frame"))
-            .variant("mud_panel_1", variant -> variant
-                    .description("Panel 1"))
-            .variant("mud_panel_2", variant -> variant
-                    .description("Panel 2"))
-            .variant("mud_panel_3", variant -> variant
-                    .description("Panel 3"))
-            .variant("mud_skull_creeper", variant -> variant
-                    .description("Creeper Skull"))
-            .variant("mud_skull_skeleton", variant -> variant
-                    .description("Skeleton Skull"))
-            .variant("mud_stripes", variant -> variant
-                    .description("Stripes"))
-            .variant("mud_stripes_encased", variant -> variant
-                    .description("Encased Stripes")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_plank_connected", v -> v.description("Plank Connected").model(ChiselModelHandlers.CONNECTED))
+            .variant("mud_frame", v -> v.description("Frame"))
+            .variant("mud_panel_1", v -> v.description("Panel 1"))
+            .variant("mud_panel_2", v -> v.description("Panel 2"))
+            .variant("mud_panel_3", v -> v.description("Panel 3"))
+            .variant("mud_skull_creeper", v -> v.description("Creeper Skull"))
+            .variant("mud_skull_skeleton", v -> v.description("Skeleton Skull"))
+            .variant("mud_stripes", v -> v.description("Stripes"))
+            .variant("mud_stripes_encased", v -> v.description("Encased Stripes").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_stripes")))
-            .variant("mud_chisel_1", variant -> variant
-                    .description("Chisel 1"))
-            .variant("mud_chisel_2", variant -> variant
-                    .description("Chisel 2"))
-            .variant("mud_chisel_3", variant -> variant
-                    .description("Chisel 3"))
-            .variant("mud_chisel_4", variant -> variant
-                    .description("Chisel 4"))
-            .variant("mud_chisel_5", variant -> variant
-                    .description("Chisel 5"))
-            .variant("mud_chisel_6", variant -> variant
-                    .description("Chisel 6"))
-            .variant("mud_facet", variant -> variant
-                    .description("Facet"))
-            .variant("mud_facet_small", variant -> variant
-                    .description("Small Facet"))
-            .variant("mud_facet_small_encased", variant -> variant
-                    .description("Encased Small Facet")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_chisel_1", v -> v.description("Chisel 1"))
+            .variant("mud_chisel_2", v -> v.description("Chisel 2"))
+            .variant("mud_chisel_3", v -> v.description("Chisel 3"))
+            .variant("mud_chisel_4", v -> v.description("Chisel 4"))
+            .variant("mud_chisel_5", v -> v.description("Chisel 5"))
+            .variant("mud_chisel_6", v -> v.description("Chisel 6"))
+            .variant("mud_facet", v -> v.description("Facet"))
+            .variant("mud_facet_small", v -> v.description("Small Facet"))
+            .variant("mud_facet_small_encased", v -> v.description("Encased Small Facet").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_facet_small")))
-            .variant("mud_shiny", variant -> variant
-                    .description("Shiny")
+            .variant("mud_shiny", v -> v.description("Shiny")
                     .texture(Chisel.prefix("block/mud/mud_shiny_connected")))
-            .variant("mud_shiny_connected", variant -> variant
-                    .description("Shiny Connected")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("mud_gem", variant -> variant
-                    .description("Gem"))
-            .variant("mud_gem_1", variant -> variant
-                    .description("Gem 1")
+            .variant("mud_shiny_connected", v -> v.description("Shiny Connected").model(ChiselModelHandlers.CONNECTED))
+            .variant("mud_gem", v -> v.description("Gem"))
+            .variant("mud_gem_1", v -> v.description("Gem 1")
                     .texture(Chisel.prefix("block/mud/mud_gem_1_connected")))
-            .variant("mud_gem_1_connected", variant -> variant
-                    .description("Gem 1 Connected")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_gem_1_connected", v -> v.description("Gem 1 Connected").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_border_square-ctm_cornerless")))
-            .variant("mud_gem_2", variant -> variant
-                    .description("Gem 2")
+            .variant("mud_gem_2", v -> v.description("Gem 2")
                     .texture(Chisel.prefix("block/mud/mud_gem_2_connected")))
-            .variant("mud_gem_2_connected", variant -> variant
-                    .description("Gem 2 Connected")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_gem_2_connected", v -> v.description("Gem 2 Connected").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_border_square-ctm_cornerless")))
-            .variant("mud_gem_3", variant -> variant
-                    .description("Gem 3")
+            .variant("mud_gem_3", v -> v.description("Gem 3")
                     .texture(Chisel.prefix("block/mud/mud_gem_3_connected")))
-            .variant("mud_gem_3_connected", variant -> variant
-                    .description("Gem 3 Connected")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("mud_bricks_square", variant -> variant
-                    .description("Square Bricks"))
-            .variant("mud_slab", variant -> variant
-                    .description("Slab"))
-            .variant("mud_scaffold", variant -> variant
-                    .description("Scaffold"))
-            .variant("mud_scaffold_encased", variant -> variant
-                    .description("Encased Scaffold")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_gem_3_connected", v -> v.description("Gem 3 Connected").model(ChiselModelHandlers.CONNECTED))
+            .variant("mud_bricks_square", v -> v.description("Square Bricks"))
+            .variant("mud_slab", v -> v.description("Slab"))
+            .variant("mud_scaffold", v -> v.description("Scaffold"))
+            .variant("mud_scaffold_encased", v -> v.description("Encased Scaffold").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_scaffold")))
-            .variant("mud_tiles_inlayed", variant -> variant
-                    .description("Inlayed Tiles"))
-            .variant("mud_waves", variant -> variant
-                    .description("Waves")
-                    .model(ChiselModelHandlers.MULTIBLOCK_2X2)
+            .variant("mud_tiles_inlayed", v -> v.description("Inlayed Tiles"))
+            .variant("mud_waves", v -> v.description("Waves").model(ChiselModelHandlers.MULTIBLOCK_2X2)
                     .textureFromBase("2x2_top_left"))
-            .variant("mud_parquet", variant -> variant
-                    .description("Parquet"))
-            .variant("mud_parquet_encased", variant -> variant
-                    .description("Encased Parquet")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("mud_parquet", v -> v.description("Parquet"))
+            .variant("mud_parquet_encased", v -> v.description("Encased Parquet").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/mud/mud_parquet"))));
 
     private MudFamily() {

@@ -20,9 +20,7 @@ public final class AntiblockFamily {
     private static ChiselFamily buildAntiblock() {
         var colors = List.of("Black", "Blue", "Brown", "Cyan", "Gray", "Green", "Light Blue", "Light Gray", "Lime", "Magenta", "Orange", "Pink", "Purple", "Red", "White", "Yellow");
         return ChiselFamily.build("antiblock", builder -> {
-            builder.defaults(variant -> variant.blockName("Antiblock")
-                    .properties(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).strength(3.0F, 5.0F)
-                            .requiresCorrectToolForDrops().lightLevel((_) -> 15)));
+            builder.defaults(v -> v.blockName("Antiblock").properties(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).strength(3.0F, 5.0F).requiresCorrectToolForDrops().lightLevel((_) -> 15)));
             addAntiblockVariants(builder, colors, "", "%s Anti Block", ChiselModelHandlers.ANTIBLOCK);
             addAntiblockVariants(builder, colors, "_borderless", "%s Borderless Anti Block", ChiselModelHandlers.SHADELESS);
             addAntiblockVariants(builder, colors, "_dull", "%s Dull Anti Block", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW);
@@ -31,16 +29,16 @@ public final class AntiblockFamily {
     }
 
     private static void addAntiblockVariants(VariantFamilyDefinitionBuilder builder, List<String> colors, String suffix, String description, VariantModelHandler modelHandler) {
-        builder.defaults(variant -> variant.model(modelHandler));
+        builder.defaults(v -> v.model(modelHandler));
         for (var colorName : colors) {
             var color = colorName.toLowerCase(Locale.ROOT).replace(' ', '_');
             var variantName = "antiblock_" + color + suffix;
-            builder.variant(variantName, variant -> {
-                variant.description(description.formatted(colorName));
+            builder.variant(variantName, v -> {
+                v.description(description.formatted(colorName));
                 if (suffix.endsWith("_borderless")) {
-                    variant.texture(Chisel.prefix("block/antiblock/antiblock_" + color));
+                    v.texture(Chisel.prefix("block/antiblock/antiblock_" + color));
                 } else {
-                    addAntiblockOverlayTextures(variant, color);
+                    addAntiblockOverlayTextures(v, color);
                 }
             });
         }

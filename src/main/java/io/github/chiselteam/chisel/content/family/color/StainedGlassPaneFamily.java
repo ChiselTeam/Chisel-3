@@ -19,32 +19,19 @@ public final class StainedGlassPaneFamily {
     public static ChiselFamily create(DyeColor color) {
         var colorName = WordUtils.capitalize(color.getName().replace("_", " "));
         return ChiselFamily.build("stained_glass_pane_%s".formatted(color), builder -> builder
-                .defaults(variant -> variant
-                        .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS_PANE))
-                        .blockName("%s Stained Glass Pane".formatted(colorName))
-                        .model(ChiselModelHandlers.GLASS_PANE))
+                .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS_PANE)).blockName("%s Stained Glass Pane".formatted(colorName)).model(ChiselModelHandlers.GLASS_PANE))
                 .existingBlock(getVanillaStainedGlassPane(color))
-                .variant("stained_glass_pane_%s_borderless".formatted(color), variant -> variant
-                        .description("%s Borderless Glass Pane".formatted(colorName))
-                        .blockFactory(p -> new ChiselStainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_borderless".formatted(color))))))
+                .variant("stained_glass_pane_%s_borderless".formatted(color), v -> v.description("%s Borderless Glass Pane".formatted(colorName)).blockFactory(p -> new ChiselStainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_borderless".formatted(color))))))
                         .texture(Chisel.prefix("block/stained_glass_%s/stained_glass_%s_borderless".formatted(color.getName(), color.getName())))
                         .texture("top", Chisel.prefix("block/stained_glass_pane_%s/stained_glass_pane_%s_borderless-top".formatted(color.getName(), color.getName()))))
-                .variant("stained_glass_pane_%s_bubble".formatted(color), variant -> variant
-                        .description("%s Bubble Glass Pane".formatted(colorName))
-                        .blockFactory(p -> new ChiselStainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_bubble".formatted(color))))))
+                .variant("stained_glass_pane_%s_bubble".formatted(color), v -> v.description("%s Bubble Glass Pane".formatted(colorName)).blockFactory(p -> new ChiselStainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_bubble".formatted(color))))))
                         .texture(Chisel.prefix("block/stained_glass_%s/stained_glass_%s_bubble".formatted(color.getName(), color.getName())))
                         .texture("top", Chisel.prefix("block/stained_glass_pane_%s/stained_glass_pane_%s_quad-top".formatted(color.getName(), color.getName()))))
-                .variant("stained_glass_pane_%s_panel".formatted(color), variant -> variant
-                        .description("%s Glass Panel Pane".formatted(colorName))
-                        .blockFactory(p -> new ChiselStainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_panel".formatted(color))))))
+                .variant("stained_glass_pane_%s_panel".formatted(color), v -> v.description("%s Glass Panel Pane".formatted(colorName)).blockFactory(p -> new ChiselStainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_panel".formatted(color))))))
                         .texture(Chisel.prefix("block/stained_glass_%s/stained_glass_%s_panel".formatted(color.getName(), color.getName())))
                         .texture("top", Chisel.prefix("block/stained_glass_pane_%s/stained_glass_pane_%s_quad-top".formatted(color.getName(), color.getName()))))
-                .variant("stained_glass_pane_%s_quad".formatted(color), variant -> variant
-                        .description("%s Glass Quad Pane".formatted(colorName))
-                        .blockFactory(p -> new ChiselStainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_quad".formatted(color)))))))
-                .variant("stained_glass_pane_%s_fancy".formatted(color), variant -> variant
-                        .description("%s Fancy Glass Panel Pane".formatted(colorName))
-                        .blockFactory(p -> new ChiselStainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_fancy".formatted(color))))))
+                .variant("stained_glass_pane_%s_quad".formatted(color), v -> v.description("%s Glass Quad Pane".formatted(colorName)).blockFactory(p -> new ChiselStainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_quad".formatted(color)))))))
+                .variant("stained_glass_pane_%s_fancy".formatted(color), v -> v.description("%s Fancy Glass Panel Pane".formatted(colorName)).blockFactory(p -> new ChiselStainedGlassPaneBlock(color, p.setId(ResourceKey.create(Registries.BLOCK, Chisel.prefix("stained_glass_pane_%s_fancy".formatted(color))))))
                         .texture("top", Chisel.prefix("block/stained_glass_pane_%s/stained_glass_pane_%s_quad-top".formatted(color.getName(), color.getName())))));
     }
 

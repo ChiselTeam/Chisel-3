@@ -15,68 +15,33 @@ public final class SteelFramedStainedGlassFamily {
     public static ChiselFamily create(DyeColor color) {
         var colorName = WordUtils.capitalize(color.getName().replace("_", " "));
         return ChiselFamily.build("steel_framed_stained_glass_%s".formatted(color.getName()), builder -> builder
-                .defaults(variant -> variant
-                        .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS))
-                        .blockName("%s Steel Framed Stained Glass".formatted(colorName))
-                        .model(ChiselModelHandlers.GLASS)
-                        .blockFactory(ChiselTransparentBlock::new))
-                .variant("steel_framed_stained_glass_%s".formatted(color.getName()), variant -> variant
-                        .description("Glass"))
-                .variant("steel_framed_stained_glass_%s_bubble".formatted(color.getName()), variant -> variant
-                        .description("Bubble Glass"))
-                .variant("steel_framed_stained_glass_%s_panel".formatted(color.getName()), variant -> variant
-                        .description("Glass Panel"))
-                .variant("steel_framed_stained_glass_%s_panel_fancy".formatted(color.getName()), variant -> variant
-                        .description("Fancy Glass Panel"))
-                .variant("steel_framed_stained_glass_%s_frame_thick".formatted(color.getName()), variant -> variant
-                        .description("Thick Frame"))
-                .variant("steel_framed_stained_glass_%s_frame_thick_panel".formatted(color.getName()), variant -> variant
-                        .description("Thick Frame Panel"))
-                .variant("steel_framed_stained_glass_%s_tile".formatted(color.getName()), variant -> variant
-                        .description("Tile")
-                        .model(ChiselModelHandlers.CUBE_ALL))
-                .variant("steel_framed_stained_glass_%s_brick".formatted(color.getName()), variant -> variant
-                        .description("Brick"))
-                .variant("steel_framed_stained_glass_%s_line_vertical".formatted(color.getName()), variant -> variant
-                        .description("Vertical Line")
-                        .model(ChiselModelHandlers.CUBE_ALL))
-                .variant("steel_framed_stained_glass_%s_line_vertical_panel".formatted(color.getName()), variant -> variant
-                        .description("Vertical Line Panel"))
-                .variant("steel_framed_stained_glass_%s_line_horizontal".formatted(color.getName()), variant -> variant
-                        .description("Horizontal Line")
-                        .model(ChiselModelHandlers.CUBE_ALL))
-                .variant("steel_framed_stained_glass_%s_line_horizontal_panel".formatted(color.getName()), variant -> variant
-                        .description("Horizontal Line Panel"))
-                .variant("steel_framed_stained_glass_%s_arch_panel".formatted(color.getName()), variant -> variant
-                        .description("Arch Panel"))
-                .variant("steel_framed_stained_glass_%s_arch_panel_1".formatted(color.getName()), variant -> variant
-                        .description("Arch Panel 1"))
-                .variant("steel_framed_stained_glass_%s_arch_panel_2".formatted(color.getName()), variant -> variant
-                        .description("Arch Panel 2"))
-                .variant("steel_framed_stained_glass_%s_arch_panel_3".formatted(color.getName()), variant -> variant
-                        .description("Arch Panel 3"))
-                .variant("steel_framed_stained_glass_%s_scaffold".formatted(color.getName()), variant -> variant
-                        .description("Scaffold"))
-                .variant("steel_framed_stained_glass_%s_scaffold_left".formatted(color.getName()), variant -> variant
-                        .description("Scaffold Left"))
-                .variant("steel_framed_stained_glass_%s_scaffold_right".formatted(color.getName()), variant -> variant
-                        .description("Scaffold Right"))
-                .variant("steel_framed_stained_glass_%s_basketweave".formatted(color.getName()), variant -> variant
-                        .description("Basketweave")
-                        .model(ChiselModelHandlers.CUBE_ALL))
-                .variant("steel_framed_stained_glass_%s_mosaic_1".formatted(color.getName()), variant -> variant
-                        .description("Mosaic 1"))
-                .variant("steel_framed_stained_glass_%s_mosaic_2".formatted(color.getName()), variant -> variant
-                        .description("Mosaic 2"))
-                .variant("steel_framed_stained_glass_%s_round".formatted(color.getName()), variant -> variant
-                        .description("Round"))
-                .variant("steel_framed_stained_glass_%s_circle".formatted(color.getName()), variant -> variant
-                        .description("Circle"))
-                .variant("steel_framed_stained_glass_%s_rings".formatted(color.getName()), variant -> variant
-                        .description("Rings"))
-                .variant("steel_framed_stained_glass_%s_diamond".formatted(color.getName()), variant -> variant
-                        .description("Diamond"))
-                .variant("steel_framed_stained_glass_%s_frame_1".formatted(color.getName()), variant -> variant
-                        .description("Frame 1")));
+                .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.GLASS)).blockName("%s Steel Framed Stained Glass".formatted(colorName)).model(ChiselModelHandlers.GLASS).blockFactory(ChiselTransparentBlock::new))
+                .variant("steel_framed_stained_glass_%s".formatted(color.getName()), v -> v.description("Glass"))
+                .variant("steel_framed_stained_glass_%s_bubble".formatted(color.getName()), v -> v.description("Bubble Glass"))
+                .variant("steel_framed_stained_glass_%s_panel".formatted(color.getName()), v -> v.description("Glass Panel"))
+                .variant("steel_framed_stained_glass_%s_panel_fancy".formatted(color.getName()), v -> v.description("Fancy Glass Panel"))
+                .variant("steel_framed_stained_glass_%s_frame_thick".formatted(color.getName()), v -> v.description("Thick Frame"))
+                .variant("steel_framed_stained_glass_%s_frame_thick_panel".formatted(color.getName()), v -> v.description("Thick Frame Panel"))
+                .variant("steel_framed_stained_glass_%s_tile".formatted(color.getName()), v -> v.description("Tile").model(ChiselModelHandlers.CUBE_ALL))
+                .variant("steel_framed_stained_glass_%s_brick".formatted(color.getName()), v -> v.description("Brick"))
+                .variant("steel_framed_stained_glass_%s_line_vertical".formatted(color.getName()), v -> v.description("Vertical Line").model(ChiselModelHandlers.CUBE_ALL))
+                .variant("steel_framed_stained_glass_%s_line_vertical_panel".formatted(color.getName()), v -> v.description("Vertical Line Panel"))
+                .variant("steel_framed_stained_glass_%s_line_horizontal".formatted(color.getName()), v -> v.description("Horizontal Line").model(ChiselModelHandlers.CUBE_ALL))
+                .variant("steel_framed_stained_glass_%s_line_horizontal_panel".formatted(color.getName()), v -> v.description("Horizontal Line Panel"))
+                .variant("steel_framed_stained_glass_%s_arch_panel".formatted(color.getName()), v -> v.description("Arch Panel"))
+                .variant("steel_framed_stained_glass_%s_arch_panel_1".formatted(color.getName()), v -> v.description("Arch Panel 1"))
+                .variant("steel_framed_stained_glass_%s_arch_panel_2".formatted(color.getName()), v -> v.description("Arch Panel 2"))
+                .variant("steel_framed_stained_glass_%s_arch_panel_3".formatted(color.getName()), v -> v.description("Arch Panel 3"))
+                .variant("steel_framed_stained_glass_%s_scaffold".formatted(color.getName()), v -> v.description("Scaffold"))
+                .variant("steel_framed_stained_glass_%s_scaffold_left".formatted(color.getName()), v -> v.description("Scaffold Left"))
+                .variant("steel_framed_stained_glass_%s_scaffold_right".formatted(color.getName()), v -> v.description("Scaffold Right"))
+                .variant("steel_framed_stained_glass_%s_basketweave".formatted(color.getName()), v -> v.description("Basketweave").model(ChiselModelHandlers.CUBE_ALL))
+                .variant("steel_framed_stained_glass_%s_mosaic_1".formatted(color.getName()), v -> v.description("Mosaic 1"))
+                .variant("steel_framed_stained_glass_%s_mosaic_2".formatted(color.getName()), v -> v.description("Mosaic 2"))
+                .variant("steel_framed_stained_glass_%s_round".formatted(color.getName()), v -> v.description("Round"))
+                .variant("steel_framed_stained_glass_%s_circle".formatted(color.getName()), v -> v.description("Circle"))
+                .variant("steel_framed_stained_glass_%s_rings".formatted(color.getName()), v -> v.description("Rings"))
+                .variant("steel_framed_stained_glass_%s_diamond".formatted(color.getName()), v -> v.description("Diamond"))
+                .variant("steel_framed_stained_glass_%s_frame_1".formatted(color.getName()), v -> v.description("Frame 1")));
     }
 }

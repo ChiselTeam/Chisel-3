@@ -8,417 +8,237 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class CobblestoneFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("cobblestone", builder -> builder
-            .defaults(variant -> variant
-                    .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE))
-                    .blockName("Cobblestone"))
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE)).blockName("Cobblestone"))
             .existingBlock(Blocks.COBBLESTONE)
-            .variant("cobblestone_array", variant -> variant
-                    .description("Array")
-                    .model(ChiselModelHandlers.MULTIBLOCK_2X2))
-            .variant("cobblestone_border_square", variant -> variant
-                    .description("Square Border")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("cobblestone_array", v -> v.description("Array").model(ChiselModelHandlers.MULTIBLOCK_2X2))
+            .variant("cobblestone_border_square", v -> v.description("Square Border").model(ChiselModelHandlers.CONNECTED)
                     .textureFromBase("ctm_corner")
                     .textureFromBase("ctm_horizontal")
                     .textureFromBase("ctm_vertical"))
-            .variant("cobblestone_braid", variant -> variant
-                    .description("Braid"))
-            .variant("cobblestone_braid_encased", variant -> variant
-                    .description("Encased Braid")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("cobblestone_cracked_bricks", variant -> variant
-                    .description("Cracked Bricks"))
-            .variant("cobblestone_encased", variant -> variant
-                    .description("Encased")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("cobblestone_bricks_indent", variant -> variant
-                    .description("Indent Bricks"))
-            .variant("cobblestone_bricks_inlayed", variant -> variant
-                    .description("Inlayed Bricks"))
-            .variant("cobblestone_bricks_large", variant -> variant
-                    .description("Large Bricks")
-                    .model(ChiselModelHandlers.MULTIBLOCK_2X2)
+            .variant("cobblestone_braid", v -> v.description("Braid"))
+            .variant("cobblestone_braid_encased", v -> v.description("Encased Braid").model(ChiselModelHandlers.CONNECTED))
+            .variant("cobblestone_cracked_bricks", v -> v.description("Cracked Bricks"))
+            .variant("cobblestone_encased", v -> v.description("Encased").model(ChiselModelHandlers.CONNECTED))
+            .variant("cobblestone_bricks_indent", v -> v.description("Indent Bricks"))
+            .variant("cobblestone_bricks_inlayed", v -> v.description("Inlayed Bricks"))
+            .variant("cobblestone_bricks_large", v -> v.description("Large Bricks").model(ChiselModelHandlers.MULTIBLOCK_2X2)
                     .textureFromBase("2x2_bottom_right")
                     .textureFromBase("2x2_top_left")
                     .texture("2x2_top_right", Chisel.prefix("block/cobblestone/cobblestone_bricks_large-2x2_bottom_left")))
-            .variant("cobblestone_small", variant -> variant
-                    .description("Small Cobblestone Tiles"))
-            .variant("cobblestone_soft", variant -> variant
-                    .description("Cobblestone with Light Panel"))
-            .variant("cobblestone_solid", variant -> variant
-                    .description("Cobblestone with Dark Panel"))
-            .variant("cobblestone_triple", variant -> variant
-                    .description("Triple"))
-            .variant("cobblestone_bricks_vertical", variant -> variant
-                    .description("Vertical Bricks"))
-            .variant("cobblestone_chaotic", variant -> variant
-                    .description("Chaotic")
-                    .model(ChiselModelHandlers.MULTIBLOCK_3X3)
+            .variant("cobblestone_small", v -> v.description("Small Cobblestone Tiles"))
+            .variant("cobblestone_soft", v -> v.description("Cobblestone with Light Panel"))
+            .variant("cobblestone_solid", v -> v.description("Cobblestone with Dark Panel"))
+            .variant("cobblestone_triple", v -> v.description("Triple"))
+            .variant("cobblestone_bricks_vertical", v -> v.description("Vertical Bricks"))
+            .variant("cobblestone_chaotic", v -> v.description("Chaotic").model(ChiselModelHandlers.MULTIBLOCK_3X3)
                     .textureFromBase("3x3_top_left"))
-            .variant("cobblestone_chaotic_medium", variant -> variant
-                    .description("Chaotic Medium"))
-            .variant("cobblestone_chaotic_small", variant -> variant
-                    .description("Chaotic Small"))
-            .variant("cobblestone_checker", variant -> variant
-                    .description("Checker"))
-            .variant("cobblestone_checker_small", variant -> variant
-                    .description("Small Checker"))
-            .variant("cobblestone_circular", variant -> variant
-                    .description("Circular")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("cobblestone_cracked", variant -> variant
-                    .description("Cracked Bricks"))
-            .variant("cobblestone_cuts", variant -> variant
-                    .description("Cuts")
-                    .model(ChiselModelHandlers.MULTIBLOCK_4X4)
+            .variant("cobblestone_chaotic_medium", v -> v.description("Chaotic Medium"))
+            .variant("cobblestone_chaotic_small", v -> v.description("Chaotic Small"))
+            .variant("cobblestone_checker", v -> v.description("Checker"))
+            .variant("cobblestone_checker_small", v -> v.description("Small Checker"))
+            .variant("cobblestone_circular", v -> v.description("Circular").model(ChiselModelHandlers.CONNECTED))
+            .variant("cobblestone_cracked", v -> v.description("Cracked Bricks"))
+            .variant("cobblestone_cuts", v -> v.description("Cuts").model(ChiselModelHandlers.MULTIBLOCK_4X4)
                     .textureFromBase("4x4_row_0_column_0"))
-            .variant("cobblestone_dent", variant -> variant
-                    .description("Cobblestone with Dent")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("cobblestone_emboss", variant -> variant
-                    .description("Emboss")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("cobblestone_french", variant -> variant
-                    .description("French Cobblestone Tiles"))
-            .variant("cobblestone_french_2", variant -> variant
-                    .description("French Cobblestone Tiles"))
-            .variant("cobblestone_indent", variant -> variant
-                    .description("Indent")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("cobblestone_jellybean", variant -> variant
-                    .description("Jellybean")
-                    .model(ChiselModelHandlers.MULTIBLOCK_2X2)
+            .variant("cobblestone_dent", v -> v.description("Cobblestone with Dent").model(ChiselModelHandlers.CONNECTED))
+            .variant("cobblestone_emboss", v -> v.description("Emboss").model(ChiselModelHandlers.CONNECTED))
+            .variant("cobblestone_french", v -> v.description("French Cobblestone Tiles"))
+            .variant("cobblestone_french_2", v -> v.description("French Cobblestone Tiles"))
+            .variant("cobblestone_indent", v -> v.description("Indent").model(ChiselModelHandlers.CONNECTED))
+            .variant("cobblestone_jellybean", v -> v.description("Jellybean").model(ChiselModelHandlers.MULTIBLOCK_2X2)
                     .textureFromBase("2x2_top_left"))
-            .variant("cobblestone_layers", variant -> variant
-                    .description("Layers"))
-            .variant("cobblestone_marker", variant -> variant
-                    .description("Marker"))
-            .variant("cobblestone_layers_connected", variant -> variant
-                    .description("Layers Connected")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("cobblestone_layers", v -> v.description("Layers"))
+            .variant("cobblestone_marker", v -> v.description("Marker"))
+            .variant("cobblestone_layers_connected", v -> v.description("Layers Connected").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/cobblestone/cobblestone_layers_connected-ctm_corner"))
                     .textureFromBase("ctm_horizontal")
                     .textureAlias("ctm_vertical", "ctm_cornerless"))
-            .variant("cobblestone_line_horizontal", variant -> variant
-                    .description("Horizontal Line"))
-            .variant("cobblestone_line_vertical", variant -> variant
-                    .description("Vertical Line"))
-            .variant("cobblestone_meander_horizontal", variant -> variant
-                    .description("Horizontal Meander")
-                    .model(ChiselModelHandlers.CTMH)
+            .variant("cobblestone_line_horizontal", v -> v.description("Horizontal Line"))
+            .variant("cobblestone_line_vertical", v -> v.description("Vertical Line"))
+            .variant("cobblestone_meander_horizontal", v -> v.description("Horizontal Meander").model(ChiselModelHandlers.CTMH)
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_meander_horizontal-bottom")))
-            .variant("cobblestone_meander_vertical", variant -> variant
-                    .description("Vertical Meander")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_meander_vertical", v -> v.description("Vertical Meander").model(ChiselModelHandlers.CTMV)
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_meander_vertical-bottom"))
                     .texture("vertical_none", Chisel.prefix("block/cobblestone/cobblestone_meander_vertical-side")))
-            .variant("cobblestone_mosaic", variant -> variant
-                    .description("Mosaic")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("cobblestone_ornate", variant -> variant
-                    .description("Ornate"))
+            .variant("cobblestone_mosaic", v -> v.description("Mosaic").model(ChiselModelHandlers.CONNECTED))
+            .variant("cobblestone_ornate", v -> v.description("Ornate"))
             // .variant("cobblestone_ornate_small", variant -> variant.model(ChiselModelHandlers.CUBE_ALL).blockName("Cobblestone").description("Small Ornate"))
-            .variant("cobblestone_panel", variant -> variant
-                    .description("Cobblestone with Panel"))
-            .variant("cobblestone_pillar", variant -> variant
-                    .description("Pillar")
-                    .model(ChiselModelHandlers.TBS)
+            .variant("cobblestone_panel", v -> v.description("Cobblestone with Panel"))
+            .variant("cobblestone_pillar", v -> v.description("Pillar").model(ChiselModelHandlers.TBS)
                     .texture("bottom", Chisel.prefix("block/cobblestone/cobblestone_pillar-top")))
-            .variant("cobblestone_pillar_basic", variant -> variant
-                    .description("Basic Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_pillar_basic", v -> v.description("Basic Pillar").model(ChiselModelHandlers.CTMV)
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-bottom"))
                     .texture("vertical_none", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-side")))
-            .variant("cobblestone_pillar_basic_dent", variant -> variant
-                    .description("Basic Dent Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_pillar_basic_dent", v -> v.description("Basic Dent Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-bottom"))
                     .texture("vertical_none", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic_dent-side")))
-            .variant("cobblestone_pillar_basic_plain", variant -> variant
-                    .description("Basic Plain Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_pillar_basic_plain", v -> v.description("Basic Plain Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-bottom"))
                     .texture("vertical_none", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic_plain-side")))
-            .variant("cobblestone_pillar_basic_round", variant -> variant
-                    .description("Basic Round Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_pillar_basic_round", v -> v.description("Basic Round Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-bottom"))
                     .texture("vertical_none", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic_round-side")))
-            .variant("cobblestone_pillar_basic_spiral", variant -> variant
-                    .description("Basic Spiral Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_pillar_basic_spiral", v -> v.description("Basic Spiral Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-bottom"))
                     .texture("vertical_none", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic_spiral-side")))
-            .variant("cobblestone_pillar_classic", variant -> variant
-                    .description("Classic Pillar")
-                    .model(ChiselModelHandlers.TBS)
+            .variant("cobblestone_pillar_classic", v -> v.description("Classic Pillar").model(ChiselModelHandlers.TBS)
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_classic-bottom")))
-            .variant("cobblestone_pillar_classic_large", variant -> variant
-                    .description("Large Classic Pillar")
-                    .model(ChiselModelHandlers.TBS)
+            .variant("cobblestone_pillar_classic_large", v -> v.description("Large Classic Pillar").model(ChiselModelHandlers.TBS)
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_classic_large-bottom")))
-            .variant("cobblestone_pillar_ionic", variant -> variant
-                    .description("Ionic Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_pillar_ionic", v -> v.description("Ionic Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-bottom"))
                     .texture("vertical_none", Chisel.prefix("block/cobblestone/cobblestone_pillar_ionic-side")))
-            .variant("cobblestone_pillar_ionic_dent", variant -> variant
-                    .description("Ionic Dent Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_pillar_ionic_dent", v -> v.description("Ionic Dent Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("side", Chisel.prefix("block/cobblestone/cobblestone_pillar_ionic-side"))
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic_dent-vertical_both"))
                     .textureAlias("vertical_none", "side"))
-            .variant("cobblestone_pillar_ionic_plain", variant -> variant
-                    .description("Ionic Plain Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_pillar_ionic_plain", v -> v.description("Ionic Plain Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("side", Chisel.prefix("block/cobblestone/cobblestone_pillar_ionic-side"))
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic_plain-vertical_both"))
                     .textureAlias("vertical_none", "side"))
-            .variant("cobblestone_pillar_ionic_round", variant -> variant
-                    .description("Ionic Round Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_pillar_ionic_round", v -> v.description("Ionic Round Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("side", Chisel.prefix("block/cobblestone/cobblestone_pillar_ionic-side"))
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic_round-vertical_both"))
                     .textureAlias("vertical_none", "side"))
-            .variant("cobblestone_pillar_ionic_spiral", variant -> variant
-                    .description("Ionic Spiral Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_pillar_ionic_spiral", v -> v.description("Ionic Spiral Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("side", Chisel.prefix("block/cobblestone/cobblestone_pillar_ionic-side"))
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic_spiral-vertical_both"))
                     .textureAlias("vertical_none", "side"))
-            .variant("cobblestone_pillar_large_basic_triple", variant -> variant
-                    .description("Large Basic Triple Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_pillar_large_basic_triple", v -> v.description("Large Basic Triple Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-bottom"))
                     .texture("vertical_none", Chisel.prefix("block/cobblestone/cobblestone_pillar_large_basic_triple-side")))
-            .variant("cobblestone_pillar_large_ionic_triple", variant -> variant
-                    .description("Large Ionic Triple Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_pillar_large_ionic_triple", v -> v.description("Large Ionic Triple Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/cobblestone/cobblestone_pillar_large_basic_triple-vertical_both"))
                     .texture("vertical_none", Chisel.prefix("block/cobblestone/cobblestone_pillar_large_ionic_triple-side")))
-            .variant("cobblestone_pillar_meander", variant -> variant
-                    .description("Meander Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_pillar_meander", v -> v.description("Meander Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/cobblestone/cobblestone_pillar_ionic-vertical_both"))
                     .texture("vertical_none", Chisel.prefix("block/cobblestone/cobblestone_pillar_meander-side")))
-            .variant("cobblestone_pillar_meander_dent", variant -> variant
-                    .description("Meander Dent Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_pillar_meander_dent", v -> v.description("Meander Dent Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("side", Chisel.prefix("block/cobblestone/cobblestone_pillar_meander-side"))
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic_dent-vertical_both"))
                     .textureAlias("vertical_none", "side"))
-            .variant("cobblestone_pillar_meander_plain", variant -> variant
-                    .description("Meander Plain Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_pillar_meander_plain", v -> v.description("Meander Plain Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("side", Chisel.prefix("block/cobblestone/cobblestone_pillar_meander-side"))
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic_plain-vertical_both"))
                     .textureAlias("vertical_none", "side"))
-            .variant("cobblestone_pillar_meander_round", variant -> variant
-                    .description("Meander Round Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_pillar_meander_round", v -> v.description("Meander Round Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("side", Chisel.prefix("block/cobblestone/cobblestone_pillar_meander-side"))
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic_round-vertical_both"))
                     .textureAlias("vertical_none", "side"))
-            .variant("cobblestone_pillar_meander_spiral", variant -> variant
-                    .description("Meander Spiral Pillar")
-                    .model(ChiselModelHandlers.CTMV)
+            .variant("cobblestone_pillar_meander_spiral", v -> v.description("Meander Spiral Pillar").model(ChiselModelHandlers.CTMV)
                     .textureAlias("bottom", "top")
                     .texture("side", Chisel.prefix("block/cobblestone/cobblestone_pillar_meander-side"))
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic-bottom"))
                     .texture("vertical_both", Chisel.prefix("block/cobblestone/cobblestone_pillar_basic_spiral-vertical_both"))
                     .textureAlias("vertical_none", "side"))
-            .variant("cobblestone_plate", variant -> variant
-                    .description("Plate")
+            .variant("cobblestone_plate", v -> v.description("Plate")
                     .texture(Chisel.prefix("block/cobblestone/cobblestone_plate_connected")))
-            .variant("cobblestone_plate_connected", variant -> variant
-                    .description("Plate Connected")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("cobblestone_plate_connected", v -> v.description("Plate Connected").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/cobblestone/cobblestone_border_square-ctm_cornerless")))
-            .variant("cobblestone_polished", variant -> variant
-                    .description("Polished"))
-            .variant("cobblestone_polished_encased", variant -> variant
-                    .description("Polished Encased")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("cobblestone_prism", variant -> variant
-                    .description("Prism"))
-            .variant("cobblestone_raw", variant -> variant
-                    .description("Raw"))
-            .variant("cobblestone_road", variant -> variant
-                    .description("Road"))
-            .variant("cobblestone_slanted", variant -> variant
-                    .description("Slanted")
-                    .model(ChiselModelHandlers.MULTIBLOCK_2X2)
+            .variant("cobblestone_polished", v -> v.description("Polished"))
+            .variant("cobblestone_polished_encased", v -> v.description("Polished Encased").model(ChiselModelHandlers.CONNECTED))
+            .variant("cobblestone_prism", v -> v.description("Prism"))
+            .variant("cobblestone_raw", v -> v.description("Raw"))
+            .variant("cobblestone_road", v -> v.description("Road"))
+            .variant("cobblestone_slanted", v -> v.description("Slanted").model(ChiselModelHandlers.MULTIBLOCK_2X2)
                     .textureFromBase("2x2_top_left"))
-            .variant("cobblestone_tiles_medium", variant -> variant
-                    .description("Medium Tiles"))
-            .variant("cobblestone_tiles_large", variant -> variant
-                    .description("Large Cobblestone Tiles")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("cobblestone_tiles_small", variant -> variant
-                    .description("Small Tiles"))
-            .variant("cobblestone_twisted", variant -> variant
-                    .description("Twisted")
-                    .model(ChiselModelHandlers.TBS)
+            .variant("cobblestone_tiles_medium", v -> v.description("Medium Tiles"))
+            .variant("cobblestone_tiles_large", v -> v.description("Large Cobblestone Tiles").model(ChiselModelHandlers.CONNECTED))
+            .variant("cobblestone_tiles_small", v -> v.description("Small Tiles"))
+            .variant("cobblestone_twisted", v -> v.description("Twisted").model(ChiselModelHandlers.TBS)
                     .texture("bottom", Chisel.prefix("block/cobblestone/cobblestone_twisted-top")))
-            .variant("cobblestone_weaver", variant -> variant
-                    .description("Weaver")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("cobblestone_zag", variant -> variant
-                    .description("Zag")
-                    .model(ChiselModelHandlers.V4)
+            .variant("cobblestone_weaver", v -> v.description("Weaver").model(ChiselModelHandlers.CONNECTED))
+            .variant("cobblestone_zag", v -> v.description("Zag").model(ChiselModelHandlers.V4)
                     .textureFromBase("ar_variant_1")
                     .texture("v4_top_right", Chisel.prefix("block/cobblestone/cobblestone_zag-v4_bottom_left")))
-            .variant("cobblestone_crate", variant -> variant
-                    .description("Crate")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("cobblestone_herringbone", variant -> variant
-                    .description("Herringbone"))
-            .variant("cobblestone_herringbone_encased", variant -> variant
-                    .description("Encased Herringbone")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("cobblestone_crate", v -> v.description("Crate").model(ChiselModelHandlers.CONNECTED))
+            .variant("cobblestone_herringbone", v -> v.description("Herringbone"))
+            .variant("cobblestone_herringbone_encased", v -> v.description("Encased Herringbone").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/cobblestone/cobblestone_herringbone")))
-            .variant("cobblestone_medallion", variant -> variant
-                    .description("Medallion"))
-            .variant("cobblestone_medallion_encased", variant -> variant
-                    .description("Encased Medallion")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("cobblestone_medallion", v -> v.description("Medallion"))
+            .variant("cobblestone_medallion_encased", v -> v.description("Encased Medallion").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/cobblestone/cobblestone_medallion")))
-            .variant("cobblestone_dots", variant -> variant
-                    .description("Dots"))
-            .variant("cobblestone_dots_encased", variant -> variant
-                    .description("Encased Dots")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("cobblestone_dots", v -> v.description("Dots"))
+            .variant("cobblestone_dots_encased", v -> v.description("Encased Dots").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/cobblestone/cobblestone_dots")))
-            .variant("cobblestone_heart", variant -> variant
-                    .description("Heart"))
-            .variant("cobblestone_star", variant -> variant
-                    .description("Star"))
-            .variant("cobblestone_plating", variant -> variant
-                    .description("Plating"))
-            .variant("cobblestone_lodestone", variant -> variant
-                    .description("Lodestone")
+            .variant("cobblestone_heart", v -> v.description("Heart"))
+            .variant("cobblestone_star", v -> v.description("Star"))
+            .variant("cobblestone_plating", v -> v.description("Plating"))
+            .variant("cobblestone_lodestone", v -> v.description("Lodestone")
                     .texture(Chisel.prefix("block/cobblestone/cobblestone_lodestone_connected")))
-            .variant("cobblestone_lodestone_connected", variant -> variant
-                    .description("Lodestone Connected")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("cobblestone_lodestone_connected", v -> v.description("Lodestone Connected").model(ChiselModelHandlers.CONNECTED)
                     .textureFromBase("ctm_cornerless"))
-            .variant("cobblestone_plank", variant -> variant
-                    .description("Plank")
+            .variant("cobblestone_plank", v -> v.description("Plank")
                     .texture(Chisel.prefix("block/cobblestone/cobblestone_plank_connected")))
-            .variant("cobblestone_plank_connected", variant -> variant
-                    .description("Plank Connected")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("cobblestone_frame", variant -> variant
-                    .description("Frame"))
-            .variant("cobblestone_panel_1", variant -> variant
-                    .description("Panel 1"))
-            .variant("cobblestone_panel_2", variant -> variant
-                    .description("Panel 2"))
-            .variant("cobblestone_panel_3", variant -> variant
-                    .description("Panel 3"))
-            .variant("cobblestone_skull_creeper", variant -> variant
-                    .description("Creeper Skull"))
-            .variant("cobblestone_skull_skeleton", variant -> variant
-                    .description("Skeleton Skull"))
-            .variant("cobblestone_stripes", variant -> variant
-                    .description("Stripes"))
-            .variant("cobblestone_stripes_encased", variant -> variant
-                    .description("Encased Stripes")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("cobblestone_plank_connected", v -> v.description("Plank Connected").model(ChiselModelHandlers.CONNECTED))
+            .variant("cobblestone_frame", v -> v.description("Frame"))
+            .variant("cobblestone_panel_1", v -> v.description("Panel 1"))
+            .variant("cobblestone_panel_2", v -> v.description("Panel 2"))
+            .variant("cobblestone_panel_3", v -> v.description("Panel 3"))
+            .variant("cobblestone_skull_creeper", v -> v.description("Creeper Skull"))
+            .variant("cobblestone_skull_skeleton", v -> v.description("Skeleton Skull"))
+            .variant("cobblestone_stripes", v -> v.description("Stripes"))
+            .variant("cobblestone_stripes_encased", v -> v.description("Encased Stripes").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/cobblestone/cobblestone_stripes")))
-            .variant("cobblestone_chisel_1", variant -> variant
-                    .description("Chisel 1"))
-            .variant("cobblestone_chisel_2", variant -> variant
-                    .description("Chisel 2"))
-            .variant("cobblestone_chisel_3", variant -> variant
-                    .description("Chisel 3"))
-            .variant("cobblestone_chisel_4", variant -> variant
-                    .description("Chisel 4"))
-            .variant("cobblestone_chisel_5", variant -> variant
-                    .description("Chisel 5"))
-            .variant("cobblestone_chisel_6", variant -> variant
-                    .description("Chisel 6"))
-            .variant("cobblestone_facet", variant -> variant
-                    .description("Facet"))
-            .variant("cobblestone_facet_small", variant -> variant
-                    .description("Small Facet"))
-            .variant("cobblestone_facet_small_encased", variant -> variant
-                    .description("Encased Small Facet")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("cobblestone_chisel_1", v -> v.description("Chisel 1"))
+            .variant("cobblestone_chisel_2", v -> v.description("Chisel 2"))
+            .variant("cobblestone_chisel_3", v -> v.description("Chisel 3"))
+            .variant("cobblestone_chisel_4", v -> v.description("Chisel 4"))
+            .variant("cobblestone_chisel_5", v -> v.description("Chisel 5"))
+            .variant("cobblestone_chisel_6", v -> v.description("Chisel 6"))
+            .variant("cobblestone_facet", v -> v.description("Facet"))
+            .variant("cobblestone_facet_small", v -> v.description("Small Facet"))
+            .variant("cobblestone_facet_small_encased", v -> v.description("Encased Small Facet").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/cobblestone/cobblestone_facet_small")))
-            .variant("cobblestone_shiny", variant -> variant
-                    .description("Shiny")
+            .variant("cobblestone_shiny", v -> v.description("Shiny")
                     .texture(Chisel.prefix("block/cobblestone/cobblestone_shiny_connected")))
-            .variant("cobblestone_shiny_connected", variant -> variant
-                    .description("Shiny Connected")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("cobblestone_gem", variant -> variant
-                    .description("Gem"))
-            .variant("cobblestone_gem_1", variant -> variant
-                    .description("Gem 1")
+            .variant("cobblestone_shiny_connected", v -> v.description("Shiny Connected").model(ChiselModelHandlers.CONNECTED))
+            .variant("cobblestone_gem", v -> v.description("Gem"))
+            .variant("cobblestone_gem_1", v -> v.description("Gem 1")
                     .texture(Chisel.prefix("block/cobblestone/cobblestone_gem_1_connected")))
-            .variant("cobblestone_gem_1_connected", variant -> variant
-                    .description("Gem 1 Connected")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("cobblestone_gem_1_connected", v -> v.description("Gem 1 Connected").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/cobblestone/cobblestone_border_square-ctm_cornerless")))
-            .variant("cobblestone_gem_2", variant -> variant
-                    .description("Gem 2")
+            .variant("cobblestone_gem_2", v -> v.description("Gem 2")
                     .texture(Chisel.prefix("block/cobblestone/cobblestone_gem_2_connected")))
-            .variant("cobblestone_gem_2_connected", variant -> variant
-                    .description("Gem 2 Connected")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("cobblestone_gem_2_connected", v -> v.description("Gem 2 Connected").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/cobblestone/cobblestone_border_square-ctm_cornerless")))
-            .variant("cobblestone_gem_3", variant -> variant
-                    .description("Gem 3")
+            .variant("cobblestone_gem_3", v -> v.description("Gem 3")
                     .texture(Chisel.prefix("block/cobblestone/cobblestone_gem_3_connected")))
-            .variant("cobblestone_gem_3_connected", variant -> variant
-                    .description("Gem 3 Connected")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("cobblestone_bricks_square", variant -> variant
-                    .description("Square Bricks"))
-            .variant("cobblestone_slab", variant -> variant
-                    .description("Slab"))
-            .variant("cobblestone_scaffold", variant -> variant
-                    .description("Scaffold"))
-            .variant("cobblestone_scaffold_encased", variant -> variant
-                    .description("Encased Scaffold")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("cobblestone_gem_3_connected", v -> v.description("Gem 3 Connected").model(ChiselModelHandlers.CONNECTED))
+            .variant("cobblestone_bricks_square", v -> v.description("Square Bricks"))
+            .variant("cobblestone_slab", v -> v.description("Slab"))
+            .variant("cobblestone_scaffold", v -> v.description("Scaffold"))
+            .variant("cobblestone_scaffold_encased", v -> v.description("Encased Scaffold").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/cobblestone/cobblestone_scaffold")))
-            .variant("cobblestone_tiles_inlayed", variant -> variant
-                    .description("Inlayed Tiles"))
-            .variant("cobblestone_waves", variant -> variant
-                    .description("Waves")
-                    .model(ChiselModelHandlers.MULTIBLOCK_2X2)
+            .variant("cobblestone_tiles_inlayed", v -> v.description("Inlayed Tiles"))
+            .variant("cobblestone_waves", v -> v.description("Waves").model(ChiselModelHandlers.MULTIBLOCK_2X2)
                     .textureFromBase("2x2_top_left"))
-            .variant("cobblestone_parquet", variant -> variant
-                    .description("Parquet"))
-            .variant("cobblestone_parquet_encased", variant -> variant
-                    .description("Encased Parquet")
-                    .model(ChiselModelHandlers.CONNECTED)
+            .variant("cobblestone_parquet", v -> v.description("Parquet"))
+            .variant("cobblestone_parquet_encased", v -> v.description("Encased Parquet").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/cobblestone/cobblestone_parquet"))));
 
     private CobblestoneFamily() {

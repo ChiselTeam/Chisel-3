@@ -7,30 +7,15 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class CopperFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("copper", builder -> builder
-            .defaults(variant -> variant
-                    .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK))
-                    .blockName("Block of Copper")
-                    .model(ChiselModelHandlers.CONNECTED)
-                    .weathering()
-                    .waxed())
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK)).blockName("Block of Copper").model(ChiselModelHandlers.CONNECTED).weathering().waxed())
             .existingBlock(Blocks.COPPER_BLOCK)
-            .variant("copper_bad_greggy", variant -> variant
-                    .description("An Old Relic from the land of Oneteufyv"))
-            .variant("copper_bolted", variant -> variant
-                    .description("Fancy Bolted Plating")
-                    .model(ChiselModelHandlers.CUBE_ALL))
-            .variant("copper_caution", variant -> variant
-                    .description("Caution Stripes"))
-            .variant("copper_crate", variant -> variant
-                    .description("Shipping Crate"))
-            .variant("copper_machine", variant -> variant
-                    .description("Machine")
-                    .model(ChiselModelHandlers.CUBE_ALL))
-            .variant("copper_scaffold", variant -> variant
-                    .description("Scaffold"))
-            .variant("copper_thermal", variant -> variant
-                    .description("Thermal")
-                    .model(ChiselModelHandlers.TBS)));
+            .variant("copper_bad_greggy", v -> v.description("An Old Relic from the land of Oneteufyv"))
+            .variant("copper_bolted", v -> v.description("Fancy Bolted Plating").model(ChiselModelHandlers.CUBE_ALL))
+            .variant("copper_caution", v -> v.description("Caution Stripes"))
+            .variant("copper_crate", v -> v.description("Shipping Crate"))
+            .variant("copper_machine", v -> v.description("Machine").model(ChiselModelHandlers.CUBE_ALL))
+            .variant("copper_scaffold", v -> v.description("Scaffold"))
+            .variant("copper_thermal", v -> v.description("Thermal").model(ChiselModelHandlers.TBS)));
 
     private CopperFamily() {
     }

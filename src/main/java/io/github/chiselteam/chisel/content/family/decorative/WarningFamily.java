@@ -8,56 +8,37 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class WarningFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("warning", builder -> builder
-            .defaults(variant -> variant
-                    .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE))
-                    .blockName("Warning Sign")
-                    .model(ChiselModelHandlers.MULTI_LAYER))
-            .variant("warning_biohazard", variant -> variant
-                    .description("Biohazard")
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)).blockName("Warning Sign").model(ChiselModelHandlers.MULTI_LAYER))
+            .variant("warning_biohazard", v -> v.description("Biohazard")
                     .texture("bg", Chisel.prefix("block/warning/warning_chem-bg")))
-            .variant("warning_chem", variant -> variant
-                    .description("Dangerous Chemicals"))
-            .variant("warning_construction", variant -> variant
-                    .description("Under Construction")
+            .variant("warning_chem", v -> v.description("Dangerous Chemicals"))
+            .variant("warning_construction", v -> v.description("Under Construction")
                     .texture("bg", Chisel.prefix("block/warning/warning_chem-bg")))
-            .variant("warning_cryogenic", variant -> variant
-                    .description("Cryogenic Freezing in progress")
+            .variant("warning_cryogenic", v -> v.description("Cryogenic Freezing in progress")
                     .texture("bg", Chisel.prefix("block/warning/warning_chem-bg")))
-            .variant("warning_death", variant -> variant
-                    .description("Death")
+            .variant("warning_death", v -> v.description("Death")
                     .texture("bg", Chisel.prefix("block/warning/warning_chem-bg")))
-            .variant("warning_explosion", variant -> variant
-                    .description("Explosion")
+            .variant("warning_explosion", v -> v.description("Explosion")
                     .texture("bg", Chisel.prefix("block/warning/warning_chem-bg")))
-            .variant("warning_falling", variant -> variant
-                    .description("Danger of Falling")
+            .variant("warning_falling", v -> v.description("Danger of Falling")
                     .texture("bg", Chisel.prefix("block/warning/warning_chem-bg")))
-            .variant("warning_falling_objects", variant -> variant
-                    .description("Falling Objects")
+            .variant("warning_falling_objects", v -> v.description("Falling Objects")
                     .texture("bg", Chisel.prefix("block/warning/warning_chem-bg")))
-            .variant("warning_fire", variant -> variant
-                    .description("Fire")
+            .variant("warning_fire", v -> v.description("Fire")
                     .texture("bg", Chisel.prefix("block/warning/warning_chem-bg")))
-            .variant("warning_generic", variant -> variant
-                    .description("Generic Warning")
+            .variant("warning_generic", v -> v.description("Generic Warning")
                     .texture("bg", Chisel.prefix("block/warning/warning_chem-bg")))
-            .variant("warning_illuminati", variant -> variant
-                    .description("Illuminati")
+            .variant("warning_illuminati", v -> v.description("Illuminati")
                     .texture("bg", Chisel.prefix("block/warning/warning_chem-bg")))
-            .variant("warning_loud", variant -> variant
-                    .description("Loud Sounds")
+            .variant("warning_loud", v -> v.description("Loud Sounds")
                     .texture("bg", Chisel.prefix("block/warning/warning_chem-bg")))
-            .variant("warning_no_entry", variant -> variant
-                    .description("No Entry")
+            .variant("warning_no_entry", v -> v.description("No Entry")
                     .texture("bg", Chisel.prefix("block/warning/warning_chem-bg")))
-            .variant("warning_oxygen", variant -> variant
-                    .description("Oxygen Required")
+            .variant("warning_oxygen", v -> v.description("Oxygen Required")
                     .texture("bg", Chisel.prefix("block/warning/warning_chem-bg")))
-            .variant("warning_radiation", variant -> variant
-                    .description("Radiation")
+            .variant("warning_radiation", v -> v.description("Radiation")
                     .texture("bg", Chisel.prefix("block/warning/warning_chem-bg")))
-            .variant("warning_voltage", variant -> variant
-                    .description("High Voltage")
+            .variant("warning_voltage", v -> v.description("High Voltage")
                     .texture("bg", Chisel.prefix("block/warning/warning_chem-bg"))));
 
     private WarningFamily() {

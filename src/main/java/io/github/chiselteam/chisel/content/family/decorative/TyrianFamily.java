@@ -7,44 +7,24 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class TyrianFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("tyrian", builder -> builder
-            .defaults(variant -> variant
-                    .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE))
-                    .blockName("Tyrian"))
-            .variant("tyrian_black", variant -> variant
-                    .description("Black"))
-            .variant("tyrian_black_tiles", variant -> variant
-                    .description("Black Tiles"))
-            .variant("tyrian_bleak", variant -> variant
-                    .description("Bleak"))
-            .variant("tyrian_blue", variant -> variant
-                    .description("Blue"))
-            .variant("tyrian_dent", variant -> variant
-                    .description("Dent"))
-            .variant("tyrian_diagonal", variant -> variant
-                    .description("Diagonal"))
-            .variant("tyrian_elaborate", variant -> variant
-                    .description("Elaborate"))
-            .variant("tyrian_normal", variant -> variant
-                    .description("Normal"))
-            .variant("tyrian_opening", variant -> variant
-                    .description("Opening"))
-            .variant("tyrian_platform", variant -> variant
-                    .description("Platform"))
-            .variant("tyrian_purple", variant -> variant
-                    .description("Purple"))
-            .variant("tyrian_purple_faded", variant -> variant
-                    .description("Faded Purple"))
-            .variant("tyrian_rusted", variant -> variant
-                    .description("Rusted"))
-            .variant("tyrian_seams", variant -> variant
-                    .description("Seams"))
-            .variant("tyrian_shiny", variant -> variant
-                    .description("Shiny")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("tyrian_shiny_raw", variant -> variant
-                    .description("Shiny Raw"))
-            .variant("tyrian_tiles", variant -> variant
-                    .description("Tiles")));
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)).blockName("Tyrian"))
+            .variant("tyrian_black", v -> v.description("Black"))
+            .variant("tyrian_black_tiles", v -> v.description("Black Tiles"))
+            .variant("tyrian_bleak", v -> v.description("Bleak"))
+            .variant("tyrian_blue", v -> v.description("Blue"))
+            .variant("tyrian_dent", v -> v.description("Dent"))
+            .variant("tyrian_diagonal", v -> v.description("Diagonal"))
+            .variant("tyrian_elaborate", v -> v.description("Elaborate"))
+            .variant("tyrian_normal", v -> v.description("Normal"))
+            .variant("tyrian_opening", v -> v.description("Opening"))
+            .variant("tyrian_platform", v -> v.description("Platform"))
+            .variant("tyrian_purple", v -> v.description("Purple"))
+            .variant("tyrian_purple_faded", v -> v.description("Faded Purple"))
+            .variant("tyrian_rusted", v -> v.description("Rusted"))
+            .variant("tyrian_seams", v -> v.description("Seams"))
+            .variant("tyrian_shiny", v -> v.description("Shiny").model(ChiselModelHandlers.CONNECTED))
+            .variant("tyrian_shiny_raw", v -> v.description("Shiny Raw"))
+            .variant("tyrian_tiles", v -> v.description("Tiles")));
 
     private TyrianFamily() {
     }

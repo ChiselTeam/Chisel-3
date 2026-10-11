@@ -7,28 +7,14 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class NickelFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("nickel", builder -> builder
-            .defaults(variant -> variant
-                    .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK))
-                    .blockName("Nickel")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("nickel_bad_greggy", variant -> variant
-                    .description("An Old Relic from the land of Oneteufyv"))
-            .variant("nickel_bolted", variant -> variant
-                    .description("Fancy Bolted Plating")
-                    .model(ChiselModelHandlers.CUBE_ALL))
-            .variant("nickel_caution", variant -> variant
-                    .description("Caution Stripes"))
-            .variant("nickel_crate", variant -> variant
-                    .description("Shipping Crate")
-                    .model(ChiselModelHandlers.CUBE_ALL))
-            .variant("nickel_machine", variant -> variant
-                    .description("Machine")
-                    .model(ChiselModelHandlers.CUBE_ALL))
-            .variant("nickel_scaffold", variant -> variant
-                    .description("Scaffold"))
-            .variant("nickel_thermal", variant -> variant
-                    .description("Thermal")
-                    .model(ChiselModelHandlers.TBS)));
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)).blockName("Nickel").model(ChiselModelHandlers.CONNECTED))
+            .variant("nickel_bad_greggy", v -> v.description("An Old Relic from the land of Oneteufyv"))
+            .variant("nickel_bolted", v -> v.description("Fancy Bolted Plating").model(ChiselModelHandlers.CUBE_ALL))
+            .variant("nickel_caution", v -> v.description("Caution Stripes"))
+            .variant("nickel_crate", v -> v.description("Shipping Crate").model(ChiselModelHandlers.CUBE_ALL))
+            .variant("nickel_machine", v -> v.description("Machine").model(ChiselModelHandlers.CUBE_ALL))
+            .variant("nickel_scaffold", v -> v.description("Scaffold"))
+            .variant("nickel_thermal", v -> v.description("Thermal").model(ChiselModelHandlers.TBS)));
 
     private NickelFamily() {
     }

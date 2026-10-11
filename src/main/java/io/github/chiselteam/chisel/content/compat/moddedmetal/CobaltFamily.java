@@ -7,27 +7,14 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class CobaltFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("cobalt", builder -> builder
-            .defaults(variant -> variant
-                    .properties(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK))
-                    .blockName("Cobalt")
-                    .model(ChiselModelHandlers.CONNECTED))
-            .variant("cobalt_bad_greggy", variant -> variant
-                    .description("An Old Relic from the land of Oneteufyv"))
-            .variant("cobalt_bolted", variant -> variant
-                    .description("Fancy Bolted Plating")
-                    .model(ChiselModelHandlers.CUBE_ALL))
-            .variant("cobalt_caution", variant -> variant
-                    .description("Caution Stripes"))
-            .variant("cobalt_crate", variant -> variant
-                    .description("Shipping Crate"))
-            .variant("cobalt_machine", variant -> variant
-                    .description("Machine")
-                    .model(ChiselModelHandlers.CUBE_ALL))
-            .variant("cobalt_scaffold", variant -> variant
-                    .description("Scaffold"))
-            .variant("cobalt_thermal", variant -> variant
-                    .description("Thermal")
-                    .model(ChiselModelHandlers.TBS)));
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)).blockName("Cobalt").model(ChiselModelHandlers.CONNECTED))
+            .variant("cobalt_bad_greggy", v -> v.description("An Old Relic from the land of Oneteufyv"))
+            .variant("cobalt_bolted", v -> v.description("Fancy Bolted Plating").model(ChiselModelHandlers.CUBE_ALL))
+            .variant("cobalt_caution", v -> v.description("Caution Stripes"))
+            .variant("cobalt_crate", v -> v.description("Shipping Crate"))
+            .variant("cobalt_machine", v -> v.description("Machine").model(ChiselModelHandlers.CUBE_ALL))
+            .variant("cobalt_scaffold", v -> v.description("Scaffold"))
+            .variant("cobalt_thermal", v -> v.description("Thermal").model(ChiselModelHandlers.TBS)));
 
     private CobaltFamily() {
     }
