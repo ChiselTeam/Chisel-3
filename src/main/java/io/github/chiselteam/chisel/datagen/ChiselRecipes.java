@@ -331,15 +331,6 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_stone_pickaxe", has(Items.STONE_PICKAXE))
                 .save(output);
 
-        shaped(RecipeCategory.TOOLS, ChiselItems.PALETTE_BUILDER, 1)
-                .pattern("WWW")
-                .pattern("WWW")
-                .pattern(" S ")
-                .define('W', ItemTags.WOOL)
-                .define('S', Tags.Items.RODS_WOODEN)
-                .unlockedBy("has_wool", has(ItemTags.WOOL))
-                .save(output);
-
         shaped(RecipeCategory.TOOLS, ChiselItems.TROWEL, 1)
                 .pattern(" S ")
                 .pattern("III")
@@ -357,6 +348,7 @@ public class ChiselRecipes extends RecipeProvider {
         chiselRecipe("has_diamond", Tags.Items.GEMS_DIAMOND, ChiselItems.CHISEL_DIAMOND);
         chiselRecipe("has_obsidian", Tags.Items.OBSIDIANS, ChiselItems.CHISEL_OBSIDIAN);
         chiselRecipe("has_ender_pearl", Tags.Items.ENDER_PEARLS, ChiselItems.OFFSET_TOOL);
+        chiselRecipe("has_wool", ItemTags.WOOL, ChiselItems.PALETTE_BUILDER);
     }
 
     private void stoneAround(String unlockedBy, TagKey<Item> recipeItem, ItemLike outputItem, int count) {
