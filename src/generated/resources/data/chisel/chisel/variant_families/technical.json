@@ -125,6 +125,7 @@
     },
     {
       "block": "chisel:technical_panel_caution",
+      "model_type": "connected",
       "name": "technical_panel_caution"
     },
     {
@@ -189,12 +190,12 @@
     },
     {
       "block": "chisel:technical_vents",
-      "model_type": "connected",
+      "model_type": "connected_tbs",
       "name": "technical_vents"
     },
     {
       "block": "chisel:technical_vents_glowing",
-      "model_type": "connected",
+      "model_type": "connected_tbs",
       "name": "technical_vents_glowing"
     },
     {

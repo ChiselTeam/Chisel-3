@@ -1,12 +1,25 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/technical/technical_vents",
+    "bottom": "chisel:block/technical/technical_vents-bottom",
     "particle": "chisel:block/technical/technical_vents",
-    "standard_corner": "chisel:block/technical/technical_vents-ctm_corner",
-    "standard_cornerless": "chisel:block/technical/technical_vents-ctm_cornerless",
-    "standard_horizontal": "chisel:block/technical/technical_vents-ctm_horizontal",
-    "standard_none": "chisel:block/technical/technical_vents",
-    "standard_vertical": "chisel:block/technical/technical_vents-ctm_vertical"
+    "side": "chisel:block/technical/technical_vents-side",
+    "standard_bottom_corner": "chisel:block/technical/technical_vents-top-ctm_corner",
+    "standard_bottom_cornerless": "chisel:block/technical/technical_vents-top-ctm_cornerless",
+    "standard_bottom_horizontal": "chisel:block/technical/technical_vents-top-ctm_horizontal",
+    "standard_bottom_none": "chisel:block/technical/technical_vents-bottom",
+    "standard_bottom_vertical": "chisel:block/technical/technical_vents-top-ctm_vertical",
+    "standard_side_corner": "chisel:block/technical/technical_vents-side-ctm_corner",
+    "standard_side_cornerless": "chisel:block/technical/technical_vents-side-ctm_cornerless",
+    "standard_side_horizontal": "chisel:block/technical/technical_vents-side-ctm_horizontal",
+    "standard_side_none": "chisel:block/technical/technical_vents-side",
+    "standard_side_vertical": "chisel:block/technical/technical_vents-side-ctm_vertical",
+    "standard_top_corner": "chisel:block/technical/technical_vents-top-ctm_corner",
+    "standard_top_cornerless": "chisel:block/technical/technical_vents-top-ctm_cornerless",
+    "standard_top_horizontal": "chisel:block/technical/technical_vents-top-ctm_horizontal",
+    "standard_top_none": "chisel:block/technical/technical_vents-top",
+    "standard_top_vertical": "chisel:block/technical/technical_vents-top-ctm_vertical",
+    "top": "chisel:block/technical/technical_vents-top"
   }
 }

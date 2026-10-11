@@ -1,12 +1,43 @@
 {
-  "neoforge:definition_type": "ctm:connected_texture_model",
-  "connected_faces": [
-    "all"
-  ],
-  "model_location": "chisel:block/technical_vents",
-  "render_overlay_on_all_faces": true,
-  "variant": {
-    "block": "chisel:technical_vents",
-    "kind": "standard"
+  "variants": {
+    "axis=x": {
+      "type": "ctm:connected_texture_model",
+      "connected_faces": [
+        "all"
+      ],
+      "model_location": "chisel:block/technical_vents",
+      "render_overlay_on_all_faces": true,
+      "variant": {
+        "block": "chisel:technical_vents",
+        "kind": "tbs"
+      },
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "type": "ctm:connected_texture_model",
+      "connected_faces": [
+        "all"
+      ],
+      "model_location": "chisel:block/technical_vents",
+      "render_overlay_on_all_faces": true,
+      "variant": {
+        "block": "chisel:technical_vents",
+        "kind": "tbs"
+      }
+    },
+    "axis=z": {
+      "type": "ctm:connected_texture_model",
+      "connected_faces": [
+        "all"
+      ],
+      "model_location": "chisel:block/technical_vents",
+      "render_overlay_on_all_faces": true,
+      "variant": {
+        "block": "chisel:technical_vents",
+        "kind": "tbs"
+      },
+      "x": 90
+    }
   }
 }
