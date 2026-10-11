@@ -265,6 +265,7 @@ public class ChiselTabs {
                 output.accept(ChiselItems.MEASURING_TAPE.get());
                 output.accept(ChiselItems.BUILDERS_HANDBOOK.get());
                 output.accept(ChiselItems.PALETTE_BUILDER.get());
+                output.accept(ChiselItems.TROWEL.get());
             })
             .build());
 }

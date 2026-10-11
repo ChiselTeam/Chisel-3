@@ -30,7 +30,10 @@ public class ChiselRecipeCategory extends AbstractRecipeCategory<ChiselRecipe> {
 
     @Override
     public void createRecipeExtras(@NonNull IRecipeExtrasBuilder builder, @NonNull ChiselRecipe recipe, @NonNull IFocusGroup focuses) {
-        builder.addText(recipe.family().getVariants().getFirst().getBlock().getName(), getWidth() - 20, 20)
+        var variants = recipe.family().getAllVariants();
+        if (variants.isEmpty() || variants.size() <= 2) return;
+
+        builder.addText(variants.getFirst().getBlock().getName(), getWidth() - 20, 20)
                 .setPosition(0, -5)
                 .setColor(0xFF505050)
                 .setLineSpacing(0)

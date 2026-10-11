@@ -331,6 +331,23 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_stone_pickaxe", has(Items.STONE_PICKAXE))
                 .save(output);
 
+        shaped(RecipeCategory.TOOLS, ChiselItems.PALETTE_BUILDER, 1)
+                .pattern("WWW")
+                .pattern("WWW")
+                .pattern(" S ")
+                .define('W', ItemTags.WOOL)
+                .define('S', Tags.Items.RODS_WOODEN)
+                .unlockedBy("has_wool", has(ItemTags.WOOL))
+                .save(output);
+
+        shaped(RecipeCategory.TOOLS, ChiselItems.TROWEL, 1)
+                .pattern(" S ")
+                .pattern("III")
+                .define('S', Tags.Items.RODS_WOODEN)
+                .define('I', Tags.Items.INGOTS_IRON)
+                .unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+                .save(output);
+
         upgradeRecipe("has_sugar", Items.SUGAR, ChiselItems.UPGRADE_SPEED);
         upgradeRecipe("has_hopper", Blocks.HOPPER, ChiselItems.UPGRADE_AUTOMATION);
         upgradeRecipe("has_chest", Blocks.CHEST, ChiselItems.UPGRADE_STACK);

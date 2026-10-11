@@ -1,0 +1,33 @@
+{
+  "title": {
+    "translate": "chisel.guide.measuring_tape.title"
+  },
+  "description": {
+    "translate": "chisel.guide.measuring_tape.description"
+  },
+  "icon": "chisel:measuring_tape",
+  "categories": [
+    "chisel:items"
+  ],
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.measuring_tape.usage"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.measuring_tape.details"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.measuring_tape.tip"
+      }
+    }
+  ],
+  "sort_order": 60
+}

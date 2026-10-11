@@ -1,0 +1,33 @@
+{
+  "title": {
+    "translate": "chisel.guide.chisels.title"
+  },
+  "description": {
+    "translate": "chisel.guide.chisels.description"
+  },
+  "icon": "chisel:chisel_iron",
+  "categories": [
+    "chisel:items"
+  ],
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.chisels.usage"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.chisels.details"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.chisels.tip"
+      }
+    }
+  ],
+  "sort_order": 10
+}

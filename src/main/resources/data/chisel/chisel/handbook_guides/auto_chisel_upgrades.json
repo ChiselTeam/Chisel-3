@@ -1,0 +1,33 @@
+{
+  "title": {
+    "translate": "chisel.guide.auto_chisel_upgrades.title"
+  },
+  "description": {
+    "translate": "chisel.guide.auto_chisel_upgrades.description"
+  },
+  "icon": "chisel:upgrade_stack",
+  "categories": [
+    "chisel:items"
+  ],
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.auto_chisel_upgrades.usage"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.auto_chisel_upgrades.details"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.auto_chisel_upgrades.tip"
+      }
+    }
+  ],
+  "sort_order": 30
+}

@@ -27,6 +27,7 @@ public final class HandbookRenderer {
 
     private static final int COVER_TEXTURE_WIDTH = 80;
     private static final int COVER_TEXTURE_HEIGHT = 94;
+    private static final int COVER_TITLE_WIDTH = 84;
 
     private static final int PAGES_TEXTURE_WIDTH = 160;
     private static final int PAGES_TEXTURE_HEIGHT = 96;
@@ -70,7 +71,9 @@ public final class HandbookRenderer {
     private void extractCover(GuiGraphicsExtractor graphics) {
         graphics.blit(RenderPipelines.GUI_TEXTURED, COVER_TEXTURE, layout.coverX(), layout.coverY(), 0F, 0F, COVER_WIDTH, COVER_HEIGHT, COVER_TEXTURE_WIDTH, COVER_TEXTURE_HEIGHT, COVER_TEXTURE_WIDTH, COVER_TEXTURE_HEIGHT);
         graphics.nextStratum();
-        extractCenteredText(graphics, Component.translatable("chisel.builders_handbook.title"), layout.width() / 2, layout.coverY() + 60, TEXT_COLOR);
+        var titleLines = font.split(Component.translatable("chisel.builders_handbook.title"), COVER_TITLE_WIDTH);
+        int titleY = layout.coverY() + 60 - (titleLines.size() - 1) * HandbookPaginator.LINE_HEIGHT / 2;
+        extractCenteredLines(graphics, titleLines, layout.coverX() + COVER_WIDTH / 2, titleY, TEXT_COLOR);
     }
 
     private void extractContents(GuiGraphicsExtractor graphics, int mouseX, int mouseY, boolean showTooltips) {

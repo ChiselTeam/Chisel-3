@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.registry;
 
+import com.mojang.serialization.Codec;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.palette.PlayerPalettes;
 import io.github.chiselteam.chisel.projectile.MossData;
@@ -15,6 +16,12 @@ public final class ChiselAttachments {
     public static final DeferredHolder<AttachmentType<?>, AttachmentType<PlayerPalettes>> PALETTES = ATTACHMENTS.register("player_palettes",
             () -> AttachmentType.builder(() -> PlayerPalettes.EMPTY).serialize(PlayerPalettes.CODEC).copyOnDeath()
                     .sync((holder, recipient) -> holder == recipient, PlayerPalettes.STREAM_CODEC).build());
+
+    public static final DeferredHolder<AttachmentType<?>, AttachmentType<Boolean>> DEFAULT_PALETTES_GRANTED = ATTACHMENTS.register("default_palettes_granted",
+            () -> AttachmentType.builder(() -> false).serialize(Codec.BOOL.fieldOf("granted")).copyOnDeath().build());
+
+    public static final DeferredHolder<AttachmentType<?>, AttachmentType<Boolean>> BUILDERS_HANDBOOK_GRANTED = ATTACHMENTS.register("builders_handbook_granted",
+            () -> AttachmentType.builder(() -> false).serialize(Codec.BOOL.fieldOf("granted")).copyOnDeath().build());
 
     static {
         MOSS = ATTACHMENTS.register("moss", () -> AttachmentType.builder(MossData::new).serialize(MossData.CODEC).build());

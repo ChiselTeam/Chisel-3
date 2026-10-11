@@ -61,6 +61,7 @@ public class ChiselLang extends LangHelper {
         addItem(ChiselItems.AUTO_CHISEL, "Auto Chisel");
         addItem(ChiselItems.BUILDERS_GUIDE, "Builder's Guide");
         addItem(ChiselItems.PALETTE_BUILDER, "Palette Builder");
+        addItem(ChiselItems.TROWEL, "Trowel");
     }
 
     private void addContainers() {
@@ -139,7 +140,7 @@ public class ChiselLang extends LangHelper {
 
     private void addKeyBindings() {
         add("key.category.chisel.chisel", "Chisel");
-        add("key.chisel.mode_select", "Select Chisel Mode");
+        add("key.chisel.mode_select", "Select Mode / Palette");
     }
 
     private void addBuildingMode(String id, String name) {

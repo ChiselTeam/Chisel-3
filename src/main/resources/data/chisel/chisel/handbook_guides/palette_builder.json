@@ -1,0 +1,34 @@
+{
+  "title": {
+    "translate": "chisel.guide.palette_builder.title"
+  },
+  "description": {
+    "translate": "chisel.guide.palette_builder.description"
+  },
+  "icon": "chisel:palette_builder",
+  "categories": [
+    "chisel:items",
+    "chisel:palettes"
+  ],
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.palette_builder.usage"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.palette_builder.details"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.palette_builder.tip"
+      }
+    }
+  ],
+  "sort_order": 80
+}

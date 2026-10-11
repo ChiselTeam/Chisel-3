@@ -7,6 +7,12 @@ public final class PaletteLang {
     }
 
     public static void addTranslations(LangHelper lang) {
+        lang.add("chisel.trowel.no_materials", "No enabled palette materials are available in your inventory or linked inventory.");
+        lang.add("chisel.trowel.bound", "Trowel linked to this inventory. Your inventory is used first.");
+        lang.add("chisel.trowel.unbound", "Trowel now uses your inventory.");
+        lang.add("chisel.trowel.desc", "Places blocks with palette materials");
+
+        lang.add("chisel.palette.hotbar", "Hotbar");
         lang.add("chisel.palette.builder", "Palette Builder");
         lang.add("chisel.palette.new", "New palette");
         lang.add("chisel.palette.edit_hint", "Edit %s (%s blocks)");

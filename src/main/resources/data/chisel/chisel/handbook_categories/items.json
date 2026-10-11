@@ -1,0 +1,10 @@
+{
+  "title": {
+    "translate": "chisel.handbook.category.items.title"
+  },
+  "description": {
+    "translate": "chisel.handbook.category.items.description"
+  },
+  "icon": "chisel:chisel_iron",
+  "sort_order": 20
+}

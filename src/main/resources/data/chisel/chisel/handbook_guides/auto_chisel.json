@@ -1,0 +1,33 @@
+{
+  "title": {
+    "translate": "chisel.guide.auto_chisel.title"
+  },
+  "description": {
+    "translate": "chisel.guide.auto_chisel.description"
+  },
+  "icon": "chisel:auto_chisel",
+  "categories": [
+    "chisel:items"
+  ],
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.auto_chisel.usage"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.auto_chisel.details"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.auto_chisel.tip"
+      }
+    }
+  ],
+  "sort_order": 20
+}
