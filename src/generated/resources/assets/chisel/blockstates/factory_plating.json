@@ -1,7 +1,12 @@
 {
-  "variants": {
-    "": {
-      "model": "chisel:block/factory_plating"
-    }
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/factory_plating",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:factory_plating",
+    "kind": "v9"
   }
 }

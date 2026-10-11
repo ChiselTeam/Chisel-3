@@ -25,7 +25,7 @@ public final class FactoryFamily {
                 .variant("factory_metal_box", v -> v.description("Fancy Metal Box").model(ChiselModelHandlers.TBS)
                         .texture("bottom", Chisel.prefix("block/factory/factory_metal_box-top")))
                 .variant("factory_platex", v -> v.description("Plate"))
-                .variant("factory_plating", v -> v.description("Rusty Metal Plate").model(ChiselModelHandlers.CUBE_ALL))
+                .variant("factory_plating", v -> v.description("Metal Plate").model(ChiselModelHandlers.V9))
                 .variant("factory_rust", v -> v.description("Very Rusty Metal Plate"))
                 .variant("factory_rust2", v -> v.description("A Metal Plate with Little Rust"))
                 .variant("factory_rust_plates", v -> v.description("Rusty Metal Plates"))
@@ -34,7 +34,7 @@ public final class FactoryFamily {
                         .texture("bottom", Chisel.prefix("block/factory/factory_vent-top"))
                         .texture("vertical_both", Chisel.prefix("block/factory/factory_vent-side")))
                 .variant("factory_wireframe", v -> v.description("Wireframe"))
-                .variant("factory_wireframe_blue", v -> v.description("Wireframe in a Shade of Purple"))
+                .variant("factory_wireframe_blue", v -> v.description("Blue Wireframe"))
                 .variant("factory_wireframe_white", v -> v.description("White Wireframe"))
                 );
         private FactoryFamily() {

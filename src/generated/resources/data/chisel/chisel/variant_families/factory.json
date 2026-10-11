@@ -64,6 +64,7 @@
     },
     {
       "block": "chisel:factory_plating",
+      "model_type": "v9",
       "name": "factory_plating"
     },
     {
