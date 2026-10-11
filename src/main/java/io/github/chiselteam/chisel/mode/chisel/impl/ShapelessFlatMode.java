@@ -1,8 +1,8 @@
 package io.github.chiselteam.chisel.mode.chisel.impl;
 
 import io.github.chiselteam.chisel.Chisel;
+import io.github.chiselteam.chisel.family.VariantFamilyLookup;
 import io.github.chiselteam.chisel.mode.chisel.ChiselMode;
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.player.Player;
@@ -21,12 +21,20 @@ public class ShapelessFlatMode extends ChiselMode {
 
     @Override
     public List<BlockPos> getAffectedBlocks(Level level, Player player, BlockPos pos, Direction side, BlockState state) {
+        var family = VariantFamilyLookup.getFamilyForBlock(state.getBlock(), level.registryAccess());
+        if (family == null) return List.of();
+
+        var familyBlocks = Collections.newSetFromMap(new IdentityHashMap<>());
+        for (var variant : family.getAllVariants()) {
+            familyBlocks.add(variant.getBlock());
+        }
+
         List<BlockPos> affected = new ArrayList<>(Math.min(MAX_AFFECTED_BLOCKS, 64));
         Queue<Long> toProcess = new ArrayDeque<>();
         Set<Long> visited = new HashSet<>();
 
-        Direction up = side.getAxis().isVertical() ? Direction.NORTH : Direction.UP;
-        Direction right = side.getAxis().isVertical() ? Direction.EAST : side.getClockWise();
+        var up = side.getAxis().isVertical() ? Direction.NORTH : Direction.UP;
+        var right = side.getAxis().isVertical() ? Direction.EAST : side.getClockWise();
         Direction[] directions = {up, up.getOpposite(), right, right.getOpposite()};
 
         long origin = pos.asLong();
@@ -36,7 +44,7 @@ public class ShapelessFlatMode extends ChiselMode {
         int originX = pos.getX();
         int originY = pos.getY();
         int originZ = pos.getZ();
-        BlockPos.MutableBlockPos mutablePos = new BlockPos.MutableBlockPos();
+        var mutablePos = new BlockPos.MutableBlockPos();
 
         while (!toProcess.isEmpty() && affected.size() < MAX_AFFECTED_BLOCKS) {
             long packedPos = toProcess.remove();
@@ -45,11 +53,11 @@ public class ShapelessFlatMode extends ChiselMode {
             int z = BlockPos.getZ(packedPos);
 
             mutablePos.set(x, y, z);
-            if (!isSameBlock(level, state, level.getBlockState(mutablePos))) continue;
+            if (!familyBlocks.contains(level.getBlockState(mutablePos).getBlock())) continue;
 
             affected.add(BlockPos.of(packedPos));
 
-            for (Direction direction : directions) {
+            for (var direction : directions) {
                 int nextX = x + direction.getStepX();
                 int nextY = y + direction.getStepY();
                 int nextZ = z + direction.getStepZ();

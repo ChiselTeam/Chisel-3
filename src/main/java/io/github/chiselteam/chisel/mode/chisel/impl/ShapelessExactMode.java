@@ -14,6 +14,7 @@ import java.util.*;
 public class ShapelessExactMode extends ChiselMode {
     private static final int SEARCH_RADIUS = 10;
     private static final int MAX_AFFECTED_BLOCKS = 512;
+    private static final Direction[] SEARCH_DIRECTIONS = Direction.values();
 
     public ShapelessExactMode() {
         super(Chisel.prefix("shapeless_exact"));
@@ -34,7 +35,7 @@ public class ShapelessExactMode extends ChiselMode {
         int originX = pos.getX();
         int originY = pos.getY();
         int originZ = pos.getZ();
-        BlockPos.MutableBlockPos mutablePos = new BlockPos.MutableBlockPos();
+        var mutablePos = new BlockPos.MutableBlockPos();
 
         while (!toProcess.isEmpty() && affected.size() < MAX_AFFECTED_BLOCKS) {
             long packedPos = toProcess.remove();
@@ -48,7 +49,7 @@ public class ShapelessExactMode extends ChiselMode {
 
             affected.add(BlockPos.of(packedPos));
 
-            for (Direction direction : Direction.values()) {
+            for (var direction : SEARCH_DIRECTIONS) {
                 int nextX = x + direction.getStepX();
                 int nextY = y + direction.getStepY();
                 int nextZ = z + direction.getStepZ();
