@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "equipment",
   "key": {
     "X": "#c:rods/wooden",
     "Y": "#c:ingots/iron"

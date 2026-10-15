@@ -279,7 +279,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_bricks", has(Tags.Items.BRICKS))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, ChiselBlocks.AUTO_CHISEL)
+        shaped(RecipeCategory.TOOLS, ChiselBlocks.AUTO_CHISEL)
                 .pattern("SSS")
                 .pattern(" I ")
                 .pattern("SSS")
@@ -288,7 +288,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, ChiselBlocks.BUILDERS_GUIDE)
+        shaped(RecipeCategory.TOOLS, ChiselBlocks.BUILDERS_GUIDE)
                 .pattern("III")
                 .pattern("ITI")
                 .pattern("III")
@@ -298,7 +298,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .save(output);
 
         // MARK: Items
-        shaped(RecipeCategory.MISC, ChiselItems.MEASURING_TAPE)
+        shaped(RecipeCategory.TOOLS, ChiselItems.MEASURING_TAPE)
                 .pattern(" WW")
                 .pattern("SSW")
                 .define('S', Tags.Items.STRINGS)
@@ -306,7 +306,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_planks", has(ItemTags.PLANKS))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, ChiselItems.CLOUD_IN_A_BOTTLE)
+        shaped(RecipeCategory.TOOLS, ChiselItems.CLOUD_IN_A_BOTTLE)
                 .pattern("G G")
                 .pattern("GQG")
                 .pattern(" G ")
@@ -315,7 +315,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_glass", has(Blocks.GLASS))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, ChiselItems.BALL_O_MOSS)
+        shaped(RecipeCategory.TOOLS, ChiselItems.BALL_O_MOSS)
                 .pattern("VSV")
                 .pattern("SVS")
                 .pattern("VSV")
@@ -376,7 +376,7 @@ public class ChiselRecipes extends RecipeProvider {
     }
 
     private void chiselRecipe(String unlockedBy, TagKey<Item> recipeItem, ItemLike upgradeItem) {
-        shaped(RecipeCategory.MISC, upgradeItem)
+        shaped(RecipeCategory.TOOLS, upgradeItem)
                 .pattern(" Y")
                 .pattern("X ")
                 .define('X', Tags.Items.RODS_WOODEN)

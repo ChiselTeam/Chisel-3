@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "equipment",
   "key": {
     "I": "#c:ingots/iron",
     "S": "minecraft:stone_slab"
