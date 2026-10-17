@@ -1,0 +1,76 @@
+import org.gradle.api.file.ConfigurableFileCollection
+import org.gradle.api.file.DirectoryProperty
+import org.gradle.api.file.FileType
+import org.gradle.api.tasks.*
+import org.gradle.work.DisableCachingByDefault
+import org.gradle.work.Incremental
+import org.gradle.work.InputChanges
+
+import java.nio.file.Files
+import java.nio.file.StandardCopyOption
+
+@DisableCachingByDefault(because = 'Copying local resources is cheaper than storing them in the build cache')
+abstract class IncrementalRawResources extends DefaultTask {
+    @Incremental
+    @InputFiles
+    @IgnoreEmptyDirectories
+    @PathSensitive(PathSensitivity.RELATIVE)
+    abstract ConfigurableFileCollection getResourceFiles()
+
+    @OutputDirectory
+    abstract DirectoryProperty getOutputDirectory()
+
+    @TaskAction
+    void syncResources(InputChanges changes) {
+        def destination = outputDirectory.get().asFile.toPath()
+        Files.createDirectories(destination)
+
+        Map<String, File> current = [:]
+        resourceFiles.asFileTree.visit { entry ->
+            if (!entry.directory) {
+                String path = entry.relativePath.pathString
+                File previous = current.put(path, entry.file)
+                if (previous != null) throw new GradleException("Duplicate resource '${path}': ${previous} and ${entry.file}")
+            }
+        }
+        Set<String> affected = new LinkedHashSet<>()
+        changes.getFileChanges(resourceFiles).each { change ->
+            if (change.fileType != FileType.DIRECTORY) affected.add(change.normalizedPath)
+        }
+        int copied = 0
+        int removed = 0
+        affected.each { path ->
+            def target = destination.resolve(path).normalize()
+            if (!target.startsWith(destination)) throw new GradleException("Invalid resource path '${path}'")
+            File source = current[path]
+            if (source != null) {
+                Files.createDirectories(target.parent)
+                Files.copy(source.toPath(), target, StandardCopyOption.REPLACE_EXISTING)
+                copied++
+            } else {
+                if (Files.deleteIfExists(target)) removed++
+                def parent = target.parent
+                while (parent != destination && Files.isDirectory(parent)) {
+                    boolean empty = Files.newDirectoryStream(parent).withCloseable { !it.iterator().hasNext() }
+                    if (!empty) break
+                    Files.delete(parent)
+                    parent = parent.parent
+                }
+            }
+        }
+        logger.lifecycle("Raw resources: copied ${copied}, removed ${removed}; unchanged files retained.")
+    }
+}
+
+def metadataPath = 'META-INF/neoforge.mods.toml'
+def rawResources = tasks.register('syncRawResources', IncrementalRawResources) {
+    group = 'build'
+    description = 'Incrementally copies unfiltered main and generated resources.'
+    resourceFiles.from(sourceSets.main.resources.matching { exclude metadataPath })
+    outputDirectory.set(layout.buildDirectory.dir('resources/rawMain'))
+}
+sourceSets.main.output.dir([builtBy: rawResources], rawResources.flatMap { it.outputDirectory })
+tasks.named('processResources', ProcessResources).configure {
+    include metadataPath
+    dependsOn rawResources
+}

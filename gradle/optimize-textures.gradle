@@ -1,0 +1,188 @@
+import org.gradle.api.file.*
+import org.gradle.api.tasks.*
+import org.gradle.work.ChangeType
+import org.gradle.work.DisableCachingByDefault
+import org.gradle.work.Incremental
+import org.gradle.work.InputChanges
+
+import javax.inject.Inject
+import java.nio.file.Files
+import java.nio.file.StandardCopyOption
+import java.util.regex.Pattern
+
+@DisableCachingByDefault(because = 'Uses a local native executable; supports local incremental execution')
+abstract class OptimizePngTextures extends DefaultTask {
+    @Incremental
+    @InputFiles
+    @PathSensitive(PathSensitivity.RELATIVE)
+    abstract ConfigurableFileCollection getPngFiles()
+
+    @InputFile
+    @PathSensitive(PathSensitivity.ABSOLUTE)
+    abstract RegularFileProperty getExecutableFile()
+
+    @Input
+    abstract ListProperty<String> getOptimizerArguments()
+
+    @OutputDirectory
+    abstract DirectoryProperty getOutputDirectory()
+
+    @Inject
+    abstract ExecOperations getExecOperations()
+
+    @Inject
+    abstract FileSystemOperations getFileSystemOperations()
+
+    static File resolveExecutable(String command, String searchPath, File root) {
+        boolean windows = System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')
+        List<File> candidates = []
+        if (new File(command).isAbsolute() || command.contains('/') || command.contains('\\')) {
+            candidates.add(new File(command).isAbsolute() ? new File(command) : new File(root, command))
+        } else {
+            def names = windows && !command.toLowerCase(Locale.ROOT).endsWith('.exe') ? [command + '.exe', command] : [command]
+            searchPath.split(Pattern.quote(File.pathSeparator)).findAll { !it.isEmpty() }.each { directory ->
+                names.each { name -> candidates.add(new File(directory.replaceAll('^"|"$', ''), name)) }
+            }
+        }
+        File executable = candidates.find { it.isFile() && it.canExecute() }
+        if (executable == null) {
+            throw new GradleException("OxiPNG executable '${command}' was not found. Put oxipng on PATH, set OXIPNG, " +
+                    'or pass -PoxipngExecutable=/absolute/path/to/oxipng (oxipng.exe on Windows). No tool is downloaded by this build.')
+        }
+        executable.canonicalFile
+    }
+
+    // These chunks are discarded by OxiPNG even without --strip. Keep such
+    // signed/platform-specific PNGs verbatim instead of dropping their metadata.
+    static boolean mustPreserveVerbatim(File png) {
+        new RandomAccessFile(png, 'r').withCloseable { input ->
+            if (input.length() < 8 || input.readLong() != -8552249625308161526L) {
+                throw new GradleException("Invalid PNG signature: ${png}")
+            }
+            while (input.filePointer < input.length()) {
+                if (input.length() - input.filePointer < 12) throw new GradleException("Truncated PNG: ${png}")
+                long length = Integer.toUnsignedLong(input.readInt())
+                int type = input.readInt()
+                long next = input.filePointer + length + 4
+                if (next > input.length()) throw new GradleException("Truncated PNG: ${png}")
+                if (type == 0x63614258 || type == 0x69444f54) return true // caBX / iDOT
+                input.seek(next)
+                if (type == 0x49454e44) return false // IEND
+            }
+            throw new GradleException("PNG has no IEND chunk: ${png}")
+        }
+    }
+
+    @TaskAction
+    void optimize(InputChanges changes) {
+        File destination = outputDirectory.get().asFile
+        Files.createDirectories(destination.toPath())
+        File staging = new File(temporaryDir, 'pngs')
+        fileSystemOperations.delete { delete(staging) }
+        Files.createDirectories(staging.toPath())
+        List<File> toOptimize = []
+        List<String> changedPaths = []
+        int removed = 0
+        int preserved = 0
+        changes.getFileChanges(pngFiles).each { change ->
+            if (change.fileType == FileType.DIRECTORY) return
+            File target = new File(destination, change.normalizedPath)
+            if (change.changeType == ChangeType.REMOVED) {
+                Files.deleteIfExists(target.toPath())
+                removed++
+            } else {
+                File copy = new File(staging, change.normalizedPath)
+                Files.createDirectories(copy.parentFile.toPath())
+                Files.copy(change.file.toPath(), copy.toPath(), StandardCopyOption.REPLACE_EXISTING)
+                changedPaths.add(change.normalizedPath)
+                if (mustPreserveVerbatim(copy)) preserved++
+                else toOptimize.add(copy)
+            }
+        }
+        // Bound both argument count and Windows command length; amortize process startup.
+        List<File> batch = []
+        int fixedLength = executableFile.get().asFile.absolutePath.length() +
+                optimizerArguments.get().sum(0) { it.length() + 3 } + 8
+        int commandLength = fixedLength
+        toOptimize.sort { it.path }.each { png ->
+            int argumentLength = png.absolutePath.length() + 3
+            if (!batch.isEmpty() && (batch.size() >= 128 || commandLength + argumentLength > 24000)) {
+                optimizeBatch(batch)
+                batch.clear()
+                commandLength = fixedLength
+            }
+            batch.add(png)
+            commandLength += argumentLength
+        }
+        if (!batch.isEmpty()) optimizeBatch(batch)
+        // Publish only after every batch succeeds. Originals are never modified.
+        changedPaths.each { relativePath ->
+            File target = new File(destination, relativePath)
+            Files.createDirectories(target.parentFile.toPath())
+            Files.move(new File(staging, relativePath).toPath(), target.toPath(), StandardCopyOption.REPLACE_EXISTING)
+        }
+        logger.lifecycle("PNG packaging: optimized ${toOptimize.size()}, preserved ${preserved}, removed ${removed}; unchanged textures skipped.")
+    }
+
+    protected void optimizeBatch(List<File> batch) {
+        try {
+            execOperations.exec {
+                executable(executableFile.get().asFile.absolutePath)
+                args(optimizerArguments.get())
+                args('--')
+                args(batch.collect { it.absolutePath })
+            }.assertNormalExitValue()
+        } catch (Exception failure) {
+            throw new GradleException('OxiPNG failed while preparing packaged textures. Check its executable and CLI support; no source textures were modified.', failure)
+        }
+    }
+}
+
+def processMainResources = tasks.named('processResources', ProcessResources)
+def resourceDirectory = layout.dir(processMainResources.map { it.destinationDir })
+def resourceDirectories = files(resourceDirectory)
+if (tasks.names.contains('syncRawResources')) {
+    resourceDirectories.from(tasks.named('syncRawResources').flatMap { it.outputDirectory })
+}
+def configuredExecutable = providers.gradleProperty('oxipngExecutable').orElse(providers.environmentVariable('OXIPNG')).orElse('oxipng')
+def executableSearchPath = providers.environmentVariable('PATH').orElse('')
+def rootDirectory = layout.projectDirectory.asFile
+def executable = layout.file(configuredExecutable.zip(executableSearchPath) { command, searchPath ->
+    OptimizePngTextures.resolveExecutable(command, searchPath, rootDirectory)
+})
+def compressionLevel = providers.gradleProperty('oxipngLevel').orElse('2').map { level ->
+    if (!(level in ['0', '1', '2', '3', '4', '5', '6', 'max'])) throw new GradleException('oxipngLevel must be 0 through 6, or max.')
+    level
+}
+def optimizerThreads = providers.gradleProperty('oxipngThreads').orElse('2').map { count ->
+    if (!(count ==~ /[1-9][0-9]*/)) throw new GradleException('oxipngThreads must be a positive integer.')
+    count
+}
+def optimizePngTextures = tasks.register('optimizePngTextures', OptimizePngTextures) {
+    group = 'build'
+    description = 'Incrementally compresses PNG copies for the packaged mod only.'
+    dependsOn(processMainResources)
+    pngFiles.from(resourceDirectories.asFileTree.matching { include('**/*.png') })
+    executableFile.set(executable)
+    optimizerArguments.set(compressionLevel.zip(optimizerThreads) { level, threads ->
+        // Preserve bit depth, color type, palette, interlacing and transparent RGB.
+        // No lossy alpha optimization, metadata stripping or forced larger output.
+        ['--opt', level, '--nx', '--interlace', 'keep', '--threads', threads]
+    })
+    outputDirectory.set(layout.buildDirectory.dir('optimized-pngs'))
+}
+tasks.named('jar', Jar).configure {
+    dependsOn(optimizePngTextures)
+    // Also ignore stale cache copies left in build/resources by older builds.
+    exclude '**/.cache/**'
+    eachFile { details ->
+        if (details.path.endsWith('.png') && resourceDirectories.files.any { directory ->
+            details.file.toPath().toAbsolutePath().normalize().startsWith(directory.toPath().toAbsolutePath().normalize())
+        }) details.exclude()
+    }
+    from(optimizePngTextures.flatMap { it.outputDirectory }) {
+        include('**/*.png')
+        includeEmptyDirs = false
+    }
+    filesMatching('**/*.png') { duplicatesStrategy = DuplicatesStrategy.FAIL }
+}
