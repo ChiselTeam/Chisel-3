@@ -1,5 +1,5 @@
 package io.github.chiselteam.chisel.guide.page;
 
-public sealed interface HandbookPageElement permits TitlePageElement, TextPageElement, TipPageElement, PaletteTitlePageElement, PaletteEntryPageElement {
+public sealed interface HandbookPageElement permits TitlePageElement, TextPageElement, TipPageElement, PaletteTitlePageElement, PaletteEntryPageElement, ImagePageElement, StructurePageElement {
     int height();
 }

@@ -60,6 +60,22 @@ public final class HandbookNavigation {
         view = HandbookView.CONTENTS;
     }
 
+    public Identifier guideId() {
+        return selectedGuide == null ? null : selectedGuide.id();
+    }
+
+    public boolean openBookmark(Identifier id, int page, Function<HandbookGuide, List<HandbookSpread>> paginate) {
+        var entry = snapshot.entries().stream().filter(candidate -> candidate.id().equals(id)).findFirst().orElse(null);
+        if (entry == null) return false;
+        selectedCategory = null;
+        categoryGuides = snapshot.entries();
+        selectedGuide = entry;
+        spreads = List.copyOf(paginate.apply(entry.guide()));
+        spreadIndex = Math.clamp(page, 0, Math.max(0, spreads.size() - 1));
+        view = HandbookView.GUIDE;
+        return true;
+    }
+
     public void selectRow(int row, Function<HandbookGuide, List<HandbookSpread>> paginate) {
         if (!isList() || row < 0 || row >= visibleCount()) return;
         int index = firstVisibleIndex() + row;

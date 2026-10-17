@@ -12,6 +12,97 @@
   ],
   "sections": [
     {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.handbook.structure.example"
+      }
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          }
+        },
+        {
+          "x": 1,
+          "y": 0,
+          "z": 0,
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          }
+        },
+        {
+          "x": 2,
+          "y": 0,
+          "z": 0,
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          }
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          }
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "z": 2,
+          "state": {
+            "Name": "minecraft:cracked_stone_bricks"
+          }
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "z": 0,
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          }
+        },
+        {
+          "x": 1,
+          "y": 1,
+          "z": 0,
+          "state": {
+            "Name": "minecraft:cracked_stone_bricks"
+          }
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "z": 0,
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          }
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "z": 1,
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          }
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "z": 2,
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          }
+        }
+      ]
+    },
+    {
       "type": "chisel:text",
       "text": {
         "translate": "chisel.guide.palette_builder.usage"

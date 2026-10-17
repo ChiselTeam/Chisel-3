@@ -15,6 +15,12 @@ public final class HandbookLang {
     }
 
     private static void addGeneralGuideTranslations(LangHelper lang) {
+        lang.add("chisel.handbook.bookmark.save", "Mark Page");
+        lang.add("chisel.handbook.bookmark.saved", "Page Marked");
+        lang.add("chisel.handbook.bookmark.open", "Read Bookmark");
+        lang.add("chisel.handbook.bookmark.missing", "No saved bookmark, or its guide is unavailable.");
+        lang.add("chisel.handbook.structure.example", "Inspect this corner: drag to rotate, Shift-drag to pan, scroll to zoom, and double-click to reset.");
+        lang.add("chisel.handbook.image.example", "Use illustrations to plan a mood: this warm sky pairs sandy stone with pale highlights and cool blue accents.");
         lang.add("chisel.builders_handbook.title", "Builders Handbook");
         lang.add("chisel.builders_handbook.contents", "Table of Contents");
         lang.add("chisel.builders_handbook.intro", "This book is meant to serve as inspiration for your builds, as well as helpful entries to take your builds to the next level!");

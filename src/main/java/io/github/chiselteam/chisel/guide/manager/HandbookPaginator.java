@@ -2,9 +2,7 @@ package io.github.chiselteam.chisel.guide.manager;
 
 import io.github.chiselteam.chisel.guide.HandbookGuide;
 import io.github.chiselteam.chisel.guide.page.*;
-import io.github.chiselteam.chisel.guide.section.PaletteSection;
-import io.github.chiselteam.chisel.guide.section.TextSection;
-import io.github.chiselteam.chisel.guide.section.TipSection;
+import io.github.chiselteam.chisel.guide.section.*;
 import net.minecraft.client.gui.Font;
 import net.minecraft.network.chat.Component;
 
@@ -29,6 +27,8 @@ public final class HandbookPaginator {
                 case TextSection text -> pages.addText(font.split(text.text(), PAGE_CONTENT_WIDTH), false);
                 case TipSection tip -> pages.addText(font.split(tip.text(), PAGE_CONTENT_WIDTH), true);
                 case PaletteSection palette -> addPalette(pages, palette, font);
+                case ImageSection image -> pages.add(new ImagePageElement(image));
+                case StructureSection structure -> pages.add(new StructurePageElement(structure));
             }
         }
 

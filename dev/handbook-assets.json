@@ -1,0 +1,154 @@
+{
+  "library_file_id": "libfile_cdb97bc117948191b8091ddde8e7cd75",
+  "version": 0,
+  "archive": "chisel-handbook-assets.zip",
+  "license": "No license information accompanied the supplied PNGs; no license terms are asserted here.",
+  "pixel_policy": "Original PNG bytes copied unchanged; decoded RGBA including transparent RGB verified against original source rectangles.",
+  "nine_slice_caps": {
+    "panel_parchment_clipped": [
+      16,
+      16
+    ],
+    "panel_brown_gold": [
+      8,
+      8
+    ],
+    "button_brown_gold": [
+      8,
+      7
+    ],
+    "frame_nested_corners": [
+      16,
+      16
+    ]
+  },
+  "nine_slice_validation": "Inferred caps checked with a nearest-neighbor rendering at actual control sizes; corner RGBA equality asserted. In-game verification remains required.",
+  "assets": [
+    {
+      "resource": "chisel:textures/gui/handbook/bookmark_compass.png",
+      "source_crop": "core/bookmarks/bookmark-compass.png",
+      "source_sheet": "UI.png",
+      "source_rect": {
+        "x": 240,
+        "y": 272,
+        "width": 16,
+        "height": 32
+      },
+      "pixel_sha256": "8d8c3e7364bb00355761f6b63dedbaea7b2971983963be380193a0a081dc22eb",
+      "png_sha256": "f776127a802ede1ad83ed3614a9cbdbe57a458baff665a56611d8d9a42e58765",
+      "size": [
+        16,
+        32
+      ],
+      "transparent_pixels": 101
+    },
+    {
+      "resource": "chisel:textures/gui/handbook/bookmark_red_seal.png",
+      "source_crop": "core/bookmarks/bookmark-red-seal.png",
+      "source_sheet": "UI.png",
+      "source_rect": {
+        "x": 256,
+        "y": 272,
+        "width": 16,
+        "height": 32
+      },
+      "pixel_sha256": "dbd55a8f7539b7aed188f6f41e859bc11c3988b7a6fe2e83024a4026a62719f6",
+      "png_sha256": "0fcec8590323765abdab77e41c9049fbb2383a01966632b61b931ee882cf31d0",
+      "size": [
+        16,
+        32
+      ],
+      "transparent_pixels": 72
+    },
+    {
+      "resource": "chisel:textures/gui/handbook/button_brown_gold.png",
+      "source_crop": "core/buttons/button-brown-gold.png",
+      "source_sheet": "UI.png",
+      "source_rect": {
+        "x": 416,
+        "y": 64,
+        "width": 48,
+        "height": 16
+      },
+      "pixel_sha256": "c9d5362195aa06d55f199feafc19423c1b53e58ec56a1cded8f2dd0b35787865",
+      "png_sha256": "bea184617a4f76f96b07c0a8085195c2bfef08dc138a1cbbb5b40859f7bc214b",
+      "size": [
+        48,
+        16
+      ],
+      "transparent_pixels": 136
+    },
+    {
+      "resource": "chisel:textures/gui/handbook/frame_nested_corners.png",
+      "source_crop": "core/frames/frame-nested-corners.png",
+      "source_sheet": "Book.png",
+      "source_rect": {
+        "x": 80,
+        "y": 160,
+        "width": 48,
+        "height": 48
+      },
+      "pixel_sha256": "faa520d0633de0ccaa12ccfaf98c0fd64e61b7b7773abcc9e95ce7763618c84e",
+      "png_sha256": "352d52f052667525f23d8096465db7befd203a2022c7a23a58cfc7137c55020e",
+      "size": [
+        48,
+        48
+      ],
+      "transparent_pixels": 1960
+    },
+    {
+      "resource": "chisel:textures/gui/handbook/panel_brown_gold.png",
+      "source_crop": "core/panels/panel-brown-gold.png",
+      "source_sheet": "UI.png",
+      "source_rect": {
+        "x": 416,
+        "y": 16,
+        "width": 48,
+        "height": 48
+      },
+      "pixel_sha256": "ac8b7b8dc441b4ff8de339a82021f627c5d0d1617cd0c378040acbc03c15207b",
+      "png_sha256": "b862be282bd9918548094ee0209116df4ea66eaecf9060a60d25ee2abb528c8a",
+      "size": [
+        48,
+        48
+      ],
+      "transparent_pixels": 200
+    },
+    {
+      "resource": "chisel:textures/gui/handbook/panel_parchment_clipped.png",
+      "source_crop": "core/panels/panel-parchment-clipped.png",
+      "source_sheet": "UI.png",
+      "source_rect": {
+        "x": 288,
+        "y": 80,
+        "width": 48,
+        "height": 48
+      },
+      "pixel_sha256": "7bbe0a6c6d1cfe6cb278ede2bf88143d54f0fa0439d7ee4b683f9bdc3499e1df",
+      "png_sha256": "6973616564ea14ac28f455ef9a04f0623eaa72449582348a397fd4374afde07f",
+      "size": [
+        48,
+        48
+      ],
+      "transparent_pixels": 320
+    },
+    {
+      "resource": "chisel:textures/gui/handbook/sky_warm_clouds_square.png",
+      "source_crop": "optional/sample-images/sky-warm-clouds-square.png",
+      "source_sheet": "UI.png",
+      "source_rect": {
+        "x": 1056,
+        "y": 128,
+        "width": 48,
+        "height": 48
+      },
+      "pixel_sha256": "8d63ee85de851a892adb7376f3e54f606f638839f5bb71ba04b2d752c02dc925",
+      "png_sha256": "73d0aab9ff6443ee5715972bbaa43fb490f315887bc71f6720c9a9fee1260936",
+      "size": [
+        48,
+        48
+      ],
+      "transparent_pixels": 0
+    }
+  ]
+}

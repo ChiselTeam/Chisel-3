@@ -62,7 +62,7 @@ public final class PaletteEntryList extends AbstractContainerWidget {
                 rebuild();
                 changed.run();
                 removed.run();
-            }).bounds(x + w - 18, 0, 18, 18).tooltip(Tooltip.create(Component.translatable("chisel.palette.remove", name(entry.block())))).build(), offset);
+            }).bounds(x + w - 18, 0, 18, 18).tooltip(Tooltip.create(Component.translatable("chisel.palette.remove", name(entry.block())))).build(PaletteButton::new), offset);
             var slider = new PaletteWeightSlider(x, 0, w - 50, draft, index, changed);
             sliders.add(slider);
             add(slider, offset + 20);
@@ -70,7 +70,7 @@ public final class PaletteEntryList extends AbstractContainerWidget {
                 draft.toggle(index);
                 rebuild();
                 changed.run();
-            }).bounds(x + w - 48, 0, 48, 18).build(), offset + 20);
+            }).bounds(x + w - 48, 0, 48, 18).build(PaletteButton::new), offset + 20);
         }
         refreshScrollAmount();
     }
@@ -141,7 +141,7 @@ public final class PaletteEntryList extends AbstractContainerWidget {
 
     @Override
     protected void extractWidgetRenderState(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick) {
-        graphics.fill(getX(), getY(), getRight(), getBottom(), 0xFF13171C);
+        graphics.fill(getX(), getY(), getRight(), getBottom(), PaletteTheme.INSET);
         graphics.enableScissor(getX(), getY(), getRight() - scrollbarWidth() - 1, getBottom());
         boolean hovered = active && isMouseOver(mouseX, mouseY) && !isOverScrollbar(mouseX, mouseY);
         for (var widget : widgets)
@@ -151,7 +151,7 @@ public final class PaletteEntryList extends AbstractContainerWidget {
             int y = getY() + 2 + i * ROW_HEIGHT - (int) scrollAmount();
             if (y + 18 <= getY() || y >= getBottom()) continue;
             var label = name(draft.value().entries().get(i).block());
-            graphics.text(font, font.plainSubstrByWidth(label.getString(), width - scrollbarWidth() - 50), getX() + 24, y + 5, 0xFFFFFFFF, false);
+            graphics.text(font, font.plainSubstrByWidth(label.getString(), width - scrollbarWidth() - 50), getX() + 24, y + 5, PaletteTheme.INK, false);
             if (hovered && mouseX >= getX() + 24 && mouseX < getRight() - scrollbarWidth() - 24 && mouseY >= y && mouseY < y + 18)
                 graphics.setTooltipForNextFrame(font, List.of(label.getVisualOrderText()), mouseX, mouseY);
         }

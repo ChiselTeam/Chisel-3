@@ -18,7 +18,7 @@ public final class PaletteBlockButton extends Button {
 
     @Override
     protected void extractContents(@NonNull GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick) {
-        extractDefaultSprite(graphics);
+        PaletteTheme.control(graphics, getX(), getY(), width, height, active, isHoveredOrFocused());
         graphics.item(icon, getX() + (width - 16) / 2, getY() + (height - 16) / 2);
     }
 }

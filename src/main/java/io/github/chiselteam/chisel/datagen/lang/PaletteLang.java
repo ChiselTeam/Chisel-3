@@ -17,12 +17,17 @@ public final class PaletteLang {
         lang.add("chisel.palette.new", "New palette");
         lang.add("chisel.palette.edit_hint", "Edit %s (%s blocks)");
         lang.add("chisel.palette.library_count", "%s / %s palettes");
+        lang.add("chisel.palette.card_entries", "%s blocks");
         lang.add("chisel.palette.library_empty", "Create a palette to get started.");
         lang.add("chisel.palette.weight", "%s (%s%%)");
         lang.add("chisel.palette.title", "Palette title");
         lang.add("chisel.palette.search", "Search blocks");
         lang.add("chisel.palette.shuffle", "Shuffle");
         lang.add("chisel.palette.save", "Save");
+        lang.add("chisel.palette.delete", "Delete palette");
+        lang.add("chisel.palette.delete_hint", "Permanently remove this saved palette after confirmation.");
+        lang.add("chisel.palette.delete_title", "Delete saved palette?");
+        lang.add("chisel.palette.delete_body", "Delete \"%s\"? This cannot be undone. Any unsaved changes in this editor will also be discarded.");
         lang.add("chisel.palette.add", "Add %s (%s)");
         lang.add("chisel.palette.previous", "Previous page");
         lang.add("chisel.palette.next", "Next page");

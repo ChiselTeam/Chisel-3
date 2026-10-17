@@ -169,6 +169,10 @@ public final class HandbookRenderer {
 
     private void extractElement(GuiGraphicsExtractor graphics, HandbookPageElement element, int x, int y, int contentWidth) {
         switch (element) {
+            case ImagePageElement image ->
+                    graphics.blit(RenderPipelines.GUI_TEXTURED, image.image().texture(), x + (contentWidth - image.imageWidth()) / 2, y, 0, 0, image.imageWidth(), image.imageHeight(), image.image().width(), image.image().height(), image.image().width(), image.image().height());
+            case StructurePageElement ignored -> {
+            }
             case TitlePageElement titlePage ->
                     extractCenteredLines(graphics, titlePage.lines(), x + contentWidth / 2, y, TEXT_COLOR);
             case TextPageElement text -> extractLines(graphics, text.lines(), x, y, TEXT_COLOR);

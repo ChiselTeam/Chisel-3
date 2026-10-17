@@ -11,6 +11,18 @@
   ],
   "sections": [
     {
+      "type": "chisel:image",
+      "texture": "chisel:textures/gui/handbook/sky_warm_clouds_square.png",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.handbook.image.example"
+      }
+    },
+    {
       "type": "chisel:text",
       "text": {
         "translate": "chisel.guide.builders_handbook.usage"

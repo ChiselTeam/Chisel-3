@@ -97,10 +97,8 @@ public final class PaletteBlockPicker {
             Block block = filtered.get(i);
             var id = BuiltInRegistries.BLOCK.getKey(block);
             int cell = i - page * count;
-            var button = new PaletteBlockButton(x + cell % columns * 20, gridY + cell / columns * 20, 20,
-                    new ItemStack(block), Component.translatable("chisel.palette.add", block.getName(), id.toString()), () -> select.accept(block));
-            button.active = !locked.getAsBoolean() && draft.value().entries().size() < PaletteDefinition.MAX_ENTRIES
-                    && draft.value().entries().stream().noneMatch(entry -> entry.block().equals(id));
+            var button = new PaletteBlockButton(x + cell % columns * 20, gridY + cell / columns * 20, 20, new ItemStack(block), Component.translatable("chisel.palette.add", block.getName(), id.toString()), () -> select.accept(block));
+            button.active = !locked.getAsBoolean() && draft.value().entries().size() < PaletteDefinition.MAX_ENTRIES && draft.value().entries().stream().noneMatch(entry -> entry.block().equals(id));
             addGridWidget(button);
         }
         addGridWidget(pageButton(x, "<", page > 0, () -> {
@@ -117,8 +115,7 @@ public final class PaletteBlockPicker {
         String needle = search.toLowerCase(Locale.ROOT).strip();
         var matches = catalog.stream().filter(block -> BuiltInRegistries.BLOCK.getKey(block).toString().contains(needle) || block.getName().getString().toLowerCase(Locale.ROOT).contains(needle));
         if (indexing) matches = matches.filter(_ -> false);
-        if (color != null) matches = matches.filter(block -> colors.score(block, color) >= 0.15)
-                .sorted(Comparator.comparingDouble((Block block) -> colors.score(block, color)).reversed());
+        if (color != null) matches = matches.filter(block -> colors.score(block, color) >= 0.15).sorted(Comparator.comparingDouble((Block block) -> colors.score(block, color)).reversed());
         return matches.toList();
     }
 
@@ -140,12 +137,12 @@ public final class PaletteBlockPicker {
             int y = gridY + 2;
             for (var line : font.split(message, width)) {
                 if (y + 9 > bottom) break;
-                graphics.text(font, line, x, y, 0xFFBBBBBB, false);
+                graphics.text(font, line, x, y, PaletteTheme.MUTED, false);
                 y += 10;
             }
         }
         if (indexing) {
-            graphics.text(font, "...", x + width / 2 - 5, bottom + 5, 0xFFBBBBBB, false);
+            graphics.text(font, "...", x + width / 2 - 5, bottom + 5, PaletteTheme.MUTED, false);
             if (mouseX >= x + 24 && mouseX < x + width - 24 && mouseY >= bottom && mouseY < bottom + 18)
                 graphics.setTooltipForNextFrame(font, List.of(Component.translatable("chisel.palette.color.indexing").getVisualOrderText()), mouseX, mouseY);
         }

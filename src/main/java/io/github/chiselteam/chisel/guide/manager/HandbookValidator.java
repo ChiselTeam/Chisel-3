@@ -2,7 +2,9 @@ package io.github.chiselteam.chisel.guide.manager;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.guide.HandbookGuide;
+import io.github.chiselteam.chisel.guide.section.ImageSection;
 import io.github.chiselteam.chisel.guide.section.PaletteSection;
+import io.github.chiselteam.chisel.guide.section.StructureSection;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
@@ -67,6 +69,14 @@ public final class HandbookValidator {
 
             if (section instanceof PaletteSection palette) {
                 validatePaletteSection(sectionIndex, palette, errors, warnings);
+            }
+            if (section instanceof ImageSection image && (!image.texture().getPath().startsWith("textures/") || !image.texture().getPath().endsWith(".png")))
+                errors.add("Image section %d must reference a textures/...png resource".formatted(sectionIndex));
+            if (section instanceof StructureSection(List<StructureSection.Cell> blocks)) {
+                var positions = new HashSet<>();
+                for (var cell : blocks) {
+                    if (!positions.add(cell.pos())) errors.add("Structure section %d repeats position %s".formatted(sectionIndex, cell.pos()));
+                }
             }
         }
     }

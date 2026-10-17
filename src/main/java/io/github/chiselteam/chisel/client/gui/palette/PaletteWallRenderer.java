@@ -44,10 +44,22 @@ public class PaletteWallRenderer extends PictureInPictureRenderer<PaletteWallSta
     @Override
     protected void renderToTexture(@NonNull PaletteWallState state, @NonNull PoseStack pose) {
         pose.translate(state.panX(), state.panY(), 0);
-        float scale = state.zoom() * Math.min((state.x1() - state.x0()) / 9F, (state.y1() - state.y0()) / 6F);
+        if (state.blocks().isEmpty()) return;
+        int minX = Integer.MAX_VALUE, minY = Integer.MAX_VALUE, minZ = Integer.MAX_VALUE;
+        int maxX = Integer.MIN_VALUE, maxY = Integer.MIN_VALUE, maxZ = Integer.MIN_VALUE;
+        for (var pos : state.blocks().keySet()) {
+            minX = Math.min(minX, pos.getX());
+            maxX = Math.max(maxX, pos.getX());
+            minY = Math.min(minY, pos.getY());
+            maxY = Math.max(maxY, pos.getY());
+            minZ = Math.min(minZ, pos.getZ());
+            maxZ = Math.max(maxZ, pos.getZ());
+        }
+        float horizontal = (float) Math.hypot(maxX - minX + 1, maxZ - minZ + 1);
+        float scale = state.zoom() * Math.min((state.x1() - state.x0()) / (horizontal + 1), (state.y1() - state.y0()) / (maxY - minY + 2F));
         pose.scale(scale, scale, scale);
         pose.mulPose(new Quaternionf().rotateX((float) Math.PI + state.rotationX()).rotateY(state.rotationY()));
-        pose.translate(-PaletteWall.COLUMNS / 2F, -PaletteWall.ROWS / 2F, -0.5F);
+        pose.translate(-(minX + maxX + 1) / 2F, -(minY + maxY + 1) / 2F, -(minZ + maxZ + 1) / 2F);
 
         var modelSet = Minecraft.getInstance().getModelManager().getBlockStateModelSet();
         var getter = new PreviewGetter(Blocks.AIR.defaultBlockState(), new int[0][]) {
