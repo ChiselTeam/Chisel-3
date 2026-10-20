@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/redstone_sea_lamp/redstone_sea_lamp_slab_vertical-on"
+  }
+}

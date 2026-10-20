@@ -122,6 +122,7 @@ public class ChiselFamilies {
     public static final ChiselFamily RED_SANDSTONE = RedSandstoneFamily.FAMILY;
     public static final ChiselFamily REDSTONE = RedstoneFamily.FAMILY;
     public static final ChiselFamily REDSTONE_LAMP = RedstoneLampFamily.FAMILY;
+    public static final ChiselFamily REDSTONE_SEA_LAMP = RedstoneSeaLampFamily.FAMILY;
     public static final ChiselFamily ROAD_LINE = RoadLineFamily.FAMILY;
     public static final ChiselFamily SANDSTONE = SandstoneFamily.FAMILY;
     public static final ChiselFamily SHINGLE = ShingleFamily.FAMILY;
@@ -203,7 +204,7 @@ public class ChiselFamilies {
         // Special
         families.addAll(List.of(
                 ANTIBLOCK, BOOKSHELF, GLASS, STEEL_FRAMED_GLASS, OAK_FRAMED_GLASS, BRIGHT_GLASS, GLASS_PANE, IRON_BARS,
-                JACK_O_LANTERN, PUMPKIN, REDSTONE_LAMP, ROAD_LINE, TORCH
+                JACK_O_LANTERN, PUMPKIN, REDSTONE_LAMP, REDSTONE_SEA_LAMP, ROAD_LINE, TORCH
         ));
 
         // Decorative

@@ -48,6 +48,15 @@ public class ChiselRecipes extends RecipeProvider {
         stoneAround("has_blue_dye", Tags.Items.DYES_BLUE, ChiselFamilies.TEMPLE.getFamily().getVariants().getFirst().getBlock(), 8);
         stoneAround("has_sign", ItemTags.SIGNS, ChiselFamilies.WARNING.getFamily().getVariants().getFirst().getBlock(), 4);
 
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.REDSTONE_SEA_LAMP.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
+                .pattern(" R ")
+                .pattern("RSR")
+                .pattern(" R ")
+                .define('R', Tags.Items.DUSTS_REDSTONE)
+                .define('S', Items.SEA_LANTERN)
+                .unlockedBy("has_sea_lantern", has(Items.SEA_LANTERN))
+                .save(output);
+
         shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.FANTASY.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("GLG")
                 .pattern("L L")

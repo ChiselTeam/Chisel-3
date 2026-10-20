@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": "#c:dusts/redstone",
+    "S": "minecraft:sea_lantern"
+  },
+  "pattern": [
+    " R ",
+    "RSR",
+    " R "
+  ],
+  "result": {
+    "id": "chisel:redstone_sea_lamp_square"
+  }
+}

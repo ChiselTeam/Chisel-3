@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "chisel:block/redstone_sea_lamp_ornate"
+    },
+    "lit=true": {
+      "model": "chisel:block/redstone_sea_lamp_ornate_on"
+    }
+  }
+}
