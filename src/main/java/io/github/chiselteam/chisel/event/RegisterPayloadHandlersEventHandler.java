@@ -21,9 +21,9 @@ public class RegisterPayloadHandlersEventHandler {
         registrar.playToServer(ChiselSelectionPacket.TYPE, ChiselSelectionPacket.STREAM_CODEC, ChiselSelectionPacket::handle);
         registrar.playToServer(AutoChiselTemplatePacket.TYPE, AutoChiselTemplatePacket.STREAM_CODEC, AutoChiselTemplatePacket::handle);
 
-        registrar.playToClient(MossChunkPacket.TYPE, MossChunkPacket.STREAM_CODEC, MossChunkPacket::handle);
-        registrar.playToClient(MossDeltaPacket.TYPE, MossDeltaPacket.STREAM_CODEC, MossDeltaPacket::handle);
-        registrar.playToClient(OpenHandbookPacket.TYPE, OpenHandbookPacket.STREAM_CODEC, OpenHandbookPacket::handle);
+        registrar.playToClient(MossChunkPacket.TYPE, MossChunkPacket.STREAM_CODEC);
+        registrar.playToClient(MossDeltaPacket.TYPE, MossDeltaPacket.STREAM_CODEC);
+        registrar.playToClient(OpenHandbookPacket.TYPE, OpenHandbookPacket.STREAM_CODEC);
         registrar.playToClient(OpenPaletteBuilderPacket.TYPE, OpenPaletteBuilderPacket.STREAM_CODEC);
         registrar.playToClient(PaletteSaveResultPacket.TYPE, PaletteSaveResultPacket.STREAM_CODEC);
         registrar.playToClient(HandbookGuidesPacket.TYPE, HandbookGuidesPacket.STREAM_CODEC);
