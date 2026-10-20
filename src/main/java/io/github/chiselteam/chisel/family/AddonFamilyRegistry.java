@@ -75,6 +75,7 @@ public final class AddonFamilyRegistry {
             resolved.add(family);
         }
         families = List.copyOf(resolved);
+        VariantFamilyLookup.clearCache();
     }
 
     public static Collection<VariantFamily> getFamilies() {

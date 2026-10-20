@@ -2,6 +2,7 @@ package io.github.chiselteam.chisel.api.family;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import io.github.chiselteam.chisel.util.TorchStates;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.tags.TagKey;
@@ -82,8 +83,9 @@ public class VariantFamily {
     }
 
     public boolean isBlockInFamily(Block block) {
+        Block standing = TorchStates.standingBlock(block);
         return getAllVariants().stream()
-                .anyMatch(variant -> variant.getBlock() == block);
+                .anyMatch(variant -> TorchStates.standingBlock(variant.getBlock()) == standing);
     }
 
     public Variant getVariant(String name) {

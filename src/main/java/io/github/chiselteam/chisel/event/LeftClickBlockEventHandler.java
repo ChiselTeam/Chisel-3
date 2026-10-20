@@ -9,6 +9,7 @@ import io.github.chiselteam.chisel.family.VariantFamilyLookup;
 import io.github.chiselteam.chisel.item.ChiselItem;
 import io.github.chiselteam.chisel.mode.chisel.ChiselMode;
 import io.github.chiselteam.chisel.registry.*;
+import io.github.chiselteam.chisel.util.TorchStates;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.NbtOps;
@@ -53,10 +54,6 @@ public class LeftClickBlockEventHandler {
             VariantFamily family = VariantFamilyLookup.getFamilyForBlock(state.getBlock(), level.registryAccess());
 
             if(family != null) {
-                if (family.getFamilyName().equals("torch")) {
-                    return;
-                }
-
                 long time = level.getGameTime();
                 if (LAST_CHISEL_TIME.getUnchecked(player) > time - 4) {
                     event.setCanceled(true);
@@ -72,11 +69,12 @@ public class LeftClickBlockEventHandler {
                     if (!innerStack.isEmpty() && innerStack.getItem() instanceof BlockItem blockItem) {
                         if (family.isBlockInFamily(blockItem.getBlock())) {
                             List<BlockPos> affected = mode.getAffectedBlocks(level, player, pos, event.getFace(), state);
-                            BlockState nextState = blockItem.getBlock().defaultBlockState();
+                            var nextState = blockItem.getBlock().defaultBlockState();
+                            boolean changed = false;
                             for (BlockPos p : affected) {
-                                chiselBlock(level, player, hand, p, nextState, stack);
+                                changed |= chiselBlock(level, player, hand, p, nextState, stack);
                             }
-                            if (!affected.isEmpty()) {
+                            if (changed) {
                                 playEffects(level, player, pos, nextState);
                             }
                         }
@@ -89,9 +87,12 @@ public class LeftClickBlockEventHandler {
         }
     }
 
-    private static void chiselBlock(Level level, Player player, InteractionHand hand, BlockPos pos, BlockState state, ItemStack chisel) {
-        level.setBlockAndUpdate(pos, state);
+    private static boolean chiselBlock(Level level, Player player, InteractionHand hand, BlockPos pos, BlockState state, ItemStack chisel) {
+        var current = level.getBlockState(pos);
+        var replacement = TorchStates.replacement(level, pos, current, state);
+        if (replacement == null || replacement == current || !level.setBlockAndUpdate(pos, replacement)) return false;
         ChiselItem.hurtAndBreak(chisel, 1, player, hand);
+        return true;
     }
 
     private static void playEffects(Level level, Player player, BlockPos hitPos, BlockState state) {

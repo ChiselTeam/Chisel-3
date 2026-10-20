@@ -3,6 +3,7 @@ package io.github.chiselteam.chisel.mode.chisel.impl;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.family.VariantFamilyLookup;
 import io.github.chiselteam.chisel.mode.chisel.ChiselMode;
+import io.github.chiselteam.chisel.util.TorchStates;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.player.Player;
@@ -27,6 +28,8 @@ public class ShapelessFlatMode extends ChiselMode {
         var familyBlocks = Collections.newSetFromMap(new IdentityHashMap<>());
         for (var variant : family.getAllVariants()) {
             familyBlocks.add(variant.getBlock());
+            var wall = TorchStates.wallBlock(variant.getBlock());
+            if (wall != null) familyBlocks.add(wall);
         }
 
         List<BlockPos> affected = new ArrayList<>(Math.min(MAX_AFFECTED_BLOCKS, 64));

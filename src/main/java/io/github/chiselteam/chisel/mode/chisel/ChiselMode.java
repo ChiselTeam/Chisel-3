@@ -9,6 +9,7 @@ import io.github.chiselteam.chisel.registry.ChiselModes;
 import io.github.chiselteam.chisel.registry.ChiselSounds;
 import io.github.chiselteam.chisel.registry.ChiselStats;
 import io.github.chiselteam.chisel.registry.ChiselTags;
+import io.github.chiselteam.chisel.util.TorchStates;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -20,8 +21,10 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
 
 import java.util.Collections;
 import java.util.List;
@@ -58,28 +61,35 @@ public class ChiselMode {
         VariantFamily family = VariantFamilyLookup.getFamilyForBlock(state.getBlock(), level.registryAccess());
         if (family == null) return;
 
-        List<Variant> variants = family.getAllVariants();
-        for (int c = 0; c < variants.size(); c++) {
-            if (state.is(variants.get(c).getBlock())) {
-                BlockState nextState;
-                if (c == variants.size() - 1) {
-                    nextState = variants.getFirst().getBlock().defaultBlockState();
-                } else {
-                    nextState = variants.get(c + 1).getBlock().defaultBlockState();
-                }
-                for (BlockPos p : affected) {
-                    chiselBlock(level, player, hand, p, nextState, chisel);
-                }
-                if (!affected.isEmpty()) {
-                    playEffects(level, player, pos, nextState);
-                }
-                break;
-            }
+        var nextState = nextState(family, state);
+        if (nextState == null) return;
+
+        boolean changed = false;
+        for (BlockPos p : affected) {
+            var before = level.getBlockState(p);
+            chiselBlock(level, player, hand, p, nextState, chisel);
+            changed |= level.getBlockState(p) != before;
+        }
+        if (changed) {
+            playEffects(level, player, pos, nextState);
         }
     }
 
+    static @Nullable BlockState nextState(VariantFamily family, BlockState state) {
+        List<Block> variants = family.getAllVariants().stream().map(Variant::getBlock).toList();
+        var currentBlock = state.getBlock();
+        if (TorchStates.isTorch(currentBlock)) {
+            currentBlock = TorchStates.standingBlock(currentBlock);
+            variants = variants.stream().filter(TorchStates::isTorch).map(TorchStates::standingBlock).distinct().toList();
+        }
+        int index = variants.indexOf(currentBlock);
+        return index < 0 ? null : variants.get((index + 1) % variants.size()).defaultBlockState();
+    }
+
     protected void chiselBlock(Level level, Player player, InteractionHand hand, BlockPos pos, BlockState state, ItemStack chisel) {
-        level.setBlockAndUpdate(pos, state);
+        var current = level.getBlockState(pos);
+        var replacement = TorchStates.replacement(level, pos, current, state);
+        if (replacement == null || replacement == current || !level.setBlockAndUpdate(pos, replacement)) return;
         player.awardStat(ChiselStats.BLOCKS_CHISELED.get());
         ChiselItem.hurtAndBreak(chisel, 1, player, hand);
     }
@@ -92,7 +102,7 @@ public class ChiselMode {
     }
 
     protected boolean isSameBlock(Level level, BlockState base, BlockState test) {
-        VariantFamily family = VariantFamilyLookup.getFamilyForBlock(base.getBlock(), level.registryAccess());
+        var family = VariantFamilyLookup.getFamilyForBlock(base.getBlock(), level.registryAccess());
         if (family == null) return false;
         return family.isBlockInFamily(test.getBlock());
     }
@@ -106,7 +116,7 @@ public class ChiselMode {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ChiselMode that = (ChiselMode) o;
+        var that = (ChiselMode) o;
         return registryName.equals(that.registryName);
     }
 

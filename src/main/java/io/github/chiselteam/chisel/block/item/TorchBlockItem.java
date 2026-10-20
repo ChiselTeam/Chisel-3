@@ -22,6 +22,10 @@ public class TorchBlockItem extends StandingAndWallBlockItem {
         this.variant = variant;
     }
 
+    public Block getWallBlock() {
+        return wallBlock;
+    }
+
     @SuppressWarnings("deprecation")
     @Override
     public void appendHoverText(@NonNull ItemStack stack, @NonNull TooltipContext context, @NonNull TooltipDisplay display, @NonNull Consumer<Component> builder, @NonNull TooltipFlag flag) {

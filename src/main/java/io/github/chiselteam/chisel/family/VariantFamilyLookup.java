@@ -6,19 +6,25 @@ import net.minecraft.core.RegistryAccess;
 import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.ApiStatus;
 
-import java.util.Collection;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @ApiStatus.Internal
 public final class VariantFamilyLookup {
+    private static final Map<RegistryAccess, Map<Block, Optional<VariantFamily>>> FAMILY_CACHE = new WeakHashMap<>();
+
     private VariantFamilyLookup() {
     }
 
-    public static Optional<VariantFamily> getFamily(Block block, RegistryAccess registryAccess) {
+    public static synchronized Optional<VariantFamily> getFamily(Block block, RegistryAccess registryAccess) {
         if (block == null) return Optional.empty();
-        return getFamilies(registryAccess).stream().filter(family -> family.isBlockInFamily(block)).findFirst();
+        Map<Block, Optional<VariantFamily>> families = FAMILY_CACHE.computeIfAbsent(registryAccess, ignored -> new IdentityHashMap<>());
+
+        return families.computeIfAbsent(block, key -> getFamilies(registryAccess).stream()
+                .filter(family -> family.isBlockInFamily(key)).findFirst());
+    }
+
+    public static synchronized void clearCache() {
+        FAMILY_CACHE.clear();
     }
 
     public static VariantFamily getFamilyForBlock(Block block, RegistryAccess registryAccess) {
