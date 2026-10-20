@@ -1,0 +1,7 @@
+{
+  "values": [
+    {"id": "the_bumblezone:ancient_wax_bricks", "required": false},
+    {"id": "the_bumblezone:ancient_wax_diamond", "required": false},
+    {"id": "the_bumblezone:ancient_wax_compound_eyes", "required": false}
+  ]
+}

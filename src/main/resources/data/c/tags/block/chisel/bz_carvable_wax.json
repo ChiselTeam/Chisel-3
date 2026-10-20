@@ -1,0 +1,13 @@
+{
+  "values": [
+    {"id": "the_bumblezone:carvable_wax", "required": false},
+    {"id": "the_bumblezone:carvable_wax_wavy", "required": false},
+    {"id": "the_bumblezone:carvable_wax_flower", "required": false},
+    {"id": "the_bumblezone:carvable_wax_chiseled", "required": false},
+    {"id": "the_bumblezone:carvable_wax_diamond", "required": false},
+    {"id": "the_bumblezone:carvable_wax_bricks", "required": false},
+    {"id": "the_bumblezone:carvable_wax_chains", "required": false},
+    {"id": "the_bumblezone:carvable_wax_music", "required": false},
+    {"id": "the_bumblezone:carvable_wax_grate", "required": false}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "values": [
+    {"id": "the_bumblezone:luminescent_wax_channel_white", "required": false},
+    {"id": "the_bumblezone:luminescent_wax_corner_white", "required": false},
+    {"id": "the_bumblezone:luminescent_wax_node_white", "required": false}
+  ]
+}
