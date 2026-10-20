@@ -13,6 +13,9 @@ public final class ChiselAttachments {
     public static final DeferredRegister<AttachmentType<?>> ATTACHMENTS = DeferredRegister.create(NeoForgeRegistries.ATTACHMENT_TYPES, Chisel.MODID);
     public static final DeferredHolder<AttachmentType<?>, AttachmentType<MossData>> MOSS;
 
+    public static final DeferredHolder<AttachmentType<?>, AttachmentType<Integer>> MOVING_MOSS = ATTACHMENTS.register("moving_moss",
+            () -> AttachmentType.builder(() -> 0).serialize(Codec.intRange(0, 10).fieldOf("texture")).build());
+
     public static final DeferredHolder<AttachmentType<?>, AttachmentType<PlayerPalettes>> PALETTES = ATTACHMENTS.register("player_palettes",
             () -> AttachmentType.builder(() -> PlayerPalettes.EMPTY).serialize(PlayerPalettes.CODEC).copyOnDeath()
                     .sync((holder, recipient) -> holder == recipient, PlayerPalettes.STREAM_CODEC).build());

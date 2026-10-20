@@ -1,6 +1,7 @@
 package io.github.chiselteam.chisel.entity;
 
 import io.github.chiselteam.chisel.network.MossDeltaPacket;
+import io.github.chiselteam.chisel.projectile.MossHelper;
 import io.github.chiselteam.chisel.registry.*;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
@@ -12,8 +13,6 @@ import net.minecraft.world.entity.projectile.throwableitemprojectile.ThrowableIt
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.neoforged.neoforge.network.PacketDistributor;
@@ -58,7 +57,7 @@ public class BallOMoss extends ThrowableItemProjectile {
     private void turnToMoss(BlockPos pos) {
         if (!(level() instanceof ServerLevel serverLevel)) return;
         BlockState state = serverLevel.getBlockState(pos);
-        if (state.getRenderShape() != RenderShape.MODEL || !Block.isShapeFullBlock(state.getOcclusionShape())) return;
+        if (!MossHelper.canSupportMoss(state)) return;
         if (serverLevel.registryAccess().lookupOrThrow(Registries.BLOCK).getOrThrow(ChiselTags.CANT_BE_MOSSED).stream().anyMatch(holder -> holder.is(state.getBlock().builtInRegistryHolder().getKey())))
             return;
         var moss = serverLevel.getData(ChiselAttachments.MOSS);

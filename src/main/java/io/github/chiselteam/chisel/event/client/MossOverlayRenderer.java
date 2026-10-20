@@ -4,6 +4,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.client.moss.ClientMossData;
+import io.github.chiselteam.chisel.projectile.MossHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.client.renderer.rendertype.RenderTypes;
@@ -36,6 +37,7 @@ public final class MossOverlayRenderer {
             BlockPos pos = moss.pos();
             if (!minecraft.level.hasChunkAt(pos) || pos.distToCenterSqr(camera) > 128 * 128) continue;
             var state = minecraft.level.getBlockState(pos);
+            if (!MossHelper.canSupportMoss(state)) continue;
 
             for (Direction face : Direction.values()) {
                 BlockPos neighbor = pos.relative(face);

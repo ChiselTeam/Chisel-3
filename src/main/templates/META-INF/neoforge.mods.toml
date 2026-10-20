@@ -10,6 +10,8 @@ credits = "This mod uses a lot of textures from the Painterly pack: http://paint
 authors="${mod_authors}"
 description="${mod_description}"
 logoFile = "chisel_banner-8x2.png"
+[[mixins]]
+config = "chisel.mixins.json"
 [[dependencies.chisel]]
 modId="ctm"
 type="required"

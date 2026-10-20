@@ -3,6 +3,7 @@ package io.github.chiselteam.chisel.projectile;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.ChunkPos;
+import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.HashMap;
 import java.util.List;
@@ -31,8 +32,16 @@ public final class MossData {
         return entries.remove(pos.asLong()) != null;
     }
 
+    public boolean removeIfReplaced(BlockPos pos, BlockState previous, BlockState current) {
+        return !previous.is(current.getBlock()) && remove(pos);
+    }
+
     public boolean contains(BlockPos pos) {
         return entries.containsKey(pos.asLong());
+    }
+
+    public int texture(BlockPos pos) {
+        return entries.getOrDefault(pos.asLong(), 0);
     }
 
     public List<MossEntry> inChunk(ChunkPos chunk) {
