@@ -1,0 +1,558 @@
+{
+  "family_name": "sulfur",
+  "tag": "c:chisel/sulfur",
+  "variants": [
+    {
+      "block": "chisel:sulfur_array",
+      "model_type": "multiblock_2x2",
+      "name": "sulfur_array"
+    },
+    {
+      "block": "chisel:sulfur_border_square",
+      "model_type": "connected",
+      "name": "sulfur_border_square"
+    },
+    {
+      "block": "chisel:sulfur_border_square_small",
+      "model_type": "connected",
+      "name": "sulfur_border_square_small"
+    },
+    {
+      "block": "chisel:sulfur_braid",
+      "name": "sulfur_braid"
+    },
+    {
+      "block": "chisel:sulfur_braid_encased",
+      "model_type": "connected",
+      "name": "sulfur_braid_encased"
+    },
+    {
+      "block": "chisel:sulfur_bricks_cracked",
+      "name": "sulfur_bricks_cracked"
+    },
+    {
+      "block": "chisel:sulfur_bricks_encased",
+      "model_type": "connected",
+      "name": "sulfur_bricks_encased"
+    },
+    {
+      "block": "chisel:sulfur_bricks_indent",
+      "name": "sulfur_bricks_indent"
+    },
+    {
+      "block": "chisel:sulfur_bricks_inlayed",
+      "name": "sulfur_bricks_inlayed"
+    },
+    {
+      "block": "chisel:sulfur_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "sulfur_bricks_large"
+    },
+    {
+      "block": "chisel:sulfur_bricks_small",
+      "name": "sulfur_bricks_small"
+    },
+    {
+      "block": "chisel:sulfur_bricks_soft",
+      "name": "sulfur_bricks_soft"
+    },
+    {
+      "block": "chisel:sulfur_bricks_solid",
+      "name": "sulfur_bricks_solid"
+    },
+    {
+      "block": "chisel:sulfur_bricks_triple",
+      "name": "sulfur_bricks_triple"
+    },
+    {
+      "block": "chisel:sulfur_bricks_vertical",
+      "name": "sulfur_bricks_vertical"
+    },
+    {
+      "block": "chisel:sulfur_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "sulfur_chaotic"
+    },
+    {
+      "block": "chisel:sulfur_chaotic_medium",
+      "name": "sulfur_chaotic_medium"
+    },
+    {
+      "block": "chisel:sulfur_chaotic_small",
+      "name": "sulfur_chaotic_small"
+    },
+    {
+      "block": "chisel:sulfur_checker",
+      "name": "sulfur_checker"
+    },
+    {
+      "block": "chisel:sulfur_checker_small",
+      "name": "sulfur_checker_small"
+    },
+    {
+      "block": "chisel:sulfur_circular",
+      "model_type": "connected",
+      "name": "sulfur_circular"
+    },
+    {
+      "block": "chisel:sulfur_cracked",
+      "name": "sulfur_cracked"
+    },
+    {
+      "block": "chisel:sulfur_cobble",
+      "name": "sulfur_cobble"
+    },
+    {
+      "block": "chisel:sulfur_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "sulfur_cuts"
+    },
+    {
+      "block": "chisel:sulfur_dent",
+      "model_type": "connected",
+      "name": "sulfur_dent"
+    },
+    {
+      "block": "chisel:sulfur_french_1",
+      "name": "sulfur_french_1"
+    },
+    {
+      "block": "chisel:sulfur_french_2",
+      "name": "sulfur_french_2"
+    },
+    {
+      "block": "chisel:sulfur_indent",
+      "model_type": "connected",
+      "name": "sulfur_indent"
+    },
+    {
+      "block": "chisel:sulfur_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "sulfur_jellybean"
+    },
+    {
+      "block": "chisel:sulfur_layers",
+      "name": "sulfur_layers"
+    },
+    {
+      "block": "chisel:sulfur_layers_connected",
+      "model_type": "connected",
+      "name": "sulfur_layers_connected"
+    },
+    {
+      "block": "chisel:sulfur_line_horizontal",
+      "name": "sulfur_line_horizontal"
+    },
+    {
+      "block": "chisel:sulfur_line_vertical",
+      "name": "sulfur_line_vertical"
+    },
+    {
+      "block": "chisel:sulfur_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "sulfur_meander_horizontal"
+    },
+    {
+      "block": "chisel:sulfur_meander_vertical",
+      "model_type": "ctmv",
+      "name": "sulfur_meander_vertical"
+    },
+    {
+      "block": "chisel:sulfur_mosaic",
+      "model_type": "connected",
+      "name": "sulfur_mosaic"
+    },
+    {
+      "block": "chisel:sulfur_ornate_small",
+      "name": "sulfur_ornate_small"
+    },
+    {
+      "block": "chisel:sulfur_panel",
+      "name": "sulfur_panel"
+    },
+    {
+      "block": "chisel:sulfur_pillar",
+      "model_type": "top_bottom_side",
+      "name": "sulfur_pillar"
+    },
+    {
+      "block": "chisel:sulfur_pillar_basic",
+      "model_type": "ctmv",
+      "name": "sulfur_pillar_basic"
+    },
+    {
+      "block": "chisel:sulfur_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "sulfur_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:sulfur_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "sulfur_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:sulfur_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "sulfur_pillar_basic_round"
+    },
+    {
+      "block": "chisel:sulfur_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "sulfur_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:sulfur_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "sulfur_pillar_classic"
+    },
+    {
+      "block": "chisel:sulfur_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "sulfur_pillar_classic_large"
+    },
+    {
+      "block": "chisel:sulfur_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "sulfur_pillar_ionic"
+    },
+    {
+      "block": "chisel:sulfur_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "sulfur_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:sulfur_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "sulfur_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:sulfur_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "sulfur_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:sulfur_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "sulfur_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:sulfur_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "sulfur_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:sulfur_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "sulfur_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:sulfur_pillar_meander",
+      "model_type": "ctmv",
+      "name": "sulfur_pillar_meander"
+    },
+    {
+      "block": "chisel:sulfur_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "sulfur_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:sulfur_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "sulfur_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:sulfur_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "sulfur_pillar_meander_round"
+    },
+    {
+      "block": "chisel:sulfur_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "sulfur_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:sulfur_plate",
+      "name": "sulfur_plate"
+    },
+    {
+      "block": "chisel:sulfur_plate_connected",
+      "model_type": "connected",
+      "name": "sulfur_plate_connected"
+    },
+    {
+      "block": "chisel:sulfur_polished",
+      "name": "sulfur_polished"
+    },
+    {
+      "block": "chisel:sulfur_polished_encased",
+      "model_type": "connected",
+      "name": "sulfur_polished_encased"
+    },
+    {
+      "block": "chisel:sulfur_prism",
+      "name": "sulfur_prism"
+    },
+    {
+      "block": "chisel:sulfur_raw",
+      "name": "sulfur_raw"
+    },
+    {
+      "block": "chisel:sulfur_road",
+      "name": "sulfur_road"
+    },
+    {
+      "block": "chisel:sulfur_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "sulfur_slanted"
+    },
+    {
+      "block": "chisel:sulfur_tiles",
+      "name": "sulfur_tiles"
+    },
+    {
+      "block": "chisel:sulfur_tiles_large",
+      "model_type": "connected",
+      "name": "sulfur_tiles_large"
+    },
+    {
+      "block": "chisel:sulfur_tiles_small",
+      "name": "sulfur_tiles_small"
+    },
+    {
+      "block": "chisel:sulfur_twisted",
+      "model_type": "top_bottom_side",
+      "name": "sulfur_twisted"
+    },
+    {
+      "block": "chisel:sulfur_weaver",
+      "model_type": "connected",
+      "name": "sulfur_weaver"
+    },
+    {
+      "block": "chisel:sulfur_zag",
+      "model_type": "v4",
+      "name": "sulfur_zag"
+    },
+    {
+      "block": "chisel:sulfur_crate",
+      "model_type": "connected",
+      "name": "sulfur_crate"
+    },
+    {
+      "block": "chisel:sulfur_herringbone",
+      "name": "sulfur_herringbone"
+    },
+    {
+      "block": "chisel:sulfur_herringbone_encased",
+      "model_type": "connected",
+      "name": "sulfur_herringbone_encased"
+    },
+    {
+      "block": "chisel:sulfur_medallion",
+      "name": "sulfur_medallion"
+    },
+    {
+      "block": "chisel:sulfur_medallion_encased",
+      "model_type": "connected",
+      "name": "sulfur_medallion_encased"
+    },
+    {
+      "block": "chisel:sulfur_dots",
+      "name": "sulfur_dots"
+    },
+    {
+      "block": "chisel:sulfur_dots_encased",
+      "model_type": "connected",
+      "name": "sulfur_dots_encased"
+    },
+    {
+      "block": "chisel:sulfur_heart",
+      "name": "sulfur_heart"
+    },
+    {
+      "block": "chisel:sulfur_star",
+      "name": "sulfur_star"
+    },
+    {
+      "block": "chisel:sulfur_plating",
+      "name": "sulfur_plating"
+    },
+    {
+      "block": "chisel:sulfur_lodestone",
+      "name": "sulfur_lodestone"
+    },
+    {
+      "block": "chisel:sulfur_lodestone_connected",
+      "model_type": "connected",
+      "name": "sulfur_lodestone_connected"
+    },
+    {
+      "block": "chisel:sulfur_plank",
+      "name": "sulfur_plank"
+    },
+    {
+      "block": "chisel:sulfur_plank_connected",
+      "model_type": "connected",
+      "name": "sulfur_plank_connected"
+    },
+    {
+      "block": "chisel:sulfur_frame",
+      "name": "sulfur_frame"
+    },
+    {
+      "block": "chisel:sulfur_panel_1",
+      "name": "sulfur_panel_1"
+    },
+    {
+      "block": "chisel:sulfur_panel_2",
+      "name": "sulfur_panel_2"
+    },
+    {
+      "block": "chisel:sulfur_panel_3",
+      "name": "sulfur_panel_3"
+    },
+    {
+      "block": "chisel:sulfur_skull_creeper",
+      "name": "sulfur_skull_creeper"
+    },
+    {
+      "block": "chisel:sulfur_skull_skeleton",
+      "name": "sulfur_skull_skeleton"
+    },
+    {
+      "block": "chisel:sulfur_stripes",
+      "name": "sulfur_stripes"
+    },
+    {
+      "block": "chisel:sulfur_stripes_encased",
+      "model_type": "connected",
+      "name": "sulfur_stripes_encased"
+    },
+    {
+      "block": "chisel:sulfur_chisel_1",
+      "name": "sulfur_chisel_1"
+    },
+    {
+      "block": "chisel:sulfur_chisel_2",
+      "name": "sulfur_chisel_2"
+    },
+    {
+      "block": "chisel:sulfur_chisel_3",
+      "name": "sulfur_chisel_3"
+    },
+    {
+      "block": "chisel:sulfur_chisel_4",
+      "name": "sulfur_chisel_4"
+    },
+    {
+      "block": "chisel:sulfur_chisel_5",
+      "name": "sulfur_chisel_5"
+    },
+    {
+      "block": "chisel:sulfur_chisel_6",
+      "name": "sulfur_chisel_6"
+    },
+    {
+      "block": "chisel:sulfur_facet",
+      "name": "sulfur_facet"
+    },
+    {
+      "block": "chisel:sulfur_facet_small",
+      "name": "sulfur_facet_small"
+    },
+    {
+      "block": "chisel:sulfur_facet_small_encased",
+      "model_type": "connected",
+      "name": "sulfur_facet_small_encased"
+    },
+    {
+      "block": "chisel:sulfur_shiny",
+      "name": "sulfur_shiny"
+    },
+    {
+      "block": "chisel:sulfur_shiny_connected",
+      "model_type": "connected",
+      "name": "sulfur_shiny_connected"
+    },
+    {
+      "block": "chisel:sulfur_gem",
+      "name": "sulfur_gem"
+    },
+    {
+      "block": "chisel:sulfur_gem_1",
+      "name": "sulfur_gem_1"
+    },
+    {
+      "block": "chisel:sulfur_gem_1_connected",
+      "model_type": "connected",
+      "name": "sulfur_gem_1_connected"
+    },
+    {
+      "block": "chisel:sulfur_gem_2",
+      "name": "sulfur_gem_2"
+    },
+    {
+      "block": "chisel:sulfur_gem_2_connected",
+      "model_type": "connected",
+      "name": "sulfur_gem_2_connected"
+    },
+    {
+      "block": "chisel:sulfur_gem_3",
+      "name": "sulfur_gem_3"
+    },
+    {
+      "block": "chisel:sulfur_gem_3_connected",
+      "model_type": "connected",
+      "name": "sulfur_gem_3_connected"
+    },
+    {
+      "block": "chisel:sulfur_bricks_square",
+      "name": "sulfur_bricks_square"
+    },
+    {
+      "block": "chisel:sulfur_slab",
+      "name": "sulfur_slab"
+    },
+    {
+      "block": "chisel:sulfur_scaffold",
+      "name": "sulfur_scaffold"
+    },
+    {
+      "block": "chisel:sulfur_scaffold_encased",
+      "model_type": "connected",
+      "name": "sulfur_scaffold_encased"
+    },
+    {
+      "block": "chisel:sulfur_tiles_inlayed",
+      "name": "sulfur_tiles_inlayed"
+    },
+    {
+      "block": "chisel:sulfur_waves",
+      "model_type": "multiblock_2x2",
+      "name": "sulfur_waves"
+    },
+    {
+      "block": "chisel:sulfur_parquet",
+      "name": "sulfur_parquet"
+    },
+    {
+      "block": "chisel:sulfur_parquet_encased",
+      "model_type": "connected",
+      "name": "sulfur_parquet_encased"
+    },
+    {
+      "block": "chisel:sulfur_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "sulfur_bricks_large_rough"
+    },
+    {
+      "block": "chisel:sulfur_tiles_small_encased",
+      "model_type": "connected",
+      "name": "sulfur_tiles_small_encased"
+    },
+    {
+      "block": "chisel:sulfur_bricks_round",
+      "name": "sulfur_bricks_round"
+    }
+  ]
+}

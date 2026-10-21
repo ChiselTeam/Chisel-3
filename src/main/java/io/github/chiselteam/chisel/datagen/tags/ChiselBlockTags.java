@@ -162,6 +162,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.SHINGLE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.SILVER.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.STEEL.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.SULFUR.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TECHNICAL.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TEMPLE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TERRACOTTA.getFamily());
@@ -354,6 +355,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.ALUMINUM.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.BRONZE.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.COBALT.getFamily());
+        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.SULFUR.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.ELECTRUM.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.INVAR.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.LEAD.getFamily());

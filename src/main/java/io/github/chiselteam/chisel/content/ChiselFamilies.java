@@ -129,6 +129,7 @@ public class ChiselFamilies {
     public static final ChiselFamily SILVER = SilverFamily.FAMILY;
     public static final ChiselFamily SPRUCE = SpruceFamily.FAMILY;
     public static final ChiselFamily STEEL = SteelFamily.FAMILY;
+    public static final ChiselFamily SULFUR = SulfurFamily.FAMILY;
     public static final ChiselFamily TT_TALLOW = TTTallowFamily.FAMILY;
     public static final ChiselFamily TECHNICAL = TechnicalFamily.FAMILY;
     public static final ChiselFamily TEMPLE = TempleFamily.FAMILY;
@@ -192,7 +193,7 @@ public class ChiselFamilies {
         // Metal
         families.addAll(List.of(
                 ANCIENT_DEBRIS, RAW_IRON, RAW_GOLD, RAW_COPPER, COPPER, EXPOSED_COPPER, WEATHERED_COPPER, OXIDIZED_COPPER,
-                DIAMOND, EMERALD, GOLD, IRON, LAPIS, NETHERITE, COAL
+                DIAMOND, EMERALD, GOLD, IRON, LAPIS, NETHERITE, COAL, SULFUR
         ));
 
         // Modded metals
