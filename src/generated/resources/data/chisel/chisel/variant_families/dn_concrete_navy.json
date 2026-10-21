@@ -1,0 +1,578 @@
+{
+  "family_name": "dn_concrete_navy",
+  "tag": "c:chisel/dn_concrete_navy",
+  "variants": [
+    {
+      "block": "chisel:dn_concrete_navy_array",
+      "model_type": "multiblock_2x2",
+      "name": "dn_concrete_navy_array"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_border_square",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_border_square"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_border_square_small",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_border_square_small"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_braid",
+      "name": "dn_concrete_navy_braid"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_braid_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_braid_encased"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_bricks_cracked",
+      "name": "dn_concrete_navy_bricks_cracked"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_bricks_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_bricks_encased"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_bricks_indent",
+      "name": "dn_concrete_navy_bricks_indent"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_bricks_inlayed",
+      "name": "dn_concrete_navy_bricks_inlayed"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "dn_concrete_navy_bricks_large"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_bricks_small",
+      "name": "dn_concrete_navy_bricks_small"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_bricks_soft",
+      "name": "dn_concrete_navy_bricks_soft"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_bricks_solid",
+      "name": "dn_concrete_navy_bricks_solid"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_bricks_triple",
+      "name": "dn_concrete_navy_bricks_triple"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_bricks_vertical",
+      "name": "dn_concrete_navy_bricks_vertical"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "dn_concrete_navy_chaotic"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_chaotic_medium",
+      "name": "dn_concrete_navy_chaotic_medium"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_chaotic_small",
+      "name": "dn_concrete_navy_chaotic_small"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_checker",
+      "name": "dn_concrete_navy_checker"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_checker_small",
+      "name": "dn_concrete_navy_checker_small"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_circular",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_circular"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_cracked",
+      "name": "dn_concrete_navy_cracked"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_cobble",
+      "name": "dn_concrete_navy_cobble"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "dn_concrete_navy_cuts"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_dent",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_dent"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_french_1",
+      "name": "dn_concrete_navy_french_1"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_french_2",
+      "name": "dn_concrete_navy_french_2"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_indent",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_indent"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "dn_concrete_navy_jellybean"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_layers",
+      "name": "dn_concrete_navy_layers"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_layers_connected",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_layers_connected"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_line_horizontal",
+      "name": "dn_concrete_navy_line_horizontal"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_line_vertical",
+      "name": "dn_concrete_navy_line_vertical"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "dn_concrete_navy_meander_horizontal"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_meander_vertical",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_meander_vertical"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_mosaic",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_mosaic"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_ornate_small",
+      "name": "dn_concrete_navy_ornate_small"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_panel",
+      "name": "dn_concrete_navy_panel"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar",
+      "model_type": "top_bottom_side",
+      "name": "dn_concrete_navy_pillar"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_basic",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_pillar_basic"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_pillar_basic_round"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "dn_concrete_navy_pillar_classic"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "dn_concrete_navy_pillar_classic_large"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_pillar_ionic"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_meander",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_pillar_meander"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_pillar_meander_round"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "dn_concrete_navy_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_plate",
+      "name": "dn_concrete_navy_plate"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_plate_connected",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_plate_connected"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_polished",
+      "name": "dn_concrete_navy_polished"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_polished_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_polished_encased"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_prism",
+      "name": "dn_concrete_navy_prism"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_raw",
+      "name": "dn_concrete_navy_raw"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_road",
+      "name": "dn_concrete_navy_road"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "dn_concrete_navy_slanted"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_tiles",
+      "name": "dn_concrete_navy_tiles"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_tiles_large",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_tiles_large"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_tiles_small",
+      "name": "dn_concrete_navy_tiles_small"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_twisted",
+      "model_type": "top_bottom_side",
+      "name": "dn_concrete_navy_twisted"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_weaver",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_weaver"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_zag",
+      "model_type": "v4",
+      "name": "dn_concrete_navy_zag"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_crate",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_crate"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_herringbone",
+      "name": "dn_concrete_navy_herringbone"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_herringbone_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_herringbone_encased"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_medallion",
+      "name": "dn_concrete_navy_medallion"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_medallion_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_medallion_encased"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_dots",
+      "name": "dn_concrete_navy_dots"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_dots_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_dots_encased"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_heart",
+      "name": "dn_concrete_navy_heart"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_star",
+      "name": "dn_concrete_navy_star"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_plating",
+      "name": "dn_concrete_navy_plating"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_lodestone",
+      "name": "dn_concrete_navy_lodestone"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_lodestone_connected",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_lodestone_connected"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_plank",
+      "name": "dn_concrete_navy_plank"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_plank_connected",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_plank_connected"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_frame",
+      "name": "dn_concrete_navy_frame"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_panel_1",
+      "name": "dn_concrete_navy_panel_1"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_panel_2",
+      "name": "dn_concrete_navy_panel_2"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_panel_3",
+      "name": "dn_concrete_navy_panel_3"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_skull_creeper",
+      "name": "dn_concrete_navy_skull_creeper"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_skull_skeleton",
+      "name": "dn_concrete_navy_skull_skeleton"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_stripes",
+      "name": "dn_concrete_navy_stripes"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_stripes_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_stripes_encased"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_chisel_1",
+      "name": "dn_concrete_navy_chisel_1"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_chisel_2",
+      "name": "dn_concrete_navy_chisel_2"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_chisel_3",
+      "name": "dn_concrete_navy_chisel_3"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_chisel_4",
+      "name": "dn_concrete_navy_chisel_4"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_chisel_5",
+      "name": "dn_concrete_navy_chisel_5"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_chisel_6",
+      "name": "dn_concrete_navy_chisel_6"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_facet",
+      "name": "dn_concrete_navy_facet"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_facet_small",
+      "name": "dn_concrete_navy_facet_small"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_facet_small_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_facet_small_encased"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_shiny",
+      "name": "dn_concrete_navy_shiny"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_shiny_connected",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_shiny_connected"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_gem",
+      "name": "dn_concrete_navy_gem"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_gem_1",
+      "name": "dn_concrete_navy_gem_1"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_gem_1_connected",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_gem_1_connected"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_gem_2",
+      "name": "dn_concrete_navy_gem_2"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_gem_2_connected",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_gem_2_connected"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_gem_3",
+      "name": "dn_concrete_navy_gem_3"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_gem_3_connected",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_gem_3_connected"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_bricks_square",
+      "name": "dn_concrete_navy_bricks_square"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_slab",
+      "name": "dn_concrete_navy_slab"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_scaffold",
+      "name": "dn_concrete_navy_scaffold"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_scaffold_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_scaffold_encased"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_tiles_inlayed",
+      "name": "dn_concrete_navy_tiles_inlayed"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_waves",
+      "model_type": "multiblock_2x2",
+      "name": "dn_concrete_navy_waves"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_parquet",
+      "name": "dn_concrete_navy_parquet"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_parquet_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_parquet_encased"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "dn_concrete_navy_bricks_large_rough"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_tiles_small_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_tiles_small_encased"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_bricks_round",
+      "name": "dn_concrete_navy_bricks_round"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_plumbing_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_plumbing_encased"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_diamond_plating_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_diamond_plating_encased"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_mesh_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_mesh_encased"
+    },
+    {
+      "block": "chisel:dn_concrete_navy_caution_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_navy_caution_encased"
+    }
+  ]
+}

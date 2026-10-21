@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/dn_concrete_icy_blue/dn_concrete_icy_blue_pillar_large_basic_triple-side",
+    "bottom": "chisel:block/dn_concrete_icy_blue/dn_concrete_icy_blue_pillar_large_basic_triple-bottom",
+    "particle": "chisel:block/dn_concrete_icy_blue/dn_concrete_icy_blue_pillar_large_basic_triple-side",
+    "side": "chisel:block/dn_concrete_icy_blue/dn_concrete_icy_blue_pillar_large_basic_triple-side",
+    "top": "chisel:block/dn_concrete_icy_blue/dn_concrete_icy_blue_pillar_large_basic_triple-top",
+    "vertical_both": "chisel:block/dn_concrete_icy_blue/dn_concrete_icy_blue_pillar_large_basic_triple-vertical_both",
+    "vertical_bottom": "chisel:block/dn_concrete_icy_blue/dn_concrete_icy_blue_pillar_large_basic_triple-vertical_bottom",
+    "vertical_none": "chisel:block/dn_concrete_icy_blue/dn_concrete_icy_blue_pillar_large_basic_triple-vertical_none",
+    "vertical_top": "chisel:block/dn_concrete_icy_blue/dn_concrete_icy_blue_pillar_large_basic_triple-vertical_top"
+  }
+}

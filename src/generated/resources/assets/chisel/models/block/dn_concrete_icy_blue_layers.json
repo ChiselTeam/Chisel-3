@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/dn_concrete_icy_blue/dn_concrete_icy_blue_layers"
+  }
+}

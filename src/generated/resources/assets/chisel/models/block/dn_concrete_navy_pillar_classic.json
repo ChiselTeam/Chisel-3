@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/dn_concrete_navy/dn_concrete_navy_pillar_classic-bottom",
+    "side": "chisel:block/dn_concrete_navy/dn_concrete_navy_pillar_classic-side",
+    "top": "chisel:block/dn_concrete_navy/dn_concrete_navy_pillar_classic-top"
+  }
+}

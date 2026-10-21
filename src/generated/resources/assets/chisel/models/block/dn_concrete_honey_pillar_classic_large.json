@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/dn_concrete_honey/dn_concrete_honey_pillar_classic_large-bottom",
+    "side": "chisel:block/dn_concrete_honey/dn_concrete_honey_pillar_classic_large-side",
+    "top": "chisel:block/dn_concrete_honey/dn_concrete_honey_pillar_classic_large-top"
+  }
+}
