@@ -3,6 +3,8 @@
     {"id": "mcwpaths:brick_crystal_floor", "required": false},
     {"id": "mcwpaths:brick_flagstone", "required": false},
     {"id": "mcwpaths:brick_running_bond", "required": false},
-    {"id": "mcwpaths:brick_windmill_weave", "required": false}
+    {"id": "mcwpaths:brick_windmill_weave", "required": false},
+    {"id": "#chipped:borderless_bricks", "required": false},
+    {"id": "#chipped:bricks", "required": false}
   ]
 }

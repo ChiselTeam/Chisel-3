@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#rechiseled:diamond_block", "required": false}
+    {"id": "#rechiseled:diamond_block", "required": false},
+    {"id": "#chipped:diamond_block", "required": false}
   ]
 }

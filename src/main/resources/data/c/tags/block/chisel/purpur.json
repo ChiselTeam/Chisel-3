@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#rechiseled:purpur_block", "required": false}
+    {"id": "#rechiseled:purpur_block", "required": false},
+    {"id": "#chipped:purpur_block", "required": false}
   ]
 }

@@ -4,6 +4,7 @@
     {"id": "aether_ii:greatroot_bookshelf", "required": false},
     {"id": "aether_ii:wisproot_bookshelf", "required": false},
     {"id": "aether_ii:amberoot_bookshelf", "required": false},
-    {"id": "aether_ii:holystone_bookshelf", "required": false}
+    {"id": "aether_ii:holystone_bookshelf", "required": false},
+    {"id": "#chipped:bookshelf", "required": false}
   ]
 }

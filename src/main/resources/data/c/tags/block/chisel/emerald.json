@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#rechiseled:emerald_block", "required": false}
+    {"id": "#rechiseled:emerald_block", "required": false},
+    {"id": "#chipped:emerald_block", "required": false}
   ]
 }

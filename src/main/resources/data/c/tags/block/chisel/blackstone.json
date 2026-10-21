@@ -4,6 +4,7 @@
     {"id": "mcwpaths:blackstone_running_bond", "required": false},
     {"id": "mcwpaths:blackstone_windmill_weave", "required": false},
     {"id": "mcwpaths:blackstone_flagstone", "required": false},
-    {"id": "mcwpaths:blackstone_crystal_floor", "required": false}
+    {"id": "mcwpaths:blackstone_crystal_floor", "required": false},
+    {"id": "#chipped:blackstone", "required": false}
   ]
 }

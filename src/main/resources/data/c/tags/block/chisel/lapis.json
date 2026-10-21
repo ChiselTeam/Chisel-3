@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#rechiseled:lapis_block", "required": false}
+    {"id": "#rechiseled:lapis_block", "required": false},
+    {"id": "#chipped:lapis_block", "required": false}
   ]
 }

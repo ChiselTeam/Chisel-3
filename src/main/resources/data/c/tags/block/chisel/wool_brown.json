@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "aether_ii:brown_cloudwool", "required": false}
+    {"id": "aether_ii:brown_cloudwool", "required": false},
+    {"id": "#chipped:brown_wool", "required": false}
   ]
 }

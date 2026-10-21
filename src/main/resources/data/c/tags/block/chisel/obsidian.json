@@ -1,6 +1,7 @@
 {
   "values": [
     {"id": "#rechiseled:obsidian", "required": false},
-    {"id": "#c:obsidians/normal", "required": false}
+    {"id": "#c:obsidians/normal", "required": false},
+    {"id": "#chipped:obsidian", "required": false}
   ]
 }

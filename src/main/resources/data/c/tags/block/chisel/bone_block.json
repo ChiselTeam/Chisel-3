@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#rechiseled:bone_block", "required": false}
+    {"id": "#rechiseled:bone_block", "required": false},
+    {"id": "#chipped:bone_block", "required": false}
   ]
 }

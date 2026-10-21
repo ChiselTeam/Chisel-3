@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#rechiseled:quartz_block", "required": false}
+    {"id": "#rechiseled:quartz_block", "required": false},
+    {"id": "#chipped:quartz_block", "required": false}
   ]
 }

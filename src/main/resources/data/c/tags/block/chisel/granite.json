@@ -4,6 +4,7 @@
     {"id": "mcwpaths:granite_running_bond", "required": false},
     {"id": "mcwpaths:granite_windmill_weave", "required": false},
     {"id": "mcwpaths:granite_flagstone", "required": false},
-    {"id": "mcwpaths:granite_crystal_floor", "required": false}
+    {"id": "mcwpaths:granite_crystal_floor", "required": false},
+    {"id": "#chipped:granite", "required": false}
   ]
 }

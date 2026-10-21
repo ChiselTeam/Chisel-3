@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#rechiseled:dirt", "required": false}
+    {"id": "#rechiseled:dirt", "required": false},
+    {"id": "#chipped:dirt", "required": false}
   ]
 }

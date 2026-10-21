@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#rechiseled:mangrove_planks", "required": false}
+    {"id": "#rechiseled:mangrove_planks", "required": false},
+    {"id": "#chipped:mangrove_planks", "required": false}
   ]
 }

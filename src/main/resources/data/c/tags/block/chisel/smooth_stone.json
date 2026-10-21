@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "xycraft_override:smooth_smooth_stone", "required": false}
+    {"id": "xycraft_override:smooth_smooth_stone", "required": false},
+    {"id": "#chipped:smooth_stone", "required": false}
   ]
 }

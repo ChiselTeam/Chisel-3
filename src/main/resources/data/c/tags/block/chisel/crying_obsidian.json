@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#c:obsidians/crying", "required": false}
+    {"id": "#c:obsidians/crying", "required": false},
+    {"id": "#chipped:crying_obsidian", "required": false}
   ]
 }

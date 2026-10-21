@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#rechiseled:end_stone", "required": false}
+    {"id": "#rechiseled:end_stone", "required": false},
+    {"id": "#chipped:end_stone", "required": false}
   ]
 }

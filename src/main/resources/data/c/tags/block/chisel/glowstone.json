@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#rechiseled:glowstone", "required": false}
+    {"id": "#rechiseled:glowstone", "required": false},
+    {"id": "#chipped:glowstone", "required": false}
   ]
 }

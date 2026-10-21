@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#rechiseled:red_nether_bricks", "required": false}
+    {"id": "#rechiseled:red_nether_bricks", "required": false},
+    {"id": "#chipped:red_nether_bricks", "required": false}
   ]
 }

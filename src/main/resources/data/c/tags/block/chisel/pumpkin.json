@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#chipped:carved_pumpkin", "required": false},
+    {"id": "#chipped:pumpkin", "required": false}
+  ]
+}

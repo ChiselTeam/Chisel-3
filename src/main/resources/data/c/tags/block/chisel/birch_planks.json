@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#rechiseled:birch_planks", "required": false}
+    {"id": "#rechiseled:birch_planks", "required": false},
+    {"id": "#chipped:birch_planks", "required": false}
   ]
 }

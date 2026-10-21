@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#rechiseled:warped_planks", "required": false}
+    {"id": "#rechiseled:warped_planks", "required": false},
+    {"id": "#chipped:warped_planks", "required": false}
   ]
 }

@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#rechiseled:netherrack", "required": false}
+    {"id": "#rechiseled:netherrack", "required": false},
+    {"id": "#chipped:netherrack", "required": false}
   ]
 }

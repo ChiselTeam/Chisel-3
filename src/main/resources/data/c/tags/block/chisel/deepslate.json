@@ -3,6 +3,7 @@
     {"id": "mcwpaths:deepslate_running_bond", "required": false},
     {"id": "mcwpaths:deepslate_windmill_weave", "required": false},
     {"id": "mcwpaths:deepslate_flagstone", "required": false},
-    {"id": "mcwpaths:deepslate_crystal_floor", "required": false}
+    {"id": "mcwpaths:deepslate_crystal_floor", "required": false},
+    {"id": "#chipped:deepslate", "required": false}
   ]
 }

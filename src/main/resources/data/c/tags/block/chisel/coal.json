@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#rechiseled:coal_block", "required": false}
+    {"id": "#rechiseled:coal_block", "required": false},
+    {"id": "#chipped:coal_block", "required": false}
   ]
 }

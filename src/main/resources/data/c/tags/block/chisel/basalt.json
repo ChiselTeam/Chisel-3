@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#rechiseled:basalt", "required": false}
+    {"id": "#rechiseled:basalt", "required": false},
+    {"id": "#chipped:basalt", "required": false}
   ]
 }

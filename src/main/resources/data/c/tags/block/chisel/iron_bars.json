@@ -13,6 +13,7 @@
     {"id": "mcwfences:ornate_metal_fence", "required": false},
     {"id": "mcwfences:panelled_metal_fence", "required": false},
     {"id": "mcwfences:twilight_metal_fence", "required": false},
-    {"id": "mcwfences:vintage_metal_fence", "required": false}
+    {"id": "mcwfences:vintage_metal_fence", "required": false},
+    {"id": "#chipped:iron_bars", "required": false}
   ]
 }

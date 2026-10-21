@@ -1,5 +1,6 @@
 {
   "values": [
-    {"id": "#rechiseled:netherite_block", "required": false}
+    {"id": "#rechiseled:netherite_block", "required": false},
+    {"id": "#chipped:netherite_block", "required": false}
   ]
 }
