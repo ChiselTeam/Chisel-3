@@ -3,6 +3,9 @@ package io.github.chiselteam.chisel.datagen.tags;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.family.VariantFamily;
 import io.github.chiselteam.chisel.content.ChiselFamilies;
+import io.github.chiselteam.chisel.content.compat.dyenamics.DnStainedGlassFamily;
+import io.github.chiselteam.chisel.content.compat.dyenamics.DnOakFramedStainedGlassFamily;
+import io.github.chiselteam.chisel.content.compat.dyenamics.DnSteelFramedStainedGlassFamily;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
 import io.github.chiselteam.chisel.registry.ChiselTags;
 import net.minecraft.core.HolderLookup;
@@ -287,6 +290,24 @@ public class ChiselBlockTags extends BlockTagsProvider {
             addToTag(BlockTags.IMPERMEABLE, family.getFamily());
             addToTag(Tags.Blocks.DYED, family.getFamily());
             addToTag(getTagForColor(family.getFamily().getFamilyName().substring("stained_glass_".length())), family.getFamily());
+        });
+
+        DnStainedGlassFamily.FAMILY.forEach(family -> {
+            addToTag(Tags.Blocks.GLASS_BLOCKS, family.getFamily());
+            addToTag(BlockTags.IMPERMEABLE, family.getFamily());
+            addToTag(Tags.Blocks.DYED, family.getFamily());
+        });
+
+        DnOakFramedStainedGlassFamily.FAMILY.forEach(family -> {
+            addToTag(Tags.Blocks.GLASS_BLOCKS, family.getFamily());
+            addToTag(BlockTags.IMPERMEABLE, family.getFamily());
+            addToTag(Tags.Blocks.DYED, family.getFamily());
+        });
+
+        DnSteelFramedStainedGlassFamily.FAMILY.forEach(family -> {
+            addToTag(Tags.Blocks.GLASS_BLOCKS, family.getFamily());
+            addToTag(BlockTags.IMPERMEABLE, family.getFamily());
+            addToTag(Tags.Blocks.DYED, family.getFamily());
         });
 
         ChiselFamilies.OAK_FRAMED_STAINED_GLASS.forEach(family -> {

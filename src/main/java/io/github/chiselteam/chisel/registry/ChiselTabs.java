@@ -167,6 +167,7 @@ public class ChiselTabs {
                         ChiselFamilies.PAPERWALL.getFamily(),
                         ChiselFamilies.PUMPKIN.getFamily(),
                         ChiselFamilies.REDSTONE_LAMP.getFamily(),
+                        ChiselFamilies.REDSTONE_SEA_LAMP.getFamily(),
                         ChiselFamilies.ROAD_LINE.getFamily(),
                         ChiselFamilies.VALENTINES.getFamily(),
                         ChiselFamilies.CLAY.getFamily(),

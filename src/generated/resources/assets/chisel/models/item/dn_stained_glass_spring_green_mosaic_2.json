@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/dn_stained_glass_spring_green/dn_stained_glass_spring_green_mosaic_2"
+  }
+}

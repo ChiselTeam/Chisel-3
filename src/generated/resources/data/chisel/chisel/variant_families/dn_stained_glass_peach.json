@@ -1,0 +1,136 @@
+{
+  "family_name": "dn_stained_glass_peach",
+  "tag": "c:chisel/dn_stained_glass_peach",
+  "variants": [
+    {
+      "block": "chisel:dn_stained_glass_peach_borderless",
+      "name": "dn_stained_glass_peach_borderless"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_bubble",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_bubble"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_panel",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_panel"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_panel_fancy",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_panel_fancy"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_frame_thick",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_frame_thick"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_frame_thick_panel",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_frame_thick_panel"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_tile",
+      "name": "dn_stained_glass_peach_tile"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_brick",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_brick"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_line_vertical",
+      "name": "dn_stained_glass_peach_line_vertical"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_line_vertical_panel",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_line_vertical_panel"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_line_horizontal",
+      "name": "dn_stained_glass_peach_line_horizontal"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_arch_panel",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_arch_panel"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_arch_panel_1",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_arch_panel_1"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_arch_panel_2",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_arch_panel_2"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_arch_panel_3",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_arch_panel_3"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_scaffold",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_scaffold"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_scaffold_left",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_scaffold_left"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_scaffold_right",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_scaffold_right"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_basketweave",
+      "name": "dn_stained_glass_peach_basketweave"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_mosaic_1",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_mosaic_1"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_mosaic_2",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_mosaic_2"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_round",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_round"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_circle",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_circle"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_rings",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_rings"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_diamond",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_diamond"
+    },
+    {
+      "block": "chisel:dn_stained_glass_peach_frame_1",
+      "model_type": "glass",
+      "name": "dn_stained_glass_peach_frame_1"
+    }
+  ]
+}

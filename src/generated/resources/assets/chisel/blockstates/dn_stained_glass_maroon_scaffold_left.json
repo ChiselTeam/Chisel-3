@@ -1,0 +1,11 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/dn_stained_glass_maroon_scaffold_left",
+  "variant": {
+    "block": "chisel:dn_stained_glass_maroon_scaffold_left",
+    "kind": "standard"
+  }
+}

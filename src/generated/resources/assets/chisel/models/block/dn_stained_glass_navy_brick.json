@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/dn_stained_glass_navy/dn_stained_glass_navy_brick",
+    "standard_corner": "chisel:block/dn_stained_glass_navy/dn_stained_glass_navy_brick-ctm_corner",
+    "standard_cornerless": "chisel:block/dn_stained_glass_navy/dn_stained_glass_navy_brick-ctm_cornerless",
+    "standard_horizontal": "chisel:block/dn_stained_glass_navy/dn_stained_glass_navy_brick-ctm_horizontal",
+    "standard_none": "chisel:block/dn_stained_glass_navy/dn_stained_glass_navy_brick",
+    "standard_vertical": "chisel:block/dn_stained_glass_navy/dn_stained_glass_navy_brick-ctm_vertical"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "family_name": "dn_steel_framed_stained_glass_mint",
+  "tag": "c:chisel/dn_steel_framed_stained_glass_mint",
+  "variants": [
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_bubble",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_bubble"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_panel",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_panel"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_panel_fancy",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_panel_fancy"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_frame_thick",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_frame_thick"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_frame_thick_panel",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_frame_thick_panel"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_tile",
+      "name": "dn_steel_framed_stained_glass_mint_tile"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_brick",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_brick"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_line_vertical",
+      "name": "dn_steel_framed_stained_glass_mint_line_vertical"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_line_vertical_panel",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_line_vertical_panel"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_line_horizontal",
+      "name": "dn_steel_framed_stained_glass_mint_line_horizontal"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_arch_panel",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_arch_panel"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_arch_panel_1",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_arch_panel_1"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_arch_panel_2",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_arch_panel_2"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_arch_panel_3",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_arch_panel_3"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_scaffold",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_scaffold"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_scaffold_left",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_scaffold_left"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_scaffold_right",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_scaffold_right"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_basketweave",
+      "name": "dn_steel_framed_stained_glass_mint_basketweave"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_mosaic_1",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_mosaic_1"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_mosaic_2",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_mosaic_2"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_round",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_round"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_circle",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_circle"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_rings",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_rings"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_diamond",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_diamond"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_mint_frame_1",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_mint_frame_1"
+    }
+  ]
+}

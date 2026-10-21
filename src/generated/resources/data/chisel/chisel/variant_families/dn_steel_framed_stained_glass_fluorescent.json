@@ -1,0 +1,137 @@
+{
+  "family_name": "dn_steel_framed_stained_glass_fluorescent",
+  "tag": "c:chisel/dn_steel_framed_stained_glass_fluorescent",
+  "variants": [
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_bubble",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_bubble"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_panel",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_panel"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_panel_fancy",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_panel_fancy"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_frame_thick",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_frame_thick"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_frame_thick_panel",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_frame_thick_panel"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_tile",
+      "name": "dn_steel_framed_stained_glass_fluorescent_tile"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_brick",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_brick"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_line_vertical",
+      "name": "dn_steel_framed_stained_glass_fluorescent_line_vertical"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_line_vertical_panel",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_line_vertical_panel"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_line_horizontal",
+      "name": "dn_steel_framed_stained_glass_fluorescent_line_horizontal"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_arch_panel",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_arch_panel"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_arch_panel_1",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_arch_panel_1"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_arch_panel_2",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_arch_panel_2"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_arch_panel_3",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_arch_panel_3"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_scaffold",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_scaffold"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_scaffold_left",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_scaffold_left"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_scaffold_right",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_scaffold_right"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_basketweave",
+      "name": "dn_steel_framed_stained_glass_fluorescent_basketweave"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_mosaic_1",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_mosaic_1"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_mosaic_2",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_mosaic_2"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_round",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_round"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_circle",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_circle"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_rings",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_rings"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_diamond",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_diamond"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_fluorescent_frame_1",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_fluorescent_frame_1"
+    }
+  ]
+}

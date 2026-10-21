@@ -1,0 +1,137 @@
+{
+  "family_name": "dn_oak_framed_stained_glass_maroon",
+  "tag": "c:chisel/dn_oak_framed_stained_glass_maroon",
+  "variants": [
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_bubble",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_bubble"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_panel",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_panel"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_panel_fancy",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_panel_fancy"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_frame_thick",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_frame_thick"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_frame_thick_panel",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_frame_thick_panel"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_tile",
+      "name": "dn_oak_framed_stained_glass_maroon_tile"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_brick",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_brick"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_line_vertical",
+      "name": "dn_oak_framed_stained_glass_maroon_line_vertical"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_line_vertical_panel",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_line_vertical_panel"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_line_horizontal",
+      "name": "dn_oak_framed_stained_glass_maroon_line_horizontal"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_arch_panel",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_arch_panel"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_arch_panel_1",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_arch_panel_1"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_arch_panel_2",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_arch_panel_2"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_arch_panel_3",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_arch_panel_3"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_scaffold",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_scaffold"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_scaffold_left",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_scaffold_left"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_scaffold_right",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_scaffold_right"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_basketweave",
+      "name": "dn_oak_framed_stained_glass_maroon_basketweave"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_mosaic_1",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_mosaic_1"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_mosaic_2",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_mosaic_2"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_round",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_round"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_circle",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_circle"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_rings",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_rings"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_diamond",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_diamond"
+    },
+    {
+      "block": "chisel:dn_oak_framed_stained_glass_maroon_frame_1",
+      "model_type": "glass",
+      "name": "dn_oak_framed_stained_glass_maroon_frame_1"
+    }
+  ]
+}

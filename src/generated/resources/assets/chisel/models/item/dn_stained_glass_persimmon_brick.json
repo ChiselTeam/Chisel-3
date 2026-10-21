@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/dn_stained_glass_persimmon/dn_stained_glass_persimmon_brick"
+  }
+}

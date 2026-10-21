@@ -1,0 +1,136 @@
+{
+  "family_name": "dn_stained_glass_rose",
+  "tag": "c:chisel/dn_stained_glass_rose",
+  "variants": [
+    {
+      "block": "chisel:dn_stained_glass_rose_borderless",
+      "name": "dn_stained_glass_rose_borderless"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_bubble",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_bubble"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_panel",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_panel"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_panel_fancy",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_panel_fancy"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_frame_thick",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_frame_thick"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_frame_thick_panel",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_frame_thick_panel"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_tile",
+      "name": "dn_stained_glass_rose_tile"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_brick",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_brick"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_line_vertical",
+      "name": "dn_stained_glass_rose_line_vertical"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_line_vertical_panel",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_line_vertical_panel"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_line_horizontal",
+      "name": "dn_stained_glass_rose_line_horizontal"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_arch_panel",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_arch_panel"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_arch_panel_1",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_arch_panel_1"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_arch_panel_2",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_arch_panel_2"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_arch_panel_3",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_arch_panel_3"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_scaffold",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_scaffold"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_scaffold_left",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_scaffold_left"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_scaffold_right",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_scaffold_right"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_basketweave",
+      "name": "dn_stained_glass_rose_basketweave"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_mosaic_1",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_mosaic_1"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_mosaic_2",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_mosaic_2"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_round",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_round"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_circle",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_circle"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_rings",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_rings"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_diamond",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_diamond"
+    },
+    {
+      "block": "chisel:dn_stained_glass_rose_frame_1",
+      "model_type": "glass",
+      "name": "dn_stained_glass_rose_frame_1"
+    }
+  ]
+}

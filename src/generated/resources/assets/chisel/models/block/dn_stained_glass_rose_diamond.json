@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/dn_stained_glass_rose/dn_stained_glass_rose_diamond",
+    "standard_corner": "chisel:block/dn_stained_glass_rose/dn_stained_glass_rose_diamond-ctm_corner",
+    "standard_cornerless": "chisel:block/dn_stained_glass_rose/dn_stained_glass_rose_diamond-ctm_cornerless",
+    "standard_horizontal": "chisel:block/dn_stained_glass_rose/dn_stained_glass_rose_diamond-ctm_horizontal",
+    "standard_none": "chisel:block/dn_stained_glass_rose/dn_stained_glass_rose_diamond",
+    "standard_vertical": "chisel:block/dn_stained_glass_rose/dn_stained_glass_rose_diamond-ctm_vertical"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/dn_stained_glass_rose/dn_stained_glass_rose_mosaic_1"
+  }
+}

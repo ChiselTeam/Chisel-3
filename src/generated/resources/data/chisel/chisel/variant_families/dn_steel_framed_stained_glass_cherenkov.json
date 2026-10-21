@@ -1,0 +1,137 @@
+{
+  "family_name": "dn_steel_framed_stained_glass_cherenkov",
+  "tag": "c:chisel/dn_steel_framed_stained_glass_cherenkov",
+  "variants": [
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_bubble",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_bubble"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_panel",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_panel"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_panel_fancy",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_panel_fancy"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_frame_thick",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_frame_thick"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_frame_thick_panel",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_frame_thick_panel"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_tile",
+      "name": "dn_steel_framed_stained_glass_cherenkov_tile"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_brick",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_brick"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_line_vertical",
+      "name": "dn_steel_framed_stained_glass_cherenkov_line_vertical"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_line_vertical_panel",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_line_vertical_panel"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_line_horizontal",
+      "name": "dn_steel_framed_stained_glass_cherenkov_line_horizontal"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_arch_panel",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_arch_panel"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_arch_panel_1",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_arch_panel_1"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_arch_panel_2",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_arch_panel_2"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_arch_panel_3",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_arch_panel_3"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_scaffold",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_scaffold"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_scaffold_left",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_scaffold_left"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_scaffold_right",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_scaffold_right"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_basketweave",
+      "name": "dn_steel_framed_stained_glass_cherenkov_basketweave"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_mosaic_1",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_mosaic_1"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_mosaic_2",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_mosaic_2"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_round",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_round"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_circle",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_circle"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_rings",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_rings"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_diamond",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_diamond"
+    },
+    {
+      "block": "chisel:dn_steel_framed_stained_glass_cherenkov_frame_1",
+      "model_type": "glass",
+      "name": "dn_steel_framed_stained_glass_cherenkov_frame_1"
+    }
+  ]
+}

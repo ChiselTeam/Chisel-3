@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "dyenamics"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "chisel:dn_steel_framed_stained_glass_wine"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wine_stained_glass": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:glass/wine"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_wine_stained_glass"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chisel:dn_steel_framed_stained_glass_wine"
+    ]
+  }
+}

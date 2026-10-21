@@ -1,0 +1,172 @@
+package io.github.chiselteam.chisel.content.compat.dyenamics;
+
+import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
+import io.github.chiselteam.chisel.content.ChiselFamily;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
+import org.apache.commons.lang3.text.WordUtils;
+
+import java.util.List;
+
+public final class DnConcreteFamily {
+    public static final List<ChiselFamily> FAMILY = List.of(
+            create("maroon", MapColor.COLOR_RED, 0),
+            create("persimmon", MapColor.TERRACOTTA_ORANGE, 0),
+            create("amber", MapColor.TERRACOTTA_ORANGE, 0),
+            create("honey", MapColor.TERRACOTTA_YELLOW, 0),
+            create("peach", MapColor.SAND, 0),
+            create("fluorescent", MapColor.SAND, 15),
+            create("conifer", MapColor.TERRACOTTA_LIGHT_GREEN, 0),
+            create("spring_green", MapColor.TERRACOTTA_LIGHT_GREEN, 0),
+            create("mint", MapColor.COLOR_GREEN, 0),
+            create("aquamarine", MapColor.TERRACOTTA_CYAN, 0),
+            create("icy_blue", MapColor.TERRACOTTA_BLUE, 0),
+            create("cherenkov", MapColor.COLOR_LIGHT_BLUE, 8),
+            create("navy", MapColor.TERRACOTTA_BLUE, 0),
+            create("ultramarine", MapColor.COLOR_BLUE, 0),
+            create("lavender", MapColor.COLOR_PURPLE, 0),
+            create("wine", MapColor.COLOR_PURPLE, 0),
+            create("bubblegum", MapColor.COLOR_PINK, 0),
+            create("rose", MapColor.TERRACOTTA_RED, 0)
+    );
+
+    private DnConcreteFamily() {
+    }
+
+    public static ChiselFamily create(String color, MapColor mapColor, int lightLevel) {
+        var colorName = WordUtils.capitalize(color.replace("_", " "));
+        var concreteName = "dn_concrete_%s".formatted(color);
+        var baseName = "%s Concrete".formatted(colorName);
+        return ChiselFamily.build(concreteName, builder -> builder
+                .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE)
+                        .mapColor(mapColor).lightLevel(state -> lightLevel)).blockName(baseName))
+                .variant("%s_array".formatted(concreteName), v -> v.description("Array").model(ChiselModelHandlers.MULTIBLOCK_2X2))
+                .variant("%s_border_square".formatted(concreteName), v -> v.description("Square Border").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_border_square_small".formatted(concreteName), v -> v.description("Small Square Border").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_braid".formatted(concreteName), v -> v.description("Braid"))
+                .variant("%s_braid_encased".formatted(concreteName), v -> v.description("Encased Braid").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_bricks_cracked".formatted(concreteName), v -> v.description("Cracked Bricks"))
+                .variant("%s_bricks_encased".formatted(concreteName), v -> v.description("Encased Bricks").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_bricks_indent".formatted(concreteName), v -> v.description("Indent Bricks"))
+                .variant("%s_bricks_inlayed".formatted(concreteName), v -> v.description("Inlayed Bricks"))
+                .variant("%s_bricks_large".formatted(concreteName), v -> v.description("Large Bricks").model(ChiselModelHandlers.MULTIBLOCK_2X2))
+                .variant("%s_bricks_small".formatted(concreteName), v -> v.description("Small Bricks"))
+                .variant("%s_bricks_soft".formatted(concreteName), v -> v.description("Soft Bricks"))
+                .variant("%s_bricks_solid".formatted(concreteName), v -> v.description("Solid Bricks"))
+                .variant("%s_bricks_triple".formatted(concreteName), v -> v.description("Triple Bricks"))
+                .variant("%s_bricks_vertical".formatted(concreteName), v -> v.description("Vertical Bricks"))
+                .variant("%s_chaotic".formatted(concreteName), v -> v.description("Chaotic").model(ChiselModelHandlers.MULTIBLOCK_3X3))
+                .variant("%s_chaotic_medium".formatted(concreteName), v -> v.description("Chaotic Medium"))
+                .variant("%s_chaotic_small".formatted(concreteName), v -> v.description("Chaotic Small"))
+                .variant("%s_checker".formatted(concreteName), v -> v.description("Checker"))
+                .variant("%s_checker_small".formatted(concreteName), v -> v.description("Small Checker"))
+                .variant("%s_circular".formatted(concreteName), v -> v.description("Circular").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_cracked".formatted(concreteName), v -> v.description("Cracked"))
+                .variant("%s_cobble".formatted(concreteName), v -> v.description("Cobble"))
+                .variant("%s_cuts".formatted(concreteName), v -> v.description("Cuts").model(ChiselModelHandlers.MULTIBLOCK_4X4))
+                .variant("%s_dent".formatted(concreteName), v -> v.description("Dent").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_french_1".formatted(concreteName), v -> v.description("French 1"))
+                .variant("%s_french_2".formatted(concreteName), v -> v.description("French 2"))
+                .variant("%s_indent".formatted(concreteName), v -> v.description("Indent").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_jellybean".formatted(concreteName), v -> v.description("Jellybean").model(ChiselModelHandlers.MULTIBLOCK_2X2))
+                .variant("%s_layers".formatted(concreteName), v -> v.description("Layers"))
+                .variant("%s_layers_connected".formatted(concreteName), v -> v.description("Layers Connected").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_line_horizontal".formatted(concreteName), v -> v.description("Horizontal Line"))
+                .variant("%s_line_vertical".formatted(concreteName), v -> v.description("Vertical Line"))
+                .variant("%s_meander_horizontal".formatted(concreteName), v -> v.description("Horizontal Meander").model(ChiselModelHandlers.CTMH))
+                .variant("%s_meander_vertical".formatted(concreteName), v -> v.description("Vertical Meander").model(ChiselModelHandlers.CTMV))
+                .variant("%s_mosaic".formatted(concreteName), v -> v.description("Mosaic").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_ornate_small".formatted(concreteName), v -> v.description("Small Ornate"))
+                .variant("%s_panel".formatted(concreteName), v -> v.description("Panel"))
+                .variant("%s_pillar".formatted(concreteName), v -> v.description("Pillar").model(ChiselModelHandlers.TBS))
+                .variant("%s_pillar_basic".formatted(concreteName), v -> v.description("Basic Pillar").model(ChiselModelHandlers.CTMV))
+                .variant("%s_pillar_basic_dent".formatted(concreteName), v -> v.description("Basic Dent Pillar").model(ChiselModelHandlers.CTMV))
+                .variant("%s_pillar_basic_plain".formatted(concreteName), v -> v.description("Basic Plain Pillar").model(ChiselModelHandlers.CTMV))
+                .variant("%s_pillar_basic_round".formatted(concreteName), v -> v.description("Basic Round Pillar").model(ChiselModelHandlers.CTMV))
+                .variant("%s_pillar_basic_spiral".formatted(concreteName), v -> v.description("Basic Spiral Pillar").model(ChiselModelHandlers.CTMV))
+                .variant("%s_pillar_classic".formatted(concreteName), v -> v.description("Classic Pillar").model(ChiselModelHandlers.TBS))
+                .variant("%s_pillar_classic_large".formatted(concreteName), v -> v.description("Large Classic Pillar").model(ChiselModelHandlers.TBS))
+                .variant("%s_pillar_ionic".formatted(concreteName), v -> v.description("Ionic Pillar").model(ChiselModelHandlers.CTMV))
+                .variant("%s_pillar_ionic_dent".formatted(concreteName), v -> v.description("Ionic Dent Pillar").model(ChiselModelHandlers.CTMV))
+                .variant("%s_pillar_ionic_plain".formatted(concreteName), v -> v.description("Ionic Plain Pillar").model(ChiselModelHandlers.CTMV))
+                .variant("%s_pillar_ionic_round".formatted(concreteName), v -> v.description("Ionic Round Pillar").model(ChiselModelHandlers.CTMV))
+                .variant("%s_pillar_ionic_spiral".formatted(concreteName), v -> v.description("Ionic Spiral Pillar").model(ChiselModelHandlers.CTMV))
+                .variant("%s_pillar_large_basic_triple".formatted(concreteName), v -> v.description("Large Basic Triple Pillar").model(ChiselModelHandlers.CTMV))
+                .variant("%s_pillar_large_ionic_triple".formatted(concreteName), v -> v.description("Large Ionic Triple Pillar").model(ChiselModelHandlers.CTMV))
+                .variant("%s_pillar_meander".formatted(concreteName), v -> v.description("Meander Pillar").model(ChiselModelHandlers.CTMV))
+                .variant("%s_pillar_meander_dent".formatted(concreteName), v -> v.description("Meander Dent Pillar").model(ChiselModelHandlers.CTMV))
+                .variant("%s_pillar_meander_plain".formatted(concreteName), v -> v.description("Meander Plain Pillar").model(ChiselModelHandlers.CTMV))
+                .variant("%s_pillar_meander_round".formatted(concreteName), v -> v.description("Meander Round Pillar").model(ChiselModelHandlers.CTMV))
+                .variant("%s_pillar_meander_spiral".formatted(concreteName), v -> v.description("Meander Spiral Pillar").model(ChiselModelHandlers.CTMV))
+                .variant("%s_plate".formatted(concreteName), v -> v.description("Plate"))
+                .variant("%s_plate_connected".formatted(concreteName), v -> v.description("Plate Connected").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_polished".formatted(concreteName), v -> v.description("Polished"))
+                .variant("%s_polished_encased".formatted(concreteName), v -> v.description("Polished Encased").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_prism".formatted(concreteName), v -> v.description("Prismatic"))
+                .variant("%s_raw".formatted(concreteName), v -> v.description("Raw"))
+                .variant("%s_road".formatted(concreteName), v -> v.description("Road"))
+                .variant("%s_slanted".formatted(concreteName), v -> v.description("Slanted").model(ChiselModelHandlers.MULTIBLOCK_2X2))
+                .variant("%s_tiles".formatted(concreteName), v -> v.description("Tiles"))
+                .variant("%s_tiles_large".formatted(concreteName), v -> v.description("Large Tiles").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_tiles_small".formatted(concreteName), v -> v.description("Small Tiles"))
+                .variant("%s_twisted".formatted(concreteName), v -> v.description("Twisted").model(ChiselModelHandlers.TBS))
+                .variant("%s_weaver".formatted(concreteName), v -> v.description("Weaver").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_zag".formatted(concreteName), v -> v.description("Zag").model(ChiselModelHandlers.V4))
+                .variant("%s_crate".formatted(concreteName), v -> v.description("Crate").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_herringbone".formatted(concreteName), v -> v.description("Herringbone"))
+                .variant("%s_herringbone_encased".formatted(concreteName), v -> v.description("Encased Herringbone").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_medallion".formatted(concreteName), v -> v.description("Medallion"))
+                .variant("%s_medallion_encased".formatted(concreteName), v -> v.description("Encased Medallion").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_dots".formatted(concreteName), v -> v.description("Dots"))
+                .variant("%s_dots_encased".formatted(concreteName), v -> v.description("Encased Dots").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_heart".formatted(concreteName), v -> v.description("Heart"))
+                .variant("%s_star".formatted(concreteName), v -> v.description("Star"))
+                .variant("%s_plating".formatted(concreteName), v -> v.description("Plating"))
+                .variant("%s_lodestone".formatted(concreteName), v -> v.description("Lodestone"))
+                .variant("%s_lodestone_connected".formatted(concreteName), v -> v.description("Lodestone Connected").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_plank".formatted(concreteName), v -> v.description("Plank"))
+                .variant("%s_plank_connected".formatted(concreteName), v -> v.description("Plank Connected").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_frame".formatted(concreteName), v -> v.description("Frame"))
+                .variant("%s_panel_1".formatted(concreteName), v -> v.description("Panel 1"))
+                .variant("%s_panel_2".formatted(concreteName), v -> v.description("Panel 2"))
+                .variant("%s_panel_3".formatted(concreteName), v -> v.description("Panel 3"))
+                .variant("%s_skull_creeper".formatted(concreteName), v -> v.description("Creeper Skull"))
+                .variant("%s_skull_skeleton".formatted(concreteName), v -> v.description("Skeleton Skull"))
+                .variant("%s_stripes".formatted(concreteName), v -> v.description("Stripes"))
+                .variant("%s_stripes_encased".formatted(concreteName), v -> v.description("Encased Stripes").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_chisel_1".formatted(concreteName), v -> v.description("Chisel 1"))
+                .variant("%s_chisel_2".formatted(concreteName), v -> v.description("Chisel 2"))
+                .variant("%s_chisel_3".formatted(concreteName), v -> v.description("Chisel 3"))
+                .variant("%s_chisel_4".formatted(concreteName), v -> v.description("Chisel 4"))
+                .variant("%s_chisel_5".formatted(concreteName), v -> v.description("Chisel 5"))
+                .variant("%s_chisel_6".formatted(concreteName), v -> v.description("Chisel 6"))
+                .variant("%s_facet".formatted(concreteName), v -> v.description("Facet"))
+                .variant("%s_facet_small".formatted(concreteName), v -> v.description("Small Facet"))
+                .variant("%s_facet_small_encased".formatted(concreteName), v -> v.description("Encased Small Facet").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_shiny".formatted(concreteName), v -> v.description("Shiny"))
+                .variant("%s_shiny_connected".formatted(concreteName), v -> v.description("Shiny Connected").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_gem".formatted(concreteName), v -> v.description("Gem"))
+                .variant("%s_gem_1".formatted(concreteName), v -> v.description("Gem 1"))
+                .variant("%s_gem_1_connected".formatted(concreteName), v -> v.description("Gem 1 Connected").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_gem_2".formatted(concreteName), v -> v.description("Gem 2"))
+                .variant("%s_gem_2_connected".formatted(concreteName), v -> v.description("Gem 2 Connected").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_gem_3".formatted(concreteName), v -> v.description("Gem 3"))
+                .variant("%s_gem_3_connected".formatted(concreteName), v -> v.description("Gem 3 Connected").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_bricks_square".formatted(concreteName), v -> v.description("Square Bricks"))
+                .variant("%s_slab".formatted(concreteName), v -> v.description("Slab"))
+                .variant("%s_scaffold".formatted(concreteName), v -> v.description("Scaffold"))
+                .variant("%s_scaffold_encased".formatted(concreteName), v -> v.description("Encased Scaffold").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_tiles_inlayed".formatted(concreteName), v -> v.description("Inlayed Tiles"))
+                .variant("%s_waves".formatted(concreteName), v -> v.description("Waves").model(ChiselModelHandlers.MULTIBLOCK_2X2))
+                .variant("%s_parquet".formatted(concreteName), v -> v.description("Parquet"))
+                .variant("%s_parquet_encased".formatted(concreteName), v -> v.description("Encased Parquet").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_bricks_large_rough".formatted(concreteName), v -> v.description("Large Rough Bricks").model(ChiselModelHandlers.MULTIBLOCK_2X2))
+                .variant("%s_tiles_small_encased".formatted(concreteName), v -> v.description("Encased Small Tiles").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_bricks_round".formatted(concreteName), v -> v.description("Round Bricks"))
+                .variant("%s_plumbing_encased".formatted(concreteName), v -> v.description("Encased Plumbing").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_diamond_plating_encased".formatted(concreteName), v -> v.description("Encased Diamond Plating").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_mesh_encased".formatted(concreteName), v -> v.description("Encased Mesh").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_caution_encased".formatted(concreteName), v -> v.description("Encased Caution").model(ChiselModelHandlers.CONNECTED)));
+    }
+}

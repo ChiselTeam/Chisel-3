@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/dn_oak_framed_stained_glass_wine/dn_oak_framed_stained_glass_wine",
+    "standard_corner": "chisel:block/dn_oak_framed_stained_glass_wine/dn_oak_framed_stained_glass_wine-ctm_corner",
+    "standard_cornerless": "chisel:block/dn_oak_framed_stained_glass_wine/dn_oak_framed_stained_glass_wine-ctm_cornerless",
+    "standard_horizontal": "chisel:block/dn_oak_framed_stained_glass_wine/dn_oak_framed_stained_glass_wine-ctm_horizontal",
+    "standard_none": "chisel:block/dn_oak_framed_stained_glass_wine/dn_oak_framed_stained_glass_wine",
+    "standard_vertical": "chisel:block/dn_oak_framed_stained_glass_wine/dn_oak_framed_stained_glass_wine-ctm_vertical"
+  }
+}

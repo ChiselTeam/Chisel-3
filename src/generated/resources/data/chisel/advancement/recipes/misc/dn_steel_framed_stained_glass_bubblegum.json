@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "dyenamics"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bubblegum_stained_glass": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:glass/bubblegum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "chisel:dn_steel_framed_stained_glass_bubblegum"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bubblegum_stained_glass"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "chisel:dn_steel_framed_stained_glass_bubblegum"
+    ]
+  }
+}

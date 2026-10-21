@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/dn_steel_framed_stained_glass_aquamarine/dn_steel_framed_stained_glass_aquamarine_frame_1"
+  }
+}

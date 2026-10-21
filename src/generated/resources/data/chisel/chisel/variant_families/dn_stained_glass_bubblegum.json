@@ -1,0 +1,136 @@
+{
+  "family_name": "dn_stained_glass_bubblegum",
+  "tag": "c:chisel/dn_stained_glass_bubblegum",
+  "variants": [
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_borderless",
+      "name": "dn_stained_glass_bubblegum_borderless"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_bubble",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_bubble"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_panel",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_panel"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_panel_fancy",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_panel_fancy"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_frame_thick",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_frame_thick"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_frame_thick_panel",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_frame_thick_panel"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_tile",
+      "name": "dn_stained_glass_bubblegum_tile"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_brick",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_brick"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_line_vertical",
+      "name": "dn_stained_glass_bubblegum_line_vertical"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_line_vertical_panel",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_line_vertical_panel"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_line_horizontal",
+      "name": "dn_stained_glass_bubblegum_line_horizontal"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_line_horizontal_panel",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_line_horizontal_panel"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_arch_panel",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_arch_panel"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_arch_panel_1",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_arch_panel_1"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_arch_panel_2",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_arch_panel_2"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_arch_panel_3",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_arch_panel_3"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_scaffold",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_scaffold"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_scaffold_left",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_scaffold_left"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_scaffold_right",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_scaffold_right"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_basketweave",
+      "name": "dn_stained_glass_bubblegum_basketweave"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_mosaic_1",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_mosaic_1"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_mosaic_2",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_mosaic_2"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_round",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_round"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_circle",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_circle"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_rings",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_rings"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_diamond",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_diamond"
+    },
+    {
+      "block": "chisel:dn_stained_glass_bubblegum_frame_1",
+      "model_type": "glass",
+      "name": "dn_stained_glass_bubblegum_frame_1"
+    }
+  ]
+}
