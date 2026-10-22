@@ -5,6 +5,6 @@
     "standard_cornerless": "chisel:block/glass/glass_arch_panel_1-ctm_cornerless",
     "standard_horizontal": "chisel:block/glass/glass_arch_panel_1-ctm_horizontal",
     "standard_none": "chisel:block/glass/glass_arch_panel_1",
-    "standard_vertical": "chisel:block/glass/glass_arch_panel_1-ctm_vertical"
+    "standard_vertical": "chisel:block/glass/glass_arch_panel_1"
   }
 }

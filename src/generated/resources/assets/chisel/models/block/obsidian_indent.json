@@ -4,7 +4,7 @@
     "all": "chisel:block/obsidian/obsidian_indent",
     "particle": "chisel:block/obsidian/obsidian_indent",
     "standard_corner": "chisel:block/obsidian/obsidian_indent-ctm_corner",
-    "standard_cornerless": "chisel:block/obsidian/obsidian_indent-ctm_cornerless",
+    "standard_cornerless": "chisel:block/obsidian/obsidian_raw",
     "standard_horizontal": "chisel:block/obsidian/obsidian_indent-ctm_horizontal",
     "standard_none": "chisel:block/obsidian/obsidian_indent",
     "standard_vertical": "chisel:block/obsidian/obsidian_indent-ctm_vertical"

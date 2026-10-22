@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/amethyst/amethyst_twisted-bottom",
+    "bottom": "chisel:block/amethyst/amethyst_twisted-top",
     "side": "chisel:block/amethyst/amethyst_twisted-side",
     "top": "chisel:block/amethyst/amethyst_twisted-top"
   }

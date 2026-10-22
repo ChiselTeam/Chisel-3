@@ -4,7 +4,7 @@
     "all": "chisel:block/sculk/sculk_plate_connected",
     "particle": "chisel:block/sculk/sculk_plate_connected",
     "standard_corner": "chisel:block/sculk/sculk_plate_connected-ctm_corner",
-    "standard_cornerless": "chisel:block/sculk/sculk_plate_connected-ctm_cornerless",
+    "standard_cornerless": "chisel:block/sculk/sculk_raw",
     "standard_horizontal": "chisel:block/sculk/sculk_plate_connected-ctm_horizontal",
     "standard_none": "chisel:block/sculk/sculk_plate_connected",
     "standard_vertical": "chisel:block/sculk/sculk_plate_connected-ctm_vertical"

@@ -4,7 +4,7 @@
     "all": "chisel:block/red_nether_bricks/red_nether_bricks_indent",
     "particle": "chisel:block/red_nether_bricks/red_nether_bricks_indent",
     "standard_corner": "chisel:block/red_nether_bricks/red_nether_bricks_indent-ctm_corner",
-    "standard_cornerless": "chisel:block/red_nether_bricks/red_nether_bricks_indent-ctm_cornerless",
+    "standard_cornerless": "chisel:block/red_nether_bricks/red_nether_bricks_raw",
     "standard_horizontal": "chisel:block/red_nether_bricks/red_nether_bricks_indent-ctm_horizontal",
     "standard_none": "chisel:block/red_nether_bricks/red_nether_bricks_indent",
     "standard_vertical": "chisel:block/red_nether_bricks/red_nether_bricks_indent-ctm_vertical"

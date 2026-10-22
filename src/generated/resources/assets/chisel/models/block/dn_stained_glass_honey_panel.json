@@ -2,7 +2,7 @@
   "textures": {
     "particle": "chisel:block/dn_stained_glass_honey/dn_stained_glass_honey_panel",
     "standard_corner": "chisel:block/dn_stained_glass_honey/dn_stained_glass_honey_panel-ctm_corner",
-    "standard_cornerless": "chisel:block/dn_stained_glass_honey/dn_stained_glass_honey_panel-ctm_cornerless",
+    "standard_cornerless": "chisel:block/dn_stained_glass_honey/dn_stained_glass_honey_borderless",
     "standard_horizontal": "chisel:block/dn_stained_glass_honey/dn_stained_glass_honey_panel-ctm_horizontal",
     "standard_none": "chisel:block/dn_stained_glass_honey/dn_stained_glass_honey_panel",
     "standard_vertical": "chisel:block/dn_stained_glass_honey/dn_stained_glass_honey_panel-ctm_vertical"

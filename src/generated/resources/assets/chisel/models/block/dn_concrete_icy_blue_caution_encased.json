@@ -4,7 +4,7 @@
     "all": "chisel:block/dn_concrete_icy_blue/dn_concrete_icy_blue_caution_encased",
     "particle": "chisel:block/dn_concrete_icy_blue/dn_concrete_icy_blue_caution_encased",
     "standard_corner": "chisel:block/dn_concrete_icy_blue/dn_concrete_icy_blue_caution_encased-ctm_corner",
-    "standard_cornerless": "chisel:block/dn_concrete_icy_blue/dn_concrete_icy_blue_caution_encased-ctm_cornerless",
+    "standard_cornerless": "chisel:block/concrete_red/concrete_red_caution_encased-ctm_cornerless",
     "standard_horizontal": "chisel:block/dn_concrete_icy_blue/dn_concrete_icy_blue_caution_encased-ctm_horizontal",
     "standard_none": "chisel:block/dn_concrete_icy_blue/dn_concrete_icy_blue_caution_encased",
     "standard_vertical": "chisel:block/dn_concrete_icy_blue/dn_concrete_icy_blue_caution_encased-ctm_vertical"

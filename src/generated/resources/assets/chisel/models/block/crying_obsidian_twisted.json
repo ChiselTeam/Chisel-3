@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/crying_obsidian/crying_obsidian_twisted-bottom",
+    "bottom": "chisel:block/crying_obsidian/crying_obsidian_twisted-top",
     "side": "chisel:block/crying_obsidian/crying_obsidian_twisted-side",
     "top": "chisel:block/crying_obsidian/crying_obsidian_twisted-top"
   }

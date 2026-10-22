@@ -4,7 +4,7 @@
     "all": "chisel:block/red_nether_bricks/red_nether_bricks_weaver",
     "particle": "chisel:block/red_nether_bricks/red_nether_bricks_weaver",
     "standard_corner": "chisel:block/red_nether_bricks/red_nether_bricks_weaver-ctm_corner",
-    "standard_cornerless": "chisel:block/red_nether_bricks/red_nether_bricks_weaver-ctm_cornerless",
+    "standard_cornerless": "chisel:block/red_nether_bricks/red_nether_bricks_weaver-ctm_corner",
     "standard_horizontal": "chisel:block/red_nether_bricks/red_nether_bricks_weaver-ctm_horizontal",
     "standard_none": "chisel:block/red_nether_bricks/red_nether_bricks_weaver",
     "standard_vertical": "chisel:block/red_nether_bricks/red_nether_bricks_weaver-ctm_vertical"

@@ -4,7 +4,7 @@
     "all": "chisel:block/sulfur/sulfur_indent",
     "particle": "chisel:block/sulfur/sulfur_indent",
     "standard_corner": "chisel:block/sulfur/sulfur_indent-ctm_corner",
-    "standard_cornerless": "chisel:block/sulfur/sulfur_indent-ctm_cornerless",
+    "standard_cornerless": "chisel:block/sulfur/sulfur_raw",
     "standard_horizontal": "chisel:block/sulfur/sulfur_indent-ctm_horizontal",
     "standard_none": "chisel:block/sulfur/sulfur_indent",
     "standard_vertical": "chisel:block/sulfur/sulfur_indent-ctm_vertical"

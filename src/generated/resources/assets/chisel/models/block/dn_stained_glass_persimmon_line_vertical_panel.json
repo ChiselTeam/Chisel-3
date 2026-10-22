@@ -2,9 +2,9 @@
   "textures": {
     "particle": "chisel:block/dn_stained_glass_persimmon/dn_stained_glass_persimmon_line_vertical_panel",
     "standard_corner": "chisel:block/dn_stained_glass_persimmon/dn_stained_glass_persimmon_line_vertical_panel-ctm_corner",
-    "standard_cornerless": "chisel:block/dn_stained_glass_persimmon/dn_stained_glass_persimmon_line_vertical_panel-ctm_cornerless",
-    "standard_horizontal": "chisel:block/dn_stained_glass_persimmon/dn_stained_glass_persimmon_line_vertical_panel-ctm_horizontal",
+    "standard_cornerless": "chisel:block/dn_stained_glass_persimmon/dn_stained_glass_persimmon_line_vertical_panel-ctm_corner",
+    "standard_horizontal": "chisel:block/dn_stained_glass_persimmon/dn_stained_glass_persimmon_line_vertical_panel-ctm_corner",
     "standard_none": "chisel:block/dn_stained_glass_persimmon/dn_stained_glass_persimmon_line_vertical_panel",
-    "standard_vertical": "chisel:block/dn_stained_glass_persimmon/dn_stained_glass_persimmon_line_vertical_panel-ctm_vertical"
+    "standard_vertical": "chisel:block/dn_stained_glass_persimmon/dn_stained_glass_persimmon_line_vertical_panel"
   }
 }

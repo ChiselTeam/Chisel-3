@@ -4,7 +4,7 @@
     "all": "chisel:block/clay/clay_border_square_small",
     "particle": "chisel:block/clay/clay_border_square_small",
     "standard_corner": "chisel:block/clay/clay_border_square_small-ctm_corner",
-    "standard_cornerless": "chisel:block/clay/clay_border_square_small-ctm_cornerless",
+    "standard_cornerless": "chisel:block/clay/clay_raw",
     "standard_horizontal": "chisel:block/clay/clay_border_square_small-ctm_horizontal",
     "standard_none": "chisel:block/clay/clay_border_square_small",
     "standard_vertical": "chisel:block/clay/clay_border_square_small-ctm_vertical"

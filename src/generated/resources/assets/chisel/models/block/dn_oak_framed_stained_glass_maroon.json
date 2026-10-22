@@ -2,7 +2,7 @@
   "textures": {
     "particle": "chisel:block/dn_oak_framed_stained_glass_maroon/dn_oak_framed_stained_glass_maroon",
     "standard_corner": "chisel:block/dn_oak_framed_stained_glass_maroon/dn_oak_framed_stained_glass_maroon-ctm_corner",
-    "standard_cornerless": "chisel:block/dn_oak_framed_stained_glass_maroon/dn_oak_framed_stained_glass_maroon-ctm_cornerless",
+    "standard_cornerless": "chisel:block/dn_stained_glass_maroon/dn_stained_glass_maroon_borderless",
     "standard_horizontal": "chisel:block/dn_oak_framed_stained_glass_maroon/dn_oak_framed_stained_glass_maroon-ctm_horizontal",
     "standard_none": "chisel:block/dn_oak_framed_stained_glass_maroon/dn_oak_framed_stained_glass_maroon",
     "standard_vertical": "chisel:block/dn_oak_framed_stained_glass_maroon/dn_oak_framed_stained_glass_maroon-ctm_vertical"

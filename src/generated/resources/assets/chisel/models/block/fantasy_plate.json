@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/fantasy/fantasy_plate-bottom",
+    "bottom": "chisel:block/fantasy/fantasy_block",
     "side": "chisel:block/fantasy/fantasy_plate-side",
-    "top": "chisel:block/fantasy/fantasy_plate-top"
+    "top": "chisel:block/fantasy/fantasy_block"
   }
 }

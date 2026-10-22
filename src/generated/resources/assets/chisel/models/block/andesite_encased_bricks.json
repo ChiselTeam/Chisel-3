@@ -4,7 +4,7 @@
     "all": "chisel:block/andesite/andesite_encased_bricks",
     "particle": "chisel:block/andesite/andesite_encased_bricks",
     "standard_corner": "chisel:block/andesite/andesite_encased_bricks-ctm_corner",
-    "standard_cornerless": "chisel:block/andesite/andesite_encased_bricks-ctm_cornerless",
+    "standard_cornerless": "chisel:block/andesite/andesite_solid_bricks",
     "standard_horizontal": "chisel:block/andesite/andesite_encased_bricks-ctm_horizontal",
     "standard_none": "chisel:block/andesite/andesite_encased_bricks",
     "standard_vertical": "chisel:block/andesite/andesite_encased_bricks-ctm_vertical"

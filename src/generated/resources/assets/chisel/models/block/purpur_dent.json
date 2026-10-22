@@ -4,7 +4,7 @@
     "all": "chisel:block/purpur/purpur_dent",
     "particle": "chisel:block/purpur/purpur_dent",
     "standard_corner": "chisel:block/purpur/purpur_dent-ctm_corner",
-    "standard_cornerless": "chisel:block/purpur/purpur_dent-ctm_cornerless",
+    "standard_cornerless": "chisel:block/purpur/purpur_border_square-ctm_cornerless",
     "standard_horizontal": "chisel:block/purpur/purpur_dent-ctm_horizontal",
     "standard_none": "chisel:block/purpur/purpur_dent",
     "standard_vertical": "chisel:block/purpur/purpur_dent-ctm_vertical"

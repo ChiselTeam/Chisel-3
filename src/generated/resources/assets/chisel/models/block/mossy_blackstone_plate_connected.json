@@ -4,7 +4,7 @@
     "all": "chisel:block/mossy_blackstone/mossy_blackstone_plate_connected",
     "particle": "chisel:block/mossy_blackstone/mossy_blackstone_plate_connected",
     "standard_corner": "chisel:block/mossy_blackstone/mossy_blackstone_plate_connected-ctm_corner",
-    "standard_cornerless": "chisel:block/mossy_blackstone/mossy_blackstone_plate_connected-ctm_cornerless",
+    "standard_cornerless": "chisel:block/mossy_blackstone/mossy_blackstone_raw",
     "standard_horizontal": "chisel:block/mossy_blackstone/mossy_blackstone_plate_connected-ctm_horizontal",
     "standard_none": "chisel:block/mossy_blackstone/mossy_blackstone_plate_connected",
     "standard_vertical": "chisel:block/mossy_blackstone/mossy_blackstone_plate_connected-ctm_vertical"

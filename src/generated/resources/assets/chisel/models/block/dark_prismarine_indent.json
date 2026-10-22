@@ -4,7 +4,7 @@
     "all": "chisel:block/dark_prismarine/dark_prismarine_indent",
     "particle": "chisel:block/dark_prismarine/dark_prismarine_indent",
     "standard_corner": "chisel:block/dark_prismarine/dark_prismarine_indent-ctm_corner",
-    "standard_cornerless": "chisel:block/dark_prismarine/dark_prismarine_indent-ctm_cornerless",
+    "standard_cornerless": "chisel:block/dark_prismarine/dark_prismarine_dent-ctm_cornerless",
     "standard_horizontal": "chisel:block/dark_prismarine/dark_prismarine_indent-ctm_horizontal",
     "standard_none": "chisel:block/dark_prismarine/dark_prismarine_indent",
     "standard_vertical": "chisel:block/dark_prismarine/dark_prismarine_indent-ctm_vertical"

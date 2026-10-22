@@ -2,10 +2,10 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/bone_block/bone_block_pillar_basic_dent-side",
-    "bottom": "chisel:block/bone_block/bone_block_pillar_basic_dent-bottom",
+    "bottom": "chisel:block/bone_block/bone_block_pillar_basic-top",
     "particle": "chisel:block/bone_block/bone_block_pillar_basic_dent-side",
     "side": "chisel:block/bone_block/bone_block_pillar_basic_dent-side",
-    "top": "chisel:block/bone_block/bone_block_pillar_basic_dent-top",
+    "top": "chisel:block/bone_block/bone_block_pillar_basic-top",
     "vertical_both": "chisel:block/bone_block/bone_block_pillar_basic_dent-vertical_both",
     "vertical_bottom": "chisel:block/bone_block/bone_block_pillar_basic_dent-vertical_bottom",
     "vertical_none": "chisel:block/bone_block/bone_block_pillar_basic_dent-side",

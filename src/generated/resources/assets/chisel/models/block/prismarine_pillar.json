@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/prismarine/prismarine_pillar-bottom",
+    "bottom": "chisel:block/prismarine/prismarine_pillar-top",
     "side": "chisel:block/prismarine/prismarine_pillar-side",
     "top": "chisel:block/prismarine/prismarine_pillar-top"
   }

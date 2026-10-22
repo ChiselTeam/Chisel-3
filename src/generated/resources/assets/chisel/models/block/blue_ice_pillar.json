@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/blue_ice/blue_ice_pillar-bottom",
+    "bottom": "chisel:block/blue_ice/blue_ice_pillar-top",
     "side": "chisel:block/blue_ice/blue_ice_pillar-side",
     "top": "chisel:block/blue_ice/blue_ice_pillar-top"
   }

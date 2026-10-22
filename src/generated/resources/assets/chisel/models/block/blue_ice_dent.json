@@ -4,7 +4,7 @@
     "all": "chisel:block/blue_ice/blue_ice_dent",
     "particle": "chisel:block/blue_ice/blue_ice_dent",
     "standard_corner": "chisel:block/blue_ice/blue_ice_dent-ctm_corner",
-    "standard_cornerless": "chisel:block/blue_ice/blue_ice_dent-ctm_cornerless",
+    "standard_cornerless": "chisel:block/blue_ice/blue_ice_raw",
     "standard_horizontal": "chisel:block/blue_ice/blue_ice_dent-ctm_horizontal",
     "standard_none": "chisel:block/blue_ice/blue_ice_dent",
     "standard_vertical": "chisel:block/blue_ice/blue_ice_dent-ctm_vertical"

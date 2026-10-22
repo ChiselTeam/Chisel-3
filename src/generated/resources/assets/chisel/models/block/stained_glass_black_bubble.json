@@ -1,10 +1,10 @@
 {
   "textures": {
     "particle": "chisel:block/stained_glass_black/stained_glass_black_bubble",
-    "standard_corner": "chisel:block/stained_glass_black/stained_glass_black_bubble-ctm_corner",
-    "standard_cornerless": "chisel:block/stained_glass_black/stained_glass_black_bubble-ctm_cornerless",
-    "standard_horizontal": "chisel:block/stained_glass_black/stained_glass_black_bubble-ctm_horizontal",
+    "standard_corner": "chisel:block/stained_glass_black/stained_glass_black_panel-ctm_corner",
+    "standard_cornerless": "chisel:block/stained_glass_black/stained_glass_black_borderless",
+    "standard_horizontal": "chisel:block/stained_glass_black/stained_glass_black_panel-ctm_horizontal",
     "standard_none": "chisel:block/stained_glass_black/stained_glass_black_bubble",
-    "standard_vertical": "chisel:block/stained_glass_black/stained_glass_black_bubble-ctm_vertical"
+    "standard_vertical": "chisel:block/stained_glass_black/stained_glass_black_panel-ctm_vertical"
   }
 }

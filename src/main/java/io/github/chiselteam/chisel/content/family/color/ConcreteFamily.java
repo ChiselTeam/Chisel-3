@@ -254,10 +254,14 @@ public final class ConcreteFamily {
                 .variant("%s_parquet".formatted(concreteName), v -> v.description("Parquet"))
                 .variant("%s_parquet_encased".formatted(concreteName), v -> v.description("Encased Parquet").model(ChiselModelHandlers.CONNECTED)
                         .texture("ctm_cornerless", Chisel.prefix("block/concrete_%s/concrete_%s_parquet".formatted(color.getName(), color.getName()))))
-                .variant("%s_plumbing_encased".formatted(concreteName), v -> v.description("Encased Plumbing").model(ChiselModelHandlers.CONNECTED))
-                .variant("%s_diamond_plating_encased".formatted(concreteName), v -> v.description("Encased Diamond Plating").model(ChiselModelHandlers.CONNECTED))
-                .variant("%s_mesh_encased".formatted(concreteName), v -> v.description("Encased Mesh").model(ChiselModelHandlers.CONNECTED))
-                .variant("%s_caution_encased".formatted(concreteName), v -> v.description("Encased Caution").model(ChiselModelHandlers.CONNECTED)));
+                .variant("%s_plumbing_encased".formatted(concreteName), v -> v.description("Encased Plumbing").model(ChiselModelHandlers.CONNECTED)
+                        .texture("ctm_cornerless", Chisel.prefix("block/concrete_red/concrete_red_plumbing_encased-ctm_cornerless")))
+                .variant("%s_diamond_plating_encased".formatted(concreteName), v -> v.description("Encased Diamond Plating").model(ChiselModelHandlers.CONNECTED)
+                        .texture("ctm_cornerless", Chisel.prefix("block/concrete_red/concrete_red_diamond_plating_encased-ctm_cornerless")))
+                .variant("%s_mesh_encased".formatted(concreteName), v -> v.description("Encased Mesh").model(ChiselModelHandlers.CONNECTED)
+                        .texture("ctm_cornerless", Chisel.prefix("block/concrete_red/concrete_red_mesh_encased-ctm_cornerless")))
+                .variant("%s_caution_encased".formatted(concreteName), v -> v.description("Encased Caution").model(ChiselModelHandlers.CONNECTED)
+                        .texture("ctm_cornerless", Chisel.prefix("block/concrete_red/concrete_red_caution_encased-ctm_cornerless"))));
     }
 
     private static Block getVanillaConcrete(DyeColor color) {

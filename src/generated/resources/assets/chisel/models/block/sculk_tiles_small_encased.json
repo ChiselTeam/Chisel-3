@@ -4,8 +4,8 @@
     "all": "chisel:block/sculk/sculk_tiles_small_encased",
     "particle": "chisel:block/sculk/sculk_tiles_small_encased",
     "standard_corner": "chisel:block/sculk/sculk_tiles_small_encased-ctm_corner",
-    "standard_cornerless": "chisel:block/sculk/sculk_tiles_small_encased-ctm_cornerless",
-    "standard_horizontal": "chisel:block/sculk/sculk_tiles_small_encased-ctm_horizontal",
+    "standard_cornerless": "chisel:block/sculk/sculk_tiles_small",
+    "standard_horizontal": "chisel:block/sculk/sculk_pillar-side",
     "standard_none": "chisel:block/sculk/sculk_tiles_small_encased",
     "standard_vertical": "chisel:block/sculk/sculk_tiles_small_encased-ctm_vertical"
   }

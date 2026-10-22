@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/dn_steel_framed_stained_glass_peach/dn_steel_framed_stained_glass_peach_frame_thick_panel"
+    "all": "chisel:block/dn_steel_framed_stained_glass_peach/dn_steel_framed_stained_glass_peach_frame_thick"
   }
 }

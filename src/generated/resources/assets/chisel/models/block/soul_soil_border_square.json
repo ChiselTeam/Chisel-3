@@ -4,9 +4,9 @@
     "all": "chisel:block/soul_soil/soul_soil_border_square",
     "particle": "chisel:block/soul_soil/soul_soil_border_square",
     "standard_corner": "chisel:block/soul_soil/soul_soil_border_square-ctm_corner",
-    "standard_cornerless": "chisel:block/soul_soil/soul_soil_border_square-ctm_cornerless",
-    "standard_horizontal": "chisel:block/soul_soil/soul_soil_border_square-ctm_horizontal",
+    "standard_cornerless": "chisel:block/soul_soil/soul_soil_raw",
+    "standard_horizontal": "chisel:block/soul_soil/soul_soil_border_square-ctm_corner",
     "standard_none": "chisel:block/soul_soil/soul_soil_border_square",
-    "standard_vertical": "chisel:block/soul_soil/soul_soil_border_square-ctm_vertical"
+    "standard_vertical": "chisel:block/soul_soil/soul_soil_border_square-ctm_corner"
   }
 }

@@ -7,6 +7,6 @@
     "standard_cornerless": "chisel:block/light_light_gray/light_light_gray_arch_panel_1-ctm_cornerless",
     "standard_horizontal": "chisel:block/light_light_gray/light_light_gray_arch_panel_1-ctm_horizontal",
     "standard_none": "chisel:block/light_light_gray/light_light_gray_arch_panel_1",
-    "standard_vertical": "chisel:block/light_light_gray/light_light_gray_arch_panel_1-ctm_vertical"
+    "standard_vertical": "chisel:block/light_light_gray/light_light_gray_arch_panel_1"
   }
 }

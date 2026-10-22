@@ -4,7 +4,7 @@
     "all": "chisel:block/sulfur/sulfur_lodestone_connected",
     "particle": "chisel:block/sulfur/sulfur_lodestone_connected",
     "standard_corner": "chisel:block/sulfur/sulfur_lodestone_connected-ctm_corner",
-    "standard_cornerless": "chisel:block/sulfur/sulfur_lodestone_connected-ctm_cornerless",
+    "standard_cornerless": "chisel:block/sulfur/sulfur_lodestone_connected",
     "standard_horizontal": "chisel:block/sulfur/sulfur_lodestone_connected-ctm_horizontal",
     "standard_none": "chisel:block/sulfur/sulfur_lodestone_connected",
     "standard_vertical": "chisel:block/sulfur/sulfur_lodestone_connected-ctm_vertical"

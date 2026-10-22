@@ -10,46 +10,6 @@
       "block": "chisel:redstone_lamp_square",
       "model_type": "redstone_lamp",
       "name": "redstone_lamp_square"
-    },
-    {
-      "block": "chisel:redstone_lamp_basic",
-      "model_type": "redstone_lamp",
-      "name": "redstone_lamp_basic"
-    },
-    {
-      "block": "chisel:redstone_lamp_circle",
-      "model_type": "redstone_lamp",
-      "name": "redstone_lamp_circle"
-    },
-    {
-      "block": "chisel:redstone_lamp_cross",
-      "model_type": "redstone_lamp",
-      "name": "redstone_lamp_cross"
-    },
-    {
-      "block": "chisel:redstone_lamp_diamond",
-      "model_type": "redstone_lamp",
-      "name": "redstone_lamp_diamond"
-    },
-    {
-      "block": "chisel:redstone_lamp_grid",
-      "model_type": "redstone_lamp",
-      "name": "redstone_lamp_grid"
-    },
-    {
-      "block": "chisel:redstone_lamp_ornate",
-      "model_type": "redstone_lamp",
-      "name": "redstone_lamp_ornate"
-    },
-    {
-      "block": "chisel:redstone_lamp_slab",
-      "model_type": "redstone_lamp",
-      "name": "redstone_lamp_slab"
-    },
-    {
-      "block": "chisel:redstone_lamp_slab_vertical",
-      "model_type": "redstone_lamp",
-      "name": "redstone_lamp_slab_vertical"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
     "all": "chisel:block/sculk/sculk_meander_horizontal",
-    "bottom": "chisel:block/sculk/sculk_meander_horizontal-bottom",
+    "bottom": "chisel:block/sculk/sculk_meander_horizontal-top",
     "horizontal_both": "chisel:block/sculk/sculk_meander_horizontal-horizontal_both",
     "horizontal_left": "chisel:block/sculk/sculk_meander_horizontal-horizontal_left",
     "horizontal_none": "chisel:block/sculk/sculk_meander_horizontal-horizontal_none",

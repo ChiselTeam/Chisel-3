@@ -21,10 +21,15 @@ public final class VariantTextures {
 
     public static Material get(Variant variant, String suffix) {
         var override = variant.getTextures().get(suffix);
-        if (override != null) return new Material(override);
+        if (override != null) return trace(variant, suffix, override);
         var base = variant.getTextures().get("");
         if (base == null) base = Chisel.prefix(getTexturePath(variant));
-        return new Material(suffix.isEmpty() ? base : base.withPath(base.getPath() + "-" + suffix));
+        return trace(variant, suffix, suffix.isEmpty() ? base : base.withPath(base.getPath() + "-" + suffix));
+    }
+
+    private static Material trace(Variant variant, String suffix, Identifier texture) {
+        System.out.println("TEXTURE_TRACE|" + variant.getFamily().getFamilyName() + "|" + variant.getName() + "|" + suffix + "|" + texture);
+        return new Material(texture);
     }
 
     public static TextureMapping standard(Variant variant) {
@@ -36,12 +41,12 @@ public final class VariantTextures {
         textures.accept(new CTMModelBuilder(variant.getBlock(), variant.getModelHandler().ctmKind()) {
             @Override
             public CTMModelBuilder texture(String slot, Identifier texture) {
-                // CTM expands atlas bases into tile names after get() has resolved the base.
-                // Apply exact tile overrides to those expanded names as well.
                 var base = get(variant).sprite();
                 String prefix = base.getPath() + "-";
                 if (texture.getNamespace().equals(base.getNamespace()) && texture.getPath().startsWith(prefix)) {
-                    texture = variant.getTextures().getOrDefault(texture.getPath().substring(prefix.length()), texture);
+                    String suffix = texture.getPath().substring(prefix.length());
+                    texture = variant.getTextures().getOrDefault(suffix, texture);
+                    trace(variant, suffix, texture);
                 }
                 mapping.putForced(TextureSlot.create(slot), new Material(texture));
                 return this;

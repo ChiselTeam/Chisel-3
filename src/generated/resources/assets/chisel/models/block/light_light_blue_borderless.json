@@ -3,10 +3,10 @@
   "textures": {
     "all": "chisel:block/light_light_blue/light_light_blue_borderless",
     "particle": "chisel:block/light_light_blue/light_light_blue_borderless",
-    "standard_corner": "chisel:block/light_light_blue/light_light_blue_borderless-ctm_corner",
-    "standard_cornerless": "chisel:block/light_light_blue/light_light_blue_borderless-ctm_cornerless",
-    "standard_horizontal": "chisel:block/light_light_blue/light_light_blue_borderless-ctm_horizontal",
+    "standard_corner": "chisel:block/light_light_blue/light_light_blue_rings-ctm_cornerless",
+    "standard_cornerless": "chisel:block/light_light_blue/light_light_blue_rings-ctm_cornerless",
+    "standard_horizontal": "chisel:block/light_light_blue/light_light_blue_rings-ctm_cornerless",
     "standard_none": "chisel:block/light_light_blue/light_light_blue_borderless",
-    "standard_vertical": "chisel:block/light_light_blue/light_light_blue_borderless-ctm_vertical"
+    "standard_vertical": "chisel:block/light_light_blue/light_light_blue_rings-ctm_cornerless"
   }
 }

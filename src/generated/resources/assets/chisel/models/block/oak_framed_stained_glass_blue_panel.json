@@ -1,10 +1,10 @@
 {
   "textures": {
     "particle": "chisel:block/oak_framed_stained_glass_blue/oak_framed_stained_glass_blue_panel",
-    "standard_corner": "chisel:block/oak_framed_stained_glass_blue/oak_framed_stained_glass_blue_panel-ctm_corner",
-    "standard_cornerless": "chisel:block/oak_framed_stained_glass_blue/oak_framed_stained_glass_blue_panel-ctm_cornerless",
-    "standard_horizontal": "chisel:block/oak_framed_stained_glass_blue/oak_framed_stained_glass_blue_panel-ctm_horizontal",
+    "standard_corner": "chisel:block/oak_framed_stained_glass_blue/oak_framed_stained_glass_blue-ctm_corner",
+    "standard_cornerless": "chisel:block/stained_glass_blue/stained_glass_blue_borderless",
+    "standard_horizontal": "chisel:block/oak_framed_stained_glass_blue/oak_framed_stained_glass_blue-ctm_horizontal",
     "standard_none": "chisel:block/oak_framed_stained_glass_blue/oak_framed_stained_glass_blue_panel",
-    "standard_vertical": "chisel:block/oak_framed_stained_glass_blue/oak_framed_stained_glass_blue_panel-ctm_vertical"
+    "standard_vertical": "chisel:block/oak_framed_stained_glass_blue/oak_framed_stained_glass_blue-ctm_vertical"
   }
 }

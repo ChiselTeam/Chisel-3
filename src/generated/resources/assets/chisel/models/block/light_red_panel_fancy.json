@@ -3,10 +3,10 @@
   "textures": {
     "all": "chisel:block/light_red/light_red_panel_fancy",
     "particle": "chisel:block/light_red/light_red_panel_fancy",
-    "standard_corner": "chisel:block/light_red/light_red_panel_fancy-ctm_corner",
-    "standard_cornerless": "chisel:block/light_red/light_red_panel_fancy-ctm_cornerless",
-    "standard_horizontal": "chisel:block/light_red/light_red_panel_fancy-ctm_horizontal",
+    "standard_corner": "chisel:block/light_red/light_red_frame_thick-ctm_corner",
+    "standard_cornerless": "chisel:block/light_red/light_red_rings-ctm_cornerless",
+    "standard_horizontal": "chisel:block/light_red/light_red_frame_thick-ctm_horizontal",
     "standard_none": "chisel:block/light_red/light_red_panel_fancy",
-    "standard_vertical": "chisel:block/light_red/light_red_panel_fancy-ctm_vertical"
+    "standard_vertical": "chisel:block/light_red/light_red_frame_thick-ctm_vertical"
   }
 }

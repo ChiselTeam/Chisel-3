@@ -4,7 +4,7 @@
     "all": "chisel:block/ancient_debris/ancient_debris_weaver",
     "particle": "chisel:block/ancient_debris/ancient_debris_weaver",
     "standard_corner": "chisel:block/ancient_debris/ancient_debris_weaver-ctm_corner",
-    "standard_cornerless": "chisel:block/ancient_debris/ancient_debris_weaver-ctm_cornerless",
+    "standard_cornerless": "chisel:block/ancient_debris/ancient_debris_weaver-ctm_corner",
     "standard_horizontal": "chisel:block/ancient_debris/ancient_debris_weaver-ctm_horizontal",
     "standard_none": "chisel:block/ancient_debris/ancient_debris_weaver",
     "standard_vertical": "chisel:block/ancient_debris/ancient_debris_weaver-ctm_vertical"

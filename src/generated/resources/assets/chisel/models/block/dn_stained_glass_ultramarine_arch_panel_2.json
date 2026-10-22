@@ -2,9 +2,9 @@
   "textures": {
     "particle": "chisel:block/dn_stained_glass_ultramarine/dn_stained_glass_ultramarine_arch_panel_2",
     "standard_corner": "chisel:block/dn_stained_glass_ultramarine/dn_stained_glass_ultramarine_arch_panel_2-ctm_corner",
-    "standard_cornerless": "chisel:block/dn_stained_glass_ultramarine/dn_stained_glass_ultramarine_arch_panel_2-ctm_cornerless",
-    "standard_horizontal": "chisel:block/dn_stained_glass_ultramarine/dn_stained_glass_ultramarine_arch_panel_2-ctm_horizontal",
+    "standard_cornerless": "chisel:block/dn_stained_glass_ultramarine/dn_stained_glass_ultramarine_arch_panel_2-ctm_corner",
+    "standard_horizontal": "chisel:block/dn_stained_glass_ultramarine/dn_stained_glass_ultramarine_arch_panel_2-ctm_corner",
     "standard_none": "chisel:block/dn_stained_glass_ultramarine/dn_stained_glass_ultramarine_arch_panel_2",
-    "standard_vertical": "chisel:block/dn_stained_glass_ultramarine/dn_stained_glass_ultramarine_arch_panel_2-ctm_vertical"
+    "standard_vertical": "chisel:block/dn_stained_glass_ultramarine/dn_stained_glass_ultramarine_arch_panel_2"
   }
 }

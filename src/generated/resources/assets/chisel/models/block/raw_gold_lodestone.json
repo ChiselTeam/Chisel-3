@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/raw_gold/raw_gold_lodestone"
+    "all": "chisel:block/raw_gold/raw_gold_lodestone_connected"
   }
 }

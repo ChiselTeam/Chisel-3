@@ -4,7 +4,7 @@
     "all": "chisel:block/obsidian/obsidian_dent",
     "particle": "chisel:block/obsidian/obsidian_dent",
     "standard_corner": "chisel:block/obsidian/obsidian_dent-ctm_corner",
-    "standard_cornerless": "chisel:block/obsidian/obsidian_dent-ctm_cornerless",
+    "standard_cornerless": "chisel:block/obsidian/obsidian_raw",
     "standard_horizontal": "chisel:block/obsidian/obsidian_dent-ctm_horizontal",
     "standard_none": "chisel:block/obsidian/obsidian_dent",
     "standard_vertical": "chisel:block/obsidian/obsidian_dent-ctm_vertical"

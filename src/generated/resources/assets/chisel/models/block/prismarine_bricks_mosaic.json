@@ -4,7 +4,7 @@
     "all": "chisel:block/prismarine_bricks/prismarine_bricks_mosaic",
     "particle": "chisel:block/prismarine_bricks/prismarine_bricks_mosaic",
     "standard_corner": "chisel:block/prismarine_bricks/prismarine_bricks_mosaic-ctm_corner",
-    "standard_cornerless": "chisel:block/prismarine_bricks/prismarine_bricks_mosaic-ctm_cornerless",
+    "standard_cornerless": "chisel:block/prismarine_bricks/prismarine_bricks_raw",
     "standard_horizontal": "chisel:block/prismarine_bricks/prismarine_bricks_mosaic-ctm_horizontal",
     "standard_none": "chisel:block/prismarine_bricks/prismarine_bricks_mosaic",
     "standard_vertical": "chisel:block/prismarine_bricks/prismarine_bricks_mosaic-ctm_vertical"

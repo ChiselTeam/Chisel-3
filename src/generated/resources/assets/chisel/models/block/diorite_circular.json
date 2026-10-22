@@ -4,7 +4,7 @@
     "all": "chisel:block/diorite/diorite_circular",
     "particle": "chisel:block/diorite/diorite_circular",
     "standard_corner": "chisel:block/diorite/diorite_circular-ctm_corner",
-    "standard_cornerless": "chisel:block/diorite/diorite_circular-ctm_cornerless",
+    "standard_cornerless": "chisel:block/diorite/diorite_border_square-ctm_cornerless",
     "standard_horizontal": "chisel:block/diorite/diorite_circular-ctm_horizontal",
     "standard_none": "chisel:block/diorite/diorite_circular",
     "standard_vertical": "chisel:block/diorite/diorite_circular-ctm_vertical"

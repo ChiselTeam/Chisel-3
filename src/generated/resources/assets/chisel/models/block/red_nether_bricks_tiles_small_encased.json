@@ -4,8 +4,8 @@
     "all": "chisel:block/red_nether_bricks/red_nether_bricks_tiles_small_encased",
     "particle": "chisel:block/red_nether_bricks/red_nether_bricks_tiles_small_encased",
     "standard_corner": "chisel:block/red_nether_bricks/red_nether_bricks_tiles_small_encased-ctm_corner",
-    "standard_cornerless": "chisel:block/red_nether_bricks/red_nether_bricks_tiles_small_encased-ctm_cornerless",
-    "standard_horizontal": "chisel:block/red_nether_bricks/red_nether_bricks_tiles_small_encased-ctm_horizontal",
+    "standard_cornerless": "chisel:block/red_nether_bricks/red_nether_bricks_tiles_small",
+    "standard_horizontal": "chisel:block/red_nether_bricks/red_nether_bricks_pillar-side",
     "standard_none": "chisel:block/red_nether_bricks/red_nether_bricks_tiles_small_encased",
     "standard_vertical": "chisel:block/red_nether_bricks/red_nether_bricks_tiles_small_encased-ctm_vertical"
   }

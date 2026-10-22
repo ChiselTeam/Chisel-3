@@ -4,7 +4,7 @@
     "all": "chisel:block/cobblestone/cobblestone_encased",
     "particle": "chisel:block/cobblestone/cobblestone_encased",
     "standard_corner": "chisel:block/cobblestone/cobblestone_encased-ctm_corner",
-    "standard_cornerless": "chisel:block/cobblestone/cobblestone_encased-ctm_cornerless",
+    "standard_cornerless": "chisel:block/cobblestone/cobblestone_solid",
     "standard_horizontal": "chisel:block/cobblestone/cobblestone_encased-ctm_horizontal",
     "standard_none": "chisel:block/cobblestone/cobblestone_encased",
     "standard_vertical": "chisel:block/cobblestone/cobblestone_encased-ctm_vertical"

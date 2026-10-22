@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/dn_concrete_wine/dn_concrete_wine_twisted-bottom",
+    "bottom": "chisel:block/dn_concrete_wine/dn_concrete_wine_twisted-top",
     "side": "chisel:block/dn_concrete_wine/dn_concrete_wine_twisted-side",
     "top": "chisel:block/dn_concrete_wine/dn_concrete_wine_twisted-top"
   }

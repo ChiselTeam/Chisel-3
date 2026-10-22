@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
     "all": "chisel:block/bone_block/bone_block_meander_horizontal",
-    "bottom": "chisel:block/bone_block/bone_block_meander_horizontal-bottom",
+    "bottom": "chisel:block/bone_block/bone_block_meander_horizontal-top",
     "horizontal_both": "chisel:block/bone_block/bone_block_meander_horizontal-horizontal_both",
     "horizontal_left": "chisel:block/bone_block/bone_block_meander_horizontal-horizontal_left",
     "horizontal_none": "chisel:block/bone_block/bone_block_meander_horizontal-horizontal_none",

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/dn_concrete_bubblegum/dn_concrete_bubblegum_twisted-bottom",
+    "bottom": "chisel:block/dn_concrete_bubblegum/dn_concrete_bubblegum_twisted-top",
     "side": "chisel:block/dn_concrete_bubblegum/dn_concrete_bubblegum_twisted-side",
     "top": "chisel:block/dn_concrete_bubblegum/dn_concrete_bubblegum_twisted-top"
   }
