@@ -1,0 +1,12 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/steampunk_plating_verdigris",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:steampunk_plating_verdigris",
+    "kind": "r4"
+  }
+}

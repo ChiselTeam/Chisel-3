@@ -113,6 +113,7 @@ public class ChiselTabs {
                         ChiselFamilies.HEX_PLATING.getFamily(),
                         ChiselFamilies.LABORATORY.getFamily(),
                         ChiselFamilies.MILITARY.getFamily(),
+                        ChiselFamilies.STEAMPUNK.getFamily(),
                         ChiselFamilies.TECHNICAL.getFamily(),
                         ChiselFamilies.TYRIAN.getFamily(),
                         ChiselFamilies.WARNING.getFamily(),

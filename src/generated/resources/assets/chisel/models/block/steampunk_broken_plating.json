@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/steampunk/steampunk_broken_plating-side",
+    "bottom": "chisel:block/steampunk/steampunk_broken_plating-bottom",
+    "particle": "chisel:block/steampunk/steampunk_broken_plating-side",
+    "side": "chisel:block/steampunk/steampunk_broken_plating-side",
+    "top": "chisel:block/steampunk/steampunk_broken_plating-top",
+    "vertical_both": "chisel:block/steampunk/steampunk_broken_plating-vertical_both",
+    "vertical_bottom": "chisel:block/steampunk/steampunk_broken_plating-vertical_bottom",
+    "vertical_none": "chisel:block/steampunk/steampunk_broken_plating-vertical_none",
+    "vertical_top": "chisel:block/steampunk/steampunk_broken_plating-vertical_top"
+  }
+}

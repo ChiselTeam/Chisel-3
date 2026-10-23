@@ -222,6 +222,15 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_iron_ingots", has(Tags.Items.INGOTS_IRON))
                 .save(output);
 
+        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.STEAMPUNK.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+                .pattern("SCS")
+                .pattern("C C")
+                .pattern("SCS")
+                .define('S', Tags.Items.STONES)
+                .define('C', Tags.Items.INGOTS_COPPER)
+                .unlockedBy("has_copper_ingot", has(Tags.Items.INGOTS_COPPER))
+                .save(output);
+
         shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.PAPERWALL.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("PPP")
                 .pattern("PSP")

@@ -1,0 +1,91 @@
+{
+  "family_name": "steampunk",
+  "tag": "c:chisel/steampunk",
+  "variants": [
+    {
+      "block": "chisel:steampunk_rusted_metal_sheet",
+      "model_type": "connected",
+      "name": "steampunk_rusted_metal_sheet"
+    },
+    {
+      "block": "chisel:steampunk_large_metal_sheets",
+      "model_type": "v16",
+      "name": "steampunk_large_metal_sheets"
+    },
+    {
+      "block": "chisel:steampunk_pipes",
+      "model_type": "v16",
+      "name": "steampunk_pipes"
+    },
+    {
+      "block": "chisel:steampunk_mechanical_clock",
+      "model_type": "v9",
+      "name": "steampunk_mechanical_clock"
+    },
+    {
+      "block": "chisel:steampunk_mechanical_clock_transparent",
+      "model_type": "v9",
+      "name": "steampunk_mechanical_clock_transparent"
+    },
+    {
+      "block": "chisel:steampunk_gear_train",
+      "model_type": "v4",
+      "name": "steampunk_gear_train"
+    },
+    {
+      "block": "chisel:steampunk_gear_train_animated",
+      "model_type": "v4",
+      "name": "steampunk_gear_train_animated"
+    },
+    {
+      "block": "chisel:steampunk_rusted_metal_plating",
+      "model_type": "v4",
+      "name": "steampunk_rusted_metal_plating"
+    },
+    {
+      "block": "chisel:steampunk_encased_metal_plate",
+      "model_type": "connected",
+      "name": "steampunk_encased_metal_plate"
+    },
+    {
+      "block": "chisel:steampunk_riveted_plating",
+      "model_type": "connected",
+      "name": "steampunk_riveted_plating"
+    },
+    {
+      "block": "chisel:steampunk_broken_plating",
+      "model_type": "ctmv",
+      "name": "steampunk_broken_plating"
+    },
+    {
+      "block": "chisel:steampunk_corrugated_sheet_metal",
+      "model_type": "v4",
+      "name": "steampunk_corrugated_sheet_metal"
+    },
+    {
+      "block": "chisel:steampunk_diamond_plating",
+      "model_type": "connected",
+      "name": "steampunk_diamond_plating"
+    },
+    {
+      "block": "chisel:steampunk_metal_grate",
+      "model_type": "connected",
+      "name": "steampunk_metal_grate"
+    },
+    {
+      "block": "chisel:steampunk_plating_dirty",
+      "model_type": "r4",
+      "name": "steampunk_plating_dirty"
+    },
+    {
+      "block": "chisel:steampunk_plating_verdigris",
+      "model_type": "r4",
+      "name": "steampunk_plating_verdigris"
+    },
+    {
+      "block": "chisel:steampunk_bolted_plate",
+      "model_type": "ctmv",
+      "name": "steampunk_bolted_plate"
+    }
+  ]
+}

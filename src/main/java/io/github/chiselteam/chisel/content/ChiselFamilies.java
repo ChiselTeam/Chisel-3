@@ -129,6 +129,7 @@ public class ChiselFamilies {
     public static final ChiselFamily SILVER = SilverFamily.FAMILY;
     public static final ChiselFamily SPRUCE = SpruceFamily.FAMILY;
     public static final ChiselFamily STEEL = SteelFamily.FAMILY;
+    public static final ChiselFamily STEAMPUNK = SteampunkFamily.FAMILY;
     public static final ChiselFamily SULFUR = SulfurFamily.FAMILY;
     public static final ChiselFamily TT_TALLOW = TTTallowFamily.FAMILY;
     public static final ChiselFamily TECHNICAL = TechnicalFamily.FAMILY;
@@ -213,7 +214,7 @@ public class ChiselFamilies {
                 C_CONCRETE, CLOUD, DIRT, ENERGIZED_VOIDSTONE, FACTORY, FANTASY, FANTASY_PURPLE, FANTASY_GREEN, FANTASY_BLUE, FANTASY_RED, FUTURA, GLOWSTONE, GRIMSTONE,
                 HEX_PLATING, HOLYSTONE, ICE, PACKED_ICE, BLUE_ICE, SNOW, LABORATORY, LAVASTONE,
                 LEAF, MAGMA, MILITARY, MOSSY_TEMPLE, PAPERWALL, REDSTONE, RESIN, SEA_LANTERN,
-                SHINGLE, TECHNICAL, TEMPLE, TERRACOTTA, TYRIAN, VALENTINES, VOIDSTONE, WARNING,
+                SHINGLE, STEAMPUNK, TECHNICAL, TEMPLE, TERRACOTTA, TYRIAN, VALENTINES, VOIDSTONE, WARNING,
                 WATERSTONE, CLAY, NEXUS, KITCHEN, LIMINAL, MUD, AMETHYST, SCULK,
                 BONE_BLOCK, SOUL_SOIL
         ));
