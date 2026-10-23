@@ -36,13 +36,13 @@ public final class HandbookLang {
 
     private static void addCategories(LangHelper lang) {
         lang.add("chisel.builders_handbook.all_guides", "All Guides");
-        lang.add("chisel.builders_handbook.all_guides.description", "Browse every available guide, including guides without a category.");
+        lang.add("chisel.builders_handbook.all_guides.description", "Browse every category.");
         lang.add("chisel.builders_handbook.guides", "Guides");
 
         addCategory(lang, "getting_started", "Getting Started", "Learn the basic concepts of what makes a great builder.");
         addCategory(lang, "palettes", "Palettes", "A guide on adding textures to your builds.");
-        addCategory(lang, "items", "Chisel Items", "Learn about all the helpful items Chisel adds to the game.");
-        addCategory(lang, "blocks", "Chisel Blocks", "Learn about Chisel's machines and unique blocks.");
+        addCategory(lang, "items", "Chisel Tools", "Learn about all the helpful items / tools Chisel adds.");
+        addCategory(lang, "blocks", "Chisel Blocks", "Custom blocks that Chisel adds.");
     }
 
     private static void addCategory(LangHelper lang, String category, String title, String description) {
@@ -53,76 +53,87 @@ public final class HandbookLang {
     private static void addItemGuides(LangHelper lang) {
         addItemGuide(lang, "chisels",
                 "Chisels",
-                "Choose decorative variants and reshape blocks already placed in your build.",
-                "Right click with an Iron, Diamond or Obsidian Chisel to open its interface. Put a supported block in the Chisel Slot, then choose a variant from the list.",
-                "Left click a supported block in the world to chisel it. Leave a target block in the Chisel Slot to choose the result. Hold the Select Mode / Palette key, scroll to a mode, then release the key to confirm.",
-                "Chiseling uses tool durability. Different materials have different durability, which can be changed by the server configuration.");
+                "Choose decorative variants and change blocks in world. The main tool.",
+                "Right click with any Chisel to open its GUI. Put a supported block in the Chisel slot, then choose a variant from the list. Shift + click to chisel multiple stacks",
+                "Left click a supported block in the world to chisel it. Leave a selected block in the Chisel Slot to chisel to that variant. Holding Shift, Select Mode / Palette key, then release to confirm selection.",
+                "Chiseling uses durability. Can be disabled in server configs.");
+                
         addItemGuide(lang, "auto_chisel",
                 "Auto Chisel",
-                "Convert building materials in bulk using a chisel and a template.",
-                "Place the Auto Chisel and right click to open it. Add a chisel to its tool slot, a block showing the desired variant to its template slot, and compatible materials to the input slots.",
-                "The machine converts input from the template's variant family and stores the results in its output slots. Keep room for output and replace the chisel when it wears out.",
-                "Install upgrades in their matching slots to process stacks, increase speed, enable automation or revert variants.");
+                "Automatically Chisels for you",
+                "Right click to open, add a chisel to its tool slot and a Chiseled block to the slot above.",
+                "The machine auto chisel inputed blocks to the selected variants thats in the center slot. Results goes to right side",
+                "Install upgrades to the machine to enable Automation, chisel Stack size, chiseling speed, and reversing to revert back to base block");
+
         addItemGuide(lang, "auto_chisel_upgrades",
                 "Auto Chisel Upgrades",
-                "Customize the Auto Chisel with Stack, Speed, Automation and Reversion Upgrades.",
-                "The Stack Upgrade processes multiple blocks per cycle, limited by available input, output space and chisel durability. Speed Upgrades shorten the time between processing cycles.",
+                "Enables Auto Chisel with Stack, Speed, Automation and Reversion.",
+                "The Stack Upgrade processes a full stack per cycle. Speed Upgrades shortens processing time. Automation enables items being piped in. Reversion processes block back to the base block.",
                 "The Automation Upgrade enables external item insertion into input slots and extraction from output slots. The Reversion Upgrade returns blocks to the first variant in their family and can work without a template.",
-                "Upgrades belong in the Auto Chisel's matching upgrade slots. Keep its chisel supplied even when using reversion.");
+                "Upgrades belong in the Auto Chisel's matching upgrade slots.");
+
         addItemGuide(lang, "offset_tool",
                 "Ender Offset Wand",
-                "Shift connected texture patterns to line them up with your build.",
-                "Right click a supported Chisel block with the Ender Offset Wand. The edge of the face you click determines the direction in which the texture shifts.",
-                "The wand changes the connected texture offset for the block's chunk. Other textures using that offset in the same chunk can shift too.",
-                "Use the highlighted direction as a guide. This changes the texture alignment rather than moving the blocks.");
+                "Moves multiblock textures.",
+                "Right click a supported Chisel block with the Ender Offset Wand. Supported blocks will have a triangle like overlay",
+                "The wand moves the textures for all block's in a minecraft chunk.",
+                "Use the highlighted direction as a guide. This shifts the texture, not the block itself.");
+
         addItemGuide(lang, "builders_guide",
                 "Builder's Guide",
-                "Plan shapes with a ghost block preview and fill them with building materials.",
+                "Builds simple shapes with any block",
                 "Place the Builder's Guide. With an empty hand, sneak and right click to cycle through shapes such as cuboids, spheres, domes and cylinders.",
                 "With an empty hand, right click the north or south face to increase or decrease length, east or west for width, and top or bottom for height. Right click with a block to place material into the preview.",
                 "Right click with dye to change the preview color. Adjust the shape and size before filling it.");
+
         addItemGuide(lang, "measuring_tape",
                 "Measuring Tape",
-                "Measure block spans before laying out walls, rooms and details.",
+                "Measure block distance between 2 points",
                 "Right click a block with the Measuring Tape to mark the first point. Right click a different block to mark the second point and display the distance in chat.",
                 "The measurement includes both endpoints and uses the largest difference along any axis. After a completed measurement, the next click begins a new one.",
                 "Sneak and right click to start again from the block you click. Align both endpoints on one axis to measure a straight span.");
+
         addItemGuide(lang, "builders_handbook",
                 "Builder's Handbook",
                 "Browse building advice and instructions for Chisel's items.",
                 "Right click with the Builder's Handbook to open it. Click its cover to reach the table of contents, then choose a category and a guide.",
                 "Use the arrows to turn pages or browse more entries. All Guides lists every available guide, including entries without a category.",
                 "Servers and data packs can supply additional handbook categories and guides.");
+
         addItemGuide(lang, "palette_builder",
                 "Palette Builder",
-                "Create and save weighted block palettes for the Trowel.",
+                "Create and save block palettes for the Trowel",
                 "Right click with the Palette Builder to open your palette library. Create a new palette or choose an existing one to edit its name, icon and block entries.",
                 "Add materials, adjust their weights and enable the entries you want to use. The preview shows a possible mixture. Save the palette when you are happy with it.",
                 "Hold a Trowel and use the Select Mode / Palette key to choose a saved palette. A palette defines the mix; you still need its materials to build in survival.");
+        
         addItemGuide(lang, "trowel",
                 "Trowel",
-                "Place a varied mix of blocks from your hotbar or a saved palette.",
+                "Places blocks from your hotbar or palette randomly",
                 "Right click a block face with the Trowel to place a material. In Hotbar mode it randomly chooses from eligible block slots in your hotbar.",
                 "Hold the Select Mode / Palette key, scroll to a saved palette or Hotbar, then release to confirm. A saved palette chooses available materials by weight and draws them from your inventory and offhand.",
                 "Sneak and right click an accessible inventory to link it as an additional source for palette mode. Repeat on the same inventory to unlink it. Hotbar mode uses only your hotbar.");
+
         addItemGuide(lang, "ball_o_moss",
                 "Ball O' Moss",
-                "Add moss to nearby surfaces for an aged, overgrown look.",
-                "Right click to throw a Ball O' Moss. On block impact it adds moss overlays to eligible full blocks around the impact point.",
-                "The effect spreads unevenly, creating variation across nearby surfaces. Some blocks are excluded from mossing.",
-                "Each throw consumes one ball in survival. Try it on a small area before weathering a larger build.");
+                "Adds a moss overlay on blocks in a AOE",
+                "Right click to throw a Ball O' Moss. On block impact it adds a moss overlay to full blocks in a AOE.",
+                "The effect spreads unevenly, creating variation across nearby surfaces.",
+                "Item is used each throw. Use on a small area before using it in a large build.");
+
         addItemGuide(lang, "cloud_in_a_bottle",
                 "Cloud in a Bottle",
-                "Create a cluster of cloud blocks around an impact point.",
-                "Right click to throw a Cloud in a Bottle at a block. On impact it generates cloud blocks in nearby air spaces.",
-                "Clouds spread around the impact point in an irregular shape. Leave open space around the target for the cloud cluster.",
-                "Each throw consumes one bottle in survival. Aim where you want the cloud blocks to appear.");
+                "Create Cloud Blocks in a AOE",
+                "Right click to throw a Cloud in a Bottle. On impact it generates Cloud Blocks using the air blocks.",
+                "Clouds spread around the impact point in an random shape. Use in a large open space to min max Cloud Blocks.",
+                "Item is used each throw. Aim where you want the Cloud Blocks to appear.");
+
         addItemGuide(lang, "smashing_rock",
                 "Smashing Rock",
                 "Transform nearby supported blocks into their crushed counterparts.",
-                "Right click to throw a Smashing Rock. When it hits a block, it transforms supported blocks around the impact point according to smashing recipes.",
-                "The effect varies with distance from the impact. Blocks without a matching smashing recipe remain unchanged.",
-                "Each throw consumes one rock in survival. Test on spare materials before using it beside a finished build.");
+                "Right click to throw a Smashing Rock. When it hits a block, it transforms supported blocks.",
+                "Effect varies. For example, Stone bricks > Cracked Stone Bricks. Stone > Cobblestone > Gravel > Sand",
+                "Item is used each throw.");
     }
 
     private static void addBlockGuides(LangHelper lang) {
@@ -151,27 +162,27 @@ public final class HandbookLang {
         lang.add("chisel.guide.laboratory.title", "Laboratory");
         lang.add("chisel.guide.laboratory.description", "Clean patterned blocks for laboratories and research rooms.");
         lang.add("chisel.guide.lavastone.title", "Lavastone");
-        lang.add("chisel.guide.lavastone.description", "Lava-inspired patterns for dramatic surfaces.");
+        lang.add("chisel.guide.lavastone.description", "Lava-inspired blocks for dramatic surfaces.");
         lang.add("chisel.guide.limestone.title", "Limestone");
         lang.add("chisel.guide.limestone.description", "Decorative limestone for masonry and architectural details.");
         lang.add("chisel.guide.limestone.usage", "Use a Chisel on limestone to choose a decorative variant for your build.");
         lang.add("chisel.guide.liminal.title", "Liminal");
-        lang.add("chisel.guide.liminal.description", "Interior patterns for corridors and unsettling empty rooms.");
+        lang.add("chisel.guide.liminal.description", "You fallen into the backrooms...");
         lang.add("chisel.guide.marble.title", "Marble");
         lang.add("chisel.guide.marble.description", "Decorative marble for polished interiors and monuments.");
         lang.add("chisel.guide.marble.usage", "Use a Chisel on marble to choose a decorative variant for your build.");
         lang.add("chisel.guide.military.title", "Military");
-        lang.add("chisel.guide.military.description", "Military-inspired surfaces for bases and fortified builds.");
+        lang.add("chisel.guide.military.description", "Military style blocks for bases and fortified builds.");
         lang.add("chisel.guide.mossy_temple.title", "Mossy Temple");
         lang.add("chisel.guide.mossy_temple.description", "Mossy masonry for overgrown ruins and ancient temples.");
         lang.add("chisel.guide.nexus.title", "Nexus");
-        lang.add("chisel.guide.nexus.description", "Decorative patterns for futuristic focal points.");
+        lang.add("chisel.guide.nexus.description", "Decorative blocks for futuristic builds.");
         lang.add("chisel.guide.paperwall.title", "Paperwall");
         lang.add("chisel.guide.paperwall.description", "Paperwall panels for room dividers and decorative interiors.");
         lang.add("chisel.guide.road_lines.title", "Road Lines");
         lang.add("chisel.guide.road_lines.description", "Road markings for streets, lanes and intersections.");
         lang.add("chisel.guide.shingles.title", "Shingles");
-        lang.add("chisel.guide.shingles.description", "Shingle patterns for rooftops and exterior details.");
+        lang.add("chisel.guide.shingles.description", "Shingle blocks for rooftops and exterior details.");
         lang.add("chisel.guide.technical.title", "Technical");
         lang.add("chisel.guide.technical.description", "Technical panels for machinery and industrial builds.");
         lang.add("chisel.guide.temple.title", "Temple");
@@ -179,30 +190,14 @@ public final class HandbookLang {
         lang.add("chisel.guide.tyrian.title", "Tyrian");
         lang.add("chisel.guide.tyrian.description", "Ornamental blocks for bold architectural details.");
         lang.add("chisel.guide.valentines.title", "Valentine's");
-        lang.add("chisel.guide.valentines.description", "Decorative patterns for romantic builds and playful accents.");
+        lang.add("chisel.guide.valentines.description", "Decorative blocks for romantic builds and playful accents.");
         lang.add("chisel.guide.voidstone.title", "Voidstone");
-        lang.add("chisel.guide.voidstone.description", "Voidstone patterns for mysterious walls and monuments.");
+        lang.add("chisel.guide.voidstone.description", "Voidstone blocks for mysterious walls and monuments.");
         lang.add("chisel.guide.warning_signs.title", "Warning Signs");
         lang.add("chisel.guide.warning_signs.description", "Hazard markings for factories, laboratories and restricted areas.");
         lang.add("chisel.guide.waterstone.title", "Waterstone");
-        lang.add("chisel.guide.waterstone.description", "Water-inspired patterns for decorative surfaces.");
-        lang.add("chisel.guide.lights.description", "Colored lights for illuminated surfaces and decorative accents.");
-        lang.add("chisel.guide.light_white.title", "White Lights");
-        lang.add("chisel.guide.light_orange.title", "Orange Lights");
-        lang.add("chisel.guide.light_magenta.title", "Magenta Lights");
-        lang.add("chisel.guide.light_light_blue.title", "Light Blue Lights");
-        lang.add("chisel.guide.light_yellow.title", "Yellow Lights");
-        lang.add("chisel.guide.light_lime.title", "Lime Lights");
-        lang.add("chisel.guide.light_pink.title", "Pink Lights");
-        lang.add("chisel.guide.light_gray.title", "Gray Lights");
-        lang.add("chisel.guide.light_light_gray.title", "Light Gray Lights");
-        lang.add("chisel.guide.light_cyan.title", "Cyan Lights");
-        lang.add("chisel.guide.light_purple.title", "Purple Lights");
-        lang.add("chisel.guide.light_blue.title", "Blue Lights");
-        lang.add("chisel.guide.light_brown.title", "Brown Lights");
-        lang.add("chisel.guide.light_green.title", "Green Lights");
-        lang.add("chisel.guide.light_red.title", "Red Lights");
-        lang.add("chisel.guide.light_black.title", "Black Lights");
+        lang.add("chisel.guide.waterstone.description", "Water-inspired blocks for decorative surfaces.");
+        lang.add("chisel.guide.lights.description", "Lights illuminate builds. Comes in different colors.");
     }
 
     private static void addItemGuide(LangHelper lang, String id, String title, String description, String usage, String details, String tip) {

@@ -45,36 +45,29 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
     }
 
     private void addBlockGuides() {
-        // MARK: Utilities
-        buildGuide("auto_chisel",
-                HandbookGuideBuilder.builder(Component.translatable("chisel.guide.auto_chisel.title"), Chisel.prefix("auto_chisel"))
-                        .description(Component.translatable("chisel.guide.auto_chisel.description"))
+        // MARK: CUSTOM BLOCKS
+        buildGuide("marble",
+                HandbookGuideBuilder.builder(Component.translatable("chisel.guide.marble.title"), Chisel.prefix("marble_raw"))
+                        .description(Component.translatable("chisel.guide.marble.description"))
                         .category(BLOCKS)
-                        .sortOrder(1)
-                        .craftingRecipe(Chisel.prefix("auto_chisel"))
-                        .structure(preview -> preview.block(0, 0, 0, ChiselBlocks.AUTO_CHISEL.get().defaultBlockState()))
-                        .text(Component.translatable("chisel.guide.auto_chisel.usage"))
-                        .text(Component.translatable("chisel.guide.auto_chisel.details"))
-                        .tip(Component.translatable("chisel.guide.auto_chisel.tip"))
+                        .sortOrder(201)
+                        .variantWall(ChiselFamilies.MARBLE)
+                        .text(Component.translatable("chisel.guide.marble.usage"))
                         .build());
 
-        buildGuide("builders_guide",
-                HandbookGuideBuilder.builder(Component.translatable("chisel.guide.builders_guide.title"), Chisel.prefix("builders_guide"))
-                        .description(Component.translatable("chisel.guide.builders_guide.description"))
+        buildGuide("limestone",
+                HandbookGuideBuilder.builder(Component.translatable("chisel.guide.limestone.title"), Chisel.prefix("limestone_raw"))
+                        .description(Component.translatable("chisel.guide.limestone.description"))
                         .category(BLOCKS)
-                        .sortOrder(2)
-                        .craftingRecipe(Chisel.prefix("builders_guide"))
-                        .structure(preview -> preview.block(0, 0, 0, ChiselBlocks.BUILDERS_GUIDE.get().defaultBlockState()))
-                        .text(Component.translatable("chisel.guide.builders_guide.usage"))
-                        .text(Component.translatable("chisel.guide.builders_guide.details"))
-                        .tip(Component.translatable("chisel.guide.builders_guide.tip"))
+                        .sortOrder(202)
+                        .variantWall(ChiselFamilies.LIMESTONE)
+                        .text(Component.translatable("chisel.guide.limestone.usage"))
                         .build());
 
-        // MARK: Unique Blocks
         buildGuide("antiblock",
                 HandbookGuideBuilder.builder(Component.literal("Antiblock"), Chisel.prefix("antiblock_black"))
                         .category(BLOCKS)
-                        .sortOrder(3)
+                        .sortOrder(203)
                         .craftingRecipe(Chisel.prefix("antiblock_black"))
                         .variantWall(ChiselFamilies.ANTIBLOCK)
                         .build()
@@ -84,7 +77,7 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.cloud.title"), Chisel.prefix("cloud_normal"))
                         .description(Component.translatable("chisel.guide.cloud.description"))
                         .category(BLOCKS)
-                        .sortOrder(4)
+                        .sortOrder(204)
                         .variantWall(ChiselFamilies.CLOUD)
                         .text(Component.translatable("chisel.guide.cloud.usage"))
                         .build());
@@ -93,25 +86,16 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.chisel_concrete.title"), Chisel.prefix("concrete_raw"))
                         .description(Component.translatable("chisel.guide.chisel_concrete.description"))
                         .category(BLOCKS)
-                        .sortOrder(5)
+                        .sortOrder(205)
                         .variantWall(ChiselFamilies.C_CONCRETE)
                         .text(Component.translatable("chisel.guide.chisel_concrete.usage"))
-                        .build());
-
-        buildGuide("energized_voidstone",
-                HandbookGuideBuilder.builder(Component.translatable("chisel.guide.energized_voidstone.title"), Chisel.prefix("energized_voidstone_bevel"))
-                        .description(Component.translatable("chisel.guide.energized_voidstone.description"))
-                        .category(BLOCKS)
-                        .sortOrder(6)
-                        .craftingRecipe(Chisel.prefix("energized_voidstone_bevel"))
-                        .variantWall(ChiselFamilies.ENERGIZED_VOIDSTONE)
                         .build());
 
         buildGuide("factory",
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.factory.title"), Chisel.prefix("factory_circuit"))
                         .description(Component.translatable("chisel.guide.factory.description"))
                         .category(BLOCKS)
-                        .sortOrder(7)
+                        .sortOrder(207)
                         .craftingRecipe(Chisel.prefix("factory_circuit"))
                         .variantWall(ChiselFamilies.FACTORY)
                         .build());
@@ -120,7 +104,7 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.fantasy.title"), Chisel.prefix("fantasy_block"))
                         .description(Component.translatable("chisel.guide.fantasy.description"))
                         .category(BLOCKS)
-                        .sortOrder(8)
+                        .sortOrder(208)
                         .craftingRecipe(Chisel.prefix("fantasy_block"))
                         .variantWall(ChiselFamilies.FANTASY)
                         .craftingRecipe(Chisel.prefix("fantasy_purple_block"))
@@ -137,7 +121,7 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.futura.title"), Chisel.prefix("futura_controller"))
                         .description(Component.translatable("chisel.guide.futura.description"))
                         .category(BLOCKS)
-                        .sortOrder(9)
+                        .sortOrder(209)
                         .craftingRecipe(Chisel.prefix("futura_controller"))
                         .variantWall(ChiselFamilies.FUTURA)
                         .build());
@@ -146,34 +130,34 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.grimstone.title"), Chisel.prefix("grimstone_blocks"))
                         .description(Component.translatable("chisel.guide.grimstone.description"))
                         .category(BLOCKS)
-                        .sortOrder(10)
+                        .sortOrder(210)
                         .craftingRecipe(Chisel.prefix("grimstone_blocks"))
                         .variantWall(ChiselFamilies.GRIMSTONE)
-                        .build());
-
-        buildGuide("hex_plating",
-                HandbookGuideBuilder.builder(Component.translatable("chisel.guide.hex_plating.title"), Chisel.prefix("hex_plating_0"))
-                        .description(Component.translatable("chisel.guide.hex_plating.description"))
-                        .category(BLOCKS)
-                        .sortOrder(11)
-                        .craftingRecipe(Chisel.prefix("hex_plating_0"))
-                        .variantWall(ChiselFamilies.HEX_PLATING)
                         .build());
 
         buildGuide("holystone",
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.holystone.title"), Chisel.prefix("holystone_blocks"))
                         .description(Component.translatable("chisel.guide.holystone.description"))
                         .category(BLOCKS)
-                        .sortOrder(12)
+                        .sortOrder(211)
                         .craftingRecipe(Chisel.prefix("holystone_blocks"))
                         .variantWall(ChiselFamilies.HOLYSTONE)
+                        .build());
+
+        buildGuide("hex_plating",
+                HandbookGuideBuilder.builder(Component.translatable("chisel.guide.hex_plating.title"), Chisel.prefix("hex_plating_0"))
+                        .description(Component.translatable("chisel.guide.hex_plating.description"))
+                        .category(BLOCKS)
+                        .sortOrder(212)
+                        .craftingRecipe(Chisel.prefix("hex_plating_0"))
+                        .variantWall(ChiselFamilies.HEX_PLATING)
                         .build());
 
         buildGuide("kitchen",
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.kitchen.title"), Chisel.prefix("kitchen_checker"))
                         .description(Component.translatable("chisel.guide.kitchen.description"))
                         .category(BLOCKS)
-                        .sortOrder(13)
+                        .sortOrder(213)
                         .craftingRecipe(Chisel.prefix("kitchen_checker"))
                         .variantWall(ChiselFamilies.KITCHEN)
                         .build());
@@ -182,7 +166,7 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.laboratory.title"), Chisel.prefix("laboratory_checkerboard"))
                         .description(Component.translatable("chisel.guide.laboratory.description"))
                         .category(BLOCKS)
-                        .sortOrder(14)
+                        .sortOrder(214)
                         .craftingRecipe(Chisel.prefix("laboratory_checkerboard"))
                         .variantWall(ChiselFamilies.LABORATORY)
                         .build());
@@ -191,55 +175,85 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.lavastone.title"), Chisel.prefix("lavastone_array"))
                         .description(Component.translatable("chisel.guide.lavastone.description"))
                         .category(BLOCKS)
-                        .sortOrder(15)
+                        .sortOrder(215)
                         .craftingRecipe(Chisel.prefix("lavastone_array"))
                         .variantWall(ChiselFamilies.LAVASTONE)
                         .build());
 
-        for (var color : DyeColor.values()) {
-            var id = "light_" + color.getName();
-            buildGuide(id,
-                    HandbookGuideBuilder.builder(Component.translatable("chisel.guide." + id + ".title"), Chisel.prefix(id + "_regular"))
-                            .description(Component.translatable("chisel.guide.lights.description"))
-                            .category(BLOCKS)
-                            .sortOrder(16 + color.getId())
-                            .craftingRecipe(Chisel.prefix(id + "_regular"))
-                            .variantWall(ChiselFamilies.LIGHT.get(color.getId()))
-                            .build());
-        }
-
-        buildGuide("limestone",
-                HandbookGuideBuilder.builder(Component.translatable("chisel.guide.limestone.title"), Chisel.prefix("limestone_raw"))
-                        .description(Component.translatable("chisel.guide.limestone.description"))
+        buildGuide("waterstone",
+                HandbookGuideBuilder.builder(Component.translatable("chisel.guide.waterstone.title"), Chisel.prefix("waterstone_array"))
+                        .description(Component.translatable("chisel.guide.waterstone.description"))
                         .category(BLOCKS)
-                        .sortOrder(32)
-                        .variantWall(ChiselFamilies.LIMESTONE)
-                        .text(Component.translatable("chisel.guide.limestone.usage"))
+                        .sortOrder(216)
+                        .craftingRecipe(Chisel.prefix("waterstone_array"))
+                        .variantWall(ChiselFamilies.WATERSTONE)
+                        .build());
+
+        // for (var color : DyeColor.values()) {
+        //     var id = "light_" + color.getName();
+        //     buildGuide(id,
+        //             HandbookGuideBuilder.builder(Component.translatable("chisel.guide." + id + ".title"), Chisel.prefix(id + "_regular"))
+        //                     .description(Component.translatable("chisel.guide.lights.description"))
+        //                     .category(BLOCKS)
+        //                     .sortOrder(16 + color.getId())
+        //                     .craftingRecipe(Chisel.prefix(id + "_regular"))
+        //                     .variantWall(ChiselFamilies.LIGHT.get(color.getId()))
+        //                     .build());
+        // }
+
+        buildGuide("lights",
+                HandbookGuideBuilder.builder(Component.literal("Lights"), Chisel.prefix("light_white_regular"))
+                        .description(Component.translatable("chisel.guide.lights.description"))
+                        .category(BLOCKS)
+                        .sortOrder(217)
+                        .craftingRecipe(Chisel.prefix("light_white_regular"))
+                        .variantWall(ChiselFamilies.LIGHT.get(DyeColor.WHITE.getId()))
+                        .craftingRecipe(Chisel.prefix("light_orange_regular"))
+                        .variantWall(ChiselFamilies.LIGHT.get(DyeColor.ORANGE.getId()))
+                        .craftingRecipe(Chisel.prefix("light_magenta_regular"))
+                        .variantWall(ChiselFamilies.LIGHT.get(DyeColor.MAGENTA.getId()))
+                        .craftingRecipe(Chisel.prefix("light_light_blue_regular"))
+                        .variantWall(ChiselFamilies.LIGHT.get(DyeColor.LIGHT_BLUE.getId()))
+                        .craftingRecipe(Chisel.prefix("light_yellow_regular"))
+                        .variantWall(ChiselFamilies.LIGHT.get(DyeColor.YELLOW.getId()))
+                        .craftingRecipe(Chisel.prefix("light_lime_regular"))
+                        .variantWall(ChiselFamilies.LIGHT.get(DyeColor.LIME.getId()))
+                        .craftingRecipe(Chisel.prefix("light_pink_regular"))
+                        .variantWall(ChiselFamilies.LIGHT.get(DyeColor.PINK.getId()))
+                        .craftingRecipe(Chisel.prefix("light_gray_regular"))
+                        .variantWall(ChiselFamilies.LIGHT.get(DyeColor.GRAY.getId()))
+                        .craftingRecipe(Chisel.prefix("light_light_gray_regular"))
+                        .variantWall(ChiselFamilies.LIGHT.get(DyeColor.LIGHT_GRAY.getId()))
+                        .craftingRecipe(Chisel.prefix("light_cyan_regular"))
+                        .variantWall(ChiselFamilies.LIGHT.get(DyeColor.CYAN.getId()))
+                        .craftingRecipe(Chisel.prefix("light_purple_regular"))
+                        .variantWall(ChiselFamilies.LIGHT.get(DyeColor.PURPLE.getId()))
+                        .craftingRecipe(Chisel.prefix("light_blue_regular"))
+                        .variantWall(ChiselFamilies.LIGHT.get(DyeColor.BLUE.getId()))
+                        .craftingRecipe(Chisel.prefix("light_brown_regular"))
+                        .variantWall(ChiselFamilies.LIGHT.get(DyeColor.BROWN.getId()))
+                        .craftingRecipe(Chisel.prefix("light_green_regular"))
+                        .variantWall(ChiselFamilies.LIGHT.get(DyeColor.GREEN.getId()))
+                        .craftingRecipe(Chisel.prefix("light_red_regular"))
+                        .variantWall(ChiselFamilies.LIGHT.get(DyeColor.RED.getId()))
+                        .craftingRecipe(Chisel.prefix("light_black_regular"))
+                        .variantWall(ChiselFamilies.LIGHT.get(DyeColor.BLACK.getId()))
                         .build());
 
         buildGuide("liminal",
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.liminal.title"), Chisel.prefix("liminal_wall_1"))
                         .description(Component.translatable("chisel.guide.liminal.description"))
                         .category(BLOCKS)
-                        .sortOrder(33)
+                        .sortOrder(233)
                         .craftingRecipe(Chisel.prefix("liminal_wall_1"))
                         .variantWall(ChiselFamilies.LIMINAL)
-                        .build());
-
-        buildGuide("marble",
-                HandbookGuideBuilder.builder(Component.translatable("chisel.guide.marble.title"), Chisel.prefix("marble_raw"))
-                        .description(Component.translatable("chisel.guide.marble.description"))
-                        .category(BLOCKS)
-                        .sortOrder(34)
-                        .variantWall(ChiselFamilies.MARBLE)
-                        .text(Component.translatable("chisel.guide.marble.usage"))
                         .build());
 
         buildGuide("military",
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.military.title"), Chisel.prefix("military_imperial_camo"))
                         .description(Component.translatable("chisel.guide.military.description"))
                         .category(BLOCKS)
-                        .sortOrder(35)
+                        .sortOrder(235)
                         .craftingRecipe(Chisel.prefix("military_imperial_camo"))
                         .variantWall(ChiselFamilies.MILITARY)
                         .build());
@@ -248,7 +262,7 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.mossy_temple.title"), Chisel.prefix("mossy_temple_bricks"))
                         .description(Component.translatable("chisel.guide.mossy_temple.description"))
                         .category(BLOCKS)
-                        .sortOrder(36)
+                        .sortOrder(236)
                         .craftingRecipe(Chisel.prefix("mossy_temple_bricks"))
                         .variantWall(ChiselFamilies.MOSSY_TEMPLE)
                         .build());
@@ -257,7 +271,7 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.nexus.title"), Chisel.prefix("nexus_core"))
                         .description(Component.translatable("chisel.guide.nexus.description"))
                         .category(BLOCKS)
-                        .sortOrder(37)
+                        .sortOrder(237)
                         .craftingRecipe(Chisel.prefix("nexus_core"))
                         .variantWall(ChiselFamilies.NEXUS)
                         .build());
@@ -266,7 +280,7 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.paperwall.title"), Chisel.prefix("paperwall_boxed"))
                         .description(Component.translatable("chisel.guide.paperwall.description"))
                         .category(BLOCKS)
-                        .sortOrder(38)
+                        .sortOrder(238)
                         .craftingRecipe(Chisel.prefix("paperwall_boxed"))
                         .variantWall(ChiselFamilies.PAPERWALL)
                         .build());
@@ -275,7 +289,7 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.road_lines.title"), Chisel.prefix("road_line_double_white_center"))
                         .description(Component.translatable("chisel.guide.road_lines.description"))
                         .category(BLOCKS)
-                        .sortOrder(39)
+                        .sortOrder(239)
                         .craftingRecipe(Chisel.prefix("road_line_double_white_center"))
                         .variantWall(ChiselFamilies.ROAD_LINE)
                         .build());
@@ -284,7 +298,7 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.shingles.title"), Chisel.prefix("shingles_1"))
                         .description(Component.translatable("chisel.guide.shingles.description"))
                         .category(BLOCKS)
-                        .sortOrder(40)
+                        .sortOrder(240)
                         .craftingRecipe(Chisel.prefix("shingles_1"))
                         .variantWall(ChiselFamilies.SHINGLE)
                         .build());
@@ -293,7 +307,7 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.technical.title"), Chisel.prefix("technical_125"))
                         .description(Component.translatable("chisel.guide.technical.description"))
                         .category(BLOCKS)
-                        .sortOrder(41)
+                        .sortOrder(241)
                         .craftingRecipe(Chisel.prefix("technical_125"))
                         .variantWall(ChiselFamilies.TECHNICAL)
                         .build());
@@ -302,7 +316,7 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.temple.title"), Chisel.prefix("temple_cobble"))
                         .description(Component.translatable("chisel.guide.temple.description"))
                         .category(BLOCKS)
-                        .sortOrder(42)
+                        .sortOrder(242)
                         .craftingRecipe(Chisel.prefix("temple_cobble"))
                         .variantWall(ChiselFamilies.TEMPLE)
                         .build());
@@ -311,7 +325,7 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.tyrian.title"), Chisel.prefix("tyrian_black"))
                         .description(Component.translatable("chisel.guide.tyrian.description"))
                         .category(BLOCKS)
-                        .sortOrder(43)
+                        .sortOrder(243)
                         .craftingRecipe(Chisel.prefix("tyrian_black"))
                         .variantWall(ChiselFamilies.TYRIAN)
                         .build());
@@ -320,7 +334,7 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.valentines.title"), Chisel.prefix("valentines_block"))
                         .description(Component.translatable("chisel.guide.valentines.description"))
                         .category(BLOCKS)
-                        .sortOrder(44)
+                        .sortOrder(244)
                         .craftingRecipe(Chisel.prefix("valentines_block"))
                         .variantWall(ChiselFamilies.VALENTINES)
                         .build());
@@ -329,31 +343,57 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.voidstone.title"), Chisel.prefix("voidstone_bevel"))
                         .description(Component.translatable("chisel.guide.voidstone.description"))
                         .category(BLOCKS)
-                        .sortOrder(45)
+                        .sortOrder(245)
                         .craftingRecipe(Chisel.prefix("voidstone_bevel"))
                         .variantWall(ChiselFamilies.VOIDSTONE)
+                        .build());
+
+        buildGuide("energized_voidstone",
+                HandbookGuideBuilder.builder(Component.translatable("chisel.guide.energized_voidstone.title"), Chisel.prefix("energized_voidstone_bevel"))
+                        .description(Component.translatable("chisel.guide.energized_voidstone.description"))
+                        .category(BLOCKS)
+                        .sortOrder(246)
+                        .craftingRecipe(Chisel.prefix("energized_voidstone_bevel"))
+                        .variantWall(ChiselFamilies.ENERGIZED_VOIDSTONE)
                         .build());
 
         buildGuide("warning_signs",
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.warning_signs.title"), Chisel.prefix("warning_biohazard"))
                         .description(Component.translatable("chisel.guide.warning_signs.description"))
                         .category(BLOCKS)
-                        .sortOrder(46)
+                        .sortOrder(247)
                         .craftingRecipe(Chisel.prefix("warning_biohazard"))
                         .variantWall(ChiselFamilies.WARNING)
                         .build());
-
-        buildGuide("waterstone",
-                HandbookGuideBuilder.builder(Component.translatable("chisel.guide.waterstone.title"), Chisel.prefix("waterstone_array"))
-                        .description(Component.translatable("chisel.guide.waterstone.description"))
-                        .category(BLOCKS)
-                        .sortOrder(47)
-                        .craftingRecipe(Chisel.prefix("waterstone_array"))
-                        .variantWall(ChiselFamilies.WATERSTONE)
-                        .build());
     }
 
+//MARK: ITEM TOOLS
     private void addItemGuides() {
+        // MARK: Utilities
+        buildGuide("auto_chisel",
+                HandbookGuideBuilder.builder(Component.translatable("chisel.guide.auto_chisel.title"), Chisel.prefix("auto_chisel"))
+                        .description(Component.translatable("chisel.guide.auto_chisel.description"))
+                        .category(ITEMS)
+                        .sortOrder(1)
+                        .craftingRecipe(Chisel.prefix("auto_chisel"))
+                        .structure(preview -> preview.block(0, 0, 0, ChiselBlocks.AUTO_CHISEL.get().defaultBlockState()))
+                        .text(Component.translatable("chisel.guide.auto_chisel.usage"))
+                        .text(Component.translatable("chisel.guide.auto_chisel.details"))
+                        .tip(Component.translatable("chisel.guide.auto_chisel.tip"))
+                        .build());
+
+        buildGuide("builders_guide",
+                HandbookGuideBuilder.builder(Component.translatable("chisel.guide.builders_guide.title"), Chisel.prefix("builders_guide"))
+                        .description(Component.translatable("chisel.guide.builders_guide.description"))
+                        .category(ITEMS)
+                        .sortOrder(2)
+                        .craftingRecipe(Chisel.prefix("builders_guide"))
+                        .structure(preview -> preview.block(0, 0, 0, ChiselBlocks.BUILDERS_GUIDE.get().defaultBlockState()))
+                        .text(Component.translatable("chisel.guide.builders_guide.usage"))
+                        .text(Component.translatable("chisel.guide.builders_guide.details"))
+                        .tip(Component.translatable("chisel.guide.builders_guide.tip"))
+                        .build());
+
         buildGuide("auto_chisel_upgrades",
                 HandbookGuideBuilder.builder(Component.translatable("chisel.guide.auto_chisel_upgrades.title"), Chisel.prefix("upgrade_stack"))
                         .description(Component.translatable("chisel.guide.auto_chisel_upgrades.description"))

@@ -1,0 +1,4381 @@
+{
+  "categories": [
+    "chisel:blocks"
+  ],
+  "description": {
+    "translate": "chisel.guide.lights.description"
+  },
+  "icon": "chisel:light_white_regular",
+  "sections": [
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:light_white_regular"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:light_white_regular"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_borderless"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_diamond"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_panel_fancy"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_bubble"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_panel"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_panel_connected"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_framed"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_framed_connected"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_frame_1"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_frame_2"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_frame_3"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_circle"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_round"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_mosaic_1"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_mosaic_2"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_rings"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_basketweave"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_scaffold"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_scaffold_left"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_scaffold_right"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_arch_panel"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_arch_panel_1"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_arch_panel_2"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_arch_panel_3"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_frame_thick"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_frame_thick_panel"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_tile"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_brick"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_line_vertical"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_line_horizontal"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_line_vertical_panel"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_white_line_horizontal_panel"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:light_orange_regular"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:light_orange_regular"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_borderless"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_diamond"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_panel_fancy"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_bubble"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_panel"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_panel_connected"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_framed"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_framed_connected"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_frame_1"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_frame_2"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_frame_3"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_circle"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_round"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_mosaic_1"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_mosaic_2"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_rings"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_basketweave"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_scaffold"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_scaffold_left"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_scaffold_right"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_arch_panel"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_arch_panel_1"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_arch_panel_2"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_arch_panel_3"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_frame_thick"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_frame_thick_panel"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_tile"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_brick"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_line_vertical"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_line_horizontal"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_line_vertical_panel"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_orange_line_horizontal_panel"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:light_magenta_regular"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:light_magenta_regular"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_borderless"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_diamond"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_panel_fancy"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_bubble"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_panel"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_panel_connected"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_framed"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_framed_connected"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_frame_1"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_frame_2"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_frame_3"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_circle"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_round"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_mosaic_1"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_mosaic_2"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_rings"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_basketweave"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_scaffold"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_scaffold_left"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_scaffold_right"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_arch_panel"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_arch_panel_1"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_arch_panel_2"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_arch_panel_3"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_frame_thick"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_frame_thick_panel"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_tile"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_brick"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_line_vertical"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_line_horizontal"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_line_vertical_panel"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_magenta_line_horizontal_panel"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:light_light_blue_regular"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_regular"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_borderless"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_diamond"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_panel_fancy"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_bubble"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_panel"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_panel_connected"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_framed"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_framed_connected"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_frame_1"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_frame_2"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_frame_3"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_circle"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_round"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_mosaic_1"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_mosaic_2"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_rings"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_basketweave"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_scaffold"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_scaffold_left"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_scaffold_right"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_arch_panel"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_arch_panel_1"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_arch_panel_2"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_arch_panel_3"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_frame_thick"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_frame_thick_panel"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_tile"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_brick"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_line_vertical"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_line_horizontal"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_line_vertical_panel"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_blue_line_horizontal_panel"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:light_yellow_regular"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:light_yellow_regular"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_borderless"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_diamond"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_panel_fancy"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_bubble"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_panel"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_panel_connected"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_framed"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_framed_connected"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_frame_1"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_frame_2"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_frame_3"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_circle"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_round"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_mosaic_1"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_mosaic_2"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_rings"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_basketweave"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_scaffold"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_scaffold_left"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_scaffold_right"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_arch_panel"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_arch_panel_1"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_arch_panel_2"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_arch_panel_3"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_frame_thick"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_frame_thick_panel"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_tile"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_brick"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_line_vertical"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_line_horizontal"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_line_vertical_panel"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_yellow_line_horizontal_panel"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:light_lime_regular"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:light_lime_regular"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_borderless"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_diamond"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_panel_fancy"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_bubble"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_panel"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_panel_connected"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_framed"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_framed_connected"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_frame_1"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_frame_2"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_frame_3"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_circle"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_round"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_mosaic_1"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_mosaic_2"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_rings"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_basketweave"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_scaffold"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_scaffold_left"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_scaffold_right"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_arch_panel"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_arch_panel_1"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_arch_panel_2"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_arch_panel_3"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_frame_thick"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_frame_thick_panel"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_tile"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_brick"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_line_vertical"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_line_horizontal"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_line_vertical_panel"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_lime_line_horizontal_panel"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:light_pink_regular"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:light_pink_regular"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_borderless"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_diamond"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_panel_fancy"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_bubble"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_panel"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_panel_connected"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_framed"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_framed_connected"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_frame_1"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_frame_2"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_frame_3"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_circle"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_round"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_mosaic_1"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_mosaic_2"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_rings"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_basketweave"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_scaffold"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_scaffold_left"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_scaffold_right"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_arch_panel"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_arch_panel_1"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_arch_panel_2"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_arch_panel_3"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_frame_thick"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_frame_thick_panel"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_tile"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_brick"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_line_vertical"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_line_horizontal"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_line_vertical_panel"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_pink_line_horizontal_panel"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:light_gray_regular"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:light_gray_regular"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_borderless"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_diamond"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_panel_fancy"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_bubble"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_panel"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_panel_connected"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_framed"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_framed_connected"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_frame_1"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_frame_2"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_frame_3"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_circle"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_round"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_mosaic_1"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_mosaic_2"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_rings"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_basketweave"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_scaffold"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_scaffold_left"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_scaffold_right"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_arch_panel"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_arch_panel_1"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_arch_panel_2"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_arch_panel_3"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_frame_thick"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_frame_thick_panel"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_tile"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_brick"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_line_vertical"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_line_horizontal"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_line_vertical_panel"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_gray_line_horizontal_panel"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:light_light_gray_regular"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_regular"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_borderless"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_diamond"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_panel_fancy"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_bubble"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_panel"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_panel_connected"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_framed"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_framed_connected"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_frame_1"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_frame_2"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_frame_3"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_circle"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_round"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_mosaic_1"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_mosaic_2"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_rings"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_basketweave"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_scaffold"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_scaffold_left"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_scaffold_right"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_arch_panel"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_arch_panel_1"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_arch_panel_2"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_arch_panel_3"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_frame_thick"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_frame_thick_panel"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_tile"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_brick"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_line_vertical"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_line_horizontal"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_line_vertical_panel"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_light_gray_line_horizontal_panel"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:light_cyan_regular"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:light_cyan_regular"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_borderless"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_diamond"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_panel_fancy"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_bubble"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_panel"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_panel_connected"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_framed"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_framed_connected"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_frame_1"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_frame_2"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_frame_3"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_circle"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_round"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_mosaic_1"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_mosaic_2"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_rings"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_basketweave"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_scaffold"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_scaffold_left"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_scaffold_right"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_arch_panel"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_arch_panel_1"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_arch_panel_2"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_arch_panel_3"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_frame_thick"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_frame_thick_panel"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_tile"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_brick"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_line_vertical"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_line_horizontal"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_line_vertical_panel"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_cyan_line_horizontal_panel"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:light_purple_regular"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:light_purple_regular"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_borderless"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_diamond"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_panel_fancy"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_bubble"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_panel"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_panel_connected"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_framed"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_framed_connected"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_frame_1"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_frame_2"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_frame_3"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_circle"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_round"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_mosaic_1"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_mosaic_2"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_rings"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_basketweave"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_scaffold"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_scaffold_left"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_scaffold_right"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_arch_panel"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_arch_panel_1"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_arch_panel_2"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_arch_panel_3"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_frame_thick"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_frame_thick_panel"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_tile"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_brick"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_line_vertical"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_line_horizontal"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_line_vertical_panel"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_purple_line_horizontal_panel"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:light_blue_regular"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:light_blue_regular"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_borderless"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_diamond"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_panel_fancy"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_bubble"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_panel"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_panel_connected"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_framed"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_framed_connected"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_frame_1"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_frame_2"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_frame_3"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_circle"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_round"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_mosaic_1"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_mosaic_2"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_rings"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_basketweave"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_scaffold"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_scaffold_left"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_scaffold_right"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_arch_panel"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_arch_panel_1"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_arch_panel_2"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_arch_panel_3"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_frame_thick"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_frame_thick_panel"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_tile"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_brick"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_line_vertical"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_line_horizontal"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_line_vertical_panel"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_blue_line_horizontal_panel"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:light_brown_regular"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:light_brown_regular"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_borderless"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_diamond"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_panel_fancy"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_bubble"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_panel"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_panel_connected"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_framed"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_framed_connected"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_frame_1"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_frame_2"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_frame_3"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_circle"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_round"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_mosaic_1"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_mosaic_2"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_rings"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_basketweave"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_scaffold"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_scaffold_left"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_scaffold_right"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_arch_panel"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_arch_panel_1"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_arch_panel_2"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_arch_panel_3"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_frame_thick"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_frame_thick_panel"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_tile"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_brick"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_line_vertical"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_line_horizontal"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_line_vertical_panel"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_brown_line_horizontal_panel"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:light_green_regular"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:light_green_regular"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_borderless"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_diamond"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_panel_fancy"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_bubble"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_panel"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_panel_connected"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_framed"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_framed_connected"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_frame_1"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_frame_2"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_frame_3"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_circle"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_round"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_mosaic_1"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_mosaic_2"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_rings"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_basketweave"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_scaffold"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_scaffold_left"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_scaffold_right"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_arch_panel"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_arch_panel_1"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_arch_panel_2"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_arch_panel_3"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_frame_thick"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_frame_thick_panel"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_tile"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_brick"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_line_vertical"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_line_horizontal"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_line_vertical_panel"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_green_line_horizontal_panel"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:light_red_regular"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:light_red_regular"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_borderless"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_diamond"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_panel_fancy"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_bubble"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_panel"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_panel_connected"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_framed"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_framed_connected"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_frame_1"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_frame_2"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_frame_3"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_circle"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_round"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_mosaic_1"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_mosaic_2"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_rings"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_basketweave"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_scaffold"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_scaffold_left"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_scaffold_right"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_arch_panel"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_arch_panel_1"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_arch_panel_2"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_arch_panel_3"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_frame_thick"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_frame_thick_panel"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_tile"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_brick"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_line_vertical"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_line_horizontal"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_line_vertical_panel"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_red_line_horizontal_panel"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:light_black_regular"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:light_black_regular"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_borderless"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_diamond"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_panel_fancy"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_bubble"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_panel"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_panel_connected"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_framed"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_framed_connected"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_frame_1"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_frame_2"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_frame_3"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_circle"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_round"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_mosaic_1"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_mosaic_2"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_rings"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_basketweave"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_scaffold"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_scaffold_left"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_scaffold_right"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_arch_panel"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_arch_panel_1"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_arch_panel_2"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_arch_panel_3"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_frame_thick"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_frame_thick_panel"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_tile"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_brick"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_line_vertical"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_line_horizontal"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_line_vertical_panel"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:light_black_line_horizontal_panel"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    }
+  ],
+  "sort_order": 217,
+  "title": "Lights"
+}
