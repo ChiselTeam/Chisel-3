@@ -1,0 +1,9 @@
+{
+  "values": [
+    {"id": "betterblockz:iron_slate_redstone_blockz_0", "required": false},
+    {"id": "betterblockz:iron_slate_redstone_blockz_1", "required": false},
+    {"id": "betterblockz:iron_slate_redstone_blockz_2", "required": false},
+    {"id": "betterblockz:iron_slate_redstone_blockz_3", "required": false},
+    {"id": "betterblockz:iron_slate_redstone_blockz_4", "required": false}
+  ]
+}
