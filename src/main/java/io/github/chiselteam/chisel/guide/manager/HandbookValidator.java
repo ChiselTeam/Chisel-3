@@ -72,9 +72,10 @@ public final class HandbookValidator {
             }
             if (section instanceof ImageSection image && (!image.texture().getPath().startsWith("textures/") || !image.texture().getPath().endsWith(".png")))
                 errors.add("Image section %d must reference a textures/...png resource".formatted(sectionIndex));
-            if (section instanceof StructureSection(List<StructureSection.Cell> blocks)) {
+            if (section instanceof StructureSection structure) {
+                if (structure.blocks().isEmpty()) errors.add("Structure section %d has no visible blocks".formatted(sectionIndex));
                 var positions = new HashSet<>();
-                for (var cell : blocks) {
+                for (var cell : structure.blocks()) {
                     if (!positions.add(cell.pos())) errors.add("Structure section %d repeats position %s".formatted(sectionIndex, cell.pos()));
                 }
             }

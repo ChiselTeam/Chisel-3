@@ -1,0 +1,156 @@
+{
+  "categories": [
+    "chisel:blocks"
+  ],
+  "description": {
+    "translate": "chisel.guide.road_lines.description"
+  },
+  "icon": "chisel:road_line_double_white_center",
+  "sections": [
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:road_line_double_white_center"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:road_line_double_white_center",
+            "Properties": {
+              "facing": "north"
+            }
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:road_line_double_white_long",
+            "Properties": {
+              "facing": "north"
+            }
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:road_line_double_white_side",
+            "Properties": {
+              "facing": "north"
+            }
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:road_line_double_yellow_center",
+            "Properties": {
+              "facing": "north"
+            }
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:road_line_double_yellow_long",
+            "Properties": {
+              "facing": "north"
+            }
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:road_line_double_yellow_side",
+            "Properties": {
+              "facing": "north"
+            }
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:road_line_white_center",
+            "Properties": {
+              "facing": "north"
+            }
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:road_line_white_long",
+            "Properties": {
+              "facing": "north"
+            }
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:road_line_white_side",
+            "Properties": {
+              "facing": "north"
+            }
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:road_line_yellow_center",
+            "Properties": {
+              "facing": "north"
+            }
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:road_line_yellow_long",
+            "Properties": {
+              "facing": "north"
+            }
+          },
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:road_line_yellow_side",
+            "Properties": {
+              "facing": "north"
+            }
+          },
+          "x": 1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    }
+  ],
+  "sort_order": 39,
+  "title": {
+    "translate": "chisel.guide.road_lines.title"
+  }
+}

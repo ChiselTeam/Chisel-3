@@ -1,0 +1,48 @@
+{
+  "categories": [
+    "chisel:items",
+    "chisel:palettes"
+  ],
+  "description": {
+    "translate": "chisel.guide.palette_builder.description"
+  },
+  "icon": "chisel:palette_builder",
+  "sections": [
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.handbook.structure.example"
+      }
+    },
+    {
+      "type": "chisel:structure",
+      "template": "minecraft:village/plains/town_centers/plains_meeting_point_3"
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.palette_builder.usage"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.palette_builder.details"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.palette_builder.tip"
+      }
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:palette_builder"
+    }
+  ],
+  "sort_order": 80,
+  "title": {
+    "translate": "chisel.guide.palette_builder.title"
+  }
+}

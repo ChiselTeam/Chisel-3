@@ -1,0 +1,37 @@
+{
+  "categories": [
+    "chisel:items"
+  ],
+  "description": {
+    "translate": "chisel.guide.cloud_in_a_bottle.description"
+  },
+  "icon": "chisel:cloudinabottle",
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.cloud_in_a_bottle.usage"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.cloud_in_a_bottle.details"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.cloud_in_a_bottle.tip"
+      }
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:cloudinabottle"
+    }
+  ],
+  "sort_order": 110,
+  "title": {
+    "translate": "chisel.guide.cloud_in_a_bottle.title"
+  }
+}

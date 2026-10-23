@@ -5,7 +5,7 @@ import com.mojang.serialization.MapCodec;
 import io.github.chiselteam.chisel.Chisel;
 import net.minecraft.resources.Identifier;
 
-public sealed interface HandbookGuideSection permits TextSection, TipSection, PaletteSection, ImageSection, StructureSection {
+public sealed interface HandbookGuideSection permits TextSection, TipSection, PaletteSection, ImageSection, StructureSection, CraftingRecipeSection {
     Codec<HandbookGuideSection> CODEC = Identifier.CODEC.dispatch("type", HandbookGuideSection::type, HandbookGuideSection::codecFor);
 
     private static MapCodec<? extends HandbookGuideSection> codecFor(Identifier type) {
@@ -14,6 +14,8 @@ public sealed interface HandbookGuideSection permits TextSection, TipSection, Pa
         if (type.equals(Chisel.prefix("palette"))) return PaletteSection.CODEC;
         if (type.equals(Chisel.prefix("image"))) return ImageSection.CODEC;
         if (type.equals(Chisel.prefix("structure"))) return StructureSection.CODEC;
+
+        if (type.equals(Chisel.prefix("crafting_recipe"))) return CraftingRecipeSection.CODEC;
 
         throw new IllegalArgumentException("Unknown handbook section type: " + type);
     }

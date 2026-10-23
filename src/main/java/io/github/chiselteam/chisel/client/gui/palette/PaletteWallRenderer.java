@@ -12,6 +12,7 @@ import net.minecraft.client.renderer.rendertype.RenderType;
 import net.minecraft.client.renderer.rendertype.RenderTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.util.ARGB;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
@@ -103,7 +104,8 @@ public class PaletteWallRenderer extends PictureInPictureRenderer<PaletteWallSta
             int tintIndex = quad.materialInfo().tintIndex();
             if (tintIndex >= 0) {
                 var tint = Minecraft.getInstance().getBlockColors().getTintSource(block, tintIndex);
-                if (tint != null) quads.multiplyColor(tint.colorInWorld(block, getter, pos));
+                // Biome resolvers return RGB; multiplying its absent alpha hides cutout faces.
+                if (tint != null) quads.multiplyColor(ARGB.opaque(tint.colorInWorld(block, getter, pos)));
             }
             quads.setLightCoords(15728880);
             var buffer = bufferSource.getBuffer(getRenderTypeForLayer(quad.materialInfo().layer()));

@@ -1,10 +1,7 @@
 package io.github.chiselteam.chisel.event;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.guide.manager.HandbookCategoryReloadListener;
-import io.github.chiselteam.chisel.guide.manager.HandbookReferenceReloadListener;
-import io.github.chiselteam.chisel.guide.manager.HandbookReloadListener;
-import io.github.chiselteam.chisel.guide.manager.ServerHandbookManager;
+import io.github.chiselteam.chisel.guide.manager.*;
 import io.github.chiselteam.chisel.network.HandbookGuidesPacket;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -26,7 +23,7 @@ public class AddReloadListenerEventHandler {
 
     @SubscribeEvent
     public static void onDatapackSync(OnDatapackSyncEvent event) {
-        var guidesPacket = new HandbookGuidesPacket(ServerHandbookManager.getGuides(), ServerHandbookManager.getCategories());
+        var guidesPacket = new HandbookGuidesPacket(HandbookRecipeResolver.resolve(ServerHandbookManager.getGuides(), event.getPlayerList().getServer().getRecipeManager().recipeMap()), ServerHandbookManager.getCategories());
 
         event.getRelevantPlayers().forEach(player -> PacketDistributor.sendToPlayer(player, guidesPacket));
     }

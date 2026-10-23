@@ -1,0 +1,49 @@
+{
+  "categories": [
+    "chisel:items"
+  ],
+  "description": {
+    "translate": "chisel.guide.auto_chisel_upgrades.description"
+  },
+  "icon": "chisel:upgrade_stack",
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.auto_chisel_upgrades.usage"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.auto_chisel_upgrades.details"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.auto_chisel_upgrades.tip"
+      }
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:upgrade_speed"
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:upgrade_automation"
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:upgrade_stack"
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:upgrade_reversion"
+    }
+  ],
+  "sort_order": 30,
+  "title": {
+    "translate": "chisel.guide.auto_chisel_upgrades.title"
+  }
+}

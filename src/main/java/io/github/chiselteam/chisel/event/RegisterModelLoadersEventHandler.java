@@ -1,7 +1,7 @@
 package io.github.chiselteam.chisel.event;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockModelDefinition;
+import io.github.chiselteam.chisel.client.model.ConnectedTextureBlockModelDefinition;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterBlockStateModels;

@@ -1,0 +1,37 @@
+{
+  "categories": [
+    "chisel:items"
+  ],
+  "description": {
+    "translate": "chisel.guide.smashing_rock.description"
+  },
+  "icon": "chisel:smashingrock",
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.smashing_rock.usage"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.smashing_rock.details"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.smashing_rock.tip"
+      }
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:smashingrock"
+    }
+  ],
+  "sort_order": 120,
+  "title": {
+    "translate": "chisel.guide.smashing_rock.title"
+  }
+}

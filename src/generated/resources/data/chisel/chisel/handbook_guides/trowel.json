@@ -1,0 +1,38 @@
+{
+  "categories": [
+    "chisel:items",
+    "chisel:palettes"
+  ],
+  "description": {
+    "translate": "chisel.guide.trowel.description"
+  },
+  "icon": "chisel:trowel",
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.trowel.usage"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.trowel.details"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.trowel.tip"
+      }
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:trowel"
+    }
+  ],
+  "sort_order": 90,
+  "title": {
+    "translate": "chisel.guide.trowel.title"
+  }
+}

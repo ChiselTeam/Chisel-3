@@ -1,0 +1,861 @@
+{
+  "categories": [
+    "chisel:palettes"
+  ],
+  "description": "Dark red masonry with warmer patches and worn bricks.",
+  "icon": "minecraft:nether_bricks",
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.default_palette.usage"
+      }
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -5,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -4,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cracked_nether_bricks"
+          },
+          "x": -3,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": -2,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -1,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cracked_nether_bricks"
+          },
+          "x": 0,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": 1,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 2,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": 3,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 4,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -5,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:netherrack"
+          },
+          "x": -4,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -3,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": -2,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -1,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": 0,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:netherrack"
+          },
+          "x": 1,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:netherrack"
+          },
+          "x": 2,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 3,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": 4,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -5,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:chiseled_nether_bricks"
+          },
+          "x": -4,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": -3,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -2,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -1,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": 0,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 1,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 2,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": 3,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 4,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -5,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": -4,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -3,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:netherrack"
+          },
+          "x": -2,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -1,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 0,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 1,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cracked_nether_bricks"
+          },
+          "x": 2,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:netherrack"
+          },
+          "x": 3,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 4,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -5,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -4,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:netherrack"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 4,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": -5,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -4,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cracked_nether_bricks"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:chiseled_nether_bricks"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cracked_nether_bricks"
+          },
+          "x": 3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 4,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -5,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -4,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cracked_nether_bricks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:netherrack"
+          },
+          "x": 3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:netherrack"
+          },
+          "x": 4,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": -5,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": -4,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:netherrack"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:chiseled_nether_bricks"
+          },
+          "x": 3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": 4,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:netherrack"
+          },
+          "x": -5,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cracked_nether_bricks"
+          },
+          "x": -4,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:netherrack"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 4,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:netherrack"
+          },
+          "x": -5,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -4,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:netherrack"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:netherrack"
+          },
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:netherrack"
+          },
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_nether_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:nether_bricks"
+          },
+          "x": 4,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.default_palette.wall_tip"
+      }
+    },
+    {
+      "type": "chisel:palette",
+      "entries": [
+        {
+          "block": "minecraft:nether_bricks",
+          "role": "primary",
+          "weight": 50
+        },
+        {
+          "block": "minecraft:red_nether_bricks",
+          "role": "secondary",
+          "weight": 25
+        },
+        {
+          "block": "minecraft:netherrack",
+          "role": "secondary",
+          "weight": 15
+        },
+        {
+          "block": "minecraft:cracked_nether_bricks",
+          "role": "accent",
+          "weight": 7
+        },
+        {
+          "block": "minecraft:chiseled_nether_bricks",
+          "role": "rare",
+          "weight": 3
+        }
+      ],
+      "title": {
+        "translate": "chisel.guide.default_palette.materials"
+      }
+    }
+  ],
+  "sort_order": 109,
+  "title": "Nether Citadel"
+}

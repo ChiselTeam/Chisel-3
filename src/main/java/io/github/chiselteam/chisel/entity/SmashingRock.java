@@ -1,9 +1,9 @@
 package io.github.chiselteam.chisel.entity;
 
-import io.github.chiselteam.chisel.datagen.registry.ChiselSmashingRockRegistry;
 import io.github.chiselteam.chisel.projectile.SmashingRockData;
 import io.github.chiselteam.chisel.registry.ChiselEntities;
 import io.github.chiselteam.chisel.registry.ChiselItems;
+import io.github.chiselteam.chisel.registry.ChiselSmashingRockRegistry;
 import io.github.chiselteam.chisel.registry.ChiselSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
