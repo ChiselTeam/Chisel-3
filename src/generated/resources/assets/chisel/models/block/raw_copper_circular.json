@@ -4,7 +4,7 @@
     "all": "chisel:block/raw_copper/raw_copper_circular",
     "particle": "chisel:block/raw_copper/raw_copper_circular",
     "standard_corner": "chisel:block/raw_copper/raw_copper_circular-ctm_corner",
-    "standard_cornerless": "chisel:block/raw_copper/raw_copper_circular-ctm_cornerless",
+    "standard_cornerless": "chisel:block/raw_copper/raw_copper_raw",
     "standard_horizontal": "chisel:block/raw_copper/raw_copper_circular-ctm_horizontal",
     "standard_none": "chisel:block/raw_copper/raw_copper_circular",
     "standard_vertical": "chisel:block/raw_copper/raw_copper_circular-ctm_vertical"

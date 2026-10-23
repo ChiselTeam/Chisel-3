@@ -4,9 +4,9 @@
     "all": "chisel:block/bone_block/bone_block_border_square",
     "particle": "chisel:block/bone_block/bone_block_border_square",
     "standard_corner": "chisel:block/bone_block/bone_block_border_square-ctm_corner",
-    "standard_cornerless": "chisel:block/bone_block/bone_block_border_square-ctm_cornerless",
-    "standard_horizontal": "chisel:block/bone_block/bone_block_border_square-ctm_horizontal",
+    "standard_cornerless": "chisel:block/bone_block/bone_block_raw",
+    "standard_horizontal": "chisel:block/bone_block/bone_block_border_square-ctm_corner",
     "standard_none": "chisel:block/bone_block/bone_block_border_square",
-    "standard_vertical": "chisel:block/bone_block/bone_block_border_square-ctm_vertical"
+    "standard_vertical": "chisel:block/bone_block/bone_block_border_square-ctm_corner"
   }
 }

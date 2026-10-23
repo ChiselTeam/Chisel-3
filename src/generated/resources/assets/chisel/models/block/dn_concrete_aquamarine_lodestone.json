@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/dn_concrete_aquamarine/dn_concrete_aquamarine_lodestone"
+    "all": "chisel:block/dn_concrete_aquamarine/dn_concrete_aquamarine_lodestone_connected"
   }
 }

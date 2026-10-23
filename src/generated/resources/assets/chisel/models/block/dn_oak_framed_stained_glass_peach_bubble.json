@@ -1,10 +1,10 @@
 {
   "textures": {
     "particle": "chisel:block/dn_oak_framed_stained_glass_peach/dn_oak_framed_stained_glass_peach_bubble",
-    "standard_corner": "chisel:block/dn_oak_framed_stained_glass_peach/dn_oak_framed_stained_glass_peach_bubble-ctm_corner",
-    "standard_cornerless": "chisel:block/dn_oak_framed_stained_glass_peach/dn_oak_framed_stained_glass_peach_bubble-ctm_cornerless",
-    "standard_horizontal": "chisel:block/dn_oak_framed_stained_glass_peach/dn_oak_framed_stained_glass_peach_bubble-ctm_horizontal",
+    "standard_corner": "chisel:block/dn_oak_framed_stained_glass_peach/dn_oak_framed_stained_glass_peach-ctm_corner",
+    "standard_cornerless": "chisel:block/dn_stained_glass_peach/dn_stained_glass_peach_borderless",
+    "standard_horizontal": "chisel:block/dn_oak_framed_stained_glass_peach/dn_oak_framed_stained_glass_peach-ctm_horizontal",
     "standard_none": "chisel:block/dn_oak_framed_stained_glass_peach/dn_oak_framed_stained_glass_peach_bubble",
-    "standard_vertical": "chisel:block/dn_oak_framed_stained_glass_peach/dn_oak_framed_stained_glass_peach_bubble-ctm_vertical"
+    "standard_vertical": "chisel:block/dn_oak_framed_stained_glass_peach/dn_oak_framed_stained_glass_peach-ctm_vertical"
   }
 }

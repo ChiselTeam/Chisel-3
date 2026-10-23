@@ -4,7 +4,7 @@
     "all": "chisel:block/dn_concrete_mint/dn_concrete_mint_zag",
     "multiblock_2x2_bottom_left": "chisel:block/dn_concrete_mint/dn_concrete_mint_zag-v4_bottom_left",
     "multiblock_2x2_bottom_right": "chisel:block/dn_concrete_mint/dn_concrete_mint_zag-v4_bottom_right",
-    "multiblock_2x2_top_left": "chisel:block/dn_concrete_mint/dn_concrete_mint_zag-v4_top_left",
+    "multiblock_2x2_top_left": "chisel:block/dn_concrete_mint/dn_concrete_mint_zag",
     "multiblock_2x2_top_right": "chisel:block/dn_concrete_mint/dn_concrete_mint_zag-v4_top_right",
     "particle": "chisel:block/dn_concrete_mint/dn_concrete_mint_zag"
   }

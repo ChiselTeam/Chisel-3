@@ -4,7 +4,7 @@
     "all": "chisel:block/bone_block/bone_block_lodestone_connected",
     "particle": "chisel:block/bone_block/bone_block_lodestone_connected",
     "standard_corner": "chisel:block/bone_block/bone_block_lodestone_connected-ctm_corner",
-    "standard_cornerless": "chisel:block/bone_block/bone_block_lodestone_connected-ctm_cornerless",
+    "standard_cornerless": "chisel:block/bone_block/bone_block_lodestone_connected",
     "standard_horizontal": "chisel:block/bone_block/bone_block_lodestone_connected-ctm_horizontal",
     "standard_none": "chisel:block/bone_block/bone_block_lodestone_connected",
     "standard_vertical": "chisel:block/bone_block/bone_block_lodestone_connected-ctm_vertical"

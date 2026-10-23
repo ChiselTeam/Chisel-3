@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/dirt/dirt_shiny"
+    "all": "chisel:block/dirt/dirt_shiny_connected"
   }
 }

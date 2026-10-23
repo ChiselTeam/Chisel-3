@@ -4,7 +4,7 @@
     "all": "chisel:block/mossy_blackstone/mossy_blackstone_dent",
     "particle": "chisel:block/mossy_blackstone/mossy_blackstone_dent",
     "standard_corner": "chisel:block/mossy_blackstone/mossy_blackstone_dent-ctm_corner",
-    "standard_cornerless": "chisel:block/mossy_blackstone/mossy_blackstone_dent-ctm_cornerless",
+    "standard_cornerless": "chisel:block/mossy_blackstone/mossy_blackstone_raw",
     "standard_horizontal": "chisel:block/mossy_blackstone/mossy_blackstone_dent-ctm_horizontal",
     "standard_none": "chisel:block/mossy_blackstone/mossy_blackstone_dent",
     "standard_vertical": "chisel:block/mossy_blackstone/mossy_blackstone_dent-ctm_vertical"

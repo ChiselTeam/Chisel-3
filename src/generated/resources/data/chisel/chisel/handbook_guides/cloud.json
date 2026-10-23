@@ -1,0 +1,66 @@
+{
+  "categories": [
+    "chisel:blocks"
+  ],
+  "description": {
+    "translate": "chisel.guide.cloud.description"
+  },
+  "icon": "chisel:cloud_normal",
+  "sections": [
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:cloud_grid"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:cloud_large"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:cloud_normal"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:cloud_small"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:cloud_vertical"
+          },
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.cloud.usage"
+      }
+    }
+  ],
+  "sort_order": 4,
+  "title": {
+    "translate": "chisel.guide.cloud.title"
+  }
+}

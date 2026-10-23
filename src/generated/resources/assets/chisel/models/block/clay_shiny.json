@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/clay/clay_shiny"
+    "all": "chisel:block/clay/clay_shiny_connected"
   }
 }

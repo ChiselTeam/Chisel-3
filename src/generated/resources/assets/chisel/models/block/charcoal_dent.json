@@ -4,7 +4,7 @@
     "all": "chisel:block/charcoal/charcoal_dent",
     "particle": "chisel:block/charcoal/charcoal_dent",
     "standard_corner": "chisel:block/charcoal/charcoal_dent-ctm_corner",
-    "standard_cornerless": "chisel:block/charcoal/charcoal_dent-ctm_cornerless",
+    "standard_cornerless": "chisel:block/charcoal/charcoal_border_square-ctm_cornerless",
     "standard_horizontal": "chisel:block/charcoal/charcoal_dent-ctm_horizontal",
     "standard_none": "chisel:block/charcoal/charcoal_dent",
     "standard_vertical": "chisel:block/charcoal/charcoal_dent-ctm_vertical"

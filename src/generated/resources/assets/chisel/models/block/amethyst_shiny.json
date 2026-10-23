@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/amethyst/amethyst_shiny"
+    "all": "chisel:block/amethyst/amethyst_shiny_connected"
   }
 }

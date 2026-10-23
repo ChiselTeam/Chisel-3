@@ -4,9 +4,9 @@
     "all": "chisel:block/light_light_blue/light_light_blue_arch_panel_3",
     "particle": "chisel:block/light_light_blue/light_light_blue_arch_panel_3",
     "standard_corner": "chisel:block/light_light_blue/light_light_blue_arch_panel_3-ctm_corner",
-    "standard_cornerless": "chisel:block/light_light_blue/light_light_blue_arch_panel_3-ctm_cornerless",
-    "standard_horizontal": "chisel:block/light_light_blue/light_light_blue_arch_panel_3-ctm_horizontal",
+    "standard_cornerless": "chisel:block/light_light_blue/light_light_blue_arch_panel_3-ctm_corner",
+    "standard_horizontal": "chisel:block/light_light_blue/light_light_blue_arch_panel_3-ctm_corner",
     "standard_none": "chisel:block/light_light_blue/light_light_blue_arch_panel_3",
-    "standard_vertical": "chisel:block/light_light_blue/light_light_blue_arch_panel_3-ctm_vertical"
+    "standard_vertical": "chisel:block/light_light_blue/light_light_blue_arch_panel_3"
   }
 }

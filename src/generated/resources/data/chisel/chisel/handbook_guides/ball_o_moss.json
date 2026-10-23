@@ -1,0 +1,37 @@
+{
+  "categories": [
+    "chisel:items"
+  ],
+  "description": {
+    "translate": "chisel.guide.ball_o_moss.description"
+  },
+  "icon": "chisel:ballomoss",
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.ball_o_moss.usage"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.ball_o_moss.details"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.ball_o_moss.tip"
+      }
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:ballomoss"
+    }
+  ],
+  "sort_order": 100,
+  "title": {
+    "translate": "chisel.guide.ball_o_moss.title"
+  }
+}

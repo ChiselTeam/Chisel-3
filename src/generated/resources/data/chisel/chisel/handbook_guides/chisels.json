@@ -1,0 +1,45 @@
+{
+  "categories": [
+    "chisel:items"
+  ],
+  "description": {
+    "translate": "chisel.guide.chisels.description"
+  },
+  "icon": "chisel:chisel_iron",
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.chisels.usage"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.chisels.details"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.chisels.tip"
+      }
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:chisel_iron"
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:chisel_diamond"
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:chisel_obsidian"
+    }
+  ],
+  "sort_order": 10,
+  "title": {
+    "translate": "chisel.guide.chisels.title"
+  }
+}

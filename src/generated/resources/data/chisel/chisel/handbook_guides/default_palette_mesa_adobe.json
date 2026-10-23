@@ -1,0 +1,861 @@
+{
+  "categories": [
+    "chisel:palettes"
+  ],
+  "description": "Earthy orange walls with red sandstone and terracotta.",
+  "icon": "minecraft:terracotta",
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.default_palette.usage"
+      }
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": -5,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:orange_terracotta"
+          },
+          "x": -4,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -3,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -2,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -1,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 0,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 1,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 2,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": 3,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:orange_terracotta"
+          },
+          "x": 4,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": -5,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -4,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": -3,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_red_sandstone"
+          },
+          "x": -2,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -1,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 0,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 1,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 2,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 3,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_terracotta"
+          },
+          "x": 4,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": -5,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -4,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -3,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_red_sandstone"
+          },
+          "x": -2,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -1,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:orange_terracotta"
+          },
+          "x": 0,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 1,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:orange_terracotta"
+          },
+          "x": 2,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": 3,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 4,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_red_sandstone"
+          },
+          "x": -5,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:orange_terracotta"
+          },
+          "x": -4,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_red_sandstone"
+          },
+          "x": -3,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -2,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -1,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 0,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 1,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:orange_terracotta"
+          },
+          "x": 2,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": 3,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": 4,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:orange_terracotta"
+          },
+          "x": -5,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:orange_terracotta"
+          },
+          "x": -4,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:orange_terracotta"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:orange_terracotta"
+          },
+          "x": 4,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": -5,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -4,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:orange_terracotta"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_red_sandstone"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": 3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": 4,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -5,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": -4,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:orange_terracotta"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_red_sandstone"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:orange_terracotta"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_terracotta"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:orange_terracotta"
+          },
+          "x": 3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": 4,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -5,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": -4,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_terracotta"
+          },
+          "x": 3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 4,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": -5,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": -4,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": 3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:orange_terracotta"
+          },
+          "x": 4,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -5,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -4,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:red_sandstone"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_red_sandstone"
+          },
+          "x": 2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:terracotta"
+          },
+          "x": 4,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.default_palette.wall_tip"
+      }
+    },
+    {
+      "type": "chisel:palette",
+      "entries": [
+        {
+          "block": "minecraft:terracotta",
+          "role": "primary",
+          "weight": 50
+        },
+        {
+          "block": "minecraft:red_sandstone",
+          "role": "secondary",
+          "weight": 25
+        },
+        {
+          "block": "minecraft:orange_terracotta",
+          "role": "secondary",
+          "weight": 15
+        },
+        {
+          "block": "minecraft:smooth_red_sandstone",
+          "role": "accent",
+          "weight": 7
+        },
+        {
+          "block": "minecraft:red_terracotta",
+          "role": "rare",
+          "weight": 3
+        }
+      ],
+      "title": {
+        "translate": "chisel.guide.default_palette.materials"
+      }
+    }
+  ],
+  "sort_order": 105,
+  "title": "Mesa Adobe"
+}

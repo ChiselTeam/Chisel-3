@@ -2,7 +2,7 @@
   "textures": {
     "particle": "chisel:block/dn_steel_framed_stained_glass_rose/dn_steel_framed_stained_glass_rose_frame_thick",
     "standard_corner": "chisel:block/dn_steel_framed_stained_glass_rose/dn_steel_framed_stained_glass_rose_frame_thick-ctm_corner",
-    "standard_cornerless": "chisel:block/dn_steel_framed_stained_glass_rose/dn_steel_framed_stained_glass_rose_frame_thick-ctm_cornerless",
+    "standard_cornerless": "chisel:block/dn_stained_glass_rose/dn_stained_glass_rose_borderless",
     "standard_horizontal": "chisel:block/dn_steel_framed_stained_glass_rose/dn_steel_framed_stained_glass_rose_frame_thick-ctm_horizontal",
     "standard_none": "chisel:block/dn_steel_framed_stained_glass_rose/dn_steel_framed_stained_glass_rose_frame_thick",
     "standard_vertical": "chisel:block/dn_steel_framed_stained_glass_rose/dn_steel_framed_stained_glass_rose_frame_thick-ctm_vertical"

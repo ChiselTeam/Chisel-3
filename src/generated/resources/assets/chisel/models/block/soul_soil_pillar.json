@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/soul_soil/soul_soil_pillar-bottom",
+    "bottom": "chisel:block/soul_soil/soul_soil_pillar-top",
     "side": "chisel:block/soul_soil/soul_soil_pillar-side",
     "top": "chisel:block/soul_soil/soul_soil_pillar-top"
   }

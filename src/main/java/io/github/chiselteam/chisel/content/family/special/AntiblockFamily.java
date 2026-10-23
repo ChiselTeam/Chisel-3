@@ -18,7 +18,7 @@ public final class AntiblockFamily {
     }
 
     private static ChiselFamily buildAntiblock() {
-        var colors = List.of("Black", "Gray", "Light Gray", "White", "Brown", "Red", "Orange", "Yellow", "Lime", "Green", "Cyan", "Light Blue", "Blue", "Purple", "Magenta", "Pink");
+        var colors = List.of("Black", "Blue", "Brown", "Cyan", "Gray", "Green", "Light Blue", "Light Gray", "Lime", "Magenta", "Orange", "Pink", "Purple", "Red", "White", "Yellow");
         return ChiselFamily.build("antiblock", builder -> {
             builder.defaults(v -> v.blockName("Antiblock").properties(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).strength(3.0F, 5.0F).requiresCorrectToolForDrops().lightLevel((_) -> 15)));
             addAntiblockVariants(builder, colors, "", "%s Anti Block", ChiselModelHandlers.ANTIBLOCK);

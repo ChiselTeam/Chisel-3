@@ -4,9 +4,9 @@
     "all": "chisel:block/mossy_blackstone/mossy_blackstone_border_square",
     "particle": "chisel:block/mossy_blackstone/mossy_blackstone_border_square",
     "standard_corner": "chisel:block/mossy_blackstone/mossy_blackstone_border_square-ctm_corner",
-    "standard_cornerless": "chisel:block/mossy_blackstone/mossy_blackstone_border_square-ctm_cornerless",
-    "standard_horizontal": "chisel:block/mossy_blackstone/mossy_blackstone_border_square-ctm_horizontal",
+    "standard_cornerless": "chisel:block/mossy_blackstone/mossy_blackstone_raw",
+    "standard_horizontal": "chisel:block/mossy_blackstone/mossy_blackstone_border_square-ctm_corner",
     "standard_none": "chisel:block/mossy_blackstone/mossy_blackstone_border_square",
-    "standard_vertical": "chisel:block/mossy_blackstone/mossy_blackstone_border_square-ctm_vertical"
+    "standard_vertical": "chisel:block/mossy_blackstone/mossy_blackstone_border_square-ctm_corner"
   }
 }

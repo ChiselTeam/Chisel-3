@@ -1,0 +1,469 @@
+{
+  "categories": [
+    "chisel:blocks"
+  ],
+  "description": {
+    "translate": "chisel.guide.marble.description"
+  },
+  "icon": "chisel:marble_raw",
+  "sections": [
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:marble_raw"
+          },
+          "x": -3,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_array"
+          },
+          "x": -2,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_braid"
+          },
+          "x": -1,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_chaotic_bricks"
+          },
+          "x": 0,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_chaotic_medium"
+          },
+          "x": 1,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_chaotic_small"
+          },
+          "x": 2,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_circular"
+          },
+          "x": 3,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_cracked"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_cracked_bricks"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_cuts"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_dent"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_encased_bricks"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_french_1"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_french_2"
+          },
+          "x": 3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_jellybean"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_layers"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_mosaic"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_ornate"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_panel"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_pillar",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_pillar_carved",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_pillar_convex",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_pillar_greek_decor",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_pillar_greek_greek",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_pillar_greek_plain",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_pillar_normal",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_pillar_normal2",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_pillar_ornamental",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_pillar_plain_decor",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_pillar_plain_greek",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_pillar_plain_plain",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_pillar_rough",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_pillar_simple",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_pillar_wide_decor",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_pillar_wide_greek",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_pillar_wide_plain",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_prism"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_road"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_slanted"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_small_bricks"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_soft_bricks"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_solid_bricks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_tiles_large"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_tiles_medium"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_tiles_small"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_triple_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_twisted"
+          },
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_weaver"
+          },
+          "x": 2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:marble_zag"
+          },
+          "x": 3,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.marble.usage"
+      }
+    }
+  ],
+  "sort_order": 34,
+  "title": {
+    "translate": "chisel.guide.marble.title"
+  }
+}

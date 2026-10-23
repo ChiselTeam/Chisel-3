@@ -1,0 +1,224 @@
+{
+  "categories": [
+    "chisel:blocks"
+  ],
+  "description": {
+    "translate": "chisel.guide.laboratory.description"
+  },
+  "icon": "chisel:laboratory_checkerboard",
+  "sections": [
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:laboratory_checkerboard"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:laboratory_checkerboard"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_floor"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_floor_dark"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_wall_vent"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_console_information"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_console_information_animated"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_console_left"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_console_left_animated"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_console_right"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_console_right_animated"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_panel_clear"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_clearscreen"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_panel_fuzzy"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_panel_dotted"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_panel_dotted_connected"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_panel_wall"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_panel_wall_connected"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_tiles_enamelled_large"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_wall"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_tiles_large"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_tiles_enamelled_small"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_tiles_small"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_wall_rounded"
+          },
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_tiles_steel_large"
+          },
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:laboratory_tiles_steel_small"
+          },
+          "x": 2,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    }
+  ],
+  "sort_order": 14,
+  "title": {
+    "translate": "chisel.guide.laboratory.title"
+  }
+}

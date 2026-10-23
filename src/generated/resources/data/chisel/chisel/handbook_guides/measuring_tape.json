@@ -1,0 +1,37 @@
+{
+  "categories": [
+    "chisel:items"
+  ],
+  "description": {
+    "translate": "chisel.guide.measuring_tape.description"
+  },
+  "icon": "chisel:measuring_tape",
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.measuring_tape.usage"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.measuring_tape.details"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.measuring_tape.tip"
+      }
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:measuring_tape"
+    }
+  ],
+  "sort_order": 60,
+  "title": {
+    "translate": "chisel.guide.measuring_tape.title"
+  }
+}

@@ -2,7 +2,7 @@
   "textures": {
     "particle": "chisel:block/dn_steel_framed_stained_glass_aquamarine/dn_steel_framed_stained_glass_aquamarine",
     "standard_corner": "chisel:block/dn_steel_framed_stained_glass_aquamarine/dn_steel_framed_stained_glass_aquamarine-ctm_corner",
-    "standard_cornerless": "chisel:block/dn_steel_framed_stained_glass_aquamarine/dn_steel_framed_stained_glass_aquamarine-ctm_cornerless",
+    "standard_cornerless": "chisel:block/dn_stained_glass_aquamarine/dn_stained_glass_aquamarine_borderless",
     "standard_horizontal": "chisel:block/dn_steel_framed_stained_glass_aquamarine/dn_steel_framed_stained_glass_aquamarine-ctm_horizontal",
     "standard_none": "chisel:block/dn_steel_framed_stained_glass_aquamarine/dn_steel_framed_stained_glass_aquamarine",
     "standard_vertical": "chisel:block/dn_steel_framed_stained_glass_aquamarine/dn_steel_framed_stained_glass_aquamarine-ctm_vertical"

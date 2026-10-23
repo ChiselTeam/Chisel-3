@@ -1,0 +1,136 @@
+{
+  "categories": [
+    "chisel:blocks"
+  ],
+  "description": {
+    "translate": "chisel.guide.holystone.description"
+  },
+  "icon": "chisel:holystone_blocks",
+  "sections": [
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:holystone_blocks"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:holystone_blocks"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:holystone_blocks_rough"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:holystone_bricks"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:holystone_bricks_large"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:holystone_chiseled"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:holystone_construction"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:holystone_love"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:holystone_plate"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:holystone_plate_smooth"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:holystone_platform"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:holystone_platform_tiles"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:holystone_raw"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:holystone_smooth"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:holystone_tiles"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    }
+  ],
+  "sort_order": 12,
+  "title": {
+    "translate": "chisel.guide.holystone.title"
+  }
+}

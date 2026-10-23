@@ -27,6 +27,7 @@ public final class HandbookPaginator {
                 case TextSection text -> pages.addText(font.split(text.text(), PAGE_CONTENT_WIDTH), false);
                 case TipSection tip -> pages.addText(font.split(tip.text(), PAGE_CONTENT_WIDTH), true);
                 case PaletteSection palette -> addPalette(pages, palette, font);
+                case CraftingRecipeSection recipe -> pages.add(new CraftingRecipePageElement(recipe));
                 case ImageSection image -> pages.add(new ImagePageElement(image));
                 case StructureSection structure -> pages.add(new StructurePageElement(structure));
             }

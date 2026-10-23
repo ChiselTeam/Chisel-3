@@ -2,7 +2,7 @@
   "textures": {
     "particle": "chisel:block/ice/ice_dent",
     "standard_corner": "chisel:block/ice/ice_dent-ctm_corner",
-    "standard_cornerless": "chisel:block/ice/ice_dent-ctm_cornerless",
+    "standard_cornerless": "chisel:block/ice/ice_raw",
     "standard_horizontal": "chisel:block/ice/ice_dent-ctm_horizontal",
     "standard_none": "chisel:block/ice/ice_dent",
     "standard_vertical": "chisel:block/ice/ice_dent-ctm_vertical"

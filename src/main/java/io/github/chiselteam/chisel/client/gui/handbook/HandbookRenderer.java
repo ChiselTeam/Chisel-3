@@ -1,10 +1,12 @@
 package io.github.chiselteam.chisel.client.gui.handbook;
 
 import io.github.chiselteam.chisel.Chisel;
+import io.github.chiselteam.chisel.client.gui.BookUiTextures;
 import io.github.chiselteam.chisel.guide.HandbookView;
 import io.github.chiselteam.chisel.guide.manager.HandbookPaginator;
 import io.github.chiselteam.chisel.guide.page.*;
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.renderer.RenderPipelines;
@@ -13,6 +15,10 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.util.FormattedCharSequence;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.display.ShapedCraftingRecipeDisplay;
+import net.minecraft.world.item.crafting.display.ShapelessCraftingRecipeDisplay;
+import net.minecraft.world.item.crafting.display.SlotDisplay;
+import net.minecraft.world.item.crafting.display.SlotDisplayContext;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,7 +69,7 @@ public final class HandbookRenderer {
             }
             case GUIDE -> {
                 extractOpenBookBackground(graphics);
-                extractSelectedGuide(graphics);
+                extractSelectedGuide(graphics, mouseX, mouseY);
             }
         }
     }
@@ -128,11 +134,11 @@ public final class HandbookRenderer {
         graphics.setTooltipForNextFrame(font, lines, mouseX, mouseY);
     }
 
-    private void extractSelectedGuide(GuiGraphicsExtractor graphics) {
+    private void extractSelectedGuide(GuiGraphicsExtractor graphics, int mouseX, int mouseY) {
         if (navigation.spreads().isEmpty()) return;
         var spread = navigation.spreads().get(navigation.spreadIndex());
-        extractPage(graphics, spread.leftPage(), layout.bookLeft() + LEFT_PAGE_X, layout.bookTop() + PAGE_Y);
-        extractPage(graphics, spread.rightPage(), layout.bookLeft() + RIGHT_PAGE_X, layout.bookTop() + PAGE_Y);
+        extractPage(graphics, spread.leftPage(), layout.bookLeft() + LEFT_PAGE_X, layout.bookTop() + PAGE_Y, mouseX, mouseY);
+        extractPage(graphics, spread.rightPage(), layout.bookLeft() + RIGHT_PAGE_X, layout.bookTop() + PAGE_Y, mouseX, mouseY);
         extractPageNumbers(graphics);
         extractArrows(graphics);
     }
@@ -153,22 +159,23 @@ public final class HandbookRenderer {
         graphics.nextStratum();
     }
 
-    private void extractPage(GuiGraphicsExtractor graphics, HandbookPage page, int x, int y) {
+    private void extractPage(GuiGraphicsExtractor graphics, HandbookPage page, int x, int y, int mouseX, int mouseY) {
         int contentX = x + PAGE_HORIZONTAL_PADDING;
         int elementY = y;
 
         graphics.enableScissor(x, y, x + PAGE_WIDTH, y + PAGE_HEIGHT);
 
         for (var element : page.elements()) {
-            extractElement(graphics, element, contentX, elementY, HandbookPaginator.PAGE_CONTENT_WIDTH);
+            extractElement(graphics, element, contentX, elementY, HandbookPaginator.PAGE_CONTENT_WIDTH, mouseX, mouseY);
             elementY += element.height();
         }
 
         graphics.disableScissor();
     }
 
-    private void extractElement(GuiGraphicsExtractor graphics, HandbookPageElement element, int x, int y, int contentWidth) {
+    private void extractElement(GuiGraphicsExtractor graphics, HandbookPageElement element, int x, int y, int contentWidth, int mouseX, int mouseY) {
         switch (element) {
+            case CraftingRecipePageElement recipe -> extractCraftingRecipe(graphics, recipe, x, y, contentWidth, mouseX, mouseY);
             case ImagePageElement image ->
                     graphics.blit(RenderPipelines.GUI_TEXTURED, image.image().texture(), x + (contentWidth - image.imageWidth()) / 2, y, 0, 0, image.imageWidth(), image.imageHeight(), image.image().width(), image.image().height(), image.image().width(), image.image().height());
             case StructurePageElement ignored -> {
@@ -181,6 +188,57 @@ public final class HandbookRenderer {
                     extractCenteredLines(graphics, paletteTitle.lines(), x + contentWidth / 2, y, TEXT_COLOR);
             case PaletteEntryPageElement paletteEntry -> extractPaletteEntry(graphics, paletteEntry, x, y);
         }
+    }
+
+    private void extractCraftingRecipe(GuiGraphicsExtractor graphics, CraftingRecipePageElement element, int x, int y, int contentWidth, int mouseX, int mouseY) {
+        var display = element.recipe().display().orElse(null);
+        var level = Minecraft.getInstance().level;
+        if (display == null || level == null) {
+            extractLines(graphics, font.split(Component.translatable("chisel.handbook.recipe.unavailable"), contentWidth), x, y, MUTED_TEXT_COLOR);
+            return;
+        }
+        List<SlotDisplay> ingredients;
+        int width;
+        boolean shapeless;
+        if (display instanceof ShapedCraftingRecipeDisplay shaped) {
+            ingredients = shaped.ingredients();
+            width = shaped.width();
+            shapeless = false;
+        } else if (display instanceof ShapelessCraftingRecipeDisplay recipe) {
+            ingredients = recipe.ingredients();
+            width = 3;
+            shapeless = true;
+        } else {
+            return;
+        }
+        extractCenteredText(graphics, Component.translatable(shapeless ? "chisel.handbook.recipe.shapeless" : "chisel.handbook.recipe.shaped"), x + contentWidth / 2, y, MUTED_TEXT_COLOR);
+        int gridX = x + (contentWidth - 104) / 2;
+        int gridY = y + 11;
+        BookUiTextures.image(graphics, BookUiTextures.CRAFTING_GRID, gridX, gridY, 64, 64);
+        BookUiTextures.image(graphics, BookUiTextures.PARCHMENT, gridX + 80, gridY + 20, 24, 24);
+        graphics.nextStratum();
+        var context = SlotDisplayContext.fromLevel(level);
+        for (int row = 0; row < 3; row++) {
+            for (int column = 0; column < 3; column++) {
+                int index = row * width + column;
+                var slot = column < width && index < ingredients.size() ? ingredients.get(index) : SlotDisplay.Empty.INSTANCE;
+                extractRecipeSlot(graphics, slot, context, gridX + 5 + column * 18, gridY + 5 + row * 18, mouseX, mouseY);
+            }
+        }
+        graphics.text(font, Component.literal("→"), gridX + 67, gridY + 27, TEXT_COLOR, false);
+        extractRecipeSlot(graphics, display.result(), context, gridX + 83, gridY + 23, mouseX, mouseY);
+    }
+
+    private void extractRecipeSlot(GuiGraphicsExtractor graphics, SlotDisplay slot, net.minecraft.util.context.ContextMap context,
+                                   int x, int y, int mouseX, int mouseY) {
+        var stacks = slot.resolveForStacks(context);
+        if (stacks.isEmpty()) return;
+        int cycle = (int) ((net.minecraft.util.Util.getMillis() / 1000) % stacks.size());
+        var stack = stacks.get(cycle);
+        graphics.item(stack, x + 1, y + 1);
+        graphics.itemDecorations(font, stack, x + 1, y + 1);
+        if (mouseX >= x && mouseX < x + 18 && mouseY >= y && mouseY < y + 18)
+            graphics.setTooltipForNextFrame(font, stack, mouseX, mouseY);
     }
 
     private void extractLines(GuiGraphicsExtractor graphics, List<FormattedCharSequence> lines, int x, int y, int color) {

@@ -3,10 +3,10 @@
   "textures": {
     "all": "chisel:block/blue_ice/blue_ice_border_square",
     "particle": "chisel:block/blue_ice/blue_ice_border_square",
-    "standard_corner": "chisel:block/blue_ice/blue_ice_border_square-ctm_corner",
-    "standard_cornerless": "chisel:block/blue_ice/blue_ice_border_square-ctm_cornerless",
-    "standard_horizontal": "chisel:block/blue_ice/blue_ice_border_square-ctm_horizontal",
+    "standard_corner": "chisel:block/blue_ice/blue_ice_border_square",
+    "standard_cornerless": "chisel:block/blue_ice/blue_ice_raw",
+    "standard_horizontal": "chisel:block/blue_ice/blue_ice_border_square",
     "standard_none": "chisel:block/blue_ice/blue_ice_border_square",
-    "standard_vertical": "chisel:block/blue_ice/blue_ice_border_square-ctm_vertical"
+    "standard_vertical": "chisel:block/blue_ice/blue_ice_border_square"
   }
 }

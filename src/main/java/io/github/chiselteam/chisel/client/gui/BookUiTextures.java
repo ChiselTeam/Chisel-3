@@ -6,6 +6,7 @@ import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.resources.Identifier;
 
 public final class BookUiTextures {
+    public static final Identifier CRAFTING_GRID = texture("crafting_grid");
     public static final Identifier PARCHMENT = texture("panel_parchment_clipped");
     public static final Identifier BROWN_PANEL = texture("panel_brown_gold");
     public static final Identifier BROWN_BUTTON = texture("button_brown_gold");

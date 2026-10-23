@@ -4,7 +4,7 @@
     "all": "chisel:block/raw_copper/raw_copper_stripes_encased",
     "particle": "chisel:block/raw_copper/raw_copper_stripes_encased",
     "standard_corner": "chisel:block/raw_copper/raw_copper_stripes_encased-ctm_corner",
-    "standard_cornerless": "chisel:block/raw_copper/raw_copper_stripes_encased-ctm_cornerless",
+    "standard_cornerless": "chisel:block/raw_copper/raw_copper_stripes",
     "standard_horizontal": "chisel:block/raw_copper/raw_copper_stripes_encased-ctm_horizontal",
     "standard_none": "chisel:block/raw_copper/raw_copper_stripes_encased",
     "standard_vertical": "chisel:block/raw_copper/raw_copper_stripes_encased-ctm_vertical"

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/dn_concrete_peach/dn_concrete_peach_plank"
+    "all": "chisel:block/dn_concrete_peach/dn_concrete_peach_plank_connected"
   }
 }

@@ -4,7 +4,7 @@
     "all": "chisel:block/sulfur/sulfur_circular",
     "particle": "chisel:block/sulfur/sulfur_circular",
     "standard_corner": "chisel:block/sulfur/sulfur_circular-ctm_corner",
-    "standard_cornerless": "chisel:block/sulfur/sulfur_circular-ctm_cornerless",
+    "standard_cornerless": "chisel:block/sulfur/sulfur_raw",
     "standard_horizontal": "chisel:block/sulfur/sulfur_circular-ctm_horizontal",
     "standard_none": "chisel:block/sulfur/sulfur_circular",
     "standard_vertical": "chisel:block/sulfur/sulfur_circular-ctm_vertical"

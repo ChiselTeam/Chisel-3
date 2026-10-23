@@ -4,7 +4,7 @@
     "all": "chisel:block/dn_concrete_fluorescent/dn_concrete_fluorescent_gem_2_connected",
     "particle": "chisel:block/dn_concrete_fluorescent/dn_concrete_fluorescent_gem_2_connected",
     "standard_corner": "chisel:block/dn_concrete_fluorescent/dn_concrete_fluorescent_gem_2_connected-ctm_corner",
-    "standard_cornerless": "chisel:block/dn_concrete_fluorescent/dn_concrete_fluorescent_gem_2_connected-ctm_cornerless",
+    "standard_cornerless": "chisel:block/dn_concrete_fluorescent/dn_concrete_fluorescent_raw",
     "standard_horizontal": "chisel:block/dn_concrete_fluorescent/dn_concrete_fluorescent_gem_2_connected-ctm_horizontal",
     "standard_none": "chisel:block/dn_concrete_fluorescent/dn_concrete_fluorescent_gem_2_connected",
     "standard_vertical": "chisel:block/dn_concrete_fluorescent/dn_concrete_fluorescent_gem_2_connected-ctm_vertical"

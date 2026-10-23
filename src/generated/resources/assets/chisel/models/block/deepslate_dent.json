@@ -4,7 +4,7 @@
     "all": "chisel:block/deepslate/deepslate_dent",
     "particle": "chisel:block/deepslate/deepslate_dent",
     "standard_corner": "chisel:block/deepslate/deepslate_dent-ctm_corner",
-    "standard_cornerless": "chisel:block/deepslate/deepslate_dent-ctm_cornerless",
+    "standard_cornerless": "chisel:block/deepslate/deepslate_border_square-ctm_cornerless",
     "standard_horizontal": "chisel:block/deepslate/deepslate_dent-ctm_horizontal",
     "standard_none": "chisel:block/deepslate/deepslate_dent",
     "standard_vertical": "chisel:block/deepslate/deepslate_dent-ctm_vertical"

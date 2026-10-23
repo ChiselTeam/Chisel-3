@@ -62,10 +62,40 @@ base {
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(25)
 
+sourceSets {
+    datagen {
+        compileClasspath += sourceSets.main.output
+        runtimeClasspath += sourceSets.main.output
+    }
+}
+
+configurations {
+    datagenImplementation.extendsFrom implementation
+    datagenCompileOnly.extendsFrom compileOnly
+    datagenRuntimeOnly.extendsFrom runtimeOnly, localRuntime
+}
+
 neoForge {
     version = project.neo_version
+    addModdingDependenciesTo(sourceSets.datagen)
+
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+        "${mod_id}Datagen" {
+            sourceSet(sourceSets.main)
+            sourceSet(sourceSets.datagen)
+        }
+    }
 
     runs {
+        configureEach {
+            loadedMods = [neoForge.mods."${mod_id}"]
+            systemProperty 'forge.logging.markers', 'REGISTRIES'
+            logLevel = org.slf4j.event.Level.DEBUG
+        }
+
         client {
             client()
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
@@ -90,24 +120,16 @@ neoForge {
 
         data {
             clientData()
+            sourceSet = sourceSets.datagen
+            loadedMods = [neoForge.mods."${mod_id}Datagen"]
             programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
-        }
-
-        configureEach {
-            systemProperty 'forge.logging.markers', 'REGISTRIES'
-            logLevel = org.slf4j.event.Level.DEBUG
-        }
-    }
-
-    mods {
-        "${mod_id}" {
-            sourceSet(sourceSets.main)
         }
     }
 
     unitTest {
         enable()
         testedMod = mods."${mod_id}"
+        loadedMods = [mods."${mod_id}"]
     }
 }
 
@@ -145,6 +167,10 @@ dependencies {
 
 tasks.named('test', Test).configure {
     useJUnitPlatform()
+}
+
+tasks.named('check').configure {
+    dependsOn tasks.named('datagenClasses')
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

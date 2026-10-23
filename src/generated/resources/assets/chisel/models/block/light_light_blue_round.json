@@ -4,7 +4,7 @@
     "all": "chisel:block/light_light_blue/light_light_blue_round",
     "particle": "chisel:block/light_light_blue/light_light_blue_round",
     "standard_corner": "chisel:block/light_light_blue/light_light_blue_round-ctm_corner",
-    "standard_cornerless": "chisel:block/light_light_blue/light_light_blue_round-ctm_cornerless",
+    "standard_cornerless": "chisel:block/light_light_blue/light_light_blue_rings-ctm_cornerless",
     "standard_horizontal": "chisel:block/light_light_blue/light_light_blue_round-ctm_horizontal",
     "standard_none": "chisel:block/light_light_blue/light_light_blue_round",
     "standard_vertical": "chisel:block/light_light_blue/light_light_blue_round-ctm_vertical"

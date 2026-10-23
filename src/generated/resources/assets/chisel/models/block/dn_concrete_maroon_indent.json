@@ -4,7 +4,7 @@
     "all": "chisel:block/dn_concrete_maroon/dn_concrete_maroon_indent",
     "particle": "chisel:block/dn_concrete_maroon/dn_concrete_maroon_indent",
     "standard_corner": "chisel:block/dn_concrete_maroon/dn_concrete_maroon_indent-ctm_corner",
-    "standard_cornerless": "chisel:block/dn_concrete_maroon/dn_concrete_maroon_indent-ctm_cornerless",
+    "standard_cornerless": "chisel:block/dn_concrete_maroon/dn_concrete_maroon_raw",
     "standard_horizontal": "chisel:block/dn_concrete_maroon/dn_concrete_maroon_indent-ctm_horizontal",
     "standard_none": "chisel:block/dn_concrete_maroon/dn_concrete_maroon_indent",
     "standard_vertical": "chisel:block/dn_concrete_maroon/dn_concrete_maroon_indent-ctm_vertical"

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/dn_concrete_amber/dn_concrete_amber_shiny"
+    "all": "chisel:block/dn_concrete_amber/dn_concrete_amber_shiny_connected"
   }
 }

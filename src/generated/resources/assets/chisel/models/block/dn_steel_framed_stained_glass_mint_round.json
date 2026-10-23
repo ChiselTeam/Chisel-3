@@ -1,10 +1,10 @@
 {
   "textures": {
     "particle": "chisel:block/dn_steel_framed_stained_glass_mint/dn_steel_framed_stained_glass_mint_round",
-    "standard_corner": "chisel:block/dn_steel_framed_stained_glass_mint/dn_steel_framed_stained_glass_mint_round-ctm_corner",
-    "standard_cornerless": "chisel:block/dn_steel_framed_stained_glass_mint/dn_steel_framed_stained_glass_mint_round-ctm_cornerless",
-    "standard_horizontal": "chisel:block/dn_steel_framed_stained_glass_mint/dn_steel_framed_stained_glass_mint_round-ctm_horizontal",
+    "standard_corner": "chisel:block/dn_steel_framed_stained_glass_mint/dn_steel_framed_stained_glass_mint-ctm_corner",
+    "standard_cornerless": "chisel:block/dn_stained_glass_mint/dn_stained_glass_mint_borderless",
+    "standard_horizontal": "chisel:block/dn_steel_framed_stained_glass_mint/dn_steel_framed_stained_glass_mint-ctm_horizontal",
     "standard_none": "chisel:block/dn_steel_framed_stained_glass_mint/dn_steel_framed_stained_glass_mint_round",
-    "standard_vertical": "chisel:block/dn_steel_framed_stained_glass_mint/dn_steel_framed_stained_glass_mint_round-ctm_vertical"
+    "standard_vertical": "chisel:block/dn_steel_framed_stained_glass_mint/dn_steel_framed_stained_glass_mint-ctm_vertical"
   }
 }

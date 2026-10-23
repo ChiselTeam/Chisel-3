@@ -1,0 +1,861 @@
+{
+  "categories": [
+    "chisel:palettes"
+  ],
+  "description": "Overgrown walls for forgotten buildings and garden ruins.",
+  "icon": "minecraft:mossy_stone_bricks",
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.default_palette.usage"
+      }
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -5,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -4,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": -3,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": -2,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -1,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 0,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": 1,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 2,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": 3,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 4,
+          "y": 9,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": -5,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": -4,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": -2,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -1,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 0,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": 2,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 3,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 4,
+          "y": 8,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -5,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -4,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": -3,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -2,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -1,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 0,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:chiseled_stone_bricks"
+          },
+          "x": 1,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 2,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": 4,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": -5,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": -4,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": -3,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -2,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -1,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:chiseled_stone_bricks"
+          },
+          "x": 0,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": 1,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 2,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": 4,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -5,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -4,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": -3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 3,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": 4,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -5,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -4,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 4,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -5,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -4,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 4,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": -5,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": -4,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": 3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 4,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -5,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:chiseled_stone_bricks"
+          },
+          "x": -4,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": 4,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -5,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -4,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_cobblestone"
+          },
+          "x": 2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:mossy_stone_bricks"
+          },
+          "x": 4,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.default_palette.wall_tip"
+      }
+    },
+    {
+      "type": "chisel:palette",
+      "entries": [
+        {
+          "block": "minecraft:mossy_stone_bricks",
+          "role": "primary",
+          "weight": 50
+        },
+        {
+          "block": "minecraft:mossy_cobblestone",
+          "role": "secondary",
+          "weight": 25
+        },
+        {
+          "block": "minecraft:stone_bricks",
+          "role": "secondary",
+          "weight": 15
+        },
+        {
+          "block": "minecraft:cobblestone",
+          "role": "accent",
+          "weight": 7
+        },
+        {
+          "block": "minecraft:chiseled_stone_bricks",
+          "role": "rare",
+          "weight": 3
+        }
+      ],
+      "title": {
+        "translate": "chisel.guide.default_palette.materials"
+      }
+    }
+  ],
+  "sort_order": 101,
+  "title": "Forest Ruins"
+}

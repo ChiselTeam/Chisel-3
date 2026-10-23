@@ -1,8 +1,8 @@
 package io.github.chiselteam.chisel.content.family.decorative;
 
 import io.github.chiselteam.chisel.Chisel;
-import io.github.chiselteam.chisel.block.ChiselRotatedPillarBlock;
 import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
+import io.github.chiselteam.chisel.block.ChiselRotatedPillarBlock;
 import io.github.chiselteam.chisel.content.ChiselFamily;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -73,10 +73,13 @@ public final class TechnicalFamily {
                 .variant("technical_sturdy", v -> v.description("Sturdy"))
                 .variant("technical_under_large", v -> v.description("Under-Pipe (Large Pipe)"))
                 .variant("technical_under_small", v -> v.description("Under-Pipe (Small Pipes)"))
-                .variant("technical_vents", v -> v.description("Vents").model(ChiselModelHandlers.CONNECTED_TBS).blockFactory(ChiselRotatedPillarBlock::new))
+                        .variant("technical_vents", v -> v.description("Vents").model(ChiselModelHandlers.CONNECTED_TBS).blockFactory(ChiselRotatedPillarBlock::new)
+                                .texture("bottom", Chisel.prefix("block/technical/technical_vents-top"))
+                                .texture("side-ctm_cornerless", Chisel.prefix("block/technical/technical_vents-side-ctm_corner"))
+                                .texture("side-ctm_horizontal", Chisel.prefix("block/technical/technical_vents-side-ctm_corner"))
+                                .texture("side-ctm_vertical", Chisel.prefix("block/technical/technical_vents-side")))
                 .variant("technical_vents_glowing", v -> v.description("Glowing Vents").model(ChiselModelHandlers.CONNECTED_TBS).blockFactory(ChiselRotatedPillarBlock::new)
                         .texture("top", Chisel.prefix("block/technical/technical_vents-top"))
-                        .texture("bottom", Chisel.prefix("block/technical/technical_vents-bottom"))
                         .textureFromBase("side")
                         .texture("top-ctm_cornerless", Chisel.prefix("block/technical/technical_vents-top-ctm_cornerless"))
                         .textureAlias("side-ctm_cornerless", "ctm_cornerless")
@@ -85,7 +88,8 @@ public final class TechnicalFamily {
                         .texture("top-ctm_vertical", Chisel.prefix("block/technical/technical_vents-top-ctm_vertical"))
                         .textureAlias("side-ctm_vertical", "ctm_vertical")
                         .texture("top-ctm_corner", Chisel.prefix("block/technical/technical_vents-top-ctm_corner"))
-                        .textureAlias("side-ctm_corner", "ctm_corner"))
+                        .textureAlias("side-ctm_corner", "ctm_corner")
+                        .texture("bottom", Chisel.prefix("block/technical/technical_vents-top")))
                 .variant("technical_wall_pads", v -> v.description("Wall Pads"))
                 .variant("technical_weathered_green_panels", v -> v.description("Weathered Green Panels").model(ChiselModelHandlers.R4)
                         .textureFromBase("r4_top_left"))

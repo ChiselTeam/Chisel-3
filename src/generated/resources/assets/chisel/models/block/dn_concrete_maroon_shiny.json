@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/dn_concrete_maroon/dn_concrete_maroon_shiny"
+    "all": "chisel:block/dn_concrete_maroon/dn_concrete_maroon_shiny_connected"
   }
 }

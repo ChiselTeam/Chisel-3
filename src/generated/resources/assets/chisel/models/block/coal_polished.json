@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/coal/coal_polished"
+    "all": "chisel:block/coal/coal_tiles_large"
   }
 }

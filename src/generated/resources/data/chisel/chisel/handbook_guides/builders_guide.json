@@ -1,0 +1,50 @@
+{
+  "categories": [
+    "chisel:blocks"
+  ],
+  "description": {
+    "translate": "chisel.guide.builders_guide.description"
+  },
+  "icon": "chisel:builders_guide",
+  "sections": [
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:builders_guide"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:builders_guide"
+          },
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.builders_guide.usage"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.builders_guide.details"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.builders_guide.tip"
+      }
+    }
+  ],
+  "sort_order": 2,
+  "title": {
+    "translate": "chisel.guide.builders_guide.title"
+  }
+}

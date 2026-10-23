@@ -9,13 +9,31 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.List;
+import java.util.Optional;
 
-public record StructureSection(List<Cell> blocks) implements HandbookGuideSection {
+public record StructureSection(Optional<Identifier> template, List<Cell> blocks) implements HandbookGuideSection {
+    /**
+     * A full structure block selection (48 blocks on each axis).
+     */
+    public static final int MAX_BLOCKS = 48 * 48 * 48;
+
     public StructureSection {
         blocks = List.copyOf(blocks);
     }
 
-    public static final MapCodec<StructureSection> CODEC = Cell.CODEC.listOf(1, 512).fieldOf("blocks").xmap(StructureSection::new, StructureSection::blocks);
+    public StructureSection(List<Cell> blocks) {
+        this(Optional.empty(), blocks);
+    }
+
+    public StructureSection(Identifier template) {
+        this(Optional.of(template), List.of());
+    }
+
+    // Resolved blocks travel with the template reference to clients, which cannot read server datapacks.
+    public static final MapCodec<StructureSection> CODEC = RecordCodecBuilder.mapCodec(i -> i.group(
+            Identifier.CODEC.optionalFieldOf("template").forGetter(StructureSection::template),
+            Cell.CODEC.listOf(0, MAX_BLOCKS).optionalFieldOf("blocks", List.of()).forGetter(StructureSection::blocks)
+    ).apply(i, StructureSection::new));
 
     public Identifier type() {
         return Chisel.prefix("structure");

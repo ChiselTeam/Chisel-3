@@ -1,10 +1,10 @@
 {
   "textures": {
-    "particle": "chisel:block/dn_stained_glass_wine/dn_stained_glass_wine_frame_thick_panel",
-    "standard_corner": "chisel:block/dn_stained_glass_wine/dn_stained_glass_wine_frame_thick_panel-ctm_corner",
-    "standard_cornerless": "chisel:block/dn_stained_glass_wine/dn_stained_glass_wine_frame_thick_panel-ctm_cornerless",
-    "standard_horizontal": "chisel:block/dn_stained_glass_wine/dn_stained_glass_wine_frame_thick_panel-ctm_horizontal",
-    "standard_none": "chisel:block/dn_stained_glass_wine/dn_stained_glass_wine_frame_thick_panel",
-    "standard_vertical": "chisel:block/dn_stained_glass_wine/dn_stained_glass_wine_frame_thick_panel-ctm_vertical"
+    "particle": "chisel:block/dn_stained_glass_wine/dn_stained_glass_wine_frame_thick",
+    "standard_corner": "chisel:block/dn_stained_glass_wine/dn_stained_glass_wine_frame_thick-ctm_horizontal",
+    "standard_cornerless": "chisel:block/dn_stained_glass_wine/dn_stained_glass_wine_frame_thick-ctm_horizontal",
+    "standard_horizontal": "chisel:block/dn_stained_glass_wine/dn_stained_glass_wine_frame_thick-ctm_horizontal",
+    "standard_none": "chisel:block/dn_stained_glass_wine/dn_stained_glass_wine_frame_thick",
+    "standard_vertical": "chisel:block/dn_stained_glass_wine/dn_stained_glass_wine_frame_thick"
   }
 }

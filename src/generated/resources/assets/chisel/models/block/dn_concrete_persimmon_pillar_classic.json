@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "chisel:block/dn_concrete_persimmon/dn_concrete_persimmon_pillar_classic-bottom",
+    "bottom": "chisel:block/dn_concrete_persimmon/dn_concrete_persimmon_pillar_classic-top",
     "side": "chisel:block/dn_concrete_persimmon/dn_concrete_persimmon_pillar_classic-side",
     "top": "chisel:block/dn_concrete_persimmon/dn_concrete_persimmon_pillar_classic-top"
   }

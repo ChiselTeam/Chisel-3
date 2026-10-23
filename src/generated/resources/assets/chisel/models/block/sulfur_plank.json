@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/sulfur/sulfur_plank"
+    "all": "chisel:block/sulfur/sulfur_plank_connected"
   }
 }

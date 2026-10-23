@@ -1,0 +1,45 @@
+{
+  "categories": [
+    "chisel:items"
+  ],
+  "description": {
+    "translate": "chisel.guide.builders_handbook.description"
+  },
+  "icon": "chisel:builders_handbook",
+  "sections": [
+    {
+      "type": "chisel:image",
+      "height": 48,
+      "texture": "chisel:textures/gui/handbook/sky_warm_clouds_square.png",
+      "width": 48
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.handbook.image.example"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.builders_handbook.usage"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.builders_handbook.details"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.builders_handbook.tip"
+      }
+    }
+  ],
+  "sort_order": 70,
+  "title": {
+    "translate": "chisel.guide.builders_handbook.title"
+  }
+}

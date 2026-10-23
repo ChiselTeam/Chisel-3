@@ -1,5 +1,8 @@
 package io.github.chiselteam.chisel.client.gui.preview;
 
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.color.block.BlockTintSources;
+import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.block.BlockAndTintGetter;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.CardinalLighting;
@@ -9,7 +12,6 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.lighting.LevelLightEngine;
 import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.material.Fluids;
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
@@ -39,6 +41,14 @@ public class PreviewGetter implements BlockAndTintGetter {
 
     @Override
     public int getBlockTint(@NonNull BlockPos pos, @NonNull ColorResolver color) {
+        var minecraft = Minecraft.getInstance();
+        if (minecraft.level != null) {
+            var origin = minecraft.player != null ? minecraft.player.blockPosition() : BlockPos.ZERO;
+            return minecraft.level.getBlockTint(origin.offset(pos), color);
+        }
+        if (color == BiomeColors.WATER_COLOR_RESOLVER) return 0x3F76E4;
+        if (color == BiomeColors.FOLIAGE_COLOR_RESOLVER) return BlockTintSources.foliage().color(state);
+        if (color == BiomeColors.DRY_FOLIAGE_COLOR_RESOLVER) return BlockTintSources.dryFoliage().color(state);
         return 0x7CBD6B;
     }
 
@@ -59,7 +69,7 @@ public class PreviewGetter implements BlockAndTintGetter {
 
     @Override
     public @NonNull FluidState getFluidState(@NonNull BlockPos pos) {
-        return Fluids.EMPTY.defaultFluidState();
+        return getBlockState(pos).getFluidState();
     }
 
     @Override

@@ -5,6 +5,6 @@
     "standard_cornerless": "chisel:block/dn_stained_glass_ultramarine/dn_stained_glass_ultramarine_arch_panel_1-ctm_cornerless",
     "standard_horizontal": "chisel:block/dn_stained_glass_ultramarine/dn_stained_glass_ultramarine_arch_panel_1-ctm_horizontal",
     "standard_none": "chisel:block/dn_stained_glass_ultramarine/dn_stained_glass_ultramarine_arch_panel_1",
-    "standard_vertical": "chisel:block/dn_stained_glass_ultramarine/dn_stained_glass_ultramarine_arch_panel_1-ctm_vertical"
+    "standard_vertical": "chisel:block/dn_stained_glass_ultramarine/dn_stained_glass_ultramarine_arch_panel_1"
   }
 }

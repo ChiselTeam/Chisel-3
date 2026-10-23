@@ -4,7 +4,7 @@
     "all": "chisel:block/prismarine/prismarine_encased_bricks",
     "particle": "chisel:block/prismarine/prismarine_encased_bricks",
     "standard_corner": "chisel:block/prismarine/prismarine_encased_bricks-ctm_corner",
-    "standard_cornerless": "chisel:block/prismarine/prismarine_encased_bricks-ctm_cornerless",
+    "standard_cornerless": "chisel:block/prismarine/prismarine_solid_bricks",
     "standard_horizontal": "chisel:block/prismarine/prismarine_encased_bricks-ctm_horizontal",
     "standard_none": "chisel:block/prismarine/prismarine_encased_bricks",
     "standard_vertical": "chisel:block/prismarine/prismarine_encased_bricks-ctm_vertical"

@@ -4,7 +4,7 @@
     "all": "chisel:block/sculk/sculk_dent",
     "particle": "chisel:block/sculk/sculk_dent",
     "standard_corner": "chisel:block/sculk/sculk_dent-ctm_corner",
-    "standard_cornerless": "chisel:block/sculk/sculk_dent-ctm_cornerless",
+    "standard_cornerless": "chisel:block/sculk/sculk_raw",
     "standard_horizontal": "chisel:block/sculk/sculk_dent-ctm_horizontal",
     "standard_none": "chisel:block/sculk/sculk_dent",
     "standard_vertical": "chisel:block/sculk/sculk_dent-ctm_vertical"

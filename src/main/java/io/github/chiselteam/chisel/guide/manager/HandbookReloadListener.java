@@ -23,10 +23,18 @@ public class HandbookReloadListener extends SimpleJsonResourceReloadListener<Han
         var validGuides = new LinkedHashMap<Identifier, HandbookGuide>();
         var sortedGuides = prepared.entrySet().stream().sorted(Comparator.comparing(entry -> entry.getKey().toString())).toList();
         var rejectedGuides = 0;
+        var structures = new HandbookStructureLoader(resourceManager);
 
         for (var entry : sortedGuides) {
             var id = entry.getKey();
             var guide = entry.getValue();
+            try {
+                guide = structures.resolve(guide);
+            } catch (IllegalArgumentException error) {
+                HandbookValidator.LOGGER.error("Rejected handbook guide '{}': {}", id, error.getMessage());
+                rejectedGuides++;
+                continue;
+            }
             if (!HandbookValidator.validate(id, guide)) {
                 rejectedGuides++;
                 continue;

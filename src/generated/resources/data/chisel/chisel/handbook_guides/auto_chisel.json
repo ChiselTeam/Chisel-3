@@ -1,0 +1,50 @@
+{
+  "categories": [
+    "chisel:blocks"
+  ],
+  "description": {
+    "translate": "chisel.guide.auto_chisel.description"
+  },
+  "icon": "chisel:auto_chisel",
+  "sections": [
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:auto_chisel"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:auto_chisel"
+          },
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.auto_chisel.usage"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.auto_chisel.details"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.auto_chisel.tip"
+      }
+    }
+  ],
+  "sort_order": 1,
+  "title": {
+    "translate": "chisel.guide.auto_chisel.title"
+  }
+}

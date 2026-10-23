@@ -4,7 +4,7 @@
     "all": "chisel:block/coal/coal_border_square_small",
     "particle": "chisel:block/coal/coal_border_square_small",
     "standard_corner": "chisel:block/coal/coal_border_square_small-ctm_corner",
-    "standard_cornerless": "chisel:block/coal/coal_border_square_small-ctm_cornerless",
+    "standard_cornerless": "chisel:block/coal/coal_border_square-ctm_cornerless",
     "standard_horizontal": "chisel:block/coal/coal_border_square_small-ctm_horizontal",
     "standard_none": "chisel:block/coal/coal_border_square_small",
     "standard_vertical": "chisel:block/coal/coal_border_square_small-ctm_vertical"

@@ -4,12 +4,12 @@
     "all": "chisel:block/factory/factory_plating",
     "multiblock_3x3_bottom_center": "chisel:block/factory/factory_plating-v9_bottom_center",
     "multiblock_3x3_bottom_left": "chisel:block/factory/factory_plating-v9_bottom_left",
-    "multiblock_3x3_bottom_right": "chisel:block/factory/factory_plating-v9_bottom_right",
+    "multiblock_3x3_bottom_right": "chisel:block/factory/factory_plating-v9_top_right",
     "multiblock_3x3_center": "chisel:block/factory/factory_plating-v9_center",
     "multiblock_3x3_center_left": "chisel:block/factory/factory_plating-v9_center_left",
     "multiblock_3x3_center_right": "chisel:block/factory/factory_plating-v9_center_right",
     "multiblock_3x3_top_center": "chisel:block/factory/factory_plating-v9_top_center",
-    "multiblock_3x3_top_left": "chisel:block/factory/factory_plating-v9_top_left",
+    "multiblock_3x3_top_left": "chisel:block/factory/factory_plating",
     "multiblock_3x3_top_right": "chisel:block/factory/factory_plating-v9_top_right",
     "particle": "chisel:block/factory/factory_plating"
   }

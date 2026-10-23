@@ -2,13 +2,13 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/fantasy_green/fantasy_green_brick_chaotic_worn-side",
-    "bottom": "chisel:block/fantasy_green/fantasy_green_brick_chaotic_worn-bottom",
+    "bottom": "chisel:block/fantasy_green/fantasy_green_pillar_3-bottom",
     "particle": "chisel:block/fantasy_green/fantasy_green_brick_chaotic_worn-side",
     "side": "chisel:block/fantasy_green/fantasy_green_brick_chaotic_worn-side",
-    "top": "chisel:block/fantasy_green/fantasy_green_brick_chaotic_worn-top",
+    "top": "chisel:block/fantasy_green/fantasy_green_pillar_3-bottom",
     "vertical_both": "chisel:block/fantasy_green/fantasy_green_brick_chaotic_worn-vertical_both",
     "vertical_bottom": "chisel:block/fantasy_green/fantasy_green_brick_chaotic_worn-vertical_bottom",
-    "vertical_none": "chisel:block/fantasy_green/fantasy_green_brick_chaotic_worn-vertical_none",
+    "vertical_none": "chisel:block/fantasy_green/fantasy_green_brick_chaotic_worn-side",
     "vertical_top": "chisel:block/fantasy_green/fantasy_green_brick_chaotic_worn-vertical_top"
   }
 }

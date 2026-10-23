@@ -4,7 +4,7 @@
     "all": "chisel:block/packed_ice/packed_ice_braid_encased",
     "particle": "chisel:block/packed_ice/packed_ice_braid_encased",
     "standard_corner": "chisel:block/packed_ice/packed_ice_braid_encased-ctm_corner",
-    "standard_cornerless": "chisel:block/packed_ice/packed_ice_braid_encased-ctm_cornerless",
+    "standard_cornerless": "chisel:block/packed_ice/packed_ice_braid",
     "standard_horizontal": "chisel:block/packed_ice/packed_ice_braid_encased-ctm_horizontal",
     "standard_none": "chisel:block/packed_ice/packed_ice_braid_encased",
     "standard_vertical": "chisel:block/packed_ice/packed_ice_braid_encased-ctm_vertical"

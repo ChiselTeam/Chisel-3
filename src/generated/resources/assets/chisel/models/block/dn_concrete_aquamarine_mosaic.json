@@ -4,7 +4,7 @@
     "all": "chisel:block/dn_concrete_aquamarine/dn_concrete_aquamarine_mosaic",
     "particle": "chisel:block/dn_concrete_aquamarine/dn_concrete_aquamarine_mosaic",
     "standard_corner": "chisel:block/dn_concrete_aquamarine/dn_concrete_aquamarine_mosaic-ctm_corner",
-    "standard_cornerless": "chisel:block/dn_concrete_aquamarine/dn_concrete_aquamarine_mosaic-ctm_cornerless",
+    "standard_cornerless": "chisel:block/dn_concrete_aquamarine/dn_concrete_aquamarine_raw",
     "standard_horizontal": "chisel:block/dn_concrete_aquamarine/dn_concrete_aquamarine_mosaic-ctm_horizontal",
     "standard_none": "chisel:block/dn_concrete_aquamarine/dn_concrete_aquamarine_mosaic",
     "standard_vertical": "chisel:block/dn_concrete_aquamarine/dn_concrete_aquamarine_mosaic-ctm_vertical"

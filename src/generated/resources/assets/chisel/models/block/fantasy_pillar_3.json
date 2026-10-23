@@ -2,13 +2,13 @@
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
   "textures": {
     "all": "chisel:block/fantasy/fantasy_pillar_3-side",
-    "bottom": "chisel:block/fantasy/fantasy_pillar_3-bottom",
+    "bottom": "chisel:block/fantasy/fantasy_gold_decor_2-top",
     "particle": "chisel:block/fantasy/fantasy_pillar_3-side",
     "side": "chisel:block/fantasy/fantasy_pillar_3-side",
-    "top": "chisel:block/fantasy/fantasy_pillar_3-top",
+    "top": "chisel:block/fantasy/fantasy_gold_decor_2-top",
     "vertical_both": "chisel:block/fantasy/fantasy_pillar_3-vertical_both",
     "vertical_bottom": "chisel:block/fantasy/fantasy_pillar_3-vertical_bottom",
-    "vertical_none": "chisel:block/fantasy/fantasy_pillar_3-vertical_none",
+    "vertical_none": "chisel:block/fantasy/fantasy_pillar_3-side",
     "vertical_top": "chisel:block/fantasy/fantasy_pillar_3-vertical_top"
   }
 }
