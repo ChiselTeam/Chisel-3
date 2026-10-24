@@ -21,6 +21,7 @@ public final class SteampunkFamily {
             .variant("steampunk_encased_metal_plate", v -> v.description("Encased Metal Plate").model(ChiselModelHandlers.CONNECTED))
             .variant("steampunk_decorative_metal", v -> v.description("Decorative Metal").model(ChiselModelHandlers.CONNECTED))
             .variant("steampunk_riveted_plating", v -> v.description("Riveted Plating").model(ChiselModelHandlers.CONNECTED))
+            .variant("steampunk_riveted_pattern", v -> v.description("Riveted Pattern").model(ChiselModelHandlers.CONNECTED))
             .variant("steampunk_broken_plating", v -> v.description("Broken Plating").model(ChiselModelHandlers.CTMV).blockFactory(RotatedPillarBlock::new))
             .variant("steampunk_broken_plating_transparent", v -> v.description("Broken Plating (Transparent)").properties(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).noOcclusion()).model(ChiselModelHandlers.CTMV).blockFactory(ChiselRotatedPillarBlock::new))
             .variant("steampunk_corrugated_sheet_metal", v -> v.description("Corrugated Sheet Metal").model(ChiselModelHandlers.V4))
@@ -29,7 +30,7 @@ public final class SteampunkFamily {
             .variant("steampunk_metal_grate_transparent", v -> v.description("Metal Grate (Transparent)").properties(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).noOcclusion()).model(ChiselModelHandlers.GLASS))
             .variant("steampunk_plating_dirty", v -> v.description("Dirty Plating").model(ChiselModelHandlers.R4))
             .variant("steampunk_plating_verdigris", v -> v.description("Verdigris Plating").model(ChiselModelHandlers.R4))
-            .variant("steampunk_bolted_plate", v -> v.description("Bolted Plate").model(ChiselModelHandlers.CTMV).blockFactory(RotatedPillarBlock::new))
+            .variant("steampunk_bolted_plate_rusted", v -> v.description("Rusted Bolted Plate").model(ChiselModelHandlers.CTMV).blockFactory(RotatedPillarBlock::new))
         );
     private SteampunkFamily() {
     }

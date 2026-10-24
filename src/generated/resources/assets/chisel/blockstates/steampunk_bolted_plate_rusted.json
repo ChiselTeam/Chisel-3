@@ -6,10 +6,10 @@
         "down",
         "up"
       ],
-      "model_location": "chisel:block/steampunk_bolted_plate",
+      "model_location": "chisel:block/steampunk_bolted_plate_rusted",
       "render_overlay_on_all_faces": true,
       "variant": {
-        "block": "chisel:steampunk_bolted_plate",
+        "block": "chisel:steampunk_bolted_plate_rusted",
         "kind": "ctmv"
       },
       "x": 90,
@@ -21,10 +21,10 @@
         "down",
         "up"
       ],
-      "model_location": "chisel:block/steampunk_bolted_plate",
+      "model_location": "chisel:block/steampunk_bolted_plate_rusted",
       "render_overlay_on_all_faces": true,
       "variant": {
-        "block": "chisel:steampunk_bolted_plate",
+        "block": "chisel:steampunk_bolted_plate_rusted",
         "kind": "ctmv"
       }
     },
@@ -34,10 +34,10 @@
         "down",
         "up"
       ],
-      "model_location": "chisel:block/steampunk_bolted_plate",
+      "model_location": "chisel:block/steampunk_bolted_plate_rusted",
       "render_overlay_on_all_faces": true,
       "variant": {
-        "block": "chisel:steampunk_bolted_plate",
+        "block": "chisel:steampunk_bolted_plate_rusted",
         "kind": "ctmv"
       },
       "x": 90

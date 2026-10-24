@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/steampunk/steampunk_bolted_plate_rusted-side",
+    "bottom": "chisel:block/steampunk/steampunk_bolted_plate_rusted-bottom",
+    "particle": "chisel:block/steampunk/steampunk_bolted_plate_rusted-side",
+    "side": "chisel:block/steampunk/steampunk_bolted_plate_rusted-side",
+    "top": "chisel:block/steampunk/steampunk_bolted_plate_rusted-top",
+    "vertical_both": "chisel:block/steampunk/steampunk_bolted_plate_rusted-vertical_both",
+    "vertical_bottom": "chisel:block/steampunk/steampunk_bolted_plate_rusted-vertical_bottom",
+    "vertical_none": "chisel:block/steampunk/steampunk_bolted_plate_rusted-vertical_none",
+    "vertical_top": "chisel:block/steampunk/steampunk_bolted_plate_rusted-vertical_top"
+  }
+}

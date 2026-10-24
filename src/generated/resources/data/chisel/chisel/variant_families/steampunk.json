@@ -58,6 +58,11 @@
       "name": "steampunk_riveted_plating"
     },
     {
+      "block": "chisel:steampunk_riveted_pattern",
+      "model_type": "connected",
+      "name": "steampunk_riveted_pattern"
+    },
+    {
       "block": "chisel:steampunk_broken_plating",
       "model_type": "ctmv",
       "name": "steampunk_broken_plating"
@@ -98,9 +103,9 @@
       "name": "steampunk_plating_verdigris"
     },
     {
-      "block": "chisel:steampunk_bolted_plate",
+      "block": "chisel:steampunk_bolted_plate_rusted",
       "model_type": "ctmv",
-      "name": "steampunk_bolted_plate"
+      "name": "steampunk_bolted_plate_rusted"
     }
   ]
 }

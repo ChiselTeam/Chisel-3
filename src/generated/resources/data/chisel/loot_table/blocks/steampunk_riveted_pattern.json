@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "chisel:steampunk_bolted_plate"
+          "name": "chisel:steampunk_riveted_pattern"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "chisel:blocks/steampunk_bolted_plate"
+  "random_sequence": "chisel:blocks/steampunk_riveted_pattern"
 }
