@@ -48,6 +48,11 @@
       "name": "steampunk_encased_metal_plate"
     },
     {
+      "block": "chisel:steampunk_decorative_metal",
+      "model_type": "connected",
+      "name": "steampunk_decorative_metal"
+    },
+    {
       "block": "chisel:steampunk_riveted_plating",
       "model_type": "connected",
       "name": "steampunk_riveted_plating"
@@ -56,6 +61,11 @@
       "block": "chisel:steampunk_broken_plating",
       "model_type": "ctmv",
       "name": "steampunk_broken_plating"
+    },
+    {
+      "block": "chisel:steampunk_broken_plating_transparent",
+      "model_type": "ctmv",
+      "name": "steampunk_broken_plating_transparent"
     },
     {
       "block": "chisel:steampunk_corrugated_sheet_metal",
@@ -71,6 +81,11 @@
       "block": "chisel:steampunk_metal_grate",
       "model_type": "connected",
       "name": "steampunk_metal_grate"
+    },
+    {
+      "block": "chisel:steampunk_metal_grate_transparent",
+      "model_type": "glass",
+      "name": "steampunk_metal_grate_transparent"
     },
     {
       "block": "chisel:steampunk_plating_dirty",

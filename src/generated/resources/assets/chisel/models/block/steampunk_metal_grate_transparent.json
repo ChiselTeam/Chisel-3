@@ -1,0 +1,10 @@
+{
+  "textures": {
+    "particle": "chisel:block/steampunk/steampunk_metal_grate_transparent",
+    "standard_corner": "chisel:block/steampunk/steampunk_metal_grate_transparent-ctm_corner",
+    "standard_cornerless": "chisel:block/steampunk/steampunk_metal_grate_transparent-ctm_cornerless",
+    "standard_horizontal": "chisel:block/steampunk/steampunk_metal_grate_transparent-ctm_horizontal",
+    "standard_none": "chisel:block/steampunk/steampunk_metal_grate_transparent",
+    "standard_vertical": "chisel:block/steampunk/steampunk_metal_grate_transparent-ctm_vertical"
+  }
+}

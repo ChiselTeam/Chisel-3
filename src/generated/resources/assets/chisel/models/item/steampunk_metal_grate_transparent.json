@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/steampunk/steampunk_metal_grate_transparent"
+  }
+}
