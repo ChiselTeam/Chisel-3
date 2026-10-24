@@ -8,8 +8,8 @@
   "icon": "chisel:light_white_regular",
   "sections": [
     {
-      "type": "chisel:crafting_recipe",
-      "recipe": "chisel:light_white_regular"
+      "type": "chisel:text",
+      "text": "\n\n\n\n\n\n\n\n\n"
     },
     {
       "type": "chisel:structure",
@@ -279,6 +279,10 @@
           "z": 0
         }
       ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:light_white_regular"
     },
     {
       "type": "chisel:crafting_recipe",

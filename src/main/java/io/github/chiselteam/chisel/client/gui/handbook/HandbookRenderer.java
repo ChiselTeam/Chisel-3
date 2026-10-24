@@ -33,7 +33,7 @@ public final class HandbookRenderer {
 
     private static final int COVER_TEXTURE_WIDTH = 240;
     private static final int COVER_TEXTURE_HEIGHT = 282;
-    private static final int COVER_TITLE_WIDTH = 126;
+    private static final int COVER_TITLE_WIDTH = 80;
 
     private static final int PAGES_TEXTURE_WIDTH = 480;
     private static final int PAGES_TEXTURE_HEIGHT = 288;

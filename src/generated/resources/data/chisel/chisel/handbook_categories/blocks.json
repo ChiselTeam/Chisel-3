@@ -2,7 +2,7 @@
   "description": {
     "translate": "chisel.handbook.category.blocks.description"
   },
-  "icon": "chisel:auto_chisel",
+  "icon": "chisel:marble_raw",
   "sort_order": 30,
   "title": {
     "translate": "chisel.handbook.category.blocks.title"

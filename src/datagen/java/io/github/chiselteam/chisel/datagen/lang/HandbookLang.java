@@ -28,9 +28,9 @@ public final class HandbookLang {
         lang.add("chisel.handbook.bookmark.missing", "No saved bookmark, or its guide is unavailable.");
         lang.add("chisel.handbook.structure.example", "Inspect this corner: drag to rotate, Shift-drag to pan, scroll to zoom, and double-click to reset.");
         lang.add("chisel.handbook.image.example", "Use illustrations to plan a mood: this warm sky pairs sandy stone with pale highlights and cool blue accents.");
-        lang.add("chisel.builders_handbook.title", "Builders Handbook");
+        lang.add("chisel.builders_handbook.title", "Builder Basics for Dummies\nby: Chisel");
         lang.add("chisel.builders_handbook.contents", "Table of Contents");
-        lang.add("chisel.builders_handbook.intro", "This book is meant to serve as inspiration for your builds, as well as helpful entries to take your builds to the next level!");
+        lang.add("chisel.builders_handbook.intro", "This book is meant as a introduction for Chisel and what it brings. As well as helpful tool to teach you on how take your builds to the next level!");
         lang.add("chisel.builders_handbook.empty", "There are no handbook entries available");
     }
 

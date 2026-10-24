@@ -69,7 +69,6 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                         .category(BLOCKS)
                         .sortOrder(203)
                         .craftingRecipe(Chisel.prefix("antiblock_black"))
-                        .variantWall(ChiselFamilies.ANTIBLOCK)
                         .build()
         );
 
@@ -105,8 +104,9 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                         .description(Component.translatable("chisel.guide.fantasy.description"))
                         .category(BLOCKS)
                         .sortOrder(208)
-                        .craftingRecipe(Chisel.prefix("fantasy_block"))
+                        .text(Component.literal("\n".repeat(9)))
                         .variantWall(ChiselFamilies.FANTASY)
+                        .craftingRecipe(Chisel.prefix("fantasy_block"))
                         .craftingRecipe(Chisel.prefix("fantasy_purple_block"))
                         .variantWall(ChiselFamilies.FANTASY_PURPLE)
                         .craftingRecipe(Chisel.prefix("fantasy_green_block"))
@@ -206,8 +206,9 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                         .description(Component.translatable("chisel.guide.lights.description"))
                         .category(BLOCKS)
                         .sortOrder(217)
-                        .craftingRecipe(Chisel.prefix("light_white_regular"))
+                        .text(Component.literal("\n".repeat(9)))
                         .variantWall(ChiselFamilies.LIGHT.get(DyeColor.WHITE.getId()))
+                        .craftingRecipe(Chisel.prefix("light_white_regular"))
                         .craftingRecipe(Chisel.prefix("light_orange_regular"))
                         .variantWall(ChiselFamilies.LIGHT.get(DyeColor.ORANGE.getId()))
                         .craftingRecipe(Chisel.prefix("light_magenta_regular"))
@@ -364,6 +365,16 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                         .sortOrder(247)
                         .craftingRecipe(Chisel.prefix("warning_biohazard"))
                         .variantWall(ChiselFamilies.WARNING)
+                        .build());
+
+        buildGuide("steampunk",
+                HandbookGuideBuilder.builder(Component.literal("Steampunk"), Chisel.prefix("steampunk_rusted_metal_sheet"))
+                        .description(Component.literal("Industrial metal blocks with gears, pipes, and rusted plating."))
+                        .category(BLOCKS)
+                        .sortOrder(248)
+                        .text(Component.literal("\n".repeat(9)))
+                        .variantWall(ChiselFamilies.STEAMPUNK)
+                        .craftingRecipe(Chisel.prefix("steampunk_rusted_metal_sheet"))
                         .build());
     }
 

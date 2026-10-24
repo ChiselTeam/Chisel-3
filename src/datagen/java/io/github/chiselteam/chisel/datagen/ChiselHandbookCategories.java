@@ -41,7 +41,7 @@ public final class ChiselHandbookCategories extends HandbookCategoryProvider {
                         .build());
 
         addCategory("blocks",
-                HandbookCategoryBuilder.builder(Component.translatable("chisel.handbook.category.blocks.title"), Chisel.prefix("auto_chisel"))
+                HandbookCategoryBuilder.builder(Component.translatable("chisel.handbook.category.blocks.title"), Chisel.prefix("marble_raw"))
                         .description(Component.translatable("chisel.handbook.category.blocks.description"))
                         .sortOrder(30)
                         .build());

@@ -8,8 +8,8 @@
   "icon": "chisel:fantasy_block",
   "sections": [
     {
-      "type": "chisel:crafting_recipe",
-      "recipe": "chisel:fantasy_block"
+      "type": "chisel:text",
+      "text": "\n\n\n\n\n\n\n\n\n"
     },
     {
       "type": "chisel:structure",
@@ -159,6 +159,10 @@
           "z": 0
         }
       ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:fantasy_block"
     },
     {
       "type": "chisel:crafting_recipe",

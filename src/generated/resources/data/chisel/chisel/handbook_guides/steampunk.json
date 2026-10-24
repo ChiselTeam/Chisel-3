@@ -1,0 +1,201 @@
+{
+  "categories": [
+    "chisel:blocks"
+  ],
+  "description": "Industrial metal blocks with gears, pipes, and rusted plating.",
+  "icon": "chisel:steampunk_rusted_metal_sheet",
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": "\n\n\n\n\n\n\n\n\n"
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "chisel:steampunk_rusted_metal_sheet"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_large_metal_sheets"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_pipes"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_mechanical_clock"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_mechanical_clock_transparent"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_gear_train"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_gear_train_animated"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_rusted_metal_plating"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_encased_metal_plate"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_decorative_metal"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_riveted_plating"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_riveted_pattern"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_broken_plating",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_broken_plating_transparent",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_corrugated_sheet_metal"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_diamond_plating"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_metal_grate"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_metal_grate_transparent"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_plating_dirty"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_plating_verdigris"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_bolted_plate_rusted",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:crafting_recipe",
+      "recipe": "chisel:steampunk_rusted_metal_sheet"
+    }
+  ],
+  "sort_order": 248,
+  "title": "Steampunk"
+}
