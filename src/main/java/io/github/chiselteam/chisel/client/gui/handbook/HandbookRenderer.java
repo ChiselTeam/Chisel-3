@@ -31,12 +31,12 @@ public final class HandbookRenderer {
     private static final Identifier LEFT_ARROW_TEXTURE = Chisel.prefix("textures/gui/arrow_left.png");
     private static final Identifier RIGHT_ARROW_TEXTURE = Chisel.prefix("textures/gui/arrow_right.png");
 
-    private static final int COVER_TEXTURE_WIDTH = 80;
-    private static final int COVER_TEXTURE_HEIGHT = 94;
-    private static final int COVER_TITLE_WIDTH = 84;
+    private static final int COVER_TEXTURE_WIDTH = 240;
+    private static final int COVER_TEXTURE_HEIGHT = 282;
+    private static final int COVER_TITLE_WIDTH = 126;
 
-    private static final int PAGES_TEXTURE_WIDTH = 160;
-    private static final int PAGES_TEXTURE_HEIGHT = 96;
+    private static final int PAGES_TEXTURE_WIDTH = 480;
+    private static final int PAGES_TEXTURE_HEIGHT = 288;
 
     private static final int ARROW_TEXTURE_WIDTH = 15;
     private static final int ARROW_TEXTURE_HEIGHT = 10;
@@ -78,7 +78,7 @@ public final class HandbookRenderer {
         graphics.blit(RenderPipelines.GUI_TEXTURED, COVER_TEXTURE, layout.coverX(), layout.coverY(), 0F, 0F, COVER_WIDTH, COVER_HEIGHT, COVER_TEXTURE_WIDTH, COVER_TEXTURE_HEIGHT, COVER_TEXTURE_WIDTH, COVER_TEXTURE_HEIGHT);
         graphics.nextStratum();
         var titleLines = font.split(Component.translatable("chisel.builders_handbook.title"), COVER_TITLE_WIDTH);
-        int titleY = layout.coverY() + 60 - (titleLines.size() - 1) * HandbookPaginator.LINE_HEIGHT / 2;
+        int titleY = layout.coverY() + 90 - (titleLines.size() - 1) * HandbookPaginator.LINE_HEIGHT / 2;
         extractCenteredLines(graphics, titleLines, layout.coverX() + COVER_WIDTH / 2, titleY, TEXT_COLOR);
     }
 
@@ -186,7 +186,7 @@ public final class HandbookRenderer {
             case TipPageElement tip -> extractTip(graphics, tip, x, y, contentWidth);
             case PaletteTitlePageElement paletteTitle ->
                     extractCenteredLines(graphics, paletteTitle.lines(), x + contentWidth / 2, y, TEXT_COLOR);
-            case PaletteEntryPageElement paletteEntry -> extractPaletteEntry(graphics, paletteEntry, x, y);
+            case PaletteEntryPageElement paletteEntry -> extractPaletteEntry(graphics, paletteEntry, x, y, contentWidth);
         }
     }
 
@@ -260,23 +260,24 @@ public final class HandbookRenderer {
         extractLines(graphics, tip.lines(), x + 4, y + 4, MUTED_TEXT_COLOR);
     }
 
-    private void extractPaletteEntry(GuiGraphicsExtractor graphics, PaletteEntryPageElement element, int x, int y) {
+    private void extractPaletteEntry(GuiGraphicsExtractor graphics, PaletteEntryPageElement element, int x, int y, int contentWidth) {
         var block = BuiltInRegistries.BLOCK.getOptional(element.entry().block()).orElse(null);
         var name = block == null ? Component.literal(element.entry().block().toString()) : block.getName();
 
         if (block != null) graphics.item(new ItemStack(block), x, y);
 
-        var nameLines = font.split(name, 66);
+        int percentageX = x + contentWidth - font.width("100%");
+        var nameLines = font.split(name, percentageX - x - 24);
         if (!nameLines.isEmpty()) graphics.text(font, nameLines.getFirst(), x + 18, y + 1, TEXT_COLOR, false);
 
         int barX = x + 19;
         int barY = y + 12;
-        int barWidth = 72;
+        int barWidth = percentageX - barX - 5;
         int filledWidth = Math.round(barWidth * element.percentage() / 100F);
 
         graphics.fill(barX, barY, barX + barWidth, barY + 5, BAR_BACKGROUND_COLOR);
         graphics.fill(barX, barY, barX + filledWidth, barY + 5, BAR_FILL_COLOR);
-        graphics.text(font, Component.literal("%d%%".formatted(element.percentage())), x + 96, y + 7, MUTED_TEXT_COLOR, false);
+        graphics.text(font, Component.literal("%d%%".formatted(element.percentage())), percentageX, y + 7, MUTED_TEXT_COLOR, false);
     }
 
     private void extractPageNumbers(GuiGraphicsExtractor graphics) {

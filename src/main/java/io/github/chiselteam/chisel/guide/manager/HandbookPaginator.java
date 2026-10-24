@@ -10,8 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class HandbookPaginator {
-    public static final int PAGE_CONTENT_WIDTH = 114;
-    public static final int PAGE_CONTENT_HEIGHT = 142;
+    public static final int PAGE_CONTENT_WIDTH = 171;
+    public static final int PAGE_CONTENT_HEIGHT = 213;
     public static final int LINE_HEIGHT = 10;
 
     private HandbookPaginator() {

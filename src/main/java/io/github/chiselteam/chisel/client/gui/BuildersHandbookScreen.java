@@ -53,7 +53,7 @@ public class BuildersHandbookScreen extends Screen {
                 button.setMessage(Component.translatable("chisel.handbook.bookmark.saved"));
                 button.setTooltip(Tooltip.create(button.getMessage()));
             }
-        }).bounds(layout.bookLeft() + 258, Math.max(0, layout.bookTop() - 14), 16, 32).tooltip(Tooltip.create(Component.translatable("chisel.handbook.bookmark.save"))).build(builder -> new HandbookBookmarkButton(builder, BookUiTextures.BOOKMARK_SEAL)));
+        }).bounds(layout.bookLeft() + BOOK_WIDTH - 62, Math.max(0, layout.bookTop() - 14), 16, 32).tooltip(Tooltip.create(Component.translatable("chisel.handbook.bookmark.save"))).build(builder -> new HandbookBookmarkButton(builder, BookUiTextures.BOOKMARK_SEAL)));
         readBookmark = addRenderableWidget(Button.builder(Component.translatable("chisel.handbook.bookmark.open"), button -> {
             var saved = HandbookBookmark.load();
             button.setTooltip(Tooltip.create(Component.translatable("chisel.handbook.bookmark.open")));
@@ -64,7 +64,7 @@ public class BuildersHandbookScreen extends Screen {
             } catch (NumberFormatException error) {
                 button.setTooltip(Tooltip.create(Component.translatable("chisel.handbook.bookmark.missing")));
             }
-        }).bounds(layout.bookLeft() + 280, Math.max(0, layout.bookTop() - 14), 16, 32).tooltip(Tooltip.create(Component.translatable("chisel.handbook.bookmark.open"))).build(builder -> new HandbookBookmarkButton(builder, BookUiTextures.BOOKMARK_COMPASS)));
+        }).bounds(layout.bookLeft() + BOOK_WIDTH - 40, Math.max(0, layout.bookTop() - 14), 16, 32).tooltip(Tooltip.create(Component.translatable("chisel.handbook.bookmark.open"))).build(builder -> new HandbookBookmarkButton(builder, BookUiTextures.BOOKMARK_COMPASS)));
         readBookmark.visible = navigation.view() != HandbookView.COVER;
         readBookmark.active = readBookmark.visible;
         bookmark.active = navigation.guideId() != null;

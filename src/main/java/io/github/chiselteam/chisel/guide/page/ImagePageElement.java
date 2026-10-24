@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.guide.page;
 
+import io.github.chiselteam.chisel.guide.manager.HandbookPaginator;
 import io.github.chiselteam.chisel.guide.section.ImageSection;
 
 public record ImagePageElement(ImageSection image) implements HandbookPageElement {
@@ -12,7 +13,7 @@ public record ImagePageElement(ImageSection image) implements HandbookPageElemen
     }
 
     private float scale() {
-        return Math.min(114F / image.width(), 120F / image.height());
+        return Math.min((float) HandbookPaginator.PAGE_CONTENT_WIDTH / image.width(), 120F / image.height());
     }
 
     public int height() {

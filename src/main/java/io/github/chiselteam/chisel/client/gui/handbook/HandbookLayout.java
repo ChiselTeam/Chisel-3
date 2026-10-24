@@ -3,20 +3,20 @@ package io.github.chiselteam.chisel.client.gui.handbook;
 import io.github.chiselteam.chisel.guide.manager.HandbookPaginator;
 
 public record HandbookLayout(int width, int height) {
-    public static final int COVER_WIDTH = 160;
-    public static final int COVER_HEIGHT = 188;
-    public static final int PAGE_HORIZONTAL_PADDING = 4;
-    public static final int BOOK_WIDTH = 320;
-    public static final int BOOK_HEIGHT = 192;
+    public static final int COVER_WIDTH = 240;
+    public static final int COVER_HEIGHT = 282;
+    public static final int PAGE_HORIZONTAL_PADDING = 6;
+    public static final int BOOK_WIDTH = 480;
+    public static final int BOOK_HEIGHT = 288;
     public static final int ARROW_WIDTH = 30;
     public static final int ARROW_HEIGHT = 20;
-    public static final int LEFT_PAGE_X = 18;
-    public static final int RIGHT_PAGE_X = 179;
-    public static final int PAGE_Y = 18;
-    public static final int PAGE_WIDTH = 122;
-    public static final int PAGE_HEIGHT = 142;
+    public static final int LEFT_PAGE_X = 27;
+    public static final int RIGHT_PAGE_X = 269;
+    public static final int PAGE_Y = 27;
+    public static final int PAGE_WIDTH = 183;
+    public static final int PAGE_HEIGHT = 213;
     public static final int LIST_ROW_HEIGHT = 24;
-    public static final int ENTRIES_PER_LIST_PAGE = 5;
+    public static final int ENTRIES_PER_LIST_PAGE = (PAGE_HEIGHT - 18) / LIST_ROW_HEIGHT;
 
     private static boolean contains(double x, double y, int left, int top, int width, int height) {
         return x >= left && x < left + width && y >= top && y < top + height;
