@@ -3,6 +3,7 @@ package io.github.chiselteam.chisel.content.family.decorative;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
 import io.github.chiselteam.chisel.block.ChiselRotatedPillarBlock;
+import io.github.chiselteam.chisel.block.ChiselRotatedPillarBlock;
 import io.github.chiselteam.chisel.content.ChiselFamily;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;

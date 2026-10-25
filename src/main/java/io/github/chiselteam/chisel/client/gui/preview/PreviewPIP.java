@@ -41,22 +41,21 @@ public class PreviewPIP extends PictureInPictureRenderer<PreviewPIPState> {
 
     @Override
     protected void renderToTexture(@NonNull PreviewPIPState state, @NonNull PoseStack pose) {
-        var block = state.blockState();
-
         float scale = 30 * state.zoom() * state.previewScale();
         pose.scale(scale, scale, scale);
         pose.mulPose(new Quaternionf().rotateX((float) Math.toDegrees(180 + state.rotX())).rotateY((float) Math.toDegrees(state.rotY())));
         pose.translate(-state.centerX(), -state.centerY(), -0.5F);
 
         var modelSet = Minecraft.getInstance().getModelManager().getBlockStateModelSet();
-        var model = modelSet.get(block);
-        var getter = new PreviewGetter(block, state.positions());
+        var getter = new PreviewGetter(state.blockState(), state.positions());
         var random = RandomSource.create();
         var quads = new QuadInstance();
 
         for(int[] position : state.positions()) {
             pose.pushPose();
             var pos = new BlockPos(position[0], position[1], position[2]);
+            var block = getter.getBlockState(pos);
+            var model = modelSet.get(block);
             pose.translate(pos.getX(), pos.getY(), pos.getZ());
             random.setSeed(ANSWER_TO_LIFE_THE_UNIVERSE_AND_EVERYTHING);
             List<BlockStateModelPart> parts = new ArrayList<>();
