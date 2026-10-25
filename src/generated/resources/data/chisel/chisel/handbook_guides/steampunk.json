@@ -17,7 +17,7 @@
             "Name": "chisel:steampunk_rusted_metal_sheet"
           },
           "x": -3,
-          "y": 4,
+          "y": 5,
           "z": 0
         },
         {
@@ -25,7 +25,7 @@
             "Name": "chisel:steampunk_large_metal_sheets"
           },
           "x": -2,
-          "y": 4,
+          "y": 5,
           "z": 0
         },
         {
@@ -33,7 +33,7 @@
             "Name": "chisel:steampunk_pipes"
           },
           "x": -1,
-          "y": 4,
+          "y": 5,
           "z": 0
         },
         {
@@ -41,7 +41,7 @@
             "Name": "chisel:steampunk_mechanical_clock"
           },
           "x": 0,
-          "y": 4,
+          "y": 5,
           "z": 0
         },
         {
@@ -49,7 +49,7 @@
             "Name": "chisel:steampunk_mechanical_clock_transparent"
           },
           "x": 1,
-          "y": 4,
+          "y": 5,
           "z": 0
         },
         {
@@ -57,7 +57,7 @@
             "Name": "chisel:steampunk_gear_train"
           },
           "x": 2,
-          "y": 4,
+          "y": 5,
           "z": 0
         },
         {
@@ -65,7 +65,7 @@
             "Name": "chisel:steampunk_gear_train_animated"
           },
           "x": -3,
-          "y": 3,
+          "y": 4,
           "z": 0
         },
         {
@@ -73,7 +73,7 @@
             "Name": "chisel:steampunk_rusted_metal_plating"
           },
           "x": -2,
-          "y": 3,
+          "y": 4,
           "z": 0
         },
         {
@@ -81,7 +81,7 @@
             "Name": "chisel:steampunk_encased_metal_plate"
           },
           "x": -1,
-          "y": 3,
+          "y": 4,
           "z": 0
         },
         {
@@ -89,7 +89,7 @@
             "Name": "chisel:steampunk_decorative_metal"
           },
           "x": 0,
-          "y": 3,
+          "y": 4,
           "z": 0
         },
         {
@@ -97,7 +97,7 @@
             "Name": "chisel:steampunk_riveted_plating"
           },
           "x": 1,
-          "y": 3,
+          "y": 4,
           "z": 0
         },
         {
@@ -105,7 +105,7 @@
             "Name": "chisel:steampunk_riveted_pattern"
           },
           "x": 2,
-          "y": 3,
+          "y": 4,
           "z": 0
         },
         {
@@ -116,7 +116,7 @@
             }
           },
           "x": -3,
-          "y": 2,
+          "y": 3,
           "z": 0
         },
         {
@@ -127,15 +127,18 @@
             }
           },
           "x": -2,
-          "y": 2,
+          "y": 3,
           "z": 0
         },
         {
           "state": {
-            "Name": "chisel:steampunk_corrugated_sheet_metal"
+            "Name": "chisel:steampunk_corrugated_sheet_metal",
+            "Properties": {
+              "axis": "y"
+            }
           },
           "x": -1,
-          "y": 2,
+          "y": 3,
           "z": 0
         },
         {
@@ -143,7 +146,7 @@
             "Name": "chisel:steampunk_diamond_plating"
           },
           "x": 0,
-          "y": 2,
+          "y": 3,
           "z": 0
         },
         {
@@ -151,7 +154,7 @@
             "Name": "chisel:steampunk_metal_grate"
           },
           "x": 1,
-          "y": 2,
+          "y": 3,
           "z": 0
         },
         {
@@ -159,7 +162,7 @@
             "Name": "chisel:steampunk_metal_grate_transparent"
           },
           "x": 2,
-          "y": 2,
+          "y": 3,
           "z": 0
         },
         {
@@ -167,7 +170,7 @@
             "Name": "chisel:steampunk_plating_dirty"
           },
           "x": -3,
-          "y": 1,
+          "y": 2,
           "z": 0
         },
         {
@@ -175,7 +178,7 @@
             "Name": "chisel:steampunk_plating_verdigris"
           },
           "x": -2,
-          "y": 1,
+          "y": 2,
           "z": 0
         },
         {
@@ -186,7 +189,7 @@
             }
           },
           "x": -1,
-          "y": 1,
+          "y": 2,
           "z": 0
         },
         {
@@ -194,7 +197,7 @@
             "Name": "chisel:steampunk_dirty_metal_plate_large"
           },
           "x": 0,
-          "y": 1,
+          "y": 2,
           "z": 0
         },
         {
@@ -202,7 +205,7 @@
             "Name": "chisel:steampunk_geometric_plating"
           },
           "x": 1,
-          "y": 1,
+          "y": 2,
           "z": 0
         },
         {
@@ -210,7 +213,7 @@
             "Name": "chisel:steampunk_worn_caution"
           },
           "x": 2,
-          "y": 1,
+          "y": 2,
           "z": 0
         },
         {
@@ -218,7 +221,7 @@
             "Name": "chisel:steampunk_caution_path"
           },
           "x": -3,
-          "y": 0,
+          "y": 1,
           "z": 0
         },
         {
@@ -229,7 +232,7 @@
             }
           },
           "x": -2,
-          "y": 0,
+          "y": 1,
           "z": 0
         },
         {
@@ -237,6 +240,44 @@
             "Name": "chisel:steampunk_rusty_teal"
           },
           "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_rusty_barrel",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_worn_bricks"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_vent",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "chisel:steampunk_square_metal_plating"
+          },
+          "x": -3,
           "y": 0,
           "z": 0
         }

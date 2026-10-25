@@ -136,6 +136,26 @@
       "block": "chisel:steampunk_rusty_teal",
       "model_type": "connected",
       "name": "steampunk_rusty_teal"
+    },
+    {
+      "block": "chisel:steampunk_rusty_barrel",
+      "model_type": "top_bottom_side",
+      "name": "steampunk_rusty_barrel"
+    },
+    {
+      "block": "chisel:steampunk_worn_bricks",
+      "model_type": "v16",
+      "name": "steampunk_worn_bricks"
+    },
+    {
+      "block": "chisel:steampunk_vent",
+      "model_type": "connected",
+      "name": "steampunk_vent"
+    },
+    {
+      "block": "chisel:steampunk_square_metal_plating",
+      "model_type": "v4",
+      "name": "steampunk_square_metal_plating"
     }
   ]
 }

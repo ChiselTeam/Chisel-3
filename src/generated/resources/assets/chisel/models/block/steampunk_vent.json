@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/steampunk/steampunk_vent",
+    "particle": "chisel:block/steampunk/steampunk_vent",
+    "standard_corner": "chisel:block/steampunk/steampunk_vent-ctm_corner",
+    "standard_cornerless": "chisel:block/steampunk/steampunk_vent-ctm_cornerless",
+    "standard_horizontal": "chisel:block/steampunk/steampunk_vent-ctm_horizontal",
+    "standard_none": "chisel:block/steampunk/steampunk_vent",
+    "standard_vertical": "chisel:block/steampunk/steampunk_vent-ctm_vertical"
+  }
+}
