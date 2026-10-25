@@ -22,7 +22,6 @@ public final class SteampunkFamily {
             .variant("steampunk_riveted_plating", v -> v.description("Riveted Plating").model(ChiselModelHandlers.CONNECTED))
             .variant("steampunk_riveted_pattern", v -> v.description("Riveted Pattern").model(ChiselModelHandlers.CONNECTED))
             .variant("steampunk_broken_plating", v -> v.description("Broken Plating").model(ChiselModelHandlers.CTMV).blockFactory(ChiselRotatedPillarBlock::new))
-            .variant("steampunk_broken_plating", v -> v.description("Broken Plating").model(ChiselModelHandlers.CTMV).blockFactory(ChiselRotatedPillarBlock::new))
             .variant("steampunk_broken_plating_transparent", v -> v.description("Broken Plating (Transparent)").properties(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).noOcclusion()).model(ChiselModelHandlers.CTMV).blockFactory(ChiselRotatedPillarBlock::new))
             .variant("steampunk_corrugated_sheet_metal", v -> v.description("Corrugated Sheet Metal").model(ChiselModelHandlers.V4).blockFactory(ChiselRotatedPillarBlock::new))
             .variant("steampunk_diamond_plating", v -> v.description("Diamond Plating").model(ChiselModelHandlers.CONNECTED))
