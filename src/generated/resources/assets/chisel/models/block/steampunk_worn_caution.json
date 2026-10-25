@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/steampunk/steampunk_worn_caution",
+    "particle": "chisel:block/steampunk/steampunk_worn_caution",
+    "standard_corner": "chisel:block/steampunk/steampunk_worn_caution-ctm_corner",
+    "standard_cornerless": "chisel:block/steampunk/steampunk_worn_caution-ctm_cornerless",
+    "standard_horizontal": "chisel:block/steampunk/steampunk_worn_caution-ctm_horizontal",
+    "standard_none": "chisel:block/steampunk/steampunk_worn_caution",
+    "standard_vertical": "chisel:block/steampunk/steampunk_worn_caution-ctm_vertical"
+  }
+}

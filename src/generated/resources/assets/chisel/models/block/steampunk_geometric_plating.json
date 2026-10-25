@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/steampunk/steampunk_geometric_plating",
+    "multiblock_2x2_bottom_left": "chisel:block/steampunk/steampunk_geometric_plating-v4_bottom_left",
+    "multiblock_2x2_bottom_right": "chisel:block/steampunk/steampunk_geometric_plating-v4_bottom_right",
+    "multiblock_2x2_top_left": "chisel:block/steampunk/steampunk_geometric_plating-v4_top_left",
+    "multiblock_2x2_top_right": "chisel:block/steampunk/steampunk_geometric_plating-v4_top_right",
+    "particle": "chisel:block/steampunk/steampunk_geometric_plating"
+  }
+}

@@ -31,6 +31,12 @@ public final class SteampunkFamily {
             .variant("steampunk_plating_dirty", v -> v.description("Dirty Plating").model(ChiselModelHandlers.R4))
             .variant("steampunk_plating_verdigris", v -> v.description("Verdigris Plating").model(ChiselModelHandlers.R4))
             .variant("steampunk_bolted_plate_rusted", v -> v.description("Rusted Bolted Plate").model(ChiselModelHandlers.CTMV).blockFactory(RotatedPillarBlock::new))
+            .variant("steampunk_dirty_metal_plate_large", v -> v.description("Large Dirty Metal Plate").model(ChiselModelHandlers.CONNECTED))
+            .variant("steampunk_geometric_plating", v -> v.description("Geometric Plating").model(ChiselModelHandlers.V4))
+            .variant("steampunk_worn_caution", v -> v.description("Worn Caution").model(ChiselModelHandlers.CONNECTED))
+            .variant("steampunk_caution_path", v -> v.description("Caution Path").model(ChiselModelHandlers.CONNECTED))
+            .variant("steampunk_weathered_plate", v -> v.description("Weathered Plate").model(ChiselModelHandlers.CTMV).blockFactory(RotatedPillarBlock::new))
+            .variant("steampunk_rusty_teal", v -> v.description("Rusty Teal").model(ChiselModelHandlers.CONNECTED))
         );
     private SteampunkFamily() {
     }

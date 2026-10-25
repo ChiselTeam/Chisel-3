@@ -106,6 +106,36 @@
       "block": "chisel:steampunk_bolted_plate_rusted",
       "model_type": "ctmv",
       "name": "steampunk_bolted_plate_rusted"
+    },
+    {
+      "block": "chisel:steampunk_dirty_metal_plate_large",
+      "model_type": "connected",
+      "name": "steampunk_dirty_metal_plate_large"
+    },
+    {
+      "block": "chisel:steampunk_geometric_plating",
+      "model_type": "v4",
+      "name": "steampunk_geometric_plating"
+    },
+    {
+      "block": "chisel:steampunk_worn_caution",
+      "model_type": "connected",
+      "name": "steampunk_worn_caution"
+    },
+    {
+      "block": "chisel:steampunk_caution_path",
+      "model_type": "connected",
+      "name": "steampunk_caution_path"
+    },
+    {
+      "block": "chisel:steampunk_weathered_plate",
+      "model_type": "ctmv",
+      "name": "steampunk_weathered_plate"
+    },
+    {
+      "block": "chisel:steampunk_rusty_teal",
+      "model_type": "connected",
+      "name": "steampunk_rusty_teal"
     }
   ]
 }
