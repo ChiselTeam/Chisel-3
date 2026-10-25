@@ -8,6 +8,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.CardinalLighting;
 import net.minecraft.world.level.ColorResolver;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.IronBarsBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.lighting.LevelLightEngine;
@@ -64,7 +65,15 @@ public class PreviewGetter implements BlockAndTintGetter {
 
     @Override
     public @NonNull BlockState getBlockState(@NonNull BlockPos pos) {
-        return positions.contains(pos) ? state : Blocks.AIR.defaultBlockState();
+        if (!positions.contains(pos)) return Blocks.AIR.defaultBlockState();
+
+        if (state.getBlock() instanceof IronBarsBlock) {
+            return state.setValue(IronBarsBlock.NORTH, positions.contains(pos.north()))
+                    .setValue(IronBarsBlock.EAST, positions.contains(pos.east()))
+                    .setValue(IronBarsBlock.SOUTH, positions.contains(pos.south()))
+                    .setValue(IronBarsBlock.WEST, positions.contains(pos.west()));
+        }
+        return state;
     }
 
     @Override
