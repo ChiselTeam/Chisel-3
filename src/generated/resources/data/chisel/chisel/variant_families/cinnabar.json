@@ -1,0 +1,562 @@
+{
+  "family_name": "cinnabar",
+  "tag": "c:chisel/cinnabar",
+  "variants": [
+    {
+      "block": "chisel:cinnabar_array",
+      "model_type": "multiblock_2x2",
+      "name": "cinnabar_array"
+    },
+    {
+      "block": "chisel:cinnabar_border_square",
+      "model_type": "connected",
+      "name": "cinnabar_border_square"
+    },
+    {
+      "block": "chisel:cinnabar_border_square_small",
+      "model_type": "connected",
+      "name": "cinnabar_border_square_small"
+    },
+    {
+      "block": "chisel:cinnabar_braid",
+      "name": "cinnabar_braid"
+    },
+    {
+      "block": "chisel:cinnabar_braid_encased",
+      "model_type": "connected",
+      "name": "cinnabar_braid_encased"
+    },
+    {
+      "block": "chisel:cinnabar_bricks_cracked",
+      "name": "cinnabar_bricks_cracked"
+    },
+    {
+      "block": "chisel:cinnabar_bricks_encased",
+      "model_type": "connected",
+      "name": "cinnabar_bricks_encased"
+    },
+    {
+      "block": "chisel:cinnabar_bricks_indent",
+      "name": "cinnabar_bricks_indent"
+    },
+    {
+      "block": "chisel:cinnabar_bricks_inlayed",
+      "name": "cinnabar_bricks_inlayed"
+    },
+    {
+      "block": "chisel:cinnabar_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "cinnabar_bricks_large"
+    },
+    {
+      "block": "chisel:cinnabar_large_bricks",
+      "name": "cinnabar_large_bricks"
+    },
+    {
+      "block": "chisel:cinnabar_bricks_small",
+      "name": "cinnabar_bricks_small"
+    },
+    {
+      "block": "chisel:cinnabar_bricks_soft",
+      "name": "cinnabar_bricks_soft"
+    },
+    {
+      "block": "chisel:cinnabar_bricks_solid",
+      "name": "cinnabar_bricks_solid"
+    },
+    {
+      "block": "chisel:cinnabar_bricks_triple",
+      "name": "cinnabar_bricks_triple"
+    },
+    {
+      "block": "chisel:cinnabar_bricks_vertical",
+      "name": "cinnabar_bricks_vertical"
+    },
+    {
+      "block": "chisel:cinnabar_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "cinnabar_chaotic"
+    },
+    {
+      "block": "chisel:cinnabar_chaotic_medium",
+      "name": "cinnabar_chaotic_medium"
+    },
+    {
+      "block": "chisel:cinnabar_chaotic_small",
+      "name": "cinnabar_chaotic_small"
+    },
+    {
+      "block": "chisel:cinnabar_checker",
+      "name": "cinnabar_checker"
+    },
+    {
+      "block": "chisel:cinnabar_checker_small",
+      "name": "cinnabar_checker_small"
+    },
+    {
+      "block": "chisel:cinnabar_circular",
+      "model_type": "connected",
+      "name": "cinnabar_circular"
+    },
+    {
+      "block": "chisel:cinnabar_cracked",
+      "name": "cinnabar_cracked"
+    },
+    {
+      "block": "chisel:cinnabar_cobble",
+      "name": "cinnabar_cobble"
+    },
+    {
+      "block": "chisel:cinnabar_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "cinnabar_cuts"
+    },
+    {
+      "block": "chisel:cinnabar_dent",
+      "model_type": "connected",
+      "name": "cinnabar_dent"
+    },
+    {
+      "block": "chisel:cinnabar_french_1",
+      "name": "cinnabar_french_1"
+    },
+    {
+      "block": "chisel:cinnabar_french_2",
+      "name": "cinnabar_french_2"
+    },
+    {
+      "block": "chisel:cinnabar_indent",
+      "model_type": "connected",
+      "name": "cinnabar_indent"
+    },
+    {
+      "block": "chisel:cinnabar_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "cinnabar_jellybean"
+    },
+    {
+      "block": "chisel:cinnabar_layers",
+      "name": "cinnabar_layers"
+    },
+    {
+      "block": "chisel:cinnabar_layers_connected",
+      "model_type": "connected",
+      "name": "cinnabar_layers_connected"
+    },
+    {
+      "block": "chisel:cinnabar_line_horizontal",
+      "name": "cinnabar_line_horizontal"
+    },
+    {
+      "block": "chisel:cinnabar_line_vertical",
+      "name": "cinnabar_line_vertical"
+    },
+    {
+      "block": "chisel:cinnabar_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "cinnabar_meander_horizontal"
+    },
+    {
+      "block": "chisel:cinnabar_meander_vertical",
+      "model_type": "ctmv",
+      "name": "cinnabar_meander_vertical"
+    },
+    {
+      "block": "chisel:cinnabar_mosaic",
+      "model_type": "connected",
+      "name": "cinnabar_mosaic"
+    },
+    {
+      "block": "chisel:cinnabar_ornate_small",
+      "name": "cinnabar_ornate_small"
+    },
+    {
+      "block": "chisel:cinnabar_panel",
+      "name": "cinnabar_panel"
+    },
+    {
+      "block": "chisel:cinnabar_pillar",
+      "model_type": "top_bottom_side",
+      "name": "cinnabar_pillar"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_basic",
+      "model_type": "ctmv",
+      "name": "cinnabar_pillar_basic"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "cinnabar_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "cinnabar_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "cinnabar_pillar_basic_round"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "cinnabar_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "cinnabar_pillar_classic"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "cinnabar_pillar_classic_large"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "cinnabar_pillar_ionic"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "cinnabar_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "cinnabar_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "cinnabar_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "cinnabar_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "cinnabar_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "cinnabar_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_meander",
+      "model_type": "ctmv",
+      "name": "cinnabar_pillar_meander"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "cinnabar_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "cinnabar_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "cinnabar_pillar_meander_round"
+    },
+    {
+      "block": "chisel:cinnabar_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "cinnabar_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:cinnabar_plate",
+      "name": "cinnabar_plate"
+    },
+    {
+      "block": "chisel:cinnabar_plate_connected",
+      "model_type": "connected",
+      "name": "cinnabar_plate_connected"
+    },
+    {
+      "block": "chisel:cinnabar_polished",
+      "name": "cinnabar_polished"
+    },
+    {
+      "block": "chisel:cinnabar_polished_encased",
+      "model_type": "connected",
+      "name": "cinnabar_polished_encased"
+    },
+    {
+      "block": "chisel:cinnabar_prism",
+      "name": "cinnabar_prism"
+    },
+    {
+      "block": "chisel:cinnabar_raw",
+      "name": "cinnabar_raw"
+    },
+    {
+      "block": "chisel:cinnabar_road",
+      "name": "cinnabar_road"
+    },
+    {
+      "block": "chisel:cinnabar_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "cinnabar_slanted"
+    },
+    {
+      "block": "chisel:cinnabar_tiles",
+      "name": "cinnabar_tiles"
+    },
+    {
+      "block": "chisel:cinnabar_tiles_large",
+      "model_type": "connected",
+      "name": "cinnabar_tiles_large"
+    },
+    {
+      "block": "chisel:cinnabar_tiles_small",
+      "name": "cinnabar_tiles_small"
+    },
+    {
+      "block": "chisel:cinnabar_twisted",
+      "model_type": "top_bottom_side",
+      "name": "cinnabar_twisted"
+    },
+    {
+      "block": "chisel:cinnabar_weaver",
+      "model_type": "connected",
+      "name": "cinnabar_weaver"
+    },
+    {
+      "block": "chisel:cinnabar_zag",
+      "model_type": "v4",
+      "name": "cinnabar_zag"
+    },
+    {
+      "block": "chisel:cinnabar_crate",
+      "model_type": "connected",
+      "name": "cinnabar_crate"
+    },
+    {
+      "block": "chisel:cinnabar_herringbone",
+      "name": "cinnabar_herringbone"
+    },
+    {
+      "block": "chisel:cinnabar_herringbone_encased",
+      "model_type": "connected",
+      "name": "cinnabar_herringbone_encased"
+    },
+    {
+      "block": "chisel:cinnabar_medallion",
+      "name": "cinnabar_medallion"
+    },
+    {
+      "block": "chisel:cinnabar_medallion_encased",
+      "model_type": "connected",
+      "name": "cinnabar_medallion_encased"
+    },
+    {
+      "block": "chisel:cinnabar_dots",
+      "name": "cinnabar_dots"
+    },
+    {
+      "block": "chisel:cinnabar_dots_encased",
+      "model_type": "connected",
+      "name": "cinnabar_dots_encased"
+    },
+    {
+      "block": "chisel:cinnabar_heart",
+      "name": "cinnabar_heart"
+    },
+    {
+      "block": "chisel:cinnabar_star",
+      "name": "cinnabar_star"
+    },
+    {
+      "block": "chisel:cinnabar_plating",
+      "name": "cinnabar_plating"
+    },
+    {
+      "block": "chisel:cinnabar_lodestone",
+      "name": "cinnabar_lodestone"
+    },
+    {
+      "block": "chisel:cinnabar_lodestone_connected",
+      "model_type": "connected",
+      "name": "cinnabar_lodestone_connected"
+    },
+    {
+      "block": "chisel:cinnabar_plank",
+      "name": "cinnabar_plank"
+    },
+    {
+      "block": "chisel:cinnabar_plank_connected",
+      "model_type": "connected",
+      "name": "cinnabar_plank_connected"
+    },
+    {
+      "block": "chisel:cinnabar_frame",
+      "name": "cinnabar_frame"
+    },
+    {
+      "block": "chisel:cinnabar_panel_1",
+      "name": "cinnabar_panel_1"
+    },
+    {
+      "block": "chisel:cinnabar_panel_2",
+      "name": "cinnabar_panel_2"
+    },
+    {
+      "block": "chisel:cinnabar_panel_3",
+      "name": "cinnabar_panel_3"
+    },
+    {
+      "block": "chisel:cinnabar_skull_creeper",
+      "name": "cinnabar_skull_creeper"
+    },
+    {
+      "block": "chisel:cinnabar_skull_skeleton",
+      "name": "cinnabar_skull_skeleton"
+    },
+    {
+      "block": "chisel:cinnabar_stripes",
+      "name": "cinnabar_stripes"
+    },
+    {
+      "block": "chisel:cinnabar_stripes_encased",
+      "model_type": "connected",
+      "name": "cinnabar_stripes_encased"
+    },
+    {
+      "block": "chisel:cinnabar_chisel_1",
+      "name": "cinnabar_chisel_1"
+    },
+    {
+      "block": "chisel:cinnabar_chisel_2",
+      "name": "cinnabar_chisel_2"
+    },
+    {
+      "block": "chisel:cinnabar_chisel_3",
+      "name": "cinnabar_chisel_3"
+    },
+    {
+      "block": "chisel:cinnabar_chisel_4",
+      "name": "cinnabar_chisel_4"
+    },
+    {
+      "block": "chisel:cinnabar_chisel_5",
+      "name": "cinnabar_chisel_5"
+    },
+    {
+      "block": "chisel:cinnabar_chisel_6",
+      "name": "cinnabar_chisel_6"
+    },
+    {
+      "block": "chisel:cinnabar_facet",
+      "name": "cinnabar_facet"
+    },
+    {
+      "block": "chisel:cinnabar_facet_small",
+      "name": "cinnabar_facet_small"
+    },
+    {
+      "block": "chisel:cinnabar_facet_small_encased",
+      "model_type": "connected",
+      "name": "cinnabar_facet_small_encased"
+    },
+    {
+      "block": "chisel:cinnabar_shiny",
+      "name": "cinnabar_shiny"
+    },
+    {
+      "block": "chisel:cinnabar_shiny_connected",
+      "model_type": "connected",
+      "name": "cinnabar_shiny_connected"
+    },
+    {
+      "block": "chisel:cinnabar_gem",
+      "name": "cinnabar_gem"
+    },
+    {
+      "block": "chisel:cinnabar_gem_1",
+      "name": "cinnabar_gem_1"
+    },
+    {
+      "block": "chisel:cinnabar_gem_1_connected",
+      "model_type": "connected",
+      "name": "cinnabar_gem_1_connected"
+    },
+    {
+      "block": "chisel:cinnabar_gem_2",
+      "name": "cinnabar_gem_2"
+    },
+    {
+      "block": "chisel:cinnabar_gem_2_connected",
+      "model_type": "connected",
+      "name": "cinnabar_gem_2_connected"
+    },
+    {
+      "block": "chisel:cinnabar_gem_3",
+      "name": "cinnabar_gem_3"
+    },
+    {
+      "block": "chisel:cinnabar_gem_3_connected",
+      "model_type": "connected",
+      "name": "cinnabar_gem_3_connected"
+    },
+    {
+      "block": "chisel:cinnabar_bricks_square",
+      "name": "cinnabar_bricks_square"
+    },
+    {
+      "block": "chisel:cinnabar_slab",
+      "name": "cinnabar_slab"
+    },
+    {
+      "block": "chisel:cinnabar_scaffold_2",
+      "name": "cinnabar_scaffold_2"
+    },
+    {
+      "block": "chisel:cinnabar_scaffold_encased_2",
+      "model_type": "connected",
+      "name": "cinnabar_scaffold_encased_2"
+    },
+    {
+      "block": "chisel:cinnabar_tiles_inlayed",
+      "name": "cinnabar_tiles_inlayed"
+    },
+    {
+      "block": "chisel:cinnabar_waves",
+      "model_type": "multiblock_2x2",
+      "name": "cinnabar_waves"
+    },
+    {
+      "block": "chisel:cinnabar_parquet",
+      "name": "cinnabar_parquet"
+    },
+    {
+      "block": "chisel:cinnabar_parquet_encased",
+      "model_type": "connected",
+      "name": "cinnabar_parquet_encased"
+    },
+    {
+      "block": "chisel:cinnabar_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "cinnabar_bricks_large_rough"
+    },
+    {
+      "block": "chisel:cinnabar_tiles_small_encased",
+      "model_type": "connected",
+      "name": "cinnabar_tiles_small_encased"
+    },
+    {
+      "block": "chisel:cinnabar_bricks_round",
+      "name": "cinnabar_bricks_round"
+    }
+  ]
+}
