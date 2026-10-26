@@ -9,6 +9,9 @@ The third iteration of the mod means a whole new rewrite from the ground up!
 
 It is maintained by [Cricket](github.com/TheCricket)
 
+Worlds using other Chisel implementations are
+[automatically migrated when loaded](docs/world-migration.md).
+
 Pull Requests
 ---------------
 

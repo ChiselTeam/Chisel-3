@@ -4,6 +4,7 @@ import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
 import io.github.chiselteam.chisel.config.ChiselConfigurations;
 import io.github.chiselteam.chisel.content.ChiselFamilies;
 import io.github.chiselteam.chisel.family.AddonFamilyRegistry;
+import io.github.chiselteam.chisel.migration.LegacyWorldMigration;
 import io.github.chiselteam.chisel.registry.*;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
@@ -34,6 +35,7 @@ public class Chisel {
         ChiselEntities.ENTITY_TYPES.register(bus);
         ChiselParticles.PARTICLES.register(bus);
         ChiselStats.STATS.register(bus);
+        LegacyWorldMigration.register(ChiselBlocks.BLOCKS, ChiselItems.ITEMS);
 
         bus.addListener(this::commonSetup);
         bus.addListener(this::loadComplete);
