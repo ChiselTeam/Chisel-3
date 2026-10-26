@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/lapis/lapis_pillar-top",
+    "side": "chisel:block/lapis/lapis_pillar-side",
+    "top": "chisel:block/lapis/lapis_pillar-top"
+  }
+}
