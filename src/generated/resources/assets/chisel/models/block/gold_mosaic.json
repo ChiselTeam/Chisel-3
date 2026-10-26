@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/gold/gold_mosaic",
+    "particle": "chisel:block/gold/gold_mosaic",
+    "standard_corner": "chisel:block/gold/gold_mosaic-ctm_corner",
+    "standard_cornerless": "chisel:block/gold/gold_raw",
+    "standard_horizontal": "chisel:block/gold/gold_mosaic-ctm_horizontal",
+    "standard_none": "chisel:block/gold/gold_mosaic",
+    "standard_vertical": "chisel:block/gold/gold_mosaic-ctm_vertical"
+  }
+}
