@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/emerald/emerald_meander_vertical-side",
+    "bottom": "chisel:block/emerald/emerald_meander_vertical-top",
+    "particle": "chisel:block/emerald/emerald_meander_vertical-side",
+    "side": "chisel:block/emerald/emerald_meander_vertical-side",
+    "top": "chisel:block/emerald/emerald_meander_vertical-top",
+    "vertical_both": "chisel:block/emerald/emerald_meander_vertical-vertical_both",
+    "vertical_bottom": "chisel:block/emerald/emerald_meander_vertical-vertical_bottom",
+    "vertical_none": "chisel:block/emerald/emerald_meander_vertical-side",
+    "vertical_top": "chisel:block/emerald/emerald_meander_vertical-vertical_top"
+  }
+}
