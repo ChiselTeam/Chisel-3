@@ -226,8 +226,8 @@
       "name": "diamond_ornate_small"
     },
     {
-      "block": "chisel:diamond_panel_2",
-      "name": "diamond_panel_2"
+      "block": "chisel:diamond_panel2",
+      "name": "diamond_panel2"
     },
     {
       "block": "chisel:diamond_pillar",
@@ -463,8 +463,8 @@
       "name": "diamond_panel_1"
     },
     {
-      "block": "chisel:diamond_panel_2_2",
-      "name": "diamond_panel_2_2"
+      "block": "chisel:diamond_panel_2",
+      "name": "diamond_panel_2"
     },
     {
       "block": "chisel:diamond_panel_3",

@@ -211,8 +211,8 @@
       "name": "lapis_ornate_small"
     },
     {
-      "block": "chisel:lapis_panel_2",
-      "name": "lapis_panel_2"
+      "block": "chisel:lapis_panel2",
+      "name": "lapis_panel2"
     },
     {
       "block": "chisel:lapis_pillar",
@@ -448,8 +448,8 @@
       "name": "lapis_panel_1"
     },
     {
-      "block": "chisel:lapis_panel_2_2",
-      "name": "lapis_panel_2_2"
+      "block": "chisel:lapis_panel_2",
+      "name": "lapis_panel_2"
     },
     {
       "block": "chisel:lapis_panel_3",
