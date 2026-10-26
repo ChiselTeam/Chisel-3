@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/iron/iron_indent",
+    "particle": "chisel:block/iron/iron_indent",
+    "standard_corner": "chisel:block/iron/iron_indent-ctm_corner",
+    "standard_cornerless": "chisel:block/iron/iron_raw",
+    "standard_horizontal": "chisel:block/iron/iron_indent-ctm_horizontal",
+    "standard_none": "chisel:block/iron/iron_indent",
+    "standard_vertical": "chisel:block/iron/iron_indent-ctm_vertical"
+  }
+}
