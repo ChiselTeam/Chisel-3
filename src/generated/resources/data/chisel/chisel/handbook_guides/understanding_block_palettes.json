@@ -1,13 +1,19 @@
 {
   "categories": [
-    "chisel:palettes",
-    "chisel:getting_started"
+    "chisel:getting_started",
+    "chisel:palettes"
   ],
   "description": {
     "translate": "chisel.guide.understanding_block_palettes.description"
   },
   "icon": "minecraft:stone_bricks",
   "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.understanding_block_palettes.goal"
+      }
+    },
     {
       "type": "chisel:text",
       "text": {
@@ -18,6 +24,435 @@
       "type": "chisel:tip",
       "text": {
         "translate": "chisel.guide.understanding_block_palettes.roles_tip"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.understanding_block_palettes.compare"
+      }
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -6,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -6,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -6,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -6,
+          "y": 3,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -6,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -5,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -5,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -5,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -5,
+          "y": 3,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -5,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -4,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -4,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -4,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -3,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -2,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -2,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -2,
+          "y": 3,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -2,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:glass"
+          },
+          "x": -4,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:glass"
+          },
+          "x": -4,
+          "y": 3,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:polished_deepslate"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_quartz"
+          },
+          "x": 2,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_quartz"
+          },
+          "x": 2,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_quartz"
+          },
+          "x": 2,
+          "y": 3,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:cyan_concrete"
+          },
+          "x": 2,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:polished_deepslate"
+          },
+          "x": 3,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_quartz"
+          },
+          "x": 3,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_quartz"
+          },
+          "x": 3,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_quartz"
+          },
+          "x": 3,
+          "y": 3,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:cyan_concrete"
+          },
+          "x": 3,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:polished_deepslate"
+          },
+          "x": 4,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_quartz"
+          },
+          "x": 4,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:cyan_concrete"
+          },
+          "x": 4,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:polished_deepslate"
+          },
+          "x": 5,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_quartz"
+          },
+          "x": 5,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_quartz"
+          },
+          "x": 5,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_quartz"
+          },
+          "x": 5,
+          "y": 3,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:cyan_concrete"
+          },
+          "x": 5,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:polished_deepslate"
+          },
+          "x": 6,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_quartz"
+          },
+          "x": 6,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_quartz"
+          },
+          "x": 6,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_quartz"
+          },
+          "x": 6,
+          "y": 3,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:cyan_concrete"
+          },
+          "x": 6,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:glass"
+          },
+          "x": 4,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:glass"
+          },
+          "x": 4,
+          "y": 3,
+          "z": -1
+        }
+      ]
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.understanding_block_palettes.hue"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.understanding_block_palettes.contrast"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.understanding_block_palettes.density"
       }
     },
     {
@@ -64,8 +499,27 @@
       "text": {
         "translate": "chisel.guide.understanding_block_palettes.variation_tip"
       }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.understanding_block_palettes.practice"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.understanding_block_palettes.check"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.understanding_block_palettes.transfer"
+      }
     }
   ],
+  "sort_order": 10,
   "title": {
     "translate": "chisel.guide.understanding_block_palettes.title"
   }

@@ -64,7 +64,7 @@ public class ChiselLang extends LangHelper {
 
         addItem(ChiselItems.AUTO_CHISEL, "Auto Chisel");
         addItem(ChiselItems.BUILDERS_GUIDE, "Builder's Guide");
-        addItem(ChiselItems.PALETTE_BUILDER, "Palette Builder");
+        addItem(ChiselItems.PALETTE_BUILDER, "Palette Brush");
         addItem(ChiselItems.TROWEL, "Trowel");
     }
 

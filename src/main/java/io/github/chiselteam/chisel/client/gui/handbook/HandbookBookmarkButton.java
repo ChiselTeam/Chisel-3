@@ -1,8 +1,8 @@
 package io.github.chiselteam.chisel.client.gui.handbook;
 
-import io.github.chiselteam.chisel.client.gui.BookUiTextures;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.resources.Identifier;
 import org.jspecify.annotations.NonNull;
 
@@ -16,7 +16,7 @@ public final class HandbookBookmarkButton extends Button {
 
     @Override
     protected void extractContents(@NonNull GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick) {
-        BookUiTextures.image(graphics, texture, getX(), getY(), 16, 32);
+        graphics.blit(RenderPipelines.GUI_TEXTURED, texture, getX(), getY(), 0, 0, getWidth(), getHeight(), 16, 32, 16, 32);
         if (isHoveredOrFocused()) graphics.fill(getX() + 2, getBottom() - 1, getRight() - 2, getBottom(), 0xFFFFE1A6);
     }
 }

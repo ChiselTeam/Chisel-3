@@ -18,7 +18,16 @@ public class PageBuilder {
     }
 
     public void addText(List<FormattedCharSequence> lines, boolean tip) {
-        int padding = tip ? 10 : 0;
+        if (lines.isEmpty()) return;
+        if (tip) {
+            var element = new TipPageElement(List.copyOf(lines));
+
+            if (element.height() <= HandbookPaginator.PAGE_CONTENT_HEIGHT) {
+                add(element);
+                return;
+            }
+        }
+        int padding = tip ? 10 : 4;
         int index = 0;
 
         while (index < lines.size()) {

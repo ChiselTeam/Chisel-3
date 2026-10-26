@@ -2,7 +2,9 @@
   "categories": [
     "chisel:blocks"
   ],
-  "description": "Industrial metal blocks with gears, pipes, and rusted plating.",
+  "description": {
+    "translate": "chisel.guide.steampunk.description"
+  },
   "icon": "chisel:steampunk_rusted_metal_sheet",
   "sections": [
     {
@@ -289,5 +291,7 @@
     }
   ],
   "sort_order": 248,
-  "title": "Steampunk"
+  "title": {
+    "translate": "chisel.guide.steampunk.title"
+  }
 }

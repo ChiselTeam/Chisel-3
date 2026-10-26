@@ -53,7 +53,13 @@ public class BuildersHandbookScreen extends Screen {
                 button.setMessage(Component.translatable("chisel.handbook.bookmark.saved"));
                 button.setTooltip(Tooltip.create(button.getMessage()));
             }
-        }).bounds(layout.bookLeft() + BOOK_WIDTH - 62, Math.max(0, layout.bookTop() - 14), 16, 32).tooltip(Tooltip.create(Component.translatable("chisel.handbook.bookmark.save"))).build(builder -> new HandbookBookmarkButton(builder, BookUiTextures.BOOKMARK_SEAL)));
+                }).bounds(
+                        layout.toScreen(
+                                layout.bookLeft() + BOOK_WIDTH - 62),
+                        layout.toScreen(layout.bookTop() - 14),
+                        layout.toScreen(16), layout.toScreen(32)
+                ).tooltip(Tooltip.create(Component.translatable("chisel.handbook.bookmark.save"))).build(builder -> new HandbookBookmarkButton(builder, BookUiTextures.BOOKMARK_SEAL))
+        );
         readBookmark = addRenderableWidget(Button.builder(Component.translatable("chisel.handbook.bookmark.open"), button -> {
             var saved = HandbookBookmark.load();
             button.setTooltip(Tooltip.create(Component.translatable("chisel.handbook.bookmark.open")));
@@ -64,7 +70,7 @@ public class BuildersHandbookScreen extends Screen {
             } catch (NumberFormatException error) {
                 button.setTooltip(Tooltip.create(Component.translatable("chisel.handbook.bookmark.missing")));
             }
-        }).bounds(layout.bookLeft() + BOOK_WIDTH - 40, Math.max(0, layout.bookTop() - 14), 16, 32).tooltip(Tooltip.create(Component.translatable("chisel.handbook.bookmark.open"))).build(builder -> new HandbookBookmarkButton(builder, BookUiTextures.BOOKMARK_COMPASS)));
+        }).bounds(layout.toScreen(layout.bookLeft() + BOOK_WIDTH - 40), layout.toScreen(layout.bookTop() - 14), layout.toScreen(16), layout.toScreen(32)).tooltip(Tooltip.create(Component.translatable("chisel.handbook.bookmark.open"))).build(builder -> new HandbookBookmarkButton(builder, BookUiTextures.BOOKMARK_COMPASS)));
         readBookmark.visible = navigation.view() != HandbookView.COVER;
         readBookmark.active = readBookmark.visible;
         bookmark.active = navigation.guideId() != null;
@@ -86,7 +92,10 @@ public class BuildersHandbookScreen extends Screen {
     @Override
     public void extractRenderState(@NonNull GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick) {
         syncPreviews();
-        renderer.render(graphics, mouseX, mouseY, getMinecraft().hasShiftDown());
+        graphics.pose().pushMatrix();
+        graphics.pose().scale(layout.scale());
+        renderer.render(graphics, (int) layout.toBook(mouseX), (int) layout.toBook(mouseY), getMinecraft().hasShiftDown());
+        graphics.pose().popMatrix();
         graphics.nextStratum();
         super.extractRenderState(graphics, mouseX, mouseY, partialTick);
     }
@@ -119,10 +128,11 @@ public class BuildersHandbookScreen extends Screen {
                 var blocks = new LinkedHashMap<BlockPos, BlockState>();
                 section.blocks().forEach(cell -> blocks.put(cell.pos(), cell.state()));
                 var preview = new PaletteWallPreview(() -> blocks, 1.5F);
-                preview.setX(x);
-                preview.setY(y);
-                preview.setWidth(HandbookPaginator.PAGE_CONTENT_WIDTH);
-                preview.setHeight(element.height() - 4);
+                // Preview widgets use screen coordinates, including their picture-in-picture bounds and input.
+                preview.setX(layout.toScreen(x));
+                preview.setY(layout.toScreen(y));
+                preview.setWidth(layout.toScreen(x + HandbookPaginator.PAGE_CONTENT_WIDTH) - preview.getX());
+                preview.setHeight(layout.toScreen(y + element.height() - 4) - preview.getY());
                 structurePreviews.add(addRenderableWidget(preview));
             }
             y += element.height();
@@ -131,20 +141,27 @@ public class BuildersHandbookScreen extends Screen {
 
     @Override
     public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
-        if (event.button() != 0) return super.mouseClicked(event, doubleClick);
-        if (navigation.view() == HandbookView.COVER && layout.onCover(event.x(), event.y())) {
-            navigation.open();
-            return true;
-        }
-        if (navigation.canPrevious() && layout.onPrevious(event.x(), event.y())) {
+        double x = layout.toBook(event.x());
+        double y = layout.toBook(event.y());
+        // Handle this before child widgets so right-click also works over structure previews.
+        if (event.button() == 1 && navigation.view() != HandbookView.COVER && layout.onBook(x, y)) {
             navigation.previous();
             return true;
         }
-        if (navigation.canNext() && layout.onNext(event.x(), event.y())) {
+        if (event.button() != 0) return super.mouseClicked(event, doubleClick);
+        if (navigation.view() == HandbookView.COVER && layout.onCover(x, y)) {
+            navigation.open();
+            return true;
+        }
+        if (navigation.canPrevious() && layout.onPrevious(x, y)) {
+            navigation.previous();
+            return true;
+        }
+        if (navigation.canNext() && layout.onNext(x, y)) {
             navigation.next();
             return true;
         }
-        int row = layout.hoveredRow(event.x(), event.y(), navigation.visibleCount());
+        int row = layout.hoveredRow(x, y, navigation.visibleCount());
         if (row >= 0) {
             navigation.selectRow(row, this::paginate);
             return true;

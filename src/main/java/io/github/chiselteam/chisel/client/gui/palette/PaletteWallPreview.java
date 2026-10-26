@@ -18,7 +18,7 @@ import java.util.function.Supplier;
 public final class PaletteWallPreview extends AbstractWidget {
     private final Supplier<Map<BlockPos, BlockState>> wall;
     private final float sensitivity;
-    private float rotationX = 0.06F, rotationY = -0.18F, zoom = 1F, panX, panY;
+    private float rotationX = PalettePreviewCamera.DEFAULT_PITCH, rotationY = PalettePreviewCamera.DEFAULT_YAW, zoom = 1F, panX, panY;
 
     public PaletteWallPreview(Supplier<Map<BlockPos, BlockState>> wall) {
         this(wall, 1F);
@@ -34,8 +34,8 @@ public final class PaletteWallPreview extends AbstractWidget {
     @Override
     public void onClick(@NonNull MouseButtonEvent event, boolean doubleClick) {
         if (doubleClick) {
-            rotationX = 0.06F;
-            rotationY = -0.18F;
+            rotationX = PalettePreviewCamera.DEFAULT_PITCH;
+            rotationY = PalettePreviewCamera.DEFAULT_YAW;
             zoom = 1;
             panX = 0;
             panY = 0;

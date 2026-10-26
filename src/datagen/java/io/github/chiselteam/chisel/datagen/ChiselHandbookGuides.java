@@ -2,6 +2,7 @@ package io.github.chiselteam.chisel.datagen;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.content.ChiselFamilies;
+import io.github.chiselteam.chisel.datagen.guide.GettingStartedGuides;
 import io.github.chiselteam.chisel.datagen.guide.HandbookGuideBuilder;
 import io.github.chiselteam.chisel.datagen.providers.HandbookGuideProvider;
 import io.github.chiselteam.chisel.guide.HandbookGuide;
@@ -26,7 +27,6 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
     private final Identifier BLOCKS = Chisel.prefix("blocks");
     private final Identifier ITEMS = Chisel.prefix("items");
     private final Identifier PALETTES = Chisel.prefix("palettes");
-    private final Identifier GETTING_STARTED = Chisel.prefix("getting_started");
 
     public ChiselHandbookGuides(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries);
@@ -38,6 +38,7 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
         addBlockGuides();
         addItemGuides();
         addPaletteGuides();
+        GettingStartedGuides.generate(output);
     }
 
     private void buildGuide(String name, HandbookGuide guide) {
@@ -65,7 +66,8 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                         .build());
 
         buildGuide("antiblock",
-                HandbookGuideBuilder.builder(Component.literal("Antiblock"), Chisel.prefix("antiblock_black"))
+                HandbookGuideBuilder.builder(Component.translatable("chisel.guide.antiblock.title"), Chisel.prefix("antiblock_black"))
+                        .description(Component.translatable("chisel.guide.antiblock.description"))
                         .category(BLOCKS)
                         .sortOrder(203)
                         .craftingRecipe(Chisel.prefix("antiblock_black"))
@@ -368,8 +370,8 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                         .build());
 
         buildGuide("steampunk",
-                HandbookGuideBuilder.builder(Component.literal("Steampunk"), Chisel.prefix("steampunk_rusted_metal_sheet"))
-                        .description(Component.literal("Industrial metal blocks with gears, pipes, and rusted plating."))
+                HandbookGuideBuilder.builder(Component.translatable("chisel.guide.steampunk.title"), Chisel.prefix("steampunk_rusted_metal_sheet"))
+                        .description(Component.translatable("chisel.guide.steampunk.description"))
                         .category(BLOCKS)
                         .sortOrder(248)
                         .text(Component.literal("\n".repeat(9)))
@@ -494,10 +496,12 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                         .category(ITEMS)
                         .category(PALETTES)
                         .sortOrder(80)
-                        .tip(Component.translatable("chisel.handbook.structure.example"))
-                        .structure(Identifier.withDefaultNamespace("village/plains/town_centers/plains_meeting_point_3"))
                         .text(Component.translatable("chisel.guide.palette_builder.usage"))
+                        .image(Chisel.prefix("textures/gui/handbook/palette_builder.png"), 1860, 1050)
+                        .text(Component.translatable("chisel.guide.palette_builder.screenshot"))
                         .text(Component.translatable("chisel.guide.palette_builder.details"))
+                        .text(Component.translatable("chisel.guide.palette_builder.weights"))
+                        .text(Component.translatable("chisel.guide.palette_builder.preview"))
                         .tip(Component.translatable("chisel.guide.palette_builder.tip"))
                         .craftingRecipe(Chisel.prefix("palette_builder"))
                         .build());
@@ -551,21 +555,5 @@ public final class ChiselHandbookGuides extends HandbookGuideProvider {
                             .build());
         }
 
-        buildGuide("understanding_block_palettes",
-                HandbookGuideBuilder.builder(Component.translatable("chisel.guide.understanding_block_palettes.title"), Identifier.withDefaultNamespace("stone_bricks"))
-                        .description(Component.translatable("chisel.guide.understanding_block_palettes.description"))
-                        .category(PALETTES)
-                        .category(GETTING_STARTED)
-                        .text(Component.translatable("chisel.guide.understanding_block_palettes.roles"))
-                        .tip(Component.translatable("chisel.guide.understanding_block_palettes.roles_tip"))
-                        .palette(Component.translatable("chisel.guide.understanding_block_palettes.weathered_stone"), palette -> palette
-                                .entry(Identifier.withDefaultNamespace("stone_bricks"), PaletteRole.PRIMARY, 55)
-                                .entry(Identifier.withDefaultNamespace("cobblestone"), PaletteRole.SECONDARY, 20)
-                                .entry(Identifier.withDefaultNamespace("andesite"), PaletteRole.SECONDARY, 12)
-                                .entry(Identifier.withDefaultNamespace("cracked_stone_bricks"), PaletteRole.ACCENT, 8)
-                                .entry(Identifier.withDefaultNamespace("mossy_stone_bricks"), PaletteRole.RARE, 5))
-                        .text(Component.translatable("chisel.guide.understanding_block_palettes.weights"))
-                        .tip(Component.translatable("chisel.guide.understanding_block_palettes.variation_tip"))
-                        .build());
     }
 }

@@ -2,7 +2,9 @@
   "categories": [
     "chisel:blocks"
   ],
-  "description": "",
+  "description": {
+    "translate": "chisel.guide.antiblock.description"
+  },
   "icon": "chisel:antiblock_black",
   "sections": [
     {
@@ -11,5 +13,7 @@
     }
   ],
   "sort_order": 203,
-  "title": "Antiblock"
+  "title": {
+    "translate": "chisel.guide.antiblock.title"
+  }
 }

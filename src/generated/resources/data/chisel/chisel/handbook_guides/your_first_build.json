@@ -1,0 +1,3708 @@
+{
+  "categories": [
+    "chisel:getting_started"
+  ],
+  "description": {
+    "translate": "chisel.guide.your_first_build.description"
+  },
+  "icon": "minecraft:oak_planks",
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.your_first_build.goal"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.your_first_build.brief"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.your_first_build.shape"
+      }
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 1,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 1,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 1,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 1,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 1,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 2,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 2,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 2,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 2,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 2,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 2,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 2,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 2,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 2,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 2,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 2,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 3,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 3,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 3,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 3,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 3,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": -8
+        }
+      ]
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.your_first_build.palette"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.your_first_build.depth"
+      }
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -2,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -2,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -2,
+          "y": 3,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -2,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -1,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -1,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -1,
+          "y": 3,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 0,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 0,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 1,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 1,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 1,
+          "y": 3,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 2,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 2,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 2,
+          "y": 3,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 2,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:glass"
+          },
+          "x": 0,
+          "y": 2,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:glass"
+          },
+          "x": 0,
+          "y": 3,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.your_first_build.fade"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.your_first_build.texture"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.your_first_build.details"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.your_first_build.adapt"
+      }
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -3,
+          "y": 0,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 3,
+          "y": 0,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:stripped_oak_log",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 3,
+          "y": 1,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:stripped_oak_log",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 3,
+          "y": 1,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 1,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -2,
+          "y": 1,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -1,
+          "y": 1,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 0,
+          "y": 1,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 1,
+          "y": 1,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 2,
+          "y": 1,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 1,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:glass"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:glass"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 2,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 2,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:glass"
+          },
+          "x": -3,
+          "y": 2,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:glass"
+          },
+          "x": 3,
+          "y": 2,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 2,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 2,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 2,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 2,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 2,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -2,
+          "y": 2,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -1,
+          "y": 2,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 0,
+          "y": 2,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 1,
+          "y": 2,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 2,
+          "y": 2,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 2,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -3,
+          "y": 3,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -2,
+          "y": 3,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -1,
+          "y": 3,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 0,
+          "y": 3,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 1,
+          "y": 3,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 2,
+          "y": 3,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 3,
+          "y": 3,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -4,
+          "y": 4,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -4,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -4,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -4,
+          "y": 4,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -4,
+          "y": 4,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -4,
+          "y": 4,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -4,
+          "y": 4,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -4,
+          "y": 4,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -4,
+          "y": 4,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -4,
+          "y": 4,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -4,
+          "y": 4,
+          "z": -9
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -3,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -3,
+          "y": 4,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -3,
+          "y": 4,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -3,
+          "y": 4,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -3,
+          "y": 4,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -3,
+          "y": 4,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -3,
+          "y": 4,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -3,
+          "y": 4,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -3,
+          "y": 4,
+          "z": -9
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -2,
+          "y": 5,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -2,
+          "y": 5,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -2,
+          "y": 5,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -2,
+          "y": 5,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -2,
+          "y": 5,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -2,
+          "y": 5,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -2,
+          "y": 5,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -2,
+          "y": 5,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -2,
+          "y": 5,
+          "z": -9
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -2,
+          "y": 4,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 6,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 6,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 6,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 6,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 6,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 6,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 6,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 6,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 6,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 6,
+          "z": -9
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -1,
+          "y": 4,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": -1,
+          "y": 5,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 0,
+          "y": 7,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 0,
+          "y": 7,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 0,
+          "y": 7,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 0,
+          "y": 7,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 0,
+          "y": 7,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 0,
+          "y": 7,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 0,
+          "y": 7,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 0,
+          "y": 7,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 0,
+          "y": 7,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 0,
+          "y": 7,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 0,
+          "y": 7,
+          "z": -9
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 0,
+          "y": 4,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 0,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 0,
+          "y": 5,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 0,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 0,
+          "y": 6,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 6,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 6,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 6,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 6,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 6,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 6,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 6,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 6,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 6,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 6,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 6,
+          "z": -9
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 1,
+          "y": 4,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 1,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 1,
+          "y": 5,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 2,
+          "y": 5,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 2,
+          "y": 5,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 2,
+          "y": 5,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 2,
+          "y": 5,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 2,
+          "y": 5,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 2,
+          "y": 5,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 2,
+          "y": 5,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 2,
+          "y": 5,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 2,
+          "y": 5,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 2,
+          "y": 5,
+          "z": -9
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:oak_planks"
+          },
+          "x": 2,
+          "y": 4,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 3,
+          "y": 4,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 3,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 3,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 3,
+          "y": 4,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 3,
+          "y": 4,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 3,
+          "y": 4,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 3,
+          "y": 4,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 3,
+          "y": 4,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 3,
+          "y": 4,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 3,
+          "y": 4,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 3,
+          "y": 4,
+          "z": -9
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 4,
+          "y": 4,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 4,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 4,
+          "y": 4,
+          "z": -1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 4,
+          "y": 4,
+          "z": -2
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 4,
+          "y": 4,
+          "z": -3
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 4,
+          "y": 4,
+          "z": -4
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 4,
+          "y": 4,
+          "z": -5
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 4,
+          "y": 4,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 4,
+          "y": 4,
+          "z": -7
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 4,
+          "y": 4,
+          "z": -8
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 4,
+          "y": 4,
+          "z": -9
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:spruce_planks"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:lantern",
+            "Properties": {
+              "hanging": "false",
+              "waterlogged": "false"
+            }
+          },
+          "x": -2,
+          "y": 1,
+          "z": 1
+        },
+        {
+          "state": {
+            "Name": "minecraft:crafting_table"
+          },
+          "x": -2,
+          "y": 1,
+          "z": -6
+        },
+        {
+          "state": {
+            "Name": "minecraft:barrel",
+            "Properties": {
+              "facing": "south",
+              "open": "false"
+            }
+          },
+          "x": 2,
+          "y": 1,
+          "z": -6
+        }
+      ]
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.your_first_build.practice"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.your_first_build.check"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.your_first_build.transfer"
+      }
+    }
+  ],
+  "sort_order": 50,
+  "title": {
+    "translate": "chisel.guide.your_first_build.title"
+  }
+}

@@ -131,7 +131,7 @@ public final class HandbookRenderer {
         if (!description.getString().isBlank()) {
             lines.addAll(font.split(description.copy().withStyle(ChatFormatting.GRAY), tooltipWidth));
         }
-        graphics.setTooltipForNextFrame(font, lines, mouseX, mouseY);
+        graphics.setTooltipForNextFrame(font, lines, layout.toScreen(mouseX), layout.toScreen(mouseY));
     }
 
     private void extractSelectedGuide(GuiGraphicsExtractor graphics, int mouseX, int mouseY) {
@@ -238,7 +238,7 @@ public final class HandbookRenderer {
         graphics.item(stack, x + 1, y + 1);
         graphics.itemDecorations(font, stack, x + 1, y + 1);
         if (mouseX >= x && mouseX < x + 18 && mouseY >= y && mouseY < y + 18)
-            graphics.setTooltipForNextFrame(font, stack, mouseX, mouseY);
+            graphics.setTooltipForNextFrame(font, stack, layout.toScreen(mouseX), layout.toScreen(mouseY));
     }
 
     private void extractLines(GuiGraphicsExtractor graphics, List<FormattedCharSequence> lines, int x, int y, int color) {

@@ -1,0 +1,1099 @@
+{
+  "categories": [
+    "chisel:getting_started"
+  ],
+  "description": {
+    "translate": "chisel.guide.using_texture_intentionally.description"
+  },
+  "icon": "minecraft:mossy_stone_bricks",
+  "sections": [
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.using_texture_intentionally.goal"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.using_texture_intentionally.types"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.using_texture_intentionally.compare"
+      }
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -8,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -7,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -6,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -5,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -4,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -8,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -7,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -6,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -5,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -4,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -8,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -7,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -6,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -5,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -4,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -8,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -7,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -6,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -5,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -4,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -8,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -7,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -6,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -5,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -4,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": 2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": 4,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": 5,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 6,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 7,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 8,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": 4,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": 5,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 6,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 7,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 8,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": 4,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": 5,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 6,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 7,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 8,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 4,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 5,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 6,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 7,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 8,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 4,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 5,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 6,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 7,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 8,
+          "y": 4,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.using_texture_intentionally.group"
+      }
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:cobblestone"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone_bricks"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.using_texture_intentionally.gradient"
+      }
+    },
+    {
+      "type": "chisel:structure",
+      "blocks": [
+        {
+          "state": {
+            "Name": "minecraft:deepslate",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": -2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:deepslate",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:deepslate",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:deepslate",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:deepslate",
+            "Properties": {
+              "axis": "y"
+            }
+          },
+          "x": 2,
+          "y": 0,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:polished_deepslate"
+          },
+          "x": -2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:polished_deepslate"
+          },
+          "x": -1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:polished_deepslate"
+          },
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:polished_deepslate"
+          },
+          "x": 1,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:polished_deepslate"
+          },
+          "x": 2,
+          "y": 1,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone"
+          },
+          "x": -2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone"
+          },
+          "x": -1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone"
+          },
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone"
+          },
+          "x": 1,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:stone"
+          },
+          "x": 2,
+          "y": 2,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:andesite"
+          },
+          "x": -2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:andesite"
+          },
+          "x": -1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:andesite"
+          },
+          "x": 0,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:andesite"
+          },
+          "x": 1,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:andesite"
+          },
+          "x": 2,
+          "y": 3,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_stone"
+          },
+          "x": -2,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_stone"
+          },
+          "x": -1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_stone"
+          },
+          "x": 0,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_stone"
+          },
+          "x": 1,
+          "y": 4,
+          "z": 0
+        },
+        {
+          "state": {
+            "Name": "minecraft:smooth_stone"
+          },
+          "x": 2,
+          "y": 4,
+          "z": 0
+        }
+      ]
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.using_texture_intentionally.story"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.using_texture_intentionally.practice"
+      }
+    },
+    {
+      "type": "chisel:tip",
+      "text": {
+        "translate": "chisel.guide.using_texture_intentionally.check"
+      }
+    },
+    {
+      "type": "chisel:text",
+      "text": {
+        "translate": "chisel.guide.using_texture_intentionally.transfer"
+      }
+    }
+  ],
+  "sort_order": 30,
+  "title": {
+    "translate": "chisel.guide.using_texture_intentionally.title"
+  }
+}

@@ -17,25 +17,40 @@ public record HandbookLayout(int width, int height) {
     public static final int PAGE_HEIGHT = 213;
     public static final int LIST_ROW_HEIGHT = 24;
     public static final int ENTRIES_PER_LIST_PAGE = (PAGE_HEIGHT - 18) / LIST_ROW_HEIGHT;
+    private static final int SCREEN_MARGIN = 8;
+    private static final int BOOKMARK_OVERHANG = 14;
+
+    public float scale() {
+        return Math.min(1F, Math.min(Math.max(1, width - SCREEN_MARGIN * 2) / (float) BOOK_WIDTH,
+                Math.max(1, height - SCREEN_MARGIN * 2) / (float) (BOOK_HEIGHT + BOOKMARK_OVERHANG * 2)));
+    }
+
+    public int toScreen(int coordinate) {
+        return Math.round(coordinate * scale());
+    }
+
+    public double toBook(double coordinate) {
+        return coordinate / scale();
+    }
 
     private static boolean contains(double x, double y, int left, int top, int width, int height) {
         return x >= left && x < left + width && y >= top && y < top + height;
     }
 
     public int bookLeft() {
-        return (width - BOOK_WIDTH) / 2;
+        return (int) (width / scale() - BOOK_WIDTH) / 2;
     }
 
     public int bookTop() {
-        return (height - BOOK_HEIGHT) / 2;
+        return (int) (height / scale() - BOOK_HEIGHT) / 2;
     }
 
     public int coverX() {
-        return (width - COVER_WIDTH) / 2;
+        return (int) (width / scale() - COVER_WIDTH) / 2;
     }
 
     public int coverY() {
-        return (height - COVER_HEIGHT) / 2;
+        return (int) (height / scale() - COVER_HEIGHT) / 2;
     }
 
     public int listX() {
@@ -60,6 +75,10 @@ public record HandbookLayout(int width, int height) {
 
     public boolean onCover(double x, double y) {
         return contains(x, y, coverX(), coverY(), COVER_WIDTH, COVER_HEIGHT);
+    }
+
+    public boolean onBook(double x, double y) {
+        return contains(x, y, bookLeft(), bookTop(), BOOK_WIDTH, BOOK_HEIGHT);
     }
 
     public boolean onPrevious(double x, double y) {

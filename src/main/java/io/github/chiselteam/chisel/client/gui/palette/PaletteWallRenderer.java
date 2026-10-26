@@ -56,8 +56,9 @@ public class PaletteWallRenderer extends PictureInPictureRenderer<PaletteWallSta
             minZ = Math.min(minZ, pos.getZ());
             maxZ = Math.max(maxZ, pos.getZ());
         }
-        float horizontal = (float) Math.hypot(maxX - minX + 1, maxZ - minZ + 1);
-        float scale = state.zoom() * Math.min((state.x1() - state.x0()) / (horizontal + 1), (state.y1() - state.y0()) / (maxY - minY + 2F));
+        float scale = state.zoom() * PalettePreviewCamera.fitScale(
+                maxX - minX + 1, maxY - minY + 1, maxZ - minZ + 1,
+                state.rotationX(), state.rotationY(), state.x1() - state.x0(), state.y1() - state.y0());
         pose.scale(scale, scale, scale);
         pose.mulPose(new Quaternionf().rotateX((float) Math.PI + state.rotationX()).rotateY(state.rotationY()));
         pose.translate(-(minX + maxX + 1) / 2F, -(minY + maxY + 1) / 2F, -(minZ + maxZ + 1) / 2F);
@@ -101,6 +102,9 @@ public class PaletteWallRenderer extends PictureInPictureRenderer<PaletteWallSta
     private void bakeQuads(Direction side, BlockStateModelPart part, QuadInstance quads, PoseStack pose, BlockState block, PreviewGetter getter, BlockPos pos) {
         part.getQuads(side).forEach(quad -> {
             quads.setColor(-1);
+            // Full-bright light coordinates still need face shading to show corners and depth.
+            // Respect models that intentionally disable shading, such as emissive surfaces.
+            if (quad.materialInfo().shade()) quads.scaleColor(getter.cardinalLighting().byFace(quad.direction()));
             int tintIndex = quad.materialInfo().tintIndex();
             if (tintIndex >= 0) {
                 var tint = Minecraft.getInstance().getBlockColors().getTintSource(block, tintIndex);

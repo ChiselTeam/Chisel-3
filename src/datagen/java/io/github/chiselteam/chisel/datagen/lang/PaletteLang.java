@@ -11,7 +11,7 @@ public final class PaletteLang {
         lang.add("chisel.trowel.desc", "Places blocks with palette materials");
 
         lang.add("chisel.palette.hotbar", "Hotbar");
-        lang.add("chisel.palette.builder", "Palette Builder");
+        lang.add("chisel.palette.builder", "Palette Brush");
         lang.add("chisel.palette.new", "New palette");
         lang.add("chisel.palette.edit_hint", "Edit %s (%s blocks)");
         lang.add("chisel.palette.library_count", "%s / %s palettes");
