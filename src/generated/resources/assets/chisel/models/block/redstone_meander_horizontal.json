@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "all": "chisel:block/redstone/redstone_meander_horizontal",
+    "bottom": "chisel:block/redstone/redstone_meander_horizontal-top",
+    "horizontal_both": "chisel:block/redstone/redstone_meander_horizontal-horizontal_both",
+    "horizontal_left": "chisel:block/redstone/redstone_meander_horizontal-horizontal_left",
+    "horizontal_none": "chisel:block/redstone/redstone_meander_horizontal-horizontal_none",
+    "horizontal_right": "chisel:block/redstone/redstone_meander_horizontal-horizontal_right",
+    "particle": "chisel:block/redstone/redstone_meander_horizontal",
+    "side": "chisel:block/redstone/redstone_meander_horizontal",
+    "top": "chisel:block/redstone/redstone_meander_horizontal-top"
+  }
+}

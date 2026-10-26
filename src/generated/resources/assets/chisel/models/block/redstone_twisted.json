@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/redstone/redstone_twisted-top",
+    "side": "chisel:block/redstone/redstone_twisted-side",
+    "top": "chisel:block/redstone/redstone_twisted-top"
+  }
+}
