@@ -40,7 +40,7 @@ public final class IronFamily {
             .variant("iron_plates", v -> v.description("Iron Plates")
                     .texture("side", Chisel.prefix("block/iron/iron_plates-top")))
             .variant("iron_rivets", v -> v.description("Iron Plates with Rivets"))
-            .variant("iron_shipping", v -> v.description("Shipping Crate").model(ChiselModelHandlers.CONNECTED))
+        //     .variant("iron_shipping", v -> v.description("Shipping Crate").model(ChiselModelHandlers.CONNECTED))
             .variant("iron_simple", v -> v.description("Simple Iron Block"))
             .variant("iron_vents", v -> v.description("Iron Vents")
                     .texture("bottom", Chisel.prefix("block/iron/iron_vents-top")))

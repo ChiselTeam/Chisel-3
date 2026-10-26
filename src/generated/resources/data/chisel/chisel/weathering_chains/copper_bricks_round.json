@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_bricks_round",
+    "chisel:exposed_copper_bricks_round",
+    "chisel:weathered_copper_bricks_round",
+    "chisel:oxidized_copper_bricks_round"
+  ],
+  "waxed_map": {
+    "chisel:copper_bricks_round": "chisel:waxed_copper_bricks_round",
+    "chisel:exposed_copper_bricks_round": "chisel:waxed_exposed_copper_bricks_round",
+    "chisel:oxidized_copper_bricks_round": "chisel:waxed_oxidized_copper_bricks_round",
+    "chisel:weathered_copper_bricks_round": "chisel:waxed_weathered_copper_bricks_round"
+  }
+}

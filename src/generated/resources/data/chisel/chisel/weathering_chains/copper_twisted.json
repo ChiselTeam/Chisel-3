@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_twisted",
+    "chisel:exposed_copper_twisted",
+    "chisel:weathered_copper_twisted",
+    "chisel:oxidized_copper_twisted"
+  ],
+  "waxed_map": {
+    "chisel:copper_twisted": "chisel:waxed_copper_twisted",
+    "chisel:exposed_copper_twisted": "chisel:waxed_exposed_copper_twisted",
+    "chisel:oxidized_copper_twisted": "chisel:waxed_oxidized_copper_twisted",
+    "chisel:weathered_copper_twisted": "chisel:waxed_weathered_copper_twisted"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_skull_creeper",
+    "chisel:exposed_copper_skull_creeper",
+    "chisel:weathered_copper_skull_creeper",
+    "chisel:oxidized_copper_skull_creeper"
+  ],
+  "waxed_map": {
+    "chisel:copper_skull_creeper": "chisel:waxed_copper_skull_creeper",
+    "chisel:exposed_copper_skull_creeper": "chisel:waxed_exposed_copper_skull_creeper",
+    "chisel:oxidized_copper_skull_creeper": "chisel:waxed_oxidized_copper_skull_creeper",
+    "chisel:weathered_copper_skull_creeper": "chisel:waxed_weathered_copper_skull_creeper"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_plate",
+    "chisel:exposed_copper_plate",
+    "chisel:weathered_copper_plate",
+    "chisel:oxidized_copper_plate"
+  ],
+  "waxed_map": {
+    "chisel:copper_plate": "chisel:waxed_copper_plate",
+    "chisel:exposed_copper_plate": "chisel:waxed_exposed_copper_plate",
+    "chisel:oxidized_copper_plate": "chisel:waxed_oxidized_copper_plate",
+    "chisel:weathered_copper_plate": "chisel:waxed_weathered_copper_plate"
+  }
+}

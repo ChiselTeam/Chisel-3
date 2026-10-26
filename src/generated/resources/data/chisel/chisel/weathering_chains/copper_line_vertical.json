@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_line_vertical",
+    "chisel:exposed_copper_line_vertical",
+    "chisel:weathered_copper_line_vertical",
+    "chisel:oxidized_copper_line_vertical"
+  ],
+  "waxed_map": {
+    "chisel:copper_line_vertical": "chisel:waxed_copper_line_vertical",
+    "chisel:exposed_copper_line_vertical": "chisel:waxed_exposed_copper_line_vertical",
+    "chisel:oxidized_copper_line_vertical": "chisel:waxed_oxidized_copper_line_vertical",
+    "chisel:weathered_copper_line_vertical": "chisel:waxed_weathered_copper_line_vertical"
+  }
+}

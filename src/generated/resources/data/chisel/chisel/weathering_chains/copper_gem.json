@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_gem",
+    "chisel:exposed_copper_gem",
+    "chisel:weathered_copper_gem",
+    "chisel:oxidized_copper_gem"
+  ],
+  "waxed_map": {
+    "chisel:copper_gem": "chisel:waxed_copper_gem",
+    "chisel:exposed_copper_gem": "chisel:waxed_exposed_copper_gem",
+    "chisel:oxidized_copper_gem": "chisel:waxed_oxidized_copper_gem",
+    "chisel:weathered_copper_gem": "chisel:waxed_weathered_copper_gem"
+  }
+}

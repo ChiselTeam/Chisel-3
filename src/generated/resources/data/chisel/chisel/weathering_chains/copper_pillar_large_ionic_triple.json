@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_pillar_large_ionic_triple",
+    "chisel:exposed_copper_pillar_large_ionic_triple",
+    "chisel:weathered_copper_pillar_large_ionic_triple",
+    "chisel:oxidized_copper_pillar_large_ionic_triple"
+  ],
+  "waxed_map": {
+    "chisel:copper_pillar_large_ionic_triple": "chisel:waxed_copper_pillar_large_ionic_triple",
+    "chisel:exposed_copper_pillar_large_ionic_triple": "chisel:waxed_exposed_copper_pillar_large_ionic_triple",
+    "chisel:oxidized_copper_pillar_large_ionic_triple": "chisel:waxed_oxidized_copper_pillar_large_ionic_triple",
+    "chisel:weathered_copper_pillar_large_ionic_triple": "chisel:waxed_weathered_copper_pillar_large_ionic_triple"
+  }
+}

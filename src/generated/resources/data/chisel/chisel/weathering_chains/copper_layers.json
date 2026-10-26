@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_layers",
+    "chisel:exposed_copper_layers",
+    "chisel:weathered_copper_layers",
+    "chisel:oxidized_copper_layers"
+  ],
+  "waxed_map": {
+    "chisel:copper_layers": "chisel:waxed_copper_layers",
+    "chisel:exposed_copper_layers": "chisel:waxed_exposed_copper_layers",
+    "chisel:oxidized_copper_layers": "chisel:waxed_oxidized_copper_layers",
+    "chisel:weathered_copper_layers": "chisel:waxed_weathered_copper_layers"
+  }
+}
