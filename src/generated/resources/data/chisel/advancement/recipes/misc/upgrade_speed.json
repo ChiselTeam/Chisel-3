@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:upgrade_speed"
+        "recipes": "chisel:upgrade_speed"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

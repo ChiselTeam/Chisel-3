@@ -19,9 +19,9 @@ abstract class PistonMovingBlockEntityMixin {
         return placed;
     }
 
-    @WrapOperation(method = "finalTick", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/Level;setBlock(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z"))
-    private boolean chisel$restoreMossAfterFinalTick(Level level, BlockPos pos, BlockState state, int flags, Operation<Boolean> original) {
-        boolean placed = original.call(level, pos, state, flags);
+    @WrapOperation(method = "finalTick", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/Level;setBlockAndUpdate(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z"))
+    private boolean chisel$restoreMossAfterFinalTick(Level level, BlockPos pos, BlockState state, Operation<Boolean> original) {
+        boolean placed = original.call(level, pos, state);
         if (placed) MossHelper.restoreMovingMoss(level, pos, (PistonMovingBlockEntity) (Object) this);
         return placed;
     }

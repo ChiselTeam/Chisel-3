@@ -154,7 +154,7 @@ public class VariantFamilyRegistrar {
                 .instabreak()
                 .lightLevel(_ -> 14)
                 .sound(SoundType.WOOD)
-                .pushReaction(PushReaction.DESTROY);
+                .pushReaction(PushReaction.POPPED);
     }
 
     private static void registerChiselItem(Variant variant) {

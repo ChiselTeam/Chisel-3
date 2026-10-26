@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:laboratory_checkerboard"
+        "recipes": "chisel:laboratory_checkerboard"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

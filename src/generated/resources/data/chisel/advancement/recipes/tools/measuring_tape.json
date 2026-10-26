@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:measuring_tape"
+        "recipes": "chisel:measuring_tape"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

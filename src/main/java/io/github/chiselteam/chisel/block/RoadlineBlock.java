@@ -1,6 +1,5 @@
 package io.github.chiselteam.chisel.block;
 
-import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -16,17 +15,11 @@ import org.jspecify.annotations.Nullable;
 
 public class RoadlineBlock extends HorizontalDirectionalBlock {
 
-    public static final MapCodec<RoadlineBlock> CODEC = simpleCodec(RoadlineBlock::new);
     private static final VoxelShape SHAPE = Block.column(16, 0, 1);
 
     public RoadlineBlock(Properties properties) {
         super(properties);
         registerDefaultState(getStateDefinition().any().setValue(FACING, Direction.NORTH));
-    }
-
-    @Override
-    protected @NonNull MapCodec<? extends HorizontalDirectionalBlock> codec() {
-        return CODEC;
     }
 
     @Override

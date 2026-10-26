@@ -15,49 +15,37 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:shingles_1"
-          },
+          "state": "chisel:shingles_1",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:shingles_2"
-          },
+          "state": "chisel:shingles_2",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:shingles_3"
-          },
+          "state": "chisel:shingles_3",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:shingles_4"
-          },
+          "state": "chisel:shingles_4",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:shingles_5"
-          },
+          "state": "chisel:shingles_5",
           "x": 0,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:shingles_6"
-          },
+          "state": "chisel:shingles_6",
           "x": 1,
           "y": 0,
           "z": 0

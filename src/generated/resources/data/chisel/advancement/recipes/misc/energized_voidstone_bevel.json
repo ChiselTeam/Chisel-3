@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:energized_voidstone_bevel"
+        "recipes": "chisel:energized_voidstone_bevel"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

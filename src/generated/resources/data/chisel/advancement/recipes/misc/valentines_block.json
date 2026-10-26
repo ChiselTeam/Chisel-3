@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:valentines_block"
+        "recipes": "chisel:valentines_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

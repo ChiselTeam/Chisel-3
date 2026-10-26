@@ -15,9 +15,7 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:builders_guide"
-          },
+          "state": "chisel:builders_guide",
           "x": 0,
           "y": 0,
           "z": 0

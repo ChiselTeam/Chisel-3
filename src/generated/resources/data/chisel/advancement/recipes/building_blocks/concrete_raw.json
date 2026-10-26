@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:concrete_raw"
+        "recipes": "chisel:concrete_raw"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

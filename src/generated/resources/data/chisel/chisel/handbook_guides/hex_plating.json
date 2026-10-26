@@ -15,129 +15,97 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:hex_plating_0"
-          },
+          "state": "chisel:hex_plating_0",
           "x": -2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:hex_plating_1"
-          },
+          "state": "chisel:hex_plating_1",
           "x": -1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:hex_plating_2"
-          },
+          "state": "chisel:hex_plating_2",
           "x": 0,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:hex_plating_3"
-          },
+          "state": "chisel:hex_plating_3",
           "x": 1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:hex_plating_4"
-          },
+          "state": "chisel:hex_plating_4",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:hex_plating_5"
-          },
+          "state": "chisel:hex_plating_5",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:hex_plating_6"
-          },
+          "state": "chisel:hex_plating_6",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:hex_plating_7"
-          },
+          "state": "chisel:hex_plating_7",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:hex_plating_8"
-          },
+          "state": "chisel:hex_plating_8",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:hex_plating_9"
-          },
+          "state": "chisel:hex_plating_9",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:hex_plating_10"
-          },
+          "state": "chisel:hex_plating_10",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:hex_plating_11"
-          },
+          "state": "chisel:hex_plating_11",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:hex_plating_12"
-          },
+          "state": "chisel:hex_plating_12",
           "x": -2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:hex_plating_13"
-          },
+          "state": "chisel:hex_plating_13",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:hex_plating_14"
-          },
+          "state": "chisel:hex_plating_14",
           "x": 0,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:hex_plating_15"
-          },
+          "state": "chisel:hex_plating_15",
           "x": 1,
           "y": 0,
           "z": 0

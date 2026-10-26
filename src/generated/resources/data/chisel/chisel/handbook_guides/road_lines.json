@@ -15,133 +15,73 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:road_line_double_white_center",
-            "Properties": {
-              "facing": "north"
-            }
-          },
+          "state": "chisel:road_line_double_white_center",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:road_line_double_white_long",
-            "Properties": {
-              "facing": "north"
-            }
-          },
+          "state": "chisel:road_line_double_white_long",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:road_line_double_white_side",
-            "Properties": {
-              "facing": "north"
-            }
-          },
+          "state": "chisel:road_line_double_white_side",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:road_line_double_yellow_center",
-            "Properties": {
-              "facing": "north"
-            }
-          },
+          "state": "chisel:road_line_double_yellow_center",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:road_line_double_yellow_long",
-            "Properties": {
-              "facing": "north"
-            }
-          },
+          "state": "chisel:road_line_double_yellow_long",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:road_line_double_yellow_side",
-            "Properties": {
-              "facing": "north"
-            }
-          },
+          "state": "chisel:road_line_double_yellow_side",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:road_line_white_center",
-            "Properties": {
-              "facing": "north"
-            }
-          },
+          "state": "chisel:road_line_white_center",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:road_line_white_long",
-            "Properties": {
-              "facing": "north"
-            }
-          },
+          "state": "chisel:road_line_white_long",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:road_line_white_side",
-            "Properties": {
-              "facing": "north"
-            }
-          },
+          "state": "chisel:road_line_white_side",
           "x": -2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:road_line_yellow_center",
-            "Properties": {
-              "facing": "north"
-            }
-          },
+          "state": "chisel:road_line_yellow_center",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:road_line_yellow_long",
-            "Properties": {
-              "facing": "north"
-            }
-          },
+          "state": "chisel:road_line_yellow_long",
           "x": 0,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:road_line_yellow_side",
-            "Properties": {
-              "facing": "north"
-            }
-          },
+          "state": "chisel:road_line_yellow_side",
           "x": 1,
           "y": 0,
           "z": 0

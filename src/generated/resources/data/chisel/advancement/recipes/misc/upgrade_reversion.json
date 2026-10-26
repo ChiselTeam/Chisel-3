@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:upgrade_reversion"
+        "recipes": "chisel:upgrade_reversion"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

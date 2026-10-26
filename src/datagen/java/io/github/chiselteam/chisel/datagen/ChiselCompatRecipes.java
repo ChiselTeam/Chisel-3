@@ -3,25 +3,22 @@ package io.github.chiselteam.chisel.datagen;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.content.compat.dyenamics.DnOakFramedStainedGlassFamily;
 import io.github.chiselteam.chisel.content.compat.dyenamics.DnSteelFramedStainedGlassFamily;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.data.PackOutput;
+import net.minecraft.advancements.Advancement;
 import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.Identifier;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.ItemStackTemplate;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Recipe;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.ModLoadedCondition;
-import org.jspecify.annotations.NonNull;
-
-import java.util.concurrent.CompletableFuture;
 
 public class ChiselCompatRecipes extends RecipeProvider {
 
-    public ChiselCompatRecipes(HolderLookup.Provider registries, RecipeOutput output) {
-        super(registries, output);
+    public ChiselCompatRecipes(BootstrapContext<Recipe<?>> recipes, BootstrapContext<Advancement> advancements) {
+        super(recipes, advancements, Chisel.MODID);
     }
 
     @Override
@@ -54,20 +51,4 @@ public class ChiselCompatRecipes extends RecipeProvider {
         }
     }
 
-    public static class Runner extends RecipeProvider.Runner {
-
-        public Runner(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> registries) {
-            super(packOutput, registries);
-        }
-
-        @Override
-        protected @NonNull RecipeProvider createRecipeProvider(HolderLookup.@NonNull Provider provider, @NonNull RecipeOutput recipeOutput) {
-            return new ChiselCompatRecipes(provider, recipeOutput);
-        }
-
-        @Override
-        public @NonNull String getName() {
-            return Chisel.MODID + " compat";
-        }
-    }
 }

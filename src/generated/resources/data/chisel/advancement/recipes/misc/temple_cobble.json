@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:temple_cobble"
+        "recipes": "chisel:temple_cobble"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

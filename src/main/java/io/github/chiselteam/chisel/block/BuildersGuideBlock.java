@@ -1,6 +1,5 @@
 package io.github.chiselteam.chisel.block;
 
-import com.mojang.serialization.MapCodec;
 import io.github.chiselteam.chisel.block.entity.BuildersGuideBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
@@ -11,6 +10,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.SwingAnimation;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -21,15 +21,8 @@ import org.jspecify.annotations.Nullable;
 
 public class BuildersGuideBlock extends BaseEntityBlock {
 
-    public static final MapCodec<BuildersGuideBlock> CODEC = simpleCodec(BuildersGuideBlock::new);
-
     public BuildersGuideBlock(Properties properties) {
         super(properties);
-    }
-
-    @Override
-    protected @NonNull MapCodec<? extends BaseEntityBlock> codec() {
-        return CODEC;
     }
 
     @Override
@@ -47,7 +40,7 @@ public class BuildersGuideBlock extends BaseEntityBlock {
             var dye = stack.get(DataComponents.DYE);
             guide.setColor(dye);
             if(!player.isCreative()) stack.shrink(1);
-            player.swing(hand);
+            player.swing(hand, SwingAnimation.DEFAULT, false);
             return InteractionResult.CONSUME;
         }
 
@@ -55,7 +48,7 @@ public class BuildersGuideBlock extends BaseEntityBlock {
             var block = blockItem.getBlock();
             guide.placeBlock(block);
             if(!player.isCreative()) stack.shrink(1);
-            player.swing(hand);
+            player.swing(hand, SwingAnimation.DEFAULT, false);
             return InteractionResult.CONSUME;
         }
 

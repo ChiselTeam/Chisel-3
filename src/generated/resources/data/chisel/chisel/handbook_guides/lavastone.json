@@ -15,252 +15,187 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:lavastone_array"
-          },
+          "state": "chisel:lavastone_array",
           "x": -3,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_braid"
-          },
+          "state": "chisel:lavastone_braid",
           "x": -2,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_chaotic_bricks"
-          },
+          "state": "chisel:lavastone_chaotic_bricks",
           "x": -1,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_chaotic_medium"
-          },
+          "state": "chisel:lavastone_chaotic_medium",
           "x": 0,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_chaotic_small"
-          },
+          "state": "chisel:lavastone_chaotic_small",
           "x": 1,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_circular"
-          },
+          "state": "chisel:lavastone_circular",
           "x": 2,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_cracked"
-          },
+          "state": "chisel:lavastone_cracked",
           "x": -3,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_cracked_bricks"
-          },
+          "state": "chisel:lavastone_cracked_bricks",
           "x": -2,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_cuts"
-          },
+          "state": "chisel:lavastone_cuts",
           "x": -1,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_dent"
-          },
+          "state": "chisel:lavastone_dent",
           "x": 0,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_encased_bricks"
-          },
+          "state": "chisel:lavastone_encased_bricks",
           "x": 1,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_french_1"
-          },
+          "state": "chisel:lavastone_french_1",
           "x": 2,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_french_2"
-          },
+          "state": "chisel:lavastone_french_2",
           "x": -3,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_jellybean"
-          },
+          "state": "chisel:lavastone_jellybean",
           "x": -2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_layers"
-          },
+          "state": "chisel:lavastone_layers",
           "x": -1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_mosaic"
-          },
+          "state": "chisel:lavastone_mosaic",
           "x": 0,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_ornate"
-          },
+          "state": "chisel:lavastone_ornate",
           "x": 1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_panel"
-          },
+          "state": "chisel:lavastone_panel",
           "x": 2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_pillar",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:lavastone_pillar",
           "x": -3,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_prism"
-          },
+          "state": "chisel:lavastone_prism",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_raw"
-          },
+          "state": "chisel:lavastone_raw",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_road"
-          },
+          "state": "chisel:lavastone_road",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_slanted"
-          },
+          "state": "chisel:lavastone_slanted",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_small_bricks"
-          },
+          "state": "chisel:lavastone_small_bricks",
           "x": 2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_soft_bricks"
-          },
+          "state": "chisel:lavastone_soft_bricks",
           "x": -3,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_tiles_large"
-          },
+          "state": "chisel:lavastone_tiles_large",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_tiles_medium"
-          },
+          "state": "chisel:lavastone_tiles_medium",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_triple_bricks"
-          },
+          "state": "chisel:lavastone_triple_bricks",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_twisted"
-          },
+          "state": "chisel:lavastone_twisted",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_weaver"
-          },
+          "state": "chisel:lavastone_weaver",
           "x": 2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:lavastone_zag"
-          },
+          "state": "chisel:lavastone_zag",
           "x": -3,
           "y": 0,
           "z": 0

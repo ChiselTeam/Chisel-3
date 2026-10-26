@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:tyrian_black"
+        "recipes": "chisel:tyrian_black"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

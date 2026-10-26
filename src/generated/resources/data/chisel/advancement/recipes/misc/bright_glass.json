@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:bright_glass"
+        "recipes": "chisel:bright_glass"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

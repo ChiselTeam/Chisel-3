@@ -15,801 +15,601 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -5,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -4,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -3,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": -2,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -1,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 0,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": 1,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 2,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": 3,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 4,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": -5,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -4,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -3,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": -2,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_oxidized_cut_copper"
-          },
+          "state": "minecraft:waxed_oxidized_cut_copper",
           "x": -1,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": 0,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 1,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 2,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 3,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_weathered_copper"
-          },
+          "state": "minecraft:waxed_weathered_copper",
           "x": 4,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_weathered_copper"
-          },
+          "state": "minecraft:waxed_weathered_copper",
           "x": -5,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -4,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -3,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -2,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": -1,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 0,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 1,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": 2,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 3,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_weathered_copper"
-          },
+          "state": "minecraft:waxed_weathered_copper",
           "x": 4,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": -5,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": -4,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -3,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -2,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_weathered_copper"
-          },
+          "state": "minecraft:waxed_weathered_copper",
           "x": -1,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 0,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": 1,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_weathered_copper"
-          },
+          "state": "minecraft:waxed_weathered_copper",
           "x": 2,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": 3,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": 4,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -5,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -4,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_weathered_copper"
-          },
+          "state": "minecraft:waxed_weathered_copper",
           "x": -3,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_oxidized_cut_copper"
-          },
+          "state": "minecraft:waxed_oxidized_cut_copper",
           "x": -2,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": -1,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 0,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": 1,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_oxidized_cut_copper"
-          },
+          "state": "minecraft:waxed_oxidized_cut_copper",
           "x": 2,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": 3,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_weathered_copper"
-          },
+          "state": "minecraft:waxed_weathered_copper",
           "x": 4,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -5,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": -4,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -3,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -2,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -1,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 0,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_weathered_copper"
-          },
+          "state": "minecraft:waxed_weathered_copper",
           "x": 1,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 2,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_oxidized_cut_copper"
-          },
+          "state": "minecraft:waxed_oxidized_cut_copper",
           "x": 3,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 4,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -5,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -4,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_weathered_copper"
-          },
+          "state": "minecraft:waxed_weathered_copper",
           "x": -3,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": -2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": -1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_oxidized_cut_copper"
-          },
+          "state": "minecraft:waxed_oxidized_cut_copper",
           "x": 0,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_weathered_copper"
-          },
+          "state": "minecraft:waxed_weathered_copper",
           "x": 1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 3,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_oxidized_cut_copper"
-          },
+          "state": "minecraft:waxed_oxidized_cut_copper",
           "x": 4,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_weathered_copper"
-          },
+          "state": "minecraft:waxed_weathered_copper",
           "x": -5,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -4,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -3,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_oxidized_cut_copper"
-          },
+          "state": "minecraft:waxed_oxidized_cut_copper",
           "x": 2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 3,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": 4,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_weathered_copper"
-          },
+          "state": "minecraft:waxed_weathered_copper",
           "x": -5,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_andesite"
-          },
+          "state": "minecraft:polished_andesite",
           "x": -4,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": -3,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_andesite"
-          },
+          "state": "minecraft:polished_andesite",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_weathered_copper"
-          },
+          "state": "minecraft:waxed_weathered_copper",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": 2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_andesite"
-          },
+          "state": "minecraft:polished_andesite",
           "x": 3,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": 4,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -5,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -4,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -3,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_weathered_copper"
-          },
+          "state": "minecraft:waxed_weathered_copper",
           "x": 0,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_cut_copper"
-          },
+          "state": "minecraft:waxed_cut_copper",
           "x": 2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_exposed_copper"
-          },
+          "state": "minecraft:waxed_exposed_copper",
           "x": 3,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:waxed_weathered_copper"
-          },
+          "state": "minecraft:waxed_weathered_copper",
           "x": 4,
           "y": 0,
           "z": 0

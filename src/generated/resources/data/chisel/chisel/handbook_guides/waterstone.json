@@ -15,252 +15,187 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:waterstone_array"
-          },
+          "state": "chisel:waterstone_array",
           "x": -3,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_braid"
-          },
+          "state": "chisel:waterstone_braid",
           "x": -2,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_chaotic_bricks"
-          },
+          "state": "chisel:waterstone_chaotic_bricks",
           "x": -1,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_chaotic_medium"
-          },
+          "state": "chisel:waterstone_chaotic_medium",
           "x": 0,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_chaotic_small"
-          },
+          "state": "chisel:waterstone_chaotic_small",
           "x": 1,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_circular"
-          },
+          "state": "chisel:waterstone_circular",
           "x": 2,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_cracked"
-          },
+          "state": "chisel:waterstone_cracked",
           "x": -3,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_cracked_bricks"
-          },
+          "state": "chisel:waterstone_cracked_bricks",
           "x": -2,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_cuts"
-          },
+          "state": "chisel:waterstone_cuts",
           "x": -1,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_dent"
-          },
+          "state": "chisel:waterstone_dent",
           "x": 0,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_encased_bricks"
-          },
+          "state": "chisel:waterstone_encased_bricks",
           "x": 1,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_french_1"
-          },
+          "state": "chisel:waterstone_french_1",
           "x": 2,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_french_2"
-          },
+          "state": "chisel:waterstone_french_2",
           "x": -3,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_jellybean"
-          },
+          "state": "chisel:waterstone_jellybean",
           "x": -2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_layers"
-          },
+          "state": "chisel:waterstone_layers",
           "x": -1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_mosaic"
-          },
+          "state": "chisel:waterstone_mosaic",
           "x": 0,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_ornate"
-          },
+          "state": "chisel:waterstone_ornate",
           "x": 1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_panel"
-          },
+          "state": "chisel:waterstone_panel",
           "x": 2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_pillar",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:waterstone_pillar",
           "x": -3,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_prism"
-          },
+          "state": "chisel:waterstone_prism",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_raw"
-          },
+          "state": "chisel:waterstone_raw",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_road"
-          },
+          "state": "chisel:waterstone_road",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_slanted"
-          },
+          "state": "chisel:waterstone_slanted",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_small_bricks"
-          },
+          "state": "chisel:waterstone_small_bricks",
           "x": 2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_soft_bricks"
-          },
+          "state": "chisel:waterstone_soft_bricks",
           "x": -3,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_tiles_large"
-          },
+          "state": "chisel:waterstone_tiles_large",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_tiles_medium"
-          },
+          "state": "chisel:waterstone_tiles_medium",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_triple_bricks"
-          },
+          "state": "chisel:waterstone_triple_bricks",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_twisted"
-          },
+          "state": "chisel:waterstone_twisted",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_weaver"
-          },
+          "state": "chisel:waterstone_weaver",
           "x": 2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:waterstone_zag"
-          },
+          "state": "chisel:waterstone_zag",
           "x": -3,
           "y": 0,
           "z": 0

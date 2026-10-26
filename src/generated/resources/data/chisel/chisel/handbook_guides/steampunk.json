@@ -15,270 +15,187 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:steampunk_rusted_metal_sheet"
-          },
+          "state": "chisel:steampunk_rusted_metal_sheet",
           "x": -3,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_large_metal_sheets"
-          },
+          "state": "chisel:steampunk_large_metal_sheets",
           "x": -2,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_pipes"
-          },
+          "state": "chisel:steampunk_pipes",
           "x": -1,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_mechanical_clock"
-          },
+          "state": "chisel:steampunk_mechanical_clock",
           "x": 0,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_mechanical_clock_transparent"
-          },
+          "state": "chisel:steampunk_mechanical_clock_transparent",
           "x": 1,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_gear_train"
-          },
+          "state": "chisel:steampunk_gear_train",
           "x": 2,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_gear_train_animated"
-          },
+          "state": "chisel:steampunk_gear_train_animated",
           "x": -3,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_rusted_metal_plating"
-          },
+          "state": "chisel:steampunk_rusted_metal_plating",
           "x": -2,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_encased_metal_plate"
-          },
+          "state": "chisel:steampunk_encased_metal_plate",
           "x": -1,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_decorative_metal"
-          },
+          "state": "chisel:steampunk_decorative_metal",
           "x": 0,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_riveted_plating"
-          },
+          "state": "chisel:steampunk_riveted_plating",
           "x": 1,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_riveted_pattern"
-          },
+          "state": "chisel:steampunk_riveted_pattern",
           "x": 2,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_broken_plating",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:steampunk_broken_plating",
           "x": -3,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_broken_plating_transparent",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:steampunk_broken_plating_transparent",
           "x": -2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_corrugated_sheet_metal",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:steampunk_corrugated_sheet_metal",
           "x": -1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_diamond_plating"
-          },
+          "state": "chisel:steampunk_diamond_plating",
           "x": 0,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_metal_grate"
-          },
+          "state": "chisel:steampunk_metal_grate",
           "x": 1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_metal_grate_transparent"
-          },
+          "state": "chisel:steampunk_metal_grate_transparent",
           "x": 2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_plating_dirty"
-          },
+          "state": "chisel:steampunk_plating_dirty",
           "x": -3,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_plating_verdigris"
-          },
+          "state": "chisel:steampunk_plating_verdigris",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_bolted_plate_rusted",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:steampunk_bolted_plate_rusted",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_dirty_metal_plate_large"
-          },
+          "state": "chisel:steampunk_dirty_metal_plate_large",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_geometric_plating"
-          },
+          "state": "chisel:steampunk_geometric_plating",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_worn_caution"
-          },
+          "state": "chisel:steampunk_worn_caution",
           "x": 2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_caution_path"
-          },
+          "state": "chisel:steampunk_caution_path",
           "x": -3,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_weathered_plate",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:steampunk_weathered_plate",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_rusty_teal"
-          },
+          "state": "chisel:steampunk_rusty_teal",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_rusty_barrel",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:steampunk_rusty_barrel",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_worn_bricks"
-          },
+          "state": "chisel:steampunk_worn_bricks",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_vent",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:steampunk_vent",
           "x": 2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:steampunk_square_metal_plating"
-          },
+          "state": "chisel:steampunk_square_metal_plating",
           "x": -3,
           "y": 0,
           "z": 0

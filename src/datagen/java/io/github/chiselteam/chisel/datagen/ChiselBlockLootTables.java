@@ -4,8 +4,8 @@ import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.api.family.VariantFamily;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
 import io.github.chiselteam.chisel.registry.ChiselVariantFamilies;
-import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
+import net.minecraft.data.loot.LootTableSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
 import org.jspecify.annotations.NonNull;
@@ -14,8 +14,8 @@ import java.util.Set;
 
 public class ChiselBlockLootTables extends BlockLootSubProvider {
 
-    public ChiselBlockLootTables(HolderLookup.Provider provider) {
-        super(Set.of(), FeatureFlags.REGISTRY.allFlags(), provider);
+    public ChiselBlockLootTables(LootTableSubProvider.Context output) {
+        super(Set.of(), FeatureFlags.REGISTRY.allFlags(), output);
     }
 
     @Override

@@ -1,6 +1,5 @@
 package io.github.chiselteam.chisel.block;
 
-import com.mojang.serialization.MapCodec;
 import io.github.chiselteam.chisel.block.entity.AutoChiselBlockEntity;
 import io.github.chiselteam.chisel.menu.AutoChiselMenu;
 import io.github.chiselteam.chisel.registry.ChiselBlockEntities;
@@ -27,7 +26,6 @@ import org.jspecify.annotations.Nullable;
 
 public class AutoChiselBlock extends BaseEntityBlock {
 
-    public static final MapCodec<AutoChiselBlock> CODEC = simpleCodec(AutoChiselBlock::new);
     private static final VoxelShape COLLISION_SHAPE = Shapes.or(
             box(0, 0, 0, 16, 10, 16),
             box(0, 10, 0, 1, 16, 16),
@@ -41,11 +39,6 @@ public class AutoChiselBlock extends BaseEntityBlock {
 
     public AutoChiselBlock(Properties properties) {
         super(properties);
-    }
-
-    @Override
-    protected @NonNull MapCodec<? extends BaseEntityBlock> codec() {
-        return CODEC;
     }
 
     @Override

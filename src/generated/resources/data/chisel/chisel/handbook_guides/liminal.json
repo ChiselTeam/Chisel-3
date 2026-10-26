@@ -15,105 +15,79 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:liminal_wall_1"
-          },
+          "state": "chisel:liminal_wall_1",
           "x": -2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:liminal_wall_1_trim"
-          },
+          "state": "chisel:liminal_wall_1_trim",
           "x": -1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:liminal_wall_2"
-          },
+          "state": "chisel:liminal_wall_2",
           "x": 0,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:liminal_wall_3"
-          },
+          "state": "chisel:liminal_wall_3",
           "x": 1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:liminal_carpet_1"
-          },
+          "state": "chisel:liminal_carpet_1",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:liminal_carpet_2"
-          },
+          "state": "chisel:liminal_carpet_2",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:liminal_carpet_3"
-          },
+          "state": "chisel:liminal_carpet_3",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:liminal_carpet_4"
-          },
+          "state": "chisel:liminal_carpet_4",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:liminal_carpet_5"
-          },
+          "state": "chisel:liminal_carpet_5",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:liminal_ceiling_1"
-          },
+          "state": "chisel:liminal_ceiling_1",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:liminal_ceiling_2"
-          },
+          "state": "chisel:liminal_ceiling_2",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:liminal_tiles_1"
-          },
+          "state": "chisel:liminal_tiles_1",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:liminal_tiles_2"
-          },
+          "state": "chisel:liminal_tiles_2",
           "x": -2,
           "y": 0,
           "z": 0

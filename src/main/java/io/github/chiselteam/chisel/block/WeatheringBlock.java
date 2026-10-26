@@ -3,8 +3,11 @@ package io.github.chiselteam.chisel.block;
 import io.github.chiselteam.chisel.weathering.WeatheringChains;
 import net.minecraft.advancements.triggers.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -12,13 +15,13 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.component.BlockTransformers;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.LevelEvent;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.phys.BlockHitResult;
-import net.neoforged.neoforge.common.ItemAbilities;
 import org.jspecify.annotations.NonNull;
 
 public class WeatheringBlock extends ConnectedTextureBlock {
@@ -48,12 +51,14 @@ public class WeatheringBlock extends ConnectedTextureBlock {
 
                 stack.shrink(1);
                 level.setBlockAndUpdate(pos, copySharedProperties(state, waxedBlock.defaultBlockState()));
-                level.levelEvent(player, LevelEvent.PARTICLES_AND_SOUND_WAX_ON, pos, 0);
+                level.playSound(player, pos, SoundEvents.HONEYCOMB_WAX_ON, SoundSource.BLOCKS, 1.0F, 1.0F);
+                level.levelEvent(player, LevelEvent.PARTICLES_WAX_ON, pos, 0);
                 return InteractionResult.SUCCESS;
             }
         }
 
-        if (stack.canPerformAction(ItemAbilities.AXE_SCRAPE)) {
+        var transformer = stack.get(DataComponents.BLOCK_TRANSFORMER);
+        if (transformer != null && transformer.is(BlockTransformers.AXE)) {
             Block prevBlock = WeatheringChains.getPrev(state.getBlock()).orElse(null);
             if (prevBlock != null) {
                 level.setBlockAndUpdate(pos, copySharedProperties(state, prevBlock.defaultBlockState()));
@@ -84,7 +89,7 @@ public class WeatheringBlock extends ConnectedTextureBlock {
         int sameAge = 0;
         int higherAge = 0;
 
-        for (BlockPos nearbyPos : BlockPos.withinManhattan(pos, 4, 4, 4)) {
+        for (BlockPos nearbyPos : BlockPos.withinManhattan(pos, 4)) {
             int distance = nearbyPos.distManhattan(pos);
             if (distance > 4) break;
             if (nearbyPos.equals(pos)) continue;

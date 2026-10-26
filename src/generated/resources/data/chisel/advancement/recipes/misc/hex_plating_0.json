@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:hex_plating_0"
+        "recipes": "chisel:hex_plating_0"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

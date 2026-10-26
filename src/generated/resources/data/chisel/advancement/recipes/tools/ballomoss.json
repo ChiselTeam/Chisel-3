@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:ballomoss"
+        "recipes": "chisel:ballomoss"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

@@ -8,7 +8,7 @@ import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
-import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
@@ -27,10 +27,10 @@ public class ChiselPlacedFeatures {
     }
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
-        HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
-        Holder<ConfiguredFeature<?, ?>> marble = configuredFeatures.getOrThrow(ChiselConfiguredFeatures.MARBLE);
-        Holder<ConfiguredFeature<?, ?>> limestone = configuredFeatures.getOrThrow(ChiselConfiguredFeatures.LIMESTONE);
-        Holder<ConfiguredFeature<?, ?>> basalt = configuredFeatures.getOrThrow(ChiselConfiguredFeatures.BASALT);
+        HolderGetter<Feature> configuredFeatures = context.lookup(Registries.FEATURE);
+        Holder<Feature> marble = configuredFeatures.getOrThrow(ChiselConfiguredFeatures.MARBLE);
+        Holder<Feature> limestone = configuredFeatures.getOrThrow(ChiselConfiguredFeatures.LIMESTONE);
+        Holder<Feature> basalt = configuredFeatures.getOrThrow(ChiselConfiguredFeatures.BASALT);
 
         PlacementUtils.register(context, MARBLE_UPPER, marble, rareOrePlacement(6, HeightRangePlacement.uniform(VerticalAnchor.absolute(64), VerticalAnchor.absolute(128))));
         PlacementUtils.register(context, MARBLE_LOWER, marble, commonOrePlacement(2, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(60))));

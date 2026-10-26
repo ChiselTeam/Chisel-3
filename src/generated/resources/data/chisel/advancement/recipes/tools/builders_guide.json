@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:builders_guide"
+        "recipes": "chisel:builders_guide"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

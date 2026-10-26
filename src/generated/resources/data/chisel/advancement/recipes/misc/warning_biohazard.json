@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:warning_biohazard"
+        "recipes": "chisel:warning_biohazard"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

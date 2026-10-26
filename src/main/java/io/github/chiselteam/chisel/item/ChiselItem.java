@@ -9,6 +9,7 @@ import net.minecraft.nbt.NbtOps;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.Prediction;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.SimpleMenuProvider;
@@ -37,7 +38,7 @@ public class ChiselItem extends Item {
             chisel.hurtAndBreak(amount, serverLevel, player, brokenItem -> {
                 player.onEquippedItemBroken(brokenItem, hand.asEquipmentSlot());
                 if (!contained.isEmpty()) {
-                    player.drop(contained, false);
+                    player.drop(contained, false, Prediction.SERVER_ONLY);
                 }
             });
         }

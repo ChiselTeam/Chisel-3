@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:smashingrock"
+        "recipes": "chisel:smashingrock"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

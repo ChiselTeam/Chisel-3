@@ -100,7 +100,7 @@ public class ConnectedTextureBlockStateModelBuilder {
                 .tintIndex(tintIndex)
                 .emissivity(emissivity)
                 .eldritch(eldritch)
-                .shade(shade)
+                .shadeDirectionOverride(shade ? null : Direction.UP)
                 .ambientOcclusion(ambientOcclusion)
                 .waterOffset(variant.getModelHandler().ctmFluidOffset())
                 .connectionPredicate(CopperConnectionPredicates.forVariant(variant));

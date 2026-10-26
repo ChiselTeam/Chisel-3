@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:futura_controller"
+        "recipes": "chisel:futura_controller"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

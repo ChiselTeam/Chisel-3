@@ -5,6 +5,7 @@ import io.github.chiselteam.chisel.item.ChiselItem;
 import io.github.chiselteam.chisel.registry.ChiselAttachments;
 import io.github.chiselteam.chisel.registry.ChiselItems;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.util.Prediction;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -20,6 +21,6 @@ public final class ChiselCraftingEventHandler {
 
         player.setData(ChiselAttachments.BUILDERS_HANDBOOK_GRANTED, true);
         var handbook = new ItemStack(ChiselItems.BUILDERS_HANDBOOK.get());
-        if (!player.getInventory().add(handbook)) player.drop(handbook, false);
+        if (!player.getInventory().add(handbook)) player.drop(handbook, false, Prediction.SERVER_ONLY);
     }
 }

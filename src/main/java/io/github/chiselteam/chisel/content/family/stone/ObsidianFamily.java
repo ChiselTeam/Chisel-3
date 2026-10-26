@@ -9,7 +9,7 @@ import net.minecraft.world.level.material.PushReaction;
 
 public final class ObsidianFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("obsidian", builder -> builder
-            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN).pushReaction(PushReaction.BLOCK)).blockName("Obsidian"))
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN).pushReaction(PushReaction.IMMOVEABLE)).blockName("Obsidian"))
             .existingBlock(Blocks.OBSIDIAN)
             .variant("obsidian_blocks", v -> v.description("Obsidian Blocks"))
             .variant("obsidian_chiseled", v -> v.description("Chiseled Obsidian").model(ChiselModelHandlers.TBS)

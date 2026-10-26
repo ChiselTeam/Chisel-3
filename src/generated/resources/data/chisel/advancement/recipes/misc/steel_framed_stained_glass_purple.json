@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:steel_framed_stained_glass_purple"
+        "recipes": "chisel:steel_framed_stained_glass_purple"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

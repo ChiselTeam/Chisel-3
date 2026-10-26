@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:paperwall_boxed"
+        "recipes": "chisel:paperwall_boxed"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

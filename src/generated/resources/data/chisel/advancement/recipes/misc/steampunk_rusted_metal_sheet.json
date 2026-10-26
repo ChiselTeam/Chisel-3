@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:steampunk_rusted_metal_sheet"
+        "recipes": "chisel:steampunk_rusted_metal_sheet"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:light_white_regular"
+        "recipes": "chisel:light_white_regular"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

@@ -107,7 +107,7 @@
     {
       "from": [  0.4, 10  ,  0.4 ],
       "to":   [ 15.6, 15.6, 15.6 ],
-      "shade": false,
+      "shade_direction_override": "up",
       "faces": {
         "up":    { "texture": "#glass", "cullface": "up"    },
         "north": { "texture": "#glass", "cullface": "north" },
@@ -119,7 +119,7 @@
     {
       "from": [ 15.4, 15.4, 15.4 ],
       "to":   [  0.6, 10  ,  0.6 ],
-      "shade": false,
+      "shade_direction_override": "up",
       "faces": {
         "down":  { "texture": "#glass" },
         "north": { "texture": "#glass" },

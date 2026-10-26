@@ -33,7 +33,7 @@ public class ChiselConfigurations {
 
     public static void init(ModContainer mod) {
         mod.registerConfig(ModConfig.Type.CLIENT, CLIENT_SPEC, "%s_client.toml".formatted(Chisel.MODID));
-        mod.registerConfig(ModConfig.Type.SERVER, SERVER_SPEC, "%s_server.toml".formatted(Chisel.MODID));
+        mod.registerConfig(ModConfig.Type.SYNCED, SERVER_SPEC, "%s_server.toml".formatted(Chisel.MODID));
         mod.registerConfig(ModConfig.Type.STARTUP, COMMON_SPEC, "%s_common.toml".formatted(Chisel.MODID));
     }
 }

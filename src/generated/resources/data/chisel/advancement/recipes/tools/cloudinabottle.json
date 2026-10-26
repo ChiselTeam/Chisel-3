@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:cloudinabottle"
+        "recipes": "chisel:cloudinabottle"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

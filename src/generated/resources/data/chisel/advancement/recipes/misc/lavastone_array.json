@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:lavastone_array"
+        "recipes": "chisel:lavastone_array"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

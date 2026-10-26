@@ -6,7 +6,7 @@
   "elements": [
     {   "from": [ 8, 0, 3 ],
       "to": [ 8, 14, 13 ],
-      "shade": false,
+      "shade_direction_override": "up",
       "faces": {
         "west": { "uv": [ 3, 0, 13, 16 ], "texture": "#torch" },
         "east": { "uv": [ 13, 0, 3, 16 ], "texture": "#torch" }
@@ -18,7 +18,7 @@
         14,
         8
       ],
-      "shade": false,
+      "shade_direction_override": "up",
       "faces": {
         "north": { "uv": [ 3, 0, 13, 16 ], "texture": "#torch" },
         "south": { "uv": [ 13, 0, 3, 16 ], "texture": "#torch" }

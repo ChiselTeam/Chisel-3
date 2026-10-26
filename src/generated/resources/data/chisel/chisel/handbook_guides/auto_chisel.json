@@ -15,9 +15,7 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:auto_chisel"
-          },
+          "state": "chisel:auto_chisel",
           "x": 0,
           "y": 0,
           "z": 0

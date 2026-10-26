@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:military_imperial_camo"
+        "recipes": "chisel:military_imperial_camo"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

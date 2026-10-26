@@ -15,81 +15,61 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:valentines_block"
-          },
+          "state": "chisel:valentines_block",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:valentines_bricks"
-          },
+          "state": "chisel:valentines_bricks",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:valentines_bumpy"
-          },
+          "state": "chisel:valentines_bumpy",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:valentines_cobble"
-          },
+          "state": "chisel:valentines_cobble",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:valentines_companion"
-          },
+          "state": "chisel:valentines_companion",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:valentines_empty"
-          },
+          "state": "chisel:valentines_empty",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:valentines_fire"
-          },
+          "state": "chisel:valentines_fire",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:valentines_heart"
-          },
+          "state": "chisel:valentines_heart",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:valentines_heart_gray"
-          },
+          "state": "chisel:valentines_heart_gray",
           "x": -2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:valentines_tile"
-          },
+          "state": "chisel:valentines_tile",
           "x": -1,
           "y": 0,
           "z": 0

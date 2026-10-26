@@ -15,137 +15,103 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:tyrian_black"
-          },
+          "state": "chisel:tyrian_black",
           "x": -2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:tyrian_black_tiles"
-          },
+          "state": "chisel:tyrian_black_tiles",
           "x": -1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:tyrian_bleak"
-          },
+          "state": "chisel:tyrian_bleak",
           "x": 0,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:tyrian_blue"
-          },
+          "state": "chisel:tyrian_blue",
           "x": 1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:tyrian_dent"
-          },
+          "state": "chisel:tyrian_dent",
           "x": 2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:tyrian_diagonal"
-          },
+          "state": "chisel:tyrian_diagonal",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:tyrian_elaborate"
-          },
+          "state": "chisel:tyrian_elaborate",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:tyrian_normal"
-          },
+          "state": "chisel:tyrian_normal",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:tyrian_opening"
-          },
+          "state": "chisel:tyrian_opening",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:tyrian_platform"
-          },
+          "state": "chisel:tyrian_platform",
           "x": 2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:tyrian_purple"
-          },
+          "state": "chisel:tyrian_purple",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:tyrian_purple_faded"
-          },
+          "state": "chisel:tyrian_purple_faded",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:tyrian_rusted"
-          },
+          "state": "chisel:tyrian_rusted",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:tyrian_seams"
-          },
+          "state": "chisel:tyrian_seams",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:tyrian_shiny"
-          },
+          "state": "chisel:tyrian_shiny",
           "x": 2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:tyrian_shiny_raw"
-          },
+          "state": "chisel:tyrian_shiny_raw",
           "x": -2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:tyrian_tiles"
-          },
+          "state": "chisel:tyrian_tiles",
           "x": -1,
           "y": 0,
           "z": 0

@@ -15,145 +15,91 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:fantasy_block"
-          },
+          "state": "chisel:fantasy_block",
           "x": -2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_brick"
-          },
+          "state": "chisel:fantasy_brick",
           "x": -1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_brick_chaotic"
-          },
+          "state": "chisel:fantasy_brick_chaotic",
           "x": 0,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_brick_chaotic_worn"
-          },
+          "state": "chisel:fantasy_brick_chaotic_worn",
           "x": 1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_brick_faded"
-          },
+          "state": "chisel:fantasy_brick_faded",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_brick_worn"
-          },
+          "state": "chisel:fantasy_brick_worn",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_path"
-          },
+          "state": "chisel:fantasy_path",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_gold_decor_1",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_gold_decor_1",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_gold_decor_2",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_gold_decor_2",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_gold_decor_3",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_gold_decor_3",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_gold_decor_4",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_gold_decor_4",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_pillar",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_pillar",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_pillar_2",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_pillar_2",
           "x": -2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_pillar_3",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_pillar_3",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_plate",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_plate",
           "x": 0,
           "y": 0,
           "z": 0
@@ -172,101 +118,67 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:fantasy_purple_block"
-          },
+          "state": "chisel:fantasy_purple_block",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_purple_brick"
-          },
+          "state": "chisel:fantasy_purple_brick",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_purple_brick_chaotic"
-          },
+          "state": "chisel:fantasy_purple_brick_chaotic",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_purple_brick_chaotic_worn"
-          },
+          "state": "chisel:fantasy_purple_brick_chaotic_worn",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_purple_brick_faded"
-          },
+          "state": "chisel:fantasy_purple_brick_faded",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_purple_brick_worn"
-          },
+          "state": "chisel:fantasy_purple_brick_worn",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_purple_path"
-          },
+          "state": "chisel:fantasy_purple_path",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_purple_pillar",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_purple_pillar",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_purple_pillar_2",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_purple_pillar_2",
           "x": -2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_purple_pillar_3",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_purple_pillar_3",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_purple_plate",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_purple_plate",
           "x": 0,
           "y": 0,
           "z": 0
@@ -281,101 +193,67 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:fantasy_green_block"
-          },
+          "state": "chisel:fantasy_green_block",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_green_brick"
-          },
+          "state": "chisel:fantasy_green_brick",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_green_brick_chaotic"
-          },
+          "state": "chisel:fantasy_green_brick_chaotic",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_green_brick_chaotic_worn"
-          },
+          "state": "chisel:fantasy_green_brick_chaotic_worn",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_green_brick_faded"
-          },
+          "state": "chisel:fantasy_green_brick_faded",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_green_brick_worn"
-          },
+          "state": "chisel:fantasy_green_brick_worn",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_green_path"
-          },
+          "state": "chisel:fantasy_green_path",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_green_pillar",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_green_pillar",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_green_pillar_2",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_green_pillar_2",
           "x": -2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_green_pillar_3",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_green_pillar_3",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_green_plate",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_green_plate",
           "x": 0,
           "y": 0,
           "z": 0
@@ -390,101 +268,67 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:fantasy_blue_block"
-          },
+          "state": "chisel:fantasy_blue_block",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_blue_brick"
-          },
+          "state": "chisel:fantasy_blue_brick",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_blue_brick_chaotic"
-          },
+          "state": "chisel:fantasy_blue_brick_chaotic",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_blue_brick_chaotic_worn"
-          },
+          "state": "chisel:fantasy_blue_brick_chaotic_worn",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_blue_brick_faded"
-          },
+          "state": "chisel:fantasy_blue_brick_faded",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_blue_brick_worn"
-          },
+          "state": "chisel:fantasy_blue_brick_worn",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_blue_path"
-          },
+          "state": "chisel:fantasy_blue_path",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_blue_pillar",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_blue_pillar",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_blue_pillar_2",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_blue_pillar_2",
           "x": -2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_blue_pillar_3",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_blue_pillar_3",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_blue_plate",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_blue_plate",
           "x": 0,
           "y": 0,
           "z": 0
@@ -499,101 +343,67 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:fantasy_red_block"
-          },
+          "state": "chisel:fantasy_red_block",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_red_brick"
-          },
+          "state": "chisel:fantasy_red_brick",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_red_brick_chaotic"
-          },
+          "state": "chisel:fantasy_red_brick_chaotic",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_red_brick_chaotic_worn"
-          },
+          "state": "chisel:fantasy_red_brick_chaotic_worn",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_red_brick_faded"
-          },
+          "state": "chisel:fantasy_red_brick_faded",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_red_brick_worn"
-          },
+          "state": "chisel:fantasy_red_brick_worn",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_red_path"
-          },
+          "state": "chisel:fantasy_red_path",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_red_pillar",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_red_pillar",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_red_pillar_2",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_red_pillar_2",
           "x": -2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_red_pillar_3",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_red_pillar_3",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:fantasy_red_plate",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:fantasy_red_plate",
           "x": 0,
           "y": 0,
           "z": 0

@@ -15,846 +15,601 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -5,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:cracked_polished_blackstone_bricks"
-          },
+          "state": "minecraft:cracked_polished_blackstone_bricks",
           "x": -4,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:gilded_blackstone"
-          },
+          "state": "minecraft:gilded_blackstone",
           "x": -3,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -2,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -1,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 0,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 1,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": 2,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:cracked_polished_blackstone_bricks"
-          },
+          "state": "minecraft:cracked_polished_blackstone_bricks",
           "x": 3,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 4,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -5,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_basalt",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "minecraft:polished_basalt",
           "x": -4,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": -3,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": -2,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": -1,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 0,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": 1,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_basalt",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "minecraft:polished_basalt",
           "x": 2,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": 3,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_basalt",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "minecraft:polished_basalt",
           "x": 4,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_basalt",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "minecraft:polished_basalt",
           "x": -5,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": -4,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": -3,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -2,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -1,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 0,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 1,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_basalt",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "minecraft:polished_basalt",
           "x": 2,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": 3,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_basalt",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "minecraft:polished_basalt",
           "x": 4,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -5,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": -4,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_basalt",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "minecraft:polished_basalt",
           "x": -3,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -2,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": -1,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 0,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 1,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": 2,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": 3,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 4,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -5,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -4,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -3,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": -2,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -1,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 0,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": 1,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 2,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": 3,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 4,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -5,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": -4,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -3,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -2,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -1,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:cracked_polished_blackstone_bricks"
-          },
+          "state": "minecraft:cracked_polished_blackstone_bricks",
           "x": 0,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 1,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 2,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 3,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_basalt",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "minecraft:polished_basalt",
           "x": 4,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -5,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": -4,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -3,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 0,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 3,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:cracked_polished_blackstone_bricks"
-          },
+          "state": "minecraft:cracked_polished_blackstone_bricks",
           "x": 4,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -5,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -4,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_basalt",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "minecraft:polished_basalt",
           "x": -3,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_basalt",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "minecraft:polished_basalt",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:cracked_polished_blackstone_bricks"
-          },
+          "state": "minecraft:cracked_polished_blackstone_bricks",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 3,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:gilded_blackstone"
-          },
+          "state": "minecraft:gilded_blackstone",
           "x": 4,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -5,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_basalt",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "minecraft:polished_basalt",
           "x": -4,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": -3,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_basalt",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "minecraft:polished_basalt",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:gilded_blackstone"
-          },
+          "state": "minecraft:gilded_blackstone",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_basalt",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "minecraft:polished_basalt",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": 2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 3,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:cracked_polished_blackstone_bricks"
-          },
+          "state": "minecraft:cracked_polished_blackstone_bricks",
           "x": 4,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -5,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -4,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": -3,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": -2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_blackstone_bricks"
-          },
+          "state": "minecraft:polished_blackstone_bricks",
           "x": 0,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:cracked_polished_blackstone_bricks"
-          },
+          "state": "minecraft:cracked_polished_blackstone_bricks",
           "x": 1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_basalt",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "minecraft:polished_basalt",
           "x": 2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:blackstone"
-          },
+          "state": "minecraft:blackstone",
           "x": 3,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:polished_basalt",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "minecraft:polished_basalt",
           "x": 4,
           "y": 0,
           "z": 0

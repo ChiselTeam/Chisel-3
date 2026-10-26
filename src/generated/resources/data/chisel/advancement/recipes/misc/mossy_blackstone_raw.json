@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:mossy_blackstone_raw"
+        "recipes": "chisel:mossy_blackstone_raw"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

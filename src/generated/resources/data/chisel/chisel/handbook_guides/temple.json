@@ -15,129 +15,97 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:temple_cobble"
-          },
+          "state": "chisel:temple_cobble",
           "x": -2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:temple_bricks"
-          },
+          "state": "chisel:temple_bricks",
           "x": -1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:temple_bricks_disarray"
-          },
+          "state": "chisel:temple_bricks_disarray",
           "x": 0,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:temple_bricks_large"
-          },
+          "state": "chisel:temple_bricks_large",
           "x": 1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:temple_bricks_worn"
-          },
+          "state": "chisel:temple_bricks_worn",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:temple_column"
-          },
+          "state": "chisel:temple_column",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:temple_ornate"
-          },
+          "state": "chisel:temple_ornate",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:temple_plate"
-          },
+          "state": "chisel:temple_plate",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:temple_plate_cracked"
-          },
+          "state": "chisel:temple_plate_cracked",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:temple_stand"
-          },
+          "state": "chisel:temple_stand",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:temple_stand_creeper"
-          },
+          "state": "chisel:temple_stand_creeper",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:temple_stand_mosaic"
-          },
+          "state": "chisel:temple_stand_mosaic",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:temple_tiles"
-          },
+          "state": "chisel:temple_tiles",
           "x": -2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:temple_tiles_light"
-          },
+          "state": "chisel:temple_tiles_light",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:temple_tiles_small"
-          },
+          "state": "chisel:temple_tiles_small",
           "x": 0,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:temple_tiles_small_light"
-          },
+          "state": "chisel:temple_tiles_small_light",
           "x": 1,
           "y": 0,
           "z": 0

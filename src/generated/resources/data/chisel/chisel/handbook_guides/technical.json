@@ -15,359 +15,265 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:technical_125"
-          },
+          "state": "chisel:technical_125",
           "x": -3,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_cables"
-          },
+          "state": "chisel:technical_cables",
           "x": -2,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_engineering"
-          },
+          "state": "chisel:technical_engineering",
           "x": -1,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_engineering_1"
-          },
+          "state": "chisel:technical_engineering_1",
           "x": 0,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_engineering_2"
-          },
+          "state": "chisel:technical_engineering_2",
           "x": 1,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_engineering_3"
-          },
+          "state": "chisel:technical_engineering_3",
           "x": 2,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_engineering_prototype"
-          },
+          "state": "chisel:technical_engineering_prototype",
           "x": 3,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_exhaust"
-          },
+          "state": "chisel:technical_exhaust",
           "x": -3,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_fan_fast"
-          },
+          "state": "chisel:technical_fan_fast",
           "x": -2,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_fan_fast_transparent"
-          },
+          "state": "chisel:technical_fan_fast_transparent",
           "x": -1,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_fan_reverse_fast"
-          },
+          "state": "chisel:technical_fan_reverse_fast",
           "x": 0,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_fan_malfunction"
-          },
+          "state": "chisel:technical_fan_malfunction",
           "x": 1,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_fan_malfunction_slow"
-          },
+          "state": "chisel:technical_fan_malfunction_slow",
           "x": 2,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_fan_massive"
-          },
+          "state": "chisel:technical_fan_massive",
           "x": 3,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_fan_still"
-          },
+          "state": "chisel:technical_fan_still",
           "x": -3,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_fan_still_transparent"
-          },
+          "state": "chisel:technical_fan_still_transparent",
           "x": -2,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_gears"
-          },
+          "state": "chisel:technical_gears",
           "x": -1,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_grate"
-          },
+          "state": "chisel:technical_grate",
           "x": 0,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_grate_rusty"
-          },
+          "state": "chisel:technical_grate_rusty",
           "x": 1,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_hex_plating"
-          },
+          "state": "chisel:technical_hex_plating",
           "x": 2,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_insulation"
-          },
+          "state": "chisel:technical_insulation",
           "x": 3,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_makeshift_panels"
-          },
+          "state": "chisel:technical_makeshift_panels",
           "x": -3,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_megacell"
-          },
+          "state": "chisel:technical_megacell",
           "x": -2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_old"
-          },
+          "state": "chisel:technical_old",
           "x": -1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_oldtimeyserveranim"
-          },
+          "state": "chisel:technical_oldtimeyserveranim",
           "x": 0,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_panel_caution"
-          },
+          "state": "chisel:technical_panel_caution",
           "x": 1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_piping"
-          },
+          "state": "chisel:technical_piping",
           "x": 2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_rusty"
-          },
+          "state": "chisel:technical_rusty",
           "x": 3,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_scaffold"
-          },
+          "state": "chisel:technical_scaffold",
           "x": -3,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_scaffold_large"
-          },
+          "state": "chisel:technical_scaffold_large",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_scaffold_large_1"
-          },
+          "state": "chisel:technical_scaffold_large_1",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_scaffold_large_2"
-          },
+          "state": "chisel:technical_scaffold_large_2",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_scaffold_large_3"
-          },
+          "state": "chisel:technical_scaffold_large_3",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_scaffold_transparent"
-          },
+          "state": "chisel:technical_scaffold_transparent",
           "x": 2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_spinning_stuff"
-          },
+          "state": "chisel:technical_spinning_stuff",
           "x": 3,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_sturdy"
-          },
+          "state": "chisel:technical_sturdy",
           "x": -3,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_under_large"
-          },
+          "state": "chisel:technical_under_large",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_under_small"
-          },
+          "state": "chisel:technical_under_small",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_vents",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:technical_vents",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_vents_glowing",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:technical_vents_glowing",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_wall_pads"
-          },
+          "state": "chisel:technical_wall_pads",
           "x": 2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_weathered_green_panels"
-          },
+          "state": "chisel:technical_weathered_green_panels",
           "x": 3,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_weathered_orange_panels"
-          },
+          "state": "chisel:technical_weathered_orange_panels",
           "x": -3,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:technical_wires"
-          },
+          "state": "chisel:technical_wires",
           "x": -2,
           "y": 0,
           "z": 0

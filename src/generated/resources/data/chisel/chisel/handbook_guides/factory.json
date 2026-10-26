@@ -15,175 +15,127 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:factory_circuit"
-          },
+          "state": "chisel:factory_circuit",
           "x": -2,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_column",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:factory_column",
           "x": -1,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_dots"
-          },
+          "state": "chisel:factory_dots",
           "x": 0,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_frame_blue"
-          },
+          "state": "chisel:factory_frame_blue",
           "x": 1,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_gold_plate"
-          },
+          "state": "chisel:factory_gold_plate",
           "x": 2,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_gold_plating"
-          },
+          "state": "chisel:factory_gold_plating",
           "x": -2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_grinder"
-          },
+          "state": "chisel:factory_grinder",
           "x": -1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_hazard"
-          },
+          "state": "chisel:factory_hazard",
           "x": 0,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_hazard_orange"
-          },
+          "state": "chisel:factory_hazard_orange",
           "x": 1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_ice"
-          },
+          "state": "chisel:factory_ice",
           "x": 2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_metal_box"
-          },
+          "state": "chisel:factory_metal_box",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_platex"
-          },
+          "state": "chisel:factory_platex",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_plating"
-          },
+          "state": "chisel:factory_plating",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_rust"
-          },
+          "state": "chisel:factory_rust",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_rust2"
-          },
+          "state": "chisel:factory_rust2",
           "x": 2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_rust_plates"
-          },
+          "state": "chisel:factory_rust_plates",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_tile_mosaic"
-          },
+          "state": "chisel:factory_tile_mosaic",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_vent",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:factory_vent",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_wireframe"
-          },
+          "state": "chisel:factory_wireframe",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_wireframe_blue"
-          },
+          "state": "chisel:factory_wireframe_blue",
           "x": 2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:factory_wireframe_white"
-          },
+          "state": "chisel:factory_wireframe_white",
           "x": -2,
           "y": 0,
           "z": 0

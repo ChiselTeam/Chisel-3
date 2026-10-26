@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:mossy_temple_bricks"
+        "recipes": "chisel:mossy_temple_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

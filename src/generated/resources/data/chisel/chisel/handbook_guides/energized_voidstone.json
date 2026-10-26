@@ -15,65 +15,49 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:energized_voidstone_bevel"
-          },
+          "state": "chisel:energized_voidstone_bevel",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:energized_voidstone_eye"
-          },
+          "state": "chisel:energized_voidstone_eye",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:energized_voidstone_metal"
-          },
+          "state": "chisel:energized_voidstone_metal",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:energized_voidstone_raw"
-          },
+          "state": "chisel:energized_voidstone_raw",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:energized_voidstone_runic"
-          },
+          "state": "chisel:energized_voidstone_runic",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:energized_voidstone_skull"
-          },
+          "state": "chisel:energized_voidstone_skull",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:energized_voidstone_smooth"
-          },
+          "state": "chisel:energized_voidstone_smooth",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:energized_voidstone_tiles"
-          },
+          "state": "chisel:energized_voidstone_tiles",
           "x": 0,
           "y": 0,
           "z": 0

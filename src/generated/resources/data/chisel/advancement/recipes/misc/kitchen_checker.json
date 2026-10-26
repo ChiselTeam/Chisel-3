@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:kitchen_checker"
+        "recipes": "chisel:kitchen_checker"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:mossy_stone_raw"
+        "recipes": "chisel:mossy_stone_raw"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

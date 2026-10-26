@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:fantasy_block"
+        "recipes": "chisel:fantasy_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

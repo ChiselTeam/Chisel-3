@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:light_black_regular"
+        "recipes": "chisel:light_black_regular"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

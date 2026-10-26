@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.client.gui;
 
+import com.mojang.blaze3d.platform.InputConstants;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.family.VariantFamily;
 import io.github.chiselteam.chisel.client.gui.preview.PreviewPIPState;
@@ -26,7 +27,6 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import org.jspecify.annotations.NonNull;
-import org.lwjgl.glfw.GLFW;
 
 import java.util.List;
 import java.util.Objects;
@@ -98,7 +98,7 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
         if (searchBox.keyPressed(event)) {
             return true;
         }
-        if (searchBox.isFocused() && searchBox.isVisible() && event.key() != GLFW.GLFW_KEY_ESCAPE) {
+        if (searchBox.isFocused() && searchBox.isVisible() && event.key() != InputConstants.KEY_ESCAPE) {
             return true;
         }
         return super.keyPressed(event);

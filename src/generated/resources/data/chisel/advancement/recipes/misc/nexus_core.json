@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:nexus_core"
+        "recipes": "chisel:nexus_core"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

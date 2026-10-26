@@ -9,15 +9,15 @@ import io.github.chiselteam.chisel.weathering.WeatheringChainData;
 import io.github.chiselteam.chisel.weathering.WeatheringChains;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.registries.DataPackRegistryEvent;
+import net.neoforged.neoforge.registries.NewDatapackRegistryEvent;
 
 @EventBusSubscriber(modid = Chisel.MODID)
 public class DatapackRegistryEventHandler {
 
     @SubscribeEvent
-    public static void registerRegistries(DataPackRegistryEvent.NewRegistry event) {
-        event.dataPackRegistry(ChiselVariantFamilies.KEY, VariantFamily.CODEC, VariantFamily.CODEC);
-        event.dataPackRegistry(ChiselSmashingRockRegistry.KEY, SmashingRockData.CODEC, SmashingRockData.CODEC);
-        event.dataPackRegistry(WeatheringChains.KEY, WeatheringChainData.CODEC, WeatheringChainData.CODEC);
+    public static void registerRegistries(NewDatapackRegistryEvent event) {
+        event.worldRegistry(ChiselVariantFamilies.KEY, VariantFamily.CODEC, VariantFamily.CODEC);
+        event.worldRegistry(ChiselSmashingRockRegistry.KEY, SmashingRockData.CODEC, SmashingRockData.CODEC);
+        event.worldRegistry(WeatheringChains.KEY, WeatheringChainData.CODEC, WeatheringChainData.CODEC);
     }
 }

@@ -39,7 +39,7 @@ public class PreviewPIP extends PictureInPictureRenderer<PreviewPIPState> {
     protected void renderToTexture(@NonNull PreviewPIPState state, @NonNull PoseStack pose, SubmitNodeCollector collector) {
         float scale = 30 * state.zoom() * state.previewScale();
         pose.scale(scale, scale, scale);
-        pose.mulPose(new Quaternionf().rotateX((float) Math.toDegrees(180 + state.rotX())).rotateY((float) Math.toDegrees(state.rotY())));
+        pose.rotate(new Quaternionf().rotateX((float) Math.toDegrees(180 + state.rotX())).rotateY((float) Math.toDegrees(state.rotY())));
         pose.translate(-state.centerX(), -state.centerY(), -0.5F);
 
         var modelSet = Minecraft.getInstance().getModelManager().getBlockStateModelSet();

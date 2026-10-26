@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:palette_builder"
+        "recipes": "chisel:palette_builder"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

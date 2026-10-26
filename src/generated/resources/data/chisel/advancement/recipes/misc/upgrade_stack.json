@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:upgrade_stack"
+        "recipes": "chisel:upgrade_stack"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

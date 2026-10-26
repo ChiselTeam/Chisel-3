@@ -15,801 +15,601 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -5,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -4,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -3,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": -2,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -1,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 0,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 1,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": 2,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 3,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": 4,
           "y": 9,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -5,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -4,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -3,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud"
-          },
+          "state": "minecraft:mud",
           "x": -2,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:dripstone_block"
-          },
+          "state": "minecraft:dripstone_block",
           "x": -1,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 0,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 1,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:brown_terracotta"
-          },
+          "state": "minecraft:brown_terracotta",
           "x": 2,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 3,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 4,
           "y": 8,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -5,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": -4,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud"
-          },
+          "state": "minecraft:mud",
           "x": -3,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -2,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": -1,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 0,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": 1,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:brown_terracotta"
-          },
+          "state": "minecraft:brown_terracotta",
           "x": 2,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": 3,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 4,
           "y": 7,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud"
-          },
+          "state": "minecraft:mud",
           "x": -5,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud"
-          },
+          "state": "minecraft:mud",
           "x": -4,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -3,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -2,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -1,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud"
-          },
+          "state": "minecraft:mud",
           "x": 0,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:dripstone_block"
-          },
+          "state": "minecraft:dripstone_block",
           "x": 1,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud"
-          },
+          "state": "minecraft:mud",
           "x": 2,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": 3,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 4,
           "y": 6,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -5,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": -4,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud"
-          },
+          "state": "minecraft:mud",
           "x": -3,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": -2,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -1,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud"
-          },
+          "state": "minecraft:mud",
           "x": 0,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": 1,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 2,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": 3,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud"
-          },
+          "state": "minecraft:mud",
           "x": 4,
           "y": 5,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -5,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -4,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -3,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -2,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -1,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 0,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud"
-          },
+          "state": "minecraft:mud",
           "x": 1,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": 2,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:dripstone_block"
-          },
+          "state": "minecraft:dripstone_block",
           "x": 3,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 4,
           "y": 4,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": -5,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -4,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": -3,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud"
-          },
+          "state": "minecraft:mud",
           "x": -2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": -1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:brown_terracotta"
-          },
+          "state": "minecraft:brown_terracotta",
           "x": 0,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud"
-          },
+          "state": "minecraft:mud",
           "x": 2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 3,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": 4,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -5,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": -4,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:brown_terracotta"
-          },
+          "state": "minecraft:brown_terracotta",
           "x": -3,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:brown_terracotta"
-          },
+          "state": "minecraft:brown_terracotta",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud"
-          },
+          "state": "minecraft:mud",
           "x": 3,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud"
-          },
+          "state": "minecraft:mud",
           "x": 4,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -5,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:brown_terracotta"
-          },
+          "state": "minecraft:brown_terracotta",
           "x": -4,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -3,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:brown_terracotta"
-          },
+          "state": "minecraft:brown_terracotta",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": 3,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": 4,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": -5,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -4,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:packed_mud"
-          },
+          "state": "minecraft:packed_mud",
           "x": -3,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud"
-          },
+          "state": "minecraft:mud",
           "x": -2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 0,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 3,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "minecraft:mud_bricks"
-          },
+          "state": "minecraft:mud_bricks",
           "x": 4,
           "y": 0,
           "z": 0

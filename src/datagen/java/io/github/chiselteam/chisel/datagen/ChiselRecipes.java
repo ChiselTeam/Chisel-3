@@ -4,11 +4,10 @@ import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.content.ChiselFamilies;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
 import io.github.chiselteam.chisel.registry.ChiselItems;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.data.PackOutput;
+import net.minecraft.advancements.Advancement;
 import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.Identifier;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -17,17 +16,15 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStackTemplate;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
-import org.jspecify.annotations.NonNull;
-
-import java.util.concurrent.CompletableFuture;
 
 public class ChiselRecipes extends RecipeProvider {
 
-    public ChiselRecipes(HolderLookup.Provider registries, RecipeOutput output) {
-        super(registries, output);
+    public ChiselRecipes(BootstrapContext<Recipe<?>> recipes, BootstrapContext<Advancement> advancements) {
+        super(recipes, advancements, Chisel.MODID);
     }
 
     @Override
@@ -240,7 +237,6 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_paper", has(Items.PAPER))
                 .save(output);
 
-
         shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.ROAD_LINE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("WRW")
                 .pattern("WRW")
@@ -403,20 +399,4 @@ public class ChiselRecipes extends RecipeProvider {
                 .save(output);
     }
 
-    public static class Runner extends RecipeProvider.Runner {
-
-        public Runner(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> registries) {
-            super(packOutput, registries);
-        }
-
-        @Override
-        protected @NonNull RecipeProvider createRecipeProvider(HolderLookup.@NonNull Provider provider, @NonNull RecipeOutput recipeOutput) {
-            return new ChiselRecipes(provider, recipeOutput);
-        }
-
-        @Override
-        public @NonNull String getName() {
-            return Chisel.MODID;
-        }
-    }
 }

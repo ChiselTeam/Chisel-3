@@ -2,17 +2,18 @@ package io.github.chiselteam.chisel.block;
 
 import io.github.chiselteam.chisel.weathering.WeatheringChains;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.component.BlockTransformers;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.LevelEvent;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
-import net.neoforged.neoforge.common.ItemAbilities;
 import org.jspecify.annotations.NonNull;
 
 public class WaxedWeatheringBlock extends ConnectedTextureBlock {
@@ -22,7 +23,8 @@ public class WaxedWeatheringBlock extends ConnectedTextureBlock {
 
     @Override
     protected @NonNull InteractionResult useItemOn(@NonNull ItemStack stack, @NonNull BlockState state, @NonNull Level level, @NonNull BlockPos pos, @NonNull Player player, @NonNull InteractionHand hand, @NonNull BlockHitResult hitResult) {
-        if (stack.canPerformAction(ItemAbilities.AXE_SCRAPE)) {
+        var transformer = stack.get(DataComponents.BLOCK_TRANSFORMER);
+        if (transformer != null && transformer.is(BlockTransformers.AXE)) {
             Block unwaxedBlock = WeatheringChains.getUnwaxed(state.getBlock()).orElse(null);
             if (unwaxedBlock != null) {
                 level.setBlockAndUpdate(pos, WeatheringBlock.copySharedProperties(state, unwaxedBlock.defaultBlockState()));

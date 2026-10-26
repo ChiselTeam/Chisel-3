@@ -100,7 +100,7 @@ public final class PaletteColorIndex {
                 int frame = contents.isAnimated() ? frames.getInt(f * frames.size() / frameCount) : 0;
                 for (int y = 0; y < samplesY; y++)
                     for (int x = 0; x < samplesX; x++) {
-                        int pixel = sprite.getPixelRGBA(frame, (2 * x + 1) * contents.width() / (2 * samplesX), (2 * y + 1) * contents.height() / (2 * samplesY));
+                        int pixel = sprite.getPixelARGB(frame, (2 * x + 1) * contents.width() / (2 * samplesX), (2 * y + 1) * contents.height() / (2 * samplesY));
                         result.addPixel(pixel, tint);
                     }
             }

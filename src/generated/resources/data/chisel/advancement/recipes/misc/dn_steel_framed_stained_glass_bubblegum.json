@@ -19,7 +19,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:dn_steel_framed_stained_glass_bubblegum"
+        "recipes": "chisel:dn_steel_framed_stained_glass_bubblegum"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

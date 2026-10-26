@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:steel_framed_stained_glass_yellow"
+        "recipes": "chisel:steel_framed_stained_glass_yellow"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

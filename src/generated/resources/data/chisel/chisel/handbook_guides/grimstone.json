@@ -15,129 +15,97 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:grimstone_blocks"
-          },
+          "state": "chisel:grimstone_blocks",
           "x": -2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:grimstone_blocks_rough"
-          },
+          "state": "chisel:grimstone_blocks_rough",
           "x": -1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:grimstone_bricks"
-          },
+          "state": "chisel:grimstone_bricks",
           "x": 0,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:grimstone_bricks_large"
-          },
+          "state": "chisel:grimstone_bricks_large",
           "x": 1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:grimstone_chiseled"
-          },
+          "state": "chisel:grimstone_chiseled",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:grimstone_chunks"
-          },
+          "state": "chisel:grimstone_chunks",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:grimstone_construction"
-          },
+          "state": "chisel:grimstone_construction",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:grimstone_flaky"
-          },
+          "state": "chisel:grimstone_flaky",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:grimstone_hate"
-          },
+          "state": "chisel:grimstone_hate",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:grimstone_plate"
-          },
+          "state": "chisel:grimstone_plate",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:grimstone_plate_smooth"
-          },
+          "state": "chisel:grimstone_plate_smooth",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:grimstone_platform"
-          },
+          "state": "chisel:grimstone_platform",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:grimstone_platform_tiles"
-          },
+          "state": "chisel:grimstone_platform_tiles",
           "x": -2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:grimstone_raw"
-          },
+          "state": "chisel:grimstone_raw",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:grimstone_smooth"
-          },
+          "state": "chisel:grimstone_smooth",
           "x": 0,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:grimstone_tiles"
-          },
+          "state": "chisel:grimstone_tiles",
           "x": 1,
           "y": 0,
           "z": 0

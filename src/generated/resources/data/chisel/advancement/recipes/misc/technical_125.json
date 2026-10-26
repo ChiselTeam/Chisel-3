@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:technical_125"
+        "recipes": "chisel:technical_125"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

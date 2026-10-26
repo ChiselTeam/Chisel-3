@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:antiblock_black"
+        "recipes": "chisel:antiblock_black"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

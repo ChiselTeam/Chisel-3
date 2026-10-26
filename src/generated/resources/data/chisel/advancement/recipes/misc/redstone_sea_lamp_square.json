@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:redstone_sea_lamp_square"
+        "recipes": "chisel:redstone_sea_lamp_square"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

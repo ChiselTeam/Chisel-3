@@ -11,57 +11,43 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:concrete_raw"
-          },
+          "state": "chisel:concrete_raw",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:concrete_asphalt"
-          },
+          "state": "chisel:concrete_asphalt",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:concrete_block"
-          },
+          "state": "chisel:concrete_block",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:concrete_block_weathered"
-          },
+          "state": "chisel:concrete_block_weathered",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:concrete_blocks"
-          },
+          "state": "chisel:concrete_blocks",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:concrete_blocks_weathered"
-          },
+          "state": "chisel:concrete_blocks_weathered",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:concrete_raw_weathered"
-          },
+          "state": "chisel:concrete_raw_weathered",
           "x": -1,
           "y": 0,
           "z": 0

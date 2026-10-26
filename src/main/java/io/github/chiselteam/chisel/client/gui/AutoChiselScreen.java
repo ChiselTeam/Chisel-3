@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.client.gui;
 
+import com.mojang.blaze3d.platform.InputConstants;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.family.VariantFamily;
 import io.github.chiselteam.chisel.block.entity.AutoChiselBlockEntity;
@@ -24,7 +25,6 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import org.jspecify.annotations.NonNull;
-import org.lwjgl.glfw.GLFW;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -190,7 +190,7 @@ public class AutoChiselScreen extends AbstractContainerScreen<AutoChiselMenu> {
 
     @Override
     public boolean keyPressed(@NonNull KeyEvent event) {
-        if (pickerOpen && event.key() == GLFW.GLFW_KEY_ESCAPE) {
+        if (pickerOpen && event.key() == InputConstants.KEY_ESCAPE) {
             closePicker();
             return true;
         }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:steel_framed_glass"
+        "recipes": "chisel:steel_framed_glass"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:grimstone_blocks"
+        "recipes": "chisel:grimstone_blocks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

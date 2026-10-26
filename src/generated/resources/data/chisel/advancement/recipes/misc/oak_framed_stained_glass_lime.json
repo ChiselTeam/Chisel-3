@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chisel:oak_framed_stained_glass_lime"
+        "recipes": "chisel:oak_framed_stained_glass_lime"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

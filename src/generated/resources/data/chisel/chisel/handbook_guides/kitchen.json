@@ -15,105 +15,79 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:kitchen_checker"
-          },
+          "state": "chisel:kitchen_checker",
           "x": -2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:kitchen_checker_small"
-          },
+          "state": "chisel:kitchen_checker_small",
           "x": -1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:kitchen_checker_large"
-          },
+          "state": "chisel:kitchen_checker_large",
           "x": 0,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:kitchen_diamond"
-          },
+          "state": "chisel:kitchen_diamond",
           "x": 1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:kitchen_diamond_2"
-          },
+          "state": "chisel:kitchen_diamond_2",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:kitchen_encaustic"
-          },
+          "state": "chisel:kitchen_encaustic",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:kitchen_frame"
-          },
+          "state": "chisel:kitchen_frame",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:kitchen_frame_connected"
-          },
+          "state": "chisel:kitchen_frame_connected",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:kitchen_grid_encased_connected"
-          },
+          "state": "chisel:kitchen_grid_encased_connected",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:kitchen_stripes"
-          },
+          "state": "chisel:kitchen_stripes",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:kitchen_stripes_encased_connected"
-          },
+          "state": "chisel:kitchen_stripes_encased_connected",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:kitchen_stripes_small"
-          },
+          "state": "chisel:kitchen_stripes_small",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:kitchen_stripes_small_encased_connected"
-          },
+          "state": "chisel:kitchen_stripes_small_encased_connected",
           "x": -2,
           "y": 0,
           "z": 0

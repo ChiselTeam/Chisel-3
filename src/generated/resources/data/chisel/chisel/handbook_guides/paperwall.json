@@ -15,73 +15,55 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:paperwall_boxed"
-          },
+          "state": "chisel:paperwall_boxed",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:paperwall_crossed"
-          },
+          "state": "chisel:paperwall_crossed",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:paperwall_door"
-          },
+          "state": "chisel:paperwall_door",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:paperwall_floral"
-          },
+          "state": "chisel:paperwall_floral",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:paperwall_plain"
-          },
+          "state": "chisel:paperwall_plain",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:paperwall_six"
-          },
+          "state": "chisel:paperwall_six",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:paperwall_strike_horizontal"
-          },
+          "state": "chisel:paperwall_strike_horizontal",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:paperwall_strike_middle"
-          },
+          "state": "chisel:paperwall_strike_middle",
           "x": 0,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:paperwall_strike_vertical"
-          },
+          "state": "chisel:paperwall_strike_vertical",
           "x": 1,
           "y": 0,
           "z": 0

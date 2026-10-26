@@ -15,129 +15,97 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:warning_biohazard"
-          },
+          "state": "chisel:warning_biohazard",
           "x": -2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:warning_chem"
-          },
+          "state": "chisel:warning_chem",
           "x": -1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:warning_construction"
-          },
+          "state": "chisel:warning_construction",
           "x": 0,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:warning_cryogenic"
-          },
+          "state": "chisel:warning_cryogenic",
           "x": 1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:warning_death"
-          },
+          "state": "chisel:warning_death",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:warning_explosion"
-          },
+          "state": "chisel:warning_explosion",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:warning_falling"
-          },
+          "state": "chisel:warning_falling",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:warning_falling_objects"
-          },
+          "state": "chisel:warning_falling_objects",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:warning_fire"
-          },
+          "state": "chisel:warning_fire",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:warning_generic"
-          },
+          "state": "chisel:warning_generic",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:warning_illuminati"
-          },
+          "state": "chisel:warning_illuminati",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:warning_loud"
-          },
+          "state": "chisel:warning_loud",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:warning_no_entry"
-          },
+          "state": "chisel:warning_no_entry",
           "x": -2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:warning_oxygen"
-          },
+          "state": "chisel:warning_oxygen",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:warning_radiation"
-          },
+          "state": "chisel:warning_radiation",
           "x": 0,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:warning_voltage"
-          },
+          "state": "chisel:warning_voltage",
           "x": 1,
           "y": 0,
           "z": 0

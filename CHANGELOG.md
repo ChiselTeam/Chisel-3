@@ -2,8 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
-## [26.2.0.1]
+## [26.3.0.1]
 
-- Updated to Minecraft 26.2 and NeoForge 26.2.0.93.
-- Updated CTM to 26.2.0.2, JEI, and Jade for 26.2.
-- Migrated block previews and tool overlays to the feature rendering system.
+- Updated to Minecraft 26.3 and NeoForge 26.3.0.99 using the [26.3 migration primer](https://docs.neoforged.net/primer/docs/26.3/).
+- Updated CTM to 26.3.0.1, JEI to 31.17.0.93, and Jade to 26.3.5.
+- Migrated key bindings, rendering, weathering interactions, synced configuration, and moss movement mixins to the 26.3 APIs.
+- Migrated world generation, recipes, and loot tables to registry bootstraps and regenerated resources.
+- Isolated data generation from development instance mods.

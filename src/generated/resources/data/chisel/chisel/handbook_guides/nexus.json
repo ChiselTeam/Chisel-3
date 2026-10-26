@@ -15,85 +15,55 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:nexus_core"
-          },
+          "state": "chisel:nexus_core",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:nexus_grate_pillar",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:nexus_grate_pillar",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:nexus_junction"
-          },
+          "state": "chisel:nexus_junction",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:nexus_link"
-          },
+          "state": "chisel:nexus_link",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:nexus_path"
-          },
+          "state": "chisel:nexus_path",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:nexus_plate"
-          },
+          "state": "chisel:nexus_plate",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:nexus_plating_pillar",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:nexus_plating_pillar",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:nexus_weave_pillar",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:nexus_weave_pillar",
           "x": 0,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:nexus_railing_pillar",
-            "Properties": {
-              "axis": "y"
-            }
-          },
+          "state": "chisel:nexus_railing_pillar",
           "x": 1,
           "y": 0,
           "z": 0

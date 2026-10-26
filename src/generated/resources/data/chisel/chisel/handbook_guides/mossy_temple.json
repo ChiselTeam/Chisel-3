@@ -15,129 +15,97 @@
       "type": "chisel:structure",
       "blocks": [
         {
-          "state": {
-            "Name": "chisel:mossy_temple_bricks"
-          },
+          "state": "chisel:mossy_temple_bricks",
           "x": -2,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:mossy_temple_bricks_disarray"
-          },
+          "state": "chisel:mossy_temple_bricks_disarray",
           "x": -1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:mossy_temple_bricks_large"
-          },
+          "state": "chisel:mossy_temple_bricks_large",
           "x": 0,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:mossy_temple_bricks_worn"
-          },
+          "state": "chisel:mossy_temple_bricks_worn",
           "x": 1,
           "y": 3,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:mossy_temple_cobble"
-          },
+          "state": "chisel:mossy_temple_cobble",
           "x": -2,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:mossy_temple_column"
-          },
+          "state": "chisel:mossy_temple_column",
           "x": -1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:mossy_temple_ornate"
-          },
+          "state": "chisel:mossy_temple_ornate",
           "x": 0,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:mossy_temple_plate"
-          },
+          "state": "chisel:mossy_temple_plate",
           "x": 1,
           "y": 2,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:mossy_temple_plate_cracked"
-          },
+          "state": "chisel:mossy_temple_plate_cracked",
           "x": -2,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:mossy_temple_stand"
-          },
+          "state": "chisel:mossy_temple_stand",
           "x": -1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:mossy_temple_stand_creeper"
-          },
+          "state": "chisel:mossy_temple_stand_creeper",
           "x": 0,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:mossy_temple_stand_mosaic"
-          },
+          "state": "chisel:mossy_temple_stand_mosaic",
           "x": 1,
           "y": 1,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:mossy_temple_tiles"
-          },
+          "state": "chisel:mossy_temple_tiles",
           "x": -2,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:mossy_temple_tiles_light"
-          },
+          "state": "chisel:mossy_temple_tiles_light",
           "x": -1,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:mossy_temple_tiles_small"
-          },
+          "state": "chisel:mossy_temple_tiles_small",
           "x": 0,
           "y": 0,
           "z": 0
         },
         {
-          "state": {
-            "Name": "chisel:mossy_temple_tiles_small_light"
-          },
+          "state": "chisel:mossy_temple_tiles_small_light",
           "x": 1,
           "y": 0,
           "z": 0

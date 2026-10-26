@@ -4,29 +4,25 @@ import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.content.ChiselFamilies;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
-import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.feature.OreFeature;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
-
-import java.util.List;
 
 public class ChiselConfiguredFeatures {
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> MARBLE = create("marble_configured_feature");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> LIMESTONE = create("limestone_configured_feature");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> BASALT = create("basalt_configured_feature");
+    public static final ResourceKey<Feature> MARBLE = create("marble_configured_feature");
+    public static final ResourceKey<Feature> LIMESTONE = create("limestone_configured_feature");
+    public static final ResourceKey<Feature> BASALT = create("basalt_configured_feature");
 
-    public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
-        FeatureUtils.register(context, MARBLE, Feature.ORE, new OreConfiguration(List.of(OreConfiguration.target(new BlockMatchTest(Blocks.STONE), ChiselFamilies.MARBLE.getVariant("marble_raw").get().defaultBlockState())), 32));
-        FeatureUtils.register(context, LIMESTONE, Feature.ORE, new OreConfiguration(List.of(OreConfiguration.target(new BlockMatchTest(Blocks.STONE), ChiselFamilies.LIMESTONE.getVariant("limestone_raw").get().defaultBlockState())), 32));
-        FeatureUtils.register(context, BASALT, Feature.ORE, new OreConfiguration(List.of(OreConfiguration.target(new BlockMatchTest(Blocks.STONE), ChiselFamilies.BASALT.getVariant("basalt_raw").get().defaultBlockState())), 32));
+    public static void bootstrap(BootstrapContext<Feature> context) {
+        context.register(MARBLE, new OreFeature(new BlockMatchTest(Blocks.STONE), ChiselFamilies.MARBLE.getVariant("marble_raw").get().defaultBlockState(), 32));
+        context.register(LIMESTONE, new OreFeature(new BlockMatchTest(Blocks.STONE), ChiselFamilies.LIMESTONE.getVariant("limestone_raw").get().defaultBlockState(), 32));
+        context.register(BASALT, new OreFeature(new BlockMatchTest(Blocks.STONE), ChiselFamilies.BASALT.getVariant("basalt_raw").get().defaultBlockState(), 32));
     }
 
-    private static ResourceKey<ConfiguredFeature<?, ?>> create(final String name) {
-        return ResourceKey.create(Registries.CONFIGURED_FEATURE, Chisel.prefix(name));
+    private static ResourceKey<Feature> create(final String name) {
+        return ResourceKey.create(Registries.FEATURE, Chisel.prefix(name));
     }
 }
