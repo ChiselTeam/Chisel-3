@@ -116,6 +116,562 @@
       "block": "chisel:gold_thermal",
       "model_type": "top_bottom_side",
       "name": "gold_thermal"
+    },
+    {
+      "block": "chisel:gold_array",
+      "model_type": "multiblock_2x2",
+      "name": "gold_array"
+    },
+    {
+      "block": "chisel:gold_border_square",
+      "model_type": "connected",
+      "name": "gold_border_square"
+    },
+    {
+      "block": "chisel:gold_border_square_small",
+      "model_type": "connected",
+      "name": "gold_border_square_small"
+    },
+    {
+      "block": "chisel:gold_braid",
+      "name": "gold_braid"
+    },
+    {
+      "block": "chisel:gold_braid_encased",
+      "model_type": "connected",
+      "name": "gold_braid_encased"
+    },
+    {
+      "block": "chisel:gold_bricks_cracked",
+      "name": "gold_bricks_cracked"
+    },
+    {
+      "block": "chisel:gold_bricks_encased",
+      "model_type": "connected",
+      "name": "gold_bricks_encased"
+    },
+    {
+      "block": "chisel:gold_bricks_indent",
+      "name": "gold_bricks_indent"
+    },
+    {
+      "block": "chisel:gold_bricks_inlayed",
+      "name": "gold_bricks_inlayed"
+    },
+    {
+      "block": "chisel:gold_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "gold_bricks_large"
+    },
+    {
+      "block": "chisel:gold_large_bricks",
+      "name": "gold_large_bricks"
+    },
+    {
+      "block": "chisel:gold_bricks_small",
+      "name": "gold_bricks_small"
+    },
+    {
+      "block": "chisel:gold_bricks_soft",
+      "name": "gold_bricks_soft"
+    },
+    {
+      "block": "chisel:gold_bricks_solid",
+      "name": "gold_bricks_solid"
+    },
+    {
+      "block": "chisel:gold_bricks_triple",
+      "name": "gold_bricks_triple"
+    },
+    {
+      "block": "chisel:gold_bricks_vertical",
+      "name": "gold_bricks_vertical"
+    },
+    {
+      "block": "chisel:gold_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "gold_chaotic"
+    },
+    {
+      "block": "chisel:gold_chaotic_medium",
+      "name": "gold_chaotic_medium"
+    },
+    {
+      "block": "chisel:gold_chaotic_small",
+      "name": "gold_chaotic_small"
+    },
+    {
+      "block": "chisel:gold_checker",
+      "name": "gold_checker"
+    },
+    {
+      "block": "chisel:gold_checker_small",
+      "name": "gold_checker_small"
+    },
+    {
+      "block": "chisel:gold_circular",
+      "model_type": "connected",
+      "name": "gold_circular"
+    },
+    {
+      "block": "chisel:gold_cracked",
+      "name": "gold_cracked"
+    },
+    {
+      "block": "chisel:gold_cobble",
+      "name": "gold_cobble"
+    },
+    {
+      "block": "chisel:gold_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "gold_cuts"
+    },
+    {
+      "block": "chisel:gold_dent",
+      "model_type": "connected",
+      "name": "gold_dent"
+    },
+    {
+      "block": "chisel:gold_french_1",
+      "name": "gold_french_1"
+    },
+    {
+      "block": "chisel:gold_french_2",
+      "name": "gold_french_2"
+    },
+    {
+      "block": "chisel:gold_indent",
+      "model_type": "connected",
+      "name": "gold_indent"
+    },
+    {
+      "block": "chisel:gold_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "gold_jellybean"
+    },
+    {
+      "block": "chisel:gold_layers",
+      "name": "gold_layers"
+    },
+    {
+      "block": "chisel:gold_layers_connected",
+      "model_type": "connected",
+      "name": "gold_layers_connected"
+    },
+    {
+      "block": "chisel:gold_line_horizontal",
+      "name": "gold_line_horizontal"
+    },
+    {
+      "block": "chisel:gold_line_vertical",
+      "name": "gold_line_vertical"
+    },
+    {
+      "block": "chisel:gold_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "gold_meander_horizontal"
+    },
+    {
+      "block": "chisel:gold_meander_vertical",
+      "model_type": "ctmv",
+      "name": "gold_meander_vertical"
+    },
+    {
+      "block": "chisel:gold_mosaic",
+      "model_type": "connected",
+      "name": "gold_mosaic"
+    },
+    {
+      "block": "chisel:gold_ornate_small",
+      "name": "gold_ornate_small"
+    },
+    {
+      "block": "chisel:gold_panel",
+      "name": "gold_panel"
+    },
+    {
+      "block": "chisel:gold_pillar",
+      "model_type": "top_bottom_side",
+      "name": "gold_pillar"
+    },
+    {
+      "block": "chisel:gold_pillar_basic",
+      "model_type": "ctmv",
+      "name": "gold_pillar_basic"
+    },
+    {
+      "block": "chisel:gold_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "gold_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:gold_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "gold_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:gold_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "gold_pillar_basic_round"
+    },
+    {
+      "block": "chisel:gold_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "gold_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:gold_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "gold_pillar_classic"
+    },
+    {
+      "block": "chisel:gold_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "gold_pillar_classic_large"
+    },
+    {
+      "block": "chisel:gold_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "gold_pillar_ionic"
+    },
+    {
+      "block": "chisel:gold_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "gold_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:gold_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "gold_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:gold_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "gold_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:gold_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "gold_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:gold_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "gold_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:gold_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "gold_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:gold_pillar_meander",
+      "model_type": "ctmv",
+      "name": "gold_pillar_meander"
+    },
+    {
+      "block": "chisel:gold_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "gold_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:gold_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "gold_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:gold_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "gold_pillar_meander_round"
+    },
+    {
+      "block": "chisel:gold_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "gold_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:gold_plate",
+      "name": "gold_plate"
+    },
+    {
+      "block": "chisel:gold_plate_connected",
+      "model_type": "connected",
+      "name": "gold_plate_connected"
+    },
+    {
+      "block": "chisel:gold_polished",
+      "name": "gold_polished"
+    },
+    {
+      "block": "chisel:gold_polished_encased",
+      "model_type": "connected",
+      "name": "gold_polished_encased"
+    },
+    {
+      "block": "chisel:gold_prism",
+      "name": "gold_prism"
+    },
+    {
+      "block": "chisel:gold_raw",
+      "name": "gold_raw"
+    },
+    {
+      "block": "chisel:gold_road",
+      "name": "gold_road"
+    },
+    {
+      "block": "chisel:gold_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "gold_slanted"
+    },
+    {
+      "block": "chisel:gold_tiles",
+      "name": "gold_tiles"
+    },
+    {
+      "block": "chisel:gold_tiles_large",
+      "model_type": "connected",
+      "name": "gold_tiles_large"
+    },
+    {
+      "block": "chisel:gold_tiles_small",
+      "name": "gold_tiles_small"
+    },
+    {
+      "block": "chisel:gold_twisted",
+      "model_type": "top_bottom_side",
+      "name": "gold_twisted"
+    },
+    {
+      "block": "chisel:gold_weaver",
+      "model_type": "connected",
+      "name": "gold_weaver"
+    },
+    {
+      "block": "chisel:gold_zag",
+      "model_type": "v4",
+      "name": "gold_zag"
+    },
+    {
+      "block": "chisel:gold_crate",
+      "model_type": "connected",
+      "name": "gold_crate"
+    },
+    {
+      "block": "chisel:gold_herringbone",
+      "name": "gold_herringbone"
+    },
+    {
+      "block": "chisel:gold_herringbone_encased",
+      "model_type": "connected",
+      "name": "gold_herringbone_encased"
+    },
+    {
+      "block": "chisel:gold_medallion",
+      "name": "gold_medallion"
+    },
+    {
+      "block": "chisel:gold_medallion_encased",
+      "model_type": "connected",
+      "name": "gold_medallion_encased"
+    },
+    {
+      "block": "chisel:gold_dots",
+      "name": "gold_dots"
+    },
+    {
+      "block": "chisel:gold_dots_encased",
+      "model_type": "connected",
+      "name": "gold_dots_encased"
+    },
+    {
+      "block": "chisel:gold_heart",
+      "name": "gold_heart"
+    },
+    {
+      "block": "chisel:gold_star",
+      "name": "gold_star"
+    },
+    {
+      "block": "chisel:gold_plating",
+      "name": "gold_plating"
+    },
+    {
+      "block": "chisel:gold_lodestone",
+      "name": "gold_lodestone"
+    },
+    {
+      "block": "chisel:gold_lodestone_connected",
+      "model_type": "connected",
+      "name": "gold_lodestone_connected"
+    },
+    {
+      "block": "chisel:gold_plank",
+      "name": "gold_plank"
+    },
+    {
+      "block": "chisel:gold_plank_connected",
+      "model_type": "connected",
+      "name": "gold_plank_connected"
+    },
+    {
+      "block": "chisel:gold_frame",
+      "name": "gold_frame"
+    },
+    {
+      "block": "chisel:gold_panel_1",
+      "name": "gold_panel_1"
+    },
+    {
+      "block": "chisel:gold_panel_2",
+      "name": "gold_panel_2"
+    },
+    {
+      "block": "chisel:gold_panel_3",
+      "name": "gold_panel_3"
+    },
+    {
+      "block": "chisel:gold_skull_creeper",
+      "name": "gold_skull_creeper"
+    },
+    {
+      "block": "chisel:gold_skull_skeleton",
+      "name": "gold_skull_skeleton"
+    },
+    {
+      "block": "chisel:gold_stripes",
+      "name": "gold_stripes"
+    },
+    {
+      "block": "chisel:gold_stripes_encased",
+      "model_type": "connected",
+      "name": "gold_stripes_encased"
+    },
+    {
+      "block": "chisel:gold_chisel_1",
+      "name": "gold_chisel_1"
+    },
+    {
+      "block": "chisel:gold_chisel_2",
+      "name": "gold_chisel_2"
+    },
+    {
+      "block": "chisel:gold_chisel_3",
+      "name": "gold_chisel_3"
+    },
+    {
+      "block": "chisel:gold_chisel_4",
+      "name": "gold_chisel_4"
+    },
+    {
+      "block": "chisel:gold_chisel_5",
+      "name": "gold_chisel_5"
+    },
+    {
+      "block": "chisel:gold_chisel_6",
+      "name": "gold_chisel_6"
+    },
+    {
+      "block": "chisel:gold_facet",
+      "name": "gold_facet"
+    },
+    {
+      "block": "chisel:gold_facet_small",
+      "name": "gold_facet_small"
+    },
+    {
+      "block": "chisel:gold_facet_small_encased",
+      "model_type": "connected",
+      "name": "gold_facet_small_encased"
+    },
+    {
+      "block": "chisel:gold_shiny",
+      "name": "gold_shiny"
+    },
+    {
+      "block": "chisel:gold_shiny_connected",
+      "model_type": "connected",
+      "name": "gold_shiny_connected"
+    },
+    {
+      "block": "chisel:gold_gem",
+      "name": "gold_gem"
+    },
+    {
+      "block": "chisel:gold_gem_1",
+      "name": "gold_gem_1"
+    },
+    {
+      "block": "chisel:gold_gem_1_connected",
+      "model_type": "connected",
+      "name": "gold_gem_1_connected"
+    },
+    {
+      "block": "chisel:gold_gem_2",
+      "name": "gold_gem_2"
+    },
+    {
+      "block": "chisel:gold_gem_2_connected",
+      "model_type": "connected",
+      "name": "gold_gem_2_connected"
+    },
+    {
+      "block": "chisel:gold_gem_3",
+      "name": "gold_gem_3"
+    },
+    {
+      "block": "chisel:gold_gem_3_connected",
+      "model_type": "connected",
+      "name": "gold_gem_3_connected"
+    },
+    {
+      "block": "chisel:gold_bricks_square",
+      "name": "gold_bricks_square"
+    },
+    {
+      "block": "chisel:gold_slab",
+      "name": "gold_slab"
+    },
+    {
+      "block": "chisel:gold_scaffold_2",
+      "name": "gold_scaffold_2"
+    },
+    {
+      "block": "chisel:gold_scaffold_encased_2",
+      "model_type": "connected",
+      "name": "gold_scaffold_encased_2"
+    },
+    {
+      "block": "chisel:gold_tiles_inlayed",
+      "name": "gold_tiles_inlayed"
+    },
+    {
+      "block": "chisel:gold_waves",
+      "model_type": "multiblock_2x2",
+      "name": "gold_waves"
+    },
+    {
+      "block": "chisel:gold_parquet",
+      "name": "gold_parquet"
+    },
+    {
+      "block": "chisel:gold_parquet_encased",
+      "model_type": "connected",
+      "name": "gold_parquet_encased"
+    },
+    {
+      "block": "chisel:gold_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "gold_bricks_large_rough"
+    },
+    {
+      "block": "chisel:gold_tiles_small_encased",
+      "model_type": "connected",
+      "name": "gold_tiles_small_encased"
+    },
+    {
+      "block": "chisel:gold_bricks_round",
+      "name": "gold_bricks_round"
     }
   ]
 }
