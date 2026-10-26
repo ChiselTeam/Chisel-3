@@ -119,6 +119,7 @@ public class ChiselTabs {
                         ChiselFamilies.WARNING.getFamily(),
                         ChiselFamilies.COAL.getFamily(),
                         ChiselFamilies.SULFUR.getFamily(),
+                        ChiselFamilies.CINNABAR.getFamily(),
                         ChiselFamilies.RAW_COPPER.getFamily(),
                         ChiselFamilies.COPPER.getFamily(),
                         ChiselFamilies.EXPOSED_COPPER.getFamily(),

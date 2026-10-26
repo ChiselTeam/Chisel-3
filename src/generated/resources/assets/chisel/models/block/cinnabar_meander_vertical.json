@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/cinnabar/cinnabar_meander_vertical-side",
+    "bottom": "chisel:block/cinnabar/cinnabar_meander_vertical-top",
+    "particle": "chisel:block/cinnabar/cinnabar_meander_vertical-side",
+    "side": "chisel:block/cinnabar/cinnabar_meander_vertical-side",
+    "top": "chisel:block/cinnabar/cinnabar_meander_vertical-top",
+    "vertical_both": "chisel:block/cinnabar/cinnabar_meander_vertical-vertical_both",
+    "vertical_bottom": "chisel:block/cinnabar/cinnabar_meander_vertical-vertical_bottom",
+    "vertical_none": "chisel:block/cinnabar/cinnabar_meander_vertical-side",
+    "vertical_top": "chisel:block/cinnabar/cinnabar_meander_vertical-vertical_top"
+  }
+}
