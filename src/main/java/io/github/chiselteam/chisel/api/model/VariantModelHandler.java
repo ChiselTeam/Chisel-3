@@ -2,12 +2,12 @@ package io.github.chiselteam.chisel.api.model;
 
 import io.github.chiselteam.ctm.api.strategy.CTMKind;
 import net.minecraft.util.StringRepresentable;
-import org.jspecify.annotations.NonNull;
-import org.jspecify.annotations.Nullable;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public interface VariantModelHandler extends StringRepresentable {
     @Override
-    @NonNull String getSerializedName();
+    @NotNull String getSerializedName();
 
     /**
      * Side length of the multiblock tiling for multiblock-CTM handlers (2/3/4), or 0 otherwise.

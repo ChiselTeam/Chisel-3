@@ -15,12 +15,12 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.inventory.ContainerInput;
+import net.minecraft.world.inventory.ClickType;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.CustomData;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 public class ChiselMenu extends AbstractContainerMenu {
 
@@ -43,9 +43,11 @@ public class ChiselMenu extends AbstractContainerMenu {
         );
 
         addVariantSlots();
-        addStandardInventorySlots(inventory, 59, 151);
+        for (int row=0; row<3; row++) for (int column=0; column<9; column++)
+            addSlot(new Slot(inventory, 9 + row*9 + column, 59 + column*18, 151 + row*18));
+        for (int column=0; column<9; column++) addSlot(new Slot(inventory, column, 59 + column*18, 209));
 
-        if (!inventory.player.level().isClientSide()) {
+        if (!inventory.player.level().isClientSide) {
             loadPersistence();
         }
     }
@@ -62,10 +64,10 @@ public class ChiselMenu extends AbstractContainerMenu {
     }
 
     @Override
-    public void removed(@NonNull Player player) {
+    public void removed(@NotNull Player player) {
         super.removed(player);
-        if (player.level().isClientSide()) return;
-        takeWorking(safeWorkingStack().count());
+        if (player.level().isClientSide) return;
+        takeWorking(safeWorkingStack().getCount());
         if (container.chisel.isEmpty()) clearContainer(player, container);
         else savePersistence();
     }
@@ -75,7 +77,7 @@ public class ChiselMenu extends AbstractContainerMenu {
     }
 
     private void savePersistence(ItemStack stack) {
-        if (container.inventory.player.level().isClientSide() || container.chisel.isEmpty()) return;
+        if (container.inventory.player.level().isClientSide || container.chisel.isEmpty()) return;
         if (stack.isEmpty()) {
             container.chisel.update(DataComponents.CUSTOM_DATA, CustomData.EMPTY, data -> {
                 CompoundTag tag = data.copyTag();
@@ -113,7 +115,7 @@ public class ChiselMenu extends AbstractContainerMenu {
     }
 
     @Override
-    public @NonNull ItemStack quickMoveStack(@NonNull Player player, int slotIndex) {
+    public @NotNull ItemStack quickMoveStack(@NotNull Player player, int slotIndex) {
         if (slotIndex < ChiselSelectionInventory.VISIBLE_SIZE) return ItemStack.EMPTY;
         Slot slot = slots.get(slotIndex);
         if (!slot.hasItem()) return ItemStack.EMPTY;
@@ -139,7 +141,7 @@ public class ChiselMenu extends AbstractContainerMenu {
     }
 
     @Override
-    public void clicked(int slotIndex, int buttonNum, @NonNull ContainerInput containerInput, @NonNull Player player) {
+    public void clicked(int slotIndex, int buttonNum, @NotNull ClickType containerInput, @NotNull Player player) {
         if (slotIndex == ChiselSelectionInventory.VISIBLE_SIZE && isWholeStackReplacement(containerInput)) {
             ItemStack working = inputSlot.getItem();
             if (!working.isEmpty() && getAffordableRemoval(working.getCount()) < working.getCount()) return;
@@ -147,9 +149,9 @@ public class ChiselMenu extends AbstractContainerMenu {
         super.clicked(slotIndex, buttonNum, containerInput, player);
     }
 
-    private boolean isWholeStackReplacement(ContainerInput input) {
-        if (input == ContainerInput.SWAP) return true;
-        return input == ContainerInput.PICKUP && !getCarried().isEmpty()
+    private boolean isWholeStackReplacement(ClickType input) {
+        if (input == ClickType.SWAP) return true;
+        return input == ClickType.PICKUP && !getCarried().isEmpty()
                 && !ItemStack.isSameItemSameComponents(inputSlot.getItem(), getCarried());
     }
 
@@ -194,7 +196,7 @@ public class ChiselMenu extends AbstractContainerMenu {
             converted += amount;
         }
 
-        converted += safeWorkingStack().count();
+        converted += safeWorkingStack().getCount();
 
         if (converted <= 0) return;
         savePersistence(safeWorkingStack());
@@ -243,7 +245,7 @@ public class ChiselMenu extends AbstractContainerMenu {
     }
 
     @Override
-    public boolean stillValid(@NonNull Player player) {
+    public boolean stillValid(@NotNull Player player) {
         return player.getItemInHand(container.hand) == container.chisel;
     }
 }

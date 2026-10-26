@@ -1,0 +1,11 @@
+{
+  "connected_faces": [
+    "all"
+  ],
+  "loader": "ctm:connected_texture_model",
+  "model_location": "chisel:block/dn_stained_glass_fluorescent_line_horizontal_panel",
+  "variant": {
+    "block": "chisel:dn_stained_glass_fluorescent_line_horizontal_panel",
+    "kind": "standard"
+  }
+}

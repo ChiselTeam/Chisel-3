@@ -6,7 +6,7 @@ import io.netty.buffer.ByteBuf;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.codec.StreamCodec;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,19 +15,19 @@ import java.util.Objects;
 
 public class ChiselBuildingMode {
 
-    public static final Codec<ChiselBuildingMode> CODEC = Identifier.CODEC.xmap(
+    public static final Codec<ChiselBuildingMode> CODEC = ResourceLocation.CODEC.xmap(
             id -> ChiselBuildingModes.REGISTRY.getOptional(id).orElseGet(() -> new ChiselBuildingMode(id)),
             ChiselBuildingMode::getRegistryName
     );
 
-    public static final StreamCodec<ByteBuf, ChiselBuildingMode> STREAM_CODEC = Identifier.STREAM_CODEC.map(
+    public static final StreamCodec<ByteBuf, ChiselBuildingMode> STREAM_CODEC = ResourceLocation.STREAM_CODEC.map(
             id -> ChiselBuildingModes.REGISTRY.getOptional(id).orElseGet(() -> new ChiselBuildingMode(id)),
             ChiselBuildingMode::getRegistryName
     );
 
-    private final Identifier registryName;
+    private final ResourceLocation registryName;
 
-    public ChiselBuildingMode(Identifier registryName) {
+    public ChiselBuildingMode(ResourceLocation registryName) {
         this.registryName = registryName;
     }
 
@@ -77,7 +77,7 @@ public class ChiselBuildingMode {
         return Collections.singletonList(origin);
     }
 
-    public Identifier getRegistryName() {
+    public ResourceLocation getRegistryName() {
         return registryName;
     }
 

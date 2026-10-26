@@ -1,45 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "type": "ctm:connected_texture_model",
-      "connected_faces": [
-        "down",
-        "up"
-      ],
-      "model_location": "chisel:block/andesite_pillar_meander_spiral",
-      "render_overlay_on_all_faces": true,
-      "variant": {
-        "block": "chisel:andesite_pillar_meander_spiral",
-        "kind": "ctmv"
-      },
+      "model": "chisel:block/ctm/andesite_pillar_meander_spiral",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "type": "ctm:connected_texture_model",
-      "connected_faces": [
-        "down",
-        "up"
-      ],
-      "model_location": "chisel:block/andesite_pillar_meander_spiral",
-      "render_overlay_on_all_faces": true,
-      "variant": {
-        "block": "chisel:andesite_pillar_meander_spiral",
-        "kind": "ctmv"
-      }
+      "model": "chisel:block/ctm/andesite_pillar_meander_spiral"
     },
     "axis=z": {
-      "type": "ctm:connected_texture_model",
-      "connected_faces": [
-        "down",
-        "up"
-      ],
-      "model_location": "chisel:block/andesite_pillar_meander_spiral",
-      "render_overlay_on_all_faces": true,
-      "variant": {
-        "block": "chisel:andesite_pillar_meander_spiral",
-        "kind": "ctmv"
-      },
+      "model": "chisel:block/ctm/andesite_pillar_meander_spiral",
       "x": 90
     }
   }

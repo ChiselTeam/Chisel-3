@@ -6,16 +6,14 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
-import net.neoforged.neoforge.transfer.ResourceHandler;
-import net.neoforged.neoforge.transfer.item.ItemResource;
-import net.neoforged.neoforge.transfer.transaction.Transaction;
-import org.jspecify.annotations.Nullable;
+import net.neoforged.neoforge.items.IItemHandler;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TrowelMaterials {
-    static List<Candidate> candidates(PaletteDefinition palette, @Nullable ResourceHandler<ItemResource> source) {
+    static List<Candidate> candidates(PaletteDefinition palette, @Nullable IItemHandler source) {
         var candidates = new ArrayList<Candidate>();
         for (var entry : palette.entries()) {
             if (!entry.enabled()) continue;
@@ -25,12 +23,12 @@ public class TrowelMaterials {
                 candidates.add(new Candidate(new ItemStack(item), entry.weight(), -1));
                 continue;
             }
-            for (int slot = 0; slot < source.size(); slot++) {
-                var resource = source.getResource(slot);
+            for (int slot = 0; slot < source.getSlots(); slot++) {
+                var resource = source.getStackInSlot(slot);
                 if (resource.isEmpty() || resource.getItem() != item) continue;
-                try (var transaction = Transaction.openRoot()) {
-                    if (source.extract(slot, resource, 1, transaction) == 1) {
-                        candidates.add(new Candidate(resource.toStack(1), entry.weight(), slot));
+                {
+                    if (source.extractItem(slot, 1, true).getCount() == 1) {
+                        candidates.add(new Candidate(resource.copyWithCount(1), entry.weight(), slot));
                         break;
                     }
                 }

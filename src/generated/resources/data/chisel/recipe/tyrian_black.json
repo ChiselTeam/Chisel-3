@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "R": "#c:ingots/iron",
-    "S": "#c:stones"
+    "R": {
+      "tag": "c:ingots/iron"
+    },
+    "S": {
+      "tag": "c:stones"
+    }
   },
   "pattern": [
     "SSS",

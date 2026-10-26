@@ -2,9 +2,15 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:stone_pickaxe",
-    "minecraft:glass_bottle",
-    "minecraft:stone_shovel"
+    {
+      "item": "minecraft:stone_pickaxe"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "minecraft:stone_shovel"
+    }
   ],
   "result": {
     "count": 16,

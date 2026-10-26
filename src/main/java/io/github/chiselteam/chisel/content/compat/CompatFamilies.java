@@ -5,8 +5,8 @@ import io.github.chiselteam.chisel.content.compat.allthemods.AtmAncientStoneFami
 import io.github.chiselteam.chisel.content.compat.appliedenergistics.Ae2CertusFamily;
 import io.github.chiselteam.chisel.content.compat.appliedenergistics.Ae2SkyStoneFamily;
 import io.github.chiselteam.chisel.content.compat.dyenamics.DnConcreteFamily;
-import io.github.chiselteam.chisel.content.compat.dyenamics.DnStainedGlassFamily;
 import io.github.chiselteam.chisel.content.compat.dyenamics.DnOakFramedStainedGlassFamily;
+import io.github.chiselteam.chisel.content.compat.dyenamics.DnStainedGlassFamily;
 import io.github.chiselteam.chisel.content.compat.dyenamics.DnSteelFramedStainedGlassFamily;
 import io.github.chiselteam.chisel.content.compat.neovitae.NvRuneFamily;
 import io.github.chiselteam.chisel.content.compat.thaumaturge.TTArcaneStoneFamily;

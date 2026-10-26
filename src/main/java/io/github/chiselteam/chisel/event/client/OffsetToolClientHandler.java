@@ -9,7 +9,7 @@ import net.minecraft.world.phys.Vec3;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.client.event.ExtractBlockOutlineRenderStateEvent;
+import net.neoforged.neoforge.client.event.RenderHighlightEvent;
 
 @EventBusSubscriber(modid = Chisel.MODID, value = Dist.CLIENT)
 public class OffsetToolClientHandler {
@@ -23,14 +23,14 @@ public class OffsetToolClientHandler {
     }
 
     @SubscribeEvent
-    public static void onBlockHighlight(ExtractBlockOutlineRenderStateEvent event) {
-        Vec3 cameraPos = event.getCamera().position();
-        BlockPos blockPos = event.getBlockPos();
+    public static void onBlockHighlight(RenderHighlightEvent.Block event) {
+        Vec3 cameraPos = event.getCamera().getPosition();
+        BlockPos blockPos = event.getTarget().getBlockPos();
         Vec3 cameraRelativePos = new Vec3(
                 blockPos.getX() - cameraPos.x,
                 blockPos.getY() - cameraPos.y,
                 blockPos.getZ() - cameraPos.z
         );
-        event.addCustomRenderer(new ChiselOffsetToolOutlineRenderer(event.getHitResult(), cameraRelativePos));
+        new ChiselOffsetToolOutlineRenderer(event.getTarget(), cameraRelativePos).render(event.getMultiBufferSource(), event.getPoseStack());
     }
 }

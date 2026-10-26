@@ -1,26 +1,21 @@
 package io.github.chiselteam.chisel.datagen.model;
 
-import net.minecraft.client.renderer.block.dispatch.multipart.CombinedCondition;
-import net.minecraft.client.renderer.block.dispatch.multipart.Condition;
+import net.minecraft.data.models.blockstates.Condition;
 import net.minecraft.world.level.block.state.properties.Property;
 
-import java.util.List;
-
-import static net.minecraft.client.data.models.BlockModelGenerators.condition;
-import static net.minecraft.client.renderer.block.dispatch.multipart.CombinedCondition.Operation.AND;
-import static net.minecraft.client.renderer.block.dispatch.multipart.CombinedCondition.Operation.OR;
+import static io.github.chiselteam.chisel.datagen.model.BlockModels.condition;
 
 public class ModelHelpers {
 
     public static Condition centerCondition(Property<Boolean> direction, Property<Boolean> opposite, Property<Boolean> perpendicularA, Property<Boolean> perpendicularB) {
-        return new CombinedCondition(AND, List.of(
-                condition().term(direction, false).build(),
-                new CombinedCondition(OR, List.of(
-                        condition().term(opposite, false).build(),
-                        condition().term(perpendicularA, true).build(),
-                        condition().term(perpendicularB, true).build()
-                ))
-        ));
+        return Condition.and(
+                condition().term(direction, false),
+                Condition.or(
+                        condition().term(opposite, false),
+                        condition().term(perpendicularA, true),
+                        condition().term(perpendicularB, true)
+                )
+        );
     }
 
     public static Condition endCondition(Property<Boolean> direction, Property<Boolean> opposite, Property<Boolean> perpendicularA, Property<Boolean> perpendicularB) {
@@ -29,6 +24,6 @@ public class ModelHelpers {
                 .term(opposite, true)
                 .term(perpendicularA, false)
                 .term(perpendicularB, false)
-                .build();
+                ;
     }
 }

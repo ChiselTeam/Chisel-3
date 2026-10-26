@@ -34,7 +34,7 @@ public final class VariantFamilyLookup {
     public static Collection<VariantFamily> getFamilies(RegistryAccess registryAccess) {
         LinkedHashSet<VariantFamily> families = new LinkedHashSet<>();
         if (registryAccess != null)
-            registryAccess.lookup(ChiselVariantFamilies.KEY).ifPresent(registry -> registry.forEach(families::add));
+            registryAccess.registry(ChiselVariantFamilies.KEY).ifPresent(registry -> registry.forEach(families::add));
         families.addAll(ChiselVariantFamilies.getVariantFamilies());
         families.addAll(AddonFamilyRegistry.getFamilies());
         return List.copyOf(families);

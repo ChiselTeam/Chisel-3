@@ -1,0 +1,7 @@
+{
+  "loader": "ctm:eldritch_model",
+  "model": {
+    "type": "minecraft:model",
+    "model": "chisel:block/mossy_temple_tiles_small"
+  }
+}

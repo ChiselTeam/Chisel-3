@@ -5,8 +5,8 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
-import net.minecraft.resources.Identifier;
-import org.jspecify.annotations.NonNull;
+import net.minecraft.resources.ResourceLocation;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -22,12 +22,12 @@ public abstract class HandbookGuideProvider implements DataProvider {
         this.registries = registries;
     }
 
-    protected abstract void buildGuides(BiConsumer<Identifier, HandbookGuide> output);
+    protected abstract void buildGuides(BiConsumer<ResourceLocation, HandbookGuide> output);
 
     @Override
-    public @NonNull CompletableFuture<?> run(@NonNull CachedOutput cache) {
+    public @NotNull CompletableFuture<?> run(@NotNull CachedOutput cache) {
         return registries.thenCompose(lookup -> {
-            Map<Identifier, HandbookGuide> guides = new LinkedHashMap<>();
+            Map<ResourceLocation, HandbookGuide> guides = new LinkedHashMap<>();
             buildGuides((id, guide) -> {
                 if (guides.putIfAbsent(id, guide) != null)
                     throw new IllegalStateException("Duplicate handbook guide: " + id);
@@ -39,7 +39,7 @@ public abstract class HandbookGuideProvider implements DataProvider {
     }
 
     @Override
-    public @NonNull String getName() {
+    public @NotNull String getName() {
         return "Handbook Guides";
     }
 }

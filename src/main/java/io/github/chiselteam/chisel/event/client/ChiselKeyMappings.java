@@ -12,7 +12,7 @@ import org.lwjgl.glfw.GLFW;
 @EventBusSubscriber(modid = Chisel.MODID, value = Dist.CLIENT)
 public class ChiselKeyMappings {
 
-    public static final KeyMapping.Category CATEGORY = new KeyMapping.Category(Chisel.prefix("chisel"));
+    public static final String CATEGORY = "key.categories.chisel";
     public static final KeyMapping MODE_SELECT = new KeyMapping(
             "key.chisel.mode_select",
             InputConstants.Type.KEYSYM,
@@ -22,7 +22,6 @@ public class ChiselKeyMappings {
 
     @SubscribeEvent
     public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
-        event.registerCategory(CATEGORY);
         event.register(MODE_SELECT);
     }
 }

@@ -4,7 +4,7 @@ import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.guide.HandbookGuide;
 import io.github.chiselteam.chisel.guide.section.palette.PaletteRole;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 
 import java.util.function.BiConsumer;
 
@@ -12,7 +12,7 @@ public final class GettingStartedGuides {
     private GettingStartedGuides() {
     }
 
-    public static void generate(BiConsumer<Identifier, HandbookGuide> output) {
+    public static void generate(BiConsumer<ResourceLocation, HandbookGuide> output) {
         output.accept(Chisel.prefix("planning_your_build"), planning());
         output.accept(Chisel.prefix("understanding_block_palettes"), palettes());
         output.accept(Chisel.prefix("adding_shape_and_depth"), depth());
@@ -22,7 +22,7 @@ public final class GettingStartedGuides {
     }
 
     private static HandbookGuideBuilder lesson(String id, String icon, int order) {
-        return HandbookGuideBuilder.builder(t(id, "title"), Identifier.withDefaultNamespace(icon))
+        return HandbookGuideBuilder.builder(t(id, "title"), ResourceLocation.withDefaultNamespace(icon))
                 .description(t(id, "description"))
                 .category(Chisel.prefix("getting_started"))
                 .sortOrder(order)
@@ -65,11 +65,11 @@ public final class GettingStartedGuides {
                 .text(t(id, "contrast"))
                 .text(t(id, "density"))
                 .palette(t(id, "weathered_stone"), palette -> palette
-                        .entry(Identifier.withDefaultNamespace("stone_bricks"), PaletteRole.PRIMARY, 55)
-                        .entry(Identifier.withDefaultNamespace("cobblestone"), PaletteRole.SECONDARY, 20)
-                        .entry(Identifier.withDefaultNamespace("andesite"), PaletteRole.SECONDARY, 12)
-                        .entry(Identifier.withDefaultNamespace("cracked_stone_bricks"), PaletteRole.ACCENT, 8)
-                        .entry(Identifier.withDefaultNamespace("mossy_stone_bricks"), PaletteRole.RARE, 5))
+                        .entry(ResourceLocation.withDefaultNamespace("stone_bricks"), PaletteRole.PRIMARY, 55)
+                        .entry(ResourceLocation.withDefaultNamespace("cobblestone"), PaletteRole.SECONDARY, 20)
+                        .entry(ResourceLocation.withDefaultNamespace("andesite"), PaletteRole.SECONDARY, 12)
+                        .entry(ResourceLocation.withDefaultNamespace("cracked_stone_bricks"), PaletteRole.ACCENT, 8)
+                        .entry(ResourceLocation.withDefaultNamespace("mossy_stone_bricks"), PaletteRole.RARE, 5))
                 .text(t(id, "weights"))
                 .tip(t(id, "variation_tip"));
         return finish(guide, id).build();

@@ -8,7 +8,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import net.neoforged.neoforge.registries.DeferredHolder;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 public class SparklyConnectedTextureBlock extends ConnectedTextureBlock {
 
@@ -20,7 +20,7 @@ public class SparklyConnectedTextureBlock extends ConnectedTextureBlock {
     }
 
     @Override
-    public void animateTick(@NonNull BlockState state, @NonNull Level level, @NonNull BlockPos pos, @NonNull RandomSource random) {
+    public void animateTick(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull RandomSource random) {
         super.animateTick(state, level, pos, random);
 
         if(random.nextInt(4) == 0) {
@@ -63,7 +63,7 @@ public class SparklyConnectedTextureBlock extends ConnectedTextureBlock {
                     break;
             }
 
-            if (level.getBlockState(pos.offset(dx, dy, dz)).isSolidRender()) {
+            if (level.getBlockState(pos.offset(dx, dy, dz)).isSolidRender(level, pos.offset(dx, dy, dz))) {
                 return;
             }
 

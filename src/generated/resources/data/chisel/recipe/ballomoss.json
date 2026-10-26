@@ -2,10 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "S": "#c:rods/wooden",
+    "S": {
+      "tag": "c:rods/wooden"
+    },
     "V": [
-      "minecraft:vine",
-      "minecraft:moss_block"
+      {
+        "item": "minecraft:vine"
+      },
+      {
+        "item": "minecraft:moss_block"
+      }
     ]
   },
   "pattern": [
@@ -14,6 +20,7 @@
     "VSV"
   ],
   "result": {
+    "count": 1,
     "id": "chisel:ballomoss"
   }
 }

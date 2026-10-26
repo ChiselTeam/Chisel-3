@@ -12,7 +12,6 @@ import io.github.chiselteam.chisel.datagen.model.generator.special.lavastone.Lav
 import io.github.chiselteam.chisel.datagen.model.generator.special.waterstone.WaterstoneARModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.generator.special.waterstone.WaterstoneModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.generator.special.waterstone.WaterstoneMultiblockModelGenerator;
-import net.minecraft.client.data.models.BlockModelGenerators;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -113,7 +112,7 @@ public class ChiselVariantModelGenerators {
             throw new IllegalStateException("Duplicate model generator: %s".formatted(handler.getSerializedName()));
     }
 
-    public static void generate(Variant variant, BlockModelGenerators blockModels) {
+    public static void generate(Variant variant, BlockModels blockModels) {
         var handler = variant.getModelHandler();
         var factory = GENERATORS.get(handler.getSerializedName());
         if (factory == null)

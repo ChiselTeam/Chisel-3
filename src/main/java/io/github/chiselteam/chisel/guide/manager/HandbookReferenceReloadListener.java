@@ -2,11 +2,11 @@ package io.github.chiselteam.chisel.guide.manager;
 
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.server.packs.resources.ResourceManagerReloadListener;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 public final class HandbookReferenceReloadListener implements ResourceManagerReloadListener {
     @Override
-    public void onResourceManagerReload(@NonNull ResourceManager manager) {
+    public void onResourceManagerReload(@NotNull ResourceManager manager) {
         var categories = ServerHandbookManager.getCategories();
         ServerHandbookManager.getGuides().forEach((id, guide) ->
                 guide.categories().stream().distinct().filter(category -> !categories.containsKey(category))

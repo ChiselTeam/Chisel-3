@@ -2,13 +2,20 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:deepslate",
+    {
+      "item": "minecraft:deepslate"
+    },
     [
-      "minecraft:vine",
-      "minecraft:moss_block"
+      {
+        "item": "minecraft:vine"
+      },
+      {
+        "item": "minecraft:moss_block"
+      }
     ]
   ],
   "result": {
+    "count": 1,
     "id": "chisel:mossy_deepslate_raw"
   }
 }

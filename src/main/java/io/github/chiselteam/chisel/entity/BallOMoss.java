@@ -9,14 +9,14 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.projectile.throwableitemprojectile.ThrowableItemProjectile;
+import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.neoforged.neoforge.network.PacketDistributor;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 public class BallOMoss extends ThrowableItemProjectile {
     public BallOMoss(EntityType<? extends BallOMoss> type, Level level) {
@@ -24,15 +24,17 @@ public class BallOMoss extends ThrowableItemProjectile {
     }
 
     public BallOMoss(Level level, double x, double y, double z, ItemStack stack) {
-        super(ChiselEntities.BALL_O_MOSS.get(), x, y, z, level, stack);
+        super(ChiselEntities.BALL_O_MOSS.get(), x, y, z, level);
+        setItem(stack);
     }
 
     public BallOMoss(ServerLevel serverLevel, LivingEntity livingEntity, ItemStack stack) {
-        super(ChiselEntities.BALL_O_MOSS.get(), livingEntity, serverLevel, stack);
+        super(ChiselEntities.BALL_O_MOSS.get(), livingEntity, serverLevel);
+        setItem(stack);
     }
 
     @Override
-    protected void onHitBlock(@NonNull BlockHitResult result) {
+    protected void onHitBlock(@NotNull BlockHitResult result) {
         super.onHitBlock(result);
         BlockPos pos = result.getBlockPos();
         level().playSound(null, pos, ChiselSounds.SQUASH.value(), SoundSource.NEUTRAL);
@@ -69,7 +71,7 @@ public class BallOMoss extends ThrowableItemProjectile {
     }
 
     @Override
-    protected @NonNull Item getDefaultItem() {
+    protected @NotNull Item getDefaultItem() {
         return ChiselItems.BALL_O_MOSS.get();
     }
 }

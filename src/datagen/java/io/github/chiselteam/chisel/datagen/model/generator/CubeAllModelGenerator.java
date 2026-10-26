@@ -1,18 +1,16 @@
 package io.github.chiselteam.chisel.datagen.model.generator;
 
 import io.github.chiselteam.chisel.api.family.Variant;
+import io.github.chiselteam.chisel.datagen.model.BlockModels;
 import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
-import io.github.chiselteam.chisel.datagen.model.blockstate.EldritchBlockStateModelBuilder;
-import net.minecraft.client.data.models.BlockModelGenerators;
-import net.minecraft.client.data.models.MultiVariant;
-import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
-import net.minecraft.client.data.models.model.TextureMapping;
-import net.minecraft.client.data.models.model.TextureSlot;
-import net.minecraft.client.data.models.model.TexturedModel;
-import net.minecraft.resources.Identifier;
+import net.minecraft.data.models.blockstates.MultiVariantGenerator;
+import net.minecraft.data.models.model.TextureMapping;
+import net.minecraft.data.models.model.TextureSlot;
+import net.minecraft.data.models.model.TexturedModel;
+import net.minecraft.resources.ResourceLocation;
 
-import static net.minecraft.client.data.models.BlockModelGenerators.plainVariant;
+import static io.github.chiselteam.chisel.datagen.model.BlockModels.plainVariant;
 
 public class CubeAllModelGenerator extends VariantModelGenerator {
     @Override
@@ -21,18 +19,16 @@ public class CubeAllModelGenerator extends VariantModelGenerator {
     }
 
     @Override
-    public void generate(Variant variant, BlockModelGenerators blockModels) {
+    public void generate(Variant variant, BlockModels blockModels) {
         super.generate(variant, blockModels);
         TexturedModel texturedModel = TexturedModel.CUBE.updateTexture(
                 map -> map.put(TextureSlot.ALL, VariantTextures.get(variant))
         ).get(getBlock());
-        Identifier modelLocation = texturedModel.create(getBlock(), blockModels.modelOutput);
+        ResourceLocation modelLocation = texturedModel.create(getBlock(), blockModels.modelOutput);
         if (variant.isEldritch()) {
-            MultiVariant inner = plainVariant(modelLocation);
-            EldritchBlockStateModelBuilder eldritchBuilder = new EldritchBlockStateModelBuilder().inner(inner.toUnbaked());
-            blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(getBlock(), MultiVariant.of(eldritchBuilder)));
+            blockModels.blockStateOutput.accept(MultiVariantGenerator.multiVariant(getBlock(), BlockModels.eldritch(modelLocation, blockModels.modelOutput)));
         } else {
-            blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(getBlock(), plainVariant(modelLocation)));
+            blockModels.blockStateOutput.accept(MultiVariantGenerator.multiVariant(getBlock(), plainVariant(modelLocation)));
         }
     }
 }

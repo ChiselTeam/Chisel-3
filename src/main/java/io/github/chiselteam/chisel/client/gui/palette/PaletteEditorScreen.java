@@ -6,7 +6,7 @@ import io.github.chiselteam.chisel.network.SavePalettePacket;
 import io.github.chiselteam.chisel.palette.PaletteDefinition;
 import io.github.chiselteam.chisel.palette.PlayerPalette;
 import io.github.chiselteam.chisel.palette.PlayerPaletteManager;
-import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.AbstractWidget;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.EditBox;
@@ -20,7 +20,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -87,15 +87,15 @@ public final class PaletteEditorScreen extends Screen {
             changed();
         });
 
-        addRenderableWidget(Button.builder(Component.translatable("chisel.palette.shuffle"), _ -> {
+        addRenderableWidget(Button.builder(Component.translatable("chisel.palette.shuffle"), ignored -> {
             seed++;
             updatePreview();
         }).bounds(right + rightWidth - 60, top + 50, 60, 18).build(PaletteButton::new));
-        save = addRenderableWidget(Button.builder(Component.translatable("chisel.palette.save"), _ -> save()).bounds(left + panelWidth - 88, top + panelHeight - 24, 80, 20).build(PaletteButton::new));
-        addRenderableWidget(Button.builder(Component.translatable("gui.cancel"), _ -> onClose()).bounds(left + 8, top + panelHeight - 24, 70, 20).build(PaletteButton::new));
+        save = addRenderableWidget(Button.builder(Component.translatable("chisel.palette.save"), ignored -> save()).bounds(left + panelWidth - 88, top + panelHeight - 24, 80, 20).build(PaletteButton::new));
+        addRenderableWidget(Button.builder(Component.translatable("gui.cancel"), ignored -> onClose()).bounds(left + 8, top + panelHeight - 24, 70, 20).build(PaletteButton::new));
         delete = null;
         if (draft.id().isPresent()) {
-            delete = addRenderableWidget(Button.builder(Component.translatable("chisel.palette.delete"), _ -> confirmDelete())
+            delete = addRenderableWidget(Button.builder(Component.translatable("chisel.palette.delete"), ignored -> confirmDelete())
                     .bounds(left + 84, top + panelHeight - 24, Math.clamp(panelWidth - 180, 40, 100), 20)
                     .tooltip(Tooltip.create(Component.translatable("chisel.palette.delete_hint"))).build(PaletteButton::new));
             delete.active = pendingSave == null && minecraft.player != null && PlayerPaletteManager.get(minecraft.player).find(draft.id().get()).isPresent();
@@ -190,21 +190,22 @@ public final class PaletteEditorScreen extends Screen {
     }
 
     @Override
-    public void extractRenderState(@NonNull GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick) {
+    public void render(@NotNull GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
+        renderBackground(graphics, mouseX, mouseY, partialTick);
         PaletteTheme.panel(graphics, left, top, panelWidth, panelHeight);
         graphics.fill(right - 5, top + 48, right - 4, top + panelHeight - 50, PaletteTheme.GOLD);
-        graphics.nextStratum();
-        super.extractRenderState(graphics, mouseX, mouseY, partialTick);
-        graphics.text(font, title, left + 8, top + 8, PaletteTheme.INK, false);
+        graphics.flush();
+        for (var renderable : renderables) renderable.render(graphics, mouseX, mouseY, partialTick);
+        graphics.drawString(font, title, left + 8, top + 8, PaletteTheme.INK, false);
         var paletteIcon = BuiltInRegistries.ITEM.getOptional(draft.value().icon()).orElse(Items.BARRIER);
-        graphics.item(new ItemStack(paletteIcon), left + panelWidth - 24, top + 4);
-        graphics.text(font, Component.translatable("chisel.palette.preview"), right, top + 55, PaletteTheme.INK, false);
-        picker.extractRenderState(graphics, font, mouseX, mouseY);
+        graphics.renderItem(new ItemStack(paletteIcon), left + panelWidth - 24, top + 4);
+        graphics.drawString(font, Component.translatable("chisel.palette.preview"), right, top + 55, PaletteTheme.INK, false);
+        picker.render(graphics, font, mouseX, mouseY);
         var count = Component.translatable("chisel.palette.entries", draft.value().entries().size(), PaletteDefinition.MAX_ENTRIES);
-        graphics.text(font, count, right + 4, top + panelHeight - 46, PaletteTheme.MUTED, false);
-        graphics.text(font, font.plainSubstrByWidth(status.getString(), panelWidth - 16), left + 8, top + panelHeight - 35, PaletteTheme.INK, false);
+        graphics.drawString(font, count, right + 4, top + panelHeight - 46, PaletteTheme.MUTED, false);
+        graphics.drawString(font, font.plainSubstrByWidth(status.getString(), panelWidth - 16), left + 8, top + panelHeight - 35, PaletteTheme.INK, false);
         if (!status.getString().isEmpty() && mouseX >= left + 8 && mouseX < left + panelWidth - 8 && mouseY >= top + panelHeight - 35 && mouseY < top + panelHeight - 25)
-            graphics.setTooltipForNextFrame(font, font.split(status, Math.min(300, width - 24)), mouseX, mouseY);
+            graphics.renderTooltip(font, font.split(status, Math.min(300, width - 24)), mouseX, mouseY);
     }
 
     @Override

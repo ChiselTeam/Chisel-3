@@ -4,8 +4,6 @@ import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.block.item.BuildersGuideBlockItem;
 import io.github.chiselteam.chisel.config.CommonConfig;
 import io.github.chiselteam.chisel.item.*;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -28,17 +26,17 @@ public class ChiselItems {
     }
 
     private static DeferredItem<Item> register(String name, Function<Item.Properties, ? extends Item> func, Supplier<Item.Properties> properties) {
-        return ITEMS.registerItem(name, func, properties);
+        return ITEMS.registerItem(name, func, properties.get());
     }
 
     private static DeferredItem<Item> registerChisel(String name, Item.Properties props) {
-        return ITEMS.register(name, () -> new ChiselItem(props.setId(ResourceKey.create(Registries.ITEM, Chisel.prefix(name)))));
+        return ITEMS.register(name, () -> new ChiselItem(props));
     }
 
     static {
-        int iron_durability = CommonConfig.IRON_CHISEL_DURABILITY.getAsInt();
-        int diamond_durability = CommonConfig.DIAMOND_CHISEL_DURABILITY.getAsInt();
-        int obsidian_durability = CommonConfig.OBSIDIAN_CHISEL_DURABILITY.getAsInt();
+        int iron_durability = CommonConfig.IRON_CHISEL_DURABILITY.get();
+        int diamond_durability = CommonConfig.DIAMOND_CHISEL_DURABILITY.get();
+        int obsidian_durability = CommonConfig.OBSIDIAN_CHISEL_DURABILITY.get();
 
         CHISEL_IRON = iron_durability > 0 ? registerChisel("chisel_iron", getChiselProps().durability(iron_durability)) : registerChisel("chisel_iron", getChiselProps());
         CHISEL_DIAMOND = diamond_durability > 0 ? registerChisel("chisel_diamond", getChiselProps().durability(diamond_durability)) : registerChisel("chisel_diamond", getChiselProps());
@@ -51,8 +49,8 @@ public class ChiselItems {
         UPGRADE_REVERSION = register("upgrade_reversion");
         UPGRADE_AUTOMATION = register("upgrade_automation");
 
-        AUTO_CHISEL = ITEMS.registerItem("auto_chisel", p -> new BlockItem(ChiselBlocks.AUTO_CHISEL.get(), p), Item.Properties::new);
-        BUILDERS_GUIDE = ITEMS.registerItem("builders_guide", p -> new BuildersGuideBlockItem(ChiselBlocks.BUILDERS_GUIDE.get(), p), Item.Properties::new);
+        AUTO_CHISEL = ITEMS.registerItem("auto_chisel", p -> new BlockItem(ChiselBlocks.AUTO_CHISEL.get(), p), new Item.Properties());
+        BUILDERS_GUIDE = ITEMS.registerItem("builders_guide", p -> new BuildersGuideBlockItem(ChiselBlocks.BUILDERS_GUIDE.get(), p), new Item.Properties());
 
         BALL_O_MOSS = register("ballomoss", BallOMossItem::new, Item.Properties::new);
         CLOUD_IN_A_BOTTLE = register("cloudinabottle", CloudInABottleItem::new, Item.Properties::new);
@@ -60,7 +58,7 @@ public class ChiselItems {
         MEASURING_TAPE = register("measuring_tape", MeasuringTapeItem::new, Item.Properties::new);
         BUILDERS_HANDBOOK = register("builders_handbook", BuildersHandbookItem::new, ChiselItems::getChiselProps);
         PALETTE_BUILDER = register("palette_builder", PaletteBuilderItem::new, ChiselItems::getChiselProps);
-        TROWEL = ITEMS.registerItem("trowel", TrowelItem::new, ChiselItems::getChiselProps);
+        TROWEL = ITEMS.registerItem("trowel", TrowelItem::new, getChiselProps());
     }
 
     private static Item.Properties getChiselProps() {

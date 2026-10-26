@@ -1,7 +1,7 @@
 package io.github.chiselteam.chisel.api.model.impl;
 
 import io.github.chiselteam.chisel.api.model.VariantModelHandler;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 public abstract class AbstractVariantModelHandler implements VariantModelHandler {
     protected final String name;
@@ -11,7 +11,7 @@ public abstract class AbstractVariantModelHandler implements VariantModelHandler
     }
 
     @Override
-    public @NonNull String getSerializedName() {
+    public @NotNull String getSerializedName() {
         return name;
     }
 }

@@ -6,7 +6,7 @@ import io.github.chiselteam.chisel.api.family.registration.AddonFamilyDefinition
 import io.github.chiselteam.chisel.api.family.registration.ChiselFamilyRegistration;
 import io.github.chiselteam.chisel.registry.ChiselVariantFamilies;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.ApiStatus;
 
@@ -14,7 +14,7 @@ import java.util.*;
 
 @ApiStatus.Internal
 public final class AddonFamilyRegistry {
-    private static final Map<Identifier, AddonFamilyDefinition> DEFINITIONS = new LinkedHashMap<>();
+    private static final Map<ResourceLocation, AddonFamilyDefinition> DEFINITIONS = new LinkedHashMap<>();
     private static List<VariantFamily> families = List.of();
     private static boolean closed;
 
@@ -23,7 +23,7 @@ public final class AddonFamilyRegistry {
 
     public static synchronized ChiselFamilyRegistration register(AddonFamilyDefinition definition) {
         Objects.requireNonNull(definition, "Addon family definition cannot be null");
-        Identifier id = definition.id();
+        ResourceLocation id = definition.id();
         Objects.requireNonNull(id, "Addon family ID cannot be null");
         if (closed)
             throw new IllegalStateException("Cannot register Chisel family '" + id + "': addon family registration has already closed");
@@ -35,10 +35,10 @@ public final class AddonFamilyRegistry {
     public static synchronized void freeze() {
         if (closed) return;
         closed = true;
-        Map<Block, Identifier> memberships = new IdentityHashMap<>();
+        Map<Block, ResourceLocation> memberships = new IdentityHashMap<>();
         for (VariantFamily family : ChiselVariantFamilies.getVariantFamilies()) {
             for (Variant variant : family.getAllVariants()) {
-                memberships.put(variant.getBlock(), Identifier.fromNamespaceAndPath("chisel", family.getFamilyName()));
+                memberships.put(variant.getBlock(), ResourceLocation.fromNamespaceAndPath("chisel", family.getFamilyName()));
             }
         }
 
@@ -57,14 +57,14 @@ public final class AddonFamilyRegistry {
                 }
                 if (block == null)
                     throw new IllegalStateException("Block supplier returned null for family " + definition.id());
-                Identifier blockId = BuiltInRegistries.BLOCK.getKey(block);
+                ResourceLocation blockId = BuiltInRegistries.BLOCK.getKey(block);
                 String name = entry.logicalName() != null ? entry.logicalName() : blockId.getPath();
                 if (!names.add(name))
                     throw new IllegalArgumentException("Duplicate variant name '" + name + "' in family " + definition.id());
                 if (ownBlocks.put(block, name) != null) {
                     throw new IllegalArgumentException("Block " + blockId + " appears more than once in family " + definition.id());
                 }
-                Identifier priorFamily = memberships.putIfAbsent(block, definition.id());
+                ResourceLocation priorFamily = memberships.putIfAbsent(block, definition.id());
                 if (priorFamily != null) {
                     throw new IllegalArgumentException("Block " + blockId + " in family " + definition.id() + " already belongs to family " + priorFamily);
                 }

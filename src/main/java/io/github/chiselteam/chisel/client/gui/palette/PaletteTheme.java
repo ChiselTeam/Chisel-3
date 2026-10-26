@@ -1,7 +1,7 @@
 package io.github.chiselteam.chisel.client.gui.palette;
 
 import io.github.chiselteam.chisel.client.gui.BookUiTextures;
-import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.GuiGraphics;
 
 public final class PaletteTheme {
     public static final int INK = 0xFF3D3333;
@@ -14,7 +14,7 @@ public final class PaletteTheme {
     private PaletteTheme() {
     }
 
-    public static void control(GuiGraphicsExtractor graphics, int x, int y, int width, int height, boolean active, boolean highlighted) {
+    public static void control(GuiGraphics graphics, int x, int y, int width, int height, boolean active, boolean highlighted) {
         if (width < 32) BookUiTextures.nineSlice(graphics, BookUiTextures.BROWN_PANEL, x, y, width, height, 48, 48, 8, 8);
         else BookUiTextures.nineSlice(graphics, BookUiTextures.BROWN_BUTTON, x, y, width, height, 48, 16, 8, 7);
         if (active && highlighted) {
@@ -23,7 +23,7 @@ public final class PaletteTheme {
         }
     }
 
-    public static void panel(GuiGraphicsExtractor graphics, int x, int y, int width, int height) {
+    public static void panel(GuiGraphics graphics, int x, int y, int width, int height) {
         BookUiTextures.nineSlice(graphics, BookUiTextures.PARCHMENT, x, y, width, height, 48, 48, 16, 16);
     }
 }

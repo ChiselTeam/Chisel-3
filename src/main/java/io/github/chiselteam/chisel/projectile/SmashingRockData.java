@@ -4,30 +4,30 @@ import com.mojang.datafixers.util.Either;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 
 public class SmashingRockData {
 
     public static final Codec<SmashingRockData> CODEC = RecordCodecBuilder.create(i -> i.group(
-            Codec.either(Identifier.CODEC, TagKey.codec(Registries.BLOCK)).fieldOf("input").forGetter(SmashingRockData::getInput),
-            Identifier.CODEC.fieldOf("smashed_block").forGetter(SmashingRockData::getSmashedBlock)
+            Codec.either(ResourceLocation.CODEC, TagKey.codec(Registries.BLOCK)).fieldOf("input").forGetter(SmashingRockData::getInput),
+            ResourceLocation.CODEC.fieldOf("smashed_block").forGetter(SmashingRockData::getSmashedBlock)
     ).apply(i, SmashingRockData::new));
 
     private final TagKey<Block> BASE_TAG;
-    private final Identifier BASE_BLOCK;
-    private final Identifier SMASHED_BLOCK;
+    private final ResourceLocation BASE_BLOCK;
+    private final ResourceLocation SMASHED_BLOCK;
 
-    public SmashingRockData(TagKey<Block> baseTag, Identifier smashed) {
+    public SmashingRockData(TagKey<Block> baseTag, ResourceLocation smashed) {
         this(Either.right(baseTag), smashed);
     }
 
-    public SmashingRockData(Identifier baseBlock, Identifier smashed) {
+    public SmashingRockData(ResourceLocation baseBlock, ResourceLocation smashed) {
         this(Either.left(baseBlock), smashed);
     }
 
-    public SmashingRockData(Either<Identifier, TagKey<Block>> either, Identifier smashed) {
+    public SmashingRockData(Either<ResourceLocation, TagKey<Block>> either, ResourceLocation smashed) {
         if(either.right().isPresent()) {
             BASE_TAG = either.right().get();
             BASE_BLOCK = null;
@@ -40,12 +40,12 @@ public class SmashingRockData {
         SMASHED_BLOCK = smashed;
     }
 
-    public Either<Identifier, TagKey<Block>> getInput() {
+    public Either<ResourceLocation, TagKey<Block>> getInput() {
         if(BASE_TAG != null) return Either.right(BASE_TAG);
         return Either.left(BASE_BLOCK);
     }
 
-    public Identifier getSmashedBlock() {
+    public ResourceLocation getSmashedBlock() {
         return SMASHED_BLOCK;
     }
 

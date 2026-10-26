@@ -1,10 +1,7 @@
 {
   "variants": {
     "": {
-      "type": "ctm:eldritch_model",
-      "model": {
-        "model": "chisel:block/temple_ornate"
-      }
+      "model": "chisel:block/temple_ornate_eldritch"
     }
   }
 }

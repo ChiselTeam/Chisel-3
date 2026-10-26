@@ -2,7 +2,7 @@ package io.github.chiselteam.chisel.client.gui.palette;
 
 import io.github.chiselteam.chisel.palette.PaletteDefinition;
 import io.github.chiselteam.chisel.palette.WeightedBlock;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,12 +16,12 @@ public final class PaletteWall {
     private PaletteWall() {
     }
 
-    public static List<Identifier> sample(PaletteDefinition palette, long seed, Predicate<Identifier> available) {
+    public static List<ResourceLocation> sample(PaletteDefinition palette, long seed, Predicate<ResourceLocation> available) {
         var entries = palette.entries().stream().filter(e -> e.enabled() && available.test(e.block())).toList();
         int total = entries.stream().mapToInt(WeightedBlock::weight).sum();
         if (total == 0) return List.of();
         var random = new Random(seed);
-        var result = new ArrayList<Identifier>();
+        var result = new ArrayList<ResourceLocation>();
         for (int cell = 0; cell < COLUMNS * ROWS; cell++) {
             int choice = (int) (random.nextDouble() * total);
             for (var entry : entries) {

@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/template_bars_cap",
+  "parent": "minecraft:block/iron_bars_cap",
   "textures": {
     "bars": "chisel:block/iron_bars/iron_bars_barbed_wire",
     "edge": "chisel:block/iron_bars/iron_bars_barbed_wire"

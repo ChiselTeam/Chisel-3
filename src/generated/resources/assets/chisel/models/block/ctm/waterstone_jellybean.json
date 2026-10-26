@@ -1,0 +1,14 @@
+{
+  "base_tint_index": 0,
+  "connected_faces": [
+    "all"
+  ],
+  "loader": "ctm:connected_texture_model",
+  "model_location": "chisel:block/waterstone_jellybean",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:waterstone_jellybean",
+    "kind": "multiblock_2x2",
+    "water_offset": true
+  }
+}

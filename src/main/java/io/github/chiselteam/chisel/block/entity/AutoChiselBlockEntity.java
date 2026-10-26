@@ -31,10 +31,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.storage.ValueInput;
-import net.minecraft.world.level.storage.ValueOutput;
-import org.jspecify.annotations.NonNull;
-import org.jspecify.annotations.Nullable;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -87,7 +85,7 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
     }
 
     public static void tick(Level level, BlockPos pos, BlockState state, AutoChiselBlockEntity blockEntity) {
-        if (level.isClientSide()) return;
+        if (level.isClientSide) return;
 
         if (blockEntity.canProcess()) {
             boolean hasSpeed = blockEntity.items.get(SPEED_UPGRADE_SLOT).is(ChiselItems.UPGRADE_SPEED.get());
@@ -290,7 +288,7 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
 
             ItemStack chisel = items.get(CHISEL_SLOT);
             if (level instanceof ServerLevel serverLevel) {
-                chisel.hurtAndBreak(countToProcess, serverLevel, null, _ -> {
+                chisel.hurtAndBreak(countToProcess, serverLevel, null, ignored -> {
                     items.set(CHISEL_SLOT, ItemStack.EMPTY);
                 });
             }
@@ -359,7 +357,7 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
     }
 
     @Override
-    public int @NonNull [] getSlotsForFace(@NonNull Direction side) {
+    public int @NotNull [] getSlotsForFace(@NotNull Direction side) {
         if (side == Direction.DOWN) {
             int[] slots = new int[OUTPUT_SLOTS];
             for (int i = 0; i < OUTPUT_SLOTS; i++) slots[i] = 14 + i;
@@ -374,13 +372,13 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
     }
 
     @Override
-    public boolean canPlaceItemThroughFace(int index, @NonNull ItemStack stack, @Nullable Direction side) {
+    public boolean canPlaceItemThroughFace(int index, @NotNull ItemStack stack, @Nullable Direction side) {
         if (!items.get(AUTOMATION_UPGRADE_SLOT).is(ChiselItems.UPGRADE_AUTOMATION.get())) return false;
         return index < INPUT_SLOTS;
     }
 
     @Override
-    public boolean canTakeItemThroughFace(int index, @NonNull ItemStack stack, @NonNull Direction side) {
+    public boolean canTakeItemThroughFace(int index, @NotNull ItemStack stack, @NotNull Direction side) {
         if (!items.get(AUTOMATION_UPGRADE_SLOT).is(ChiselItems.UPGRADE_AUTOMATION.get())) return false;
         return index >= 14 && index < 26;
     }
@@ -404,16 +402,16 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
     }
 
     @Override
-    public @NonNull ItemStack getItem(int slot) {
+    public @NotNull ItemStack getItem(int slot) {
         return items.get(slot);
     }
 
     @Override
-    public @NonNull ItemStack removeItem(int slot, int amount) {
+    public @NotNull ItemStack removeItem(int slot, int amount) {
         ItemStack result = ContainerHelper.removeItem(items, slot, amount);
         setChanged();
         if (level != null) {
-            if (!level.isClientSide()) {
+            if (!level.isClientSide) {
                 level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
             } else {
                 requestModelDataUpdate();
@@ -423,19 +421,19 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
     }
 
     @Override
-    public @NonNull ItemStack removeItemNoUpdate(int slot) {
+    public @NotNull ItemStack removeItemNoUpdate(int slot) {
         return ContainerHelper.takeItem(items, slot);
     }
 
     @Override
-    public void setItem(int slot, @NonNull ItemStack stack) {
+    public void setItem(int slot, @NotNull ItemStack stack) {
         items.set(slot, stack);
         if (stack.getCount() > getMaxStackSize(stack)) {
             stack.setCount(getMaxStackSize(stack));
         }
         setChanged();
         if (level != null) {
-            if (!level.isClientSide()) {
+            if (!level.isClientSide) {
                 level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
             } else {
                 requestModelDataUpdate();
@@ -444,7 +442,7 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
     }
 
     @Override
-    public boolean stillValid(@NonNull Player player) {
+    public boolean stillValid(@NotNull Player player) {
         return Container.stillValidBlockEntity(this, player);
     }
 
@@ -453,7 +451,7 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
         items.clear();
         setChanged();
         if (level != null) {
-            if (!level.isClientSide()) {
+            if (!level.isClientSide) {
                 level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
             } else {
                 requestModelDataUpdate();
@@ -462,36 +460,36 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
     }
 
     @Override
-    protected @NonNull AbstractContainerMenu createMenu(int i, @NonNull Inventory inventory) {
+    protected @NotNull AbstractContainerMenu createMenu(int i, @NotNull Inventory inventory) {
         return new AutoChiselMenu(i, inventory, this, data);
     }
 
     @Override
-    protected void loadAdditional(@NonNull ValueInput input) {
-        super.loadAdditional(input);
-        ContainerHelper.loadAllItems(input, items);
-        progress = input.getIntOr("Progress", 0);
+    protected void loadAdditional(@NotNull CompoundTag input, HolderLookup.Provider registries) {
+        super.loadAdditional(input, registries);
+        ContainerHelper.loadAllItems(input, items, registries);
+        progress = (input.contains("Progress") ? input.getInt("Progress") : 0);
     }
 
     @Override
-    protected void saveAdditional(@NonNull ValueOutput output) {
-        super.saveAdditional(output);
-        ContainerHelper.saveAllItems(output, items);
+    protected void saveAdditional(@NotNull CompoundTag output, HolderLookup.Provider registries) {
+        super.saveAdditional(output, registries);
+        ContainerHelper.saveAllItems(output, items, registries);
         output.putInt("Progress", progress);
     }
 
     @Override
-    protected @NonNull Component getDefaultName() {
+    protected @NotNull Component getDefaultName() {
         return Component.translatable("container.auto_chisel");
     }
 
     @Override
-    public @NonNull NonNullList<ItemStack> getItems() {
+    public @NotNull NonNullList<ItemStack> getItems() {
         return items;
     }
 
     @Override
-    protected void setItems(@NonNull NonNullList<ItemStack> nonNullList) {
+    protected void setItems(@NotNull NonNullList<ItemStack> nonNullList) {
         items = nonNullList;
     }
 
@@ -500,20 +498,14 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
     }
 
     @Override
-    public void onDataPacket(@NonNull Connection net, @NonNull ValueInput valueInput) {
-        super.onDataPacket(net, valueInput);
-        loadAdditional(valueInput);
-        if (level != null && level.isClientSide()) {
-            requestModelDataUpdate();
-            level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
-        }
+    public void onDataPacket(@NotNull Connection net, @NotNull ClientboundBlockEntityDataPacket packet, HolderLookup.Provider registries) {
+        handleUpdateTag(packet.getTag(), registries);
     }
 
     @Override
-    public void handleUpdateTag(@NonNull ValueInput input) {
-        super.handleUpdateTag(input);
-        loadAdditional(input);
-        if (level != null && level.isClientSide()) {
+    public void handleUpdateTag(@NotNull CompoundTag input, HolderLookup.Provider registries) {
+        loadAdditional(input, registries);
+        if (level != null && level.isClientSide) {
             requestModelDataUpdate();
             level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
         }
@@ -525,7 +517,7 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
     }
 
     @Override
-    public @NonNull CompoundTag getUpdateTag(HolderLookup.@NonNull Provider registries) {
+    public @NotNull CompoundTag getUpdateTag(HolderLookup.@NotNull Provider registries) {
         return saveWithoutMetadata(registries);
     }
 }

@@ -1,12 +1,7 @@
 {
-  "neoforge:definition_type": "ctm:connected_texture_model",
-  "connected_faces": [
-    "all"
-  ],
-  "model_location": "chisel:block/uranium_scaffold",
-  "render_overlay_on_all_faces": true,
-  "variant": {
-    "block": "chisel:uranium_scaffold",
-    "kind": "standard"
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/uranium_scaffold"
+    }
   }
 }

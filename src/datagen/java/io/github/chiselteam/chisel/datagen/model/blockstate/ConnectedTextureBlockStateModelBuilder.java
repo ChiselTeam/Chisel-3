@@ -5,7 +5,7 @@ import io.github.chiselteam.chisel.datagen.model.predicates.CopperConnectionPred
 import io.github.chiselteam.ctm.api.datagen.CTMModelBuilder;
 import io.github.chiselteam.ctm.api.strategy.CTMKind;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import org.joml.Vector3f;
 
 import java.util.Set;
@@ -13,7 +13,7 @@ import java.util.TreeSet;
 
 public class ConnectedTextureBlockStateModelBuilder {
 
-    private Identifier modelLocation;
+    private ResourceLocation modelLocation;
     private final Set<Direction> connectedFaces = new TreeSet<>(Enum::compareTo);
     private boolean renderOverlayOnAllFaces;
     private Variant variant;
@@ -27,7 +27,7 @@ public class ConnectedTextureBlockStateModelBuilder {
     private Vector3f elementMin = new Vector3f(0, 0, 0);
     private Vector3f elementMax = new Vector3f(16, 16, 16);
 
-    public ConnectedTextureBlockStateModelBuilder modelLocation(Identifier modelLocation) {
+    public ConnectedTextureBlockStateModelBuilder modelLocation(ResourceLocation modelLocation) {
         this.modelLocation = modelLocation;
         return this;
     }

@@ -8,7 +8,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 public class ChiselInputSlot extends Slot {
 
@@ -26,20 +26,20 @@ public class ChiselInputSlot extends Slot {
     }
 
     @Override
-    public void set(@NonNull ItemStack stack) {
+    public void set(@NotNull ItemStack stack) {
         super.set(stack);
         if (!stack.isEmpty()) container.commit(stack);
         else container.clearCommitted();
         updateVariants(stack);
     }
 
-    public void setWorking(@NonNull ItemStack stack) {
+    public void setWorking(@NotNull ItemStack stack) {
         super.set(stack);
         updateVariants(stack);
     }
 
     @Override
-    public void setByPlayer(@NonNull ItemStack stack, @NonNull ItemStack previous) {
+    public void setByPlayer(@NotNull ItemStack stack, @NotNull ItemStack previous) {
         int committedCount = container.getCommittedStack().getCount();
         if (!previous.isEmpty() && (stack.isEmpty() || !ItemStack.isSameItemSameComponents(previous, stack))) {
             ((ChiselMenu) container.inventory.player.containerMenu).takeWorking(previous.getCount());
@@ -59,7 +59,7 @@ public class ChiselInputSlot extends Slot {
     }
 
     @Override
-    public @NonNull ItemStack remove(int amount) {
+    public @NotNull ItemStack remove(int amount) {
         int allowed = ((ChiselMenu) container.inventory.player.containerMenu).takeWorking(amount);
         if (allowed <= 0) return ItemStack.EMPTY;
         ItemStack removed = super.remove(allowed);
@@ -68,7 +68,7 @@ public class ChiselInputSlot extends Slot {
     }
 
     @Override
-    public boolean mayPlace(@NonNull ItemStack stack) {
+    public boolean mayPlace(@NotNull ItemStack stack) {
         if (!(stack.getItem() instanceof BlockItem blockItem)) return false;
         VariantFamily family = VariantFamilyLookup.getFamilyForBlock(blockItem.getBlock(), container.inventory.player.level().registryAccess());
         if (family == null) return false;
@@ -79,7 +79,7 @@ public class ChiselInputSlot extends Slot {
     }
 
     @Override
-    public void onTake(@NonNull Player player, @NonNull ItemStack carried) {
+    public void onTake(@NotNull Player player, @NotNull ItemStack carried) {
         super.onTake(player, carried);
         if (getItem().isEmpty()) container.selectionInventory.clearContent();
         else updateVariants(getItem());

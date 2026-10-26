@@ -11,14 +11,14 @@ import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.attachment.IAttachmentHolder;
 import net.neoforged.neoforge.network.PacketDistributor;
-import org.jspecify.annotations.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 public final class MossHelper {
     private MossHelper() {
     }
 
     public static boolean canSupportMoss(BlockState state) {
-        return state.getRenderShape() == RenderShape.MODEL && Block.isShapeFullBlock(state.getOcclusionShape());
+        return state.getRenderShape() == RenderShape.MODEL && Block.isShapeFullBlock(state.getOcclusionShape(net.minecraft.world.level.EmptyBlockGetter.INSTANCE, BlockPos.ZERO));
     }
 
     public static void onBlockChanged(Level level, BlockPos pos, @Nullable BlockState previous, BlockState current) {

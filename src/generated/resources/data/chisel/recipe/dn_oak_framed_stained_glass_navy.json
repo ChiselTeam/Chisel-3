@@ -8,8 +8,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "G": "#c:glass/navy",
-    "I": "minecraft:oak_planks"
+    "G": {
+      "tag": "c:glass/navy"
+    },
+    "I": {
+      "item": "minecraft:oak_planks"
+    }
   },
   "pattern": [
     "GGG",

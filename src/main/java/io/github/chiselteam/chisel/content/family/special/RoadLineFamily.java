@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class RoadLineFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("road_line", builder -> builder
-            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).noOcclusion().noCollision()).blockName("Road Lines").model(ChiselModelHandlers.ROAD_LINES).blockFactory(RoadlineBlock::new))
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).noOcclusion().noCollission()).blockName("Road Lines").model(ChiselModelHandlers.ROAD_LINES).blockFactory(RoadlineBlock::new))
             .variant("road_line_double_white_center", v -> v.description("Double White"))
             .variant("road_line_double_white_long", v -> v.description("Double White"))
             .variant("road_line_double_white_side", v -> v.description("Double White"))

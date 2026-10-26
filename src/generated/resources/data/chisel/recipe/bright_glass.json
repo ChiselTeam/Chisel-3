@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "D": "#c:dusts/glowstone",
-    "G": "#c:glass_blocks/colorless"
+    "D": {
+      "tag": "c:dusts/glowstone"
+    },
+    "G": {
+      "tag": "c:glass_blocks/colorless"
+    }
   },
   "pattern": [
     " D ",
@@ -11,6 +15,7 @@
     " D "
   ],
   "result": {
+    "count": 1,
     "id": "chisel:bright_glass"
   }
 }

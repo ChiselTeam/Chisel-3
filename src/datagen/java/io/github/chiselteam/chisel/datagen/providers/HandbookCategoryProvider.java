@@ -5,8 +5,8 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
-import net.minecraft.resources.Identifier;
-import org.jspecify.annotations.NonNull;
+import net.minecraft.resources.ResourceLocation;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -25,12 +25,12 @@ public abstract class HandbookCategoryProvider implements DataProvider {
         this.registries = registries;
     }
 
-    protected abstract void buildCategories(BiConsumer<Identifier, HandbookCategory> output);
+    protected abstract void buildCategories(BiConsumer<ResourceLocation, HandbookCategory> output);
 
     @Override
-    public @NonNull CompletableFuture<?> run(@NonNull CachedOutput cache) {
+    public @NotNull CompletableFuture<?> run(@NotNull CachedOutput cache) {
         return registries.thenCompose(lookup -> {
-            Map<Identifier, HandbookCategory> categories = new LinkedHashMap<>();
+            Map<ResourceLocation, HandbookCategory> categories = new LinkedHashMap<>();
             buildCategories((id, category) -> {
                 if (categories.putIfAbsent(id, category) != null)
                     throw new IllegalStateException("Duplicate handbook category: " + id);
@@ -42,7 +42,7 @@ public abstract class HandbookCategoryProvider implements DataProvider {
     }
 
     @Override
-    public @NonNull String getName() {
+    public @NotNull String getName() {
         return "Handbook Categories";
     }
 }

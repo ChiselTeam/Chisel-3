@@ -5,13 +5,13 @@ import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import io.github.chiselteam.chisel.Chisel;
 import net.minecraft.core.BlockPos;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.List;
 import java.util.Optional;
 
-public record StructureSection(Optional<Identifier> template, List<Cell> blocks) implements HandbookGuideSection {
+public record StructureSection(Optional<ResourceLocation> template, List<Cell> blocks) implements HandbookGuideSection {
     /**
      * A full structure block selection (48 blocks on each axis).
      */
@@ -25,17 +25,17 @@ public record StructureSection(Optional<Identifier> template, List<Cell> blocks)
         this(Optional.empty(), blocks);
     }
 
-    public StructureSection(Identifier template) {
+    public StructureSection(ResourceLocation template) {
         this(Optional.of(template), List.of());
     }
 
     // Resolved blocks travel with the template reference to clients, which cannot read server datapacks.
     public static final MapCodec<StructureSection> CODEC = RecordCodecBuilder.mapCodec(i -> i.group(
-            Identifier.CODEC.optionalFieldOf("template").forGetter(StructureSection::template),
+            ResourceLocation.CODEC.optionalFieldOf("template").forGetter(StructureSection::template),
             Cell.CODEC.listOf(0, MAX_BLOCKS).optionalFieldOf("blocks", List.of()).forGetter(StructureSection::blocks)
     ).apply(i, StructureSection::new));
 
-    public Identifier type() {
+    public ResourceLocation type() {
         return Chisel.prefix("structure");
     }
 

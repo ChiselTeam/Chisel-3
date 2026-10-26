@@ -12,7 +12,7 @@ import io.github.chiselteam.chisel.registry.ChiselBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.DyeColor;
 
 import java.util.Locale;
@@ -21,19 +21,19 @@ import java.util.function.BiConsumer;
 
 public final class ChiselHandbookGuides extends HandbookGuideProvider {
 
-    private BiConsumer<Identifier, HandbookGuide> guideOutput;
+    private BiConsumer<ResourceLocation, HandbookGuide> guideOutput;
 
     // Categories
-    private final Identifier BLOCKS = Chisel.prefix("blocks");
-    private final Identifier ITEMS = Chisel.prefix("items");
-    private final Identifier PALETTES = Chisel.prefix("palettes");
+    private final ResourceLocation BLOCKS = Chisel.prefix("blocks");
+    private final ResourceLocation ITEMS = Chisel.prefix("items");
+    private final ResourceLocation PALETTES = Chisel.prefix("palettes");
 
     public ChiselHandbookGuides(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries);
     }
 
     @Override
-    protected void buildGuides(BiConsumer<Identifier, HandbookGuide> output) {
+    protected void buildGuides(BiConsumer<ResourceLocation, HandbookGuide> output) {
         guideOutput = output;
         addBlockGuides();
         addItemGuides();

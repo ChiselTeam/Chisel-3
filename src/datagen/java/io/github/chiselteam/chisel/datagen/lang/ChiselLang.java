@@ -61,9 +61,6 @@ public class ChiselLang extends LangHelper {
         addItem(ChiselItems.UPGRADE_STACK, "Stack Upgrade");
         addItem(ChiselItems.MEASURING_TAPE, "Measuring Tape");
         addItem(ChiselItems.BUILDERS_HANDBOOK, "Builder's Handbook");
-
-        addItem(ChiselItems.AUTO_CHISEL, "Auto Chisel");
-        addItem(ChiselItems.BUILDERS_GUIDE, "Builder's Guide");
         addItem(ChiselItems.PALETTE_BUILDER, "Palette Brush");
         addItem(ChiselItems.TROWEL, "Trowel");
     }
@@ -143,7 +140,7 @@ public class ChiselLang extends LangHelper {
     }
 
     private void addKeyBindings() {
-        add("key.category.chisel.chisel", "Chisel");
+        add("key.categories.chisel", "Chisel");
         add("key.chisel.mode_select", "Select Mode / Palette");
     }
 

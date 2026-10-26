@@ -1,33 +1,24 @@
 package io.github.chiselteam.chisel.event.client;
-
-import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.client.gui.BuildersHandbookScreen;
 import io.github.chiselteam.chisel.client.gui.palette.PaletteEditorScreen;
 import io.github.chiselteam.chisel.client.gui.palette.PaletteLibraryScreen;
 import io.github.chiselteam.chisel.client.moss.ClientMossData;
 import io.github.chiselteam.chisel.network.*;
 import net.minecraft.client.Minecraft;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.client.network.event.RegisterClientPayloadHandlersEvent;
-
-@EventBusSubscriber(modid = Chisel.MODID, value = Dist.CLIENT)
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.neoforged.neoforge.network.handling.IPayloadContext;
 public class RegisterClientPayloadHandlersEventHandler {
-
-    @SubscribeEvent
-    public static void registerClientPayloadHandlers(RegisterClientPayloadHandlersEvent event) {
-        event.register(MossChunkPacket.TYPE, (packet, context) -> context.enqueueWork(() ->
-                ClientMossData.replaceChunk(packet.chunk(), packet.entries())));
-        event.register(MossDeltaPacket.TYPE, (packet, context) -> context.enqueueWork(() ->
-                ClientMossData.set(packet.pos(), packet.mossy(), packet.texture())));
-        event.register(OpenHandbookPacket.TYPE, (packet, context) -> context.enqueueWork(() ->
-                Minecraft.getInstance().setScreen(new BuildersHandbookScreen())));
-        event.register(HandbookGuidesPacket.TYPE, HandbookGuidesPacket::handle);
-        event.register(OpenPaletteBuilderPacket.TYPE, (packet, context) -> context.enqueueWork(() ->
-                Minecraft.getInstance().setScreen(new PaletteLibraryScreen())));
-        event.register(PaletteSaveResultPacket.TYPE, (packet, context) -> context.enqueueWork(() -> {
-            if (Minecraft.getInstance().screen instanceof PaletteEditorScreen editor) editor.acceptSaveResult(packet);
-        }));
+    public static void handle(CustomPacketPayload payload, IPayloadContext context) {
+        context.enqueueWork(() -> {
+            switch (payload) {
+                case MossChunkPacket p -> ClientMossData.replaceChunk(p.chunk(), p.entries());
+                case MossDeltaPacket p -> ClientMossData.set(p.pos(), p.mossy(), p.texture());
+                case OpenHandbookPacket p -> Minecraft.getInstance().setScreen(new BuildersHandbookScreen());
+                case OpenPaletteBuilderPacket p -> Minecraft.getInstance().setScreen(new PaletteLibraryScreen());
+                case HandbookGuidesPacket p -> HandbookGuidesPacket.handle(p, context);
+                case PaletteSaveResultPacket p -> { if (Minecraft.getInstance().screen instanceof PaletteEditorScreen editor) editor.acceptSaveResult(p); }
+                default -> throw new IllegalArgumentException("Unknown Chisel client payload: " + payload.type());
+            }
+        });
     }
 }

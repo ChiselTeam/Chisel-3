@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "D": "#c:dyes/blue",
-    "S": "#c:cobblestones/mossy"
+    "D": {
+      "tag": "c:dyes/blue"
+    },
+    "S": {
+      "tag": "c:cobblestones/mossy"
+    }
   },
   "pattern": [
     "SSS",

@@ -2,7 +2,7 @@ package io.github.chiselteam.chisel.api.family.registration;
 
 import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
 import io.github.chiselteam.chisel.api.model.VariantModelHandler;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.ApiStatus;
@@ -15,13 +15,13 @@ import java.util.function.Supplier;
  */
 @ApiStatus.Experimental
 public final class ChiselFamilyBuilder {
-    private final Identifier familyId;
+    private final ResourceLocation familyId;
     private final List<VariantEntry> variants = new ArrayList<>();
     private final Set<String> logicalNames = new HashSet<>();
     private TagKey<Block> tag;
 
     @ApiStatus.Internal
-    public ChiselFamilyBuilder(Identifier familyId) {
+    public ChiselFamilyBuilder(ResourceLocation familyId) {
         this.familyId = Objects.requireNonNull(familyId, "Family ID cannot be null");
     }
 

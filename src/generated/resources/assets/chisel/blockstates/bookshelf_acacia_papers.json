@@ -1,14 +1,7 @@
 {
-  "neoforge:definition_type": "ctm:connected_texture_model",
-  "connected_faces": [
-    "north",
-    "south",
-    "west",
-    "east"
-  ],
-  "model_location": "chisel:block/bookshelf_acacia_papers",
-  "variant": {
-    "block": "chisel:bookshelf_acacia_papers",
-    "kind": "bookshelf"
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/bookshelf_acacia_papers"
+    }
   }
 }

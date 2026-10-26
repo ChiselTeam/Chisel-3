@@ -9,25 +9,25 @@ import io.github.chiselteam.chisel.palette.PaletteDefinition;
 import io.github.chiselteam.chisel.palette.WeightedBlock;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.*;
 import java.util.function.Consumer;
 
 public final class HandbookGuideBuilder {
-    public static HandbookGuideBuilder builder(Component title, Identifier icon) {
+    public static HandbookGuideBuilder builder(Component title, ResourceLocation icon) {
         return new HandbookGuideBuilder(title, icon);
     }
 
     private final Component title;
-    private final Identifier icon;
+    private final ResourceLocation icon;
     private Component description = Component.empty();
-    private final LinkedHashSet<Identifier> categories = new LinkedHashSet<>();
+    private final LinkedHashSet<ResourceLocation> categories = new LinkedHashSet<>();
     private final List<HandbookGuideSection> sections = new ArrayList<>();
     private int sortOrder;
 
-    public HandbookGuideBuilder(Component title, Identifier icon) {
+    public HandbookGuideBuilder(Component title, ResourceLocation icon) {
         this.title = Objects.requireNonNull(title, "Guide title cannot be null");
         this.icon = Objects.requireNonNull(icon, "Guide icon cannot be null");
         if (title.getString().isBlank()) throw new IllegalArgumentException("Guide title must not be empty");
@@ -38,7 +38,7 @@ public final class HandbookGuideBuilder {
         return this;
     }
 
-    public HandbookGuideBuilder category(Identifier category) {
+    public HandbookGuideBuilder category(ResourceLocation category) {
         categories.add(Objects.requireNonNull(category, "Guide category cannot be null"));
         return this;
     }
@@ -65,11 +65,11 @@ public final class HandbookGuideBuilder {
         return section(new TipSection(Objects.requireNonNull(text, "Tip cannot be null")));
     }
 
-    public HandbookGuideBuilder craftingRecipe(Identifier recipe) {
+    public HandbookGuideBuilder craftingRecipe(ResourceLocation recipe) {
         return section(new CraftingRecipeSection(Objects.requireNonNull(recipe, "Recipe cannot be null")));
     }
 
-    public HandbookGuideBuilder image(Identifier texture, int width, int height) {
+    public HandbookGuideBuilder image(ResourceLocation texture, int width, int height) {
         return section(new ImageSection(Objects.requireNonNull(texture, "Texture cannot be null"), width, height));
     }
 
@@ -129,7 +129,7 @@ public final class HandbookGuideBuilder {
         });
     }
 
-    public HandbookGuideBuilder structure(Identifier template) {
+    public HandbookGuideBuilder structure(ResourceLocation template) {
         return section(new StructureSection(Objects.requireNonNull(template, "Structure template cannot be null")));
     }
 
@@ -182,7 +182,7 @@ public final class HandbookGuideBuilder {
         private PaletteBuilder() {
         }
 
-        public PaletteBuilder entry(Identifier block, PaletteRole role, int weight) {
+        public PaletteBuilder entry(ResourceLocation block, PaletteRole role, int weight) {
             entries.add(new PaletteEntry(Objects.requireNonNull(block, "Palette block cannot be null"),
                     Objects.requireNonNull(role, "Palette role cannot be null"), weight));
             return this;

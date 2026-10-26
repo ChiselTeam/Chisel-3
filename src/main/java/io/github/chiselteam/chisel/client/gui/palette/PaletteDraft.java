@@ -3,7 +3,7 @@ package io.github.chiselteam.chisel.client.gui.palette;
 import io.github.chiselteam.chisel.palette.PaletteDefinition;
 import io.github.chiselteam.chisel.palette.PlayerPalette;
 import io.github.chiselteam.chisel.palette.WeightedBlock;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +18,7 @@ public final class PaletteDraft {
     public PaletteDraft(Optional<PlayerPalette> palette) {
         id = palette.map(PlayerPalette::id);
         value = palette.map(PlayerPalette::definition).orElseGet(() -> new PaletteDefinition("", "",
-                Identifier.withDefaultNamespace("bricks"), List.of()));
+                ResourceLocation.withDefaultNamespace("bricks"), List.of()));
         original = value;
     }
 
@@ -38,11 +38,11 @@ public final class PaletteDraft {
         value = new PaletteDefinition(name, value.description(), value.icon(), value.entries());
     }
 
-    public void icon(Identifier icon) {
+    public void icon(ResourceLocation icon) {
         value = new PaletteDefinition(value.name(), value.description(), icon, value.entries());
     }
 
-    public boolean add(Identifier block, Identifier item) {
+    public boolean add(ResourceLocation block, ResourceLocation item) {
         if (value.entries().size() >= PaletteDefinition.MAX_ENTRIES || value.entries().stream().anyMatch(e -> e.block().equals(block)))
             return false;
         var entries = new ArrayList<>(value.entries());

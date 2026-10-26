@@ -1,0 +1,12 @@
+{
+  "connected_faces": [
+    "all"
+  ],
+  "loader": "ctm:connected_texture_model",
+  "model_location": "chisel:block/mangrove_planks_encased_smooth",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:mangrove_planks_encased_smooth",
+    "kind": "standard"
+  }
+}

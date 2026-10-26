@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class NexusFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("nexus", builder -> builder
-            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(3.0F, 5.0F).lightLevel((_) -> 10)).blockName("Nexus Block"))
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(3.0F, 5.0F).lightLevel((ignored) -> 10)).blockName("Nexus Block"))
             .variant("nexus_core", v -> v.description("Nexus Core"))
             .variant("nexus_grate_pillar", v -> v.description("Nexus Grate Pillar").model(ChiselModelHandlers.TBS)
                     .texture("top", Chisel.prefix("block/nexus/nexus_grate_pillar-bottom")))

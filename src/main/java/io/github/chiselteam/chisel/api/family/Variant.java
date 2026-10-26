@@ -5,7 +5,7 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import io.github.chiselteam.chisel.api.model.VariantModelHandler;
 import io.github.chiselteam.chisel.api.model.VariantModelHandlers;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.ApiStatus;
 
@@ -29,7 +29,7 @@ public class Variant {
 
     private VariantFamily family;
     private Variant dropsAs;
-    private Map<String, Identifier> textures = Map.of();
+    private Map<String, ResourceLocation> textures = Map.of();
 
     private boolean inTab = true;
     private boolean eldritch = false;
@@ -58,12 +58,12 @@ public class Variant {
         return name;
     }
 
-    public Map<String, Identifier> getTextures() {
+    public Map<String, ResourceLocation> getTextures() {
         return textures;
     }
 
     @ApiStatus.Internal
-    public Variant setTextures(Map<String, Identifier> textures) {
+    public Variant setTextures(Map<String, ResourceLocation> textures) {
         this.textures = Map.copyOf(textures);
         return this;
     }

@@ -6,7 +6,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 public record MossDeltaPacket(BlockPos pos, boolean mossy, int texture) implements CustomPacketPayload {
     public static final Type<MossDeltaPacket> TYPE = new Type<>(Chisel.prefix("moss_delta"));
@@ -17,7 +17,7 @@ public record MossDeltaPacket(BlockPos pos, boolean mossy, int texture) implemen
             MossDeltaPacket::new);
 
     @Override
-    public @NonNull Type<? extends CustomPacketPayload> type() {
+    public @NotNull Type<? extends CustomPacketPayload> type() {
         return TYPE;
     }
 }

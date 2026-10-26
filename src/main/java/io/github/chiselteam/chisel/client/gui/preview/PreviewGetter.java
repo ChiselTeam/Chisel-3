@@ -1,11 +1,9 @@
 package io.github.chiselteam.chisel.client.gui.preview;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.color.block.BlockTintSources;
 import net.minecraft.client.renderer.BiomeColors;
-import net.minecraft.client.renderer.block.BlockAndTintGetter;
 import net.minecraft.core.BlockPos;
-import net.minecraft.world.level.CardinalLighting;
+import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.level.ColorResolver;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.IronBarsBlock;
@@ -13,8 +11,8 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.lighting.LevelLightEngine;
 import net.minecraft.world.level.material.FluidState;
-import org.jspecify.annotations.NonNull;
-import org.jspecify.annotations.Nullable;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -36,35 +34,43 @@ public class PreviewGetter implements BlockAndTintGetter {
     }
 
     @Override
-    public @NonNull CardinalLighting cardinalLighting() {
-        return CardinalLighting.DEFAULT;
+    public float getShade(net.minecraft.core.Direction direction, boolean shade) {
+        if (!shade) return 1.0F;
+        return switch (direction) { case DOWN -> 0.5F; case UP -> 1F; case NORTH, SOUTH -> 0.8F; case WEST, EAST -> 0.6F; };
     }
 
     @Override
-    public int getBlockTint(@NonNull BlockPos pos, @NonNull ColorResolver color) {
+    public int getBlockTint(@NotNull BlockPos pos, @NotNull ColorResolver color) {
         var minecraft = Minecraft.getInstance();
         if (minecraft.level != null) {
             var origin = minecraft.player != null ? minecraft.player.blockPosition() : BlockPos.ZERO;
             return minecraft.level.getBlockTint(origin.offset(pos), color);
         }
         if (color == BiomeColors.WATER_COLOR_RESOLVER) return 0x3F76E4;
-        if (color == BiomeColors.FOLIAGE_COLOR_RESOLVER) return BlockTintSources.foliage().color(state);
-        if (color == BiomeColors.DRY_FOLIAGE_COLOR_RESOLVER) return BlockTintSources.dryFoliage().color(state);
+        if (color == BiomeColors.FOLIAGE_COLOR_RESOLVER) return net.minecraft.world.level.FoliageColor.getDefaultColor();
         return 0x7CBD6B;
     }
 
     @Override
-    public @NonNull LevelLightEngine getLightEngine() {
-        return LevelLightEngine.EMPTY;
+    public @NotNull LevelLightEngine getLightEngine() {
+        return java.util.Objects.requireNonNull(Minecraft.getInstance().level).getLightEngine();
     }
 
     @Override
-    public @Nullable BlockEntity getBlockEntity(@NonNull BlockPos pos) {
+    public int getBrightness(net.minecraft.world.level.LightLayer layer, BlockPos pos) { return 15;
+    }
+
+    @Override
+    public int getRawBrightness(BlockPos pos, int skyDarken) { return 15;
+    }
+
+    @Override
+    public @Nullable BlockEntity getBlockEntity(@NotNull BlockPos pos) {
         return null;
     }
 
     @Override
-    public @NonNull BlockState getBlockState(@NonNull BlockPos pos) {
+    public @NotNull BlockState getBlockState(@NotNull BlockPos pos) {
         if (!positions.contains(pos)) return Blocks.AIR.defaultBlockState();
 
         if (state.getBlock() instanceof IronBarsBlock) {
@@ -77,7 +83,7 @@ public class PreviewGetter implements BlockAndTintGetter {
     }
 
     @Override
-    public @NonNull FluidState getFluidState(@NonNull BlockPos pos) {
+    public @NotNull FluidState getFluidState(@NotNull BlockPos pos) {
         return getBlockState(pos).getFluidState();
     }
 
@@ -87,7 +93,7 @@ public class PreviewGetter implements BlockAndTintGetter {
     }
 
     @Override
-    public int getMinY() {
+    public int getMinBuildHeight() {
         return 0;
     }
 }

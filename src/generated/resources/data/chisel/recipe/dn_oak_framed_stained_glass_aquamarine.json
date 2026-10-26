@@ -8,8 +8,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "G": "#c:glass/aquamarine",
-    "I": "minecraft:oak_planks"
+    "G": {
+      "tag": "c:glass/aquamarine"
+    },
+    "I": {
+      "item": "minecraft:oak_planks"
+    }
   },
   "pattern": [
     "GGG",

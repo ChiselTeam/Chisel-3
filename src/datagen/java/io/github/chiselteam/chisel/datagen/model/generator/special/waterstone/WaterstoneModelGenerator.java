@@ -1,23 +1,21 @@
 package io.github.chiselteam.chisel.datagen.model.generator.special.waterstone;
 
 import io.github.chiselteam.chisel.api.family.Variant;
+import io.github.chiselteam.chisel.datagen.model.BlockModels;
 import io.github.chiselteam.chisel.datagen.model.ChiselModelTemplates;
 import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
-import net.minecraft.client.color.item.Constant;
-import net.minecraft.client.data.models.BlockModelGenerators;
-import net.minecraft.client.data.models.MultiVariant;
-import net.minecraft.client.data.models.model.TextureMapping;
-import net.minecraft.client.data.models.model.TextureSlot;
-import net.minecraft.resources.Identifier;
+import net.minecraft.data.models.model.TextureMapping;
+import net.minecraft.data.models.model.TextureSlot;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 
-import static net.minecraft.client.data.models.BlockModelGenerators.createSimpleBlock;
-import static net.minecraft.client.data.models.BlockModelGenerators.plainVariant;
+import static io.github.chiselteam.chisel.datagen.model.BlockModels.createSimpleBlock;
+import static io.github.chiselteam.chisel.datagen.model.BlockModels.plainVariant;
 
 public class WaterstoneModelGenerator extends VariantModelGenerator {
-    public static void registerItemModel(BlockModelGenerators blockModels, Block block, Identifier model) {
-        blockModels.registerSimpleTintedItemModel(block, model, new Constant(0x3F76E4));
+    public static void registerItemModel(BlockModels blockModels, Block block, ResourceLocation model) {
+        blockModels.registerSimpleItemModel(block, model);
     }
 
     @Override
@@ -29,11 +27,11 @@ public class WaterstoneModelGenerator extends VariantModelGenerator {
     }
 
     @Override
-    public void generate(Variant variant, BlockModelGenerators blockModels) {
+    public void generate(Variant variant, BlockModels blockModels) {
         super.generate(variant, blockModels);
-        Identifier modelLocation = ChiselModelTemplates.CUBE_MULTI_PASS_TINTED.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
+        ResourceLocation modelLocation = ChiselModelTemplates.CUBE_MULTI_PASS_TINTED.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
         registerItemModel(blockModels, getBlock(), modelLocation);
-        MultiVariant model = plainVariant(modelLocation);
+        net.minecraft.data.models.blockstates.Variant model = plainVariant(modelLocation);
         blockModels.blockStateOutput.accept(createSimpleBlock(getBlock(), model));
     }
 }

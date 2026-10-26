@@ -15,7 +15,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.codec.StreamCodec;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
@@ -23,8 +23,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import org.jspecify.annotations.NonNull;
-import org.jspecify.annotations.Nullable;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Collections;
 import java.util.List;
@@ -32,19 +32,19 @@ import java.util.Objects;
 
 public class ChiselMode {
 
-    public static final Codec<ChiselMode> CODEC = Identifier.CODEC.xmap(
+    public static final Codec<ChiselMode> CODEC = ResourceLocation.CODEC.xmap(
             id -> ChiselModes.REGISTRY.getOptional(id).orElseGet(() -> new ChiselMode(id))
             , ChiselMode::registryName
     );
 
-    public static final StreamCodec<ByteBuf, ChiselMode> STREAM_CODEC = Identifier.STREAM_CODEC.map(
+    public static final StreamCodec<ByteBuf, ChiselMode> STREAM_CODEC = ResourceLocation.STREAM_CODEC.map(
             id -> ChiselModes.REGISTRY.getOptional(id).orElseGet(() -> new ChiselMode(id))
             , ChiselMode::registryName
     );
 
-    private final Identifier registryName;
+    private final ResourceLocation registryName;
 
-    public ChiselMode(Identifier registryName) {
+    public ChiselMode(ResourceLocation registryName) {
         this.registryName = registryName;
     }
 
@@ -108,7 +108,7 @@ public class ChiselMode {
     }
 
     @Override
-    public @NonNull String toString() {
+    public @NotNull String toString() {
         return registryName.toString();
     }
 
@@ -120,7 +120,7 @@ public class ChiselMode {
         return registryName.equals(that.registryName);
     }
 
-    public Identifier registryName() {
+    public ResourceLocation registryName() {
         return registryName;
     }
 

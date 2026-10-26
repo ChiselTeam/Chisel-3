@@ -1,0 +1,11 @@
+{
+  "connected_faces": [
+    "all"
+  ],
+  "loader": "ctm:connected_texture_model",
+  "model_location": "chisel:block/steampunk_metal_grate_transparent",
+  "variant": {
+    "block": "chisel:steampunk_metal_grate_transparent",
+    "kind": "standard"
+  }
+}

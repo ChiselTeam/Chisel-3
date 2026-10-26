@@ -6,7 +6,7 @@ import io.github.chiselteam.chisel.api.family.registration.ChiselFamilyRegistrat
 import io.github.chiselteam.chisel.family.AddonFamilyRegistry;
 import io.github.chiselteam.chisel.family.VariantFamilyLookup;
 import net.minecraft.core.RegistryAccess;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.ApiStatus;
 
@@ -34,7 +34,7 @@ public final class ChiselAPI {
      * Queues a family around addon-owned blocks; Chisel does not register those blocks or generate their resources.
      */
     @ApiStatus.Experimental
-    public static ChiselFamilyRegistration registerFamily(Identifier familyId, Consumer<ChiselFamilyBuilder> definition) {
+    public static ChiselFamilyRegistration registerFamily(ResourceLocation familyId, Consumer<ChiselFamilyBuilder> definition) {
         if (definition == null) throw new IllegalArgumentException("Family builder callback cannot be null");
         ChiselFamilyBuilder builder = new ChiselFamilyBuilder(familyId);
         definition.accept(builder);

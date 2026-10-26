@@ -10,13 +10,10 @@ import io.github.chiselteam.chisel.registry.ChiselItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.renderer.ShapeRenderer;
-import net.minecraft.client.renderer.rendertype.RenderTypes;
-import net.minecraft.client.renderer.state.level.BlockOutlineRenderState;
-import net.minecraft.client.renderer.state.level.LevelRenderState;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.util.ARGB;
+import net.minecraft.util.FastColor.ARGB32;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -24,9 +21,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
-import net.neoforged.neoforge.client.CustomBlockOutlineRenderer;
 import org.joml.Vector3f;
-import org.jspecify.annotations.NonNull;
 
 import java.awt.geom.Line2D;
 import java.util.Collections;
@@ -36,13 +31,13 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import static net.minecraft.core.Direction.*;
 
-public class ChiselOffsetToolOutlineRenderer implements CustomBlockOutlineRenderer {
+public class ChiselOffsetToolOutlineRenderer {
 
     private static final float LINE_WIDTH = 3.0F;
 
     @SuppressWarnings("FieldCanBeLocal")
     private final int HIGH_CONTRAST_COLOR = -11010079;
-    private final int LOW_CONTRAST_COLOR = ARGB.black(102);
+    private final int LOW_CONTRAST_COLOR = ARGB32.color(102, 0, 0, 0);
     private final BlockHitResult hit;
     private final Vec3 cameraRelativePos;
 
@@ -51,10 +46,9 @@ public class ChiselOffsetToolOutlineRenderer implements CustomBlockOutlineRender
         this.cameraRelativePos = cameraRelativePos;
     }
 
-    @Override
-    public boolean render(@NonNull BlockOutlineRenderState state, MultiBufferSource.@NonNull BufferSource bufferSource, @NonNull PoseStack pose, boolean translucentPass, @NonNull LevelRenderState levelState) {
+    public boolean render(MultiBufferSource bufferSource, PoseStack pose) {
         ClientLevel level = Minecraft.getInstance().level;
-        BlockPos pos = state.pos();
+        BlockPos pos = hit.getBlockPos();
         if (level == null) return false;
         Player player = Minecraft.getInstance().player;
         if (player == null) return false;
@@ -62,10 +56,10 @@ public class ChiselOffsetToolOutlineRenderer implements CustomBlockOutlineRender
             return false;
         }
 
-        VertexConsumer buffer = bufferSource.getBuffer(RenderTypes.lines());
+        VertexConsumer buffer = bufferSource.getBuffer(RenderType.lines());
         Vec3 vec = hit.getLocation();
-        int outlineColor = state.highContrast() ? HIGH_CONTRAST_COLOR : LOW_CONTRAST_COLOR;
-        int triangleColor = ARGB.color(0xAA, 0xFF, 0xFF, 0xFF);
+        int outlineColor = LOW_CONTRAST_COLOR;
+        int triangleColor = ARGB32.color(0xAA, 0xFF, 0xFF, 0xFF);
         Direction face = hit.getDirection();
 
         // Bias each face slightly outward to prevent z-fighting with the block surface.
@@ -131,9 +125,10 @@ public class ChiselOffsetToolOutlineRenderer implements CustomBlockOutlineRender
             by = isY ? clampedY : 1;
             bz = z;
         }
-        VertexConsumer triBuffer = bufferSource.getBuffer(RenderTypes.debugTriangleFan());
+        VertexConsumer triBuffer = bufferSource.getBuffer(RenderType.debugQuads());
         triBuffer.addVertex(last, cx, cy, cz).setColor(triangleColor);
         triBuffer.addVertex(last, ax, ay, az).setColor(triangleColor);
+        triBuffer.addVertex(last, bx, by, bz).setColor(triangleColor);
         triBuffer.addVertex(last, bx, by, bz).setColor(triangleColor);
 
         pose.popPose();
@@ -149,8 +144,8 @@ public class ChiselOffsetToolOutlineRenderer implements CustomBlockOutlineRender
                                  float x1, float y1, float z1,
                                  float x2, float y2, float z2) {
         Vector3f normal = new Vector3f(x2 - x1, y2 - y1, z2 - z1).normalize();
-        buffer.addVertex(pose, x1, y1, z1).setColor(color).setNormal(pose, normal).setLineWidth(LINE_WIDTH);
-        buffer.addVertex(pose, x2, y2, z2).setColor(color).setNormal(pose, normal).setLineWidth(LINE_WIDTH);
+        buffer.addVertex(pose, x1, y1, z1).setColor(color).setNormal(pose, normal.x(), normal.y(), normal.z());
+        buffer.addVertex(pose, x2, y2, z2).setColor(color).setNormal(pose, normal.x(), normal.y(), normal.z());
     }
 
     private static boolean canOffset(Player player, InteractionHand hand, BlockPos pos, Level level) {

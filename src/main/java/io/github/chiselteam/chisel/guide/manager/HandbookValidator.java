@@ -7,7 +7,7 @@ import io.github.chiselteam.chisel.guide.section.PaletteSection;
 import io.github.chiselteam.chisel.guide.section.StructureSection;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,7 +21,7 @@ public final class HandbookValidator {
     private HandbookValidator() {
     }
 
-    public static boolean validate(Identifier id, HandbookGuide guide) {
+    public static boolean validate(ResourceLocation id, HandbookGuide guide) {
         var errors = new ArrayList<String>();
         var warnings = new ArrayList<String>();
 

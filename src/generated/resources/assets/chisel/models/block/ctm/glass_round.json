@@ -1,0 +1,11 @@
+{
+  "connected_faces": [
+    "all"
+  ],
+  "loader": "ctm:connected_texture_model",
+  "model_location": "chisel:block/glass_round",
+  "variant": {
+    "block": "chisel:glass_round",
+    "kind": "standard"
+  }
+}

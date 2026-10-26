@@ -3,16 +3,16 @@ package io.github.chiselteam.chisel.palette;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 
 import java.util.HashSet;
 import java.util.List;
 
-public record PaletteDefinition(String name, String description, Identifier icon, List<WeightedBlock> entries) {
+public record PaletteDefinition(String name, String description, ResourceLocation icon, List<WeightedBlock> entries) {
     public static final int MAX_ENTRIES = 64;
     public static final int MAX_NAME_LENGTH = 64;
     public static final int MAX_DESCRIPTION_LENGTH = 512;
-    public static final Codec<Identifier> IDENTIFIER_CODEC = WeightedBlock.IDENTIFIER_CODEC;
+    public static final Codec<ResourceLocation> IDENTIFIER_CODEC = WeightedBlock.IDENTIFIER_CODEC;
     public static final Codec<PaletteDefinition> CODEC = RecordCodecBuilder.<PaletteDefinition>create(i -> i.group(
             Codec.string(1, MAX_NAME_LENGTH).fieldOf("name").forGetter(PaletteDefinition::name),
             Codec.string(0, MAX_DESCRIPTION_LENGTH).optionalFieldOf("description", "").forGetter(PaletteDefinition::description),
@@ -31,7 +31,7 @@ public record PaletteDefinition(String name, String description, Identifier icon
             return DataResult.error(() -> "Palette description must contain at most 512 characters");
         if (value.icon().toString().length() > 256 || value.entries().size() > MAX_ENTRIES)
             return DataResult.error(() -> "Palette exceeds icon or entry limits");
-        var blocks = new HashSet<Identifier>();
+        var blocks = new HashSet<ResourceLocation>();
         for (var entry : value.entries()) {
             if (entry.weight() < 1 || entry.weight() > 100 || entry.block().toString().length() > 256)
                 return DataResult.error(() -> "Entry weights must be 1-100 and block IDs at most 256 characters");

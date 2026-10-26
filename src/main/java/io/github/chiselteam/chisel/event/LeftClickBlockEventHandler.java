@@ -24,7 +24,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -36,7 +36,7 @@ public class LeftClickBlockEventHandler {
             .expireAfterWrite(1, TimeUnit.SECONDS)
             .weakKeys()
             .build(new CacheLoader<>() {
-                public @NonNull Long load(@NonNull Player key) {
+                public @NotNull Long load(@NotNull Player key) {
                     return 0L;
                 }
             });

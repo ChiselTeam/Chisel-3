@@ -8,8 +8,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "G": "#c:glass/cherenkov",
-    "I": "#c:ingots/iron"
+    "G": {
+      "tag": "c:glass/cherenkov"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    }
   },
   "pattern": [
     "GGG",

@@ -8,8 +8,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "G": "#c:glass/ultramarine",
-    "I": "#c:ingots/iron"
+    "G": {
+      "tag": "c:glass/ultramarine"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    }
   },
   "pattern": [
     "GGG",

@@ -1,7 +1,7 @@
 package io.github.chiselteam.chisel.client.gui.palette;
 
 import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.AbstractContainerWidget;
 import net.minecraft.client.gui.components.AbstractWidget;
 import net.minecraft.client.gui.components.Button;
@@ -9,19 +9,20 @@ import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.client.gui.components.events.GuiEventListener;
 import net.minecraft.client.gui.narration.NarratedElementType;
 import net.minecraft.client.gui.narration.NarrationElementOutput;
-import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public final class PaletteEntryList extends AbstractContainerWidget {
+    private double scroll;
+    private boolean scrolling;
     private static final int ROW_HEIGHT = 42;
     private final Font font;
     private final PaletteDraft draft;
@@ -31,7 +32,7 @@ public final class PaletteEntryList extends AbstractContainerWidget {
     private final List<Integer> offsets = new ArrayList<>();
 
     public PaletteEntryList(Font font, PaletteDraft draft, int x, int y, int width, int height, Runnable changed, Runnable removed) {
-        super(x, y, width, height, Component.translatable("chisel.palette.entry_list"), defaultSettings(21));
+        super(x, y, width, height, Component.translatable("chisel.palette.entry_list"));
         this.font = font;
         this.draft = draft;
         this.changed = changed;
@@ -88,23 +89,36 @@ public final class PaletteEntryList extends AbstractContainerWidget {
         setScrollAmount(maxScrollAmount());
     }
 
-    private Component name(Identifier id) {
+    public double scrollAmount() { return scroll; }
+    private int scrollbarWidth() { return 6; }
+    private double maxScrollAmount() { return Math.max(0, contentHeight() - height); }
+    private void refreshScrollAmount() { setScrollAmount(scroll); }
+    private boolean isOverScrollbar(double x, double y) { return maxScrollAmount() > 0 && x >= getRight()-7 && x < getRight() && y >= getY() && y < getBottom(); }
+    private void extractScrollbar(GuiGraphics graphics, int mouseX, int mouseY) {
+        if (maxScrollAmount() <= 0) return;
+        int thumb = Math.max(16, height * height / contentHeight());
+        int top = getY() + (int) ((height-thumb) * scroll / maxScrollAmount());
+        graphics.fill(getRight()-6, getY(), getRight(), getBottom(), PaletteTheme.INSET);
+        graphics.fill(getRight()-6, top, getRight(), top+thumb, PaletteTheme.MUTED);
+    }
+    @Override public boolean mouseReleased(double x, double y, int button) {
+        scrolling = false; return super.mouseReleased(x, y, button);
+    }
+    private Component name(ResourceLocation id) {
         return BuiltInRegistries.BLOCK.getOptional(id).map(Block::getName).orElse(Component.literal(id.toString()));
     }
 
     @Override
-    public @NonNull List<? extends GuiEventListener> children() {
+    public @NotNull List<? extends GuiEventListener> children() {
         return widgets;
     }
 
-    @Override
-    protected int contentHeight() {
+    private int contentHeight() {
         return draft.value().entries().size() * ROW_HEIGHT + 4;
     }
 
-    @Override
     public void setScrollAmount(double amount) {
-        super.setScrollAmount(amount);
+        scroll = Math.clamp(amount, 0, maxScrollAmount());
         for (int i = 0; i < widgets.size(); i++)
             widgets.get(i).setY(getY() + offsets.get(i) - (int) scrollAmount());
     }
@@ -121,39 +135,42 @@ public final class PaletteEntryList extends AbstractContainerWidget {
     }
 
     @Override
-    public boolean mouseClicked(@NonNull MouseButtonEvent event, boolean doubleClick) {
-        if (!active || !isMouseOver(event.x(), event.y())) return false;
-        if (isOverScrollbar(event.x(), event.y())) setFocused(null);
-        return super.mouseClicked(event, doubleClick);
+    public boolean mouseClicked(double mouseX, double mouseY, int button) {
+        if (!active || !isMouseOver(mouseX, mouseY)) return false;
+        if (isOverScrollbar(mouseX, mouseY)) { setFocused(null); scrolling = true; return true; }
+        return super.mouseClicked(mouseX, mouseY, button);
     }
 
     @Override
     public boolean mouseScrolled(double x, double y, double dx, double dy) {
-        return active && isMouseOver(x, y) && super.mouseScrolled(x, y, dx, dy);
-    }
-
-    @Override
-    public boolean mouseDragged(@NonNull MouseButtonEvent event, double dx, double dy) {
-        if (!active) return false;
-        super.mouseDragged(event, dx, dy);
+        if (!active || !isMouseOver(x, y)) return false;
+        setScrollAmount(scroll - dy * 21);
         return true;
     }
 
     @Override
-    protected void extractWidgetRenderState(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick) {
+    public boolean mouseDragged(double mouseX, double mouseY, int button, double dx, double dy) {
+        if (!active) return false;
+        if (scrolling) setScrollAmount(scroll + dy * contentHeight() / Math.max(1, height));
+        else super.mouseDragged(mouseX, mouseY, button, dx, dy);
+        return true;
+    }
+
+    @Override
+    protected void renderWidget(GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
         graphics.fill(getX(), getY(), getRight(), getBottom(), PaletteTheme.INSET);
         graphics.enableScissor(getX(), getY(), getRight() - scrollbarWidth() - 1, getBottom());
         boolean hovered = active && isMouseOver(mouseX, mouseY) && !isOverScrollbar(mouseX, mouseY);
         for (var widget : widgets)
             if (widget.getBottom() > getY() && widget.getY() < getBottom())
-                widget.extractRenderState(graphics, hovered ? mouseX : -1, hovered ? mouseY : -1, partialTick);
+                widget.render(graphics, hovered ? mouseX : -1, hovered ? mouseY : -1, partialTick);
         for (int i = 0; i < draft.value().entries().size(); i++) {
             int y = getY() + 2 + i * ROW_HEIGHT - (int) scrollAmount();
             if (y + 18 <= getY() || y >= getBottom()) continue;
             var label = name(draft.value().entries().get(i).block());
-            graphics.text(font, font.plainSubstrByWidth(label.getString(), width - scrollbarWidth() - 50), getX() + 24, y + 5, PaletteTheme.INK, false);
+            graphics.drawString(font, font.plainSubstrByWidth(label.getString(), width - scrollbarWidth() - 50), getX() + 24, y + 5, PaletteTheme.INK, false);
             if (hovered && mouseX >= getX() + 24 && mouseX < getRight() - scrollbarWidth() - 24 && mouseY >= y && mouseY < y + 18)
-                graphics.setTooltipForNextFrame(font, List.of(label.getVisualOrderText()), mouseX, mouseY);
+                graphics.renderTooltip(font, List.of(label.getVisualOrderText()), mouseX, mouseY);
         }
         graphics.disableScissor();
         extractScrollbar(graphics, mouseX, mouseY);

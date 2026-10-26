@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "I": "#c:ingots/iron",
-    "T": "minecraft:torch"
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "T": {
+      "item": "minecraft:torch"
+    }
   },
   "pattern": [
     "III",
@@ -11,6 +15,7 @@
     "III"
   ],
   "result": {
+    "count": 1,
     "id": "chisel:builders_guide"
   }
 }

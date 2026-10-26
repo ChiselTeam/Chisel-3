@@ -6,7 +6,7 @@ import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.guide.section.palette.PaletteEntry;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.ComponentSerialization;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ public record PaletteSection(Component title, List<PaletteEntry> entries) implem
     ).apply(i, PaletteSection::new));
 
     @Override
-    public Identifier type() {
+    public ResourceLocation type() {
         return Chisel.prefix("palette");
     }
 

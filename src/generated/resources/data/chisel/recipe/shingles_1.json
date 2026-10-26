@@ -2,14 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": "#c:bricks",
-    "C": "minecraft:clay_ball"
+    "B": {
+      "tag": "c:bricks"
+    },
+    "C": {
+      "item": "minecraft:clay_ball"
+    }
   },
   "pattern": [
     " B",
     "BC"
   ],
   "result": {
+    "count": 1,
     "id": "chisel:shingles_1"
   }
 }

@@ -10,22 +10,19 @@ import io.github.chiselteam.chisel.menu.ChiselMenu;
 import io.github.chiselteam.chisel.menu.slot.SelectionSlot;
 import io.github.chiselteam.chisel.network.ChiselSearchPacket;
 import io.github.chiselteam.chisel.network.ChiselSelectionPacket;
-import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.input.KeyEvent;
-import net.minecraft.client.input.MouseButtonEvent;
-import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.inventory.ContainerInput;
+import net.minecraft.world.inventory.ClickType;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 import org.lwjgl.glfw.GLFW;
 
 import java.util.List;
@@ -34,9 +31,9 @@ import java.util.Objects;
 public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
 
     private final Inventory inventory;
-    private final Identifier TEXTURE = Chisel.prefix("textures/gui/chisel.png");
-    private static final Identifier SCROLLER_SPRITE = Identifier.withDefaultNamespace("container/creative_inventory/scroller");
-    private static final Identifier SCROLLER_DISABLED_SPRITE = Identifier.withDefaultNamespace("container/creative_inventory/scroller_disabled");
+    private final ResourceLocation TEXTURE = Chisel.prefix("textures/gui/chisel.png");
+    private static final ResourceLocation SCROLLER_SPRITE = ResourceLocation.withDefaultNamespace("container/creative_inventory/scroller");
+    private static final ResourceLocation SCROLLER_DISABLED_SPRITE = ResourceLocation.withDefaultNamespace("container/creative_inventory/scroller_disabled");
     private EditBox searchBox;
     private Button previewModeButton;
     private static final List<PreviewMode> PREVIEW_MODES = List.of(new SinglePreview(), new PanelPreview(), new DonutPreview(), new PlusPreview(), new ColumnPreview(), new RowPreview());
@@ -65,7 +62,9 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
     private static final int BULK_HIGHLIGHT_COLOR = 0x80FF842B;
 
     public ChiselScreen(ChiselMenu menu, Inventory inventory, Component title) {
-        super(menu, inventory, title, 278, 233);
+        super(menu, inventory, title);
+        imageWidth = 278;
+        imageHeight = 233;
         this.inventory = inventory;
     }
 
@@ -81,7 +80,7 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
         searchBox.setBordered(false);
         addRenderableWidget(searchBox);
 
-        previewModeButton = Button.builder(PREVIEW_MODES.get(previewModeIndex).getDescription(), _ -> cyclePreviewMode())
+        previewModeButton = Button.builder(PREVIEW_MODES.get(previewModeIndex).getDescription(), ignored -> cyclePreviewMode())
                 .bounds(leftPos + 22, topPos + 5, 48, 20)
                 .build();
         addRenderableWidget(previewModeButton);
@@ -94,14 +93,14 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
     }
 
     @Override
-    public boolean keyPressed(@NonNull KeyEvent event) {
-        if (searchBox.keyPressed(event)) {
+    public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
+        if (searchBox.keyPressed(keyCode, scanCode, modifiers)) {
             return true;
         }
-        if (searchBox.isFocused() && searchBox.isVisible() && event.key() != GLFW.GLFW_KEY_ESCAPE) {
+        if (searchBox.isFocused() && searchBox.isVisible() && keyCode != GLFW.GLFW_KEY_ESCAPE) {
             return true;
         }
-        return super.keyPressed(event);
+        return super.keyPressed(keyCode, scanCode, modifiers);
     }
 
     private void onSearchTextChange(String text) {
@@ -128,26 +127,26 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
     }
 
     @Override
-    public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
-        if (event.button() == 0 && isHoveringScroller(event.x(), event.y())) {
+    public boolean mouseClicked(double mouseX, double mouseY, int button) {
+        if (button == 0 && isHoveringScroller(mouseX, mouseY)) {
             isScrolling = canScroll();
             return true;
         }
-        if (event.button() == 0 && isHoveringPreview(event.x(), event.y())) {
+        if (button == 0 && isHoveringPreview(mouseX, mouseY)) {
             isDraggingPreview = true;
             previewVelocityX = 0.0F;
             previewVelocityY = 0.0F;
             lastPreviewDragNanos = System.nanoTime();
             return true;
         }
-        return super.mouseClicked(event, doubleClick);
+        return super.mouseClicked(mouseX, mouseY, button);
     }
 
     @Override
-    protected void slotClicked(@NonNull Slot slot, int slotId, int buttonNum, @NonNull ContainerInput containerInput) {
+    protected void slotClicked(@NotNull Slot slot, int slotId, int buttonNum, @NotNull ClickType containerInput) {
         if (slot instanceof SelectionSlot) {
             if (buttonNum == 0 && !slot.getItem().isEmpty()) {
-                boolean bulk = containerInput == ContainerInput.QUICK_MOVE;
+                boolean bulk = containerInput == ClickType.QUICK_MOVE;
                 if (!bulk) getMenu().selectVariant(getMinecraft().player, slot.getContainerSlot(), false);
                 Objects.requireNonNull(getMinecraft().getConnection()).send(new ChiselSelectionPacket(slot.getContainerSlot(), bulk));
             }
@@ -156,8 +155,8 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
         super.slotClicked(slot, slotId, buttonNum, containerInput);
     }
 
-    private void extractBulkHighlights(GuiGraphicsExtractor graphics) {
-        if (!getMinecraft().hasShiftDown() || !(hoveredSlot instanceof SelectionSlot)) return;
+    private void extractBulkHighlights(GuiGraphics graphics) {
+        if (!net.minecraft.client.gui.screens.Screen.hasShiftDown() || !(hoveredSlot instanceof SelectionSlot)) return;
 
         ItemStack target = hoveredSlot.getItem();
         ItemStack input = getMenu().inputSlot.getItem();
@@ -184,7 +183,7 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
         return null;
     }
 
-    private void highlightSlot(GuiGraphicsExtractor graphics, Slot slot) {
+    private void highlightSlot(GuiGraphics graphics, Slot slot) {
         graphics.fill(leftPos + slot.x, topPos + slot.y, leftPos + slot.x + 16, topPos + slot.y + 16, BULK_HIGHLIGHT_COLOR);
     }
 
@@ -202,8 +201,8 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
     }
 
     @Override
-    public boolean mouseReleased(MouseButtonEvent event) {
-        if (event.button() == 0) {
+    public boolean mouseReleased(double mouseX, double mouseY, int button) {
+        if (button == 0) {
             isScrolling = false;
             if (isDraggingPreview && System.nanoTime() - lastPreviewDragNanos > 100_000_000L) {
                 previewVelocityX = 0.0F;
@@ -211,11 +210,11 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
             }
             isDraggingPreview = false;
         }
-        return super.mouseReleased(event);
+        return super.mouseReleased(mouseX, mouseY, button);
     }
 
     @Override
-    public boolean mouseDragged(@NonNull MouseButtonEvent event, double dx, double dy) {
+    public boolean mouseDragged(double mouseX, double mouseY, int button, double dx, double dy) {
         if (isDraggingPreview) {
             long now = System.nanoTime();
             float deltaTime = (now - lastPreviewDragNanos) / 1_000_000_000.0F;
@@ -233,13 +232,13 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
         if (isScrolling) {
             float trackTop = topPos + SCROLLER_Y;
             float thumbTravel = SCROLLER_TRACK_HEIGHT - SCROLLER_THUMB_HEIGHT;
-            scrollOffs = ((float) event.y() - trackTop - SCROLLER_THUMB_HEIGHT / 2.0F) / thumbTravel;
+            scrollOffs = ((float) mouseY - trackTop - SCROLLER_THUMB_HEIGHT / 2.0F) / thumbTravel;
             scrollOffs = Mth.clamp(scrollOffs, 0.0F, 1.0F);
             getMenu().setSearchState(searchBox.getValue(), scrollOffs);
             Objects.requireNonNull(getMinecraft().getConnection()).send(new ChiselSearchPacket(searchBox.getValue(), scrollOffs));
             return true;
         } else {
-            return super.mouseDragged(event, dx, dy);
+            return super.mouseDragged(mouseX, mouseY, button, dx, dy);
         }
     }
 
@@ -268,11 +267,10 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
     }
 
     @Override
-    public void extractBackground(@NonNull GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a) {
-        super.extractBackground(graphics, mouseX, mouseY, a);
+    protected void renderBg(@NotNull GuiGraphics graphics, float a, int mouseX, int mouseY) {
         updatePreviewRotation();
 
-        graphics.blit(RenderPipelines.GUI_TEXTURED, TEXTURE, leftPos, topPos, 0, 0, 278, 233, 278, 233);
+        graphics.blit(TEXTURE, leftPos, topPos, 0, 0, 278, 233, 278, 233);
         extractBulkHighlights(graphics);
 
         Slot main = getMenu().inputSlot;
@@ -284,7 +282,7 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
             int x1 = x0 + 70;
             int y1 = y0 + 70;
 
-            graphics.submitPictureInPictureRenderState(new PreviewPIPState(
+            io.github.chiselteam.chisel.client.gui.preview.PreviewRenderer.render(graphics, new PreviewPIPState(
                     blockItem.getBlock().defaultBlockState(),
                     previewMode.positions(),
                     previewRotX, previewRotY,
@@ -293,19 +291,19 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
                     previewMode.centerX(),
                     previewMode.centerY(),
                     x0, y0, x1, y1,
-                    graphics.peekScissorStack()
+                    null
             ));
         }
 
         int thumbOffset = (int) ((SCROLLER_TRACK_HEIGHT - SCROLLER_THUMB_HEIGHT) * scrollOffs);
-        graphics.blitSprite(RenderPipelines.GUI_TEXTURED, canScroll() ? SCROLLER_SPRITE : SCROLLER_DISABLED_SPRITE,
+        graphics.blitSprite(canScroll() ? SCROLLER_SPRITE : SCROLLER_DISABLED_SPRITE,
                 leftPos + SCROLLER_X, topPos + SCROLLER_Y + thumbOffset, SCROLLER_WIDTH, SCROLLER_THUMB_HEIGHT);
 
     }
 
     @Override
-    public void extractLabels(@NonNull GuiGraphicsExtractor graphics, int xm, int ym) {
+    public void renderLabels(@NotNull GuiGraphics graphics, int xm, int ym) {
         if (!searchBox.active)
-            graphics.text(font, Component.translatable("chisel.gui.search"), 92, 10, -12566464, false);
+            graphics.drawString(font, Component.translatable("chisel.gui.search"), 92, 10, -12566464, false);
     }
 }

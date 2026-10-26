@@ -6,7 +6,7 @@ import io.github.chiselteam.chisel.guide.HandbookView;
 import io.github.chiselteam.chisel.guide.Snapshot;
 import io.github.chiselteam.chisel.guide.page.HandbookSpread;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 
 import java.util.List;
 import java.util.function.Function;
@@ -16,7 +16,7 @@ import static io.github.chiselteam.chisel.client.gui.handbook.HandbookLayout.ENT
 public final class HandbookNavigation {
     private Snapshot snapshot = Snapshot.EMPTY;
     private HandbookView view = HandbookView.COVER;
-    private Identifier selectedCategory;
+    private ResourceLocation selectedCategory;
     private HandbookEntry selectedGuide;
     private List<HandbookEntry> categoryGuides = List.of();
     private List<HandbookSpread> spreads = List.of();
@@ -26,7 +26,7 @@ public final class HandbookNavigation {
 
     private static Entry allGuides() {
         return new Entry(Component.translatable("chisel.builders_handbook.all_guides"),
-                Component.translatable("chisel.builders_handbook.all_guides.description"), Identifier.withDefaultNamespace("bookshelf"));
+                Component.translatable("chisel.builders_handbook.all_guides.description"), ResourceLocation.withDefaultNamespace("bookshelf"));
     }
 
     private static int pageCount(int count) {
@@ -60,11 +60,11 @@ public final class HandbookNavigation {
         view = HandbookView.CONTENTS;
     }
 
-    public Identifier guideId() {
+    public ResourceLocation guideId() {
         return selectedGuide == null ? null : selectedGuide.id();
     }
 
-    public boolean openBookmark(Identifier id, int page, Function<HandbookGuide, List<HandbookSpread>> paginate) {
+    public boolean openBookmark(ResourceLocation id, int page, Function<HandbookGuide, List<HandbookSpread>> paginate) {
         var entry = snapshot.entries().stream().filter(candidate -> candidate.id().equals(id)).findFirst().orElse(null);
         if (entry == null) return false;
         selectedCategory = null;
@@ -158,7 +158,7 @@ public final class HandbookNavigation {
     public Entry introduction() {
         if (view == HandbookView.CONTENTS) return new Entry(
                 Component.translatable("chisel.builders_handbook.title"), Component.translatable("chisel.builders_handbook.intro"),
-                Identifier.withDefaultNamespace("bookshelf"));
+                ResourceLocation.withDefaultNamespace("bookshelf"));
         if (selectedCategory == null) return allGuides();
         var category = snapshot.categories().get(selectedCategory);
         return new Entry(category.title(), category.description(), category.icon());
@@ -200,6 +200,6 @@ public final class HandbookNavigation {
         return snapshot.revision();
     }
 
-    public record Entry(Component title, Component description, Identifier icon) {
+    public record Entry(Component title, Component description, ResourceLocation icon) {
     }
 }

@@ -1,17 +1,17 @@
 package io.github.chiselteam.chisel.client.render.item;
 
 import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.NbtOps;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.CustomData;
 import net.neoforged.neoforge.client.IItemDecorator;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 public class ChiselItemDecorator implements IItemDecorator {
     @Override
-    public boolean render(@NonNull GuiGraphicsExtractor gui, @NonNull Font font, @NonNull ItemStack stack, int xOffset, int yOffset) {
+    public boolean render(@NotNull GuiGraphics gui, @NotNull Font font, @NotNull ItemStack stack, int xOffset, int yOffset) {
         CustomData customData = stack.get(DataComponents.CUSTOM_DATA);
         if (customData != null) {
             ItemStack innerStack = customData.copyTag().contains("chiselItem")
@@ -19,9 +19,9 @@ public class ChiselItemDecorator implements IItemDecorator {
                     : ItemStack.EMPTY;
 
             if (!innerStack.isEmpty()) {
-                gui.pose().scale(0.5F, 0.5F);
-                gui.item(innerStack, (xOffset + 8) * 2, (yOffset + 8) * 2);
-                gui.pose().scale(2.0F, 2.0F);
+                gui.pose().scale(0.5F, 0.5F, 1);
+                gui.renderItem(innerStack, (xOffset + 8) * 2, (yOffset + 8) * 2);
+                gui.pose().scale(2.0F, 2.0F, 1);
             }
         }
         return true;

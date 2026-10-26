@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "D": "#minecraft:wooden_doors",
-    "O": "#minecraft:planks"
+    "D": {
+      "tag": "minecraft:wooden_doors"
+    },
+    "O": {
+      "tag": "minecraft:planks"
+    }
   },
   "pattern": [
     " O ",

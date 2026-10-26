@@ -14,7 +14,7 @@ import io.github.chiselteam.chisel.content.definition.VariantDefinition;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
 import io.github.chiselteam.chisel.registry.ChiselItems;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -50,7 +50,7 @@ public class VariantFamilyRegistrar {
         }
         family.getHiddenVariants().stream().filter(variant -> variant.getModelHandler() == ChiselModelHandlers.WALL_TORCH).forEach(variant -> {
             var standing = variant.getDropsAs();
-            var textures = new HashMap<String, Identifier>();
+            var textures = new HashMap<String, ResourceLocation>();
             textures.put("", Chisel.prefix("block/%s/%s".formatted(family.getFamilyName(), standing.getName())));
             textures.putAll(standing.getTextures());
             textures.putAll(variant.getTextures());
@@ -121,7 +121,7 @@ public class VariantFamilyRegistrar {
         if (family.getTag() != null) {
             waxedFamily.setTag(TagKey.create(
                     Registries.BLOCK,
-                    Identifier.fromNamespaceAndPath("c", "chisel/%s".formatted(waxedFamily.getFamilyName()))
+                    ResourceLocation.fromNamespaceAndPath("c", "chisel/%s".formatted(waxedFamily.getFamilyName()))
             ));
         }
 
@@ -140,7 +140,7 @@ public class VariantFamilyRegistrar {
         wallVariant.setInTab(false);
         wallVariant.dropsAs(standingVariant);
 
-        ChiselItems.ITEMS.registerItem(definition.name(), properties -> new TorchBlockItem(standingVariant, standingBlock.get(), wallBlock.get(), properties), () -> new Item.Properties().useBlockDescriptionPrefix());
+        ChiselItems.ITEMS.registerItem(definition.name(), properties -> new TorchBlockItem(standingVariant, standingBlock.get(), wallBlock.get(), properties), new Item.Properties());
 
         family.addVariant(standingVariant);
         family.addHiddenVariant(wallVariant);
@@ -148,16 +148,16 @@ public class VariantFamilyRegistrar {
 
     private static Properties createWallTorchProperties(Block standingBlock) {
         return Properties.of()
-                .overrideLootTable(standingBlock.getLootTable())
-                .overrideDescription(standingBlock.getDescriptionId())
-                .noCollision()
+                .lootFrom(() -> standingBlock)
+
+                .noCollission()
                 .instabreak()
-                .lightLevel(_ -> 14)
+                .lightLevel(ignored -> 14)
                 .sound(SoundType.WOOD)
                 .pushReaction(PushReaction.DESTROY);
     }
 
     private static void registerChiselItem(Variant variant) {
-        ChiselItems.ITEMS.registerItem(variant.getName(), properties -> new ChiselBlockItem(variant, properties), () -> new Item.Properties().useBlockDescriptionPrefix());
+        ChiselItems.ITEMS.registerItem(variant.getName(), properties -> new ChiselBlockItem(variant, properties), new Item.Properties());
     }
 }

@@ -2,9 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "D": "#c:dyes/purple",
-    "G": "#c:ingots/gold",
-    "L": "#chisel:limestone"
+    "D": {
+      "tag": "c:dyes/purple"
+    },
+    "G": {
+      "tag": "c:ingots/gold"
+    },
+    "L": {
+      "tag": "chisel:limestone"
+    }
   },
   "pattern": [
     "GLG",

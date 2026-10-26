@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "R": "#c:dyes/pink",
-    "S": "#c:stones"
+    "R": {
+      "tag": "c:dyes/pink"
+    },
+    "S": {
+      "tag": "c:stones"
+    }
   },
   "pattern": [
     "SSS",

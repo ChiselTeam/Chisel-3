@@ -8,8 +8,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "G": "#c:glass/cherenkov",
-    "I": "minecraft:oak_planks"
+    "G": {
+      "tag": "c:glass/cherenkov"
+    },
+    "I": {
+      "item": "minecraft:oak_planks"
+    }
   },
   "pattern": [
     "GGG",

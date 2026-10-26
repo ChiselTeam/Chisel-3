@@ -1,33 +1,35 @@
 package io.github.chiselteam.chisel.guide.manager;
 
 import io.github.chiselteam.chisel.guide.HandbookGuide;
-import net.minecraft.resources.FileToIdConverter;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener;
 import net.minecraft.util.profiling.ProfilerFiller;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class HandbookReloadListener extends SimpleJsonResourceReloadListener<HandbookGuide> {
+public class HandbookReloadListener extends SimpleJsonResourceReloadListener {
 
     public HandbookReloadListener() {
-        super(HandbookGuide.CODEC, FileToIdConverter.json("chisel/handbook_guides"));
+        super(new com.google.gson.Gson(), "chisel/handbook_guides");
     }
 
     @Override
-    protected void apply(@NonNull Map<Identifier, HandbookGuide> prepared, @NonNull ResourceManager resourceManager, @NonNull ProfilerFiller profilerFiller) {
-        var validGuides = new LinkedHashMap<Identifier, HandbookGuide>();
+    protected void apply(@NotNull Map<ResourceLocation, com.google.gson.JsonElement> prepared, @NotNull ResourceManager resourceManager, @NotNull ProfilerFiller profilerFiller) {
+        var validGuides = new LinkedHashMap<ResourceLocation, HandbookGuide>();
         var sortedGuides = prepared.entrySet().stream().sorted(Comparator.comparing(entry -> entry.getKey().toString())).toList();
         var rejectedGuides = 0;
         var structures = new HandbookStructureLoader(resourceManager);
 
         for (var entry : sortedGuides) {
             var id = entry.getKey();
-            var guide = entry.getValue();
+            var decoded = HandbookGuide.CODEC.parse(com.mojang.serialization.JsonOps.INSTANCE, entry.getValue())
+                    .resultOrPartial(error -> HandbookValidator.LOGGER.error("Rejected handbook guide '{}': {}", id, error));
+            if (decoded.isEmpty()) { rejectedGuides++; continue; }
+            var guide = decoded.get();
             try {
                 guide = structures.resolve(guide);
             } catch (IllegalArgumentException error) {

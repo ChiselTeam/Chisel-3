@@ -1,6 +1,6 @@
 package io.github.chiselteam.chisel.guide;
 
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 
-public record HandbookEntry(Identifier id, HandbookGuide guide) {
+public record HandbookEntry(ResourceLocation id, HandbookGuide guide) {
 }

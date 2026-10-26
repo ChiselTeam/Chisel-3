@@ -1,6 +1,5 @@
 package io.github.chiselteam.chisel.datagen;
 
-import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.content.ChiselFamilies;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
 import io.github.chiselteam.chisel.registry.ChiselItems;
@@ -9,31 +8,32 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStackTemplate;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
-import org.jspecify.annotations.NonNull;
 
 import java.util.concurrent.CompletableFuture;
 
 public class ChiselRecipes extends RecipeProvider {
 
-    public ChiselRecipes(HolderLookup.Provider registries, RecipeOutput output) {
-        super(registries, output);
+    private RecipeOutput output;
+    public ChiselRecipes(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> registries) {
+        super(packOutput, registries);
     }
 
     @Override
-    protected void buildRecipes() {
+    protected void buildRecipes(RecipeOutput output) {
+        this.output=output;
         // MARK: Blocks
-        smeltingResultFromBase(ChiselFamilies.C_CONCRETE.getVariant("concrete_raw").get(), Blocks.GRAVEL);
+        smeltingResultFromBase(output, ChiselFamilies.C_CONCRETE.getVariant("concrete_raw").get(), Blocks.GRAVEL);
 
         stoneAround("has_glowstone", Tags.Items.DUSTS_GLOWSTONE, ChiselFamilies.ANTIBLOCK.getFamily().getVariants().getFirst().getBlock(), 8);
         stoneAround("has_redstone", Tags.Items.DUSTS_REDSTONE, ChiselFamilies.FUTURA.getFamily().getVariants().getFirst().getBlock(), 8);
@@ -48,7 +48,7 @@ public class ChiselRecipes extends RecipeProvider {
         stoneAround("has_blue_dye", Tags.Items.DYES_BLUE, ChiselFamilies.TEMPLE.getFamily().getVariants().getFirst().getBlock(), 8);
         stoneAround("has_sign", ItemTags.SIGNS, ChiselFamilies.WARNING.getFamily().getVariants().getFirst().getBlock(), 4);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.REDSTONE_SEA_LAMP.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.REDSTONE_SEA_LAMP.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
                 .pattern(" R ")
                 .pattern("RSR")
                 .pattern(" R ")
@@ -57,56 +57,56 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_sea_lantern", has(Items.SEA_LANTERN))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.FANTASY.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.FANTASY.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("GLG")
                 .pattern("L L")
                 .pattern("GLG")
                 .define('G', Tags.Items.INGOTS_GOLD)
-                .define('L', ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone")))
-                .unlockedBy("has_limestone", has(ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone"))))
+                .define('L', ItemTags.create(ResourceLocation.fromNamespaceAndPath("chisel", "limestone")))
+                .unlockedBy("has_limestone", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("chisel", "limestone"))))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.FANTASY_PURPLE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.FANTASY_PURPLE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("GLG")
                 .pattern("LDL")
                 .pattern("GLG")
                 .define('G', Tags.Items.INGOTS_GOLD)
-                .define('L', ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone")))
+                .define('L', ItemTags.create(ResourceLocation.fromNamespaceAndPath("chisel", "limestone")))
                 .define('D', Tags.Items.DYES_PURPLE)
-                .unlockedBy("has_limestone", has(ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone"))))
+                .unlockedBy("has_limestone", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("chisel", "limestone"))))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.FANTASY_GREEN.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.FANTASY_GREEN.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("GLG")
                 .pattern("LDL")
                 .pattern("GLG")
                 .define('G', Tags.Items.INGOTS_GOLD)
-                .define('L', ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone")))
+                .define('L', ItemTags.create(ResourceLocation.fromNamespaceAndPath("chisel", "limestone")))
                 .define('D', Tags.Items.DYES_GREEN)
-                .unlockedBy("has_limestone", has(ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone"))))
+                .unlockedBy("has_limestone", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("chisel", "limestone"))))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.FANTASY_BLUE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.FANTASY_BLUE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("GLG")
                 .pattern("LDL")
                 .pattern("GLG")
                 .define('G', Tags.Items.INGOTS_GOLD)
-                .define('L', ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone")))
+                .define('L', ItemTags.create(ResourceLocation.fromNamespaceAndPath("chisel", "limestone")))
                 .define('D', Tags.Items.DYES_BLUE)
-                .unlockedBy("has_limestone", has(ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone"))))
+                .unlockedBy("has_limestone", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("chisel", "limestone"))))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.FANTASY_RED.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.FANTASY_RED.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("GLG")
                 .pattern("LDL")
                 .pattern("GLG")
                 .define('G', Tags.Items.INGOTS_GOLD)
-                .define('L', ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone")))
+                .define('L', ItemTags.create(ResourceLocation.fromNamespaceAndPath("chisel", "limestone")))
                 .define('D', Tags.Items.DYES_RED)
-                .unlockedBy("has_limestone", has(ItemTags.create(Identifier.fromNamespaceAndPath("chisel", "limestone"))))
+                .unlockedBy("has_limestone", has(ItemTags.create(ResourceLocation.fromNamespaceAndPath("chisel", "limestone"))))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.MOSSY_TEMPLE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.MOSSY_TEMPLE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("SSS")
                 .pattern("SDS")
                 .pattern("SSS")
@@ -115,25 +115,25 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_blue_dye", has(Tags.Items.DYES_BLUE))
                 .save(output);
 
-        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.MOSSY_STONE.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
+        shapeless(RecipeCategory.MISC, new ItemStack(ChiselFamilies.MOSSY_STONE.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
                 .requires(Items.STONE)
                 .requires(Ingredient.of(Items.VINE, Items.MOSS_BLOCK))
                 .unlockedBy("has_stone", has(Items.STONE))
                 .save(output);
 
-        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.MOSSY_DEEPSLATE.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
+        shapeless(RecipeCategory.MISC, new ItemStack(ChiselFamilies.MOSSY_DEEPSLATE.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
                 .requires(Items.DEEPSLATE)
                 .requires(Ingredient.of(Items.VINE, Items.MOSS_BLOCK))
                 .unlockedBy("has_deepslate", has(Items.DEEPSLATE))
                 .save(output);
         
-        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.MOSSY_BLACKSTONE.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
+        shapeless(RecipeCategory.MISC, new ItemStack(ChiselFamilies.MOSSY_BLACKSTONE.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
                 .requires(Items.BLACKSTONE)
                 .requires(Ingredient.of(Items.VINE, Items.MOSS_BLOCK))
                 .unlockedBy("has_blackstone", has(Items.BLACKSTONE))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.LIMINAL.getFamily().getVariants().getFirst().getBlock().asItem(), 16))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.LIMINAL.getFamily().getVariants().getFirst().getBlock().asItem(), 16))
                 .pattern(" O ")
                 .pattern("ODO")
                 .pattern(" O ")
@@ -142,7 +142,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_planks", has(ItemTags.PLANKS))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.KITCHEN.getFamily().getVariants().getFirst().getBlock().asItem(), 16))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.KITCHEN.getFamily().getVariants().getFirst().getBlock().asItem(), 16))
                 .pattern("WB")
                 .pattern("BW")
                 .define('W', Items.WHITE_CONCRETE)
@@ -151,7 +151,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .save(output);
 
         for (var color : DyeColor.values()) {
-            shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.LIGHT.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+            shapeless(RecipeCategory.MISC, new ItemStack(ChiselFamilies.LIGHT.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .requires(Items.SEA_LANTERN)
                 .requires(color.getTag())
                 .unlockedBy("has_" + color.getName() + "_dye", has(color.getTag()))
@@ -159,7 +159,7 @@ public class ChiselRecipes extends RecipeProvider {
         }
 
         for (var color : DyeColor.values()) {
-            shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.OAK_FRAMED_STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+            shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.OAK_FRAMED_STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("GGG")
                 .pattern("GIG")
                 .pattern("GGG")
@@ -170,7 +170,7 @@ public class ChiselRecipes extends RecipeProvider {
         }
 
         for (var color : DyeColor.values()) {
-            shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.STEEL_FRAMED_STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+            shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.STEEL_FRAMED_STAINED_GLASS.get(color.getId()).getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("GGG")
                 .pattern("GIG")
                 .pattern("GGG")
@@ -180,13 +180,13 @@ public class ChiselRecipes extends RecipeProvider {
                 .save(output);
         }
 
-        shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.NEXUS.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+        shapeless(RecipeCategory.MISC, new ItemStack(ChiselFamilies.NEXUS.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .requires(Items.SEA_LANTERN)
                 .requires(Items.WHITE_CONCRETE)
                 .unlockedBy("has_white_concrete", has(Items.WHITE_CONCRETE))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.STEEL_FRAMED_GLASS.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.STEEL_FRAMED_GLASS.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("GGG")
                 .pattern("GIG")
                 .pattern("GGG")
@@ -195,7 +195,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_glass", has(Tags.Items.GLASS_BLOCKS))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.OAK_FRAMED_GLASS.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.OAK_FRAMED_GLASS.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("GGG")
                 .pattern("GIG")
                 .pattern("GGG")
@@ -204,7 +204,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_glass", has(Tags.Items.GLASS_BLOCKS))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.BRIGHT_GLASS.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.BRIGHT_GLASS.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
                 .pattern(" D ")
                 .pattern("DGD")
                 .pattern(" D ")
@@ -213,7 +213,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_glowstone", has(Tags.Items.DUSTS_GLOWSTONE))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.FACTORY.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.FACTORY.getFamily().getVariants().getFirst().getBlock().asItem(), 32))
                 .pattern("SIS")
                 .pattern("I I")
                 .pattern("SIS")
@@ -222,7 +222,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_iron_ingots", has(Tags.Items.INGOTS_IRON))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.STEAMPUNK.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.STEAMPUNK.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("SCS")
                 .pattern("C C")
                 .pattern("SCS")
@@ -231,7 +231,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_copper_ingot", has(Tags.Items.INGOTS_COPPER))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.PAPERWALL.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.PAPERWALL.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("PPP")
                 .pattern("PSP")
                 .pattern("PPP")
@@ -241,7 +241,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .save(output);
 
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.ROAD_LINE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.ROAD_LINE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("WRW")
                 .pattern("WRW")
                 .pattern("WRW")
@@ -250,7 +250,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_white_dye", has(Tags.Items.DYES_WHITE))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.TECHNICAL.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.TECHNICAL.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("SIS")
                 .pattern("ISI")
                 .pattern("SIS")
@@ -259,7 +259,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.VOIDSTONE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.VOIDSTONE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("OSO")
                 .pattern("SES")
                 .pattern("OSO")
@@ -269,7 +269,7 @@ public class ChiselRecipes extends RecipeProvider {
                 .unlockedBy("has_ender_pearl", has(Items.ENDER_PEARL))
                 .save(output);
 
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.ENERGIZED_VOIDSTONE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.ENERGIZED_VOIDSTONE.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .pattern("OSO")
                 .pattern("SES")
                 .pattern("OSO")
@@ -370,7 +370,7 @@ public class ChiselRecipes extends RecipeProvider {
     }
 
     private void stoneAround(String unlockedBy, TagKey<Item> recipeItem, ItemLike outputItem, int count) {
-        shaped(RecipeCategory.MISC, new ItemStackTemplate(outputItem.asItem(), count))
+        shaped(RecipeCategory.MISC, new ItemStack(outputItem.asItem(), count))
                 .pattern("SSS")
                 .pattern("SRS")
                 .pattern("SSS")
@@ -403,20 +403,9 @@ public class ChiselRecipes extends RecipeProvider {
                 .save(output);
     }
 
-    public static class Runner extends RecipeProvider.Runner {
-
-        public Runner(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> registries) {
-            super(packOutput, registries);
-        }
-
-        @Override
-        protected @NonNull RecipeProvider createRecipeProvider(HolderLookup.@NonNull Provider provider, @NonNull RecipeOutput recipeOutput) {
-            return new ChiselRecipes(provider, recipeOutput);
-        }
-
-        @Override
-        public @NonNull String getName() {
-            return Chisel.MODID;
-        }
-    }
+    private static net.minecraft.data.recipes.ShapedRecipeBuilder shaped(RecipeCategory category, ItemStack stack) { return net.minecraft.data.recipes.ShapedRecipeBuilder.shaped(category,stack); }
+    private static net.minecraft.data.recipes.ShapedRecipeBuilder shaped(RecipeCategory category, net.minecraft.world.level.ItemLike item) { return net.minecraft.data.recipes.ShapedRecipeBuilder.shaped(category,item); }
+    private static net.minecraft.data.recipes.ShapelessRecipeBuilder shapeless(RecipeCategory category, ItemStack stack) { return net.minecraft.data.recipes.ShapelessRecipeBuilder.shapeless(category,stack); }
+    private static net.minecraft.data.recipes.ShapedRecipeBuilder shaped(RecipeCategory category, ItemLike item, int count) { return net.minecraft.data.recipes.ShapedRecipeBuilder.shaped(category,item,count); }
+    private static net.minecraft.data.recipes.ShapelessRecipeBuilder shapeless(RecipeCategory category, ItemLike item, int count) { return net.minecraft.data.recipes.ShapelessRecipeBuilder.shapeless(category,item,count); }
 }

@@ -1,12 +1,7 @@
 {
-  "neoforge:definition_type": "ctm:connected_texture_model",
-  "connected_faces": [
-    "all"
-  ],
-  "model_location": "chisel:block/bone_block_gem_2_connected",
-  "render_overlay_on_all_faces": true,
-  "variant": {
-    "block": "chisel:bone_block_gem_2_connected",
-    "kind": "standard"
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/bone_block_gem_2_connected"
+    }
   }
 }

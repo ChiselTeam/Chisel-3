@@ -14,11 +14,11 @@ import io.github.chiselteam.chisel.palette.WeightedBlock;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.commands.SharedSuggestionProvider;
-import net.minecraft.commands.arguments.IdentifierArgument;
+import net.minecraft.commands.arguments.ResourceLocationArgument;
 import net.minecraft.commands.arguments.UuidArgument;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -43,7 +43,7 @@ public final class PaletteCommands {
                 .then(Commands.literal("create").then(Commands.argument("name", StringArgumentType.greedyString())
                         .executes(c -> run(c, player -> {
                             var id = PlayerPaletteManager.save(player, Optional.empty(), new PaletteDefinition(
-                                    StringArgumentType.getString(c, "name"), "", Identifier.withDefaultNamespace("bricks"), List.of()));
+                                    StringArgumentType.getString(c, "name"), "", ResourceLocation.withDefaultNamespace("bricks"), List.of()));
                             return "Created palette " + id;
                         }))))
                 .then(Commands.literal("clear").executes(c -> run(c, player -> {
@@ -73,16 +73,16 @@ public final class PaletteCommands {
                                 old -> new PaletteDefinition(old.name(), "", old.icon(), old.entries())))
                         .then(Commands.argument("value", StringArgumentType.greedyString()).executes(c -> edit(c,
                                 old -> new PaletteDefinition(old.name(), StringArgumentType.getString(c, "value"), old.icon(), old.entries())))))
-                .then(Commands.literal("icon").then(Commands.argument("item", IdentifierArgument.id())
+                .then(Commands.literal("icon").then(Commands.argument("item", ResourceLocationArgument.id())
                         .suggests((c, builder) -> SharedSuggestionProvider.suggestResource(BuiltInRegistries.ITEM.keySet(), builder))
-                        .executes(c -> edit(c, old -> new PaletteDefinition(old.name(), old.description(), IdentifierArgument.getId(c, "item"), old.entries())))))
-                .then(Commands.literal("block").then(Commands.argument("block", IdentifierArgument.id())
+                        .executes(c -> edit(c, old -> new PaletteDefinition(old.name(), old.description(), ResourceLocationArgument.getId(c, "item"), old.entries())))))
+                .then(Commands.literal("block").then(Commands.argument("block", ResourceLocationArgument.id())
                         .suggests((c, builder) -> SharedSuggestionProvider.suggestResource(BuiltInRegistries.BLOCK.keySet(), builder))
                         .then(Commands.argument("weight", IntegerArgumentType.integer(1, 100))
                                 .executes(c -> setBlock(c, true))
                                 .then(Commands.argument("enabled", BoolArgumentType.bool()).executes(c -> setBlock(c, BoolArgumentType.getBool(c, "enabled")))))))
-                .then(Commands.literal("remove").then(Commands.argument("block", IdentifierArgument.id()).executes(c -> edit(c, old -> {
-                    var block = IdentifierArgument.getId(c, "block");
+                .then(Commands.literal("remove").then(Commands.argument("block", ResourceLocationArgument.id()).executes(c -> edit(c, old -> {
+                    var block = ResourceLocationArgument.getId(c, "block");
                     if (old.entries().stream().noneMatch(e -> e.block().equals(block)))
                         throw new IllegalArgumentException("Block is not in this palette");
                     return old.withEntries(old.entries().stream().filter(e -> !e.block().equals(block)).toList());
@@ -93,7 +93,7 @@ public final class PaletteCommands {
 
     private static int setBlock(CommandContext<CommandSourceStack> context, boolean enabled) throws CommandSyntaxException {
         return edit(context, old -> {
-            var entry = new WeightedBlock(IdentifierArgument.getId(context, "block"), IntegerArgumentType.getInteger(context, "weight"), enabled);
+            var entry = new WeightedBlock(ResourceLocationArgument.getId(context, "block"), IntegerArgumentType.getInteger(context, "weight"), enabled);
             var entries = new ArrayList<>(old.entries());
             int index = -1;
             for (int i = 0; i < entries.size(); i++)

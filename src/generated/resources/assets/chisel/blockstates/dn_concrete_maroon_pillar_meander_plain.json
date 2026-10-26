@@ -1,45 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "type": "ctm:connected_texture_model",
-      "connected_faces": [
-        "down",
-        "up"
-      ],
-      "model_location": "chisel:block/dn_concrete_maroon_pillar_meander_plain",
-      "render_overlay_on_all_faces": true,
-      "variant": {
-        "block": "chisel:dn_concrete_maroon_pillar_meander_plain",
-        "kind": "ctmv"
-      },
+      "model": "chisel:block/ctm/dn_concrete_maroon_pillar_meander_plain",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "type": "ctm:connected_texture_model",
-      "connected_faces": [
-        "down",
-        "up"
-      ],
-      "model_location": "chisel:block/dn_concrete_maroon_pillar_meander_plain",
-      "render_overlay_on_all_faces": true,
-      "variant": {
-        "block": "chisel:dn_concrete_maroon_pillar_meander_plain",
-        "kind": "ctmv"
-      }
+      "model": "chisel:block/ctm/dn_concrete_maroon_pillar_meander_plain"
     },
     "axis=z": {
-      "type": "ctm:connected_texture_model",
-      "connected_faces": [
-        "down",
-        "up"
-      ],
-      "model_location": "chisel:block/dn_concrete_maroon_pillar_meander_plain",
-      "render_overlay_on_all_faces": true,
-      "variant": {
-        "block": "chisel:dn_concrete_maroon_pillar_meander_plain",
-        "kind": "ctmv"
-      },
+      "model": "chisel:block/ctm/dn_concrete_maroon_pillar_meander_plain",
       "x": 90
     }
   }

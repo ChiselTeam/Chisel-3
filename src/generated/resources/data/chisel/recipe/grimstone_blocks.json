@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "R": "#minecraft:coals",
-    "S": "#c:stones"
+    "R": {
+      "tag": "minecraft:coals"
+    },
+    "S": {
+      "tag": "c:stones"
+    }
   },
   "pattern": [
     "SSS",

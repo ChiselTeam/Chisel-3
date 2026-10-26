@@ -1,0 +1,11 @@
+{
+  "connected_faces": [
+    "all"
+  ],
+  "loader": "ctm:connected_texture_model",
+  "model_location": "chisel:block/oak_framed_glass_scaffold_right",
+  "variant": {
+    "block": "chisel:oak_framed_glass_scaffold_right",
+    "kind": "standard"
+  }
+}

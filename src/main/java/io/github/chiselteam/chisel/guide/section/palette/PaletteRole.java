@@ -2,7 +2,7 @@ package io.github.chiselteam.chisel.guide.section.palette;
 
 import com.mojang.serialization.Codec;
 import net.minecraft.util.StringRepresentable;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 public enum PaletteRole implements StringRepresentable {
     PRIMARY("primary"), SECONDARY("secondary"), ACCENT("accent"), RARE("rare");
@@ -15,7 +15,7 @@ public enum PaletteRole implements StringRepresentable {
     }
 
     @Override
-    public @NonNull String getSerializedName() {
+    public @NotNull String getSerializedName() {
         return SERIALIZED_NAME;
     }
 }

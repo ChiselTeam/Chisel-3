@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "G": "minecraft:yellow_stained_glass",
-    "I": "minecraft:oak_planks"
+    "G": {
+      "item": "minecraft:yellow_stained_glass"
+    },
+    "I": {
+      "item": "minecraft:oak_planks"
+    }
   },
   "pattern": [
     "GGG",

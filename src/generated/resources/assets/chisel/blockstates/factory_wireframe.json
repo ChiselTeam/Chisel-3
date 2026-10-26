@@ -1,12 +1,7 @@
 {
-  "neoforge:definition_type": "ctm:connected_texture_model",
-  "connected_faces": [
-    "all"
-  ],
-  "model_location": "chisel:block/factory_wireframe",
-  "render_overlay_on_all_faces": true,
-  "variant": {
-    "block": "chisel:factory_wireframe",
-    "kind": "standard"
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/factory_wireframe"
+    }
   }
 }

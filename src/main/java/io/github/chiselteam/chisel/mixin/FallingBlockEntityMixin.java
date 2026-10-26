@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.At;
 @Mixin(FallingBlockEntity.class)
 abstract class FallingBlockEntityMixin {
     @WrapOperation(method = "fall", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/Level;setBlock(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z"))
-    private static boolean chisel$carryMoss(Level level, BlockPos pos, BlockState blockState, int updateFlags, Operation<Boolean> original, @Local(name = "entity") FallingBlockEntity entity) {
+    private static boolean chisel$carryMoss(Level level, BlockPos pos, BlockState blockState, int updateFlags, Operation<Boolean> original, @Local(ordinal = 0) FallingBlockEntity entity) {
         MossHelper.captureMovingMoss(level, pos, entity);
         return original.call(level, pos, blockState, updateFlags);
     }

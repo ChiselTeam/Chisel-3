@@ -19,7 +19,7 @@ abstract class LevelChunkMixin {
     private Level level;
 
     @Inject(method = "setBlockState", at = @At("RETURN"))
-    private void chisel$removeMossOnReplacement(BlockPos pos, BlockState state, int flags, CallbackInfoReturnable<BlockState> cir) {
+    private void chisel$removeMossOnReplacement(BlockPos pos, BlockState state, boolean moving, CallbackInfoReturnable<BlockState> cir) {
         MossHelper.onBlockChanged(level, pos, cir.getReturnValue(), state);
     }
 }

@@ -2,14 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "X": "#c:rods/wooden",
-    "Y": "#c:gems/diamond"
+    "X": {
+      "tag": "c:rods/wooden"
+    },
+    "Y": {
+      "tag": "c:gems/diamond"
+    }
   },
   "pattern": [
     " Y",
     "X "
   ],
   "result": {
+    "count": 1,
     "id": "chisel:chisel_diamond"
   }
 }

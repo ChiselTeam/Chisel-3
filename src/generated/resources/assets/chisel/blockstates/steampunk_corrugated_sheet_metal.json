@@ -1,42 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "type": "ctm:connected_texture_model",
-      "connected_faces": [
-        "all"
-      ],
-      "model_location": "chisel:block/steampunk_corrugated_sheet_metal",
-      "render_overlay_on_all_faces": true,
-      "variant": {
-        "block": "chisel:steampunk_corrugated_sheet_metal",
-        "kind": "v4"
-      },
+      "model": "chisel:block/ctm/steampunk_corrugated_sheet_metal",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "type": "ctm:connected_texture_model",
-      "connected_faces": [
-        "all"
-      ],
-      "model_location": "chisel:block/steampunk_corrugated_sheet_metal",
-      "render_overlay_on_all_faces": true,
-      "variant": {
-        "block": "chisel:steampunk_corrugated_sheet_metal",
-        "kind": "v4"
-      }
+      "model": "chisel:block/ctm/steampunk_corrugated_sheet_metal"
     },
     "axis=z": {
-      "type": "ctm:connected_texture_model",
-      "connected_faces": [
-        "all"
-      ],
-      "model_location": "chisel:block/steampunk_corrugated_sheet_metal",
-      "render_overlay_on_all_faces": true,
-      "variant": {
-        "block": "chisel:steampunk_corrugated_sheet_metal",
-        "kind": "v4"
-      },
+      "model": "chisel:block/ctm/steampunk_corrugated_sheet_metal",
       "x": 90
     }
   }

@@ -12,7 +12,7 @@ public class RegisterGuiLayersEventHandler {
 
     @SubscribeEvent
     public static void registerGuiLayers(RegisterGuiLayersEvent event) {
-        event.registerAboveAll(Chisel.prefix("mode_selector"), (graphics, _) -> {
+        event.registerAboveAll(Chisel.prefix("mode_selector"), (graphics, ignored) -> {
             var state = SelectionHandler.getOverlayState();
             if (state != null) SelectionOverlay.render(graphics, state);
         });

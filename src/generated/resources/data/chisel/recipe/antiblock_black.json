@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "R": "#c:dusts/glowstone",
-    "S": "#c:stones"
+    "R": {
+      "tag": "c:dusts/glowstone"
+    },
+    "S": {
+      "tag": "c:stones"
+    }
   },
   "pattern": [
     "SSS",

@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "G": "#c:ingots/gold",
-    "L": "#chisel:limestone"
+    "G": {
+      "tag": "c:ingots/gold"
+    },
+    "L": {
+      "tag": "chisel:limestone"
+    }
   },
   "pattern": [
     "GLG",

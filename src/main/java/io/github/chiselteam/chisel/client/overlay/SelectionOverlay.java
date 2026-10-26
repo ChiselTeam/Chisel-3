@@ -2,7 +2,7 @@ package io.github.chiselteam.chisel.client.overlay;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 
 public final class SelectionOverlay {
@@ -13,7 +13,7 @@ public final class SelectionOverlay {
     private static final int SELECTED_TEXT = 0xFFFFFFFF;
     private static final int INACTIVE_TEXT = 0xFFAAAAAA;
 
-    public static void render(GuiGraphicsExtractor graphics, SelectionOverlayState state) {
+    public static void render(GuiGraphics graphics, SelectionOverlayState state) {
         if (state.entries().isEmpty()) return;
         var font = Minecraft.getInstance().font;
         boolean hasIcons = state.entries().stream().anyMatch(entry -> !entry.icon().isEmpty());
@@ -50,10 +50,10 @@ public final class SelectionOverlay {
         }
     }
 
-    private static void drawEntry(GuiGraphicsExtractor graphics, Font font, SelectionOverlayEntry entry,
+    private static void drawEntry(GuiGraphics graphics, Font font, SelectionOverlayEntry entry,
                                   int x, float y, int width, int iconWidth, int rgb, float alpha) {
         if (alpha <= 0.0F) return;
-        if (!entry.icon().isEmpty()) graphics.item(entry.icon(), x + PADDING, Math.round(y + 2));
+        if (!entry.icon().isEmpty()) graphics.renderItem(entry.icon(), x + PADDING, Math.round(y + 2));
         int availableWidth = width - PADDING * 2 - iconWidth;
         var label = entry.label();
         if (font.width(label) > availableWidth) {
@@ -62,6 +62,6 @@ public final class SelectionOverlay {
         int textX = iconWidth > 0 ? x + PADDING + iconWidth : x + (width - font.width(label)) / 2;
         int textY = Math.round(y + (ROW_HEIGHT - font.lineHeight) / 2.0F);
         int color = Math.round(255.0F * alpha) << 24 | rgb & 0x00FFFFFF;
-        graphics.textWithBackdrop(font, label, textX, textY, width, color);
+        graphics.drawStringWithBackdrop(font, label, textX, textY, width, color);
     }
 }

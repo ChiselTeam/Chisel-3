@@ -1,11 +1,7 @@
 {
-  "neoforge:definition_type": "ctm:connected_texture_model",
-  "connected_faces": [
-    "all"
-  ],
-  "model_location": "chisel:block/ice_mosaic",
-  "variant": {
-    "block": "chisel:ice_mosaic",
-    "kind": "standard"
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/ice_mosaic"
+    }
   }
 }

@@ -2,7 +2,7 @@ package io.github.chiselteam.chisel.weathering;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 
 import java.util.Collections;
 import java.util.List;
@@ -28,7 +28,7 @@ import java.util.Map;
 ///   }
 /// }
 /// ```
-public record WeatheringChainData(List<Identifier> blocks, float agingRate, Map<Identifier, Identifier> waxedMap) {
+public record WeatheringChainData(List<ResourceLocation> blocks, float agingRate, Map<ResourceLocation, ResourceLocation> waxedMap) {
 
     /// Codec for serializing/deserializing `WeatheringChainData` from datapack JSON.
     /// Fields:
@@ -37,8 +37,8 @@ public record WeatheringChainData(List<Identifier> blocks, float agingRate, Map<
     ///   defaults to vanilla copper's `64 / 1125`
     /// - `waxed_map` (map of `string` to `string`, optional): unwaxed to waxed mapping
     public static final Codec<WeatheringChainData> CODEC = RecordCodecBuilder.create(i -> i.group(
-            Identifier.CODEC.listOf().fieldOf("blocks").forGetter(WeatheringChainData::blocks),
+            ResourceLocation.CODEC.listOf().fieldOf("blocks").forGetter(WeatheringChainData::blocks),
             Codec.FLOAT.optionalFieldOf("aging_rate", 0.05688889F).forGetter(WeatheringChainData::agingRate),
-            Codec.unboundedMap(Identifier.CODEC, Identifier.CODEC).optionalFieldOf("waxed_map", Collections.emptyMap()).forGetter(WeatheringChainData::waxedMap)
+            Codec.unboundedMap(ResourceLocation.CODEC, ResourceLocation.CODEC).optionalFieldOf("waxed_map", Collections.emptyMap()).forGetter(WeatheringChainData::waxedMap)
     ).apply(i, WeatheringChainData::new));
 }

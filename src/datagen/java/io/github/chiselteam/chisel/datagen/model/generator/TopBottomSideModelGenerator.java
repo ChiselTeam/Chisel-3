@@ -1,17 +1,15 @@
 package io.github.chiselteam.chisel.datagen.model.generator;
 
 import io.github.chiselteam.chisel.api.family.Variant;
+import io.github.chiselteam.chisel.datagen.model.BlockModels;
 import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
-import io.github.chiselteam.chisel.datagen.model.blockstate.EldritchBlockStateModelBuilder;
-import net.minecraft.client.data.models.BlockModelGenerators;
-import net.minecraft.client.data.models.MultiVariant;
-import net.minecraft.client.data.models.model.ModelTemplates;
-import net.minecraft.client.data.models.model.TextureMapping;
-import net.minecraft.client.data.models.model.TextureSlot;
-import net.minecraft.resources.Identifier;
+import net.minecraft.data.models.model.ModelTemplates;
+import net.minecraft.data.models.model.TextureMapping;
+import net.minecraft.data.models.model.TextureSlot;
+import net.minecraft.resources.ResourceLocation;
 
-import static net.minecraft.client.data.models.BlockModelGenerators.plainVariant;
+import static io.github.chiselteam.chisel.datagen.model.BlockModels.plainVariant;
 
 public class TopBottomSideModelGenerator extends VariantModelGenerator {
 
@@ -24,13 +22,12 @@ public class TopBottomSideModelGenerator extends VariantModelGenerator {
     }
 
     @Override
-    public void generate(Variant variant, BlockModelGenerators blockModels) {
+    public void generate(Variant variant, BlockModels blockModels) {
         super.generate(variant, blockModels);
-        Identifier modelLocation = ModelTemplates.CUBE_BOTTOM_TOP.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
-        MultiVariant model = plainVariant(modelLocation);
+        ResourceLocation modelLocation = ModelTemplates.CUBE_BOTTOM_TOP.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
+        net.minecraft.data.models.blockstates.Variant model = plainVariant(modelLocation);
         if (variant.isEldritch()) {
-            EldritchBlockStateModelBuilder builder = new EldritchBlockStateModelBuilder().inner(model.toUnbaked());
-            model = MultiVariant.of(builder);
+            model = BlockModels.eldritch(modelLocation, blockModels.modelOutput);
         }
 
         generateSimpleBlockState(model);

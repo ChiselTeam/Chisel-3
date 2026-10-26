@@ -3,10 +3,9 @@ package io.github.chiselteam.chisel.block;
 import com.mojang.serialization.MapCodec;
 import io.github.chiselteam.chisel.block.entity.BuildersGuideBlockEntity;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
+import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeItem;
@@ -16,8 +15,8 @@ import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
-import org.jspecify.annotations.NonNull;
-import org.jspecify.annotations.Nullable;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class BuildersGuideBlock extends BaseEntityBlock {
 
@@ -28,27 +27,27 @@ public class BuildersGuideBlock extends BaseEntityBlock {
     }
 
     @Override
-    protected @NonNull MapCodec<? extends BaseEntityBlock> codec() {
+    protected @NotNull MapCodec<? extends BaseEntityBlock> codec() {
         return CODEC;
     }
 
     @Override
-    public @Nullable BlockEntity newBlockEntity(@NonNull BlockPos pos, @NonNull BlockState state) {
+    public @Nullable BlockEntity newBlockEntity(@NotNull BlockPos pos, @NotNull BlockState state) {
         return new BuildersGuideBlockEntity(pos, state);
     }
 
     @Override
-    protected @NonNull InteractionResult useItemOn(@NonNull ItemStack stack, @NonNull BlockState state, @NonNull Level level, @NonNull BlockPos pos, @NonNull Player player, @NonNull InteractionHand hand, @NonNull BlockHitResult hitResult) {
+    protected @NotNull ItemInteractionResult useItemOn(@NotNull ItemStack stack, @NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult hitResult) {
         var guide = (BuildersGuideBlockEntity) level.getBlockEntity(pos);
         if(guide == null) return super.useItemOn(stack, state, level, pos, player, hand, hitResult);
         if(guide.getGhostBlocks().isEmpty()) return super.useItemOn(stack, state, level, pos, player, hand, hitResult);
 
         if(stack.getItem() instanceof DyeItem) {
-            var dye = stack.get(DataComponents.DYE);
+            var dye = stack.getItem() instanceof DyeItem item ? item.getDyeColor() : null;
             guide.setColor(dye);
             if(!player.isCreative()) stack.shrink(1);
             player.swing(hand);
-            return InteractionResult.CONSUME;
+            return ItemInteractionResult.CONSUME;
         }
 
         if(stack.getItem() instanceof BlockItem blockItem) {
@@ -56,21 +55,21 @@ public class BuildersGuideBlock extends BaseEntityBlock {
             guide.placeBlock(block);
             if(!player.isCreative()) stack.shrink(1);
             player.swing(hand);
-            return InteractionResult.CONSUME;
+            return ItemInteractionResult.CONSUME;
         }
 
-        return InteractionResult.TRY_WITH_EMPTY_HAND;
+        return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
     }
 
     @Override
-    protected @NonNull InteractionResult useWithoutItem(@NonNull BlockState state, @NonNull Level level, @NonNull BlockPos pos, @NonNull Player player, @NonNull BlockHitResult hitResult) {
+    protected @NotNull net.minecraft.world.InteractionResult useWithoutItem(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull BlockHitResult hitResult) {
         var entity = level.getBlockEntity(pos);
         if(entity == null) return super.useWithoutItem(state, level, pos, player, hitResult);
 
         if(entity instanceof BuildersGuideBlockEntity guide) {
             if(player.isShiftKeyDown()) {
                 guide.cycleBuildingMode();
-                player.sendOverlayMessage(Component.translatable("chisel.builders_guide.mode_changed").append(" ").append(guide.getBuildingMode().getDescription()));
+                player.displayClientMessage(Component.translatable("chisel.builders_guide.mode_changed").append(" ").append(guide.getBuildingMode().getDescription()), true);
             } else {
                 switch(hitResult.getDirection()) {
                     case NORTH -> guide.increaseLength();
@@ -80,14 +79,14 @@ public class BuildersGuideBlock extends BaseEntityBlock {
                     case DOWN -> guide.decreaseHeight();
                     case UP -> guide.increaseHeight();
                 }
-                player.sendOverlayMessage(Component.translatable("chisel.builders_guide.size_changed")
+                player.displayClientMessage(Component.translatable("chisel.builders_guide.size_changed")
                         .append(" ")
                         .append("%d".formatted(guide.getLength()))
                         .append("x")
                         .append("%d".formatted(guide.getWidth()))
                         .append("x")
                         .append("%d".formatted(guide.getHeight()))
-                );
+                , true);
             }
         }
 

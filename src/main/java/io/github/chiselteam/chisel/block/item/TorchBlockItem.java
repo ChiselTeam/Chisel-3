@@ -7,18 +7,17 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.StandingAndWallBlockItem;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.block.Block;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
-import java.util.function.Consumer;
+import java.util.List;
 
 public class TorchBlockItem extends StandingAndWallBlockItem {
 
     private final Variant variant;
 
     public TorchBlockItem(Variant variant, Block block, Block wallBlock, Properties properties) {
-        super(block, wallBlock, Direction.DOWN, properties);
+        super(block, wallBlock, properties, Direction.DOWN);
         this.variant = variant;
     }
 
@@ -28,7 +27,7 @@ public class TorchBlockItem extends StandingAndWallBlockItem {
 
     @SuppressWarnings("deprecation")
     @Override
-    public void appendHoverText(@NonNull ItemStack stack, @NonNull TooltipContext context, @NonNull TooltipDisplay display, @NonNull Consumer<Component> builder, @NonNull TooltipFlag flag) {
-        builder.accept(Component.translatable(variant.getTranslationKey()).withStyle(ChatFormatting.GRAY));
+    public void appendHoverText(@NotNull ItemStack stack, @NotNull TooltipContext context, @NotNull List<Component> builder, @NotNull TooltipFlag flag) {
+        builder.add(Component.translatable(variant.getTranslationKey()).withStyle(ChatFormatting.GRAY));
     }
 }

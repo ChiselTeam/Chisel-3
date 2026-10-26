@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "R": "#c:gems/quartz",
-    "S": "#c:stones"
+    "R": {
+      "tag": "c:gems/quartz"
+    },
+    "S": {
+      "tag": "c:stones"
+    }
   },
   "pattern": [
     "SSS",

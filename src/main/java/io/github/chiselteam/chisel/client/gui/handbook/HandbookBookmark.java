@@ -1,7 +1,7 @@
 package io.github.chiselteam.chisel.client.gui.handbook;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
@@ -30,11 +30,11 @@ public final class HandbookBookmark {
         return values;
     }
 
-    public static boolean save(Identifier guide, int spread) {
+    public static boolean save(ResourceLocation guide, int spread) {
         return save(path(), guide, spread);
     }
 
-    static boolean save(Path file, Identifier guide, int spread) {
+    static boolean save(Path file, ResourceLocation guide, int spread) {
         var values = new Properties();
         values.setProperty("guide", guide.toString());
         values.setProperty("spread", Integer.toString(spread));

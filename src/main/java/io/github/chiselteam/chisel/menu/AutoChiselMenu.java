@@ -11,7 +11,7 @@ import io.github.chiselteam.chisel.registry.ChiselMenus;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;
@@ -23,7 +23,7 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 public class AutoChiselMenu extends AbstractContainerMenu {
 
@@ -98,7 +98,7 @@ public class AutoChiselMenu extends AbstractContainerMenu {
             for (int c = 0; c < 3; c++) {
                 addSlot(new Slot(container, OUTPUT_SLOT_START + c + r * 3, 116 + c * 18, 19 + r * 18) {
                     @Override
-                    public boolean mayPlace(@NonNull ItemStack stack) {
+                    public boolean mayPlace(@NotNull ItemStack stack) {
                         return false;
                     }
                 });
@@ -122,7 +122,7 @@ public class AutoChiselMenu extends AbstractContainerMenu {
     }
 
     @Override
-    public @NonNull ItemStack quickMoveStack(@NonNull Player player, int index) {
+    public @NotNull ItemStack quickMoveStack(@NotNull Player player, int index) {
         ItemStack originalStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(index);
         if (slot.hasItem()) {
@@ -188,7 +188,7 @@ public class AutoChiselMenu extends AbstractContainerMenu {
     }
 
     @Override
-    public boolean stillValid(@NonNull Player player) {
+    public boolean stillValid(@NotNull Player player) {
         return true;
     }
 
@@ -216,7 +216,7 @@ public class AutoChiselMenu extends AbstractContainerMenu {
         return false;
     }
 
-    public void selectTemplateVariant(Player player, Identifier blockId) {
+    public void selectTemplateVariant(Player player, ResourceLocation blockId) {
         Slot templateSlot = slots.get(TEMPLATE_SLOT);
         Slot chiselSlot = slots.get(CHISEL_SLOT);
         ItemStack template = templateSlot.getItem();
@@ -234,7 +234,7 @@ public class AutoChiselMenu extends AbstractContainerMenu {
 
         templateSlot.set(template.transmuteCopy(selected.asItem(), 1));
         templateSlot.setChanged();
-        chisel.hurtAndBreak(1, serverLevel, null, _ -> chiselSlot.set(ItemStack.EMPTY));
+        chisel.hurtAndBreak(1, serverLevel, null, ignored -> chiselSlot.set(ItemStack.EMPTY));
         chiselSlot.setChanged();
         broadcastChanges();
     }

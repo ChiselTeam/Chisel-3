@@ -2,15 +2,14 @@ package io.github.chiselteam.chisel.client.gui.palette;
 
 import io.github.chiselteam.chisel.client.gui.BookUiTextures;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.AbstractWidget;
 import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.client.gui.narration.NarrationElementOutput;
-import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.level.block.state.BlockState;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Map;
 import java.util.function.Supplier;
@@ -18,6 +17,7 @@ import java.util.function.Supplier;
 public final class PaletteWallPreview extends AbstractWidget {
     private final Supplier<Map<BlockPos, BlockState>> wall;
     private final float sensitivity;
+    private long lastClick;
     private float rotationX = PalettePreviewCamera.DEFAULT_PITCH, rotationY = PalettePreviewCamera.DEFAULT_YAW, zoom = 1F, panX, panY;
 
     public PaletteWallPreview(Supplier<Map<BlockPos, BlockState>> wall) {
@@ -32,7 +32,10 @@ public final class PaletteWallPreview extends AbstractWidget {
     }
 
     @Override
-    public void onClick(@NonNull MouseButtonEvent event, boolean doubleClick) {
+    public void onClick(double mouseX, double mouseY) {
+        long now = net.minecraft.Util.getMillis();
+        boolean doubleClick = now - lastClick < 250;
+        lastClick = now;
         if (doubleClick) {
             rotationX = PalettePreviewCamera.DEFAULT_PITCH;
             rotationY = PalettePreviewCamera.DEFAULT_YAW;
@@ -43,8 +46,8 @@ public final class PaletteWallPreview extends AbstractWidget {
     }
 
     @Override
-    protected void onDrag(@NonNull MouseButtonEvent event, double dx, double dy) {
-        if (Minecraft.getInstance().hasShiftDown()) {
+    protected void onDrag(double mouseX, double mouseY, double dx, double dy) {
+        if (net.minecraft.client.gui.screens.Screen.hasShiftDown()) {
             panX = Math.clamp(panX + (float) dx * sensitivity, -width, width);
             panY = Math.clamp(panY + (float) dy * sensitivity, -height, height);
         } else {
@@ -61,18 +64,18 @@ public final class PaletteWallPreview extends AbstractWidget {
     }
 
     @Override
-    protected void extractWidgetRenderState(GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick) {
+    protected void renderWidget(GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
         graphics.fill(getX() + 4, getY() + 4, getRight() - 4, getBottom() - 4, PaletteTheme.INSET);
         var blocks = wall.get();
-        if (!blocks.isEmpty()) graphics.submitPictureInPictureRenderState(new PaletteWallState(blocks, rotationX, rotationY, zoom, panX, panY, getX() + 6, getY() + 6, getRight() - 6, getBottom() - 6));
+        if (!blocks.isEmpty()) io.github.chiselteam.chisel.client.gui.preview.PreviewRenderer.render(graphics, new PaletteWallState(blocks, rotationX, rotationY, zoom, panX, panY, getX() + 6, getY() + 6, getRight() - 6, getBottom() - 6));
         else
-            graphics.text(Minecraft.getInstance().font, Component.translatable("chisel.palette.preview_empty"), getX() + 4, getY() + 8, PaletteTheme.MUTED, false);
-        graphics.nextStratum();
+            graphics.drawString(Minecraft.getInstance().font, Component.translatable("chisel.palette.preview_empty"), getX() + 4, getY() + 8, PaletteTheme.MUTED, false);
+        graphics.flush();
         BookUiTextures.nineSlice(graphics, BookUiTextures.FRAME, getX(), getY(), width, height, 48, 48, 16, 16);
     }
 
     @Override
-    protected void updateWidgetNarration(@NonNull NarrationElementOutput output) {
+    protected void updateWidgetNarration(@NotNull NarrationElementOutput output) {
         defaultButtonNarrationText(output);
     }
 }

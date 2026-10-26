@@ -18,13 +18,13 @@ import java.util.function.Supplier;
 public class ChiselBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Chisel.MODID);
 
-    public static final DeferredBlock<Block> AUTO_CHISEL = BLOCKS.registerBlock("auto_chisel", AutoChiselBlock::new, () -> Properties.of()
+    public static final DeferredBlock<Block> AUTO_CHISEL = BLOCKS.registerBlock("auto_chisel", AutoChiselBlock::new, Properties.of()
             .sound(SoundType.METAL)
             .strength(2.5F)
             .noOcclusion()
             .requiresCorrectToolForDrops());
 
-    public static final DeferredBlock<Block> BUILDERS_GUIDE = BLOCKS.registerBlock("builders_guide", BuildersGuideBlock::new, () -> Properties.of()
+    public static final DeferredBlock<Block> BUILDERS_GUIDE = BLOCKS.registerBlock("builders_guide", BuildersGuideBlock::new, Properties.of()
             .sound(SoundType.METAL)
             .strength(2.5F)
             .requiresCorrectToolForDrops());
@@ -39,11 +39,11 @@ public class ChiselBlocks {
 
     @ApiStatus.Internal
     public static DeferredBlock<Block> register(String name, Properties properties) {
-        return BLOCKS.registerBlock(name, ConnectedTextureBlock::new, () -> properties);
+        return BLOCKS.registerBlock(name, ConnectedTextureBlock::new, properties);
     }
 
     @ApiStatus.Internal
     public static DeferredBlock<Block> register(String name, Function<Properties, ? extends Block> func, Supplier<Properties> properties) {
-        return BLOCKS.registerBlock(name, func, properties);
+        return BLOCKS.register(name, () -> func.apply(properties.get()));
     }
 }

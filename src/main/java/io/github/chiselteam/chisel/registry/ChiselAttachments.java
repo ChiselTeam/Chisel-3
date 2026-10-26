@@ -14,20 +14,20 @@ public final class ChiselAttachments {
     public static final DeferredHolder<AttachmentType<?>, AttachmentType<MossData>> MOSS;
 
     public static final DeferredHolder<AttachmentType<?>, AttachmentType<Integer>> MOVING_MOSS = ATTACHMENTS.register("moving_moss",
-            () -> AttachmentType.builder(() -> 0).serialize(Codec.intRange(0, 10).fieldOf("texture")).build());
+            () -> AttachmentType.builder(() -> 0).serialize(Codec.intRange(0, 10).fieldOf("texture").codec()).build());
 
     public static final DeferredHolder<AttachmentType<?>, AttachmentType<PlayerPalettes>> PALETTES = ATTACHMENTS.register("player_palettes",
-            () -> AttachmentType.builder(() -> PlayerPalettes.EMPTY).serialize(PlayerPalettes.CODEC).copyOnDeath()
+            () -> AttachmentType.builder(() -> PlayerPalettes.EMPTY).serialize(PlayerPalettes.CODEC.codec()).copyOnDeath()
                     .sync((holder, recipient) -> holder == recipient, PlayerPalettes.STREAM_CODEC).build());
 
     public static final DeferredHolder<AttachmentType<?>, AttachmentType<Boolean>> DEFAULT_PALETTES_GRANTED = ATTACHMENTS.register("default_palettes_granted",
-            () -> AttachmentType.builder(() -> false).serialize(Codec.BOOL.fieldOf("granted")).copyOnDeath().build());
+            () -> AttachmentType.builder(() -> false).serialize(Codec.BOOL.fieldOf("granted").codec()).copyOnDeath().build());
 
     public static final DeferredHolder<AttachmentType<?>, AttachmentType<Boolean>> BUILDERS_HANDBOOK_GRANTED = ATTACHMENTS.register("builders_handbook_granted",
-            () -> AttachmentType.builder(() -> false).serialize(Codec.BOOL.fieldOf("granted")).copyOnDeath().build());
+            () -> AttachmentType.builder(() -> false).serialize(Codec.BOOL.fieldOf("granted").codec()).copyOnDeath().build());
 
     static {
-        MOSS = ATTACHMENTS.register("moss", () -> AttachmentType.builder(MossData::new).serialize(MossData.CODEC).build());
+        MOSS = ATTACHMENTS.register("moss", () -> AttachmentType.builder(MossData::new).serialize(MossData.CODEC.codec()).build());
     }
 
     private ChiselAttachments() {

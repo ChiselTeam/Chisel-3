@@ -8,8 +8,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "G": "#c:glass/conifer",
-    "I": "#c:ingots/iron"
+    "G": {
+      "tag": "c:glass/conifer"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    }
   },
   "pattern": [
     "GGG",

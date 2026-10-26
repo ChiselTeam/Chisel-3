@@ -1,11 +1,7 @@
 {
-  "neoforge:definition_type": "ctm:connected_texture_model",
-  "connected_faces": [
-    "all"
-  ],
-  "model_location": "chisel:block/ice_border_square",
-  "variant": {
-    "block": "chisel:ice_border_square",
-    "kind": "standard"
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/ice_border_square"
+    }
   }
 }

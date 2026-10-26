@@ -8,8 +8,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "G": "#c:glass/fluorescent",
-    "I": "#c:ingots/iron"
+    "G": {
+      "tag": "c:glass/fluorescent"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    }
   },
   "pattern": [
     "GGG",

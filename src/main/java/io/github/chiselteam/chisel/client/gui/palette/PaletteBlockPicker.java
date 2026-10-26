@@ -2,7 +2,7 @@ package io.github.chiselteam.chisel.client.gui.palette;
 
 import io.github.chiselteam.chisel.palette.PaletteDefinition;
 import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.AbstractWidget;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.EditBox;
@@ -15,7 +15,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.EmptyBlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RenderShape;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -111,10 +111,10 @@ public final class PaletteBlockPicker {
         }));
     }
 
-    private @NonNull List<Block> getFiltered() {
+    private @NotNull List<Block> getFiltered() {
         String needle = search.toLowerCase(Locale.ROOT).strip();
         var matches = catalog.stream().filter(block -> BuiltInRegistries.BLOCK.getKey(block).toString().contains(needle) || block.getName().getString().toLowerCase(Locale.ROOT).contains(needle));
-        if (indexing) matches = matches.filter(_ -> false);
+        if (indexing) matches = matches.filter(ignored -> false);
         if (color != null) matches = matches.filter(block -> colors.score(block, color) >= 0.15).sorted(Comparator.comparingDouble((Block block) -> colors.score(block, color)).reversed());
         return matches.toList();
     }
@@ -125,26 +125,26 @@ public final class PaletteBlockPicker {
     }
 
     private Button pageButton(int x, String label, boolean active, Runnable action) {
-        var button = Button.builder(Component.literal(label), _ -> action.run()).bounds(x, bottom, 24, 18).build();
+        var button = Button.builder(Component.literal(label), ignored -> action.run()).bounds(x, bottom, 24, 18).build();
         button.active = active && !locked.getAsBoolean();
         button.setTooltip(Tooltip.create(Component.translatable(label.equals("<") ? "chisel.palette.previous" : "chisel.palette.next")));
         return button;
     }
 
-    public void extractRenderState(GuiGraphicsExtractor graphics, Font font, int mouseX, int mouseY) {
+    public void render(GuiGraphics graphics, Font font, int mouseX, int mouseY) {
         if (matchCount == 0) {
             var message = Component.translatable(indexing ? "chisel.palette.color.indexing" : "chisel.palette.no_matches");
             int y = gridY + 2;
             for (var line : font.split(message, width)) {
                 if (y + 9 > bottom) break;
-                graphics.text(font, line, x, y, PaletteTheme.MUTED, false);
+                graphics.drawString(font, line, x, y, PaletteTheme.MUTED, false);
                 y += 10;
             }
         }
         if (indexing) {
-            graphics.text(font, "...", x + width / 2 - 5, bottom + 5, PaletteTheme.MUTED, false);
+            graphics.drawString(font, "...", x + width / 2 - 5, bottom + 5, PaletteTheme.MUTED, false);
             if (mouseX >= x + 24 && mouseX < x + width - 24 && mouseY >= bottom && mouseY < bottom + 18)
-                graphics.setTooltipForNextFrame(font, List.of(Component.translatable("chisel.palette.color.indexing").getVisualOrderText()), mouseX, mouseY);
+                graphics.renderTooltip(font, List.of(Component.translatable("chisel.palette.color.indexing").getVisualOrderText()), mouseX, mouseY);
         }
     }
 }

@@ -8,8 +8,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "G": "#c:glass/fluorescent",
-    "I": "minecraft:oak_planks"
+    "G": {
+      "tag": "c:glass/fluorescent"
+    },
+    "I": {
+      "item": "minecraft:oak_planks"
+    }
   },
   "pattern": [
     "GGG",

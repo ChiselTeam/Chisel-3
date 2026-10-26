@@ -1,41 +1,29 @@
 package io.github.chiselteam.chisel.datagen.model.blockstate;
 
+import com.google.gson.JsonElement;
+import io.github.chiselteam.chisel.datagen.model.BlockModels;
 import io.github.chiselteam.ctm.api.datagen.CTMBlockStateGenerator;
-import net.minecraft.client.data.models.BlockModelGenerators;
-import net.minecraft.client.data.models.MultiVariant;
-import net.minecraft.client.data.models.blockstates.BlockModelDefinitionGenerator;
-import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
-import net.minecraft.client.renderer.block.dispatch.BlockStateModelDispatcher;
+import net.minecraft.data.models.blockstates.BlockStateGenerator;
+import net.minecraft.data.models.blockstates.MultiVariantGenerator;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
-import org.jspecify.annotations.NonNull;
 
-public class ConnectedTextureBlockStateDefinitionGenerator implements BlockModelDefinitionGenerator {
+import java.util.function.BiConsumer;
+import java.util.function.Supplier;
 
+public final class ConnectedTextureBlockStateDefinitionGenerator implements BlockStateGenerator {
     private final Block block;
-    private final ConnectedTextureBlockStateModelBuilder builder;
-
+    private final CTMBlockStateGenerator ctm;
     private ConnectedTextureBlockStateDefinitionGenerator(Block block, ConnectedTextureBlockStateModelBuilder builder) {
-        this.block = block;
-        this.builder = builder;
+        this.block=block; this.ctm=CTMBlockStateGenerator.of(block,builder.toCTMBuilder());
     }
-
-    public static ConnectedTextureBlockStateDefinitionGenerator dispatch(Block block, ConnectedTextureBlockStateModelBuilder builder) {
-        return new ConnectedTextureBlockStateDefinitionGenerator(block, builder);
-    }
-
-    @Override
-    public @NonNull Block block() {
-        return block;
-    }
-
-    @Override
-    public @NonNull BlockStateModelDispatcher create() {
-        if (block instanceof RotatedPillarBlock) {
-            return MultiVariantGenerator.dispatch(block, MultiVariant.of(builder.toCTMBuilder()))
-                    .with(BlockModelGenerators.createRotatedPillar())
-                    .create();
-        }
-        return CTMBlockStateGenerator.of(block, builder.toCTMBuilder()).create();
+    public static ConnectedTextureBlockStateDefinitionGenerator dispatch(Block block, ConnectedTextureBlockStateModelBuilder builder) { return new ConnectedTextureBlockStateDefinitionGenerator(block,builder); }
+    public void saveModel(BiConsumer<ResourceLocation,Supplier<JsonElement>> output) { ctm.saveModel(output); }
+    @Override public Block getBlock() { return block; }
+    @Override public JsonElement get() {
+        var generator = MultiVariantGenerator.multiVariant(block, BlockModels.plainVariant(ctm.modelLocation()));
+        if (block instanceof RotatedPillarBlock) generator.with(BlockModels.createRotatedPillar());
+        return generator.get();
     }
 }

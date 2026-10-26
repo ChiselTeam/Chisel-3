@@ -14,26 +14,26 @@ import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import mezz.jei.api.runtime.IJeiRuntime;
 import net.minecraft.client.Minecraft;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.stream.Collectors;
 
 @JeiPlugin
 public class JEICompatibility implements IModPlugin {
     @Override
-    public @NonNull Identifier getPluginUid() {
+    public @NotNull ResourceLocation getPluginUid() {
         return Chisel.prefix("jei_plugin");
     }
 
     @Override
-    public void registerCategories(@NonNull IRecipeCategoryRegistration registration) {
+    public void registerCategories(@NotNull IRecipeCategoryRegistration registration) {
         registration.addRecipeCategories(new ChiselRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
     }
 
     @Override
-    public void registerRecipes(@NonNull IRecipeRegistration registration) {
+    public void registerRecipes(@NotNull IRecipeRegistration registration) {
         var hiddenFamilyNames = CompatFamilies.hiddenFamilies().stream()
                 .map(family -> family.getDefinition().name())
                 .collect(Collectors.toSet());
@@ -47,7 +47,7 @@ public class JEICompatibility implements IModPlugin {
     }
 
     @Override
-    public void onRuntimeAvailable(@NonNull IJeiRuntime runtime) {
+    public void onRuntimeAvailable(@NotNull IJeiRuntime runtime) {
         var hiddenItems = CompatFamilies.hiddenFamilies().stream()
                 .flatMap(family -> family.getFamily().getVariants().stream())
                 .map(variant -> variant.getBlock().asItem())
@@ -61,10 +61,10 @@ public class JEICompatibility implements IModPlugin {
     }
 
     @Override
-    public void registerRecipeCatalysts(@NonNull IRecipeCatalystRegistration registration) {
-        registration.addCraftingStation(ChiselRecipeCategory.TYPE, new ItemStack(ChiselItems.CHISEL_IRON.get()));
-        registration.addCraftingStation(ChiselRecipeCategory.TYPE, new ItemStack(ChiselItems.CHISEL_DIAMOND.get()));
-        registration.addCraftingStation(ChiselRecipeCategory.TYPE, new ItemStack(ChiselItems.CHISEL_OBSIDIAN.get()));
+    public void registerRecipeCatalysts(@NotNull IRecipeCatalystRegistration registration) {
+        registration.addRecipeCatalyst(new ItemStack(ChiselItems.CHISEL_IRON.get()), ChiselRecipeCategory.TYPE);
+        registration.addRecipeCatalyst(new ItemStack(ChiselItems.CHISEL_DIAMOND.get()), ChiselRecipeCategory.TYPE);
+        registration.addRecipeCatalyst(new ItemStack(ChiselItems.CHISEL_OBSIDIAN.get()), ChiselRecipeCategory.TYPE);
     }
 
     @Override

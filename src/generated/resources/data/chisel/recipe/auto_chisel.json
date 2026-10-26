@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "I": "#c:ingots/iron",
-    "S": "minecraft:stone_slab"
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "S": {
+      "item": "minecraft:stone_slab"
+    }
   },
   "pattern": [
     "SSS",
@@ -11,6 +15,7 @@
     "SSS"
   ],
   "result": {
+    "count": 1,
     "id": "chisel:auto_chisel"
   }
 }

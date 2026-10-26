@@ -28,6 +28,6 @@ public class ChiselEntities {
     }
 
     private static <T extends Entity> DeferredHolder<EntityType<?>, EntityType<T>> register(String name, EntityType.Builder<T> builder, ResourceKey<EntityType<?>> key) {
-        return ENTITY_TYPES.register(name, () -> builder.build(key));
+        return ENTITY_TYPES.register(name, () -> builder.build(key.location().toString()));
     }
 }

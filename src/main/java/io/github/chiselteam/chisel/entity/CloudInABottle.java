@@ -9,12 +9,12 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.projectile.throwableitemprojectile.ThrowableItemProjectile;
+import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 public class CloudInABottle extends ThrowableItemProjectile {
     public CloudInABottle(EntityType<? extends CloudInABottle> type, Level level) {
@@ -22,15 +22,17 @@ public class CloudInABottle extends ThrowableItemProjectile {
     }
 
     public CloudInABottle(Level level, double x, double y, double z, ItemStack stack) {
-        super(ChiselEntities.CLOUD_IN_A_BOTTLE.get(), x, y, z, level, stack);
+        super(ChiselEntities.CLOUD_IN_A_BOTTLE.get(), x, y, z, level);
+        setItem(stack);
     }
 
     public CloudInABottle(ServerLevel serverLevel, LivingEntity livingEntity, ItemStack stack) {
-        super(ChiselEntities.CLOUD_IN_A_BOTTLE.get(), livingEntity, serverLevel, stack);
+        super(ChiselEntities.CLOUD_IN_A_BOTTLE.get(), livingEntity, serverLevel);
+        setItem(stack);
     }
 
     @Override
-    protected void onHitBlock(@NonNull BlockHitResult result) {
+    protected void onHitBlock(@NotNull BlockHitResult result) {
         super.onHitBlock(result);
         generate(result.getBlockPos(), 40);
         level().playSound(null, result.getBlockPos(), SoundEvents.GLASS_BREAK, SoundSource.NEUTRAL);
@@ -89,7 +91,7 @@ public class CloudInABottle extends ThrowableItemProjectile {
     }
 
     @Override
-    protected @NonNull Item getDefaultItem() {
+    protected @NotNull Item getDefaultItem() {
         return ChiselItems.CLOUD_IN_A_BOTTLE.get();
     }
 }

@@ -3,14 +3,14 @@ package io.github.chiselteam.chisel.content.family.decorative;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
 import io.github.chiselteam.chisel.content.ChiselFamily;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class WaterstoneFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("waterstone", builder -> builder
             .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).noOcclusion()).blockName("Waterstone").model(ChiselModelHandlers.MULTI_LAYER_WATER)
-                    .texture("bg", Identifier.withDefaultNamespace("block/water_still")))
+                    .texture("bg", ResourceLocation.withDefaultNamespace("block/water_still")))
             .variant("waterstone_array", v -> v.description("Array").model(ChiselModelHandlers.MULTI_LAYER_WATER_2X2)
                     .texture(Chisel.prefix("block/lavastone/lavastone_array"))
                     .textureFromBase("2x2_top_left"))

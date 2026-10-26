@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:sea_lantern",
-    "#c:dyes/orange"
+    {
+      "item": "minecraft:sea_lantern"
+    },
+    {
+      "tag": "c:dyes/orange"
+    }
   ],
   "result": {
     "count": 8,

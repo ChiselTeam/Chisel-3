@@ -3,14 +3,14 @@ package io.github.chiselteam.chisel.content.family.decorative;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
 import io.github.chiselteam.chisel.content.ChiselFamily;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class LavastoneFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("lavastone", builder -> builder
             .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)).blockName("Lavastone").model(ChiselModelHandlers.MULTI_LAYER_LAVA)
-                    .texture("bg", Identifier.withDefaultNamespace("block/lava_still")))
+                    .texture("bg", ResourceLocation.withDefaultNamespace("block/lava_still")))
             .variant("lavastone_array", v -> v.description("Array").model(ChiselModelHandlers.LAVA_2x2)
                     .textureFromBase("2x2_top_left"))
             .variant("lavastone_braid", v -> v.description("Braid"))

@@ -2,14 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "X": "#c:rods/wooden",
-    "Y": "#minecraft:wool"
+    "X": {
+      "tag": "c:rods/wooden"
+    },
+    "Y": {
+      "tag": "minecraft:wool"
+    }
   },
   "pattern": [
     " Y",
     "X "
   ],
   "result": {
+    "count": 1,
     "id": "chisel:palette_builder"
   }
 }

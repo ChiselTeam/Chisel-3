@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class LangConversionHelper {
 
-    private static final String normal = "abcdefghijklmnopqrstuvwxyz" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "0123456789" + ",.?!;\"'`&_^()[]{}<>";
+    private static final String normal = "abcdefghijklmnopqrstuvwxyz" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "0123456789" + ",.?!;\"'`&ignored^()[]{}<>";
     private static final char[] upside_down = ("ɐqɔpǝɟᵷɥᴉɾʞꞁɯuodbɹsʇnʌʍxʎz" + "ⱯᗺƆᗡƎℲ⅁HIՐꞰꞀWNOԀꝹᴚS⟘∩ΛMX⅄Z" + "0⥝ᘔƐ߈ϛ9ㄥ86" + "'˙¿¡؛„,,⅋‾v)(][}{><").toCharArray();
 
     public static char flip(char c) {

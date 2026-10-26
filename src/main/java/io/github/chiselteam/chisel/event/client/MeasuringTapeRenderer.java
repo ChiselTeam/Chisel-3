@@ -5,7 +5,7 @@ import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.client.overlay.OutlineEdge;
 import io.github.chiselteam.chisel.item.MeasuringTapeItem;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.rendertype.RenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -39,7 +39,8 @@ public class MeasuringTapeRenderer {
     );
 
     @SubscribeEvent
-    public static void render(RenderLevelStageEvent.AfterTranslucentBlocks event) {
+    public static void render(RenderLevelStageEvent event) {
+        if (event.getStage() != RenderLevelStageEvent.Stage.AFTER_TRANSLUCENT_BLOCKS) return;
         var minecraft = Minecraft.getInstance();
         var player = minecraft.player;
 
@@ -53,18 +54,18 @@ public class MeasuringTapeRenderer {
         MeasuringTapeItem.getMiddlePosition(measuringTape).ifPresent(pos -> renderOutline(event, pos, 0, 255, 255));
     }
 
-    private static void renderOutline(RenderLevelStageEvent.AfterTranslucentBlocks event, BlockPos pos, int r, int g, int b) {
+    private static void renderOutline(RenderLevelStageEvent event, BlockPos pos, int r, int g, int b) {
         var minecraft = Minecraft.getInstance();
         var cam = minecraft.getEntityRenderDispatcher().camera;
         if (cam == null) return;
-        var camPos = cam.position();
+        var camPos = cam.getPosition();
 
         var pose = event.getPoseStack();
         pose.pushPose();
         pose.translate(pos.getX() - camPos.x, pos.getY() - camPos.y, pos.getZ() - camPos.z);
 
         var matrix = pose.last().pose();
-        var consumer = minecraft.renderBuffers().bufferSource().getBuffer(RenderTypes.lines());
+        var consumer = minecraft.renderBuffers().bufferSource().getBuffer(RenderType.lines());
 
         for (OutlineEdge edge : BLOCK_OUTLINE) {
             drawEdge(consumer, matrix, edge, r, g, b);
@@ -77,11 +78,11 @@ public class MeasuringTapeRenderer {
         consumer.addVertex(matrix, edge.x1(), edge.y1(), edge.z1())
                 .setColor(r, g, b, 255)
                 .setNormal(edge.normalX(), edge.normalY(), edge.normalZ())
-                .setLineWidth(3.0F);
+                ;
 
         consumer.addVertex(matrix, edge.x2(), edge.y2(), edge.z2())
                 .setColor(r, g, b, 255)
                 .setNormal(edge.normalX(), edge.normalY(), edge.normalZ())
-                .setLineWidth(3.0F);
+                ;
     }
 }

@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "G": "minecraft:glass",
-    "Q": "#c:gems/quartz"
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "Q": {
+      "tag": "c:gems/quartz"
+    }
   },
   "pattern": [
     "G G",
@@ -11,6 +15,7 @@
     " G "
   ],
   "result": {
+    "count": 1,
     "id": "chisel:cloudinabottle"
   }
 }

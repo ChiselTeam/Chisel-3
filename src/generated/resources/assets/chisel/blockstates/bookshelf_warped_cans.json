@@ -1,14 +1,7 @@
 {
-  "neoforge:definition_type": "ctm:connected_texture_model",
-  "connected_faces": [
-    "north",
-    "south",
-    "west",
-    "east"
-  ],
-  "model_location": "chisel:block/bookshelf_warped_cans",
-  "variant": {
-    "block": "chisel:bookshelf_warped_cans",
-    "kind": "bookshelf"
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/bookshelf_warped_cans"
+    }
   }
 }

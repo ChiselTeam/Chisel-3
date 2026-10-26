@@ -5,7 +5,7 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 public class ChiselContainer extends SimpleContainer {
 
@@ -28,7 +28,7 @@ public class ChiselContainer extends SimpleContainer {
     }
 
     @Override
-    public boolean canPlaceItem(int slot, @NonNull ItemStack stack) {
+    public boolean canPlaceItem(int slot, @NotNull ItemStack stack) {
         return super.canPlaceItem(slot, stack);
     }
 

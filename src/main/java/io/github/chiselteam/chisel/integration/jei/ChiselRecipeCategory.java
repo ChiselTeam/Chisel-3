@@ -9,27 +9,26 @@ import mezz.jei.api.gui.widgets.IRecipeExtrasBuilder;
 import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
+import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.recipe.category.AbstractRecipeCategory;
-import mezz.jei.api.recipe.types.IRecipeType;
 import net.minecraft.world.item.ItemStack;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 public class ChiselRecipeCategory extends AbstractRecipeCategory<ChiselRecipe> {
-    public static final IRecipeType<ChiselRecipe> TYPE = IRecipeType.create(Chisel.prefix("carving"), ChiselRecipe.class);
+    public static final RecipeType<ChiselRecipe> TYPE = new RecipeType<>(Chisel.prefix("carving"), ChiselRecipe.class);
 
     public ChiselRecipeCategory(IGuiHelper guiHelper) {
-        var chisel = new ItemStack(ChiselItems.CHISEL_IRON.get());
         super(
                 TYPE,
-                ChiselItems.CHISEL_IRON.get().getName(chisel),
-                guiHelper.createDrawableItemStack(chisel),
+                ChiselItems.CHISEL_IRON.get().getName(new ItemStack(ChiselItems.CHISEL_IRON.get())),
+                guiHelper.createDrawableItemStack(new ItemStack(ChiselItems.CHISEL_IRON.get())),
                 160,
                 100
         );
     }
 
     @Override
-    public void createRecipeExtras(@NonNull IRecipeExtrasBuilder builder, @NonNull ChiselRecipe recipe, @NonNull IFocusGroup focuses) {
+    public void createRecipeExtras(@NotNull IRecipeExtrasBuilder builder, @NotNull ChiselRecipe recipe, @NotNull IFocusGroup focuses) {
         var variants = recipe.family().getAllVariants();
         if (variants.isEmpty() || variants.size() < 2) return;
 
@@ -46,12 +45,12 @@ public class ChiselRecipeCategory extends AbstractRecipeCategory<ChiselRecipe> {
     }
 
     @Override
-    public void setRecipe(@NonNull IRecipeLayoutBuilder builder, @NonNull ChiselRecipe recipe, @NonNull IFocusGroup focuses) {
+    public void setRecipe(@NotNull IRecipeLayoutBuilder builder, @NotNull ChiselRecipe recipe, @NotNull IFocusGroup focuses) {
         var family = recipe.family();
         var variants = family.getAllVariants();
 
         var inputs = builder.addInvisibleIngredients(RecipeIngredientRole.INPUT);
-        variants.forEach(variant -> inputs.add(variant.getBlock()));
-        variants.forEach(variant -> builder.addOutputSlot().add(variant.getBlock()));
+        variants.forEach(variant -> inputs.addItemLike(variant.getBlock()));
+        variants.forEach(variant -> builder.addOutputSlot().addItemLike(variant.getBlock()));
     }
 }

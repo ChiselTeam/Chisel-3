@@ -10,16 +10,15 @@ import io.github.chiselteam.chisel.guide.page.HandbookPage;
 import io.github.chiselteam.chisel.guide.page.HandbookSpread;
 import io.github.chiselteam.chisel.guide.page.StructurePageElement;
 import io.github.chiselteam.chisel.guide.section.StructureSection;
-import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.state.BlockState;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -64,7 +63,7 @@ public class BuildersHandbookScreen extends Screen {
             var saved = HandbookBookmark.load();
             button.setTooltip(Tooltip.create(Component.translatable("chisel.handbook.bookmark.open")));
             try {
-                var id = Identifier.tryParse(saved.getProperty("guide", ""));
+                var id = ResourceLocation.tryParse(saved.getProperty("guide", ""));
                 if (id == null || !navigation.openBookmark(id, Integer.parseInt(saved.getProperty("spread", "0")), this::paginate))
                     button.setTooltip(Tooltip.create(Component.translatable("chisel.handbook.bookmark.missing")));
             } catch (NumberFormatException error) {
@@ -90,14 +89,16 @@ public class BuildersHandbookScreen extends Screen {
     }
 
     @Override
-    public void extractRenderState(@NonNull GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick) {
+    public void render(@NotNull GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
+        renderBackground(graphics, mouseX, mouseY, partialTick);
         syncPreviews();
-        graphics.pose().pushMatrix();
-        graphics.pose().scale(layout.scale());
-        renderer.render(graphics, (int) layout.toBook(mouseX), (int) layout.toBook(mouseY), getMinecraft().hasShiftDown());
-        graphics.pose().popMatrix();
-        graphics.nextStratum();
-        super.extractRenderState(graphics, mouseX, mouseY, partialTick);
+        graphics.pose().pushPose();
+        graphics.pose().scale(layout.scale(), layout.scale(), 1);
+        renderer.render(graphics, (int) layout.toBook(mouseX), (int) layout.toBook(mouseY), net.minecraft.client.gui.screens.Screen.hasShiftDown());
+        graphics.pose().popPose();
+        graphics.flush();
+        for (var renderable : renderables) renderable.render(graphics, mouseX, mouseY, partialTick);
+        renderer.renderTooltip(graphics);
     }
 
     private void syncPreviews() {
@@ -140,15 +141,15 @@ public class BuildersHandbookScreen extends Screen {
     }
 
     @Override
-    public boolean mouseClicked(MouseButtonEvent event, boolean doubleClick) {
-        double x = layout.toBook(event.x());
-        double y = layout.toBook(event.y());
+    public boolean mouseClicked(double mouseX, double mouseY, int button) {
+        double x = layout.toBook(mouseX);
+        double y = layout.toBook(mouseY);
         // Handle this before child widgets so right-click also works over structure previews.
-        if (event.button() == 1 && navigation.view() != HandbookView.COVER && layout.onBook(x, y)) {
+        if (button == 1 && navigation.view() != HandbookView.COVER && layout.onBook(x, y)) {
             navigation.previous();
             return true;
         }
-        if (event.button() != 0) return super.mouseClicked(event, doubleClick);
+        if (button != 0) return super.mouseClicked(mouseX, mouseY, button);
         if (navigation.view() == HandbookView.COVER && layout.onCover(x, y)) {
             navigation.open();
             return true;
@@ -166,7 +167,7 @@ public class BuildersHandbookScreen extends Screen {
             navigation.selectRow(row, this::paginate);
             return true;
         }
-        return super.mouseClicked(event, doubleClick);
+        return super.mouseClicked(mouseX, mouseY, button);
     }
 
     @Override

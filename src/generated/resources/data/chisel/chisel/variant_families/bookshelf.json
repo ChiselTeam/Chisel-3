@@ -407,56 +407,6 @@
       "name": "bookshelf_cherry_tomes"
     },
     {
-      "block": "chisel:bookshelf_pale_oak_abandoned",
-      "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_abandoned"
-    },
-    {
-      "block": "chisel:bookshelf_pale_oak_brim",
-      "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_brim"
-    },
-    {
-      "block": "chisel:bookshelf_pale_oak_cans",
-      "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_cans"
-    },
-    {
-      "block": "chisel:bookshelf_pale_oak_historian",
-      "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_historian"
-    },
-    {
-      "block": "chisel:bookshelf_pale_oak_hoarder",
-      "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_hoarder"
-    },
-    {
-      "block": "chisel:bookshelf_pale_oak_necromancer",
-      "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_necromancer"
-    },
-    {
-      "block": "chisel:bookshelf_pale_oak_necromancer_apprentice",
-      "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_necromancer_apprentice"
-    },
-    {
-      "block": "chisel:bookshelf_pale_oak_papers",
-      "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_papers"
-    },
-    {
-      "block": "chisel:bookshelf_pale_oak_rainbow",
-      "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_rainbow"
-    },
-    {
-      "block": "chisel:bookshelf_pale_oak_tomes",
-      "model_type": "bookshelf",
-      "name": "bookshelf_pale_oak_tomes"
-    },
-    {
       "block": "chisel:bookshelf_bamboo_abandoned",
       "model_type": "bookshelf",
       "name": "bookshelf_bamboo_abandoned"

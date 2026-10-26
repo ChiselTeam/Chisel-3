@@ -1,13 +1,7 @@
 {
-  "neoforge:definition_type": "ctm:connected_texture_model",
-  "connected_faces": [
-    "down",
-    "up"
-  ],
-  "model_location": "chisel:block/fantasy_red_brick_chaotic_worn",
-  "render_overlay_on_all_faces": true,
-  "variant": {
-    "block": "chisel:fantasy_red_brick_chaotic_worn",
-    "kind": "ctmv"
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/fantasy_red_brick_chaotic_worn"
+    }
   }
 }

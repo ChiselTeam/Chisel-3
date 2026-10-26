@@ -1,17 +1,16 @@
 package io.github.chiselteam.chisel.datagen.model.generator.ctm;
 
 import io.github.chiselteam.chisel.api.family.Variant;
+import io.github.chiselteam.chisel.datagen.model.BlockModels;
 import io.github.chiselteam.chisel.datagen.model.ChiselModelTemplates;
 import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
 import io.github.chiselteam.chisel.datagen.model.generator.special.waterstone.WaterstoneModelGenerator;
-import net.minecraft.client.data.models.BlockModelGenerators;
-import net.minecraft.client.data.models.MultiVariant;
-import net.minecraft.client.data.models.model.TextureMapping;
-import net.minecraft.client.data.models.model.TextureSlot;
-import net.minecraft.resources.Identifier;
+import net.minecraft.data.models.model.TextureMapping;
+import net.minecraft.data.models.model.TextureSlot;
+import net.minecraft.resources.ResourceLocation;
 
-import static net.minecraft.client.data.models.BlockModelGenerators.plainVariant;
+import static io.github.chiselteam.chisel.datagen.model.BlockModels.plainVariant;
 
 public class MultiLayerTBSTintedModelGenerator extends VariantModelGenerator {
 
@@ -27,11 +26,11 @@ public class MultiLayerTBSTintedModelGenerator extends VariantModelGenerator {
     }
 
     @Override
-    public void generate(Variant variant, BlockModelGenerators blockModels) {
+    public void generate(Variant variant, BlockModels blockModels) {
         super.generate(variant, blockModels);
-        Identifier modelLocation = ChiselModelTemplates.CUBE_MULTI_PASS_TOP_BOTTOM_SIDE_TINTED.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
+        ResourceLocation modelLocation = ChiselModelTemplates.CUBE_MULTI_PASS_TOP_BOTTOM_SIDE_TINTED.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
         WaterstoneModelGenerator.registerItemModel(blockModels, getBlock(), modelLocation);
-        MultiVariant model = plainVariant(modelLocation);
+        net.minecraft.data.models.blockstates.Variant model = plainVariant(modelLocation);
         generateSimpleBlockState(model);
     }
 }

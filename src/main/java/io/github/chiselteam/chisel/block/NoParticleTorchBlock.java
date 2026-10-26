@@ -2,7 +2,7 @@ package io.github.chiselteam.chisel.block;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.world.level.block.BaseTorchBlock;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 public class NoParticleTorchBlock extends BaseTorchBlock {
 
@@ -13,7 +13,7 @@ public class NoParticleTorchBlock extends BaseTorchBlock {
     }
 
     @Override
-    protected @NonNull MapCodec<? extends BaseTorchBlock> codec() {
+    protected @NotNull MapCodec<? extends BaseTorchBlock> codec() {
         return CODEC;
     }
 }

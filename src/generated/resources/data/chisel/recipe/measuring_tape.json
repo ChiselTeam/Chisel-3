@@ -2,14 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "S": "#c:strings",
-    "W": "#minecraft:planks"
+    "S": {
+      "tag": "c:strings"
+    },
+    "W": {
+      "tag": "minecraft:planks"
+    }
   },
   "pattern": [
     " WW",
     "SSW"
   ],
   "result": {
+    "count": 1,
     "id": "chisel:measuring_tape"
   }
 }

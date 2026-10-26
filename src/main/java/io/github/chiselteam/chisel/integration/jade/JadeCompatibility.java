@@ -1,7 +1,7 @@
 package io.github.chiselteam.chisel.integration.jade;
 
 import io.github.chiselteam.chisel.block.*;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 import snownee.jade.api.IWailaClientRegistration;
 import snownee.jade.api.IWailaCommonRegistration;
 import snownee.jade.api.IWailaPlugin;
@@ -11,7 +11,7 @@ import snownee.jade.api.WailaPlugin;
 public class JadeCompatibility implements IWailaPlugin {
 
     @Override
-    public void register(@NonNull IWailaCommonRegistration registration) {
+    public void register(@NotNull IWailaCommonRegistration registration) {
         IWailaPlugin.super.register(registration);
     }
 

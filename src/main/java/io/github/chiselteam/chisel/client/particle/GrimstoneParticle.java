@@ -3,20 +3,20 @@ package io.github.chiselteam.chisel.client.particle;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.Particle;
 import net.minecraft.client.particle.ParticleProvider;
-import net.minecraft.client.particle.SingleQuadParticle;
 import net.minecraft.client.particle.SpriteSet;
+import net.minecraft.client.particle.TextureSheetParticle;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraft.util.RandomSource;
-import org.jspecify.annotations.NonNull;
-import org.jspecify.annotations.Nullable;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
-public class GrimstoneParticle extends SingleQuadParticle {
+public class GrimstoneParticle extends TextureSheetParticle {
 
     private static final float FADE_TIME = 20.0F;
 
     public GrimstoneParticle(ClientLevel level, double x, double y, double z, TextureAtlasSprite sprite) {
-        super(level, x, y, z, sprite);
+        super(level, x, y, z);
+        setSprite(sprite);
         setLifetime(Math.max((int) (Math.random() * 10.0D) + 80, 1));
     }
 
@@ -38,8 +38,8 @@ public class GrimstoneParticle extends SingleQuadParticle {
     }
 
     @Override
-    protected @NonNull Layer getLayer() {
-        return Layer.TRANSLUCENT;
+    public @NotNull net.minecraft.client.particle.ParticleRenderType getRenderType() {
+        return net.minecraft.client.particle.ParticleRenderType.PARTICLE_SHEET_TRANSLUCENT;
     }
 
     public static class Provider implements ParticleProvider<SimpleParticleType> {
@@ -51,8 +51,8 @@ public class GrimstoneParticle extends SingleQuadParticle {
         }
 
         @Override
-        public @Nullable Particle createParticle(@NonNull SimpleParticleType type, @NonNull ClientLevel level, double x, double y, double z, double xVel, double yVel, double zVel, @NonNull RandomSource random) {
-            return new GrimstoneParticle(level, x, y, z, sprite.first());
+        public @Nullable Particle createParticle(@NotNull SimpleParticleType type, @NotNull ClientLevel level, double x, double y, double z, double xVel, double yVel, double zVel) {
+            return new GrimstoneParticle(level, x, y, z, sprite.get(level.random));
         }
     }
 }

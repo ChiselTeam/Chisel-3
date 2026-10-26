@@ -4,20 +4,14 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import io.github.chiselteam.chisel.block.entity.BuildersGuideBlockEntity;
 import io.github.chiselteam.chisel.client.entity.state.BuildersGuideBlockEntityRenderState;
-import net.minecraft.client.renderer.SubmitNodeCollector;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
-import net.minecraft.client.renderer.feature.ModelFeatureRenderer;
-import net.minecraft.client.renderer.rendertype.RenderTypes;
-import net.minecraft.client.renderer.state.level.CameraRenderState;
 import net.minecraft.core.BlockPos;
-import net.minecraft.world.phys.Vec3;
-import org.jspecify.annotations.NonNull;
-import org.jspecify.annotations.Nullable;
 
 import java.util.*;
 
-public class BuildersGuideBlockEntityRenderer implements BlockEntityRenderer<BuildersGuideBlockEntity, BuildersGuideBlockEntityRenderState> {
+public class BuildersGuideBlockEntityRenderer implements BlockEntityRenderer<BuildersGuideBlockEntity> {
 
     /** Duration in milliseconds of the pop-in / pop-out animation. */
     private static final long ANIM_DURATION_MS = 200L;
@@ -32,20 +26,11 @@ public class BuildersGuideBlockEntityRenderer implements BlockEntityRenderer<Bui
     }
 
     @Override
-    public void extractRenderState(BuildersGuideBlockEntity guide, BuildersGuideBlockEntityRenderState state, float partialTicks, Vec3 camera, ModelFeatureRenderer.@Nullable CrumblingOverlay breakProgress) {
-        BlockEntityRenderer.super.extractRenderState(guide, state, partialTicks, camera, breakProgress);
+    public void render(BuildersGuideBlockEntity guide, float partialTicks, PoseStack pose, net.minecraft.client.renderer.MultiBufferSource buffers, int light, int overlay) {
+        var state = new BuildersGuideBlockEntityRenderState();
         state.origin = guide.getBlockPos();
         state.ghostBlocks = guide.getGhostBlocks();
         state.color = guide.getColor();
-    }
-
-    @Override
-    public @NonNull BuildersGuideBlockEntityRenderState createRenderState() {
-        return new BuildersGuideBlockEntityRenderState();
-    }
-
-    @Override
-    public void submit(@NonNull BuildersGuideBlockEntityRenderState state, @NonNull PoseStack pose, @NonNull SubmitNodeCollector submit, @NonNull CameraRenderState camera) {
         final BlockPos origin = state.origin;
         final long now = System.currentTimeMillis();
 
@@ -54,7 +39,9 @@ public class BuildersGuideBlockEntityRenderer implements BlockEntityRenderer<Bui
 
         if (anim.entries.isEmpty()) return;
 
-        submit.submitCustomGeometry(pose, RenderTypes.debugFilledBox(), (p, buffer) -> {
+        {
+            var p = pose.last();
+            var buffer = buffers.getBuffer(RenderType.debugFilledBox());
             for (Map.Entry<BlockPos, Entry> e : anim.entries.entrySet()) {
                 BlockPos ghost = e.getKey();
                 float scale = e.getValue().scale(now);
@@ -68,13 +55,13 @@ public class BuildersGuideBlockEntityRenderer implements BlockEntityRenderer<Bui
                 float half = (0.5F - 1.0F / 32.0F) * scale;
                 drawCube(p, buffer, cxF - half, cyF - half, czF - half, cxF + half, cyF + half, czF + half, state.color.getTextureDiffuseColor());
             }
-        });
+        }
     }
 
     /**
      * Emits the six faces of an axis-aligned cube as {@code QUADS} into the supplied vertex
      * consumer. Uses the {@code POSITION_COLOR} vertex format expected by
-     * {@link RenderTypes#debugFilledBox()}.
+     * {@link RenderType#debugFilledBox()}.
      */
     private static void drawCube(PoseStack.Pose pose, VertexConsumer buffer, float minX, float minY, float minZ, float maxX, float maxY, float maxZ, int color) {
         // -Y (bottom)

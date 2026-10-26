@@ -8,17 +8,15 @@ import io.github.chiselteam.chisel.guide.page.*;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphicsExtractor;
-import net.minecraft.client.renderer.RenderPipelines;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.FormattedCharSequence;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.crafting.display.ShapedCraftingRecipeDisplay;
-import net.minecraft.world.item.crafting.display.ShapelessCraftingRecipeDisplay;
-import net.minecraft.world.item.crafting.display.SlotDisplay;
-import net.minecraft.world.item.crafting.display.SlotDisplayContext;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.ShapedRecipe;
+import net.minecraft.world.item.crafting.ShapelessRecipe;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,10 +24,10 @@ import java.util.List;
 import static io.github.chiselteam.chisel.client.gui.handbook.HandbookLayout.*;
 
 public final class HandbookRenderer {
-    private static final Identifier COVER_TEXTURE = Chisel.prefix("textures/gui/handbook_cover.png");
-    private static final Identifier PAGES_TEXTURE = Chisel.prefix("textures/gui/handbook_pages.png");
-    private static final Identifier LEFT_ARROW_TEXTURE = Chisel.prefix("textures/gui/arrow_left.png");
-    private static final Identifier RIGHT_ARROW_TEXTURE = Chisel.prefix("textures/gui/arrow_right.png");
+    private static final ResourceLocation COVER_TEXTURE = Chisel.prefix("textures/gui/handbook_cover.png");
+    private static final ResourceLocation PAGES_TEXTURE = Chisel.prefix("textures/gui/handbook_pages.png");
+    private static final ResourceLocation LEFT_ARROW_TEXTURE = Chisel.prefix("textures/gui/arrow_left.png");
+    private static final ResourceLocation RIGHT_ARROW_TEXTURE = Chisel.prefix("textures/gui/arrow_right.png");
 
     private static final int COVER_TEXTURE_WIDTH = 240;
     private static final int COVER_TEXTURE_HEIGHT = 282;
@@ -50,6 +48,7 @@ public final class HandbookRenderer {
     private static final int GUIDE_HOVER_COLOR = 0x30785138;
     private static final int GUIDE_HOVER_ACCENT_COLOR = 0xFF987155;
 
+    private java.util.function.Consumer<GuiGraphics> tooltip;
     private final Font font;
     private final HandbookLayout layout;
     private final HandbookNavigation navigation;
@@ -60,12 +59,13 @@ public final class HandbookRenderer {
         this.navigation = navigation;
     }
 
-    public void render(GuiGraphicsExtractor graphics, int mouseX, int mouseY, boolean showTooltips) {
+    public void render(GuiGraphics graphics, int mouseX, int mouseY, boolean showTooltips) {
+        tooltip = null;
         switch (navigation.view()) {
             case COVER -> extractCover(graphics);
             case CONTENTS, CATEGORY -> {
                 extractOpenBookBackground(graphics);
-                extractContents(graphics, mouseX, mouseY, showTooltips);
+                renderWidget(graphics, mouseX, mouseY, showTooltips);
             }
             case GUIDE -> {
                 extractOpenBookBackground(graphics);
@@ -74,15 +74,19 @@ public final class HandbookRenderer {
         }
     }
 
-    private void extractCover(GuiGraphicsExtractor graphics) {
-        graphics.blit(RenderPipelines.GUI_TEXTURED, COVER_TEXTURE, layout.coverX(), layout.coverY(), 0F, 0F, COVER_WIDTH, COVER_HEIGHT, COVER_TEXTURE_WIDTH, COVER_TEXTURE_HEIGHT, COVER_TEXTURE_WIDTH, COVER_TEXTURE_HEIGHT);
-        graphics.nextStratum();
+    public void renderTooltip(GuiGraphics graphics) {
+        if (tooltip != null) tooltip.accept(graphics);
+    }
+
+    private void extractCover(GuiGraphics graphics) {
+        graphics.blit(COVER_TEXTURE, layout.coverX(), layout.coverY(), COVER_WIDTH, COVER_HEIGHT, 0F, 0F, COVER_TEXTURE_WIDTH, COVER_TEXTURE_HEIGHT, COVER_TEXTURE_WIDTH, COVER_TEXTURE_HEIGHT);
+        graphics.flush();
         var titleLines = font.split(Component.translatable("chisel.builders_handbook.title"), COVER_TITLE_WIDTH);
         int titleY = layout.coverY() + 90 - (titleLines.size() - 1) * HandbookPaginator.LINE_HEIGHT / 2;
         extractCenteredLines(graphics, titleLines, layout.coverX() + COVER_WIDTH / 2, titleY, TEXT_COLOR);
     }
 
-    private void extractContents(GuiGraphicsExtractor graphics, int mouseX, int mouseY, boolean showTooltips) {
+    private void renderWidget(GuiGraphics graphics, int mouseX, int mouseY, boolean showTooltips) {
         int leftX = layout.bookLeft() + LEFT_PAGE_X + PAGE_HORIZONTAL_PADDING;
         int rightX = layout.listX();
         int pageY = layout.bookTop() + PAGE_Y;
@@ -94,19 +98,19 @@ public final class HandbookRenderer {
             graphics.fill(rightX - 2, rowY, rightX, rowY + LIST_ROW_HEIGHT, GUIDE_HOVER_ACCENT_COLOR);
         }
 
-        graphics.nextStratum();
+        graphics.flush();
 
         var introduction = navigation.introduction();
         var title = introduction.title();
         var description = introduction.description();
-        graphics.enableScissor(leftX, pageY, leftX + HandbookPaginator.PAGE_CONTENT_WIDTH, pageY + PAGE_HEIGHT);
+        graphics.enableScissor(layout.toScreen(leftX), layout.toScreen(pageY), layout.toScreen(leftX + HandbookPaginator.PAGE_CONTENT_WIDTH), layout.toScreen(pageY + PAGE_HEIGHT));
         var titleLines = font.split(title, HandbookPaginator.PAGE_CONTENT_WIDTH);
         extractCenteredLines(graphics, titleLines, leftX + HandbookPaginator.PAGE_CONTENT_WIDTH / 2, pageY, TEXT_COLOR);
         extractLines(graphics, font.split(description, HandbookPaginator.PAGE_CONTENT_WIDTH), leftX, pageY + titleLines.size() * HandbookPaginator.LINE_HEIGHT + 8, TEXT_COLOR);
         graphics.disableScissor();
         extractCenteredText(graphics, Component.translatable(navigation.view() == HandbookView.CONTENTS ? "chisel.builders_handbook.contents" : "chisel.builders_handbook.guides"), rightX + HandbookPaginator.PAGE_CONTENT_WIDTH / 2, pageY, TEXT_COLOR);
 
-        graphics.enableScissor(rightX - 2, pageY + 18, rightX + HandbookPaginator.PAGE_CONTENT_WIDTH, pageY + PAGE_HEIGHT);
+        graphics.enableScissor(layout.toScreen(rightX - 2), layout.toScreen(pageY + 18), layout.toScreen(rightX + HandbookPaginator.PAGE_CONTENT_WIDTH), layout.toScreen(pageY + PAGE_HEIGHT));
         for (int row = 0; row < navigation.visibleCount(); row++) {
             var entry = navigation.entry(row);
             extractEntry(graphics, entry.title(), entry.icon(), rightX, layout.rowY(row));
@@ -121,7 +125,7 @@ public final class HandbookRenderer {
         if (hoveredRow >= 0 && showTooltips) extractEntryTooltip(graphics, hoveredRow, mouseX, mouseY);
     }
 
-    private void extractEntryTooltip(GuiGraphicsExtractor graphics, int index, int mouseX, int mouseY) {
+    private void extractEntryTooltip(GuiGraphics graphics, int index, int mouseX, int mouseY) {
         var entry = navigation.entry(index);
         var title = entry.title();
         var description = entry.description();
@@ -131,10 +135,10 @@ public final class HandbookRenderer {
         if (!description.getString().isBlank()) {
             lines.addAll(font.split(description.copy().withStyle(ChatFormatting.GRAY), tooltipWidth));
         }
-        graphics.setTooltipForNextFrame(font, lines, layout.toScreen(mouseX), layout.toScreen(mouseY));
+        tooltip = target -> target.renderTooltip(font, lines, layout.toScreen(mouseX), layout.toScreen(mouseY));
     }
 
-    private void extractSelectedGuide(GuiGraphicsExtractor graphics, int mouseX, int mouseY) {
+    private void extractSelectedGuide(GuiGraphics graphics, int mouseX, int mouseY) {
         if (navigation.spreads().isEmpty()) return;
         var spread = navigation.spreads().get(navigation.spreadIndex());
         extractPage(graphics, spread.leftPage(), layout.bookLeft() + LEFT_PAGE_X, layout.bookTop() + PAGE_Y, mouseX, mouseY);
@@ -143,27 +147,27 @@ public final class HandbookRenderer {
         extractArrows(graphics);
     }
 
-    private void extractEntry(GuiGraphicsExtractor graphics, Component title, Identifier iconId, int x, int y) {
-        BuiltInRegistries.ITEM.getOptional(iconId).ifPresent(icon -> graphics.item(new ItemStack(icon), x, y));
+    private void extractEntry(GuiGraphics graphics, Component title, ResourceLocation iconId, int x, int y) {
+        BuiltInRegistries.ITEM.getOptional(iconId).ifPresent(icon -> graphics.renderItem(new ItemStack(icon), x, y));
         var titleLines = font.split(title, HandbookPaginator.PAGE_CONTENT_WIDTH - 20);
         int lineY = y + 2;
 
         for (int c = 0; c < Math.min(titleLines.size(), 2); c++) {
-            graphics.text(font, titleLines.get(c), x + 20, lineY, TEXT_COLOR, false);
+            graphics.drawString(font, titleLines.get(c), x + 20, lineY, TEXT_COLOR, false);
             lineY += HandbookPaginator.LINE_HEIGHT;
         }
     }
 
-    private void extractOpenBookBackground(GuiGraphicsExtractor graphics) {
-        graphics.blit(RenderPipelines.GUI_TEXTURED, PAGES_TEXTURE, layout.bookLeft(), layout.bookTop(), 0, 0, BOOK_WIDTH, BOOK_HEIGHT, PAGES_TEXTURE_WIDTH, PAGES_TEXTURE_HEIGHT, PAGES_TEXTURE_WIDTH, PAGES_TEXTURE_HEIGHT);
-        graphics.nextStratum();
+    private void extractOpenBookBackground(GuiGraphics graphics) {
+        graphics.blit(PAGES_TEXTURE, layout.bookLeft(), layout.bookTop(), BOOK_WIDTH, BOOK_HEIGHT, 0, 0, PAGES_TEXTURE_WIDTH, PAGES_TEXTURE_HEIGHT, PAGES_TEXTURE_WIDTH, PAGES_TEXTURE_HEIGHT);
+        graphics.flush();
     }
 
-    private void extractPage(GuiGraphicsExtractor graphics, HandbookPage page, int x, int y, int mouseX, int mouseY) {
+    private void extractPage(GuiGraphics graphics, HandbookPage page, int x, int y, int mouseX, int mouseY) {
         int contentX = x + PAGE_HORIZONTAL_PADDING;
         int elementY = y;
 
-        graphics.enableScissor(x, y, x + PAGE_WIDTH, y + PAGE_HEIGHT);
+        graphics.enableScissor(layout.toScreen(x), layout.toScreen(y), layout.toScreen(x + PAGE_WIDTH), layout.toScreen(y + PAGE_HEIGHT));
 
         for (var element : page.elements()) {
             extractElement(graphics, element, contentX, elementY, HandbookPaginator.PAGE_CONTENT_WIDTH, mouseX, mouseY);
@@ -173,11 +177,11 @@ public final class HandbookRenderer {
         graphics.disableScissor();
     }
 
-    private void extractElement(GuiGraphicsExtractor graphics, HandbookPageElement element, int x, int y, int contentWidth, int mouseX, int mouseY) {
+    private void extractElement(GuiGraphics graphics, HandbookPageElement element, int x, int y, int contentWidth, int mouseX, int mouseY) {
         switch (element) {
             case CraftingRecipePageElement recipe -> extractCraftingRecipe(graphics, recipe, x, y, contentWidth, mouseX, mouseY);
             case ImagePageElement image ->
-                    graphics.blit(RenderPipelines.GUI_TEXTURED, image.image().texture(), x + (contentWidth - image.imageWidth()) / 2, y, 0, 0, image.imageWidth(), image.imageHeight(), image.image().width(), image.image().height(), image.image().width(), image.image().height());
+                    graphics.blit(image.image().texture(), x + (contentWidth - image.imageWidth()) / 2, y, image.imageWidth(), image.imageHeight(), 0F, 0F, image.image().width(), image.image().height(), image.image().width(), image.image().height());
             case StructurePageElement ignored -> {
             }
             case TitlePageElement titlePage ->
@@ -190,22 +194,22 @@ public final class HandbookRenderer {
         }
     }
 
-    private void extractCraftingRecipe(GuiGraphicsExtractor graphics, CraftingRecipePageElement element, int x, int y, int contentWidth, int mouseX, int mouseY) {
+    private void extractCraftingRecipe(GuiGraphics graphics, CraftingRecipePageElement element, int x, int y, int contentWidth, int mouseX, int mouseY) {
         var display = element.recipe().display().orElse(null);
         var level = Minecraft.getInstance().level;
         if (display == null || level == null) {
             extractLines(graphics, font.split(Component.translatable("chisel.handbook.recipe.unavailable"), contentWidth), x, y, MUTED_TEXT_COLOR);
             return;
         }
-        List<SlotDisplay> ingredients;
+        List<Ingredient> ingredients;
         int width;
         boolean shapeless;
-        if (display instanceof ShapedCraftingRecipeDisplay shaped) {
-            ingredients = shaped.ingredients();
-            width = shaped.width();
+        if (display instanceof ShapedRecipe shaped) {
+            ingredients = shaped.getIngredients();
+            width = shaped.getWidth();
             shapeless = false;
-        } else if (display instanceof ShapelessCraftingRecipeDisplay recipe) {
-            ingredients = recipe.ingredients();
+        } else if (display instanceof ShapelessRecipe recipe) {
+            ingredients = recipe.getIngredients();
             width = 3;
             shapeless = true;
         } else {
@@ -216,59 +220,58 @@ public final class HandbookRenderer {
         int gridY = y + 11;
         BookUiTextures.image(graphics, BookUiTextures.CRAFTING_GRID, gridX, gridY, 64, 64);
         BookUiTextures.image(graphics, BookUiTextures.PARCHMENT, gridX + 80, gridY + 20, 24, 24);
-        graphics.nextStratum();
-        var context = SlotDisplayContext.fromLevel(level);
+        graphics.flush();
+
         for (int row = 0; row < 3; row++) {
             for (int column = 0; column < 3; column++) {
                 int index = row * width + column;
-                var slot = column < width && index < ingredients.size() ? ingredients.get(index) : SlotDisplay.Empty.INSTANCE;
-                extractRecipeSlot(graphics, slot, context, gridX + 5 + column * 18, gridY + 5 + row * 18, mouseX, mouseY);
+                var slot = column < width && index < ingredients.size() ? ingredients.get(index) : Ingredient.EMPTY;
+                extractRecipeSlot(graphics, slot.getItems(), gridX + 5 + column * 18, gridY + 5 + row * 18, mouseX, mouseY);
             }
         }
-        graphics.text(font, Component.literal("→"), gridX + 67, gridY + 27, TEXT_COLOR, false);
-        extractRecipeSlot(graphics, display.result(), context, gridX + 83, gridY + 23, mouseX, mouseY);
+        graphics.drawString(font, Component.literal("→"), gridX + 67, gridY + 27, TEXT_COLOR, false);
+        extractRecipeSlot(graphics, new net.minecraft.world.item.ItemStack[]{display.getResultItem(level.registryAccess())}, gridX + 83, gridY + 23, mouseX, mouseY);
     }
 
-    private void extractRecipeSlot(GuiGraphicsExtractor graphics, SlotDisplay slot, net.minecraft.util.context.ContextMap context,
+    private void extractRecipeSlot(GuiGraphics graphics, net.minecraft.world.item.ItemStack[] stacks,
                                    int x, int y, int mouseX, int mouseY) {
-        var stacks = slot.resolveForStacks(context);
-        if (stacks.isEmpty()) return;
-        int cycle = (int) ((net.minecraft.util.Util.getMillis() / 1000) % stacks.size());
-        var stack = stacks.get(cycle);
-        graphics.item(stack, x + 1, y + 1);
-        graphics.itemDecorations(font, stack, x + 1, y + 1);
+        if (stacks.length == 0) return;
+        int cycle = (int) ((net.minecraft.Util.getMillis() / 1000) % stacks.length);
+        var stack = stacks[cycle];
+        graphics.renderItem(stack, x + 1, y + 1);
+        graphics.renderItemDecorations(font, stack, x + 1, y + 1);
         if (mouseX >= x && mouseX < x + 18 && mouseY >= y && mouseY < y + 18)
-            graphics.setTooltipForNextFrame(font, stack, layout.toScreen(mouseX), layout.toScreen(mouseY));
+            tooltip = target -> target.renderTooltip(font, stack, layout.toScreen(mouseX), layout.toScreen(mouseY));
     }
 
-    private void extractLines(GuiGraphicsExtractor graphics, List<FormattedCharSequence> lines, int x, int y, int color) {
+    private void extractLines(GuiGraphics graphics, List<FormattedCharSequence> lines, int x, int y, int color) {
         for (var line : lines) {
-            graphics.text(font, line, x, y, color, false);
+            graphics.drawString(font, line, x, y, color, false);
             y += HandbookPaginator.LINE_HEIGHT;
         }
     }
 
-    private void extractCenteredLines(GuiGraphicsExtractor graphics, List<FormattedCharSequence> lines, int centerX, int y, int color) {
+    private void extractCenteredLines(GuiGraphics graphics, List<FormattedCharSequence> lines, int centerX, int y, int color) {
         for (var line : lines) {
-            graphics.text(font, line, centerX - font.width(line) / 2, y, color, false);
+            graphics.drawString(font, line, centerX - font.width(line) / 2, y, color, false);
             y += HandbookPaginator.LINE_HEIGHT;
         }
     }
 
-    private void extractTip(GuiGraphicsExtractor graphics, TipPageElement tip, int x, int y, int contentWidth) {
+    private void extractTip(GuiGraphics graphics, TipPageElement tip, int x, int y, int contentWidth) {
         graphics.fill(x, y, x + contentWidth, y + tip.height() - 2, TIP_BACKGROUND_COLOR);
         extractLines(graphics, tip.lines(), x + 4, y + 4, MUTED_TEXT_COLOR);
     }
 
-    private void extractPaletteEntry(GuiGraphicsExtractor graphics, PaletteEntryPageElement element, int x, int y, int contentWidth) {
+    private void extractPaletteEntry(GuiGraphics graphics, PaletteEntryPageElement element, int x, int y, int contentWidth) {
         var block = BuiltInRegistries.BLOCK.getOptional(element.entry().block()).orElse(null);
         var name = block == null ? Component.literal(element.entry().block().toString()) : block.getName();
 
-        if (block != null) graphics.item(new ItemStack(block), x, y);
+        if (block != null) graphics.renderItem(new ItemStack(block), x, y);
 
         int percentageX = x + contentWidth - font.width("100%");
         var nameLines = font.split(name, percentageX - x - 24);
-        if (!nameLines.isEmpty()) graphics.text(font, nameLines.getFirst(), x + 18, y + 1, TEXT_COLOR, false);
+        if (!nameLines.isEmpty()) graphics.drawString(font, nameLines.getFirst(), x + 18, y + 1, TEXT_COLOR, false);
 
         int barX = x + 19;
         int barY = y + 12;
@@ -277,10 +280,10 @@ public final class HandbookRenderer {
 
         graphics.fill(barX, barY, barX + barWidth, barY + 5, BAR_BACKGROUND_COLOR);
         graphics.fill(barX, barY, barX + filledWidth, barY + 5, BAR_FILL_COLOR);
-        graphics.text(font, Component.literal("%d%%".formatted(element.percentage())), percentageX, y + 7, MUTED_TEXT_COLOR, false);
+        graphics.drawString(font, Component.literal("%d%%".formatted(element.percentage())), percentageX, y + 7, MUTED_TEXT_COLOR, false);
     }
 
-    private void extractPageNumbers(GuiGraphicsExtractor graphics) {
+    private void extractPageNumbers(GuiGraphics graphics) {
         int left = navigation.spreadIndex() * 2 + 1;
         int right = left + 1;
         int y = layout.bookTop() + PAGE_Y + PAGE_HEIGHT + 5;
@@ -289,22 +292,22 @@ public final class HandbookRenderer {
         extractCenteredText(graphics, Integer.toString(right), layout.bookLeft() + RIGHT_PAGE_X + PAGE_WIDTH / 2, y, MUTED_TEXT_COLOR);
     }
 
-    private void extractArrows(GuiGraphicsExtractor graphics) {
+    private void extractArrows(GuiGraphics graphics) {
         if (navigation.canPrevious())
             extractArrow(graphics, LEFT_ARROW_TEXTURE, layout.previousArrowX(), layout.arrowY());
         if (navigation.canNext()) extractArrow(graphics, RIGHT_ARROW_TEXTURE, layout.nextArrowX(), layout.arrowY());
     }
 
-    private void extractArrow(GuiGraphicsExtractor graphics, Identifier texture, int x, int y) {
-        graphics.blit(RenderPipelines.GUI_TEXTURED, texture, x, y, 0, 0, ARROW_WIDTH, ARROW_HEIGHT, ARROW_TEXTURE_WIDTH, ARROW_TEXTURE_HEIGHT, ARROW_TEXTURE_WIDTH, ARROW_TEXTURE_HEIGHT);
+    private void extractArrow(GuiGraphics graphics, ResourceLocation texture, int x, int y) {
+        graphics.blit(texture, x, y, ARROW_WIDTH, ARROW_HEIGHT, 0, 0, ARROW_TEXTURE_WIDTH, ARROW_TEXTURE_HEIGHT, ARROW_TEXTURE_WIDTH, ARROW_TEXTURE_HEIGHT);
     }
 
-    private void extractCenteredText(GuiGraphicsExtractor graphics, String text, int centerX, int y, int color) {
+    private void extractCenteredText(GuiGraphics graphics, String text, int centerX, int y, int color) {
         extractCenteredText(graphics, Component.literal(text), centerX, y, color);
     }
 
-    private void extractCenteredText(GuiGraphicsExtractor graphics, Component text, int centerX, int y, int color) {
-        graphics.text(font, text, centerX - font.width(text) / 2, y, color, false);
+    private void extractCenteredText(GuiGraphics graphics, Component text, int centerX, int y, int color) {
+        graphics.drawString(font, text, centerX - font.width(text) / 2, y, color, false);
     }
 
 }

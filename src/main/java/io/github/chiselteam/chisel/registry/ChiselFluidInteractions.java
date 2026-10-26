@@ -22,13 +22,13 @@ public class ChiselFluidInteractions {
         FluidInteractionRegistry.addInteraction(
                 Fluids.LAVA.getFluidType(),
                 new FluidInteractionRegistry.InteractionInformation(
-                        (level, _, pos, _) -> {
+                        (level, ignoredType, pos, ignoredState) -> {
                             var check = LiquidBlock.POSSIBLE_FLOW_DIRECTIONS.stream().iterator();
                             AtomicBoolean waterCheck = new AtomicBoolean(false);
                             check.forEachRemaining(direction -> waterCheck.set(waterCheck.get() || level.getFluidState(pos.relative(direction)).is(FluidTags.WATER)));
                             return waterCheck.get() && level.getBlockState(pos.below()).is(block.get());
                         },
-                        (level, _, relativePos, _) -> {
+                        (level, ignoredType, relativePos, ignoredState) -> {
                             level.setBlockAndUpdate(relativePos, block.get().defaultBlockState());
                             level.levelEvent(LevelEvent.LAVA_FIZZ, relativePos, 0);
                         }

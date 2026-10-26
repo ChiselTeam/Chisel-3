@@ -39,7 +39,7 @@ public final class WeatheringChains {
         WAXED.clear();
         UNWAXED.clear();
 
-        Registry<WeatheringChainData> registry = access.lookup(KEY).orElse(null);
+        Registry<WeatheringChainData> registry = access.registry(KEY).orElse(null);
         if (registry == null) {
             LOGGER.debug("Weathering registry not present; maps cleared");
             return;

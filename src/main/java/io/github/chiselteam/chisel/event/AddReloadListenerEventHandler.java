@@ -5,7 +5,7 @@ import io.github.chiselteam.chisel.guide.manager.*;
 import io.github.chiselteam.chisel.network.HandbookGuidesPacket;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.event.AddServerReloadListenersEvent;
+import net.neoforged.neoforge.event.AddReloadListenerEvent;
 import net.neoforged.neoforge.event.OnDatapackSyncEvent;
 import net.neoforged.neoforge.network.PacketDistributor;
 
@@ -13,17 +13,14 @@ import net.neoforged.neoforge.network.PacketDistributor;
 public class AddReloadListenerEventHandler {
 
     @SubscribeEvent
-    public static void addServerReloadListeners(AddServerReloadListenersEvent event) {
-        event.addListener(Chisel.prefix("handbook_guides"), new HandbookReloadListener());
-        event.addListener(Chisel.prefix("handbook_categories"), new HandbookCategoryReloadListener());
-        event.addListener(Chisel.prefix("handbook_references"), new HandbookReferenceReloadListener());
-        event.addDependency(Chisel.prefix("handbook_guides"), Chisel.prefix("handbook_references"));
-        event.addDependency(Chisel.prefix("handbook_categories"), Chisel.prefix("handbook_references"));
-    }
+    public static void addServerReloadListeners(AddReloadListenerEvent event) {
+        event.addListener(new HandbookReloadListener());
+        event.addListener(new HandbookCategoryReloadListener());
+        event.addListener(new HandbookReferenceReloadListener());    }
 
     @SubscribeEvent
     public static void onDatapackSync(OnDatapackSyncEvent event) {
-        var guidesPacket = new HandbookGuidesPacket(HandbookRecipeResolver.resolve(ServerHandbookManager.getGuides(), event.getPlayerList().getServer().getRecipeManager().recipeMap()), ServerHandbookManager.getCategories());
+        var guidesPacket = new HandbookGuidesPacket(HandbookRecipeResolver.resolve(ServerHandbookManager.getGuides(), event.getPlayerList().getServer().getRecipeManager()), ServerHandbookManager.getCategories());
 
         event.getRelevantPlayers().forEach(player -> PacketDistributor.sendToPlayer(player, guidesPacket));
     }

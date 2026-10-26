@@ -13,6 +13,6 @@ public class RegisterCapabilitiesEventHandler {
 
     @SubscribeEvent
     public static void registerCapabilities(RegisterCapabilitiesEvent event) {
-        event.registerBlockEntity(Capabilities.Item.BLOCK, ChiselBlockEntities.AUTO_CHISEL.get(), AutoChiselContainerWrapper::new);
+        event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, ChiselBlockEntities.AUTO_CHISEL.get(), AutoChiselContainerWrapper::new);
     }
 }

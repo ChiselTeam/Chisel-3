@@ -1,12 +1,7 @@
 {
-  "neoforge:definition_type": "ctm:connected_texture_model",
-  "connected_faces": [
-    "all"
-  ],
-  "model_location": "chisel:block/dn_concrete_mint_jellybean",
-  "render_overlay_on_all_faces": true,
-  "variant": {
-    "block": "chisel:dn_concrete_mint_jellybean",
-    "kind": "multiblock_2x2"
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/dn_concrete_mint_jellybean"
+    }
   }
 }

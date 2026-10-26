@@ -1,15 +1,7 @@
 {
-  "neoforge:definition_type": "ctm:connected_texture_model",
-  "connected_faces": [
-    "north",
-    "south",
-    "west",
-    "east"
-  ],
-  "model_location": "chisel:block/concrete_light_gray_meander_horizontal",
-  "render_overlay_on_all_faces": true,
-  "variant": {
-    "block": "chisel:concrete_light_gray_meander_horizontal",
-    "kind": "ctmh"
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/concrete_light_gray_meander_horizontal"
+    }
   }
 }

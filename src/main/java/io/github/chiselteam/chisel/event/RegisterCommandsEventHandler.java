@@ -21,7 +21,7 @@ public class RegisterCommandsEventHandler {
 
     @SubscribeEvent
     public static void registerCommands(RegisterCommandsEvent event) {
-        if (FMLEnvironment.isProduction()) {
+        if (FMLEnvironment.production) {
             return;
         }
 

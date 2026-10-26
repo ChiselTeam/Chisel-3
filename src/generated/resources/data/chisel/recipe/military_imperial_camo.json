@@ -2,9 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "G": "#c:nuggets/gold",
-    "I": "#c:ingots/iron",
-    "S": "#c:stones"
+    "G": {
+      "tag": "c:nuggets/gold"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "S": {
+      "tag": "c:stones"
+    }
   },
   "pattern": [
     "SIS",
@@ -12,6 +18,7 @@
     "SIS"
   ],
   "result": {
+    "count": 1,
     "id": "chisel:military_imperial_camo"
   }
 }

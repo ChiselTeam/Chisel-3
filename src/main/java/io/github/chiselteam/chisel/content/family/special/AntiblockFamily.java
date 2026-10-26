@@ -20,7 +20,7 @@ public final class AntiblockFamily {
     private static ChiselFamily buildAntiblock() {
         var colors = List.of("Black", "Gray", "Light Gray", "White", "Brown", "Red", "Orange", "Yellow", "Lime", "Green", "Cyan", "Light Blue", "Blue", "Purple", "Magenta", "Pink");
         return ChiselFamily.build("antiblock", builder -> {
-            builder.defaults(v -> v.blockName("Antiblock").properties(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).strength(3.0F, 5.0F).requiresCorrectToolForDrops().lightLevel((_) -> 15)));
+            builder.defaults(v -> v.blockName("Antiblock").properties(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).strength(3.0F, 5.0F).requiresCorrectToolForDrops().lightLevel((ignored) -> 15)));
             addAntiblockVariants(builder, colors, "", "%s Anti Block", ChiselModelHandlers.ANTIBLOCK);
             addAntiblockVariants(builder, colors, "_borderless", "%s Borderless Anti Block", ChiselModelHandlers.SHADELESS);
             addAntiblockVariants(builder, colors, "_dull", "%s Dull Anti Block", ChiselModelHandlers.MULTI_LAYER_CONNECTED_GLOW);

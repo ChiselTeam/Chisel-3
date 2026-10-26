@@ -1,0 +1,13 @@
+{
+  "connected_faces": [
+    "down",
+    "up"
+  ],
+  "loader": "ctm:connected_texture_model",
+  "model_location": "chisel:block/dn_concrete_lavender_pillar_basic_spiral",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:dn_concrete_lavender_pillar_basic_spiral",
+    "kind": "ctmv"
+  }
+}

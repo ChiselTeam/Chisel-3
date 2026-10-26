@@ -1,12 +1,7 @@
 {
-  "neoforge:definition_type": "ctm:connected_texture_model",
-  "connected_faces": [
-    "all"
-  ],
-  "model_location": "chisel:block/marble_zag",
-  "render_overlay_on_all_faces": true,
-  "variant": {
-    "block": "chisel:marble_zag",
-    "kind": "ar"
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/marble_zag"
+    }
   }
 }

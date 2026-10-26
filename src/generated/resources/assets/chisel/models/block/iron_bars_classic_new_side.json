@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/template_bars_side",
+  "parent": "minecraft:block/iron_bars_side",
   "textures": {
     "bars": "chisel:block/iron_bars/iron_bars_classic_new",
     "edge": "chisel:block/iron_bars/iron_bars_classic_new"

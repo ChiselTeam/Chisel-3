@@ -7,17 +7,17 @@ import io.github.chiselteam.chisel.client.moss.ClientMossData;
 import io.github.chiselteam.chisel.projectile.MossHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LevelRenderer;
-import net.minecraft.client.renderer.rendertype.RenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.client.event.SubmitCustomGeometryEvent;
+import net.neoforged.neoforge.client.event.RenderLevelStageEvent;
 import org.joml.Matrix4f;
 
 @EventBusSubscriber(modid = Chisel.MODID, value = Dist.CLIENT)
@@ -28,10 +28,11 @@ public final class MossOverlayRenderer {
     }
 
     @SubscribeEvent
-    public static void submit(SubmitCustomGeometryEvent event) {
+    public static void submit(RenderLevelStageEvent event) {
+        if (event.getStage() != RenderLevelStageEvent.Stage.AFTER_TRANSLUCENT_BLOCKS) return;
         Minecraft minecraft = Minecraft.getInstance();
         if (minecraft.level == null) return;
-        Vec3 camera = minecraft.gameRenderer.getMainCamera().position();
+        Vec3 camera = minecraft.gameRenderer.getMainCamera().getPosition();
 
         for (var moss : ClientMossData.entries()) {
             BlockPos pos = moss.pos();
@@ -41,15 +42,13 @@ public final class MossOverlayRenderer {
 
             for (Direction face : Direction.values()) {
                 BlockPos neighbor = pos.relative(face);
-                if (!Block.shouldRenderFace(minecraft.level, pos, state, minecraft.level.getBlockState(neighbor), face))
+                if (!Block.shouldRenderFace(state, minecraft.level, pos, face, neighbor))
                     continue;
-                int light = LevelRenderer.getLightCoords(minecraft.level, neighbor);
+                int light = LevelRenderer.getLightColor(minecraft.level, neighbor);
                 PoseStack pose = event.getPoseStack();
                 pose.pushPose();
                 pose.translate(pos.getX() - camera.x, pos.getY() - camera.y, pos.getZ() - camera.z);
-                event.getSubmitNodeCollector().submitCustomGeometry(pose,
-                        RenderTypes.entityTranslucent(getMossTexture(moss.texture())),
-                        (entry, consumer) -> emitFace(entry.pose(), consumer, face, light));
+                emitFace(pose.last().pose(), minecraft.renderBuffers().bufferSource().getBuffer(RenderType.entityTranslucent(getMossTexture(moss.texture()))), face, light);
                 pose.popPose();
             }
         }
@@ -84,7 +83,7 @@ public final class MossOverlayRenderer {
                 .setNormal(face.getStepX(), face.getStepY(), face.getStepZ());
     }
 
-    private static Identifier getMossTexture(int texture) {
+    private static ResourceLocation getMossTexture(int texture) {
         return Chisel.prefix("textures/misc/moss_overlay_%02d.png".formatted(texture));
     }
 }

@@ -1,11 +1,7 @@
 {
-  "neoforge:definition_type": "ctm:connected_texture_model",
-  "connected_faces": [
-    "all"
-  ],
-  "model_location": "chisel:block/dn_stained_glass_peach_arch_panel_1",
-  "variant": {
-    "block": "chisel:dn_stained_glass_peach_arch_panel_1",
-    "kind": "standard"
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/dn_stained_glass_peach_arch_panel_1"
+    }
   }
 }

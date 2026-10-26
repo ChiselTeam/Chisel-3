@@ -6,25 +6,24 @@ import io.github.chiselteam.chisel.guide.section.StructureSection;
 import net.minecraft.commands.arguments.blocks.BlockStateParser;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.nbt.NbtAccounter;
+import net.minecraft.nbt.NbtIo;
 import net.minecraft.resources.FileToIdConverter;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.resources.ResourceManager;
-import net.minecraft.util.datafix.DataFixers;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
-import net.minecraft.world.level.levelgen.structure.templatesystem.loader.ResourceManagerTemplateSource;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
 
 public final class HandbookStructureLoader {
-    private final ResourceManagerTemplateSource source;
-    private final Map<Identifier, List<StructureSection.Cell>> cache = new HashMap<>();
+    private final ResourceManager resources;
+    private final Map<ResourceLocation, List<StructureSection.Cell>> cache = new HashMap<>();
 
     public HandbookStructureLoader(ResourceManager resources) {
-        source = new ResourceManagerTemplateSource(DataFixers.getDataFixer(), BuiltInRegistries.BLOCK,
-                resources, new FileToIdConverter("structure", ".nbt"));
+        this.resources = resources;
     }
 
     public HandbookGuide resolve(HandbookGuide guide) {
@@ -38,8 +37,15 @@ public final class HandbookStructureLoader {
         return new HandbookGuide(guide.title(), guide.description(), guide.icon(), guide.categories(), sections, guide.sortOrder());
     }
 
-    private List<StructureSection.Cell> load(Identifier id) {
-        var template = source.load(id).orElseThrow(() -> new IllegalArgumentException("Missing or invalid structure template: " + id));
+    private List<StructureSection.Cell> load(ResourceLocation id) {
+        var resource = resources.getResource(FileToIdConverter.json("structure").idToFile(id).withPath(path -> path.substring(0, path.length() - 5) + ".nbt"))
+                .orElseThrow(() -> new IllegalArgumentException("Missing structure template: " + id));
+        var template = new StructureTemplate();
+        try (var stream = resource.open()) {
+            template.load(BuiltInRegistries.BLOCK.asLookup(), NbtIo.readCompressed(stream, NbtAccounter.unlimitedHeap()));
+        } catch (java.io.IOException error) {
+            throw new IllegalArgumentException("Invalid structure template: " + id, error);
+        }
         return blocks(template);
     }
 
@@ -48,7 +54,7 @@ public final class HandbookStructureLoader {
 
         var settings = new StructurePlaceSettings() {
             @Override
-            public StructureTemplate.@NonNull Palette getRandomPalette(List<StructureTemplate.Palette> palettes, BlockPos pos) {
+            public StructureTemplate.@NotNull Palette getRandomPalette(List<StructureTemplate.Palette> palettes, BlockPos pos) {
                 return palettes.getFirst();
             }
         };
@@ -57,10 +63,10 @@ public final class HandbookStructureLoader {
             for (var info : template.filterBlocks(BlockPos.ZERO, settings, block)) {
                 var state = info.state();
                 if (state.is(Blocks.JIGSAW) && info.nbt() != null) {
-                    var finalState = info.nbt().getStringOr("final_state", "minecraft:air");
+                    var finalState = (info.nbt().contains("final_state") ? info.nbt().getString("final_state") : "minecraft:air");
                     try {
                         // Match vanilla's JigsawReplacementProcessor without placing blocks in a level.
-                        state = BlockStateParser.parseForBlock(BuiltInRegistries.BLOCK, finalState, true).blockState();
+                        state = BlockStateParser.parseForBlock(BuiltInRegistries.BLOCK.asLookup(), finalState, true).blockState();
                     } catch (CommandSyntaxException error) {
                         HandbookValidator.LOGGER.warn("Skipping invalid jigsaw final state '{}' at {}: {}", finalState, info.pos(), error.getMessage());
                         continue;

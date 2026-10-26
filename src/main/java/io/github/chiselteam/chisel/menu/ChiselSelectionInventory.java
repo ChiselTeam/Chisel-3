@@ -5,11 +5,10 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.Container;
-import net.minecraft.world.entity.ContainerUser;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,13 +36,13 @@ public class ChiselSelectionInventory implements Container {
     }
 
     @Override
-    public void startOpen(@NonNull ContainerUser user) {
+    public void startOpen(@NotNull Player user) {
         Container.super.startOpen(user);
         setChanged();
     }
 
     @Override
-    public void stopOpen(@NonNull ContainerUser user) {
+    public void stopOpen(@NotNull Player user) {
         Container.super.stopOpen(user);
         clearContent();
     }
@@ -59,12 +58,12 @@ public class ChiselSelectionInventory implements Container {
     }
 
     @Override
-    public @NonNull ItemStack getItem(int slot) {
+    public @NotNull ItemStack getItem(int slot) {
         return items.get(slot);
     }
 
     @Override
-    public @NonNull ItemStack removeItem(int slot, int amount) {
+    public @NotNull ItemStack removeItem(int slot, int amount) {
         ItemStack stack = getItem(slot);
         if (!stack.isEmpty()) {
             if(stack.getCount() <= amount) {
@@ -73,7 +72,7 @@ public class ChiselSelectionInventory implements Container {
                 return stack;
             } else {
                 ItemStack split = stack.split(amount);
-                if(stack.count() == 0) {
+                if(stack.getCount() == 0) {
                     setItem(slot, ItemStack.EMPTY);
                 } else {
                     setItem(slot, stack);
@@ -87,7 +86,7 @@ public class ChiselSelectionInventory implements Container {
     }
 
     @Override
-    public @NonNull ItemStack removeItemNoUpdate(int slot) {
+    public @NotNull ItemStack removeItemNoUpdate(int slot) {
         ItemStack stack = getItem(slot);
         setItem(slot, ItemStack.EMPTY);
         setChanged();
@@ -95,7 +94,7 @@ public class ChiselSelectionInventory implements Container {
     }
 
     @Override
-    public void setItem(int slot, @NonNull ItemStack stack) {
+    public void setItem(int slot, @NotNull ItemStack stack) {
         items.set(slot, stack);
     }
 
@@ -105,7 +104,7 @@ public class ChiselSelectionInventory implements Container {
     }
 
     @Override
-    public boolean stillValid(@NonNull Player player) {
+    public boolean stillValid(@NotNull Player player) {
         return true;
     }
 

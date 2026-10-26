@@ -7,7 +7,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
+import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -19,7 +19,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.phys.BlockHitResult;
 import net.neoforged.neoforge.common.ItemAbilities;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 public class WeatheringBlock extends ConnectedTextureBlock {
 
@@ -38,7 +38,7 @@ public class WeatheringBlock extends ConnectedTextureBlock {
     }
 
     @Override
-    protected @NonNull InteractionResult useItemOn(@NonNull ItemStack stack, @NonNull BlockState state, @NonNull Level level, @NonNull BlockPos pos, @NonNull Player player, @NonNull InteractionHand hand, @NonNull BlockHitResult hitResult) {
+    protected @NotNull ItemInteractionResult useItemOn(@NotNull ItemStack stack, @NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult hitResult) {
         if (stack.is(Items.HONEYCOMB)) {
             Block waxedBlock = WeatheringChains.getWaxed(state.getBlock()).orElse(null);
             if (waxedBlock != null) {
@@ -49,7 +49,7 @@ public class WeatheringBlock extends ConnectedTextureBlock {
                 stack.shrink(1);
                 level.setBlockAndUpdate(pos, copySharedProperties(state, waxedBlock.defaultBlockState()));
                 level.levelEvent(player, LevelEvent.PARTICLES_AND_SOUND_WAX_ON, pos, 0);
-                return InteractionResult.SUCCESS;
+                return ItemInteractionResult.SUCCESS;
             }
         }
 
@@ -59,7 +59,7 @@ public class WeatheringBlock extends ConnectedTextureBlock {
                 level.setBlockAndUpdate(pos, copySharedProperties(state, prevBlock.defaultBlockState()));
                 level.levelEvent(player, LevelEvent.PARTICLES_SCRAPE, pos, 0);
                 stack.hurtAndBreak(1, player, hand == InteractionHand.MAIN_HAND ? EquipmentSlot.MAINHAND : EquipmentSlot.OFFHAND);
-                return InteractionResult.SUCCESS;
+                return ItemInteractionResult.SUCCESS;
             }
         }
 
@@ -67,12 +67,12 @@ public class WeatheringBlock extends ConnectedTextureBlock {
     }
 
     @Override
-    public boolean isRandomlyTicking(@NonNull BlockState state) {
+    public boolean isRandomlyTicking(@NotNull BlockState state) {
         return true;
     }
 
     @Override
-    public void randomTick(BlockState state, @NonNull ServerLevel level, @NonNull BlockPos pos, @NonNull RandomSource random) {
+    public void randomTick(BlockState state, @NotNull ServerLevel level, @NotNull BlockPos pos, @NotNull RandomSource random) {
         Block currentBlock = state.getBlock();
         Block nextBlock = WeatheringChains.getNext(currentBlock).orElse(null);
         if (nextBlock == null) return;

@@ -13,7 +13,7 @@ public class ChiselBuildingModes {
 
     public static final ResourceKey<Registry<ChiselBuildingMode>> KEY = ResourceKey.createRegistryKey(Chisel.prefix("building_modes"));
     public static final DeferredRegister<ChiselBuildingMode> BUILDING_MODES = DeferredRegister.create(KEY, Chisel.MODID);
-    public static final Registry<ChiselBuildingMode> REGISTRY = BUILDING_MODES.makeRegistry(_ -> {});
+    public static final Registry<ChiselBuildingMode> REGISTRY = BUILDING_MODES.makeRegistry(ignored -> {});
 
     public static final DeferredHolder<ChiselBuildingMode, ChiselBuildingMode> CUBOID = BUILDING_MODES.register("cuboid", CuboidMode::new);
     public static final DeferredHolder<ChiselBuildingMode, ChiselBuildingMode> FULL_CUBOID = BUILDING_MODES.register("full_cuboid", FullCuboidMode::new);

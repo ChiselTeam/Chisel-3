@@ -2,32 +2,27 @@ package io.github.chiselteam.chisel.guide.manager;
 
 import io.github.chiselteam.chisel.guide.HandbookGuide;
 import io.github.chiselteam.chisel.guide.section.CraftingRecipeSection;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.Identifier;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.crafting.RecipeMap;
-import net.minecraft.world.item.crafting.display.ShapedCraftingRecipeDisplay;
-import net.minecraft.world.item.crafting.display.ShapelessCraftingRecipeDisplay;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.crafting.RecipeManager;
+import net.minecraft.world.item.crafting.ShapedRecipe;
+import net.minecraft.world.item.crafting.ShapelessRecipe;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Optional;
 
 public final class HandbookRecipeResolver {
     private HandbookRecipeResolver() {
     }
 
-    public static Map<Identifier, HandbookGuide> resolve(Map<Identifier, HandbookGuide> guides, RecipeMap recipes) {
-        var resolved = new LinkedHashMap<Identifier, HandbookGuide>();
+    public static Map<ResourceLocation, HandbookGuide> resolve(Map<ResourceLocation, HandbookGuide> guides, RecipeManager recipes) {
+        var resolved = new LinkedHashMap<ResourceLocation, HandbookGuide>();
         guides.forEach((id, guide) -> {
             var sections = guide.sections().stream().map(section -> {
                 if (!(section instanceof CraftingRecipeSection crafting)) return section;
-                var display = Optional.ofNullable(recipes.byKey(ResourceKey.create(Registries.RECIPE, crafting.recipe())))
-                        .stream().flatMap(holder -> holder.value().display().stream())
-                        .filter(candidate -> candidate instanceof ShapedCraftingRecipeDisplay shaped
-                                && shaped.width() >= 1 && shaped.width() <= 3 && shaped.height() >= 1 && shaped.height() <= 3
-                                || candidate instanceof ShapelessCraftingRecipeDisplay shapeless && shapeless.ingredients().size() <= 9)
-                        .findFirst();
+                var display = recipes.byKey(crafting.recipe()).<net.minecraft.world.item.crafting.Recipe<?>>map(holder -> holder.value())
+                        .filter(candidate -> candidate instanceof ShapedRecipe shaped
+                                && shaped.getWidth() >= 1 && shaped.getWidth() <= 3 && shaped.getHeight() >= 1 && shaped.getHeight() <= 3
+                                || candidate instanceof ShapelessRecipe shapeless && shapeless.getIngredients().size() <= 9);
                 if (display.isEmpty()) HandbookValidator.LOGGER.warn("Handbook guide '{}' references missing or unsupported crafting recipe '{}'", id, crafting.recipe());
                 return new CraftingRecipeSection(crafting.recipe(), display);
             }).toList();

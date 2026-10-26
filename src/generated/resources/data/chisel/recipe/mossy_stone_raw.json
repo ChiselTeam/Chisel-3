@@ -2,13 +2,20 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:stone",
+    {
+      "item": "minecraft:stone"
+    },
     [
-      "minecraft:vine",
-      "minecraft:moss_block"
+      {
+        "item": "minecraft:vine"
+      },
+      {
+        "item": "minecraft:moss_block"
+      }
     ]
   ],
   "result": {
+    "count": 1,
     "id": "chisel:mossy_stone_raw"
   }
 }

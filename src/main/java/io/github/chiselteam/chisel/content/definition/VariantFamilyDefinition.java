@@ -1,6 +1,6 @@
 package io.github.chiselteam.chisel.content.definition;
 
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import org.jetbrains.annotations.ApiStatus;
@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 public record VariantFamilyDefinition(String name, List<VariantDefinition> variants,
                                       List<TorchVariantDefinition> torchVariants,
                                       Map<String, VariantTranslation> translations, TagKey<Block> tag,
-                                      Map<String, Map<String, Identifier>> textures) {
+                                      Map<String, Map<String, ResourceLocation>> textures) {
     public VariantFamilyDefinition {
         variants = List.copyOf(variants);
         torchVariants = List.copyOf(torchVariants);

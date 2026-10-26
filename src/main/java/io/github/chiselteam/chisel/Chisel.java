@@ -5,7 +5,7 @@ import io.github.chiselteam.chisel.config.ChiselConfigurations;
 import io.github.chiselteam.chisel.content.ChiselFamilies;
 import io.github.chiselteam.chisel.family.AddonFamilyRegistry;
 import io.github.chiselteam.chisel.registry.*;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
@@ -47,7 +47,7 @@ public class Chisel {
         event.enqueueWork(AddonFamilyRegistry::freeze);
     }
 
-    public static Identifier prefix(String resource) {
-        return Identifier.fromNamespaceAndPath(MODID, resource);
+    public static ResourceLocation prefix(String resource) {
+        return ResourceLocation.fromNamespaceAndPath(MODID, resource);
     }
 }

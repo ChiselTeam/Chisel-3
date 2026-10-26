@@ -1,0 +1,14 @@
+{
+  "connected_faces": [
+    "north",
+    "south",
+    "west",
+    "east"
+  ],
+  "loader": "ctm:connected_texture_model",
+  "model_location": "chisel:block/bookshelf_crimson_necromancer_apprentice",
+  "variant": {
+    "block": "chisel:bookshelf_crimson_necromancer_apprentice",
+    "kind": "bookshelf"
+  }
+}

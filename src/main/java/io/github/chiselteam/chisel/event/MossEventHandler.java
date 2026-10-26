@@ -8,8 +8,6 @@ import io.github.chiselteam.chisel.registry.ChiselAttachments;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.ProjectileUtil;
 import net.minecraft.world.item.BrushItem;
@@ -48,16 +46,16 @@ public final class MossEventHandler {
                 || !level.mayInteract(player, pos)
                 || !player.mayUseItemAt(pos.relative(face), face, event.getItemStack())) return;
 
-        if (level.isClientSide()) {
+        if (level.isClientSide) {
             if (ClientMossData.contains(pos)) {
                 player.startUsingItem(event.getHand());
-                event.cancelWithResult(InteractionResult.CONSUME);
+                event.cancelWithResult(net.minecraft.world.ItemInteractionResult.CONSUME);
             }
         } else if (level instanceof ServerLevel serverLevel && MossHelper.remove(serverLevel, pos)) {
-            event.getItemStack().hurtAndBreak(1, player, event.getHand());
+            event.getItemStack().hurtAndBreak(1, player, event.getHand() == net.minecraft.world.InteractionHand.MAIN_HAND ? net.minecraft.world.entity.EquipmentSlot.MAINHAND : net.minecraft.world.entity.EquipmentSlot.OFFHAND);
             if (!player.isUsingItem()) level.playSound(null, pos, SoundEvents.BRUSH_GENERIC, SoundSource.BLOCKS);
             player.startUsingItem(event.getHand());
-            event.cancelWithResult(InteractionResult.CONSUME);
+            event.cancelWithResult(net.minecraft.world.ItemInteractionResult.CONSUME);
         }
     }
 
@@ -70,7 +68,7 @@ public final class MossEventHandler {
         int elapsed = event.getItem().getUseDuration(player) - event.getDuration() + 1;
         if (elapsed % BrushItem.ANIMATION_DURATION != 5) return;
 
-        var hit = ProjectileUtil.getHitResultOnViewVector(player, EntitySelector.CAN_BE_PICKED, player.blockInteractionRange());
+        var hit = ProjectileUtil.getHitResultOnViewVector(player, entity -> !entity.isSpectator() && entity.isPickable(), player.blockInteractionRange());
         if (!(hit instanceof BlockHitResult blockHit) || hit.getType() != HitResult.Type.BLOCK
                 || !level.hasData(ChiselAttachments.MOSS)
                 || !level.getData(ChiselAttachments.MOSS).contains(blockHit.getBlockPos())) return;

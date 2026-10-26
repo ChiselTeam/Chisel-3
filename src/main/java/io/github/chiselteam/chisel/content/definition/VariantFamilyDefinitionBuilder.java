@@ -6,7 +6,7 @@ import io.github.chiselteam.chisel.api.model.VariantModelHandler;
 import io.github.chiselteam.chisel.block.ChiselRotatedPillarBlock;
 import io.github.chiselteam.chisel.block.ConnectedTextureBlock;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
@@ -24,13 +24,13 @@ public final class VariantFamilyDefinitionBuilder {
     private final List<VariantDefinition> variants = new ArrayList<>();
     private final List<TorchVariantDefinition> torchVariants = new ArrayList<>();
     private final Map<String, VariantTranslation> translations = new LinkedHashMap<>();
-    private final Map<String, Map<String, Identifier>> textures = new LinkedHashMap<>();
+    private final Map<String, Map<String, ResourceLocation>> textures = new LinkedHashMap<>();
     private final TagKey<Block> tag;
     private VariantBuilder defaults = new VariantBuilder();
 
     public VariantFamilyDefinitionBuilder(String name) {
         this.name = requireName(name, "family");
-        this.tag = TagKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath("c", "chisel/%s".formatted(name)));
+        this.tag = TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath("c", "chisel/%s".formatted(name)));
     }
 
     private static String requireName(String value, String kind) {
@@ -110,7 +110,7 @@ public final class VariantFamilyDefinitionBuilder {
         private boolean eldritch;
         private boolean weathering;
         private boolean waxed;
-        private final Map<String, Identifier> textures = new LinkedHashMap<>();
+        private final Map<String, ResourceLocation> textures = new LinkedHashMap<>();
         private final Map<String, String> aliases = new LinkedHashMap<>();
 
         private VariantBuilder() {
@@ -198,11 +198,11 @@ public final class VariantFamilyDefinitionBuilder {
             return this;
         }
 
-        public VariantBuilder texture(Identifier value) {
+        public VariantBuilder texture(ResourceLocation value) {
             return texture("", value);
         }
 
-        public VariantBuilder texture(String suffix, Identifier value) {
+        public VariantBuilder texture(String suffix, ResourceLocation value) {
             Objects.requireNonNull(suffix, "Texture suffix cannot be null");
             textures.put(suffix, Objects.requireNonNull(value, "Texture cannot be null"));
             aliases.remove(suffix);
@@ -224,13 +224,13 @@ public final class VariantFamilyDefinitionBuilder {
             return this;
         }
 
-        private Map<String, Identifier> resolveTextures(String variantName) {
+        private Map<String, ResourceLocation> resolveTextures(String variantName) {
             var resolved = new LinkedHashMap<>(textures);
             aliases.keySet().forEach(suffix -> resolveTexture(suffix, variantName, resolved, new HashSet<>()));
             return resolved;
         }
 
-        private Identifier resolveTexture(String suffix, String variantName, Map<String, Identifier> resolved, Set<String> visiting) {
+        private ResourceLocation resolveTexture(String suffix, String variantName, Map<String, ResourceLocation> resolved, Set<String> visiting) {
             var texture = resolved.get(suffix);
             if (texture != null) return texture;
             if (!visiting.add(suffix))

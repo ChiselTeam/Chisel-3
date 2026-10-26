@@ -1,20 +1,16 @@
 package io.github.chiselteam.chisel.datagen.model.generator.ctm;
 
 import io.github.chiselteam.chisel.api.family.Variant;
-import io.github.chiselteam.chisel.datagen.model.ChiselModelTemplates;
-import io.github.chiselteam.chisel.datagen.model.ChiselTextureSlots;
-import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
-import io.github.chiselteam.chisel.datagen.model.VariantTextures;
+import io.github.chiselteam.chisel.datagen.model.*;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateDefinitionGenerator;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateModelBuilder;
 import io.github.chiselteam.ctm.api.datagen.CTMBlockStateGenerator;
 import io.github.chiselteam.ctm.api.datagen.CTMModelBuilder;
-import net.minecraft.client.data.models.BlockModelGenerators;
-import net.minecraft.client.data.models.model.ModelTemplate;
-import net.minecraft.client.data.models.model.TextureMapping;
-import net.minecraft.client.data.models.model.TextureSlot;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.Identifier;
+import net.minecraft.data.models.model.ModelTemplate;
+import net.minecraft.data.models.model.TextureMapping;
+import net.minecraft.data.models.model.TextureSlot;
+import net.minecraft.resources.ResourceLocation;
 import org.joml.Vector3f;
 
 public class MultiLayerCTMModelGenerator extends VariantModelGenerator {
@@ -42,10 +38,10 @@ public class MultiLayerCTMModelGenerator extends VariantModelGenerator {
     }
 
     @Override
-    public void generate(Variant variant, BlockModelGenerators blockModels) {
+    public void generate(Variant variant, BlockModels blockModels) {
         super.generate(variant, blockModels);
         ModelTemplate template = glow ? ChiselModelTemplates.CTM_MULTI_PASS : ChiselModelTemplates.CTM_MULTI_PASS_NO_GLOW;
-        Identifier modelLocation = template.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
+        ResourceLocation modelLocation = template.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
         blockModels.registerSimpleItemModel(getBlock(), modelLocation);
         ConnectedTextureBlockStateModelBuilder builder = new ConnectedTextureBlockStateModelBuilder()
                 .modelLocation(modelLocation)
@@ -63,11 +59,11 @@ public class MultiLayerCTMModelGenerator extends VariantModelGenerator {
         if (layered) {
             CTMModelBuilder background = builder.toCTMBuilder()
                     .standardTextures(
-                            VariantTextures.get(variant, "bg").sprite(),
-                            VariantTextures.get(variant, "bg-ctm_cornerless").sprite(),
-                            VariantTextures.get(variant, "bg-ctm_vertical").sprite(),
-                            VariantTextures.get(variant, "bg-ctm_horizontal").sprite(),
-                            VariantTextures.get(variant, "bg-ctm_corner").sprite());
+                            VariantTextures.get(variant, "bg"),
+                            VariantTextures.get(variant, "bg-ctm_cornerless"),
+                            VariantTextures.get(variant, "bg-ctm_vertical"),
+                            VariantTextures.get(variant, "bg-ctm_horizontal"),
+                            VariantTextures.get(variant, "bg-ctm_corner"));
             blockModels.blockStateOutput.accept(CTMBlockStateGenerator.of(
                     variant.getBlock(), CTMModelBuilder.layered(builder.toCTMBuilder(), background)
             ));

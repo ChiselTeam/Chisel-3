@@ -3,8 +3,11 @@
   "category": "blocks",
   "cookingtime": 200,
   "experience": 0.1,
-  "ingredient": "minecraft:gravel",
+  "ingredient": {
+    "item": "minecraft:gravel"
+  },
   "result": {
+    "count": 1,
     "id": "chisel:concrete_raw"
   }
 }

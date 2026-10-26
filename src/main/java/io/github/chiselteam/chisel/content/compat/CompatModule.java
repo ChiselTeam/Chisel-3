@@ -15,6 +15,6 @@ public record CompatModule(String modId, List<ChiselFamily> families) {
     }
 
     public boolean isEnabled() {
-        return !FMLEnvironment.isProduction() || ModList.get().isLoaded(modId);
+        return !FMLEnvironment.production || ModList.get().isLoaded(modId);
     }
 }

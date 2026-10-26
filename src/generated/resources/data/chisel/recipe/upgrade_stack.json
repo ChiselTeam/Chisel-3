@@ -2,10 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "E": "#c:gems/emerald",
-    "I": "#c:ingots/iron",
-    "R": "#c:dusts/redstone",
-    "U": "minecraft:chest"
+    "E": {
+      "tag": "c:gems/emerald"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    },
+    "R": {
+      "tag": "c:dusts/redstone"
+    },
+    "U": {
+      "item": "minecraft:chest"
+    }
   },
   "pattern": [
     "IEI",
@@ -13,6 +21,7 @@
     "RRR"
   ],
   "result": {
+    "count": 1,
     "id": "chisel:upgrade_stack"
   }
 }

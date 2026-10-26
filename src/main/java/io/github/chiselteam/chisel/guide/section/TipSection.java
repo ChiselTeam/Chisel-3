@@ -5,7 +5,7 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import io.github.chiselteam.chisel.Chisel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.ComponentSerialization;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 
 public record TipSection(Component text) implements HandbookGuideSection {
     public static final MapCodec<TipSection> CODEC = RecordCodecBuilder.mapCodec(i -> i.group(
@@ -13,7 +13,7 @@ public record TipSection(Component text) implements HandbookGuideSection {
     ).apply(i, TipSection::new));
 
     @Override
-    public Identifier type() {
+    public ResourceLocation type() {
         return Chisel.prefix("tip");
     }
 }

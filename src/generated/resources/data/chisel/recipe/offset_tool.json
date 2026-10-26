@@ -2,14 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "X": "#c:rods/wooden",
-    "Y": "#c:ender_pearls"
+    "X": {
+      "tag": "c:rods/wooden"
+    },
+    "Y": {
+      "tag": "c:ender_pearls"
+    }
   },
   "pattern": [
     " Y",
     "X "
   ],
   "result": {
+    "count": 1,
     "id": "chisel:offset_tool"
   }
 }

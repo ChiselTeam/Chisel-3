@@ -2,14 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "X": "#c:rods/wooden",
-    "Y": "#c:ingots/iron"
+    "X": {
+      "tag": "c:rods/wooden"
+    },
+    "Y": {
+      "tag": "c:ingots/iron"
+    }
   },
   "pattern": [
     " Y",
     "X "
   ],
   "result": {
+    "count": 1,
     "id": "chisel:chisel_iron"
   }
 }

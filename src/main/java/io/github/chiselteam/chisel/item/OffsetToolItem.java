@@ -12,17 +12,15 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.network.PacketDistributor;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.awt.geom.Line2D;
 import java.util.*;
-import java.util.function.Consumer;
 
 public class OffsetToolItem extends Item {
     public OffsetToolItem(Properties properties) {
@@ -30,11 +28,11 @@ public class OffsetToolItem extends Item {
     }
 
     @Override
-    public @NonNull InteractionResult useOn(UseOnContext context) {
+    public @NotNull InteractionResult useOn(UseOnContext context) {
         BlockPos pos = context.getClickedPos();
         BlockState state = context.getLevel().getBlockState(pos);
         if (VariantFamilyLookup.getFamilyForBlock(state.getBlock(), context.getLevel().registryAccess()) != null) {
-            if (context.getLevel().isClientSide()) {
+            if (context.getLevel().isClientSide) {
                 return InteractionResult.SUCCESS;
             } else {
                 Direction facing = context.getClickedFace();
@@ -85,8 +83,8 @@ public class OffsetToolItem extends Item {
     }
 
     @Override
-    public void appendHoverText(@NonNull ItemStack stack, @NonNull TooltipContext context, @NonNull TooltipDisplay display, @NonNull Consumer<Component> builder, @NonNull TooltipFlag flag) {
-        builder.accept(Component.translatable("item.chisel.offset_tool.desc").withStyle(ChatFormatting.GRAY));
-        builder.accept(Component.translatable("item.chisel.offset_tool.desc2").withStyle(ChatFormatting.GRAY));
+    public void appendHoverText(@NotNull ItemStack stack, @NotNull TooltipContext context, @NotNull List<Component> builder, @NotNull TooltipFlag flag) {
+        builder.add(Component.translatable("item.chisel.offset_tool.desc").withStyle(ChatFormatting.GRAY));
+        builder.add(Component.translatable("item.chisel.offset_tool.desc2").withStyle(ChatFormatting.GRAY));
     }
 }

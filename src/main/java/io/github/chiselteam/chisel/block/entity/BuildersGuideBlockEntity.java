@@ -4,14 +4,14 @@ import io.github.chiselteam.chisel.mode.building.ChiselBuildingMode;
 import io.github.chiselteam.chisel.registry.ChiselBlockEntities;
 import io.github.chiselteam.chisel.registry.ChiselBuildingModes;
 import net.minecraft.core.BlockPos;
-import net.minecraft.resources.Identifier;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.storage.ValueInput;
-import net.minecraft.world.level.storage.ValueOutput;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -32,7 +32,7 @@ public class BuildersGuideBlockEntity extends BlockEntity {
 
     private DyeColor color = DyeColor.WHITE;
 
-    @NonNull
+    @NotNull
     private ChiselBuildingMode buildingMode = defaultMode();
 
     public BuildersGuideBlockEntity(BlockPos pos, BlockState state) {
@@ -40,15 +40,15 @@ public class BuildersGuideBlockEntity extends BlockEntity {
     }
 
     @Override
-    protected void loadAdditional(@NonNull ValueInput input) {
-        super.loadAdditional(input);
-        length = clamp(input.getIntOr("length", 8));
-        width  = clamp(input.getIntOr("width",  8));
-        height = clamp(input.getIntOr("height", 8));
+    protected void loadAdditional(@NotNull CompoundTag input, HolderLookup.Provider registries) {
+        super.loadAdditional(input, registries);
+        length = clamp((input.contains("length") ? input.getInt("length") : 8));
+        width  = clamp((input.contains("width") ? input.getInt("width") : 8));
+        height = clamp((input.contains("height") ? input.getInt("height") : 8));
 
         var modeId = input.getString("mode");
-        if (modeId.isPresent()) {
-            var id = Identifier.tryParse(modeId.get());
+        if (!modeId.isEmpty()) {
+            var id = ResourceLocation.tryParse(modeId);
             if (id != null) {
                 ChiselBuildingModes.REGISTRY.getOptional(id).ifPresent(m -> this.buildingMode = m);
             }
@@ -56,8 +56,8 @@ public class BuildersGuideBlockEntity extends BlockEntity {
     }
 
     @Override
-    protected void saveAdditional(@NonNull ValueOutput output) {
-        super.saveAdditional(output);
+    protected void saveAdditional(@NotNull CompoundTag output, HolderLookup.Provider registries) {
+        super.saveAdditional(output, registries);
         output.putInt("length", length);
         output.putInt("width",  width);
         output.putInt("height", height);
@@ -82,11 +82,11 @@ public class BuildersGuideBlockEntity extends BlockEntity {
     public DyeColor getColor() { return color; }
     public void setColor(DyeColor value) { this.color = value; markDirty(); }
 
-    public @NonNull ChiselBuildingMode getBuildingMode() {
+    public @NotNull ChiselBuildingMode getBuildingMode() {
         return buildingMode;
     }
 
-    public void setBuildingMode(@NonNull ChiselBuildingMode mode) {
+    public void setBuildingMode(@NotNull ChiselBuildingMode mode) {
         this.buildingMode = mode;
         markDirty();
     }
@@ -115,7 +115,7 @@ public class BuildersGuideBlockEntity extends BlockEntity {
     }
 
     public void placeBlock(Block block) {
-        if (level == null || level.isClientSide()) return;
+        if (level == null || level.isClientSide) return;
         var remaining = getGhostBlocks();
         if (!remaining.isEmpty()) level.setBlockAndUpdate(remaining.getFirst(), block.defaultBlockState());
     }
@@ -126,13 +126,13 @@ public class BuildersGuideBlockEntity extends BlockEntity {
 
     private void markDirty() {
         setChanged();
-        if (level != null && !level.isClientSide())
+        if (level != null && !level.isClientSide)
             level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
     }
 
-    private static @NonNull ChiselBuildingMode defaultMode() {
+    private static @NotNull ChiselBuildingMode defaultMode() {
         return ChiselBuildingModes.REGISTRY.stream()
                 .findFirst()
-                .orElseGet(() -> new ChiselBuildingMode(Identifier.fromNamespaceAndPath("chisel", "empty")));
+                .orElseGet(() -> new ChiselBuildingMode(ResourceLocation.fromNamespaceAndPath("chisel", "empty")));
     }
 }

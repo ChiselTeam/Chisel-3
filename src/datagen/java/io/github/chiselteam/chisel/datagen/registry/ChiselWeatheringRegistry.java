@@ -7,8 +7,8 @@ import io.github.chiselteam.chisel.weathering.WeatheringChainData;
 import io.github.chiselteam.chisel.weathering.WeatheringChains;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.worldgen.BootstrapContext;
-import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 
 import java.util.HashMap;
@@ -30,7 +30,7 @@ public class ChiselWeatheringRegistry {
             Block weathered = ChiselFamilies.WEATHERED_COPPER.getVariant("weathered_copper_%s".formatted(variant)).get();
             Block oxidized = ChiselFamilies.OXIDIZED_COPPER.getVariant("oxidized_copper_%s".formatted(variant)).get();
 
-            Map<Identifier, Identifier> waxedMap = new HashMap<>();
+            Map<ResourceLocation, ResourceLocation> waxedMap = new HashMap<>();
             addWaxed(waxedMap, copper, "waxed_copper_%s".formatted(variant), ChiselFamilies.COPPER);
             addWaxed(waxedMap, exposed, "waxed_exposed_copper_%s".formatted(variant), ChiselFamilies.EXPOSED_COPPER);
             addWaxed(waxedMap, weathered, "waxed_weathered_copper_%s".formatted(variant), ChiselFamilies.WEATHERED_COPPER);
@@ -49,7 +49,7 @@ public class ChiselWeatheringRegistry {
         });
     }
 
-    private static void addWaxed(Map<Identifier, Identifier> map, Block unwaxed, String waxedName, ChiselFamily family) {
+    private static void addWaxed(Map<ResourceLocation, ResourceLocation> map, Block unwaxed, String waxedName, ChiselFamily family) {
         Block waxed = family.getVariant(waxedName).get();
         map.put(BuiltInRegistries.BLOCK.getKey(unwaxed), BuiltInRegistries.BLOCK.getKey(waxed));
         WeatheringChains.registerWaxable(unwaxed, waxed);

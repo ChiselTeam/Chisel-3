@@ -1,0 +1,11 @@
+{
+  "connected_faces": [
+    "all"
+  ],
+  "loader": "ctm:connected_texture_model",
+  "model_location": "chisel:block/stained_glass_yellow_scaffold",
+  "variant": {
+    "block": "chisel:stained_glass_yellow_scaffold",
+    "kind": "standard"
+  }
+}

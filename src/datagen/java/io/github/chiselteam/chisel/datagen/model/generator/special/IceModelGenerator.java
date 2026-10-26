@@ -1,16 +1,16 @@
 package io.github.chiselteam.chisel.datagen.model.generator.special;
 
 import io.github.chiselteam.chisel.api.family.Variant;
+import io.github.chiselteam.chisel.datagen.model.BlockModels;
 import io.github.chiselteam.chisel.datagen.model.ChiselModelTemplates;
 import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateDefinitionGenerator;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateModelBuilder;
 import io.github.chiselteam.ctm.api.strategy.CTMKind;
-import net.minecraft.client.data.models.BlockModelGenerators;
-import net.minecraft.client.data.models.model.*;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.Identifier;
+import net.minecraft.data.models.model.*;
+import net.minecraft.resources.ResourceLocation;
 import org.joml.Vector3f;
 
 public class IceModelGenerator extends VariantModelGenerator {
@@ -20,10 +20,10 @@ public class IceModelGenerator extends VariantModelGenerator {
         CTMKind kind = variant.getModelHandler().ctmKind();
         TextureMapping mapping = kind == CTMKind.STANDARD ? VariantTextures.standard(variant) : VariantTextures.ctm(variant, textures -> {
             switch (kind) {
-                case MULTIBLOCK_2X2 -> textures.multiblock2x2Textures(VariantTextures.get(variant, "2x2").sprite());
-                case MULTIBLOCK_3X3 -> textures.multiblock3x3Textures(VariantTextures.get(variant, "3x3").sprite());
-                case MULTIBLOCK_4X4 -> textures.multiblock4x4Textures(VariantTextures.get(variant, "4x4").sprite());
-                case AR -> textures.arTextures(VariantTextures.get(variant, "ar_variant").sprite());
+                case MULTIBLOCK_2X2 -> textures.multiblock2x2Textures(VariantTextures.get(variant, "2x2"));
+                case MULTIBLOCK_3X3 -> textures.multiblock3x3Textures(VariantTextures.get(variant, "3x3"));
+                case MULTIBLOCK_4X4 -> textures.multiblock4x4Textures(VariantTextures.get(variant, "4x4"));
+                case AR -> textures.arTextures(VariantTextures.get(variant, "ar_variant"));
                 default -> throw new IllegalStateException("Unsupported ice CTM kind: " + kind);
             }
         });
@@ -31,7 +31,7 @@ public class IceModelGenerator extends VariantModelGenerator {
     }
 
     @Override
-    public void generate(Variant variant, BlockModelGenerators blockModels) {
+    public void generate(Variant variant, BlockModels blockModels) {
         super.generate(variant, blockModels);
         ModelTemplate template = switch (variant.getModelHandler().ctmKind()) {
             case STANDARD -> ChiselModelTemplates.CTM_OVERLAY_ONLY;
@@ -43,8 +43,8 @@ public class IceModelGenerator extends VariantModelGenerator {
                     throw new IllegalStateException("Unsupported ice CTM kind: " + variant.getModelHandler().ctmKind());
         };
 
-        Identifier modelLocation = template.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
-        Identifier itemModelLocation = ModelTemplates.CUBE_ALL.create(
+        ResourceLocation modelLocation = template.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
+        ResourceLocation itemModelLocation = ModelTemplates.CUBE_ALL.create(
                 ModelLocationUtils.getModelLocation(getBlock().asItem()),
                 new TextureMapping().put(TextureSlot.ALL, VariantTextures.get(variant)),
                 blockModels.modelOutput

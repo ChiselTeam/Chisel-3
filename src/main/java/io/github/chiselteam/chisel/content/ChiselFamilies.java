@@ -6,8 +6,8 @@ import io.github.chiselteam.chisel.content.compat.appliedenergistics.Ae2CertusFa
 import io.github.chiselteam.chisel.content.compat.appliedenergistics.Ae2SkyStoneFamily;
 import io.github.chiselteam.chisel.content.compat.moddedmetal.*;
 import io.github.chiselteam.chisel.content.compat.neovitae.NvRuneFamily;
-import io.github.chiselteam.chisel.content.compat.thaumaturge.TTTallowFamily;
 import io.github.chiselteam.chisel.content.compat.thaumaturge.TTArcaneStoneFamily;
+import io.github.chiselteam.chisel.content.compat.thaumaturge.TTTallowFamily;
 import io.github.chiselteam.chisel.content.compat.thaumaturge.TTThaumiumFamily;
 import io.github.chiselteam.chisel.content.family.color.*;
 import io.github.chiselteam.chisel.content.family.decorative.*;
@@ -108,7 +108,6 @@ public class ChiselFamilies {
     public static final ChiselFamily NETHERRACK = NetherrackFamily.FAMILY;
     public static final ChiselFamily NICKEL = NickelFamily.FAMILY;
     public static final ChiselFamily OAK = OakFamily.FAMILY;
-    public static final ChiselFamily PALE_OAK = PaleOakFamily.FAMILY;
     public static final ChiselFamily OBSIDIAN = ObsidianFamily.FAMILY;
     public static final ChiselFamily CRYING_OBSIDIAN = CryingObsidianFamily.FAMILY;
     public static final ChiselFamily PAPERWALL = PaperwallFamily.FAMILY;
@@ -151,7 +150,6 @@ public class ChiselFamilies {
     public static final ChiselFamily DRIPSTONE = DripstoneFamily.FAMILY;
     public static final ChiselFamily MUD = MudFamily.FAMILY;
     public static final ChiselFamily PACKED_MUD = PackedMudFamily.FAMILY;
-    public static final ChiselFamily RESIN = ResinFamily.FAMILY;
     public static final ChiselFamily NEXUS = NexusFamily.FAMILY;
     public static final ChiselFamily KITCHEN = KitchenFamily.FAMILY;
     public static final ChiselFamily LIMINAL = LiminalFamily.FAMILY;
@@ -176,7 +174,7 @@ public class ChiselFamilies {
     public static final List<ChiselFamily> STEEL_FRAMED_STAINED_GLASS = new ArrayList<>();
     public static final List<ChiselFamily> STAINED_GLASS_PANE = new ArrayList<>();
     public static final List<ChiselFamily> LIGHT = new ArrayList<>();
-    public static final List<ChiselFamily> WOOD_FAMILIES = List.of(ACACIA, BAMBOO, BIRCH, CHERRY, CRIMSON, DARK_OAK, JUNGLE, MANGROVE, OAK, PALE_OAK, SPRUCE, WARPED);
+    public static final List<ChiselFamily> WOOD_FAMILIES = List.of(ACACIA, BAMBOO, BIRCH, CHERRY, CRIMSON, DARK_OAK, JUNGLE, MANGROVE, OAK, SPRUCE, WARPED);
     private static final List<ChiselFamily> FAMILIES;
 
     static {
@@ -213,7 +211,7 @@ public class ChiselFamilies {
         families.addAll(List.of(
                 C_CONCRETE, CLOUD, DIRT, ENERGIZED_VOIDSTONE, FACTORY, FANTASY, FANTASY_PURPLE, FANTASY_GREEN, FANTASY_BLUE, FANTASY_RED, FUTURA, GLOWSTONE, GRIMSTONE,
                 HEX_PLATING, HOLYSTONE, ICE, PACKED_ICE, BLUE_ICE, SNOW, LABORATORY, LAVASTONE,
-                LEAF, MAGMA, MILITARY, MOSSY_TEMPLE, PAPERWALL, REDSTONE, RESIN, SEA_LANTERN,
+                LEAF, MAGMA, MILITARY, MOSSY_TEMPLE, PAPERWALL, REDSTONE, SEA_LANTERN,
                 SHINGLE, STEAMPUNK, TECHNICAL, TEMPLE, TERRACOTTA, TYRIAN, VALENTINES, VOIDSTONE, WARNING,
                 WATERSTONE, CLAY, NEXUS, KITCHEN, LIMINAL, MUD, AMETHYST, SCULK,
                 BONE_BLOCK, SOUL_SOIL

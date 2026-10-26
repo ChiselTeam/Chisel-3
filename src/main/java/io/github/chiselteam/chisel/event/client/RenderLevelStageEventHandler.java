@@ -12,7 +12,7 @@ import io.github.chiselteam.chisel.registry.ChiselModes;
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
-import net.minecraft.client.renderer.rendertype.RenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
@@ -24,7 +24,7 @@ import net.minecraft.world.phys.Vec3;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.client.event.ExtractBlockOutlineRenderStateEvent;
+import net.neoforged.neoforge.client.event.RenderHighlightEvent;
 import net.neoforged.neoforge.client.event.RenderLevelStageEvent;
 import org.joml.Matrix4f;
 
@@ -39,7 +39,8 @@ public class RenderLevelStageEventHandler {
     private static List<OutlineEdge> cachedEdges = List.of();
 
     @SubscribeEvent
-    public static void renderChiselLines(RenderLevelStageEvent.AfterTranslucentBlocks event) {
+    public static void renderChiselLines(RenderLevelStageEvent event) {
+        if (event.getStage() != RenderLevelStageEvent.Stage.AFTER_TRANSLUCENT_BLOCKS) return;
         Minecraft minecraft = Minecraft.getInstance();
         LocalPlayer player = minecraft.player;
         if (player == null) return;
@@ -61,7 +62,7 @@ public class RenderLevelStageEventHandler {
         Camera camera = minecraft.getEntityRenderDispatcher().camera;
         if (camera == null) return;
 
-        Vec3 cameraPos = camera.position();
+        Vec3 cameraPos = camera.getPosition();
         PoseStack poseStack = event.getPoseStack();
 
         poseStack.pushPose();
@@ -72,25 +73,25 @@ public class RenderLevelStageEventHandler {
         );
 
         Matrix4f matrix = poseStack.last().pose();
-        VertexConsumer builder = minecraft.renderBuffers().bufferSource().getBuffer(RenderTypes.lines());
+        VertexConsumer builder = minecraft.renderBuffers().bufferSource().getBuffer(RenderType.lines());
 
         for (OutlineEdge edge : cachedEdges) {
             builder.addVertex(matrix, edge.x1(), edge.y1(), edge.z1())
                     .setColor(255, 255, 255, 255)
                     .setNormal(edge.normalX(), edge.normalY(), edge.normalZ())
-                    .setLineWidth(2.0F);
+                    ;
 
             builder.addVertex(matrix, edge.x2(), edge.y2(), edge.z2())
                     .setColor(255, 255, 255, 255)
                     .setNormal(edge.normalX(), edge.normalY(), edge.normalZ())
-                    .setLineWidth(2.0F);
+                    ;
         }
 
         poseStack.popPose();
     }
 
     @SubscribeEvent
-    public static void cancelVanillaBlockOutline(ExtractBlockOutlineRenderStateEvent event) {
+    public static void cancelVanillaBlockOutline(RenderHighlightEvent.Block event) {
         Minecraft minecraft = Minecraft.getInstance();
         LocalPlayer player = minecraft.player;
         if (player == null) return;

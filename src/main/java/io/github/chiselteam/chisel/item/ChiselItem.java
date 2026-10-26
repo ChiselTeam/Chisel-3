@@ -11,20 +11,17 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemInstance;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.CustomData;
-import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.common.ItemAbility;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
-import java.util.function.Consumer;
+import java.util.List;
 
 public class ChiselItem extends Item {
 
@@ -36,7 +33,7 @@ public class ChiselItem extends Item {
         ItemStack contained = getContainedItem(chisel);
         if (player.level() instanceof ServerLevel serverLevel) {
             chisel.hurtAndBreak(amount, serverLevel, player, brokenItem -> {
-                player.onEquippedItemBroken(brokenItem, hand.asEquipmentSlot());
+                player.onEquippedItemBroken(brokenItem, (hand == InteractionHand.MAIN_HAND ? net.minecraft.world.entity.EquipmentSlot.MAINHAND : net.minecraft.world.entity.EquipmentSlot.OFFHAND));
                 if (!contained.isEmpty()) {
                     player.drop(contained, false);
                 }
@@ -65,26 +62,26 @@ public class ChiselItem extends Item {
     }
 
     @Override
-    public boolean canPerformAction(@NonNull ItemInstance stack, @NonNull ItemAbility itemAbility) {
+    public boolean canPerformAction(@NotNull ItemStack stack, @NotNull ItemAbility itemAbility) {
         if(itemAbility == ChiselItemAbilities.CHISEL) return true;
         return super.canPerformAction(stack, itemAbility);
     }
 
     @Override
-    public @NonNull InteractionResult use(Level level, @NonNull Player player, @NonNull InteractionHand hand) {
-        if (!level.isClientSide()) {
+    public @NotNull net.minecraft.world.InteractionResultHolder<net.minecraft.world.item.ItemStack> use(Level level, @NotNull Player player, @NotNull InteractionHand hand) {
+        if (!level.isClientSide) {
             player.openMenu(new SimpleMenuProvider(
-                    (id, inv, _) -> new ChiselMenu(id, inv, new FriendlyByteBuf(Unpooled.buffer().writeBoolean(hand == InteractionHand.MAIN_HAND))),
+                    (id, inv, ignored) -> new ChiselMenu(id, inv, new FriendlyByteBuf(Unpooled.buffer().writeBoolean(hand == InteractionHand.MAIN_HAND))),
                     Component.translatable("container.chisel")
             ));
         }
-        return InteractionResult.SUCCESS;
+        return net.minecraft.world.InteractionResultHolder.sidedSuccess(player.getItemInHand(hand), level.isClientSide);
     }
 
     @Override
-    public void appendHoverText(@NonNull ItemStack stack, @NonNull TooltipContext context, @NonNull TooltipDisplay display, @NonNull Consumer<Component> builder, @NonNull TooltipFlag flag) {
-        builder.accept(Component.translatable("item.chisel.chisel.desc1").withStyle(ChatFormatting.GRAY));
-        builder.accept(Component.translatable("item.chisel.chisel.desc2").withStyle(ChatFormatting.GRAY));
-        builder.accept(Component.translatable("item.chisel.chisel.desc3").withStyle(ChatFormatting.GRAY));
+    public void appendHoverText(@NotNull ItemStack stack, @NotNull TooltipContext context, @NotNull List<Component> builder, @NotNull TooltipFlag flag) {
+        builder.add(Component.translatable("item.chisel.chisel.desc1").withStyle(ChatFormatting.GRAY));
+        builder.add(Component.translatable("item.chisel.chisel.desc2").withStyle(ChatFormatting.GRAY));
+        builder.add(Component.translatable("item.chisel.chisel.desc3").withStyle(ChatFormatting.GRAY));
     }
 }

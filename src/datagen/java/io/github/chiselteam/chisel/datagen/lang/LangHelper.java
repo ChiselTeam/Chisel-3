@@ -8,7 +8,7 @@ import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.LanguageProvider;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
 import java.util.List;
@@ -27,7 +27,7 @@ public abstract class LangHelper extends LanguageProvider {
     }
 
     @Override
-    public void add(@NonNull String key, @NonNull String value) {
+    public void add(@NotNull String key, @NotNull String value) {
         super.add(key, value);
         List<LangFormatSplitter.Component> splitEnglish = LangFormatSplitter.split(value);
         if (generateUpsideDown) upsideDown.put(key, LangConversionHelper.convertComponents(splitEnglish));
@@ -51,7 +51,7 @@ public abstract class LangHelper extends LanguageProvider {
     }
 
     @Override
-    public @NonNull CompletableFuture<?> run(@NonNull CachedOutput cache) {
+    public @NotNull CompletableFuture<?> run(@NotNull CachedOutput cache) {
         CompletableFuture<?> languageGen = super.run(cache);
         ImmutableList.Builder<CompletableFuture<?>> builder = ImmutableList.builder();
         builder.add(languageGen);

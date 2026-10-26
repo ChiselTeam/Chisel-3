@@ -6,24 +6,21 @@ import io.github.chiselteam.chisel.block.entity.AutoChiselBlockEntity;
 import io.github.chiselteam.chisel.family.VariantFamilyLookup;
 import io.github.chiselteam.chisel.menu.AutoChiselMenu;
 import io.github.chiselteam.chisel.network.AutoChiselTemplatePacket;
-import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.components.WidgetSprites;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.input.KeyEvent;
-import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.client.renderer.Rect2i;
-import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 import org.lwjgl.glfw.GLFW;
 
 import java.util.ArrayList;
@@ -33,12 +30,12 @@ import java.util.Objects;
 
 public class AutoChiselScreen extends AbstractContainerScreen<AutoChiselMenu> {
 
-    private final Identifier TEXTURE = Chisel.prefix("textures/gui/auto_chisel.png");
+    private final ResourceLocation TEXTURE = Chisel.prefix("textures/gui/auto_chisel.png");
     private static final int TEXTURE_WIDTH = 256;
     private static final int TEXTURE_HEIGHT = 256;
-    private static final Identifier RECIPE_BOOK_TEXTURE = Identifier.withDefaultNamespace("textures/gui/recipe_book.png");
-    public static final WidgetSprites RECIPE_BUTTON_SPRITES = new WidgetSprites(Identifier.withDefaultNamespace("recipe_book/button"), Identifier.withDefaultNamespace("recipe_book/button_highlighted"));
-    private static final Identifier SLOT_CRAFTABLE_SPRITE = Identifier.withDefaultNamespace("recipe_book/slot_craftable");
+    private static final ResourceLocation RECIPE_BOOK_TEXTURE = ResourceLocation.withDefaultNamespace("textures/gui/recipe_book.png");
+    public static final WidgetSprites RECIPE_BUTTON_SPRITES = new WidgetSprites(ResourceLocation.withDefaultNamespace("recipe_book/button"), ResourceLocation.withDefaultNamespace("recipe_book/button_highlighted"));
+    private static final ResourceLocation SLOT_CRAFTABLE_SPRITE = ResourceLocation.withDefaultNamespace("recipe_book/slot_craftable");
     private static final int PICKER_COLUMNS = 5;
     private static final int PICKER_ROWS = 4;
     private static final int PICKER_WIDTH = 147;
@@ -55,7 +52,9 @@ public class AutoChiselScreen extends AbstractContainerScreen<AutoChiselMenu> {
     private ItemStack observedTemplate = ItemStack.EMPTY;
 
     public AutoChiselScreen(AutoChiselMenu menu, Inventory inventory, Component title) {
-        super(menu, inventory, title, 176, 200);
+        super(menu, inventory, title);
+        imageWidth = 176;
+        imageHeight = 200;
         inventoryLabelY = topPos + 107;
         titleLabelY = topPos + 8;
     }
@@ -67,19 +66,19 @@ public class AutoChiselScreen extends AbstractContainerScreen<AutoChiselMenu> {
         leftPos = updateScreenPosition();
 
         pickerToggleButton = addRenderableWidget(new ImageButton(
-                leftPos + 78, topPos + 7, 20, 18, RECIPE_BUTTON_SPRITES, _ -> togglePicker()));
+                leftPos + 78, topPos + 7, 20, 18, RECIPE_BUTTON_SPRITES, ignored -> togglePicker()));
 
         searchBox = new EditBox(font, pickerLeft() + 25, pickerTop() + 16, 96, 14, Component.translatable("itemGroup.search"));
         searchBox.setMaxLength(50);
         searchBox.setResponder(this::filterVariants);
-        searchBox.setHint(Component.translatable("gui.recipebook.search_hint").withStyle(EditBox.SEARCH_HINT_STYLE));
+        searchBox.setHint(Component.translatable("gui.recipebook.search_hint").withStyle(net.minecraft.ChatFormatting.ITALIC));
         searchBox.setTextColor(0xFFC6C6C6);
         searchBox.setVisible(false);
         addRenderableWidget(searchBox);
 
-        previousPageButton = Button.builder(Component.literal("<"), _ -> changePage(-1))
+        previousPageButton = Button.builder(Component.literal("<"), ignored -> changePage(-1))
                 .bounds(pickerLeft() + 37, pickerTop() + 139, 20, 18).build();
-        nextPageButton = Button.builder(Component.literal(">"), _ -> changePage(1))
+        nextPageButton = Button.builder(Component.literal(">"), ignored -> changePage(1))
                 .bounds(pickerLeft() + 90, pickerTop() + 139, 20, 18).build();
         previousPageButton.visible = false;
         nextPageButton.visible = false;
@@ -189,33 +188,33 @@ public class AutoChiselScreen extends AbstractContainerScreen<AutoChiselMenu> {
     }
 
     @Override
-    public boolean keyPressed(@NonNull KeyEvent event) {
-        if (pickerOpen && event.key() == GLFW.GLFW_KEY_ESCAPE) {
+    public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
+        if (pickerOpen && keyCode == GLFW.GLFW_KEY_ESCAPE) {
             closePicker();
             return true;
         }
-        if (pickerOpen && searchBox.keyPressed(event)) return true;
+        if (pickerOpen && searchBox.keyPressed(keyCode, scanCode, modifiers)) return true;
         if (pickerOpen && searchBox.isFocused()) return true;
-        return super.keyPressed(event);
+        return super.keyPressed(keyCode, scanCode, modifiers);
     }
 
     @Override
-    public boolean mouseClicked(@NonNull MouseButtonEvent event, boolean doubleClick) {
-        if (!pickerOpen) return super.mouseClicked(event, doubleClick);
-        if (pickerToggleButton.isMouseOver(event.x(), event.y()) || searchBox.isMouseOver(event.x(), event.y())
-                || previousPageButton.isMouseOver(event.x(), event.y()) || nextPageButton.isMouseOver(event.x(), event.y())) {
-            return super.mouseClicked(event, doubleClick);
+    public boolean mouseClicked(double mouseX, double mouseY, int button) {
+        if (!pickerOpen) return super.mouseClicked(mouseX, mouseY, button);
+        if (pickerToggleButton.isMouseOver(mouseX, mouseY) || searchBox.isMouseOver(mouseX, mouseY)
+                || previousPageButton.isMouseOver(mouseX, mouseY) || nextPageButton.isMouseOver(mouseX, mouseY)) {
+            return super.mouseClicked(mouseX, mouseY, button);
         }
 
-        int index = variantAt(event.x(), event.y());
-        if (event.button() == 0 && index >= 0) {
+        int index = variantAt(mouseX, mouseY);
+        if (button == 0 && index >= 0) {
             ItemStack selected = filteredVariants.get(index);
             Objects.requireNonNull(getMinecraft().getConnection()).send(new AutoChiselTemplatePacket(
                     BuiltInRegistries.BLOCK.getKey(((BlockItem) selected.getItem()).getBlock())));
             return true;
         }
-        if (isOverPicker(event.x(), event.y())) return true;
-        return super.mouseClicked(event, doubleClick);
+        if (isOverPicker(mouseX, mouseY)) return true;
+        return super.mouseClicked(mouseX, mouseY, button);
     }
 
     private int variantAt(double mouseX, double mouseY) {
@@ -234,15 +233,14 @@ public class AutoChiselScreen extends AbstractContainerScreen<AutoChiselMenu> {
     }
 
     @Override
-    public void extractBackground(@NonNull GuiGraphicsExtractor graphics, int mouseX, int mouseY, float a) {
-        super.extractBackground(graphics, mouseX, mouseY, a);
-        graphics.blit(RenderPipelines.GUI_TEXTURED, TEXTURE, leftPos, topPos, 0, 0, 176, 200, TEXTURE_WIDTH, TEXTURE_HEIGHT);
+    protected void renderBg(@NotNull GuiGraphics graphics, float a, int mouseX, int mouseY) {
+        graphics.blit(TEXTURE, leftPos, topPos, 0, 0, 176, 200, TEXTURE_WIDTH, TEXTURE_HEIGHT);
 
         // Progress arrow
         int progress = menu.getProgress();
         if (progress > 0) {
             int arrowWidth = (int) (progress * 50.0 / 100.0);
-            graphics.blit(RenderPipelines.GUI_TEXTURED, TEXTURE, leftPos + 63, topPos + 28, 176, 17, arrowWidth, 17, TEXTURE_WIDTH, TEXTURE_HEIGHT);
+            graphics.blit(TEXTURE, leftPos + 63, topPos + 28, 176, 17, arrowWidth, 17, TEXTURE_WIDTH, TEXTURE_HEIGHT);
         }
 
         // Ghost preview
@@ -257,19 +255,19 @@ public class AutoChiselScreen extends AbstractContainerScreen<AutoChiselMenu> {
                 for (int i = 0; i < 12; i++) {
                     Slot outputSlot = menu.slots.get(14 + i);
                     if (!outputSlot.hasItem()) {
-                        graphics.item(preview, leftPos + outputSlot.x, topPos + outputSlot.y);
+                        graphics.renderItem(preview, leftPos + outputSlot.x, topPos + outputSlot.y);
                         graphics.fill(leftPos + outputSlot.x, topPos + outputSlot.y, leftPos + outputSlot.x + 16, topPos + outputSlot.y + 16, 0x88FFFFFF);
                         break;
                     }
                 }
             } else {
-                graphics.blit(RenderPipelines.GUI_TEXTURED, TEXTURE, leftPos + 80, topPos + 28, 176, 34, 16, 16, TEXTURE_WIDTH, TEXTURE_HEIGHT);
+                graphics.blit(TEXTURE, leftPos + 80, topPos + 28, 176, 34, 16, 16, TEXTURE_WIDTH, TEXTURE_HEIGHT);
             }
         }
 
         Slot chiselSlot = menu.slots.get(AutoChiselBlockEntity.CHISEL_SLOT);
         if (!chiselSlot.hasItem()) {
-            graphics.blit(RenderPipelines.GUI_TEXTURED, TEXTURE, leftPos + 80, topPos + 64, 176, 51, 16, 16, TEXTURE_WIDTH, TEXTURE_HEIGHT);
+            graphics.blit(TEXTURE, leftPos + 80, topPos + 64, 176, 51, 16, 16, TEXTURE_WIDTH, TEXTURE_HEIGHT);
         }
 
         // Invalid Highlighting
@@ -283,11 +281,10 @@ public class AutoChiselScreen extends AbstractContainerScreen<AutoChiselMenu> {
         if (pickerOpen) extractVariantPicker(graphics);
     }
 
-    private void extractVariantPicker(GuiGraphicsExtractor graphics) {
+    private void extractVariantPicker(GuiGraphics graphics) {
         int x = pickerLeft();
         int y = pickerTop();
-        graphics.blit(RenderPipelines.GUI_TEXTURED, RECIPE_BOOK_TEXTURE, x, y, 1, 1,
-                PICKER_WIDTH, PICKER_HEIGHT, 256, 256);
+        graphics.blit(RECIPE_BOOK_TEXTURE, x, y, 1, 1, PICKER_WIDTH, PICKER_HEIGHT, 256, 256);
 
         for (int row = 0; row < PICKER_ROWS; row++) {
             for (int column = 0; column < PICKER_COLUMNS; column++) {
@@ -295,21 +292,21 @@ public class AutoChiselScreen extends AbstractContainerScreen<AutoChiselMenu> {
                 int slotY = y + 32 + row * 25;
                 int index = page * PICKER_COLUMNS * PICKER_ROWS + row * PICKER_COLUMNS + column;
                 if (index < filteredVariants.size()) {
-                    graphics.blitSprite(RenderPipelines.GUI_TEXTURED, SLOT_CRAFTABLE_SPRITE, slotX, slotY, 25, 25);
-                    graphics.fakeItem(filteredVariants.get(index), slotX + 4, slotY + 4);
+                    graphics.blitSprite(SLOT_CRAFTABLE_SPRITE, slotX, slotY, 25, 25);
+                    graphics.renderFakeItem(filteredVariants.get(index), slotX + 4, slotY + 4);
                 }
             }
         }
         if (filteredVariants.isEmpty()) {
-            graphics.text(font, Component.translatable("chisel.gui.no_variants"), x + 20, y + 78, 0xFFC6C6C6, false);
+            graphics.drawString(font, Component.translatable("chisel.gui.no_variants"), x + 20, y + 78, 0xFFC6C6C6, false);
         } else if (pageCount() > 1) {
             Component pageText = Component.literal((page + 1) + "/" + pageCount());
-            graphics.text(font, pageText, x + (PICKER_WIDTH - font.width(pageText)) / 2, y + 144, 0xFFC6C6C6, false);
+            graphics.drawString(font, pageText, x + (PICKER_WIDTH - font.width(pageText)) / 2, y + 144, 0xFFC6C6C6, false);
         }
     }
     @Override
-    public void extractLabels(@NonNull GuiGraphicsExtractor graphics, int mouseX, int mouseY) {
-        super.extractLabels(graphics, mouseX, mouseY);
+    public void renderLabels(@NotNull GuiGraphics graphics, int mouseX, int mouseY) {
+        super.renderLabels(graphics, mouseX, mouseY);
 
         // Input invalid highlighting
         for (int i = 0; i < 12; i++) {

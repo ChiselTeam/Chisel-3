@@ -5,17 +5,17 @@ import io.github.chiselteam.chisel.api.family.VariantFamily;
 import io.github.chiselteam.chisel.content.ChiselFamilies;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.tags.IntrinsicHolderTagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.common.Tags;
-import net.neoforged.neoforge.common.data.ItemTagsProvider;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ChiselItemTags extends ItemTagsProvider {
+public class ChiselItemTags extends IntrinsicHolderTagsProvider<Item> {
     public ChiselItemTags(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
-        super(output, lookupProvider, Chisel.MODID);
+        super(output, net.minecraft.core.registries.Registries.ITEM, lookupProvider, item -> item.builtInRegistryHolder().key(), Chisel.MODID, null);
     }
 
     @Override

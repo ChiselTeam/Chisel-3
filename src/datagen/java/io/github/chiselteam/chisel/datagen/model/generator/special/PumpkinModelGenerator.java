@@ -1,19 +1,17 @@
 package io.github.chiselteam.chisel.datagen.model.generator.special;
 
 import io.github.chiselteam.chisel.api.family.Variant;
+import io.github.chiselteam.chisel.datagen.model.BlockModels;
 import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
-import net.minecraft.client.data.models.BlockModelGenerators;
-import net.minecraft.client.data.models.MultiVariant;
-import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
-import net.minecraft.client.data.models.model.ModelTemplates;
-import net.minecraft.client.data.models.model.TextureMapping;
-import net.minecraft.client.data.models.model.TextureSlot;
-import net.minecraft.client.resources.model.sprite.Material;
-import net.minecraft.resources.Identifier;
+import net.minecraft.data.models.blockstates.MultiVariantGenerator;
+import net.minecraft.data.models.model.ModelTemplates;
+import net.minecraft.data.models.model.TextureMapping;
+import net.minecraft.data.models.model.TextureSlot;
+import net.minecraft.resources.ResourceLocation;
 
-import static net.minecraft.client.data.models.BlockModelGenerators.ROTATION_HORIZONTAL_FACING;
-import static net.minecraft.client.data.models.BlockModelGenerators.plainVariant;
+import static io.github.chiselteam.chisel.datagen.model.BlockModels.ROTATION_HORIZONTAL_FACING;
+import static io.github.chiselteam.chisel.datagen.model.BlockModels.plainVariant;
 
 public class PumpkinModelGenerator extends VariantModelGenerator {
 
@@ -22,14 +20,14 @@ public class PumpkinModelGenerator extends VariantModelGenerator {
         return (new TextureMapping())
                 .put(TextureSlot.PARTICLE, VariantTextures.get(variant))
                 .put(TextureSlot.FRONT, VariantTextures.get(variant))
-                .put(TextureSlot.SIDE, new Material(Identifier.withDefaultNamespace("block/pumpkin_side")))
-                .put(TextureSlot.END, new Material(Identifier.withDefaultNamespace("block/pumpkin_top")));
+                .put(TextureSlot.SIDE, ResourceLocation.withDefaultNamespace("block/pumpkin_side"))
+                .put(TextureSlot.END, ResourceLocation.withDefaultNamespace("block/pumpkin_top"));
     }
 
     @Override
-    public void generate(Variant variant, BlockModelGenerators blockModels) {
+    public void generate(Variant variant, BlockModels blockModels) {
         super.generate(variant, blockModels);
-        MultiVariant model = plainVariant(ModelTemplates.CUBE_ORIENTABLE.create(getBlock(), getTextureMapping(), blockModels.modelOutput));
-        blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(getBlock(), model).with(ROTATION_HORIZONTAL_FACING));
+        net.minecraft.data.models.blockstates.Variant model = plainVariant(ModelTemplates.CUBE_ORIENTABLE.create(getBlock(), getTextureMapping(), blockModels.modelOutput));
+        blockModels.blockStateOutput.accept(MultiVariantGenerator.multiVariant(getBlock(), model).with(ROTATION_HORIZONTAL_FACING));
     }
 }

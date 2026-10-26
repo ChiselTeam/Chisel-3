@@ -5,7 +5,7 @@ plugins {
     id 'maven-publish'
     id 'net.neoforged.moddev' version '2.0.134'
     id 'idea'
-    id 'net.darkhax.curseforgegradle' version '1.2.30'
+    id 'net.darkhax.curseforgegradle' version '1.1.26'
     id 'com.modrinth.minotaur' version '2.+'
 }
 
@@ -60,11 +60,11 @@ base {
     archivesName = mod_id
 }
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 sourceSets {
     datagen {
-        compileClasspath += sourceSets.main.output
+        compileClasspath += sourceSets.main.output.classesDirs
         runtimeClasspath += sourceSets.main.output
     }
 }
@@ -119,7 +119,7 @@ neoForge {
         }
 
         data {
-            clientData()
+            data()
             sourceSet = sourceSets.datagen
             loadedMods = [neoForge.mods."${mod_id}Datagen"]
             programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
@@ -162,6 +162,7 @@ dependencies {
 
     testImplementation platform('org.junit:junit-bom:5.13.4')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation "net.neoforged:testframework:${neo_version}"
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
@@ -178,6 +179,7 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             minecraft_version      : minecraft_version,
             minecraft_version_range: minecraft_version_range,
             neo_version            : neo_version,
+            neo_version_range      : neo_version_range,
             loader_version_range   : loader_version_range,
             mod_id                 : mod_id,
             mod_name               : mod_name,
@@ -206,6 +208,7 @@ tasks.register('publishCurseForge', TaskPublishCurseForge) {
 
     mainFile.changelog = file('CHANGELOG.md')
     mainFile.addModLoader("neoforge")
+    mainFile.addGameVersion(minecraft_version)
     mainFile.releaseType = release_type
     mainFile.addRequirement("ctm-lib")
     mainFile.addGameVersion("Client", "Server")
@@ -218,7 +221,7 @@ modrinth {
     versionNumber = mod_version
     versionType = release_type
     uploadFile = jar
-    gameVersions = ["26.1.2"]
+    gameVersions = [minecraft_version]
     loaders = ["neoforge"]
     dependencies {
         required.project "ctmlib"

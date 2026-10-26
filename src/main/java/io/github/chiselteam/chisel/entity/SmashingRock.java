@@ -15,14 +15,14 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.projectile.throwableitemprojectile.ThrowableItemProjectile;
+import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,15 +35,17 @@ public class SmashingRock extends ThrowableItemProjectile {
     }
 
     public SmashingRock(Level level, double x, double y, double z, ItemStack stack) {
-        super(ChiselEntities.SMASHING_ROCK.get(), x, y, z, level, stack);
+        super(ChiselEntities.SMASHING_ROCK.get(), x, y, z, level);
+        setItem(stack);
     }
 
     public SmashingRock(ServerLevel serverLevel, LivingEntity livingEntity, ItemStack stack) {
-        super(ChiselEntities.SMASHING_ROCK.get(), livingEntity, serverLevel, stack);
+        super(ChiselEntities.SMASHING_ROCK.get(), livingEntity, serverLevel);
+        setItem(stack);
     }
 
     @Override
-    protected void onHitBlock(@NonNull BlockHitResult result) {
+    protected void onHitBlock(@NotNull BlockHitResult result) {
         super.onHitBlock(result);
         BlockPos pos = result.getBlockPos();
         level().playSound(null, pos, ChiselSounds.SQUASH.value(), SoundSource.NEUTRAL);
@@ -76,7 +78,7 @@ public class SmashingRock extends ThrowableItemProjectile {
         List<SmashingRockData> dataList = new ArrayList<>();
 
         Registry<SmashingRockData> registry = Objects.requireNonNull(registryAccess
-                .lookup(ChiselSmashingRockRegistry.KEY)
+                .registry(ChiselSmashingRockRegistry.KEY)
                 .orElseThrow(() -> new IllegalStateException("Smashing rock registry is not available on the server"))
         );
 
@@ -88,12 +90,12 @@ public class SmashingRock extends ThrowableItemProjectile {
             if(data.getInput().right().isPresent()) {
                 TagKey<Block> tag = data.getInput().right().get();
                 if(block.is(tag)) {
-                    return BuiltInRegistries.BLOCK.getValue(data.getSmashedBlock());
+                    return BuiltInRegistries.BLOCK.get(data.getSmashedBlock());
                 }
             } else {
-                Block input = BuiltInRegistries.BLOCK.getValue(data.getInput().left().get());
+                Block input = BuiltInRegistries.BLOCK.get(data.getInput().left().get());
                 if(block.is(input)) {
-                    return BuiltInRegistries.BLOCK.getValue(data.getSmashedBlock());
+                    return BuiltInRegistries.BLOCK.get(data.getSmashedBlock());
                 }
             }
         }
@@ -102,7 +104,7 @@ public class SmashingRock extends ThrowableItemProjectile {
     }
 
     @Override
-    protected @NonNull Item getDefaultItem() {
+    protected @NotNull Item getDefaultItem() {
         return ChiselItems.SMASHING_ROCK.get();
     }
 }

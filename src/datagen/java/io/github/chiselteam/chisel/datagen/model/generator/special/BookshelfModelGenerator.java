@@ -2,28 +2,23 @@ package io.github.chiselteam.chisel.datagen.model.generator.special;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.family.Variant;
-import io.github.chiselteam.chisel.datagen.model.ChiselModelTemplates;
-import io.github.chiselteam.chisel.datagen.model.ChiselTextureSlots;
-import io.github.chiselteam.chisel.datagen.model.VariantModelGenerator;
-import io.github.chiselteam.chisel.datagen.model.VariantTextures;
+import io.github.chiselteam.chisel.datagen.model.*;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateDefinitionGenerator;
 import io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateModelBuilder;
-import net.minecraft.client.data.models.BlockModelGenerators;
-import net.minecraft.client.data.models.model.TextureMapping;
-import net.minecraft.client.data.models.model.TextureSlot;
-import net.minecraft.client.resources.model.sprite.Material;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.Identifier;
+import net.minecraft.data.models.model.TextureMapping;
+import net.minecraft.data.models.model.TextureSlot;
+import net.minecraft.resources.ResourceLocation;
 import org.joml.Vector3f;
 
 public class BookshelfModelGenerator extends VariantModelGenerator {
-    private final String[] woods = {"_dark_oak", "_pale_oak", "_mangrove", "_spruce", "_jungle", "_acacia", "_cherry", "_bamboo", "_crimson", "_warped", "_birch", "_oak"};
+    private final String[] woods = {"_dark_oak", "_mangrove", "_spruce", "_jungle", "_acacia", "_cherry", "_bamboo", "_crimson", "_warped", "_birch", "_oak"};
 
     @Override
     public TextureMapping getTextureMapping() {
         return VariantTextures.ctm(variant, textures -> textures.horizontalTextures(
-                        getMaterial("horizontal_none").sprite(), getMaterial("horizontal_both").sprite(),
-                        getMaterial("horizontal_left").sprite(), getMaterial("horizontal_right").sprite()))
+                        getMaterial("horizontal_none"), getMaterial("horizontal_both"),
+                        getMaterial("horizontal_left"), getMaterial("horizontal_right")))
                 .put(TextureSlot.PARTICLE, getBlockMaterial())
                 .put(TextureSlot.TOP, getBlockMaterial())
                 .put(TextureSlot.BOTTOM, getBlockMaterial())
@@ -34,9 +29,9 @@ public class BookshelfModelGenerator extends VariantModelGenerator {
     }
 
     @Override
-    public void generate(Variant variant, BlockModelGenerators blockModels) {
+    public void generate(Variant variant, BlockModels blockModels) {
         super.generate(variant, blockModels);
-        Identifier modelLocation = ChiselModelTemplates.CTM_HORIZONTAL_MULTI_PASS.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
+        ResourceLocation modelLocation = ChiselModelTemplates.CTM_HORIZONTAL_MULTI_PASS.create(getBlock(), getTextureMapping(), blockModels.modelOutput);
         blockModels.registerSimpleItemModel(getBlock(), modelLocation);
         blockModels.blockStateOutput.accept(ConnectedTextureBlockStateDefinitionGenerator.dispatch(variant.getBlock(), new ConnectedTextureBlockStateModelBuilder()
                 .modelLocation(modelLocation)
@@ -50,24 +45,24 @@ public class BookshelfModelGenerator extends VariantModelGenerator {
         ));
     }
 
-    private Material getBlockMaterial() {
+    private ResourceLocation getBlockMaterial() {
         String path = variant.getName();
         for(String wood : woods) {
             if(path.contains(wood)) {
-                return new Material(Identifier.withDefaultNamespace("block/%s_planks".formatted(wood.substring(1))));
+                return ResourceLocation.withDefaultNamespace("block/%s_planks".formatted(wood.substring(1)));
             }
         }
 
-        return new Material(Identifier.withDefaultNamespace("missingno"));
+        return ResourceLocation.withDefaultNamespace("missingno");
     }
 
-    private Material getMaterial(String suffix) {
+    private ResourceLocation getMaterial(String suffix) {
         var texture = variant.getTextures().get(suffix);
         if (texture == null) {
             String path = cleanId(VariantTextures.getTexturePath(variant));
             texture = Chisel.prefix(suffix.isEmpty() ? path : path + "-" + suffix);
         }
-        return new Material(texture);
+        return texture;
     }
 
     private String cleanId(String path) {

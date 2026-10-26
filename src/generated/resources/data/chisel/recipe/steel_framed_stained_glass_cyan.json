@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "G": "minecraft:cyan_stained_glass",
-    "I": "#c:ingots/iron"
+    "G": {
+      "item": "minecraft:cyan_stained_glass"
+    },
+    "I": {
+      "tag": "c:ingots/iron"
+    }
   },
   "pattern": [
     "GGG",

@@ -21,23 +21,30 @@ import java.nio.file.Path;
 public class GatherDataEventHandler {
 
     @SubscribeEvent
-    public static void gatherData(GatherDataEvent.Client event) {
-        event.createProvider(ChiselModelProvider::new);
-        event.createProvider(ChiselLootTableProvider::new);
-        event.createProvider(ChiselLang::new);
-        event.createProvider(ChiselSoundDefinitionProvider::new);
-        event.createProvider(ChiselRecipes.Runner::new);
-        event.createProvider(ChiselCompatRecipes.Runner::new);
-        event.createProvider(ChiselBlockTags::new);
-        event.createProvider(ChiselItemTags::new);
-        event.createProvider(ChiselRegistries::new);
-        event.createProvider(ChiselParticleDescriptions::new);
-        event.createProvider(ChiselHandbookGuides::new);
-        event.createProvider(ChiselHandbookCategories::new);
+    public static void gatherData(GatherDataEvent event) {
+        var generator = event.getGenerator();
+        var output = generator.getPackOutput();
+        var registries = event.getLookupProvider();
+        generator.addProvider(event.includeClient(), new ChiselModelProvider(output));
+        generator.addProvider(event.includeClient(), new ChiselAnimatedTextures(output, event.getExistingFileHelper()));
+        generator.addProvider(event.includeServer(), new ChiselLootTableProvider(output, registries));
+        generator.addProvider(event.includeClient(), new ChiselLang(output));
+        generator.addProvider(event.includeClient(), new ChiselSoundDefinitionProvider(output, event.getExistingFileHelper()));
+        generator.addProvider(event.includeServer(), new ChiselRecipes(output, registries));
+        generator.addProvider(event.includeServer(), new net.minecraft.data.DataProvider() {
+            @Override public java.util.concurrent.CompletableFuture<?> run(net.minecraft.data.CachedOutput cache) { return new ChiselCompatRecipes(output, registries).run(cache); }
+            @Override public String getName() { return "Chisel compatibility recipes"; }
+        });
+        generator.addProvider(event.includeServer(), new ChiselBlockTags(output, registries));
+        generator.addProvider(event.includeServer(), new ChiselItemTags(output, registries));
+        generator.addProvider(event.includeServer(), new ChiselRegistries(output, registries));
+        generator.addProvider(event.includeClient(), new ChiselParticleDescriptions(output));
+        generator.addProvider(event.includeServer(), new ChiselHandbookGuides(output, registries));
+        generator.addProvider(event.includeServer(), new ChiselHandbookCategories(output, registries));
         var structureInput = System.getProperty("chisel.structureInput");
         // Guides may reference vanilla templates without any local SNBT sources.
         if (structureInput != null && Files.isDirectory(Path.of(structureInput))) {
-            event.createProvider(output -> new SnbtToNbt(output, Path.of(structureInput))
+            generator.addProvider(event.includeServer(), new SnbtToNbt(output, java.util.List.of(Path.of(structureInput)))
                     .addFilter(StructureUpdater::update));
         }
     }

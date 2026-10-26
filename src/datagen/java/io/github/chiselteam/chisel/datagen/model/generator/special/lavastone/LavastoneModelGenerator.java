@@ -3,8 +3,8 @@ package io.github.chiselteam.chisel.datagen.model.generator.special.lavastone;
 import io.github.chiselteam.chisel.datagen.model.VariantTextures;
 
 import io.github.chiselteam.chisel.datagen.model.generator.MultiLayerModelGenerator;
-import net.minecraft.client.data.models.model.TextureMapping;
-import net.minecraft.client.data.models.model.TextureSlot;
+import net.minecraft.data.models.model.TextureMapping;
+import net.minecraft.data.models.model.TextureSlot;
 
 public class LavastoneModelGenerator extends MultiLayerModelGenerator {
     @Override

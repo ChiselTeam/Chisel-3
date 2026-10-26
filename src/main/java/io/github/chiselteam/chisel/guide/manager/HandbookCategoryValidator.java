@@ -2,7 +2,7 @@ package io.github.chiselteam.chisel.guide.manager;
 
 import io.github.chiselteam.chisel.guide.HandbookCategory;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ public class HandbookCategoryValidator {
     private HandbookCategoryValidator() {
     }
 
-    public static boolean validate(Identifier id, HandbookCategory category) {
+    public static boolean validate(ResourceLocation id, HandbookCategory category) {
         var errors = new ArrayList<String>();
         var warnings = new ArrayList<String>();
 

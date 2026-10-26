@@ -13,17 +13,17 @@ public class ChiselSoundDefinitionProvider extends SoundDefinitionsProvider {
      *
      * @param output The {@linkplain PackOutput} instance provided by the data generator.
      */
-    public ChiselSoundDefinitionProvider(PackOutput output) {
-        super(output, Chisel.MODID);
+    public ChiselSoundDefinitionProvider(PackOutput output, net.neoforged.neoforge.common.data.ExistingFileHelper helper) {
+        super(output, Chisel.MODID, helper);
     }
 
     @Override
     public void registerSounds() {
-        add(ChiselSounds.FALLBACK, SoundDefinition.definition()
+        add(ChiselSounds.FALLBACK.value(), SoundDefinition.definition()
                 .with(sound(Chisel.prefix("chisel/fallback")))
         );
 
-        add(ChiselSounds.WOOD, SoundDefinition.definition()
+        add(ChiselSounds.WOOD.value(), SoundDefinition.definition()
                 .with(sound(Chisel.prefix("chisel/wood2")))
                 .with(sound(Chisel.prefix("chisel/wood3")))
                 .with(sound(Chisel.prefix("chisel/wood4")))
@@ -33,22 +33,22 @@ public class ChiselSoundDefinitionProvider extends SoundDefinitionsProvider {
                 .with(sound(Chisel.prefix("chisel/wood11")))
         );
 
-        add(ChiselSounds.SQUASH, SoundDefinition.definition()
+        add(ChiselSounds.SQUASH.value(), SoundDefinition.definition()
                 .with(sound(Chisel.prefix("random/squash")))
                 .with(sound(Chisel.prefix("random/squash2")))
         );
 
-        add(ChiselSounds.DIG_HOLYSTONE, SoundDefinition.definition()
+        add(ChiselSounds.DIG_HOLYSTONE.value(), SoundDefinition.definition()
                 .with(sound(Chisel.prefix("dig/holystone1")))
                 .with(sound(Chisel.prefix("dig/holystone2")))
                 .with(sound(Chisel.prefix("dig/holystone5")))
         );
 
-        add(ChiselSounds.DIG_GRIMSTONE, SoundDefinition.definition()
+        add(ChiselSounds.DIG_GRIMSTONE.value(), SoundDefinition.definition()
                 .with(sound(Chisel.prefix("dig/grimstone1")))
         );
 
-        add(ChiselSounds.DIG_METAL, SoundDefinition.definition()
+        add(ChiselSounds.DIG_METAL.value(), SoundDefinition.definition()
                 .with(sound(Chisel.prefix("dig/metal")))
                 .with(sound(Chisel.prefix("dig/metal1")))
                 .with(sound(Chisel.prefix("dig/metal2")))
@@ -57,7 +57,7 @@ public class ChiselSoundDefinitionProvider extends SoundDefinitionsProvider {
                 .with(sound(Chisel.prefix("dig/metal8")))
         );
 
-        add(ChiselSounds.STEP_TEMPLE, SoundDefinition.definition()
+        add(ChiselSounds.STEP_TEMPLE.value(), SoundDefinition.definition()
                 .with(sound(Chisel.prefix("step/templeblock1")))
                 .with(sound(Chisel.prefix("step/templeblock2")))
                 .with(sound(Chisel.prefix("step/templeblock3")))
@@ -65,12 +65,12 @@ public class ChiselSoundDefinitionProvider extends SoundDefinitionsProvider {
                 .with(sound(Chisel.prefix("step/templeblock5")))
         );
 
-        add(ChiselSounds.STEP_HOLYSTONE, SoundDefinition.definition()
+        add(ChiselSounds.STEP_HOLYSTONE.value(), SoundDefinition.definition()
                 .with(sound(Chisel.prefix("step/holystone3")))
                 .with(sound(Chisel.prefix("step/holystone7")))
         );
 
-        add(ChiselSounds.STEP_METAL, SoundDefinition.definition()
+        add(ChiselSounds.STEP_METAL.value(), SoundDefinition.definition()
                 .with(sound(Chisel.prefix("step/metal4")))
                 .with(sound(Chisel.prefix("step/metal5")))
                 .with(sound(Chisel.prefix("step/metal6")))

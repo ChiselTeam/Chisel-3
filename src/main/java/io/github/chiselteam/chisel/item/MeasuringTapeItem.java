@@ -10,7 +10,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.context.UseOnContext;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Optional;
 
@@ -24,24 +24,24 @@ public class MeasuringTapeItem extends Item {
         super(properties);
     }
 
-    public static Optional<BlockPos> getFirstPosition(@NonNull ItemStack stack) {
+    public static Optional<BlockPos> getFirstPosition(@NotNull ItemStack stack) {
         CompoundTag tag = stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag();
-        return tag.getLong(FIRST_POS_KEY).map(BlockPos::of);
+        return (tag.contains(FIRST_POS_KEY) ? Optional.of(BlockPos.of(tag.getLong(FIRST_POS_KEY))) : Optional.empty());
     }
 
-    public static Optional<BlockPos> getSecondPosition(@NonNull ItemStack stack) {
+    public static Optional<BlockPos> getSecondPosition(@NotNull ItemStack stack) {
         CompoundTag tag = stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag();
-        return tag.getLong(SECOND_POS_KEY).map(BlockPos::of);
+        return (tag.contains(SECOND_POS_KEY) ? Optional.of(BlockPos.of(tag.getLong(SECOND_POS_KEY))) : Optional.empty());
     }
 
-    public static Optional<BlockPos> getMiddlePosition(@NonNull ItemStack stack) {
+    public static Optional<BlockPos> getMiddlePosition(@NotNull ItemStack stack) {
         CompoundTag tag = stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag();
-        return tag.getLong(MIDDLE_POS_KEY).map(BlockPos::of);
+        return (tag.contains(MIDDLE_POS_KEY) ? Optional.of(BlockPos.of(tag.getLong(MIDDLE_POS_KEY))) : Optional.empty());
     }
 
     @Override
-    public @NonNull InteractionResult onItemUseFirst(@NonNull ItemStack stack, @NonNull UseOnContext context) {
-        if (context.getLevel().isClientSide()) {
+    public @NotNull InteractionResult onItemUseFirst(@NotNull ItemStack stack, @NotNull UseOnContext context) {
+        if (context.getLevel().isClientSide) {
             return InteractionResult.SUCCESS;
         }
 
@@ -53,14 +53,14 @@ public class MeasuringTapeItem extends Item {
 
             CompoundTag tag = stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag();
             BlockPos clickedPos = context.getClickedPos();
-            BlockPos firstPos = tag.getLong(FIRST_POS_KEY).map(BlockPos::of).orElse(null);
+            BlockPos firstPos = (tag.contains(FIRST_POS_KEY) ? Optional.of(BlockPos.of(tag.getLong(FIRST_POS_KEY))) : Optional.<BlockPos>empty()).orElse(null);
             boolean measured = tag.contains(SECOND_POS_KEY);
 
             if (firstPos == null || measured) {
                 tag.putLong(FIRST_POS_KEY, clickedPos.asLong());
                 tag.remove(SECOND_POS_KEY);
             } else if (!firstPos.equals(clickedPos)) {
-                int dist = firstPos.distChessboard(clickedPos) + 1;
+                int dist = Math.max(Math.abs(firstPos.getX()-clickedPos.getX()), Math.max(Math.abs(firstPos.getY()-clickedPos.getY()), Math.abs(firstPos.getZ()-clickedPos.getZ()))) + 1;
                 tag.putLong(SECOND_POS_KEY, clickedPos.asLong());
                 if (dist % 2 == 1) {
                     var x = (firstPos.getX() + clickedPos.getX()) / 2;
@@ -77,7 +77,7 @@ public class MeasuringTapeItem extends Item {
         return InteractionResult.SUCCESS;
     }
 
-    private void resetTagData(@NonNull ItemStack stack) {
+    private void resetTagData(@NotNull ItemStack stack) {
         CompoundTag tag = stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag();
         tag.remove(FIRST_POS_KEY);
         tag.remove(SECOND_POS_KEY);

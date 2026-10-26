@@ -1,7 +1,7 @@
 package io.github.chiselteam.chisel.guide.manager;
 
 import io.github.chiselteam.chisel.guide.*;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 
 import java.util.Comparator;
 import java.util.LinkedHashMap;
@@ -14,10 +14,10 @@ public final class ClientHandbookManager {
     private ClientHandbookManager() {
     }
 
-    public static void replace(Map<Identifier, HandbookGuide> newGuides, Map<Identifier, HandbookCategory> newCategories) {
-        var orderedGuides = new LinkedHashMap<Identifier, HandbookGuide>();
+    public static void replace(Map<ResourceLocation, HandbookGuide> newGuides, Map<ResourceLocation, HandbookCategory> newCategories) {
+        var orderedGuides = new LinkedHashMap<ResourceLocation, HandbookGuide>();
         newGuides.entrySet().stream().sorted(Comparator
-                        .comparingInt((Map.Entry<Identifier, HandbookGuide> entry) -> entry.getValue().sortOrder())
+                        .comparingInt((Map.Entry<ResourceLocation, HandbookGuide> entry) -> entry.getValue().sortOrder())
                         .thenComparing(entry -> entry.getKey().toString()))
                 .forEach(entry -> orderedGuides.put(entry.getKey(), entry.getValue()));
         var entries = orderedGuides.entrySet().stream().map(entry -> new HandbookEntry(entry.getKey(), entry.getValue())).toList();
@@ -42,11 +42,11 @@ public final class ClientHandbookManager {
         return snapshot.entries();
     }
 
-    public static Map<Identifier, HandbookCategory> getCategories() {
+    public static Map<ResourceLocation, HandbookCategory> getCategories() {
         return snapshot.categories();
     }
 
-    public static Map<Identifier, List<HandbookEntry>> getCategoryIndex() {
+    public static Map<ResourceLocation, List<HandbookEntry>> getCategoryIndex() {
         return snapshot.categoryIndex();
     }
 

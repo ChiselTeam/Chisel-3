@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:sea_lantern",
-    "#c:dyes/light_gray"
+    {
+      "item": "minecraft:sea_lantern"
+    },
+    {
+      "tag": "c:dyes/light_gray"
+    }
   ],
   "result": {
     "count": 8,

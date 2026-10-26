@@ -20,7 +20,7 @@ public class ChiselTabs {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> STONE = CREATIVE_MODE_TABS.register("chisel_stone", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabStoneChiselBlocks"))
             .icon(() -> new ItemStack(ChiselFamilies.MARBLE.getVariant("marble_raw").get()))
-            .displayItems((_, output) -> List.of(
+            .displayItems((ignored, output) -> List.of(
                         ChiselFamilies.ANDESITE.getFamily(),
                         ChiselFamilies.BLACKSTONE.getFamily(),
                         ChiselFamilies.GILDED_BLACKSTONE.getFamily(),
@@ -69,7 +69,6 @@ public class ChiselTabs {
                         ChiselFamilies.CALCITE.getFamily(),
                         ChiselFamilies.DRIPSTONE.getFamily(),
                         ChiselFamilies.PACKED_MUD.getFamily(),
-                        ChiselFamilies.RESIN.getFamily(),
                         ChiselFamilies.WATERSTONE.getFamily(),
                         ChiselFamilies.STONE.getFamily(),
                         ChiselFamilies.SMOOTH_STONE.getFamily()
@@ -83,7 +82,7 @@ public class ChiselTabs {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> WOOD = CREATIVE_MODE_TABS.register("chisel_wood", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabWoodChiselBlocks"))
             .icon(() -> new ItemStack(ChiselFamilies.OAK.getVariant("oak_planks_smooth").get()))
-            .displayItems((_, output) -> List.of(
+            .displayItems((ignored, output) -> List.of(
                         ChiselFamilies.ACACIA.getFamily(),
                         ChiselFamilies.BIRCH.getFamily(),
                         ChiselFamilies.CRIMSON.getFamily(),
@@ -93,7 +92,6 @@ public class ChiselTabs {
                         ChiselFamilies.WARPED.getFamily(),
                         ChiselFamilies.CHERRY.getFamily(),
                         ChiselFamilies.MANGROVE.getFamily(),
-                        ChiselFamilies.PALE_OAK.getFamily(),
                         ChiselFamilies.OAK.getFamily(),
                         ChiselFamilies.SPRUCE.getFamily(),
                         ChiselFamilies.BAMBOO.getFamily()
@@ -107,7 +105,7 @@ public class ChiselTabs {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> METAL = CREATIVE_MODE_TABS.register("chisel_metal", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabMetalChiselBlocks"))
             .icon(() -> new ItemStack(ChiselFamilies.IRON.getVariant("iron_ingots_small").get()))
-            .displayItems((_, output) -> List.of(
+            .displayItems((ignored, output) -> List.of(
                         ChiselFamilies.FACTORY.getFamily(),
                         ChiselFamilies.FUTURA.getFamily(),
                         ChiselFamilies.HEX_PLATING.getFamily(),
@@ -144,7 +142,7 @@ public class ChiselTabs {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> OTHER = CREATIVE_MODE_TABS.register("chisel_other", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabOtherChiselBlocks"))
             .icon(() -> new ItemStack(ChiselFamilies.ANTIBLOCK.getVariant("antiblock_black").get()))
-            .displayItems((_, output) -> {
+            .displayItems((ignored, output) -> {
                 List.of(
                         ChiselFamilies.ANTIBLOCK.getFamily(),
                         ChiselFamilies.GLASS.getFamily(),
@@ -221,7 +219,7 @@ public class ChiselTabs {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MODDED = CREATIVE_MODE_TABS.register("chisel_modded", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabModdedChiselBlocks"))
             .icon(() -> new ItemStack(ChiselFamilies.BRONZE.getVariant("bronze_caution").get()))
-            .displayItems((_, output) -> {
+            .displayItems((ignored, output) -> {
                 List.of(
                         ChiselFamilies.ALUMINUM,
                         ChiselFamilies.BRONZE,
@@ -251,7 +249,7 @@ public class ChiselTabs {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CHISEL = CREATIVE_MODE_TABS.register("chisel_main", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tabChisel"))
             .icon(() -> new ItemStack(ChiselItems.CHISEL_IRON.get()))
-            .displayItems((_, output) -> {
+            .displayItems((ignored, output) -> {
                 output.accept(ChiselItems.CHISEL_IRON.get());
                 output.accept(ChiselItems.CHISEL_DIAMOND.get());
                 output.accept(ChiselItems.CHISEL_OBSIDIAN.get());

@@ -1,0 +1,11 @@
+{
+  "connected_faces": [
+    "all"
+  ],
+  "loader": "ctm:connected_texture_model",
+  "model_location": "chisel:block/steel_framed_stained_glass_red_diamond",
+  "variant": {
+    "block": "chisel:steel_framed_stained_glass_red_diamond",
+    "kind": "standard"
+  }
+}

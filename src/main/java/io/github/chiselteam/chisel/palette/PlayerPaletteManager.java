@@ -21,7 +21,7 @@ public final class PlayerPaletteManager {
         var current = get(player);
         var previous = id.map(current::require);
         PaletteDefinition.validate(definition).getOrThrow(IllegalArgumentException::new);
-        if ((!BuiltInRegistries.ITEM.containsKey(definition.icon()) || BuiltInRegistries.ITEM.getValue(definition.icon()) == Items.AIR)
+        if ((!BuiltInRegistries.ITEM.containsKey(definition.icon()) || BuiltInRegistries.ITEM.get(definition.icon()) == Items.AIR)
                 && previous.map(p -> !p.definition().icon().equals(definition.icon())).orElse(true))
             throw new IllegalArgumentException("Choose an existing item for the palette icon");
         for (var entry : definition.entries()) {

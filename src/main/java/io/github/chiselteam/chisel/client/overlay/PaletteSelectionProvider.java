@@ -8,7 +8,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.neoforged.neoforge.client.network.ClientPacketDistributor;
+import net.neoforged.neoforge.network.PacketDistributor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,6 +59,6 @@ public final class PaletteSelectionProvider implements SelectionProvider<Palette
 
     @Override
     public void commit(Player player, InteractionHand hand, Choice choice) {
-        ClientPacketDistributor.sendToServer(new SelectPalettePacket(choice.id()));
+        PacketDistributor.sendToServer(new SelectPalettePacket(choice.id()));
     }
 }

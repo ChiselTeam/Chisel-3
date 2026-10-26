@@ -6,42 +6,38 @@ import io.github.chiselteam.chisel.api.family.VariantFamily;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
 import io.github.chiselteam.chisel.registry.ChiselItems;
 import io.github.chiselteam.chisel.registry.ChiselVariantFamilies;
-import net.minecraft.client.data.models.BlockModelGenerators;
-import net.minecraft.client.data.models.ItemModelGenerators;
-import net.minecraft.client.data.models.ModelProvider;
-import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
-import net.minecraft.client.data.models.model.ModelTemplates;
-import net.minecraft.client.data.models.model.TextureMapping;
-import net.minecraft.client.data.models.model.TextureSlot;
-import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.models.blockstates.MultiVariantGenerator;
+import net.minecraft.data.models.model.ModelTemplates;
+import net.minecraft.data.models.model.TextureMapping;
+import net.minecraft.data.models.model.TextureSlot;
 import net.minecraft.world.level.block.Block;
-import org.jspecify.annotations.NonNull;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.stream.Stream;
 
-public class ChiselModelProvider extends ModelProvider {
+public class ChiselModelProvider implements net.minecraft.data.DataProvider {
+
+    private final PackOutput output;
 
     public ChiselModelProvider(PackOutput output) {
-        super(output, Chisel.MODID);
+        this.output = output;
     }
 
-    @Override
-    protected void registerModels(@NonNull BlockModelGenerators blockModels, @NonNull ItemModelGenerators itemModels) {
+    protected void registerModels(@NotNull BlockModels blockModels, @NotNull ItemModels itemModels) {
         ChiselVariantModelGenerators.registerAll();
 
         Set<String> processedFamilies = new HashSet<>();
         ChiselVariantFamilies.getRootFamilies().forEach(family -> registerFamilyModels(family, blockModels, processedFamilies));
 
-        blockModels.blockStateOutput.accept(MultiVariantGenerator.dispatch(ChiselBlocks.AUTO_CHISEL.get(), BlockModelGenerators.variant(new net.minecraft.client.renderer.block.dispatch.Variant(Chisel.prefix("block/auto_chisel")))));
+        blockModels.blockStateOutput.accept(MultiVariantGenerator.multiVariant(ChiselBlocks.AUTO_CHISEL.get(), BlockModels.plainVariant(Chisel.prefix("block/auto_chisel"))));
         blockModels.registerSimpleItemModel(ChiselBlocks.AUTO_CHISEL.get(), Chisel.prefix("block/auto_chisel"));
 
         blockModels.blockStateOutput.accept(
-                MultiVariantGenerator.dispatch(
+                MultiVariantGenerator.multiVariant(
                         ChiselBlocks.BUILDERS_GUIDE.get(),
-                        BlockModelGenerators.plainVariant(
+                        BlockModels.plainVariant(
                                 ModelTemplates.CUBE_BOTTOM_TOP.create(
                                         ChiselBlocks.BUILDERS_GUIDE.get(),
                                         new TextureMapping()
@@ -73,7 +69,7 @@ public class ChiselModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ChiselItems.TROWEL.get(), ModelTemplates.FLAT_ITEM);
     }
 
-    private void registerFamilyModels(VariantFamily family, BlockModelGenerators blockModels, Set<String> processedFamilies) {
+    private void registerFamilyModels(VariantFamily family, BlockModels blockModels, Set<String> processedFamilies) {
         if (!processedFamilies.add(family.getFamilyName())) return;
 
         family.getVariants().stream().filter(Variant::shouldGenerateModel).forEach(variant -> ChiselVariantModelGenerators.generate(variant, blockModels));
@@ -84,7 +80,26 @@ public class ChiselModelProvider extends ModelProvider {
     }
 
     @Override
-    protected @NonNull Stream<? extends Holder<Block>> getKnownBlocks() {
-        return ChiselBlocks.BLOCKS.getEntries().stream();
+    public java.util.concurrent.CompletableFuture<?> run(net.minecraft.data.CachedOutput cache) {
+        var states = new java.util.LinkedHashMap<Block, net.minecraft.data.models.blockstates.BlockStateGenerator>();
+        var models = new java.util.LinkedHashMap<net.minecraft.resources.ResourceLocation, java.util.function.Supplier<com.google.gson.JsonElement>>();
+        var generator = new BlockModels(state -> { if (states.put(state.getBlock(),state) != null) throw new IllegalStateException("Duplicate blockstate: " + state.getBlock()); },
+                (id,model) -> { if (models.put(id,model) != null) throw new IllegalStateException("Duplicate model: " + id); });
+        registerModels(generator, new ItemModels(generator.modelOutput));
+        for (var entry : ChiselBlocks.BLOCKS.getEntries()) {
+            var block = entry.get();
+            if (!states.containsKey(block)) throw new IllegalStateException("Missing blockstate: " + entry.getId());
+            var item = block.asItem();
+            if (item == net.minecraft.world.item.Items.AIR) continue;
+            var id = net.minecraft.data.models.model.ModelLocationUtils.getModelLocation(item);
+            models.putIfAbsent(id, () -> { var json=new com.google.gson.JsonObject(); json.addProperty("parent", net.minecraft.data.models.model.ModelLocationUtils.getModelLocation(block).toString());return json; });
+        }
+        var statePaths = output.createPathProvider(PackOutput.Target.RESOURCE_PACK,"blockstates");
+        var modelPaths = output.createPathProvider(PackOutput.Target.RESOURCE_PACK,"models");
+        var futures = new java.util.ArrayList<java.util.concurrent.CompletableFuture<?>>();
+        states.forEach((block,state) -> futures.add(net.minecraft.data.DataProvider.saveStable(cache,state.get(),statePaths.json(block.builtInRegistryHolder().key().location()))));
+        models.forEach((id,model) -> futures.add(net.minecraft.data.DataProvider.saveStable(cache,model.get(),modelPaths.json(id))));
+        return java.util.concurrent.CompletableFuture.allOf(futures.toArray(java.util.concurrent.CompletableFuture[]::new));
     }
+    @Override public String getName() { return "Chisel model definitions"; }
 }

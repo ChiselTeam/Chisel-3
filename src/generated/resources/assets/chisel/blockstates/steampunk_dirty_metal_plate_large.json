@@ -1,12 +1,7 @@
 {
-  "neoforge:definition_type": "ctm:connected_texture_model",
-  "connected_faces": [
-    "all"
-  ],
-  "model_location": "chisel:block/steampunk_dirty_metal_plate_large",
-  "render_overlay_on_all_faces": true,
-  "variant": {
-    "block": "chisel:steampunk_dirty_metal_plate_large",
-    "kind": "standard"
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/steampunk_dirty_metal_plate_large"
+    }
   }
 }

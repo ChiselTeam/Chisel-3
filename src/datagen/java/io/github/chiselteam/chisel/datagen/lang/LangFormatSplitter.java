@@ -1,7 +1,7 @@
 package io.github.chiselteam.chisel.datagen.lang;
 
 import com.google.common.collect.ImmutableList;
-import org.jspecify.annotations.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 import java.text.ChoiceFormat;
 import java.text.DecimalFormat;

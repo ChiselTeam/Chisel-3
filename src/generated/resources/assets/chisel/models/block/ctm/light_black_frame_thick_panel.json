@@ -1,0 +1,12 @@
+{
+  "connected_faces": [
+    "all"
+  ],
+  "loader": "ctm:connected_texture_model",
+  "model_location": "chisel:block/light_black_frame_thick_panel",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:light_black_frame_thick_panel",
+    "kind": "standard"
+  }
+}

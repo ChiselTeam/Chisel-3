@@ -20,7 +20,7 @@ import java.util.Map;
 @Mixin(CloneCommands.class)
 abstract class CloneCommandsMixin {
     @WrapOperation(method = "clone", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/level/ServerLevel;setBlock(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z", ordinal = 0))
-    private static boolean chisel$captureMovedMoss(ServerLevel level, BlockPos pos, BlockState state, int flags, Operation<Boolean> original, @Local(name = "offset") BlockPos offset, @Share("movedMoss") LocalRef<Map<BlockPos, Integer>> movedMoss) {
+    private static boolean chisel$captureMovedMoss(ServerLevel level, BlockPos pos, BlockState state, int flags, Operation<Boolean> original, @Local(ordinal = 4) BlockPos offset, @Share("movedMoss") LocalRef<Map<BlockPos, Integer>> movedMoss) {
         if (level.hasData(ChiselAttachments.MOSS)) {
             int texture = level.getData(ChiselAttachments.MOSS).texture(pos);
             if (texture != 0) {
