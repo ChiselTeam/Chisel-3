@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/iron/iron_dent",
+    "particle": "chisel:block/iron/iron_dent",
+    "standard_corner": "chisel:block/iron/iron_dent-ctm_corner",
+    "standard_cornerless": "chisel:block/iron/iron_raw",
+    "standard_horizontal": "chisel:block/iron/iron_dent-ctm_horizontal",
+    "standard_none": "chisel:block/iron/iron_dent",
+    "standard_vertical": "chisel:block/iron/iron_dent-ctm_vertical"
+  }
+}
