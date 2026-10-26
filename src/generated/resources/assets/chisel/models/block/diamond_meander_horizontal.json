@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "all": "chisel:block/diamond/diamond_meander_horizontal",
+    "bottom": "chisel:block/diamond/diamond_meander_horizontal-top",
+    "horizontal_both": "chisel:block/diamond/diamond_meander_horizontal-horizontal_both",
+    "horizontal_left": "chisel:block/diamond/diamond_meander_horizontal-horizontal_left",
+    "horizontal_none": "chisel:block/diamond/diamond_meander_horizontal-horizontal_none",
+    "horizontal_right": "chisel:block/diamond/diamond_meander_horizontal-horizontal_right",
+    "particle": "chisel:block/diamond/diamond_meander_horizontal",
+    "side": "chisel:block/diamond/diamond_meander_horizontal",
+    "top": "chisel:block/diamond/diamond_meander_horizontal-top"
+  }
+}
