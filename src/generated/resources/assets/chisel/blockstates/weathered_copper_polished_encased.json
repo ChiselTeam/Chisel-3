@@ -1,0 +1,38 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "all"
+  ],
+  "connects_to": [
+    {
+      "id": "chisel:copper_polished_encased"
+    },
+    {
+      "id": "chisel:waxed_copper_polished_encased"
+    },
+    {
+      "id": "chisel:exposed_copper_polished_encased"
+    },
+    {
+      "id": "chisel:waxed_exposed_copper_polished_encased"
+    },
+    {
+      "id": "chisel:weathered_copper_polished_encased"
+    },
+    {
+      "id": "chisel:waxed_weathered_copper_polished_encased"
+    },
+    {
+      "id": "chisel:oxidized_copper_polished_encased"
+    },
+    {
+      "id": "chisel:waxed_oxidized_copper_polished_encased"
+    }
+  ],
+  "model_location": "chisel:block/weathered_copper_polished_encased",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:weathered_copper_polished_encased",
+    "kind": "standard"
+  }
+}

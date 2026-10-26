@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_pillar_ionic_plain",
+    "chisel:exposed_copper_pillar_ionic_plain",
+    "chisel:weathered_copper_pillar_ionic_plain",
+    "chisel:oxidized_copper_pillar_ionic_plain"
+  ],
+  "waxed_map": {
+    "chisel:copper_pillar_ionic_plain": "chisel:waxed_copper_pillar_ionic_plain",
+    "chisel:exposed_copper_pillar_ionic_plain": "chisel:waxed_exposed_copper_pillar_ionic_plain",
+    "chisel:oxidized_copper_pillar_ionic_plain": "chisel:waxed_oxidized_copper_pillar_ionic_plain",
+    "chisel:weathered_copper_pillar_ionic_plain": "chisel:waxed_weathered_copper_pillar_ionic_plain"
+  }
+}

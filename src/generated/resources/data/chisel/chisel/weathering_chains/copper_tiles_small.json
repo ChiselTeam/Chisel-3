@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_tiles_small",
+    "chisel:exposed_copper_tiles_small",
+    "chisel:weathered_copper_tiles_small",
+    "chisel:oxidized_copper_tiles_small"
+  ],
+  "waxed_map": {
+    "chisel:copper_tiles_small": "chisel:waxed_copper_tiles_small",
+    "chisel:exposed_copper_tiles_small": "chisel:waxed_exposed_copper_tiles_small",
+    "chisel:oxidized_copper_tiles_small": "chisel:waxed_oxidized_copper_tiles_small",
+    "chisel:weathered_copper_tiles_small": "chisel:waxed_weathered_copper_tiles_small"
+  }
+}

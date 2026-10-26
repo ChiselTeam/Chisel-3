@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_bricks_cracked",
+    "chisel:exposed_copper_bricks_cracked",
+    "chisel:weathered_copper_bricks_cracked",
+    "chisel:oxidized_copper_bricks_cracked"
+  ],
+  "waxed_map": {
+    "chisel:copper_bricks_cracked": "chisel:waxed_copper_bricks_cracked",
+    "chisel:exposed_copper_bricks_cracked": "chisel:waxed_exposed_copper_bricks_cracked",
+    "chisel:oxidized_copper_bricks_cracked": "chisel:waxed_oxidized_copper_bricks_cracked",
+    "chisel:weathered_copper_bricks_cracked": "chisel:waxed_weathered_copper_bricks_cracked"
+  }
+}

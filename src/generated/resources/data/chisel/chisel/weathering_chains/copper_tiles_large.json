@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_tiles_large",
+    "chisel:exposed_copper_tiles_large",
+    "chisel:weathered_copper_tiles_large",
+    "chisel:oxidized_copper_tiles_large"
+  ],
+  "waxed_map": {
+    "chisel:copper_tiles_large": "chisel:waxed_copper_tiles_large",
+    "chisel:exposed_copper_tiles_large": "chisel:waxed_exposed_copper_tiles_large",
+    "chisel:oxidized_copper_tiles_large": "chisel:waxed_oxidized_copper_tiles_large",
+    "chisel:weathered_copper_tiles_large": "chisel:waxed_weathered_copper_tiles_large"
+  }
+}

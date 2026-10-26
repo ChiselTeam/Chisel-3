@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_checker",
+    "chisel:exposed_copper_checker",
+    "chisel:weathered_copper_checker",
+    "chisel:oxidized_copper_checker"
+  ],
+  "waxed_map": {
+    "chisel:copper_checker": "chisel:waxed_copper_checker",
+    "chisel:exposed_copper_checker": "chisel:waxed_exposed_copper_checker",
+    "chisel:oxidized_copper_checker": "chisel:waxed_oxidized_copper_checker",
+    "chisel:weathered_copper_checker": "chisel:waxed_weathered_copper_checker"
+  }
+}

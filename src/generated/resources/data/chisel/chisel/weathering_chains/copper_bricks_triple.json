@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_bricks_triple",
+    "chisel:exposed_copper_bricks_triple",
+    "chisel:weathered_copper_bricks_triple",
+    "chisel:oxidized_copper_bricks_triple"
+  ],
+  "waxed_map": {
+    "chisel:copper_bricks_triple": "chisel:waxed_copper_bricks_triple",
+    "chisel:exposed_copper_bricks_triple": "chisel:waxed_exposed_copper_bricks_triple",
+    "chisel:oxidized_copper_bricks_triple": "chisel:waxed_oxidized_copper_bricks_triple",
+    "chisel:weathered_copper_bricks_triple": "chisel:waxed_weathered_copper_bricks_triple"
+  }
+}

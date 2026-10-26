@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_lodestone",
+    "chisel:exposed_copper_lodestone",
+    "chisel:weathered_copper_lodestone",
+    "chisel:oxidized_copper_lodestone"
+  ],
+  "waxed_map": {
+    "chisel:copper_lodestone": "chisel:waxed_copper_lodestone",
+    "chisel:exposed_copper_lodestone": "chisel:waxed_exposed_copper_lodestone",
+    "chisel:oxidized_copper_lodestone": "chisel:waxed_oxidized_copper_lodestone",
+    "chisel:weathered_copper_lodestone": "chisel:waxed_weathered_copper_lodestone"
+  }
+}

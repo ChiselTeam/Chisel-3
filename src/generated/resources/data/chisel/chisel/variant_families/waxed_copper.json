@@ -34,6 +34,562 @@
       "block": "chisel:waxed_copper_thermal",
       "model_type": "top_bottom_side",
       "name": "waxed_copper_thermal"
+    },
+    {
+      "block": "chisel:waxed_copper_array",
+      "model_type": "multiblock_2x2",
+      "name": "waxed_copper_array"
+    },
+    {
+      "block": "chisel:waxed_copper_border_square",
+      "model_type": "connected",
+      "name": "waxed_copper_border_square"
+    },
+    {
+      "block": "chisel:waxed_copper_border_square_small",
+      "model_type": "connected",
+      "name": "waxed_copper_border_square_small"
+    },
+    {
+      "block": "chisel:waxed_copper_braid",
+      "name": "waxed_copper_braid"
+    },
+    {
+      "block": "chisel:waxed_copper_braid_encased",
+      "model_type": "connected",
+      "name": "waxed_copper_braid_encased"
+    },
+    {
+      "block": "chisel:waxed_copper_bricks_cracked",
+      "name": "waxed_copper_bricks_cracked"
+    },
+    {
+      "block": "chisel:waxed_copper_bricks_encased",
+      "model_type": "connected",
+      "name": "waxed_copper_bricks_encased"
+    },
+    {
+      "block": "chisel:waxed_copper_bricks_indent",
+      "name": "waxed_copper_bricks_indent"
+    },
+    {
+      "block": "chisel:waxed_copper_bricks_inlayed",
+      "name": "waxed_copper_bricks_inlayed"
+    },
+    {
+      "block": "chisel:waxed_copper_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "waxed_copper_bricks_large"
+    },
+    {
+      "block": "chisel:waxed_copper_large_bricks",
+      "name": "waxed_copper_large_bricks"
+    },
+    {
+      "block": "chisel:waxed_copper_bricks_small",
+      "name": "waxed_copper_bricks_small"
+    },
+    {
+      "block": "chisel:waxed_copper_bricks_soft",
+      "name": "waxed_copper_bricks_soft"
+    },
+    {
+      "block": "chisel:waxed_copper_bricks_solid",
+      "name": "waxed_copper_bricks_solid"
+    },
+    {
+      "block": "chisel:waxed_copper_bricks_triple",
+      "name": "waxed_copper_bricks_triple"
+    },
+    {
+      "block": "chisel:waxed_copper_bricks_vertical",
+      "name": "waxed_copper_bricks_vertical"
+    },
+    {
+      "block": "chisel:waxed_copper_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "waxed_copper_chaotic"
+    },
+    {
+      "block": "chisel:waxed_copper_chaotic_medium",
+      "name": "waxed_copper_chaotic_medium"
+    },
+    {
+      "block": "chisel:waxed_copper_chaotic_small",
+      "name": "waxed_copper_chaotic_small"
+    },
+    {
+      "block": "chisel:waxed_copper_checker",
+      "name": "waxed_copper_checker"
+    },
+    {
+      "block": "chisel:waxed_copper_checker_small",
+      "name": "waxed_copper_checker_small"
+    },
+    {
+      "block": "chisel:waxed_copper_circular",
+      "model_type": "connected",
+      "name": "waxed_copper_circular"
+    },
+    {
+      "block": "chisel:waxed_copper_cracked",
+      "name": "waxed_copper_cracked"
+    },
+    {
+      "block": "chisel:waxed_copper_cobble",
+      "name": "waxed_copper_cobble"
+    },
+    {
+      "block": "chisel:waxed_copper_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "waxed_copper_cuts"
+    },
+    {
+      "block": "chisel:waxed_copper_dent",
+      "model_type": "connected",
+      "name": "waxed_copper_dent"
+    },
+    {
+      "block": "chisel:waxed_copper_french_1",
+      "name": "waxed_copper_french_1"
+    },
+    {
+      "block": "chisel:waxed_copper_french_2",
+      "name": "waxed_copper_french_2"
+    },
+    {
+      "block": "chisel:waxed_copper_indent",
+      "model_type": "connected",
+      "name": "waxed_copper_indent"
+    },
+    {
+      "block": "chisel:waxed_copper_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "waxed_copper_jellybean"
+    },
+    {
+      "block": "chisel:waxed_copper_layers",
+      "name": "waxed_copper_layers"
+    },
+    {
+      "block": "chisel:waxed_copper_layers_connected",
+      "model_type": "connected",
+      "name": "waxed_copper_layers_connected"
+    },
+    {
+      "block": "chisel:waxed_copper_line_horizontal",
+      "name": "waxed_copper_line_horizontal"
+    },
+    {
+      "block": "chisel:waxed_copper_line_vertical",
+      "name": "waxed_copper_line_vertical"
+    },
+    {
+      "block": "chisel:waxed_copper_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "waxed_copper_meander_horizontal"
+    },
+    {
+      "block": "chisel:waxed_copper_meander_vertical",
+      "model_type": "ctmv",
+      "name": "waxed_copper_meander_vertical"
+    },
+    {
+      "block": "chisel:waxed_copper_mosaic",
+      "model_type": "connected",
+      "name": "waxed_copper_mosaic"
+    },
+    {
+      "block": "chisel:waxed_copper_ornate_small",
+      "name": "waxed_copper_ornate_small"
+    },
+    {
+      "block": "chisel:waxed_copper_panel",
+      "name": "waxed_copper_panel"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar",
+      "model_type": "top_bottom_side",
+      "name": "waxed_copper_pillar"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_basic",
+      "model_type": "ctmv",
+      "name": "waxed_copper_pillar_basic"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "waxed_copper_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "waxed_copper_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "waxed_copper_pillar_basic_round"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "waxed_copper_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "waxed_copper_pillar_classic"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "waxed_copper_pillar_classic_large"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "waxed_copper_pillar_ionic"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "waxed_copper_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "waxed_copper_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "waxed_copper_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "waxed_copper_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "waxed_copper_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "waxed_copper_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_meander",
+      "model_type": "ctmv",
+      "name": "waxed_copper_pillar_meander"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "waxed_copper_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "waxed_copper_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "waxed_copper_pillar_meander_round"
+    },
+    {
+      "block": "chisel:waxed_copper_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "waxed_copper_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:waxed_copper_plate",
+      "name": "waxed_copper_plate"
+    },
+    {
+      "block": "chisel:waxed_copper_plate_connected",
+      "model_type": "connected",
+      "name": "waxed_copper_plate_connected"
+    },
+    {
+      "block": "chisel:waxed_copper_polished",
+      "name": "waxed_copper_polished"
+    },
+    {
+      "block": "chisel:waxed_copper_polished_encased",
+      "model_type": "connected",
+      "name": "waxed_copper_polished_encased"
+    },
+    {
+      "block": "chisel:waxed_copper_prism",
+      "name": "waxed_copper_prism"
+    },
+    {
+      "block": "chisel:waxed_copper_raw",
+      "name": "waxed_copper_raw"
+    },
+    {
+      "block": "chisel:waxed_copper_road",
+      "name": "waxed_copper_road"
+    },
+    {
+      "block": "chisel:waxed_copper_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "waxed_copper_slanted"
+    },
+    {
+      "block": "chisel:waxed_copper_tiles",
+      "name": "waxed_copper_tiles"
+    },
+    {
+      "block": "chisel:waxed_copper_tiles_large",
+      "model_type": "connected",
+      "name": "waxed_copper_tiles_large"
+    },
+    {
+      "block": "chisel:waxed_copper_tiles_small",
+      "name": "waxed_copper_tiles_small"
+    },
+    {
+      "block": "chisel:waxed_copper_twisted",
+      "model_type": "top_bottom_side",
+      "name": "waxed_copper_twisted"
+    },
+    {
+      "block": "chisel:waxed_copper_weaver",
+      "model_type": "connected",
+      "name": "waxed_copper_weaver"
+    },
+    {
+      "block": "chisel:waxed_copper_zag",
+      "model_type": "v4",
+      "name": "waxed_copper_zag"
+    },
+    {
+      "block": "chisel:waxed_copper_crate_2",
+      "model_type": "connected",
+      "name": "waxed_copper_crate_2"
+    },
+    {
+      "block": "chisel:waxed_copper_herringbone",
+      "name": "waxed_copper_herringbone"
+    },
+    {
+      "block": "chisel:waxed_copper_herringbone_encased",
+      "model_type": "connected",
+      "name": "waxed_copper_herringbone_encased"
+    },
+    {
+      "block": "chisel:waxed_copper_medallion",
+      "name": "waxed_copper_medallion"
+    },
+    {
+      "block": "chisel:waxed_copper_medallion_encased",
+      "model_type": "connected",
+      "name": "waxed_copper_medallion_encased"
+    },
+    {
+      "block": "chisel:waxed_copper_dots",
+      "name": "waxed_copper_dots"
+    },
+    {
+      "block": "chisel:waxed_copper_dots_encased",
+      "model_type": "connected",
+      "name": "waxed_copper_dots_encased"
+    },
+    {
+      "block": "chisel:waxed_copper_heart",
+      "name": "waxed_copper_heart"
+    },
+    {
+      "block": "chisel:waxed_copper_star",
+      "name": "waxed_copper_star"
+    },
+    {
+      "block": "chisel:waxed_copper_plating",
+      "name": "waxed_copper_plating"
+    },
+    {
+      "block": "chisel:waxed_copper_lodestone",
+      "name": "waxed_copper_lodestone"
+    },
+    {
+      "block": "chisel:waxed_copper_lodestone_connected",
+      "model_type": "connected",
+      "name": "waxed_copper_lodestone_connected"
+    },
+    {
+      "block": "chisel:waxed_copper_plank",
+      "name": "waxed_copper_plank"
+    },
+    {
+      "block": "chisel:waxed_copper_plank_connected",
+      "model_type": "connected",
+      "name": "waxed_copper_plank_connected"
+    },
+    {
+      "block": "chisel:waxed_copper_frame",
+      "name": "waxed_copper_frame"
+    },
+    {
+      "block": "chisel:waxed_copper_panel_1",
+      "name": "waxed_copper_panel_1"
+    },
+    {
+      "block": "chisel:waxed_copper_panel_2",
+      "name": "waxed_copper_panel_2"
+    },
+    {
+      "block": "chisel:waxed_copper_panel_3",
+      "name": "waxed_copper_panel_3"
+    },
+    {
+      "block": "chisel:waxed_copper_skull_creeper",
+      "name": "waxed_copper_skull_creeper"
+    },
+    {
+      "block": "chisel:waxed_copper_skull_skeleton",
+      "name": "waxed_copper_skull_skeleton"
+    },
+    {
+      "block": "chisel:waxed_copper_stripes",
+      "name": "waxed_copper_stripes"
+    },
+    {
+      "block": "chisel:waxed_copper_stripes_encased",
+      "model_type": "connected",
+      "name": "waxed_copper_stripes_encased"
+    },
+    {
+      "block": "chisel:waxed_copper_chisel_1",
+      "name": "waxed_copper_chisel_1"
+    },
+    {
+      "block": "chisel:waxed_copper_chisel_2",
+      "name": "waxed_copper_chisel_2"
+    },
+    {
+      "block": "chisel:waxed_copper_chisel_3",
+      "name": "waxed_copper_chisel_3"
+    },
+    {
+      "block": "chisel:waxed_copper_chisel_4",
+      "name": "waxed_copper_chisel_4"
+    },
+    {
+      "block": "chisel:waxed_copper_chisel_5",
+      "name": "waxed_copper_chisel_5"
+    },
+    {
+      "block": "chisel:waxed_copper_chisel_6",
+      "name": "waxed_copper_chisel_6"
+    },
+    {
+      "block": "chisel:waxed_copper_facet",
+      "name": "waxed_copper_facet"
+    },
+    {
+      "block": "chisel:waxed_copper_facet_small",
+      "name": "waxed_copper_facet_small"
+    },
+    {
+      "block": "chisel:waxed_copper_facet_small_encased",
+      "model_type": "connected",
+      "name": "waxed_copper_facet_small_encased"
+    },
+    {
+      "block": "chisel:waxed_copper_shiny",
+      "name": "waxed_copper_shiny"
+    },
+    {
+      "block": "chisel:waxed_copper_shiny_connected",
+      "model_type": "connected",
+      "name": "waxed_copper_shiny_connected"
+    },
+    {
+      "block": "chisel:waxed_copper_gem",
+      "name": "waxed_copper_gem"
+    },
+    {
+      "block": "chisel:waxed_copper_gem_1",
+      "name": "waxed_copper_gem_1"
+    },
+    {
+      "block": "chisel:waxed_copper_gem_1_connected",
+      "model_type": "connected",
+      "name": "waxed_copper_gem_1_connected"
+    },
+    {
+      "block": "chisel:waxed_copper_gem_2",
+      "name": "waxed_copper_gem_2"
+    },
+    {
+      "block": "chisel:waxed_copper_gem_2_connected",
+      "model_type": "connected",
+      "name": "waxed_copper_gem_2_connected"
+    },
+    {
+      "block": "chisel:waxed_copper_gem_3",
+      "name": "waxed_copper_gem_3"
+    },
+    {
+      "block": "chisel:waxed_copper_gem_3_connected",
+      "model_type": "connected",
+      "name": "waxed_copper_gem_3_connected"
+    },
+    {
+      "block": "chisel:waxed_copper_bricks_square",
+      "name": "waxed_copper_bricks_square"
+    },
+    {
+      "block": "chisel:waxed_copper_slab",
+      "name": "waxed_copper_slab"
+    },
+    {
+      "block": "chisel:waxed_copper_scaffold_2",
+      "name": "waxed_copper_scaffold_2"
+    },
+    {
+      "block": "chisel:waxed_copper_scaffold_encased_2",
+      "model_type": "connected",
+      "name": "waxed_copper_scaffold_encased_2"
+    },
+    {
+      "block": "chisel:waxed_copper_tiles_inlayed",
+      "name": "waxed_copper_tiles_inlayed"
+    },
+    {
+      "block": "chisel:waxed_copper_waves",
+      "model_type": "multiblock_2x2",
+      "name": "waxed_copper_waves"
+    },
+    {
+      "block": "chisel:waxed_copper_parquet",
+      "name": "waxed_copper_parquet"
+    },
+    {
+      "block": "chisel:waxed_copper_parquet_encased",
+      "model_type": "connected",
+      "name": "waxed_copper_parquet_encased"
+    },
+    {
+      "block": "chisel:waxed_copper_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "waxed_copper_bricks_large_rough"
+    },
+    {
+      "block": "chisel:waxed_copper_tiles_small_encased",
+      "model_type": "connected",
+      "name": "waxed_copper_tiles_small_encased"
+    },
+    {
+      "block": "chisel:waxed_copper_bricks_round",
+      "name": "waxed_copper_bricks_round"
     }
   ]
 }

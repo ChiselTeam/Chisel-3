@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_pillar_classic",
+    "chisel:exposed_copper_pillar_classic",
+    "chisel:weathered_copper_pillar_classic",
+    "chisel:oxidized_copper_pillar_classic"
+  ],
+  "waxed_map": {
+    "chisel:copper_pillar_classic": "chisel:waxed_copper_pillar_classic",
+    "chisel:exposed_copper_pillar_classic": "chisel:waxed_exposed_copper_pillar_classic",
+    "chisel:oxidized_copper_pillar_classic": "chisel:waxed_oxidized_copper_pillar_classic",
+    "chisel:weathered_copper_pillar_classic": "chisel:waxed_weathered_copper_pillar_classic"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_road",
+    "chisel:exposed_copper_road",
+    "chisel:weathered_copper_road",
+    "chisel:oxidized_copper_road"
+  ],
+  "waxed_map": {
+    "chisel:copper_road": "chisel:waxed_copper_road",
+    "chisel:exposed_copper_road": "chisel:waxed_exposed_copper_road",
+    "chisel:oxidized_copper_road": "chisel:waxed_oxidized_copper_road",
+    "chisel:weathered_copper_road": "chisel:waxed_weathered_copper_road"
+  }
+}

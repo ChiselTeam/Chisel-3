@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/copper/copper_circular",
+    "particle": "chisel:block/copper/copper_circular",
+    "standard_corner": "chisel:block/copper/copper_circular-ctm_corner",
+    "standard_cornerless": "chisel:block/copper/copper_raw",
+    "standard_horizontal": "chisel:block/copper/copper_circular-ctm_horizontal",
+    "standard_none": "chisel:block/copper/copper_circular",
+    "standard_vertical": "chisel:block/copper/copper_circular-ctm_vertical"
+  }
+}

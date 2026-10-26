@@ -1,0 +1,39 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "connected_faces": [
+    "down",
+    "up"
+  ],
+  "connects_to": [
+    {
+      "id": "chisel:copper_pillar_basic_dent"
+    },
+    {
+      "id": "chisel:waxed_copper_pillar_basic_dent"
+    },
+    {
+      "id": "chisel:exposed_copper_pillar_basic_dent"
+    },
+    {
+      "id": "chisel:waxed_exposed_copper_pillar_basic_dent"
+    },
+    {
+      "id": "chisel:weathered_copper_pillar_basic_dent"
+    },
+    {
+      "id": "chisel:waxed_weathered_copper_pillar_basic_dent"
+    },
+    {
+      "id": "chisel:oxidized_copper_pillar_basic_dent"
+    },
+    {
+      "id": "chisel:waxed_oxidized_copper_pillar_basic_dent"
+    }
+  ],
+  "model_location": "chisel:block/copper_pillar_basic_dent",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:copper_pillar_basic_dent",
+    "kind": "ctmv"
+  }
+}
