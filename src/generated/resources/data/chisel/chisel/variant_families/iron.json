@@ -112,11 +112,6 @@
       "name": "iron_rivets"
     },
     {
-      "block": "chisel:iron_shipping",
-      "model_type": "connected",
-      "name": "iron_shipping"
-    },
-    {
       "block": "chisel:iron_simple",
       "model_type": "top_bottom_side",
       "name": "iron_simple"

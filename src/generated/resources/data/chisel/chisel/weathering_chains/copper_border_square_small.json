@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_border_square_small",
+    "chisel:exposed_copper_border_square_small",
+    "chisel:weathered_copper_border_square_small",
+    "chisel:oxidized_copper_border_square_small"
+  ],
+  "waxed_map": {
+    "chisel:copper_border_square_small": "chisel:waxed_copper_border_square_small",
+    "chisel:exposed_copper_border_square_small": "chisel:waxed_exposed_copper_border_square_small",
+    "chisel:oxidized_copper_border_square_small": "chisel:waxed_oxidized_copper_border_square_small",
+    "chisel:weathered_copper_border_square_small": "chisel:waxed_weathered_copper_border_square_small"
+  }
+}

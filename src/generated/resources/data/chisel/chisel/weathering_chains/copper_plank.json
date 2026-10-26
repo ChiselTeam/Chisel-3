@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_plank",
+    "chisel:exposed_copper_plank",
+    "chisel:weathered_copper_plank",
+    "chisel:oxidized_copper_plank"
+  ],
+  "waxed_map": {
+    "chisel:copper_plank": "chisel:waxed_copper_plank",
+    "chisel:exposed_copper_plank": "chisel:waxed_exposed_copper_plank",
+    "chisel:oxidized_copper_plank": "chisel:waxed_oxidized_copper_plank",
+    "chisel:weathered_copper_plank": "chisel:waxed_weathered_copper_plank"
+  }
+}

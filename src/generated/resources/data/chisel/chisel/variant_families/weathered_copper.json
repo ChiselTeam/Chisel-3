@@ -38,6 +38,562 @@
       "block": "chisel:weathered_copper_thermal",
       "model_type": "top_bottom_side",
       "name": "weathered_copper_thermal"
+    },
+    {
+      "block": "chisel:weathered_copper_array",
+      "model_type": "multiblock_2x2",
+      "name": "weathered_copper_array"
+    },
+    {
+      "block": "chisel:weathered_copper_border_square",
+      "model_type": "connected",
+      "name": "weathered_copper_border_square"
+    },
+    {
+      "block": "chisel:weathered_copper_border_square_small",
+      "model_type": "connected",
+      "name": "weathered_copper_border_square_small"
+    },
+    {
+      "block": "chisel:weathered_copper_braid",
+      "name": "weathered_copper_braid"
+    },
+    {
+      "block": "chisel:weathered_copper_braid_encased",
+      "model_type": "connected",
+      "name": "weathered_copper_braid_encased"
+    },
+    {
+      "block": "chisel:weathered_copper_bricks_cracked",
+      "name": "weathered_copper_bricks_cracked"
+    },
+    {
+      "block": "chisel:weathered_copper_bricks_encased",
+      "model_type": "connected",
+      "name": "weathered_copper_bricks_encased"
+    },
+    {
+      "block": "chisel:weathered_copper_bricks_indent",
+      "name": "weathered_copper_bricks_indent"
+    },
+    {
+      "block": "chisel:weathered_copper_bricks_inlayed",
+      "name": "weathered_copper_bricks_inlayed"
+    },
+    {
+      "block": "chisel:weathered_copper_bricks_large",
+      "model_type": "multiblock_2x2",
+      "name": "weathered_copper_bricks_large"
+    },
+    {
+      "block": "chisel:weathered_copper_large_bricks",
+      "name": "weathered_copper_large_bricks"
+    },
+    {
+      "block": "chisel:weathered_copper_bricks_small",
+      "name": "weathered_copper_bricks_small"
+    },
+    {
+      "block": "chisel:weathered_copper_bricks_soft",
+      "name": "weathered_copper_bricks_soft"
+    },
+    {
+      "block": "chisel:weathered_copper_bricks_solid",
+      "name": "weathered_copper_bricks_solid"
+    },
+    {
+      "block": "chisel:weathered_copper_bricks_triple",
+      "name": "weathered_copper_bricks_triple"
+    },
+    {
+      "block": "chisel:weathered_copper_bricks_vertical",
+      "name": "weathered_copper_bricks_vertical"
+    },
+    {
+      "block": "chisel:weathered_copper_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "weathered_copper_chaotic"
+    },
+    {
+      "block": "chisel:weathered_copper_chaotic_medium",
+      "name": "weathered_copper_chaotic_medium"
+    },
+    {
+      "block": "chisel:weathered_copper_chaotic_small",
+      "name": "weathered_copper_chaotic_small"
+    },
+    {
+      "block": "chisel:weathered_copper_checker",
+      "name": "weathered_copper_checker"
+    },
+    {
+      "block": "chisel:weathered_copper_checker_small",
+      "name": "weathered_copper_checker_small"
+    },
+    {
+      "block": "chisel:weathered_copper_circular",
+      "model_type": "connected",
+      "name": "weathered_copper_circular"
+    },
+    {
+      "block": "chisel:weathered_copper_cracked",
+      "name": "weathered_copper_cracked"
+    },
+    {
+      "block": "chisel:weathered_copper_cobble",
+      "name": "weathered_copper_cobble"
+    },
+    {
+      "block": "chisel:weathered_copper_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "weathered_copper_cuts"
+    },
+    {
+      "block": "chisel:weathered_copper_dent",
+      "model_type": "connected",
+      "name": "weathered_copper_dent"
+    },
+    {
+      "block": "chisel:weathered_copper_french_1",
+      "name": "weathered_copper_french_1"
+    },
+    {
+      "block": "chisel:weathered_copper_french_2",
+      "name": "weathered_copper_french_2"
+    },
+    {
+      "block": "chisel:weathered_copper_indent",
+      "model_type": "connected",
+      "name": "weathered_copper_indent"
+    },
+    {
+      "block": "chisel:weathered_copper_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "weathered_copper_jellybean"
+    },
+    {
+      "block": "chisel:weathered_copper_layers",
+      "name": "weathered_copper_layers"
+    },
+    {
+      "block": "chisel:weathered_copper_layers_connected",
+      "model_type": "connected",
+      "name": "weathered_copper_layers_connected"
+    },
+    {
+      "block": "chisel:weathered_copper_line_horizontal",
+      "name": "weathered_copper_line_horizontal"
+    },
+    {
+      "block": "chisel:weathered_copper_line_vertical",
+      "name": "weathered_copper_line_vertical"
+    },
+    {
+      "block": "chisel:weathered_copper_meander_horizontal",
+      "model_type": "ctmh",
+      "name": "weathered_copper_meander_horizontal"
+    },
+    {
+      "block": "chisel:weathered_copper_meander_vertical",
+      "model_type": "ctmv",
+      "name": "weathered_copper_meander_vertical"
+    },
+    {
+      "block": "chisel:weathered_copper_mosaic",
+      "model_type": "connected",
+      "name": "weathered_copper_mosaic"
+    },
+    {
+      "block": "chisel:weathered_copper_ornate_small",
+      "name": "weathered_copper_ornate_small"
+    },
+    {
+      "block": "chisel:weathered_copper_panel",
+      "name": "weathered_copper_panel"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar",
+      "model_type": "top_bottom_side",
+      "name": "weathered_copper_pillar"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_basic",
+      "model_type": "ctmv",
+      "name": "weathered_copper_pillar_basic"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_basic_dent",
+      "model_type": "ctmv",
+      "name": "weathered_copper_pillar_basic_dent"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_basic_plain",
+      "model_type": "ctmv",
+      "name": "weathered_copper_pillar_basic_plain"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_basic_round",
+      "model_type": "ctmv",
+      "name": "weathered_copper_pillar_basic_round"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_basic_spiral",
+      "model_type": "ctmv",
+      "name": "weathered_copper_pillar_basic_spiral"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_classic",
+      "model_type": "top_bottom_side",
+      "name": "weathered_copper_pillar_classic"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_classic_large",
+      "model_type": "top_bottom_side",
+      "name": "weathered_copper_pillar_classic_large"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_ionic",
+      "model_type": "ctmv",
+      "name": "weathered_copper_pillar_ionic"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_ionic_dent",
+      "model_type": "ctmv",
+      "name": "weathered_copper_pillar_ionic_dent"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_ionic_plain",
+      "model_type": "ctmv",
+      "name": "weathered_copper_pillar_ionic_plain"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_ionic_round",
+      "model_type": "ctmv",
+      "name": "weathered_copper_pillar_ionic_round"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_ionic_spiral",
+      "model_type": "ctmv",
+      "name": "weathered_copper_pillar_ionic_spiral"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_large_basic_triple",
+      "model_type": "ctmv",
+      "name": "weathered_copper_pillar_large_basic_triple"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_large_ionic_triple",
+      "model_type": "ctmv",
+      "name": "weathered_copper_pillar_large_ionic_triple"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_meander",
+      "model_type": "ctmv",
+      "name": "weathered_copper_pillar_meander"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_meander_dent",
+      "model_type": "ctmv",
+      "name": "weathered_copper_pillar_meander_dent"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_meander_plain",
+      "model_type": "ctmv",
+      "name": "weathered_copper_pillar_meander_plain"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_meander_round",
+      "model_type": "ctmv",
+      "name": "weathered_copper_pillar_meander_round"
+    },
+    {
+      "block": "chisel:weathered_copper_pillar_meander_spiral",
+      "model_type": "ctmv",
+      "name": "weathered_copper_pillar_meander_spiral"
+    },
+    {
+      "block": "chisel:weathered_copper_plate",
+      "name": "weathered_copper_plate"
+    },
+    {
+      "block": "chisel:weathered_copper_plate_connected",
+      "model_type": "connected",
+      "name": "weathered_copper_plate_connected"
+    },
+    {
+      "block": "chisel:weathered_copper_polished",
+      "name": "weathered_copper_polished"
+    },
+    {
+      "block": "chisel:weathered_copper_polished_encased",
+      "model_type": "connected",
+      "name": "weathered_copper_polished_encased"
+    },
+    {
+      "block": "chisel:weathered_copper_prism",
+      "name": "weathered_copper_prism"
+    },
+    {
+      "block": "chisel:weathered_copper_raw",
+      "name": "weathered_copper_raw"
+    },
+    {
+      "block": "chisel:weathered_copper_road",
+      "name": "weathered_copper_road"
+    },
+    {
+      "block": "chisel:weathered_copper_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "weathered_copper_slanted"
+    },
+    {
+      "block": "chisel:weathered_copper_tiles",
+      "name": "weathered_copper_tiles"
+    },
+    {
+      "block": "chisel:weathered_copper_tiles_large",
+      "model_type": "connected",
+      "name": "weathered_copper_tiles_large"
+    },
+    {
+      "block": "chisel:weathered_copper_tiles_small",
+      "name": "weathered_copper_tiles_small"
+    },
+    {
+      "block": "chisel:weathered_copper_twisted",
+      "model_type": "top_bottom_side",
+      "name": "weathered_copper_twisted"
+    },
+    {
+      "block": "chisel:weathered_copper_weaver",
+      "model_type": "connected",
+      "name": "weathered_copper_weaver"
+    },
+    {
+      "block": "chisel:weathered_copper_zag",
+      "model_type": "v4",
+      "name": "weathered_copper_zag"
+    },
+    {
+      "block": "chisel:weathered_copper_crate_2",
+      "model_type": "connected",
+      "name": "weathered_copper_crate_2"
+    },
+    {
+      "block": "chisel:weathered_copper_herringbone",
+      "name": "weathered_copper_herringbone"
+    },
+    {
+      "block": "chisel:weathered_copper_herringbone_encased",
+      "model_type": "connected",
+      "name": "weathered_copper_herringbone_encased"
+    },
+    {
+      "block": "chisel:weathered_copper_medallion",
+      "name": "weathered_copper_medallion"
+    },
+    {
+      "block": "chisel:weathered_copper_medallion_encased",
+      "model_type": "connected",
+      "name": "weathered_copper_medallion_encased"
+    },
+    {
+      "block": "chisel:weathered_copper_dots",
+      "name": "weathered_copper_dots"
+    },
+    {
+      "block": "chisel:weathered_copper_dots_encased",
+      "model_type": "connected",
+      "name": "weathered_copper_dots_encased"
+    },
+    {
+      "block": "chisel:weathered_copper_heart",
+      "name": "weathered_copper_heart"
+    },
+    {
+      "block": "chisel:weathered_copper_star",
+      "name": "weathered_copper_star"
+    },
+    {
+      "block": "chisel:weathered_copper_plating",
+      "name": "weathered_copper_plating"
+    },
+    {
+      "block": "chisel:weathered_copper_lodestone",
+      "name": "weathered_copper_lodestone"
+    },
+    {
+      "block": "chisel:weathered_copper_lodestone_connected",
+      "model_type": "connected",
+      "name": "weathered_copper_lodestone_connected"
+    },
+    {
+      "block": "chisel:weathered_copper_plank",
+      "name": "weathered_copper_plank"
+    },
+    {
+      "block": "chisel:weathered_copper_plank_connected",
+      "model_type": "connected",
+      "name": "weathered_copper_plank_connected"
+    },
+    {
+      "block": "chisel:weathered_copper_frame",
+      "name": "weathered_copper_frame"
+    },
+    {
+      "block": "chisel:weathered_copper_panel_1",
+      "name": "weathered_copper_panel_1"
+    },
+    {
+      "block": "chisel:weathered_copper_panel_2",
+      "name": "weathered_copper_panel_2"
+    },
+    {
+      "block": "chisel:weathered_copper_panel_3",
+      "name": "weathered_copper_panel_3"
+    },
+    {
+      "block": "chisel:weathered_copper_skull_creeper",
+      "name": "weathered_copper_skull_creeper"
+    },
+    {
+      "block": "chisel:weathered_copper_skull_skeleton",
+      "name": "weathered_copper_skull_skeleton"
+    },
+    {
+      "block": "chisel:weathered_copper_stripes",
+      "name": "weathered_copper_stripes"
+    },
+    {
+      "block": "chisel:weathered_copper_stripes_encased",
+      "model_type": "connected",
+      "name": "weathered_copper_stripes_encased"
+    },
+    {
+      "block": "chisel:weathered_copper_chisel_1",
+      "name": "weathered_copper_chisel_1"
+    },
+    {
+      "block": "chisel:weathered_copper_chisel_2",
+      "name": "weathered_copper_chisel_2"
+    },
+    {
+      "block": "chisel:weathered_copper_chisel_3",
+      "name": "weathered_copper_chisel_3"
+    },
+    {
+      "block": "chisel:weathered_copper_chisel_4",
+      "name": "weathered_copper_chisel_4"
+    },
+    {
+      "block": "chisel:weathered_copper_chisel_5",
+      "name": "weathered_copper_chisel_5"
+    },
+    {
+      "block": "chisel:weathered_copper_chisel_6",
+      "name": "weathered_copper_chisel_6"
+    },
+    {
+      "block": "chisel:weathered_copper_facet",
+      "name": "weathered_copper_facet"
+    },
+    {
+      "block": "chisel:weathered_copper_facet_small",
+      "name": "weathered_copper_facet_small"
+    },
+    {
+      "block": "chisel:weathered_copper_facet_small_encased",
+      "model_type": "connected",
+      "name": "weathered_copper_facet_small_encased"
+    },
+    {
+      "block": "chisel:weathered_copper_shiny",
+      "name": "weathered_copper_shiny"
+    },
+    {
+      "block": "chisel:weathered_copper_shiny_connected",
+      "model_type": "connected",
+      "name": "weathered_copper_shiny_connected"
+    },
+    {
+      "block": "chisel:weathered_copper_gem",
+      "name": "weathered_copper_gem"
+    },
+    {
+      "block": "chisel:weathered_copper_gem_1",
+      "name": "weathered_copper_gem_1"
+    },
+    {
+      "block": "chisel:weathered_copper_gem_1_connected",
+      "model_type": "connected",
+      "name": "weathered_copper_gem_1_connected"
+    },
+    {
+      "block": "chisel:weathered_copper_gem_2",
+      "name": "weathered_copper_gem_2"
+    },
+    {
+      "block": "chisel:weathered_copper_gem_2_connected",
+      "model_type": "connected",
+      "name": "weathered_copper_gem_2_connected"
+    },
+    {
+      "block": "chisel:weathered_copper_gem_3",
+      "name": "weathered_copper_gem_3"
+    },
+    {
+      "block": "chisel:weathered_copper_gem_3_connected",
+      "model_type": "connected",
+      "name": "weathered_copper_gem_3_connected"
+    },
+    {
+      "block": "chisel:weathered_copper_bricks_square",
+      "name": "weathered_copper_bricks_square"
+    },
+    {
+      "block": "chisel:weathered_copper_slab",
+      "name": "weathered_copper_slab"
+    },
+    {
+      "block": "chisel:weathered_copper_scaffold_2",
+      "name": "weathered_copper_scaffold_2"
+    },
+    {
+      "block": "chisel:weathered_copper_scaffold_encased_2",
+      "model_type": "connected",
+      "name": "weathered_copper_scaffold_encased_2"
+    },
+    {
+      "block": "chisel:weathered_copper_tiles_inlayed",
+      "name": "weathered_copper_tiles_inlayed"
+    },
+    {
+      "block": "chisel:weathered_copper_waves",
+      "model_type": "multiblock_2x2",
+      "name": "weathered_copper_waves"
+    },
+    {
+      "block": "chisel:weathered_copper_parquet",
+      "name": "weathered_copper_parquet"
+    },
+    {
+      "block": "chisel:weathered_copper_parquet_encased",
+      "model_type": "connected",
+      "name": "weathered_copper_parquet_encased"
+    },
+    {
+      "block": "chisel:weathered_copper_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "weathered_copper_bricks_large_rough"
+    },
+    {
+      "block": "chisel:weathered_copper_tiles_small_encased",
+      "model_type": "connected",
+      "name": "weathered_copper_tiles_small_encased"
+    },
+    {
+      "block": "chisel:weathered_copper_bricks_round",
+      "name": "weathered_copper_bricks_round"
     }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/copper/copper_crate_2",
+    "particle": "chisel:block/copper/copper_crate_2",
+    "standard_corner": "chisel:block/copper/copper_crate_2-ctm_corner",
+    "standard_cornerless": "chisel:block/copper/copper_crate_2-ctm_cornerless",
+    "standard_horizontal": "chisel:block/copper/copper_crate_2-ctm_horizontal",
+    "standard_none": "chisel:block/copper/copper_crate_2",
+    "standard_vertical": "chisel:block/copper/copper_crate_2-ctm_vertical"
+  }
+}

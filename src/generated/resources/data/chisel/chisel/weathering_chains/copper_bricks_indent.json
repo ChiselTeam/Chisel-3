@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_bricks_indent",
+    "chisel:exposed_copper_bricks_indent",
+    "chisel:weathered_copper_bricks_indent",
+    "chisel:oxidized_copper_bricks_indent"
+  ],
+  "waxed_map": {
+    "chisel:copper_bricks_indent": "chisel:waxed_copper_bricks_indent",
+    "chisel:exposed_copper_bricks_indent": "chisel:waxed_exposed_copper_bricks_indent",
+    "chisel:oxidized_copper_bricks_indent": "chisel:waxed_oxidized_copper_bricks_indent",
+    "chisel:weathered_copper_bricks_indent": "chisel:waxed_weathered_copper_bricks_indent"
+  }
+}

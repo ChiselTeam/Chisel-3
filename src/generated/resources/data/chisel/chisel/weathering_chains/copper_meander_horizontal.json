@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_meander_horizontal",
+    "chisel:exposed_copper_meander_horizontal",
+    "chisel:weathered_copper_meander_horizontal",
+    "chisel:oxidized_copper_meander_horizontal"
+  ],
+  "waxed_map": {
+    "chisel:copper_meander_horizontal": "chisel:waxed_copper_meander_horizontal",
+    "chisel:exposed_copper_meander_horizontal": "chisel:waxed_exposed_copper_meander_horizontal",
+    "chisel:oxidized_copper_meander_horizontal": "chisel:waxed_oxidized_copper_meander_horizontal",
+    "chisel:weathered_copper_meander_horizontal": "chisel:waxed_weathered_copper_meander_horizontal"
+  }
+}

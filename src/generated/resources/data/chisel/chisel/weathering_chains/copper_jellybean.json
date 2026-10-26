@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_jellybean",
+    "chisel:exposed_copper_jellybean",
+    "chisel:weathered_copper_jellybean",
+    "chisel:oxidized_copper_jellybean"
+  ],
+  "waxed_map": {
+    "chisel:copper_jellybean": "chisel:waxed_copper_jellybean",
+    "chisel:exposed_copper_jellybean": "chisel:waxed_exposed_copper_jellybean",
+    "chisel:oxidized_copper_jellybean": "chisel:waxed_oxidized_copper_jellybean",
+    "chisel:weathered_copper_jellybean": "chisel:waxed_weathered_copper_jellybean"
+  }
+}

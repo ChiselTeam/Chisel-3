@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_star",
+    "chisel:exposed_copper_star",
+    "chisel:weathered_copper_star",
+    "chisel:oxidized_copper_star"
+  ],
+  "waxed_map": {
+    "chisel:copper_star": "chisel:waxed_copper_star",
+    "chisel:exposed_copper_star": "chisel:waxed_exposed_copper_star",
+    "chisel:oxidized_copper_star": "chisel:waxed_oxidized_copper_star",
+    "chisel:weathered_copper_star": "chisel:waxed_weathered_copper_star"
+  }
+}

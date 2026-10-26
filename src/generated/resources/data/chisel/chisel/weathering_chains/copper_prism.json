@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_prism",
+    "chisel:exposed_copper_prism",
+    "chisel:weathered_copper_prism",
+    "chisel:oxidized_copper_prism"
+  ],
+  "waxed_map": {
+    "chisel:copper_prism": "chisel:waxed_copper_prism",
+    "chisel:exposed_copper_prism": "chisel:waxed_exposed_copper_prism",
+    "chisel:oxidized_copper_prism": "chisel:waxed_oxidized_copper_prism",
+    "chisel:weathered_copper_prism": "chisel:waxed_weathered_copper_prism"
+  }
+}
