@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/emerald/emerald_pillar_basic_dent-side",
+    "bottom": "chisel:block/emerald/emerald_pillar_basic-top",
+    "particle": "chisel:block/emerald/emerald_pillar_basic_dent-side",
+    "side": "chisel:block/emerald/emerald_pillar_basic_dent-side",
+    "top": "chisel:block/emerald/emerald_pillar_basic-top",
+    "vertical_both": "chisel:block/emerald/emerald_pillar_basic_dent-vertical_both",
+    "vertical_bottom": "chisel:block/emerald/emerald_pillar_basic_dent-vertical_bottom",
+    "vertical_none": "chisel:block/emerald/emerald_pillar_basic_dent-side",
+    "vertical_top": "chisel:block/emerald/emerald_pillar_basic_dent-vertical_top"
+  }
+}
