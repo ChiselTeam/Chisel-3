@@ -21,6 +21,11 @@
       "name": "iron_caution"
     },
     {
+      "block": "chisel:iron_crate",
+      "model_type": "connected",
+      "name": "iron_crate"
+    },
+    {
       "block": "chisel:iron_machine",
       "name": "iron_machine"
     },
@@ -457,9 +462,9 @@
       "name": "iron_zag"
     },
     {
-      "block": "chisel:iron_crate",
+      "block": "chisel:iron_crate_2",
       "model_type": "connected",
-      "name": "iron_crate"
+      "name": "iron_crate_2"
     },
     {
       "block": "chisel:iron_herringbone",
