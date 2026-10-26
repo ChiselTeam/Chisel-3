@@ -151,14 +151,14 @@ public final class PaletteEditorScreen extends Screen {
         var id = draft.id().get();
         var saved = PlayerPaletteManager.get(minecraft.player).find(id);
         if (saved.isEmpty()) return;
-        minecraft.setScreen(new ConfirmScreen(confirmed -> {
+        minecraft.gui.setScreen(new ConfirmScreen(confirmed -> {
             if (!confirmed) {
-                minecraft.setScreen(this);
+                minecraft.gui.setScreen(this);
                 return;
             }
             if (minecraft.player != null && minecraft.getConnection() != null && PlayerPaletteManager.get(minecraft.player).find(id).isPresent())
                 minecraft.getConnection().send(new DeletePalettePacket(id));
-            minecraft.setScreen(parent);
+            minecraft.gui.setScreen(parent);
         }, Component.translatable("chisel.palette.delete_title"), Component.translatable("chisel.palette.delete_body", saved.get().definition().name()), Component.translatable("chisel.palette.delete"), Component.translatable("gui.cancel")));
     }
 
@@ -176,13 +176,13 @@ public final class PaletteEditorScreen extends Screen {
     public void onClose() {
         if (pendingSave != null) return;
         if (draft.dirty())
-            minecraft.setScreen(new ConfirmScreen(discard -> minecraft.setScreen(discard ? parent : this), Component.translatable("chisel.palette.discard_title"), Component.translatable("chisel.palette.discard_body"), Component.translatable("chisel.palette.discard"), Component.translatable("chisel.palette.keep_editing")));
-        else minecraft.setScreen(parent);
+            minecraft.gui.setScreen(new ConfirmScreen(discard -> minecraft.gui.setScreen(discard ? parent : this), Component.translatable("chisel.palette.discard_title"), Component.translatable("chisel.palette.discard_body"), Component.translatable("chisel.palette.discard"), Component.translatable("chisel.palette.keep_editing")));
+        else minecraft.gui.setScreen(parent);
     }
 
     @Override
     public void tick() {
-        if (minecraft.player == null) minecraft.setScreen(null);
+        if (minecraft.player == null) minecraft.gui.setScreen(null);
         else {
             picker.tick();
             if (delete != null) delete.active = pendingSave == null && minecraft.getConnection() != null && draft.id().filter(id -> PlayerPaletteManager.get(minecraft.player).find(id).isPresent()).isPresent();

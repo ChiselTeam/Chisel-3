@@ -27,7 +27,7 @@ public final class SelectionHandler {
         var player = minecraft.player;
         boolean keyDown = ChiselKeyMappings.MODE_SELECT.isDown();
         if (!keyDown) waitingForRelease = false;
-        if (player == null || minecraft.screen != null) {
+        if (player == null || minecraft.gui.screen() != null) {
             cancel(keyDown);
             return;
         }
@@ -60,7 +60,7 @@ public final class SelectionHandler {
     public static void onMouseScroll(InputEvent.MouseScrollingEvent event) {
         if (session == null || event.getScrollDeltaY() == 0) return;
         var minecraft = Minecraft.getInstance();
-        if (minecraft.player == null || minecraft.screen != null || !session.isValid(minecraft.player) || !ChiselKeyMappings.MODE_SELECT.isDown()) return;
+        if (minecraft.player == null || minecraft.gui.screen() != null || !session.isValid(minecraft.player) || !ChiselKeyMappings.MODE_SELECT.isDown()) return;
         session.scroll(event.getScrollDeltaY() > 0 ? -1 : 1);
         event.setCanceled(true);
     }
@@ -72,7 +72,7 @@ public final class SelectionHandler {
 
     public static @Nullable SelectionOverlayState getOverlayState() {
         var minecraft = Minecraft.getInstance();
-        if (session == null || minecraft.player == null || minecraft.screen != null || !session.isValid(minecraft.player)) return null;
+        if (session == null || minecraft.player == null || minecraft.gui.screen() != null || !session.isValid(minecraft.player)) return null;
         return session.overlayState();
     }
 

@@ -3,7 +3,7 @@ import net.darkhax.curseforgegradle.TaskPublishCurseForge
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.moddev' version '2.0.134'
+    id 'net.neoforged.moddev' version '2.0.148'
     id 'idea'
     id 'net.darkhax.curseforgegradle' version '1.2.30'
     id 'com.modrinth.minotaur' version '2.+'
@@ -178,6 +178,7 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             minecraft_version      : minecraft_version,
             minecraft_version_range: minecraft_version_range,
             neo_version            : neo_version,
+            neo_version_range: neo_version_range,
             loader_version_range   : loader_version_range,
             mod_id                 : mod_id,
             mod_name               : mod_name,
@@ -218,7 +219,7 @@ modrinth {
     versionNumber = mod_version
     versionType = release_type
     uploadFile = jar
-    gameVersions = ["26.1.2"]
+    gameVersions = [minecraft_version]
     loaders = ["neoforge"]
     dependencies {
         required.project "ctmlib"

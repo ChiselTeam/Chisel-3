@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class KitchenFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("kitchen", builder -> builder
-            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE)).blockName("Kitchen Block"))
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.CONCRETE.white())).blockName("Kitchen Block"))
             .variant("kitchen_checker", v -> v.description("Checker Kitchen")
                     .texture(Chisel.prefix("block/kitchen/kitchen_checker_large")))
             .variant("kitchen_checker_small", v -> v.description("Checker Small Kitchen"))

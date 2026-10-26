@@ -22,12 +22,12 @@ public class RegisterClientPayloadHandlersEventHandler {
         event.register(MossDeltaPacket.TYPE, (packet, context) -> context.enqueueWork(() ->
                 ClientMossData.set(packet.pos(), packet.mossy(), packet.texture())));
         event.register(OpenHandbookPacket.TYPE, (packet, context) -> context.enqueueWork(() ->
-                Minecraft.getInstance().setScreen(new BuildersHandbookScreen())));
+                Minecraft.getInstance().gui.setScreen(new BuildersHandbookScreen())));
         event.register(HandbookGuidesPacket.TYPE, HandbookGuidesPacket::handle);
         event.register(OpenPaletteBuilderPacket.TYPE, (packet, context) -> context.enqueueWork(() ->
-                Minecraft.getInstance().setScreen(new PaletteLibraryScreen())));
+                Minecraft.getInstance().gui.setScreen(new PaletteLibraryScreen())));
         event.register(PaletteSaveResultPacket.TYPE, (packet, context) -> context.enqueueWork(() -> {
-            if (Minecraft.getInstance().screen instanceof PaletteEditorScreen editor) editor.acceptSaveResult(packet);
+            if (Minecraft.getInstance().gui.screen() instanceof PaletteEditorScreen editor) editor.acceptSaveResult(packet);
         }));
     }
 }

@@ -6,7 +6,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class CloudFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("cloud", builder -> builder
-            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL).noOcclusion()).blockName("Cloud"))
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.WOOL.white()).noOcclusion()).blockName("Cloud"))
             .variant("cloud_grid", v -> v.description("Gridded Cloud Bricks"))
             .variant("cloud_large", v -> v.description("Large Cloud Bricks"))
             .variant("cloud_normal", v -> v.description("Cloud Block"))

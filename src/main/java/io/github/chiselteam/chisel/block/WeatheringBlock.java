@@ -1,7 +1,7 @@
 package io.github.chiselteam.chisel.block;
 
 import io.github.chiselteam.chisel.weathering.WeatheringChains;
-import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.advancements.triggers.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;

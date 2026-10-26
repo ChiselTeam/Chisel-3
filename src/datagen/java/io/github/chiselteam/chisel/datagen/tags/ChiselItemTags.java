@@ -29,10 +29,10 @@ public class ChiselItemTags extends ItemTagsProvider {
 
     private void addToTag(TagKey<Item> tag, VariantFamily family) {
         family.getVariants().forEach(variant -> {
-            if (variant.shouldGenerateModel()) tag(tag).add(variant.getBlock().asItem());
+            if (variant.shouldGenerateModel()) tag(tag).add(variant.getBlock().asItem().builtInRegistryHolder().key());
         });
         family.getHiddenVariants().forEach(variant -> {
-            if (variant.shouldGenerateModel()) tag(tag).add(variant.getBlock().asItem());
+            if (variant.shouldGenerateModel()) tag(tag).add(variant.getBlock().asItem().builtInRegistryHolder().key());
         });
     }
 }

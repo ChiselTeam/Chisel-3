@@ -1,7 +1,6 @@
 package io.github.chiselteam.chisel.item;
 
 import io.github.chiselteam.chisel.entity.CloudInABottle;
-import net.minecraft.ChatFormatting;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Position;
 import net.minecraft.network.chat.Component;
@@ -48,6 +47,6 @@ public class CloudInABottleItem extends Item implements ProjectileItem {
 
     @Override
     public void appendHoverText(@NonNull ItemStack stack, @NonNull TooltipContext context, @NonNull TooltipDisplay display, @NonNull Consumer<Component> builder, @NonNull TooltipFlag flag) {
-        builder.accept(Component.translatable("item.chisel.cloud_in_a_bottle.desc").withStyle(ChatFormatting.GRAY));
+        builder.accept(Component.translatable("item.chisel.cloud_in_a_bottle.desc").withColor(0xAAAAAA));
     }
 }

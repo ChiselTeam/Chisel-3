@@ -25,19 +25,19 @@ public final class DefaultPalettes {
                 palette("Desert Temple", "Warm sandstone, pale highlights and a few carvings. Your desert wonder starts here.",
                         Blocks.SANDSTONE, Blocks.SMOOTH_SANDSTONE, Blocks.CUT_SANDSTONE, Blocks.CHISELED_SANDSTONE, Blocks.END_STONE),
                 palette("Mesa Adobe", "Wrap a sunny little home in earthy orange, red sandstone and cozy terracotta.",
-                        Blocks.TERRACOTTA, Blocks.RED_SANDSTONE, Blocks.ORANGE_TERRACOTTA, Blocks.SMOOTH_RED_SANDSTONE, Blocks.RED_TERRACOTTA),
+                        Blocks.TERRACOTTA, Blocks.RED_SANDSTONE, Blocks.DYED_TERRACOTTA.orange(), Blocks.SMOOTH_RED_SANDSTONE, Blocks.DYED_TERRACOTTA.red()),
                 palette("Coastal Cottage", "Soft pale stone for a seaside escape. Pick a view and leave room for a porch.",
-                        Blocks.CALCITE, Blocks.DIORITE, Blocks.POLISHED_DIORITE, Blocks.WHITE_TERRACOTTA, Blocks.SMOOTH_QUARTZ),
+                        Blocks.CALCITE, Blocks.DIORITE, Blocks.POLISHED_DIORITE, Blocks.DYED_TERRACOTTA.white(), Blocks.SMOOTH_QUARTZ),
                 palette("Copper Workshop", "Mix copper's weathered colors with sturdy stone for a workshop full of character.",
-                        Blocks.WAXED_EXPOSED_COPPER, Blocks.WAXED_CUT_COPPER, Blocks.WAXED_WEATHERED_COPPER, Blocks.WAXED_OXIDIZED_CUT_COPPER, Blocks.POLISHED_ANDESITE),
+                        Blocks.COPPER_BLOCK.waxed().exposed(), Blocks.CUT_COPPER.waxed().unaffected(), Blocks.COPPER_BLOCK.waxed().weathered(), Blocks.CUT_COPPER.waxed().oxidized(), Blocks.POLISHED_ANDESITE),
                 palette("Ocean Sanctuary", "Dive into blue-green prismarine with a little lantern glow for your ocean hideaway.",
-                        Blocks.PRISMARINE_BRICKS, Blocks.PRISMARINE, Blocks.DARK_PRISMARINE, Blocks.CYAN_TERRACOTTA, Blocks.SEA_LANTERN),
+                        Blocks.PRISMARINE_BRICKS, Blocks.PRISMARINE, Blocks.DARK_PRISMARINE, Blocks.DYED_TERRACOTTA.cyan(), Blocks.SEA_LANTERN),
                 palette("Nether Citadel", "Build a grand red citadel with warm patches and worn bricks. Quite the Nether welcome.",
                         Blocks.NETHER_BRICKS, Blocks.RED_NETHER_BRICKS, Blocks.NETHERRACK, Blocks.CRACKED_NETHER_BRICKS, Blocks.CHISELED_NETHER_BRICKS),
                 palette("End Observatory", "Pale end stone with a splash of purple. Give your skywatching spot a little End charm.",
                         Blocks.END_STONE_BRICKS, Blocks.END_STONE, Blocks.SMOOTH_SANDSTONE, Blocks.PURPUR_BLOCK, Blocks.PURPUR_PILLAR),
                 palette("Muddy Foundations", "Get happily muddy with earthy brick paths, sturdy foundations and countryside walls.",
-                        Blocks.MUD_BRICKS, Blocks.PACKED_MUD, Blocks.MUD, Blocks.BROWN_TERRACOTTA, Blocks.DRIPSTONE_BLOCK)
+                        Blocks.MUD_BRICKS, Blocks.PACKED_MUD, Blocks.MUD, Blocks.DYED_TERRACOTTA.brown(), Blocks.DRIPSTONE_BLOCK)
         );
     }
 

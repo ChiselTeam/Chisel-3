@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "G": "minecraft:purple_stained_glass",
     "I": "minecraft:oak_planks"

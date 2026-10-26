@@ -7,8 +7,8 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class CopperFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("copper", builder -> builder
-            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK)).blockName("Block of Copper").model(ChiselModelHandlers.CONNECTED).weathering().waxed())
-            .existingBlock(Blocks.COPPER_BLOCK)
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK.weathering().unaffected())).blockName("Block of Copper").model(ChiselModelHandlers.CONNECTED).weathering().waxed())
+            .existingBlock(Blocks.COPPER_BLOCK.weathering().unaffected())
             .variant("copper_bad_greggy", v -> v.description("An Old Relic from the land of Oneteufyv"))
             .variant("copper_bolted", v -> v.description("Fancy Bolted Plating").model(ChiselModelHandlers.CUBE_ALL))
             .variant("copper_caution", v -> v.description("Caution Stripes"))

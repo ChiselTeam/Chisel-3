@@ -3,7 +3,6 @@ package io.github.chiselteam.chisel.item;
 import io.github.chiselteam.chisel.family.VariantFamilyLookup;
 import io.github.chiselteam.ctm.api.texture.CTMOffsetDataManager;
 import io.github.chiselteam.ctm.network.CTMOffsetSyncPacket;
-import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -86,7 +85,7 @@ public class OffsetToolItem extends Item {
 
     @Override
     public void appendHoverText(@NonNull ItemStack stack, @NonNull TooltipContext context, @NonNull TooltipDisplay display, @NonNull Consumer<Component> builder, @NonNull TooltipFlag flag) {
-        builder.accept(Component.translatable("item.chisel.offset_tool.desc").withStyle(ChatFormatting.GRAY));
-        builder.accept(Component.translatable("item.chisel.offset_tool.desc2").withStyle(ChatFormatting.GRAY));
+        builder.accept(Component.translatable("item.chisel.offset_tool.desc").withColor(0xAAAAAA));
+        builder.accept(Component.translatable("item.chisel.offset_tool.desc2").withColor(0xAAAAAA));
     }
 }

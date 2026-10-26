@@ -40,7 +40,7 @@ public final class DnStainedGlassFamily {
         var colorName = WordUtils.capitalize(color.replace("_", " "));
         var glassName = "dn_stained_glass_%s".formatted(color);
         return ChiselFamily.build(glassName, builder -> builder
-                .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)
+                .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STAINED_GLASS.white())
                         .mapColor(mapColor).lightLevel(state -> lightLevel))
                         .blockName("%s Stained Glass".formatted(colorName)).model(ChiselModelHandlers.GLASS).blockFactory(ChiselTransparentBlock::new))
                 .variant("%s_borderless".formatted(glassName), v -> v.description("Borderless Glass").model(ChiselModelHandlers.CUBE_ALL))

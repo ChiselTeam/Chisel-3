@@ -5,20 +5,24 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.client.moss.ClientMossData;
 import io.github.chiselteam.chisel.projectile.MossHelper;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.client.renderer.rendertype.RenderTypes;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.Identifier;
+import net.minecraft.util.LightCoordsUtil;
+import net.minecraft.util.context.ContextKey;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.ExtractLevelRenderStateEvent;
 import net.neoforged.neoforge.client.event.SubmitCustomGeometryEvent;
 import org.joml.Matrix4f;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @EventBusSubscriber(modid = Chisel.MODID, value = Dist.CLIENT)
 public final class MossOverlayRenderer {
@@ -27,32 +31,45 @@ public final class MossOverlayRenderer {
     private MossOverlayRenderer() {
     }
 
-    @SubscribeEvent
-    public static void submit(SubmitCustomGeometryEvent event) {
-        Minecraft minecraft = Minecraft.getInstance();
-        if (minecraft.level == null) return;
-        Vec3 camera = minecraft.gameRenderer.getMainCamera().position();
+    private static final ContextKey<List<MossFace>> FACES = new ContextKey<>(Chisel.prefix("moss_faces"));
 
+    @SubscribeEvent
+    public static void extract(ExtractLevelRenderStateEvent event) {
+        var level = event.getLevel();
+        var camera = event.getCamera().position();
+        List<MossFace> faces = new ArrayList<>();
         for (var moss : ClientMossData.entries()) {
             BlockPos pos = moss.pos();
-            if (!minecraft.level.hasChunkAt(pos) || pos.distToCenterSqr(camera) > 128 * 128) continue;
-            var state = minecraft.level.getBlockState(pos);
+            if (!level.hasChunkAt(pos) || pos.distToCenterSqr(camera) > 128 * 128) continue;
+            var state = level.getBlockState(pos);
             if (!MossHelper.canSupportMoss(state)) continue;
-
             for (Direction face : Direction.values()) {
                 BlockPos neighbor = pos.relative(face);
-                if (!Block.shouldRenderFace(minecraft.level, pos, state, minecraft.level.getBlockState(neighbor), face))
-                    continue;
-                int light = LevelRenderer.getLightCoords(minecraft.level, neighbor);
-                PoseStack pose = event.getPoseStack();
-                pose.pushPose();
-                pose.translate(pos.getX() - camera.x, pos.getY() - camera.y, pos.getZ() - camera.z);
-                event.getSubmitNodeCollector().submitCustomGeometry(pose,
-                        RenderTypes.entityTranslucent(getMossTexture(moss.texture())),
-                        (entry, consumer) -> emitFace(entry.pose(), consumer, face, light));
-                pose.popPose();
+                if (Block.shouldRenderFace(level, pos, state, level.getBlockState(neighbor), face)) {
+                    faces.add(new MossFace(pos.immutable(), face, LightCoordsUtil.getLightCoords(level, neighbor), getMossTexture(moss.texture())));
+                }
             }
         }
+        event.getRenderState().setRenderData(FACES, List.copyOf(faces));
+    }
+
+    @SubscribeEvent
+    public static void submit(SubmitCustomGeometryEvent event) {
+        var faces = event.getLevelRenderState().getRenderData(FACES);
+        if (faces == null) return;
+        Vec3 camera = event.getLevelRenderState().cameraRenderState.pos;
+        PoseStack pose = event.getPoseStack();
+        for (var face : faces) {
+            var pos = face.pos();
+            pose.pushPose();
+            pose.translate(pos.getX() - camera.x, pos.getY() - camera.y, pos.getZ() - camera.z);
+            event.getSubmitNodeCollector().submitCustomGeometry(pose, RenderTypes.entityTranslucent(face.texture()),
+                    (entry, consumer) -> emitFace(entry.pose(), consumer, face.face(), face.light()));
+            pose.popPose();
+        }
+    }
+
+    private record MossFace(BlockPos pos, Direction face, int light, Identifier texture) {
     }
 
     private static void emitFace(Matrix4f matrix, VertexConsumer out, Direction face, int light) {

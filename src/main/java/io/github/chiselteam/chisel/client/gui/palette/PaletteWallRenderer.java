@@ -5,7 +5,7 @@ import com.mojang.blaze3d.vertex.QuadInstance;
 import io.github.chiselteam.chisel.client.gui.preview.PreviewGetter;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.render.pip.PictureInPictureRenderer;
-import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.SubmitNodeCollector;
 import net.minecraft.client.renderer.block.dispatch.BlockStateModelPart;
 import net.minecraft.client.renderer.chunk.ChunkSectionLayer;
 import net.minecraft.client.renderer.rendertype.RenderType;
@@ -27,10 +27,6 @@ public class PaletteWallRenderer extends PictureInPictureRenderer<PaletteWallSta
 
     private static final long MODEL_SEED = 42L;
 
-    public PaletteWallRenderer(MultiBufferSource.BufferSource bufferSource) {
-        super(bufferSource);
-    }
-
     @Override
     public @NonNull Class<PaletteWallState> getRenderStateClass() {
         return PaletteWallState.class;
@@ -43,7 +39,7 @@ public class PaletteWallRenderer extends PictureInPictureRenderer<PaletteWallSta
     }
 
     @Override
-    protected void renderToTexture(@NonNull PaletteWallState state, @NonNull PoseStack pose) {
+    protected void renderToTexture(@NonNull PaletteWallState state, @NonNull PoseStack pose, SubmitNodeCollector collector) {
         pose.translate(state.panX(), state.panY(), 0);
         if (state.blocks().isEmpty()) return;
         int minX = Integer.MAX_VALUE, minY = Integer.MAX_VALUE, minZ = Integer.MAX_VALUE;
@@ -71,7 +67,6 @@ public class PaletteWallRenderer extends PictureInPictureRenderer<PaletteWallSta
             }
         };
         var random = RandomSource.create();
-        var quads = new QuadInstance();
 
         for (var cell : state.blocks().entrySet()) {
             pose.pushPose();
@@ -89,18 +84,19 @@ public class PaletteWallRenderer extends PictureInPictureRenderer<PaletteWallSta
                     var neighborState = getter.getBlockState(neighborPos);
 
                     if (!block.skipRendering(neighborState, side)) {
-                        bakeQuads(side, part, quads, pose, block, getter, pos);
+                        bakeQuads(side, part, pose, block, getter, pos, collector);
                     }
                 });
 
-                bakeQuads(null, part, quads, pose, block, getter, pos);
+                bakeQuads(null, part, pose, block, getter, pos, collector);
             });
             pose.popPose();
         }
     }
 
-    private void bakeQuads(Direction side, BlockStateModelPart part, QuadInstance quads, PoseStack pose, BlockState block, PreviewGetter getter, BlockPos pos) {
+    private void bakeQuads(Direction side, BlockStateModelPart part, PoseStack pose, BlockState block, PreviewGetter getter, BlockPos pos, SubmitNodeCollector collector) {
         part.getQuads(side).forEach(quad -> {
+            var quads = new QuadInstance();
             quads.setColor(-1);
             // Full-bright light coordinates still need face shading to show corners and depth.
             // Respect models that intentionally disable shading, such as emissive surfaces.
@@ -112,8 +108,9 @@ public class PaletteWallRenderer extends PictureInPictureRenderer<PaletteWallSta
                 if (tint != null) quads.multiplyColor(ARGB.opaque(tint.colorInWorld(block, getter, pos)));
             }
             quads.setLightCoords(15728880);
-            var buffer = bufferSource.getBuffer(getRenderTypeForLayer(quad.materialInfo().layer()));
-            buffer.putBakedQuad(pose.last(), quad, quads);
+            collector.submitCustomGeometry(pose, getRenderTypeForLayer(quad.materialInfo().layer()), (entry, buffer) -> {
+                buffer.putBakedQuad(entry, quad, quads);
+            });
         });
     }
 

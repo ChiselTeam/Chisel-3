@@ -145,9 +145,9 @@ public class ChiselRecipes extends RecipeProvider {
         shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.KITCHEN.getFamily().getVariants().getFirst().getBlock().asItem(), 16))
                 .pattern("WB")
                 .pattern("BW")
-                .define('W', Items.WHITE_CONCRETE)
-                .define('B', Items.BLACK_CONCRETE)
-                .unlockedBy("has_white_concrete", has(Items.WHITE_CONCRETE))
+                .define('W', Items.CONCRETE.white())
+                .define('B', Items.CONCRETE.black())
+                .unlockedBy("has_white_concrete", has(Items.CONCRETE.white()))
                 .save(output);
 
         for (var color : DyeColor.values()) {
@@ -182,8 +182,8 @@ public class ChiselRecipes extends RecipeProvider {
 
         shapeless(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.NEXUS.getFamily().getVariants().getFirst().getBlock().asItem(), 8))
                 .requires(Items.SEA_LANTERN)
-                .requires(Items.WHITE_CONCRETE)
-                .unlockedBy("has_white_concrete", has(Items.WHITE_CONCRETE))
+                .requires(Items.CONCRETE.white())
+                .unlockedBy("has_white_concrete", has(Items.CONCRETE.white()))
                 .save(output);
 
         shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.STEEL_FRAMED_GLASS.getFamily().getVariants().getFirst().getBlock().asItem(), 8))

@@ -3,7 +3,6 @@ package io.github.chiselteam.chisel.item;
 import io.github.chiselteam.chisel.menu.ChiselMenu;
 import io.github.chiselteam.chisel.registry.ChiselItemAbilities;
 import io.netty.buffer.Unpooled;
-import net.minecraft.ChatFormatting;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtOps;
@@ -83,8 +82,8 @@ public class ChiselItem extends Item {
 
     @Override
     public void appendHoverText(@NonNull ItemStack stack, @NonNull TooltipContext context, @NonNull TooltipDisplay display, @NonNull Consumer<Component> builder, @NonNull TooltipFlag flag) {
-        builder.accept(Component.translatable("item.chisel.chisel.desc1").withStyle(ChatFormatting.GRAY));
-        builder.accept(Component.translatable("item.chisel.chisel.desc2").withStyle(ChatFormatting.GRAY));
-        builder.accept(Component.translatable("item.chisel.chisel.desc3").withStyle(ChatFormatting.GRAY));
+        builder.accept(Component.translatable("item.chisel.chisel.desc1").withColor(0xAAAAAA));
+        builder.accept(Component.translatable("item.chisel.chisel.desc2").withColor(0xAAAAAA));
+        builder.accept(Component.translatable("item.chisel.chisel.desc3").withColor(0xAAAAAA));
     }
 }

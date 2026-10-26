@@ -7,10 +7,8 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import io.github.chiselteam.chisel.api.family.VariantFamily;
 import io.github.chiselteam.chisel.family.VariantFamilyLookup;
 import io.github.chiselteam.chisel.registry.ChiselItems;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.multiplayer.ClientLevel;
-import net.minecraft.client.renderer.MultiBufferSource;
-import net.minecraft.client.renderer.ShapeRenderer;
+import net.minecraft.client.renderer.SubmitNodeCollector;
+import net.minecraft.client.renderer.feature.CustomFeatureRenderer;
 import net.minecraft.client.renderer.rendertype.RenderTypes;
 import net.minecraft.client.renderer.state.level.BlockOutlineRenderState;
 import net.minecraft.client.renderer.state.level.LevelRenderState;
@@ -25,6 +23,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.client.CustomBlockOutlineRenderer;
+import net.neoforged.neoforge.client.submit.RenderPhaseKeys;
 import org.joml.Vector3f;
 import org.jspecify.annotations.NonNull;
 
@@ -52,17 +51,8 @@ public class ChiselOffsetToolOutlineRenderer implements CustomBlockOutlineRender
     }
 
     @Override
-    public boolean render(@NonNull BlockOutlineRenderState state, MultiBufferSource.@NonNull BufferSource bufferSource, @NonNull PoseStack pose, boolean translucentPass, @NonNull LevelRenderState levelState) {
-        ClientLevel level = Minecraft.getInstance().level;
+    public boolean render(@NonNull BlockOutlineRenderState state, @NonNull SubmitNodeCollector collector, @NonNull PoseStack pose, @NonNull LevelRenderState levelState) {
         BlockPos pos = state.pos();
-        if (level == null) return false;
-        Player player = Minecraft.getInstance().player;
-        if (player == null) return false;
-        if (!canOffset(player, InteractionHand.MAIN_HAND, pos, level) && !canOffset(player, InteractionHand.OFF_HAND, pos, level)) {
-            return false;
-        }
-
-        VertexConsumer buffer = bufferSource.getBuffer(RenderTypes.lines());
         Vec3 vec = hit.getLocation();
         int outlineColor = state.highContrast() ? HIGH_CONTRAST_COLOR : LOW_CONTRAST_COLOR;
         int triangleColor = ARGB.color(0xAA, 0xFF, 0xFF, 0xFF);
@@ -75,19 +65,20 @@ public class ChiselOffsetToolOutlineRenderer implements CustomBlockOutlineRender
 
         pose.pushPose();
         pose.translate(cameraRelativePos.x, cameraRelativePos.y, cameraRelativePos.z);
-        PoseStack.Pose last = pose.last();
 
-        // --- Draw the X (two diagonals across the hit face) ---
-        if (face.getStepX() != 0) {
-            drawLine(buffer, last, outlineColor, x, 0, 0, x, 1, 1);
-            drawLine(buffer, last, outlineColor, x, 1, 0, x, 0, 1);
-        } else if (face.getStepY() != 0) {
-            drawLine(buffer, last, outlineColor, 0, y, 0, 1, y, 1);
-            drawLine(buffer, last, outlineColor, 1, y, 0, 0, y, 1);
-        } else {
-            drawLine(buffer, last, outlineColor, 0, 0, z, 1, 1, z);
-            drawLine(buffer, last, outlineColor, 1, 0, z, 0, 1, z);
-        }
+        collector.submitSpecial(RenderPhaseKeys.AFTER_TERRAIN, new CustomFeatureRenderer.Submit(pose.last().copy(), RenderTypes.lines(), (last, buffer) -> {
+            // --- Draw the X (two diagonals across the hit face) ---
+            if (face.getStepX() != 0) {
+                drawLine(buffer, last, outlineColor, x, 0, 0, x, 1, 1);
+                drawLine(buffer, last, outlineColor, x, 1, 0, x, 0, 1);
+            } else if (face.getStepY() != 0) {
+                drawLine(buffer, last, outlineColor, 0, y, 0, 1, y, 1);
+                drawLine(buffer, last, outlineColor, 1, y, 0, 0, y, 1);
+            } else {
+                drawLine(buffer, last, outlineColor, 0, 0, z, 1, 1, z);
+                drawLine(buffer, last, outlineColor, 1, 0, z, 0, 1, z);
+            }
+        }));
 
         // --- Draw the triangle pointing toward the offset direction ---
         Direction moveDir = getMoveDir(face, vec.x() - pos.getX(), vec.y() - pos.getY(), vec.z() - pos.getZ());
@@ -131,17 +122,18 @@ public class ChiselOffsetToolOutlineRenderer implements CustomBlockOutlineRender
             by = isY ? clampedY : 1;
             bz = z;
         }
-        VertexConsumer triBuffer = bufferSource.getBuffer(RenderTypes.debugTriangleFan());
-        triBuffer.addVertex(last, cx, cy, cz).setColor(triangleColor);
-        triBuffer.addVertex(last, ax, ay, az).setColor(triangleColor);
-        triBuffer.addVertex(last, bx, by, bz).setColor(triangleColor);
+        collector.submitSpecial(RenderPhaseKeys.AFTER_TERRAIN, new CustomFeatureRenderer.Submit(pose.last().copy(), RenderTypes.debugTriangleFan(), (last, triBuffer) -> {
+            triBuffer.addVertex(last, cx, cy, cz).setColor(triangleColor);
+            triBuffer.addVertex(last, ax, ay, az).setColor(triangleColor);
+            triBuffer.addVertex(last, bx, by, bz).setColor(triangleColor);
 
+        }));
         pose.popPose();
         return false;
     }
 
     /**
-     * Emits a single line segment in the style of {@link ShapeRenderer#renderShape}:
+     * Emits a single line segment in the style of the vanilla shape outline:
      * the per-vertex normal is the normalized line direction, and a line width is applied so the
      * line shader can extrude the segment correctly.
      */
@@ -153,7 +145,7 @@ public class ChiselOffsetToolOutlineRenderer implements CustomBlockOutlineRender
         buffer.addVertex(pose, x2, y2, z2).setColor(color).setNormal(pose, normal).setLineWidth(LINE_WIDTH);
     }
 
-    private static boolean canOffset(Player player, InteractionHand hand, BlockPos pos, Level level) {
+    public static boolean canOffset(Player player, InteractionHand hand, BlockPos pos, Level level) {
         ItemStack stack = player.getItemInHand(hand);
         if (stack.getItem() == ChiselItems.OFFSET_TOOL.get()) {
             BlockState state = level.getBlockState(pos);

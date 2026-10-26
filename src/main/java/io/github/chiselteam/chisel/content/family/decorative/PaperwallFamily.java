@@ -6,7 +6,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class PaperwallFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("paperwall", builder -> builder
-            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL)).blockName("Paperwall"))
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.WOOL.white())).blockName("Paperwall"))
             .variant("paperwall_boxed", v -> v.description("Boxed Paperwall"))
             .variant("paperwall_crossed", v -> v.description("Crossed Paperwall"))
             .variant("paperwall_door", v -> v.description("Door Shaped Paperwall"))

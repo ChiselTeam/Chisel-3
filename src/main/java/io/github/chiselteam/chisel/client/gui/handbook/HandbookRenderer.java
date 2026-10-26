@@ -5,7 +5,6 @@ import io.github.chiselteam.chisel.client.gui.BookUiTextures;
 import io.github.chiselteam.chisel.guide.HandbookView;
 import io.github.chiselteam.chisel.guide.manager.HandbookPaginator;
 import io.github.chiselteam.chisel.guide.page.*;
-import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
@@ -129,7 +128,7 @@ public final class HandbookRenderer {
         int tooltipWidth = Math.clamp(layout.width() - 24, 1, 220);
         var lines = new ArrayList<>(font.split(title, tooltipWidth));
         if (!description.getString().isBlank()) {
-            lines.addAll(font.split(description.copy().withStyle(ChatFormatting.GRAY), tooltipWidth));
+            lines.addAll(font.split(description.copy().withColor(0xAAAAAA), tooltipWidth));
         }
         graphics.setTooltipForNextFrame(font, lines, layout.toScreen(mouseX), layout.toScreen(mouseY));
     }

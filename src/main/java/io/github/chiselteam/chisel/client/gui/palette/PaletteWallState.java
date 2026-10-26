@@ -4,7 +4,7 @@ import net.minecraft.client.gui.navigation.ScreenRectangle;
 import net.minecraft.client.renderer.state.gui.pip.PictureInPictureRenderState;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.state.BlockState;
-import org.joml.Matrix3x2f;
+import org.joml.Matrix3x2fc;
 import org.jspecify.annotations.NonNull;
 import org.jspecify.annotations.Nullable;
 
@@ -23,7 +23,7 @@ public record PaletteWallState(Map<BlockPos, BlockState> blocks, float rotationX
     }
 
     @Override
-    public @NonNull Matrix3x2f pose() {
+    public @NonNull Matrix3x2fc pose() {
         return PictureInPictureRenderState.IDENTITY_POSE;
     }
 

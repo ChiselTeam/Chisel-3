@@ -92,7 +92,7 @@ final class GettingStartedExamples {
     private static void window(Scene scene, int ox, int depth, boolean modern) {
         var main = modern ? Blocks.SMOOTH_QUARTZ : Blocks.OAK_PLANKS;
         var support = modern ? Blocks.POLISHED_DEEPSLATE : Blocks.STONE_BRICKS;
-        var accent = modern ? Blocks.CYAN_CONCRETE : Blocks.SPRUCE_PLANKS;
+        var accent = modern ? Blocks.CONCRETE.cyan() : Blocks.SPRUCE_PLANKS;
         scene.fill(ox - 2, 0, 1, ox + 2, 4, 1, main);
         scene.fill(ox - 2, 0, 1, ox + 2, 0, 1, support);
         scene.fill(ox - 2, 4, 1, ox + 2, 4, 1, accent);

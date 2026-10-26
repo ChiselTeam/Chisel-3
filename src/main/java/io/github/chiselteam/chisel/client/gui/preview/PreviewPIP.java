@@ -4,7 +4,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.QuadInstance;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.render.pip.PictureInPictureRenderer;
-import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.SubmitNodeCollector;
 import net.minecraft.client.renderer.block.dispatch.BlockStateModelPart;
 import net.minecraft.client.renderer.chunk.ChunkSectionLayer;
 import net.minecraft.client.renderer.rendertype.RenderType;
@@ -24,10 +24,6 @@ public class PreviewPIP extends PictureInPictureRenderer<PreviewPIPState> {
     @SuppressWarnings("FieldCanBeLocal")
     private final long ANSWER_TO_LIFE_THE_UNIVERSE_AND_EVERYTHING = 42L;
 
-    public PreviewPIP(MultiBufferSource.BufferSource bufferSource) {
-        super(bufferSource);
-    }
-
     @Override
     public @NonNull Class<PreviewPIPState> getRenderStateClass() {
         return PreviewPIPState.class;
@@ -40,7 +36,7 @@ public class PreviewPIP extends PictureInPictureRenderer<PreviewPIPState> {
     }
 
     @Override
-    protected void renderToTexture(@NonNull PreviewPIPState state, @NonNull PoseStack pose) {
+    protected void renderToTexture(@NonNull PreviewPIPState state, @NonNull PoseStack pose, SubmitNodeCollector collector) {
         float scale = 30 * state.zoom() * state.previewScale();
         pose.scale(scale, scale, scale);
         pose.mulPose(new Quaternionf().rotateX((float) Math.toDegrees(180 + state.rotX())).rotateY((float) Math.toDegrees(state.rotY())));
@@ -49,7 +45,6 @@ public class PreviewPIP extends PictureInPictureRenderer<PreviewPIPState> {
         var modelSet = Minecraft.getInstance().getModelManager().getBlockStateModelSet();
         var getter = new PreviewGetter(state.blockState(), state.positions());
         var random = RandomSource.create();
-        var quads = new QuadInstance();
 
         for(int[] position : state.positions()) {
             pose.pushPose();
@@ -67,22 +62,25 @@ public class PreviewPIP extends PictureInPictureRenderer<PreviewPIPState> {
                     var neighborState = getter.getBlockState(neighborPos);
 
                     if(!block.skipRendering(neighborState, side)) {
-                        bakeQuads(side, part, quads, pose, bufferSource);
+                        bakeQuads(side, part, pose, collector);
                     }
                 });
 
-                bakeQuads(null, part, quads, pose, bufferSource);
+                bakeQuads(null, part, pose, collector);
             });
             pose.popPose();
         }
     }
 
-    private void bakeQuads(Direction side, BlockStateModelPart part, QuadInstance quads, PoseStack pose, MultiBufferSource.BufferSource bufferSource) {
+    private void bakeQuads(Direction side, BlockStateModelPart part, PoseStack pose, SubmitNodeCollector collector) {
         part.getQuads(side).forEach(quad -> {
-            quads.setColor(-1);
-            quads.setLightCoords(15728880);
-            var buffer = bufferSource.getBuffer(getRenderTypeForLayer(quad.materialInfo().layer()));
-            buffer.putBakedQuad(pose.last(), quad, quads);
+            collector.submitCustomGeometry(pose, getRenderTypeForLayer(quad.materialInfo().layer()), (entry, buffer) -> {
+                var quads = new QuadInstance();
+                quads.setColor(-1);
+                quads.setLightCoords(15728880);
+
+                buffer.putBakedQuad(entry, quad, quads);
+            });
         });
     }
 

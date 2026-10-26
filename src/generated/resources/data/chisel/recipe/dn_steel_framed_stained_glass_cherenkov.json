@@ -6,7 +6,6 @@
     }
   ],
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "G": "#c:glass/cherenkov",
     "I": "#c:ingots/iron"

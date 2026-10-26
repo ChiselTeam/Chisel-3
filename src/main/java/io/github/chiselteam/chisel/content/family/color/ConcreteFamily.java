@@ -265,23 +265,6 @@ public final class ConcreteFamily {
     }
 
     private static Block getVanillaConcrete(DyeColor color) {
-        return switch (color) {
-            case BLACK -> Blocks.BLACK_CONCRETE;
-            case BLUE -> Blocks.BLUE_CONCRETE;
-            case BROWN -> Blocks.BROWN_CONCRETE;
-            case CYAN -> Blocks.CYAN_CONCRETE;
-            case GRAY -> Blocks.GRAY_CONCRETE;
-            case GREEN -> Blocks.GREEN_CONCRETE;
-            case LIGHT_BLUE -> Blocks.LIGHT_BLUE_CONCRETE;
-            case LIGHT_GRAY -> Blocks.LIGHT_GRAY_CONCRETE;
-            case LIME -> Blocks.LIME_CONCRETE;
-            case MAGENTA -> Blocks.MAGENTA_CONCRETE;
-            case ORANGE -> Blocks.ORANGE_CONCRETE;
-            case PINK -> Blocks.PINK_CONCRETE;
-            case PURPLE -> Blocks.PURPLE_CONCRETE;
-            case RED -> Blocks.RED_CONCRETE;
-            case WHITE -> Blocks.WHITE_CONCRETE;
-            case YELLOW -> Blocks.YELLOW_CONCRETE;
-        };
+        return Blocks.CONCRETE.pick(color);
     }
 }

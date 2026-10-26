@@ -40,7 +40,7 @@ public final class DnConcreteFamily {
         var concreteName = "dn_concrete_%s".formatted(color);
         var baseName = "%s Concrete".formatted(colorName);
         return ChiselFamily.build(concreteName, builder -> builder
-                .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE)
+                .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.CONCRETE.white())
                         .mapColor(mapColor).lightLevel(state -> lightLevel)).blockName(baseName))
                 .variant("%s_array".formatted(concreteName), v -> v.description("Array").model(ChiselModelHandlers.MULTIBLOCK_2X2))
                 .variant("%s_border_square".formatted(concreteName), v -> v.description("Square Border").model(ChiselModelHandlers.CONNECTED)

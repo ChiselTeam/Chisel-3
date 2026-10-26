@@ -1,7 +1,6 @@
 package io.github.chiselteam.chisel.block.item;
 
 import io.github.chiselteam.chisel.api.family.Variant;
-import net.minecraft.ChatFormatting;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
@@ -29,6 +28,6 @@ public class TorchBlockItem extends StandingAndWallBlockItem {
     @SuppressWarnings("deprecation")
     @Override
     public void appendHoverText(@NonNull ItemStack stack, @NonNull TooltipContext context, @NonNull TooltipDisplay display, @NonNull Consumer<Component> builder, @NonNull TooltipFlag flag) {
-        builder.accept(Component.translatable(variant.getTranslationKey()).withStyle(ChatFormatting.GRAY));
+        builder.accept(Component.translatable(variant.getTranslationKey()).withColor(0xAAAAAA));
     }
 }

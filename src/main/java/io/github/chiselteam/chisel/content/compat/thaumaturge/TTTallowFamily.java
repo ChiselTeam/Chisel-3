@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class TTTallowFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("tt_tallow", builder -> builder
-            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL)).blockName("Tallow"))
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.WOOL.white())).blockName("Tallow"))
             .variant("tallow_block", v -> v.description("Block").model(ChiselModelHandlers.TBS)
                     .textureAlias("bottom", "top")
                     .texture("top", Chisel.prefix("block/tt_tallow/tallow_smooth")))

@@ -30,7 +30,7 @@ public final class PaletteLibraryScreen extends Screen {
         page = Math.clamp(page, 0, Math.max(0, (library.palettes().size() - 1) / pageSize));
         for (int i = page * pageSize; i < Math.min(library.palettes().size(), (page + 1) * pageSize); i++) {
             var palette = library.palettes().get(i);
-            var button = Button.builder(Component.literal(palette.definition().name()), _ -> minecraft.setScreen(new PaletteEditorScreen(this, Optional.of(palette))))
+            var button = Button.builder(Component.literal(palette.definition().name()), _ -> minecraft.gui.setScreen(new PaletteEditorScreen(this, Optional.of(palette))))
                     .bounds(x + ((i - page * pageSize) % columns) * (cardWidth + 6), 48 + ((i - page * pageSize) / columns) * 48, cardWidth, 44)
                     .tooltip(Tooltip.create(Component.translatable("chisel.palette.edit_hint", palette.definition().name(), palette.definition().entries().size()))).build(builder -> new PaletteCardButton(builder, palette.definition()));
             addRenderableWidget(button);
@@ -45,7 +45,7 @@ public final class PaletteLibraryScreen extends Screen {
             rebuildWidgets();
         }).bounds(x + w - 24, height - 54, 24, 20).build(PaletteButton::new));
         next.active = (page + 1) * pageSize < library.palettes().size();
-        var create = addRenderableWidget(Button.builder(Component.translatable("chisel.palette.new"), _ -> minecraft.setScreen(new PaletteEditorScreen(this, Optional.empty())))
+        var create = addRenderableWidget(Button.builder(Component.translatable("chisel.palette.new"), _ -> minecraft.gui.setScreen(new PaletteEditorScreen(this, Optional.empty())))
                 .bounds(x + 28, height - 54, w - 56, 20).build(PaletteButton::new));
         create.active = library.palettes().size() < PlayerPalettes.MAX_PALETTES;
         addRenderableWidget(Button.builder(Component.translatable("gui.done"), _ -> onClose()).bounds(x, height - 28, w, 20).build(PaletteButton::new));
@@ -54,7 +54,7 @@ public final class PaletteLibraryScreen extends Screen {
     @Override
     public void tick() {
         if (minecraft.player == null) {
-            minecraft.setScreen(null);
+            minecraft.gui.setScreen(null);
             return;
         }
         if (!library.equals(PlayerPaletteManager.get(minecraft.player))) rebuildWidgets();

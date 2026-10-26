@@ -7,7 +7,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class CConcreteFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("c_concrete", builder -> builder
-            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE)).blockName("Concrete"))
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.CONCRETE.white())).blockName("Concrete"))
             .variant("concrete_raw", v -> v.description("Concrete"))
             .variant("concrete_asphalt", v -> v.description("Asphalt"))
             .variant("concrete_block", v -> v.description("Concrete Block").model(ChiselModelHandlers.CONNECTED)

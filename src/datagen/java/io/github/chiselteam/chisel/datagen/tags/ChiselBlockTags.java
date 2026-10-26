@@ -47,7 +47,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         // addToTag(ChiselTags.CANT_BE_MOSSED, ChiselFamilies.MOSSY_BLACKSTONE.getFamily());
         // addToTag(ChiselTags.CANT_BE_MOSSED, ChiselFamilies.MOSSY_TEMPLE.getFamily());
 
-        tag(ChiselTags.CANT_BE_MOSSED).add(Blocks.BEDROCK);
+        tag(ChiselTags.CANT_BE_MOSSED).add(Blocks.BEDROCK.builtInRegistryHolder().key());
 
         // MARK: AXE
         addToTag(BlockTags.MINEABLE_WITH_AXE, ChiselFamilies.ACACIA.getFamily());
@@ -230,8 +230,8 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.NEEDS_DIAMOND_TOOL, ChiselFamilies.NETHERITE.getFamily());
         addToTag(BlockTags.NEEDS_DIAMOND_TOOL, ChiselFamilies.ANCIENT_DEBRIS.getFamily());
 
-        tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ChiselBlocks.AUTO_CHISEL.get());
-        tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ChiselBlocks.BUILDERS_GUIDE.get());
+        tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ChiselBlocks.AUTO_CHISEL.getKey());
+        tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ChiselBlocks.BUILDERS_GUIDE.getKey());
 
         ChiselFamilies.getFamilies().forEach(f -> {
             if (f.getFamily().getWaxedFamily() != null) {
@@ -409,10 +409,10 @@ public class ChiselBlockTags extends BlockTagsProvider {
 
     private void addToTag(TagKey<Block> tag, VariantFamily family) {
         family.getVariants().forEach(variant -> {
-            if(variant.shouldGenerateModel()) tag(tag).add(variant.getBlock());
+            if (variant.shouldGenerateModel()) tag(tag).add(variant.getBlock().builtInRegistryHolder().key());
         });
         family.getHiddenVariants().forEach(variant -> {
-            if (variant.shouldGenerateModel()) tag(tag).add(variant.getBlock());
+            if (variant.shouldGenerateModel()) tag(tag).add(variant.getBlock().builtInRegistryHolder().key());
         });
     }
 }

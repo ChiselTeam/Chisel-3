@@ -6,7 +6,6 @@
     }
   ],
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "G": "#c:glass/icy_blue",
     "I": "#c:ingots/iron"

@@ -40,7 +40,7 @@ public final class DnOakFramedStainedGlassFamily {
         var colorName = WordUtils.capitalize(color.replace("_", " "));
         var glassName = "dn_oak_framed_stained_glass_%s".formatted(color);
         return ChiselFamily.build(glassName, builder -> builder
-                .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_STAINED_GLASS)
+                .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.STAINED_GLASS.white())
                         .mapColor(mapColor).lightLevel(state -> lightLevel))
                         .blockName("%s Oak Framed Stained Glass".formatted(colorName)).model(ChiselModelHandlers.GLASS).blockFactory(ChiselTransparentBlock::new))
                 .variant(glassName, v -> v.description("Glass")
