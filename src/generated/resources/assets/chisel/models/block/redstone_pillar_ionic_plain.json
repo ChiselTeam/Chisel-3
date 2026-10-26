@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/redstone/redstone_pillar_ionic-side",
+    "bottom": "chisel:block/redstone/redstone_pillar_basic-top",
+    "particle": "chisel:block/redstone/redstone_pillar_ionic-side",
+    "side": "chisel:block/redstone/redstone_pillar_ionic-side",
+    "top": "chisel:block/redstone/redstone_pillar_basic-top",
+    "vertical_both": "chisel:block/redstone/redstone_pillar_basic_plain-vertical_both",
+    "vertical_bottom": "chisel:block/redstone/redstone_pillar_ionic_plain-vertical_bottom",
+    "vertical_none": "chisel:block/redstone/redstone_pillar_ionic-side",
+    "vertical_top": "chisel:block/redstone/redstone_pillar_ionic_plain-vertical_top"
+  }
+}
