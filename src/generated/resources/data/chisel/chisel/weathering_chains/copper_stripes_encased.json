@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_stripes_encased",
+    "chisel:exposed_copper_stripes_encased",
+    "chisel:weathered_copper_stripes_encased",
+    "chisel:oxidized_copper_stripes_encased"
+  ],
+  "waxed_map": {
+    "chisel:copper_stripes_encased": "chisel:waxed_copper_stripes_encased",
+    "chisel:exposed_copper_stripes_encased": "chisel:waxed_exposed_copper_stripes_encased",
+    "chisel:oxidized_copper_stripes_encased": "chisel:waxed_oxidized_copper_stripes_encased",
+    "chisel:weathered_copper_stripes_encased": "chisel:waxed_weathered_copper_stripes_encased"
+  }
+}

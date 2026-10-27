@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/diamond/diamond_tiles_large",
+    "particle": "chisel:block/diamond/diamond_tiles_large",
+    "standard_corner": "chisel:block/diamond/diamond_tiles_large-ctm_corner",
+    "standard_cornerless": "chisel:block/diamond/diamond_raw",
+    "standard_horizontal": "chisel:block/diamond/diamond_tiles_large-ctm_horizontal",
+    "standard_none": "chisel:block/diamond/diamond_tiles_large",
+    "standard_vertical": "chisel:block/diamond/diamond_tiles_large-ctm_vertical"
+  }
+}

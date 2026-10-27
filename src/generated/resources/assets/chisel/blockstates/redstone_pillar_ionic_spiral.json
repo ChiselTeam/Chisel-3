@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "chisel:block/ctm/redstone_pillar_ionic_spiral",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "chisel:block/ctm/redstone_pillar_ionic_spiral"
+    },
+    "axis=z": {
+      "model": "chisel:block/ctm/redstone_pillar_ionic_spiral",
+      "x": 90
+    }
+  }
+}

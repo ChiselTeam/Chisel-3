@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/emerald/emerald_dent",
+    "particle": "chisel:block/emerald/emerald_dent",
+    "standard_corner": "chisel:block/emerald/emerald_dent-ctm_corner",
+    "standard_cornerless": "chisel:block/emerald/emerald_raw",
+    "standard_horizontal": "chisel:block/emerald/emerald_dent-ctm_horizontal",
+    "standard_none": "chisel:block/emerald/emerald_dent",
+    "standard_vertical": "chisel:block/emerald/emerald_dent-ctm_vertical"
+  }
+}

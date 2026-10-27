@@ -1,0 +1,39 @@
+{
+  "connected_faces": [
+    "down",
+    "up"
+  ],
+  "connects_to": [
+    {
+      "id": "chisel:copper_pillar_meander"
+    },
+    {
+      "id": "chisel:waxed_copper_pillar_meander"
+    },
+    {
+      "id": "chisel:exposed_copper_pillar_meander"
+    },
+    {
+      "id": "chisel:waxed_exposed_copper_pillar_meander"
+    },
+    {
+      "id": "chisel:weathered_copper_pillar_meander"
+    },
+    {
+      "id": "chisel:waxed_weathered_copper_pillar_meander"
+    },
+    {
+      "id": "chisel:oxidized_copper_pillar_meander"
+    },
+    {
+      "id": "chisel:waxed_oxidized_copper_pillar_meander"
+    }
+  ],
+  "loader": "ctm:connected_texture_model",
+  "model_location": "chisel:block/weathered_copper_pillar_meander",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:weathered_copper_pillar_meander",
+    "kind": "ctmv"
+  }
+}

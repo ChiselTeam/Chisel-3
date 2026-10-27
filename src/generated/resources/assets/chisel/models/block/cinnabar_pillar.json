@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/cinnabar/cinnabar_pillar-top",
+    "side": "chisel:block/cinnabar/cinnabar_pillar-side",
+    "top": "chisel:block/cinnabar/cinnabar_pillar-top"
+  }
+}

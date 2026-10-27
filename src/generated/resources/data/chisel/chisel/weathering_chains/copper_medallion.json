@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_medallion",
+    "chisel:exposed_copper_medallion",
+    "chisel:weathered_copper_medallion",
+    "chisel:oxidized_copper_medallion"
+  ],
+  "waxed_map": {
+    "chisel:copper_medallion": "chisel:waxed_copper_medallion",
+    "chisel:exposed_copper_medallion": "chisel:waxed_exposed_copper_medallion",
+    "chisel:oxidized_copper_medallion": "chisel:waxed_oxidized_copper_medallion",
+    "chisel:weathered_copper_medallion": "chisel:waxed_weathered_copper_medallion"
+  }
+}

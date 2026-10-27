@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/copper_bricks_large"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/gold_facet_small_encased"
+    }
+  }
+}

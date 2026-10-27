@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_waves",
+    "chisel:exposed_copper_waves",
+    "chisel:weathered_copper_waves",
+    "chisel:oxidized_copper_waves"
+  ],
+  "waxed_map": {
+    "chisel:copper_waves": "chisel:waxed_copper_waves",
+    "chisel:exposed_copper_waves": "chisel:waxed_exposed_copper_waves",
+    "chisel:oxidized_copper_waves": "chisel:waxed_oxidized_copper_waves",
+    "chisel:weathered_copper_waves": "chisel:waxed_weathered_copper_waves"
+  }
+}

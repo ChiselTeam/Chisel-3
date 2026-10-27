@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_skull_skeleton",
+    "chisel:exposed_copper_skull_skeleton",
+    "chisel:weathered_copper_skull_skeleton",
+    "chisel:oxidized_copper_skull_skeleton"
+  ],
+  "waxed_map": {
+    "chisel:copper_skull_skeleton": "chisel:waxed_copper_skull_skeleton",
+    "chisel:exposed_copper_skull_skeleton": "chisel:waxed_exposed_copper_skull_skeleton",
+    "chisel:oxidized_copper_skull_skeleton": "chisel:waxed_oxidized_copper_skull_skeleton",
+    "chisel:weathered_copper_skull_skeleton": "chisel:waxed_weathered_copper_skull_skeleton"
+  }
+}

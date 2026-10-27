@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_shiny_connected",
+    "chisel:exposed_copper_shiny_connected",
+    "chisel:weathered_copper_shiny_connected",
+    "chisel:oxidized_copper_shiny_connected"
+  ],
+  "waxed_map": {
+    "chisel:copper_shiny_connected": "chisel:waxed_copper_shiny_connected",
+    "chisel:exposed_copper_shiny_connected": "chisel:waxed_exposed_copper_shiny_connected",
+    "chisel:oxidized_copper_shiny_connected": "chisel:waxed_oxidized_copper_shiny_connected",
+    "chisel:weathered_copper_shiny_connected": "chisel:waxed_weathered_copper_shiny_connected"
+  }
+}

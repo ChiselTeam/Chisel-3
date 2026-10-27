@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_bricks_large",
+    "chisel:exposed_copper_bricks_large",
+    "chisel:weathered_copper_bricks_large",
+    "chisel:oxidized_copper_bricks_large"
+  ],
+  "waxed_map": {
+    "chisel:copper_bricks_large": "chisel:waxed_copper_bricks_large",
+    "chisel:exposed_copper_bricks_large": "chisel:waxed_exposed_copper_bricks_large",
+    "chisel:oxidized_copper_bricks_large": "chisel:waxed_oxidized_copper_bricks_large",
+    "chisel:weathered_copper_bricks_large": "chisel:waxed_weathered_copper_bricks_large"
+  }
+}

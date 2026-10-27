@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_pillar_basic_dent",
+    "chisel:exposed_copper_pillar_basic_dent",
+    "chisel:weathered_copper_pillar_basic_dent",
+    "chisel:oxidized_copper_pillar_basic_dent"
+  ],
+  "waxed_map": {
+    "chisel:copper_pillar_basic_dent": "chisel:waxed_copper_pillar_basic_dent",
+    "chisel:exposed_copper_pillar_basic_dent": "chisel:waxed_exposed_copper_pillar_basic_dent",
+    "chisel:oxidized_copper_pillar_basic_dent": "chisel:waxed_oxidized_copper_pillar_basic_dent",
+    "chisel:weathered_copper_pillar_basic_dent": "chisel:waxed_weathered_copper_pillar_basic_dent"
+  }
+}

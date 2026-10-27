@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_frame",
+    "chisel:exposed_copper_frame",
+    "chisel:weathered_copper_frame",
+    "chisel:oxidized_copper_frame"
+  ],
+  "waxed_map": {
+    "chisel:copper_frame": "chisel:waxed_copper_frame",
+    "chisel:exposed_copper_frame": "chisel:waxed_exposed_copper_frame",
+    "chisel:oxidized_copper_frame": "chisel:waxed_oxidized_copper_frame",
+    "chisel:weathered_copper_frame": "chisel:waxed_weathered_copper_frame"
+  }
+}

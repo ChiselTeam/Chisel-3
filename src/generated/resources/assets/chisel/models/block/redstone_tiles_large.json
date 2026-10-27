@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/redstone/redstone_tiles_large",
+    "particle": "chisel:block/redstone/redstone_tiles_large",
+    "standard_corner": "chisel:block/redstone/redstone_tiles_large-ctm_corner",
+    "standard_cornerless": "chisel:block/redstone/redstone_raw",
+    "standard_horizontal": "chisel:block/redstone/redstone_tiles_large-ctm_horizontal",
+    "standard_none": "chisel:block/redstone/redstone_tiles_large",
+    "standard_vertical": "chisel:block/redstone/redstone_tiles_large-ctm_vertical"
+  }
+}

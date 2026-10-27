@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/cinnabar_plank_connected"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "connected_faces": [
+    "north",
+    "south",
+    "west",
+    "east"
+  ],
+  "connects_to": [
+    {
+      "id": "chisel:copper_meander_horizontal"
+    },
+    {
+      "id": "chisel:waxed_copper_meander_horizontal"
+    },
+    {
+      "id": "chisel:exposed_copper_meander_horizontal"
+    },
+    {
+      "id": "chisel:waxed_exposed_copper_meander_horizontal"
+    },
+    {
+      "id": "chisel:weathered_copper_meander_horizontal"
+    },
+    {
+      "id": "chisel:waxed_weathered_copper_meander_horizontal"
+    },
+    {
+      "id": "chisel:oxidized_copper_meander_horizontal"
+    },
+    {
+      "id": "chisel:waxed_oxidized_copper_meander_horizontal"
+    }
+  ],
+  "loader": "ctm:connected_texture_model",
+  "model_location": "chisel:block/oxidized_copper_meander_horizontal",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:oxidized_copper_meander_horizontal",
+    "kind": "ctmh"
+  }
+}

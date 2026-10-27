@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/copper/copper_gem_1_connected",
+    "particle": "chisel:block/copper/copper_gem_1_connected",
+    "standard_corner": "chisel:block/copper/copper_gem_1_connected-ctm_corner",
+    "standard_cornerless": "chisel:block/copper/copper_raw",
+    "standard_horizontal": "chisel:block/copper/copper_gem_1_connected-ctm_horizontal",
+    "standard_none": "chisel:block/copper/copper_gem_1_connected",
+    "standard_vertical": "chisel:block/copper/copper_gem_1_connected-ctm_vertical"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "chisel:block/ctm/cinnabar_pillar_basic_dent",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "chisel:block/ctm/cinnabar_pillar_basic_dent"
+    },
+    "axis=z": {
+      "model": "chisel:block/ctm/cinnabar_pillar_basic_dent",
+      "x": 90
+    }
+  }
+}

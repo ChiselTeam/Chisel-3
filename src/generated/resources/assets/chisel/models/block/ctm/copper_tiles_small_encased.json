@@ -1,0 +1,38 @@
+{
+  "connected_faces": [
+    "all"
+  ],
+  "connects_to": [
+    {
+      "id": "chisel:copper_tiles_small_encased"
+    },
+    {
+      "id": "chisel:waxed_copper_tiles_small_encased"
+    },
+    {
+      "id": "chisel:exposed_copper_tiles_small_encased"
+    },
+    {
+      "id": "chisel:waxed_exposed_copper_tiles_small_encased"
+    },
+    {
+      "id": "chisel:weathered_copper_tiles_small_encased"
+    },
+    {
+      "id": "chisel:waxed_weathered_copper_tiles_small_encased"
+    },
+    {
+      "id": "chisel:oxidized_copper_tiles_small_encased"
+    },
+    {
+      "id": "chisel:waxed_oxidized_copper_tiles_small_encased"
+    }
+  ],
+  "loader": "ctm:connected_texture_model",
+  "model_location": "chisel:block/copper_tiles_small_encased",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:copper_tiles_small_encased",
+    "kind": "standard"
+  }
+}

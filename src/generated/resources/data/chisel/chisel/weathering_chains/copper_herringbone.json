@@ -1,0 +1,14 @@
+{
+  "blocks": [
+    "chisel:copper_herringbone",
+    "chisel:exposed_copper_herringbone",
+    "chisel:weathered_copper_herringbone",
+    "chisel:oxidized_copper_herringbone"
+  ],
+  "waxed_map": {
+    "chisel:copper_herringbone": "chisel:waxed_copper_herringbone",
+    "chisel:exposed_copper_herringbone": "chisel:waxed_exposed_copper_herringbone",
+    "chisel:oxidized_copper_herringbone": "chisel:waxed_oxidized_copper_herringbone",
+    "chisel:weathered_copper_herringbone": "chisel:waxed_weathered_copper_herringbone"
+  }
+}
