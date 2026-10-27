@@ -24,7 +24,32 @@ import java.util.stream.Stream;
 public class ChiselWeatheringRegistry {
 
     public static void bootstrap(BootstrapContext<WeatheringChainData> context) {
-        Stream.of("bad_greggy", "bolted", "caution", "crate", "machine", "scaffold", "thermal").forEach(variant -> {
+        Stream.of("bad_greggy", "bolted", "caution", "crate", "machine", "scaffold", "thermal",
+                "array", "border_square", "border_square_small", "braid", "braid_encased",
+                "bricks_cracked", "bricks_encased", "bricks_indent", "bricks_inlayed", "bricks_large",
+                "large_bricks", "bricks_small", "bricks_soft", "bricks_solid", "bricks_triple",
+                "bricks_vertical", "chaotic", "chaotic_medium", "chaotic_small", "checker",
+                "checker_small", "circular", "cracked", "cobble", "cuts",
+                "dent", "french_1", "french_2", "indent", "jellybean",
+                "layers", "layers_connected", "line_horizontal", "line_vertical", "meander_horizontal",
+                "meander_vertical", "mosaic", "ornate_small", "panel", "pillar",
+                "pillar_basic", "pillar_basic_dent", "pillar_basic_plain", "pillar_basic_round", "pillar_basic_spiral",
+                "pillar_classic", "pillar_classic_large", "pillar_ionic", "pillar_ionic_dent", "pillar_ionic_plain",
+                "pillar_ionic_round", "pillar_ionic_spiral", "pillar_large_basic_triple", "pillar_large_ionic_triple", "pillar_meander",
+                "pillar_meander_dent", "pillar_meander_plain", "pillar_meander_round", "pillar_meander_spiral", "plate",
+                "plate_connected", "polished", "polished_encased", "prism", "raw",
+                "road", "slanted", "tiles", "tiles_large", "tiles_small",
+                "twisted", "weaver", "zag", "crate_2", "herringbone",
+                "herringbone_encased", "medallion", "medallion_encased", "dots", "dots_encased",
+                "heart", "star", "plating", "lodestone", "lodestone_connected",
+                "plank", "plank_connected", "frame", "panel_1", "panel_2",
+                "panel_3", "skull_creeper", "skull_skeleton", "stripes", "stripes_encased",
+                "chisel_1", "chisel_2", "chisel_3", "chisel_4", "chisel_5",
+                "chisel_6", "facet", "facet_small", "facet_small_encased", "shiny",
+                "shiny_connected", "gem", "gem_1", "gem_1_connected", "gem_2",
+                "gem_2_connected", "gem_3", "gem_3_connected", "bricks_square", "slab",
+                "scaffold_2", "scaffold_encased_2", "tiles_inlayed", "waves", "parquet",
+                "parquet_encased", "bricks_large_rough", "tiles_small_encased", "bricks_round").forEach(variant -> {
             Block copper = ChiselFamilies.COPPER.getVariant("copper_%s".formatted(variant)).get();
             Block exposed = ChiselFamilies.EXPOSED_COPPER.getVariant("exposed_copper_%s".formatted(variant)).get();
             Block weathered = ChiselFamilies.WEATHERED_COPPER.getVariant("weathered_copper_%s".formatted(variant)).get();
