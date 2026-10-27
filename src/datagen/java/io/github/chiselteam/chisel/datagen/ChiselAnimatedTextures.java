@@ -9,6 +9,7 @@ import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.server.packs.PackType;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import org.jetbrains.annotations.NotNull;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -34,7 +35,7 @@ public final class ChiselAnimatedTextures implements DataProvider {
     }
 
     @Override
-    public CompletableFuture<?> run(CachedOutput cache) {
+    public @NotNull CompletableFuture<?> run(@NotNull CachedOutput cache) {
         for (var family : ChiselFamilies.getFamilies()) {
             for (var variant : family.getFamily().getVariants()) {
                 var atlas = variant.getTextures().get("overlay_3x3");
@@ -86,7 +87,7 @@ public final class ChiselAnimatedTextures implements DataProvider {
     }
 
     @Override
-    public String getName() {
+    public @NotNull String getName() {
         return "Chisel animated CTM textures";
     }
 }

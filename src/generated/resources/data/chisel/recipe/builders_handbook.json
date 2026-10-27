@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "chisel:chisel"
+    },
+    {
+      "item": "minecraft:book"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chisel:builders_handbook"
+  }
+}

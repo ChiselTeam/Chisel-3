@@ -348,38 +348,38 @@
     "chisel:brownstone/weathered_blocks": "chisel:concrete_blocks_weathered",
     "chisel:brownstone/weathered_doubleslab": null,
     "chisel:brownstone/weathered_half": null,
-    "chisel:carpet_black/legacy": null,
-    "chisel:carpet_black/llama": null,
-    "chisel:carpet_blue/legacy": null,
-    "chisel:carpet_blue/llama": null,
-    "chisel:carpet_brown/legacy": null,
-    "chisel:carpet_brown/llama": null,
-    "chisel:carpet_cyan/legacy": null,
-    "chisel:carpet_cyan/llama": null,
-    "chisel:carpet_gray/legacy": null,
-    "chisel:carpet_gray/llama": null,
-    "chisel:carpet_green/legacy": null,
-    "chisel:carpet_green/llama": null,
-    "chisel:carpet_light_blue/legacy": null,
-    "chisel:carpet_light_blue/llama": null,
-    "chisel:carpet_light_gray/legacy": null,
-    "chisel:carpet_light_gray/llama": null,
-    "chisel:carpet_lime/legacy": null,
-    "chisel:carpet_lime/llama": null,
-    "chisel:carpet_magenta/legacy": null,
-    "chisel:carpet_magenta/llama": null,
-    "chisel:carpet_orange/legacy": null,
-    "chisel:carpet_orange/llama": null,
-    "chisel:carpet_pink/legacy": null,
-    "chisel:carpet_pink/llama": null,
-    "chisel:carpet_purple/legacy": null,
-    "chisel:carpet_purple/llama": null,
-    "chisel:carpet_red/legacy": null,
-    "chisel:carpet_red/llama": null,
-    "chisel:carpet_white/legacy": null,
-    "chisel:carpet_white/llama": null,
-    "chisel:carpet_yellow/legacy": null,
-    "chisel:carpet_yellow/llama": null,
+    "chisel:carpet_black/legacy": "chisel:wool_black_legacy",
+    "chisel:carpet_black/llama": "chisel:wool_black_llama",
+    "chisel:carpet_blue/legacy": "chisel:wool_blue_legacy",
+    "chisel:carpet_blue/llama": "chisel:wool_blue_llama",
+    "chisel:carpet_brown/legacy": "chisel:wool_brown_legacy",
+    "chisel:carpet_brown/llama": "chisel:wool_brown_llama",
+    "chisel:carpet_cyan/legacy": "chisel:wool_cyan_legacy",
+    "chisel:carpet_cyan/llama": "chisel:wool_cyan_llama",
+    "chisel:carpet_gray/legacy": "chisel:wool_gray_legacy",
+    "chisel:carpet_gray/llama": "chisel:wool_gray_llama",
+    "chisel:carpet_green/legacy": "chisel:wool_green_legacy",
+    "chisel:carpet_green/llama": "chisel:wool_green_llama",
+    "chisel:carpet_light_blue/legacy": "chisel:wool_light_blue_legacy",
+    "chisel:carpet_light_blue/llama": "chisel:wool_light_blue_llama",
+    "chisel:carpet_light_gray/legacy": "chisel:wool_light_gray_legacy",
+    "chisel:carpet_light_gray/llama": "chisel:wool_light_gray_llama",
+    "chisel:carpet_lime/legacy": "chisel:wool_lime_legacy",
+    "chisel:carpet_lime/llama": "chisel:wool_lime_llama",
+    "chisel:carpet_magenta/legacy": "chisel:wool_magenta_legacy",
+    "chisel:carpet_magenta/llama": "chisel:wool_magenta_llama",
+    "chisel:carpet_orange/legacy": "chisel:wool_orange_legacy",
+    "chisel:carpet_orange/llama": "chisel:wool_orange_llama",
+    "chisel:carpet_pink/legacy": "chisel:wool_pink_legacy",
+    "chisel:carpet_pink/llama": "chisel:wool_pink_llama",
+    "chisel:carpet_purple/legacy": "chisel:wool_purple_legacy",
+    "chisel:carpet_purple/llama": "chisel:wool_purple_llama",
+    "chisel:carpet_red/legacy": "chisel:wool_red_legacy",
+    "chisel:carpet_red/llama": "chisel:wool_red_llama",
+    "chisel:carpet_white/legacy": "chisel:wool_white_legacy",
+    "chisel:carpet_white/llama": "chisel:wool_white_llama",
+    "chisel:carpet_yellow/legacy": "chisel:wool_yellow_legacy",
+    "chisel:carpet_yellow/llama": "chisel:wool_yellow_llama",
     "chisel:certus/array": "chisel:certus_array",
     "chisel:certus/braid": "chisel:certus_braid",
     "chisel:certus/chaotic_bricks": "chisel:certus_chaotic",
@@ -408,7 +408,7 @@
     "chisel:certus/soft_bricks": "chisel:certus_bricks_soft",
     "chisel:certus/solid_bricks": "chisel:certus_bricks_solid",
     "chisel:certus/tiles_large": "chisel:certus_tiles_large",
-    "chisel:certus/tiles_medium": null,
+    "chisel:certus/tiles_medium": "chisel:certus_tiles",
     "chisel:certus/tiles_small": "chisel:certus_tiles_small",
     "chisel:certus/triple_bricks": "chisel:certus_bricks_triple",
     "chisel:certus/twisted": "chisel:certus_twisted",
@@ -493,7 +493,7 @@
     "chisel:coalcoke/chaotic_medium": "chisel:coal_coke_chaotic_medium",
     "chisel:coalcoke/chaotic_small": "chisel:coal_coke_chaotic_small",
     "chisel:coalcoke/circular": "chisel:coal_coke_circular",
-    "chisel:coalcoke/circularct": null,
+    "chisel:coalcoke/circularct": "chisel:coal_coke_circular",
     "chisel:coalcoke/cracked": "chisel:coal_coke_cracked",
     "chisel:coalcoke/cracked_bricks": "chisel:coal_coke_cracked_bricks",
     "chisel:coalcoke/cuts": "chisel:coal_coke_cuts",
@@ -600,7 +600,7 @@
     "chisel:concrete_black/soft_bricks": "chisel:concrete_black_bricks_soft",
     "chisel:concrete_black/solid_bricks": "chisel:concrete_black_bricks_solid",
     "chisel:concrete_black/tiles_large": "chisel:concrete_black_tiles_large",
-    "chisel:concrete_black/tiles_medium": null,
+    "chisel:concrete_black/tiles_medium": "chisel:concrete_black_tiles",
     "chisel:concrete_black/tiles_small": "chisel:concrete_black_tiles_small",
     "chisel:concrete_black/triple_bricks": "chisel:concrete_black_bricks_triple",
     "chisel:concrete_black/twisted": "chisel:concrete_black_twisted",
@@ -633,7 +633,7 @@
     "chisel:concrete_blue/soft_bricks": "chisel:concrete_blue_bricks_soft",
     "chisel:concrete_blue/solid_bricks": "chisel:concrete_blue_bricks_solid",
     "chisel:concrete_blue/tiles_large": "chisel:concrete_blue_tiles_large",
-    "chisel:concrete_blue/tiles_medium": null,
+    "chisel:concrete_blue/tiles_medium": "chisel:concrete_blue_tiles",
     "chisel:concrete_blue/tiles_small": "chisel:concrete_blue_tiles_small",
     "chisel:concrete_blue/triple_bricks": "chisel:concrete_blue_bricks_triple",
     "chisel:concrete_blue/twisted": "chisel:concrete_blue_twisted",
@@ -666,7 +666,7 @@
     "chisel:concrete_brown/soft_bricks": "chisel:concrete_brown_bricks_soft",
     "chisel:concrete_brown/solid_bricks": "chisel:concrete_brown_bricks_solid",
     "chisel:concrete_brown/tiles_large": "chisel:concrete_brown_tiles_large",
-    "chisel:concrete_brown/tiles_medium": null,
+    "chisel:concrete_brown/tiles_medium": "chisel:concrete_brown_tiles",
     "chisel:concrete_brown/tiles_small": "chisel:concrete_brown_tiles_small",
     "chisel:concrete_brown/triple_bricks": "chisel:concrete_brown_bricks_triple",
     "chisel:concrete_brown/twisted": "chisel:concrete_brown_twisted",
@@ -699,7 +699,7 @@
     "chisel:concrete_cyan/soft_bricks": "chisel:concrete_cyan_bricks_soft",
     "chisel:concrete_cyan/solid_bricks": "chisel:concrete_cyan_bricks_solid",
     "chisel:concrete_cyan/tiles_large": "chisel:concrete_cyan_tiles_large",
-    "chisel:concrete_cyan/tiles_medium": null,
+    "chisel:concrete_cyan/tiles_medium": "chisel:concrete_cyan_tiles",
     "chisel:concrete_cyan/tiles_small": "chisel:concrete_cyan_tiles_small",
     "chisel:concrete_cyan/triple_bricks": "chisel:concrete_cyan_bricks_triple",
     "chisel:concrete_cyan/twisted": "chisel:concrete_cyan_twisted",
@@ -732,7 +732,7 @@
     "chisel:concrete_gray/soft_bricks": "chisel:concrete_gray_bricks_soft",
     "chisel:concrete_gray/solid_bricks": "chisel:concrete_gray_bricks_solid",
     "chisel:concrete_gray/tiles_large": "chisel:concrete_gray_tiles_large",
-    "chisel:concrete_gray/tiles_medium": null,
+    "chisel:concrete_gray/tiles_medium": "chisel:concrete_gray_tiles",
     "chisel:concrete_gray/tiles_small": "chisel:concrete_gray_tiles_small",
     "chisel:concrete_gray/triple_bricks": "chisel:concrete_gray_bricks_triple",
     "chisel:concrete_gray/twisted": "chisel:concrete_gray_twisted",
@@ -765,7 +765,7 @@
     "chisel:concrete_green/soft_bricks": "chisel:concrete_green_bricks_soft",
     "chisel:concrete_green/solid_bricks": "chisel:concrete_green_bricks_solid",
     "chisel:concrete_green/tiles_large": "chisel:concrete_green_tiles_large",
-    "chisel:concrete_green/tiles_medium": null,
+    "chisel:concrete_green/tiles_medium": "chisel:concrete_green_tiles",
     "chisel:concrete_green/tiles_small": "chisel:concrete_green_tiles_small",
     "chisel:concrete_green/triple_bricks": "chisel:concrete_green_bricks_triple",
     "chisel:concrete_green/twisted": "chisel:concrete_green_twisted",
@@ -798,7 +798,7 @@
     "chisel:concrete_light_blue/soft_bricks": "chisel:concrete_light_blue_bricks_soft",
     "chisel:concrete_light_blue/solid_bricks": "chisel:concrete_light_blue_bricks_solid",
     "chisel:concrete_light_blue/tiles_large": "chisel:concrete_light_blue_tiles_large",
-    "chisel:concrete_light_blue/tiles_medium": null,
+    "chisel:concrete_light_blue/tiles_medium": "chisel:concrete_light_blue_tiles",
     "chisel:concrete_light_blue/tiles_small": "chisel:concrete_light_blue_tiles_small",
     "chisel:concrete_light_blue/triple_bricks": "chisel:concrete_light_blue_bricks_triple",
     "chisel:concrete_light_blue/twisted": "chisel:concrete_light_blue_twisted",
@@ -831,7 +831,7 @@
     "chisel:concrete_light_gray/soft_bricks": "chisel:concrete_light_gray_bricks_soft",
     "chisel:concrete_light_gray/solid_bricks": "chisel:concrete_light_gray_bricks_solid",
     "chisel:concrete_light_gray/tiles_large": "chisel:concrete_light_gray_tiles_large",
-    "chisel:concrete_light_gray/tiles_medium": null,
+    "chisel:concrete_light_gray/tiles_medium": "chisel:concrete_light_gray_tiles",
     "chisel:concrete_light_gray/tiles_small": "chisel:concrete_light_gray_tiles_small",
     "chisel:concrete_light_gray/triple_bricks": "chisel:concrete_light_gray_bricks_triple",
     "chisel:concrete_light_gray/twisted": "chisel:concrete_light_gray_twisted",
@@ -864,7 +864,7 @@
     "chisel:concrete_lime/soft_bricks": "chisel:concrete_lime_bricks_soft",
     "chisel:concrete_lime/solid_bricks": "chisel:concrete_lime_bricks_solid",
     "chisel:concrete_lime/tiles_large": "chisel:concrete_lime_tiles_large",
-    "chisel:concrete_lime/tiles_medium": null,
+    "chisel:concrete_lime/tiles_medium": "chisel:concrete_lime_tiles",
     "chisel:concrete_lime/tiles_small": "chisel:concrete_lime_tiles_small",
     "chisel:concrete_lime/triple_bricks": "chisel:concrete_lime_bricks_triple",
     "chisel:concrete_lime/twisted": "chisel:concrete_lime_twisted",
@@ -897,7 +897,7 @@
     "chisel:concrete_magenta/soft_bricks": "chisel:concrete_magenta_bricks_soft",
     "chisel:concrete_magenta/solid_bricks": "chisel:concrete_magenta_bricks_solid",
     "chisel:concrete_magenta/tiles_large": "chisel:concrete_magenta_tiles_large",
-    "chisel:concrete_magenta/tiles_medium": null,
+    "chisel:concrete_magenta/tiles_medium": "chisel:concrete_magenta_tiles",
     "chisel:concrete_magenta/tiles_small": "chisel:concrete_magenta_tiles_small",
     "chisel:concrete_magenta/triple_bricks": "chisel:concrete_magenta_bricks_triple",
     "chisel:concrete_magenta/twisted": "chisel:concrete_magenta_twisted",
@@ -930,7 +930,7 @@
     "chisel:concrete_orange/soft_bricks": "chisel:concrete_orange_bricks_soft",
     "chisel:concrete_orange/solid_bricks": "chisel:concrete_orange_bricks_solid",
     "chisel:concrete_orange/tiles_large": "chisel:concrete_orange_tiles_large",
-    "chisel:concrete_orange/tiles_medium": null,
+    "chisel:concrete_orange/tiles_medium": "chisel:concrete_orange_tiles",
     "chisel:concrete_orange/tiles_small": "chisel:concrete_orange_tiles_small",
     "chisel:concrete_orange/triple_bricks": "chisel:concrete_orange_bricks_triple",
     "chisel:concrete_orange/twisted": "chisel:concrete_orange_twisted",
@@ -963,7 +963,7 @@
     "chisel:concrete_pink/soft_bricks": "chisel:concrete_pink_bricks_soft",
     "chisel:concrete_pink/solid_bricks": "chisel:concrete_pink_bricks_solid",
     "chisel:concrete_pink/tiles_large": "chisel:concrete_pink_tiles_large",
-    "chisel:concrete_pink/tiles_medium": null,
+    "chisel:concrete_pink/tiles_medium": "chisel:concrete_pink_tiles",
     "chisel:concrete_pink/tiles_small": "chisel:concrete_pink_tiles_small",
     "chisel:concrete_pink/triple_bricks": "chisel:concrete_pink_bricks_triple",
     "chisel:concrete_pink/twisted": "chisel:concrete_pink_twisted",
@@ -996,7 +996,7 @@
     "chisel:concrete_purple/soft_bricks": "chisel:concrete_purple_bricks_soft",
     "chisel:concrete_purple/solid_bricks": "chisel:concrete_purple_bricks_solid",
     "chisel:concrete_purple/tiles_large": "chisel:concrete_purple_tiles_large",
-    "chisel:concrete_purple/tiles_medium": null,
+    "chisel:concrete_purple/tiles_medium": "chisel:concrete_purple_tiles",
     "chisel:concrete_purple/tiles_small": "chisel:concrete_purple_tiles_small",
     "chisel:concrete_purple/triple_bricks": "chisel:concrete_purple_bricks_triple",
     "chisel:concrete_purple/twisted": "chisel:concrete_purple_twisted",
@@ -1029,7 +1029,7 @@
     "chisel:concrete_red/soft_bricks": "chisel:concrete_red_bricks_soft",
     "chisel:concrete_red/solid_bricks": "chisel:concrete_red_bricks_solid",
     "chisel:concrete_red/tiles_large": "chisel:concrete_red_tiles_large",
-    "chisel:concrete_red/tiles_medium": null,
+    "chisel:concrete_red/tiles_medium": "chisel:concrete_red_tiles",
     "chisel:concrete_red/tiles_small": "chisel:concrete_red_tiles_small",
     "chisel:concrete_red/triple_bricks": "chisel:concrete_red_bricks_triple",
     "chisel:concrete_red/twisted": "chisel:concrete_red_twisted",
@@ -1062,7 +1062,7 @@
     "chisel:concrete_white/soft_bricks": "chisel:concrete_white_bricks_soft",
     "chisel:concrete_white/solid_bricks": "chisel:concrete_white_bricks_solid",
     "chisel:concrete_white/tiles_large": "chisel:concrete_white_tiles_large",
-    "chisel:concrete_white/tiles_medium": null,
+    "chisel:concrete_white/tiles_medium": "chisel:concrete_white_tiles",
     "chisel:concrete_white/tiles_small": "chisel:concrete_white_tiles_small",
     "chisel:concrete_white/triple_bricks": "chisel:concrete_white_bricks_triple",
     "chisel:concrete_white/twisted": "chisel:concrete_white_twisted",
@@ -1095,7 +1095,7 @@
     "chisel:concrete_yellow/soft_bricks": "chisel:concrete_yellow_bricks_soft",
     "chisel:concrete_yellow/solid_bricks": "chisel:concrete_yellow_bricks_solid",
     "chisel:concrete_yellow/tiles_large": "chisel:concrete_yellow_tiles_large",
-    "chisel:concrete_yellow/tiles_medium": null,
+    "chisel:concrete_yellow/tiles_medium": "chisel:concrete_yellow_tiles",
     "chisel:concrete_yellow/tiles_small": "chisel:concrete_yellow_tiles_small",
     "chisel:concrete_yellow/triple_bricks": "chisel:concrete_yellow_bricks_triple",
     "chisel:concrete_yellow/twisted": "chisel:concrete_yellow_twisted",
@@ -1282,35 +1282,35 @@
     "chisel:fantasy/block": "chisel:fantasy_block",
     "chisel:fantasy/brick": "chisel:fantasy_brick",
     "chisel:fantasy/brick_faded": "chisel:fantasy_brick_faded",
-    "chisel:fantasy/brick_wear": null,
-    "chisel:fantasy/bricks": null,
-    "chisel:fantasy/bricks_chaotic": null,
-    "chisel:fantasy/bricks_wear": null,
-    "chisel:fantasy/decor": null,
-    "chisel:fantasy/decor_block": null,
+    "chisel:fantasy/brick_wear": "chisel:fantasy_brick_worn",
+    "chisel:fantasy/bricks": "chisel:fantasy_brick_chaotic",
+    "chisel:fantasy/bricks_chaotic": "chisel:fantasy_brick_chaotic",
+    "chisel:fantasy/bricks_wear": "chisel:fantasy_brick_chaotic_worn",
+    "chisel:fantasy/decor": "chisel:fantasy_pillar_3",
+    "chisel:fantasy/decor_block": "chisel:fantasy_pillar_3",
     "chisel:fantasy/gold_decor_1": "chisel:fantasy_gold_decor_1",
     "chisel:fantasy/gold_decor_2": "chisel:fantasy_gold_decor_2",
     "chisel:fantasy/gold_decor_3": "chisel:fantasy_gold_decor_3",
     "chisel:fantasy/gold_decor_4": "chisel:fantasy_gold_decor_4",
     "chisel:fantasy/pillar": "chisel:fantasy_pillar",
-    "chisel:fantasy/pillar_decorated": null,
+    "chisel:fantasy/pillar_decorated": "chisel:fantasy_pillar_2",
     "chisel:fantasy/plate": "chisel:fantasy_plate",
-    "chisel:fantasy2/block": "chisel:fantasy_block",
-    "chisel:fantasy2/brick": null,
-    "chisel:fantasy2/brick_faded": null,
-    "chisel:fantasy2/brick_wear": null,
-    "chisel:fantasy2/bricks": null,
-    "chisel:fantasy2/bricks_chaotic": "chisel:fantasy_brick_chaotic",
-    "chisel:fantasy2/bricks_wear": null,
-    "chisel:fantasy2/decor": "chisel:fantasy_pillar_3",
-    "chisel:fantasy2/decor_block": null,
+    "chisel:fantasy2/block": "chisel:fantasy_purple_block",
+    "chisel:fantasy2/brick": "chisel:fantasy_purple_brick",
+    "chisel:fantasy2/brick_faded": "chisel:fantasy_purple_brick_faded",
+    "chisel:fantasy2/brick_wear": "chisel:fantasy_purple_brick_worn",
+    "chisel:fantasy2/bricks": "chisel:fantasy_purple_brick_chaotic",
+    "chisel:fantasy2/bricks_chaotic": "chisel:fantasy_purple_brick_chaotic",
+    "chisel:fantasy2/bricks_wear": "chisel:fantasy_purple_brick_chaotic_worn",
+    "chisel:fantasy2/decor": "chisel:fantasy_purple_pillar_3",
+    "chisel:fantasy2/decor_block": "chisel:fantasy_purple_pillar_3",
     "chisel:fantasy2/gold_decor_1": "chisel:fantasy_gold_decor_1",
     "chisel:fantasy2/gold_decor_2": "chisel:fantasy_gold_decor_2",
     "chisel:fantasy2/gold_decor_3": "chisel:fantasy_gold_decor_3",
     "chisel:fantasy2/gold_decor_4": "chisel:fantasy_gold_decor_4",
-    "chisel:fantasy2/pillar": "chisel:fantasy_pillar",
-    "chisel:fantasy2/pillar_decorated": "chisel:fantasy_pillar_2",
-    "chisel:fantasy2/plate": "chisel:fantasy_plate",
+    "chisel:fantasy2/pillar": "chisel:fantasy_purple_pillar",
+    "chisel:fantasy2/pillar_decorated": "chisel:fantasy_purple_pillar_2",
+    "chisel:fantasy2/plate": "chisel:fantasy_purple_plate",
     "chisel:futura/ae2_controller": null,
     "chisel:futura/black": null,
     "chisel:futura/blue": null,
@@ -1436,178 +1436,178 @@
     "chisel:glassdyed_black/forestry": null,
     "chisel:glassdyed_black/panel": "chisel:stained_glass_black_panel",
     "chisel:glassdyed_black/panel_fancy": "chisel:stained_glass_black_panel_fancy",
-    "chisel:glassdyed_black/transparent": null,
+    "chisel:glassdyed_black/transparent": "chisel:stained_glass_black_borderless",
     "chisel:glassdyed_blue/bubble": "chisel:stained_glass_blue_bubble",
     "chisel:glassdyed_blue/forestry": null,
     "chisel:glassdyed_blue/panel": "chisel:stained_glass_blue_panel",
     "chisel:glassdyed_blue/panel_fancy": "chisel:stained_glass_blue_panel_fancy",
-    "chisel:glassdyed_blue/transparent": null,
+    "chisel:glassdyed_blue/transparent": "chisel:stained_glass_blue_borderless",
     "chisel:glassdyed_brown/bubble": "chisel:stained_glass_brown_bubble",
     "chisel:glassdyed_brown/forestry": null,
     "chisel:glassdyed_brown/panel": "chisel:stained_glass_brown_panel",
     "chisel:glassdyed_brown/panel_fancy": "chisel:stained_glass_brown_panel_fancy",
-    "chisel:glassdyed_brown/transparent": null,
+    "chisel:glassdyed_brown/transparent": "chisel:stained_glass_brown_borderless",
     "chisel:glassdyed_cyan/bubble": "chisel:stained_glass_cyan_bubble",
     "chisel:glassdyed_cyan/forestry": null,
     "chisel:glassdyed_cyan/panel": "chisel:stained_glass_cyan_panel",
     "chisel:glassdyed_cyan/panel_fancy": "chisel:stained_glass_cyan_panel_fancy",
-    "chisel:glassdyed_cyan/transparent": null,
+    "chisel:glassdyed_cyan/transparent": "chisel:stained_glass_cyan_borderless",
     "chisel:glassdyed_gray/bubble": "chisel:stained_glass_gray_bubble",
     "chisel:glassdyed_gray/forestry": null,
     "chisel:glassdyed_gray/panel": "chisel:stained_glass_gray_panel",
     "chisel:glassdyed_gray/panel_fancy": "chisel:stained_glass_gray_panel_fancy",
-    "chisel:glassdyed_gray/transparent": null,
+    "chisel:glassdyed_gray/transparent": "chisel:stained_glass_gray_borderless",
     "chisel:glassdyed_green/bubble": "chisel:stained_glass_green_bubble",
     "chisel:glassdyed_green/forestry": null,
     "chisel:glassdyed_green/panel": "chisel:stained_glass_green_panel",
     "chisel:glassdyed_green/panel_fancy": "chisel:stained_glass_green_panel_fancy",
-    "chisel:glassdyed_green/transparent": null,
+    "chisel:glassdyed_green/transparent": "chisel:stained_glass_green_borderless",
     "chisel:glassdyed_light_blue/bubble": "chisel:stained_glass_light_blue_bubble",
     "chisel:glassdyed_light_blue/forestry": null,
     "chisel:glassdyed_light_blue/panel": "chisel:stained_glass_light_blue_panel",
     "chisel:glassdyed_light_blue/panel_fancy": "chisel:stained_glass_light_blue_panel_fancy",
-    "chisel:glassdyed_light_blue/transparent": null,
+    "chisel:glassdyed_light_blue/transparent": "chisel:stained_glass_light_blue_borderless",
     "chisel:glassdyed_light_gray/bubble": "chisel:stained_glass_light_gray_bubble",
     "chisel:glassdyed_light_gray/forestry": null,
     "chisel:glassdyed_light_gray/panel": "chisel:stained_glass_light_gray_panel",
     "chisel:glassdyed_light_gray/panel_fancy": "chisel:stained_glass_light_gray_panel_fancy",
-    "chisel:glassdyed_light_gray/transparent": null,
+    "chisel:glassdyed_light_gray/transparent": "chisel:stained_glass_light_gray_borderless",
     "chisel:glassdyed_lime/bubble": "chisel:stained_glass_lime_bubble",
     "chisel:glassdyed_lime/forestry": null,
     "chisel:glassdyed_lime/panel": "chisel:stained_glass_lime_panel",
     "chisel:glassdyed_lime/panel_fancy": "chisel:stained_glass_lime_panel_fancy",
-    "chisel:glassdyed_lime/transparent": null,
+    "chisel:glassdyed_lime/transparent": "chisel:stained_glass_lime_borderless",
     "chisel:glassdyed_magenta/bubble": "chisel:stained_glass_magenta_bubble",
     "chisel:glassdyed_magenta/forestry": null,
     "chisel:glassdyed_magenta/panel": "chisel:stained_glass_magenta_panel",
     "chisel:glassdyed_magenta/panel_fancy": "chisel:stained_glass_magenta_panel_fancy",
-    "chisel:glassdyed_magenta/transparent": null,
+    "chisel:glassdyed_magenta/transparent": "chisel:stained_glass_magenta_borderless",
     "chisel:glassdyed_orange/bubble": "chisel:stained_glass_orange_bubble",
     "chisel:glassdyed_orange/forestry": null,
     "chisel:glassdyed_orange/panel": "chisel:stained_glass_orange_panel",
     "chisel:glassdyed_orange/panel_fancy": "chisel:stained_glass_orange_panel_fancy",
-    "chisel:glassdyed_orange/transparent": null,
+    "chisel:glassdyed_orange/transparent": "chisel:stained_glass_orange_borderless",
     "chisel:glassdyed_pink/bubble": "chisel:stained_glass_pink_bubble",
     "chisel:glassdyed_pink/forestry": null,
     "chisel:glassdyed_pink/panel": "chisel:stained_glass_pink_panel",
     "chisel:glassdyed_pink/panel_fancy": "chisel:stained_glass_pink_panel_fancy",
-    "chisel:glassdyed_pink/transparent": null,
+    "chisel:glassdyed_pink/transparent": "chisel:stained_glass_pink_borderless",
     "chisel:glassdyed_purple/bubble": "chisel:stained_glass_purple_bubble",
     "chisel:glassdyed_purple/forestry": null,
     "chisel:glassdyed_purple/panel": "chisel:stained_glass_purple_panel",
     "chisel:glassdyed_purple/panel_fancy": "chisel:stained_glass_purple_panel_fancy",
-    "chisel:glassdyed_purple/transparent": null,
+    "chisel:glassdyed_purple/transparent": "chisel:stained_glass_purple_borderless",
     "chisel:glassdyed_red/bubble": "chisel:stained_glass_red_bubble",
     "chisel:glassdyed_red/forestry": null,
     "chisel:glassdyed_red/panel": "chisel:stained_glass_red_panel",
     "chisel:glassdyed_red/panel_fancy": "chisel:stained_glass_red_panel_fancy",
-    "chisel:glassdyed_red/transparent": null,
+    "chisel:glassdyed_red/transparent": "chisel:stained_glass_red_borderless",
     "chisel:glassdyed_white/bubble": "chisel:stained_glass_white_bubble",
     "chisel:glassdyed_white/forestry": null,
     "chisel:glassdyed_white/panel": "chisel:stained_glass_white_panel",
     "chisel:glassdyed_white/panel_fancy": "chisel:stained_glass_white_panel_fancy",
-    "chisel:glassdyed_white/transparent": null,
+    "chisel:glassdyed_white/transparent": "chisel:stained_glass_white_borderless",
     "chisel:glassdyed_yellow/bubble": "chisel:stained_glass_yellow_bubble",
     "chisel:glassdyed_yellow/forestry": null,
     "chisel:glassdyed_yellow/panel": "chisel:stained_glass_yellow_panel",
     "chisel:glassdyed_yellow/panel_fancy": "chisel:stained_glass_yellow_panel_fancy",
-    "chisel:glassdyed_yellow/transparent": null,
+    "chisel:glassdyed_yellow/transparent": "chisel:stained_glass_yellow_borderless",
     "chisel:glasspanedyed_black/bubble": "chisel:stained_glass_pane_black_bubble",
     "chisel:glasspanedyed_black/panel": "chisel:stained_glass_pane_black_panel",
     "chisel:glasspanedyed_black/panel_fancy": null,
     "chisel:glasspanedyed_black/quad": "chisel:stained_glass_pane_black_quad",
-    "chisel:glasspanedyed_black/quad_fancy": null,
-    "chisel:glasspanedyed_black/transparent": null,
+    "chisel:glasspanedyed_black/quad_fancy": "chisel:stained_glass_pane_black_fancy",
+    "chisel:glasspanedyed_black/transparent": "chisel:stained_glass_pane_black_borderless",
     "chisel:glasspanedyed_blue/bubble": "chisel:stained_glass_pane_blue_bubble",
     "chisel:glasspanedyed_blue/panel": "chisel:stained_glass_pane_blue_panel",
     "chisel:glasspanedyed_blue/panel_fancy": null,
     "chisel:glasspanedyed_blue/quad": "chisel:stained_glass_pane_blue_quad",
-    "chisel:glasspanedyed_blue/quad_fancy": null,
-    "chisel:glasspanedyed_blue/transparent": null,
+    "chisel:glasspanedyed_blue/quad_fancy": "chisel:stained_glass_pane_blue_fancy",
+    "chisel:glasspanedyed_blue/transparent": "chisel:stained_glass_pane_blue_borderless",
     "chisel:glasspanedyed_brown/bubble": "chisel:stained_glass_pane_brown_bubble",
     "chisel:glasspanedyed_brown/panel": "chisel:stained_glass_pane_brown_panel",
     "chisel:glasspanedyed_brown/panel_fancy": null,
     "chisel:glasspanedyed_brown/quad": "chisel:stained_glass_pane_brown_quad",
-    "chisel:glasspanedyed_brown/quad_fancy": null,
-    "chisel:glasspanedyed_brown/transparent": null,
+    "chisel:glasspanedyed_brown/quad_fancy": "chisel:stained_glass_pane_brown_fancy",
+    "chisel:glasspanedyed_brown/transparent": "chisel:stained_glass_pane_brown_borderless",
     "chisel:glasspanedyed_cyan/bubble": "chisel:stained_glass_pane_cyan_bubble",
     "chisel:glasspanedyed_cyan/panel": "chisel:stained_glass_pane_cyan_panel",
     "chisel:glasspanedyed_cyan/panel_fancy": null,
     "chisel:glasspanedyed_cyan/quad": "chisel:stained_glass_pane_cyan_quad",
-    "chisel:glasspanedyed_cyan/quad_fancy": null,
-    "chisel:glasspanedyed_cyan/transparent": null,
+    "chisel:glasspanedyed_cyan/quad_fancy": "chisel:stained_glass_pane_cyan_fancy",
+    "chisel:glasspanedyed_cyan/transparent": "chisel:stained_glass_pane_cyan_borderless",
     "chisel:glasspanedyed_gray/bubble": "chisel:stained_glass_pane_gray_bubble",
     "chisel:glasspanedyed_gray/panel": "chisel:stained_glass_pane_gray_panel",
     "chisel:glasspanedyed_gray/panel_fancy": null,
     "chisel:glasspanedyed_gray/quad": "chisel:stained_glass_pane_gray_quad",
-    "chisel:glasspanedyed_gray/quad_fancy": null,
-    "chisel:glasspanedyed_gray/transparent": null,
+    "chisel:glasspanedyed_gray/quad_fancy": "chisel:stained_glass_pane_gray_fancy",
+    "chisel:glasspanedyed_gray/transparent": "chisel:stained_glass_pane_gray_borderless",
     "chisel:glasspanedyed_green/bubble": "chisel:stained_glass_pane_green_bubble",
     "chisel:glasspanedyed_green/panel": "chisel:stained_glass_pane_green_panel",
     "chisel:glasspanedyed_green/panel_fancy": null,
     "chisel:glasspanedyed_green/quad": "chisel:stained_glass_pane_green_quad",
-    "chisel:glasspanedyed_green/quad_fancy": null,
-    "chisel:glasspanedyed_green/transparent": null,
+    "chisel:glasspanedyed_green/quad_fancy": "chisel:stained_glass_pane_green_fancy",
+    "chisel:glasspanedyed_green/transparent": "chisel:stained_glass_pane_green_borderless",
     "chisel:glasspanedyed_light_blue/bubble": "chisel:stained_glass_pane_light_blue_bubble",
     "chisel:glasspanedyed_light_blue/panel": "chisel:stained_glass_pane_light_blue_panel",
     "chisel:glasspanedyed_light_blue/panel_fancy": null,
     "chisel:glasspanedyed_light_blue/quad": "chisel:stained_glass_pane_light_blue_quad",
-    "chisel:glasspanedyed_light_blue/quad_fancy": null,
-    "chisel:glasspanedyed_light_blue/transparent": null,
+    "chisel:glasspanedyed_light_blue/quad_fancy": "chisel:stained_glass_pane_light_blue_fancy",
+    "chisel:glasspanedyed_light_blue/transparent": "chisel:stained_glass_pane_light_blue_borderless",
     "chisel:glasspanedyed_light_gray/bubble": "chisel:stained_glass_pane_light_gray_bubble",
     "chisel:glasspanedyed_light_gray/panel": "chisel:stained_glass_pane_light_gray_panel",
     "chisel:glasspanedyed_light_gray/panel_fancy": null,
     "chisel:glasspanedyed_light_gray/quad": "chisel:stained_glass_pane_light_gray_quad",
-    "chisel:glasspanedyed_light_gray/quad_fancy": null,
-    "chisel:glasspanedyed_light_gray/transparent": null,
+    "chisel:glasspanedyed_light_gray/quad_fancy": "chisel:stained_glass_pane_light_gray_fancy",
+    "chisel:glasspanedyed_light_gray/transparent": "chisel:stained_glass_pane_light_gray_borderless",
     "chisel:glasspanedyed_lime/bubble": "chisel:stained_glass_pane_lime_bubble",
     "chisel:glasspanedyed_lime/panel": "chisel:stained_glass_pane_lime_panel",
     "chisel:glasspanedyed_lime/panel_fancy": null,
     "chisel:glasspanedyed_lime/quad": "chisel:stained_glass_pane_lime_quad",
-    "chisel:glasspanedyed_lime/quad_fancy": null,
-    "chisel:glasspanedyed_lime/transparent": null,
+    "chisel:glasspanedyed_lime/quad_fancy": "chisel:stained_glass_pane_lime_fancy",
+    "chisel:glasspanedyed_lime/transparent": "chisel:stained_glass_pane_lime_borderless",
     "chisel:glasspanedyed_magenta/bubble": "chisel:stained_glass_pane_magenta_bubble",
     "chisel:glasspanedyed_magenta/panel": "chisel:stained_glass_pane_magenta_panel",
     "chisel:glasspanedyed_magenta/panel_fancy": null,
     "chisel:glasspanedyed_magenta/quad": "chisel:stained_glass_pane_magenta_quad",
-    "chisel:glasspanedyed_magenta/quad_fancy": null,
-    "chisel:glasspanedyed_magenta/transparent": null,
+    "chisel:glasspanedyed_magenta/quad_fancy": "chisel:stained_glass_pane_magenta_fancy",
+    "chisel:glasspanedyed_magenta/transparent": "chisel:stained_glass_pane_magenta_borderless",
     "chisel:glasspanedyed_orange/bubble": "chisel:stained_glass_pane_orange_bubble",
     "chisel:glasspanedyed_orange/panel": "chisel:stained_glass_pane_orange_panel",
     "chisel:glasspanedyed_orange/panel_fancy": null,
     "chisel:glasspanedyed_orange/quad": "chisel:stained_glass_pane_orange_quad",
-    "chisel:glasspanedyed_orange/quad_fancy": null,
-    "chisel:glasspanedyed_orange/transparent": null,
+    "chisel:glasspanedyed_orange/quad_fancy": "chisel:stained_glass_pane_orange_fancy",
+    "chisel:glasspanedyed_orange/transparent": "chisel:stained_glass_pane_orange_borderless",
     "chisel:glasspanedyed_pink/bubble": "chisel:stained_glass_pane_pink_bubble",
     "chisel:glasspanedyed_pink/panel": "chisel:stained_glass_pane_pink_panel",
     "chisel:glasspanedyed_pink/panel_fancy": null,
     "chisel:glasspanedyed_pink/quad": "chisel:stained_glass_pane_pink_quad",
-    "chisel:glasspanedyed_pink/quad_fancy": null,
-    "chisel:glasspanedyed_pink/transparent": null,
+    "chisel:glasspanedyed_pink/quad_fancy": "chisel:stained_glass_pane_pink_fancy",
+    "chisel:glasspanedyed_pink/transparent": "chisel:stained_glass_pane_pink_borderless",
     "chisel:glasspanedyed_purple/bubble": "chisel:stained_glass_pane_purple_bubble",
     "chisel:glasspanedyed_purple/panel": "chisel:stained_glass_pane_purple_panel",
     "chisel:glasspanedyed_purple/panel_fancy": null,
     "chisel:glasspanedyed_purple/quad": "chisel:stained_glass_pane_purple_quad",
-    "chisel:glasspanedyed_purple/quad_fancy": null,
-    "chisel:glasspanedyed_purple/transparent": null,
+    "chisel:glasspanedyed_purple/quad_fancy": "chisel:stained_glass_pane_purple_fancy",
+    "chisel:glasspanedyed_purple/transparent": "chisel:stained_glass_pane_purple_borderless",
     "chisel:glasspanedyed_red/bubble": "chisel:stained_glass_pane_red_bubble",
     "chisel:glasspanedyed_red/panel": "chisel:stained_glass_pane_red_panel",
     "chisel:glasspanedyed_red/panel_fancy": null,
     "chisel:glasspanedyed_red/quad": "chisel:stained_glass_pane_red_quad",
-    "chisel:glasspanedyed_red/quad_fancy": null,
-    "chisel:glasspanedyed_red/transparent": null,
+    "chisel:glasspanedyed_red/quad_fancy": "chisel:stained_glass_pane_red_fancy",
+    "chisel:glasspanedyed_red/transparent": "chisel:stained_glass_pane_red_borderless",
     "chisel:glasspanedyed_white/bubble": "chisel:stained_glass_pane_white_bubble",
     "chisel:glasspanedyed_white/panel": "chisel:stained_glass_pane_white_panel",
     "chisel:glasspanedyed_white/panel_fancy": null,
     "chisel:glasspanedyed_white/quad": "chisel:stained_glass_pane_white_quad",
-    "chisel:glasspanedyed_white/quad_fancy": null,
-    "chisel:glasspanedyed_white/transparent": null,
+    "chisel:glasspanedyed_white/quad_fancy": "chisel:stained_glass_pane_white_fancy",
+    "chisel:glasspanedyed_white/transparent": "chisel:stained_glass_pane_white_borderless",
     "chisel:glasspanedyed_yellow/bubble": "chisel:stained_glass_pane_yellow_bubble",
     "chisel:glasspanedyed_yellow/panel": "chisel:stained_glass_pane_yellow_panel",
     "chisel:glasspanedyed_yellow/panel_fancy": null,
     "chisel:glasspanedyed_yellow/quad": "chisel:stained_glass_pane_yellow_quad",
-    "chisel:glasspanedyed_yellow/quad_fancy": null,
-    "chisel:glasspanedyed_yellow/transparent": null,
+    "chisel:glasspanedyed_yellow/quad_fancy": "chisel:stained_glass_pane_yellow_fancy",
+    "chisel:glasspanedyed_yellow/transparent": "chisel:stained_glass_pane_yellow_borderless",
     "chisel:glowstone/array": "chisel:glowstone_array",
     "chisel:glowstone/braid": "chisel:glowstone_braid",
     "chisel:glowstone/chaotic_medium": "chisel:glowstone_chaotic_medium",
@@ -1648,7 +1648,7 @@
     "chisel:gold/caution": "chisel:gold_caution",
     "chisel:gold/coin_heads": "chisel:gold_coin_heads",
     "chisel:gold/coin_tails": "chisel:gold_coin_tails",
-    "chisel:gold/crate": null,
+    "chisel:gold/crate": "chisel:gold_shipping",
     "chisel:gold/crate_dark": "chisel:gold_crate_dark",
     "chisel:gold/crate_light": "chisel:gold_crate_light",
     "chisel:gold/goldeye": null,
@@ -1659,7 +1659,7 @@
     "chisel:gold/scaffold": "chisel:gold_scaffold",
     "chisel:gold/simple": "chisel:gold_simple",
     "chisel:gold/small_ingot": "chisel:gold_ingots_small",
-    "chisel:gold/space": null,
+    "chisel:gold/space": "chisel:gold_star_obsidian_purple",
     "chisel:gold/space_black": "chisel:gold_star_obsidian",
     "chisel:gold/star": "chisel:gold_star_decor",
     "chisel:gold/thermal": "chisel:gold_thermal",
@@ -1698,15 +1698,15 @@
     "chisel:granite/zag": "chisel:granite_zag",
     "chisel:grimstone/blocks": "chisel:grimstone_blocks",
     "chisel:grimstone/blocks_rough": "chisel:grimstone_blocks_rough",
-    "chisel:grimstone/brick": null,
+    "chisel:grimstone/brick": "chisel:grimstone_bricks",
     "chisel:grimstone/chiseled": "chisel:grimstone_chiseled",
     "chisel:grimstone/construction": "chisel:grimstone_construction",
-    "chisel:grimstone/fancy_tiles": null,
+    "chisel:grimstone/fancy_tiles": "chisel:grimstone_tiles",
     "chisel:grimstone/flaky": "chisel:grimstone_flaky",
     "chisel:grimstone/hate": "chisel:grimstone_hate",
-    "chisel:grimstone/large_bricks": null,
+    "chisel:grimstone/large_bricks": "chisel:grimstone_bricks_large",
     "chisel:grimstone/plate": "chisel:grimstone_plate",
-    "chisel:grimstone/plate_rough": null,
+    "chisel:grimstone/plate_rough": "chisel:grimstone_plate",
     "chisel:grimstone/platform": "chisel:grimstone_platform",
     "chisel:grimstone/platform_tiles": "chisel:grimstone_platform_tiles",
     "chisel:grimstone/raw": "chisel:grimstone_raw",
@@ -3185,6 +3185,38 @@
     "chisel:concrete_raw_weathered": {},
     "chisel:concrete_block_weathered": {},
     "chisel:concrete_blocks_weathered": {},
+    "chisel:wool_black_legacy": {},
+    "chisel:wool_black_llama": {},
+    "chisel:wool_blue_legacy": {},
+    "chisel:wool_blue_llama": {},
+    "chisel:wool_brown_legacy": {},
+    "chisel:wool_brown_llama": {},
+    "chisel:wool_cyan_legacy": {},
+    "chisel:wool_cyan_llama": {},
+    "chisel:wool_gray_legacy": {},
+    "chisel:wool_gray_llama": {},
+    "chisel:wool_green_legacy": {},
+    "chisel:wool_green_llama": {},
+    "chisel:wool_light_blue_legacy": {},
+    "chisel:wool_light_blue_llama": {},
+    "chisel:wool_light_gray_legacy": {},
+    "chisel:wool_light_gray_llama": {},
+    "chisel:wool_lime_legacy": {},
+    "chisel:wool_lime_llama": {},
+    "chisel:wool_magenta_legacy": {},
+    "chisel:wool_magenta_llama": {},
+    "chisel:wool_orange_legacy": {},
+    "chisel:wool_orange_llama": {},
+    "chisel:wool_pink_legacy": {},
+    "chisel:wool_pink_llama": {},
+    "chisel:wool_purple_legacy": {},
+    "chisel:wool_purple_llama": {},
+    "chisel:wool_red_legacy": {},
+    "chisel:wool_red_llama": {},
+    "chisel:wool_white_legacy": {},
+    "chisel:wool_white_llama": {},
+    "chisel:wool_yellow_legacy": {},
+    "chisel:wool_yellow_llama": {},
     "chisel:certus_array": {},
     "chisel:certus_braid": {},
     "chisel:certus_chaotic": {},
@@ -3217,6 +3249,7 @@
     "chisel:certus_bricks_soft": {},
     "chisel:certus_bricks_solid": {},
     "chisel:certus_tiles_large": {},
+    "chisel:certus_tiles": {},
     "chisel:certus_tiles_small": {},
     "chisel:certus_bricks_triple": {},
     "chisel:certus_twisted": {},
@@ -3416,6 +3449,7 @@
     "chisel:concrete_black_bricks_soft": {},
     "chisel:concrete_black_bricks_solid": {},
     "chisel:concrete_black_tiles_large": {},
+    "chisel:concrete_black_tiles": {},
     "chisel:concrete_black_tiles_small": {},
     "chisel:concrete_black_bricks_triple": {},
     "chisel:concrete_black_twisted": {},
@@ -3452,6 +3486,7 @@
     "chisel:concrete_blue_bricks_soft": {},
     "chisel:concrete_blue_bricks_solid": {},
     "chisel:concrete_blue_tiles_large": {},
+    "chisel:concrete_blue_tiles": {},
     "chisel:concrete_blue_tiles_small": {},
     "chisel:concrete_blue_bricks_triple": {},
     "chisel:concrete_blue_twisted": {},
@@ -3488,6 +3523,7 @@
     "chisel:concrete_brown_bricks_soft": {},
     "chisel:concrete_brown_bricks_solid": {},
     "chisel:concrete_brown_tiles_large": {},
+    "chisel:concrete_brown_tiles": {},
     "chisel:concrete_brown_tiles_small": {},
     "chisel:concrete_brown_bricks_triple": {},
     "chisel:concrete_brown_twisted": {},
@@ -3524,6 +3560,7 @@
     "chisel:concrete_cyan_bricks_soft": {},
     "chisel:concrete_cyan_bricks_solid": {},
     "chisel:concrete_cyan_tiles_large": {},
+    "chisel:concrete_cyan_tiles": {},
     "chisel:concrete_cyan_tiles_small": {},
     "chisel:concrete_cyan_bricks_triple": {},
     "chisel:concrete_cyan_twisted": {},
@@ -3560,6 +3597,7 @@
     "chisel:concrete_gray_bricks_soft": {},
     "chisel:concrete_gray_bricks_solid": {},
     "chisel:concrete_gray_tiles_large": {},
+    "chisel:concrete_gray_tiles": {},
     "chisel:concrete_gray_tiles_small": {},
     "chisel:concrete_gray_bricks_triple": {},
     "chisel:concrete_gray_twisted": {},
@@ -3596,6 +3634,7 @@
     "chisel:concrete_green_bricks_soft": {},
     "chisel:concrete_green_bricks_solid": {},
     "chisel:concrete_green_tiles_large": {},
+    "chisel:concrete_green_tiles": {},
     "chisel:concrete_green_tiles_small": {},
     "chisel:concrete_green_bricks_triple": {},
     "chisel:concrete_green_twisted": {},
@@ -3632,6 +3671,7 @@
     "chisel:concrete_light_blue_bricks_soft": {},
     "chisel:concrete_light_blue_bricks_solid": {},
     "chisel:concrete_light_blue_tiles_large": {},
+    "chisel:concrete_light_blue_tiles": {},
     "chisel:concrete_light_blue_tiles_small": {},
     "chisel:concrete_light_blue_bricks_triple": {},
     "chisel:concrete_light_blue_twisted": {},
@@ -3668,6 +3708,7 @@
     "chisel:concrete_light_gray_bricks_soft": {},
     "chisel:concrete_light_gray_bricks_solid": {},
     "chisel:concrete_light_gray_tiles_large": {},
+    "chisel:concrete_light_gray_tiles": {},
     "chisel:concrete_light_gray_tiles_small": {},
     "chisel:concrete_light_gray_bricks_triple": {},
     "chisel:concrete_light_gray_twisted": {},
@@ -3704,6 +3745,7 @@
     "chisel:concrete_lime_bricks_soft": {},
     "chisel:concrete_lime_bricks_solid": {},
     "chisel:concrete_lime_tiles_large": {},
+    "chisel:concrete_lime_tiles": {},
     "chisel:concrete_lime_tiles_small": {},
     "chisel:concrete_lime_bricks_triple": {},
     "chisel:concrete_lime_twisted": {},
@@ -3740,6 +3782,7 @@
     "chisel:concrete_magenta_bricks_soft": {},
     "chisel:concrete_magenta_bricks_solid": {},
     "chisel:concrete_magenta_tiles_large": {},
+    "chisel:concrete_magenta_tiles": {},
     "chisel:concrete_magenta_tiles_small": {},
     "chisel:concrete_magenta_bricks_triple": {},
     "chisel:concrete_magenta_twisted": {},
@@ -3776,6 +3819,7 @@
     "chisel:concrete_orange_bricks_soft": {},
     "chisel:concrete_orange_bricks_solid": {},
     "chisel:concrete_orange_tiles_large": {},
+    "chisel:concrete_orange_tiles": {},
     "chisel:concrete_orange_tiles_small": {},
     "chisel:concrete_orange_bricks_triple": {},
     "chisel:concrete_orange_twisted": {},
@@ -3812,6 +3856,7 @@
     "chisel:concrete_pink_bricks_soft": {},
     "chisel:concrete_pink_bricks_solid": {},
     "chisel:concrete_pink_tiles_large": {},
+    "chisel:concrete_pink_tiles": {},
     "chisel:concrete_pink_tiles_small": {},
     "chisel:concrete_pink_bricks_triple": {},
     "chisel:concrete_pink_twisted": {},
@@ -3848,6 +3893,7 @@
     "chisel:concrete_purple_bricks_soft": {},
     "chisel:concrete_purple_bricks_solid": {},
     "chisel:concrete_purple_tiles_large": {},
+    "chisel:concrete_purple_tiles": {},
     "chisel:concrete_purple_tiles_small": {},
     "chisel:concrete_purple_bricks_triple": {},
     "chisel:concrete_purple_twisted": {},
@@ -3884,6 +3930,7 @@
     "chisel:concrete_red_bricks_soft": {},
     "chisel:concrete_red_bricks_solid": {},
     "chisel:concrete_red_tiles_large": {},
+    "chisel:concrete_red_tiles": {},
     "chisel:concrete_red_tiles_small": {},
     "chisel:concrete_red_bricks_triple": {},
     "chisel:concrete_red_twisted": {},
@@ -3920,6 +3967,7 @@
     "chisel:concrete_white_bricks_soft": {},
     "chisel:concrete_white_bricks_solid": {},
     "chisel:concrete_white_tiles_large": {},
+    "chisel:concrete_white_tiles": {},
     "chisel:concrete_white_tiles_small": {},
     "chisel:concrete_white_bricks_triple": {},
     "chisel:concrete_white_twisted": {},
@@ -3956,6 +4004,7 @@
     "chisel:concrete_yellow_bricks_soft": {},
     "chisel:concrete_yellow_bricks_solid": {},
     "chisel:concrete_yellow_tiles_large": {},
+    "chisel:concrete_yellow_tiles": {},
     "chisel:concrete_yellow_tiles_small": {},
     "chisel:concrete_yellow_bricks_triple": {},
     "chisel:concrete_yellow_twisted": {},
@@ -4113,6 +4162,16 @@
     "chisel:fantasy_block": {},
     "chisel:fantasy_brick": {},
     "chisel:fantasy_brick_faded": {},
+    "chisel:fantasy_brick_worn": {},
+    "chisel:fantasy_brick_chaotic": {},
+    "chisel:fantasy_brick_chaotic_worn": {},
+    "chisel:fantasy_pillar_3": {
+      "axis": [
+        "x",
+        "y",
+        "z"
+      ]
+    },
     "chisel:fantasy_gold_decor_1": {
       "axis": [
         "x",
@@ -4148,6 +4207,13 @@
         "z"
       ]
     },
+    "chisel:fantasy_pillar_2": {
+      "axis": [
+        "x",
+        "y",
+        "z"
+      ]
+    },
     "chisel:fantasy_plate": {
       "axis": [
         "x",
@@ -4155,15 +4221,34 @@
         "z"
       ]
     },
-    "chisel:fantasy_brick_chaotic": {},
-    "chisel:fantasy_pillar_3": {
+    "chisel:fantasy_purple_block": {},
+    "chisel:fantasy_purple_brick": {},
+    "chisel:fantasy_purple_brick_faded": {},
+    "chisel:fantasy_purple_brick_worn": {},
+    "chisel:fantasy_purple_brick_chaotic": {},
+    "chisel:fantasy_purple_brick_chaotic_worn": {},
+    "chisel:fantasy_purple_pillar_3": {
       "axis": [
         "x",
         "y",
         "z"
       ]
     },
-    "chisel:fantasy_pillar_2": {
+    "chisel:fantasy_purple_pillar": {
+      "axis": [
+        "x",
+        "y",
+        "z"
+      ]
+    },
+    "chisel:fantasy_purple_pillar_2": {
+      "axis": [
+        "x",
+        "y",
+        "z"
+      ]
+    },
+    "chisel:fantasy_purple_plate": {
       "axis": [
         "x",
         "y",
@@ -4224,36 +4309,52 @@
     "chisel:stained_glass_yellow_panel": {},
     "chisel:stained_glass_black_bubble": {},
     "chisel:stained_glass_black_panel_fancy": {},
+    "chisel:stained_glass_black_borderless": {},
     "chisel:stained_glass_blue_bubble": {},
     "chisel:stained_glass_blue_panel_fancy": {},
+    "chisel:stained_glass_blue_borderless": {},
     "chisel:stained_glass_brown_bubble": {},
     "chisel:stained_glass_brown_panel_fancy": {},
+    "chisel:stained_glass_brown_borderless": {},
     "chisel:stained_glass_cyan_bubble": {},
     "chisel:stained_glass_cyan_panel_fancy": {},
+    "chisel:stained_glass_cyan_borderless": {},
     "chisel:stained_glass_gray_bubble": {},
     "chisel:stained_glass_gray_panel_fancy": {},
+    "chisel:stained_glass_gray_borderless": {},
     "chisel:stained_glass_green_bubble": {},
     "chisel:stained_glass_green_panel_fancy": {},
+    "chisel:stained_glass_green_borderless": {},
     "chisel:stained_glass_light_blue_bubble": {},
     "chisel:stained_glass_light_blue_panel_fancy": {},
+    "chisel:stained_glass_light_blue_borderless": {},
     "chisel:stained_glass_light_gray_bubble": {},
     "chisel:stained_glass_light_gray_panel_fancy": {},
+    "chisel:stained_glass_light_gray_borderless": {},
     "chisel:stained_glass_lime_bubble": {},
     "chisel:stained_glass_lime_panel_fancy": {},
+    "chisel:stained_glass_lime_borderless": {},
     "chisel:stained_glass_magenta_bubble": {},
     "chisel:stained_glass_magenta_panel_fancy": {},
+    "chisel:stained_glass_magenta_borderless": {},
     "chisel:stained_glass_orange_bubble": {},
     "chisel:stained_glass_orange_panel_fancy": {},
+    "chisel:stained_glass_orange_borderless": {},
     "chisel:stained_glass_pink_bubble": {},
     "chisel:stained_glass_pink_panel_fancy": {},
+    "chisel:stained_glass_pink_borderless": {},
     "chisel:stained_glass_purple_bubble": {},
     "chisel:stained_glass_purple_panel_fancy": {},
+    "chisel:stained_glass_purple_borderless": {},
     "chisel:stained_glass_red_bubble": {},
     "chisel:stained_glass_red_panel_fancy": {},
+    "chisel:stained_glass_red_borderless": {},
     "chisel:stained_glass_white_bubble": {},
     "chisel:stained_glass_white_panel_fancy": {},
+    "chisel:stained_glass_white_borderless": {},
     "chisel:stained_glass_yellow_bubble": {},
     "chisel:stained_glass_yellow_panel_fancy": {},
+    "chisel:stained_glass_yellow_borderless": {},
     "chisel:stained_glass_pane_black_bubble": {
       "north": [
         "false",
@@ -4299,6 +4400,50 @@
       ]
     },
     "chisel:stained_glass_pane_black_quad": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_black_fancy": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_black_borderless": {
       "north": [
         "false",
         "true"
@@ -4386,6 +4531,50 @@
         "true"
       ]
     },
+    "chisel:stained_glass_pane_blue_fancy": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_blue_borderless": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
     "chisel:stained_glass_pane_brown_bubble": {
       "north": [
         "false",
@@ -4431,6 +4620,50 @@
       ]
     },
     "chisel:stained_glass_pane_brown_quad": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_brown_fancy": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_brown_borderless": {
       "north": [
         "false",
         "true"
@@ -4518,6 +4751,50 @@
         "true"
       ]
     },
+    "chisel:stained_glass_pane_cyan_fancy": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_cyan_borderless": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
     "chisel:stained_glass_pane_gray_bubble": {
       "north": [
         "false",
@@ -4563,6 +4840,50 @@
       ]
     },
     "chisel:stained_glass_pane_gray_quad": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_gray_fancy": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_gray_borderless": {
       "north": [
         "false",
         "true"
@@ -4650,6 +4971,50 @@
         "true"
       ]
     },
+    "chisel:stained_glass_pane_green_fancy": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_green_borderless": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
     "chisel:stained_glass_pane_light_blue_bubble": {
       "north": [
         "false",
@@ -4695,6 +5060,50 @@
       ]
     },
     "chisel:stained_glass_pane_light_blue_quad": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_light_blue_fancy": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_light_blue_borderless": {
       "north": [
         "false",
         "true"
@@ -4782,6 +5191,50 @@
         "true"
       ]
     },
+    "chisel:stained_glass_pane_light_gray_fancy": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_light_gray_borderless": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
     "chisel:stained_glass_pane_lime_bubble": {
       "north": [
         "false",
@@ -4827,6 +5280,50 @@
       ]
     },
     "chisel:stained_glass_pane_lime_quad": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_lime_fancy": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_lime_borderless": {
       "north": [
         "false",
         "true"
@@ -4914,6 +5411,50 @@
         "true"
       ]
     },
+    "chisel:stained_glass_pane_magenta_fancy": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_magenta_borderless": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
     "chisel:stained_glass_pane_orange_bubble": {
       "north": [
         "false",
@@ -4959,6 +5500,50 @@
       ]
     },
     "chisel:stained_glass_pane_orange_quad": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_orange_fancy": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_orange_borderless": {
       "north": [
         "false",
         "true"
@@ -5046,6 +5631,50 @@
         "true"
       ]
     },
+    "chisel:stained_glass_pane_pink_fancy": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_pink_borderless": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
     "chisel:stained_glass_pane_purple_bubble": {
       "north": [
         "false",
@@ -5091,6 +5720,50 @@
       ]
     },
     "chisel:stained_glass_pane_purple_quad": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_purple_fancy": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_purple_borderless": {
       "north": [
         "false",
         "true"
@@ -5178,6 +5851,50 @@
         "true"
       ]
     },
+    "chisel:stained_glass_pane_red_fancy": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_red_borderless": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
     "chisel:stained_glass_pane_white_bubble": {
       "north": [
         "false",
@@ -5223,6 +5940,50 @@
       ]
     },
     "chisel:stained_glass_pane_white_quad": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_white_fancy": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_white_borderless": {
       "north": [
         "false",
         "true"
@@ -5310,6 +6071,50 @@
         "true"
       ]
     },
+    "chisel:stained_glass_pane_yellow_fancy": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
+    "chisel:stained_glass_pane_yellow_borderless": {
+      "north": [
+        "false",
+        "true"
+      ],
+      "south": [
+        "false",
+        "true"
+      ],
+      "east": [
+        "false",
+        "true"
+      ],
+      "west": [
+        "false",
+        "true"
+      ],
+      "waterlogged": [
+        "false",
+        "true"
+      ]
+    },
     "chisel:glowstone_array": {},
     "chisel:glowstone_braid": {},
     "chisel:glowstone_chaotic_medium": {},
@@ -5352,6 +6157,7 @@
     "chisel:gold_caution": {},
     "chisel:gold_coin_heads": {},
     "chisel:gold_coin_tails": {},
+    "chisel:gold_shipping": {},
     "chisel:gold_crate_dark": {},
     "chisel:gold_crate_light": {},
     "chisel:gold_ingots_large": {},
@@ -5361,6 +6167,7 @@
     "chisel:gold_scaffold": {},
     "chisel:gold_simple": {},
     "chisel:gold_ingots_small": {},
+    "chisel:gold_star_obsidian_purple": {},
     "chisel:gold_star_obsidian": {},
     "chisel:gold_star_decor": {},
     "chisel:gold_thermal": {},
@@ -5404,10 +6211,13 @@
     "chisel:granite_zag": {},
     "chisel:grimstone_blocks": {},
     "chisel:grimstone_blocks_rough": {},
+    "chisel:grimstone_bricks": {},
     "chisel:grimstone_chiseled": {},
     "chisel:grimstone_construction": {},
+    "chisel:grimstone_tiles": {},
     "chisel:grimstone_flaky": {},
     "chisel:grimstone_hate": {},
+    "chisel:grimstone_bricks_large": {},
     "chisel:grimstone_plate": {},
     "chisel:grimstone_platform": {},
     "chisel:grimstone_platform_tiles": {},
@@ -6930,38 +7740,6 @@
     "chisel:waterstone_twisted": {},
     "chisel:waterstone_weaver": {},
     "chisel:waterstone_zag": {},
-    "chisel:wool_black_legacy": {},
-    "chisel:wool_black_llama": {},
-    "chisel:wool_blue_legacy": {},
-    "chisel:wool_blue_llama": {},
-    "chisel:wool_brown_legacy": {},
-    "chisel:wool_brown_llama": {},
-    "chisel:wool_cyan_legacy": {},
-    "chisel:wool_cyan_llama": {},
-    "chisel:wool_gray_legacy": {},
-    "chisel:wool_gray_llama": {},
-    "chisel:wool_green_legacy": {},
-    "chisel:wool_green_llama": {},
-    "chisel:wool_light_blue_legacy": {},
-    "chisel:wool_light_blue_llama": {},
-    "chisel:wool_light_gray_legacy": {},
-    "chisel:wool_light_gray_llama": {},
-    "chisel:wool_lime_legacy": {},
-    "chisel:wool_lime_llama": {},
-    "chisel:wool_magenta_legacy": {},
-    "chisel:wool_magenta_llama": {},
-    "chisel:wool_orange_legacy": {},
-    "chisel:wool_orange_llama": {},
-    "chisel:wool_pink_legacy": {},
-    "chisel:wool_pink_llama": {},
-    "chisel:wool_purple_legacy": {},
-    "chisel:wool_purple_llama": {},
-    "chisel:wool_red_legacy": {},
-    "chisel:wool_red_llama": {},
-    "chisel:wool_white_legacy": {},
-    "chisel:wool_white_llama": {},
-    "chisel:wool_yellow_legacy": {},
-    "chisel:wool_yellow_llama": {},
     "chisel:woolen_clay_15": {},
     "chisel:woolen_clay_11": {},
     "chisel:woolen_clay_12": {},

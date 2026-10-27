@@ -3,6 +3,7 @@ package io.github.chiselteam.chisel.datagen;
 import io.github.chiselteam.chisel.content.ChiselFamilies;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
 import io.github.chiselteam.chisel.registry.ChiselItems;
+import io.github.chiselteam.chisel.registry.ChiselTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
@@ -19,6 +20,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -30,7 +32,7 @@ public class ChiselRecipes extends RecipeProvider {
     }
 
     @Override
-    protected void buildRecipes(RecipeOutput output) {
+    protected void buildRecipes(@NotNull RecipeOutput output) {
         this.output=output;
         // MARK: Blocks
         smeltingResultFromBase(output, ChiselFamilies.C_CONCRETE.getVariant("concrete_raw").get(), Blocks.GRAVEL);
@@ -347,6 +349,12 @@ public class ChiselRecipes extends RecipeProvider {
                 .requires(Items.GLASS_BOTTLE)
                 .requires(Items.STONE_SHOVEL)
                 .unlockedBy("has_stone_pickaxe", has(Items.STONE_PICKAXE))
+                .save(output);
+
+        shapeless(RecipeCategory.MISC, ChiselItems.BUILDERS_HANDBOOK, 1)
+                .requires(ChiselTags.CHISEL)
+                .requires(Items.BOOK)
+                .unlockedBy("has_chisel", has(ChiselTags.CHISEL))
                 .save(output);
 
         shaped(RecipeCategory.TOOLS, ChiselItems.TROWEL, 1)

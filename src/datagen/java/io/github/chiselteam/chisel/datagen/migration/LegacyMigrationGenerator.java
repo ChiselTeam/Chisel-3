@@ -3,10 +3,13 @@ package io.github.chiselteam.chisel.datagen.migration;
 import com.google.gson.*;
 
 import javax.imageio.ImageIO;
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.nio.ByteBuffer;
-import java.nio.file.*;
-import java.security.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.*;
 import java.util.zip.ZipFile;
 
@@ -65,6 +68,8 @@ public final class LegacyMigrationGenerator {
         Map<String, String> sources = new LinkedHashMap<>();
         sources.put("modern", "chisel-1.21.1-NeoForge-1.4.1.jar");
         sources.put("reborn", "chisel-neoforge-2.0.1+mc1.21.1.jar");
+        Map<String, String> versions = Map.of("modern", "1.4.1", "reborn", "2.0.1");
+        List<String> unsupported = new ArrayList<>(List.of("source,version,block_id,display_name,family,reason,alias_result"));
         Path output = root.resolve("src/generated/resources/data/chisel/migration");
         Files.createDirectories(output);
         for (var source : sources.entrySet()) {
@@ -76,6 +81,7 @@ public final class LegacyMigrationGenerator {
                     if (entry == null) return null;
                     try (var stream = zip.getInputStream(entry)) { return stream.readAllBytes(); }
                 };
+                JsonObject language = json(assets, "assets/chisel/lang/en_us.json");
                 for (var entry : zip.stream().filter(e -> e.getName().matches("assets/[^/]+/blockstates/.+\\.json")).sorted(Comparator.comparing(e -> e.getName())).toList()) {
                     String[] parts = entry.getName().split("/", 4);
                     String path = parts[3].replace(".json", "");
@@ -90,6 +96,15 @@ public final class LegacyMigrationGenerator {
                     }
                     if (target == null) mappings.add(parts[1] + ":" + path, JsonNull.INSTANCE);
                     else mappings.addProperty(parts[1] + ":" + path, "chisel:" + target);
+                    // Existing canonical IDs (such as auto_chisel) need no registry alias.
+                    if (target == null && !(parts[1].equals("chisel") && targets.contains(path))) {
+                        String translation = "block." + parts[1] + "." + path.replace('/', '.');
+                        String displayName = language != null && language.has(translation) ? language.get(translation).getAsString() : translation;
+                        String[] segments = path.split("/");
+                        String family = source.getKey().equals("modern") ? segments[0] : segments[segments.length - 1];
+                        unsupported.add(csv(source.getKey(), versions.get(source.getKey()), parts[1] + ":" + path,
+                                displayName, family, "No confirmed mapping", "minecraft:air"));
+                    }
                 }
             }
             JsonObject profile = new JsonObject();
@@ -124,6 +139,11 @@ public final class LegacyMigrationGenerator {
             Files.writeString(output.resolve(source.getKey() + ".json"), GSON.toJson(profile) + "\n");
             System.out.printf("%s: %d/%d mapped%n", source.getKey(), mappings.asMap().values().stream().filter(v -> !v.isJsonNull()).count(), mappings.size());
         }
+        Files.write(root.resolve("unsupported-blocks.csv"), unsupported);
+    }
+
+    private static String csv(String... values) {
+        return String.join(",", Arrays.stream(values).map(value -> "\"" + value.replace("\"", "\"\"") + "\"").toList());
     }
 
     private static List<String> candidates(String profile, String path) {
@@ -135,11 +155,43 @@ public final class LegacyMigrationGenerator {
         if (profile.equals("reborn")) {
             family = family.replaceFirst("_block$", "");
             for (String color : COLORS) if (family.equals(color + "_concrete")) family = "concrete_" + color;
+            for (String color : COLORS) if (family.equals(color + "_wool")) family = "wool_" + color;
         }
+        if (family.startsWith("carpet_")) family = "wool_" + family.substring(7);
+        if (family.equals("coalcoke")) family = "coal_coke";
+        if (family.equals("fantasy2")) family = "fantasy_purple";
         if (family.startsWith("planks_")) family = family.substring(7) + "_planks";
         if (family.startsWith("glass_stained_")) family = "stained_glass_" + family.substring(14);
         if (family.startsWith("glassdyed_")) family = "stained_glass_" + family.substring(10);
         if (family.startsWith("glasspanedyed_")) family = "stained_glass_pane_" + family.substring(14);
+        // These families were renamed or reorganized; keep the rules local to avoid
+        // applying a similar-looking variant name to an unrelated material.
+        if ((family.equals("certus") || family.startsWith("concrete_")) && suffix.equals("tiles_medium")) suffix = "tiles";
+        if (family.startsWith("stained_glass_") && suffix.equals("transparent")) suffix = "borderless";
+        if (family.startsWith("stained_glass_pane_") && suffix.equals("quad_fancy")) suffix = "fancy";
+        if (family.equals("fantasy") || family.equals("fantasy_purple")) suffix = switch (suffix) {
+            case "brick_wear" -> "brick_worn";
+            case "bricks", "bricks_chaotic" -> "brick_chaotic";
+            case "bricks_wear" -> "brick_chaotic_worn";
+            case "decor", "decor_block" -> "pillar_3";
+            case "pillar_decorated" -> "pillar_2";
+            default -> suffix;
+        };
+        if (family.equals("grimstone")) suffix = switch (suffix) {
+            case "brick" -> "bricks";
+            case "fancy_tiles" -> "tiles";
+            case "large_bricks" -> "bricks_large";
+            case "plate_rough" -> "plate";
+            default -> suffix;
+        };
+        if (family.equals("gold")) suffix = switch (suffix) {
+            case "crate" -> "shipping";
+            case "space" -> "star_obsidian_purple";
+            case "spaceblack", "space_black" -> "star_obsidian";
+            case "star" -> "star_decor";
+            default -> suffix;
+        };
+        if (family.equals("glowstone") && suffix.equals("large_tile_bismuth")) suffix = "tiles_large_bismuth";
         if (family.equals("woolen_clay") && COLORS.contains(suffix)) return List.of("woolen_clay_" + COLORS.indexOf(suffix));
         if (family.startsWith("hexplating_") && suffix.equals("hexbase")) return List.of("hex_plating_" + COLORS.indexOf(family.substring(11)));
         if (family.equals("sandstone_scribbles")) family = "sandstone";
