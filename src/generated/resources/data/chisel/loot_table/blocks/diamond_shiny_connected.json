@@ -2,19 +2,16 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ],
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
       "entries": [
         {
           "type": "minecraft:item",
           "name": "chisel:diamond_shiny_connected"
         }
       ],
-      "rolls": 1.0
+      "rolls": 1
     }
   ],
   "random_sequence": "chisel:blocks/diamond_shiny_connected"
