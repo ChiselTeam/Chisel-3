@@ -260,7 +260,6 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.INFINIBURN_OVERWORLD, ChiselFamilies.NETHERRACK.getFamily());
         addToTag(BlockTags.INFINIBURN_NETHER, ChiselFamilies.NETHERRACK.getFamily());
         addToTag(BlockTags.INFINIBURN_END, ChiselFamilies.NETHERRACK.getFamily());
-        addToTag(BlockTags.DIRT, ChiselFamilies.DIRT.getFamily());
 
         // MARK: NEOFORGE TAGS
         addToTag(Tags.Blocks.COBBLESTONES, ChiselFamilies.COBBLESTONE.getFamily());
