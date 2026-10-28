@@ -3,14 +3,74 @@
   "tag": "c:chisel/waterstone",
   "variants": [
     {
+      "block": "chisel:waterstone_raw",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_raw"
+    },
+    {
       "block": "chisel:waterstone_array",
       "model_type": "multi_layer_water_2x2",
       "name": "waterstone_array"
     },
     {
+      "block": "chisel:waterstone_border_square",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_border_square"
+    },
+    {
+      "block": "chisel:waterstone_border_square_small",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_border_square_small"
+    },
+    {
       "block": "chisel:waterstone_braid",
       "model_type": "multi_layer_water",
       "name": "waterstone_braid"
+    },
+    {
+      "block": "chisel:waterstone_braid_encased",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_braid_encased"
+    },
+    {
+      "block": "chisel:waterstone_bricks_indent",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_bricks_indent"
+    },
+    {
+      "block": "chisel:waterstone_bricks_inlayed",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_bricks_inlayed"
+    },
+    {
+      "block": "chisel:waterstone_bricks_large",
+      "model_type": "multi_layer_water_2x2",
+      "name": "waterstone_bricks_large"
+    },
+    {
+      "block": "chisel:waterstone_bricks_large_rough",
+      "model_type": "multi_layer_water_2x2",
+      "name": "waterstone_bricks_large_rough"
+    },
+    {
+      "block": "chisel:waterstone_bricks_round",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_bricks_round"
+    },
+    {
+      "block": "chisel:waterstone_bricks_solid",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_bricks_solid"
+    },
+    {
+      "block": "chisel:waterstone_bricks_square",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_bricks_square"
+    },
+    {
+      "block": "chisel:waterstone_bricks_vertical",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_bricks_vertical"
     },
     {
       "block": "chisel:waterstone_chaotic_bricks",
@@ -28,9 +88,54 @@
       "name": "waterstone_chaotic_small"
     },
     {
+      "block": "chisel:waterstone_checker",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_checker"
+    },
+    {
+      "block": "chisel:waterstone_checker_small",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_checker_small"
+    },
+    {
+      "block": "chisel:waterstone_chisel_1",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_chisel_1"
+    },
+    {
+      "block": "chisel:waterstone_chisel_2",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_chisel_2"
+    },
+    {
+      "block": "chisel:waterstone_chisel_3",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_chisel_3"
+    },
+    {
+      "block": "chisel:waterstone_chisel_4",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_chisel_4"
+    },
+    {
+      "block": "chisel:waterstone_chisel_5",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_chisel_5"
+    },
+    {
+      "block": "chisel:waterstone_chisel_6",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_chisel_6"
+    },
+    {
       "block": "chisel:waterstone_circular",
       "model_type": "multi_layer_connected_tinted",
       "name": "waterstone_circular"
+    },
+    {
+      "block": "chisel:waterstone_cobble",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_cobble"
     },
     {
       "block": "chisel:waterstone_cracked",
@@ -43,6 +148,11 @@
       "name": "waterstone_cracked_bricks"
     },
     {
+      "block": "chisel:waterstone_crate",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_crate"
+    },
+    {
       "block": "chisel:waterstone_cuts",
       "model_type": "multi_layer_water_4x4",
       "name": "waterstone_cuts"
@@ -53,9 +163,39 @@
       "name": "waterstone_dent"
     },
     {
+      "block": "chisel:waterstone_dots",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_dots"
+    },
+    {
+      "block": "chisel:waterstone_dots_encased",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_dots_encased"
+    },
+    {
       "block": "chisel:waterstone_encased_bricks",
       "model_type": "multi_layer_connected_tinted",
       "name": "waterstone_encased_bricks"
+    },
+    {
+      "block": "chisel:waterstone_facet",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_facet"
+    },
+    {
+      "block": "chisel:waterstone_facet_small",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_facet_small"
+    },
+    {
+      "block": "chisel:waterstone_facet_small_encased",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_facet_small_encased"
+    },
+    {
+      "block": "chisel:waterstone_frame",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_frame"
     },
     {
       "block": "chisel:waterstone_french_1",
@@ -68,6 +208,61 @@
       "name": "waterstone_french_2"
     },
     {
+      "block": "chisel:waterstone_gem",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_gem"
+    },
+    {
+      "block": "chisel:waterstone_gem_1",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_gem_1"
+    },
+    {
+      "block": "chisel:waterstone_gem_1_connected",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_gem_1_connected"
+    },
+    {
+      "block": "chisel:waterstone_gem_2",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_gem_2"
+    },
+    {
+      "block": "chisel:waterstone_gem_2_connected",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_gem_2_connected"
+    },
+    {
+      "block": "chisel:waterstone_gem_3",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_gem_3"
+    },
+    {
+      "block": "chisel:waterstone_gem_3_connected",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_gem_3_connected"
+    },
+    {
+      "block": "chisel:waterstone_heart",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_heart"
+    },
+    {
+      "block": "chisel:waterstone_herringbone",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_herringbone"
+    },
+    {
+      "block": "chisel:waterstone_herringbone_encased",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_herringbone_encased"
+    },
+    {
+      "block": "chisel:waterstone_indent",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_indent"
+    },
+    {
       "block": "chisel:waterstone_jellybean",
       "model_type": "multi_layer_water_2x2",
       "name": "waterstone_jellybean"
@@ -76,6 +271,41 @@
       "block": "chisel:waterstone_layers",
       "model_type": "multi_layer_water",
       "name": "waterstone_layers"
+    },
+    {
+      "block": "chisel:waterstone_layers_connected",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_layers_connected"
+    },
+    {
+      "block": "chisel:waterstone_line_horizontal",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_line_horizontal"
+    },
+    {
+      "block": "chisel:waterstone_line_vertical",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_line_vertical"
+    },
+    {
+      "block": "chisel:waterstone_lodestone",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_lodestone"
+    },
+    {
+      "block": "chisel:waterstone_lodestone_connected",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_lodestone_connected"
+    },
+    {
+      "block": "chisel:waterstone_medallion",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_medallion"
+    },
+    {
+      "block": "chisel:waterstone_medallion_encased",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_medallion_encased"
     },
     {
       "block": "chisel:waterstone_mosaic",
@@ -93,9 +323,79 @@
       "name": "waterstone_panel"
     },
     {
+      "block": "chisel:waterstone_panel_1",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_panel_1"
+    },
+    {
+      "block": "chisel:waterstone_panel_2",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_panel_2"
+    },
+    {
+      "block": "chisel:waterstone_panel_3",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_panel_3"
+    },
+    {
+      "block": "chisel:waterstone_parquet",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_parquet"
+    },
+    {
+      "block": "chisel:waterstone_parquet_encased",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_parquet_encased"
+    },
+    {
       "block": "chisel:waterstone_pillar",
       "model_type": "multi_layer_tbs_tinted",
       "name": "waterstone_pillar"
+    },
+    {
+      "block": "chisel:waterstone_pillar_classic",
+      "model_type": "multi_layer_tbs_tinted",
+      "name": "waterstone_pillar_classic"
+    },
+    {
+      "block": "chisel:waterstone_pillar_classic_large",
+      "model_type": "multi_layer_tbs_tinted",
+      "name": "waterstone_pillar_classic_large"
+    },
+    {
+      "block": "chisel:waterstone_plank",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_plank"
+    },
+    {
+      "block": "chisel:waterstone_plank_connected",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_plank_connected"
+    },
+    {
+      "block": "chisel:waterstone_plate",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_plate"
+    },
+    {
+      "block": "chisel:waterstone_plate_connected",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_plate_connected"
+    },
+    {
+      "block": "chisel:waterstone_plating",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_plating"
+    },
+    {
+      "block": "chisel:waterstone_polished",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_polished"
+    },
+    {
+      "block": "chisel:waterstone_polished_encased",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_polished_encased"
     },
     {
       "block": "chisel:waterstone_prism",
@@ -103,14 +403,44 @@
       "name": "waterstone_prism"
     },
     {
-      "block": "chisel:waterstone_raw",
-      "model_type": "multi_layer_water",
-      "name": "waterstone_raw"
-    },
-    {
       "block": "chisel:waterstone_road",
       "model_type": "multi_layer_water",
       "name": "waterstone_road"
+    },
+    {
+      "block": "chisel:waterstone_scaffold",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_scaffold"
+    },
+    {
+      "block": "chisel:waterstone_scaffold_encased",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_scaffold_encased"
+    },
+    {
+      "block": "chisel:waterstone_shiny",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_shiny"
+    },
+    {
+      "block": "chisel:waterstone_shiny_connected",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_shiny_connected"
+    },
+    {
+      "block": "chisel:waterstone_skull_creeper",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_skull_creeper"
+    },
+    {
+      "block": "chisel:waterstone_skull_skeleton",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_skull_skeleton"
+    },
+    {
+      "block": "chisel:waterstone_slab",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_slab"
     },
     {
       "block": "chisel:waterstone_slanted",
@@ -128,6 +458,26 @@
       "name": "waterstone_soft_bricks"
     },
     {
+      "block": "chisel:waterstone_star",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_star"
+    },
+    {
+      "block": "chisel:waterstone_stripes",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_stripes"
+    },
+    {
+      "block": "chisel:waterstone_stripes_encased",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_stripes_encased"
+    },
+    {
+      "block": "chisel:waterstone_tiles_inlayed",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_tiles_inlayed"
+    },
+    {
       "block": "chisel:waterstone_tiles_large",
       "model_type": "multi_layer_connected_tinted",
       "name": "waterstone_tiles_large"
@@ -138,6 +488,16 @@
       "name": "waterstone_tiles_medium"
     },
     {
+      "block": "chisel:waterstone_tiles_small",
+      "model_type": "multi_layer_water",
+      "name": "waterstone_tiles_small"
+    },
+    {
+      "block": "chisel:waterstone_tiles_small_encased",
+      "model_type": "multi_layer_connected_tinted",
+      "name": "waterstone_tiles_small_encased"
+    },
+    {
       "block": "chisel:waterstone_triple_bricks",
       "model_type": "multi_layer_water",
       "name": "waterstone_triple_bricks"
@@ -146,6 +506,11 @@
       "block": "chisel:waterstone_twisted",
       "model_type": "multi_layer_tbs_tinted",
       "name": "waterstone_twisted"
+    },
+    {
+      "block": "chisel:waterstone_waves",
+      "model_type": "multi_layer_water_2x2",
+      "name": "waterstone_waves"
     },
     {
       "block": "chisel:waterstone_weaver",
