@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/waterstone_checker_small"
+    }
+  }
+}

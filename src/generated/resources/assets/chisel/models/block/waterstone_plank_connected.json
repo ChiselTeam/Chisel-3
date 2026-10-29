@@ -1,0 +1,15 @@
+{
+  "parent": "chisel:block/cube_multi_pass_tinted",
+  "textures": {
+    "all": "chisel:block/lavastone/lavastone_plank",
+    "base_texture": "minecraft:block/water_still",
+    "layer0": "minecraft:block/water_still",
+    "layer1": "chisel:block/lavastone/lavastone_plank",
+    "particle": "chisel:block/lavastone/lavastone_plank",
+    "standard_corner": "chisel:block/lavastone/lavastone_plank_connected-ctm_corner",
+    "standard_cornerless": "chisel:block/lavastone/lavastone_plank_connected-ctm_cornerless",
+    "standard_horizontal": "chisel:block/lavastone/lavastone_plank_connected-ctm_horizontal",
+    "standard_none": "chisel:block/lavastone/lavastone_plank",
+    "standard_vertical": "chisel:block/lavastone/lavastone_plank_connected-ctm_vertical"
+  }
+}

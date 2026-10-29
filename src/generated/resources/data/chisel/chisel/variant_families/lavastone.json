@@ -3,14 +3,74 @@
   "tag": "c:chisel/lavastone",
   "variants": [
     {
+      "block": "chisel:lavastone_raw",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_raw"
+    },
+    {
       "block": "chisel:lavastone_array",
       "model_type": "lava_2x2",
       "name": "lavastone_array"
     },
     {
+      "block": "chisel:lavastone_border_square",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_border_square"
+    },
+    {
+      "block": "chisel:lavastone_border_square_small",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_border_square_small"
+    },
+    {
       "block": "chisel:lavastone_braid",
       "model_type": "multi_layer_lava",
       "name": "lavastone_braid"
+    },
+    {
+      "block": "chisel:lavastone_braid_encased",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_braid_encased"
+    },
+    {
+      "block": "chisel:lavastone_bricks_indent",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_bricks_indent"
+    },
+    {
+      "block": "chisel:lavastone_bricks_inlayed",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_bricks_inlayed"
+    },
+    {
+      "block": "chisel:lavastone_bricks_large",
+      "model_type": "lava_2x2",
+      "name": "lavastone_bricks_large"
+    },
+    {
+      "block": "chisel:lavastone_bricks_large_rough",
+      "model_type": "lava_2x2",
+      "name": "lavastone_bricks_large_rough"
+    },
+    {
+      "block": "chisel:lavastone_bricks_round",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_bricks_round"
+    },
+    {
+      "block": "chisel:lavastone_bricks_solid",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_bricks_solid"
+    },
+    {
+      "block": "chisel:lavastone_bricks_square",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_bricks_square"
+    },
+    {
+      "block": "chisel:lavastone_bricks_vertical",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_bricks_vertical"
     },
     {
       "block": "chisel:lavastone_chaotic_bricks",
@@ -28,9 +88,54 @@
       "name": "lavastone_chaotic_small"
     },
     {
+      "block": "chisel:lavastone_checker",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_checker"
+    },
+    {
+      "block": "chisel:lavastone_checker_small",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_checker_small"
+    },
+    {
+      "block": "chisel:lavastone_chisel_1",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_chisel_1"
+    },
+    {
+      "block": "chisel:lavastone_chisel_2",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_chisel_2"
+    },
+    {
+      "block": "chisel:lavastone_chisel_3",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_chisel_3"
+    },
+    {
+      "block": "chisel:lavastone_chisel_4",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_chisel_4"
+    },
+    {
+      "block": "chisel:lavastone_chisel_5",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_chisel_5"
+    },
+    {
+      "block": "chisel:lavastone_chisel_6",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_chisel_6"
+    },
+    {
       "block": "chisel:lavastone_circular",
       "model_type": "multi_layer_connected_glow",
       "name": "lavastone_circular"
+    },
+    {
+      "block": "chisel:lavastone_cobble",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_cobble"
     },
     {
       "block": "chisel:lavastone_cracked",
@@ -43,6 +148,11 @@
       "name": "lavastone_cracked_bricks"
     },
     {
+      "block": "chisel:lavastone_crate",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_crate"
+    },
+    {
       "block": "chisel:lavastone_cuts",
       "model_type": "lava_4x4",
       "name": "lavastone_cuts"
@@ -53,9 +163,39 @@
       "name": "lavastone_dent"
     },
     {
+      "block": "chisel:lavastone_dots",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_dots"
+    },
+    {
+      "block": "chisel:lavastone_dots_encased",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_dots_encased"
+    },
+    {
       "block": "chisel:lavastone_encased_bricks",
       "model_type": "multi_layer_connected_glow",
       "name": "lavastone_encased_bricks"
+    },
+    {
+      "block": "chisel:lavastone_facet",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_facet"
+    },
+    {
+      "block": "chisel:lavastone_facet_small",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_facet_small"
+    },
+    {
+      "block": "chisel:lavastone_facet_small_encased",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_facet_small_encased"
+    },
+    {
+      "block": "chisel:lavastone_frame",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_frame"
     },
     {
       "block": "chisel:lavastone_french_1",
@@ -68,6 +208,61 @@
       "name": "lavastone_french_2"
     },
     {
+      "block": "chisel:lavastone_gem",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_gem"
+    },
+    {
+      "block": "chisel:lavastone_gem_1",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_gem_1"
+    },
+    {
+      "block": "chisel:lavastone_gem_1_connected",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_gem_1_connected"
+    },
+    {
+      "block": "chisel:lavastone_gem_2",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_gem_2"
+    },
+    {
+      "block": "chisel:lavastone_gem_2_connected",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_gem_2_connected"
+    },
+    {
+      "block": "chisel:lavastone_gem_3",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_gem_3"
+    },
+    {
+      "block": "chisel:lavastone_gem_3_connected",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_gem_3_connected"
+    },
+    {
+      "block": "chisel:lavastone_heart",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_heart"
+    },
+    {
+      "block": "chisel:lavastone_herringbone",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_herringbone"
+    },
+    {
+      "block": "chisel:lavastone_herringbone_encased",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_herringbone_encased"
+    },
+    {
+      "block": "chisel:lavastone_indent",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_indent"
+    },
+    {
       "block": "chisel:lavastone_jellybean",
       "model_type": "lava_2x2",
       "name": "lavastone_jellybean"
@@ -76,6 +271,41 @@
       "block": "chisel:lavastone_layers",
       "model_type": "multi_layer_lava",
       "name": "lavastone_layers"
+    },
+    {
+      "block": "chisel:lavastone_layers_connected",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_layers_connected"
+    },
+    {
+      "block": "chisel:lavastone_line_horizontal",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_line_horizontal"
+    },
+    {
+      "block": "chisel:lavastone_line_vertical",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_line_vertical"
+    },
+    {
+      "block": "chisel:lavastone_lodestone",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_lodestone"
+    },
+    {
+      "block": "chisel:lavastone_lodestone_connected",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_lodestone_connected"
+    },
+    {
+      "block": "chisel:lavastone_medallion",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_medallion"
+    },
+    {
+      "block": "chisel:lavastone_medallion_encased",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_medallion_encased"
     },
     {
       "block": "chisel:lavastone_mosaic",
@@ -93,9 +323,79 @@
       "name": "lavastone_panel"
     },
     {
+      "block": "chisel:lavastone_panel_1",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_panel_1"
+    },
+    {
+      "block": "chisel:lavastone_panel_2",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_panel_2"
+    },
+    {
+      "block": "chisel:lavastone_panel_3",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_panel_3"
+    },
+    {
+      "block": "chisel:lavastone_parquet",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_parquet"
+    },
+    {
+      "block": "chisel:lavastone_parquet_encased",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_parquet_encased"
+    },
+    {
       "block": "chisel:lavastone_pillar",
       "model_type": "multi_layer_lava_top_bottom_side",
       "name": "lavastone_pillar"
+    },
+    {
+      "block": "chisel:lavastone_pillar_classic",
+      "model_type": "multi_layer_lava_top_bottom_side",
+      "name": "lavastone_pillar_classic"
+    },
+    {
+      "block": "chisel:lavastone_pillar_classic_large",
+      "model_type": "multi_layer_lava_top_bottom_side",
+      "name": "lavastone_pillar_classic_large"
+    },
+    {
+      "block": "chisel:lavastone_plank",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_plank"
+    },
+    {
+      "block": "chisel:lavastone_plank_connected",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_plank_connected"
+    },
+    {
+      "block": "chisel:lavastone_plate",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_plate"
+    },
+    {
+      "block": "chisel:lavastone_plate_connected",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_plate_connected"
+    },
+    {
+      "block": "chisel:lavastone_plating",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_plating"
+    },
+    {
+      "block": "chisel:lavastone_polished",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_polished"
+    },
+    {
+      "block": "chisel:lavastone_polished_encased",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_polished_encased"
     },
     {
       "block": "chisel:lavastone_prism",
@@ -103,14 +403,44 @@
       "name": "lavastone_prism"
     },
     {
-      "block": "chisel:lavastone_raw",
-      "model_type": "multi_layer_lava",
-      "name": "lavastone_raw"
-    },
-    {
       "block": "chisel:lavastone_road",
       "model_type": "multi_layer_lava",
       "name": "lavastone_road"
+    },
+    {
+      "block": "chisel:lavastone_scaffold",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_scaffold"
+    },
+    {
+      "block": "chisel:lavastone_scaffold_encased",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_scaffold_encased"
+    },
+    {
+      "block": "chisel:lavastone_shiny",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_shiny"
+    },
+    {
+      "block": "chisel:lavastone_shiny_connected",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_shiny_connected"
+    },
+    {
+      "block": "chisel:lavastone_skull_creeper",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_skull_creeper"
+    },
+    {
+      "block": "chisel:lavastone_skull_skeleton",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_skull_skeleton"
+    },
+    {
+      "block": "chisel:lavastone_slab",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_slab"
     },
     {
       "block": "chisel:lavastone_slanted",
@@ -128,6 +458,26 @@
       "name": "lavastone_soft_bricks"
     },
     {
+      "block": "chisel:lavastone_star",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_star"
+    },
+    {
+      "block": "chisel:lavastone_stripes",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_stripes"
+    },
+    {
+      "block": "chisel:lavastone_stripes_encased",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_stripes_encased"
+    },
+    {
+      "block": "chisel:lavastone_tiles_inlayed",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_tiles_inlayed"
+    },
+    {
       "block": "chisel:lavastone_tiles_large",
       "model_type": "multi_layer_connected_glow",
       "name": "lavastone_tiles_large"
@@ -138,6 +488,16 @@
       "name": "lavastone_tiles_medium"
     },
     {
+      "block": "chisel:lavastone_tiles_small",
+      "model_type": "multi_layer_lava",
+      "name": "lavastone_tiles_small"
+    },
+    {
+      "block": "chisel:lavastone_tiles_small_encased",
+      "model_type": "multi_layer_connected_glow",
+      "name": "lavastone_tiles_small_encased"
+    },
+    {
       "block": "chisel:lavastone_triple_bricks",
       "model_type": "multi_layer_lava",
       "name": "lavastone_triple_bricks"
@@ -146,6 +506,11 @@
       "block": "chisel:lavastone_twisted",
       "model_type": "multi_layer_lava_top_bottom_side",
       "name": "lavastone_twisted"
+    },
+    {
+      "block": "chisel:lavastone_waves",
+      "model_type": "lava_2x2",
+      "name": "lavastone_waves"
     },
     {
       "block": "chisel:lavastone_weaver",

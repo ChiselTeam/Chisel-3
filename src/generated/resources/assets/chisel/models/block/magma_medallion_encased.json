@@ -1,0 +1,15 @@
+{
+  "parent": "chisel:block/cube_multi_pass",
+  "textures": {
+    "all": "chisel:block/magma/magma_medallion_encased",
+    "base_texture": "minecraft:block/lava_still",
+    "layer0": "minecraft:block/lava_still",
+    "layer1": "chisel:block/magma/magma_medallion_encased",
+    "particle": "chisel:block/magma/magma_medallion_encased",
+    "standard_corner": "chisel:block/magma/magma_medallion_encased-ctm_corner",
+    "standard_cornerless": "chisel:block/magma/magma_medallion",
+    "standard_horizontal": "chisel:block/magma/magma_medallion_encased-ctm_horizontal",
+    "standard_none": "chisel:block/magma/magma_medallion_encased",
+    "standard_vertical": "chisel:block/magma/magma_medallion_encased-ctm_vertical"
+  }
+}
