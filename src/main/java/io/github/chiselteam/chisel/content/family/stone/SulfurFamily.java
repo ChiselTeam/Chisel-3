@@ -1,15 +1,18 @@
-package io.github.chiselteam.chisel.content.compat.moddedmetal;
+package io.github.chiselteam.chisel.content.family.stone;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
 import io.github.chiselteam.chisel.content.ChiselFamily;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 
 public final class SulfurFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("sulfur", builder -> builder
-            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).mapColor(MapColor.COLOR_YELLOW)).blockName("Sulfur"))
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.SULFUR)).blockName("Sulfur"))
+            .existingBlock(Blocks.SULFUR)
+            .existingBlock(Blocks.POLISHED_SULFUR)
+            .existingBlock(Blocks.SULFUR_BRICKS)
+            .existingBlock(Blocks.CHISELED_SULFUR)
             .variant("sulfur_array", v -> v.description("Array").model(ChiselModelHandlers.MULTIBLOCK_2X2)
                     .texture("2x2_bottom_left", Chisel.prefix("block/sulfur/sulfur_array")))
             .variant("sulfur_border_square", v -> v.description("Square Border").model(ChiselModelHandlers.CONNECTED)

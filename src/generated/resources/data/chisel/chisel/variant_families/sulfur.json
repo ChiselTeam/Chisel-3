@@ -3,6 +3,22 @@
   "tag": "c:chisel/sulfur",
   "variants": [
     {
+      "block": "minecraft:sulfur",
+      "name": "block.minecraft.sulfur"
+    },
+    {
+      "block": "minecraft:polished_sulfur",
+      "name": "block.minecraft.polished_sulfur"
+    },
+    {
+      "block": "minecraft:sulfur_bricks",
+      "name": "block.minecraft.sulfur_bricks"
+    },
+    {
+      "block": "minecraft:chiseled_sulfur",
+      "name": "block.minecraft.chiseled_sulfur"
+    },
+    {
       "block": "chisel:sulfur_array",
       "model_type": "multiblock_2x2",
       "name": "sulfur_array"

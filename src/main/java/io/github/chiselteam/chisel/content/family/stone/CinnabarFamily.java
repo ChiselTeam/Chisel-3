@@ -1,15 +1,18 @@
-package io.github.chiselteam.chisel.content.compat.moddedmetal;
+package io.github.chiselteam.chisel.content.family.stone;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
 import io.github.chiselteam.chisel.content.ChiselFamily;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 
 public final class CinnabarFamily {
     public static final ChiselFamily FAMILY = ChiselFamily.build("cinnabar", builder -> builder
-            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).mapColor(MapColor.COLOR_RED)).blockName("Cinnabar"))
+            .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.CINNABAR)).blockName("Cinnabar"))
+            .existingBlock(Blocks.CINNABAR)
+            .existingBlock(Blocks.POLISHED_CINNABAR)
+            .existingBlock(Blocks.CINNABAR_BRICKS)
+            .existingBlock(Blocks.CHISELED_CINNABAR)
             .variant("cinnabar_array", v -> v.description("Array").model(ChiselModelHandlers.MULTIBLOCK_2X2)
                     .texture("2x2_bottom_left", Chisel.prefix("block/cinnabar/cinnabar_array")))
             .variant("cinnabar_border_square", v -> v.description("Square Border").model(ChiselModelHandlers.CONNECTED)

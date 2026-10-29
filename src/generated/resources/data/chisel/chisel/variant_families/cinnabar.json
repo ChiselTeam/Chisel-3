@@ -3,6 +3,22 @@
   "tag": "c:chisel/cinnabar",
   "variants": [
     {
+      "block": "minecraft:cinnabar",
+      "name": "block.minecraft.cinnabar"
+    },
+    {
+      "block": "minecraft:polished_cinnabar",
+      "name": "block.minecraft.polished_cinnabar"
+    },
+    {
+      "block": "minecraft:cinnabar_bricks",
+      "name": "block.minecraft.cinnabar_bricks"
+    },
+    {
+      "block": "minecraft:chiseled_cinnabar",
+      "name": "block.minecraft.chiseled_cinnabar"
+    },
+    {
       "block": "chisel:cinnabar_array",
       "model_type": "multiblock_2x2",
       "name": "cinnabar_array"

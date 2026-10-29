@@ -357,8 +357,6 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.ALUMINUM.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.BRONZE.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.COBALT.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.SULFUR.getFamily());
-        addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.CINNABAR.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.ELECTRUM.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.INVAR.getFamily());
         addToTag(Tags.Blocks.STORAGE_BLOCKS, ChiselFamilies.LEAD.getFamily());
