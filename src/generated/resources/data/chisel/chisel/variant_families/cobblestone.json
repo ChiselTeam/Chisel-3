@@ -147,6 +147,11 @@
       "name": "cobblestone_dots_encased"
     },
     {
+      "block": "chisel:cobblestone_emboss",
+      "model_type": "connected",
+      "name": "cobblestone_emboss"
+    },
+    {
       "block": "chisel:cobblestone_facet",
       "name": "cobblestone_facet"
     },
@@ -254,6 +259,10 @@
       "block": "chisel:cobblestone_lodestone_connected",
       "model_type": "connected",
       "name": "cobblestone_lodestone_connected"
+    },
+    {
+      "block": "chisel:cobblestone_marker",
+      "name": "cobblestone_marker"
     },
     {
       "block": "chisel:cobblestone_meander_horizontal",
@@ -557,15 +566,6 @@
       "block": "chisel:cobblestone_zag",
       "model_type": "v4",
       "name": "cobblestone_zag"
-    },
-    {
-      "block": "chisel:cobblestone_emboss",
-      "model_type": "connected",
-      "name": "cobblestone_emboss"
-    },
-    {
-      "block": "chisel:cobblestone_marker",
-      "name": "cobblestone_marker"
     }
   ]
 }

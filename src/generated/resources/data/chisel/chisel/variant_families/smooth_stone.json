@@ -21,6 +21,11 @@
       "name": "smooth_stone_border_square"
     },
     {
+      "block": "chisel:smooth_stone_border_square_small",
+      "model_type": "connected",
+      "name": "smooth_stone_border_square_small"
+    },
+    {
       "block": "chisel:smooth_stone_braid",
       "name": "smooth_stone_braid"
     },
@@ -45,6 +50,15 @@
       "block": "chisel:smooth_stone_bricks_large",
       "model_type": "multiblock_2x2",
       "name": "smooth_stone_bricks_large"
+    },
+    {
+      "block": "chisel:smooth_stone_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "smooth_stone_bricks_large_rough"
+    },
+    {
+      "block": "chisel:smooth_stone_bricks_round",
+      "name": "smooth_stone_bricks_round"
     },
     {
       "block": "chisel:smooth_stone_bricks_small",
@@ -518,6 +532,11 @@
     {
       "block": "chisel:smooth_stone_tiles_small",
       "name": "smooth_stone_tiles_small"
+    },
+    {
+      "block": "chisel:smooth_stone_tiles_small_encased",
+      "model_type": "connected",
+      "name": "smooth_stone_tiles_small_encased"
     },
     {
       "block": "chisel:smooth_stone_twisted",

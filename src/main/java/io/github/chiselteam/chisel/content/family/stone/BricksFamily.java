@@ -265,6 +265,7 @@ public final class BricksFamily {
             .variant("bricks_slanted", v -> v.description("Slanted").model(ChiselModelHandlers.MULTIBLOCK_2X2)
                     .textureFromBase("2x2_top_left"))
             .variant("bricks_small", v -> v.description("Small Tiles"))
+            .variant("bricks_soft", v -> v.description("Soft Bricks"))
             .variant("bricks_solid", v -> v.description("Solid"))
             .variant("bricks_encased", v -> v.description("Encased").model(ChiselModelHandlers.CONNECTED))
             .variant("bricks_star", v -> v.description("Star").model(ChiselModelHandlers.CUBE_ALL))
@@ -286,7 +287,7 @@ public final class BricksFamily {
             .variant("bricks_zag", v -> v.description("Zag").model(ChiselModelHandlers.AR)
                     .textureFromBase("ar_variant_1"))
             // .variant("bricks_array_2", v -> v.description("Array").model(ChiselModelHandlers.MULTIBLOCK_2X2))
-            .variant("bricks_soft", v -> v.description("Yellow Bricks")));
+);
 
     private BricksFamily() {
     }

@@ -309,10 +309,6 @@
       "name": "obsidian_ornate_small"
     },
     {
-      "block": "chisel:obsidian_panel",
-      "name": "obsidian_panel"
-    },
-    {
       "block": "chisel:obsidian_panel_1",
       "name": "obsidian_panel_1"
     },
@@ -332,11 +328,6 @@
       "block": "chisel:obsidian_parquet_encased",
       "model_type": "connected",
       "name": "obsidian_parquet_encased"
-    },
-    {
-      "block": "chisel:obsidian_pillar",
-      "model_type": "top_bottom_side",
-      "name": "obsidian_pillar"
     },
     {
       "block": "chisel:obsidian_pillar_basic",
@@ -593,6 +584,10 @@
       "name": "obsidian_organic_growth"
     },
     {
+      "block": "chisel:obsidian_panel",
+      "name": "obsidian_panel"
+    },
+    {
       "block": "chisel:obsidian_panel_bright",
       "name": "obsidian_panel_bright"
     },
@@ -607,6 +602,11 @@
     {
       "block": "chisel:obsidian_panel_shiny",
       "name": "obsidian_panel_shiny"
+    },
+    {
+      "block": "chisel:obsidian_pillar",
+      "model_type": "top_bottom_side",
+      "name": "obsidian_pillar"
     },
     {
       "block": "chisel:obsidian_pillar_quartz",

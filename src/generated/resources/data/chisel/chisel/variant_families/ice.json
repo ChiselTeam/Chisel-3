@@ -21,6 +21,11 @@
       "name": "ice_border_square"
     },
     {
+      "block": "chisel:ice_border_square_small",
+      "model_type": "ice",
+      "name": "ice_border_square_small"
+    },
+    {
       "block": "chisel:ice_braid",
       "name": "ice_braid"
     },

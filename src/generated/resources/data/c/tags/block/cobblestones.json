@@ -32,6 +32,7 @@
     "chisel:cobblestone_dent",
     "chisel:cobblestone_dots",
     "chisel:cobblestone_dots_encased",
+    "chisel:cobblestone_emboss",
     "chisel:cobblestone_facet",
     "chisel:cobblestone_facet_small",
     "chisel:cobblestone_facet_small_encased",
@@ -57,6 +58,7 @@
     "chisel:cobblestone_line_vertical",
     "chisel:cobblestone_lodestone",
     "chisel:cobblestone_lodestone_connected",
+    "chisel:cobblestone_marker",
     "chisel:cobblestone_meander_horizontal",
     "chisel:cobblestone_meander_vertical",
     "chisel:cobblestone_medallion",
@@ -122,8 +124,6 @@
     "chisel:cobblestone_twisted",
     "chisel:cobblestone_waves",
     "chisel:cobblestone_weaver",
-    "chisel:cobblestone_zag",
-    "chisel:cobblestone_emboss",
-    "chisel:cobblestone_marker"
+    "chisel:cobblestone_zag"
   ]
 }

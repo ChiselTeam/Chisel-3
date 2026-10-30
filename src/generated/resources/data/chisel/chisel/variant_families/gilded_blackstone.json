@@ -21,6 +21,11 @@
       "name": "gilded_blackstone_border_square"
     },
     {
+      "block": "chisel:gilded_blackstone_border_square_small",
+      "model_type": "connected",
+      "name": "gilded_blackstone_border_square_small"
+    },
+    {
       "block": "chisel:gilded_blackstone_braid",
       "name": "gilded_blackstone_braid"
     },
@@ -45,6 +50,15 @@
       "block": "chisel:gilded_blackstone_bricks_large",
       "model_type": "multiblock_2x2",
       "name": "gilded_blackstone_bricks_large"
+    },
+    {
+      "block": "chisel:gilded_blackstone_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "gilded_blackstone_bricks_large_rough"
+    },
+    {
+      "block": "chisel:gilded_blackstone_bricks_round",
+      "name": "gilded_blackstone_bricks_round"
     },
     {
       "block": "chisel:gilded_blackstone_bricks_small",
@@ -514,6 +528,11 @@
     {
       "block": "chisel:gilded_blackstone_tiles_small",
       "name": "gilded_blackstone_tiles_small"
+    },
+    {
+      "block": "chisel:gilded_blackstone_tiles_small_encased",
+      "model_type": "connected",
+      "name": "gilded_blackstone_tiles_small_encased"
     },
     {
       "block": "chisel:gilded_blackstone_twisted",

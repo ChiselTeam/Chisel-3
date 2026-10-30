@@ -487,6 +487,10 @@
       "name": "bricks_small"
     },
     {
+      "block": "chisel:bricks_soft",
+      "name": "bricks_soft"
+    },
+    {
       "block": "chisel:bricks_solid",
       "name": "bricks_solid"
     },
@@ -553,10 +557,6 @@
       "block": "chisel:bricks_zag",
       "model_type": "ar",
       "name": "bricks_zag"
-    },
-    {
-      "block": "chisel:bricks_soft",
-      "name": "bricks_soft"
     }
   ]
 }

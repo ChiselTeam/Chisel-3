@@ -28,6 +28,11 @@
       "name": "quartz_array"
     },
     {
+      "block": "chisel:quartz_border_square_small",
+      "model_type": "connected",
+      "name": "quartz_border_square_small"
+    },
+    {
       "block": "chisel:quartz_braid",
       "name": "quartz_braid"
     },
@@ -48,6 +53,15 @@
       "block": "chisel:quartz_bricks_large",
       "model_type": "multiblock_2x2",
       "name": "quartz_bricks_large"
+    },
+    {
+      "block": "chisel:quartz_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "quartz_bricks_large_rough"
+    },
+    {
+      "block": "chisel:quartz_bricks_round",
+      "name": "quartz_bricks_round"
     },
     {
       "block": "chisel:quartz_bricks_square",
@@ -522,6 +536,11 @@
     {
       "block": "chisel:quartz_tiles_small",
       "name": "quartz_tiles_small"
+    },
+    {
+      "block": "chisel:quartz_tiles_small_encased",
+      "model_type": "connected",
+      "name": "quartz_tiles_small_encased"
     },
     {
       "block": "chisel:quartz_triple_bricks",
