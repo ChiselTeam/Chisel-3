@@ -1,0 +1,14 @@
+{
+  "neoforge:definition_type": "ctm:connected_texture_model",
+  "base_tint_index": 0,
+  "connected_faces": [
+    "all"
+  ],
+  "model_location": "chisel:block/waterstone_bricks_large",
+  "render_overlay_on_all_faces": true,
+  "variant": {
+    "block": "chisel:waterstone_bricks_large",
+    "kind": "multiblock_2x2",
+    "water_offset": true
+  }
+}

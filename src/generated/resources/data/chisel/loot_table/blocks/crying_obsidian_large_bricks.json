@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "chisel:crying_obsidian_large_bricks"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "chisel:blocks/crying_obsidian_large_bricks"
+}

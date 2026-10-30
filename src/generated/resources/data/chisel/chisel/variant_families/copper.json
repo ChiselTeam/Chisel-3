@@ -7,37 +7,8 @@
       "name": "block.minecraft.copper_block"
     },
     {
-      "block": "chisel:copper_bad_greggy",
-      "model_type": "connected",
-      "name": "copper_bad_greggy"
-    },
-    {
-      "block": "chisel:copper_bolted",
-      "name": "copper_bolted"
-    },
-    {
-      "block": "chisel:copper_caution",
-      "model_type": "connected",
-      "name": "copper_caution"
-    },
-    {
-      "block": "chisel:copper_crate",
-      "model_type": "connected",
-      "name": "copper_crate"
-    },
-    {
-      "block": "chisel:copper_machine",
-      "name": "copper_machine"
-    },
-    {
-      "block": "chisel:copper_scaffold",
-      "model_type": "connected",
-      "name": "copper_scaffold"
-    },
-    {
-      "block": "chisel:copper_thermal",
-      "model_type": "top_bottom_side",
-      "name": "copper_thermal"
+      "block": "chisel:copper_raw",
+      "name": "copper_raw"
     },
     {
       "block": "chisel:copper_array",
@@ -68,11 +39,6 @@
       "name": "copper_bricks_cracked"
     },
     {
-      "block": "chisel:copper_bricks_encased",
-      "model_type": "connected",
-      "name": "copper_bricks_encased"
-    },
-    {
       "block": "chisel:copper_bricks_indent",
       "name": "copper_bricks_indent"
     },
@@ -86,8 +52,13 @@
       "name": "copper_bricks_large"
     },
     {
-      "block": "chisel:copper_large_bricks",
-      "name": "copper_large_bricks"
+      "block": "chisel:copper_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "copper_bricks_large_rough"
+    },
+    {
+      "block": "chisel:copper_bricks_round",
+      "name": "copper_bricks_round"
     },
     {
       "block": "chisel:copper_bricks_small",
@@ -100,6 +71,15 @@
     {
       "block": "chisel:copper_bricks_solid",
       "name": "copper_bricks_solid"
+    },
+    {
+      "block": "chisel:copper_bricks_encased",
+      "model_type": "connected",
+      "name": "copper_bricks_encased"
+    },
+    {
+      "block": "chisel:copper_bricks_square",
+      "name": "copper_bricks_square"
     },
     {
       "block": "chisel:copper_bricks_triple",
@@ -131,17 +111,46 @@
       "name": "copper_checker_small"
     },
     {
+      "block": "chisel:copper_chisel_1",
+      "name": "copper_chisel_1"
+    },
+    {
+      "block": "chisel:copper_chisel_2",
+      "name": "copper_chisel_2"
+    },
+    {
+      "block": "chisel:copper_chisel_3",
+      "name": "copper_chisel_3"
+    },
+    {
+      "block": "chisel:copper_chisel_4",
+      "name": "copper_chisel_4"
+    },
+    {
+      "block": "chisel:copper_chisel_5",
+      "name": "copper_chisel_5"
+    },
+    {
+      "block": "chisel:copper_chisel_6",
+      "name": "copper_chisel_6"
+    },
+    {
       "block": "chisel:copper_circular",
       "model_type": "connected",
       "name": "copper_circular"
+    },
+    {
+      "block": "chisel:copper_cobble",
+      "name": "copper_cobble"
     },
     {
       "block": "chisel:copper_cracked",
       "name": "copper_cracked"
     },
     {
-      "block": "chisel:copper_cobble",
-      "name": "copper_cobble"
+      "block": "chisel:copper_crate_2",
+      "model_type": "connected",
+      "name": "copper_crate_2"
     },
     {
       "block": "chisel:copper_cuts",
@@ -154,12 +163,82 @@
       "name": "copper_dent"
     },
     {
+      "block": "chisel:copper_dots",
+      "name": "copper_dots"
+    },
+    {
+      "block": "chisel:copper_dots_encased",
+      "model_type": "connected",
+      "name": "copper_dots_encased"
+    },
+    {
+      "block": "chisel:copper_facet",
+      "name": "copper_facet"
+    },
+    {
+      "block": "chisel:copper_facet_small",
+      "name": "copper_facet_small"
+    },
+    {
+      "block": "chisel:copper_facet_small_encased",
+      "model_type": "connected",
+      "name": "copper_facet_small_encased"
+    },
+    {
+      "block": "chisel:copper_frame",
+      "name": "copper_frame"
+    },
+    {
       "block": "chisel:copper_french_1",
       "name": "copper_french_1"
     },
     {
       "block": "chisel:copper_french_2",
       "name": "copper_french_2"
+    },
+    {
+      "block": "chisel:copper_gem",
+      "name": "copper_gem"
+    },
+    {
+      "block": "chisel:copper_gem_1",
+      "name": "copper_gem_1"
+    },
+    {
+      "block": "chisel:copper_gem_1_connected",
+      "model_type": "connected",
+      "name": "copper_gem_1_connected"
+    },
+    {
+      "block": "chisel:copper_gem_2",
+      "name": "copper_gem_2"
+    },
+    {
+      "block": "chisel:copper_gem_2_connected",
+      "model_type": "connected",
+      "name": "copper_gem_2_connected"
+    },
+    {
+      "block": "chisel:copper_gem_3",
+      "name": "copper_gem_3"
+    },
+    {
+      "block": "chisel:copper_gem_3_connected",
+      "model_type": "connected",
+      "name": "copper_gem_3_connected"
+    },
+    {
+      "block": "chisel:copper_heart",
+      "name": "copper_heart"
+    },
+    {
+      "block": "chisel:copper_herringbone",
+      "name": "copper_herringbone"
+    },
+    {
+      "block": "chisel:copper_herringbone_encased",
+      "model_type": "connected",
+      "name": "copper_herringbone_encased"
     },
     {
       "block": "chisel:copper_indent",
@@ -170,6 +249,10 @@
       "block": "chisel:copper_jellybean",
       "model_type": "multiblock_2x2",
       "name": "copper_jellybean"
+    },
+    {
+      "block": "chisel:copper_large_bricks",
+      "name": "copper_large_bricks"
     },
     {
       "block": "chisel:copper_layers",
@@ -189,6 +272,15 @@
       "name": "copper_line_vertical"
     },
     {
+      "block": "chisel:copper_lodestone",
+      "name": "copper_lodestone"
+    },
+    {
+      "block": "chisel:copper_lodestone_connected",
+      "model_type": "connected",
+      "name": "copper_lodestone_connected"
+    },
+    {
       "block": "chisel:copper_meander_horizontal",
       "model_type": "ctmh",
       "name": "copper_meander_horizontal"
@@ -197,6 +289,15 @@
       "block": "chisel:copper_meander_vertical",
       "model_type": "ctmv",
       "name": "copper_meander_vertical"
+    },
+    {
+      "block": "chisel:copper_medallion",
+      "name": "copper_medallion"
+    },
+    {
+      "block": "chisel:copper_medallion_encased",
+      "model_type": "connected",
+      "name": "copper_medallion_encased"
     },
     {
       "block": "chisel:copper_mosaic",
@@ -210,6 +311,27 @@
     {
       "block": "chisel:copper_panel",
       "name": "copper_panel"
+    },
+    {
+      "block": "chisel:copper_panel_1",
+      "name": "copper_panel_1"
+    },
+    {
+      "block": "chisel:copper_panel_2",
+      "name": "copper_panel_2"
+    },
+    {
+      "block": "chisel:copper_panel_3",
+      "name": "copper_panel_3"
+    },
+    {
+      "block": "chisel:copper_parquet",
+      "name": "copper_parquet"
+    },
+    {
+      "block": "chisel:copper_parquet_encased",
+      "model_type": "connected",
+      "name": "copper_parquet_encased"
     },
     {
       "block": "chisel:copper_pillar",
@@ -312,6 +434,15 @@
       "name": "copper_pillar_meander_spiral"
     },
     {
+      "block": "chisel:copper_plank",
+      "name": "copper_plank"
+    },
+    {
+      "block": "chisel:copper_plank_connected",
+      "model_type": "connected",
+      "name": "copper_plank_connected"
+    },
+    {
       "block": "chisel:copper_plate",
       "name": "copper_plate"
     },
@@ -319,6 +450,10 @@
       "block": "chisel:copper_plate_connected",
       "model_type": "connected",
       "name": "copper_plate_connected"
+    },
+    {
+      "block": "chisel:copper_plating",
+      "name": "copper_plating"
     },
     {
       "block": "chisel:copper_polished",
@@ -334,12 +469,38 @@
       "name": "copper_prism"
     },
     {
-      "block": "chisel:copper_raw",
-      "name": "copper_raw"
-    },
-    {
       "block": "chisel:copper_road",
       "name": "copper_road"
+    },
+    {
+      "block": "chisel:copper_scaffold_2",
+      "name": "copper_scaffold_2"
+    },
+    {
+      "block": "chisel:copper_scaffold_encased_2",
+      "model_type": "connected",
+      "name": "copper_scaffold_encased_2"
+    },
+    {
+      "block": "chisel:copper_shiny",
+      "name": "copper_shiny"
+    },
+    {
+      "block": "chisel:copper_shiny_connected",
+      "model_type": "connected",
+      "name": "copper_shiny_connected"
+    },
+    {
+      "block": "chisel:copper_skull_creeper",
+      "name": "copper_skull_creeper"
+    },
+    {
+      "block": "chisel:copper_skull_skeleton",
+      "name": "copper_skull_skeleton"
+    },
+    {
+      "block": "chisel:copper_slab",
+      "name": "copper_slab"
     },
     {
       "block": "chisel:copper_slanted",
@@ -347,8 +508,25 @@
       "name": "copper_slanted"
     },
     {
+      "block": "chisel:copper_star",
+      "name": "copper_star"
+    },
+    {
+      "block": "chisel:copper_stripes",
+      "name": "copper_stripes"
+    },
+    {
+      "block": "chisel:copper_stripes_encased",
+      "model_type": "connected",
+      "name": "copper_stripes_encased"
+    },
+    {
       "block": "chisel:copper_tiles",
       "name": "copper_tiles"
+    },
+    {
+      "block": "chisel:copper_tiles_inlayed",
+      "name": "copper_tiles_inlayed"
     },
     {
       "block": "chisel:copper_tiles_large",
@@ -360,9 +538,19 @@
       "name": "copper_tiles_small"
     },
     {
+      "block": "chisel:copper_tiles_small_encased",
+      "model_type": "connected",
+      "name": "copper_tiles_small_encased"
+    },
+    {
       "block": "chisel:copper_twisted",
       "model_type": "top_bottom_side",
       "name": "copper_twisted"
+    },
+    {
+      "block": "chisel:copper_waves",
+      "model_type": "multiblock_2x2",
+      "name": "copper_waves"
     },
     {
       "block": "chisel:copper_weaver",
@@ -375,225 +563,37 @@
       "name": "copper_zag"
     },
     {
-      "block": "chisel:copper_crate_2",
+      "block": "chisel:copper_bad_greggy",
       "model_type": "connected",
-      "name": "copper_crate_2"
+      "name": "copper_bad_greggy"
     },
     {
-      "block": "chisel:copper_herringbone",
-      "name": "copper_herringbone"
+      "block": "chisel:copper_bolted",
+      "name": "copper_bolted"
     },
     {
-      "block": "chisel:copper_herringbone_encased",
+      "block": "chisel:copper_caution",
       "model_type": "connected",
-      "name": "copper_herringbone_encased"
+      "name": "copper_caution"
     },
     {
-      "block": "chisel:copper_medallion",
-      "name": "copper_medallion"
-    },
-    {
-      "block": "chisel:copper_medallion_encased",
+      "block": "chisel:copper_crate",
       "model_type": "connected",
-      "name": "copper_medallion_encased"
+      "name": "copper_crate"
     },
     {
-      "block": "chisel:copper_dots",
-      "name": "copper_dots"
+      "block": "chisel:copper_machine",
+      "name": "copper_machine"
     },
     {
-      "block": "chisel:copper_dots_encased",
+      "block": "chisel:copper_scaffold",
       "model_type": "connected",
-      "name": "copper_dots_encased"
+      "name": "copper_scaffold"
     },
     {
-      "block": "chisel:copper_heart",
-      "name": "copper_heart"
-    },
-    {
-      "block": "chisel:copper_star",
-      "name": "copper_star"
-    },
-    {
-      "block": "chisel:copper_plating",
-      "name": "copper_plating"
-    },
-    {
-      "block": "chisel:copper_lodestone",
-      "name": "copper_lodestone"
-    },
-    {
-      "block": "chisel:copper_lodestone_connected",
-      "model_type": "connected",
-      "name": "copper_lodestone_connected"
-    },
-    {
-      "block": "chisel:copper_plank",
-      "name": "copper_plank"
-    },
-    {
-      "block": "chisel:copper_plank_connected",
-      "model_type": "connected",
-      "name": "copper_plank_connected"
-    },
-    {
-      "block": "chisel:copper_frame",
-      "name": "copper_frame"
-    },
-    {
-      "block": "chisel:copper_panel_1",
-      "name": "copper_panel_1"
-    },
-    {
-      "block": "chisel:copper_panel_2",
-      "name": "copper_panel_2"
-    },
-    {
-      "block": "chisel:copper_panel_3",
-      "name": "copper_panel_3"
-    },
-    {
-      "block": "chisel:copper_skull_creeper",
-      "name": "copper_skull_creeper"
-    },
-    {
-      "block": "chisel:copper_skull_skeleton",
-      "name": "copper_skull_skeleton"
-    },
-    {
-      "block": "chisel:copper_stripes",
-      "name": "copper_stripes"
-    },
-    {
-      "block": "chisel:copper_stripes_encased",
-      "model_type": "connected",
-      "name": "copper_stripes_encased"
-    },
-    {
-      "block": "chisel:copper_chisel_1",
-      "name": "copper_chisel_1"
-    },
-    {
-      "block": "chisel:copper_chisel_2",
-      "name": "copper_chisel_2"
-    },
-    {
-      "block": "chisel:copper_chisel_3",
-      "name": "copper_chisel_3"
-    },
-    {
-      "block": "chisel:copper_chisel_4",
-      "name": "copper_chisel_4"
-    },
-    {
-      "block": "chisel:copper_chisel_5",
-      "name": "copper_chisel_5"
-    },
-    {
-      "block": "chisel:copper_chisel_6",
-      "name": "copper_chisel_6"
-    },
-    {
-      "block": "chisel:copper_facet",
-      "name": "copper_facet"
-    },
-    {
-      "block": "chisel:copper_facet_small",
-      "name": "copper_facet_small"
-    },
-    {
-      "block": "chisel:copper_facet_small_encased",
-      "model_type": "connected",
-      "name": "copper_facet_small_encased"
-    },
-    {
-      "block": "chisel:copper_shiny",
-      "name": "copper_shiny"
-    },
-    {
-      "block": "chisel:copper_shiny_connected",
-      "model_type": "connected",
-      "name": "copper_shiny_connected"
-    },
-    {
-      "block": "chisel:copper_gem",
-      "name": "copper_gem"
-    },
-    {
-      "block": "chisel:copper_gem_1",
-      "name": "copper_gem_1"
-    },
-    {
-      "block": "chisel:copper_gem_1_connected",
-      "model_type": "connected",
-      "name": "copper_gem_1_connected"
-    },
-    {
-      "block": "chisel:copper_gem_2",
-      "name": "copper_gem_2"
-    },
-    {
-      "block": "chisel:copper_gem_2_connected",
-      "model_type": "connected",
-      "name": "copper_gem_2_connected"
-    },
-    {
-      "block": "chisel:copper_gem_3",
-      "name": "copper_gem_3"
-    },
-    {
-      "block": "chisel:copper_gem_3_connected",
-      "model_type": "connected",
-      "name": "copper_gem_3_connected"
-    },
-    {
-      "block": "chisel:copper_bricks_square",
-      "name": "copper_bricks_square"
-    },
-    {
-      "block": "chisel:copper_slab",
-      "name": "copper_slab"
-    },
-    {
-      "block": "chisel:copper_scaffold_2",
-      "name": "copper_scaffold_2"
-    },
-    {
-      "block": "chisel:copper_scaffold_encased_2",
-      "model_type": "connected",
-      "name": "copper_scaffold_encased_2"
-    },
-    {
-      "block": "chisel:copper_tiles_inlayed",
-      "name": "copper_tiles_inlayed"
-    },
-    {
-      "block": "chisel:copper_waves",
-      "model_type": "multiblock_2x2",
-      "name": "copper_waves"
-    },
-    {
-      "block": "chisel:copper_parquet",
-      "name": "copper_parquet"
-    },
-    {
-      "block": "chisel:copper_parquet_encased",
-      "model_type": "connected",
-      "name": "copper_parquet_encased"
-    },
-    {
-      "block": "chisel:copper_bricks_large_rough",
-      "model_type": "multiblock_2x2",
-      "name": "copper_bricks_large_rough"
-    },
-    {
-      "block": "chisel:copper_tiles_small_encased",
-      "model_type": "connected",
-      "name": "copper_tiles_small_encased"
-    },
-    {
-      "block": "chisel:copper_bricks_round",
-      "name": "copper_bricks_round"
+      "block": "chisel:copper_thermal",
+      "model_type": "top_bottom_side",
+      "name": "copper_thermal"
     }
   ]
 }

@@ -3,10 +3,10 @@
   "textures": {
     "all": "chisel:block/netherite/netherite_border_square",
     "particle": "chisel:block/netherite/netherite_border_square",
-    "standard_corner": "chisel:block/netherite/netherite_border_square-ctm_corner",
-    "standard_cornerless": "chisel:block/netherite/netherite_border_square-ctm_cornerless",
-    "standard_horizontal": "chisel:block/netherite/netherite_border_square-ctm_horizontal",
+    "standard_corner": "chisel:block/netherite/netherite_border_square",
+    "standard_cornerless": "chisel:block/netherite/netherite_raw",
+    "standard_horizontal": "chisel:block/netherite/netherite_border_square",
     "standard_none": "chisel:block/netherite/netherite_border_square",
-    "standard_vertical": "chisel:block/netherite/netherite_border_square-ctm_vertical"
+    "standard_vertical": "chisel:block/netherite/netherite_border_square"
   }
 }

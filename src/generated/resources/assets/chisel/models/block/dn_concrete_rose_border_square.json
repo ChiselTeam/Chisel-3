@@ -3,10 +3,10 @@
   "textures": {
     "all": "chisel:block/dn_concrete_rose/dn_concrete_rose_border_square",
     "particle": "chisel:block/dn_concrete_rose/dn_concrete_rose_border_square",
-    "standard_corner": "chisel:block/dn_concrete_rose/dn_concrete_rose_border_square-ctm_corner",
+    "standard_corner": "chisel:block/dn_concrete_rose/dn_concrete_rose_border_square",
     "standard_cornerless": "chisel:block/dn_concrete_rose/dn_concrete_rose_raw",
-    "standard_horizontal": "chisel:block/dn_concrete_rose/dn_concrete_rose_border_square-ctm_horizontal",
+    "standard_horizontal": "chisel:block/dn_concrete_rose/dn_concrete_rose_border_square",
     "standard_none": "chisel:block/dn_concrete_rose/dn_concrete_rose_border_square",
-    "standard_vertical": "chisel:block/dn_concrete_rose/dn_concrete_rose_border_square-ctm_vertical"
+    "standard_vertical": "chisel:block/dn_concrete_rose/dn_concrete_rose_border_square"
   }
 }

@@ -8,7 +8,7 @@
     "top": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic-top",
     "vertical_both": "chisel:block/ae2_sky_stone/sky_stone_pillar_basic_dent-vertical_both",
     "vertical_bottom": "chisel:block/ae2_sky_stone/sky_stone_pillar_ionic_dent-vertical_bottom",
-    "vertical_none": "chisel:block/ae2_sky_stone/sky_stone_pillar_ionic-vertical_none",
+    "vertical_none": "chisel:block/ae2_sky_stone/sky_stone_pillar_ionic-side",
     "vertical_top": "chisel:block/ae2_sky_stone/sky_stone_pillar_ionic_dent-vertical_top"
   }
 }

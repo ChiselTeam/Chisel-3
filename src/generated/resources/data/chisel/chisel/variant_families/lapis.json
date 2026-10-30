@@ -7,40 +7,8 @@
       "name": "block.minecraft.lapis_block"
     },
     {
-      "block": "chisel:lapis_chunky",
-      "name": "lapis_chunky"
-    },
-    {
-      "block": "chisel:lapis_dark",
-      "name": "lapis_dark"
-    },
-    {
-      "block": "chisel:lapis_masonry",
-      "name": "lapis_masonry"
-    },
-    {
-      "block": "chisel:lapis_ornate",
-      "name": "lapis_ornate"
-    },
-    {
-      "block": "chisel:lapis_ornate_layer",
-      "name": "lapis_ornate_layer"
-    },
-    {
-      "block": "chisel:lapis_panel",
-      "name": "lapis_panel"
-    },
-    {
-      "block": "chisel:lapis_smooth",
-      "name": "lapis_smooth"
-    },
-    {
-      "block": "chisel:lapis_tile",
-      "name": "lapis_tile"
-    },
-    {
-      "block": "chisel:lapis_zelda",
-      "name": "lapis_zelda"
+      "block": "chisel:lapis_raw",
+      "name": "lapis_raw"
     },
     {
       "block": "chisel:lapis_array",
@@ -71,11 +39,6 @@
       "name": "lapis_bricks_cracked"
     },
     {
-      "block": "chisel:lapis_bricks_encased",
-      "model_type": "connected",
-      "name": "lapis_bricks_encased"
-    },
-    {
       "block": "chisel:lapis_bricks_indent",
       "name": "lapis_bricks_indent"
     },
@@ -89,8 +52,13 @@
       "name": "lapis_bricks_large"
     },
     {
-      "block": "chisel:lapis_large_bricks",
-      "name": "lapis_large_bricks"
+      "block": "chisel:lapis_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "lapis_bricks_large_rough"
+    },
+    {
+      "block": "chisel:lapis_bricks_round",
+      "name": "lapis_bricks_round"
     },
     {
       "block": "chisel:lapis_bricks_small",
@@ -103,6 +71,15 @@
     {
       "block": "chisel:lapis_bricks_solid",
       "name": "lapis_bricks_solid"
+    },
+    {
+      "block": "chisel:lapis_bricks_encased",
+      "model_type": "connected",
+      "name": "lapis_bricks_encased"
+    },
+    {
+      "block": "chisel:lapis_bricks_square",
+      "name": "lapis_bricks_square"
     },
     {
       "block": "chisel:lapis_bricks_triple",
@@ -134,17 +111,46 @@
       "name": "lapis_checker_small"
     },
     {
+      "block": "chisel:lapis_chisel_1",
+      "name": "lapis_chisel_1"
+    },
+    {
+      "block": "chisel:lapis_chisel_2",
+      "name": "lapis_chisel_2"
+    },
+    {
+      "block": "chisel:lapis_chisel_3",
+      "name": "lapis_chisel_3"
+    },
+    {
+      "block": "chisel:lapis_chisel_4",
+      "name": "lapis_chisel_4"
+    },
+    {
+      "block": "chisel:lapis_chisel_5",
+      "name": "lapis_chisel_5"
+    },
+    {
+      "block": "chisel:lapis_chisel_6",
+      "name": "lapis_chisel_6"
+    },
+    {
       "block": "chisel:lapis_circular",
       "model_type": "connected",
       "name": "lapis_circular"
+    },
+    {
+      "block": "chisel:lapis_cobble",
+      "name": "lapis_cobble"
     },
     {
       "block": "chisel:lapis_cracked",
       "name": "lapis_cracked"
     },
     {
-      "block": "chisel:lapis_cobble",
-      "name": "lapis_cobble"
+      "block": "chisel:lapis_crate",
+      "model_type": "connected",
+      "name": "lapis_crate"
     },
     {
       "block": "chisel:lapis_cuts",
@@ -157,12 +163,82 @@
       "name": "lapis_dent"
     },
     {
+      "block": "chisel:lapis_dots",
+      "name": "lapis_dots"
+    },
+    {
+      "block": "chisel:lapis_dots_encased",
+      "model_type": "connected",
+      "name": "lapis_dots_encased"
+    },
+    {
+      "block": "chisel:lapis_facet",
+      "name": "lapis_facet"
+    },
+    {
+      "block": "chisel:lapis_facet_small",
+      "name": "lapis_facet_small"
+    },
+    {
+      "block": "chisel:lapis_facet_small_encased",
+      "model_type": "connected",
+      "name": "lapis_facet_small_encased"
+    },
+    {
+      "block": "chisel:lapis_frame",
+      "name": "lapis_frame"
+    },
+    {
       "block": "chisel:lapis_french_1",
       "name": "lapis_french_1"
     },
     {
       "block": "chisel:lapis_french_2",
       "name": "lapis_french_2"
+    },
+    {
+      "block": "chisel:lapis_gem",
+      "name": "lapis_gem"
+    },
+    {
+      "block": "chisel:lapis_gem_1",
+      "name": "lapis_gem_1"
+    },
+    {
+      "block": "chisel:lapis_gem_1_connected",
+      "model_type": "connected",
+      "name": "lapis_gem_1_connected"
+    },
+    {
+      "block": "chisel:lapis_gem_2",
+      "name": "lapis_gem_2"
+    },
+    {
+      "block": "chisel:lapis_gem_2_connected",
+      "model_type": "connected",
+      "name": "lapis_gem_2_connected"
+    },
+    {
+      "block": "chisel:lapis_gem_3",
+      "name": "lapis_gem_3"
+    },
+    {
+      "block": "chisel:lapis_gem_3_connected",
+      "model_type": "connected",
+      "name": "lapis_gem_3_connected"
+    },
+    {
+      "block": "chisel:lapis_heart",
+      "name": "lapis_heart"
+    },
+    {
+      "block": "chisel:lapis_herringbone",
+      "name": "lapis_herringbone"
+    },
+    {
+      "block": "chisel:lapis_herringbone_encased",
+      "model_type": "connected",
+      "name": "lapis_herringbone_encased"
     },
     {
       "block": "chisel:lapis_indent",
@@ -173,6 +249,10 @@
       "block": "chisel:lapis_jellybean",
       "model_type": "multiblock_2x2",
       "name": "lapis_jellybean"
+    },
+    {
+      "block": "chisel:lapis_large_bricks",
+      "name": "lapis_large_bricks"
     },
     {
       "block": "chisel:lapis_layers",
@@ -192,6 +272,15 @@
       "name": "lapis_line_vertical"
     },
     {
+      "block": "chisel:lapis_lodestone",
+      "name": "lapis_lodestone"
+    },
+    {
+      "block": "chisel:lapis_lodestone_connected",
+      "model_type": "connected",
+      "name": "lapis_lodestone_connected"
+    },
+    {
       "block": "chisel:lapis_meander_horizontal",
       "model_type": "ctmh",
       "name": "lapis_meander_horizontal"
@@ -200,6 +289,15 @@
       "block": "chisel:lapis_meander_vertical",
       "model_type": "ctmv",
       "name": "lapis_meander_vertical"
+    },
+    {
+      "block": "chisel:lapis_medallion",
+      "name": "lapis_medallion"
+    },
+    {
+      "block": "chisel:lapis_medallion_encased",
+      "model_type": "connected",
+      "name": "lapis_medallion_encased"
     },
     {
       "block": "chisel:lapis_mosaic",
@@ -213,6 +311,27 @@
     {
       "block": "chisel:lapis_panel2",
       "name": "lapis_panel2"
+    },
+    {
+      "block": "chisel:lapis_panel_1",
+      "name": "lapis_panel_1"
+    },
+    {
+      "block": "chisel:lapis_panel_2",
+      "name": "lapis_panel_2"
+    },
+    {
+      "block": "chisel:lapis_panel_3",
+      "name": "lapis_panel_3"
+    },
+    {
+      "block": "chisel:lapis_parquet",
+      "name": "lapis_parquet"
+    },
+    {
+      "block": "chisel:lapis_parquet_encased",
+      "model_type": "connected",
+      "name": "lapis_parquet_encased"
     },
     {
       "block": "chisel:lapis_pillar",
@@ -315,6 +434,15 @@
       "name": "lapis_pillar_meander_spiral"
     },
     {
+      "block": "chisel:lapis_plank",
+      "name": "lapis_plank"
+    },
+    {
+      "block": "chisel:lapis_plank_connected",
+      "model_type": "connected",
+      "name": "lapis_plank_connected"
+    },
+    {
       "block": "chisel:lapis_plate",
       "name": "lapis_plate"
     },
@@ -322,6 +450,10 @@
       "block": "chisel:lapis_plate_connected",
       "model_type": "connected",
       "name": "lapis_plate_connected"
+    },
+    {
+      "block": "chisel:lapis_plating",
+      "name": "lapis_plating"
     },
     {
       "block": "chisel:lapis_polished",
@@ -337,12 +469,38 @@
       "name": "lapis_prism"
     },
     {
-      "block": "chisel:lapis_raw",
-      "name": "lapis_raw"
-    },
-    {
       "block": "chisel:lapis_road",
       "name": "lapis_road"
+    },
+    {
+      "block": "chisel:lapis_scaffold_2",
+      "name": "lapis_scaffold_2"
+    },
+    {
+      "block": "chisel:lapis_scaffold_encased_2",
+      "model_type": "connected",
+      "name": "lapis_scaffold_encased_2"
+    },
+    {
+      "block": "chisel:lapis_shiny",
+      "name": "lapis_shiny"
+    },
+    {
+      "block": "chisel:lapis_shiny_connected",
+      "model_type": "connected",
+      "name": "lapis_shiny_connected"
+    },
+    {
+      "block": "chisel:lapis_skull_creeper",
+      "name": "lapis_skull_creeper"
+    },
+    {
+      "block": "chisel:lapis_skull_skeleton",
+      "name": "lapis_skull_skeleton"
+    },
+    {
+      "block": "chisel:lapis_slab",
+      "name": "lapis_slab"
     },
     {
       "block": "chisel:lapis_slanted",
@@ -350,8 +508,25 @@
       "name": "lapis_slanted"
     },
     {
+      "block": "chisel:lapis_star",
+      "name": "lapis_star"
+    },
+    {
+      "block": "chisel:lapis_stripes",
+      "name": "lapis_stripes"
+    },
+    {
+      "block": "chisel:lapis_stripes_encased",
+      "model_type": "connected",
+      "name": "lapis_stripes_encased"
+    },
+    {
       "block": "chisel:lapis_tiles",
       "name": "lapis_tiles"
+    },
+    {
+      "block": "chisel:lapis_tiles_inlayed",
+      "name": "lapis_tiles_inlayed"
     },
     {
       "block": "chisel:lapis_tiles_large",
@@ -363,9 +538,19 @@
       "name": "lapis_tiles_small"
     },
     {
+      "block": "chisel:lapis_tiles_small_encased",
+      "model_type": "connected",
+      "name": "lapis_tiles_small_encased"
+    },
+    {
       "block": "chisel:lapis_twisted",
       "model_type": "top_bottom_side",
       "name": "lapis_twisted"
+    },
+    {
+      "block": "chisel:lapis_waves",
+      "model_type": "multiblock_2x2",
+      "name": "lapis_waves"
     },
     {
       "block": "chisel:lapis_weaver",
@@ -378,225 +563,40 @@
       "name": "lapis_zag"
     },
     {
-      "block": "chisel:lapis_crate",
-      "model_type": "connected",
-      "name": "lapis_crate"
+      "block": "chisel:lapis_ornate",
+      "name": "lapis_ornate"
     },
     {
-      "block": "chisel:lapis_herringbone",
-      "name": "lapis_herringbone"
+      "block": "chisel:lapis_chunky",
+      "name": "lapis_chunky"
     },
     {
-      "block": "chisel:lapis_herringbone_encased",
-      "model_type": "connected",
-      "name": "lapis_herringbone_encased"
+      "block": "chisel:lapis_dark",
+      "name": "lapis_dark"
     },
     {
-      "block": "chisel:lapis_medallion",
-      "name": "lapis_medallion"
+      "block": "chisel:lapis_masonry",
+      "name": "lapis_masonry"
     },
     {
-      "block": "chisel:lapis_medallion_encased",
-      "model_type": "connected",
-      "name": "lapis_medallion_encased"
+      "block": "chisel:lapis_ornate_layer",
+      "name": "lapis_ornate_layer"
     },
     {
-      "block": "chisel:lapis_dots",
-      "name": "lapis_dots"
+      "block": "chisel:lapis_panel",
+      "name": "lapis_panel"
     },
     {
-      "block": "chisel:lapis_dots_encased",
-      "model_type": "connected",
-      "name": "lapis_dots_encased"
+      "block": "chisel:lapis_smooth",
+      "name": "lapis_smooth"
     },
     {
-      "block": "chisel:lapis_heart",
-      "name": "lapis_heart"
+      "block": "chisel:lapis_tile",
+      "name": "lapis_tile"
     },
     {
-      "block": "chisel:lapis_star",
-      "name": "lapis_star"
-    },
-    {
-      "block": "chisel:lapis_plating",
-      "name": "lapis_plating"
-    },
-    {
-      "block": "chisel:lapis_lodestone",
-      "name": "lapis_lodestone"
-    },
-    {
-      "block": "chisel:lapis_lodestone_connected",
-      "model_type": "connected",
-      "name": "lapis_lodestone_connected"
-    },
-    {
-      "block": "chisel:lapis_plank",
-      "name": "lapis_plank"
-    },
-    {
-      "block": "chisel:lapis_plank_connected",
-      "model_type": "connected",
-      "name": "lapis_plank_connected"
-    },
-    {
-      "block": "chisel:lapis_frame",
-      "name": "lapis_frame"
-    },
-    {
-      "block": "chisel:lapis_panel_1",
-      "name": "lapis_panel_1"
-    },
-    {
-      "block": "chisel:lapis_panel_2",
-      "name": "lapis_panel_2"
-    },
-    {
-      "block": "chisel:lapis_panel_3",
-      "name": "lapis_panel_3"
-    },
-    {
-      "block": "chisel:lapis_skull_creeper",
-      "name": "lapis_skull_creeper"
-    },
-    {
-      "block": "chisel:lapis_skull_skeleton",
-      "name": "lapis_skull_skeleton"
-    },
-    {
-      "block": "chisel:lapis_stripes",
-      "name": "lapis_stripes"
-    },
-    {
-      "block": "chisel:lapis_stripes_encased",
-      "model_type": "connected",
-      "name": "lapis_stripes_encased"
-    },
-    {
-      "block": "chisel:lapis_chisel_1",
-      "name": "lapis_chisel_1"
-    },
-    {
-      "block": "chisel:lapis_chisel_2",
-      "name": "lapis_chisel_2"
-    },
-    {
-      "block": "chisel:lapis_chisel_3",
-      "name": "lapis_chisel_3"
-    },
-    {
-      "block": "chisel:lapis_chisel_4",
-      "name": "lapis_chisel_4"
-    },
-    {
-      "block": "chisel:lapis_chisel_5",
-      "name": "lapis_chisel_5"
-    },
-    {
-      "block": "chisel:lapis_chisel_6",
-      "name": "lapis_chisel_6"
-    },
-    {
-      "block": "chisel:lapis_facet",
-      "name": "lapis_facet"
-    },
-    {
-      "block": "chisel:lapis_facet_small",
-      "name": "lapis_facet_small"
-    },
-    {
-      "block": "chisel:lapis_facet_small_encased",
-      "model_type": "connected",
-      "name": "lapis_facet_small_encased"
-    },
-    {
-      "block": "chisel:lapis_shiny",
-      "name": "lapis_shiny"
-    },
-    {
-      "block": "chisel:lapis_shiny_connected",
-      "model_type": "connected",
-      "name": "lapis_shiny_connected"
-    },
-    {
-      "block": "chisel:lapis_gem",
-      "name": "lapis_gem"
-    },
-    {
-      "block": "chisel:lapis_gem_1",
-      "name": "lapis_gem_1"
-    },
-    {
-      "block": "chisel:lapis_gem_1_connected",
-      "model_type": "connected",
-      "name": "lapis_gem_1_connected"
-    },
-    {
-      "block": "chisel:lapis_gem_2",
-      "name": "lapis_gem_2"
-    },
-    {
-      "block": "chisel:lapis_gem_2_connected",
-      "model_type": "connected",
-      "name": "lapis_gem_2_connected"
-    },
-    {
-      "block": "chisel:lapis_gem_3",
-      "name": "lapis_gem_3"
-    },
-    {
-      "block": "chisel:lapis_gem_3_connected",
-      "model_type": "connected",
-      "name": "lapis_gem_3_connected"
-    },
-    {
-      "block": "chisel:lapis_bricks_square",
-      "name": "lapis_bricks_square"
-    },
-    {
-      "block": "chisel:lapis_slab",
-      "name": "lapis_slab"
-    },
-    {
-      "block": "chisel:lapis_scaffold_2",
-      "name": "lapis_scaffold_2"
-    },
-    {
-      "block": "chisel:lapis_scaffold_encased_2",
-      "model_type": "connected",
-      "name": "lapis_scaffold_encased_2"
-    },
-    {
-      "block": "chisel:lapis_tiles_inlayed",
-      "name": "lapis_tiles_inlayed"
-    },
-    {
-      "block": "chisel:lapis_waves",
-      "model_type": "multiblock_2x2",
-      "name": "lapis_waves"
-    },
-    {
-      "block": "chisel:lapis_parquet",
-      "name": "lapis_parquet"
-    },
-    {
-      "block": "chisel:lapis_parquet_encased",
-      "model_type": "connected",
-      "name": "lapis_parquet_encased"
-    },
-    {
-      "block": "chisel:lapis_bricks_large_rough",
-      "model_type": "multiblock_2x2",
-      "name": "lapis_bricks_large_rough"
-    },
-    {
-      "block": "chisel:lapis_tiles_small_encased",
-      "model_type": "connected",
-      "name": "lapis_tiles_small_encased"
-    },
-    {
-      "block": "chisel:lapis_bricks_round",
-      "name": "lapis_bricks_round"
+      "block": "chisel:lapis_zelda",
+      "name": "lapis_zelda"
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "parent": "chisel:block/cube_multi_pass_tinted",
+  "textures": {
+    "all": "chisel:block/lavastone/lavastone_border_square_small",
+    "base_texture": "minecraft:block/water_still",
+    "layer0": "minecraft:block/water_still",
+    "layer1": "chisel:block/lavastone/lavastone_border_square_small",
+    "particle": "chisel:block/lavastone/lavastone_border_square_small",
+    "standard_corner": "chisel:block/lavastone/lavastone_border_square_small-ctm_corner",
+    "standard_cornerless": "chisel:block/lavastone/lavastone_raw_new",
+    "standard_horizontal": "chisel:block/lavastone/lavastone_border_square_small-ctm_horizontal",
+    "standard_none": "chisel:block/lavastone/lavastone_border_square_small",
+    "standard_vertical": "chisel:block/lavastone/lavastone_border_square_small-ctm_vertical"
+  }
+}

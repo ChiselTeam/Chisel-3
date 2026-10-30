@@ -7,60 +7,8 @@
       "name": "block.minecraft.emerald_block"
     },
     {
-      "block": "chisel:emerald_bismuth",
-      "name": "emerald_bismuth"
-    },
-    {
-      "block": "chisel:emerald_blocks_small",
-      "name": "emerald_blocks_small"
-    },
-    {
-      "block": "chisel:emerald_blocks_small_ornate",
-      "name": "emerald_blocks_small_ornate"
-    },
-    {
-      "block": "chisel:emerald_cell",
-      "name": "emerald_cell"
-    },
-    {
-      "block": "chisel:emerald_chunk",
-      "name": "emerald_chunk"
-    },
-    {
-      "block": "chisel:emerald_circle",
-      "name": "emerald_circle"
-    },
-    {
-      "block": "chisel:emerald_masonry",
-      "name": "emerald_masonry"
-    },
-    {
-      "block": "chisel:emerald_ornate",
-      "name": "emerald_ornate"
-    },
-    {
-      "block": "chisel:emerald_ornate_layer",
-      "name": "emerald_ornate_layer"
-    },
-    {
-      "block": "chisel:emerald_panel",
-      "name": "emerald_panel"
-    },
-    {
-      "block": "chisel:emerald_panel_classic",
-      "name": "emerald_panel_classic"
-    },
-    {
-      "block": "chisel:emerald_prismatic",
-      "name": "emerald_prismatic"
-    },
-    {
-      "block": "chisel:emerald_smooth",
-      "name": "emerald_smooth"
-    },
-    {
-      "block": "chisel:emerald_zelda",
-      "name": "emerald_zelda"
+      "block": "chisel:emerald_raw",
+      "name": "emerald_raw"
     },
     {
       "block": "chisel:emerald_array",
@@ -91,11 +39,6 @@
       "name": "emerald_bricks_cracked"
     },
     {
-      "block": "chisel:emerald_bricks_encased",
-      "model_type": "connected",
-      "name": "emerald_bricks_encased"
-    },
-    {
       "block": "chisel:emerald_bricks_indent",
       "name": "emerald_bricks_indent"
     },
@@ -109,8 +52,13 @@
       "name": "emerald_bricks_large"
     },
     {
-      "block": "chisel:emerald_large_bricks",
-      "name": "emerald_large_bricks"
+      "block": "chisel:emerald_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "emerald_bricks_large_rough"
+    },
+    {
+      "block": "chisel:emerald_bricks_round",
+      "name": "emerald_bricks_round"
     },
     {
       "block": "chisel:emerald_bricks_small",
@@ -123,6 +71,15 @@
     {
       "block": "chisel:emerald_bricks_solid",
       "name": "emerald_bricks_solid"
+    },
+    {
+      "block": "chisel:emerald_bricks_encased",
+      "model_type": "connected",
+      "name": "emerald_bricks_encased"
+    },
+    {
+      "block": "chisel:emerald_bricks_square",
+      "name": "emerald_bricks_square"
     },
     {
       "block": "chisel:emerald_bricks_triple",
@@ -154,17 +111,46 @@
       "name": "emerald_checker_small"
     },
     {
+      "block": "chisel:emerald_chisel_1",
+      "name": "emerald_chisel_1"
+    },
+    {
+      "block": "chisel:emerald_chisel_2",
+      "name": "emerald_chisel_2"
+    },
+    {
+      "block": "chisel:emerald_chisel_3",
+      "name": "emerald_chisel_3"
+    },
+    {
+      "block": "chisel:emerald_chisel_4",
+      "name": "emerald_chisel_4"
+    },
+    {
+      "block": "chisel:emerald_chisel_5",
+      "name": "emerald_chisel_5"
+    },
+    {
+      "block": "chisel:emerald_chisel_6",
+      "name": "emerald_chisel_6"
+    },
+    {
       "block": "chisel:emerald_circular",
       "model_type": "connected",
       "name": "emerald_circular"
+    },
+    {
+      "block": "chisel:emerald_cobble",
+      "name": "emerald_cobble"
     },
     {
       "block": "chisel:emerald_cracked",
       "name": "emerald_cracked"
     },
     {
-      "block": "chisel:emerald_cobble",
-      "name": "emerald_cobble"
+      "block": "chisel:emerald_crate",
+      "model_type": "connected",
+      "name": "emerald_crate"
     },
     {
       "block": "chisel:emerald_cuts",
@@ -177,12 +163,82 @@
       "name": "emerald_dent"
     },
     {
+      "block": "chisel:emerald_dots",
+      "name": "emerald_dots"
+    },
+    {
+      "block": "chisel:emerald_dots_encased",
+      "model_type": "connected",
+      "name": "emerald_dots_encased"
+    },
+    {
+      "block": "chisel:emerald_facet",
+      "name": "emerald_facet"
+    },
+    {
+      "block": "chisel:emerald_facet_small",
+      "name": "emerald_facet_small"
+    },
+    {
+      "block": "chisel:emerald_facet_small_encased",
+      "model_type": "connected",
+      "name": "emerald_facet_small_encased"
+    },
+    {
+      "block": "chisel:emerald_frame",
+      "name": "emerald_frame"
+    },
+    {
       "block": "chisel:emerald_french_1",
       "name": "emerald_french_1"
     },
     {
       "block": "chisel:emerald_french_2",
       "name": "emerald_french_2"
+    },
+    {
+      "block": "chisel:emerald_gem",
+      "name": "emerald_gem"
+    },
+    {
+      "block": "chisel:emerald_gem_1",
+      "name": "emerald_gem_1"
+    },
+    {
+      "block": "chisel:emerald_gem_1_connected",
+      "model_type": "connected",
+      "name": "emerald_gem_1_connected"
+    },
+    {
+      "block": "chisel:emerald_gem_2",
+      "name": "emerald_gem_2"
+    },
+    {
+      "block": "chisel:emerald_gem_2_connected",
+      "model_type": "connected",
+      "name": "emerald_gem_2_connected"
+    },
+    {
+      "block": "chisel:emerald_gem_3",
+      "name": "emerald_gem_3"
+    },
+    {
+      "block": "chisel:emerald_gem_3_connected",
+      "model_type": "connected",
+      "name": "emerald_gem_3_connected"
+    },
+    {
+      "block": "chisel:emerald_heart",
+      "name": "emerald_heart"
+    },
+    {
+      "block": "chisel:emerald_herringbone",
+      "name": "emerald_herringbone"
+    },
+    {
+      "block": "chisel:emerald_herringbone_encased",
+      "model_type": "connected",
+      "name": "emerald_herringbone_encased"
     },
     {
       "block": "chisel:emerald_indent",
@@ -193,6 +249,10 @@
       "block": "chisel:emerald_jellybean",
       "model_type": "multiblock_2x2",
       "name": "emerald_jellybean"
+    },
+    {
+      "block": "chisel:emerald_large_bricks",
+      "name": "emerald_large_bricks"
     },
     {
       "block": "chisel:emerald_layers",
@@ -212,6 +272,15 @@
       "name": "emerald_line_vertical"
     },
     {
+      "block": "chisel:emerald_lodestone",
+      "name": "emerald_lodestone"
+    },
+    {
+      "block": "chisel:emerald_lodestone_connected",
+      "model_type": "connected",
+      "name": "emerald_lodestone_connected"
+    },
+    {
       "block": "chisel:emerald_meander_horizontal",
       "model_type": "ctmh",
       "name": "emerald_meander_horizontal"
@@ -220,6 +289,15 @@
       "block": "chisel:emerald_meander_vertical",
       "model_type": "ctmv",
       "name": "emerald_meander_vertical"
+    },
+    {
+      "block": "chisel:emerald_medallion",
+      "name": "emerald_medallion"
+    },
+    {
+      "block": "chisel:emerald_medallion_encased",
+      "model_type": "connected",
+      "name": "emerald_medallion_encased"
     },
     {
       "block": "chisel:emerald_mosaic",
@@ -233,6 +311,27 @@
     {
       "block": "chisel:emerald_panel2",
       "name": "emerald_panel2"
+    },
+    {
+      "block": "chisel:emerald_panel_1",
+      "name": "emerald_panel_1"
+    },
+    {
+      "block": "chisel:emerald_panel_2",
+      "name": "emerald_panel_2"
+    },
+    {
+      "block": "chisel:emerald_panel_3",
+      "name": "emerald_panel_3"
+    },
+    {
+      "block": "chisel:emerald_parquet",
+      "name": "emerald_parquet"
+    },
+    {
+      "block": "chisel:emerald_parquet_encased",
+      "model_type": "connected",
+      "name": "emerald_parquet_encased"
     },
     {
       "block": "chisel:emerald_pillar",
@@ -335,6 +434,15 @@
       "name": "emerald_pillar_meander_spiral"
     },
     {
+      "block": "chisel:emerald_plank",
+      "name": "emerald_plank"
+    },
+    {
+      "block": "chisel:emerald_plank_connected",
+      "model_type": "connected",
+      "name": "emerald_plank_connected"
+    },
+    {
       "block": "chisel:emerald_plate",
       "name": "emerald_plate"
     },
@@ -342,6 +450,10 @@
       "block": "chisel:emerald_plate_connected",
       "model_type": "connected",
       "name": "emerald_plate_connected"
+    },
+    {
+      "block": "chisel:emerald_plating",
+      "name": "emerald_plating"
     },
     {
       "block": "chisel:emerald_polished",
@@ -357,12 +469,38 @@
       "name": "emerald_prism"
     },
     {
-      "block": "chisel:emerald_raw",
-      "name": "emerald_raw"
-    },
-    {
       "block": "chisel:emerald_road",
       "name": "emerald_road"
+    },
+    {
+      "block": "chisel:emerald_scaffold_2",
+      "name": "emerald_scaffold_2"
+    },
+    {
+      "block": "chisel:emerald_scaffold_encased_2",
+      "model_type": "connected",
+      "name": "emerald_scaffold_encased_2"
+    },
+    {
+      "block": "chisel:emerald_shiny",
+      "name": "emerald_shiny"
+    },
+    {
+      "block": "chisel:emerald_shiny_connected",
+      "model_type": "connected",
+      "name": "emerald_shiny_connected"
+    },
+    {
+      "block": "chisel:emerald_skull_creeper",
+      "name": "emerald_skull_creeper"
+    },
+    {
+      "block": "chisel:emerald_skull_skeleton",
+      "name": "emerald_skull_skeleton"
+    },
+    {
+      "block": "chisel:emerald_slab",
+      "name": "emerald_slab"
     },
     {
       "block": "chisel:emerald_slanted",
@@ -370,8 +508,25 @@
       "name": "emerald_slanted"
     },
     {
+      "block": "chisel:emerald_star",
+      "name": "emerald_star"
+    },
+    {
+      "block": "chisel:emerald_stripes",
+      "name": "emerald_stripes"
+    },
+    {
+      "block": "chisel:emerald_stripes_encased",
+      "model_type": "connected",
+      "name": "emerald_stripes_encased"
+    },
+    {
       "block": "chisel:emerald_tiles",
       "name": "emerald_tiles"
+    },
+    {
+      "block": "chisel:emerald_tiles_inlayed",
+      "name": "emerald_tiles_inlayed"
     },
     {
       "block": "chisel:emerald_tiles_large",
@@ -383,9 +538,19 @@
       "name": "emerald_tiles_small"
     },
     {
+      "block": "chisel:emerald_tiles_small_encased",
+      "model_type": "connected",
+      "name": "emerald_tiles_small_encased"
+    },
+    {
       "block": "chisel:emerald_twisted",
       "model_type": "top_bottom_side",
       "name": "emerald_twisted"
+    },
+    {
+      "block": "chisel:emerald_waves",
+      "model_type": "multiblock_2x2",
+      "name": "emerald_waves"
     },
     {
       "block": "chisel:emerald_weaver",
@@ -398,225 +563,60 @@
       "name": "emerald_zag"
     },
     {
-      "block": "chisel:emerald_crate",
-      "model_type": "connected",
-      "name": "emerald_crate"
+      "block": "chisel:emerald_ornate",
+      "name": "emerald_ornate"
     },
     {
-      "block": "chisel:emerald_herringbone",
-      "name": "emerald_herringbone"
+      "block": "chisel:emerald_bismuth",
+      "name": "emerald_bismuth"
     },
     {
-      "block": "chisel:emerald_herringbone_encased",
-      "model_type": "connected",
-      "name": "emerald_herringbone_encased"
+      "block": "chisel:emerald_blocks_small",
+      "name": "emerald_blocks_small"
     },
     {
-      "block": "chisel:emerald_medallion",
-      "name": "emerald_medallion"
+      "block": "chisel:emerald_blocks_small_ornate",
+      "name": "emerald_blocks_small_ornate"
     },
     {
-      "block": "chisel:emerald_medallion_encased",
-      "model_type": "connected",
-      "name": "emerald_medallion_encased"
+      "block": "chisel:emerald_cell",
+      "name": "emerald_cell"
     },
     {
-      "block": "chisel:emerald_dots",
-      "name": "emerald_dots"
+      "block": "chisel:emerald_chunk",
+      "name": "emerald_chunk"
     },
     {
-      "block": "chisel:emerald_dots_encased",
-      "model_type": "connected",
-      "name": "emerald_dots_encased"
+      "block": "chisel:emerald_circle",
+      "name": "emerald_circle"
     },
     {
-      "block": "chisel:emerald_heart",
-      "name": "emerald_heart"
+      "block": "chisel:emerald_masonry",
+      "name": "emerald_masonry"
     },
     {
-      "block": "chisel:emerald_star",
-      "name": "emerald_star"
+      "block": "chisel:emerald_ornate_layer",
+      "name": "emerald_ornate_layer"
     },
     {
-      "block": "chisel:emerald_plating",
-      "name": "emerald_plating"
+      "block": "chisel:emerald_panel",
+      "name": "emerald_panel"
     },
     {
-      "block": "chisel:emerald_lodestone",
-      "name": "emerald_lodestone"
+      "block": "chisel:emerald_panel_classic",
+      "name": "emerald_panel_classic"
     },
     {
-      "block": "chisel:emerald_lodestone_connected",
-      "model_type": "connected",
-      "name": "emerald_lodestone_connected"
+      "block": "chisel:emerald_prismatic",
+      "name": "emerald_prismatic"
     },
     {
-      "block": "chisel:emerald_plank",
-      "name": "emerald_plank"
+      "block": "chisel:emerald_smooth",
+      "name": "emerald_smooth"
     },
     {
-      "block": "chisel:emerald_plank_connected",
-      "model_type": "connected",
-      "name": "emerald_plank_connected"
-    },
-    {
-      "block": "chisel:emerald_frame",
-      "name": "emerald_frame"
-    },
-    {
-      "block": "chisel:emerald_panel_1",
-      "name": "emerald_panel_1"
-    },
-    {
-      "block": "chisel:emerald_panel_2",
-      "name": "emerald_panel_2"
-    },
-    {
-      "block": "chisel:emerald_panel_3",
-      "name": "emerald_panel_3"
-    },
-    {
-      "block": "chisel:emerald_skull_creeper",
-      "name": "emerald_skull_creeper"
-    },
-    {
-      "block": "chisel:emerald_skull_skeleton",
-      "name": "emerald_skull_skeleton"
-    },
-    {
-      "block": "chisel:emerald_stripes",
-      "name": "emerald_stripes"
-    },
-    {
-      "block": "chisel:emerald_stripes_encased",
-      "model_type": "connected",
-      "name": "emerald_stripes_encased"
-    },
-    {
-      "block": "chisel:emerald_chisel_1",
-      "name": "emerald_chisel_1"
-    },
-    {
-      "block": "chisel:emerald_chisel_2",
-      "name": "emerald_chisel_2"
-    },
-    {
-      "block": "chisel:emerald_chisel_3",
-      "name": "emerald_chisel_3"
-    },
-    {
-      "block": "chisel:emerald_chisel_4",
-      "name": "emerald_chisel_4"
-    },
-    {
-      "block": "chisel:emerald_chisel_5",
-      "name": "emerald_chisel_5"
-    },
-    {
-      "block": "chisel:emerald_chisel_6",
-      "name": "emerald_chisel_6"
-    },
-    {
-      "block": "chisel:emerald_facet",
-      "name": "emerald_facet"
-    },
-    {
-      "block": "chisel:emerald_facet_small",
-      "name": "emerald_facet_small"
-    },
-    {
-      "block": "chisel:emerald_facet_small_encased",
-      "model_type": "connected",
-      "name": "emerald_facet_small_encased"
-    },
-    {
-      "block": "chisel:emerald_shiny",
-      "name": "emerald_shiny"
-    },
-    {
-      "block": "chisel:emerald_shiny_connected",
-      "model_type": "connected",
-      "name": "emerald_shiny_connected"
-    },
-    {
-      "block": "chisel:emerald_gem",
-      "name": "emerald_gem"
-    },
-    {
-      "block": "chisel:emerald_gem_1",
-      "name": "emerald_gem_1"
-    },
-    {
-      "block": "chisel:emerald_gem_1_connected",
-      "model_type": "connected",
-      "name": "emerald_gem_1_connected"
-    },
-    {
-      "block": "chisel:emerald_gem_2",
-      "name": "emerald_gem_2"
-    },
-    {
-      "block": "chisel:emerald_gem_2_connected",
-      "model_type": "connected",
-      "name": "emerald_gem_2_connected"
-    },
-    {
-      "block": "chisel:emerald_gem_3",
-      "name": "emerald_gem_3"
-    },
-    {
-      "block": "chisel:emerald_gem_3_connected",
-      "model_type": "connected",
-      "name": "emerald_gem_3_connected"
-    },
-    {
-      "block": "chisel:emerald_bricks_square",
-      "name": "emerald_bricks_square"
-    },
-    {
-      "block": "chisel:emerald_slab",
-      "name": "emerald_slab"
-    },
-    {
-      "block": "chisel:emerald_scaffold_2",
-      "name": "emerald_scaffold_2"
-    },
-    {
-      "block": "chisel:emerald_scaffold_encased_2",
-      "model_type": "connected",
-      "name": "emerald_scaffold_encased_2"
-    },
-    {
-      "block": "chisel:emerald_tiles_inlayed",
-      "name": "emerald_tiles_inlayed"
-    },
-    {
-      "block": "chisel:emerald_waves",
-      "model_type": "multiblock_2x2",
-      "name": "emerald_waves"
-    },
-    {
-      "block": "chisel:emerald_parquet",
-      "name": "emerald_parquet"
-    },
-    {
-      "block": "chisel:emerald_parquet_encased",
-      "model_type": "connected",
-      "name": "emerald_parquet_encased"
-    },
-    {
-      "block": "chisel:emerald_bricks_large_rough",
-      "model_type": "multiblock_2x2",
-      "name": "emerald_bricks_large_rough"
-    },
-    {
-      "block": "chisel:emerald_tiles_small_encased",
-      "model_type": "connected",
-      "name": "emerald_tiles_small_encased"
-    },
-    {
-      "block": "chisel:emerald_bricks_round",
-      "name": "emerald_bricks_round"
+      "block": "chisel:emerald_zelda",
+      "name": "emerald_zelda"
     }
   ]
 }

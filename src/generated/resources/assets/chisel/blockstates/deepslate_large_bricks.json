@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/deepslate_large_bricks"
+    }
+  }
+}

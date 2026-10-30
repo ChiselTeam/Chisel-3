@@ -3,6 +3,10 @@
   "tag": "c:chisel/dn_concrete_persimmon",
   "variants": [
     {
+      "block": "chisel:dn_concrete_persimmon_raw",
+      "name": "dn_concrete_persimmon_raw"
+    },
+    {
       "block": "chisel:dn_concrete_persimmon_array",
       "model_type": "multiblock_2x2",
       "name": "dn_concrete_persimmon_array"
@@ -49,6 +53,15 @@
       "name": "dn_concrete_persimmon_bricks_large"
     },
     {
+      "block": "chisel:dn_concrete_persimmon_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "dn_concrete_persimmon_bricks_large_rough"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_bricks_round",
+      "name": "dn_concrete_persimmon_bricks_round"
+    },
+    {
       "block": "chisel:dn_concrete_persimmon_bricks_small",
       "name": "dn_concrete_persimmon_bricks_small"
     },
@@ -59,6 +72,10 @@
     {
       "block": "chisel:dn_concrete_persimmon_bricks_solid",
       "name": "dn_concrete_persimmon_bricks_solid"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_bricks_square",
+      "name": "dn_concrete_persimmon_bricks_square"
     },
     {
       "block": "chisel:dn_concrete_persimmon_bricks_triple",
@@ -90,17 +107,46 @@
       "name": "dn_concrete_persimmon_checker_small"
     },
     {
+      "block": "chisel:dn_concrete_persimmon_chisel_1",
+      "name": "dn_concrete_persimmon_chisel_1"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_chisel_2",
+      "name": "dn_concrete_persimmon_chisel_2"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_chisel_3",
+      "name": "dn_concrete_persimmon_chisel_3"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_chisel_4",
+      "name": "dn_concrete_persimmon_chisel_4"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_chisel_5",
+      "name": "dn_concrete_persimmon_chisel_5"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_chisel_6",
+      "name": "dn_concrete_persimmon_chisel_6"
+    },
+    {
       "block": "chisel:dn_concrete_persimmon_circular",
       "model_type": "connected",
       "name": "dn_concrete_persimmon_circular"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_cobble",
+      "name": "dn_concrete_persimmon_cobble"
     },
     {
       "block": "chisel:dn_concrete_persimmon_cracked",
       "name": "dn_concrete_persimmon_cracked"
     },
     {
-      "block": "chisel:dn_concrete_persimmon_cobble",
-      "name": "dn_concrete_persimmon_cobble"
+      "block": "chisel:dn_concrete_persimmon_crate",
+      "model_type": "connected",
+      "name": "dn_concrete_persimmon_crate"
     },
     {
       "block": "chisel:dn_concrete_persimmon_cuts",
@@ -113,12 +159,82 @@
       "name": "dn_concrete_persimmon_dent"
     },
     {
+      "block": "chisel:dn_concrete_persimmon_dots",
+      "name": "dn_concrete_persimmon_dots"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_dots_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_persimmon_dots_encased"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_facet",
+      "name": "dn_concrete_persimmon_facet"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_facet_small",
+      "name": "dn_concrete_persimmon_facet_small"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_facet_small_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_persimmon_facet_small_encased"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_frame",
+      "name": "dn_concrete_persimmon_frame"
+    },
+    {
       "block": "chisel:dn_concrete_persimmon_french_1",
       "name": "dn_concrete_persimmon_french_1"
     },
     {
       "block": "chisel:dn_concrete_persimmon_french_2",
       "name": "dn_concrete_persimmon_french_2"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_gem",
+      "name": "dn_concrete_persimmon_gem"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_gem_1",
+      "name": "dn_concrete_persimmon_gem_1"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_gem_1_connected",
+      "model_type": "connected",
+      "name": "dn_concrete_persimmon_gem_1_connected"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_gem_2",
+      "name": "dn_concrete_persimmon_gem_2"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_gem_2_connected",
+      "model_type": "connected",
+      "name": "dn_concrete_persimmon_gem_2_connected"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_gem_3",
+      "name": "dn_concrete_persimmon_gem_3"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_gem_3_connected",
+      "model_type": "connected",
+      "name": "dn_concrete_persimmon_gem_3_connected"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_heart",
+      "name": "dn_concrete_persimmon_heart"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_herringbone",
+      "name": "dn_concrete_persimmon_herringbone"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_herringbone_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_persimmon_herringbone_encased"
     },
     {
       "block": "chisel:dn_concrete_persimmon_indent",
@@ -148,6 +264,15 @@
       "name": "dn_concrete_persimmon_line_vertical"
     },
     {
+      "block": "chisel:dn_concrete_persimmon_lodestone",
+      "name": "dn_concrete_persimmon_lodestone"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_lodestone_connected",
+      "model_type": "connected",
+      "name": "dn_concrete_persimmon_lodestone_connected"
+    },
+    {
       "block": "chisel:dn_concrete_persimmon_meander_horizontal",
       "model_type": "ctmh",
       "name": "dn_concrete_persimmon_meander_horizontal"
@@ -156,6 +281,15 @@
       "block": "chisel:dn_concrete_persimmon_meander_vertical",
       "model_type": "ctmv",
       "name": "dn_concrete_persimmon_meander_vertical"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_medallion",
+      "name": "dn_concrete_persimmon_medallion"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_medallion_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_persimmon_medallion_encased"
     },
     {
       "block": "chisel:dn_concrete_persimmon_mosaic",
@@ -169,6 +303,27 @@
     {
       "block": "chisel:dn_concrete_persimmon_panel",
       "name": "dn_concrete_persimmon_panel"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_panel_1",
+      "name": "dn_concrete_persimmon_panel_1"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_panel_2",
+      "name": "dn_concrete_persimmon_panel_2"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_panel_3",
+      "name": "dn_concrete_persimmon_panel_3"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_parquet",
+      "name": "dn_concrete_persimmon_parquet"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_parquet_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_persimmon_parquet_encased"
     },
     {
       "block": "chisel:dn_concrete_persimmon_pillar",
@@ -271,6 +426,15 @@
       "name": "dn_concrete_persimmon_pillar_meander_spiral"
     },
     {
+      "block": "chisel:dn_concrete_persimmon_plank",
+      "name": "dn_concrete_persimmon_plank"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_plank_connected",
+      "model_type": "connected",
+      "name": "dn_concrete_persimmon_plank_connected"
+    },
+    {
       "block": "chisel:dn_concrete_persimmon_plate",
       "name": "dn_concrete_persimmon_plate"
     },
@@ -278,6 +442,10 @@
       "block": "chisel:dn_concrete_persimmon_plate_connected",
       "model_type": "connected",
       "name": "dn_concrete_persimmon_plate_connected"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_plating",
+      "name": "dn_concrete_persimmon_plating"
     },
     {
       "block": "chisel:dn_concrete_persimmon_polished",
@@ -293,12 +461,38 @@
       "name": "dn_concrete_persimmon_prism"
     },
     {
-      "block": "chisel:dn_concrete_persimmon_raw",
-      "name": "dn_concrete_persimmon_raw"
-    },
-    {
       "block": "chisel:dn_concrete_persimmon_road",
       "name": "dn_concrete_persimmon_road"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_scaffold",
+      "name": "dn_concrete_persimmon_scaffold"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_scaffold_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_persimmon_scaffold_encased"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_shiny",
+      "name": "dn_concrete_persimmon_shiny"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_shiny_connected",
+      "model_type": "connected",
+      "name": "dn_concrete_persimmon_shiny_connected"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_skull_creeper",
+      "name": "dn_concrete_persimmon_skull_creeper"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_skull_skeleton",
+      "name": "dn_concrete_persimmon_skull_skeleton"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_slab",
+      "name": "dn_concrete_persimmon_slab"
     },
     {
       "block": "chisel:dn_concrete_persimmon_slanted",
@@ -306,8 +500,25 @@
       "name": "dn_concrete_persimmon_slanted"
     },
     {
+      "block": "chisel:dn_concrete_persimmon_star",
+      "name": "dn_concrete_persimmon_star"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_stripes",
+      "name": "dn_concrete_persimmon_stripes"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_stripes_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_persimmon_stripes_encased"
+    },
+    {
       "block": "chisel:dn_concrete_persimmon_tiles",
       "name": "dn_concrete_persimmon_tiles"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_tiles_inlayed",
+      "name": "dn_concrete_persimmon_tiles_inlayed"
     },
     {
       "block": "chisel:dn_concrete_persimmon_tiles_large",
@@ -319,9 +530,19 @@
       "name": "dn_concrete_persimmon_tiles_small"
     },
     {
+      "block": "chisel:dn_concrete_persimmon_tiles_small_encased",
+      "model_type": "connected",
+      "name": "dn_concrete_persimmon_tiles_small_encased"
+    },
+    {
       "block": "chisel:dn_concrete_persimmon_twisted",
       "model_type": "top_bottom_side",
       "name": "dn_concrete_persimmon_twisted"
+    },
+    {
+      "block": "chisel:dn_concrete_persimmon_waves",
+      "model_type": "multiblock_2x2",
+      "name": "dn_concrete_persimmon_waves"
     },
     {
       "block": "chisel:dn_concrete_persimmon_weaver",
@@ -334,230 +555,9 @@
       "name": "dn_concrete_persimmon_zag"
     },
     {
-      "block": "chisel:dn_concrete_persimmon_crate",
+      "block": "chisel:dn_concrete_persimmon_caution_encased",
       "model_type": "connected",
-      "name": "dn_concrete_persimmon_crate"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_herringbone",
-      "name": "dn_concrete_persimmon_herringbone"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_herringbone_encased",
-      "model_type": "connected",
-      "name": "dn_concrete_persimmon_herringbone_encased"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_medallion",
-      "name": "dn_concrete_persimmon_medallion"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_medallion_encased",
-      "model_type": "connected",
-      "name": "dn_concrete_persimmon_medallion_encased"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_dots",
-      "name": "dn_concrete_persimmon_dots"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_dots_encased",
-      "model_type": "connected",
-      "name": "dn_concrete_persimmon_dots_encased"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_heart",
-      "name": "dn_concrete_persimmon_heart"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_star",
-      "name": "dn_concrete_persimmon_star"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_plating",
-      "name": "dn_concrete_persimmon_plating"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_lodestone",
-      "name": "dn_concrete_persimmon_lodestone"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_lodestone_connected",
-      "model_type": "connected",
-      "name": "dn_concrete_persimmon_lodestone_connected"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_plank",
-      "name": "dn_concrete_persimmon_plank"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_plank_connected",
-      "model_type": "connected",
-      "name": "dn_concrete_persimmon_plank_connected"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_frame",
-      "name": "dn_concrete_persimmon_frame"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_panel_1",
-      "name": "dn_concrete_persimmon_panel_1"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_panel_2",
-      "name": "dn_concrete_persimmon_panel_2"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_panel_3",
-      "name": "dn_concrete_persimmon_panel_3"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_skull_creeper",
-      "name": "dn_concrete_persimmon_skull_creeper"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_skull_skeleton",
-      "name": "dn_concrete_persimmon_skull_skeleton"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_stripes",
-      "name": "dn_concrete_persimmon_stripes"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_stripes_encased",
-      "model_type": "connected",
-      "name": "dn_concrete_persimmon_stripes_encased"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_chisel_1",
-      "name": "dn_concrete_persimmon_chisel_1"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_chisel_2",
-      "name": "dn_concrete_persimmon_chisel_2"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_chisel_3",
-      "name": "dn_concrete_persimmon_chisel_3"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_chisel_4",
-      "name": "dn_concrete_persimmon_chisel_4"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_chisel_5",
-      "name": "dn_concrete_persimmon_chisel_5"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_chisel_6",
-      "name": "dn_concrete_persimmon_chisel_6"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_facet",
-      "name": "dn_concrete_persimmon_facet"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_facet_small",
-      "name": "dn_concrete_persimmon_facet_small"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_facet_small_encased",
-      "model_type": "connected",
-      "name": "dn_concrete_persimmon_facet_small_encased"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_shiny",
-      "name": "dn_concrete_persimmon_shiny"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_shiny_connected",
-      "model_type": "connected",
-      "name": "dn_concrete_persimmon_shiny_connected"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_gem",
-      "name": "dn_concrete_persimmon_gem"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_gem_1",
-      "name": "dn_concrete_persimmon_gem_1"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_gem_1_connected",
-      "model_type": "connected",
-      "name": "dn_concrete_persimmon_gem_1_connected"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_gem_2",
-      "name": "dn_concrete_persimmon_gem_2"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_gem_2_connected",
-      "model_type": "connected",
-      "name": "dn_concrete_persimmon_gem_2_connected"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_gem_3",
-      "name": "dn_concrete_persimmon_gem_3"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_gem_3_connected",
-      "model_type": "connected",
-      "name": "dn_concrete_persimmon_gem_3_connected"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_bricks_square",
-      "name": "dn_concrete_persimmon_bricks_square"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_slab",
-      "name": "dn_concrete_persimmon_slab"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_scaffold",
-      "name": "dn_concrete_persimmon_scaffold"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_scaffold_encased",
-      "model_type": "connected",
-      "name": "dn_concrete_persimmon_scaffold_encased"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_tiles_inlayed",
-      "name": "dn_concrete_persimmon_tiles_inlayed"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_waves",
-      "model_type": "multiblock_2x2",
-      "name": "dn_concrete_persimmon_waves"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_parquet",
-      "name": "dn_concrete_persimmon_parquet"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_parquet_encased",
-      "model_type": "connected",
-      "name": "dn_concrete_persimmon_parquet_encased"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_bricks_large_rough",
-      "model_type": "multiblock_2x2",
-      "name": "dn_concrete_persimmon_bricks_large_rough"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_tiles_small_encased",
-      "model_type": "connected",
-      "name": "dn_concrete_persimmon_tiles_small_encased"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_bricks_round",
-      "name": "dn_concrete_persimmon_bricks_round"
-    },
-    {
-      "block": "chisel:dn_concrete_persimmon_plumbing_encased",
-      "model_type": "connected",
-      "name": "dn_concrete_persimmon_plumbing_encased"
+      "name": "dn_concrete_persimmon_caution_encased"
     },
     {
       "block": "chisel:dn_concrete_persimmon_diamond_plating_encased",
@@ -570,9 +570,9 @@
       "name": "dn_concrete_persimmon_mesh_encased"
     },
     {
-      "block": "chisel:dn_concrete_persimmon_caution_encased",
+      "block": "chisel:dn_concrete_persimmon_plumbing_encased",
       "model_type": "connected",
-      "name": "dn_concrete_persimmon_caution_encased"
+      "name": "dn_concrete_persimmon_plumbing_encased"
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/calcite/calcite_layers_connected",
-    "particle": "chisel:block/calcite/calcite_layers_connected",
+    "all": "chisel:block/calcite/calcite_layers",
+    "particle": "chisel:block/calcite/calcite_layers",
     "standard_corner": "chisel:block/calcite/calcite_layers_connected-ctm_corner",
-    "standard_cornerless": "chisel:block/calcite/calcite_layers_connected-ctm_cornerless",
-    "standard_horizontal": "chisel:block/calcite/calcite_layers_connected-ctm_horizontal",
-    "standard_none": "chisel:block/calcite/calcite_layers_connected",
-    "standard_vertical": "chisel:block/calcite/calcite_layers_connected-ctm_vertical"
+    "standard_cornerless": "chisel:block/calcite/calcite_layers_connected-ctm_corner",
+    "standard_horizontal": "chisel:block/calcite/calcite_layers",
+    "standard_none": "chisel:block/calcite/calcite_layers",
+    "standard_vertical": "chisel:block/calcite/calcite_layers_connected-ctm_corner"
   }
 }
