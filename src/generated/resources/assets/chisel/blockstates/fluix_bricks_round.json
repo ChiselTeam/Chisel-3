@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/fluix_bricks_round"
+    }
+  }
+}

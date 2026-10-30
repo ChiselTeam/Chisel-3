@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/ae2_fluix/fluix_layers",
+    "particle": "chisel:block/ae2_fluix/fluix_layers",
+    "standard_corner": "chisel:block/ae2_fluix/fluix_layers_connected-ctm_corner",
+    "standard_cornerless": "chisel:block/ae2_fluix/fluix_layers_connected-ctm_corner",
+    "standard_horizontal": "chisel:block/ae2_fluix/fluix_layers",
+    "standard_none": "chisel:block/ae2_fluix/fluix_layers",
+    "standard_vertical": "chisel:block/ae2_fluix/fluix_layers_connected-ctm_corner"
+  }
+}

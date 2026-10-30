@@ -41,8 +41,6 @@ public class RegisterCommandsEventHandler {
                         .requires(CommandSourceStack::isPlayer)
                         .executes(command -> {
                             List<Block> blocks = new ArrayList<>();
-                            ChiselFamilies.AE2_CERTUS.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
-                            ChiselFamilies.AE2_SKY_STONE.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
                             return placeVariants(command.getSource(), blocks);
                         })
         );

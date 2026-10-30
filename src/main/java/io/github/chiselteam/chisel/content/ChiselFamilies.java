@@ -3,6 +3,7 @@ package io.github.chiselteam.chisel.content;
 import io.github.chiselteam.chisel.content.compat.CompatFamilies;
 import io.github.chiselteam.chisel.content.compat.allthemods.AtmAncientStoneFamily;
 import io.github.chiselteam.chisel.content.compat.appliedenergistics.Ae2CertusFamily;
+import io.github.chiselteam.chisel.content.compat.appliedenergistics.Ae2FluixFamily;
 import io.github.chiselteam.chisel.content.compat.appliedenergistics.Ae2SkyStoneFamily;
 import io.github.chiselteam.chisel.content.compat.moddedmetal.*;
 import io.github.chiselteam.chisel.content.compat.neovitae.NvRuneFamily;
@@ -37,6 +38,7 @@ public class ChiselFamilies {
     public static final ChiselFamily BRICKS = BricksFamily.FAMILY;
     public static final ChiselFamily BRONZE = BronzeFamily.FAMILY;
     public static final ChiselFamily AE2_CERTUS = Ae2CertusFamily.FAMILY;
+    public static final ChiselFamily AE2_FLUIX = Ae2FluixFamily.FAMILY;
     public static final ChiselFamily AE2_SKY_STONE = Ae2SkyStoneFamily.FAMILY;
     public static final ChiselFamily CHARCOAL = CharcoalFamily.FAMILY;
     public static final ChiselFamily CLOUD = CloudFamily.FAMILY;

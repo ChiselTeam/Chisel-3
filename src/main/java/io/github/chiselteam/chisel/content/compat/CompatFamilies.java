@@ -3,6 +3,7 @@ package io.github.chiselteam.chisel.content.compat;
 import io.github.chiselteam.chisel.content.ChiselFamily;
 import io.github.chiselteam.chisel.content.compat.allthemods.AtmAncientStoneFamily;
 import io.github.chiselteam.chisel.content.compat.appliedenergistics.Ae2CertusFamily;
+import io.github.chiselteam.chisel.content.compat.appliedenergistics.Ae2FluixFamily;
 import io.github.chiselteam.chisel.content.compat.appliedenergistics.Ae2SkyStoneFamily;
 import io.github.chiselteam.chisel.content.compat.dyenamics.DnConcreteFamily;
 import io.github.chiselteam.chisel.content.compat.dyenamics.DnStainedGlassFamily;
@@ -20,7 +21,7 @@ public class CompatFamilies {
     private static final List<CompatModule> MODULES = List.of(
             // new CompatModule("aether_ii", List.of()),
             new CompatModule("allthemodium", List.of(AtmAncientStoneFamily.FAMILY)),
-            new CompatModule("ae2", List.of(Ae2CertusFamily.FAMILY, Ae2SkyStoneFamily.FAMILY)),
+            new CompatModule("ae2", List.of(Ae2CertusFamily.FAMILY, Ae2FluixFamily.FAMILY, Ae2SkyStoneFamily.FAMILY)),
             new CompatModule("dyenamics", List.of(DnConcreteFamily.FAMILY, DnStainedGlassFamily.FAMILY, DnOakFramedStainedGlassFamily.FAMILY, DnSteelFramedStainedGlassFamily.FAMILY)),
             new CompatModule("forbidden_arcanus", List.of(TTArcaneStoneFamily.FAMILY)),
             new CompatModule("thaumaturge", List.of(TTArcaneStoneFamily.FAMILY, TTThaumiumFamily.FAMILY, TTTallowFamily.FAMILY)),
