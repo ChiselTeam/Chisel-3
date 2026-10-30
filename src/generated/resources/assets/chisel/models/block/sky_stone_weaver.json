@@ -4,7 +4,7 @@
     "all": "chisel:block/ae2_sky_stone/sky_stone_weaver",
     "particle": "chisel:block/ae2_sky_stone/sky_stone_weaver",
     "standard_corner": "chisel:block/ae2_sky_stone/sky_stone_weaver-ctm_corner",
-    "standard_cornerless": "chisel:block/ae2_sky_stone/sky_stone_weaver-ctm_cornerless",
+    "standard_cornerless": "chisel:block/ae2_sky_stone/sky_stone_weaver-ctm_corner",
     "standard_horizontal": "chisel:block/ae2_sky_stone/sky_stone_weaver-ctm_horizontal",
     "standard_none": "chisel:block/ae2_sky_stone/sky_stone_weaver",
     "standard_vertical": "chisel:block/ae2_sky_stone/sky_stone_weaver-ctm_vertical"

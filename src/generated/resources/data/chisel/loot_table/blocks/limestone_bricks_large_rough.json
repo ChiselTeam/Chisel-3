@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "chisel:limestone_bricks_large_rough"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "chisel:blocks/limestone_bricks_large_rough"
+}

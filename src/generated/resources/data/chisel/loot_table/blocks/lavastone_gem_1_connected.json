@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "chisel:lavastone_gem_1_connected"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "chisel:blocks/lavastone_gem_1_connected"
+}

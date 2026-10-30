@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "chisel:bricks_pillar_ionic_dent"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "chisel:blocks/bricks_pillar_ionic_dent"
+}

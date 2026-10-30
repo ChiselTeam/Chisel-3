@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "chisel:crying_obsidian_border_square_small"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "chisel:blocks/crying_obsidian_border_square_small"
+}

@@ -7,6 +7,10 @@
       "name": "block.minecraft.sculk"
     },
     {
+      "block": "chisel:sculk_raw",
+      "name": "sculk_raw"
+    },
+    {
       "block": "chisel:sculk_array",
       "model_type": "multiblock_2x2",
       "name": "sculk_array"
@@ -15,6 +19,11 @@
       "block": "chisel:sculk_border_square",
       "model_type": "connected",
       "name": "sculk_border_square"
+    },
+    {
+      "block": "chisel:sculk_border_square_small",
+      "model_type": "connected",
+      "name": "sculk_border_square_small"
     },
     {
       "block": "chisel:sculk_braid",
@@ -30,11 +39,6 @@
       "name": "sculk_bricks_cracked"
     },
     {
-      "block": "chisel:sculk_bricks_encased",
-      "model_type": "connected",
-      "name": "sculk_bricks_encased"
-    },
-    {
       "block": "chisel:sculk_bricks_indent",
       "name": "sculk_bricks_indent"
     },
@@ -48,6 +52,15 @@
       "name": "sculk_bricks_large"
     },
     {
+      "block": "chisel:sculk_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "sculk_bricks_large_rough"
+    },
+    {
+      "block": "chisel:sculk_bricks_round",
+      "name": "sculk_bricks_round"
+    },
+    {
       "block": "chisel:sculk_bricks_small",
       "name": "sculk_bricks_small"
     },
@@ -58,6 +71,15 @@
     {
       "block": "chisel:sculk_bricks_solid",
       "name": "sculk_bricks_solid"
+    },
+    {
+      "block": "chisel:sculk_bricks_encased",
+      "model_type": "connected",
+      "name": "sculk_bricks_encased"
+    },
+    {
+      "block": "chisel:sculk_bricks_square",
+      "name": "sculk_bricks_square"
     },
     {
       "block": "chisel:sculk_bricks_triple",
@@ -89,17 +111,46 @@
       "name": "sculk_checker_small"
     },
     {
+      "block": "chisel:sculk_chisel_1",
+      "name": "sculk_chisel_1"
+    },
+    {
+      "block": "chisel:sculk_chisel_2",
+      "name": "sculk_chisel_2"
+    },
+    {
+      "block": "chisel:sculk_chisel_3",
+      "name": "sculk_chisel_3"
+    },
+    {
+      "block": "chisel:sculk_chisel_4",
+      "name": "sculk_chisel_4"
+    },
+    {
+      "block": "chisel:sculk_chisel_5",
+      "name": "sculk_chisel_5"
+    },
+    {
+      "block": "chisel:sculk_chisel_6",
+      "name": "sculk_chisel_6"
+    },
+    {
       "block": "chisel:sculk_circular",
       "model_type": "connected",
       "name": "sculk_circular"
+    },
+    {
+      "block": "chisel:sculk_cobble",
+      "name": "sculk_cobble"
     },
     {
       "block": "chisel:sculk_cracked",
       "name": "sculk_cracked"
     },
     {
-      "block": "chisel:sculk_cobble",
-      "name": "sculk_cobble"
+      "block": "chisel:sculk_crate",
+      "model_type": "connected",
+      "name": "sculk_crate"
     },
     {
       "block": "chisel:sculk_cuts",
@@ -112,12 +163,82 @@
       "name": "sculk_dent"
     },
     {
+      "block": "chisel:sculk_dots",
+      "name": "sculk_dots"
+    },
+    {
+      "block": "chisel:sculk_dots_encased",
+      "model_type": "connected",
+      "name": "sculk_dots_encased"
+    },
+    {
+      "block": "chisel:sculk_facet",
+      "name": "sculk_facet"
+    },
+    {
+      "block": "chisel:sculk_facet_small",
+      "name": "sculk_facet_small"
+    },
+    {
+      "block": "chisel:sculk_facet_small_encased",
+      "model_type": "connected",
+      "name": "sculk_facet_small_encased"
+    },
+    {
+      "block": "chisel:sculk_frame",
+      "name": "sculk_frame"
+    },
+    {
       "block": "chisel:sculk_french_1",
       "name": "sculk_french_1"
     },
     {
       "block": "chisel:sculk_french_2",
       "name": "sculk_french_2"
+    },
+    {
+      "block": "chisel:sculk_gem",
+      "name": "sculk_gem"
+    },
+    {
+      "block": "chisel:sculk_gem_1",
+      "name": "sculk_gem_1"
+    },
+    {
+      "block": "chisel:sculk_gem_1_connected",
+      "model_type": "connected",
+      "name": "sculk_gem_1_connected"
+    },
+    {
+      "block": "chisel:sculk_gem_2",
+      "name": "sculk_gem_2"
+    },
+    {
+      "block": "chisel:sculk_gem_2_connected",
+      "model_type": "connected",
+      "name": "sculk_gem_2_connected"
+    },
+    {
+      "block": "chisel:sculk_gem_3",
+      "name": "sculk_gem_3"
+    },
+    {
+      "block": "chisel:sculk_gem_3_connected",
+      "model_type": "connected",
+      "name": "sculk_gem_3_connected"
+    },
+    {
+      "block": "chisel:sculk_heart",
+      "name": "sculk_heart"
+    },
+    {
+      "block": "chisel:sculk_herringbone",
+      "name": "sculk_herringbone"
+    },
+    {
+      "block": "chisel:sculk_herringbone_encased",
+      "model_type": "connected",
+      "name": "sculk_herringbone_encased"
     },
     {
       "block": "chisel:sculk_indent",
@@ -128,6 +249,10 @@
       "block": "chisel:sculk_jellybean",
       "model_type": "multiblock_2x2",
       "name": "sculk_jellybean"
+    },
+    {
+      "block": "chisel:sculk_large_bricks",
+      "name": "sculk_large_bricks"
     },
     {
       "block": "chisel:sculk_layers",
@@ -147,6 +272,15 @@
       "name": "sculk_line_vertical"
     },
     {
+      "block": "chisel:sculk_lodestone",
+      "name": "sculk_lodestone"
+    },
+    {
+      "block": "chisel:sculk_lodestone_connected",
+      "model_type": "connected",
+      "name": "sculk_lodestone_connected"
+    },
+    {
       "block": "chisel:sculk_meander_horizontal",
       "model_type": "ctmh",
       "name": "sculk_meander_horizontal"
@@ -155,6 +289,15 @@
       "block": "chisel:sculk_meander_vertical",
       "model_type": "ctmv",
       "name": "sculk_meander_vertical"
+    },
+    {
+      "block": "chisel:sculk_medallion",
+      "name": "sculk_medallion"
+    },
+    {
+      "block": "chisel:sculk_medallion_encased",
+      "model_type": "connected",
+      "name": "sculk_medallion_encased"
     },
     {
       "block": "chisel:sculk_mosaic",
@@ -168,6 +311,27 @@
     {
       "block": "chisel:sculk_panel",
       "name": "sculk_panel"
+    },
+    {
+      "block": "chisel:sculk_panel_1",
+      "name": "sculk_panel_1"
+    },
+    {
+      "block": "chisel:sculk_panel_2",
+      "name": "sculk_panel_2"
+    },
+    {
+      "block": "chisel:sculk_panel_3",
+      "name": "sculk_panel_3"
+    },
+    {
+      "block": "chisel:sculk_parquet",
+      "name": "sculk_parquet"
+    },
+    {
+      "block": "chisel:sculk_parquet_encased",
+      "model_type": "connected",
+      "name": "sculk_parquet_encased"
     },
     {
       "block": "chisel:sculk_pillar",
@@ -270,6 +434,15 @@
       "name": "sculk_pillar_meander_spiral"
     },
     {
+      "block": "chisel:sculk_plank",
+      "name": "sculk_plank"
+    },
+    {
+      "block": "chisel:sculk_plank_connected",
+      "model_type": "connected",
+      "name": "sculk_plank_connected"
+    },
+    {
       "block": "chisel:sculk_plate",
       "name": "sculk_plate"
     },
@@ -277,6 +450,10 @@
       "block": "chisel:sculk_plate_connected",
       "model_type": "connected",
       "name": "sculk_plate_connected"
+    },
+    {
+      "block": "chisel:sculk_plating",
+      "name": "sculk_plating"
     },
     {
       "block": "chisel:sculk_polished",
@@ -292,225 +469,8 @@
       "name": "sculk_prism"
     },
     {
-      "block": "chisel:sculk_raw",
-      "name": "sculk_raw"
-    },
-    {
       "block": "chisel:sculk_road",
       "name": "sculk_road"
-    },
-    {
-      "block": "chisel:sculk_slanted",
-      "model_type": "multiblock_2x2",
-      "name": "sculk_slanted"
-    },
-    {
-      "block": "chisel:sculk_tiles",
-      "name": "sculk_tiles"
-    },
-    {
-      "block": "chisel:sculk_tiles_large",
-      "model_type": "connected",
-      "name": "sculk_tiles_large"
-    },
-    {
-      "block": "chisel:sculk_tiles_small",
-      "name": "sculk_tiles_small"
-    },
-    {
-      "block": "chisel:sculk_twisted",
-      "model_type": "top_bottom_side",
-      "name": "sculk_twisted"
-    },
-    {
-      "block": "chisel:sculk_weaver",
-      "model_type": "connected",
-      "name": "sculk_weaver"
-    },
-    {
-      "block": "chisel:sculk_zag",
-      "model_type": "v4",
-      "name": "sculk_zag"
-    },
-    {
-      "block": "chisel:sculk_crate",
-      "model_type": "connected",
-      "name": "sculk_crate"
-    },
-    {
-      "block": "chisel:sculk_herringbone",
-      "name": "sculk_herringbone"
-    },
-    {
-      "block": "chisel:sculk_herringbone_encased",
-      "model_type": "connected",
-      "name": "sculk_herringbone_encased"
-    },
-    {
-      "block": "chisel:sculk_medallion",
-      "name": "sculk_medallion"
-    },
-    {
-      "block": "chisel:sculk_medallion_encased",
-      "model_type": "connected",
-      "name": "sculk_medallion_encased"
-    },
-    {
-      "block": "chisel:sculk_dots",
-      "name": "sculk_dots"
-    },
-    {
-      "block": "chisel:sculk_dots_encased",
-      "model_type": "connected",
-      "name": "sculk_dots_encased"
-    },
-    {
-      "block": "chisel:sculk_heart",
-      "name": "sculk_heart"
-    },
-    {
-      "block": "chisel:sculk_star",
-      "name": "sculk_star"
-    },
-    {
-      "block": "chisel:sculk_plating",
-      "name": "sculk_plating"
-    },
-    {
-      "block": "chisel:sculk_lodestone",
-      "name": "sculk_lodestone"
-    },
-    {
-      "block": "chisel:sculk_lodestone_connected",
-      "model_type": "connected",
-      "name": "sculk_lodestone_connected"
-    },
-    {
-      "block": "chisel:sculk_plank",
-      "name": "sculk_plank"
-    },
-    {
-      "block": "chisel:sculk_plank_connected",
-      "model_type": "connected",
-      "name": "sculk_plank_connected"
-    },
-    {
-      "block": "chisel:sculk_frame",
-      "name": "sculk_frame"
-    },
-    {
-      "block": "chisel:sculk_panel_1",
-      "name": "sculk_panel_1"
-    },
-    {
-      "block": "chisel:sculk_panel_2",
-      "name": "sculk_panel_2"
-    },
-    {
-      "block": "chisel:sculk_panel_3",
-      "name": "sculk_panel_3"
-    },
-    {
-      "block": "chisel:sculk_skull_creeper",
-      "name": "sculk_skull_creeper"
-    },
-    {
-      "block": "chisel:sculk_skull_skeleton",
-      "name": "sculk_skull_skeleton"
-    },
-    {
-      "block": "chisel:sculk_stripes",
-      "name": "sculk_stripes"
-    },
-    {
-      "block": "chisel:sculk_stripes_encased",
-      "model_type": "connected",
-      "name": "sculk_stripes_encased"
-    },
-    {
-      "block": "chisel:sculk_chisel_1",
-      "name": "sculk_chisel_1"
-    },
-    {
-      "block": "chisel:sculk_chisel_2",
-      "name": "sculk_chisel_2"
-    },
-    {
-      "block": "chisel:sculk_chisel_3",
-      "name": "sculk_chisel_3"
-    },
-    {
-      "block": "chisel:sculk_chisel_4",
-      "name": "sculk_chisel_4"
-    },
-    {
-      "block": "chisel:sculk_chisel_5",
-      "name": "sculk_chisel_5"
-    },
-    {
-      "block": "chisel:sculk_chisel_6",
-      "name": "sculk_chisel_6"
-    },
-    {
-      "block": "chisel:sculk_facet",
-      "name": "sculk_facet"
-    },
-    {
-      "block": "chisel:sculk_facet_small",
-      "name": "sculk_facet_small"
-    },
-    {
-      "block": "chisel:sculk_facet_small_encased",
-      "model_type": "connected",
-      "name": "sculk_facet_small_encased"
-    },
-    {
-      "block": "chisel:sculk_shiny",
-      "name": "sculk_shiny"
-    },
-    {
-      "block": "chisel:sculk_shiny_connected",
-      "model_type": "connected",
-      "name": "sculk_shiny_connected"
-    },
-    {
-      "block": "chisel:sculk_gem",
-      "name": "sculk_gem"
-    },
-    {
-      "block": "chisel:sculk_gem_1",
-      "name": "sculk_gem_1"
-    },
-    {
-      "block": "chisel:sculk_gem_1_connected",
-      "model_type": "connected",
-      "name": "sculk_gem_1_connected"
-    },
-    {
-      "block": "chisel:sculk_gem_2",
-      "name": "sculk_gem_2"
-    },
-    {
-      "block": "chisel:sculk_gem_2_connected",
-      "model_type": "connected",
-      "name": "sculk_gem_2_connected"
-    },
-    {
-      "block": "chisel:sculk_gem_3",
-      "name": "sculk_gem_3"
-    },
-    {
-      "block": "chisel:sculk_gem_3_connected",
-      "model_type": "connected",
-      "name": "sculk_gem_3_connected"
-    },
-    {
-      "block": "chisel:sculk_bricks_square",
-      "name": "sculk_bricks_square"
-    },
-    {
-      "block": "chisel:sculk_slab",
-      "name": "sculk_slab"
     },
     {
       "block": "chisel:sculk_scaffold",
@@ -522,27 +482,60 @@
       "name": "sculk_scaffold_encased"
     },
     {
+      "block": "chisel:sculk_shiny",
+      "name": "sculk_shiny"
+    },
+    {
+      "block": "chisel:sculk_shiny_connected",
+      "model_type": "connected",
+      "name": "sculk_shiny_connected"
+    },
+    {
+      "block": "chisel:sculk_skull_creeper",
+      "name": "sculk_skull_creeper"
+    },
+    {
+      "block": "chisel:sculk_skull_skeleton",
+      "name": "sculk_skull_skeleton"
+    },
+    {
+      "block": "chisel:sculk_slab",
+      "name": "sculk_slab"
+    },
+    {
+      "block": "chisel:sculk_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "sculk_slanted"
+    },
+    {
+      "block": "chisel:sculk_star",
+      "name": "sculk_star"
+    },
+    {
+      "block": "chisel:sculk_stripes",
+      "name": "sculk_stripes"
+    },
+    {
+      "block": "chisel:sculk_stripes_encased",
+      "model_type": "connected",
+      "name": "sculk_stripes_encased"
+    },
+    {
+      "block": "chisel:sculk_tiles",
+      "name": "sculk_tiles"
+    },
+    {
       "block": "chisel:sculk_tiles_inlayed",
       "name": "sculk_tiles_inlayed"
     },
     {
-      "block": "chisel:sculk_waves",
-      "model_type": "multiblock_2x2",
-      "name": "sculk_waves"
-    },
-    {
-      "block": "chisel:sculk_parquet",
-      "name": "sculk_parquet"
-    },
-    {
-      "block": "chisel:sculk_parquet_encased",
+      "block": "chisel:sculk_tiles_large",
       "model_type": "connected",
-      "name": "sculk_parquet_encased"
+      "name": "sculk_tiles_large"
     },
     {
-      "block": "chisel:sculk_bricks_large_rough",
-      "model_type": "multiblock_2x2",
-      "name": "sculk_bricks_large_rough"
+      "block": "chisel:sculk_tiles_small",
+      "name": "sculk_tiles_small"
     },
     {
       "block": "chisel:sculk_tiles_small_encased",
@@ -550,8 +543,24 @@
       "name": "sculk_tiles_small_encased"
     },
     {
-      "block": "chisel:sculk_bricks_round",
-      "name": "sculk_bricks_round"
+      "block": "chisel:sculk_twisted",
+      "model_type": "top_bottom_side",
+      "name": "sculk_twisted"
+    },
+    {
+      "block": "chisel:sculk_waves",
+      "model_type": "multiblock_2x2",
+      "name": "sculk_waves"
+    },
+    {
+      "block": "chisel:sculk_weaver",
+      "model_type": "connected",
+      "name": "sculk_weaver"
+    },
+    {
+      "block": "chisel:sculk_zag",
+      "model_type": "v4",
+      "name": "sculk_zag"
     }
   ]
 }

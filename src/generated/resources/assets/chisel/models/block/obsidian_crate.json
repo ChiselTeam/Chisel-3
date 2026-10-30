@@ -1,8 +1,12 @@
 {
-  "parent": "minecraft:block/cube_bottom_top",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "bottom": "chisel:block/obsidian/obsidian_crate-bottom",
-    "side": "chisel:block/obsidian/obsidian_crate-side",
-    "top": "chisel:block/obsidian/obsidian_tiles"
+    "all": "chisel:block/obsidian/obsidian_crate",
+    "particle": "chisel:block/obsidian/obsidian_crate",
+    "standard_corner": "chisel:block/obsidian/obsidian_crate-ctm_corner",
+    "standard_cornerless": "chisel:block/obsidian/obsidian_crate-ctm_cornerless",
+    "standard_horizontal": "chisel:block/obsidian/obsidian_crate-ctm_horizontal",
+    "standard_none": "chisel:block/obsidian/obsidian_crate",
+    "standard_vertical": "chisel:block/obsidian/obsidian_crate-ctm_vertical"
   }
 }
