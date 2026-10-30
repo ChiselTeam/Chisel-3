@@ -43,34 +43,27 @@ public final class DnConcreteFamily {
                 .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_CONCRETE)
                         .mapColor(mapColor).lightLevel(state -> lightLevel)).blockName(baseName))
                 .variant("%s_raw".formatted(concreteName), v -> v.description("Raw"))
-                .variant("%s_array".formatted(concreteName), v -> v.description("Array").model(ChiselModelHandlers.MULTIBLOCK_2X2))
+                .variant("%s_array".formatted(concreteName), v -> v.description("Array").model(ChiselModelHandlers.MULTIBLOCK_2X2)
+                        .textureFromBase("2x2_bottom_left"))
                 .variant("%s_border_square".formatted(concreteName), v -> v.description("Square Border").model(ChiselModelHandlers.CONNECTED)
-                        .texture("ctm_cornerless", Chisel.prefix("block/dn_concrete_%s/dn_concrete_%s_raw".formatted(color, color))))
+                        .texture("ctm_cornerless", Chisel.prefix("block/%1$s/%1$s_raw".formatted(concreteName)))
+                        .textureFromBase("ctm_vertical")
+                        .textureFromBase("ctm_horizontal")
+                        .textureFromBase("ctm_corner"))
                 .variant("%s_border_square_small".formatted(concreteName), v -> v.description("Small Square Border").model(ChiselModelHandlers.CONNECTED)
                         .texture("ctm_cornerless", Chisel.prefix("block/dn_concrete_%s/dn_concrete_%s_raw".formatted(color, color))))
                 .variant("%s_braid".formatted(concreteName), v -> v.description("Braid"))
                 .variant("%s_braid_encased".formatted(concreteName), v -> v.description("Encased Braid").model(ChiselModelHandlers.CONNECTED)
-                        .texture("ctm_cornerless", Chisel.prefix(switch (color) {
-                            case "rose" -> "block/dn_concrete_rose/dn_concrete_rose_braid_encased-ctm_cornerless";
-                            default -> "block/dn_concrete_%s/dn_concrete_%s_braid".formatted(color, color);
-                        })))
+                        .texture("ctm_cornerless", Chisel.prefix("block/%1$s/%1$s_braid".formatted(concreteName))))
                 .variant("%s_bricks_cracked".formatted(concreteName), v -> v.description("Cracked Bricks"))
                 .variant("%s_bricks_encased".formatted(concreteName), v -> v.description("Encased Bricks").model(ChiselModelHandlers.CONNECTED)
                         .texture("ctm_cornerless", Chisel.prefix("block/dn_concrete_%s/dn_concrete_%s_bricks_solid".formatted(color, color))))
                 .variant("%s_bricks_indent".formatted(concreteName), v -> v.description("Indent Bricks"))
                 .variant("%s_bricks_inlayed".formatted(concreteName), v -> v.description("Inlayed Bricks"))
                 .variant("%s_bricks_large".formatted(concreteName), v -> v.description("Large Bricks").model(ChiselModelHandlers.MULTIBLOCK_2X2)
-                        .texture("2x2_top_left", Chisel.prefix(switch (color) {
-                            case "amber" -> "block/dn_concrete_amber/dn_concrete_amber_bricks_large-2x2_top_left";
-                            case "conifer" -> "block/dn_concrete_conifer/dn_concrete_conifer_bricks_large-2x2_top_left";
-                            case "mint" -> "block/dn_concrete_mint/dn_concrete_mint_bricks_large-2x2_top_left";
-                            case "aquamarine" -> "block/dn_concrete_aquamarine/dn_concrete_aquamarine_bricks_large-2x2_top_left";
-                            case "icy_blue" -> "block/dn_concrete_icy_blue/dn_concrete_icy_blue_bricks_large-2x2_top_left";
-                            case "navy" -> "block/dn_concrete_navy/dn_concrete_navy_bricks_large-2x2_top_left";
-                            case "ultramarine" -> "block/dn_concrete_ultramarine/dn_concrete_ultramarine_bricks_large-2x2_top_left";
-                            case "rose" -> "block/dn_concrete_rose/dn_concrete_rose_bricks_large-2x2_top_left";
-                            default -> "block/dn_concrete_%s/dn_concrete_%s_bricks_large".formatted(color, color);
-                        })))
+                        .textureFromBase("2x2_top_left")
+                        .texture("2x2_top_right", Chisel.prefix("block/%1$s/%1$s_bricks_large-2x2_bottom_left".formatted(concreteName)))
+                        .textureFromBase("2x2_bottom_right"))
                 .variant("%s_bricks_large_rough".formatted(concreteName), v -> v.description("Large Rough Bricks").model(ChiselModelHandlers.MULTIBLOCK_2X2))
                 .variant("%s_bricks_round".formatted(concreteName), v -> v.description("Round Bricks"))
                 .variant("%s_bricks_small".formatted(concreteName), v -> v.description("Small Bricks"))
@@ -80,10 +73,7 @@ public final class DnConcreteFamily {
                 .variant("%s_bricks_triple".formatted(concreteName), v -> v.description("Triple Bricks"))
                 .variant("%s_bricks_vertical".formatted(concreteName), v -> v.description("Vertical Bricks"))
                 .variant("%s_chaotic".formatted(concreteName), v -> v.description("Chaotic").model(ChiselModelHandlers.MULTIBLOCK_3X3)
-                        .texture("3x3_top_left", Chisel.prefix(switch (color) {
-                            case "wine" -> "block/dn_concrete_wine/dn_concrete_wine_chaotic-3x3_top_left";
-                            default -> "block/dn_concrete_%s/dn_concrete_%s_chaotic".formatted(color, color);
-                        })))
+                        .textureFromBase("3x3_top_left"))
                 .variant("%s_chaotic_medium".formatted(concreteName), v -> v.description("Chaotic Medium"))
                 .variant("%s_chaotic_small".formatted(concreteName), v -> v.description("Chaotic Small"))
                 .variant("%s_checker".formatted(concreteName), v -> v.description("Checker"))
@@ -100,11 +90,7 @@ public final class DnConcreteFamily {
                 .variant("%s_cracked".formatted(concreteName), v -> v.description("Cracked"))
                 .variant("%s_crate".formatted(concreteName), v -> v.description("Crate").model(ChiselModelHandlers.CONNECTED))
                 .variant("%s_cuts".formatted(concreteName), v -> v.description("Cuts").model(ChiselModelHandlers.MULTIBLOCK_4X4)
-                        .texture("4x4_row_0_column_0", Chisel.prefix(switch (color) {
-                            case "amber" -> "block/dn_concrete_amber/dn_concrete_amber_cuts-4x4_row_0_column_0";
-                            case "rose" -> "block/dn_concrete_rose/dn_concrete_rose_cuts-4x4_row_0_column_0";
-                            default -> "block/dn_concrete_%s/dn_concrete_%s_cuts".formatted(color, color);
-                        })))
+                        .textureFromBase("4x4_row_0_column_0"))
                 .variant("%s_dent".formatted(concreteName), v -> v.description("Dent").model(ChiselModelHandlers.CONNECTED)
                         .texture("ctm_cornerless", Chisel.prefix("block/dn_concrete_%s/dn_concrete_%s_raw".formatted(color, color))))
                 .variant("%s_dots".formatted(concreteName), v -> v.description("Dots"))
@@ -113,10 +99,7 @@ public final class DnConcreteFamily {
                 .variant("%s_facet".formatted(concreteName), v -> v.description("Facet"))
                 .variant("%s_facet_small".formatted(concreteName), v -> v.description("Small Facet"))
                 .variant("%s_facet_small_encased".formatted(concreteName), v -> v.description("Encased Small Facet").model(ChiselModelHandlers.CONNECTED)
-                        .texture("ctm_cornerless", Chisel.prefix(switch (color) {
-                            case "ultramarine" -> "block/dn_concrete_ultramarine/dn_concrete_ultramarine_facet_small_encased-ctm_cornerless";
-                            default -> "block/dn_concrete_%s/dn_concrete_%s_facet_small".formatted(color, color);
-                        })))
+                        .texture("ctm_cornerless", Chisel.prefix("block/%1$s/%1$s_facet_small".formatted(concreteName))))
                 .variant("%s_frame".formatted(concreteName), v -> v.description("Frame"))
                 .variant("%s_french_1".formatted(concreteName), v -> v.description("French 1"))
                 .variant("%s_french_2".formatted(concreteName), v -> v.description("French 2"))
@@ -142,7 +125,10 @@ public final class DnConcreteFamily {
                         .texture("2x2_top_left", Chisel.prefix("block/dn_concrete_%s/dn_concrete_%s_jellybean".formatted(color, color))))
                 .variant("%s_layers".formatted(concreteName), v -> v.description("Layers")
                         .texture(Chisel.prefix("block/dn_concrete_%s/dn_concrete_%s_layers_connected".formatted(color, color))))
-                .variant("%s_layers_connected".formatted(concreteName), v -> v.description("Layers Connected").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_layers_connected".formatted(concreteName), v -> v.description("Layers Connected").model(ChiselModelHandlers.CONNECTED)
+                        .texture("ctm_cornerless", Chisel.prefix("block/%1$s/%1$s_layers_connected-ctm_corner".formatted(concreteName)))
+                        .textureAlias("ctm_vertical", "ctm_cornerless")
+                        .textureFromBase("ctm_horizontal"))
                 .variant("%s_line_horizontal".formatted(concreteName), v -> v.description("Horizontal Line"))
                 .variant("%s_line_vertical".formatted(concreteName), v -> v.description("Vertical Line"))
                 .variant("%s_lodestone".formatted(concreteName), v -> v.description("Lodestone")
@@ -280,7 +266,8 @@ public final class DnConcreteFamily {
                 .variant("%s_skull_creeper".formatted(concreteName), v -> v.description("Creeper Skull"))
                 .variant("%s_skull_skeleton".formatted(concreteName), v -> v.description("Skeleton Skull"))
                 .variant("%s_slab".formatted(concreteName), v -> v.description("Slab"))
-                .variant("%s_slanted".formatted(concreteName), v -> v.description("Slanted").model(ChiselModelHandlers.MULTIBLOCK_2X2))
+                .variant("%s_slanted".formatted(concreteName), v -> v.description("Slanted").model(ChiselModelHandlers.MULTIBLOCK_2X2)
+                        .textureFromBase("2x2_bottom_left"))
                 .variant("%s_star".formatted(concreteName), v -> v.description("Star"))
                 .variant("%s_stripes".formatted(concreteName), v -> v.description("Stripes"))
                 .variant("%s_stripes_encased".formatted(concreteName), v -> v.description("Encased Stripes").model(ChiselModelHandlers.CONNECTED)
@@ -291,14 +278,17 @@ public final class DnConcreteFamily {
                         .texture("ctm_cornerless", Chisel.prefix("block/dn_concrete_%s/dn_concrete_%s_raw".formatted(color, color))))
                 .variant("%s_tiles_small".formatted(concreteName), v -> v.description("Small Tiles"))
                 .variant("%s_tiles_small_encased".formatted(concreteName), v -> v.description("Encased Small Tiles").model(ChiselModelHandlers.CONNECTED)
-                        .texture("ctm_cornerless", Chisel.prefix("block/dn_concrete_%s/dn_concrete_%s_tiles_small".formatted(color, color))))
+                        .texture("ctm_cornerless", Chisel.prefix("block/%1$s/%1$s_tiles_small".formatted(concreteName)))
+                        .texture("ctm_horizontal", Chisel.prefix("block/%1$s/%1$s_pillar-side".formatted(concreteName))))
                 .variant("%s_twisted".formatted(concreteName), v -> v.description("Twisted").model(ChiselModelHandlers.TBS)
                         .texture("bottom", Chisel.prefix("block/dn_concrete_%s/dn_concrete_%s_twisted-top".formatted(color, color))))
                 .variant("%s_waves".formatted(concreteName), v -> v.description("Waves").model(ChiselModelHandlers.MULTIBLOCK_2X2)
                         .texture("2x2_top_left", Chisel.prefix("block/dn_concrete_%s/dn_concrete_%s_waves".formatted(color, color))))
-                .variant("%s_weaver".formatted(concreteName), v -> v.description("Weaver").model(ChiselModelHandlers.CONNECTED))
+                .variant("%s_weaver".formatted(concreteName), v -> v.description("Weaver").model(ChiselModelHandlers.CONNECTED)
+                        .texture("ctm_cornerless", Chisel.prefix("block/%1$s/%1$s_weaver-ctm_corner".formatted(concreteName))))
                 .variant("%s_zag".formatted(concreteName), v -> v.description("Zag").model(ChiselModelHandlers.V4)
-                        .texture("v4_top_left", Chisel.prefix("block/dn_concrete_%s/dn_concrete_%s_zag".formatted(color, color))))
+                        .textureFromBase("v4_top_left")
+                        .texture("v4_top_right", Chisel.prefix("block/%1$s/%1$s_zag-v4_bottom_left".formatted(concreteName))))
                 .variant("%s_caution_encased".formatted(concreteName), v -> v.description("Encased Caution").model(ChiselModelHandlers.CONNECTED)
                         .texture("ctm_cornerless", Chisel.prefix("block/concrete_red/concrete_red_caution_encased-ctm_cornerless")))
                 .variant("%s_diamond_plating_encased".formatted(concreteName), v -> v.description("Encased Diamond Plating").model(ChiselModelHandlers.CONNECTED)
