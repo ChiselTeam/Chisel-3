@@ -57,6 +57,7 @@ public final class CobblestoneFamily {
             .variant("cobblestone_dots", v -> v.description("Dots"))
             .variant("cobblestone_dots_encased", v -> v.description("Encased Dots").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/cobblestone/cobblestone_dots")))
+            .variant("cobblestone_emboss", v -> v.description("Emboss").model(ChiselModelHandlers.CONNECTED))
             .variant("cobblestone_facet", v -> v.description("Facet"))
             .variant("cobblestone_facet_small", v -> v.description("Small Facet"))
             .variant("cobblestone_facet_small_encased", v -> v.description("Encased Small Facet").model(ChiselModelHandlers.CONNECTED)
@@ -98,6 +99,7 @@ public final class CobblestoneFamily {
                     .texture(Chisel.prefix("block/cobblestone/cobblestone_lodestone_connected")))
             .variant("cobblestone_lodestone_connected", v -> v.description("Lodestone Connected").model(ChiselModelHandlers.CONNECTED)
                     .textureFromBase("ctm_cornerless"))
+            .variant("cobblestone_marker", v -> v.description("Marker"))
             .variant("cobblestone_meander_horizontal", v -> v.description("Horizontal Meander").model(ChiselModelHandlers.CTMH)
                     .texture("top", Chisel.prefix("block/cobblestone/cobblestone_meander_horizontal-bottom")))
             .variant("cobblestone_meander_vertical", v -> v.description("Vertical Meander").model(ChiselModelHandlers.CTMV)
@@ -259,9 +261,7 @@ public final class CobblestoneFamily {
             .variant("cobblestone_zag", v -> v.description("Zag").model(ChiselModelHandlers.V4)
                     .textureFromBase("ar_variant_1")
                     .texture("v4_top_right", Chisel.prefix("block/cobblestone/cobblestone_zag-v4_bottom_left"))
-                    .texture("v4_top_left", Chisel.prefix("block/cobblestone/cobblestone_zag")))
-            .variant("cobblestone_emboss", v -> v.description("Emboss").model(ChiselModelHandlers.CONNECTED))
-            .variant("cobblestone_marker", v -> v.description("Marker")));
+                    .texture("v4_top_left", Chisel.prefix("block/cobblestone/cobblestone_zag"))));
 
     private CobblestoneFamily() {
     }
