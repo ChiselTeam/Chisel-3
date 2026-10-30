@@ -8,7 +8,7 @@
     "top": "chisel:block/concrete_brown/concrete_brown_pillar_basic-top",
     "vertical_both": "chisel:block/concrete_brown/concrete_brown_pillar_basic-vertical_both",
     "vertical_bottom": "chisel:block/concrete_brown/concrete_brown_pillar_basic-vertical_bottom",
-    "vertical_none": "chisel:block/concrete_brown/concrete_brown_pillar_basic-vertical_none",
+    "vertical_none": "chisel:block/concrete_brown/concrete_brown_pillar_basic-side",
     "vertical_top": "chisel:block/concrete_brown/concrete_brown_pillar_basic-vertical_top"
   }
 }

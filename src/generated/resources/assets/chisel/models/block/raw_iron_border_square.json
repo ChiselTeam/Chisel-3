@@ -3,10 +3,10 @@
   "textures": {
     "all": "chisel:block/raw_iron/raw_iron_border_square",
     "particle": "chisel:block/raw_iron/raw_iron_border_square",
-    "standard_corner": "chisel:block/raw_iron/raw_iron_border_square-ctm_corner",
+    "standard_corner": "chisel:block/raw_iron/raw_iron_border_square",
     "standard_cornerless": "chisel:block/raw_iron/raw_iron_raw",
-    "standard_horizontal": "chisel:block/raw_iron/raw_iron_border_square-ctm_horizontal",
+    "standard_horizontal": "chisel:block/raw_iron/raw_iron_border_square",
     "standard_none": "chisel:block/raw_iron/raw_iron_border_square",
-    "standard_vertical": "chisel:block/raw_iron/raw_iron_border_square-ctm_vertical"
+    "standard_vertical": "chisel:block/raw_iron/raw_iron_border_square"
   }
 }

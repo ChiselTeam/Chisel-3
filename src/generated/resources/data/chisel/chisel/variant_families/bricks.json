@@ -7,150 +7,13 @@
       "name": "block.minecraft.bricks"
     },
     {
-      "block": "chisel:bricks_array",
-      "model_type": "multiblock_2x2",
-      "name": "bricks_array"
-    },
-    {
-      "block": "chisel:bricks_braid",
-      "name": "bricks_braid"
-    },
-    {
-      "block": "chisel:bricks_chaotic",
-      "model_type": "multiblock_3x3",
-      "name": "bricks_chaotic"
-    },
-    {
-      "block": "chisel:bricks_chaotic_medium",
-      "name": "bricks_chaotic_medium"
-    },
-    {
-      "block": "chisel:bricks_chaotic_small",
-      "name": "bricks_chaotic_small"
-    },
-    {
-      "block": "chisel:bricks_circular",
-      "model_type": "connected",
-      "name": "bricks_circular"
-    },
-    {
-      "block": "chisel:bricks_cracked",
-      "name": "bricks_cracked"
-    },
-    {
-      "block": "chisel:bricks_cracked_bricks",
-      "name": "bricks_cracked_bricks"
-    },
-    {
-      "block": "chisel:bricks_cuts",
-      "model_type": "multiblock_4x4",
-      "name": "bricks_cuts"
-    },
-    {
-      "block": "chisel:bricks_dent",
-      "model_type": "connected",
-      "name": "bricks_dent"
-    },
-    {
-      "block": "chisel:bricks_encased",
-      "model_type": "connected",
-      "name": "bricks_encased"
-    },
-    {
-      "block": "chisel:bricks_french",
-      "name": "bricks_french"
-    },
-    {
-      "block": "chisel:bricks_french_2",
-      "name": "bricks_french_2"
-    },
-    {
-      "block": "chisel:bricks_jellybean",
-      "model_type": "multiblock_2x2",
-      "name": "bricks_jellybean"
-    },
-    {
-      "block": "chisel:bricks_layers",
-      "name": "bricks_layers"
-    },
-    {
-      "block": "chisel:bricks_mosaic",
-      "model_type": "connected",
-      "name": "bricks_mosaic"
-    },
-    {
-      "block": "chisel:bricks_ornate",
-      "name": "bricks_ornate"
-    },
-    {
-      "block": "chisel:bricks_panel",
-      "name": "bricks_panel"
-    },
-    {
-      "block": "chisel:bricks_pillar",
-      "model_type": "top_bottom_side",
-      "name": "bricks_pillar"
-    },
-    {
-      "block": "chisel:bricks_prism",
-      "name": "bricks_prism"
-    },
-    {
       "block": "chisel:bricks_raw",
       "name": "bricks_raw"
     },
     {
-      "block": "chisel:bricks_road",
-      "name": "bricks_road"
-    },
-    {
-      "block": "chisel:bricks_slanted",
+      "block": "chisel:bricks_array",
       "model_type": "multiblock_2x2",
-      "name": "bricks_slanted"
-    },
-    {
-      "block": "chisel:bricks_small",
-      "name": "bricks_small"
-    },
-    {
-      "block": "chisel:bricks_soft",
-      "name": "bricks_soft"
-    },
-    {
-      "block": "chisel:bricks_solid",
-      "name": "bricks_solid"
-    },
-    {
-      "block": "chisel:bricks_tiles_large",
-      "model_type": "connected",
-      "name": "bricks_tiles_large"
-    },
-    {
-      "block": "chisel:bricks_tiles_medium",
-      "name": "bricks_tiles_medium"
-    },
-    {
-      "block": "chisel:bricks_tiles_small",
-      "name": "bricks_tiles_small"
-    },
-    {
-      "block": "chisel:bricks_triple",
-      "name": "bricks_triple"
-    },
-    {
-      "block": "chisel:bricks_twisted",
-      "model_type": "top_bottom_side",
-      "name": "bricks_twisted"
-    },
-    {
-      "block": "chisel:bricks_weaver",
-      "model_type": "connected",
-      "name": "bricks_weaver"
-    },
-    {
-      "block": "chisel:bricks_zag",
-      "model_type": "ar",
-      "name": "bricks_zag"
+      "name": "bricks_array"
     },
     {
       "block": "chisel:bricks_border_square",
@@ -161,6 +24,10 @@
       "block": "chisel:bricks_border_square_small",
       "model_type": "connected",
       "name": "bricks_border_square_small"
+    },
+    {
+      "block": "chisel:bricks_braid",
+      "name": "bricks_braid"
     },
     {
       "block": "chisel:bricks_braid_encased",
@@ -181,8 +48,34 @@
       "name": "bricks_bricks_large"
     },
     {
+      "block": "chisel:bricks_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "bricks_bricks_large_rough"
+    },
+    {
+      "block": "chisel:bricks_bricks_round",
+      "name": "bricks_bricks_round"
+    },
+    {
+      "block": "chisel:bricks_bricks_square",
+      "name": "bricks_bricks_square"
+    },
+    {
       "block": "chisel:bricks_bricks_vertical",
       "name": "bricks_bricks_vertical"
+    },
+    {
+      "block": "chisel:bricks_chaotic",
+      "model_type": "multiblock_3x3",
+      "name": "bricks_chaotic"
+    },
+    {
+      "block": "chisel:bricks_chaotic_medium",
+      "name": "bricks_chaotic_medium"
+    },
+    {
+      "block": "chisel:bricks_chaotic_small",
+      "name": "bricks_chaotic_small"
     },
     {
       "block": "chisel:bricks_checker",
@@ -193,13 +86,152 @@
       "name": "bricks_checker_small"
     },
     {
+      "block": "chisel:bricks_chisel_1",
+      "name": "bricks_chisel_1"
+    },
+    {
+      "block": "chisel:bricks_chisel_2",
+      "name": "bricks_chisel_2"
+    },
+    {
+      "block": "chisel:bricks_chisel_3",
+      "name": "bricks_chisel_3"
+    },
+    {
+      "block": "chisel:bricks_chisel_4",
+      "name": "bricks_chisel_4"
+    },
+    {
+      "block": "chisel:bricks_chisel_5",
+      "name": "bricks_chisel_5"
+    },
+    {
+      "block": "chisel:bricks_chisel_6",
+      "name": "bricks_chisel_6"
+    },
+    {
+      "block": "chisel:bricks_circular",
+      "model_type": "connected",
+      "name": "bricks_circular"
+    },
+    {
       "block": "chisel:bricks_cobble",
       "name": "bricks_cobble"
+    },
+    {
+      "block": "chisel:bricks_cracked",
+      "name": "bricks_cracked"
+    },
+    {
+      "block": "chisel:bricks_cracked_bricks",
+      "name": "bricks_cracked_bricks"
+    },
+    {
+      "block": "chisel:bricks_crate",
+      "model_type": "connected",
+      "name": "bricks_crate"
+    },
+    {
+      "block": "chisel:bricks_cuts",
+      "model_type": "multiblock_4x4",
+      "name": "bricks_cuts"
+    },
+    {
+      "block": "chisel:bricks_dent",
+      "model_type": "connected",
+      "name": "bricks_dent"
+    },
+    {
+      "block": "chisel:bricks_dots",
+      "name": "bricks_dots"
+    },
+    {
+      "block": "chisel:bricks_dots_encased",
+      "model_type": "connected",
+      "name": "bricks_dots_encased"
+    },
+    {
+      "block": "chisel:bricks_facet",
+      "name": "bricks_facet"
+    },
+    {
+      "block": "chisel:bricks_facet_small",
+      "name": "bricks_facet_small"
+    },
+    {
+      "block": "chisel:bricks_facet_small_encased",
+      "model_type": "connected",
+      "name": "bricks_facet_small_encased"
+    },
+    {
+      "block": "chisel:bricks_frame",
+      "name": "bricks_frame"
+    },
+    {
+      "block": "chisel:bricks_french",
+      "name": "bricks_french"
+    },
+    {
+      "block": "chisel:bricks_french_2",
+      "name": "bricks_french_2"
+    },
+    {
+      "block": "chisel:bricks_gem",
+      "name": "bricks_gem"
+    },
+    {
+      "block": "chisel:bricks_gem_1",
+      "name": "bricks_gem_1"
+    },
+    {
+      "block": "chisel:bricks_gem_1_connected",
+      "model_type": "connected",
+      "name": "bricks_gem_1_connected"
+    },
+    {
+      "block": "chisel:bricks_gem_2",
+      "name": "bricks_gem_2"
+    },
+    {
+      "block": "chisel:bricks_gem_2_connected",
+      "model_type": "connected",
+      "name": "bricks_gem_2_connected"
+    },
+    {
+      "block": "chisel:bricks_gem_3",
+      "name": "bricks_gem_3"
+    },
+    {
+      "block": "chisel:bricks_gem_3_connected",
+      "model_type": "connected",
+      "name": "bricks_gem_3_connected"
+    },
+    {
+      "block": "chisel:bricks_heart",
+      "name": "bricks_heart"
+    },
+    {
+      "block": "chisel:bricks_herringbone",
+      "name": "bricks_herringbone"
+    },
+    {
+      "block": "chisel:bricks_herringbone_encased",
+      "model_type": "connected",
+      "name": "bricks_herringbone_encased"
     },
     {
       "block": "chisel:bricks_indent",
       "model_type": "connected",
       "name": "bricks_indent"
+    },
+    {
+      "block": "chisel:bricks_jellybean",
+      "model_type": "multiblock_2x2",
+      "name": "bricks_jellybean"
+    },
+    {
+      "block": "chisel:bricks_layers",
+      "name": "bricks_layers"
     },
     {
       "block": "chisel:bricks_layers_connected",
@@ -215,6 +247,15 @@
       "name": "bricks_line_vertical"
     },
     {
+      "block": "chisel:bricks_lodestone",
+      "name": "bricks_lodestone"
+    },
+    {
+      "block": "chisel:bricks_lodestone_connected",
+      "model_type": "connected",
+      "name": "bricks_lodestone_connected"
+    },
+    {
       "block": "chisel:bricks_meander_horizontal",
       "model_type": "ctmh",
       "name": "bricks_meander_horizontal"
@@ -223,6 +264,54 @@
       "block": "chisel:bricks_meander_vertical",
       "model_type": "ctmv",
       "name": "bricks_meander_vertical"
+    },
+    {
+      "block": "chisel:bricks_medallion",
+      "name": "bricks_medallion"
+    },
+    {
+      "block": "chisel:bricks_medallion_encased",
+      "model_type": "connected",
+      "name": "bricks_medallion_encased"
+    },
+    {
+      "block": "chisel:bricks_mosaic",
+      "model_type": "connected",
+      "name": "bricks_mosaic"
+    },
+    {
+      "block": "chisel:bricks_ornate",
+      "name": "bricks_ornate"
+    },
+    {
+      "block": "chisel:bricks_panel",
+      "name": "bricks_panel"
+    },
+    {
+      "block": "chisel:bricks_panel_1",
+      "name": "bricks_panel_1"
+    },
+    {
+      "block": "chisel:bricks_panel_2",
+      "name": "bricks_panel_2"
+    },
+    {
+      "block": "chisel:bricks_panel_3",
+      "name": "bricks_panel_3"
+    },
+    {
+      "block": "chisel:bricks_parquet",
+      "name": "bricks_parquet"
+    },
+    {
+      "block": "chisel:bricks_parquet_encased",
+      "model_type": "connected",
+      "name": "bricks_parquet_encased"
+    },
+    {
+      "block": "chisel:bricks_pillar",
+      "model_type": "top_bottom_side",
+      "name": "bricks_pillar"
     },
     {
       "block": "chisel:bricks_pillar_basic",
@@ -320,6 +409,15 @@
       "name": "bricks_pillar_meander_spiral"
     },
     {
+      "block": "chisel:bricks_plank",
+      "name": "bricks_plank"
+    },
+    {
+      "block": "chisel:bricks_plank_connected",
+      "model_type": "connected",
+      "name": "bricks_plank_connected"
+    },
+    {
       "block": "chisel:bricks_plate",
       "name": "bricks_plate"
     },
@@ -327,6 +425,10 @@
       "block": "chisel:bricks_plate_connected",
       "model_type": "connected",
       "name": "bricks_plate_connected"
+    },
+    {
+      "block": "chisel:bricks_plating",
+      "name": "bricks_plating"
     },
     {
       "block": "chisel:bricks_polished",
@@ -338,184 +440,12 @@
       "name": "bricks_polished_encased"
     },
     {
-      "block": "chisel:bricks_crate",
-      "model_type": "connected",
-      "name": "bricks_crate"
+      "block": "chisel:bricks_prism",
+      "name": "bricks_prism"
     },
     {
-      "block": "chisel:bricks_herringbone",
-      "name": "bricks_herringbone"
-    },
-    {
-      "block": "chisel:bricks_herringbone_encased",
-      "model_type": "connected",
-      "name": "bricks_herringbone_encased"
-    },
-    {
-      "block": "chisel:bricks_medallion",
-      "name": "bricks_medallion"
-    },
-    {
-      "block": "chisel:bricks_medallion_encased",
-      "model_type": "connected",
-      "name": "bricks_medallion_encased"
-    },
-    {
-      "block": "chisel:bricks_dots",
-      "name": "bricks_dots"
-    },
-    {
-      "block": "chisel:bricks_dots_encased",
-      "model_type": "connected",
-      "name": "bricks_dots_encased"
-    },
-    {
-      "block": "chisel:bricks_heart",
-      "name": "bricks_heart"
-    },
-    {
-      "block": "chisel:bricks_star",
-      "name": "bricks_star"
-    },
-    {
-      "block": "chisel:bricks_plating",
-      "name": "bricks_plating"
-    },
-    {
-      "block": "chisel:bricks_lodestone",
-      "name": "bricks_lodestone"
-    },
-    {
-      "block": "chisel:bricks_lodestone_connected",
-      "model_type": "connected",
-      "name": "bricks_lodestone_connected"
-    },
-    {
-      "block": "chisel:bricks_plank",
-      "name": "bricks_plank"
-    },
-    {
-      "block": "chisel:bricks_plank_connected",
-      "model_type": "connected",
-      "name": "bricks_plank_connected"
-    },
-    {
-      "block": "chisel:bricks_frame",
-      "name": "bricks_frame"
-    },
-    {
-      "block": "chisel:bricks_panel_1",
-      "name": "bricks_panel_1"
-    },
-    {
-      "block": "chisel:bricks_panel_2",
-      "name": "bricks_panel_2"
-    },
-    {
-      "block": "chisel:bricks_panel_3",
-      "name": "bricks_panel_3"
-    },
-    {
-      "block": "chisel:bricks_skull_creeper",
-      "name": "bricks_skull_creeper"
-    },
-    {
-      "block": "chisel:bricks_skull_skeleton",
-      "name": "bricks_skull_skeleton"
-    },
-    {
-      "block": "chisel:bricks_stripes",
-      "name": "bricks_stripes"
-    },
-    {
-      "block": "chisel:bricks_stripes_encased",
-      "model_type": "connected",
-      "name": "bricks_stripes_encased"
-    },
-    {
-      "block": "chisel:bricks_chisel_1",
-      "name": "bricks_chisel_1"
-    },
-    {
-      "block": "chisel:bricks_chisel_2",
-      "name": "bricks_chisel_2"
-    },
-    {
-      "block": "chisel:bricks_chisel_3",
-      "name": "bricks_chisel_3"
-    },
-    {
-      "block": "chisel:bricks_chisel_4",
-      "name": "bricks_chisel_4"
-    },
-    {
-      "block": "chisel:bricks_chisel_5",
-      "name": "bricks_chisel_5"
-    },
-    {
-      "block": "chisel:bricks_chisel_6",
-      "name": "bricks_chisel_6"
-    },
-    {
-      "block": "chisel:bricks_facet",
-      "name": "bricks_facet"
-    },
-    {
-      "block": "chisel:bricks_facet_small",
-      "name": "bricks_facet_small"
-    },
-    {
-      "block": "chisel:bricks_facet_small_encased",
-      "model_type": "connected",
-      "name": "bricks_facet_small_encased"
-    },
-    {
-      "block": "chisel:bricks_shiny",
-      "name": "bricks_shiny"
-    },
-    {
-      "block": "chisel:bricks_shiny_connected",
-      "model_type": "connected",
-      "name": "bricks_shiny_connected"
-    },
-    {
-      "block": "chisel:bricks_gem",
-      "name": "bricks_gem"
-    },
-    {
-      "block": "chisel:bricks_gem_1",
-      "name": "bricks_gem_1"
-    },
-    {
-      "block": "chisel:bricks_gem_1_connected",
-      "model_type": "connected",
-      "name": "bricks_gem_1_connected"
-    },
-    {
-      "block": "chisel:bricks_gem_2",
-      "name": "bricks_gem_2"
-    },
-    {
-      "block": "chisel:bricks_gem_2_connected",
-      "model_type": "connected",
-      "name": "bricks_gem_2_connected"
-    },
-    {
-      "block": "chisel:bricks_gem_3",
-      "name": "bricks_gem_3"
-    },
-    {
-      "block": "chisel:bricks_gem_3_connected",
-      "model_type": "connected",
-      "name": "bricks_gem_3_connected"
-    },
-    {
-      "block": "chisel:bricks_bricks_square",
-      "name": "bricks_bricks_square"
-    },
-    {
-      "block": "chisel:bricks_slab",
-      "name": "bricks_slab"
+      "block": "chisel:bricks_road",
+      "name": "bricks_road"
     },
     {
       "block": "chisel:bricks_scaffold_2",
@@ -527,27 +457,73 @@
       "name": "bricks_scaffold_encased_2"
     },
     {
+      "block": "chisel:bricks_shiny",
+      "name": "bricks_shiny"
+    },
+    {
+      "block": "chisel:bricks_shiny_connected",
+      "model_type": "connected",
+      "name": "bricks_shiny_connected"
+    },
+    {
+      "block": "chisel:bricks_skull_creeper",
+      "name": "bricks_skull_creeper"
+    },
+    {
+      "block": "chisel:bricks_skull_skeleton",
+      "name": "bricks_skull_skeleton"
+    },
+    {
+      "block": "chisel:bricks_slab",
+      "name": "bricks_slab"
+    },
+    {
+      "block": "chisel:bricks_slanted",
+      "model_type": "multiblock_2x2",
+      "name": "bricks_slanted"
+    },
+    {
+      "block": "chisel:bricks_small",
+      "name": "bricks_small"
+    },
+    {
+      "block": "chisel:bricks_solid",
+      "name": "bricks_solid"
+    },
+    {
+      "block": "chisel:bricks_encased",
+      "model_type": "connected",
+      "name": "bricks_encased"
+    },
+    {
+      "block": "chisel:bricks_star",
+      "name": "bricks_star"
+    },
+    {
+      "block": "chisel:bricks_stripes",
+      "name": "bricks_stripes"
+    },
+    {
+      "block": "chisel:bricks_stripes_encased",
+      "model_type": "connected",
+      "name": "bricks_stripes_encased"
+    },
+    {
       "block": "chisel:bricks_tiles_inlayed",
       "name": "bricks_tiles_inlayed"
     },
     {
-      "block": "chisel:bricks_waves",
-      "model_type": "multiblock_2x2",
-      "name": "bricks_waves"
-    },
-    {
-      "block": "chisel:bricks_parquet",
-      "name": "bricks_parquet"
-    },
-    {
-      "block": "chisel:bricks_parquet_encased",
+      "block": "chisel:bricks_tiles_large",
       "model_type": "connected",
-      "name": "bricks_parquet_encased"
+      "name": "bricks_tiles_large"
     },
     {
-      "block": "chisel:bricks_bricks_large_rough",
-      "model_type": "multiblock_2x2",
-      "name": "bricks_bricks_large_rough"
+      "block": "chisel:bricks_tiles_medium",
+      "name": "bricks_tiles_medium"
+    },
+    {
+      "block": "chisel:bricks_tiles_small",
+      "name": "bricks_tiles_small"
     },
     {
       "block": "chisel:bricks_tiles_small_encased",
@@ -555,8 +531,32 @@
       "name": "bricks_tiles_small_encased"
     },
     {
-      "block": "chisel:bricks_bricks_round",
-      "name": "bricks_bricks_round"
+      "block": "chisel:bricks_triple",
+      "name": "bricks_triple"
+    },
+    {
+      "block": "chisel:bricks_twisted",
+      "model_type": "top_bottom_side",
+      "name": "bricks_twisted"
+    },
+    {
+      "block": "chisel:bricks_waves",
+      "model_type": "multiblock_2x2",
+      "name": "bricks_waves"
+    },
+    {
+      "block": "chisel:bricks_weaver",
+      "model_type": "connected",
+      "name": "bricks_weaver"
+    },
+    {
+      "block": "chisel:bricks_zag",
+      "model_type": "ar",
+      "name": "bricks_zag"
+    },
+    {
+      "block": "chisel:bricks_soft",
+      "name": "bricks_soft"
     }
   ]
 }

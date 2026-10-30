@@ -4,7 +4,7 @@
     "all": "chisel:block/clay/clay_weaver",
     "particle": "chisel:block/clay/clay_weaver",
     "standard_corner": "chisel:block/clay/clay_weaver-ctm_corner",
-    "standard_cornerless": "chisel:block/clay/clay_weaver-ctm_cornerless",
+    "standard_cornerless": "chisel:block/clay/clay_weaver-ctm_corner",
     "standard_horizontal": "chisel:block/clay/clay_weaver-ctm_horizontal",
     "standard_none": "chisel:block/clay/clay_weaver",
     "standard_vertical": "chisel:block/clay/clay_weaver-ctm_vertical"

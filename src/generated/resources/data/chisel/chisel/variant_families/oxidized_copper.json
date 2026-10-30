@@ -7,37 +7,8 @@
       "name": "block.minecraft.oxidized_copper"
     },
     {
-      "block": "chisel:oxidized_copper_bad_greggy",
-      "model_type": "connected",
-      "name": "oxidized_copper_bad_greggy"
-    },
-    {
-      "block": "chisel:oxidized_copper_bolted",
-      "name": "oxidized_copper_bolted"
-    },
-    {
-      "block": "chisel:oxidized_copper_caution",
-      "model_type": "connected",
-      "name": "oxidized_copper_caution"
-    },
-    {
-      "block": "chisel:oxidized_copper_crate",
-      "model_type": "connected",
-      "name": "oxidized_copper_crate"
-    },
-    {
-      "block": "chisel:oxidized_copper_machine",
-      "name": "oxidized_copper_machine"
-    },
-    {
-      "block": "chisel:oxidized_copper_scaffold",
-      "model_type": "connected",
-      "name": "oxidized_copper_scaffold"
-    },
-    {
-      "block": "chisel:oxidized_copper_thermal",
-      "model_type": "top_bottom_side",
-      "name": "oxidized_copper_thermal"
+      "block": "chisel:oxidized_copper_raw",
+      "name": "oxidized_copper_raw"
     },
     {
       "block": "chisel:oxidized_copper_array",
@@ -86,8 +57,13 @@
       "name": "oxidized_copper_bricks_large"
     },
     {
-      "block": "chisel:oxidized_copper_large_bricks",
-      "name": "oxidized_copper_large_bricks"
+      "block": "chisel:oxidized_copper_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "oxidized_copper_bricks_large_rough"
+    },
+    {
+      "block": "chisel:oxidized_copper_bricks_round",
+      "name": "oxidized_copper_bricks_round"
     },
     {
       "block": "chisel:oxidized_copper_bricks_small",
@@ -100,6 +76,10 @@
     {
       "block": "chisel:oxidized_copper_bricks_solid",
       "name": "oxidized_copper_bricks_solid"
+    },
+    {
+      "block": "chisel:oxidized_copper_bricks_square",
+      "name": "oxidized_copper_bricks_square"
     },
     {
       "block": "chisel:oxidized_copper_bricks_triple",
@@ -131,17 +111,46 @@
       "name": "oxidized_copper_checker_small"
     },
     {
+      "block": "chisel:oxidized_copper_chisel_1",
+      "name": "oxidized_copper_chisel_1"
+    },
+    {
+      "block": "chisel:oxidized_copper_chisel_2",
+      "name": "oxidized_copper_chisel_2"
+    },
+    {
+      "block": "chisel:oxidized_copper_chisel_3",
+      "name": "oxidized_copper_chisel_3"
+    },
+    {
+      "block": "chisel:oxidized_copper_chisel_4",
+      "name": "oxidized_copper_chisel_4"
+    },
+    {
+      "block": "chisel:oxidized_copper_chisel_5",
+      "name": "oxidized_copper_chisel_5"
+    },
+    {
+      "block": "chisel:oxidized_copper_chisel_6",
+      "name": "oxidized_copper_chisel_6"
+    },
+    {
       "block": "chisel:oxidized_copper_circular",
       "model_type": "connected",
       "name": "oxidized_copper_circular"
+    },
+    {
+      "block": "chisel:oxidized_copper_cobble",
+      "name": "oxidized_copper_cobble"
     },
     {
       "block": "chisel:oxidized_copper_cracked",
       "name": "oxidized_copper_cracked"
     },
     {
-      "block": "chisel:oxidized_copper_cobble",
-      "name": "oxidized_copper_cobble"
+      "block": "chisel:oxidized_copper_crate_2",
+      "model_type": "connected",
+      "name": "oxidized_copper_crate_2"
     },
     {
       "block": "chisel:oxidized_copper_cuts",
@@ -154,12 +163,82 @@
       "name": "oxidized_copper_dent"
     },
     {
+      "block": "chisel:oxidized_copper_dots",
+      "name": "oxidized_copper_dots"
+    },
+    {
+      "block": "chisel:oxidized_copper_dots_encased",
+      "model_type": "connected",
+      "name": "oxidized_copper_dots_encased"
+    },
+    {
+      "block": "chisel:oxidized_copper_facet",
+      "name": "oxidized_copper_facet"
+    },
+    {
+      "block": "chisel:oxidized_copper_facet_small",
+      "name": "oxidized_copper_facet_small"
+    },
+    {
+      "block": "chisel:oxidized_copper_facet_small_encased",
+      "model_type": "connected",
+      "name": "oxidized_copper_facet_small_encased"
+    },
+    {
+      "block": "chisel:oxidized_copper_frame",
+      "name": "oxidized_copper_frame"
+    },
+    {
       "block": "chisel:oxidized_copper_french_1",
       "name": "oxidized_copper_french_1"
     },
     {
       "block": "chisel:oxidized_copper_french_2",
       "name": "oxidized_copper_french_2"
+    },
+    {
+      "block": "chisel:oxidized_copper_gem",
+      "name": "oxidized_copper_gem"
+    },
+    {
+      "block": "chisel:oxidized_copper_gem_1",
+      "name": "oxidized_copper_gem_1"
+    },
+    {
+      "block": "chisel:oxidized_copper_gem_1_connected",
+      "model_type": "connected",
+      "name": "oxidized_copper_gem_1_connected"
+    },
+    {
+      "block": "chisel:oxidized_copper_gem_2",
+      "name": "oxidized_copper_gem_2"
+    },
+    {
+      "block": "chisel:oxidized_copper_gem_2_connected",
+      "model_type": "connected",
+      "name": "oxidized_copper_gem_2_connected"
+    },
+    {
+      "block": "chisel:oxidized_copper_gem_3",
+      "name": "oxidized_copper_gem_3"
+    },
+    {
+      "block": "chisel:oxidized_copper_gem_3_connected",
+      "model_type": "connected",
+      "name": "oxidized_copper_gem_3_connected"
+    },
+    {
+      "block": "chisel:oxidized_copper_heart",
+      "name": "oxidized_copper_heart"
+    },
+    {
+      "block": "chisel:oxidized_copper_herringbone",
+      "name": "oxidized_copper_herringbone"
+    },
+    {
+      "block": "chisel:oxidized_copper_herringbone_encased",
+      "model_type": "connected",
+      "name": "oxidized_copper_herringbone_encased"
     },
     {
       "block": "chisel:oxidized_copper_indent",
@@ -170,6 +249,10 @@
       "block": "chisel:oxidized_copper_jellybean",
       "model_type": "multiblock_2x2",
       "name": "oxidized_copper_jellybean"
+    },
+    {
+      "block": "chisel:oxidized_copper_large_bricks",
+      "name": "oxidized_copper_large_bricks"
     },
     {
       "block": "chisel:oxidized_copper_layers",
@@ -189,6 +272,15 @@
       "name": "oxidized_copper_line_vertical"
     },
     {
+      "block": "chisel:oxidized_copper_lodestone",
+      "name": "oxidized_copper_lodestone"
+    },
+    {
+      "block": "chisel:oxidized_copper_lodestone_connected",
+      "model_type": "connected",
+      "name": "oxidized_copper_lodestone_connected"
+    },
+    {
       "block": "chisel:oxidized_copper_meander_horizontal",
       "model_type": "ctmh",
       "name": "oxidized_copper_meander_horizontal"
@@ -197,6 +289,15 @@
       "block": "chisel:oxidized_copper_meander_vertical",
       "model_type": "ctmv",
       "name": "oxidized_copper_meander_vertical"
+    },
+    {
+      "block": "chisel:oxidized_copper_medallion",
+      "name": "oxidized_copper_medallion"
+    },
+    {
+      "block": "chisel:oxidized_copper_medallion_encased",
+      "model_type": "connected",
+      "name": "oxidized_copper_medallion_encased"
     },
     {
       "block": "chisel:oxidized_copper_mosaic",
@@ -210,6 +311,27 @@
     {
       "block": "chisel:oxidized_copper_panel",
       "name": "oxidized_copper_panel"
+    },
+    {
+      "block": "chisel:oxidized_copper_panel_1",
+      "name": "oxidized_copper_panel_1"
+    },
+    {
+      "block": "chisel:oxidized_copper_panel_2",
+      "name": "oxidized_copper_panel_2"
+    },
+    {
+      "block": "chisel:oxidized_copper_panel_3",
+      "name": "oxidized_copper_panel_3"
+    },
+    {
+      "block": "chisel:oxidized_copper_parquet",
+      "name": "oxidized_copper_parquet"
+    },
+    {
+      "block": "chisel:oxidized_copper_parquet_encased",
+      "model_type": "connected",
+      "name": "oxidized_copper_parquet_encased"
     },
     {
       "block": "chisel:oxidized_copper_pillar",
@@ -312,6 +434,15 @@
       "name": "oxidized_copper_pillar_meander_spiral"
     },
     {
+      "block": "chisel:oxidized_copper_plank",
+      "name": "oxidized_copper_plank"
+    },
+    {
+      "block": "chisel:oxidized_copper_plank_connected",
+      "model_type": "connected",
+      "name": "oxidized_copper_plank_connected"
+    },
+    {
       "block": "chisel:oxidized_copper_plate",
       "name": "oxidized_copper_plate"
     },
@@ -319,6 +450,10 @@
       "block": "chisel:oxidized_copper_plate_connected",
       "model_type": "connected",
       "name": "oxidized_copper_plate_connected"
+    },
+    {
+      "block": "chisel:oxidized_copper_plating",
+      "name": "oxidized_copper_plating"
     },
     {
       "block": "chisel:oxidized_copper_polished",
@@ -334,12 +469,38 @@
       "name": "oxidized_copper_prism"
     },
     {
-      "block": "chisel:oxidized_copper_raw",
-      "name": "oxidized_copper_raw"
-    },
-    {
       "block": "chisel:oxidized_copper_road",
       "name": "oxidized_copper_road"
+    },
+    {
+      "block": "chisel:oxidized_copper_scaffold_2",
+      "name": "oxidized_copper_scaffold_2"
+    },
+    {
+      "block": "chisel:oxidized_copper_scaffold_encased_2",
+      "model_type": "connected",
+      "name": "oxidized_copper_scaffold_encased_2"
+    },
+    {
+      "block": "chisel:oxidized_copper_shiny",
+      "name": "oxidized_copper_shiny"
+    },
+    {
+      "block": "chisel:oxidized_copper_shiny_connected",
+      "model_type": "connected",
+      "name": "oxidized_copper_shiny_connected"
+    },
+    {
+      "block": "chisel:oxidized_copper_skull_creeper",
+      "name": "oxidized_copper_skull_creeper"
+    },
+    {
+      "block": "chisel:oxidized_copper_skull_skeleton",
+      "name": "oxidized_copper_skull_skeleton"
+    },
+    {
+      "block": "chisel:oxidized_copper_slab",
+      "name": "oxidized_copper_slab"
     },
     {
       "block": "chisel:oxidized_copper_slanted",
@@ -347,8 +508,25 @@
       "name": "oxidized_copper_slanted"
     },
     {
+      "block": "chisel:oxidized_copper_star",
+      "name": "oxidized_copper_star"
+    },
+    {
+      "block": "chisel:oxidized_copper_stripes",
+      "name": "oxidized_copper_stripes"
+    },
+    {
+      "block": "chisel:oxidized_copper_stripes_encased",
+      "model_type": "connected",
+      "name": "oxidized_copper_stripes_encased"
+    },
+    {
       "block": "chisel:oxidized_copper_tiles",
       "name": "oxidized_copper_tiles"
+    },
+    {
+      "block": "chisel:oxidized_copper_tiles_inlayed",
+      "name": "oxidized_copper_tiles_inlayed"
     },
     {
       "block": "chisel:oxidized_copper_tiles_large",
@@ -360,9 +538,19 @@
       "name": "oxidized_copper_tiles_small"
     },
     {
+      "block": "chisel:oxidized_copper_tiles_small_encased",
+      "model_type": "connected",
+      "name": "oxidized_copper_tiles_small_encased"
+    },
+    {
       "block": "chisel:oxidized_copper_twisted",
       "model_type": "top_bottom_side",
       "name": "oxidized_copper_twisted"
+    },
+    {
+      "block": "chisel:oxidized_copper_waves",
+      "model_type": "multiblock_2x2",
+      "name": "oxidized_copper_waves"
     },
     {
       "block": "chisel:oxidized_copper_weaver",
@@ -375,225 +563,37 @@
       "name": "oxidized_copper_zag"
     },
     {
-      "block": "chisel:oxidized_copper_crate_2",
+      "block": "chisel:oxidized_copper_bad_greggy",
       "model_type": "connected",
-      "name": "oxidized_copper_crate_2"
+      "name": "oxidized_copper_bad_greggy"
     },
     {
-      "block": "chisel:oxidized_copper_herringbone",
-      "name": "oxidized_copper_herringbone"
+      "block": "chisel:oxidized_copper_bolted",
+      "name": "oxidized_copper_bolted"
     },
     {
-      "block": "chisel:oxidized_copper_herringbone_encased",
+      "block": "chisel:oxidized_copper_caution",
       "model_type": "connected",
-      "name": "oxidized_copper_herringbone_encased"
+      "name": "oxidized_copper_caution"
     },
     {
-      "block": "chisel:oxidized_copper_medallion",
-      "name": "oxidized_copper_medallion"
-    },
-    {
-      "block": "chisel:oxidized_copper_medallion_encased",
+      "block": "chisel:oxidized_copper_crate",
       "model_type": "connected",
-      "name": "oxidized_copper_medallion_encased"
+      "name": "oxidized_copper_crate"
     },
     {
-      "block": "chisel:oxidized_copper_dots",
-      "name": "oxidized_copper_dots"
+      "block": "chisel:oxidized_copper_machine",
+      "name": "oxidized_copper_machine"
     },
     {
-      "block": "chisel:oxidized_copper_dots_encased",
+      "block": "chisel:oxidized_copper_scaffold",
       "model_type": "connected",
-      "name": "oxidized_copper_dots_encased"
+      "name": "oxidized_copper_scaffold"
     },
     {
-      "block": "chisel:oxidized_copper_heart",
-      "name": "oxidized_copper_heart"
-    },
-    {
-      "block": "chisel:oxidized_copper_star",
-      "name": "oxidized_copper_star"
-    },
-    {
-      "block": "chisel:oxidized_copper_plating",
-      "name": "oxidized_copper_plating"
-    },
-    {
-      "block": "chisel:oxidized_copper_lodestone",
-      "name": "oxidized_copper_lodestone"
-    },
-    {
-      "block": "chisel:oxidized_copper_lodestone_connected",
-      "model_type": "connected",
-      "name": "oxidized_copper_lodestone_connected"
-    },
-    {
-      "block": "chisel:oxidized_copper_plank",
-      "name": "oxidized_copper_plank"
-    },
-    {
-      "block": "chisel:oxidized_copper_plank_connected",
-      "model_type": "connected",
-      "name": "oxidized_copper_plank_connected"
-    },
-    {
-      "block": "chisel:oxidized_copper_frame",
-      "name": "oxidized_copper_frame"
-    },
-    {
-      "block": "chisel:oxidized_copper_panel_1",
-      "name": "oxidized_copper_panel_1"
-    },
-    {
-      "block": "chisel:oxidized_copper_panel_2",
-      "name": "oxidized_copper_panel_2"
-    },
-    {
-      "block": "chisel:oxidized_copper_panel_3",
-      "name": "oxidized_copper_panel_3"
-    },
-    {
-      "block": "chisel:oxidized_copper_skull_creeper",
-      "name": "oxidized_copper_skull_creeper"
-    },
-    {
-      "block": "chisel:oxidized_copper_skull_skeleton",
-      "name": "oxidized_copper_skull_skeleton"
-    },
-    {
-      "block": "chisel:oxidized_copper_stripes",
-      "name": "oxidized_copper_stripes"
-    },
-    {
-      "block": "chisel:oxidized_copper_stripes_encased",
-      "model_type": "connected",
-      "name": "oxidized_copper_stripes_encased"
-    },
-    {
-      "block": "chisel:oxidized_copper_chisel_1",
-      "name": "oxidized_copper_chisel_1"
-    },
-    {
-      "block": "chisel:oxidized_copper_chisel_2",
-      "name": "oxidized_copper_chisel_2"
-    },
-    {
-      "block": "chisel:oxidized_copper_chisel_3",
-      "name": "oxidized_copper_chisel_3"
-    },
-    {
-      "block": "chisel:oxidized_copper_chisel_4",
-      "name": "oxidized_copper_chisel_4"
-    },
-    {
-      "block": "chisel:oxidized_copper_chisel_5",
-      "name": "oxidized_copper_chisel_5"
-    },
-    {
-      "block": "chisel:oxidized_copper_chisel_6",
-      "name": "oxidized_copper_chisel_6"
-    },
-    {
-      "block": "chisel:oxidized_copper_facet",
-      "name": "oxidized_copper_facet"
-    },
-    {
-      "block": "chisel:oxidized_copper_facet_small",
-      "name": "oxidized_copper_facet_small"
-    },
-    {
-      "block": "chisel:oxidized_copper_facet_small_encased",
-      "model_type": "connected",
-      "name": "oxidized_copper_facet_small_encased"
-    },
-    {
-      "block": "chisel:oxidized_copper_shiny",
-      "name": "oxidized_copper_shiny"
-    },
-    {
-      "block": "chisel:oxidized_copper_shiny_connected",
-      "model_type": "connected",
-      "name": "oxidized_copper_shiny_connected"
-    },
-    {
-      "block": "chisel:oxidized_copper_gem",
-      "name": "oxidized_copper_gem"
-    },
-    {
-      "block": "chisel:oxidized_copper_gem_1",
-      "name": "oxidized_copper_gem_1"
-    },
-    {
-      "block": "chisel:oxidized_copper_gem_1_connected",
-      "model_type": "connected",
-      "name": "oxidized_copper_gem_1_connected"
-    },
-    {
-      "block": "chisel:oxidized_copper_gem_2",
-      "name": "oxidized_copper_gem_2"
-    },
-    {
-      "block": "chisel:oxidized_copper_gem_2_connected",
-      "model_type": "connected",
-      "name": "oxidized_copper_gem_2_connected"
-    },
-    {
-      "block": "chisel:oxidized_copper_gem_3",
-      "name": "oxidized_copper_gem_3"
-    },
-    {
-      "block": "chisel:oxidized_copper_gem_3_connected",
-      "model_type": "connected",
-      "name": "oxidized_copper_gem_3_connected"
-    },
-    {
-      "block": "chisel:oxidized_copper_bricks_square",
-      "name": "oxidized_copper_bricks_square"
-    },
-    {
-      "block": "chisel:oxidized_copper_slab",
-      "name": "oxidized_copper_slab"
-    },
-    {
-      "block": "chisel:oxidized_copper_scaffold_2",
-      "name": "oxidized_copper_scaffold_2"
-    },
-    {
-      "block": "chisel:oxidized_copper_scaffold_encased_2",
-      "model_type": "connected",
-      "name": "oxidized_copper_scaffold_encased_2"
-    },
-    {
-      "block": "chisel:oxidized_copper_tiles_inlayed",
-      "name": "oxidized_copper_tiles_inlayed"
-    },
-    {
-      "block": "chisel:oxidized_copper_waves",
-      "model_type": "multiblock_2x2",
-      "name": "oxidized_copper_waves"
-    },
-    {
-      "block": "chisel:oxidized_copper_parquet",
-      "name": "oxidized_copper_parquet"
-    },
-    {
-      "block": "chisel:oxidized_copper_parquet_encased",
-      "model_type": "connected",
-      "name": "oxidized_copper_parquet_encased"
-    },
-    {
-      "block": "chisel:oxidized_copper_bricks_large_rough",
-      "model_type": "multiblock_2x2",
-      "name": "oxidized_copper_bricks_large_rough"
-    },
-    {
-      "block": "chisel:oxidized_copper_tiles_small_encased",
-      "model_type": "connected",
-      "name": "oxidized_copper_tiles_small_encased"
-    },
-    {
-      "block": "chisel:oxidized_copper_bricks_round",
-      "name": "oxidized_copper_bricks_round"
+      "block": "chisel:oxidized_copper_thermal",
+      "model_type": "top_bottom_side",
+      "name": "oxidized_copper_thermal"
     }
   ]
 }

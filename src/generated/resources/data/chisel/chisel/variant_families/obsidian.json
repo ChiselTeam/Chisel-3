@@ -7,73 +7,8 @@
       "name": "block.minecraft.obsidian"
     },
     {
-      "block": "chisel:obsidian_blocks",
-      "name": "obsidian_blocks"
-    },
-    {
-      "block": "chisel:obsidian_chiseled",
-      "model_type": "top_bottom_side",
-      "name": "obsidian_chiseled"
-    },
-    {
-      "block": "chisel:obsidian_crate",
-      "model_type": "top_bottom_side",
-      "name": "obsidian_crate"
-    },
-    {
-      "block": "chisel:obsidian_crate_unboxed",
-      "name": "obsidian_crate_unboxed"
-    },
-    {
-      "block": "chisel:obsidian_crystal",
-      "name": "obsidian_crystal"
-    },
-    {
-      "block": "chisel:obsidian_greek",
-      "model_type": "top_bottom_side",
-      "name": "obsidian_greek"
-    },
-    {
-      "block": "chisel:obsidian_organic_chunks",
-      "name": "obsidian_organic_chunks"
-    },
-    {
-      "block": "chisel:obsidian_organic_growth",
-      "name": "obsidian_organic_growth"
-    },
-    {
-      "block": "chisel:obsidian_panel",
-      "name": "obsidian_panel"
-    },
-    {
-      "block": "chisel:obsidian_panel_bright",
-      "name": "obsidian_panel_bright"
-    },
-    {
-      "block": "chisel:obsidian_panel_map",
-      "name": "obsidian_panel_map"
-    },
-    {
-      "block": "chisel:obsidian_panel_region",
-      "name": "obsidian_panel_region"
-    },
-    {
-      "block": "chisel:obsidian_panel_shiny",
-      "name": "obsidian_panel_shiny"
-    },
-    {
-      "block": "chisel:obsidian_pillar",
-      "model_type": "top_bottom_side",
-      "name": "obsidian_pillar"
-    },
-    {
-      "block": "chisel:obsidian_pillar_quartz",
-      "model_type": "top_bottom_side",
-      "name": "obsidian_pillar_quartz"
-    },
-    {
-      "block": "chisel:obsidian_tiles",
-      "name": "obsidian_tiles"
+      "block": "chisel:obsidian_raw",
+      "name": "obsidian_raw"
     },
     {
       "block": "chisel:obsidian_array",
@@ -84,6 +19,11 @@
       "block": "chisel:obsidian_border_square",
       "model_type": "connected",
       "name": "obsidian_border_square"
+    },
+    {
+      "block": "chisel:obsidian_border_square_small",
+      "model_type": "connected",
+      "name": "obsidian_border_square_small"
     },
     {
       "block": "chisel:obsidian_braid",
@@ -99,11 +39,6 @@
       "name": "obsidian_bricks_cracked"
     },
     {
-      "block": "chisel:obsidian_bricks_encased",
-      "model_type": "connected",
-      "name": "obsidian_bricks_encased"
-    },
-    {
       "block": "chisel:obsidian_bricks_indent",
       "name": "obsidian_bricks_indent"
     },
@@ -117,6 +52,15 @@
       "name": "obsidian_bricks_large"
     },
     {
+      "block": "chisel:obsidian_bricks_large_rough",
+      "model_type": "multiblock_2x2",
+      "name": "obsidian_bricks_large_rough"
+    },
+    {
+      "block": "chisel:obsidian_bricks_round",
+      "name": "obsidian_bricks_round"
+    },
+    {
       "block": "chisel:obsidian_bricks_small",
       "name": "obsidian_bricks_small"
     },
@@ -127,6 +71,15 @@
     {
       "block": "chisel:obsidian_bricks_solid",
       "name": "obsidian_bricks_solid"
+    },
+    {
+      "block": "chisel:obsidian_bricks_encased",
+      "model_type": "connected",
+      "name": "obsidian_bricks_encased"
+    },
+    {
+      "block": "chisel:obsidian_bricks_square",
+      "name": "obsidian_bricks_square"
     },
     {
       "block": "chisel:obsidian_bricks_triple",
@@ -158,17 +111,46 @@
       "name": "obsidian_checker_small"
     },
     {
+      "block": "chisel:obsidian_chisel_1",
+      "name": "obsidian_chisel_1"
+    },
+    {
+      "block": "chisel:obsidian_chisel_2",
+      "name": "obsidian_chisel_2"
+    },
+    {
+      "block": "chisel:obsidian_chisel_3",
+      "name": "obsidian_chisel_3"
+    },
+    {
+      "block": "chisel:obsidian_chisel_4",
+      "name": "obsidian_chisel_4"
+    },
+    {
+      "block": "chisel:obsidian_chisel_5",
+      "name": "obsidian_chisel_5"
+    },
+    {
+      "block": "chisel:obsidian_chisel_6",
+      "name": "obsidian_chisel_6"
+    },
+    {
       "block": "chisel:obsidian_circular",
       "model_type": "connected",
       "name": "obsidian_circular"
+    },
+    {
+      "block": "chisel:obsidian_cobble",
+      "name": "obsidian_cobble"
     },
     {
       "block": "chisel:obsidian_cracked",
       "name": "obsidian_cracked"
     },
     {
-      "block": "chisel:obsidian_cobble",
-      "name": "obsidian_cobble"
+      "block": "chisel:obsidian_crate",
+      "model_type": "connected",
+      "name": "obsidian_crate"
     },
     {
       "block": "chisel:obsidian_cuts",
@@ -181,12 +163,82 @@
       "name": "obsidian_dent"
     },
     {
+      "block": "chisel:obsidian_dots",
+      "name": "obsidian_dots"
+    },
+    {
+      "block": "chisel:obsidian_dots_encased",
+      "model_type": "connected",
+      "name": "obsidian_dots_encased"
+    },
+    {
+      "block": "chisel:obsidian_facet",
+      "name": "obsidian_facet"
+    },
+    {
+      "block": "chisel:obsidian_facet_small",
+      "name": "obsidian_facet_small"
+    },
+    {
+      "block": "chisel:obsidian_facet_small_encased",
+      "model_type": "connected",
+      "name": "obsidian_facet_small_encased"
+    },
+    {
+      "block": "chisel:obsidian_frame",
+      "name": "obsidian_frame"
+    },
+    {
       "block": "chisel:obsidian_french_1",
       "name": "obsidian_french_1"
     },
     {
       "block": "chisel:obsidian_french_2",
       "name": "obsidian_french_2"
+    },
+    {
+      "block": "chisel:obsidian_gem",
+      "name": "obsidian_gem"
+    },
+    {
+      "block": "chisel:obsidian_gem_1",
+      "name": "obsidian_gem_1"
+    },
+    {
+      "block": "chisel:obsidian_gem_1_connected",
+      "model_type": "connected",
+      "name": "obsidian_gem_1_connected"
+    },
+    {
+      "block": "chisel:obsidian_gem_2",
+      "name": "obsidian_gem_2"
+    },
+    {
+      "block": "chisel:obsidian_gem_2_connected",
+      "model_type": "connected",
+      "name": "obsidian_gem_2_connected"
+    },
+    {
+      "block": "chisel:obsidian_gem_3",
+      "name": "obsidian_gem_3"
+    },
+    {
+      "block": "chisel:obsidian_gem_3_connected",
+      "model_type": "connected",
+      "name": "obsidian_gem_3_connected"
+    },
+    {
+      "block": "chisel:obsidian_heart",
+      "name": "obsidian_heart"
+    },
+    {
+      "block": "chisel:obsidian_herringbone",
+      "name": "obsidian_herringbone"
+    },
+    {
+      "block": "chisel:obsidian_herringbone_encased",
+      "model_type": "connected",
+      "name": "obsidian_herringbone_encased"
     },
     {
       "block": "chisel:obsidian_indent",
@@ -197,6 +249,10 @@
       "block": "chisel:obsidian_jellybean",
       "model_type": "multiblock_2x2",
       "name": "obsidian_jellybean"
+    },
+    {
+      "block": "chisel:obsidian_large_bricks",
+      "name": "obsidian_large_bricks"
     },
     {
       "block": "chisel:obsidian_layers",
@@ -216,6 +272,15 @@
       "name": "obsidian_line_vertical"
     },
     {
+      "block": "chisel:obsidian_lodestone",
+      "name": "obsidian_lodestone"
+    },
+    {
+      "block": "chisel:obsidian_lodestone_connected",
+      "model_type": "connected",
+      "name": "obsidian_lodestone_connected"
+    },
+    {
       "block": "chisel:obsidian_meander_horizontal",
       "model_type": "ctmh",
       "name": "obsidian_meander_horizontal"
@@ -226,6 +291,15 @@
       "name": "obsidian_meander_vertical"
     },
     {
+      "block": "chisel:obsidian_medallion",
+      "name": "obsidian_medallion"
+    },
+    {
+      "block": "chisel:obsidian_medallion_encased",
+      "model_type": "connected",
+      "name": "obsidian_medallion_encased"
+    },
+    {
       "block": "chisel:obsidian_mosaic",
       "model_type": "connected",
       "name": "obsidian_mosaic"
@@ -233,6 +307,36 @@
     {
       "block": "chisel:obsidian_ornate_small",
       "name": "obsidian_ornate_small"
+    },
+    {
+      "block": "chisel:obsidian_panel",
+      "name": "obsidian_panel"
+    },
+    {
+      "block": "chisel:obsidian_panel_1",
+      "name": "obsidian_panel_1"
+    },
+    {
+      "block": "chisel:obsidian_panel_2",
+      "name": "obsidian_panel_2"
+    },
+    {
+      "block": "chisel:obsidian_panel_3",
+      "name": "obsidian_panel_3"
+    },
+    {
+      "block": "chisel:obsidian_parquet",
+      "name": "obsidian_parquet"
+    },
+    {
+      "block": "chisel:obsidian_parquet_encased",
+      "model_type": "connected",
+      "name": "obsidian_parquet_encased"
+    },
+    {
+      "block": "chisel:obsidian_pillar",
+      "model_type": "top_bottom_side",
+      "name": "obsidian_pillar"
     },
     {
       "block": "chisel:obsidian_pillar_basic",
@@ -330,6 +434,15 @@
       "name": "obsidian_pillar_meander_spiral"
     },
     {
+      "block": "chisel:obsidian_plank",
+      "name": "obsidian_plank"
+    },
+    {
+      "block": "chisel:obsidian_plank_connected",
+      "model_type": "connected",
+      "name": "obsidian_plank_connected"
+    },
+    {
       "block": "chisel:obsidian_plate",
       "name": "obsidian_plate"
     },
@@ -337,6 +450,10 @@
       "block": "chisel:obsidian_plate_connected",
       "model_type": "connected",
       "name": "obsidian_plate_connected"
+    },
+    {
+      "block": "chisel:obsidian_plating",
+      "name": "obsidian_plating"
     },
     {
       "block": "chisel:obsidian_polished",
@@ -352,17 +469,64 @@
       "name": "obsidian_prism"
     },
     {
-      "block": "chisel:obsidian_raw",
-      "name": "obsidian_raw"
-    },
-    {
       "block": "chisel:obsidian_road",
       "name": "obsidian_road"
+    },
+    {
+      "block": "chisel:obsidian_scaffold",
+      "name": "obsidian_scaffold"
+    },
+    {
+      "block": "chisel:obsidian_scaffold_encased",
+      "model_type": "connected",
+      "name": "obsidian_scaffold_encased"
+    },
+    {
+      "block": "chisel:obsidian_shiny",
+      "name": "obsidian_shiny"
+    },
+    {
+      "block": "chisel:obsidian_shiny_connected",
+      "model_type": "connected",
+      "name": "obsidian_shiny_connected"
+    },
+    {
+      "block": "chisel:obsidian_skull_creeper",
+      "name": "obsidian_skull_creeper"
+    },
+    {
+      "block": "chisel:obsidian_skull_skeleton",
+      "name": "obsidian_skull_skeleton"
+    },
+    {
+      "block": "chisel:obsidian_slab",
+      "name": "obsidian_slab"
     },
     {
       "block": "chisel:obsidian_slanted",
       "model_type": "multiblock_2x2",
       "name": "obsidian_slanted"
+    },
+    {
+      "block": "chisel:obsidian_star",
+      "name": "obsidian_star"
+    },
+    {
+      "block": "chisel:obsidian_stripes",
+      "name": "obsidian_stripes"
+    },
+    {
+      "block": "chisel:obsidian_stripes_encased",
+      "model_type": "connected",
+      "name": "obsidian_stripes_encased"
+    },
+    {
+      "block": "chisel:obsidian_tiles",
+      "name": "obsidian_tiles"
+    },
+    {
+      "block": "chisel:obsidian_tiles_inlayed",
+      "name": "obsidian_tiles_inlayed"
     },
     {
       "block": "chisel:obsidian_tiles_large",
@@ -374,9 +538,19 @@
       "name": "obsidian_tiles_small"
     },
     {
+      "block": "chisel:obsidian_tiles_small_encased",
+      "model_type": "connected",
+      "name": "obsidian_tiles_small_encased"
+    },
+    {
       "block": "chisel:obsidian_twisted",
       "model_type": "top_bottom_side",
       "name": "obsidian_twisted"
+    },
+    {
+      "block": "chisel:obsidian_waves",
+      "model_type": "multiblock_2x2",
+      "name": "obsidian_waves"
     },
     {
       "block": "chisel:obsidian_weaver",
@@ -389,220 +563,55 @@
       "name": "obsidian_zag"
     },
     {
-      "block": "chisel:obsidian_herringbone",
-      "name": "obsidian_herringbone"
+      "block": "chisel:obsidian_blocks",
+      "name": "obsidian_blocks"
     },
     {
-      "block": "chisel:obsidian_herringbone_encased",
-      "model_type": "connected",
-      "name": "obsidian_herringbone_encased"
+      "block": "chisel:obsidian_chiseled",
+      "model_type": "top_bottom_side",
+      "name": "obsidian_chiseled"
     },
     {
-      "block": "chisel:obsidian_medallion",
-      "name": "obsidian_medallion"
+      "block": "chisel:obsidian_crate_unboxed",
+      "name": "obsidian_crate_unboxed"
     },
     {
-      "block": "chisel:obsidian_medallion_encased",
-      "model_type": "connected",
-      "name": "obsidian_medallion_encased"
+      "block": "chisel:obsidian_crystal",
+      "name": "obsidian_crystal"
     },
     {
-      "block": "chisel:obsidian_dots",
-      "name": "obsidian_dots"
+      "block": "chisel:obsidian_greek",
+      "model_type": "top_bottom_side",
+      "name": "obsidian_greek"
     },
     {
-      "block": "chisel:obsidian_dots_encased",
-      "model_type": "connected",
-      "name": "obsidian_dots_encased"
+      "block": "chisel:obsidian_organic_chunks",
+      "name": "obsidian_organic_chunks"
     },
     {
-      "block": "chisel:obsidian_heart",
-      "name": "obsidian_heart"
+      "block": "chisel:obsidian_organic_growth",
+      "name": "obsidian_organic_growth"
     },
     {
-      "block": "chisel:obsidian_star",
-      "name": "obsidian_star"
+      "block": "chisel:obsidian_panel_bright",
+      "name": "obsidian_panel_bright"
     },
     {
-      "block": "chisel:obsidian_plating",
-      "name": "obsidian_plating"
+      "block": "chisel:obsidian_panel_map",
+      "name": "obsidian_panel_map"
     },
     {
-      "block": "chisel:obsidian_lodestone",
-      "name": "obsidian_lodestone"
+      "block": "chisel:obsidian_panel_region",
+      "name": "obsidian_panel_region"
     },
     {
-      "block": "chisel:obsidian_lodestone_connected",
-      "model_type": "connected",
-      "name": "obsidian_lodestone_connected"
+      "block": "chisel:obsidian_panel_shiny",
+      "name": "obsidian_panel_shiny"
     },
     {
-      "block": "chisel:obsidian_plank",
-      "name": "obsidian_plank"
-    },
-    {
-      "block": "chisel:obsidian_plank_connected",
-      "model_type": "connected",
-      "name": "obsidian_plank_connected"
-    },
-    {
-      "block": "chisel:obsidian_frame",
-      "name": "obsidian_frame"
-    },
-    {
-      "block": "chisel:obsidian_panel_1",
-      "name": "obsidian_panel_1"
-    },
-    {
-      "block": "chisel:obsidian_panel_2",
-      "name": "obsidian_panel_2"
-    },
-    {
-      "block": "chisel:obsidian_panel_3",
-      "name": "obsidian_panel_3"
-    },
-    {
-      "block": "chisel:obsidian_skull_creeper",
-      "name": "obsidian_skull_creeper"
-    },
-    {
-      "block": "chisel:obsidian_skull_skeleton",
-      "name": "obsidian_skull_skeleton"
-    },
-    {
-      "block": "chisel:obsidian_stripes",
-      "name": "obsidian_stripes"
-    },
-    {
-      "block": "chisel:obsidian_stripes_encased",
-      "model_type": "connected",
-      "name": "obsidian_stripes_encased"
-    },
-    {
-      "block": "chisel:obsidian_chisel_1",
-      "name": "obsidian_chisel_1"
-    },
-    {
-      "block": "chisel:obsidian_chisel_2",
-      "name": "obsidian_chisel_2"
-    },
-    {
-      "block": "chisel:obsidian_chisel_3",
-      "name": "obsidian_chisel_3"
-    },
-    {
-      "block": "chisel:obsidian_chisel_4",
-      "name": "obsidian_chisel_4"
-    },
-    {
-      "block": "chisel:obsidian_chisel_5",
-      "name": "obsidian_chisel_5"
-    },
-    {
-      "block": "chisel:obsidian_chisel_6",
-      "name": "obsidian_chisel_6"
-    },
-    {
-      "block": "chisel:obsidian_facet",
-      "name": "obsidian_facet"
-    },
-    {
-      "block": "chisel:obsidian_facet_small",
-      "name": "obsidian_facet_small"
-    },
-    {
-      "block": "chisel:obsidian_facet_small_encased",
-      "model_type": "connected",
-      "name": "obsidian_facet_small_encased"
-    },
-    {
-      "block": "chisel:obsidian_shiny",
-      "name": "obsidian_shiny"
-    },
-    {
-      "block": "chisel:obsidian_shiny_connected",
-      "model_type": "connected",
-      "name": "obsidian_shiny_connected"
-    },
-    {
-      "block": "chisel:obsidian_gem",
-      "name": "obsidian_gem"
-    },
-    {
-      "block": "chisel:obsidian_gem_1",
-      "name": "obsidian_gem_1"
-    },
-    {
-      "block": "chisel:obsidian_gem_1_connected",
-      "model_type": "connected",
-      "name": "obsidian_gem_1_connected"
-    },
-    {
-      "block": "chisel:obsidian_gem_2",
-      "name": "obsidian_gem_2"
-    },
-    {
-      "block": "chisel:obsidian_gem_2_connected",
-      "model_type": "connected",
-      "name": "obsidian_gem_2_connected"
-    },
-    {
-      "block": "chisel:obsidian_gem_3",
-      "name": "obsidian_gem_3"
-    },
-    {
-      "block": "chisel:obsidian_gem_3_connected",
-      "model_type": "connected",
-      "name": "obsidian_gem_3_connected"
-    },
-    {
-      "block": "chisel:obsidian_bricks_square",
-      "name": "obsidian_bricks_square"
-    },
-    {
-      "block": "chisel:obsidian_slab",
-      "name": "obsidian_slab"
-    },
-    {
-      "block": "chisel:obsidian_scaffold",
-      "name": "obsidian_scaffold"
-    },
-    {
-      "block": "chisel:obsidian_scaffold_encased",
-      "model_type": "connected",
-      "name": "obsidian_scaffold_encased"
-    },
-    {
-      "block": "chisel:obsidian_tiles_inlayed",
-      "name": "obsidian_tiles_inlayed"
-    },
-    {
-      "block": "chisel:obsidian_waves",
-      "model_type": "multiblock_2x2",
-      "name": "obsidian_waves"
-    },
-    {
-      "block": "chisel:obsidian_parquet",
-      "name": "obsidian_parquet"
-    },
-    {
-      "block": "chisel:obsidian_parquet_encased",
-      "model_type": "connected",
-      "name": "obsidian_parquet_encased"
-    },
-    {
-      "block": "chisel:obsidian_bricks_large_rough",
-      "model_type": "multiblock_2x2",
-      "name": "obsidian_bricks_large_rough"
-    },
-    {
-      "block": "chisel:obsidian_tiles_small_encased",
-      "model_type": "connected",
-      "name": "obsidian_tiles_small_encased"
-    },
-    {
-      "block": "chisel:obsidian_bricks_round",
-      "name": "obsidian_bricks_round"
+      "block": "chisel:obsidian_pillar_quartz",
+      "model_type": "top_bottom_side",
+      "name": "obsidian_pillar_quartz"
     }
   ]
 }
