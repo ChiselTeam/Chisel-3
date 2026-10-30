@@ -13,8 +13,6 @@
         15.995,
         15.995
       ],
-      "shade_direction_override": "up",
-      "light_emission": 15,
       "faces": {
         "down":  { "texture": "#layer0", "cullface": "down", "tintindex": 0 },
         "up":    { "texture": "#layer0", "cullface": "up", "tintindex": 0 },
