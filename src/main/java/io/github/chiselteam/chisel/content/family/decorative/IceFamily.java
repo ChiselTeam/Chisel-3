@@ -18,6 +18,8 @@ public final class IceFamily {
                     .texture("ctm_cornerless", Chisel.prefix("block/ice/ice_raw"))
                     .texture("ctm_horizontal", Chisel.prefix("block/ice/ice_border_square"))
                     .texture("ctm_vertical", Chisel.prefix("block/ice/ice_border_square")))
+            .variant("ice_border_square_small", v -> v.description("Small Square Border").model(ChiselModelHandlers.ICE)
+                    .texture("ctm_cornerless", Chisel.prefix("block/ice/ice_raw")))
             .variant("ice_braid", v -> v.description("Braid"))
             .variant("ice_braid_encased", v -> v.description("Encased Braid").model(ChiselModelHandlers.ICE)
                     .texture("ctm_cornerless", Chisel.prefix("block/ice/ice_braid")))
