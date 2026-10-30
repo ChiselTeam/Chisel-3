@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/basalt_tiles_small_encased"
+    }
+  }
+}

@@ -3,10 +3,10 @@
   "textures": {
     "all": "chisel:block/atm_ancient_stone/ancient_stone_border_square",
     "particle": "chisel:block/atm_ancient_stone/ancient_stone_border_square",
-    "standard_corner": "chisel:block/atm_ancient_stone/ancient_stone_border_square-ctm_corner",
+    "standard_corner": "chisel:block/atm_ancient_stone/ancient_stone_border_square",
     "standard_cornerless": "chisel:block/atm_ancient_stone/ancient_stone_raw",
-    "standard_horizontal": "chisel:block/atm_ancient_stone/ancient_stone_border_square-ctm_horizontal",
+    "standard_horizontal": "chisel:block/atm_ancient_stone/ancient_stone_border_square",
     "standard_none": "chisel:block/atm_ancient_stone/ancient_stone_border_square",
-    "standard_vertical": "chisel:block/atm_ancient_stone/ancient_stone_border_square-ctm_vertical"
+    "standard_vertical": "chisel:block/atm_ancient_stone/ancient_stone_border_square"
   }
 }

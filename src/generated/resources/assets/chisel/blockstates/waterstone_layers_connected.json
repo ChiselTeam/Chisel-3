@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/waterstone_layers_connected"
+    }
+  }
+}

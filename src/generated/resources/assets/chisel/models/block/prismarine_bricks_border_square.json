@@ -3,10 +3,10 @@
   "textures": {
     "all": "chisel:block/prismarine_bricks/prismarine_bricks_border_square",
     "particle": "chisel:block/prismarine_bricks/prismarine_bricks_border_square",
-    "standard_corner": "chisel:block/prismarine_bricks/prismarine_bricks_border_square-ctm_corner",
+    "standard_corner": "chisel:block/prismarine_bricks/prismarine_bricks_border_square",
     "standard_cornerless": "chisel:block/prismarine_bricks/prismarine_bricks_raw",
-    "standard_horizontal": "chisel:block/prismarine_bricks/prismarine_bricks_border_square-ctm_horizontal",
+    "standard_horizontal": "chisel:block/prismarine_bricks/prismarine_bricks_border_square",
     "standard_none": "chisel:block/prismarine_bricks/prismarine_bricks_border_square",
-    "standard_vertical": "chisel:block/prismarine_bricks/prismarine_bricks_border_square-ctm_vertical"
+    "standard_vertical": "chisel:block/prismarine_bricks/prismarine_bricks_border_square"
   }
 }

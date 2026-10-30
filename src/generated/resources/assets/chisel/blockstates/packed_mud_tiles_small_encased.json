@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/packed_mud_tiles_small_encased"
+    }
+  }
+}

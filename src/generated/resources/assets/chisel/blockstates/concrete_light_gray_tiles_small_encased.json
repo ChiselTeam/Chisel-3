@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/concrete_light_gray_tiles_small_encased"
+    }
+  }
+}

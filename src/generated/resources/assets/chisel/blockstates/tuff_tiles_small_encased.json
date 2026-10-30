@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/tuff_tiles_small_encased"
+    }
+  }
+}

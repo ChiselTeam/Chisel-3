@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/gilded_blackstone/gilded_blackstone_tiles_small_encased",
+    "particle": "chisel:block/gilded_blackstone/gilded_blackstone_tiles_small_encased",
+    "standard_corner": "chisel:block/gilded_blackstone/gilded_blackstone_tiles_small_encased-ctm_corner",
+    "standard_cornerless": "chisel:block/gilded_blackstone/gilded_blackstone_tiles_small",
+    "standard_horizontal": "chisel:block/gilded_blackstone/gilded_blackstone_tiles_small_encased-ctm_horizontal",
+    "standard_none": "chisel:block/gilded_blackstone/gilded_blackstone_tiles_small_encased",
+    "standard_vertical": "chisel:block/gilded_blackstone/gilded_blackstone_tiles_small_encased-ctm_vertical"
+  }
+}

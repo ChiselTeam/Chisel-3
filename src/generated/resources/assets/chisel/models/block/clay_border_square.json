@@ -3,10 +3,10 @@
   "textures": {
     "all": "chisel:block/clay/clay_border_square",
     "particle": "chisel:block/clay/clay_border_square",
-    "standard_corner": "chisel:block/clay/clay_border_square-ctm_corner",
+    "standard_corner": "chisel:block/clay/clay_border_square",
     "standard_cornerless": "chisel:block/clay/clay_raw",
-    "standard_horizontal": "chisel:block/clay/clay_border_square-ctm_horizontal",
+    "standard_horizontal": "chisel:block/clay/clay_border_square",
     "standard_none": "chisel:block/clay/clay_border_square",
-    "standard_vertical": "chisel:block/clay/clay_border_square-ctm_vertical"
+    "standard_vertical": "chisel:block/clay/clay_border_square"
   }
 }

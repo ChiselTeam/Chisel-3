@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/calcite_tiles_small_encased"
+    }
+  }
+}

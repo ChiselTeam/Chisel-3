@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "chisel:block/stone_bricks_large"
+      "model": "chisel:block/ctm/stone_bricks_large"
     }
   }
 }
