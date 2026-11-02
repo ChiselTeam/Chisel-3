@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/fluix_bricks_encased"
+    }
+  }
+}

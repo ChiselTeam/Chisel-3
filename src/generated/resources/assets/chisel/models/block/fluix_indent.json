@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/ae2_fluix/fluix_indent",
+    "particle": "chisel:block/ae2_fluix/fluix_indent",
+    "standard_corner": "chisel:block/ae2_fluix/fluix_indent-ctm_corner",
+    "standard_cornerless": "chisel:block/ae2_fluix/fluix_raw",
+    "standard_horizontal": "chisel:block/ae2_fluix/fluix_indent-ctm_horizontal",
+    "standard_none": "chisel:block/ae2_fluix/fluix_indent",
+    "standard_vertical": "chisel:block/ae2_fluix/fluix_indent-ctm_vertical"
+  }
+}
