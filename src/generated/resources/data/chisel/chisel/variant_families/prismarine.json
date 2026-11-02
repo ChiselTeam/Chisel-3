@@ -35,6 +35,10 @@
       "name": "prismarine_braid_encased"
     },
     {
+      "block": "chisel:prismarine_brick_indent",
+      "name": "prismarine_brick_indent"
+    },
+    {
       "block": "chisel:prismarine_bricks_inlayed",
       "name": "prismarine_bricks_inlayed"
     },
@@ -557,10 +561,6 @@
       "block": "chisel:prismarine_zag",
       "model_type": "v4",
       "name": "prismarine_zag"
-    },
-    {
-      "block": "chisel:prismarine_brick_indent",
-      "name": "prismarine_brick_indent"
     }
   ]
 }
