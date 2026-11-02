@@ -80,6 +80,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_HOE, ChiselFamilies.SCULK.getFamily());
 
         // MARK: PICKAXE
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.AE2_FLUIX.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.ALUMINUM.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.ATM_ANCIENT_STONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.ANDESITE.getFamily());
