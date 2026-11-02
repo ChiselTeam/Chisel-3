@@ -23,6 +23,7 @@ public final class PrismarineFamily {
             .variant("prismarine_braid", v -> v.description("Braid"))
             .variant("prismarine_braid_encased", v -> v.description("Encased Braid").model(ChiselModelHandlers.CONNECTED)
                     .texture("ctm_cornerless", Chisel.prefix("block/prismarine/prismarine_braid")))
+            .variant("prismarine_brick_indent", v -> v.description("Indent Bricks"))
             .variant("prismarine_bricks_inlayed", v -> v.description("Inlayed Bricks"))
             .variant("prismarine_bricks_large", v -> v.description("Large Bricks").model(ChiselModelHandlers.MULTIBLOCK_2X2)
                     .texture("2x2_bottom_left", Chisel.prefix("block/prismarine/prismarine_bricks_large-2x2_top_right"))
@@ -257,8 +258,7 @@ public final class PrismarineFamily {
                     .texture("ctm_cornerless", Chisel.prefix("block/prismarine/prismarine_weaver-ctm_corner")))
             .variant("prismarine_zag", v -> v.description("Zag").model(ChiselModelHandlers.V4)
                     .texture("v4_bottom_left", Chisel.prefix("block/prismarine/prismarine_zag-v4_top_right"))
-                    .texture("v4_top_left", Chisel.prefix("block/prismarine/prismarine_zag")))
-            .variant("prismarine_brick_indent", v -> v.description("Indent Bricks")));
+                    .texture("v4_top_left", Chisel.prefix("block/prismarine/prismarine_zag"))));
 
     private PrismarineFamily() {
     }
