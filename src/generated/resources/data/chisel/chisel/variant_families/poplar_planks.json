@@ -1,0 +1,76 @@
+{
+  "family_name": "poplar_planks",
+  "tag": "c:chisel/poplar_planks",
+  "variants": [
+    {
+      "block": "minecraft:poplar_planks",
+      "name": "block.minecraft.poplar_planks"
+    },
+    {
+      "block": "chisel:poplar_planks_braid",
+      "model_type": "connected",
+      "name": "poplar_planks_braid"
+    },
+    {
+      "block": "chisel:poplar_planks_circular",
+      "model_type": "connected",
+      "name": "poplar_planks_circular"
+    },
+    {
+      "block": "chisel:poplar_planks_crude_horizontal",
+      "model_type": "multiblock_3x3",
+      "name": "poplar_planks_crude_horizontal"
+    },
+    {
+      "block": "chisel:poplar_planks_crude_paneling",
+      "name": "poplar_planks_crude_paneling"
+    },
+    {
+      "block": "chisel:poplar_planks_crude_vertical",
+      "model_type": "multiblock_3x3",
+      "name": "poplar_planks_crude_vertical"
+    },
+    {
+      "block": "chisel:poplar_planks_encased",
+      "model_type": "connected",
+      "name": "poplar_planks_encased"
+    },
+    {
+      "block": "chisel:poplar_planks_encased_large",
+      "model_type": "connected",
+      "name": "poplar_planks_encased_large"
+    },
+    {
+      "block": "chisel:poplar_planks_encased_smooth",
+      "model_type": "connected",
+      "name": "poplar_planks_encased_smooth"
+    },
+    {
+      "block": "chisel:poplar_planks_large",
+      "name": "poplar_planks_large"
+    },
+    {
+      "block": "chisel:poplar_planks_paneling",
+      "model_type": "connected",
+      "name": "poplar_planks_paneling"
+    },
+    {
+      "block": "chisel:poplar_planks_shipping",
+      "model_type": "connected",
+      "name": "poplar_planks_shipping"
+    },
+    {
+      "block": "chisel:poplar_planks_smooth",
+      "model_type": "connected",
+      "name": "poplar_planks_smooth"
+    },
+    {
+      "block": "chisel:poplar_planks_stacked",
+      "name": "poplar_planks_stacked"
+    },
+    {
+      "block": "chisel:poplar_planks_vertical",
+      "name": "poplar_planks_vertical"
+    }
+  ]
+}

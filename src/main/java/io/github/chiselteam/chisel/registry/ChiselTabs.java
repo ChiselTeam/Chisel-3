@@ -97,6 +97,7 @@ public class ChiselTabs {
                         ChiselFamilies.CHERRY.getFamily(),
                         ChiselFamilies.MANGROVE.getFamily(),
                         ChiselFamilies.PALE_OAK.getFamily(),
+                        ChiselFamilies.POPLAR.getFamily(),
                         ChiselFamilies.OAK.getFamily(),
                         ChiselFamilies.SPRUCE.getFamily(),
                         ChiselFamilies.BAMBOO.getFamily()

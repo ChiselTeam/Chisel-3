@@ -122,6 +122,7 @@ public class ChiselFamilies {
     public static final ChiselFamily PERIDOT = PeridotFamily.FAMILY;
     public static final ChiselFamily OAK = OakFamily.FAMILY;
     public static final ChiselFamily PALE_OAK = PaleOakFamily.FAMILY;
+    public static final ChiselFamily POPLAR = PoplarFamily.FAMILY;
     public static final ChiselFamily OBSIDIAN = ObsidianFamily.FAMILY;
     public static final ChiselFamily CRYING_OBSIDIAN = CryingObsidianFamily.FAMILY;
     public static final ChiselFamily PAPERWALL = PaperwallFamily.FAMILY;
@@ -201,7 +202,7 @@ public class ChiselFamilies {
     public static final List<ChiselFamily> STEEL_FRAMED_STAINED_GLASS = new ArrayList<>();
     public static final List<ChiselFamily> STAINED_GLASS_PANE = new ArrayList<>();
     public static final List<ChiselFamily> LIGHT = new ArrayList<>();
-    public static final List<ChiselFamily> WOOD_FAMILIES = List.of(ACACIA, BAMBOO, BIRCH, CHERRY, CRIMSON, DARK_OAK, JUNGLE, MANGROVE, OAK, PALE_OAK, SPRUCE, WARPED);
+    public static final List<ChiselFamily> WOOD_FAMILIES = List.of(ACACIA, BAMBOO, BIRCH, CHERRY, CRIMSON, DARK_OAK, JUNGLE, MANGROVE, OAK, PALE_OAK, POPLAR, SPRUCE, WARPED);
     private static final List<ChiselFamily> FAMILIES;
 
     static {
