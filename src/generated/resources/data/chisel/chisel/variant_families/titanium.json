@@ -1,0 +1,39 @@
+{
+  "family_name": "titanium",
+  "tag": "c:chisel/titanium",
+  "variants": [
+    {
+      "block": "chisel:titanium_bad_greggy",
+      "model_type": "connected",
+      "name": "titanium_bad_greggy"
+    },
+    {
+      "block": "chisel:titanium_bolted",
+      "name": "titanium_bolted"
+    },
+    {
+      "block": "chisel:titanium_caution",
+      "model_type": "connected",
+      "name": "titanium_caution"
+    },
+    {
+      "block": "chisel:titanium_egregious",
+      "model_type": "connected",
+      "name": "titanium_egregious"
+    },
+    {
+      "block": "chisel:titanium_scaffold",
+      "model_type": "connected",
+      "name": "titanium_scaffold"
+    },
+    {
+      "block": "chisel:titanium_thermal",
+      "model_type": "top_bottom_side",
+      "name": "titanium_thermal"
+    },
+    {
+      "block": "chisel:titanium_zelda",
+      "name": "titanium_zelda"
+    }
+  ]
+}

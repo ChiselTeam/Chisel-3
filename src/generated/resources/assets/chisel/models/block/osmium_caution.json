@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/osmium/osmium_caution",
+    "particle": "chisel:block/osmium/osmium_caution",
+    "standard_corner": "chisel:block/osmium/osmium_caution-ctm_corner",
+    "standard_cornerless": "chisel:block/osmium/osmium_caution-ctm_cornerless",
+    "standard_horizontal": "chisel:block/osmium/osmium_caution-ctm_horizontal",
+    "standard_none": "chisel:block/osmium/osmium_caution",
+    "standard_vertical": "chisel:block/osmium/osmium_caution-ctm_vertical"
+  }
+}

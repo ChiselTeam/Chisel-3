@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/titanium/titanium_scaffold",
+    "particle": "chisel:block/titanium/titanium_scaffold",
+    "standard_corner": "chisel:block/titanium/titanium_scaffold-ctm_corner",
+    "standard_cornerless": "chisel:block/titanium/titanium_scaffold-ctm_cornerless",
+    "standard_horizontal": "chisel:block/titanium/titanium_scaffold-ctm_horizontal",
+    "standard_none": "chisel:block/titanium/titanium_scaffold",
+    "standard_vertical": "chisel:block/titanium/titanium_scaffold-ctm_vertical"
+  }
+}

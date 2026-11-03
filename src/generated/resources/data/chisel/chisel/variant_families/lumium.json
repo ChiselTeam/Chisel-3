@@ -1,0 +1,39 @@
+{
+  "family_name": "lumium",
+  "tag": "c:chisel/lumium",
+  "variants": [
+    {
+      "block": "chisel:lumium_bad_greggy",
+      "model_type": "connected",
+      "name": "lumium_bad_greggy"
+    },
+    {
+      "block": "chisel:lumium_bolted",
+      "name": "lumium_bolted"
+    },
+    {
+      "block": "chisel:lumium_caution",
+      "model_type": "connected",
+      "name": "lumium_caution"
+    },
+    {
+      "block": "chisel:lumium_egregious",
+      "model_type": "connected",
+      "name": "lumium_egregious"
+    },
+    {
+      "block": "chisel:lumium_scaffold",
+      "model_type": "connected",
+      "name": "lumium_scaffold"
+    },
+    {
+      "block": "chisel:lumium_thermal",
+      "model_type": "top_bottom_side",
+      "name": "lumium_thermal"
+    },
+    {
+      "block": "chisel:lumium_zelda",
+      "name": "lumium_zelda"
+    }
+  ]
+}

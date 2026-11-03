@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/antimony/antimony_thermal-bottom",
+    "side": "chisel:block/antimony/antimony_thermal-side",
+    "top": "chisel:block/antimony/antimony_thermal-top"
+  }
+}

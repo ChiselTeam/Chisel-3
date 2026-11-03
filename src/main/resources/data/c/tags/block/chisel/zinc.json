@@ -1,6 +1,5 @@
 {
   "values": [
-    {"id": "#c:storage_blocks/zinc", "required": false},
-    {"id": "alltheores:zinc_block", "required": false}
+    {"id": "#c:storage_blocks/zinc", "required": false}
   ]
 }

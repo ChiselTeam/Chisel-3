@@ -1,5 +1,6 @@
 {
   "values": [
+    {"id": "#c:storage_blocks/raw_gold", "required": false},
     {"id": "#chipped:raw_gold_block", "required": false}
   ]
 }

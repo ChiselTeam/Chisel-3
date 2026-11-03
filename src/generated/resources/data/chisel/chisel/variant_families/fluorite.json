@@ -1,0 +1,39 @@
+{
+  "family_name": "fluorite",
+  "tag": "c:chisel/fluorite",
+  "variants": [
+    {
+      "block": "chisel:fluorite_bad_greggy",
+      "model_type": "connected",
+      "name": "fluorite_bad_greggy"
+    },
+    {
+      "block": "chisel:fluorite_bolted",
+      "name": "fluorite_bolted"
+    },
+    {
+      "block": "chisel:fluorite_caution",
+      "model_type": "connected",
+      "name": "fluorite_caution"
+    },
+    {
+      "block": "chisel:fluorite_egregious",
+      "model_type": "connected",
+      "name": "fluorite_egregious"
+    },
+    {
+      "block": "chisel:fluorite_scaffold",
+      "model_type": "connected",
+      "name": "fluorite_scaffold"
+    },
+    {
+      "block": "chisel:fluorite_thermal",
+      "model_type": "top_bottom_side",
+      "name": "fluorite_thermal"
+    },
+    {
+      "block": "chisel:fluorite_zelda",
+      "name": "fluorite_zelda"
+    }
+  ]
+}

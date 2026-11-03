@@ -1,5 +1,6 @@
 {
   "values": [
+    {"id": "#c:storage_blocks/redstone", "required": false},
     {"id": "#rechiseled:redstone_block", "required": false},
     {"id": "#chipped:redstone_block", "required": false}
   ]

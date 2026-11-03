@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/chromium/chromium_egregious",
+    "particle": "chisel:block/chromium/chromium_egregious",
+    "standard_corner": "chisel:block/chromium/chromium_egregious-ctm_corner",
+    "standard_cornerless": "chisel:block/chromium/chromium_egregious-ctm_cornerless",
+    "standard_horizontal": "chisel:block/chromium/chromium_egregious-ctm_horizontal",
+    "standard_none": "chisel:block/chromium/chromium_egregious",
+    "standard_vertical": "chisel:block/chromium/chromium_egregious-ctm_vertical"
+  }
+}

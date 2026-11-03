@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/antimony/antimony_bad_greggy",
+    "particle": "chisel:block/antimony/antimony_bad_greggy",
+    "standard_corner": "chisel:block/antimony/antimony_bad_greggy-ctm_corner",
+    "standard_cornerless": "chisel:block/antimony/antimony_bad_greggy-ctm_cornerless",
+    "standard_horizontal": "chisel:block/antimony/antimony_bad_greggy-ctm_horizontal",
+    "standard_none": "chisel:block/antimony/antimony_bad_greggy",
+    "standard_vertical": "chisel:block/antimony/antimony_bad_greggy-ctm_vertical"
+  }
+}

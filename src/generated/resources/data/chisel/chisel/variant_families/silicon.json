@@ -1,0 +1,39 @@
+{
+  "family_name": "silicon",
+  "tag": "c:chisel/silicon",
+  "variants": [
+    {
+      "block": "chisel:silicon_bad_greggy",
+      "model_type": "connected",
+      "name": "silicon_bad_greggy"
+    },
+    {
+      "block": "chisel:silicon_bolted",
+      "name": "silicon_bolted"
+    },
+    {
+      "block": "chisel:silicon_caution",
+      "model_type": "connected",
+      "name": "silicon_caution"
+    },
+    {
+      "block": "chisel:silicon_egregious",
+      "model_type": "connected",
+      "name": "silicon_egregious"
+    },
+    {
+      "block": "chisel:silicon_scaffold",
+      "model_type": "connected",
+      "name": "silicon_scaffold"
+    },
+    {
+      "block": "chisel:silicon_thermal",
+      "model_type": "top_bottom_side",
+      "name": "silicon_thermal"
+    },
+    {
+      "block": "chisel:silicon_zelda",
+      "name": "silicon_zelda"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/tungsten_bolted"
+    }
+  }
+}

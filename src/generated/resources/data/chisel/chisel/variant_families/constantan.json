@@ -1,0 +1,39 @@
+{
+  "family_name": "constantan",
+  "tag": "c:chisel/constantan",
+  "variants": [
+    {
+      "block": "chisel:constantan_bad_greggy",
+      "model_type": "connected",
+      "name": "constantan_bad_greggy"
+    },
+    {
+      "block": "chisel:constantan_bolted",
+      "name": "constantan_bolted"
+    },
+    {
+      "block": "chisel:constantan_caution",
+      "model_type": "connected",
+      "name": "constantan_caution"
+    },
+    {
+      "block": "chisel:constantan_egregious",
+      "model_type": "connected",
+      "name": "constantan_egregious"
+    },
+    {
+      "block": "chisel:constantan_scaffold",
+      "model_type": "connected",
+      "name": "constantan_scaffold"
+    },
+    {
+      "block": "chisel:constantan_thermal",
+      "model_type": "top_bottom_side",
+      "name": "constantan_thermal"
+    },
+    {
+      "block": "chisel:constantan_zelda",
+      "name": "constantan_zelda"
+    }
+  ]
+}
