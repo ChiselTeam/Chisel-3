@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/sapphire/sapphire_scaffold",
+    "particle": "chisel:block/sapphire/sapphire_scaffold",
+    "standard_corner": "chisel:block/sapphire/sapphire_scaffold-ctm_corner",
+    "standard_cornerless": "chisel:block/sapphire/sapphire_scaffold-ctm_cornerless",
+    "standard_horizontal": "chisel:block/sapphire/sapphire_scaffold-ctm_horizontal",
+    "standard_none": "chisel:block/sapphire/sapphire_scaffold",
+    "standard_vertical": "chisel:block/sapphire/sapphire_scaffold-ctm_vertical"
+  }
+}

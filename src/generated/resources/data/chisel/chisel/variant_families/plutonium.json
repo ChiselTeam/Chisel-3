@@ -1,0 +1,39 @@
+{
+  "family_name": "plutonium",
+  "tag": "c:chisel/plutonium",
+  "variants": [
+    {
+      "block": "chisel:plutonium_bad_greggy",
+      "model_type": "connected",
+      "name": "plutonium_bad_greggy"
+    },
+    {
+      "block": "chisel:plutonium_bolted",
+      "name": "plutonium_bolted"
+    },
+    {
+      "block": "chisel:plutonium_caution",
+      "model_type": "connected",
+      "name": "plutonium_caution"
+    },
+    {
+      "block": "chisel:plutonium_egregious",
+      "model_type": "connected",
+      "name": "plutonium_egregious"
+    },
+    {
+      "block": "chisel:plutonium_scaffold",
+      "model_type": "connected",
+      "name": "plutonium_scaffold"
+    },
+    {
+      "block": "chisel:plutonium_thermal",
+      "model_type": "top_bottom_side",
+      "name": "plutonium_thermal"
+    },
+    {
+      "block": "chisel:plutonium_zelda",
+      "name": "plutonium_zelda"
+    }
+  ]
+}

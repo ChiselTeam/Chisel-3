@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/stainless_steel/stainless_steel_thermal-bottom",
+    "side": "chisel:block/stainless_steel/stainless_steel_thermal-side",
+    "top": "chisel:block/stainless_steel/stainless_steel_thermal-top"
+  }
+}

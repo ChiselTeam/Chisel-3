@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/silicon/silicon_bad_greggy",
+    "particle": "chisel:block/silicon/silicon_bad_greggy",
+    "standard_corner": "chisel:block/silicon/silicon_bad_greggy-ctm_corner",
+    "standard_cornerless": "chisel:block/silicon/silicon_bad_greggy-ctm_cornerless",
+    "standard_horizontal": "chisel:block/silicon/silicon_bad_greggy-ctm_horizontal",
+    "standard_none": "chisel:block/silicon/silicon_bad_greggy",
+    "standard_vertical": "chisel:block/silicon/silicon_bad_greggy-ctm_vertical"
+  }
+}

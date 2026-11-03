@@ -1,0 +1,39 @@
+{
+  "family_name": "sapphire",
+  "tag": "c:chisel/sapphire",
+  "variants": [
+    {
+      "block": "chisel:sapphire_bad_greggy",
+      "model_type": "connected",
+      "name": "sapphire_bad_greggy"
+    },
+    {
+      "block": "chisel:sapphire_bolted",
+      "name": "sapphire_bolted"
+    },
+    {
+      "block": "chisel:sapphire_caution",
+      "model_type": "connected",
+      "name": "sapphire_caution"
+    },
+    {
+      "block": "chisel:sapphire_egregious",
+      "model_type": "connected",
+      "name": "sapphire_egregious"
+    },
+    {
+      "block": "chisel:sapphire_scaffold",
+      "model_type": "connected",
+      "name": "sapphire_scaffold"
+    },
+    {
+      "block": "chisel:sapphire_thermal",
+      "model_type": "top_bottom_side",
+      "name": "sapphire_thermal"
+    },
+    {
+      "block": "chisel:sapphire_zelda",
+      "name": "sapphire_zelda"
+    }
+  ]
+}

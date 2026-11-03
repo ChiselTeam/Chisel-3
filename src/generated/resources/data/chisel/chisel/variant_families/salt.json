@@ -1,0 +1,39 @@
+{
+  "family_name": "salt",
+  "tag": "c:chisel/salt",
+  "variants": [
+    {
+      "block": "chisel:salt_bad_greggy",
+      "model_type": "connected",
+      "name": "salt_bad_greggy"
+    },
+    {
+      "block": "chisel:salt_bolted",
+      "name": "salt_bolted"
+    },
+    {
+      "block": "chisel:salt_caution",
+      "model_type": "connected",
+      "name": "salt_caution"
+    },
+    {
+      "block": "chisel:salt_egregious",
+      "model_type": "connected",
+      "name": "salt_egregious"
+    },
+    {
+      "block": "chisel:salt_scaffold",
+      "model_type": "connected",
+      "name": "salt_scaffold"
+    },
+    {
+      "block": "chisel:salt_thermal",
+      "model_type": "top_bottom_side",
+      "name": "salt_thermal"
+    },
+    {
+      "block": "chisel:salt_zelda",
+      "name": "salt_zelda"
+    }
+  ]
+}

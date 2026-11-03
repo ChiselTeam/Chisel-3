@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/lumium/lumium_thermal-bottom",
+    "side": "chisel:block/lumium/lumium_thermal-side",
+    "top": "chisel:block/lumium/lumium_thermal-top"
+  }
+}

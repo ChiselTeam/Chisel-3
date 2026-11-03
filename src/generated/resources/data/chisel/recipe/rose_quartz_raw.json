@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "D": {
+      "tag": "c:dyes/red"
+    },
+    "Q": {
+      "item": "minecraft:quartz_block"
+    }
+  },
+  "pattern": [
+    "QQQ",
+    "QDQ",
+    "QQQ"
+  ],
+  "result": {
+    "count": 8,
+    "id": "chisel:rose_quartz_raw"
+  }
+}

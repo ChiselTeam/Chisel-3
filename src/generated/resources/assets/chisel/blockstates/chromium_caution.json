@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/chromium_caution"
+    }
+  }
+}

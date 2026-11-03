@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/peridot/peridot_egregious",
+    "particle": "chisel:block/peridot/peridot_egregious",
+    "standard_corner": "chisel:block/peridot/peridot_egregious-ctm_corner",
+    "standard_cornerless": "chisel:block/peridot/peridot_egregious-ctm_cornerless",
+    "standard_horizontal": "chisel:block/peridot/peridot_egregious-ctm_horizontal",
+    "standard_none": "chisel:block/peridot/peridot_egregious",
+    "standard_vertical": "chisel:block/peridot/peridot_egregious-ctm_vertical"
+  }
+}
