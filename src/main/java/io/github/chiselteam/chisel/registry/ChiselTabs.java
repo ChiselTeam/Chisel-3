@@ -225,19 +225,40 @@ public class ChiselTabs {
             .displayItems((_, output) -> {
                 List.of(
                         ChiselFamilies.ALUMINUM,
+                        ChiselFamilies.ANTIMONY,
+                        ChiselFamilies.BRASS,
                         ChiselFamilies.BRONZE,
                         ChiselFamilies.CHARCOAL,
+                        ChiselFamilies.CHROMIUM,
                         ChiselFamilies.COAL_COKE,
                         ChiselFamilies.COBALT,
+                        ChiselFamilies.CONSTANTAN,
                         ChiselFamilies.ELECTRUM,
+                        ChiselFamilies.ENDERIUM,
+                        ChiselFamilies.FLUORITE,
+                        ChiselFamilies.GRAPHITE,
                         ChiselFamilies.INVAR,
+                        ChiselFamilies.IRIDIUM,
                         ChiselFamilies.LEAD,
+                        ChiselFamilies.LUMIUM,
                         ChiselFamilies.NICKEL,
+                        ChiselFamilies.OSMIUM,
+                        ChiselFamilies.PERIDOT,
                         ChiselFamilies.PLATINUM,
+                        ChiselFamilies.PLUTONIUM,
+                        ChiselFamilies.RUBY,
+                        ChiselFamilies.SALT,
+                        ChiselFamilies.SAPPHIRE,
+                        ChiselFamilies.SIGNALUM,
+                        ChiselFamilies.SILICON,
                         ChiselFamilies.SILVER,
+                        ChiselFamilies.STAINLESS_STEEL,
                         ChiselFamilies.STEEL,
                         ChiselFamilies.TIN,
-                        ChiselFamilies.URANIUM
+                        ChiselFamilies.TITANIUM,
+                        ChiselFamilies.TUNGSTEN,
+                        ChiselFamilies.URANIUM,
+                        ChiselFamilies.ZINC
                 ).forEach(family -> family.getFamily().getVariants().forEach(variant -> {
                     if (variant.shouldGenerateModel() && variant.isInTab())
                         output.accept(variant.getBlock());

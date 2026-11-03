@@ -1,5 +1,6 @@
 {
   "values": [
+    {"id": "#c:storage_blocks/raw_copper", "required": false},
     {"id": "#chipped:raw_copper_block", "required": false}
   ]
 }
