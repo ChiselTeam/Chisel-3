@@ -25,6 +25,8 @@ import java.util.List;
 public class ChiselFamilies {
     public static final ChiselFamily ACACIA = AcaciaFamily.FAMILY;
     public static final ChiselFamily ALUMINUM = AluminumFamily.FAMILY;
+    public static final ChiselFamily ANTIMONY = AntimonyFamily.FAMILY;
+    public static final ChiselFamily BRASS = BrassFamily.FAMILY;
     public static final ChiselFamily ATM_ANCIENT_STONE = AtmAncientStoneFamily.FAMILY;
     public static final ChiselFamily ANDESITE = AndesiteFamily.FAMILY;
     public static final ChiselFamily ANTIBLOCK = AntiblockFamily.FAMILY;
@@ -37,6 +39,7 @@ public class ChiselFamilies {
     public static final ChiselFamily BOOKSHELF = BookshelfFamily.FAMILY;
     public static final ChiselFamily BRICKS = BricksFamily.FAMILY;
     public static final ChiselFamily BRONZE = BronzeFamily.FAMILY;
+    public static final ChiselFamily CHROMIUM = ChromiumFamily.FAMILY;
     public static final ChiselFamily AE2_CERTUS = Ae2CertusFamily.FAMILY;
     public static final ChiselFamily AE2_FLUIX = Ae2FluixFamily.FAMILY;
     public static final ChiselFamily AE2_SKY_STONE = Ae2SkyStoneFamily.FAMILY;
@@ -45,6 +48,7 @@ public class ChiselFamilies {
     public static final ChiselFamily COAL = CoalFamily.FAMILY;
     public static final ChiselFamily COAL_COKE = CoalCokeFamily.FAMILY;
     public static final ChiselFamily COBALT = CobaltFamily.FAMILY;
+    public static final ChiselFamily CONSTANTAN = ConstantanFamily.FAMILY;
     public static final ChiselFamily COBBLESTONE = CobblestoneFamily.FAMILY;
     public static final ChiselFamily C_CONCRETE = CConcreteFamily.FAMILY;
     public static final ChiselFamily COPPER = CopperFamily.FAMILY;
@@ -62,6 +66,9 @@ public class ChiselFamilies {
     public static final ChiselFamily DEEPSLATE = DeepslateFamily.FAMILY;
     public static final ChiselFamily DIRT = DirtFamily.FAMILY;
     public static final ChiselFamily ELECTRUM = ElectrumFamily.FAMILY;
+    public static final ChiselFamily ENDERIUM = EnderiumFamily.FAMILY;
+    public static final ChiselFamily FLUORITE = FluoriteFamily.FAMILY;
+    public static final ChiselFamily GRAPHITE = GraphiteFamily.FAMILY;
     public static final ChiselFamily EMERALD = EmeraldFamily.FAMILY;
     public static final ChiselFamily END_STONE = EndStoneFamily.FAMILY;
     public static final ChiselFamily ENERGIZED_VOIDSTONE = EnergizedVoidstoneFamily.FAMILY;
@@ -85,6 +92,7 @@ public class ChiselFamilies {
     public static final ChiselFamily HOLYSTONE = HolystoneFamily.FAMILY;
     public static final ChiselFamily ICE = IceFamily.FAMILY;
     public static final ChiselFamily INVAR = InvarFamily.FAMILY;
+    public static final ChiselFamily IRIDIUM = IridiumFamily.FAMILY;
     public static final ChiselFamily IRON = IronFamily.FAMILY;
     public static final ChiselFamily IRON_BARS = IronBarsFamily.FAMILY;
     public static final ChiselFamily JACK_O_LANTERN = JackOLanternFamily.FAMILY;
@@ -94,6 +102,7 @@ public class ChiselFamilies {
     public static final ChiselFamily LAPIS = LapisFamily.FAMILY;
     public static final ChiselFamily LAVASTONE = LavastoneFamily.FAMILY;
     public static final ChiselFamily LEAD = LeadFamily.FAMILY;
+    public static final ChiselFamily LUMIUM = LumiumFamily.FAMILY;
     public static final ChiselFamily LEAF = LeafFamily.FAMILY;
     public static final ChiselFamily LIMESTONE = LimestoneFamily.FAMILY;
     public static final ChiselFamily MAGMA = MagmaFamily.FAMILY;
@@ -109,12 +118,20 @@ public class ChiselFamilies {
     public static final ChiselFamily RED_NETHER_BRICKS = RedNetherBricksFamily.FAMILY;
     public static final ChiselFamily NETHERRACK = NetherrackFamily.FAMILY;
     public static final ChiselFamily NICKEL = NickelFamily.FAMILY;
+    public static final ChiselFamily OSMIUM = OsmiumFamily.FAMILY;
+    public static final ChiselFamily PERIDOT = PeridotFamily.FAMILY;
     public static final ChiselFamily OAK = OakFamily.FAMILY;
     public static final ChiselFamily PALE_OAK = PaleOakFamily.FAMILY;
     public static final ChiselFamily OBSIDIAN = ObsidianFamily.FAMILY;
     public static final ChiselFamily CRYING_OBSIDIAN = CryingObsidianFamily.FAMILY;
     public static final ChiselFamily PAPERWALL = PaperwallFamily.FAMILY;
     public static final ChiselFamily PLATINUM = PlatinumFamily.FAMILY;
+    public static final ChiselFamily PLUTONIUM = PlutoniumFamily.FAMILY;
+    public static final ChiselFamily RUBY = RubyFamily.FAMILY;
+    public static final ChiselFamily SALT = SaltFamily.FAMILY;
+    public static final ChiselFamily SAPPHIRE = SapphireFamily.FAMILY;
+    public static final ChiselFamily SIGNALUM = SignalumFamily.FAMILY;
+    public static final ChiselFamily SILICON = SiliconFamily.FAMILY;
     public static final ChiselFamily QUARTZ = QuartzFamily.FAMILY;
     public static final ChiselFamily PRISMARINE = PrismarineFamily.FAMILY;
     public static final ChiselFamily PRISMARINE_BRICKS = PrismarineBricksFamily.FAMILY;
@@ -129,6 +146,7 @@ public class ChiselFamilies {
     public static final ChiselFamily SANDSTONE = SandstoneFamily.FAMILY;
     public static final ChiselFamily SHINGLE = ShingleFamily.FAMILY;
     public static final ChiselFamily SILVER = SilverFamily.FAMILY;
+    public static final ChiselFamily STAINLESS_STEEL = StainlessSteelFamily.FAMILY;
     public static final ChiselFamily SPRUCE = SpruceFamily.FAMILY;
     public static final ChiselFamily STEEL = SteelFamily.FAMILY;
     public static final ChiselFamily STEAMPUNK = SteampunkFamily.FAMILY;
@@ -140,9 +158,12 @@ public class ChiselFamilies {
     public static final ChiselFamily TERRACOTTA = TerracottaFamily.FAMILY;
     public static final ChiselFamily TT_THAUMIUM = TTThaumiumFamily.FAMILY;
     public static final ChiselFamily TIN = TinFamily.FAMILY;
+    public static final ChiselFamily TITANIUM = TitaniumFamily.FAMILY;
+    public static final ChiselFamily TUNGSTEN = TungstenFamily.FAMILY;
     public static final ChiselFamily TORCH = TorchFamily.FAMILY;
     public static final ChiselFamily TYRIAN = TyrianFamily.FAMILY;
     public static final ChiselFamily URANIUM = UraniumFamily.FAMILY;
+    public static final ChiselFamily ZINC = ZincFamily.FAMILY;
     public static final ChiselFamily VALENTINES = ValentinesFamily.FAMILY;
     public static final ChiselFamily VOIDSTONE = VoidstoneFamily.FAMILY;
     public static final ChiselFamily WARNING = WarningFamily.FAMILY;
@@ -202,8 +223,10 @@ public class ChiselFamilies {
 
         // Modded metals
         families.addAll(List.of(
-                ALUMINUM, BRONZE, COBALT, ELECTRUM, INVAR, LEAD, NICKEL, PLATINUM,
-                SILVER, STEEL, TIN, URANIUM, CHARCOAL, COAL_COKE
+                ALUMINUM, ANTIMONY, BRASS, BRONZE, CHROMIUM, COBALT, CONSTANTAN, ELECTRUM, ENDERIUM,
+                FLUORITE, GRAPHITE, INVAR, IRIDIUM, LEAD, LUMIUM, NICKEL, OSMIUM, PERIDOT,
+                PLATINUM, PLUTONIUM, RUBY, SALT, SAPPHIRE, SIGNALUM, SILICON, SILVER, STAINLESS_STEEL,
+                STEEL, TIN, TITANIUM, TUNGSTEN, URANIUM, ZINC, CHARCOAL, COAL_COKE
         ));
 
         // Special

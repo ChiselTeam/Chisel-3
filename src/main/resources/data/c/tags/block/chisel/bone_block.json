@@ -1,5 +1,6 @@
 {
   "values": [
+    {"id": "#c:storage_blocks/bone_meal", "required": false},
     {"id": "#rechiseled:bone_block", "required": false},
     {"id": "#chipped:bone_block", "required": false}
   ]
