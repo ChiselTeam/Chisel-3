@@ -1,0 +1,39 @@
+{
+  "family_name": "peridot",
+  "tag": "c:chisel/peridot",
+  "variants": [
+    {
+      "block": "chisel:peridot_bad_greggy",
+      "model_type": "connected",
+      "name": "peridot_bad_greggy"
+    },
+    {
+      "block": "chisel:peridot_bolted",
+      "name": "peridot_bolted"
+    },
+    {
+      "block": "chisel:peridot_caution",
+      "model_type": "connected",
+      "name": "peridot_caution"
+    },
+    {
+      "block": "chisel:peridot_egregious",
+      "model_type": "connected",
+      "name": "peridot_egregious"
+    },
+    {
+      "block": "chisel:peridot_scaffold",
+      "model_type": "connected",
+      "name": "peridot_scaffold"
+    },
+    {
+      "block": "chisel:peridot_thermal",
+      "model_type": "top_bottom_side",
+      "name": "peridot_thermal"
+    },
+    {
+      "block": "chisel:peridot_zelda",
+      "name": "peridot_zelda"
+    }
+  ]
+}

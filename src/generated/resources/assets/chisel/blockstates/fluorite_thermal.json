@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/fluorite_thermal"
+    }
+  }
+}

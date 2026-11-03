@@ -1,0 +1,39 @@
+{
+  "family_name": "brass",
+  "tag": "c:chisel/brass",
+  "variants": [
+    {
+      "block": "chisel:brass_bad_greggy",
+      "model_type": "connected",
+      "name": "brass_bad_greggy"
+    },
+    {
+      "block": "chisel:brass_bolted",
+      "name": "brass_bolted"
+    },
+    {
+      "block": "chisel:brass_caution",
+      "model_type": "connected",
+      "name": "brass_caution"
+    },
+    {
+      "block": "chisel:brass_egregious",
+      "model_type": "connected",
+      "name": "brass_egregious"
+    },
+    {
+      "block": "chisel:brass_scaffold",
+      "model_type": "connected",
+      "name": "brass_scaffold"
+    },
+    {
+      "block": "chisel:brass_thermal",
+      "model_type": "top_bottom_side",
+      "name": "brass_thermal"
+    },
+    {
+      "block": "chisel:brass_zelda",
+      "name": "brass_zelda"
+    }
+  ]
+}

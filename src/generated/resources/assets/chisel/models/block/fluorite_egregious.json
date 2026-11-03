@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/fluorite/fluorite_egregious",
+    "particle": "chisel:block/fluorite/fluorite_egregious",
+    "standard_corner": "chisel:block/fluorite/fluorite_egregious-ctm_corner",
+    "standard_cornerless": "chisel:block/fluorite/fluorite_egregious-ctm_cornerless",
+    "standard_horizontal": "chisel:block/fluorite/fluorite_egregious-ctm_horizontal",
+    "standard_none": "chisel:block/fluorite/fluorite_egregious",
+    "standard_vertical": "chisel:block/fluorite/fluorite_egregious-ctm_vertical"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/ruby/ruby_scaffold",
+    "particle": "chisel:block/ruby/ruby_scaffold",
+    "standard_corner": "chisel:block/ruby/ruby_scaffold-ctm_corner",
+    "standard_cornerless": "chisel:block/ruby/ruby_scaffold-ctm_cornerless",
+    "standard_horizontal": "chisel:block/ruby/ruby_scaffold-ctm_horizontal",
+    "standard_none": "chisel:block/ruby/ruby_scaffold",
+    "standard_vertical": "chisel:block/ruby/ruby_scaffold-ctm_vertical"
+  }
+}

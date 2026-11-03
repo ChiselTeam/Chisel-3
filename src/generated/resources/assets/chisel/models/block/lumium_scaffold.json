@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/lumium/lumium_scaffold",
+    "particle": "chisel:block/lumium/lumium_scaffold",
+    "standard_corner": "chisel:block/lumium/lumium_scaffold-ctm_corner",
+    "standard_cornerless": "chisel:block/lumium/lumium_scaffold-ctm_cornerless",
+    "standard_horizontal": "chisel:block/lumium/lumium_scaffold-ctm_horizontal",
+    "standard_none": "chisel:block/lumium/lumium_scaffold",
+    "standard_vertical": "chisel:block/lumium/lumium_scaffold-ctm_vertical"
+  }
+}

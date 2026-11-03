@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/enderium/enderium_thermal-bottom",
+    "side": "chisel:block/enderium/enderium_thermal-side",
+    "top": "chisel:block/enderium/enderium_thermal-top"
+  }
+}

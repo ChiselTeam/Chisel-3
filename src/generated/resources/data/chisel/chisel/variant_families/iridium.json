@@ -1,0 +1,39 @@
+{
+  "family_name": "iridium",
+  "tag": "c:chisel/iridium",
+  "variants": [
+    {
+      "block": "chisel:iridium_bad_greggy",
+      "model_type": "connected",
+      "name": "iridium_bad_greggy"
+    },
+    {
+      "block": "chisel:iridium_bolted",
+      "name": "iridium_bolted"
+    },
+    {
+      "block": "chisel:iridium_caution",
+      "model_type": "connected",
+      "name": "iridium_caution"
+    },
+    {
+      "block": "chisel:iridium_egregious",
+      "model_type": "connected",
+      "name": "iridium_egregious"
+    },
+    {
+      "block": "chisel:iridium_scaffold",
+      "model_type": "connected",
+      "name": "iridium_scaffold"
+    },
+    {
+      "block": "chisel:iridium_thermal",
+      "model_type": "top_bottom_side",
+      "name": "iridium_thermal"
+    },
+    {
+      "block": "chisel:iridium_zelda",
+      "name": "iridium_zelda"
+    }
+  ]
+}

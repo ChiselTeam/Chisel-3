@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/sapphire/sapphire_thermal-bottom",
+    "side": "chisel:block/sapphire/sapphire_thermal-side",
+    "top": "chisel:block/sapphire/sapphire_thermal-top"
+  }
+}

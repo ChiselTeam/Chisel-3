@@ -1,0 +1,39 @@
+{
+  "family_name": "signalum",
+  "tag": "c:chisel/signalum",
+  "variants": [
+    {
+      "block": "chisel:signalum_bad_greggy",
+      "model_type": "connected",
+      "name": "signalum_bad_greggy"
+    },
+    {
+      "block": "chisel:signalum_bolted",
+      "name": "signalum_bolted"
+    },
+    {
+      "block": "chisel:signalum_caution",
+      "model_type": "connected",
+      "name": "signalum_caution"
+    },
+    {
+      "block": "chisel:signalum_egregious",
+      "model_type": "connected",
+      "name": "signalum_egregious"
+    },
+    {
+      "block": "chisel:signalum_scaffold",
+      "model_type": "connected",
+      "name": "signalum_scaffold"
+    },
+    {
+      "block": "chisel:signalum_thermal",
+      "model_type": "top_bottom_side",
+      "name": "signalum_thermal"
+    },
+    {
+      "block": "chisel:signalum_zelda",
+      "name": "signalum_zelda"
+    }
+  ]
+}

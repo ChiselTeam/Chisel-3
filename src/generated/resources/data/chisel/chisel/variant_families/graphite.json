@@ -1,0 +1,39 @@
+{
+  "family_name": "graphite",
+  "tag": "c:chisel/graphite",
+  "variants": [
+    {
+      "block": "chisel:graphite_bad_greggy",
+      "model_type": "connected",
+      "name": "graphite_bad_greggy"
+    },
+    {
+      "block": "chisel:graphite_bolted",
+      "name": "graphite_bolted"
+    },
+    {
+      "block": "chisel:graphite_caution",
+      "model_type": "connected",
+      "name": "graphite_caution"
+    },
+    {
+      "block": "chisel:graphite_egregious",
+      "model_type": "connected",
+      "name": "graphite_egregious"
+    },
+    {
+      "block": "chisel:graphite_scaffold",
+      "model_type": "connected",
+      "name": "graphite_scaffold"
+    },
+    {
+      "block": "chisel:graphite_thermal",
+      "model_type": "top_bottom_side",
+      "name": "graphite_thermal"
+    },
+    {
+      "block": "chisel:graphite_zelda",
+      "name": "graphite_zelda"
+    }
+  ]
+}

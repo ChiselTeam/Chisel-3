@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chisel:block/tungsten/tungsten_thermal-bottom",
+    "side": "chisel:block/tungsten/tungsten_thermal-side",
+    "top": "chisel:block/tungsten/tungsten_thermal-top"
+  }
+}
