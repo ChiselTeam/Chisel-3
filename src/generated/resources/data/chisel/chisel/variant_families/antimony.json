@@ -1,0 +1,39 @@
+{
+  "family_name": "antimony",
+  "tag": "c:chisel/antimony",
+  "variants": [
+    {
+      "block": "chisel:antimony_bad_greggy",
+      "model_type": "connected",
+      "name": "antimony_bad_greggy"
+    },
+    {
+      "block": "chisel:antimony_bolted",
+      "name": "antimony_bolted"
+    },
+    {
+      "block": "chisel:antimony_caution",
+      "model_type": "connected",
+      "name": "antimony_caution"
+    },
+    {
+      "block": "chisel:antimony_egregious",
+      "model_type": "connected",
+      "name": "antimony_egregious"
+    },
+    {
+      "block": "chisel:antimony_scaffold",
+      "model_type": "connected",
+      "name": "antimony_scaffold"
+    },
+    {
+      "block": "chisel:antimony_thermal",
+      "model_type": "top_bottom_side",
+      "name": "antimony_thermal"
+    },
+    {
+      "block": "chisel:antimony_zelda",
+      "name": "antimony_zelda"
+    }
+  ]
+}

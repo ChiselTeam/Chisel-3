@@ -1,0 +1,39 @@
+{
+  "family_name": "zinc",
+  "tag": "c:chisel/zinc",
+  "variants": [
+    {
+      "block": "chisel:zinc_bad_greggy",
+      "model_type": "connected",
+      "name": "zinc_bad_greggy"
+    },
+    {
+      "block": "chisel:zinc_bolted",
+      "name": "zinc_bolted"
+    },
+    {
+      "block": "chisel:zinc_caution",
+      "model_type": "connected",
+      "name": "zinc_caution"
+    },
+    {
+      "block": "chisel:zinc_egregious",
+      "model_type": "connected",
+      "name": "zinc_egregious"
+    },
+    {
+      "block": "chisel:zinc_scaffold",
+      "model_type": "connected",
+      "name": "zinc_scaffold"
+    },
+    {
+      "block": "chisel:zinc_thermal",
+      "model_type": "top_bottom_side",
+      "name": "zinc_thermal"
+    },
+    {
+      "block": "chisel:zinc_zelda",
+      "name": "zinc_zelda"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "family_name": "osmium",
+  "tag": "c:chisel/osmium",
+  "variants": [
+    {
+      "block": "chisel:osmium_bad_greggy",
+      "model_type": "connected",
+      "name": "osmium_bad_greggy"
+    },
+    {
+      "block": "chisel:osmium_bolted",
+      "name": "osmium_bolted"
+    },
+    {
+      "block": "chisel:osmium_caution",
+      "model_type": "connected",
+      "name": "osmium_caution"
+    },
+    {
+      "block": "chisel:osmium_egregious",
+      "model_type": "connected",
+      "name": "osmium_egregious"
+    },
+    {
+      "block": "chisel:osmium_scaffold",
+      "model_type": "connected",
+      "name": "osmium_scaffold"
+    },
+    {
+      "block": "chisel:osmium_thermal",
+      "model_type": "top_bottom_side",
+      "name": "osmium_thermal"
+    },
+    {
+      "block": "chisel:osmium_zelda",
+      "name": "osmium_zelda"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/sapphire/sapphire_caution",
+    "particle": "chisel:block/sapphire/sapphire_caution",
+    "standard_corner": "chisel:block/sapphire/sapphire_caution-ctm_corner",
+    "standard_cornerless": "chisel:block/sapphire/sapphire_caution-ctm_cornerless",
+    "standard_horizontal": "chisel:block/sapphire/sapphire_caution-ctm_horizontal",
+    "standard_none": "chisel:block/sapphire/sapphire_caution",
+    "standard_vertical": "chisel:block/sapphire/sapphire_caution-ctm_vertical"
+  }
+}

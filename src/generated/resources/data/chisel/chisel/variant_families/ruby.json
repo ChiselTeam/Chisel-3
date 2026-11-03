@@ -1,0 +1,39 @@
+{
+  "family_name": "ruby",
+  "tag": "c:chisel/ruby",
+  "variants": [
+    {
+      "block": "chisel:ruby_bad_greggy",
+      "model_type": "connected",
+      "name": "ruby_bad_greggy"
+    },
+    {
+      "block": "chisel:ruby_bolted",
+      "name": "ruby_bolted"
+    },
+    {
+      "block": "chisel:ruby_caution",
+      "model_type": "connected",
+      "name": "ruby_caution"
+    },
+    {
+      "block": "chisel:ruby_egregious",
+      "model_type": "connected",
+      "name": "ruby_egregious"
+    },
+    {
+      "block": "chisel:ruby_scaffold",
+      "model_type": "connected",
+      "name": "ruby_scaffold"
+    },
+    {
+      "block": "chisel:ruby_thermal",
+      "model_type": "top_bottom_side",
+      "name": "ruby_thermal"
+    },
+    {
+      "block": "chisel:ruby_zelda",
+      "name": "ruby_zelda"
+    }
+  ]
+}

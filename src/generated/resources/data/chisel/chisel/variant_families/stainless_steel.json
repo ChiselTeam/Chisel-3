@@ -1,0 +1,39 @@
+{
+  "family_name": "stainless_steel",
+  "tag": "c:chisel/stainless_steel",
+  "variants": [
+    {
+      "block": "chisel:stainless_steel_bad_greggy",
+      "model_type": "connected",
+      "name": "stainless_steel_bad_greggy"
+    },
+    {
+      "block": "chisel:stainless_steel_bolted",
+      "name": "stainless_steel_bolted"
+    },
+    {
+      "block": "chisel:stainless_steel_caution",
+      "model_type": "connected",
+      "name": "stainless_steel_caution"
+    },
+    {
+      "block": "chisel:stainless_steel_egregious",
+      "model_type": "connected",
+      "name": "stainless_steel_egregious"
+    },
+    {
+      "block": "chisel:stainless_steel_scaffold",
+      "model_type": "connected",
+      "name": "stainless_steel_scaffold"
+    },
+    {
+      "block": "chisel:stainless_steel_thermal",
+      "model_type": "top_bottom_side",
+      "name": "stainless_steel_thermal"
+    },
+    {
+      "block": "chisel:stainless_steel_zelda",
+      "name": "stainless_steel_zelda"
+    }
+  ]
+}

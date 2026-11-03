@@ -1,0 +1,39 @@
+{
+  "family_name": "enderium",
+  "tag": "c:chisel/enderium",
+  "variants": [
+    {
+      "block": "chisel:enderium_bad_greggy",
+      "model_type": "connected",
+      "name": "enderium_bad_greggy"
+    },
+    {
+      "block": "chisel:enderium_bolted",
+      "name": "enderium_bolted"
+    },
+    {
+      "block": "chisel:enderium_caution",
+      "model_type": "connected",
+      "name": "enderium_caution"
+    },
+    {
+      "block": "chisel:enderium_egregious",
+      "model_type": "connected",
+      "name": "enderium_egregious"
+    },
+    {
+      "block": "chisel:enderium_scaffold",
+      "model_type": "connected",
+      "name": "enderium_scaffold"
+    },
+    {
+      "block": "chisel:enderium_thermal",
+      "model_type": "top_bottom_side",
+      "name": "enderium_thermal"
+    },
+    {
+      "block": "chisel:enderium_zelda",
+      "name": "enderium_zelda"
+    }
+  ]
+}

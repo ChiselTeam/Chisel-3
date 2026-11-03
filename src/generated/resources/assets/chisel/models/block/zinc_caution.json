@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/zinc/zinc_caution",
+    "particle": "chisel:block/zinc/zinc_caution",
+    "standard_corner": "chisel:block/zinc/zinc_caution-ctm_corner",
+    "standard_cornerless": "chisel:block/zinc/zinc_caution-ctm_cornerless",
+    "standard_horizontal": "chisel:block/zinc/zinc_caution-ctm_horizontal",
+    "standard_none": "chisel:block/zinc/zinc_caution",
+    "standard_vertical": "chisel:block/zinc/zinc_caution-ctm_vertical"
+  }
+}

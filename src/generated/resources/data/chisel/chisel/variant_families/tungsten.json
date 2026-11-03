@@ -1,0 +1,39 @@
+{
+  "family_name": "tungsten",
+  "tag": "c:chisel/tungsten",
+  "variants": [
+    {
+      "block": "chisel:tungsten_bad_greggy",
+      "model_type": "connected",
+      "name": "tungsten_bad_greggy"
+    },
+    {
+      "block": "chisel:tungsten_bolted",
+      "name": "tungsten_bolted"
+    },
+    {
+      "block": "chisel:tungsten_caution",
+      "model_type": "connected",
+      "name": "tungsten_caution"
+    },
+    {
+      "block": "chisel:tungsten_egregious",
+      "model_type": "connected",
+      "name": "tungsten_egregious"
+    },
+    {
+      "block": "chisel:tungsten_scaffold",
+      "model_type": "connected",
+      "name": "tungsten_scaffold"
+    },
+    {
+      "block": "chisel:tungsten_thermal",
+      "model_type": "top_bottom_side",
+      "name": "tungsten_thermal"
+    },
+    {
+      "block": "chisel:tungsten_zelda",
+      "name": "tungsten_zelda"
+    }
+  ]
+}

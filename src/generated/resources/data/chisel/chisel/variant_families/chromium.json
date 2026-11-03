@@ -1,0 +1,39 @@
+{
+  "family_name": "chromium",
+  "tag": "c:chisel/chromium",
+  "variants": [
+    {
+      "block": "chisel:chromium_bad_greggy",
+      "model_type": "connected",
+      "name": "chromium_bad_greggy"
+    },
+    {
+      "block": "chisel:chromium_bolted",
+      "name": "chromium_bolted"
+    },
+    {
+      "block": "chisel:chromium_caution",
+      "model_type": "connected",
+      "name": "chromium_caution"
+    },
+    {
+      "block": "chisel:chromium_egregious",
+      "model_type": "connected",
+      "name": "chromium_egregious"
+    },
+    {
+      "block": "chisel:chromium_scaffold",
+      "model_type": "connected",
+      "name": "chromium_scaffold"
+    },
+    {
+      "block": "chisel:chromium_thermal",
+      "model_type": "top_bottom_side",
+      "name": "chromium_thermal"
+    },
+    {
+      "block": "chisel:chromium_zelda",
+      "name": "chromium_zelda"
+    }
+  ]
+}
