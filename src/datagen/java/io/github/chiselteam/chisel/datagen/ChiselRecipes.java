@@ -45,6 +45,15 @@ public class ChiselRecipes extends RecipeProvider {
         stoneAround("has_blue_dye", Tags.Items.DYES_BLUE, ChiselFamilies.TEMPLE.getFamily().getVariants().getFirst().getBlock(), 8);
         stoneAround("has_sign", ItemTags.SIGNS, ChiselFamilies.WARNING.getFamily().getVariants().getFirst().getBlock(), 4);
 
+        shaped(RecipeCategory.BUILDING_BLOCKS, new ItemStackTemplate(ChiselFamilies.ROSE_QUARTZ.getVariant("rose_quartz_raw").get().asItem(), 8))
+                .pattern("QQQ")
+                .pattern("QDQ")
+                .pattern("QQQ")
+                .define('Q', Blocks.QUARTZ_BLOCK)
+                .define('D', Tags.Items.DYES_RED)
+                .unlockedBy("has_quartz_block", has(Blocks.QUARTZ_BLOCK))
+                .save(output);
+
         shaped(RecipeCategory.MISC, new ItemStackTemplate(ChiselFamilies.REDSTONE_SEA_LAMP.getFamily().getVariants().getFirst().getBlock().asItem(), 1))
                 .pattern(" R ")
                 .pattern("RSR")
