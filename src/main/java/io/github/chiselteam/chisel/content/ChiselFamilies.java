@@ -133,6 +133,7 @@ public class ChiselFamilies {
     public static final ChiselFamily SIGNALUM = SignalumFamily.FAMILY;
     public static final ChiselFamily SILICON = SiliconFamily.FAMILY;
     public static final ChiselFamily QUARTZ = QuartzFamily.FAMILY;
+    public static final ChiselFamily ROSE_QUARTZ = RoseQuartzFamily.FAMILY;
     public static final ChiselFamily PRISMARINE = PrismarineFamily.FAMILY;
     public static final ChiselFamily PRISMARINE_BRICKS = PrismarineBricksFamily.FAMILY;
     public static final ChiselFamily DARK_PRISMARINE = DarkPrismarineFamily.FAMILY;
@@ -211,7 +212,7 @@ public class ChiselFamilies {
                 SMOOTH_STONE, STONE, ANDESITE, BASALT, BLACKSTONE, GILDED_BLACKSTONE, BRICKS, COBBLESTONE,
                 COBBLED_DEEPSLATE, DEEPSLATE, DIORITE, DRIPSTONE, END_STONE, GRANITE, LIMESTONE, MARBLE,
                 MOSSY_COBBLESTONE, MOSSY_STONE, MOSSY_DEEPSLATE, MOSSY_BLACKSTONE, RED_NETHER_BRICKS, NETHERBRICK, NETHERRACK, OBSIDIAN,
-                CRYING_OBSIDIAN, PRISMARINE, PRISMARINE_BRICKS, DARK_PRISMARINE, PURPUR, QUARTZ, RED_SANDSTONE, SANDSTONE,
+                CRYING_OBSIDIAN, PRISMARINE, PRISMARINE_BRICKS, DARK_PRISMARINE, PURPUR, QUARTZ, ROSE_QUARTZ, RED_SANDSTONE, SANDSTONE,
                 TUFF, CALCITE, PACKED_MUD
         ));
 
