@@ -3,6 +3,8 @@ package io.github.chiselteam.chisel.datagen.tags;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.family.VariantFamily;
 import io.github.chiselteam.chisel.content.ChiselFamilies;
+import io.github.chiselteam.chisel.registry.ChiselItems;
+import io.github.chiselteam.chisel.registry.ChiselTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.ItemTags;
@@ -25,6 +27,11 @@ public class ChiselItemTags extends ItemTagsProvider {
         addToTag(Tags.Items.STORAGE_BLOCKS, ChiselFamilies.COAL_COKE.getFamily());
         addToTag(ItemTags.create(Chisel.prefix("marble")), ChiselFamilies.MARBLE.getFamily());
         addToTag(ItemTags.create(Chisel.prefix("limestone")), ChiselFamilies.LIMESTONE.getFamily());
+
+        tag(ChiselTags.CHISEL)
+                .add(ChiselItems.CHISEL_IRON.asItem().builtInRegistryHolder().key())
+                .add(ChiselItems.CHISEL_DIAMOND.asItem().builtInRegistryHolder().key())
+                .add(ChiselItems.CHISEL_OBSIDIAN.asItem().builtInRegistryHolder().key());
     }
 
     private void addToTag(TagKey<Item> tag, VariantFamily family) {
