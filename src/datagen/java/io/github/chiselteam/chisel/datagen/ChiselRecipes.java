@@ -4,6 +4,7 @@ import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.content.ChiselFamilies;
 import io.github.chiselteam.chisel.registry.ChiselBlocks;
 import io.github.chiselteam.chisel.registry.ChiselItems;
+import io.github.chiselteam.chisel.registry.ChiselTags;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeProvider;
@@ -352,6 +353,12 @@ public class ChiselRecipes extends RecipeProvider {
                 .requires(Items.GLASS_BOTTLE)
                 .requires(Items.STONE_SHOVEL)
                 .unlockedBy("has_stone_pickaxe", has(Items.STONE_PICKAXE))
+                .save(output);
+
+        shapeless(RecipeCategory.MISC, ChiselItems.BUILDERS_HANDBOOK, 1)
+                .requires(ChiselTags.CHISEL)
+                .requires(Items.BOOK)
+                .unlockedBy("has_chisel", has(ChiselTags.CHISEL))
                 .save(output);
 
         shaped(RecipeCategory.TOOLS, ChiselItems.TROWEL, 1)
