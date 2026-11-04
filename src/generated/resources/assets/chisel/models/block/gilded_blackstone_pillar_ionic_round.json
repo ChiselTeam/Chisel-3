@@ -8,7 +8,7 @@
     "top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic-top",
     "vertical_both": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_basic_round-vertical_both",
     "vertical_bottom": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic_round-vertical_bottom",
-    "vertical_none": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-vertical_none",
+    "vertical_none": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic-side",
     "vertical_top": "chisel:block/gilded_blackstone/gilded_blackstone_pillar_ionic_round-vertical_top"
   }
 }
