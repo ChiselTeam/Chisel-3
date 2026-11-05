@@ -4,7 +4,7 @@
     "all": "chisel:block/red_sandstone/red_sandstone_circular",
     "particle": "chisel:block/red_sandstone/red_sandstone_circular",
     "standard_corner": "chisel:block/red_sandstone/red_sandstone_circular-ctm_corner",
-    "standard_cornerless": "chisel:block/red_sandstone/red_sandstone_circular-ctm_cornerless",
+    "standard_cornerless": "chisel:block/red_sandstone/red_sandstone_raw",
     "standard_horizontal": "chisel:block/red_sandstone/red_sandstone_circular-ctm_horizontal",
     "standard_none": "chisel:block/red_sandstone/red_sandstone_circular",
     "standard_vertical": "chisel:block/red_sandstone/red_sandstone_circular-ctm_vertical"

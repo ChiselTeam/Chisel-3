@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/ctm/sandstone_tiles_small_encased"
+    }
+  }
+}
