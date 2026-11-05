@@ -41,7 +41,7 @@ public class RegisterCommandsEventHandler {
                         .requires(CommandSourceStack::isPlayer)
                         .executes(command -> {
                             List<Block> blocks = new ArrayList<>();
-                            ChiselFamilies.GILDED_BLACKSTONE.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
+                            ChiselFamilies.JACK_O_LANTERN.getFamily().getVariants().forEach(variant -> blocks.add(variant.getBlock()));
                             return placeVariants(command.getSource(), blocks);
                         })
         );
