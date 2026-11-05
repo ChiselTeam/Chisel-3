@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "textures": {
+    "all": "chisel:block/sandstone/sandstone_pillar_ionic_dent-side",
+    "bottom": "chisel:block/sandstone/sandstone_pillar_basic_dent-top",
+    "particle": "chisel:block/sandstone/sandstone_pillar_ionic_dent-side",
+    "side": "chisel:block/sandstone/sandstone_pillar_ionic_dent-side",
+    "top": "chisel:block/sandstone/sandstone_pillar_basic_dent-top",
+    "vertical_both": "chisel:block/sandstone/sandstone_pillar_basic_spiral-vertical_both",
+    "vertical_bottom": "chisel:block/sandstone/sandstone_pillar_ionic_spiral-vertical_bottom",
+    "vertical_none": "chisel:block/sandstone/sandstone_pillar_ionic_dent-side",
+    "vertical_top": "chisel:block/sandstone/sandstone_pillar_ionic_spiral-vertical_top"
+  }
+}
