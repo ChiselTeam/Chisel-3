@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/sandstone/sandstone_gem_1",
+    "particle": "chisel:block/sandstone/sandstone_gem_1",
+    "standard_corner": "chisel:block/sandstone/sandstone_gem_1_connected-ctm_corner",
+    "standard_cornerless": "chisel:block/sandstone/sandstone_raw",
+    "standard_horizontal": "chisel:block/sandstone/sandstone_gem_1_connected-ctm_horizontal",
+    "standard_none": "chisel:block/sandstone/sandstone_gem_1",
+    "standard_vertical": "chisel:block/sandstone/sandstone_gem_1_connected-ctm_vertical"
+  }
+}

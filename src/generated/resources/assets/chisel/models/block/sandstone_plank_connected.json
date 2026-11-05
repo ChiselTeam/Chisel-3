@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "chisel:block/sandstone/sandstone_plank",
+    "particle": "chisel:block/sandstone/sandstone_plank",
+    "standard_corner": "chisel:block/sandstone/sandstone_plank_connected-ctm_corner",
+    "standard_cornerless": "chisel:block/sandstone/sandstone_plank_connected-ctm_cornerless",
+    "standard_horizontal": "chisel:block/sandstone/sandstone_plank_connected-ctm_horizontal",
+    "standard_none": "chisel:block/sandstone/sandstone_plank",
+    "standard_vertical": "chisel:block/sandstone/sandstone_plank_connected-ctm_vertical"
+  }
+}

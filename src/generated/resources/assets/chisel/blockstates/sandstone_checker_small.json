@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "chisel:block/sandstone_checker_small"
+    }
+  }
+}
