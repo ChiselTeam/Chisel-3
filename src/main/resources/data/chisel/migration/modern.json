@@ -1324,7 +1324,7 @@
     "chisel:futura/light_gray": "chisel:hex_plating_8",
     "chisel:futura/lime": "chisel:hex_plating_5",
     "chisel:futura/magenta": "chisel:hex_plating_2",
-    "chisel:futura/mysterious_cube": "ae2:not_so_mysterious_cube",
+    "chisel:futura/mysterious_cube": "minecraft:air",
     "chisel:futura/orange": "chisel:hex_plating_1",
     "chisel:futura/pink": "chisel:hex_plating_6",
     "chisel:futura/purple": "chisel:hex_plating_10",
@@ -2884,7 +2884,7 @@
     "chisel:woolen_clay/yellow": "chisel:woolen_clay_4"
   },
   "properties": {
-    "ae2:not_so_mysterious_cube": {},
+    "minecraft:air": {},
     "chisel:futura_rainbow": {},
     "chisel:futura_screen_gray": {},
     "minecraft:shroomlight": {},
