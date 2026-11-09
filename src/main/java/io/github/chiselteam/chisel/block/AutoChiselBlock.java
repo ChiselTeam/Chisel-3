@@ -2,6 +2,7 @@ package io.github.chiselteam.chisel.block;
 
 import com.mojang.serialization.MapCodec;
 import io.github.chiselteam.chisel.block.entity.AutoChiselBlockEntity;
+import io.github.chiselteam.chisel.integration.InventoryAccess;
 import io.github.chiselteam.chisel.menu.AutoChiselMenu;
 import io.github.chiselteam.chisel.registry.ChiselBlockEntities;
 import io.github.chiselteam.chisel.registry.ChiselStats;
@@ -65,6 +66,7 @@ public class AutoChiselBlock extends BaseEntityBlock {
 
     @Override
     protected @NotNull InteractionResult useWithoutItem(@NotNull BlockState state, Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull BlockHitResult hitResult) {
+        if (!InventoryAccess.canAccess(player, level, pos)) return InteractionResult.FAIL;
         if(!level.isClientSide) {
             player.openMenu(state.getMenuProvider(level, pos), pos);
             player.awardStat(ChiselStats.INTERACT_WITH_AUTO_CHISEL.get());

@@ -13,6 +13,10 @@
     "PistonBaseBlockMixin",
     "PistonMovingBlockEntityMixin"
   ],
+  "client": [
+    "client.GhostEquipmentRendererMixin",
+    "client.GhostPlayerRendererMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }

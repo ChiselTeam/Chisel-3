@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.block.entity;
 
+import io.github.chiselteam.chisel.integration.BlockPermissions;
 import io.github.chiselteam.chisel.mode.building.ChiselBuildingMode;
 import io.github.chiselteam.chisel.registry.ChiselBlockEntities;
 import io.github.chiselteam.chisel.registry.ChiselBuildingModes;
@@ -114,10 +115,12 @@ public class BuildersGuideBlockEntity extends BlockEntity {
         return positions.stream().filter(level::isEmptyBlock).toList();
     }
 
-    public void placeBlock(Block block) {
-        if (level == null || level.isClientSide) return;
+    public boolean placeBlock(Block block, net.minecraft.world.entity.player.Player player, net.minecraft.world.InteractionHand hand) {
+        if (level == null || level.isClientSide) return false;
         var remaining = getGhostBlocks();
-        if (!remaining.isEmpty()) level.setBlockAndUpdate(remaining.getFirst(), block.defaultBlockState());
+        return !remaining.isEmpty() && BlockPermissions.canEdit(
+                player, level, remaining.getFirst(), hand, player.getItemInHand(hand))
+                && level.setBlockAndUpdate(remaining.getFirst(), block.defaultBlockState());
     }
 
     private static int clamp(int value) {

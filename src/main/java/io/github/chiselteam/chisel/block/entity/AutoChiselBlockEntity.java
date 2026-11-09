@@ -374,7 +374,17 @@ public class AutoChiselBlockEntity extends BaseContainerBlockEntity implements W
     @Override
     public boolean canPlaceItemThroughFace(int index, @NotNull ItemStack stack, @Nullable Direction side) {
         if (!items.get(AUTOMATION_UPGRADE_SLOT).is(ChiselItems.UPGRADE_AUTOMATION.get())) return false;
+        if (index == CHISEL_SLOT) {
+            return (side == null || side == Direction.UP) && items.get(CHISEL_SLOT).isEmpty()
+                    && stack.canPerformAction(ChiselItemAbilities.CHISEL);
+        }
         return index < INPUT_SLOTS;
+    }
+
+    public int getSlotLimit(int slot, ItemStack stack) {
+        if (slot == CHISEL_SLOT || slot == TEMPLATE_SLOT
+                || slot == STACK_UPGRADE_SLOT || slot == AUTOMATION_UPGRADE_SLOT || slot == REVERSION_UPGRADE_SLOT) return 1;
+        return stack.isEmpty() ? getMaxStackSize() : getMaxStackSize(stack);
     }
 
     @Override

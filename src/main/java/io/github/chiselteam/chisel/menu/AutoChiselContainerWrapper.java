@@ -10,10 +10,19 @@ import org.jetbrains.annotations.Nullable;
 
 public class AutoChiselContainerWrapper extends SidedInvWrapper {
     private final AutoChiselBlockEntity blockEntity;
+    private final Direction effectiveSide;
 
     public AutoChiselContainerWrapper(AutoChiselBlockEntity blockEntity, @Nullable Direction side) {
         super(blockEntity, side == null ? Direction.UP : side);
         this.blockEntity = blockEntity;
+        this.effectiveSide = side == null ? Direction.UP : side;
+    }
+
+    @Override
+    public int getSlotLimit(int slot) {
+        int[] slots = blockEntity.getSlotsForFace(effectiveSide);
+        if (slot < 0 || slot >= slots.length) return 0;
+        return blockEntity.getSlotLimit(slots[slot], blockEntity.getItem(slots[slot]));
     }
 
     private boolean automationEnabled() {

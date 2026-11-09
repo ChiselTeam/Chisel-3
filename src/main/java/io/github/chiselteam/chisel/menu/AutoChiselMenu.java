@@ -3,6 +3,7 @@ package io.github.chiselteam.chisel.menu;
 import io.github.chiselteam.chisel.api.family.VariantFamily;
 import io.github.chiselteam.chisel.block.entity.AutoChiselBlockEntity;
 import io.github.chiselteam.chisel.family.VariantFamilyLookup;
+import io.github.chiselteam.chisel.integration.InventoryAccess;
 import io.github.chiselteam.chisel.menu.slot.AutoChiselInputSlot;
 import io.github.chiselteam.chisel.menu.slot.UpgradeSlot;
 import io.github.chiselteam.chisel.registry.ChiselItemAbilities;
@@ -28,6 +29,7 @@ import org.jetbrains.annotations.NotNull;
 public class AutoChiselMenu extends AbstractContainerMenu {
 
     private final ContainerData data;
+    private final Container container;
 
     private static final int INPUT_SLOT_START = 0;
     private static final int INPUT_SLOT_END = 12;
@@ -53,6 +55,7 @@ public class AutoChiselMenu extends AbstractContainerMenu {
     public AutoChiselMenu(int containerId, Inventory inventory, Container container, ContainerData data) {
         super(ChiselMenus.AUTO_CHISEL.get(), containerId);
         this.data = data;
+        this.container = container;
 
         addInputSlots(container, inventory.player.level().registryAccess());
         addTemplateAndChiselSlots(container);
@@ -123,6 +126,7 @@ public class AutoChiselMenu extends AbstractContainerMenu {
 
     @Override
     public @NotNull ItemStack quickMoveStack(@NotNull Player player, int index) {
+        if (!stillValid(player)) return ItemStack.EMPTY;
         ItemStack originalStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(index);
         if (slot.hasItem()) {
@@ -189,7 +193,9 @@ public class AutoChiselMenu extends AbstractContainerMenu {
 
     @Override
     public boolean stillValid(@NotNull Player player) {
-        return true;
+        if (player.level().isClientSide) return true;
+        return container.stillValid(player) && (!(container instanceof AutoChiselBlockEntity entity)
+                || InventoryAccess.canAccess(player, player.level(), entity.getBlockPos()));
     }
 
     public int getProgress() {
@@ -217,6 +223,7 @@ public class AutoChiselMenu extends AbstractContainerMenu {
     }
 
     public void selectTemplateVariant(Player player, ResourceLocation blockId) {
+        if (!stillValid(player)) return;
         Slot templateSlot = slots.get(TEMPLATE_SLOT);
         Slot chiselSlot = slots.get(CHISEL_SLOT);
         ItemStack template = templateSlot.getItem();

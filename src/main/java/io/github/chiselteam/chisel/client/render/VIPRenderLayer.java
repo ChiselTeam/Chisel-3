@@ -29,10 +29,12 @@ public class VIPRenderLayer extends RenderLayer<AbstractClientPlayer, PlayerMode
 
         pose.pushPose();
         getParentModel().body.translateAndRotate(pose);
-        pose.mulPose(Axis.XP.rotationDegrees(180.0F));
-        pose.mulPose(Axis.YP.rotationDegrees(90.0F));
+        pose.translate(0.0F, 11.0F / 16.0F, 0.0F);
+        pose.mulPose(Axis.XP.rotation(-getParentModel().body.xRot));
         boolean armor = !state.getItemBySlot(EquipmentSlot.LEGS).isEmpty();
-        pose.translate(-0.125F, -0.85F, armor ? 0.2F : 0.28F);
+        pose.translate((armor ? 5.25F : 4.5F) / 16.0F, 2.0F / 16.0F, 0.75F / 16.0F);
+        pose.mulPose(Axis.YP.rotationDegrees(90.0F));
+        pose.mulPose(Axis.ZP.rotationDegrees(-35.0F));
         pose.scale(0.5F, 0.5F, 0.5F);
 
         Minecraft.getInstance().getItemRenderer().renderStatic(item.asItem().getDefaultInstance(), ItemDisplayContext.FIXED, lightCoords, OverlayTexture.NO_OVERLAY, pose, buffers, state.level(), 0);

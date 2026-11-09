@@ -44,10 +44,10 @@ public class ChiselItems {
 
         OFFSET_TOOL = register("offset_tool", OffsetToolItem::new, ChiselItems::getChiselProps);
 
-        UPGRADE_STACK = register("upgrade_stack");
-        UPGRADE_SPEED = register("upgrade_speed");
-        UPGRADE_REVERSION = register("upgrade_reversion");
-        UPGRADE_AUTOMATION = register("upgrade_automation");
+        UPGRADE_STACK = register("upgrade_stack", AutoChiselUpgradeItem::new, Item.Properties::new);
+        UPGRADE_SPEED = register("upgrade_speed", AutoChiselUpgradeItem::new, Item.Properties::new);
+        UPGRADE_REVERSION = register("upgrade_reversion", AutoChiselUpgradeItem::new, Item.Properties::new);
+        UPGRADE_AUTOMATION = register("upgrade_automation", AutoChiselUpgradeItem::new, Item.Properties::new);
 
         AUTO_CHISEL = ITEMS.registerItem("auto_chisel", p -> new BlockItem(ChiselBlocks.AUTO_CHISEL.get(), p), new Item.Properties());
         BUILDERS_GUIDE = ITEMS.registerItem("builders_guide", p -> new BuildersGuideBlockItem(ChiselBlocks.BUILDERS_GUIDE.get(), p), new Item.Properties());

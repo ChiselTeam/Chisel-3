@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.block;
 
+import io.github.chiselteam.chisel.integration.BlockPermissions;
 import io.github.chiselteam.chisel.weathering.WeatheringChains;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
@@ -39,6 +40,7 @@ public class WeatheringBlock extends ConnectedTextureBlock {
 
     @Override
     protected @NotNull ItemInteractionResult useItemOn(@NotNull ItemStack stack, @NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult hitResult) {
+        if (!BlockPermissions.canEdit(player, level, pos, hand, stack)) return ItemInteractionResult.FAIL;
         if (stack.is(Items.HONEYCOMB)) {
             Block waxedBlock = WeatheringChains.getWaxed(state.getBlock()).orElse(null);
             if (waxedBlock != null) {

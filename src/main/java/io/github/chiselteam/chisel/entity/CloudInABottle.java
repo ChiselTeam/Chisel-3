@@ -1,6 +1,7 @@
 package io.github.chiselteam.chisel.entity;
 
 import io.github.chiselteam.chisel.content.ChiselFamilies;
+import io.github.chiselteam.chisel.integration.BlockPermissions;
 import io.github.chiselteam.chisel.registry.ChiselEntities;
 import io.github.chiselteam.chisel.registry.ChiselItems;
 import net.minecraft.core.BlockPos;
@@ -40,6 +41,7 @@ public class CloudInABottle extends ThrowableItemProjectile {
     }
 
     public boolean generate(BlockPos pos, int numberOfBlocks) {
+        if (level().isClientSide) return false;
         int[] X = new int[9];
         int[] Y = new int[9];
         int[] Z = new int[9];
@@ -52,7 +54,7 @@ public class CloudInABottle extends ThrowableItemProjectile {
 
         int count = 0;
 
-        while (count < numberOfBlocks) {
+        for (int attempt = 0; count < numberOfBlocks && attempt < numberOfBlocks * 8; attempt++) {
             for (int dir = 0; dir < 9; dir++) {
                 if (count >= numberOfBlocks) {
                     break;
@@ -78,16 +80,17 @@ public class CloudInABottle extends ThrowableItemProjectile {
                         for (int e = nz; e < nz + random.nextInt(4) + 1; e++) {
                             BlockPos positionToLook = pos.offset(c, d, e);
 
-                            if (level().getBlockState(positionToLook).isAir() && Math.abs(c - nx) + Math.abs(d - ny) + Math.abs(e - nz) < 4 + random.nextInt(2)) {
-                                level().setBlockAndUpdate(positionToLook, ChiselFamilies.CLOUD.getVariant("cloud_normal").get().defaultBlockState());
-                                count++;
+                            if (count < numberOfBlocks && level().hasChunkAt(positionToLook)
+                                    && level().getBlockState(positionToLook).isAir() && Math.abs(c - nx) + Math.abs(d - ny) + Math.abs(e - nz) < 4 + random.nextInt(2)
+                                    && BlockPermissions.canProjectileEdit(getOwner(), level(), positionToLook, getItem())) {
+                                if (level().setBlockAndUpdate(positionToLook, ChiselFamilies.CLOUD.getVariant("cloud_normal").get().defaultBlockState())) count++;
                             }
                         }
                     }
                 }
             }
         }
-        return true;
+        return count > 0;
     }
 
     @Override

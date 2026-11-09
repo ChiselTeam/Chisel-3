@@ -37678,6 +37678,7 @@
   "item.chisel.offset_tool": "Ender Offset Wand",
   "item.chisel.offset_tool.desc": "Right click highlighted direction to shift texture",
   "item.chisel.offset_tool.desc2": "Will only highlight on textures that can be offset",
+  "item.chisel.offset_tool.too_many_blocks": "Cannot offset more than %s connected blocks at once",
   "item.chisel.palette_builder": "Palette Brush",
   "item.chisel.smashing_rock.desc": "Right click to throw. Crushes blocks on impact.",
   "item.chisel.smashingrock": "Smashing Rock",

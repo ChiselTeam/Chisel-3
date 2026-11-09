@@ -2,6 +2,7 @@ package io.github.chiselteam.chisel.block;
 
 import com.mojang.serialization.MapCodec;
 import io.github.chiselteam.chisel.block.entity.BuildersGuideBlockEntity;
+import io.github.chiselteam.chisel.integration.BlockPermissions;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
@@ -38,6 +39,8 @@ public class BuildersGuideBlock extends BaseEntityBlock {
 
     @Override
     protected @NotNull ItemInteractionResult useItemOn(@NotNull ItemStack stack, @NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult hitResult) {
+        if (!BlockPermissions.canEdit(player, level, pos, hand, stack)) return ItemInteractionResult.FAIL;
+        if (level.isClientSide) return ItemInteractionResult.SUCCESS;
         var guide = (BuildersGuideBlockEntity) level.getBlockEntity(pos);
         if(guide == null) return super.useItemOn(stack, state, level, pos, player, hand, hitResult);
         if(guide.getGhostBlocks().isEmpty()) return super.useItemOn(stack, state, level, pos, player, hand, hitResult);
@@ -52,7 +55,7 @@ public class BuildersGuideBlock extends BaseEntityBlock {
 
         if(stack.getItem() instanceof BlockItem blockItem) {
             var block = blockItem.getBlock();
-            guide.placeBlock(block);
+            if (!guide.placeBlock(block, player, hand)) return ItemInteractionResult.FAIL;
             if(!player.isCreative()) stack.shrink(1);
             player.swing(hand);
             return ItemInteractionResult.CONSUME;
@@ -63,6 +66,8 @@ public class BuildersGuideBlock extends BaseEntityBlock {
 
     @Override
     protected @NotNull net.minecraft.world.InteractionResult useWithoutItem(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull BlockHitResult hitResult) {
+        if (!BlockPermissions.canEdit(player, level, pos, InteractionHand.MAIN_HAND, ItemStack.EMPTY)) return net.minecraft.world.InteractionResult.FAIL;
+        if (level.isClientSide) return net.minecraft.world.InteractionResult.SUCCESS;
         var entity = level.getBlockEntity(pos);
         if(entity == null) return super.useWithoutItem(state, level, pos, player, hitResult);
 

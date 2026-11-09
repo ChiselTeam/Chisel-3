@@ -1,6 +1,9 @@
 package io.github.chiselteam.chisel.event.client;
 
 import io.github.chiselteam.chisel.Chisel;
+import io.github.chiselteam.chisel.client.render.GhostRenderTypes;
+import net.neoforged.neoforge.client.event.RegisterShadersEvent;
+import java.io.IOException;
 import io.github.chiselteam.chisel.client.render.VIPRenderLayer;
 import io.github.chiselteam.chisel.registry.ChiselItems;
 import net.minecraft.client.renderer.entity.player.PlayerRenderer;
@@ -16,6 +19,11 @@ import java.util.UUID;
 
 @EventBusSubscriber(modid = Chisel.MODID, value = Dist.CLIENT)
 public class AddLayersEventHandler {
+    @SubscribeEvent
+    public static void registerGhostShaders(RegisterShadersEvent event) throws IOException {
+        GhostRenderTypes.registerShaders(event);
+    }
+
     public static final Map<UUID, ItemLike> VIPS = createVips();
     private static Map<UUID, ItemLike> createVips() {
         Map<UUID, ItemLike> VIPS = new HashMap<>();

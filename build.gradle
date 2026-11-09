@@ -23,6 +23,7 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    maven { url = 'https://maven.ftb.dev/releases' }
 
     maven {
         name = "TerraformersMC"
@@ -151,6 +152,10 @@ configurations {
 }
 
 dependencies {
+    compileOnly('dev.ftb.mods:ftb-chunks-neoforge:2101.1.23') { transitive = false }
+    compileOnly('dev.ftb.mods:ftb-library-neoforge:2101.1.39') { transitive = false }
+    compileOnly('dev.ftb.mods:ftb-teams-neoforge:2101.1.12') { transitive = false }
+    compileOnly('maven.modrinth:ae2:19.2.19') { transitive = false }
     implementation("maven.modrinth:ctmlib:${ctm_version}")
     implementation("maven.modrinth:jade:${jade_version}")
 
@@ -162,6 +167,11 @@ dependencies {
 
     testImplementation platform('org.junit:junit-bom:5.13.4')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.mockito:mockito-core:5.18.0'
+    testRuntimeOnly('dev.ftb.mods:ftb-chunks-neoforge:2101.1.23') { transitive = false }
+    testRuntimeOnly('dev.ftb.mods:ftb-library-neoforge:2101.1.39') { transitive = false }
+    testRuntimeOnly('dev.ftb.mods:ftb-teams-neoforge:2101.1.12') { transitive = false }
+    testRuntimeOnly('maven.modrinth:architectury-api:13.0.11+neoforge') { transitive = false }
     testImplementation "net.neoforged:testframework:${neo_version}"
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
