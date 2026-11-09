@@ -13,6 +13,7 @@ import io.github.chiselteam.chisel.content.compat.neovitae.NvRuneFamily;
 import io.github.chiselteam.chisel.content.compat.thaumaturge.TTArcaneStoneFamily;
 import io.github.chiselteam.chisel.content.compat.thaumaturge.TTTallowFamily;
 import io.github.chiselteam.chisel.content.compat.thaumaturge.TTThaumiumFamily;
+import io.github.chiselteam.chisel.content.family.stone.RoseQuartzFamily;
 
 import java.util.List;
 
@@ -22,6 +23,7 @@ public class CompatFamilies {
             // new CompatModule("aether_ii", List.of()),
             new CompatModule("allthemodium", List.of(AtmAncientStoneFamily.FAMILY)),
             new CompatModule("ae2", List.of(Ae2CertusFamily.FAMILY, Ae2FluixFamily.FAMILY, Ae2SkyStoneFamily.FAMILY)),
+            new CompatModule("create", List.of(RoseQuartzFamily.FAMILY)),
             new CompatModule("dyenamics", List.of(DnConcreteFamily.FAMILY, DnStainedGlassFamily.FAMILY, DnOakFramedStainedGlassFamily.FAMILY, DnSteelFramedStainedGlassFamily.FAMILY)),
             new CompatModule("forbidden_arcanus", List.of(TTArcaneStoneFamily.FAMILY)),
             new CompatModule("thaumaturge", List.of(TTArcaneStoneFamily.FAMILY, TTThaumiumFamily.FAMILY, TTTallowFamily.FAMILY)),
