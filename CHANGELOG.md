@@ -2,6 +2,40 @@
 
 All notable changes to this project will be documented in this file.
 
+## [26.1.2.20]
+
+### Added
+
+- **Builder's Handbook**: Added a craftable in-game guide with building tips, block and tool guides, recipes,
+  and starter palettes.
+- **Palette Brush**: Create and save weighted block palettes with search, color filters, and an interactive wall preview.
+- **Trowel**: Place random blocks from your hotbar or use saved palettes with weighted material selection.
+  Added support for linked AE2 storage.
+- **Block Families**: Added Fantasy, Steampunk, Redstone Sea Lamp, and additional modded metal and mineral families.
+- **Compatibility**: Added support for Chipped, BetterBlockZ, The Bumblezone, and Dyenamics concrete and stained glass.
+  Expanded AE2 with Fluix variants and added Create Rose Quartz variants.
+- **Claim Protection**: Added permission checks for block-changing tools and Auto Chisel access, including FTB Chunks support.
+
+### Changed
+
+- **Block Variants**: Expanded variants across block families and reordered them with raw blocks first, followed by
+  alphabetical variants and older variants.
+- **Textures**: Refreshed many stone, wood, metal, and decorative block textures, including Quartz, Sandstone,
+  Gilded Blackstone, Jack o' Lanterns, Waterstone, and Lavastone.
+- **Auto Chisel**: Upgrades can now be installed by sneak-right-clicking the block with an upgrade item.
+- **JEI**: Improved recipe and uses integration and removed redundant single-variant groups.
+- **Player Rendering**: Added custom ghost rendering for supported player appearances.
+- **Dependencies**: Updated NeoForge to `26.1.2.122` and the minimum CTM version to `26.1.2.14`.
+
+### Fixed
+
+- **Ball o' Moss**: Improved moss handling when blocks are moved, cloned, fall, or are replaced.
+- **Chisel Modes**: Corrected shapeless selections and preserved valid torch placement when cycling variants.
+- **Block Previews**: Fixed block preview rendering issues.
+- **Textures and Models**: Corrected Factory plating, Technical vents and caution panels, Obsidian, Crying Obsidian,
+  and stained glass circle variants.
+- **Compatibility**: Fixed JEI null errors and server-side issues.
+
 ## [26.1.2.19]
 
 ### Added
