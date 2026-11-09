@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.entity;
 
+import io.github.chiselteam.chisel.integration.BlockPermissions;
 import io.github.chiselteam.chisel.network.MossDeltaPacket;
 import io.github.chiselteam.chisel.projectile.MossHelper;
 import io.github.chiselteam.chisel.registry.*;
@@ -46,7 +47,7 @@ public class BallOMoss extends ThrowableItemProjectile {
                         continue;
 
                     BlockPos check = pos.offset(x, y, z);
-                    if(!level().getBlockState(check).isAir())
+                    if (level().hasChunkAt(check) && !level().getBlockState(check).isAir())
                         turnToMoss(check);
                 }
             }
@@ -56,6 +57,7 @@ public class BallOMoss extends ThrowableItemProjectile {
 
     private void turnToMoss(BlockPos pos) {
         if (!(level() instanceof ServerLevel serverLevel)) return;
+        if (!BlockPermissions.canProjectileEdit(getOwner(), level(), pos, getItem())) return;
         BlockState state = serverLevel.getBlockState(pos);
         if (!MossHelper.canSupportMoss(state)) return;
         if (serverLevel.registryAccess().lookupOrThrow(Registries.BLOCK).getOrThrow(ChiselTags.CANT_BE_MOSSED).stream().anyMatch(holder -> holder.is(state.getBlock().builtInRegistryHolder().getKey())))

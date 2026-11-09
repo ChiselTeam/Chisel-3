@@ -305,6 +305,14 @@ public class ChiselScreen extends AbstractContainerScreen<ChiselMenu> {
 
     @Override
     public void extractLabels(@NonNull GuiGraphicsExtractor graphics, int xm, int ym) {
+        ItemStack selected = getMenu().inputSlot.getItem();
+        if (!selected.isEmpty()) {
+            for (Slot slot : getMenu().slots) {
+                if (slot instanceof SelectionSlot && slot.getItem().is(selected.getItem())) {
+                    graphics.fill(slot.x, slot.y, slot.x + 16, slot.y + 16, 0x6030C060);
+                }
+            }
+        }
         if (!searchBox.active)
             graphics.text(font, Component.translatable("chisel.gui.search"), 92, 10, -12566464, false);
     }

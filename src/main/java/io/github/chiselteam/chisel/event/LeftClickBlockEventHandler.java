@@ -6,6 +6,7 @@ import com.google.common.cache.LoadingCache;
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.family.VariantFamily;
 import io.github.chiselteam.chisel.family.VariantFamilyLookup;
+import io.github.chiselteam.chisel.integration.BlockPermissions;
 import io.github.chiselteam.chisel.item.ChiselItem;
 import io.github.chiselteam.chisel.mode.chisel.ChiselMode;
 import io.github.chiselteam.chisel.registry.*;
@@ -50,6 +51,11 @@ public class LeftClickBlockEventHandler {
 
         ItemStack stack = event.getItemStack();
         if(stack.canPerformAction(ChiselItemAbilities.CHISEL)) {
+            if (level.isClientSide()) return;
+            if (!BlockPermissions.canEdit(player, level, pos, hand, stack)) {
+                event.setCanceled(true);
+                return;
+            }
             BlockState state = level.getBlockState(pos);
             VariantFamily family = VariantFamilyLookup.getFamilyForBlock(state.getBlock(), level.registryAccess());
 
@@ -88,6 +94,7 @@ public class LeftClickBlockEventHandler {
     }
 
     private static boolean chiselBlock(Level level, Player player, InteractionHand hand, BlockPos pos, BlockState state, ItemStack chisel) {
+        if (!BlockPermissions.canEdit(player, level, pos, hand, chisel)) return false;
         var current = level.getBlockState(pos);
         var replacement = TorchStates.replacement(level, pos, current, state);
         if (replacement == null || replacement == current || !level.setBlockAndUpdate(pos, replacement)) return false;

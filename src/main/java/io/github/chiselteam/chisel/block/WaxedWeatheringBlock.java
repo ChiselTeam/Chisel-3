@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.block;
 
+import io.github.chiselteam.chisel.integration.BlockPermissions;
 import io.github.chiselteam.chisel.weathering.WeatheringChains;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
@@ -22,6 +23,7 @@ public class WaxedWeatheringBlock extends ConnectedTextureBlock {
 
     @Override
     protected @NonNull InteractionResult useItemOn(@NonNull ItemStack stack, @NonNull BlockState state, @NonNull Level level, @NonNull BlockPos pos, @NonNull Player player, @NonNull InteractionHand hand, @NonNull BlockHitResult hitResult) {
+        if (!BlockPermissions.canEdit(player, level, pos, hand, stack)) return InteractionResult.FAIL;
         if (stack.canPerformAction(ItemAbilities.AXE_SCRAPE)) {
             Block unwaxedBlock = WeatheringChains.getUnwaxed(state.getBlock()).orElse(null);
             if (unwaxedBlock != null) {

@@ -1,6 +1,7 @@
 modLoader="javafml"
 loaderVersion="${loader_version_range}"
 license="${mod_license}"
+
 [[mods]]
 modId="chisel"
 version="${mod_version}"
@@ -10,11 +11,27 @@ credits = "This mod uses a lot of textures from the Painterly pack: http://paint
 authors="${mod_authors}"
 description="${mod_description}"
 logoFile = "chisel_banner-8x2.png"
+
 [[mixins]]
 config = "chisel.mixins.json"
+
 [[dependencies.chisel]]
 modId="ctm"
 type="required"
 versionRange = "${ctm_version_range}"
 ordering="AFTER"
 side="BOTH"
+
+[[dependencies.chisel]]
+modId = "ftbchunks"
+type = "optional"
+versionRange = "[26.1.2.10,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.chisel]]
+modId = "ae2"
+type = "optional"
+versionRange = "[26.1.13-beta,)"
+ordering = "AFTER"
+side = "BOTH"

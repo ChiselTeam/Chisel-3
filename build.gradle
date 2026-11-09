@@ -23,6 +23,7 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    maven { url = 'https://maven.ftb.dev/releases' }
 
     maven {
         name = "TerraformersMC"
@@ -63,6 +64,10 @@ base {
 java.toolchain.languageVersion = JavaLanguageVersion.of(25)
 
 sourceSets {
+    claimTest {
+        compileClasspath += sourceSets.main.output
+        runtimeClasspath += sourceSets.main.output
+    }
     datagen {
         compileClasspath += sourceSets.main.output
         runtimeClasspath += sourceSets.main.output
@@ -70,6 +75,8 @@ sourceSets {
 }
 
 configurations {
+    claimTestImplementation.extendsFrom implementation, compileOnly
+    claimTestRuntimeOnly.extendsFrom runtimeOnly
     datagenImplementation.extendsFrom implementation
     datagenCompileOnly.extendsFrom compileOnly
     datagenRuntimeOnly.extendsFrom runtimeOnly, localRuntime
@@ -78,6 +85,7 @@ configurations {
 neoForge {
     version = project.neo_version
     addModdingDependenciesTo(sourceSets.datagen)
+    addModdingDependenciesTo(sourceSets.claimTest)
 
     mods {
         "${mod_id}" {
@@ -151,6 +159,11 @@ configurations {
 }
 
 dependencies {
+    claimTestRuntimeOnly('maven.modrinth:guideme:26.1.17-beta') { transitive = false }
+    compileOnly('dev.ftb.mods:ftb-chunks-neoforge:26.1.2.10') { transitive = false }
+    compileOnly('dev.ftb.mods:ftb-library-neoforge:26.1.2.12') { transitive = false }
+    compileOnly('dev.ftb.mods:ftb-teams-neoforge:26.1.2.5') { transitive = false }
+    compileOnly('maven.modrinth:ae2:26.1.13-beta') { transitive = false }
     implementation("maven.modrinth:ctmlib:${ctm_version}")
     implementation("maven.modrinth:jade:${jade_version}")
 
@@ -162,6 +175,12 @@ dependencies {
 
     testImplementation platform('org.junit:junit-bom:5.13.4')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.mockito:mockito-core:5.18.0'
+    testImplementation('maven.modrinth:ae2:26.1.13-beta') { transitive = false }
+    testRuntimeOnly('maven.modrinth:guideme:26.1.17-beta') { transitive = false }
+    testImplementation('dev.ftb.mods:ftb-chunks-neoforge:26.1.2.10') { transitive = false }
+    testImplementation('dev.ftb.mods:ftb-library-neoforge:26.1.2.12') { transitive = false }
+    testImplementation('dev.ftb.mods:ftb-teams-neoforge:26.1.2.5') { transitive = false }
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
