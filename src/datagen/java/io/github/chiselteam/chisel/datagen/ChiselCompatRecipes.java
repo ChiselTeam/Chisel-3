@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.datagen;
 
+import io.github.chiselteam.chisel.content.ChiselFamilies;
 import io.github.chiselteam.chisel.content.compat.dyenamics.DnOakFramedStainedGlassFamily;
 import io.github.chiselteam.chisel.content.compat.dyenamics.DnSteelFramedStainedGlassFamily;
 import net.minecraft.core.HolderLookup;
@@ -11,6 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.ModLoadedCondition;
 
@@ -26,6 +28,15 @@ public class ChiselCompatRecipes extends RecipeProvider {
     @Override
     protected void buildRecipes(RecipeOutput output) {
         this.output=output;
+
+        shaped(RecipeCategory.MISC, new ItemStack(ChiselFamilies.ROSE_QUARTZ.getVariant("rose_quartz_raw").get().asItem(), 8))
+                .pattern("QQQ")
+                .pattern("QDQ")
+                .pattern("QQQ")
+                .define('Q', Blocks.QUARTZ_BLOCK)
+                .define('D', Tags.Items.DYES_RED)
+                .unlockedBy("has_quartz_block", has(Blocks.QUARTZ_BLOCK))
+                .save(output.withConditions(new ModLoadedCondition("create")));
 
         for (var family : DnOakFramedStainedGlassFamily.FAMILY) {
             var color = family.getFamily().getFamilyName().substring("dn_oak_framed_stained_glass_".length());
