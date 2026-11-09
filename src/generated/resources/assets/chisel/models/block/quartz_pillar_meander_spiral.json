@@ -6,7 +6,7 @@
     "particle": "chisel:block/quartz/quartz_pillar_meander-side",
     "side": "chisel:block/quartz/quartz_pillar_meander-side",
     "top": "chisel:block/quartz/quartz_pillar_basic-top",
-    "vertical_both": "chisel:block/quartz/quartz_pillar_meander_spiral-vertical_both",
+    "vertical_both": "chisel:block/quartz/quartz_pillar_basic_spiral-vertical_both",
     "vertical_bottom": "chisel:block/quartz/quartz_pillar_meander_spiral-vertical_bottom",
     "vertical_none": "chisel:block/quartz/quartz_pillar_meander-side",
     "vertical_top": "chisel:block/quartz/quartz_pillar_meander_spiral-vertical_top"
