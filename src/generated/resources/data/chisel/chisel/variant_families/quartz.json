@@ -563,7 +563,7 @@
     },
     {
       "block": "chisel:quartz_zag",
-      "model_type": "ar",
+      "model_type": "v4",
       "name": "quartz_zag"
     }
   ]
