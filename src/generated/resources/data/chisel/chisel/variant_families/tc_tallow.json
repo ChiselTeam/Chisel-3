@@ -1,6 +1,6 @@
 {
-  "family_name": "tt_tallow",
-  "tag": "c:chisel/tt_tallow",
+  "family_name": "tc_tallow",
+  "tag": "c:chisel/tc_tallow",
   "variants": [
     {
       "block": "chisel:tallow_block",
