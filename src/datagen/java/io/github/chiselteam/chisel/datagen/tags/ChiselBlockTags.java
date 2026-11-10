@@ -86,7 +86,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.ATM_ANCIENT_STONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.ANDESITE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.ANTIBLOCK.getFamily());
-        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TT_ARCANE_STONE.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TC_ARCANE_STONE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.BASALT.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.BRICKS.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.BRONZE.getFamily());
@@ -186,7 +186,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TECHNICAL.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TEMPLE.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TERRACOTTA.getFamily());
-        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TT_THAUMIUM.getFamily());
+        addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TC_THAUMIUM.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TIN.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TITANIUM.getFamily());
         addToTag(BlockTags.MINEABLE_WITH_PICKAXE, ChiselFamilies.TUNGSTEN.getFamily());
@@ -254,7 +254,7 @@ public class ChiselBlockTags extends BlockTagsProvider {
         addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.STEEL.getFamily());
         addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.STEAMPUNK.getFamily());
         addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.TECHNICAL.getFamily());
-        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.TT_THAUMIUM.getFamily());
+        addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.TC_THAUMIUM.getFamily());
         addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.TIN.getFamily());
         addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.TITANIUM.getFamily());
         addToTag(BlockTags.NEEDS_STONE_TOOL, ChiselFamilies.TUNGSTEN.getFamily());

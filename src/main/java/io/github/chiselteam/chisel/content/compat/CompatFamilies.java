@@ -10,9 +10,9 @@ import io.github.chiselteam.chisel.content.compat.dyenamics.DnOakFramedStainedGl
 import io.github.chiselteam.chisel.content.compat.dyenamics.DnStainedGlassFamily;
 import io.github.chiselteam.chisel.content.compat.dyenamics.DnSteelFramedStainedGlassFamily;
 import io.github.chiselteam.chisel.content.compat.neovitae.NvRuneFamily;
-import io.github.chiselteam.chisel.content.compat.thaumaturge.TTArcaneStoneFamily;
-import io.github.chiselteam.chisel.content.compat.thaumaturge.TTTallowFamily;
-import io.github.chiselteam.chisel.content.compat.thaumaturge.TTThaumiumFamily;
+import io.github.chiselteam.chisel.content.compat.thaumcraft.TCArcaneStoneFamily;
+import io.github.chiselteam.chisel.content.compat.thaumcraft.TCTallowFamily;
+import io.github.chiselteam.chisel.content.compat.thaumcraft.TCThaumiumFamily;
 
 import java.util.List;
 
@@ -23,11 +23,11 @@ public class CompatFamilies {
             new CompatModule("allthemodium", List.of(AtmAncientStoneFamily.FAMILY)),
             new CompatModule("ae2", List.of(Ae2CertusFamily.FAMILY, Ae2FluixFamily.FAMILY, Ae2SkyStoneFamily.FAMILY)),
             new CompatModule("dyenamics", List.of(DnConcreteFamily.FAMILY, DnStainedGlassFamily.FAMILY, DnOakFramedStainedGlassFamily.FAMILY, DnSteelFramedStainedGlassFamily.FAMILY)),
-            new CompatModule("forbidden_arcanus", List.of(TTArcaneStoneFamily.FAMILY)),
-            new CompatModule("thaumaturge", List.of(TTArcaneStoneFamily.FAMILY, TTThaumiumFamily.FAMILY, TTTallowFamily.FAMILY)),
+            new CompatModule("forbidden_arcanus", List.of(TCArcaneStoneFamily.FAMILY)),
+            new CompatModule("thaumcraft", List.of(TCArcaneStoneFamily.FAMILY, TCThaumiumFamily.FAMILY, TCTallowFamily.FAMILY)),
             // new CompatModule("mysticalagriculture", List.of()),
             new CompatModule("neovitae", List.of(NvRuneFamily.FAMILY)),
-            new CompatModule("occultism", List.of(TTTallowFamily.FAMILY))
+            new CompatModule("occultism", List.of(TCTallowFamily.FAMILY))
     );
 
     private CompatFamilies() {

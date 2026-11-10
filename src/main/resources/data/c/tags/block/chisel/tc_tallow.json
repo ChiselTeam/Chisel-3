@@ -1,6 +1,6 @@
 {
   "values": [
     {"id": "occultism:tallow_block", "required": false},
-    {"id": "thaumaturge:tallow_block", "required": false}
+    {"id": "thaumcraft:tallow_block", "required": false}
   ]
 }
