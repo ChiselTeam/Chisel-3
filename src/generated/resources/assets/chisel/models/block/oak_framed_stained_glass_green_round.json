@@ -1,4 +1,5 @@
 {
+  "render_type": "minecraft:translucent",
   "textures": {
     "particle": "chisel:block/oak_framed_stained_glass_green/oak_framed_stained_glass_green_round",
     "standard_corner": "chisel:block/oak_framed_stained_glass_green/oak_framed_stained_glass_green-ctm_corner",

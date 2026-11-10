@@ -1,4 +1,5 @@
 {
+  "render_type": "minecraft:translucent",
   "textures": {
     "particle": "chisel:block/dn_steel_framed_stained_glass_rose/dn_steel_framed_stained_glass_rose_line_horizontal_panel",
     "standard_corner": "chisel:block/dn_steel_framed_stained_glass_rose/dn_steel_framed_stained_glass_rose_line_horizontal_panel-ctm_corner",

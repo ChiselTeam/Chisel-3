@@ -1,3 +1,4 @@
 {
-  "parent": "chisel:block/ice_waves"
+  "parent": "chisel:block/ice_waves",
+  "render_type": "minecraft:translucent"
 }

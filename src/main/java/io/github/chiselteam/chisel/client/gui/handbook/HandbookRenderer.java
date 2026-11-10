@@ -79,7 +79,7 @@ public final class HandbookRenderer {
     }
 
     private void extractCover(GuiGraphics graphics) {
-        graphics.blit(COVER_TEXTURE, layout.coverX(), layout.coverY(), COVER_WIDTH, COVER_HEIGHT, 0F, 0F, COVER_TEXTURE_WIDTH, COVER_TEXTURE_HEIGHT, COVER_TEXTURE_WIDTH, COVER_TEXTURE_HEIGHT);
+        BookUiTextures.image(graphics, COVER_TEXTURE, layout.coverX(), layout.coverY(), COVER_WIDTH, COVER_HEIGHT, COVER_TEXTURE_WIDTH, COVER_TEXTURE_HEIGHT);
         graphics.flush();
         var titleLines = font.split(Component.translatable("chisel.builders_handbook.title"), COVER_TITLE_WIDTH);
         int titleY = layout.coverY() + 90 - (titleLines.size() - 1) * HandbookPaginator.LINE_HEIGHT / 2;
@@ -159,7 +159,7 @@ public final class HandbookRenderer {
     }
 
     private void extractOpenBookBackground(GuiGraphics graphics) {
-        graphics.blit(PAGES_TEXTURE, layout.bookLeft(), layout.bookTop(), BOOK_WIDTH, BOOK_HEIGHT, 0, 0, PAGES_TEXTURE_WIDTH, PAGES_TEXTURE_HEIGHT, PAGES_TEXTURE_WIDTH, PAGES_TEXTURE_HEIGHT);
+        BookUiTextures.image(graphics, PAGES_TEXTURE, layout.bookLeft(), layout.bookTop(), BOOK_WIDTH, BOOK_HEIGHT, PAGES_TEXTURE_WIDTH, PAGES_TEXTURE_HEIGHT);
         graphics.flush();
     }
 
@@ -181,7 +181,7 @@ public final class HandbookRenderer {
         switch (element) {
             case CraftingRecipePageElement recipe -> extractCraftingRecipe(graphics, recipe, x, y, contentWidth, mouseX, mouseY);
             case ImagePageElement image ->
-                    graphics.blit(image.image().texture(), x + (contentWidth - image.imageWidth()) / 2, y, image.imageWidth(), image.imageHeight(), 0F, 0F, image.image().width(), image.image().height(), image.image().width(), image.image().height());
+                    BookUiTextures.image(graphics, image.image().texture(), x + (contentWidth - image.imageWidth()) / 2, y, image.imageWidth(), image.imageHeight(), image.image().width(), image.image().height());
             case StructurePageElement ignored -> {
             }
             case TitlePageElement titlePage ->
@@ -299,7 +299,7 @@ public final class HandbookRenderer {
     }
 
     private void extractArrow(GuiGraphics graphics, ResourceLocation texture, int x, int y) {
-        graphics.blit(texture, x, y, ARROW_WIDTH, ARROW_HEIGHT, 0, 0, ARROW_TEXTURE_WIDTH, ARROW_TEXTURE_HEIGHT, ARROW_TEXTURE_WIDTH, ARROW_TEXTURE_HEIGHT);
+        BookUiTextures.image(graphics, texture, x, y, ARROW_WIDTH, ARROW_HEIGHT, ARROW_TEXTURE_WIDTH, ARROW_TEXTURE_HEIGHT);
     }
 
     private void extractCenteredText(GuiGraphics graphics, String text, int centerX, int y, int color) {

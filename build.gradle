@@ -99,17 +99,22 @@ neoForge {
 
         client {
             client()
+            // Keep migration reference jars in run/mods out of the development client.
+            gameDirectory = project.file('run/client')
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }
 
         clientAuth {
             client()
+            gameDirectory = project.file('run/client')
             devLogin = true
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }
 
         server {
             server()
+            // Isolate 1.21.1 server worlds from saves created by newer Minecraft branches.
+            gameDirectory = project.file("run/server-${minecraft_version}")
             programArgument '--nogui'
             systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
         }

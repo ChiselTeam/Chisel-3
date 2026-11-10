@@ -1,4 +1,5 @@
 {
+  "render_type": "minecraft:translucent",
   "textures": {
     "particle": "chisel:block/dn_steel_framed_stained_glass_fluorescent/dn_steel_framed_stained_glass_fluorescent_frame_thick",
     "standard_corner": "chisel:block/dn_steel_framed_stained_glass_fluorescent/dn_steel_framed_stained_glass_fluorescent_frame_thick_panel-ctm_corner",

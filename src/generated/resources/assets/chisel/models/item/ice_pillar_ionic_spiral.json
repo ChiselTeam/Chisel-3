@@ -1,3 +1,4 @@
 {
-  "parent": "chisel:block/ice_pillar_ionic_spiral"
+  "parent": "chisel:block/ice_pillar_ionic_spiral",
+  "render_type": "minecraft:translucent"
 }

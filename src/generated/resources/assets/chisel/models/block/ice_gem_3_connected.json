@@ -1,4 +1,5 @@
 {
+  "render_type": "minecraft:translucent",
   "textures": {
     "particle": "chisel:block/ice/ice_gem_3_connected",
     "standard_corner": "chisel:block/ice/ice_gem_3_connected-ctm_corner",

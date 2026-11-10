@@ -1,4 +1,5 @@
 {
+  "render_type": "minecraft:translucent",
   "textures": {
     "particle": "chisel:block/dn_oak_framed_stained_glass_conifer/dn_oak_framed_stained_glass_conifer_round",
     "standard_corner": "chisel:block/dn_oak_framed_stained_glass_conifer/dn_oak_framed_stained_glass_conifer-ctm_corner",

@@ -1,3 +1,4 @@
 {
-  "parent": "chisel:block/ice_jellybean"
+  "parent": "chisel:block/ice_jellybean",
+  "render_type": "minecraft:translucent"
 }

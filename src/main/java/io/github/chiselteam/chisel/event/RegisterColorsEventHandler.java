@@ -18,6 +18,6 @@ public class RegisterColorsEventHandler {
     @SubscribeEvent
     public static void registerItemColors(RegisterColorHandlersEvent.Item event) {
         ChiselFamilies.WATERSTONE.getFamily().getVariants().forEach(variant ->
-                event.register((stack, tint) -> tint == 0 ? 0x3F76E4 : -1, variant.getBlock().asItem()));
+                event.register((stack, tint) -> tint == 0 ? 0xFF3F76E4 : -1, variant.getBlock().asItem()));
     }
 }

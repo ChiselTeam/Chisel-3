@@ -1,4 +1,5 @@
 {
+  "render_type": "minecraft:translucent",
   "textures": {
     "particle": "chisel:block/dn_stained_glass_lavender/dn_stained_glass_lavender_panel",
     "standard_corner": "chisel:block/dn_stained_glass_lavender/dn_stained_glass_lavender_panel-ctm_corner",

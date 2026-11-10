@@ -26,17 +26,26 @@ import java.util.function.Supplier;
 
 import static net.minecraft.data.models.blockstates.VariantProperties.*;
 
-/** 1.21.1 model output shared by the Chisel variant generators. */
 public final class BlockModels {
+    private final Consumer<BlockStateGenerator> states;
     public final Consumer<BlockStateGenerator> blockStateOutput;
     public final BiConsumer<ResourceLocation, Supplier<JsonElement>> modelOutput;
     public BlockModels(Consumer<BlockStateGenerator> states, BiConsumer<ResourceLocation, Supplier<JsonElement>> models) {
+        this.states = states;
         modelOutput = models;
         blockStateOutput = generator -> {
             if (generator instanceof CTMBlockStateGenerator ctm) ctm.saveModel(models);
             if (generator instanceof io.github.chiselteam.chisel.datagen.model.blockstate.ConnectedTextureBlockStateDefinitionGenerator ctm) ctm.saveModel(models);
             states.accept(generator);
         };
+    }
+
+    public BlockModels withRenderType(String renderType) {
+        return new BlockModels(states, (id, model) -> modelOutput.accept(id, () -> {
+            var json = model.get().getAsJsonObject().deepCopy();
+            if (!json.has("loader")) json.addProperty("render_type", renderType);
+            return json;
+        }));
     }
     public static Variant plainVariant(ResourceLocation model) { return Variant.variant().with(MODEL, model); }
     public static Variant rotate(Variant model, Rotation rotation) { return Variant.merge(model, Variant.variant().with(Y_ROT, rotation)); }

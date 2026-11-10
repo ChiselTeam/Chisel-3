@@ -1,5 +1,6 @@
 {
   "parent": "chisel:block/template_glass_pane_side_alt",
+  "render_type": "minecraft:translucent",
   "textures": {
     "edge": "chisel:block/stained_glass_pane_lime/stained_glass_pane_lime_borderless-top",
     "pane": "chisel:block/stained_glass_lime/stained_glass_lime_borderless"

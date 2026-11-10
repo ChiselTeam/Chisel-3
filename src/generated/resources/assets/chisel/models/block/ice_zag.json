@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
+  "render_type": "minecraft:translucent",
   "textures": {
     "all": "chisel:block/ice/ice_zag",
     "multiblock_2x2_bottom_left": "chisel:block/ice/ice_zag-v4_top_right",

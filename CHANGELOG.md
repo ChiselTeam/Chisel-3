@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+## [1.21.1.2]
 
 ### Added
 
@@ -14,14 +14,22 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Requires CTMLib 1.21.1.2 or newer for connected-block offsets.
+- Removed the upper CTMLib version limit to allow newer compatible releases.
 - Connected-texture offsets now apply to a connected block group rather than an entire chunk, with a bounded traversal and translated limit message.
 - Auto Chisel automation respects per-slot limits and accepts a chisel from the top when its chisel slot is empty.
 - Carried forward the refreshed block-family variants, textures, compatibility families, and Builder's Handbook content from the 26.1.2 line. Pale Oak and other unavailable vanilla materials remain excluded.
+- Updated the Gradle wrapper to 8.14.6 and pinned the Gradle daemon to Java 21.
+- Isolated development client files and version-specific server worlds from migration reference jars and saves from newer Minecraft branches.
 
 ### Fixed
 
 - Preserve ghost glint shader imports on the 1.21.1 GLSL pipeline.
 - Prevent linked-storage material loss or duplication on failed Trowel placement.
+- Correct translucent rendering for glass, glass panes, and ice variants, including regenerated block and item models.
+- Restore cutout rendering for torch and wall torch models.
+- Fix transparency and image scaling in book-style interfaces, including Builder's Handbook pages, bookmarks, and navigation arrows.
+- Respect button foreground colors and opacity in palette screens.
+- Correct the starting pitch of block previews and restore opaque blue item tinting for Waterstone.
 
 ## [1.21.1.1]
 

@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.client.gui;
 
+import com.mojang.blaze3d.systems.RenderSystem;
 import io.github.chiselteam.chisel.Chisel;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.resources.ResourceLocation;
@@ -21,11 +22,19 @@ public final class BookUiTextures {
     }
 
     public static void image(GuiGraphics graphics, ResourceLocation texture, int x, int y, int width, int height) {
-        graphics.blit(texture, x, y, 0, 0, width, height, width, height);
+        image(graphics, texture, x, y, width, height, width, height);
+    }
+
+    public static void image(GuiGraphics graphics, ResourceLocation texture, int x, int y, int width, int height, int sourceWidth, int sourceHeight) {
+        RenderSystem.enableBlend();
+        RenderSystem.defaultBlendFunc();
+        graphics.blit(texture, x, y, width, height, 0F, 0F, sourceWidth, sourceHeight, sourceWidth, sourceHeight);
     }
 
     public static void nineSlice(GuiGraphics graphics, ResourceLocation texture, int x, int y, int width, int height, int sourceWidth, int sourceHeight, int capX, int capY) {
         if (width <= 0 || height <= 0) return;
+        RenderSystem.enableBlend();
+        RenderSystem.defaultBlendFunc();
         int dx = Math.min(capX, width / 2), dy = Math.min(capY, height / 2);
         int[] targetX = {x, x + dx, x + width - dx, x + width};
         int[] targetY = {y, y + dy, y + height - dy, y + height};

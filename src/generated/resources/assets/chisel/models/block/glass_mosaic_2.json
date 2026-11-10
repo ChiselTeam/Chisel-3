@@ -1,4 +1,5 @@
 {
+  "render_type": "minecraft:translucent",
   "textures": {
     "particle": "chisel:block/glass/glass_mosaic_2",
     "standard_corner": "chisel:block/glass/glass_mosaic_2-ctm_corner",

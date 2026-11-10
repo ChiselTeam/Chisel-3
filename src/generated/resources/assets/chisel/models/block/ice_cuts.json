@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
+  "render_type": "minecraft:translucent",
   "textures": {
     "all": "chisel:block/ice/ice_cuts",
     "multiblock_4x4_row_0_column_0": "chisel:block/ice/ice_cuts",

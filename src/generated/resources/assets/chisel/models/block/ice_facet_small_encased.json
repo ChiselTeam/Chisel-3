@@ -1,4 +1,5 @@
 {
+  "render_type": "minecraft:translucent",
   "textures": {
     "particle": "chisel:block/ice/ice_facet_small_encased",
     "standard_corner": "chisel:block/ice/ice_facet_small_encased-ctm_corner",

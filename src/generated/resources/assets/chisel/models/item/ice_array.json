@@ -1,3 +1,4 @@
 {
-  "parent": "chisel:block/ice_array"
+  "parent": "chisel:block/ice_array",
+  "render_type": "minecraft:translucent"
 }

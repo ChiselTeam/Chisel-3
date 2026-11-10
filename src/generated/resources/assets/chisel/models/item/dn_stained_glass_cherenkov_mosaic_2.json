@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
+  "render_type": "minecraft:translucent",
   "textures": {
     "all": "chisel:block/dn_stained_glass_cherenkov/dn_stained_glass_cherenkov_mosaic_2"
   }

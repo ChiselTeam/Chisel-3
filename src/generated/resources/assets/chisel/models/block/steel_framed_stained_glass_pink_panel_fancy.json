@@ -1,4 +1,5 @@
 {
+  "render_type": "minecraft:translucent",
   "textures": {
     "particle": "chisel:block/steel_framed_stained_glass_pink/steel_framed_stained_glass_pink_panel_fancy",
     "standard_corner": "chisel:block/steel_framed_stained_glass_pink/steel_framed_stained_glass_pink_frame_thick-ctm_corner",

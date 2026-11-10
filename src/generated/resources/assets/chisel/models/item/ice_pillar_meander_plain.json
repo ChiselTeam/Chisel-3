@@ -1,3 +1,4 @@
 {
-  "parent": "chisel:block/ice_pillar_meander_plain"
+  "parent": "chisel:block/ice_pillar_meander_plain",
+  "render_type": "minecraft:translucent"
 }

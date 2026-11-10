@@ -1,4 +1,5 @@
 {
+  "render_type": "minecraft:translucent",
   "textures": {
     "particle": "chisel:block/stained_glass_cyan/stained_glass_cyan_bubble",
     "standard_corner": "chisel:block/stained_glass_cyan/stained_glass_cyan_panel-ctm_corner",

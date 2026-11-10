@@ -1,3 +1,4 @@
 {
-  "parent": "chisel:block/ice_chaotic"
+  "parent": "chisel:block/ice_chaotic",
+  "render_type": "minecraft:translucent"
 }

@@ -1,4 +1,5 @@
 {
+  "render_type": "minecraft:translucent",
   "textures": {
     "particle": "chisel:block/ice/ice_dent",
     "standard_corner": "chisel:block/ice/ice_dent-ctm_corner",

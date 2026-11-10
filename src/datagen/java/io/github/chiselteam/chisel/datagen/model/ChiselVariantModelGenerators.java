@@ -2,6 +2,7 @@ package io.github.chiselteam.chisel.datagen.model;
 
 import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.api.model.VariantModelHandler;
+import net.minecraft.world.level.block.TransparentBlock;
 import io.github.chiselteam.chisel.datagen.model.generator.*;
 import io.github.chiselteam.chisel.datagen.model.generator.ctm.*;
 import io.github.chiselteam.chisel.datagen.model.generator.special.*;
@@ -118,6 +119,11 @@ public class ChiselVariantModelGenerators {
         if (factory == null)
             throw new IllegalStateException("No model generator registered for '%s' used by variant '%s'".formatted(handler.getSerializedName(), variant.getName()));
 
+        // A copied glass/ice block property set does not copy vanilla's render-layer registration.
+        if (variant.getBlock() instanceof TransparentBlock || handler == GLASS_PANE
+                || variant.getFamily().getFamilyName().equals("ice")) {
+            blockModels = blockModels.withRenderType("minecraft:translucent");
+        }
         factory.get().generate(variant, blockModels);
     }
 }

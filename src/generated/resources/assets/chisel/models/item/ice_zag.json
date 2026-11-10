@@ -1,3 +1,4 @@
 {
-  "parent": "chisel:block/ice_zag"
+  "parent": "chisel:block/ice_zag",
+  "render_type": "minecraft:translucent"
 }

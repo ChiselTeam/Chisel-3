@@ -1,4 +1,5 @@
 {
+  "render_type": "minecraft:translucent",
   "textures": {
     "particle": "chisel:block/steel_framed_stained_glass_brown/steel_framed_stained_glass_brown_frame_1",
     "standard_corner": "chisel:block/steel_framed_stained_glass_brown/steel_framed_stained_glass_brown_frame_1-ctm_corner",

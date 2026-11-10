@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/cube_bottom_top_inner_faces",
+  "render_type": "minecraft:translucent",
   "textures": {
     "all": "chisel:block/ice/ice_pillar_meander-side",
     "bottom": "chisel:block/ice/ice_pillar_basic-top",

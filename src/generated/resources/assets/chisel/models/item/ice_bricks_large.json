@@ -1,3 +1,4 @@
 {
-  "parent": "chisel:block/ice_bricks_large"
+  "parent": "chisel:block/ice_bricks_large",
+  "render_type": "minecraft:translucent"
 }

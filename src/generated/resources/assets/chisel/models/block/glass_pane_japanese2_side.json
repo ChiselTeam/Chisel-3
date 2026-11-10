@@ -1,5 +1,6 @@
 {
   "parent": "chisel:block/template_glass_pane_side",
+  "render_type": "minecraft:translucent",
   "textures": {
     "edge": "chisel:block/glass_pane/glass_pane_japanese-top",
     "pane": "chisel:block/glass/glass_japanese_2"

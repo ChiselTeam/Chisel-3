@@ -1,3 +1,4 @@
 {
-  "parent": "chisel:block/ice_cuts"
+  "parent": "chisel:block/ice_cuts",
+  "render_type": "minecraft:translucent"
 }

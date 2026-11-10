@@ -1,3 +1,4 @@
 {
-  "parent": "chisel:block/ice_slanted"
+  "parent": "chisel:block/ice_slanted",
+  "render_type": "minecraft:translucent"
 }

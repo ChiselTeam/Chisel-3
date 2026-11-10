@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
+  "render_type": "minecraft:translucent",
   "textures": {
     "all": "chisel:block/ice/ice_slanted",
     "multiblock_2x2_bottom_left": "chisel:block/ice/ice_slanted",

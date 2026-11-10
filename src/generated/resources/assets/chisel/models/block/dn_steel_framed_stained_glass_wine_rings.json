@@ -1,4 +1,5 @@
 {
+  "render_type": "minecraft:translucent",
   "textures": {
     "particle": "chisel:block/dn_steel_framed_stained_glass_wine/dn_steel_framed_stained_glass_wine_rings",
     "standard_corner": "chisel:block/dn_steel_framed_stained_glass_wine/dn_steel_framed_stained_glass_wine_rings-ctm_corner",

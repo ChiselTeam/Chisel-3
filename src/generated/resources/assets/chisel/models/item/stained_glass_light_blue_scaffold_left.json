@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
+  "render_type": "minecraft:translucent",
   "textures": {
     "all": "chisel:block/stained_glass_light_blue/stained_glass_light_blue_scaffold_left"
   }

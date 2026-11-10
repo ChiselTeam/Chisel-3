@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:item/generated",
+  "render_type": "minecraft:translucent",
   "textures": {
     "layer0": "chisel:block/glass_pane/glass_pane_borderless"
   }

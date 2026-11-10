@@ -1,5 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
+  "render_type": "minecraft:translucent",
   "textures": {
     "all": "chisel:block/dn_steel_framed_stained_glass_wine/dn_steel_framed_stained_glass_wine_line_vertical_panel"
   }

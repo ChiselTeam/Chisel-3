@@ -1,5 +1,6 @@
 {
   "parent": "chisel:block/template_glass_pane_end",
+  "render_type": "minecraft:translucent",
   "textures": {
     "edge": "chisel:block/stained_glass_pane_light_gray/stained_glass_pane_light_gray_quad-top",
     "pane": "chisel:block/stained_glass_light_gray/stained_glass_light_gray_bubble"
