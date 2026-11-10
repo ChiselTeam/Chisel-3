@@ -1,6 +1,6 @@
 {
-  "family_name": "tt_thaumium",
-  "tag": "c:chisel/tt_thaumium",
+  "family_name": "tc_thaumium",
+  "tag": "c:chisel/tc_thaumium",
   "variants": [
     {
       "block": "chisel:thaumium_bevel",

@@ -1,4 +1,4 @@
-package io.github.chiselteam.chisel.content.compat.thaumaturge;
+package io.github.chiselteam.chisel.content.compat.thaumcraft;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.api.model.ChiselModelHandlers;
@@ -6,13 +6,13 @@ import io.github.chiselteam.chisel.content.ChiselFamily;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
-public final class TTThaumiumFamily {
-    public static final ChiselFamily FAMILY = ChiselFamily.build("tt_thaumium", builder -> builder
+public final class TCThaumiumFamily {
+    public static final ChiselFamily FAMILY = ChiselFamily.build("tc_thaumium", builder -> builder
             .defaults(v -> v.properties(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)).blockName("Thaumium"))
             .variant("thaumium_bevel", v -> v.description("Bevel"))
             .variant("thaumium_block", v -> v.description("Block"))
             .variant("thaumium_bricks", v -> v.description("Bricks").model(ChiselModelHandlers.CONNECTED)
-                    .texture("ctm_cornerless", Chisel.prefix("block/tt_thaumium/thaumium_bricks-ctm_corner"))
+                    .texture("ctm_cornerless", Chisel.prefix("block/tc_thaumium/thaumium_bricks-ctm_corner"))
                     .textureFromBase("ctm_horizontal")
                     .textureAlias("ctm_vertical", "ctm_cornerless"))
             .variant("thaumium_chunks", v -> v.description("Chunks"))
@@ -27,6 +27,6 @@ public final class TTThaumiumFamily {
             .variant("thaumium_totem", v -> v.description("Totem").model(ChiselModelHandlers.R4)
                     .textureFromBase("r4_top_right")));
 
-    private TTThaumiumFamily() {
+    private TCThaumiumFamily() {
     }
 }
