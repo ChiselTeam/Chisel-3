@@ -18,3 +18,10 @@ type="required"
 versionRange = "${ctm_version_range}"
 ordering="AFTER"
 side="BOTH"
+
+[[dependencies.chisel]]
+modId = "ae2"
+type = "optional"
+versionRange = "[26.2.1-alpha,)"
+ordering = "AFTER"
+side = "BOTH"

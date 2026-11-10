@@ -151,6 +151,7 @@ configurations {
 }
 
 dependencies {
+    compileOnly('maven.modrinth:ae2:26.2.1-alpha') { transitive = false }
     implementation("maven.modrinth:ctmlib:${ctm_version}")
     implementation("maven.modrinth:jade:${jade_version}")
 
@@ -162,6 +163,9 @@ dependencies {
 
     testImplementation platform('org.junit:junit-bom:5.13.4')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.mockito:mockito-core:5.18.0'
+    testImplementation('maven.modrinth:ae2:26.2.1-alpha') { transitive = false }
+    testRuntimeOnly('maven.modrinth:guideme:26.2.2-alpha') { transitive = false }
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
@@ -207,6 +211,7 @@ tasks.register('publishCurseForge', TaskPublishCurseForge) {
 
     mainFile.changelog = file('CHANGELOG.md')
     mainFile.addModLoader("neoforge")
+    mainFile.addGameVersion(minecraft_version)
     mainFile.releaseType = release_type
     mainFile.addRequirement("ctm-lib")
     mainFile.addGameVersion("Client", "Server")
@@ -218,6 +223,7 @@ modrinth {
     versionName = "${mod_name}-${mod_version}"
     versionNumber = mod_version
     versionType = release_type
+    changelog = file("CHANGELOG.md").text
     uploadFile = jar
     gameVersions = [minecraft_version]
     loaders = ["neoforge"]

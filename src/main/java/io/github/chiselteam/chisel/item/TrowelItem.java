@@ -1,5 +1,8 @@
 package io.github.chiselteam.chisel.item;
 
+import io.github.chiselteam.chisel.integration.AE2TrowelStorage;
+import io.github.chiselteam.chisel.integration.BlockPermissions;
+import io.github.chiselteam.chisel.integration.InventoryAccess;
 import io.github.chiselteam.chisel.palette.Candidate;
 import io.github.chiselteam.chisel.palette.PlayerPaletteManager;
 import net.minecraft.core.BlockPos;
@@ -31,9 +34,9 @@ import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.transfer.CombinedResourceHandler;
 import net.neoforged.neoforge.transfer.RangedResourceHandler;
@@ -76,9 +79,22 @@ public class TrowelItem extends Item {
             source = connected == null ? inventory : new CombinedResourceHandler<>(inventory, connected);
         }
         var candidates = TrowelMaterials.candidates(palette.get().definition(), source);
+        var network = player.getAbilities().instabuild ? null : getConnectedNetwork(stack, player, context.getLevel());
+        if (network != null) {
+            for (var entry : palette.get().definition().entries()) {
+                if (!entry.enabled()) continue;
+                var block = net.minecraft.core.registries.BuiltInRegistries.BLOCK.getOptional(entry.block());
+                if (block.isEmpty() || !(block.get().asItem() instanceof BlockItem item)) continue;
+                if (candidates.stream().anyMatch(candidate -> candidate.material().getItem() == item)) continue;
+                var material = network.find(item);
+                if (!material.isEmpty()) candidates.add(new Candidate(material, entry.weight(), -1));
+            }
+        }
         candidates.removeIf(candidate -> !candidate.material().getItem().isEnabled(context.getLevel().enabledFeatures()));
         if (candidates.isEmpty()) return fail(player, "chisel.trowel.no_materials");
-        return placeCandidate(TrowelMaterials.choose(candidates, player.getRandom()), source, context);
+        var candidate = TrowelMaterials.choose(candidates, player.getRandom());
+        if (network != null && candidate.sourceSlot() == -1) return placeFromNetwork(candidate, network, context);
+        return placeCandidate(candidate, source, context);
     }
 
     private InteractionResult onItemUseFirstWhileCrouching(ItemStack stack, Player player, UseOnContext context) {
@@ -89,16 +105,28 @@ public class TrowelItem extends Item {
         var face = context.getClickedFace();
 
         if (entity == null) return InteractionResult.PASS;
-        if (entity instanceof BaseContainerBlockEntity container && !container.canOpen(player)) return InteractionResult.FAIL;
-        if (!level.mayInteract(player, pos)) return InteractionResult.FAIL;
-        if (level.getCapability(Capabilities.Item.BLOCK, pos, state, entity, face) == null) return InteractionResult.PASS;
+        boolean sameBinding = pos.equals(getStoredInventory(stack)) && face == getClickedFace(stack)
+                && level.dimension().identifier().toString().equals(stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY)
+                .copyTag().getStringOr("storedInventoryDimension", ""));
+        if (sameBinding) {
+            if (!level.isClientSide()) {
+                resetTagData(stack);
+                player.sendOverlayMessage(Component.translatable("chisel.trowel.unbound"));
+            }
+            return InteractionResult.SUCCESS;
+        }
+        if (!InventoryAccess.canAccess(player, level, pos)) return InteractionResult.FAIL;
+        boolean terminal = ModList.get().isLoaded("ae2") && AE2TrowelStorage.isTerminal(entity, face);
+        if (level.isClientSide() && terminal) return InteractionResult.SUCCESS;
+        boolean network = !level.isClientSide() && ModList.get().isLoaded("ae2")
+                && AE2TrowelStorage.resolve(entity, face, player) != null;
+        if (terminal && !network) return InteractionResult.FAIL;
+        if (!network && level.getCapability(Capabilities.Item.BLOCK, pos, state, entity, face) == null)
+            return InteractionResult.PASS;
 
         if (!level.isClientSide()) {
-            boolean sameBinding = pos.equals(getStoredInventory(stack)) && level.dimension().identifier().toString().equals(
-                    stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getStringOr("storedInventoryDimension", ""));
-            if (sameBinding) resetTagData(stack);
-            else saveInventory(stack, level, pos, face);
-            player.sendOverlayMessage(Component.translatable(sameBinding ? "chisel.trowel.unbound" : "chisel.trowel.bound"));
+            saveInventory(stack, level, pos, face, network);
+            player.sendOverlayMessage(Component.translatable("chisel.trowel.bound"));
         }
         if (level.isClientSide()) {
             ParticleUtils.spawnParticlesOnBlockFace(level, pos, ParticleTypes.HAPPY_VILLAGER, UniformInt.of(0, 10), face, () -> getRandomSpeedRanges(level.getRandom()), 0.55F);
@@ -135,25 +163,43 @@ public class TrowelItem extends Item {
         try (var transaction = Transaction.openRoot()) {
             if (source != null && source.extract(candidate.sourceSlot(), ItemResource.of(material), 1, transaction) != 1)
                 return fail(player, "chisel.trowel.no_materials");
-            var hit = new BlockHitResult(context.getClickLocation(), context.getClickedFace(), context.getClickedPos(), context.isInside());
-            var placement = new UseOnContext(context.getLevel(), player, context.getHand(), material, hit);
-            var placeContext = new BlockPlaceContext(placement);
-            if (!context.getLevel().mayInteract(player, placeContext.getClickedPos()) || !player.mayUseItemAt(placeContext.getClickedPos(), context.getClickedFace(), material)) return InteractionResult.FAIL;
-
-            var result = material.useOn(placement);
+            var result = placeMaterial(material, context);
             if (result.consumesAction() && (source == null || material.isEmpty())) transaction.commit();
-            if (result.consumesAction() && player instanceof ServerPlayer serverPlayer) {
-                var pos = placeContext.getClickedPos();
-                var state = context.getLevel().getBlockState(pos);
-                var sound = state.getSoundType(context.getLevel(), pos, player);
-                serverPlayer.connection.send(new ClientboundSoundPacket(
-                        Holder.direct(sound.getPlaceSound()), SoundSource.BLOCKS,
-                        pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
-                        (sound.getVolume() + 1.0F) / 2.0F, sound.getPitch() * 0.8F,
-                        context.getLevel().getRandom().nextLong()));
-            }
             return result;
         }
+    }
+
+    private InteractionResult placeFromNetwork(Candidate candidate, LinkedTrowelStorage source, UseOnContext context) {
+        var material = candidate.material().copyWithCount(1);
+        if (!source.extract(material)) return fail(context.getPlayer(), "chisel.trowel.no_materials");
+        try {
+            return placeMaterial(material, context);
+        } finally {
+            if (!material.isEmpty()) source.refund(material);
+        }
+    }
+
+    private InteractionResult placeMaterial(ItemStack material, UseOnContext context) {
+        var player = context.getPlayer();
+        if (player == null) return InteractionResult.FAIL;
+        var hit = new BlockHitResult(context.getClickLocation(), context.getClickedFace(), context.getClickedPos(), context.isInside());
+        var placement = new UseOnContext(context.getLevel(), player, context.getHand(), material, hit);
+        var placeContext = new BlockPlaceContext(placement);
+        if (!BlockPermissions.canEdit(player, context.getLevel(), placeContext.getClickedPos(), context.getHand(), material)
+                || !player.mayUseItemAt(placeContext.getClickedPos(), context.getClickedFace(), material)) return InteractionResult.FAIL;
+
+        var result = material.useOn(placement);
+        if (result.consumesAction() && player instanceof ServerPlayer serverPlayer) {
+            var pos = placeContext.getClickedPos();
+            var state = context.getLevel().getBlockState(pos);
+            var sound = state.getSoundType(context.getLevel(), pos, player);
+            serverPlayer.connection.send(new ClientboundSoundPacket(
+                    Holder.direct(sound.getPlaceSound()), SoundSource.BLOCKS,
+                    pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
+                    (sound.getVolume() + 1.0F) / 2.0F, sound.getPitch() * 0.8F,
+                    context.getLevel().getRandom().nextLong()));
+        }
+        return result;
     }
 
     private static InteractionResult fail(Player player, String key) {
@@ -163,15 +209,26 @@ public class TrowelItem extends Item {
 
     private @Nullable ResourceHandler<ItemResource> getConnectedInventory(ItemStack stack, Player player, Level level) {
         var tag = stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag();
+        if (tag.getBooleanOr("storedInventoryNetwork", false)) return null;
         var pos = getStoredInventory(stack);
         var dimension = Identifier.tryParse(tag.getStringOr("storedInventoryDimension", ""));
         var server = level.getServer();
         if (pos == null || dimension == null || server == null) return null;
         var sourceLevel = server.getLevel(ResourceKey.create(Registries.DIMENSION, dimension));
-        if (sourceLevel == null || !sourceLevel.hasChunkAt(pos) || !sourceLevel.mayInteract(player, pos)) return null;
-        var entity = sourceLevel.getBlockEntity(pos);
-        if (entity instanceof BaseContainerBlockEntity container && !container.canOpen(player)) return null;
+        if (sourceLevel == null || !sourceLevel.hasChunkAt(pos) || !InventoryAccess.canAccess(player, sourceLevel, pos)) return null;
         return sourceLevel.getCapability(Capabilities.Item.BLOCK, pos, getClickedFace(stack));
+    }
+
+    private @Nullable LinkedTrowelStorage getConnectedNetwork(ItemStack stack, Player player, Level level) {
+        var tag = stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag();
+        if (!tag.getBooleanOr("storedInventoryNetwork", false) || !ModList.get().isLoaded("ae2")) return null;
+        var link = getLinkedInventory(stack);
+        var server = level.getServer();
+        if (link == null || server == null) return null;
+        var sourceLevel = server.getLevel(link.dimension());
+        if (sourceLevel == null || !sourceLevel.hasChunkAt(link.pos()) || !InventoryAccess.canAccess(player, sourceLevel, link.pos())) return null;
+        var entity = sourceLevel.getBlockEntity(link.pos());
+        return entity == null ? null : AE2TrowelStorage.resolve(entity, getClickedFace(stack), player);
     }
 
     // MARK: Data Utilities
@@ -184,11 +241,12 @@ public class TrowelItem extends Item {
         return GlobalPos.of(ResourceKey.create(Registries.DIMENSION, dimension), pos);
     }
 
-    private void saveInventory(ItemStack stack, Level level, BlockPos pos, Direction clickedFace) {
+    private void saveInventory(ItemStack stack, Level level, BlockPos pos, Direction clickedFace, boolean network) {
         var tag = stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag();
         tag.putString("storedInventoryDimension", level.dimension().identifier().toString());
         tag.putLong("storedInventory", pos.asLong());
         tag.putInt("clickedFace", clickedFace.get3DDataValue());
+        tag.putBoolean("storedInventoryNetwork", network);
         stack.set(DataComponents.CUSTOM_DATA, CustomData.of(tag));
     }
 
@@ -197,6 +255,7 @@ public class TrowelItem extends Item {
         tag.remove("storedInventory");
         tag.remove("storedInventoryDimension");
         tag.remove("clickedFace");
+        tag.remove("storedInventoryNetwork");
         stack.set(DataComponents.CUSTOM_DATA, CustomData.of(tag));
     }
 

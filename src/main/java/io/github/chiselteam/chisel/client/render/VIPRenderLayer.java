@@ -10,7 +10,6 @@ import net.minecraft.client.renderer.entity.layers.RenderLayer;
 import net.minecraft.client.renderer.entity.state.AvatarRenderState;
 import net.minecraft.client.renderer.item.ItemStackRenderState;
 import net.minecraft.client.renderer.texture.OverlayTexture;
-import net.minecraft.world.item.ItemStack;
 import org.jspecify.annotations.NonNull;
 
 public class VIPRenderLayer extends RenderLayer<AvatarRenderState, PlayerModel> {
@@ -28,10 +27,15 @@ public class VIPRenderLayer extends RenderLayer<AvatarRenderState, PlayerModel> 
 
         pose.pushPose();
         getParentModel().body.translateAndRotate(pose);
-        pose.mulPose(Axis.XP.rotationDegrees(180.0F));
+
+        pose.translate(0.0F, 11.0F / 16.0F, 0.0F);
+        pose.mulPose(Axis.XP.rotation(-getParentModel().body.xRot));
+
+        boolean armor = !state.legsEquipment.isEmpty();
+        pose.translate((armor ? 5.25F : 4.5F) / 16.0F, 2.0F / 16.0F, 0.75F / 16.0F);
         pose.mulPose(Axis.YP.rotationDegrees(90.0F));
-        boolean armor = state.legsEquipment != ItemStack.EMPTY;
-        pose.translate(-0.125F, -0.85F, armor ? 0.2F : 0.28F);
+
+        pose.mulPose(Axis.ZP.rotationDegrees(-35.0F));
         pose.scale(0.5F, 0.5F, 0.5F);
 
         item.submit(pose, submit, lightCoords, OverlayTexture.NO_OVERLAY, 0);

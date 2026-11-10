@@ -1,6 +1,8 @@
 package io.github.chiselteam.chisel.event.client;
 
 import io.github.chiselteam.chisel.Chisel;
+import io.github.chiselteam.chisel.client.render.GhostAppearance;
+import io.github.chiselteam.chisel.client.render.GhostRenderTypes;
 import io.github.chiselteam.chisel.client.render.VIPRenderLayer;
 import io.github.chiselteam.chisel.registry.ChiselItems;
 import net.minecraft.client.Minecraft;
@@ -18,6 +20,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.RegisterRenderPipelinesEvent;
 import net.neoforged.neoforge.client.renderstate.AvatarRenderStateModifier;
 import net.neoforged.neoforge.client.renderstate.RegisterRenderStateModifiersEvent;
 import org.jspecify.annotations.NonNull;
@@ -30,6 +33,11 @@ import java.util.UUID;
 public class AddLayersEventHandler {
 
     public static final ContextKey<ItemStackRenderState> VIP_ITEM = new ContextKey<>(Chisel.prefix("vip_item"));
+
+    @SubscribeEvent
+    public static void registerGhostPipelines(RegisterRenderPipelinesEvent event) {
+        GhostRenderTypes.registerPipelines(event);
+    }
 
     @SubscribeEvent
     public static void addLayers(EntityRenderersEvent.AddLayers event) {
@@ -45,16 +53,16 @@ public class AddLayersEventHandler {
     public static void registerRenderStateModifiers(RegisterRenderStateModifiersEvent event) {
         Map<UUID, ItemLike> VIPS = new HashMap<>();
         // Devs
-        VIPS.put(UUID.fromString("a7529984-8cb2-4fb9-b799-97980f770101"), ChiselItems.CHISEL_OBSIDIAN); // Cricket
+        VIPS.put(GhostAppearance.CRICKET_UUID, ChiselItems.CHISEL_OBSIDIAN);
 
         // Artists
-        VIPS.put(UUID.fromString("e350ef68-2feb-4127-b0ce-611e5304685a"), ChiselItems.CHISEL_DIAMOND); // Cebularz
+        VIPS.put(GhostAppearance.CEBULARZ_UUID, ChiselItems.CHISEL_DIAMOND);
         VIPS.put(UUID.fromString("5399b615-3440-4c66-939d-ab1375952ac3"), ChiselItems.CHISEL_DIAMOND); // Drullkus
         VIPS.put(UUID.fromString("735d1fe0-0d75-4cee-86a1-bc11b62ca48a"), ChiselItems.CHISEL_DIAMOND); // RPorotos
+        VIPS.put(GhostAppearance.JOSHY_UUID, ChiselItems.CHISEL_DIAMOND);
 
         // Gallery
         VIPS.put(UUID.fromString("ba1dd62a-00ac-4c18-bb91-1e02ed4b65d8"), ChiselItems.CHISEL_DIAMOND); // Buddy610
-        VIPS.put(UUID.fromString("d0798f41-4563-4005-a08f-2b85a41bddae"), ChiselItems.CHISEL_DIAMOND); // Joshy
 
         // Community
         VIPS.put(UUID.fromString("d1af5f04-c4cc-486f-b187-fcb0a745bda6"), ChiselItems.CHISEL_IRON); // BeanxxBot
@@ -65,6 +73,8 @@ public class AddLayersEventHandler {
         event.registerAvatarEntityModifier(new AvatarRenderStateModifier() {
             @Override
             public <T extends Avatar & ClientAvatarEntity> void accept(@NonNull T avatar, @NonNull AvatarRenderState state) {
+                state.setRenderData(GhostAppearance.GHOST, GhostAppearance.isGhost(avatar.getUUID()));
+
                 ItemLike item = VIPS.get(avatar.getUUID());
                 if(item == null) return;
 

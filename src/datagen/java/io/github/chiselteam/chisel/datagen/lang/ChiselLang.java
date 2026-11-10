@@ -82,6 +82,7 @@ public class ChiselLang extends LangHelper {
     private void addOffsetToolDescription() {
         add("item.chisel.offset_tool.desc", "Right click highlighted direction to shift texture");
         add("item.chisel.offset_tool.desc2", "Will only highlight on textures that can be offset");
+        add("item.chisel.offset_tool.too_many_blocks", "Cannot offset more than %s connected blocks at once");
     }
 
     private void addUtilItemDescriptions() {

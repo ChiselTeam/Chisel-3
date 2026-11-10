@@ -4,6 +4,7 @@ import com.mojang.serialization.Codec;
 import io.github.chiselteam.chisel.api.family.Variant;
 import io.github.chiselteam.chisel.api.family.VariantFamily;
 import io.github.chiselteam.chisel.family.VariantFamilyLookup;
+import io.github.chiselteam.chisel.integration.BlockPermissions;
 import io.github.chiselteam.chisel.item.ChiselItem;
 import io.github.chiselteam.chisel.registry.ChiselModes;
 import io.github.chiselteam.chisel.registry.ChiselSounds;
@@ -87,6 +88,7 @@ public class ChiselMode {
     }
 
     protected void chiselBlock(Level level, Player player, InteractionHand hand, BlockPos pos, BlockState state, ItemStack chisel) {
+        if (level.isClientSide() || !BlockPermissions.canEdit(player, level, pos, hand, chisel)) return;
         var current = level.getBlockState(pos);
         var replacement = TorchStates.replacement(level, pos, current, state);
         if (replacement == null || replacement == current || !level.setBlockAndUpdate(pos, replacement)) return;
