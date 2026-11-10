@@ -1,6 +1,6 @@
 {
-  "family_name": "tt_arcane_stone",
-  "tag": "c:chisel/tt_arcane_stone",
+  "family_name": "tc_arcane_stone",
+  "tag": "c:chisel/tc_arcane_stone",
   "variants": [
     {
       "block": "chisel:arcane_border",

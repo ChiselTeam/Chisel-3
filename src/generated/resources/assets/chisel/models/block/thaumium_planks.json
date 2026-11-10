@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "chisel:block/tt_thaumium/thaumium_planks",
-    "particle": "chisel:block/tt_thaumium/thaumium_planks",
-    "standard_corner": "chisel:block/tt_thaumium/thaumium_planks-ctm_corner",
-    "standard_cornerless": "chisel:block/tt_thaumium/thaumium_planks-ctm_cornerless",
-    "standard_horizontal": "chisel:block/tt_thaumium/thaumium_planks-ctm_horizontal",
-    "standard_none": "chisel:block/tt_thaumium/thaumium_planks",
-    "standard_vertical": "chisel:block/tt_thaumium/thaumium_planks-ctm_vertical"
+    "all": "chisel:block/tc_thaumium/thaumium_planks",
+    "particle": "chisel:block/tc_thaumium/thaumium_planks",
+    "standard_corner": "chisel:block/tc_thaumium/thaumium_planks-ctm_corner",
+    "standard_cornerless": "chisel:block/tc_thaumium/thaumium_planks-ctm_cornerless",
+    "standard_horizontal": "chisel:block/tc_thaumium/thaumium_planks-ctm_horizontal",
+    "standard_none": "chisel:block/tc_thaumium/thaumium_planks",
+    "standard_vertical": "chisel:block/tc_thaumium/thaumium_planks-ctm_vertical"
   }
 }

@@ -7,9 +7,9 @@ import io.github.chiselteam.chisel.content.compat.appliedenergistics.Ae2FluixFam
 import io.github.chiselteam.chisel.content.compat.appliedenergistics.Ae2SkyStoneFamily;
 import io.github.chiselteam.chisel.content.compat.moddedmetal.*;
 import io.github.chiselteam.chisel.content.compat.neovitae.NvRuneFamily;
-import io.github.chiselteam.chisel.content.compat.thaumaturge.TTTallowFamily;
-import io.github.chiselteam.chisel.content.compat.thaumaturge.TTArcaneStoneFamily;
-import io.github.chiselteam.chisel.content.compat.thaumaturge.TTThaumiumFamily;
+import io.github.chiselteam.chisel.content.compat.thaumcraft.TCTallowFamily;
+import io.github.chiselteam.chisel.content.compat.thaumcraft.TCArcaneStoneFamily;
+import io.github.chiselteam.chisel.content.compat.thaumcraft.TCThaumiumFamily;
 import io.github.chiselteam.chisel.content.family.color.*;
 import io.github.chiselteam.chisel.content.family.decorative.*;
 import io.github.chiselteam.chisel.content.family.metal.*;
@@ -30,7 +30,7 @@ public class ChiselFamilies {
     public static final ChiselFamily ATM_ANCIENT_STONE = AtmAncientStoneFamily.FAMILY;
     public static final ChiselFamily ANDESITE = AndesiteFamily.FAMILY;
     public static final ChiselFamily ANTIBLOCK = AntiblockFamily.FAMILY;
-    public static final ChiselFamily TT_ARCANE_STONE = TTArcaneStoneFamily.FAMILY;
+    public static final ChiselFamily TC_ARCANE_STONE = TCArcaneStoneFamily.FAMILY;
     public static final ChiselFamily BAMBOO = BambooFamily.FAMILY;
     public static final ChiselFamily BIRCH = BirchFamily.FAMILY;
     public static final ChiselFamily BLACKSTONE = BlackstoneFamily.FAMILY;
@@ -154,11 +154,11 @@ public class ChiselFamilies {
     public static final ChiselFamily STEAMPUNK = SteampunkFamily.FAMILY;
     public static final ChiselFamily SULFUR = SulfurFamily.FAMILY;
     public static final ChiselFamily CINNABAR = CinnabarFamily.FAMILY;
-    public static final ChiselFamily TT_TALLOW = TTTallowFamily.FAMILY;
+    public static final ChiselFamily TC_TALLOW = TCTallowFamily.FAMILY;
     public static final ChiselFamily TECHNICAL = TechnicalFamily.FAMILY;
     public static final ChiselFamily TEMPLE = TempleFamily.FAMILY;
     public static final ChiselFamily TERRACOTTA = TerracottaFamily.FAMILY;
-    public static final ChiselFamily TT_THAUMIUM = TTThaumiumFamily.FAMILY;
+    public static final ChiselFamily TC_THAUMIUM = TCThaumiumFamily.FAMILY;
     public static final ChiselFamily TIN = TinFamily.FAMILY;
     public static final ChiselFamily TITANIUM = TitaniumFamily.FAMILY;
     public static final ChiselFamily TUNGSTEN = TungstenFamily.FAMILY;
