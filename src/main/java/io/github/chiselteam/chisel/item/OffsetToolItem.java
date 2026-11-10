@@ -1,22 +1,20 @@
 package io.github.chiselteam.chisel.item;
 
 import io.github.chiselteam.chisel.family.VariantFamilyLookup;
-import io.github.chiselteam.ctm.api.texture.CTMOffsetDataManager;
-import io.github.chiselteam.ctm.network.CTMOffsetSyncPacket;
+import io.github.chiselteam.chisel.integration.BlockPermissions;
+import io.github.chiselteam.ctm.api.texture.CTMBlockOffsets;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
-import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.context.UseOnContext;
-import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
-import net.neoforged.neoforge.network.PacketDistributor;
 import org.jspecify.annotations.NonNull;
 
 import java.awt.geom.Line2D;
@@ -40,13 +38,20 @@ public class OffsetToolItem extends Item {
                 Vec3 hit = context.getClickLocation();
                 Direction moveDir = getMoveDir(facing, hit.x - pos.getX(), hit.y - pos.getY(), hit.z - pos.getZ());
 
-                ChunkPos chunkPos = new ChunkPos(pos.getX() >> 4, pos.getZ() >> 4);
-                BlockPos currentOffset = CTMOffsetDataManager.getOffset(chunkPos);
-                BlockPos newOffset = wrap(currentOffset.relative(moveDir.getOpposite()));
-                
-                CTMOffsetDataManager.setOffset(chunkPos, newOffset);
-                PacketDistributor.sendToPlayer((ServerPlayer) context.getPlayer(), new CTMOffsetSyncPacket(chunkPos, newOffset));
-                
+                var level = (ServerLevel) context.getLevel();
+                var currentOffset = CTMBlockOffsets.getOffset(level, pos);
+                var newOffset = wrap(currentOffset.relative(moveDir.getOpposite()));
+
+                try {
+                    if (!canOffsetConnected(context)) return InteractionResult.FAIL;
+                    CTMBlockOffsets.setConnectedOffset(level, pos, newOffset);
+                } catch (IllegalArgumentException limitExceeded) {
+                    if (context.getPlayer() != null) {
+                        context.getPlayer().sendOverlayMessage(Component.translatable("item.chisel.offset_tool.too_many_blocks", CTMBlockOffsets.DEFAULT_LIMIT));
+                    }
+                    return InteractionResult.FAIL;
+                }
+
                 return InteractionResult.SUCCESS;
             }
         }
@@ -66,6 +71,23 @@ public class OffsetToolItem extends Item {
         List<Double> keys = new ArrayList<>(map.keySet());
         Collections.sort(keys);
         return map.get(keys.getFirst());
+    }
+
+    private boolean canOffsetConnected(UseOnContext context) {
+        var level = context.getLevel();
+        var block = level.getBlockState(context.getClickedPos()).getBlock();
+        Set<BlockPos> visited = new HashSet<>();
+        ArrayDeque<BlockPos> pending = new ArrayDeque<>();
+        pending.add(context.getClickedPos());
+        int count = 0;
+        while (!pending.isEmpty()) {
+            var pos = pending.removeFirst();
+            if (!visited.add(pos) || !level.hasChunkAt(pos) || !level.getBlockState(pos).is(block)) continue;
+            if (++count > CTMBlockOffsets.DEFAULT_LIMIT) throw new IllegalArgumentException("Connected block limit exceeded");
+            if (!BlockPermissions.canEdit(context.getPlayer(), level, pos, context.getHand(), context.getItemInHand())) return false;
+            for (var direction : Direction.values()) pending.addLast(pos.relative(direction));
+        }
+        return true;
     }
 
     private void fillMap(Map<Double, Direction> map, double x, double y, Direction... dirs) {

@@ -1,5 +1,6 @@
 package io.github.chiselteam.chisel.entity;
 
+import io.github.chiselteam.chisel.integration.BlockPermissions;
 import io.github.chiselteam.chisel.projectile.SmashingRockData;
 import io.github.chiselteam.chisel.registry.ChiselEntities;
 import io.github.chiselteam.chisel.registry.ChiselItems;
@@ -57,7 +58,7 @@ public class SmashingRock extends ThrowableItemProjectile {
                         continue;
 
                     BlockPos check = pos.offset(x, y, z);
-                    if(!level().getBlockState(check).isAir())
+                    if (level().hasChunkAt(check) && !level().getBlockState(check).isAir())
                         smash(check);
                 }
             }
@@ -66,7 +67,8 @@ public class SmashingRock extends ThrowableItemProjectile {
     }
 
     private void smash(BlockPos pos) {
-        Block smashed = getSmashedBlock(level().getBlockState(pos), level().registryAccess());
+        if (!BlockPermissions.canProjectileEdit(getOwner(), level(), pos, getItem())) return;
+        var smashed = getSmashedBlock(level().getBlockState(pos), level().registryAccess());
         if(smashed != null) {
             level().setBlockAndUpdate(pos, smashed.defaultBlockState());
         }

@@ -1,6 +1,7 @@
 package io.github.chiselteam.chisel.block;
 
 import io.github.chiselteam.chisel.block.entity.AutoChiselBlockEntity;
+import io.github.chiselteam.chisel.integration.InventoryAccess;
 import io.github.chiselteam.chisel.menu.AutoChiselMenu;
 import io.github.chiselteam.chisel.registry.ChiselBlockEntities;
 import io.github.chiselteam.chisel.registry.ChiselStats;
@@ -58,6 +59,7 @@ public class AutoChiselBlock extends BaseEntityBlock {
 
     @Override
     protected @NonNull InteractionResult useWithoutItem(@NonNull BlockState state, Level level, @NonNull BlockPos pos, @NonNull Player player, @NonNull BlockHitResult hitResult) {
+        if (!InventoryAccess.canAccess(player, level, pos)) return InteractionResult.FAIL;
         if(!level.isClientSide()) {
             player.openMenu(state.getMenuProvider(level, pos), pos);
             player.awardStat(ChiselStats.INTERACT_WITH_AUTO_CHISEL.get());

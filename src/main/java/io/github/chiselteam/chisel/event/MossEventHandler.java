@@ -2,6 +2,7 @@ package io.github.chiselteam.chisel.event;
 
 import io.github.chiselteam.chisel.Chisel;
 import io.github.chiselteam.chisel.client.moss.ClientMossData;
+import io.github.chiselteam.chisel.integration.BlockPermissions;
 import io.github.chiselteam.chisel.network.MossChunkPacket;
 import io.github.chiselteam.chisel.projectile.MossHelper;
 import io.github.chiselteam.chisel.registry.ChiselAttachments;
@@ -45,6 +46,7 @@ public final class MossEventHandler {
         var level = event.getLevel();
         var pos = event.getPos();
         if (player == null || player.isSpectator() || face == null
+                || !BlockPermissions.canEdit(player, level, pos, event.getHand(), event.getItemStack())
                 || !level.mayInteract(player, pos)
                 || !player.mayUseItemAt(pos.relative(face), face, event.getItemStack())) return;
 

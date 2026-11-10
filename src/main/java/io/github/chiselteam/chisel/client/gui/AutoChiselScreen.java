@@ -297,6 +297,10 @@ public class AutoChiselScreen extends AbstractContainerScreen<AutoChiselMenu> {
                 if (index < filteredVariants.size()) {
                     graphics.blitSprite(RenderPipelines.GUI_TEXTURED, SLOT_CRAFTABLE_SPRITE, slotX, slotY, 25, 25);
                     graphics.fakeItem(filteredVariants.get(index), slotX + 4, slotY + 4);
+                    ItemStack template = menu.slots.get(AutoChiselBlockEntity.TEMPLATE_SLOT).getItem();
+                    if (!template.isEmpty() && filteredVariants.get(index).is(template.getItem())) {
+                        graphics.fill(slotX, slotY, slotX + 25, slotY + 25, 0x6030C060);
+                    }
                 }
             }
         }
