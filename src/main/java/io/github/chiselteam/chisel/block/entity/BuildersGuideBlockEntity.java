@@ -5,6 +5,9 @@ import io.github.chiselteam.chisel.mode.building.ChiselBuildingMode;
 import io.github.chiselteam.chisel.registry.ChiselBlockEntities;
 import io.github.chiselteam.chisel.registry.ChiselBuildingModes;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
@@ -47,6 +50,8 @@ public class BuildersGuideBlockEntity extends BlockEntity {
         width  = clamp(input.getIntOr("width",  8));
         height = clamp(input.getIntOr("height", 8));
 
+        color = DyeColor.byId(input.getIntOr("color", DyeColor.WHITE.getId()));
+
         var modeId = input.getString("mode");
         if (modeId.isPresent()) {
             var id = Identifier.tryParse(modeId.get());
@@ -62,7 +67,18 @@ public class BuildersGuideBlockEntity extends BlockEntity {
         output.putInt("length", length);
         output.putInt("width",  width);
         output.putInt("height", height);
+        output.putInt("color", color.getId());
         output.putString("mode", buildingMode.getRegistryName().toString());
+    }
+
+    @Override
+    public @NonNull ClientboundBlockEntityDataPacket getUpdatePacket() {
+        return ClientboundBlockEntityDataPacket.create(this);
+    }
+
+    @Override
+    public @NonNull CompoundTag getUpdateTag(HolderLookup.@NonNull Provider registries) {
+        return saveWithoutMetadata(registries);
     }
 
     public void increaseLength() { setLength(length + 1); }
