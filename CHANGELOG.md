@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [26.1.2.21]
+
+### Fixed
+
+- Fixed Builder's Guide previews not updating when dimensions or shape change, including for newly connected players.
+- Preserved Builder's Guide dye colors when saving and reloading worlds.
+
 ## [26.1.2.20]
 
 ### Added
