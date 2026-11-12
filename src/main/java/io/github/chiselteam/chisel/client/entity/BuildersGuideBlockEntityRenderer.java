@@ -41,7 +41,7 @@ public class BuildersGuideBlockEntityRenderer implements BlockEntityRenderer<Bui
 
         {
             var p = pose.last();
-            var buffer = buffers.getBuffer(RenderType.debugFilledBox());
+            var buffer = buffers.getBuffer(RenderType.debugQuads());
             for (Map.Entry<BlockPos, Entry> e : anim.entries.entrySet()) {
                 BlockPos ghost = e.getKey();
                 float scale = e.getValue().scale(now);
@@ -61,7 +61,7 @@ public class BuildersGuideBlockEntityRenderer implements BlockEntityRenderer<Bui
     /**
      * Emits the six faces of an axis-aligned cube as {@code QUADS} into the supplied vertex
      * consumer. Uses the {@code POSITION_COLOR} vertex format expected by
-     * {@link RenderType#debugFilledBox()}.
+     * {@link RenderType#debugQuads()}.
      */
     private static void drawCube(PoseStack.Pose pose, VertexConsumer buffer, float minX, float minY, float minZ, float maxX, float maxY, float maxZ, int color) {
         // -Y (bottom)

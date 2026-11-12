@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.21.1.3]
+
+### Fixed
+
+- Fixed Builder's Guide previews not updating when dimensions or shape change, including for newly connected players.
+- Preserved Builder's Guide dye colors when saving and reloading worlds.
+- Fixed Builder's Guide previews rendering as large, connected triangles.
+
 ## [1.21.1.2]
 
 ### Added

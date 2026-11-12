@@ -7,6 +7,7 @@ import io.github.chiselteam.chisel.registry.ChiselBuildingModes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
@@ -47,6 +48,8 @@ public class BuildersGuideBlockEntity extends BlockEntity {
         width  = clamp((input.contains("width") ? input.getInt("width") : 8));
         height = clamp((input.contains("height") ? input.getInt("height") : 8));
 
+        color = DyeColor.byId(input.contains("color") ? input.getInt("color") : DyeColor.WHITE.getId());
+
         var modeId = input.getString("mode");
         if (!modeId.isEmpty()) {
             var id = ResourceLocation.tryParse(modeId);
@@ -62,7 +65,18 @@ public class BuildersGuideBlockEntity extends BlockEntity {
         output.putInt("length", length);
         output.putInt("width",  width);
         output.putInt("height", height);
+        output.putInt("color", color.getId());
         output.putString("mode", buildingMode.getRegistryName().toString());
+    }
+
+    @Override
+    public @NotNull ClientboundBlockEntityDataPacket getUpdatePacket() {
+        return ClientboundBlockEntityDataPacket.create(this);
+    }
+
+    @Override
+    public @NotNull CompoundTag getUpdateTag(HolderLookup.@NotNull Provider registries) {
+        return saveWithoutMetadata(registries);
     }
 
     public void increaseLength() { setLength(length + 1); }
