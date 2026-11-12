@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [26.3.0.2]
+
+### Fixed
+
+- Fixed Builder's Guide previews not updating when dimensions or shape change, including for newly connected players.
+- Preserved Builder's Guide dye colors when saving and reloading worlds.
+
 ## [26.3.0.1]
 
 - Updated to Minecraft 26.3 and NeoForge 26.3.0.99 using the [26.3 migration primer](https://docs.neoforged.net/primer/docs/26.3/).
